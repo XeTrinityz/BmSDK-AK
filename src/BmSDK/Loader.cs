@@ -225,6 +225,15 @@ internal static class Loader
     private static Keys XButton(nuint wParam) =>
         ((wParam >> 16) & 0xFFFF) == 2 ? Keys.XButton2 : Keys.XButton1;
 
+    /// <summary>Gives every script its OnDraw, from BmSDK's PostRender redirect.</summary>
+    internal static void DispatchDraw(Engine.Canvas canvas)
+    {
+        foreach (var script in ScriptManager.Scripts)
+        {
+            ModGuard.Run(script, script.Name, "OnDraw", () => script.OnDraw(canvas));
+        }
+    }
+
     // Detour for UObject::AddObject()
     private static void AddObjectDetour(IntPtr self, int InIndex)
     {
