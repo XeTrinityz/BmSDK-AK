@@ -127,7 +127,7 @@ internal sealed record RedirectCall(
         OriginalRan = true;
 
         // Copy over args to new buffer for call to original function
-        var paramsSize = TargetFunc.EnumerateParams().Sum(p => p.ElementSize);
+        var paramsSize = TargetFunc.GetParamsBytes();
 
         // 16-aligned like the engine's own parameter frames (natives store SSE returns with movdqa).
         var argsPtr = stackalloc byte[TargetFunc.PropertiesSize + 16];
@@ -148,14 +148,14 @@ internal sealed record RedirectCall(
         );
 
         // If there is a return value, pass it through
-        var returnField = TargetFunc.GetReturnParam();
-        if (returnField is not null)
+        TargetFunc.ResolveReturn();
+        if (TargetFunc.ReturnSize > 0)
         {
             Buffer.MemoryCopy(
-                argsPtr + returnField.Offset,
+                argsPtr + TargetFunc.ReturnOffset,
                 result.ToPointer(),
-                returnField.ElementSize,
-                returnField.ElementSize
+                TargetFunc.ReturnSize,
+                TargetFunc.ReturnSize
             );
         }
     }

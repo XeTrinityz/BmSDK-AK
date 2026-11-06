@@ -92,7 +92,9 @@ internal static class Loader
     private static bool s_hasGameStarted = false;
     private static bool s_hasGameInited = false;
 
-    // Detour for UObject::ProcessInternal()
+    // Detour for UObject::ProcessInternal(). Runs on every UnrealScript call in the game, so it must
+    // not allocate: a function's path and lifecycle role are worked out once per UFunction (see
+    // Classify), and whether any redirect targets it is cached until the set of redirects changes.
     private static unsafe void ProcessInternalDetour(IntPtr self, IntPtr Stack, IntPtr Result)
     {
         RunGuarded(() =>
@@ -101,64 +103,66 @@ internal static class Loader
             FFrame* stackPtr = (FFrame*)Stack.ToPointer();
             var selfObj = MarshalUtil.ToManaged<GameObject>(&selfPtr);
             var funcObj = MarshalUtil.ToManaged<Function>(&stackPtr->Node);
-            var funcName = funcObj.GetPathName();
+            var funcName = funcObj.CachedPath ?? Classify(funcObj);
 
-            // Notify scripts of game init
-            if (!s_hasGameInited && funcName == InitFuncName)
+            switch (funcObj.LifecycleKind)
             {
-                // Kick off DLC scanning early
-                var dlcManager = Game.GetEngine().DLCManager;
-                dlcManager.RefreshDLC();
+                // Notify scripts of game init
+                case Function.Lifecycle.Init when !s_hasGameInited:
+                    // Kick off DLC scanning early
+                    var dlcManager = Game.GetEngine().DLCManager;
+                    dlcManager.RefreshDLC();
 
-                // Preload packages and root keep-alive objects before any world loads
-                PreloadManager.Run();
+                    // Preload packages and root keep-alive objects before any world loads
+                    PreloadManager.Run();
 
-                ScriptManager.Scripts.ForEach(script =>
-                    ModGuard.Run(script, script.Name, "Main", script.Main)
-                );
-                s_hasGameInited = true;
-            }
+                    ScriptManager.Scripts.ForEach(script =>
+                        ModGuard.Run(script, script.Name, "Main", script.Main)
+                    );
+                    s_hasGameInited = true;
+                    break;
 
-            // Notify scripts of game start
-            if (!s_hasGameStarted && funcName == EnterMenuFuncName)
-            {
-                ScriptManager.Scripts.ForEach(script =>
-                    ModGuard.Run(script, script.Name, "OnEnterMenu", script.OnEnterMenu)
-                );
-                s_hasGameStarted = true;
-            }
+                // Notify scripts of game start
+                case Function.Lifecycle.EnterMenu when !s_hasGameStarted:
+                    ScriptManager.Scripts.ForEach(script =>
+                        ModGuard.Run(script, script.Name, "OnEnterMenu", script.OnEnterMenu)
+                    );
+                    s_hasGameStarted = true;
+                    break;
 
-            // Notify scripts of game begin play
-            if (funcName == EnterGameFuncName)
-            {
-                ScriptManager.Scripts.ForEach(script =>
-                    ModGuard.Run(script, script.Name, "OnEnterGame", script.OnEnterGame)
-                );
-            }
+                // Notify scripts of game begin play
+                case Function.Lifecycle.EnterGame:
+                    ScriptManager.Scripts.ForEach(script =>
+                        ModGuard.Run(script, script.Name, "OnEnterGame", script.OnEnterGame)
+                    );
+                    break;
 
-            // Notify scripts of game tick
-            if (funcName == TickFuncName)
-            {
-                // Tick framework stuff
-                InputManager.Tick();
+                // Notify scripts of game tick
+                case Function.Lifecycle.Tick:
+                    // Tick framework stuff
+                    InputManager.Tick();
 
-                // Call OnTick() for scripts
-                ScriptManager.Scripts.ForEach(script =>
-                    ModGuard.Run(script, script.Name, "OnTick", script.OnTick)
-                );
+                    // Call OnTick() for scripts
+                    ScriptManager.Scripts.ForEach(script =>
+                        ModGuard.Run(script, script.Name, "OnTick", script.OnTick)
+                    );
 
-                // Call OnTick() for script components
-                if (GameObject.AllScriptComponents.Count > 0)
-                {
-                    foreach (var scriptComponent in GameObject.AllScriptComponents.ToArray())
+                    // Call OnTick() for script components
+                    if (GameObject.AllScriptComponents.Count > 0)
                     {
-                        ModGuard.Run(scriptComponent, scriptComponent.GetType().Name, "OnTick", scriptComponent.OnTick);
+                        foreach (var scriptComponent in GameObject.AllScriptComponents.ToArray())
+                        {
+                            ModGuard.Run(scriptComponent, scriptComponent.GetType().Name, "OnTick", scriptComponent.OnTick);
+                        }
                     }
-                }
+                    break;
             }
 
             // Run redirect and skip base implementation if applicable to this function
-            if (RedirectManager.ExecuteRedirector(selfObj, funcObj, funcName, stackPtr, Result))
+            if (
+                RedirectManager.MayRedirect(funcObj, funcName)
+                && RedirectManager.ExecuteRedirector(selfObj, funcObj, funcName, stackPtr, Result)
+            )
             {
                 return;
             }
@@ -166,6 +170,22 @@ internal static class Loader
             // Call base impl. Redirected implementations are expected to reach this by calling "themselves" a second time.
             _ProcessInternalDetourBase!.Invoke(self, Stack, Result);
         });
+    }
+
+    /// <summary>Works out a function's path and lifecycle role, once per UFunction wrapper.</summary>
+    private static string Classify(Function func)
+    {
+        var path = func.GetPathName();
+        func.LifecycleKind = path switch
+        {
+            InitFuncName => Function.Lifecycle.Init,
+            EnterMenuFuncName => Function.Lifecycle.EnterMenu,
+            EnterGameFuncName => Function.Lifecycle.EnterGame,
+            TickFuncName => Function.Lifecycle.Tick,
+            _ => Function.Lifecycle.None,
+        };
+        func.CachedPath = path;
+        return path;
     }
 
     // Detour for FWindowsViewport::ProcessDeferredMessage()
