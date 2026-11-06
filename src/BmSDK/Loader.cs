@@ -114,7 +114,7 @@ internal static class Loader
                 PreloadManager.Run();
 
                 ScriptManager.Scripts.ForEach(script =>
-                    Debug.RunWithSender(script.Name, script.Main)
+                    ModGuard.Run(script, script.Name, "Main", script.Main)
                 );
                 s_hasGameInited = true;
             }
@@ -123,7 +123,7 @@ internal static class Loader
             if (!s_hasGameStarted && funcName == EnterMenuFuncName)
             {
                 ScriptManager.Scripts.ForEach(script =>
-                    Debug.RunWithSender(script.Name, script.OnEnterMenu)
+                    ModGuard.Run(script, script.Name, "OnEnterMenu", script.OnEnterMenu)
                 );
                 s_hasGameStarted = true;
             }
@@ -132,7 +132,7 @@ internal static class Loader
             if (funcName == EnterGameFuncName)
             {
                 ScriptManager.Scripts.ForEach(script =>
-                    Debug.RunWithSender(script.Name, script.OnEnterGame)
+                    ModGuard.Run(script, script.Name, "OnEnterGame", script.OnEnterGame)
                 );
             }
 
@@ -144,7 +144,7 @@ internal static class Loader
 
                 // Call OnTick() for scripts
                 ScriptManager.Scripts.ForEach(script =>
-                    Debug.RunWithSender(script.Name, script.OnTick)
+                    ModGuard.Run(script, script.Name, "OnTick", script.OnTick)
                 );
 
                 // Call OnTick() for script components
@@ -152,7 +152,7 @@ internal static class Loader
                 {
                     foreach (var scriptComponent in GameObject.AllScriptComponents.ToArray())
                     {
-                        Debug.RunWithSender(scriptComponent.GetType().Name, scriptComponent.OnTick);
+                        ModGuard.Run(scriptComponent, scriptComponent.GetType().Name, "OnTick", scriptComponent.OnTick);
                     }
                 }
             }
