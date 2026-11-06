@@ -226,11 +226,19 @@ public static unsafe class MarshalUtil
         var classIndexPtr = classPtr + GameDefine.MemberOffsets.Object__ObjectInternalInteger;
         var classFlagsPtr = classPtr + GameDefine.MemberOffsets.Class__ClassFlags;
 
-        // Not clear yet why this happens, but maybe we don't need to worry about it.
+        // The class may not be in the object array yet: the very first objects (the first classes, and
+        // the Core package) are created before their classes are registered, and before the name
+        // table exists, so the class can't even be identified by name. Such an object gets a
+        // temporary wrapper that is not cached: the first reference to it after startup creates the
+        // real one, with the right type. (Caching a Class-typed wrapper here, as before, left the Core
+        // package wrapped as a Class for the whole session, so every Core.* path printed as
+        // "Core:Object:X" and no redirect on a Core function ever matched.)
         var classIndex = *(int*)classIndexPtr.ToPointer();
         if (classIndex < 1)
         {
-            return CreateManagedWrapper(objPtr, typeof(Class));
+            var early = (GameObject)Activator.CreateInstance(typeof(GameObject), true)!;
+            early.Ptr = objPtr;
+            return early;
         }
 
         // Get managed representation of the object's class
