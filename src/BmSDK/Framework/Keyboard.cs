@@ -23,7 +23,10 @@ namespace BmSDK.Framework;
 /// </remarks>
 public static class Keyboard
 {
-    /// <summary>Whether the key is currently held, as far as the game's window knows.</summary>
+    /// <summary>
+    /// Whether the key is currently held, as far as the game's window knows. Every key counts as
+    /// released when the window loses focus, so nothing sticks after switching windows.
+    /// </summary>
     public static bool IsDown(Keys key) => InputManager.IsDown(key);
 
     /// <summary>Stops the engine seeing this key's presses and releases until <see cref="Unswallow(Keys)"/>.</summary>

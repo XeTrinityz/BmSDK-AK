@@ -198,6 +198,12 @@ internal static class Loader
     // recorded for scripts, and dropped before the engine sees them when a mod swallowed the key.
     private static void ProcessDeferredMessageDetour(IntPtr self, ref FDeferredMessage message)
     {
+        // WM_KILLFOCUS, or WM_ACTIVATE with WA_INACTIVE: every key counts as released.
+        if (message.Message == 0x08 || (message.Message == 0x06 && (message.WParam & 0xFFFF) == 0))
+        {
+            InputManager.OnFocusLost();
+        }
+
         var swallow = message.Message switch
         {
             // WM_KEYDOWN, WM_SYSKEYDOWN

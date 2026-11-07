@@ -97,6 +97,18 @@ internal static class InputManager
     /// <summary>A character message (WM_CHAR and friends). Returns true if the engine must not see it.</summary>
     internal static bool OnChar() => s_lastPressSwallowed;
 
+    /// <summary>
+    /// The window lost focus. Keys released while another window has focus send no release here, so
+    /// every key is taken as released now (the engine clears its own key states at the same point).
+    /// </summary>
+    internal static void OnFocusLost()
+    {
+        Array.Clear(s_keyStates);
+        Array.Clear(s_pressSwallowed);
+        s_lastPressSwallowed = false;
+        InputRouting.OnFocusLost();
+    }
+
     private static bool IsValidKey(Keys key)
     {
         return (int)key >= 0 && (int)key <= 255;

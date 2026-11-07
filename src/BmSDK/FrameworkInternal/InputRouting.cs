@@ -50,6 +50,9 @@ internal static class InputRouting
 
     public static void UnswallowAll() => s_swallowed.Clear();
 
+    /// <summary>The window lost focus: no release will come for a press that was dropped.</summary>
+    public static void OnFocusLost() => s_pressSwallowed.Clear();
+
     /// <summary>Keeps the delegates bound while anything is swallowed, and unbound otherwise.</summary>
     public static void Tick()
     {
