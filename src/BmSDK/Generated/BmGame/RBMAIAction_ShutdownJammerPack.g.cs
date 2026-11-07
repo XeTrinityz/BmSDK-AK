@@ -84,6 +84,7 @@ public partial class RBMAIAction_ShutdownJammerPack : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe override bool HandlesGlance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlesGlance, "BmGame.RBMAIAction_ShutdownJammerPack.HandlesGlance");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMAIAction_ShutdownJammerPack : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe virtual void ShutdownComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutdownComplete, "BmGame.RBMAIAction_ShutdownJammerPack.ShutdownComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMAIAction_ShutdownJammerPack : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_ShutdownJammerPack.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RBMAIAction_ShutdownJammerPack : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe virtual void StartAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAnim, "BmGame.RBMAIAction_ShutdownJammerPack.StartAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RBMAIAction_ShutdownJammerPack : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_ShutdownJammerPack.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

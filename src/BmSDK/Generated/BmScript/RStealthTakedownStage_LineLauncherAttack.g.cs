@@ -84,6 +84,7 @@ public partial class RStealthTakedownStage_LineLauncherAttack : BmSDK.BmGame.RSt
     /// </summary>
     public unsafe override bool FinishAttackVictim(int iVictimNumber)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAttackVictim, "BmScript.RStealthTakedownStage_LineLauncherAttack.FinishAttackVictim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RStealthTakedownStage_LineLauncherAttack : BmSDK.BmGame.RSt
     /// </summary>
     public unsafe virtual void TurnOffRopes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffRopes, "BmScript.RStealthTakedownStage_LineLauncherAttack.TurnOffRopes");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RStealthTakedownStage_LineLauncherAttack : BmSDK.BmGame.RSt
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmScript.RStealthTakedownStage_LineLauncherAttack.GetReferencePosition");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +133,7 @@ public partial class RStealthTakedownStage_LineLauncherAttack : BmSDK.BmGame.RSt
     /// </summary>
     public unsafe override void OverrideChosenAnim(out int Anim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideChosenAnim, "BmScript.RStealthTakedownStage_LineLauncherAttack.OverrideChosenAnim");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

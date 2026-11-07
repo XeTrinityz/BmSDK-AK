@@ -84,6 +84,7 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void ResetSourceRegions()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetSourceRegions, "Engine.Texture2DComposite.ResetSourceRegions");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void UpdateCompositeTexture(int NumMipsToGenerate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCompositeTexture, "Engine.Texture2DComposite.UpdateCompositeTexture");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool SourceTexturesFullyStreamedIn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SourceTexturesFullyStreamedIn, "Engine.Texture2DComposite.SourceTexturesFullyStreamedIn");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsLocationInFearGasXYZ(float X, float Y, float Z)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationInFearGasXYZ, "BmGame.RGFxMovie.IsLocationInFearGasXYZ");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -107,6 +108,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsLocationInFearGas(System.Numerics.Vector3 vTestLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationInFearGas, "BmGame.RGFxMovie.IsLocationInFearGas");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +130,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnLoadedTexture(BmSDK.FString sCallback, BmSDK.FString sPackage, BmSDK.Engine.Texture2D pTexture)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLoadedTexture, "BmGame.RGFxMovie.OnLoadedTexture");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -144,6 +147,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnLoadedPackage(BmSDK.FString sCallback)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLoadedPackage, "BmGame.RGFxMovie.OnLoadedPackage");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +162,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool XI_LoadPackageSF(BmSDK.FString sPackage, BmSDK.FString sCallback, BmSDK.FString sAsset = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_LoadPackageSF, "BmGame.RGFxMovie.XI_LoadPackageSF");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +186,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void XI_CancelPackageSF(BmSDK.FString sPackage = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CancelPackageSF, "BmGame.RGFxMovie.XI_CancelPackageSF");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +208,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyFriendBeatYou()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFriendBeatYou, "BmGame.RGFxMovie.NotifyFriendBeatYou");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +222,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PlayAnim(BmSDK.FString AnimName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAnim, "BmGame.RGFxMovie.PlayAnim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +237,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.FUniqueNetId VS_FakeNetID(int IconId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VS_FakeNetID, "BmGame.RGFxMovie.VS_FakeNetID");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -250,6 +259,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HandleVoiceRec(BmSDK.FString VoiceRecCommand)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleVoiceRec, "BmGame.RGFxMovie.HandleVoiceRec");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -264,6 +274,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ProcessVoiceCommand(BmSDK.FString VoiceRecCommand)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessVoiceCommand, "BmGame.RGFxMovie.ProcessVoiceCommand");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +289,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PreRender(BmSDK.Engine.Canvas Canvas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreRender, "BmGame.RGFxMovie.PreRender");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -292,6 +304,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ManualAdvance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManualAdvance, "BmGame.RGFxMovie.ManualAdvance");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -312,6 +325,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PrepareManualAdvance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepareManualAdvance, "BmGame.RGFxMovie.PrepareManualAdvance");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -332,6 +346,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ManualAdvanceTick(float DeltaT)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManualAdvanceTick, "BmGame.RGFxMovie.ManualAdvanceTick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -346,6 +361,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetSubtitle(BmSDK.FString TheText)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSubtitle, "BmGame.RGFxMovie.SetSubtitle");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -360,6 +376,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveSubtitle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveSubtitle, "BmGame.RGFxMovie.RemoveSubtitle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -380,6 +397,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddSubtitle(int SubtitlePriority, float SubtitleDuration, BmSDK.FString SubtitleText, bool bBackScreen, bool bMovie)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSubtitle, "BmGame.RGFxMovie.AddSubtitle");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -405,6 +423,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetAudioTrackIds(out int EffectsAudioTrack, out int DialogueAudioTrack, out int SubtitleTrackId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAudioTrackIds, "BmGame.RGFxMovie.GetAudioTrackIds");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -434,6 +453,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.FUniqueNetId GetPlayerId()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerId, "BmGame.RGFxMovie.GetPlayerId");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -447,6 +467,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool XI_IsTimeBasedChallenge(int nId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsTimeBasedChallenge, "BmGame.RGFxMovie.XI_IsTimeBasedChallenge");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -461,6 +482,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool XI_IsSignedInOnline()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsSignedInOnline, "BmGame.RGFxMovie.XI_IsSignedInOnline");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -474,6 +496,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool XI_CanPlayOnline()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CanPlayOnline, "BmGame.RGFxMovie.XI_CanPlayOnline");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -487,6 +510,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int XI_GetNPAvailState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetNPAvailState, "BmGame.RGFxMovie.XI_GetNPAvailState");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -500,6 +524,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetDisplayName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetDisplayName, "BmGame.RGFxMovie.XI_GetDisplayName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -513,6 +538,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetNickName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetNickName, "BmGame.RGFxMovie.XI_GetNickName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -526,6 +552,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveBank(BmSDK.Engine.AkBank wwise_bank)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveBank, "BmGame.RGFxMovie.RemoveBank");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -540,6 +567,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PushBank(BmSDK.Engine.AkBank wwise_bank)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushBank, "BmGame.RGFxMovie.PushBank");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -554,6 +582,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetBankIndex(BmSDK.Engine.AkBank wwise_bank)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBankIndex, "BmGame.RGFxMovie.GetBankIndex");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -568,6 +597,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void XI_SetToolTip(BmSDK.FString Text, BmSDK.FString Option = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetToolTip, "BmGame.RGFxMovie.XI_SetToolTip");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -585,6 +615,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void XI_LayoutPrompts()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_LayoutPrompts, "BmGame.RGFxMovie.XI_LayoutPrompts");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -598,6 +629,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void XI_SetPrompt(int PromptId, BmSDK.FString PromptTag, float Alpha)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetPrompt, "BmGame.RGFxMovie.XI_SetPrompt");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -614,6 +646,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void XI_ClearPrompts()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ClearPrompts, "BmGame.RGFxMovie.XI_ClearPrompts");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -627,6 +660,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetPromptStr2(int Id, bool bAsPad)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetPromptStr2, "BmGame.RGFxMovie.XI_GetPromptStr2");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -642,6 +676,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetPromptStr(int Id, bool bAsPad)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetPromptStr, "BmGame.RGFxMovie.XI_GetPromptStr");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -657,6 +692,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void LookupLocTags(BmSDK.FString BaseStr, out BmSDK.FString PadStr, out BmSDK.FString KeyStr)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookupLocTags, "BmGame.RGFxMovie.LookupLocTags");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -680,6 +716,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString LookupLocTag(BmSDK.FString BaseStr, bool bAsPad, bool bNoExpand = default, bool bIsKey2 = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookupLocTag, "BmGame.RGFxMovie.LookupLocTag");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -704,6 +741,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsCircleToAccept()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCircleToAccept, "BmGame.RGFxMovie.IsCircleToAccept");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -717,6 +755,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int xGetGlobalFlag(BmSDK.FString FlagName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_xGetGlobalFlag, "BmGame.RGFxMovie.xGetGlobalFlag");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -731,6 +770,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void xSetGlobalFlag(BmSDK.FString FlagName, bool bValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_xSetGlobalFlag, "BmGame.RGFxMovie.xSetGlobalFlag");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -746,6 +786,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsPS3_480i()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPS3_480i, "BmGame.RGFxMovie.IsPS3_480i");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -766,6 +807,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsPS3_4x3()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPS3_4x3, "BmGame.RGFxMovie.IsPS3_4x3");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -786,6 +828,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAudioSuppressed(bool should_suppress)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAudioSuppressed, "BmGame.RGFxMovie.SetAudioSuppressed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -800,6 +843,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetLanguageExt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLanguageExt, "BmGame.RGFxMovie.GetLanguageExt");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -820,6 +864,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsPointerValid()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPointerValid, "BmGame.RGFxMovie.IsPointerValid");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -840,6 +885,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAudioState(BmSDK.FString StateName, BmSDK.FString StateValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAudioState, "BmGame.RGFxMovie.SetAudioState");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -862,6 +908,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAudioParameter(BmSDK.FString ParamName, float ParamValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAudioParameter, "BmGame.RGFxMovie.SetAudioParameter");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -884,6 +931,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void KillEventInstance(int InstanceID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillEventInstance, "BmGame.RGFxMovie.KillEventInstance");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -905,6 +953,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TriggerAudioEventsQueue(int ChannelID, BmSDK.FString Source_Event_Thing__PipeSeparated, int NumEvents)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAudioEventsQueue, "BmGame.RGFxMovie.TriggerAudioEventsQueue");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -928,6 +977,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TriggerAudioEvent(int ChannelID, BmSDK.FString Source, BmSDK.FString Event, BmSDK.FString Thing)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAudioEvent, "BmGame.RGFxMovie.TriggerAudioEvent");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -952,6 +1002,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool LocalisedExists(BmSDK.FString Str)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocalisedExists, "BmGame.RGFxMovie.LocalisedExists");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -966,6 +1017,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString LocaliseCaps(BmSDK.FString Str)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocaliseCaps, "BmGame.RGFxMovie.LocaliseCaps");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -987,6 +1039,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString Localise(BmSDK.FString Str)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Localise, "BmGame.RGFxMovie.Localise");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1008,6 +1061,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UC_TriggerPromptClicked(int PromptId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_TriggerPromptClicked, "BmGame.RGFxMovie.UC_TriggerPromptClicked");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1022,6 +1076,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateHudVisibility(bool bVisible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateHudVisibility, "BmGame.RGFxMovie.UpdateHudVisibility");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1036,6 +1091,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsGenericErrorOpen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGenericErrorOpen, "BmGame.RGFxMovie.IsGenericErrorOpen");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1049,6 +1105,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnFadeCompleted_Callback()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFadeCompleted_Callback, "BmGame.RGFxMovie.OnFadeCompleted_Callback");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1062,6 +1119,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PopupRequester_Callback(BmSDK.BmGame.RGFxMoviePopupRequester ThePopUpMsg, int ButtonId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopupRequester_Callback, "BmGame.RGFxMovie.PopupRequester_Callback");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1077,6 +1135,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGFxMoviePopupRequester OpenPopupMessage4(BmSDK.FString Prompt1, BmSDK.FString Prompt2, BmSDK.FString Prompt3, BmSDK.FString Prompt4, BmSDK.FString Message, int DefaultSelected = default, bool bAllowBack = default, BmSDK.GFxUI.SwfMovie iMovie = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenPopupMessage4, "BmGame.RGFxMovie.OpenPopupMessage4");
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1098,6 +1157,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGFxMoviePopupRequester OpenPopupMessage3(BmSDK.FString Prompt1, BmSDK.FString Prompt2, BmSDK.FString Prompt3, BmSDK.FString Message, int DefaultSelected = default, bool bAllowBack = default, BmSDK.GFxUI.SwfMovie iMovie = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenPopupMessage3, "BmGame.RGFxMovie.OpenPopupMessage3");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1118,6 +1178,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGFxMoviePopupRequester OpenPopupMessage2(BmSDK.FString Prompt1, BmSDK.FString Prompt2, BmSDK.FString Message, int DefaultSelected = default, bool bAllowBack = default, BmSDK.GFxUI.SwfMovie iMovie = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenPopupMessage2, "BmGame.RGFxMovie.OpenPopupMessage2");
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1137,6 +1198,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGFxMoviePopupRequester OpenPopupMessage1(BmSDK.FString Prompt1, BmSDK.FString Message, bool bAllowBack = default, BmSDK.GFxUI.SwfMovie iMovie = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenPopupMessage1, "BmGame.RGFxMovie.OpenPopupMessage1");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1154,6 +1216,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe override void OnAspectRatioChanged(float aspect_ratio)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAspectRatioChanged, "BmGame.RGFxMovie.OnAspectRatioChanged");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1168,6 +1231,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool XI_GetUsingGamepad()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetUsingGamepad, "BmGame.RGFxMovie.XI_GetUsingGamepad");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1181,6 +1245,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAspectRatioAuto()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAspectRatioAuto, "BmGame.RGFxMovie.SetAspectRatioAuto");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1194,6 +1259,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void KismetEvent(BmSDK.FString EventName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KismetEvent, "BmGame.RGFxMovie.KismetEvent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1208,6 +1274,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetTheClassName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTheClassName, "BmGame.RGFxMovie.GetTheClassName");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1221,6 +1288,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetGameStatus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGameStatus, "BmGame.RGFxMovie.GetGameStatus");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1234,6 +1302,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetGameStatus(BmSDK.BmGame.RGameRI.EGameStatus Status)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGameStatus, "BmGame.RGFxMovie.SetGameStatus");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1248,6 +1317,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void XI_ReturnToChallengeMenu()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ReturnToChallengeMenu, "BmGame.RGFxMovie.XI_ReturnToChallengeMenu");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1261,6 +1331,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool XI_IsFrontEndChallenge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsFrontEndChallenge, "BmGame.RGFxMovie.XI_IsFrontEndChallenge");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1274,6 +1345,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetPlatformTag()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlatformTag, "BmGame.RGFxMovie.GetPlatformTag");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1287,6 +1359,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetPlatformStr()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlatformStr, "BmGame.RGFxMovie.GetPlatformStr");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1300,6 +1373,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool XI_IsDemo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsDemo, "BmGame.RGFxMovie.XI_IsDemo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1313,6 +1387,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameRI GetGRI()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGRI, "BmGame.RGFxMovie.GetGRI");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1326,6 +1401,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo GetRGI()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRGI, "BmGame.RGFxMovie.GetRGI");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1339,6 +1415,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.WorldInfo GetWI()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWI, "BmGame.RGFxMovie.GetWI");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1352,6 +1429,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnMWLeaderboardRead(bool bWasSuccessful, BmSDK.BmGame.ROnlineStatsReadMostWanted MWStats)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMWLeaderboardRead, "BmGame.RGFxMovie.OnMWLeaderboardRead");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1367,6 +1445,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SendLeaderBoardToFlash(int Id, int total, BmSDK.TArray<int> FriendIndex, BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> NetIDs, BmSDK.TArray<int> Ranks, BmSDK.TArray<BmSDK.FString> NickNames, BmSDK.TArray<int> Stars, BmSDK.TArray<float> Scores, BmSDK.TArray<int> RivalPoints, BmSDK.TArray<float> Story, BmSDK.TArray<float> MW, BmSDK.TArray<float> AR)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendLeaderBoardToFlash, "BmGame.RGFxMovie.SendLeaderBoardToFlash");
         byte* paramsPtr = stackalloc byte[184];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1392,6 +1471,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovie.Init");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1406,6 +1486,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe override BmSDK.Engine.PlayerController GetPC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPC, "BmGame.RGFxMovie.GetPC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1419,6 +1500,7 @@ public partial class RGFxMovie : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameObject
     /// </summary>
     public unsafe override BmSDK.Engine.LocalPlayer GetLP()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLP, "BmGame.RGFxMovie.GetLP");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

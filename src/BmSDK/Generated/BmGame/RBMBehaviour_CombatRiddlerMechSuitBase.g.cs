@@ -84,6 +84,7 @@ public partial class RBMBehaviour_CombatRiddlerMechSuitBase : BmSDK.BmGame.RBMBe
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat ForceReceiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForceToGiveToPawn, "BmGame.RBMBehaviour_CombatRiddlerMechSuitBase.GetForceToGiveToPawn");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -108,6 +109,7 @@ public partial class RBMBehaviour_CombatRiddlerMechSuitBase : BmSDK.BmGame.RBMBe
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetMovementForce(System.Numerics.Vector3 SourceLocation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMovementForce, "BmGame.RBMBehaviour_CombatRiddlerMechSuitBase.GetMovementForce");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

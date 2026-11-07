@@ -84,6 +84,7 @@ public partial class RHarpoonGunNw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetClassNameForHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetClassNameForHUD, "BmScript.RHarpoonGunNw.GetGadgetClassNameForHUD");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RHarpoonGunNw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RHarpoonGunNw.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

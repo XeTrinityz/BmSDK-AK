@@ -84,6 +84,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AdjustWatchPointForFloor(System.Numerics.Vector3 CurrentPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustWatchPointForFloor, "BmGame.RAEC_Brang_Sub_WatchBatarang.AdjustWatchPointForFloor");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe override bool CanDodgeProjectile(System.Numerics.Vector3 ThrownFromPos, int CheckBatarangID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDodgeProjectile, "BmGame.RAEC_Brang_Sub_WatchBatarang.CanDodgeProjectile");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe virtual void SetWatchPoint(System.Numerics.Vector3 NewWatchPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWatchPoint, "BmGame.RAEC_Brang_Sub_WatchBatarang.SetWatchPoint");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe virtual void StartleForCasualtyImpact(System.Numerics.Vector3 NewPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleForCasualtyImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.StartleForCasualtyImpact");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +145,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe virtual void StartleForImpact(System.Numerics.Vector3 NewPos, bool bTerrorShootStartle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleForImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.StartleForImpact");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -156,6 +161,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe virtual void GlanceAtImpact(System.Numerics.Vector3 GlanceLoc, float NewGlanceTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GlanceAtImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.GlanceAtImpact");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -171,6 +177,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe virtual void AssignNewPosition(System.Numerics.Vector3 NewPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignNewPosition, "BmGame.RAEC_Brang_Sub_WatchBatarang.AssignNewPosition");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -185,6 +192,7 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Brang_Sub_WatchBatarang.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

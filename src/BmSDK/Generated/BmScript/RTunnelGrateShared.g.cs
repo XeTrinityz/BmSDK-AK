@@ -84,6 +84,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RTunnelGrateShared.Tick");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override BmSDK.FString GetPrompt(BmSDK.Engine.PlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrompt, "BmScript.RTunnelGrateShared.GetPrompt");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override float OverridesRun(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridesRun, "BmScript.RTunnelGrateShared.OverridesRun");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmScript.RTunnelGrateShared.CanReachItem");
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton GetInteractButton(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractButton, "BmScript.RTunnelGrateShared.GetInteractButton");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +159,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override bool MustBeCrouched(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MustBeCrouched, "BmScript.RTunnelGrateShared.MustBeCrouched");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +174,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmScript.RTunnelGrateShared.IsActive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -182,6 +189,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override void Interact(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmScript.RTunnelGrateShared.Interact");
         byte* paramsPtr = stackalloc byte[224];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -196,6 +204,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe virtual void TriggerFarMove(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFarMove, "BmScript.RTunnelGrateShared.TriggerFarMove");
         byte* paramsPtr = stackalloc byte[192];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.Engine.PlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RTunnelGrateShared.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[192];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -224,6 +234,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override float GetFOVDegrees(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVDegrees, "BmScript.RTunnelGrateShared.GetFOVDegrees");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +249,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override float GetHeightRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeightRange, "BmScript.RTunnelGrateShared.GetHeightRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -251,6 +263,7 @@ public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.I
     /// </summary>
     public unsafe override void PostBeginPlay_Delayed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay_Delayed, "BmScript.RTunnelGrateShared.PostBeginPlay_Delayed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

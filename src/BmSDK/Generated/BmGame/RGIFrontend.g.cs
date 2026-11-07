@@ -84,6 +84,7 @@ public partial class RGIFrontend : BmSDK.BmGame.RGameInfo, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool CustomContentIsFiltered(BmSDK.FString sFilter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomContentIsFiltered, "BmGame.RGIFrontend.CustomContentIsFiltered");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGIFrontend : BmSDK.BmGame.RGameInfo, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DestroyWBIDOverlayManager()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyWBIDOverlayManager, "BmGame.RGIFrontend.DestroyWBIDOverlayManager");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RGIFrontend : BmSDK.BmGame.RGameInfo, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void CreateWBIDOverlayManager()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWBIDOverlayManager, "BmGame.RGIFrontend.CreateWBIDOverlayManager");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RGIFrontend : BmSDK.BmGame.RGameInfo, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RGIFrontend.PreBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

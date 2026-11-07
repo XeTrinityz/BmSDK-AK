@@ -84,6 +84,7 @@ public partial class RAEC_Search_Sub_SideRoom : BmSDK.BmGame.RAEC_Search_Sub_For
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Search_Sub_SideRoom.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_Search_Sub_SideRoom : BmSDK.BmGame.RAEC_Search_Sub_For
     /// </summary>
     public unsafe virtual void NotifyLeaderSignalledStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyLeaderSignalledStart, "BmGame.RAEC_Search_Sub_SideRoom.NotifyLeaderSignalledStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RAEC_Search_Sub_SideRoom : BmSDK.BmGame.RAEC_Search_Sub_For
     /// </summary>
     public unsafe virtual void StartFromSearch(BmSDK.BmGame.RBMAIController NewCon, System.Numerics.Vector3 inLocator, bool bLeader)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_SideRoom.StartFromSearch");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RAEC_Search_Sub_SideRoom : BmSDK.BmGame.RAEC_Search_Sub_For
     /// </summary>
     public unsafe virtual void DoEventBark(BmSDK.FName bark)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoEventBark, "BmGame.RAEC_Search_Sub_SideRoom.DoEventBark");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +145,7 @@ public partial class RAEC_Search_Sub_SideRoom : BmSDK.BmGame.RAEC_Search_Sub_For
     /// </summary>
     public unsafe override void NotifyEvent(BmSDK.BmGame.RBMAIAction NotifyAction, BmSDK.FString EventType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEvent, "BmGame.RAEC_Search_Sub_SideRoom.NotifyEvent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -156,6 +161,7 @@ public partial class RAEC_Search_Sub_SideRoom : BmSDK.BmGame.RAEC_Search_Sub_For
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_SideRoom.GetCurrentPathHandle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

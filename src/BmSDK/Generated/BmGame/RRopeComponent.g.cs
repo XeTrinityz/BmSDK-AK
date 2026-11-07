@@ -84,6 +84,7 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool GetIsOverstretched(BmSDK.BmGame.RRopeComponentBase.ERopeEndType TestStartEnd, out float OutOverstretchPos, float OverstretchRatio)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsOverstretched, "BmGame.RRopeComponent.GetIsOverstretched");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -109,6 +110,7 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     /// </summary>
     public unsafe override void FinaliseRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinaliseRope, "BmGame.RRopeComponent.FinaliseRope");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +131,7 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     /// </summary>
     public unsafe override void InitialiseRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseRope, "BmGame.RRopeComponent.InitialiseRope");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +152,7 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     /// </summary>
     public unsafe override float GetMinRopeLength()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMinRopeLength, "BmGame.RRopeComponent.GetMinRopeLength");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +173,7 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual void JoinRope(BmSDK.BmGame.RRopeComponent OtherRope, BmSDK.BmGame.RRopeComponentBase.ERopeEndType ThisRopeJoinEnd, BmSDK.BmGame.RRopeComponentBase.ERopeEndType OtherRopeJoinEnd)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JoinRope, "BmGame.RRopeComponent.JoinRope");
         byte* paramsPtr = stackalloc byte[26];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +197,7 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 SplitRope(float SplitPos, BmSDK.BmGame.RRopeComponentBase.ERopeEndType MeasurementRopeEnd, out BmSDK.BmGame.RRopeComponentBase.ERopeEndType ThisSplitEnd, BmSDK.BmGame.RRopeComponent InOutOtherSplitEnd)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SplitRope, "BmGame.RRopeComponent.SplitRope");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +224,7 @@ public partial class RRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmSDK.IGa
     /// </summary>
     public unsafe override void UpdateRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRope, "BmGame.RRopeComponent.UpdateRope");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

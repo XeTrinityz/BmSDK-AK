@@ -84,6 +84,7 @@ public partial class NavMeshPath_AlongLine : BmSDK.Engine.NavMeshPathConstraint,
     /// </summary>
     public unsafe override void Recycle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "Engine.NavMeshPath_AlongLine.Recycle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

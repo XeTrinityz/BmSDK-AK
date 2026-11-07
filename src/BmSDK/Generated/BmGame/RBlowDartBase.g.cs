@@ -79,6 +79,7 @@ public partial class RBlowDartBase : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
     /// </summary>
     public unsafe virtual bool CalculateFireGunHitResult(System.Numerics.Vector3 StartPos, System.Numerics.Vector3 EndPos, out BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo> OutImpactInfo, float CheckBoxExtent = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateFireGunHitResult, "BmGame.RBlowDartBase.CalculateFireGunHitResult");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

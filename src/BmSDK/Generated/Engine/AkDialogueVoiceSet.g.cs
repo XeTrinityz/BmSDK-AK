@@ -84,6 +84,7 @@ public partial class AkDialogueVoiceSet : BmSDK.Engine.AkDialogueVoice, BmSDK.IG
     /// </summary>
     public unsafe virtual void GetAllVoiceNamesFromSet(out BmSDK.TArray<BmSDK.FName> OutList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllVoiceNamesFromSet, "Engine.AkDialogueVoiceSet.GetAllVoiceNamesFromSet");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

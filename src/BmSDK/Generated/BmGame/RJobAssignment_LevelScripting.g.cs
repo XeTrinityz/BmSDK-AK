@@ -84,6 +84,7 @@ public partial class RJobAssignment_LevelScripting : BmSDK.BmGame.RJobAssignment
     /// </summary>
     public unsafe virtual bool LevelScriptRootIsActive(BmSDK.BmGame.RSeqEvent_LevelScripting TestRoot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LevelScriptRootIsActive, "BmGame.RJobAssignment_LevelScripting.LevelScriptRootIsActive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RJobAssignment_LevelScripting : BmSDK.BmGame.RJobAssignment
     /// </summary>
     public unsafe virtual bool CanJoinScripting(BmSDK.BmGame.RBMRoomAIState RoomState, BmSDK.BmGame.RBMAIController ThugCon = default, BmSDK.GameObject AssignTarget = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanJoinScripting, "BmGame.RJobAssignment_LevelScripting.CanJoinScripting");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RJobAssignment_LevelScripting : BmSDK.BmGame.RJobAssignment
     /// </summary>
     public unsafe override void DoAssignment(BmSDK.BmGame.RBMRoomAIState RoomState, BmSDK.BmGame.RBMAIController ThugCon, BmSDK.GameObject AssignTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoAssignment, "BmGame.RJobAssignment_LevelScripting.DoAssignment");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +133,7 @@ public partial class RJobAssignment_LevelScripting : BmSDK.BmGame.RJobAssignment
     /// </summary>
     public unsafe override bool CanBeAssigned(BmSDK.BmGame.RBMRoomAIState RoomState, BmSDK.BmGame.RBMAIController ThugCon, BmSDK.GameObject AssignTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeAssigned, "BmGame.RJobAssignment_LevelScripting.CanBeAssigned");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +150,7 @@ public partial class RJobAssignment_LevelScripting : BmSDK.BmGame.RJobAssignment
     /// </summary>
     public unsafe override bool IsAlreadyDoingJob(BmSDK.BmGame.RBMAIController TestCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAlreadyDoingJob, "BmGame.RJobAssignment_LevelScripting.IsAlreadyDoingJob");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +165,7 @@ public partial class RJobAssignment_LevelScripting : BmSDK.BmGame.RJobAssignment
     /// </summary>
     public unsafe override void AddToDestList(BmSDK.BmGame.RBMRoomAIState RoomState, out BmSDK.TArray<BmSDK.BmGame.RAEC_LevelScripting.FSearchTarget> OutList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToDestList, "BmGame.RJobAssignment_LevelScripting.AddToDestList");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

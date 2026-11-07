@@ -84,6 +84,7 @@ public partial class ROnlineStatsWrite : BmSDK.Engine.OnlineStatsWrite, BmSDK.IG
     /// </summary>
     public unsafe virtual void CopyAndWriteAllStats(BmSDK.BmGame.RPlayerController PC, BmSDK.Engine.OnlineSubsystem.FUniqueNetId UniqId, BmSDK.Engine.PlayerReplicationInfo PRI, BmSDK.Engine.OnlineStatsInterface StatsInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyAndWriteAllStats, "BmGame.ROnlineStatsWrite.CopyAndWriteAllStats");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -101,6 +102,7 @@ public partial class ROnlineStatsWrite : BmSDK.Engine.OnlineStatsWrite, BmSDK.IG
     /// </summary>
     public unsafe virtual bool CopyAllStats(BmSDK.BmGame.RPlayerController PC, BmSDK.Engine.PlayerReplicationInfo PRI)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyAllStats, "BmGame.ROnlineStatsWrite.CopyAllStats");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

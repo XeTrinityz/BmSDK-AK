@@ -79,6 +79,7 @@ public partial class NxForceFieldComponent : BmSDK.Engine.PrimitiveComponent, Bm
     /// </summary>
     public unsafe virtual void DoInitRBPhys()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoInitRBPhys, "Engine.NxForceFieldComponent.DoInitRBPhys");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

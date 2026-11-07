@@ -84,6 +84,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override bool IsValidLoc(BmSDK.BmGame.RPawnPlayerCombat TestPlayer, BmSDK.BmGame.RPawnVillain TestPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidLoc, "BmScript.RBMCombatPoint_LoPipes.IsValidLoc");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmScript.RBMCombatPoint_LoPipes.OnToggle");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override bool PlayDestroyAnim(BmSDK.FName AnimName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDestroyAnim, "BmScript.RBMCombatPoint_LoPipes.PlayDestroyAnim");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override BmSDK.FName GetAnimName(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimName, "BmScript.RBMCombatPoint_LoPipes.GetAnimName");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe virtual void StopElectric()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopElectric, "BmScript.RBMCombatPoint_LoPipes.StopElectric");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void OnFxEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFxEvent, "BmScript.RBMCombatPoint_LoPipes.OnFxEvent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +174,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void UsedByPawn(BmSDK.BmGame.RPawnCombat NewUser, BmSDK.Engine.Actor NewTarget = default, bool bUsedDuringTaunt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedByPawn, "BmScript.RBMCombatPoint_LoPipes.UsedByPawn");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +191,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void DebugReset(BmSDK.BmGame.RBMCombatManager CM)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugReset, "BmScript.RBMCombatPoint_LoPipes.DebugReset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -198,6 +206,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void OnSwapMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSwapMesh, "BmScript.RBMCombatPoint_LoPipes.OnSwapMesh");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -211,6 +220,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void SetMyPylon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMyPylon, "BmScript.RBMCombatPoint_LoPipes.SetMyPylon");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -224,6 +234,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void SetupHighlightMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupHighlightMesh, "BmScript.RBMCombatPoint_LoPipes.SetupHighlightMesh");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -237,6 +248,7 @@ public partial class RBMCombatPoint_LoPipes : BmSDK.BmGame.RBMCombatPoint_Enviro
     /// </summary>
     public unsafe override void RegisterStasisCheckMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterStasisCheckMesh, "BmScript.RBMCombatPoint_LoPipes.RegisterStasisCheckMesh");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

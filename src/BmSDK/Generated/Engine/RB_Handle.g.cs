@@ -84,6 +84,7 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FQuat GetOrientation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOrientation, "Engine.RB_Handle.GetOrientation");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetOrientation(out BmSDK.GameObject.FQuat NewOrientation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOrientation, "Engine.RB_Handle.SetOrientation");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +129,7 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateSmoothLocation(out System.Numerics.Vector3 NewLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSmoothLocation, "Engine.RB_Handle.UpdateSmoothLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +153,7 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetSmoothLocation(System.Numerics.Vector3 NewLocation, float MoveTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSmoothLocation, "Engine.RB_Handle.SetSmoothLocation");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -172,6 +176,7 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetLocation(System.Numerics.Vector3 NewLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLocation, "Engine.RB_Handle.SetLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -193,6 +198,7 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ReleaseComponent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseComponent, "Engine.RB_Handle.ReleaseComponent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -213,6 +219,7 @@ public partial class RB_Handle : BmSDK.Engine.ActorComponent, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GrabComponent(BmSDK.Engine.PrimitiveComponent Component, BmSDK.FName InBoneName, System.Numerics.Vector3 GrabLocation, bool bConstrainRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GrabComponent, "Engine.RB_Handle.GrabComponent");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

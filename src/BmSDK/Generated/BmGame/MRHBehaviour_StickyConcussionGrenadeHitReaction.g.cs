@@ -84,6 +84,7 @@ public partial class MRHBehaviour_StickyConcussionGrenadeHitReaction : BmSDK.BmG
     /// </summary>
     public unsafe virtual void ExitStickyConcussionGrenadeHitReaction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitStickyConcussionGrenadeHitReaction, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.ExitStickyConcussionGrenadeHitReaction");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MRHBehaviour_StickyConcussionGrenadeHitReaction : BmSDK.BmG
     /// </summary>
     public unsafe virtual void ResetStunDuration()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetStunDuration, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.ResetStunDuration");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class MRHBehaviour_StickyConcussionGrenadeHitReaction : BmSDK.BmG
     /// </summary>
     public unsafe override void Initialise(BmSDK.BmGame.RPawnCombat.FDamageInfo NewDmgInfo, bool bNewInterruptedHitReaction = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.Initialise");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class MRHBehaviour_StickyConcussionGrenadeHitReaction : BmSDK.BmG
     /// </summary>
     public unsafe override bool AwareOfPlayer(BmSDK.Engine.Actor Player, BmSDK.Class dmgType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwareOfPlayer, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.AwareOfPlayer");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

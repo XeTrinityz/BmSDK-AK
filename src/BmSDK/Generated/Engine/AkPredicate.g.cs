@@ -79,6 +79,7 @@ public partial class AkPredicate : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsTrue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTrue, "Engine.AkPredicate.IsTrue");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

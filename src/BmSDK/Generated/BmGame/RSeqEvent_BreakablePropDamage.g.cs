@@ -97,6 +97,7 @@ public partial class RSeqEvent_BreakablePropDamage : BmSDK.Engine.SequenceEvent,
     /// </summary>
     public unsafe virtual void HandleDamage(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, int dmgStage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleDamage, "BmGame.RSeqEvent_BreakablePropDamage.HandleDamage");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +114,7 @@ public partial class RSeqEvent_BreakablePropDamage : BmSDK.Engine.SequenceEvent,
     /// </summary>
     public unsafe virtual bool IsValidDamageStage(int dmgStage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidDamageStage, "BmGame.RSeqEvent_BreakablePropDamage.IsValidDamageStage");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

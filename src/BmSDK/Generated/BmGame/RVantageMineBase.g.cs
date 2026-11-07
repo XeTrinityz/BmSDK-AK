@@ -84,6 +84,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void SetDepthPriorityGroup(BmSDK.Engine.Scene.ESceneDepthPriorityGroup NewGroup)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDepthPriorityGroup, "BmGame.RVantageMineBase.SetDepthPriorityGroup");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool IsDisrupted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDisrupted, "BmGame.RVantageMineBase.IsDisrupted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual BmSDK.FString GetDisruptorDescriptionParameters()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorDescriptionParameters, "BmGame.RVantageMineBase.GetDisruptorDescriptionParameters");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool RequiresDisruptorUpgrade()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequiresDisruptorUpgrade, "BmGame.RVantageMineBase.RequiresDisruptorUpgrade");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool RequiresDroneDisruptor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequiresDroneDisruptor, "BmGame.RVantageMineBase.RequiresDroneDisruptor");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual BmSDK.Engine.MeshComponent GetDisruptorTargetMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorTargetMesh, "BmGame.RVantageMineBase.GetDisruptorTargetMesh");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual float GetDisruptorOverridePriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorOverridePriority, "BmGame.RVantageMineBase.GetDisruptorOverridePriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -176,6 +183,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool HitByDisruptorGadgetSecondary()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByDisruptorGadgetSecondary, "BmGame.RVantageMineBase.HitByDisruptorGadgetSecondary");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +197,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool CanBeDisruptedSecondary()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeDisruptedSecondary, "BmGame.RVantageMineBase.CanBeDisruptedSecondary");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +211,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool HitByDisruptorGadgetCharge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByDisruptorGadgetCharge, "BmGame.RVantageMineBase.HitByDisruptorGadgetCharge");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +225,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool CanBeDisrupted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeDisrupted, "BmGame.RVantageMineBase.CanBeDisrupted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -228,6 +239,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void DestroyAfterJam()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyAfterJam, "BmGame.RVantageMineBase.DestroyAfterJam");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -241,6 +253,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDisruptorTargetPosition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorTargetPosition, "BmGame.RVantageMineBase.GetDisruptorTargetPosition");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -254,6 +267,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe override void BlowUp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlowUp, "BmGame.RVantageMineBase.BlowUp");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -267,6 +281,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RVantageMineBase.Tick");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -281,6 +296,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual bool IsPlayerNearMine(BmSDK.BmGame.RPawnPlayer PawnPlayer, out float Dist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayerNearMine, "BmGame.RVantageMineBase.IsPlayerNearMine");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -298,6 +314,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe override void SetDangerEffects(float NewSpeed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDangerEffects, "BmGame.RVantageMineBase.SetDangerEffects");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -312,6 +329,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void SetHidePointAttached(BmSDK.BmGame.RHidePoint NewVantage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidePointAttached, "BmGame.RVantageMineBase.SetHidePointAttached");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -326,6 +344,7 @@ public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RVantageMineBase.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

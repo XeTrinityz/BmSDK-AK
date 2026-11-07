@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_HoldLedge : BmSDK.BmGame.RSpecialMoveI
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_HoldLedge.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

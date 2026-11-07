@@ -84,6 +84,7 @@ public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObj
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RHelicopterPathNode.UnlinkToActor");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObj
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.RHelicopterPathNode.LinkToActor");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void UnLinkPath(BmSDK.BmGame.RHelicopterPathNode Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnLinkPath, "BmGame.RHelicopterPathNode.UnLinkPath");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +136,7 @@ public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void LinkPath(BmSDK.BmGame.RHelicopterPathNode Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkPath, "BmGame.RHelicopterPathNode.LinkPath");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

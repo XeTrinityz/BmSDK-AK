@@ -79,6 +79,7 @@ public partial class ActorFactory : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PostCreateActor(BmSDK.Engine.Actor NewActor, BmSDK.Engine.SeqAct_ActorFactory ActorFactoryData = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostCreateActor, "Engine.ActorFactory.PostCreateActor");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

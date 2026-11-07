@@ -99,6 +99,7 @@ public partial class RSavedMove : BmSDK.Engine.SavedMove, BmSDK.IGameObject
     /// </summary>
     public unsafe override byte CompressedFlags()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CompressedFlags, "BmGame.RSavedMove.CompressedFlags");
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +113,7 @@ public partial class RSavedMove : BmSDK.Engine.SavedMove, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool IsImportantMove(System.Numerics.Vector3 CompareAccel)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsImportantMove, "BmGame.RSavedMove.IsImportantMove");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +128,7 @@ public partial class RSavedMove : BmSDK.Engine.SavedMove, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool CanCombineWith(BmSDK.Engine.SavedMove NewMove, BmSDK.Engine.Pawn inPawn, float MaxDelta)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCombineWith, "BmGame.RSavedMove.CanCombineWith");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

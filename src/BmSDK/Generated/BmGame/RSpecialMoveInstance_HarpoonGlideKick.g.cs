@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe virtual void TriggerHarpoonVictim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerHarpoonVictim, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.TriggerHarpoonVictim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override bool DelayHarpoonDamage()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DelayHarpoonDamage, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.DelayHarpoonDamage");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override void RotationOnly()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RotationOnly, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.RotationOnly");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override void PlayHarpoonAnim(BmSDK.FName AnimName, bool bMirrored, bool bCanAim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHarpoonAnim, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.PlayHarpoonAnim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override bool IsInteruptable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInteruptable, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.IsInteruptable");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override void NotifyTouch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyTouch, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.NotifyTouch");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +175,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override void NotifyBump(BmSDK.Engine.Actor Other, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBump, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.NotifyBump");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +191,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NewMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -198,6 +206,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -211,6 +220,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe virtual void TriggerGlideKick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGlideKick, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.TriggerGlideKick");
         byte* paramsPtr = stackalloc byte[352];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -224,6 +234,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +249,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe virtual void GlideKickSmash()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GlideKickSmash, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.GlideKickSmash");
         byte* paramsPtr = stackalloc byte[284];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -251,6 +263,7 @@ public partial class RSpecialMoveInstance_HarpoonGlideKick : BmSDK.BmGame.RSpeci
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnVillain GetHarpoonTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHarpoonTarget, "BmGame.RSpecialMoveInstance_HarpoonGlideKick.GetHarpoonTarget");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

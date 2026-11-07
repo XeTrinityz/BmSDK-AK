@@ -84,6 +84,7 @@ public partial class RSeqAct_LoadCapeAnims : BmSDK.Engine.SequenceAction, BmSDK.
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_LoadCapeAnims.Activated");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_LoadCapeAnims : BmSDK.Engine.SequenceAction, BmSDK.
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RCapeComponent FindCapeComponent(BmSDK.GameObject InObject)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindCapeComponent, "BmGame.RSeqAct_LoadCapeAnims.FindCapeComponent");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

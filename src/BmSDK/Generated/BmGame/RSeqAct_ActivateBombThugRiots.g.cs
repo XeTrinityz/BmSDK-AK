@@ -97,6 +97,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_ActivateBombThugRiots.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void SetUpRiotZones()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUpRiotZones, "BmGame.RSeqAct_ActivateBombThugRiots.SetUpRiotZones");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void ResetRiotZones()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetRiotZones, "BmGame.RSeqAct_ActivateBombThugRiots.ResetRiotZones");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +140,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void RemoveRiotThug(BmSDK.BmGame.RPawnVillain OldThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveRiotThug, "BmGame.RSeqAct_ActivateBombThugRiots.RemoveRiotThug");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +155,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void BombThugRanAway()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugRanAway, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugRanAway");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +169,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void BombThugKOd()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugKOd, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugKOd");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +183,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void BombThugDefused()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugDefused, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugDefused");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +197,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void BombThugScanned(BmSDK.BmGame.RPawnVillain NewBombThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugScanned, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanned");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +212,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual bool HasBombThugBeenFound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBombThugBeenFound, "BmGame.RSeqAct_ActivateBombThugRiots.HasBombThugBeenFound");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +226,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void BombThugScanningStopped()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugScanningStopped, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanningStopped");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -230,6 +240,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void BombThugScanningStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugScanningStarted, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanningStarted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -243,6 +254,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual bool HaveIBeenScanned(BmSDK.BmGame.RPawnVillain TestThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HaveIBeenScanned, "BmGame.RSeqAct_ActivateBombThugRiots.HaveIBeenScanned");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +269,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual bool AmIBombThug(BmSDK.BmGame.RPawnVillain TestThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AmIBombThug, "BmGame.RSeqAct_ActivateBombThugRiots.AmIBombThug");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -271,6 +284,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual bool PotentialBombThugScanned(BmSDK.BmGame.RPawnVillain NewThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PotentialBombThugScanned, "BmGame.RSeqAct_ActivateBombThugRiots.PotentialBombThugScanned");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -285,6 +299,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe virtual void AddThug(BmSDK.BmGame.RPawnVillain NewThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddThug, "BmGame.RSeqAct_ActivateBombThugRiots.AddThug");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -299,6 +314,7 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_ActivateBombThugRiots.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

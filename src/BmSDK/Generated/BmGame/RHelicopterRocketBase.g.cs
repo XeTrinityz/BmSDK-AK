@@ -79,6 +79,7 @@ public partial class RHelicopterRocketBase : BmSDK.Engine.DynamicSMActor, BmSDK.
     /// </summary>
     public unsafe virtual void HitLevel(System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitLevel, "BmGame.RHelicopterRocketBase.HitLevel");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

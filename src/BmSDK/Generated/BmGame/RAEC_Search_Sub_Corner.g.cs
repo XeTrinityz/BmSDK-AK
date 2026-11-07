@@ -84,6 +84,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe virtual bool IsCornerLockedBySomeoneInThisGroup()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCornerLockedBySomeoneInThisGroup, "BmGame.RAEC_Search_Sub_Corner.IsCornerLockedBySomeoneInThisGroup");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe virtual bool IsPlayerBehind()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayerBehind, "BmGame.RAEC_Search_Sub_Corner.IsPlayerBehind");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe virtual bool IsThugVisibleFromCornerEndNavCheck()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsThugVisibleFromCornerEndNavCheck, "BmGame.RAEC_Search_Sub_Corner.IsThugVisibleFromCornerEndNavCheck");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe virtual void StartFromSearch(BmSDK.BmGame.RBMAIController NewCon, BmSDK.BmGame.RCornerWallMarker NewStartCorner, BmSDK.BmGame.RCornerWallMarker NewEndCorner, bool bLeader, BmSDK.BmGame.RBMAIAction_PairedCorner.ePairedCornerAnimType pairedAnimVariant)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_Corner.StartFromSearch");
         byte* paramsPtr = stackalloc byte[45];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +145,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe override void NotifyEvent(BmSDK.BmGame.RBMAIAction NotifyAction, BmSDK.FString EventType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEvent, "BmGame.RAEC_Search_Sub_Corner.NotifyEvent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -156,6 +161,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_Corner.OnVillainStolen");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +175,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe virtual void PairedInAnimFinished()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PairedInAnimFinished, "BmGame.RAEC_Search_Sub_Corner.PairedInAnimFinished");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -182,6 +189,7 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_Corner.GetCurrentPathHandle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

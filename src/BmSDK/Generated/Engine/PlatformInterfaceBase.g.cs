@@ -84,6 +84,7 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearDelegate(int DelegateType, System.IntPtr InDelegate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDelegate, "Engine.PlatformInterfaceBase.ClearDelegate");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddDelegate(int DelegateType, System.IntPtr InDelegate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDelegate, "Engine.PlatformInterfaceBase.AddDelegate");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -294,6 +296,7 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void CallDelegates(int DelegateType, out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceDelegateResult DelegateResult)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CallDelegates, "Engine.PlatformInterfaceBase.CallDelegates");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -316,6 +319,7 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PlatformInterfaceDelegate(out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceDelegateResult Result)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlatformInterfaceDelegate, "Engine.PlatformInterfaceBase.PlatformInterfaceDelegate");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -456,5 +460,200 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
         PIDT_Object = 4,
         PIDT_Custom = 5,
         PIDT_MAX = 6,
+    }
+}
+
+/// <summary>
+/// The static native functions of PlatformInterfaceBase, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class PlatformInterfaceBaseStatics
+{
+    private static BmSDK.Function __fn_GetInAppMessageInterface;
+    /// <summary>
+    /// Function: GetInAppMessageInterface, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.InAppMessageBase GetInAppMessageInterface(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInAppMessageInterface, "Engine.PlatformInterfaceBase.GetInAppMessageInterface");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.InAppMessageBase>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetAppNotificationsInterface;
+    /// <summary>
+    /// Function: GetAppNotificationsInterface, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.AppNotificationsBase GetAppNotificationsInterface(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAppNotificationsInterface, "Engine.PlatformInterfaceBase.GetAppNotificationsInterface");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AppNotificationsBase>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetTwitterIntegration;
+    /// <summary>
+    /// Function: GetTwitterIntegration, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.TwitterIntegrationBase GetTwitterIntegration(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTwitterIntegration, "Engine.PlatformInterfaceBase.GetTwitterIntegration");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.TwitterIntegrationBase>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetAnalyticEventsInterface;
+    /// <summary>
+    /// Function: GetAnalyticEventsInterface, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.AnalyticEventsBase GetAnalyticEventsInterface(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnalyticEventsInterface, "Engine.PlatformInterfaceBase.GetAnalyticEventsInterface");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnalyticEventsBase>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetMicroTransactionInterface;
+    /// <summary>
+    /// Function: GetMicroTransactionInterface, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.MicroTransactionBase GetMicroTransactionInterface(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMicroTransactionInterface, "Engine.PlatformInterfaceBase.GetMicroTransactionInterface");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MicroTransactionBase>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetInGameAdManager;
+    /// <summary>
+    /// Function: GetInGameAdManager, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.InGameAdManager GetInGameAdManager(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInGameAdManager, "Engine.PlatformInterfaceBase.GetInGameAdManager");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.InGameAdManager>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetFacebookIntegration;
+    /// <summary>
+    /// Function: GetFacebookIntegration, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.FacebookIntegration GetFacebookIntegration(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFacebookIntegration, "Engine.PlatformInterfaceBase.GetFacebookIntegration");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.FacebookIntegration>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetLocalStorageInterface;
+    /// <summary>
+    /// Function: GetLocalStorageInterface, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.CloudStorageBase GetLocalStorageInterface(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocalStorageInterface, "Engine.PlatformInterfaceBase.GetLocalStorageInterface");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.CloudStorageBase>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_GetCloudStorageInterface;
+    /// <summary>
+    /// Function: GetCloudStorageInterface, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.CloudStorageBase GetCloudStorageInterface(this BmSDK.Engine.PlatformInterfaceBase self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCloudStorageInterface, "Engine.PlatformInterfaceBase.GetCloudStorageInterface");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.CloudStorageBase>(paramsPtr + 0);
     }
 }

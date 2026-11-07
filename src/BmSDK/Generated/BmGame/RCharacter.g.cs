@@ -779,3 +779,38 @@ public partial class RCharacter : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 360); }
     }
 }
+
+/// <summary>
+/// The static native functions of RCharacter, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class RCharacterStatics
+{
+    private static BmSDK.Function __fn_StaticCreatePawn;
+    /// <summary>
+    /// Function: StaticCreatePawn, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.BmGame.RBMPawnAI StaticCreatePawn(this BmSDK.BmGame.RCharacter self, System.Numerics.Vector3 Location, BmSDK.Rotator Rotation, BmSDK.Engine.Actor UseSpawnPoint, BmSDK.Class SpawnPawnClass, BmSDK.Class SpawnCharactersType, bool SnapToGround, BmSDK.FName InitialMovementStance, BmSDK.FName InitialWeaponStance)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StaticCreatePawn, "BmGame.RCharacter.StaticCreatePawn");
+        byte* paramsPtr = stackalloc byte[92];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Location, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Rotation, paramsPtr + 12);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(UseSpawnPoint, paramsPtr + 24);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnPawnClass, paramsPtr + 32);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnCharactersType, paramsPtr + 40);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(SnapToGround, paramsPtr + 48);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(InitialMovementStance, paramsPtr + 52);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(InitialWeaponStance, paramsPtr + 60);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMPawnAI>(paramsPtr + 68);
+    }
+}

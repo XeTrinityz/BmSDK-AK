@@ -84,6 +84,7 @@ public partial class RFuseBoxSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmScript.RFuseBoxSwitch.CanReachItem");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RFuseBoxSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmScript.RFuseBoxSwitch.TakeDamage");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class RFuseBoxSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RFuseBoxSwitch.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class RFuseBoxSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override bool UsedBy(BmSDK.Engine.Pawn User)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedBy, "BmScript.RFuseBoxSwitch.UsedBy");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

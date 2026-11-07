@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.GetHelpPrompt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void HandleAction(BmSDK.FName actionName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleAction, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.HandleAction");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void ReleaseClaws()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseClaws, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.ReleaseClaws");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +159,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +173,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetRopeEndLoc()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRopeEndLoc, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.GetRopeEndLoc");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +187,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void DestroyRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyRope, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.DestroyRope");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -193,6 +201,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe virtual void RopeObstructed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RopeObstructed, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.RopeObstructed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -206,6 +215,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void UpdateRope(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRope, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.UpdateRope");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -220,6 +230,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override bool IsRopeTooShort()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRopeTooShort, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.IsRopeTooShort");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -233,6 +244,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe virtual void StopPull()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopPull, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.StopPull");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -246,6 +258,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void StartPull()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPull, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.StartPull");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -259,6 +272,7 @@ public partial class RSpecialMoveInstance_HarpoonDragTrigger : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void SetupRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupRope, "BmGame.RSpecialMoveInstance_HarpoonDragTrigger.SetupRope");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

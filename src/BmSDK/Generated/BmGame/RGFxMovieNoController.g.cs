@@ -84,6 +84,7 @@ public partial class RGFxMovieNoController : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
     /// </summary>
     public unsafe virtual void XI_OnOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnOut, "BmGame.RGFxMovieNoController.XI_OnOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RGFxMovieNoController : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
     /// </summary>
     public unsafe virtual void DoClose()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoClose, "BmGame.RGFxMovieNoController.DoClose");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RGFxMovieNoController : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetMessage()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetMessage, "BmGame.RGFxMovieNoController.XI_GetMessage");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RGFxMovieNoController : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
     /// </summary>
     public unsafe virtual void XI_OnA(int ControllerId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnA, "BmGame.RGFxMovieNoController.XI_OnA");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

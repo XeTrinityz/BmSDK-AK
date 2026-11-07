@@ -84,6 +84,7 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     /// </summary>
     public unsafe virtual void SetAngleAndRadius(float NewInnerConeAngle, float NewOuterConeAngle, float NewRadius)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAngleAndRadius, "Engine.SpotLightComponent.SetAngleAndRadius");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -107,6 +108,7 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     /// </summary>
     public unsafe virtual void SetAbsoluteRotation(bool bNewAbsoluteRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAbsoluteRotation, "Engine.SpotLightComponent.SetAbsoluteRotation");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +130,7 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
     /// </summary>
     public unsafe virtual void SetRotation(BmSDK.Rotator NewRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRotation, "Engine.SpotLightComponent.SetRotation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

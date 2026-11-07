@@ -84,6 +84,7 @@ public partial class RAEC_Search_Formation_SideRoom : BmSDK.BmGame.RAEC_Search_F
     /// </summary>
     public unsafe override void NotifyChildStolen(BmSDK.BmGame.RAlertEventCoordinatorSolo StoleFromAEC, BmSDK.BmGame.RAlertEventCoordinatorSolo StealingAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyChildStolen, "BmGame.RAEC_Search_Formation_SideRoom.NotifyChildStolen");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RAEC_Search_Formation_SideRoom : BmSDK.BmGame.RAEC_Search_F
     /// </summary>
     public unsafe virtual void LeaderSignalledStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LeaderSignalledStart, "BmGame.RAEC_Search_Formation_SideRoom.LeaderSignalledStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RAEC_Search_Formation_SideRoom : BmSDK.BmGame.RAEC_Search_F
     /// </summary>
     public unsafe override void AddFollower(BmSDK.BmGame.RBMAIController FollowCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFollower, "BmGame.RAEC_Search_Formation_SideRoom.AddFollower");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RAEC_Search_Formation_SideRoom : BmSDK.BmGame.RAEC_Search_F
     /// </summary>
     public unsafe override void SetLeader(BmSDK.BmGame.RBMAIController NewLeader)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLeader, "BmGame.RAEC_Search_Formation_SideRoom.SetLeader");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RAEC_Search_Formation_SideRoom : BmSDK.BmGame.RAEC_Search_F
     /// </summary>
     public unsafe virtual void Init(System.Numerics.Vector3 inLeaderLoc, System.Numerics.Vector3 inSearchLoc, BmSDK.BmGame.RSideRoomVolume sideRoomVol)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RAEC_Search_Formation_SideRoom.Init");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -97,6 +97,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RJokerRooftopPoint FindSpawnPoint(bool bHightLightSpheres = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSpawnPoint, "BmScript.RSeqAct_JokerRooftopController.FindSpawnPoint");
         byte* paramsPtr = stackalloc byte[144];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe override void SpawnRooftopJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRooftopJoker, "BmScript.RSeqAct_JokerRooftopController.SpawnRooftopJoker");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual bool GetSideStoryDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSideStoryDialogue, "BmScript.RSeqAct_JokerRooftopController.GetSideStoryDialogue");
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +140,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual bool IsMissionFinished(BmSDK.BmGame.RPersistentData pData, int missionIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMissionFinished, "BmScript.RSeqAct_JokerRooftopController.IsMissionFinished");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +156,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual int GetNumConvForSideStory(int SideIdx)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumConvForSideStory, "BmScript.RSeqAct_JokerRooftopController.GetNumConvForSideStory");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +171,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual BmSDK.FString GetSideStoryNameForIndex(int SideIdx)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSideStoryNameForIndex, "BmScript.RSeqAct_JokerRooftopController.GetSideStoryNameForIndex");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +186,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual float GetTimeSinceUpdate(BmSDK.BmGame.RPersistentData pData, int missionIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeSinceUpdate, "BmScript.RSeqAct_JokerRooftopController.GetTimeSinceUpdate");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +202,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual bool IsMissionEligibleForUpdateMovie(BmSDK.BmGame.RPersistentData pData, int missionIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMissionEligibleForUpdateMovie, "BmScript.RSeqAct_JokerRooftopController.IsMissionEligibleForUpdateMovie");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +218,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual int GetNumValidSideStoryLines(float Perc, int StoryId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumValidSideStoryLines, "BmScript.RSeqAct_JokerRooftopController.GetNumValidSideStoryLines");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -225,6 +234,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual bool GetCh7Dialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCh7Dialogue, "BmScript.RSeqAct_JokerRooftopController.GetCh7Dialogue");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +248,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual bool GetChapterDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChapterDialogue, "BmScript.RSeqAct_JokerRooftopController.GetChapterDialogue");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -251,6 +262,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual int GetNumConvForChapter(int ChIdx)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumConvForChapter, "BmScript.RSeqAct_JokerRooftopController.GetNumConvForChapter");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -265,6 +277,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual int GetAdjustedChapterNumber()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAdjustedChapterNumber, "BmScript.RSeqAct_JokerRooftopController.GetAdjustedChapterNumber");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +291,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe virtual bool NextDialogueIsChapter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NextDialogueIsChapter, "BmScript.RSeqAct_JokerRooftopController.NextDialogueIsChapter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -291,6 +305,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe override void PlayDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDialogue, "BmScript.RSeqAct_JokerRooftopController.PlayDialogue");
         byte* paramsPtr = stackalloc byte[152];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -304,6 +319,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe override void StartNextDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNextDialogue, "BmScript.RSeqAct_JokerRooftopController.StartNextDialogue");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -317,6 +333,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe override void SpawnAllJokers()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnAllJokers, "BmScript.RSeqAct_JokerRooftopController.SpawnAllJokers");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -330,6 +347,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe override BmSDK.BmGame.RJokerRooftopPointBase GetJokerPointFromBehaviour(BmSDK.BmGame.RBMBehaviour JokerBehav)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerPointFromBehaviour, "BmScript.RSeqAct_JokerRooftopController.GetJokerPointFromBehaviour");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -344,6 +362,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe override void DrawTestingSpheres()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTestingSpheres, "BmScript.RSeqAct_JokerRooftopController.DrawTestingSpheres");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -357,6 +376,7 @@ public partial class RSeqAct_JokerRooftopController : BmSDK.BmGame.RSeqAct_Joker
     /// </summary>
     public unsafe override bool JokerInView(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerInView, "BmScript.RSeqAct_JokerRooftopController.JokerInView");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

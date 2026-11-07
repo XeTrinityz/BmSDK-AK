@@ -84,6 +84,7 @@ public partial class SeqCond_SwitchObject : BmSDK.Engine.SeqCond_SwitchBase, BmS
     /// </summary>
     public unsafe override void RemoveValueEntry(int RemoveIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveValueEntry, "Engine.SeqCond_SwitchObject.RemoveValueEntry");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class SeqCond_SwitchObject : BmSDK.Engine.SeqCond_SwitchBase, BmS
     /// </summary>
     public unsafe override void InsertValueEntry(int InsertIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InsertValueEntry, "Engine.SeqCond_SwitchObject.InsertValueEntry");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class SeqCond_SwitchObject : BmSDK.Engine.SeqCond_SwitchBase, BmS
     /// </summary>
     public unsafe override bool IsFallThruEnabled(int ValueIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFallThruEnabled, "Engine.SeqCond_SwitchObject.IsFallThruEnabled");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class SeqCond_SwitchObject : BmSDK.Engine.SeqCond_SwitchBase, BmS
     /// </summary>
     public unsafe override void VerifyDefaultCaseValue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VerifyDefaultCaseValue, "Engine.SeqCond_SwitchObject.VerifyDefaultCaseValue");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RDebugCameraHUD : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe override void DrawHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RDebugCameraHUD.DrawHUD");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RDebugCameraHUD : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PostRender()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostRender, "BmGame.RDebugCameraHUD.PostRender");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RDebugCameraHUD : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PreRender()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreRender, "BmGame.RDebugCameraHUD.PreRender");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmScript.RCombatMove_VillainMultiCleaverThrow.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void PlayThrow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayThrow, "BmScript.RCombatMove_VillainMultiCleaverThrow.PlayThrow");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void ShowKnife()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowKnife, "BmScript.RCombatMove_VillainMultiCleaverThrow.ShowKnife");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void OnSmashWindow(BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId NewId, float TimeLeftOver)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSmashWindow, "BmScript.RCombatMove_VillainMultiCleaverThrow.OnSmashWindow");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe override float GetCameraLookAtPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraLookAtPriority, "BmScript.RCombatMove_VillainMultiCleaverThrow.GetCameraLookAtPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameInfo.CounterLimb GetCounterLimb(BmSDK.BmGame.RPawnCombat TestPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCounterLimb, "BmScript.RCombatMove_VillainMultiCleaverThrow.GetCounterLimb");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void ExtendTargetComboWindow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExtendTargetComboWindow, "BmScript.RCombatMove_VillainMultiCleaverThrow.ExtendTargetComboWindow");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe override bool AllowAnotherAttacker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowAnotherAttacker, "BmScript.RCombatMove_VillainMultiCleaverThrow.AllowAnotherAttacker");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +199,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe override bool IsAttacking()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAttacking, "BmScript.RCombatMove_VillainMultiCleaverThrow.IsAttacking");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +213,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMCombatThrownObject SpawnThrownObject(BmSDK.FName AttachBone, BmSDK.Class CleaverClass)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnThrownObject, "BmScript.RCombatMove_VillainMultiCleaverThrow.SpawnThrownObject");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -219,6 +229,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RCombatMove_VillainMultiCleaverThrow.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -263,6 +274,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void ShowCleaver()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowCleaver, "BmScript.RCombatMove_VillainMultiCleaverThrow.ShowCleaver");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -276,6 +288,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void SpawnRightCatchable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRightCatchable, "BmScript.RCombatMove_VillainMultiCleaverThrow.SpawnRightCatchable");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -289,6 +302,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void ThrowRight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowRight, "BmScript.RCombatMove_VillainMultiCleaverThrow.ThrowRight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -302,6 +316,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void SpawnRight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRight, "BmScript.RCombatMove_VillainMultiCleaverThrow.SpawnRight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -315,6 +330,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void ThrowLeft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowLeft, "BmScript.RCombatMove_VillainMultiCleaverThrow.ThrowLeft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -328,6 +344,7 @@ public partial class RCombatMove_VillainMultiCleaverThrow : BmSDK.BmGame.RCombat
     /// </summary>
     public unsafe virtual void SpawnLeft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnLeft, "BmScript.RCombatMove_VillainMultiCleaverThrow.SpawnLeft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

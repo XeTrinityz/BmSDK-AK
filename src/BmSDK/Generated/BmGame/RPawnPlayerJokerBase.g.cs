@@ -79,6 +79,7 @@ public partial class RPawnPlayerJokerBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGam
     /// </summary>
     public unsafe virtual void PlayShotReaction(System.Numerics.Vector3 HitDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayShotReaction, "BmGame.RPawnPlayerJokerBase.PlayShotReaction");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RPawnPlayerJokerBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGam
     /// </summary>
     public unsafe virtual void BeginBatmanSurprise(BmSDK.Engine.Volume Vol)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginBatmanSurprise, "BmGame.RPawnPlayerJokerBase.BeginBatmanSurprise");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

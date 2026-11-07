@@ -84,6 +84,7 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void HandleInvalidatedState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInvalidatedState, "Engine.RNavigationQueryObject.HandleInvalidatedState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void UnregisterWithNavMeshWorld()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterWithNavMeshWorld, "Engine.RNavigationQueryObject.UnregisterWithNavMeshWorld");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void RegisterWithNavMeshWorld()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWithNavMeshWorld, "Engine.RNavigationQueryObject.RegisterWithNavMeshWorld");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

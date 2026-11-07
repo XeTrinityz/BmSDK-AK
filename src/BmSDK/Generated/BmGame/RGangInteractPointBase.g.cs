@@ -79,6 +79,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void SetSpecCanTakeOver()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpecCanTakeOver, "BmGame.RGangInteractPointBase.SetSpecCanTakeOver");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual bool AllowSpectators()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowSpectators, "BmGame.RGangInteractPointBase.AllowSpectators");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +107,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void DisplayDebugInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebugInfo, "BmGame.RGangInteractPointBase.DisplayDebugInfo");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +121,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void DettachFromCar()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DettachFromCar, "BmGame.RGangInteractPointBase.DettachFromCar");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +135,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void AttachToCar(int Seat)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToCar, "BmGame.RGangInteractPointBase.AttachToCar");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +150,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual bool UpdateTimeOut(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTimeOut, "BmGame.RGangInteractPointBase.UpdateTimeOut");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +165,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual int GetNumPairedToCheck()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumPairedToCheck, "BmGame.RGangInteractPointBase.GetNumPairedToCheck");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -172,6 +179,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void AdvanceAnimation(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdvanceAnimation, "BmGame.RGangInteractPointBase.AdvanceAnimation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -186,6 +194,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void ActivateBuddies()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateBuddies, "BmGame.RGangInteractPointBase.ActivateBuddies");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -199,6 +208,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void DeactivateBuddies()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateBuddies, "BmGame.RGangInteractPointBase.DeactivateBuddies");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +222,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual bool IsLeader()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLeader, "BmGame.RGangInteractPointBase.IsLeader");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -225,6 +236,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual bool AllowForSpawning()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowForSpawning, "BmGame.RGangInteractPointBase.AllowForSpawning");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -245,6 +257,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void SetFinished(BmSDK.BmGame.RBMPawnAI P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFinished, "BmGame.RGangInteractPointBase.SetFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -259,6 +272,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void SetInUse(BmSDK.BmGame.RBMPawnAI UsagePawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInUse, "BmGame.RGangInteractPointBase.SetInUse");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -273,6 +287,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGangInteractPointBase IsValidForPawnSpec(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidForPawnSpec, "BmGame.RGangInteractPointBase.IsValidForPawnSpec");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -289,6 +304,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual void GetEntryPointAndRotation(BmSDK.BmGame.RPawnCharacter TestPawn, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, int Index, bool bSecondTry = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEntryPointAndRotation, "BmGame.RGangInteractPointBase.GetEntryPointAndRotation");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -318,6 +334,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGangInteractPointBase IsValidForPawn(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default, bool bSkipVolCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidForPawn, "BmGame.RGangInteractPointBase.IsValidForPawn");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -342,6 +359,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FGuid GetGid()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGid, "BmGame.RGangInteractPointBase.GetGid");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -362,6 +380,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual BmSDK.Class GetBehaviourClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourClass, "BmGame.RGangInteractPointBase.GetBehaviourClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -375,6 +394,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPOILocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPOILocation, "BmGame.RGangInteractPointBase.GetPOILocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -388,6 +408,7 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
     /// </summary>
     public unsafe virtual float GetSelectionScore()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSelectionScore, "BmGame.RGangInteractPointBase.GetSelectionScore");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RStealthTakedownStage_HarleyChokePointDualPlay : BmSDK.BmGa
     /// </summary>
     public unsafe override void Begin()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmScript.RStealthTakedownStage_HarleyChokePointDualPlay.Begin");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

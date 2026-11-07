@@ -84,6 +84,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void EndCam()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndCam, "BmGame.RBMCutscene_Cam.EndCam");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CanSkip()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSkip, "BmGame.RBMCutscene_Cam.CanSkip");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +171,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitialiseCamEffects()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseCamEffects, "BmGame.RBMCutscene_Cam.InitialiseCamEffects");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -182,6 +185,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMCutscene_Cam.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +199,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool Initialise(BmSDK.BmGame.RBMCutsceneBase NewCutscene)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RBMCutscene_Cam.Initialise");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -209,6 +214,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Deactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RBMCutscene_Cam.Deactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -222,6 +228,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnSkip()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSkip, "BmGame.RBMCutscene_Cam.OnSkip");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +242,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Skip()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Skip, "BmGame.RBMCutscene_Cam.Skip");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +256,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RBMCutscene_Cam.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -262,6 +271,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ResetViewTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetViewTarget, "BmGame.RBMCutscene_Cam.ResetViewTarget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -275,6 +285,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetViewTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetViewTarget, "BmGame.RBMCutscene_Cam.SetViewTarget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -288,6 +299,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Rotator BlendRotate(float CurrentTime, float timeToTake, BmSDK.Rotator toRot, BmSDK.Rotator fromRot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlendRotate, "BmGame.RBMCutscene_Cam.BlendRotate");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -305,6 +317,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RBMCutscene_Cam.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +332,7 @@ public partial class RBMCutscene_Cam : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMCutscene_Cam.OnActivate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

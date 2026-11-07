@@ -84,6 +84,7 @@ public partial class RAEC_AbandonDrone_Solo : BmSDK.BmGame.RAlertEventCoordinato
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_AbandonDrone_Solo.OnBeginShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_AbandonDrone_Solo : BmSDK.BmGame.RAlertEventCoordinato
     /// </summary>
     public unsafe override void NotifyStopped(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyStopped, "BmGame.RAEC_AbandonDrone_Solo.NotifyStopped");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RAEC_AbandonDrone_Solo : BmSDK.BmGame.RAlertEventCoordinato
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_AbandonDrone_Solo.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RAEC_AbandonDrone_Solo : BmSDK.BmGame.RAlertEventCoordinato
     /// </summary>
     public unsafe override void OnStartChild()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_AbandonDrone_Solo.OnStartChild");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

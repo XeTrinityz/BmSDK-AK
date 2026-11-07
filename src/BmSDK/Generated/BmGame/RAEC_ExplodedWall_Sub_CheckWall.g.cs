@@ -84,6 +84,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe virtual bool IsInPosition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInPosition, "BmGame.RAEC_ExplodedWall_Sub_CheckWall.IsInPosition");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe virtual void AssignWall(System.Numerics.Vector3 StandPoint, System.Numerics.Vector3 BoomLoc, bool bIsHorizontal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignWall, "BmGame.RAEC_ExplodedWall_Sub_CheckWall.AssignWall");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe override void NotifyEvent(BmSDK.BmGame.RBMAIAction EventAction, BmSDK.FString EventType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEvent, "BmGame.RAEC_ExplodedWall_Sub_CheckWall.NotifyEvent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +131,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe override void NotifyFailed(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFailed, "BmGame.RAEC_ExplodedWall_Sub_CheckWall.NotifyFailed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_ExplodedWall_Sub_CheckWall.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

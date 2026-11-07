@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_MagnetiseObject : BmSDK.BmGame.RSpecia
     /// </summary>
     public unsafe virtual void ProjectileHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProjectileHit, "BmGame.RSpecialMoveInstance_MagnetiseObject.ProjectileHit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSpecialMoveInstance_MagnetiseObject : BmSDK.BmGame.RSpecia
     /// </summary>
     public unsafe virtual void FireReceiver()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireReceiver, "BmGame.RSpecialMoveInstance_MagnetiseObject.FireReceiver");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSpecialMoveInstance_MagnetiseObject : BmSDK.BmGame.RSpecia
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_MagnetiseObject.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RSpecialMoveInstance_MagnetiseObject : BmSDK.BmGame.RSpecia
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_MagnetiseObject.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RSpecialMoveInstance_MagnetiseObject : BmSDK.BmGame.RSpecia
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_MagnetiseObject.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[168];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

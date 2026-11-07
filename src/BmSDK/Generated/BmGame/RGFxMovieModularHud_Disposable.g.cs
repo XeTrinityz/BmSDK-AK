@@ -84,6 +84,7 @@ public partial class RGFxMovieModularHud_Disposable : BmSDK.BmGame.RGFxMovieModu
     /// </summary>
     public unsafe override void DeleteHudExtension(BmSDK.FString _ExtensionName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeleteHudExtension, "BmGame.RGFxMovieModularHud_Disposable.DeleteHudExtension");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGFxMovieModularHud_Disposable : BmSDK.BmGame.RGFxMovieModu
     /// </summary>
     public unsafe override void CreateHudExtension(BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath, int ModulePriority, bool CanBeTinted)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateHudExtension, "BmGame.RGFxMovieModularHud_Disposable.CreateHudExtension");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +117,7 @@ public partial class RGFxMovieModularHud_Disposable : BmSDK.BmGame.RGFxMovieModu
     /// </summary>
     public unsafe virtual void SetRequestsCleanup(bool _RequestsCleanup)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRequestsCleanup, "BmGame.RGFxMovieModularHud_Disposable.SetRequestsCleanup");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RGFxMovieModularHud_Disposable : BmSDK.BmGame.RGFxMovieModu
     /// </summary>
     public unsafe override void OnClose()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClose, "BmGame.RGFxMovieModularHud_Disposable.OnClose");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RGFxMovieModularHud_Disposable : BmSDK.BmGame.RGFxMovieModu
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieModularHud_Disposable.Init");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

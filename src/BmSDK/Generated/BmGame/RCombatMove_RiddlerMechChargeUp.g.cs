@@ -84,6 +84,7 @@ public partial class RCombatMove_RiddlerMechChargeUp : BmSDK.BmGame.RCombatMove_
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_RiddlerMechChargeUp.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_RiddlerMechChargeUp : BmSDK.BmGame.RCombatMove_
     /// </summary>
     public unsafe virtual void ChargeUpRobots()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChargeUpRobots, "BmGame.RCombatMove_RiddlerMechChargeUp.ChargeUpRobots");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RCombatMove_RiddlerMechChargeUp : BmSDK.BmGame.RCombatMove_
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_RiddlerMechChargeUp.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class RCombatMove_RiddlerMechChargeUp : BmSDK.BmGame.RCombatMove_
     /// </summary>
     public unsafe override bool IsAttacking()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAttacking, "BmGame.RCombatMove_RiddlerMechChargeUp.IsAttacking");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +171,7 @@ public partial class RCombatMove_RiddlerMechChargeUp : BmSDK.BmGame.RCombatMove_
     /// </summary>
     public unsafe virtual void ChargeUpStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChargeUpStart, "BmGame.RCombatMove_RiddlerMechChargeUp.ChargeUpStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

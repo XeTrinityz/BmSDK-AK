@@ -79,6 +79,7 @@ public partial class AnimNotify_Scripted : BmSDK.Engine.AnimNotify, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void NotifyEnd(BmSDK.Engine.Actor Owner, BmSDK.Engine.AnimNodeSequence AnimSeqInstigator)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEnd, "Engine.AnimNotify_Scripted.NotifyEnd");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -94,6 +95,7 @@ public partial class AnimNotify_Scripted : BmSDK.Engine.AnimNotify, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void Notify(BmSDK.Engine.Actor Owner, BmSDK.Engine.SkeletalMeshComponent AnimSeqInstigator)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Notify, "Engine.AnimNotify_Scripted.Notify");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_KickJokerIntoGurney : BmSDK.BmGame.RSp
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmScript.RSpecialMoveInstance_KickJokerIntoGurney.GetHelpPrompt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RSpecialMoveInstance_KickJokerIntoGurney : BmSDK.BmGame.RSp
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_KickJokerIntoGurney.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RSpecialMoveInstance_KickJokerIntoGurney : BmSDK.BmGame.RSp
     /// </summary>
     public unsafe virtual void PunchNotify()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PunchNotify, "BmScript.RSpecialMoveInstance_KickJokerIntoGurney.PunchNotify");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RSpecialMoveInstance_KickJokerIntoGurney : BmSDK.BmGame.RSp
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_KickJokerIntoGurney.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RSpecialMoveInstance_KickJokerIntoGurney : BmSDK.BmGame.RSp
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_KickJokerIntoGurney.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class RSpecialMoveInstance_KickJokerIntoGurney : BmSDK.BmGame.RSp
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_KickJokerIntoGurney.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

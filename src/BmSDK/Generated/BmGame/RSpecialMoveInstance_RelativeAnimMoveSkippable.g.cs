@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_RelativeAnimMoveSkippable : BmSDK.BmGa
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_RelativeAnimMoveSkippable.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RSpecialMoveInstance_RelativeAnimMoveSkippable : BmSDK.BmGa
     /// </summary>
     public unsafe virtual bool AnyInput()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnyInput, "BmGame.RSpecialMoveInstance_RelativeAnimMoveSkippable.AnyInput");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

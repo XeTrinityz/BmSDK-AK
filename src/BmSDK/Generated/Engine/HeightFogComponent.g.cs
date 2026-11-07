@@ -84,6 +84,7 @@ public partial class HeightFogComponent : BmSDK.Engine.ActorComponent, BmSDK.IGa
     /// </summary>
     public unsafe virtual void SetEnabled(bool bSetEnabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.HeightFogComponent.SetEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

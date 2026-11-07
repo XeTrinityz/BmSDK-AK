@@ -84,6 +84,7 @@ public partial class NxCylindricalForceFieldCapsule : BmSDK.Engine.NxCylindrical
     /// </summary>
     public unsafe override void DoInitRBPhys()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoInitRBPhys, "Engine.NxCylindricalForceFieldCapsule.DoInitRBPhys");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

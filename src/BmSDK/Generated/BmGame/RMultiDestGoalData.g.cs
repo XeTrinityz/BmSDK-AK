@@ -84,6 +84,7 @@ public partial class RMultiDestGoalData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DisplayGoalData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayGoalData, "BmGame.RMultiDestGoalData.DisplayGoalData");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RMultiDestGoalData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AllNotFound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllNotFound, "BmGame.RMultiDestGoalData.AllNotFound");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RMultiDestGoalData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetShortestPathFromIndex(int StartIndex, out float bestDist, out int BestPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetShortestPathFromIndex, "BmGame.RMultiDestGoalData.GetShortestPathFromIndex");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +133,7 @@ public partial class RMultiDestGoalData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetShortestPath(out float bestDist, out int BestPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetShortestPath, "BmGame.RMultiDestGoalData.GetShortestPath");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

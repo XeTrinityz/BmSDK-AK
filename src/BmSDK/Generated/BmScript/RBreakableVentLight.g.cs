@@ -84,6 +84,7 @@ public partial class RBreakableVentLight : BmSDK.BmGame.RBreakableVentLightBase,
     /// </summary>
     public unsafe override void HitByGrenade()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByGrenade, "BmScript.RBreakableVentLight.HitByGrenade");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

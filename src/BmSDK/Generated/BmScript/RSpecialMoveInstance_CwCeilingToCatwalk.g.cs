@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_CwCeilingToCatwalk : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void NotifyBump(BmSDK.Engine.Actor Other, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBump, "BmScript.RSpecialMoveInstance_CwCeilingToCatwalk.NotifyBump");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RSpecialMoveInstance_CwCeilingToCatwalk : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CwCeilingToCatwalk.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RSpecialMoveInstance_CwCeilingToCatwalk : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_CwCeilingToCatwalk.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RSpecialMoveInstance_CwCeilingToCatwalk : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe virtual void SetCameraDirection()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCameraDirection, "BmScript.RSpecialMoveInstance_CwCeilingToCatwalk.SetCameraDirection");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RSpecialMoveInstance_CwCeilingToCatwalk : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe virtual void SetCeilingToCatwalkCamera()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCeilingToCatwalkCamera, "BmScript.RSpecialMoveInstance_CwCeilingToCatwalk.SetCeilingToCatwalkCamera");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RSpecialMoveInstance_CwCeilingToCatwalk : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CwCeilingToCatwalk.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[157];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

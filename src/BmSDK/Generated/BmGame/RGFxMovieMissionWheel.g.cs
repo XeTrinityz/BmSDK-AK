@@ -84,6 +84,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_bUsingDPad(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_bUsingDPad, "BmGame.RGFxMovieMissionWheel.XI_bUsingDPad");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_ReFetchChallengeBoard()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_ReFetchChallengeBoard, "BmGame.RGFxMovieMissionWheel.UC_ReFetchChallengeBoard");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_OpenMainChallengeBoard()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_OpenMainChallengeBoard, "BmGame.RGFxMovieMissionWheel.UC_OpenMainChallengeBoard");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool FetchChallengeBoard()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FetchChallengeBoard, "BmGame.RGFxMovieMissionWheel.FetchChallengeBoard");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_FetchBoard(int _ChallengeId, int RequestedMode, BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_FetchBoard, "BmGame.RGFxMovieMissionWheel.XI_FetchBoard");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_TriggerLeaderboard(int FriendCount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_TriggerLeaderboard, "BmGame.RGFxMovieMissionWheel.UC_TriggerLeaderboard");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +173,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe override void SendLeaderBoardToFlash(int Id, int total, BmSDK.TArray<int> FriendIndex, BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> NetIDs, BmSDK.TArray<int> Ranks, BmSDK.TArray<BmSDK.FString> NickNames, BmSDK.TArray<int> Stars, BmSDK.TArray<float> Scores, BmSDK.TArray<int> RivalPoints, BmSDK.TArray<float> Story, BmSDK.TArray<float> MW, BmSDK.TArray<float> AR)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendLeaderBoardToFlash, "BmGame.RGFxMovieMissionWheel.SendLeaderBoardToFlash");
         byte* paramsPtr = stackalloc byte[332];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +199,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_SetLeaderboardLine(int Index, int Rank, BmSDK.FString NickName, int Medals, BmSDK.FString Score)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetLeaderboardLine, "BmGame.RGFxMovieMissionWheel.UC_SetLeaderboardLine");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +218,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_SetGoal(int GoalId, BmSDK.FString GoalStr)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetGoal, "BmGame.RGFxMovieMissionWheel.UC_SetGoal");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -225,6 +234,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_SetupContents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetupContents, "BmGame.RGFxMovieMissionWheel.XI_SetupContents");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +248,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_ClosedMainBoard()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ClosedMainBoard, "BmGame.RGFxMovieMissionWheel.XI_ClosedMainBoard");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -251,6 +262,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void LeaderboardTick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LeaderboardTick, "BmGame.RGFxMovieMissionWheel.LeaderboardTick");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -264,6 +276,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_ShowMWGamercard(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ShowMWGamercard, "BmGame.RGFxMovieMissionWheel.XI_ShowMWGamercard");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +291,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_WillASetRival(int Status)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_WillASetRival, "BmGame.RGFxMovieMissionWheel.XI_WillASetRival");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -292,6 +306,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool IsPollingBoards()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPollingBoards, "BmGame.RGFxMovieMissionWheel.IsPollingBoards");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -305,6 +320,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool XI_PS4CanAccessLB()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PS4CanAccessLB, "BmGame.RGFxMovieMissionWheel.XI_PS4CanAccessLB");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -318,6 +334,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_ReFetchBoard()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_ReFetchBoard, "BmGame.RGFxMovieMissionWheel.UC_ReFetchBoard");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -331,6 +348,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_OpenMWMainBoard()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_OpenMWMainBoard, "BmGame.RGFxMovieMissionWheel.UC_OpenMWMainBoard");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -344,6 +362,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_GotMWLeaderboardData(int Count)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_GotMWLeaderboardData, "BmGame.RGFxMovieMissionWheel.UC_GotMWLeaderboardData");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -358,6 +377,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_SetRivalIndex(int Index, bool bChallengeData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetRivalIndex, "BmGame.RGFxMovieMissionWheel.XI_SetRivalIndex");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -373,6 +393,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual int XI_GetRivalIndex(bool bChallengeData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetRivalIndex, "BmGame.RGFxMovieMissionWheel.XI_GetRivalIndex");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -387,6 +408,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual int XI_GetSelfIndex(bool bChallengeData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetSelfIndex, "BmGame.RGFxMovieMissionWheel.XI_GetSelfIndex");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -401,6 +423,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe override void OnMWLeaderboardRead(bool bWasSuccessful, BmSDK.BmGame.ROnlineStatsReadMostWanted MWStats)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMWLeaderboardRead, "BmGame.RGFxMovieMissionWheel.OnMWLeaderboardRead");
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -416,6 +439,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_FetchMWBoard(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_FetchMWBoard, "BmGame.RGFxMovieMissionWheel.XI_FetchMWBoard");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -430,6 +454,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_SetMWBoardRef(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetMWBoardRef, "BmGame.RGFxMovieMissionWheel.XI_SetMWBoardRef");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -444,6 +469,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual int XI_GetMostWantedStatForRival()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetMostWantedStatForRival, "BmGame.RGFxMovieMissionWheel.XI_GetMostWantedStatForRival");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -457,6 +483,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetBatmobileUnavailable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetBatmobileUnavailable, "BmGame.RGFxMovieMissionWheel.XI_GetBatmobileUnavailable");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -470,6 +497,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_ClearTutorial(BmSDK.FString sWheelType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ClearTutorial, "BmGame.RGFxMovieMissionWheel.XI_ClearTutorial");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -484,6 +512,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_ClearNewFlag(BmSDK.FString sMissionName, bool bOnlyClearOneShot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ClearNewFlag, "BmGame.RGFxMovieMissionWheel.XI_ClearNewFlag");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -499,6 +528,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_ClearCompleteAnim(BmSDK.FString sMissionName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ClearCompleteAnim, "BmGame.RGFxMovieMissionWheel.XI_ClearCompleteAnim");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -513,6 +543,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_PlayMissionSound(BmSDK.FString sDialogueCase)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PlayMissionSound, "BmGame.RGFxMovieMissionWheel.XI_PlayMissionSound");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -527,6 +558,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_PlayMissionSoundForMissionInWheel(BmSDK.FString sMission, BmSDK.FString sSpecialCase)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PlayMissionSoundForMissionInWheel, "BmGame.RGFxMovieMissionWheel.XI_PlayMissionSoundForMissionInWheel");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -542,6 +574,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_CancelMissionSoundForMissionOutsideOfWheel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CancelMissionSoundForMissionOutsideOfWheel, "BmGame.RGFxMovieMissionWheel.XI_CancelMissionSoundForMissionOutsideOfWheel");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -555,6 +588,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_PlayMissionSoundForMissionOutsideOfWheel(BmSDK.FString sMission, BmSDK.FString sSpecialCase)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PlayMissionSoundForMissionOutsideOfWheel, "BmGame.RGFxMovieMissionWheel.XI_PlayMissionSoundForMissionOutsideOfWheel");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -570,6 +604,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_TutorialPopUp(BmSDK.FString sWheelType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_TutorialPopUp, "BmGame.RGFxMovieMissionWheel.XI_TutorialPopUp");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -584,6 +619,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_RequestClose()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestClose, "BmGame.RGFxMovieMissionWheel.XI_RequestClose");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -597,6 +633,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_GetStickAngMag(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetStickAngMag, "BmGame.RGFxMovieMissionWheel.XI_GetStickAngMag");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -611,6 +648,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe override void XI_Tick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Tick, "BmGame.RGFxMovieMissionWheel.XI_Tick");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -624,6 +662,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_ToggleMission(BmSDK.FString sMission, int iExtraParameter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ToggleMission, "BmGame.RGFxMovieMissionWheel.XI_ToggleMission");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -639,6 +678,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_LastHighlight(BmSDK.FString sType, BmSDK.FString sMission)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_LastHighlight, "BmGame.RGFxMovieMissionWheel.XI_LastHighlight");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -654,6 +694,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_SetMWWheelDefaultType(BmSDK.FString sType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetMWWheelDefaultType, "BmGame.RGFxMovieMissionWheel.XI_SetMWWheelDefaultType");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -668,6 +709,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool XI_AlternateCarRace(int nId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_AlternateCarRace, "BmGame.RGFxMovieMissionWheel.XI_AlternateCarRace");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -682,6 +724,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool XI_IsChallengeAwarded(int nId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsChallengeAwarded, "BmGame.RGFxMovieMissionWheel.XI_IsChallengeAwarded");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -696,6 +739,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool XI_IsUniqueGoalMap(int nId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsUniqueGoalMap, "BmGame.RGFxMovieMissionWheel.XI_IsUniqueGoalMap");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -710,6 +754,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual int XI_GetExtraChallengeMedals(int iChallengeCategory)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetExtraChallengeMedals, "BmGame.RGFxMovieMissionWheel.XI_GetExtraChallengeMedals");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -724,6 +769,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool FireFlyActive()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireFlyActive, "BmGame.RGFxMovieMissionWheel.FireFlyActive");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -737,6 +783,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void WheelSetSubtitles(BmSDK.FString sSubtitle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WheelSetSubtitles, "BmGame.RGFxMovieMissionWheel.WheelSetSubtitles");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -751,6 +798,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_SetWheel(BmSDK.FString sType, BmSDK.FString sBackTarget, BmSDK.FString sMissionToHighlight)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetWheel, "BmGame.RGFxMovieMissionWheel.UC_SetWheel");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -767,6 +815,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe void UC_AddItem(BmSDK.FString sName, int iId, BmSDK.FString sAction, BmSDK.FString sBackground, bool bNewlyCompleted, float fAngle, bool bUnlocked, bool bLayoutOnly, int SuspendedState, bool bWaypointActive, bool bIntel, int bNew, bool bDirty, bool bDLC, BmSDK.FString sSubscript, BmSDK.FString sSidePanel, float fPercentage, BmSDK.FString sMarkers, int iSynopsisId, int iProgressId, BmSDK.FString sHeaders, BmSDK.FString sParams, int iMedals, int iPoints, BmSDK.FString sScore, BmSDK.FString sLeaderBoard)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_AddItem, "BmGame.RGFxMovieMissionWheel.UC_AddItem");
         byte* paramsPtr = stackalloc byte[240];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -806,6 +855,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual BmSDK.FString GetCurrentMission()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentMission, "BmGame.RGFxMovieMissionWheel.GetCurrentMission");
         byte* paramsPtr = stackalloc byte[85];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -819,6 +869,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual int SortById(BmSDK.BmGame.RGameInfo.FMostWantedSetup A, BmSDK.BmGame.RGameInfo.FMostWantedSetup B)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SortById, "BmGame.RGFxMovieMissionWheel.SortById");
         byte* paramsPtr = stackalloc byte[212];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -834,6 +885,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void AddItems(BmSDK.TArray<BmSDK.BmGame.RGFxMovieMissionWheel.FMission_Data> aItems)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddItems, "BmGame.RGFxMovieMissionWheel.AddItems");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -848,6 +900,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RGFxMovieMissionWheel.FMission_Data> AddInSummaryAndSetAngles(BmSDK.TArray<BmSDK.BmGame.RGFxMovieMissionWheel.FMission_Data> aItems, BmSDK.BmGame.RGFxMovieMissionWheel.FMission_Data structItem)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddInSummaryAndSetAngles, "BmGame.RGFxMovieMissionWheel.AddInSummaryAndSetAngles");
         byte* paramsPtr = stackalloc byte[484];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -863,6 +916,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual int GetChallengeDistance(int iId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChallengeDistance, "BmGame.RGFxMovieMissionWheel.GetChallengeDistance");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -877,6 +931,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void UC_SetAltCarTextOn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetAltCarTextOn, "BmGame.RGFxMovieMissionWheel.UC_SetAltCarTextOn");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -890,6 +945,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void GetChallengeData_Sub(BmSDK.FString sType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChallengeData_Sub, "BmGame.RGFxMovieMissionWheel.GetChallengeData_Sub");
         byte* paramsPtr = stackalloc byte[836];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -904,6 +960,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool IsInRightCategory(BmSDK.FString CategoryName, int ChallengeListIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInRightCategory, "BmGame.RGFxMovieMissionWheel.IsInRightCategory");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -919,6 +976,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool GetChallengeDisabled(int nId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChallengeDisabled, "BmGame.RGFxMovieMissionWheel.GetChallengeDisabled");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -933,6 +991,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void GetChallengeData_Categories()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChallengeData_Categories, "BmGame.RGFxMovieMissionWheel.GetChallengeData_Categories");
         byte* paramsPtr = stackalloc byte[828];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -946,6 +1005,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void GetMostWantedData_DLC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMostWantedData_DLC, "BmGame.RGFxMovieMissionWheel.GetMostWantedData_DLC");
         byte* paramsPtr = stackalloc byte[832];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -959,6 +1019,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void GetMostWantedData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMostWantedData, "BmGame.RGFxMovieMissionWheel.GetMostWantedData");
         byte* paramsPtr = stackalloc byte[964];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -972,6 +1033,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool XI_AnyDLCMissionsPresent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_AnyDLCMissionsPresent, "BmGame.RGFxMovieMissionWheel.XI_AnyDLCMissionsPresent");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -985,6 +1047,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void XI_SetupWheelData(BmSDK.FString sWheelType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetupWheelData, "BmGame.RGFxMovieMissionWheel.XI_SetupWheelData");
         byte* paramsPtr = stackalloc byte[81];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -999,6 +1062,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe virtual void InitFlash(BmSDK.FString sType, BmSDK.TArray<BmSDK.FString> aWheelsAvailable, int iKnightfall, int iMidKnightfall, bool bMW_Tutorial, bool bAR_Tutorial, bool bMW_DLC_Tutorial, bool bAR_DLC_Tutorial)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitFlash, "BmGame.RGFxMovieMissionWheel.InitFlash");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1020,6 +1084,7 @@ public partial class RGFxMovieMissionWheel : BmSDK.BmGame.RGFxMovieUI, BmSDK.IGa
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieMissionWheel.Init");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

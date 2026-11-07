@@ -84,6 +84,7 @@ public partial class RHidePointRope_RopeComponent : BmSDK.BmGame.RRope2Component
     /// </summary>
     public unsafe override bool IsRopeLengthAutoCalculated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRopeLengthAutoCalculated, "BmGame.RHidePointRope_RopeComponent.IsRopeLengthAutoCalculated");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

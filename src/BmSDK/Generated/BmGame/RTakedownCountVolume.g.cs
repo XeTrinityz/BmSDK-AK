@@ -84,6 +84,7 @@ public partial class RTakedownCountVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool ThresholdMet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThresholdMet, "BmGame.RTakedownCountVolume.ThresholdMet");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RTakedownCountVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RTakedownCountVolume.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RTakedownCountVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RTakedownCountVolume.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RTakedownCountVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RTakedownCountVolume.PreBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

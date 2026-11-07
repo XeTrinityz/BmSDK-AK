@@ -84,6 +84,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_GetIsLeftCtrlPressed(BmSDK.FString sPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetIsLeftCtrlPressed, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_GetIsLeftCtrlPressed");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_GetIsLeftShiftPressed(BmSDK.FString sPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetIsLeftShiftPressed, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_GetIsLeftShiftPressed");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe override void CloseScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseScreen, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.CloseScreen");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void SetCurrentPage(int nPage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentPage, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.SetCurrentPage");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void AppendPage(BmSDK.FString InName, BmSDK.FString InDevice, BmSDK.FString InScheme)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendPage, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.AppendPage");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_RequestPages(BmSDK.FString sPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestPages, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_RequestPages");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +175,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_SetBindByAbility(int InAbilityId, BmSDK.FString InKeyUnlocalized, bool bIsPrimary, int InTypeId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetBindByAbility, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_SetBindByAbility");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -186,6 +193,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_RequestControlData(BmSDK.FString BatmanAbilityNamesPath, BmSDK.FString BatmanKey1Path, BmSDK.FString BatmanKey2Path, BmSDK.FString PursuitAbilityNamesPath, BmSDK.FString PursuitKeys1Path, BmSDK.FString PursuitKeys2Path, BmSDK.FString BattleAbilityNamesPath, BmSDK.FString BattleKeys1Path, BmSDK.FString BattleKeys2Path)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestControlData, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_RequestControlData");
         byte* paramsPtr = stackalloc byte[405];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -208,6 +216,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe override void XI_OnOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnOut, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_OnOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +230,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_ThrowKeyBindPopup(BmSDK.FString InPath, int InTypeId, int InIndex, bool InbIsPrimaryKeyBind)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ThrowKeyBindPopup, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_ThrowKeyBindPopup");
         byte* paramsPtr = stackalloc byte[61];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +248,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual BmSDK.FString GetDefaultKey(int InTypeId, int InIndex, BmSDK.BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.KeyMap InKeyMap, bool GetUnlocalized = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDefaultKey, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.GetDefaultKey");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -255,6 +266,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual BmSDK.FString GetCurrentKey(int InTypeId, int InIndex, BmSDK.BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.KeyMap InKeyMap)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentKey, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.GetCurrentKey");
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -271,6 +283,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual BmSDK.FString GetKey(BmSDK.BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.KeyBindSourceId InSource, int InTypeId, int InIndex, BmSDK.BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.KeyMap InKeyBind, bool GetUnlocalizedDefault = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetKey, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.GetKey");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -289,6 +302,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_ThrowAreYouSurePopup(BmSDK.FString InPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ThrowAreYouSurePopup, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_ThrowAreYouSurePopup");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -303,6 +317,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_ButtonPCThrowAreYouSurePopup(BmSDK.FString InPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ButtonPCThrowAreYouSurePopup, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_ButtonPCThrowAreYouSurePopup");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -317,6 +332,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void SetKeyButtonBind(BmSDK.FString InKey)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetKeyButtonBind, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.SetKeyButtonBind");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -331,6 +347,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe override void PopupRequester_Callback(BmSDK.BmGame.RGFxMoviePopupRequester ThePopUpMsg, int ButtonId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopupRequester_Callback, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.PopupRequester_Callback");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -346,6 +363,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void KeyBindPopUpResetToDefaultPressed(BmSDK.FString InDefaultKey)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KeyBindPopUpResetToDefaultPressed, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.KeyBindPopUpResetToDefaultPressed");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -360,6 +378,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe override void XI_OnBack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnBack, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_OnBack");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -373,6 +392,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void XI_OnYPressed(BmSDK.FString Path)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnYPressed, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.XI_OnYPressed");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -387,6 +407,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe virtual void ResetAllKeybindsToDefault()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetAllKeybindsToDefault, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.ResetAllKeybindsToDefault");
         byte* paramsPtr = stackalloc byte[188];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -400,6 +421,7 @@ public partial class RGFxMovieUI_PauseOptionsControlsKeyboard : BmSDK.BmGame.RGF
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieUI_PauseOptionsControlsKeyboard.Init");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual int GetOverworldHintRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOverworldHintRange, "BmGame.RPickup_MiniDroneBase.GetOverworldHintRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool GetSatnavToRoadAtSameHeight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSatnavToRoadAtSameHeight, "BmGame.RPickup_MiniDroneBase.GetSatnavToRoadAtSameHeight");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool GetSatnavToRoadBelow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSatnavToRoadBelow, "BmGame.RPickup_MiniDroneBase.GetSatnavToRoadBelow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual BmSDK.FString GetCustomFlag()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomFlag, "BmGame.RPickup_MiniDroneBase.GetCustomFlag");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual int GetUnlockedChapter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUnlockedChapter, "BmGame.RPickup_MiniDroneBase.GetUnlockedChapter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual int GetMapIconFloatUpAdjustment()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMapIconFloatUpAdjustment, "BmGame.RPickup_MiniDroneBase.GetMapIconFloatUpAdjustment");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool UseSecretLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseSecretLocation, "BmGame.RPickup_MiniDroneBase.UseSecretLocation");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +182,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual int GetSecretLocationZ()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretLocationZ, "BmGame.RPickup_MiniDroneBase.GetSecretLocationZ");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +196,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual int GetSecretLocationY()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretLocationY, "BmGame.RPickup_MiniDroneBase.GetSecretLocationY");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -201,6 +210,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual int GetSecretLocationX()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretLocationX, "BmGame.RPickup_MiniDroneBase.GetSecretLocationX");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +224,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual byte GetSecretZone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretZone, "BmGame.RPickup_MiniDroneBase.GetSecretZone");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -227,6 +238,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual int GetSecretPickupIndex()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretPickupIndex, "BmGame.RPickup_MiniDroneBase.GetSecretPickupIndex");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -240,6 +252,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual BmSDK.FString GetSecretSubType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretSubType, "BmGame.RPickup_MiniDroneBase.GetSecretSubType");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -253,6 +266,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual BmSDK.FString GetSecretName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretName, "BmGame.RPickup_MiniDroneBase.GetSecretName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -266,6 +280,7 @@ public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool IsValidSecret()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidSecret, "BmGame.RPickup_MiniDroneBase.IsValidSecret");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

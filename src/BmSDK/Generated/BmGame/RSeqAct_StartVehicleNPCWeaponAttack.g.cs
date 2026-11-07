@@ -84,6 +84,7 @@ public partial class RSeqAct_StartVehicleNPCWeaponAttack : BmSDK.Engine.SeqAct_L
     /// </summary>
     public unsafe virtual void FiredOffScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FiredOffScreen, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.FiredOffScreen");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_StartVehicleNPCWeaponAttack : BmSDK.Engine.SeqAct_L
     /// </summary>
     public unsafe virtual void LostLineOfSight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LostLineOfSight, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.LostLineOfSight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSeqAct_StartVehicleNPCWeaponAttack : BmSDK.Engine.SeqAct_L
     /// </summary>
     public unsafe virtual void WeaponHit(bool HitTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WeaponHit, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.WeaponHit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

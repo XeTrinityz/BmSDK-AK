@@ -84,6 +84,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.FDamageInfo SetDamageInfo(BmSDK.BmGame.RPawnCombat DamageReceiver, float DmgAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageInfo, "BmScript.RCombatMove_BatmanBeatdownMiss.SetDamageInfo");
         byte* paramsPtr = stackalloc byte[524];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetStrikeAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeAnimSet, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnimSet");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
     /// </summary>
     public unsafe override BmSDK.FName GetStrikeAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeAnim, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
     /// </summary>
     public unsafe override bool ShouldStartFinalBlowCam()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStartFinalBlowCam, "BmScript.RCombatMove_BatmanBeatdownMiss.ShouldStartFinalBlowCam");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

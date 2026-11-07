@@ -84,6 +84,7 @@ public partial class RGangVehicleInteractPointBase : BmSDK.BmGame.RDummyTarget, 
     /// </summary>
     public unsafe virtual void SetInUse(BmSDK.BmGame.RVehicleNPC NewCar)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInUse, "BmGame.RGangVehicleInteractPointBase.SetInUse");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGangVehicleInteractPointBase : BmSDK.BmGame.RDummyTarget, 
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleScenario GetCarScenario()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCarScenario, "BmGame.RGangVehicleInteractPointBase.GetCarScenario");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

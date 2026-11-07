@@ -92,6 +92,7 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     /// </summary>
     public unsafe virtual void SetRandomPopulation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRandomPopulation, "BmGame.RSeqAct_SetRandomPopulationBase.SetRandomPopulation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class RSeqAct_SetRandomPopulationBase : BmSDK.Engine.SequenceActi
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SetRandomPopulationBase.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

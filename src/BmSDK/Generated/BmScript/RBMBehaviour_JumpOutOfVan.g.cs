@@ -84,6 +84,7 @@ public partial class RBMBehaviour_JumpOutOfVan : BmSDK.BmGame.RBMBehaviour, BmSD
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_JumpOutOfVan.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_JumpOutOfVan : BmSDK.BmGame.RBMBehaviour, BmSD
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmScript.RBMBehaviour_JumpOutOfVan.OnBeginInterrupt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_JumpOutOfVan : BmSDK.BmGame.RBMBehaviour, BmSD
     /// </summary>
     public unsafe virtual void Drop()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Drop, "BmScript.RBMBehaviour_JumpOutOfVan.Drop");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMBehaviour_JumpOutOfVan : BmSDK.BmGame.RBMBehaviour, BmSD
     /// </summary>
     public unsafe virtual void GotoCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoCombat, "BmScript.RBMBehaviour_JumpOutOfVan.GotoCombat");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RBMBehaviour_JumpOutOfVan : BmSDK.BmGame.RBMBehaviour, BmSD
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RBMBehaviour_JumpOutOfVan.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RBMBehaviour_JumpOutOfVan : BmSDK.BmGame.RBMBehaviour, BmSD
     /// </summary>
     public unsafe override bool CanBeHitInCombat(BmSDK.BmGame.RDamageType DamageType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeHitInCombat, "BmScript.RBMBehaviour_JumpOutOfVan.CanBeHitInCombat");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RBMBehaviour_JumpOutOfVan : BmSDK.BmGame.RBMBehaviour, BmSD
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_JumpOutOfVan.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

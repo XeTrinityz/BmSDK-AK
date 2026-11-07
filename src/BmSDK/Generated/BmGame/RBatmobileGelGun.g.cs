@@ -84,6 +84,7 @@ public partial class RBatmobileGelGun : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGame
     /// </summary>
     public unsafe override bool FireWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireWeapon, "BmGame.RBatmobileGelGun.FireWeapon");
         byte* paramsPtr = stackalloc byte[388];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

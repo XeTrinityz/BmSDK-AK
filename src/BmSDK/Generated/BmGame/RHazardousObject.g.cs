@@ -84,6 +84,7 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void HitPawn(BmSDK.BmGame.RPawnCombat PawnToHit)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitPawn, "BmGame.RHazardousObject.HitPawn");
         byte* paramsPtr = stackalloc byte[284];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RHazardousObject.Touch");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +117,7 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void CanDamagePawns()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDamagePawns, "BmGame.RHazardousObject.CanDamagePawns");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

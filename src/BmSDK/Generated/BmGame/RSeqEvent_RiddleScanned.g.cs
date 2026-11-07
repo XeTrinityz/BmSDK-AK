@@ -97,6 +97,7 @@ public partial class RSeqEvent_RiddleScanned : BmSDK.Engine.SequenceEvent, BmSDK
     /// </summary>
     public unsafe virtual bool ShouldActivateForAnyPickupScanned()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldActivateForAnyPickupScanned, "BmGame.RSeqEvent_RiddleScanned.ShouldActivateForAnyPickupScanned");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqEvent_RiddleScanned : BmSDK.Engine.SequenceEvent, BmSDK
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPickupBase PickupActor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickupActor, "BmGame.RSeqEvent_RiddleScanned.PickupActor");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqEvent_RiddleScanned : BmSDK.Engine.SequenceEvent, BmSDK
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRiddleBase RiddleActor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiddleActor, "BmGame.RSeqEvent_RiddleScanned.RiddleActor");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

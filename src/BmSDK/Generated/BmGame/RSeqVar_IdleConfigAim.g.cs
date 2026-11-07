@@ -84,6 +84,7 @@ public partial class RSeqVar_IdleConfigAim : BmSDK.Engine.SequenceVariable, BmSD
     /// </summary>
     public unsafe virtual void UpdateStatus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateStatus, "BmGame.RSeqVar_IdleConfigAim.UpdateStatus");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

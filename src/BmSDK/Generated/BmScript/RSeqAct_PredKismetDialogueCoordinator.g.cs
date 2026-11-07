@@ -97,6 +97,7 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// </summary>
     public unsafe virtual void DbgMsg(BmSDK.FString msg)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DbgMsg, "BmScript.RSeqAct_PredKismetDialogueCoordinator.DbgMsg");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// </summary>
     public unsafe virtual void HandleInputLinks()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInputLinks, "BmScript.RSeqAct_PredKismetDialogueCoordinator.HandleInputLinks");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_PredKismetDialogueCoordinator.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// </summary>
     public unsafe virtual void ResetTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetTimer, "BmScript.RSeqAct_PredKismetDialogueCoordinator.ResetTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +155,7 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// </summary>
     public unsafe virtual void TryTriggerDialogue(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerDialogue, "BmScript.RSeqAct_PredKismetDialogueCoordinator.TryTriggerDialogue");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +170,7 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// </summary>
     public unsafe virtual bool CanTriggerDialogue(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTriggerDialogue, "BmScript.RSeqAct_PredKismetDialogueCoordinator.CanTriggerDialogue");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -179,6 +185,7 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
     /// </summary>
     public unsafe virtual void CheekyOverride()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheekyOverride, "BmScript.RSeqAct_PredKismetDialogueCoordinator.CheekyOverride");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

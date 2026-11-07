@@ -84,6 +84,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe virtual void UnlockForPawn(BmSDK.BmGame.RPawnVillain Thug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockForPawn, "BmGame.RCombatRetreatFromBatmobilePoint.UnlockForPawn");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe virtual void LockForPawn(BmSDK.BmGame.RPawnVillain Thug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LockForPawn, "BmGame.RCombatRetreatFromBatmobilePoint.LockForPawn");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pylon GetPylon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPylon, "BmGame.RCombatRetreatFromBatmobilePoint.GetPylon");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe virtual void SetPylon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPylon, "BmGame.RCombatRetreatFromBatmobilePoint.SetPylon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe virtual bool CanBeUsedBy(BmSDK.BmGame.RPawnVillain Thug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeUsedBy, "BmGame.RCombatRetreatFromBatmobilePoint.CanBeUsedBy");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RCombatRetreatFromBatmobilePoint.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RCombatRetreatFromBatmobilePoint.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RCombatRetreatFromBatmobilePoint : BmSDK.BmGame.RDummyTarge
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RCombatRetreatFromBatmobilePoint.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

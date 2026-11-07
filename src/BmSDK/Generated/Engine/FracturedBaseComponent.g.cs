@@ -79,6 +79,7 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     /// </summary>
     public unsafe virtual int GetNumVisibleFragments()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumVisibleFragments, "Engine.FracturedBaseComponent.GetNumVisibleFragments");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     /// </summary>
     public unsafe virtual int GetNumFragments()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumFragments, "Engine.FracturedBaseComponent.GetNumFragments");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +121,7 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     /// </summary>
     public unsafe virtual bool IsFragmentVisible(int FragmentIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFragmentVisible, "Engine.FracturedBaseComponent.IsFragmentVisible");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +143,7 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     /// </summary>
     public unsafe virtual BmSDK.TArray<byte> GetVisibleFragments()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVisibleFragments, "Engine.FracturedBaseComponent.GetVisibleFragments");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +164,7 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     /// </summary>
     public unsafe override bool SetStaticMesh(BmSDK.Engine.StaticMesh NewMesh, bool bForce = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStaticMesh, "Engine.FracturedBaseComponent.SetStaticMesh");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -182,6 +187,7 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     /// </summary>
     public unsafe override bool GetUseSimpleLineCollision()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUseSimpleLineCollision, "Engine.FracturedBaseComponent.GetUseSimpleLineCollision");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +208,7 @@ public partial class FracturedBaseComponent : BmSDK.Engine.StaticMeshComponent, 
     /// </summary>
     public unsafe override bool GetUseSimpleBoxCollision()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUseSimpleBoxCollision, "Engine.FracturedBaseComponent.GetUseSimpleBoxCollision");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

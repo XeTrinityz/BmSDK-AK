@@ -84,6 +84,7 @@ public partial class RBMAIAction_ShootCasualtyDown : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe virtual void SpotPlayers()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpotPlayers, "BmGame.RBMAIAction_ShootCasualtyDown.SpotPlayers");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMAIAction_ShootCasualtyDown : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_ShootCasualtyDown.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RBMAIAction_ShootCasualtyDown : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe virtual void RespondToRopeCut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RespondToRopeCut, "BmGame.RBMAIAction_ShootCasualtyDown.RespondToRopeCut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RBMAIAction_ShootCasualtyDown : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe virtual void NotifyRopeCut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyRopeCut, "BmGame.RBMAIAction_ShootCasualtyDown.NotifyRopeCut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RBMAIAction_ShootCasualtyDown : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMAIAction_ShootCasualtyDown.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RBMAIAction_ShootCasualtyDown : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_ShootCasualtyDown.OnActivate");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

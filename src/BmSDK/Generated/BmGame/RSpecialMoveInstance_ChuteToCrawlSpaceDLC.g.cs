@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_ChuteToCrawlSpaceDLC : BmSDK.BmGame.RS
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_ChuteToCrawlSpaceDLC.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSpecialMoveInstance_ChuteToCrawlSpaceDLC : BmSDK.BmGame.RS
     /// </summary>
     public unsafe override void OverridePlayerCollisionWhenInChute()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePlayerCollisionWhenInChute, "BmGame.RSpecialMoveInstance_ChuteToCrawlSpaceDLC.OverridePlayerCollisionWhenInChute");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

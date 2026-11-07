@@ -84,6 +84,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void CapeSetOwnerNoSee(bool bNewIsOwnerNoSee)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CapeSetOwnerNoSee, "BmGame.RCapeComponent.CapeSetOwnerNoSee");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void CapeSetHiddenGame(bool bNewIsHidden)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CapeSetHiddenGame, "BmGame.RCapeComponent.CapeSetHiddenGame");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RemoveCoreAnimSet(BmSDK.Engine.AnimSet TheAnimSet)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCoreAnimSet, "BmGame.RCapeComponent.RemoveCoreAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +136,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddCoreAnimSet(BmSDK.Engine.AnimSet TheAnimSet)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCoreAnimSet, "BmGame.RCapeComponent.AddCoreAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +158,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool InternalChangeCapeStateGeneral(BmSDK.BmGame.RPhysUtil.FCapeStateChangeData StateChangeData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InternalChangeCapeStateGeneral, "BmGame.RCapeComponent.InternalChangeCapeStateGeneral");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +180,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void GetAvailableStateNames(out BmSDK.TArray<BmSDK.FName> OutStateNames, bool bSorted = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAvailableStateNames, "BmGame.RCapeComponent.GetAvailableStateNames");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +203,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool GetIsCinematicMode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsCinematicMode, "BmGame.RCapeComponent.GetIsCinematicMode");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +224,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> OutThoughts)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThoughts, "BmGame.RCapeComponent.GetThoughts");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +246,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void UpdateSkeletalMeshDepthBias()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSkeletalMeshDepthBias, "BmGame.RCapeComponent.UpdateSkeletalMeshDepthBias");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -258,6 +267,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual float CalculateAngularVelocity()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateAngularVelocity, "BmGame.RCapeComponent.CalculateAngularVelocity");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +288,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix CalculateCapeLocalToWorld()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateCapeLocalToWorld, "BmGame.RCapeComponent.CalculateCapeLocalToWorld");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -298,6 +309,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void CalculateWindProperties(out BmSDK.BmGame.RCapeComponent.FCapeWindAudioProperties OutWindProperties)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateWindProperties, "BmGame.RCapeComponent.CalculateWindProperties");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -321,6 +333,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ApplyWind(BmSDK.BmGame.RGameInfo.FRWindConfig WindConfig, out BmSDK.BmGame.RGameInfo.FRWindState WindState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyWind, "BmGame.RCapeComponent.ApplyWind");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -345,6 +358,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddCinematicAnimSet(BmSDK.Engine.AnimSet NewAnimSet)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCinematicAnimSet, "BmGame.RCapeComponent.AddCinematicAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -366,6 +380,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetCapeDebugRenderBone(int DebugRenderBoneChainIndex, int DebugRenderBoneLinkIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCapeDebugRenderBone, "BmGame.RCapeComponent.SetCapeDebugRenderBone");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -388,6 +403,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void DoubleFrameTeleport()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoubleFrameTeleport, "BmGame.RCapeComponent.DoubleFrameTeleport");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -408,6 +424,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void OnTeleport()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnTeleport, "BmGame.RCapeComponent.OnTeleport");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -428,6 +445,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ResumeCape()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResumeCape, "BmGame.RCapeComponent.ResumeCape");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -448,6 +466,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PauseCape()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PauseCape, "BmGame.RCapeComponent.PauseCape");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -468,6 +487,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetMaterialSpeedVariableOverride(float OverrideValue = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaterialSpeedVariableOverride, "BmGame.RCapeComponent.SetMaterialSpeedVariableOverride");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -489,6 +509,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetAutoCapeAnimBlendWeights(bool IsBlendWeightSettingEnabled, float rootWeight = default, float childWeights = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAutoCapeAnimBlendWeights, "BmGame.RCapeComponent.SetAutoCapeAnimBlendWeights");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -512,6 +533,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetAnimTreeNodeBlendValue(BmSDK.FName setNodeName, float blendValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAnimTreeNodeBlendValue, "BmGame.RCapeComponent.SetAnimTreeNodeBlendValue");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -534,6 +556,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual float GetAnimTreeNodeBlendValue(BmSDK.FName getNodeName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimTreeNodeBlendValue, "BmGame.RCapeComponent.GetAnimTreeNodeBlendValue");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -555,6 +578,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetAnimStateTreeNode(BmSDK.FName CapeStateName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimStateTreeNode, "BmGame.RCapeComponent.GetAnimStateTreeNode");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -576,6 +600,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetCurrentCapeStateAnimTreeNode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentCapeStateAnimTreeNode, "BmGame.RCapeComponent.GetCurrentCapeStateAnimTreeNode");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -596,6 +621,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void UpdateDamageState(BmSDK.Engine.MaterialInterface NewMat)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDamageState, "BmGame.RCapeComponent.UpdateDamageState");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -617,6 +643,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool GetIsInCinematicsState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsInCinematicsState, "BmGame.RCapeComponent.GetIsInCinematicsState");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -637,6 +664,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ForceCapeToAnimPose()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceCapeToAnimPose, "BmGame.RCapeComponent.ForceCapeToAnimPose");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -657,6 +685,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ChangeCapeGeneral(BmSDK.BmGame.RPhysUtil.FCapeChangeData ChangeData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeCapeGeneral, "BmGame.RCapeComponent.ChangeCapeGeneral");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -671,6 +700,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual int ChangeCapeStateGeneral(BmSDK.BmGame.RPhysUtil.FCapeStateChangeData StateChangeData, bool bDebugChange = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeCapeStateGeneral, "BmGame.RCapeComponent.ChangeCapeStateGeneral");
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -707,6 +737,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool GetIsCurrentCapeStateMirrored()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsCurrentCapeStateMirrored, "BmGame.RCapeComponent.GetIsCurrentCapeStateMirrored");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -727,6 +758,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FName GetCinematicCapeStateName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCinematicCapeStateName, "BmGame.RCapeComponent.GetCinematicCapeStateName");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -747,6 +779,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FName GetCurrentCapeStateName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentCapeStateName, "BmGame.RCapeComponent.GetCurrentCapeStateName");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -767,6 +800,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void InitUpdate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitUpdate, "BmGame.RCapeComponent.InitUpdate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -787,6 +821,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void InitEnable(BmSDK.BmGame.RCapeComponent.EInitterType InitType, bool IsEnableInit)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitEnable, "BmGame.RCapeComponent.InitEnable");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -809,6 +844,7 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool GetIsInitialised()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsInitialised, "BmGame.RCapeComponent.GetIsInitialised");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1385,5 +1421,33 @@ public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObj
     {
         get { return BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 952); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 952); }
+    }
+}
+
+/// <summary>
+/// The static native functions of RCapeComponent, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class RCapeComponentStatics
+{
+    private static BmSDK.Function __fn_GetMirroredTypeFromBool;
+    /// <summary>
+    /// Function: GetMirroredTypeFromBool, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.BmGame.RPhysUtil.ECapeMirroredType GetMirroredTypeFromBool(this BmSDK.BmGame.RCapeComponent self, bool bMirrored)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMirroredTypeFromBool, "BmGame.RCapeComponent.GetMirroredTypeFromBool");
+        byte* paramsPtr = stackalloc byte[21];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bMirrored, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPhysUtil.ECapeMirroredType>(paramsPtr + 4);
     }
 }

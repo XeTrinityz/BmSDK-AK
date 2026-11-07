@@ -84,6 +84,7 @@ public partial class RAEC_ExplodedWall_Sub_Investigate : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_ExplodedWall_Sub_Investigate.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_ExplodedWall_Sub_Investigate : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe virtual void AssignWall(System.Numerics.Vector3 MovePos, BmSDK.Engine.Actor TargetWall)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignWall, "BmGame.RAEC_ExplodedWall_Sub_Investigate.AssignWall");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

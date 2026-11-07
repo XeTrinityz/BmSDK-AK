@@ -84,6 +84,7 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible OverrideDefaultAkAudible(bool allowCreate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDefaultAkAudible, "BmScript.RPawnVillainThugJokerWarehouse.OverrideDefaultAkAudible");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     /// </summary>
     public unsafe override BmSDK.Engine.AkEvent FindContactName(BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindContactName, "BmScript.RPawnVillainThugJokerWarehouse.FindContactName");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     /// </summary>
     public unsafe override void PlayHitReaction(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHitReaction, "BmScript.RPawnVillainThugJokerWarehouse.PlayHitReaction");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     /// </summary>
     public unsafe override void PossibleCarCollisionWarning(BmSDK.Engine.Actor V, float Speed, float DeltaTime, bool bForceDive = default, bool bZap = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PossibleCarCollisionWarning, "BmScript.RPawnVillainThugJokerWarehouse.PossibleCarCollisionWarning");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +149,7 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult DamagedBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagedBy, "BmScript.RPawnVillainThugJokerWarehouse.DamagedBy");
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +164,7 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
     /// </summary>
     public unsafe override bool ShouldGoRagdoll(BmSDK.Class dmgType, float DamageAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldGoRagdoll, "BmScript.RPawnVillainThugJokerWarehouse.ShouldGoRagdoll");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateAlpha(BmSDK.Engine.Camera Camera, float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAlpha, "Engine.CameraModifier.UpdateAlpha");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ProcessViewRotation(BmSDK.Engine.Actor ViewTarget, float DeltaTime, out BmSDK.Rotator out_ViewRotation, out BmSDK.Rotator out_DeltaRot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessViewRotation, "Engine.CameraModifier.ProcessViewRotation");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +129,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ToggleModifier()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleModifier, "Engine.CameraModifier.ToggleModifier");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +143,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void EnableModifier()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableModifier, "Engine.CameraModifier.EnableModifier");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +157,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DisableModifier(bool bImmediate = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableModifier, "Engine.CameraModifier.DisableModifier");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +172,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool RemoveCameraModifier(BmSDK.Engine.Camera Camera)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCameraModifier, "Engine.CameraModifier.RemoveCameraModifier");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +187,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AddCameraModifier(BmSDK.Engine.Camera Camera)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCameraModifier, "Engine.CameraModifier.AddCameraModifier");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +202,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsDisabled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDisabled, "Engine.CameraModifier.IsDisabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +223,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ModifyCamera(BmSDK.Engine.Camera Camera, float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyCamera, "Engine.CameraModifier.ModifyCamera");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -240,6 +249,7 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.CameraModifier.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

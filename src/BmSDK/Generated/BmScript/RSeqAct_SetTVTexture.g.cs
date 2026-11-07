@@ -97,6 +97,7 @@ public partial class RSeqAct_SetTVTexture : BmSDK.Engine.SequenceAction, BmSDK.I
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SetTVTexture.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_SetTVTexture : BmSDK.Engine.SequenceAction, BmSDK.I
     /// </summary>
     public unsafe virtual void SetStatic()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStatic, "BmScript.RSeqAct_SetTVTexture.SetStatic");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_SetTVTexture : BmSDK.Engine.SequenceAction, BmSDK.I
     /// </summary>
     public unsafe virtual void SetTexture(BmSDK.Engine.Texture Texture)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTexture, "BmScript.RSeqAct_SetTVTexture.SetTexture");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

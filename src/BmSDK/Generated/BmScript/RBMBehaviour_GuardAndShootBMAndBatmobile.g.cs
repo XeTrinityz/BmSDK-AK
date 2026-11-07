@@ -97,6 +97,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe override bool ManuallyDodgeProjectile()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManuallyDodgeProjectile, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.ManuallyDodgeProjectile");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe override bool CanDodgeProjectile(System.Numerics.Vector3 ThrownFromPos, int CheckBatarangID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDodgeProjectile, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.CanDodgeProjectile");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe virtual void SpawnAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnAttack, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.SpawnAttack");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +155,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +170,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe override void OnEndInterrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndInterrupt, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.OnEndInterrupt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +184,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.OnBeginInterrupt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +198,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe virtual void GetReady()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReady, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.GetReady");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +212,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +227,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe virtual bool CanSeeBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeBatman, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.CanSeeBatman");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +241,7 @@ public partial class RBMBehaviour_GuardAndShootBMAndBatmobile : BmSDK.BmGame.RBM
     /// </summary>
     public unsafe virtual bool CanSeeBatmobile()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeBatmobile, "BmScript.RBMBehaviour_GuardAndShootBMAndBatmobile.CanSeeBatmobile");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

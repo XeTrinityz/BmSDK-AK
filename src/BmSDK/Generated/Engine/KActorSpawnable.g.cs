@@ -84,6 +84,7 @@ public partial class KActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ResetComponents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetComponents, "Engine.KActorSpawnable.ResetComponents");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class KActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RecycleInternal()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecycleInternal, "Engine.KActorSpawnable.RecycleInternal");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -117,6 +119,7 @@ public partial class KActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Recycle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "Engine.KActorSpawnable.Recycle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +133,7 @@ public partial class KActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Initialize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialize, "Engine.KActorSpawnable.Initialize");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

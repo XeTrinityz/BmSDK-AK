@@ -84,6 +84,7 @@ public partial class RAEC_Casualty_Sub_ShootCasDown : BmSDK.BmGame.RAEC_Casualty
     /// </summary>
     public unsafe override void AssignCasualty(BmSDK.BmGame.RPawnVillain NewCas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignCasualty, "BmGame.RAEC_Casualty_Sub_ShootCasDown.AssignCasualty");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

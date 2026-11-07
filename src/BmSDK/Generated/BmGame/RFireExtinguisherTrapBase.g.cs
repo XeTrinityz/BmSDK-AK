@@ -84,6 +84,7 @@ public partial class RFireExtinguisherTrapBase : BmSDK.Engine.Actor, BmSDK.IGame
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RFireExtinguisherTrapBase.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RFireExtinguisherTrapBase : BmSDK.Engine.Actor, BmSDK.IGame
     /// </summary>
     public unsafe virtual void HitByGel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByGel, "BmGame.RFireExtinguisherTrapBase.HitByGel");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

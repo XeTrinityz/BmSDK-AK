@@ -84,6 +84,7 @@ public partial class RAnimNotify_PlayGadgetAnim : BmSDK.Engine.AnimNotify, BmSDK
     /// </summary>
     public unsafe virtual void TriggerGadgetAnim(BmSDK.BmGame.RPawnPlayer Player)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGadgetAnim, "BmGame.RAnimNotify_PlayGadgetAnim.TriggerGadgetAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

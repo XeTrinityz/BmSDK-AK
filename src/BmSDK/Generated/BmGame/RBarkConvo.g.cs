@@ -84,6 +84,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CheckCanSpeak(BmSDK.Engine.Actor Speaker, BmSDK.Engine.AkDialogue.FAkSpeechOptions Opt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckCanSpeak, "BmGame.RBarkConvo.CheckCanSpeak");
         byte* paramsPtr = stackalloc byte[152];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -101,6 +102,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BindPawnRefs(BmSDK.TArray<BmSDK.BmGame.RBarkConvoPawnRef> PawnRefsToLock, BmSDK.Engine.AkDialogue.FAkSpeechOptions Opt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BindPawnRefs, "BmGame.RBarkConvo.BindPawnRefs");
         byte* paramsPtr = stackalloc byte[208];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +141,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PopulateOpenListFor(BmSDK.BmGame.RBarkConvo.FGBFSNode Parent, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FGBFSNode> OpenList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopulateOpenListFor, "BmGame.RBarkConvo.PopulateOpenListFor");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +157,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> GetMinimalPawnRefList()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMinimalPawnRefList, "BmGame.RBarkConvo.GetMinimalPawnRefList");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +171,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> GetPawnRefList()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPawnRefList, "BmGame.RBarkConvo.GetPawnRefList");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +185,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float ThisPlayedScore(BmSDK.BmGame.RBarkFlagBase TestContext)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThisPlayedScore, "BmGame.RBarkConvo.ThisPlayedScore");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +200,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ActivateNextAction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateNextAction, "BmGame.RBarkConvo.ActivateNextAction");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +214,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RBarkConvo.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +229,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Stop(bool bHardStop = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "BmGame.RBarkConvo.Stop");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +244,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Start(BmSDK.BmGame.RBarkGroupContext NewGroupContext)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Start, "BmGame.RBarkConvo.Start");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -249,6 +259,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueSpeech GetAkSpeech()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAkSpeech, "BmGame.RBarkConvo.GetAkSpeech");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -310,6 +321,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool DoLivePawnAndVoiceAssignment(BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> SpeakerSlotStartState, BmSDK.TArray<BmSDK.Engine.Actor> AvailableSpeakers, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FLiveAssignEndState> OutList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoLivePawnAndVoiceAssignment, "BmGame.RBarkConvo.DoLivePawnAndVoiceAssignment");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -333,6 +345,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CheckLineRepetitionOkay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLineRepetitionOkay, "BmGame.RBarkConvo.CheckLineRepetitionOkay");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -353,6 +366,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ContainsOnceEverDialogueEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContainsOnceEverDialogueEvent, "BmGame.RBarkConvo.ContainsOnceEverDialogueEvent");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -373,6 +387,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ContainsOnceOnlyDialogueEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContainsOnceOnlyDialogueEvent, "BmGame.RBarkConvo.ContainsOnceOnlyDialogueEvent");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -393,6 +408,7 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BarkFinished(bool bWasInterrupted)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BarkFinished, "BmGame.RBarkConvo.BarkFinished");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -831,5 +847,83 @@ public partial class RBarkConvo : BmSDK.Engine.AkHash, BmSDK.IGameObject
     {
         get { return BmSDK.Framework.MarshalUtil.ToManaged<System.IntPtr>(Ptr + 252); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 252); }
+    }
+}
+
+/// <summary>
+/// The static native functions of RBarkConvo, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class RBarkConvoStatics
+{
+    private static BmSDK.Function __fn_ReduceClonesDownToSingleVoice;
+    /// <summary>
+    /// Function: ReduceClonesDownToSingleVoice, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static bool ReduceClonesDownToSingleVoice(this BmSDK.BmGame.RBarkConvo self, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> VoicePawnRefList)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReduceClonesDownToSingleVoice, "BmGame.RBarkConvo.ReduceClonesDownToSingleVoice");
+        byte* paramsPtr = stackalloc byte[36];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        VoicePawnRefList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef>>(paramsPtr + 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
+    }
+
+    private static BmSDK.Function __fn_StaticInitVoiceWeighting;
+    /// <summary>
+    /// Function: StaticInitVoiceWeighting, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void StaticInitVoiceWeighting(this BmSDK.BmGame.RBarkConvo self, BmSDK.TArray<BmSDK.Engine.Actor> AvailableSpeakers, BmSDK.BmGame.RBarkGroupContext TestGroupContext, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoiceWeightingInfo> VoiceWeighting, bool bLocalLogAssignment = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StaticInitVoiceWeighting, "BmGame.RBarkConvo.StaticInitVoiceWeighting");
+        byte* paramsPtr = stackalloc byte[60];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(AvailableSpeakers, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(TestGroupContext, paramsPtr + 16);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bLocalLogAssignment, paramsPtr + 40);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        VoiceWeighting = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoiceWeightingInfo>>(paramsPtr + 24);
+        return;
+    }
+
+    private static BmSDK.Function __fn_StaticGetVoiceSwitchPenalty;
+    /// <summary>
+    /// Function: StaticGetVoiceSwitchPenalty, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static int StaticGetVoiceSwitchPenalty(this BmSDK.BmGame.RBarkConvo self, BmSDK.Engine.Actor TestActor, BmSDK.Engine.AkDialogueVoice TestVoice, BmSDK.BmGame.RBarkGroupContext TestGroupContext, BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoiceWeightingInfo> VoiceWeighting)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StaticGetVoiceSwitchPenalty, "BmGame.RBarkConvo.StaticGetVoiceSwitchPenalty");
+        byte* paramsPtr = stackalloc byte[60];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(TestActor, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(TestVoice, paramsPtr + 8);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(TestGroupContext, paramsPtr + 16);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(VoiceWeighting, paramsPtr + 24);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 40);
     }
 }

@@ -84,6 +84,7 @@ public partial class RBatarangRb_Controllable : BmSDK.BmScript.RBatarang_Control
     /// </summary>
     public unsafe override BmSDK.FString GetReversePromptName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReversePromptName, "BmScript.RBatarangRb_Controllable.GetReversePromptName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

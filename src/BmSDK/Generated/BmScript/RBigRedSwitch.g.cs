@@ -84,6 +84,7 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmScript.RBigRedSwitch.IsActive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool UsedBy(BmSDK.Engine.Pawn User)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedBy, "BmScript.RBigRedSwitch.UsedBy");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void RestartStasis()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestartStasis, "BmScript.RBigRedSwitch.RestartStasis");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RBigRedSwitch.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void ChangeLight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeLight, "BmScript.RBigRedSwitch.ChangeLight");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     /// </summary>
     public unsafe override void Interact(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmScript.RBigRedSwitch.Interact");
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RBigRedSwitch : BmSDK.BmGame.RBigRedSwitchBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmScript.RBigRedSwitch.CanReachItem");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

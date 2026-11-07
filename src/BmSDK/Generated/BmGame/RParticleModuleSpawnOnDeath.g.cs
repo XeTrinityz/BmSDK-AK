@@ -84,6 +84,7 @@ public partial class RParticleModuleSpawnOnDeath : BmSDK.BmGame.RParticleModuleO
     /// </summary>
     public unsafe virtual void SpawnParticles(BmSDK.Engine.Actor OwningActor, System.Numerics.Vector3 Position)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnParticles, "BmGame.RParticleModuleSpawnOnDeath.SpawnParticles");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

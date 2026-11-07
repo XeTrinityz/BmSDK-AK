@@ -84,6 +84,7 @@ public partial class DefaultPhysicsVolume : BmSDK.Engine.PhysicsVolume, BmSDK.IG
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.DefaultPhysicsVolume.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

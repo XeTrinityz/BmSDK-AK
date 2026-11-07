@@ -84,6 +84,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetEntryExitAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEntryExitAnimSet, "BmGame.RPredatorVolume.GetEntryExitAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetVaultExplosivesAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVaultExplosivesAnimSet, "BmGame.RPredatorVolume.GetVaultExplosivesAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetNoisyPred(bool newNoisyPred)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNoisyPred, "BmGame.RPredatorVolume.SetNoisyPred");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RegisterGrate(BmSDK.BmGame.RTunnelGrateBase Grate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterGrate, "BmGame.RPredatorVolume.RegisterGrate");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +149,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.Pylon> GetPylons()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPylons, "BmGame.RPredatorVolume.GetPylons");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pylon GetPylonListStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPylonListStart, "BmGame.RPredatorVolume.GetPylonListStart");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +184,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe override void UnTouch(BmSDK.Engine.Actor Other)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnTouch, "BmGame.RPredatorVolume.UnTouch");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +199,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RPredatorVolume.Touch");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -209,6 +217,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsInChallengeLayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInChallengeLayer, "BmGame.RPredatorVolume.IsInChallengeLayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -222,6 +231,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RPredatorVolume.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +245,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RPredatorVolume.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +259,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPredatorVolume.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +273,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RPredatorVolume.PreBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

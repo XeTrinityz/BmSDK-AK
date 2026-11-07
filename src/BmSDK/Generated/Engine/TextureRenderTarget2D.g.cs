@@ -84,6 +84,7 @@ public partial class TextureRenderTarget2D : BmSDK.Engine.TextureRenderTarget, B
     /// </summary>
     public unsafe virtual void Clear()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Clear, "Engine.TextureRenderTarget2D.Clear");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,5 +182,37 @@ public partial class TextureRenderTarget2D : BmSDK.Engine.TextureRenderTarget, B
     {
         get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 344) & 1) != 0; }
         set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 344); var newMask = value ? (currentMask | 1) : (currentMask & ~1); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 344); }
+    }
+}
+
+/// <summary>
+/// The static native functions of TextureRenderTarget2D, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class TextureRenderTarget2DStatics
+{
+    private static BmSDK.Function __fn_Create;
+    /// <summary>
+    /// Function: Create, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.TextureRenderTarget2D Create(this BmSDK.Engine.TextureRenderTarget2D self, int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default, BmSDK.GameObject.FLinearColor InClearColor = default, bool bOnlyRenderOnce = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Create, "Engine.TextureRenderTarget2D.Create");
+        byte* paramsPtr = stackalloc byte[56];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(InSizeX, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(InSizeY, paramsPtr + 4);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(InFormat, paramsPtr + 8);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(InClearColor, paramsPtr + 12);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bOnlyRenderOnce, paramsPtr + 28);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.TextureRenderTarget2D>(paramsPtr + 32);
     }
 }

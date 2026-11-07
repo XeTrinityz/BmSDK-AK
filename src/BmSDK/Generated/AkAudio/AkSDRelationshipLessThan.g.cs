@@ -84,6 +84,7 @@ public partial class AkSDRelationshipLessThan : BmSDK.AkAudio.AkSDRelationship, 
     /// </summary>
     public unsafe override float Evaluate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Evaluate, "AkAudio.AkSDRelationshipLessThan.Evaluate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

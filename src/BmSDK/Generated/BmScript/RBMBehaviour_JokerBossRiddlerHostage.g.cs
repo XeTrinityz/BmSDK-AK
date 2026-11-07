@@ -84,6 +84,7 @@ public partial class RBMBehaviour_JokerBossRiddlerHostage : BmSDK.BmGame.RBMBeha
     /// </summary>
     public unsafe virtual void ShotByJokerGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotByJokerGun, "BmScript.RBMBehaviour_JokerBossRiddlerHostage.ShotByJokerGun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

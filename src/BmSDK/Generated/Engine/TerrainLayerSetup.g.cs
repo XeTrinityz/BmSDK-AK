@@ -84,6 +84,7 @@ public partial class TerrainLayerSetup : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.TerrainLayerSetup.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

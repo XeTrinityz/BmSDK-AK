@@ -84,6 +84,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat ForceReceiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForceToGiveToPawn, "BmGame.RBMBehaviour_CombatHeavyObject.GetForceToGiveToPawn");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -108,6 +109,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override bool CanChangeTarget(BmSDK.BmGame.RPawnPlayerCombat TestTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanChangeTarget, "BmGame.RBMBehaviour_CombatHeavyObject.CanChangeTarget");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -122,6 +124,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override bool TriggerWeaponBomb()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerWeaponBomb, "BmGame.RBMBehaviour_CombatHeavyObject.TriggerWeaponBomb");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -135,6 +138,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe virtual void DropHeavyObject()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropHeavyObject, "BmGame.RBMBehaviour_CombatHeavyObject.DropHeavyObject");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +152,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetMovementForce(System.Numerics.Vector3 SourceLocation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMovementForce, "BmGame.RBMBehaviour_CombatHeavyObject.GetMovementForce");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +174,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override int GetAttackPriority(bool bForceAttack)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttackPriority, "BmGame.RBMBehaviour_CombatHeavyObject.GetAttackPriority");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +189,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override void GetPossibleMoves(out BmSDK.TArray<BmSDK.Class> PossibleMoves)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPossibleMoves, "BmGame.RBMBehaviour_CombatHeavyObject.GetPossibleMoves");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +204,7 @@ public partial class RBMBehaviour_CombatHeavyObject : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override bool ShouldUseEnvironment(float DeltaTime, bool bForceCheck)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldUseEnvironment, "BmGame.RBMBehaviour_CombatHeavyObject.ShouldUseEnvironment");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

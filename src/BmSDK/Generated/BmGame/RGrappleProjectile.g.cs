@@ -79,6 +79,7 @@ public partial class RGrappleProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
     /// </summary>
     public unsafe override void Hide(bool NewHidden)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Hide, "BmGame.RGrappleProjectile.Hide");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RGrappleProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
     /// </summary>
     public unsafe override void ReachedDest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReachedDest, "BmGame.RGrappleProjectile.ReachedDest");
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +108,7 @@ public partial class RGrappleProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
     /// </summary>
     public unsafe override void Fire(System.Numerics.Vector3 To)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Fire, "BmGame.RGrappleProjectile.Fire");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

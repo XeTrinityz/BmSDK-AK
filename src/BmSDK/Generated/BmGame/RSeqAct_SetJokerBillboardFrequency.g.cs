@@ -97,6 +97,7 @@ public partial class RSeqAct_SetJokerBillboardFrequency : BmSDK.Engine.SequenceA
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SetJokerBillboardFrequency.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmScript.RRiddlerSwitch.TakeDamage");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override bool UsedBy(BmSDK.Engine.Pawn User)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedBy, "BmScript.RRiddlerSwitch.UsedBy");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe virtual bool AllowController(BmSDK.Engine.Controller C)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowController, "BmScript.RRiddlerSwitch.AllowController");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +135,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override void Reset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "BmScript.RRiddlerSwitch.Reset");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +149,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override bool IsBatarangable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatarangable, "BmScript.RRiddlerSwitch.IsBatarangable");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmScript.RRiddlerSwitch.IsActive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -172,6 +178,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RRiddlerSwitch.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -185,6 +192,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmScript.RRiddlerSwitch.OnToggle");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -199,6 +207,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe override bool CanBeMissileTargetted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeMissileTargetted, "BmScript.RRiddlerSwitch.CanBeMissileTargetted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +221,7 @@ public partial class RRiddlerSwitch : BmSDK.BmGame.RInteractableItem, BmSDK.IGam
     /// </summary>
     public unsafe virtual void ChangeLight(bool bNewState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeLight, "BmScript.RRiddlerSwitch.ChangeLight");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class PathTargetPoint : BmSDK.Engine.Keypoint, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool ShouldBeHiddenBySHOW_NavigationNodes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldBeHiddenBySHOW_NavigationNodes, "Engine.PathTargetPoint.ShouldBeHiddenBySHOW_NavigationNodes");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

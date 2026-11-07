@@ -84,6 +84,7 @@ public partial class RBarkConvoAction_Cond_SpeakerValid : BmSDK.BmGame.RBarkConv
     /// </summary>
     public unsafe override int GetOutputIndex()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOutputIndex, "BmGame.RBarkConvoAction_Cond_SpeakerValid.GetOutputIndex");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

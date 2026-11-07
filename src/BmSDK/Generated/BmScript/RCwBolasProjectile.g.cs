@@ -84,6 +84,7 @@ public partial class RCwBolasProjectile : BmSDK.BmGame.RBatarangProjectile, BmSD
     /// </summary>
     public unsafe override bool SpawnHitEffects(System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitVelocity, BmSDK.Engine.RPhysicalMaterialProperty.EPhysMaterialImpactTypes ImpactType, BmSDK.Engine.Interface_AudioImpact audioInterface, bool bPlaySound = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnHitEffects, "BmScript.RCwBolasProjectile.SpawnHitEffects");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -102,6 +103,7 @@ public partial class RCwBolasProjectile : BmSDK.BmGame.RBatarangProjectile, BmSD
     /// </summary>
     public unsafe override void Ricochet(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor HitActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Ricochet, "BmScript.RCwBolasProjectile.Ricochet");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -117,6 +119,7 @@ public partial class RCwBolasProjectile : BmSDK.BmGame.RBatarangProjectile, BmSD
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RCwBolasProjectile.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +133,7 @@ public partial class RCwBolasProjectile : BmSDK.BmGame.RBatarangProjectile, BmSD
     /// </summary>
     public unsafe virtual void PlayGadgetAnim(BmSDK.FName GadgetAnim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayGadgetAnim, "BmScript.RCwBolasProjectile.PlayGadgetAnim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

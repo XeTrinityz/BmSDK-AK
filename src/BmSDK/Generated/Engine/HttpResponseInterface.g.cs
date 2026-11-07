@@ -79,6 +79,7 @@ public partial class HttpResponseInterface : BmSDK.Engine.HttpBaseInterface, BmS
     /// </summary>
     public unsafe virtual BmSDK.FString GetContentAsString()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetContentAsString, "Engine.HttpResponseInterface.GetContentAsString");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class HttpResponseInterface : BmSDK.Engine.HttpBaseInterface, BmS
     /// </summary>
     public unsafe virtual int GetResponseCode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetResponseCode, "Engine.HttpResponseInterface.GetResponseCode");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

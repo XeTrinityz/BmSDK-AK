@@ -79,6 +79,7 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
     /// </summary>
     public unsafe virtual void SetEnabled(bool bEnable)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.SceneCaptureComponent.SetEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
     /// </summary>
     public unsafe virtual void SetFrameRate(float NewFrameRate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFrameRate, "Engine.SceneCaptureComponent.SetFrameRate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

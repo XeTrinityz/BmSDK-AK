@@ -84,6 +84,7 @@ public partial class RAEC_GoggleBlinded_Solo : BmSDK.BmGame.RAlertEventCoordinat
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_GoggleBlinded_Solo.OnBeginShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_GoggleBlinded_Solo : BmSDK.BmGame.RAlertEventCoordinat
     /// </summary>
     public unsafe override bool WantsToGlanceAt(BmSDK.Engine.Actor TestTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WantsToGlanceAt, "BmGame.RAEC_GoggleBlinded_Solo.WantsToGlanceAt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RAEC_GoggleBlinded_Solo : BmSDK.BmGame.RAlertEventCoordinat
     /// </summary>
     public unsafe override void OnStartChild()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_GoggleBlinded_Solo.OnStartChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

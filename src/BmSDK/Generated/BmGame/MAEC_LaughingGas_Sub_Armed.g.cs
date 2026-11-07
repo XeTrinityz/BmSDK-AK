@@ -84,6 +84,7 @@ public partial class MAEC_LaughingGas_Sub_Armed : BmSDK.BmGame.RAlertEventCoordi
     /// </summary>
     public unsafe virtual void DisarmedDuringSmoke()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisarmedDuringSmoke, "BmGame.MAEC_LaughingGas_Sub_Armed.DisarmedDuringSmoke");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MAEC_LaughingGas_Sub_Armed : BmSDK.BmGame.RAlertEventCoordi
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetShootTarget(System.Numerics.Vector3 SmokeCentre)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetShootTarget, "BmGame.MAEC_LaughingGas_Sub_Armed.GetShootTarget");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class MAEC_LaughingGas_Sub_Armed : BmSDK.BmGame.RAlertEventCoordi
     /// </summary>
     public unsafe virtual void Init(BmSDK.BmGame.MLaughingGasScreenBase NewLaughingGas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.MAEC_LaughingGas_Sub_Armed.Init");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

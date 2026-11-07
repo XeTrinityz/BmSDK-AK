@@ -84,6 +84,7 @@ public partial class AkDialogueConversation : BmSDK.Engine.AkDialogueSpeech, BmS
     /// </summary>
     public unsafe virtual int GetDialogueLineCountScript()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDialogueLineCountScript, "Engine.AkDialogueConversation.GetDialogueLineCountScript");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class AkDialogueConversation : BmSDK.Engine.AkDialogueSpeech, BmS
     /// </summary>
     public unsafe virtual float GetTotalPlayCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTotalPlayCount, "Engine.AkDialogueConversation.GetTotalPlayCount");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

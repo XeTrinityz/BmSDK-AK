@@ -84,6 +84,7 @@ public partial class MBMBehaviour_BulletHitReaction : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.MBMBehaviour_BulletHitReaction.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MBMBehaviour_BulletHitReaction : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override void TargetGoRagdoll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TargetGoRagdoll, "BmGame.MBMBehaviour_BulletHitReaction.TargetGoRagdoll");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class MBMBehaviour_BulletHitReaction : BmSDK.BmGame.RBMBehaviour_
     /// </summary>
     public unsafe override void Initialise(BmSDK.BmGame.RPawnCombat.FDamageInfo NewDmgInfo, bool bNewInterruptedHitReaction = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.MBMBehaviour_BulletHitReaction.Initialise");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

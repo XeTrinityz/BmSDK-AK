@@ -84,6 +84,7 @@ public partial class RPhotoViewPostProcess : BmSDK.BmGame.RViewPostProcess, BmSD
     /// </summary>
     public unsafe override void Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RPhotoViewPostProcess.Update");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RFreezeSprayProjectileBm : BmSDK.BmGame.RFreezeSprayProject
     /// </summary>
     public unsafe override void SuperComboBlast(BmSDK.BmGame.RPawnVillain Victim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuperComboBlast, "BmScript.RFreezeSprayProjectileBm.SuperComboBlast");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RFreezeSprayProjectileBm : BmSDK.BmGame.RFreezeSprayProject
     /// </summary>
     public unsafe override BmSDK.Engine.Actor SpawnSmallIceSphere(System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnSmallIceSphere, "BmScript.RFreezeSprayProjectileBm.SpawnSmallIceSphere");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RFreezeSprayProjectileBm : BmSDK.BmGame.RFreezeSprayProject
     /// </summary>
     public unsafe override void SpawnIceSphere(System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnIceSphere, "BmScript.RFreezeSprayProjectileBm.SpawnIceSphere");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

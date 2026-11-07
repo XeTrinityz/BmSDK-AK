@@ -84,6 +84,7 @@ public partial class RBarkConvoPawnRef_BestForFlagType : BmSDK.BmGame.RBarkConvo
     /// </summary>
     public unsafe override void OnLockedSpeakerFound(BmSDK.BmGame.RBarkConvo Convo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLockedSpeakerFound, "BmGame.RBarkConvoPawnRef_BestForFlagType.OnLockedSpeakerFound");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

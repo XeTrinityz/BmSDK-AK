@@ -84,6 +84,7 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
     /// </summary>
     public unsafe virtual void SetTargetBlendWeight(float NewTargetWeight, float NewTargetBlendDuration)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTargetBlendWeight, "BmGame.RAnimNode_BlendBonesFromPoses.SetTargetBlendWeight");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
     /// </summary>
     public unsafe virtual void SetBlendPosesFromSkeletalMeshComp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlendPosesFromSkeletalMeshComp, "BmGame.RAnimNode_BlendBonesFromPoses.SetBlendPosesFromSkeletalMeshComp");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

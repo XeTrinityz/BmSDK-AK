@@ -84,6 +84,7 @@ public partial class RRoadPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RRoadPoint.UnlinkToActor");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RRoadPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.RRoadPoint.LinkToActor");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -134,6 +136,7 @@ public partial class RRoadPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateDisplayLines()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDisplayLines, "BmGame.RRoadPoint.UpdateDisplayLines");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,5 +239,34 @@ public partial class RRoadPoint : BmSDK.Engine.Actor, BmSDK.IGameObject
     {
         get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.BmGame.RRoadLink>>(Ptr + 752); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 752); }
+    }
+}
+
+/// <summary>
+/// The static native functions of RRoadPoint, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class RRoadPointStatics
+{
+    private static BmSDK.Function __fn_SpawnRoadLink;
+    /// <summary>
+    /// Function: SpawnRoadLink, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.BmGame.RRoadLink SpawnRoadLink(this BmSDK.BmGame.RRoadPoint self, BmSDK.BmGame.RRoadPoint PointA, BmSDK.BmGame.RRoadPoint PointB)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRoadLink, "BmGame.RRoadPoint.SpawnRoadLink");
+        byte* paramsPtr = stackalloc byte[40];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(PointA, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(PointB, paramsPtr + 8);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RRoadLink>(paramsPtr + 16);
     }
 }

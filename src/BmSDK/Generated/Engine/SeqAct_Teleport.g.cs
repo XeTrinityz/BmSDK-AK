@@ -97,6 +97,7 @@ public partial class SeqAct_Teleport : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     /// </summary>
     public unsafe virtual bool GetDestination(out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, out int bNoDestinationSet)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDestination, "Engine.SeqAct_Teleport.GetDestination");
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +120,7 @@ public partial class SeqAct_Teleport : BmSDK.Engine.SequenceAction, BmSDK.IGameO
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetActor(BmSDK.GameObject Obj)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActor, "Engine.SeqAct_Teleport.GetActor");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

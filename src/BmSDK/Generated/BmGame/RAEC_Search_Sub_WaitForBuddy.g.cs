@@ -84,6 +84,7 @@ public partial class RAEC_Search_Sub_WaitForBuddy : BmSDK.BmGame.RAEC_Search_Sub
     /// </summary>
     public unsafe virtual bool PrepareForJoinAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepareForJoinAnim, "BmGame.RAEC_Search_Sub_WaitForBuddy.PrepareForJoinAnim");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_Search_Sub_WaitForBuddy : BmSDK.BmGame.RAEC_Search_Sub
     /// </summary>
     public unsafe override bool PreventNextLegStarting()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreventNextLegStarting, "BmGame.RAEC_Search_Sub_WaitForBuddy.PreventNextLegStarting");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAEC_Search_Sub_WaitForBuddy : BmSDK.BmGame.RAEC_Search_Sub
     /// </summary>
     public unsafe override void OnStartChild()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_Search_Sub_WaitForBuddy.OnStartChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RAEC_Search_Sub_WaitForBuddy : BmSDK.BmGame.RAEC_Search_Sub
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_WaitForBuddy.GetCurrentPathHandle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

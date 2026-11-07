@@ -410,3 +410,362 @@ public partial class AkSoundDirector : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 }
+
+/// <summary>
+/// The static native functions of AkSoundDirector, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class AkSoundDirectorStatics
+{
+    private static BmSDK.Function __fn_RestartPredatorTriggers;
+    /// <summary>
+    /// Function: RestartPredatorTriggers, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void RestartPredatorTriggers(this BmSDK.Engine.AkSoundDirector self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestartPredatorTriggers, "Engine.AkSoundDirector.RestartPredatorTriggers");
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_RestartAllTriggers;
+    /// <summary>
+    /// Function: RestartAllTriggers, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void RestartAllTriggers(this BmSDK.Engine.AkSoundDirector self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestartAllTriggers, "Engine.AkSoundDirector.RestartAllTriggers");
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_ClearDeath;
+    /// <summary>
+    /// Function: ClearDeath, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void ClearDeath(this BmSDK.Engine.AkSoundDirector self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDeath, "Engine.AkSoundDirector.ClearDeath");
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_RemoveDiagramsOnDeath;
+    /// <summary>
+    /// Function: RemoveDiagramsOnDeath, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void RemoveDiagramsOnDeath(this BmSDK.Engine.AkSoundDirector self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveDiagramsOnDeath, "Engine.AkSoundDirector.RemoveDiagramsOnDeath");
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_GetChapterFlag;
+    /// <summary>
+    /// Function: GetChapterFlag, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static int GetChapterFlag(this BmSDK.Engine.AkSoundDirector self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChapterFlag, "Engine.AkSoundDirector.GetChapterFlag");
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_IsChapterFlagValid;
+    /// <summary>
+    /// Function: IsChapterFlagValid, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static bool IsChapterFlagValid(this BmSDK.Engine.AkSoundDirector self, int chapterFlag)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsChapterFlagValid, "Engine.AkSoundDirector.IsChapterFlagValid");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(chapterFlag, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
+    }
+
+    private static BmSDK.Function __fn_LocationAccessibility;
+    /// <summary>
+    /// Function: LocationAccessibility, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static float LocationAccessibility(this BmSDK.Engine.AkSoundDirector self, System.Numerics.Vector3 Location)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocationAccessibility, "Engine.AkSoundDirector.LocationAccessibility");
+        byte* paramsPtr = stackalloc byte[32];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Location, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
+    }
+
+    private static BmSDK.Function __fn_LocationRainDensity;
+    /// <summary>
+    /// Function: LocationRainDensity, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static float LocationRainDensity(this BmSDK.Engine.AkSoundDirector self, System.Numerics.Vector3 Location)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocationRainDensity, "Engine.AkSoundDirector.LocationRainDensity");
+        byte* paramsPtr = stackalloc byte[32];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Location, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
+    }
+
+    private static BmSDK.Function __fn_LocationWetness;
+    /// <summary>
+    /// Function: LocationWetness, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static float LocationWetness(this BmSDK.Engine.AkSoundDirector self, System.Numerics.Vector3 Location, System.Numerics.Vector3 Normal = default, bool isWorldGeom = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocationWetness, "Engine.AkSoundDirector.LocationWetness");
+        byte* paramsPtr = stackalloc byte[48];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Location, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Normal, paramsPtr + 12);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(isWorldGeom, paramsPtr + 24);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 28);
+    }
+
+    private static BmSDK.Function __fn_Debug_ClearAllFacts;
+    /// <summary>
+    /// Function: Debug_ClearAllFacts, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void Debug_ClearAllFacts(this BmSDK.Engine.AkSoundDirector self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Debug_ClearAllFacts, "Engine.AkSoundDirector.Debug_ClearAllFacts");
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_SetMusicInformation;
+    /// <summary>
+    /// Function: SetMusicInformation, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void SetMusicInformation(this BmSDK.Engine.AkSoundDirector self, BmSDK.FString Text, float TimeOut = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMusicInformation, "Engine.AkSoundDirector.SetMusicInformation");
+        byte* paramsPtr = stackalloc byte[36];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(TimeOut, paramsPtr + 16);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_CheckFact;
+    /// <summary>
+    /// Function: CheckFact, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static bool CheckFact(this BmSDK.Engine.AkSoundDirector self, BmSDK.FString Fact)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckFact, "Engine.AkSoundDirector.CheckFact");
+        byte* paramsPtr = stackalloc byte[36];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Fact, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
+    }
+
+    private static BmSDK.Function __fn_RemoveFact;
+    /// <summary>
+    /// Function: RemoveFact, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void RemoveFact(this BmSDK.Engine.AkSoundDirector self, BmSDK.FString Fact, BmSDK.FString Reason = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFact, "Engine.AkSoundDirector.RemoveFact");
+        byte* paramsPtr = stackalloc byte[48];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Fact, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Reason, paramsPtr + 16);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_SetFactFalse;
+    /// <summary>
+    /// Function: SetFactFalse, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void SetFactFalse(this BmSDK.Engine.AkSoundDirector self, BmSDK.FString Fact)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFactFalse, "Engine.AkSoundDirector.SetFactFalse");
+        byte* paramsPtr = stackalloc byte[32];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Fact, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_SetFactTrue;
+    /// <summary>
+    /// Function: SetFactTrue, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void SetFactTrue(this BmSDK.Engine.AkSoundDirector self, BmSDK.FString Fact, float setTimeOffset = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFactTrue, "Engine.AkSoundDirector.SetFactTrue");
+        byte* paramsPtr = stackalloc byte[36];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Fact, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(setTimeOffset, paramsPtr + 16);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_SetFact;
+    /// <summary>
+    /// Function: SetFact, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void SetFact(this BmSDK.Engine.AkSoundDirector self, BmSDK.FString Fact, BmSDK.FString factSet = default, BmSDK.FString Reason = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFact, "Engine.AkSoundDirector.SetFact");
+        byte* paramsPtr = stackalloc byte[64];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Fact, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(factSet, paramsPtr + 16);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Reason, paramsPtr + 32);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+}

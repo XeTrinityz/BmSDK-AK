@@ -84,6 +84,7 @@ public partial class RBMExitCondition_MatineeEnded : BmSDK.BmGame.RBMExitConditi
     /// </summary>
     public unsafe virtual void MatineeBlendOutStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatineeBlendOutStarted, "BmGame.RBMExitCondition_MatineeEnded.MatineeBlendOutStarted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMExitCondition_MatineeEnded : BmSDK.BmGame.RBMExitConditi
     /// </summary>
     public unsafe virtual void MatineeControlFinished()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatineeControlFinished, "BmGame.RBMExitCondition_MatineeEnded.MatineeControlFinished");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

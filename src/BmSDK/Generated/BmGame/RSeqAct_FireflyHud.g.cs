@@ -97,6 +97,7 @@ public partial class RSeqAct_FireflyHud : BmSDK.Engine.SequenceAction, BmSDK.IGa
     /// </summary>
     public unsafe virtual void CreateScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateScreen, "BmGame.RSeqAct_FireflyHud.CreateScreen");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_FireflyHud : BmSDK.Engine.SequenceAction, BmSDK.IGa
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_FireflyHud.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

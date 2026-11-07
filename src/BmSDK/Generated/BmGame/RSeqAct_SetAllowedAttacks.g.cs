@@ -97,6 +97,7 @@ public partial class RSeqAct_SetAllowedAttacks : BmSDK.Engine.SequenceAction, Bm
     /// </summary>
     public unsafe virtual bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_SetAllowedAttacks.Update");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_SetAllowedAttacks : BmSDK.Engine.SequenceAction, Bm
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SetAllowedAttacks.Activated");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

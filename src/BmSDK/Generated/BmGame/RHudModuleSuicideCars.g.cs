@@ -84,6 +84,7 @@ public partial class RHudModuleSuicideCars : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleSuicideCars.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RHudModuleSuicideCars : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void DoOutro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoOutro, "BmGame.RHudModuleSuicideCars.DoOutro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RHudModuleSuicideCars : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void CloseSuicideCarsHud()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseSuicideCarsHud, "BmGame.RHudModuleSuicideCars.CloseSuicideCarsHud");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RHudModuleSuicideCars : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetSuicideCarsLevel(float _CurrentSuicideCarsLevel)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSuicideCarsLevel, "BmGame.RHudModuleSuicideCars.SetSuicideCarsLevel");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RHudModuleSuicideCars : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleSuicideCars.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

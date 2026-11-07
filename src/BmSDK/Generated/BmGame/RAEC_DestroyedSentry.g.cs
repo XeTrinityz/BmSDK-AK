@@ -84,6 +84,7 @@ public partial class RAEC_DestroyedSentry : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_DestroyedSentry.OnBeginShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_DestroyedSentry : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe virtual bool HandleSpotted(BmSDK.BmGame.RBMAIController Spotter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleSpotted, "BmGame.RAEC_DestroyedSentry.HandleSpotted");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RAEC_DestroyedSentry : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe virtual void SetDestroyedSentry(BmSDK.BmGame.RSentryGunBase NewDestroyedSentry)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDestroyedSentry, "BmGame.RAEC_DestroyedSentry.SetDestroyedSentry");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RAEC_DestroyedSentry : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.RAEC_DestroyedSentry.GetBarkPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RAEC_DestroyedSentry : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_DestroyedSentry.FinishTopLevelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

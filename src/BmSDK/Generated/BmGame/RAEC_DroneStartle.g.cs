@@ -84,6 +84,7 @@ public partial class RAEC_DroneStartle : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual void DoStartleDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoStartleDialogue, "BmGame.RAEC_DroneStartle.DoStartleDialogue");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_DroneStartle : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_DroneStartle.FinishTopLevelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RAEC_DroneStartle : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override void OnAssign(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAssign, "BmGame.RAEC_DroneStartle.OnAssign");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RAEC_DroneStartle : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual bool IsRelevant(BmSDK.BmGame.RBMAIController C)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRelevant, "BmGame.RAEC_DroneStartle.IsRelevant");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RAEC_DroneStartle : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual bool StartReaction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartReaction, "BmGame.RAEC_DroneStartle.StartReaction");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RAEC_DroneStartle : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual bool IsAvailableToReact(BmSDK.BmGame.RBMAIController C)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAvailableToReact, "BmGame.RAEC_DroneStartle.IsAvailableToReact");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class RAEC_DroneStartle : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.RAEC_DroneStartle.GetBarkPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

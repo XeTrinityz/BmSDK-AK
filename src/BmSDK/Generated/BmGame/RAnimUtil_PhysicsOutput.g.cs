@@ -84,6 +84,7 @@ public partial class RAnimUtil_PhysicsOutput : BmSDK.GameObject, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void DisableInheritVelocityForNFrames(int N)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableInheritVelocityForNFrames, "BmGame.RAnimUtil_PhysicsOutput.DisableInheritVelocityForNFrames");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

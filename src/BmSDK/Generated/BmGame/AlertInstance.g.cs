@@ -84,6 +84,7 @@ public partial class AlertInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateAlert(System.Numerics.Vector3 NewLocation, float BackDateTime = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAlert, "BmGame.AlertInstance.UpdateAlert");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class AlertInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAlertLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAlertLocation, "BmGame.AlertInstance.GetAlertLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

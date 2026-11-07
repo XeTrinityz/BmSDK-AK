@@ -84,6 +84,7 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     /// </summary>
     public unsafe virtual bool ShouldPauseThugCars()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseThugCars, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseThugCars");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     /// </summary>
     public unsafe virtual bool ShouldPauseHumvees()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseHumvees, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseHumvees");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     /// </summary>
     public unsafe virtual bool ShouldPauseDrones()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseDrones, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseDrones");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     /// </summary>
     public unsafe virtual bool ShouldPauseRiots()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseRiots, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseRiots");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_PauseRestartRandomPopulation.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

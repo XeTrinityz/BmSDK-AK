@@ -79,6 +79,7 @@ public partial class RSpecialMoveConfig_ActivePoseTransition : BmSDK.BmGame.RSpe
     /// </summary>
     public unsafe virtual void GetEndPositionAndYaw(BmSDK.Engine.Pawn Player, BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation, out System.Numerics.Vector3 EndPosition, out int EndYaw)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEndPositionAndYaw, "BmGame.RSpecialMoveConfig_ActivePoseTransition.GetEndPositionAndYaw");
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

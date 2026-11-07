@@ -84,6 +84,7 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
     /// </summary>
     public unsafe override void RestoreMaterialsForXray(bool force_swap = default, bool DoNotSwapPlayerPawn = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreMaterialsForXray, "BmScript.RCatwomanForensicsDevice.RestoreMaterialsForXray");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
     /// </summary>
     public unsafe override void DrawHUD(BmSDK.Engine.Canvas Canvas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmScript.RCatwomanForensicsDevice.DrawHUD");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
     /// </summary>
     public unsafe override void SwapMaterialsForXray(bool force_swap = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapMaterialsForXray, "BmScript.RCatwomanForensicsDevice.SwapMaterialsForXray");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
     /// </summary>
     public unsafe override bool GetForensicsRenderType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForensicsRenderType, "BmScript.RCatwomanForensicsDevice.GetForensicsRenderType");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
     /// </summary>
     public unsafe override void SetForensicsRenderType(bool On)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForensicsRenderType, "BmScript.RCatwomanForensicsDevice.SetForensicsRenderType");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

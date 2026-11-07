@@ -84,6 +84,7 @@ public partial class RBMWeaponShotgun : BmSDK.BmScript.RBMWeaponRiflePredFull, B
     /// </summary>
     public unsafe override float GetDamage(BmSDK.Engine.Actor Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDamage, "BmScript.RBMWeaponShotgun.GetDamage");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMWeaponShotgun : BmSDK.BmScript.RBMWeaponRiflePredFull, B
     /// </summary>
     public unsafe override void DoShotFX(BmSDK.Engine.Actor HitTarget = default, bool bShouldHit = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoShotFX, "BmScript.RBMWeaponShotgun.DoShotFX");
         byte* paramsPtr = stackalloc byte[224];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RBMWeaponShotgun : BmSDK.BmScript.RBMWeaponRiflePredFull, B
     /// </summary>
     public unsafe override BmSDK.FName GetRECHitReactionAnimName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRECHitReactionAnimName, "BmScript.RBMWeaponShotgun.GetRECHitReactionAnimName");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

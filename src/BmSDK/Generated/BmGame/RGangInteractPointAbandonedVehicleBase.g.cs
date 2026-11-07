@@ -79,6 +79,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override bool AllowForSpawning()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowForSpawning, "BmGame.RGangInteractPointAbandonedVehicleBase.AllowForSpawning");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override bool UpdateTimeOut(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTimeOut, "BmGame.RGangInteractPointAbandonedVehicleBase.UpdateTimeOut");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override void ActivateBuddies()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateBuddies, "BmGame.RGangInteractPointAbandonedVehicleBase.ActivateBuddies");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override void DeactivateBuddies()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateBuddies, "BmGame.RGangInteractPointAbandonedVehicleBase.DeactivateBuddies");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override int GetNumPairedToCheck()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumPairedToCheck, "BmGame.RGangInteractPointAbandonedVehicleBase.GetNumPairedToCheck");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override bool IsLeader()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLeader, "BmGame.RGangInteractPointAbandonedVehicleBase.IsLeader");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override bool AllowSpectators()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowSpectators, "BmGame.RGangInteractPointAbandonedVehicleBase.AllowSpectators");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe virtual void RebuildTranstionInPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RebuildTranstionInPoints, "BmGame.RGangInteractPointAbandonedVehicleBase.RebuildTranstionInPoints");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -198,6 +206,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override void GetEntryPointAndRotation(BmSDK.BmGame.RPawnCharacter TestPawn, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, int Index, bool bSecondTry = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEntryPointAndRotation, "BmGame.RGangInteractPointAbandonedVehicleBase.GetEntryPointAndRotation");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -227,6 +236,7 @@ public partial class RGangInteractPointAbandonedVehicleBase : BmSDK.BmGame.RGang
     /// </summary>
     public unsafe override BmSDK.BmGame.RGangInteractPointBase IsValidForPawn(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default, bool bSkipVolCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidForPawn, "BmGame.RGangInteractPointAbandonedVehicleBase.IsValidForPawn");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

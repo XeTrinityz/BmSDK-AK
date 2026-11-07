@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
     /// </summary>
     public unsafe virtual void UpdateFallAnim(float DeltaTime, float FallScale = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFallAnim, "BmGame.RSpecialMoveInstance_Falling.UpdateFallAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RSpecialMoveInstance_Falling.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -120,6 +122,7 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
     /// </summary>
     public unsafe override void PostFallingPhysicsCallback()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostFallingPhysicsCallback, "BmGame.RSpecialMoveInstance_Falling.PostFallingPhysicsCallback");
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +136,7 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
     /// </summary>
     public unsafe virtual void PlayerMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerMove, "BmGame.RSpecialMoveInstance_Falling.PlayerMove");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -147,6 +151,7 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_Falling.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -161,6 +166,7 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_Falling.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -174,6 +180,7 @@ public partial class RSpecialMoveInstance_Falling : BmSDK.BmGame.RSpecialMoveIns
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_Falling.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

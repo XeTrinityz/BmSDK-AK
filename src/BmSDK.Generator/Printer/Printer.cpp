@@ -25,7 +25,62 @@ void Printer::PrintFile(const ClassInfo& _class, ostream& out)
     {
         // Print class declaration
         Printer::PrintClass(_class, out);
+
+        // Print the instance-call forms of the class's static natives
+        Printer::PrintStatics(_class, out);
     }
+}
+
+void Printer::PrintStatics(const ClassInfo& _class, ostream& out)
+{
+    // A static native may read the object it is called on (the game calls them on live instances),
+    // and faults when run on the class default object the way the static wrapper does. So each one
+    // is also offered as an extension method on an instance. Object's statics are the pure maths and
+    // string library, which stay static only.
+    if (_class.IsIntrinsic || _class.IsInterface || _class.Name == "Object")
+    {
+        return;
+    }
+
+    vector<const FunctionInfo*> funcs;
+    for (auto member : _class.Members)
+    {
+        if (auto func = dynamic_cast<const FunctionInfo*>(member))
+        {
+            if (func->IsStatic && func->IsNative)
+            {
+                funcs.push_back(func);
+            }
+        }
+    }
+
+    if (funcs.empty())
+    {
+        return;
+    }
+
+    out << endl;
+    Printer::Indent(out) << "/// <summary>" << endl;
+    Printer::Indent(out) << "/// The static native functions of " << _class.ManagedName
+        << ", callable on an instance. A static native may read the object it runs on, and the"
+        << " static form runs it on the class default object, which has no world." << endl;
+    Printer::Indent(out) << "/// </summary>" << endl;
+    Printer::Indent(out) << "public static class " << _class.ManagedName << "Statics" << endl;
+    Printer::Indent(out) << "{" << endl;
+    Printer::PushIndent();
+    {
+        for (auto i = 0u; i < funcs.size(); i++)
+        {
+            Printer::PrintFunction(*funcs[i], false, out, &_class);
+
+            if (i < funcs.size() - 1)
+            {
+                out << endl;
+            }
+        }
+    }
+    Printer::PopIndent();
+    Printer::Indent(out) << "}" << endl;
 }
 
 void Printer::PrintInterface(const ClassInfo& _class, ostream& out)
@@ -444,7 +499,7 @@ void Printer::PrintProperty(const PropertyInfo& prop, ostream& out)
 }
     }
 
-void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostream& out)
+void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostream& out, const ClassInfo* instanceOf)
     {
     // Print the field caching this function's UFunction lookup
     if (!isInInterface)
@@ -455,7 +510,13 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
 
     // Print func comment
     Printer::Indent(out) << "/// <summary>" << endl;
-    Printer::Indent(out) << "/// Function: " << func.Name << endl;
+    Printer::Indent(out) << "/// Function: " << func.Name;
+    if (instanceOf)
+    {
+        // The extension-method form of a static native (see PrintStatics)
+        out << ", run on <paramref name=\"self\"/> rather than the class default object";
+    }
+    out << endl;
     Printer::Indent(out) << "/// </summary>" << endl;
 
     // Print func declaration
@@ -480,6 +541,14 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
     }
     out << (func.HasReturnParam ? func.ReturnParam.TypeName : "void") << " ";
     out << func.ManagedName << "(";
+    if (instanceOf)
+    {
+        out << "this " << instanceOf->PackageNameManaged << "." << instanceOf->ManagedName << " self";
+        if (!func.Params.empty())
+        {
+            out << ", ";
+        }
+    }
     for (auto i = 0u; i < func.Params.size(); i++)
     {
         auto& prop = func.Params[i];
@@ -516,7 +585,18 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
     Printer::Indent(out) << "{" << endl;
     Printer::PushIndent();
     {
-        string ptrText = func.IsStatic ? "StaticClass().DefaultObject.Ptr" : "Ptr";
+        string ptrText = instanceOf ? "self.Ptr"
+            : func.IsStatic ? "StaticClass().DefaultObject.Ptr" : "Ptr";
+
+        // A destroyed object's wrapper has a null Ptr. The engine would fault on it, so fail in C#.
+        if (instanceOf)
+        {
+            Printer::Indent(out) << "BmSDK.Framework.Guard.NotDestroyed(self);" << endl;
+        }
+        else if (!func.IsStatic)
+        {
+            Printer::Indent(out) << "BmSDK.Framework.Guard.NotDestroyed(this);" << endl;
+        }
 
         Printer::Indent(out) << "var funcManaged = "
             "BmSDK.Framework.FunctionCache.Get(ref __fn_" << func.ManagedName << ", \""

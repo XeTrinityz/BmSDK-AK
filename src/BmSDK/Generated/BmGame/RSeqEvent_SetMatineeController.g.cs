@@ -97,6 +97,7 @@ public partial class RSeqEvent_SetMatineeController : BmSDK.Engine.SequenceEvent
     /// </summary>
     public unsafe virtual void UpdateLinkToMatinee()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLinkToMatinee, "BmGame.RSeqEvent_SetMatineeController.UpdateLinkToMatinee");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqEvent_SetMatineeController : BmSDK.Engine.SequenceEvent
     /// </summary>
     public unsafe override void Toggled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Toggled, "BmGame.RSeqEvent_SetMatineeController.Toggled");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqEvent_SetMatineeController : BmSDK.Engine.SequenceEvent
     /// </summary>
     public unsafe override void RegisterEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterEvent, "BmGame.RSeqEvent_SetMatineeController.RegisterEvent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

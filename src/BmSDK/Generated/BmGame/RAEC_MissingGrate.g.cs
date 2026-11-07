@@ -84,6 +84,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_MissingGrate.OnBeginShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual void PostFinish()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostFinish, "BmGame.RAEC_MissingGrate.PostFinish");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual void DoDiscoveryBark(BmSDK.BmGame.RPawnVillain LeaderPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoDiscoveryBark, "BmGame.RAEC_MissingGrate.DoDiscoveryBark");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual void InitFollowers(BmSDK.TArray<BmSDK.BmGame.RBMAIController> FollowerList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitFollowers, "BmGame.RAEC_MissingGrate.InitFollowers");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RBMAIController> GetPossibleBuddies(BmSDK.BmGame.RBMAIController TestLeader)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPossibleBuddies, "BmGame.RAEC_MissingGrate.GetPossibleBuddies");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual bool HandleSpotted(BmSDK.BmGame.RBMAIController Spotter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleSpotted, "BmGame.RAEC_MissingGrate.HandleSpotted");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe virtual void SetMissingPoint(BmSDK.BmGame.RMissingWallGrateAIMarker NewPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMissingPoint, "BmGame.RAEC_MissingGrate.SetMissingPoint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +187,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.RAEC_MissingGrate.GetBarkPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -193,6 +201,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_MissingGrate.OnRemoveSoloChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override void OnRemoveGroupChild(BmSDK.BmGame.RAlertEventCoordinatorBase RemAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_MissingGrate.OnRemoveGroupChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +231,7 @@ public partial class RAEC_MissingGrate : BmSDK.BmGame.RAlertEventCoordinatorBase
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_MissingGrate.FinishTopLevelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

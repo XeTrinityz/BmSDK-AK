@@ -84,6 +84,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void EliminateTunnel(int TunnelIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EliminateTunnel, "BmGame.RHudModuleBespokeBase.EliminateTunnel");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetConnectivityProportion(float Proportion, bool CanTrigger)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetConnectivityProportion, "BmGame.RHudModuleBespokeBase.SetConnectivityProportion");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void ManualUpdate(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManualUpdate, "BmGame.RHudModuleBespokeBase.ManualUpdate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetGunshipStabilityWarning(bool show_warning)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGunshipStabilityWarning, "BmGame.RHudModuleBespokeBase.SetGunshipStabilityWarning");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +145,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void RequestShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestShutdown, "BmGame.RHudModuleBespokeBase.RequestShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +159,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetCloudburstOvercharge(float _CloudburstOvercharge)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCloudburstOvercharge, "BmGame.RHudModuleBespokeBase.SetCloudburstOvercharge");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +174,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void DXI_CloudburstOutroComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DXI_CloudburstOutroComplete, "BmGame.RHudModuleBespokeBase.DXI_CloudburstOutroComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void DXI_CloudburstHighlightShown(int IndexClockwiseFromFront)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DXI_CloudburstHighlightShown, "BmGame.RHudModuleBespokeBase.DXI_CloudburstHighlightShown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +203,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void DXI_CloudburstInitialScanComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DXI_CloudburstInitialScanComplete, "BmGame.RHudModuleBespokeBase.DXI_CloudburstInitialScanComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -208,6 +217,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void DoOutro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoOutro, "BmGame.RHudModuleBespokeBase.DoOutro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +231,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void XI_BespokeHudOffscreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_BespokeHudOffscreen, "BmGame.RHudModuleBespokeBase.XI_BespokeHudOffscreen");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +245,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void XI_ApcLocationNoLongerRequired()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ApcLocationNoLongerRequired, "BmGame.RHudModuleBespokeBase.XI_ApcLocationNoLongerRequired");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +259,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void XI_ShutdownFilmBombCounter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ShutdownFilmBombCounter, "BmGame.RHudModuleBespokeBase.XI_ShutdownFilmBombCounter");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -260,6 +273,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetBombsRemaining(int BombsRemaining)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBombsRemaining, "BmGame.RHudModuleBespokeBase.SetBombsRemaining");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -274,6 +288,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetRobberyValues(int MoneyInVault, int MoneyOnFloor, int MoneyBeingCarried, int MoneyStolen)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRobberyValues, "BmGame.RHudModuleBespokeBase.SetRobberyValues");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -291,6 +306,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetTakedownsRemaining(int _TakedownsRemaining)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTakedownsRemaining, "BmGame.RHudModuleBespokeBase.SetTakedownsRemaining");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -305,6 +321,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual int CheckAndResetAllPurposeVariable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAndResetAllPurposeVariable, "BmGame.RHudModuleBespokeBase.CheckAndResetAllPurposeVariable");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -318,6 +335,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleBespokeBase.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -331,6 +349,7 @@ public partial class RHudModuleBespokeBase : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleBespokeBase.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

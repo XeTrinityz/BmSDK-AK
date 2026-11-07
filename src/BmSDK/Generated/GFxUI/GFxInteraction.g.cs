@@ -84,6 +84,7 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void CloseAllMoviePlayers()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseAllMoviePlayers, "GFxUI.GFxInteraction.CloseAllMoviePlayers");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual void NotifySplitscreenLayoutChanged()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifySplitscreenLayoutChanged, "GFxUI.GFxInteraction.NotifySplitscreenLayoutChanged");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
     /// </summary>
     public unsafe override void NotifyPlayerRemoved(int PlayerIndex, BmSDK.Engine.LocalPlayer RemovedPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPlayerRemoved, "GFxUI.GFxInteraction.NotifyPlayerRemoved");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +149,7 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
     /// </summary>
     public unsafe override void NotifyPlayerAdded(int PlayerIndex, BmSDK.Engine.LocalPlayer AddedPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPlayerAdded, "GFxUI.GFxInteraction.NotifyPlayerAdded");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +172,7 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
     /// </summary>
     public unsafe override void NotifyGameSessionEnded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGameSessionEnded, "GFxUI.GFxInteraction.NotifyGameSessionEnded");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +193,7 @@ public partial class GFxInteraction : BmSDK.Engine.Interaction, BmSDK.IGameObjec
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer GetFocusMovie(int ControllerId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFocusMovie, "GFxUI.GFxInteraction.GetFocusMovie");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

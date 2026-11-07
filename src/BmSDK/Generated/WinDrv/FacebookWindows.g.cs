@@ -84,6 +84,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe void OnFacebookFriendsRequestComplete(BmSDK.Engine.HttpRequestInterface OriginalRequest, BmSDK.Engine.HttpResponseInterface Response, bool bDidSucceed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFacebookFriendsRequestComplete, "WinDrv.FacebookWindows.OnFacebookFriendsRequestComplete");
         byte* paramsPtr = stackalloc byte[152];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe void RequestFacebookFriends()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestFacebookFriends, "WinDrv.FacebookWindows.RequestFacebookFriends");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe void OnFacebookMeRequestComplete(BmSDK.Engine.HttpRequestInterface OriginalRequest, BmSDK.Engine.HttpResponseInterface Response, bool bDidSucceed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFacebookMeRequestComplete, "WinDrv.FacebookWindows.OnFacebookMeRequestComplete");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe void RequestFacebookMeInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestFacebookMeInfo, "WinDrv.FacebookWindows.RequestFacebookMeInfo");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe virtual void FacebookRequestCallback(BmSDK.Engine.HttpRequestInterface OriginalRequest, BmSDK.Engine.HttpResponseInterface Response, bool bDidSucceed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FacebookRequestCallback, "WinDrv.FacebookWindows.FacebookRequestCallback");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe virtual void ProcessFacebookRequest(BmSDK.FString Payload, int ResponseCode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessFacebookRequest, "WinDrv.FacebookWindows.ProcessFacebookRequest");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +186,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe override void FacebookRequest(BmSDK.FString GraphRequest)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FacebookRequest, "WinDrv.FacebookWindows.FacebookRequest");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +201,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe override void Disconnect()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Disconnect, "WinDrv.FacebookWindows.Disconnect");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +222,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe override bool IsAuthorized()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAuthorized, "WinDrv.FacebookWindows.IsAuthorized");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +243,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe override bool Authorize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Authorize, "WinDrv.FacebookWindows.Authorize");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -254,6 +264,7 @@ public partial class FacebookWindows : BmSDK.Engine.FacebookIntegration, BmSDK.I
     /// </summary>
     public unsafe override bool Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "WinDrv.FacebookWindows.Init");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

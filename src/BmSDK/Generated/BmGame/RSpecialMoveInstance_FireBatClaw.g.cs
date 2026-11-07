@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe virtual void CalcFireDirection()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalcFireDirection, "BmGame.RSpecialMoveInstance_FireBatClaw.CalcFireDirection");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe override bool CanDoCombat(bool CheckForEvade = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoCombat, "BmGame.RSpecialMoveInstance_FireBatClaw.CanDoCombat");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe virtual void NextSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NextSpecialMove, "BmGame.RSpecialMoveInstance_FireBatClaw.NextSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe virtual void ProjectileHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProjectileHit, "BmGame.RSpecialMoveInstance_FireBatClaw.ProjectileHit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe virtual void FireBatclaw()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireBatclaw, "BmGame.RSpecialMoveInstance_FireBatClaw.FireBatclaw");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_FireBatClaw.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_FireBatClaw.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RSpecialMoveInstance_FireBatClaw : BmSDK.BmGame.RSpecialMov
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_FireBatClaw.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

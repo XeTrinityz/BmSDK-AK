@@ -84,6 +84,7 @@ public partial class RBMAIAction_TerrorCorner_Right : BmSDK.BmGame.RBMAIAction_T
     /// </summary>
     public unsafe override BmSDK.FName GetOutTransition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOutTransition, "BmGame.RBMAIAction_TerrorCorner_Right.GetOutTransition");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class Ladder : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool SuggestMovePreparation(BmSDK.Engine.Pawn Other)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuggestMovePreparation, "Engine.Ladder.SuggestMovePreparation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

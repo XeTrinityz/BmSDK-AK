@@ -84,6 +84,7 @@ public partial class RBMWeapon_SmashedSegment : BmSDK.Engine.KActorSpawnable, Bm
     /// </summary>
     public unsafe virtual void SetSegmentMesh(BmSDK.Engine.StaticMesh NewMesh, System.Numerics.Vector3 Vel, System.Numerics.Vector3 AngVel, System.Numerics.Vector3 NewLocation, BmSDK.Rotator NewRotation, System.Numerics.Vector3 AdditionalTranslation = default, BmSDK.Rotator AdditionRotation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSegmentMesh, "BmGame.RBMWeapon_SmashedSegment.SetSegmentMesh");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RBMWeapon_SmashedSegment : BmSDK.Engine.KActorSpawnable, Bm
     /// </summary>
     public unsafe virtual void DestroyCheck()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyCheck, "BmGame.RBMWeapon_SmashedSegment.DestroyCheck");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

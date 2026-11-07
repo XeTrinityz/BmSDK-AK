@@ -84,6 +84,7 @@ public partial class RBMWeaponGuardRifle : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateWeaponConfig(BmSDK.GameObject NewOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeaponConfig, "BmScript.RBMWeaponGuardRifle.CreateWeaponConfig");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMWeaponGuardRifle : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig CreateBasicGunWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.Engine.AnimSet AnimSet1, BmSDK.Engine.AnimSet AnimSet2 = default, BmSDK.Engine.AnimSet AnimSet3 = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateBasicGunWeaponConfig, "BmScript.RBMWeaponGuardRifle.CreateBasicGunWeaponConfig");
         byte* paramsPtr = stackalloc byte[1072];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

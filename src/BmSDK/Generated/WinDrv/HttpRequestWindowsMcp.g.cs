@@ -84,6 +84,7 @@ public partial class HttpRequestWindowsMcp : BmSDK.WinDrv.HttpRequestWindows, Bm
     /// </summary>
     public unsafe override bool ProcessRequest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessRequest, "WinDrv.HttpRequestWindowsMcp.ProcessRequest");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

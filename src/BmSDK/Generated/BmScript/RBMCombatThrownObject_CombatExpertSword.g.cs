@@ -84,6 +84,7 @@ public partial class RBMCombatThrownObject_CombatExpertSword : BmSDK.BmGame.RBMC
     /// </summary>
     public unsafe override bool CanBePickedUpBy(BmSDK.BmGame.RBMPawnAI NewUser, bool bInCombat, bool bTaunting)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePickedUpBy, "BmScript.RBMCombatThrownObject_CombatExpertSword.CanBePickedUpBy");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

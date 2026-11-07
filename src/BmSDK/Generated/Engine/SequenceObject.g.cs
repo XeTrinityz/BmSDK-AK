@@ -92,6 +92,7 @@ public partial class SequenceObject : BmSDK.StateObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsPastingIntoLevelSequenceAllowed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPastingIntoLevelSequenceAllowed, "Engine.SequenceObject.IsPastingIntoLevelSequenceAllowed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class SequenceObject : BmSDK.StateObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsValidLevelSequenceObject()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidLevelSequenceObject, "Engine.SequenceObject.IsValidLevelSequenceObject");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class SequenceObject : BmSDK.StateObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.WorldInfo GetWorldInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWorldInfo, "Engine.SequenceObject.GetWorldInfo");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class SequenceObject : BmSDK.StateObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ScriptLog(BmSDK.FString LogText, bool bWarning = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScriptLog, "Engine.SequenceObject.ScriptLog");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

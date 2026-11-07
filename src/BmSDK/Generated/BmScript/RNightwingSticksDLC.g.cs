@@ -84,6 +84,7 @@ public partial class RNightwingSticksDLC : BmSDK.BmScript.RNightwingSticks, BmSD
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmScript.RNightwingSticksDLC.GetGadgetCamera");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RNightwingSticksDLC : BmSDK.BmScript.RNightwingSticks, BmSD
     /// </summary>
     public unsafe override void UpdateLaunchSpeculative()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLaunchSpeculative, "BmScript.RNightwingSticksDLC.UpdateLaunchSpeculative");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RNightwingSticksDLC : BmSDK.BmScript.RNightwingSticks, BmSD
     /// </summary>
     public unsafe override void UpdateLaunch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLaunch, "BmScript.RNightwingSticksDLC.UpdateLaunch");
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RNightwingSticksDLC : BmSDK.BmScript.RNightwingSticks, BmSD
     /// </summary>
     public unsafe virtual bool CheckLocForClearance(System.Numerics.Vector3 Loc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLocForClearance, "BmScript.RNightwingSticksDLC.CheckLocForClearance");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RNightwingSticksDLC : BmSDK.BmScript.RNightwingSticks, BmSD
     /// </summary>
     public unsafe override void FireElectromagneticBlast()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireElectromagneticBlast, "BmScript.RNightwingSticksDLC.FireElectromagneticBlast");
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RNightwingSticksDLC : BmSDK.BmScript.RNightwingSticks, BmSD
     /// </summary>
     public unsafe override void UpdateTargetParticle(bool Visible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTargetParticle, "BmScript.RNightwingSticksDLC.UpdateTargetParticle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RCarriableObject_SentryGunBag : BmSDK.BmGame.RCarriableObje
     /// </summary>
     public unsafe override void RemoveDisruptorInteraction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveDisruptorInteraction, "BmScript.RCarriableObject_SentryGunBag.RemoveDisruptorInteraction");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCarriableObject_SentryGunBag : BmSDK.BmGame.RCarriableObje
     /// </summary>
     public unsafe virtual void SetXrayMaterials()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetXrayMaterials, "BmScript.RCarriableObject_SentryGunBag.SetXrayMaterials");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RCarriableObject_SentryGunBag : BmSDK.BmGame.RCarriableObje
     /// </summary>
     public unsafe override bool HitByDisruptorGadgetCharge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByDisruptorGadgetCharge, "BmScript.RCarriableObject_SentryGunBag.HitByDisruptorGadgetCharge");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

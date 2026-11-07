@@ -84,6 +84,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "BmScript.RWinchableWall.RigidBodyCollision");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override void Broken(BmSDK.BmGame.RPlayerController Controller)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Broken, "BmScript.RWinchableWall.Broken");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override void DestroyMe()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyMe, "BmScript.RWinchableWall.DestroyMe");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RWinchableWall.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +149,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override BmSDK.Engine.PrimitiveComponent GetWinchSubTargetComponent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWinchSubTargetComponent, "BmScript.RWinchableWall.GetWinchSubTargetComponent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override void WinchReleased(BmSDK.BmGame.RBatmobileWinch Winch)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchReleased, "BmScript.RWinchableWall.WinchReleased");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -172,6 +178,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override void WinchAttached(BmSDK.BmGame.RBatmobileWinch Winch)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchAttached, "BmScript.RWinchableWall.WinchAttached");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -186,6 +193,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override BmSDK.Rotator GetWinchTargetRotation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWinchTargetRotation, "BmScript.RWinchableWall.GetWinchTargetRotation");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -199,6 +207,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetWinchTargetLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWinchTargetLocation, "BmScript.RWinchableWall.GetWinchTargetLocation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +221,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RWinchableWall.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -225,6 +235,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual void ClearMatinee()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMatinee, "BmScript.RWinchableWall.ClearMatinee");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +249,7 @@ public partial class RWinchableWall : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual void SetMatinee(BmSDK.Engine.SeqAct_Interp M)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMatinee, "BmScript.RWinchableWall.SetMatinee");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

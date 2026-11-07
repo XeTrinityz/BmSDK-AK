@@ -84,6 +84,7 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CanFireWeapon(BmSDK.Engine.Weapon Wpn, byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanFireWeapon, "Engine.AIController.CanFireWeapon");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyWeaponFinishedFiring(BmSDK.Engine.Weapon W, byte FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyWeaponFinishedFiring, "Engine.AIController.NotifyWeaponFinishedFiring");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyWeaponFired(BmSDK.Engine.Weapon W, byte FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyWeaponFired, "Engine.AIController.NotifyWeaponFired");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     /// </summary>
     public unsafe override void GetPlayerViewPoint(out System.Numerics.Vector3 out_Location, out BmSDK.Rotator out_Rotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerViewPoint, "Engine.AIController.GetPlayerViewPoint");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +152,7 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetTeam(int inTeamIdx)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTeam, "Engine.AIController.SetTeam");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +167,7 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     /// </summary>
     public unsafe override void DisplayDebug(BmSDK.Engine.HUD HUD, out float out_YL, out float out_YPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.AIController.DisplayDebug");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -182,6 +188,7 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Reset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.AIController.Reset");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

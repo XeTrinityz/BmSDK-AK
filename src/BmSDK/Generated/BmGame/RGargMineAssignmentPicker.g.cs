@@ -84,6 +84,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void GetBestDestroyVantagePointsFromAPS(System.Numerics.Vector3 VantageRefPoint, BmSDK.BmGame.RAttackPointSearch APS, out BmSDK.TArray<System.Numerics.Vector3> BestPoints)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestDestroyVantagePointsFromAPS, "BmGame.RGargMineAssignmentPicker.GetBestDestroyVantagePointsFromAPS");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void BuildGargSearch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildGargSearch, "BmGame.RGargMineAssignmentPicker.BuildGargSearch");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void StartAPS()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAPS, "BmGame.RGargMineAssignmentPicker.StartAPS");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe override bool Update()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RGargMineAssignmentPicker.Update");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void ClearAllSearch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAllSearch, "BmGame.RGargMineAssignmentPicker.ClearAllSearch");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void Abort()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Abort, "BmGame.RGargMineAssignmentPicker.Abort");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, System.IntPtr NewMineAssignmentFound, System.IntPtr NewMineAssignmentFailed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGargMineAssignmentPicker.Init");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void MineAssignmentFailed(BmSDK.BmGame.RGargMineAssignmentPicker GMAP)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MineAssignmentFailed, "BmGame.RGargMineAssignmentPicker.MineAssignmentFailed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +203,7 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
     /// </summary>
     public unsafe virtual void MineAssignmentFound(BmSDK.BmGame.RGargMineAssignmentPicker GMAP, BmSDK.TArray<BmSDK.BmGame.RBMRoomAIState.FGargToPoints> NewSmashList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MineAssignmentFound, "BmGame.RGargMineAssignmentPicker.MineAssignmentFound");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

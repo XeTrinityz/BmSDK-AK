@@ -79,6 +79,7 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DetachFromAny()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachFromAny, "Engine.ActorComponent.DetachFromAny");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void QueueReattach(bool bTransformOnly)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueReattach, "Engine.ActorComponent.QueueReattach");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -120,6 +122,7 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ForceUpdate(bool bTransformOnly)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceUpdate, "Engine.ActorComponent.ForceUpdate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +144,7 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetComponentRBFixed(bool bFixed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetComponentRBFixed, "Engine.ActorComponent.SetComponentRBFixed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +166,7 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetTickGroup(BmSDK.GameObject.ETickingGroup NewTickGroup)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTickGroup, "Engine.ActorComponent.SetTickGroup");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

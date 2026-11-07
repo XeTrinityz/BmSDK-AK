@@ -79,6 +79,7 @@ public partial class RSeqAct_FlashTextureMovieControlBase : BmSDK.Engine.Sequenc
     /// </summary>
     public unsafe virtual void AtEndClose()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AtEndClose, "BmGame.RSeqAct_FlashTextureMovieControlBase.AtEndClose");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

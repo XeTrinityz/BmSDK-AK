@@ -84,6 +84,7 @@ public partial class NxForceFieldRadial : BmSDK.Engine.NxForceField, BmSDK.IGame
     /// </summary>
     public unsafe override void DoInitRBPhys()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoInitRBPhys, "Engine.NxForceFieldRadial.DoInitRBPhys");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

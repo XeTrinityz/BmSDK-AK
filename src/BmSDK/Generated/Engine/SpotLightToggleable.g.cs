@@ -84,6 +84,7 @@ public partial class SpotLightToggleable : BmSDK.Engine.SpotLight, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void ApplyCheckpointRecord(out BmSDK.Engine.SpotLightToggleable.FCheckpointRecord Record)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyCheckpointRecord, "Engine.SpotLightToggleable.ApplyCheckpointRecord");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class SpotLightToggleable : BmSDK.Engine.SpotLight, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void CreateCheckpointRecord(out BmSDK.Engine.SpotLightToggleable.FCheckpointRecord Record)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateCheckpointRecord, "Engine.SpotLightToggleable.CreateCheckpointRecord");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -116,6 +118,7 @@ public partial class SpotLightToggleable : BmSDK.Engine.SpotLight, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual bool ShouldSaveForCheckpoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldSaveForCheckpoint, "Engine.SpotLightToggleable.ShouldSaveForCheckpoint");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RSmokeScreenBM : BmSDK.BmGame.RSmokeScreen, BmSDK.IGameObje
     /// </summary>
     public unsafe override void InitSmoke(bool bHitWall, bool bSmokePellet)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitSmoke, "BmScript.RSmokeScreenBM.InitSmoke");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

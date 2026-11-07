@@ -84,6 +84,7 @@ public partial class RHelicopterPointOfInterest : BmSDK.Engine.Actor, BmSDK.IGam
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RHelicopterPointOfInterest.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RHelicopterPointOfInterest : BmSDK.Engine.Actor, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetPointOfInterestActive(bool IsActive)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPointOfInterestActive, "BmGame.RHelicopterPointOfInterest.SetPointOfInterestActive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RHelicopterPointOfInterest : BmSDK.Engine.Actor, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetPointOfInterestActivePersistent(bool IsActive)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPointOfInterestActivePersistent, "BmGame.RHelicopterPointOfInterest.SetPointOfInterestActivePersistent");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RHelicopterPointOfInterest : BmSDK.Engine.Actor, BmSDK.IGam
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RHelicopterPointOfInterest.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

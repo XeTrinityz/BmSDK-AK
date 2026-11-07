@@ -84,6 +84,7 @@ public partial class RParticleEffectComponent : BmSDK.BmGame.RPawnEffectComponen
     /// </summary>
     public unsafe override void Stop(bool bPlayBreakEffect = default, float Delay = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "BmGame.RParticleEffectComponent.Stop");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RParticleEffectComponent : BmSDK.BmGame.RPawnEffectComponen
     /// </summary>
     public unsafe override void Start(float fDrawScale = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Start, "BmGame.RParticleEffectComponent.Start");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RParticleEffectComponent : BmSDK.BmGame.RPawnEffectComponen
     /// </summary>
     public unsafe override void Deactivate(bool bIsEarlyInterrupt)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RParticleEffectComponent.Deactivate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

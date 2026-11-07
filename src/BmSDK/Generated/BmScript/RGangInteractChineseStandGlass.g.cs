@@ -84,6 +84,7 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
     /// </summary>
     public unsafe override void SetFinished(BmSDK.BmGame.RBMPawnAI P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFinished, "BmScript.RGangInteractChineseStandGlass.SetFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
     /// </summary>
     public unsafe override void SetInUse(BmSDK.BmGame.RBMPawnAI UsagePawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInUse, "BmScript.RGangInteractChineseStandGlass.SetInUse");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
     /// </summary>
     public unsafe override void CrackObject(System.Numerics.Vector3 SmashLocation, System.Numerics.Vector3 SmashNormal, System.Numerics.Vector3 SmashSpeed, bool bCanSmash, bool bForceSmash, BmSDK.Engine.Actor SmashActor = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackObject, "BmScript.RGangInteractChineseStandGlass.CrackObject");
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
     /// </summary>
     public unsafe override BmSDK.Class GetBehaviourClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourClass, "BmScript.RGangInteractChineseStandGlass.GetBehaviourClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

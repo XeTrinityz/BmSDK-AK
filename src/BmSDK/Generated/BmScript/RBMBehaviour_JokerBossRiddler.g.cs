@@ -84,6 +84,7 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void ShotJokerDmgOnly()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotJokerDmgOnly, "BmScript.RBMBehaviour_JokerBossRiddler.ShotJokerDmgOnly");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void ShotJokerEnd()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotJokerEnd, "BmScript.RBMBehaviour_JokerBossRiddler.ShotJokerEnd");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void ShotJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotJoker, "BmScript.RBMBehaviour_JokerBossRiddler.ShotJoker");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual bool CanSeeBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeBatman, "BmScript.RBMBehaviour_JokerBossRiddler.CanSeeBatman");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RBMBehaviour_JokerBossRiddler.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void NotifyThugDied()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyThugDied, "BmScript.RBMBehaviour_JokerBossRiddler.NotifyThugDied");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RBMBehaviour_JokerBossRiddler : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain ShotByJokerGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotByJokerGun, "BmScript.RBMBehaviour_JokerBossRiddler.ShotByJokerGun");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

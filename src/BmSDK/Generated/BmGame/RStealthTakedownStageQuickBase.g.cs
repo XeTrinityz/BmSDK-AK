@@ -84,6 +84,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RStealthTakedownStageQuickBase.GetHelpPrompt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe override void StrikePressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrikePressed, "BmGame.RStealthTakedownStageQuickBase.StrikePressed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual bool SlowMoForFearTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SlowMoForFearTakedown, "BmGame.RStealthTakedownStageQuickBase.SlowMoForFearTakedown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe override void TriggerEscapeTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEscapeTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEscapeTakedown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual bool TriggerEnvironmentTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEnvironmentTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEnvironmentTakedown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual void CantCancelTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantCancelTakedown, "BmGame.RStealthTakedownStageQuickBase.CantCancelTakedown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual void CriticalPointEndTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CriticalPointEndTimer, "BmGame.RStealthTakedownStageQuickBase.CriticalPointEndTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual void CanPlayQuickFinishFromHere()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPlayQuickFinishFromHere, "BmGame.RStealthTakedownStageQuickBase.CanPlayQuickFinishFromHere");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual void CriticalPointStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CriticalPointStart, "BmGame.RStealthTakedownStageQuickBase.CriticalPointStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +212,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual void ChanceToSucceed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChanceToSucceed, "BmGame.RStealthTakedownStageQuickBase.ChanceToSucceed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +226,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual bool CanTriggerQuickFinish()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTriggerQuickFinish, "BmGame.RStealthTakedownStageQuickBase.CanTriggerQuickFinish");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +240,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual bool CanPressStrangleButton()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPressStrangleButton, "BmGame.RStealthTakedownStageQuickBase.CanPressStrangleButton");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -242,6 +254,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual bool TimerCritical()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerCritical, "BmGame.RStealthTakedownStageQuickBase.TimerCritical");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -255,6 +268,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe virtual void AlwaysAllowFearTakedownTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlwaysAllowFearTakedownTimer, "BmGame.RStealthTakedownStageQuickBase.AlwaysAllowFearTakedownTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -268,6 +282,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
     /// </summary>
     public unsafe override void Begin()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmGame.RStealthTakedownStageQuickBase.Begin");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

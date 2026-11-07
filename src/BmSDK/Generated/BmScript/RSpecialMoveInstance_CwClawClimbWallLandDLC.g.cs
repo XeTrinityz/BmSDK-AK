@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLandDLC : BmSDK.BmScrip
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLandDLC.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[472];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

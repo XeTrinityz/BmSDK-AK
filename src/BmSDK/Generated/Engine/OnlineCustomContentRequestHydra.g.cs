@@ -84,6 +84,7 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
     /// </summary>
     public unsafe override void CancelCustomContentRequest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCustomContentRequest, "Engine.OnlineCustomContentRequestHydra.CancelCustomContentRequest");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
     /// </summary>
     public unsafe override void GetCustomContentAsString(out BmSDK.FString ContentData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContentAsString, "Engine.OnlineCustomContentRequestHydra.GetCustomContentAsString");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
     /// </summary>
     public unsafe override void GetCustomContent(out BmSDK.TArray<byte> ContentData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContent, "Engine.OnlineCustomContentRequestHydra.GetCustomContent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +149,7 @@ public partial class OnlineCustomContentRequestHydra : BmSDK.Engine.OnlineCustom
     /// </summary>
     public unsafe override void StartCustomContentRequest(BmSDK.FString sContentName, BmSDK.FString sCustomId, System.IntPtr dRequestCustomContentComplete)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomContentRequest, "Engine.OnlineCustomContentRequestHydra.StartCustomContentRequest");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

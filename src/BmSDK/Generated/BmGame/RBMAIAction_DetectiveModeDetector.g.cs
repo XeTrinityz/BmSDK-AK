@@ -84,6 +84,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual bool IsInRightBehindMeTransition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInRightBehindMeTransition, "BmGame.RBMAIAction_DetectiveModeDetector.IsInRightBehindMeTransition");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe override bool HandlesGlance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlesGlance, "BmGame.RBMAIAction_DetectiveModeDetector.HandlesGlance");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_DetectiveModeDetector.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual void DoIntroBark()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoIntroBark, "BmGame.RBMAIAction_DetectiveModeDetector.DoIntroBark");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual void DetectionStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetectionStarted, "BmGame.RBMAIAction_DetectiveModeDetector.DetectionStarted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual void TryRestartDetection()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryRestartDetection, "BmGame.RBMAIAction_DetectiveModeDetector.TryRestartDetection");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual void StopDetection(bool bDetectiveModeOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopDetection, "BmGame.RBMAIAction_DetectiveModeDetector.StopDetection");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual void TriggerInAnim(bool bRestarting)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerInAnim, "BmGame.RBMAIAction_DetectiveModeDetector.TriggerInAnim");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +199,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMAIAction_DetectiveModeDetector.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +213,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_DetectiveModeDetector.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +227,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual void FreeBarkLock()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeBarkLock, "BmGame.RBMAIAction_DetectiveModeDetector.FreeBarkLock");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -230,6 +241,7 @@ public partial class RBMAIAction_DetectiveModeDetector : BmSDK.BmGame.RBMAIActio
     /// </summary>
     public unsafe virtual void SetBarkLock()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBarkLock, "BmGame.RBMAIAction_DetectiveModeDetector.SetBarkLock");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

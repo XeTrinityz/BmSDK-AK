@@ -84,6 +84,7 @@ public partial class RBMAIAction_HoldGuardPoint : BmSDK.BmGame.RBMAIAction_HoldG
     /// </summary>
     public unsafe override bool PlayRandomBark()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayRandomBark, "BmGame.RBMAIAction_HoldGuardPoint.PlayRandomBark");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMAIAction_HoldGuardPoint : BmSDK.BmGame.RBMAIAction_HoldG
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RBarkFlagBase.FBarkFlag> GetGuardFlags()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGuardFlags, "BmGame.RBMAIAction_HoldGuardPoint.GetGuardFlags");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMAIAction_HoldGuardPoint : BmSDK.BmGame.RBMAIAction_HoldG
     /// </summary>
     public unsafe virtual BmSDK.FName GetGuardIdleAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGuardIdleAnim, "BmGame.RBMAIAction_HoldGuardPoint.GetGuardIdleAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMAIAction_HoldGuardPoint : BmSDK.BmGame.RBMAIAction_HoldG
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_HoldGuardPoint.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RBMAIAction_HoldGuardPoint : BmSDK.BmGame.RBMAIAction_HoldG
     /// </summary>
     public unsafe virtual void PlayIdleAnim(BmSDK.FName AnimName, System.Numerics.Vector3 AimLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayIdleAnim, "BmGame.RBMAIAction_HoldGuardPoint.PlayIdleAnim");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RBMAIAction_HoldGuardPoint : BmSDK.BmGame.RBMAIAction_HoldG
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_HoldGuardPoint.OnActivate");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

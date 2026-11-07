@@ -84,6 +84,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void UpdateLightRigs()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLightRigs, "BmGame.RShowcaseCamera.UpdateLightRigs");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void UpdateInput(float fFrameTime, float fr, float fU, float FF)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateInput, "BmGame.RShowcaseCamera.UpdateInput");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool UpdateFrame(float fFrameTime, BmSDK.BmGame.RPlayerInput iInput)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFrame, "BmGame.RShowcaseCamera.UpdateFrame");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void LightRigsRelease()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LightRigsRelease, "BmGame.RShowcaseCamera.LightRigsRelease");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void LightRigsInitialize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LightRigsInitialize, "BmGame.RShowcaseCamera.LightRigsInitialize");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetMode(BmSDK.BmGame.RShowcaseCamera.ShowcaseCameraMode eMode, BmSDK.BmGame.RShowcaseCamera.ShowcaseCameraVantageRequirement eRequirement)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMode, "BmGame.RShowcaseCamera.SetMode");
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +176,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetInspectParams(System.Numerics.Vector4 vHeights, System.Numerics.Vector4 vAngles, System.Numerics.Vector3 vFOVs, float fDistance)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInspectParams, "BmGame.RShowcaseCamera.SetInspectParams");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -187,6 +194,7 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetVantageParams(System.Numerics.Vector3 vPosition, System.Numerics.Vector3 vLookAt, float fFOV)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVantageParams, "BmGame.RShowcaseCamera.SetVantageParams");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

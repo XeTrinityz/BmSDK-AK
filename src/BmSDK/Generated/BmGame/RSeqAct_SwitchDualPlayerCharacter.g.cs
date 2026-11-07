@@ -97,6 +97,7 @@ public partial class RSeqAct_SwitchDualPlayerCharacter : BmSDK.BmGame.RSeqAct_Sp
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SwitchDualPlayerCharacter.Activated");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class MAEC_StickyConcussionGrenadeReaction_Sub_Armed : BmSDK.BmGa
     /// </summary>
     public unsafe override void ThugHitByStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugHitByStrike, "BmGame.MAEC_StickyConcussionGrenadeReaction_Sub_Armed.ThugHitByStrike");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MAEC_StickyConcussionGrenadeReaction_Sub_Armed : BmSDK.BmGa
     /// </summary>
     public unsafe override void NotifyFailed(BmSDK.BmGame.RBMAIAction FailedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFailed, "BmGame.MAEC_StickyConcussionGrenadeReaction_Sub_Armed.NotifyFailed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class MAEC_StickyConcussionGrenadeReaction_Sub_Armed : BmSDK.BmGa
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.MAEC_StickyConcussionGrenadeReaction_Sub_Armed.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class MAEC_StickyConcussionGrenadeReaction_Sub_Armed : BmSDK.BmGa
     /// </summary>
     public unsafe override void OnStartChild()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.MAEC_StickyConcussionGrenadeReaction_Sub_Armed.OnStartChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

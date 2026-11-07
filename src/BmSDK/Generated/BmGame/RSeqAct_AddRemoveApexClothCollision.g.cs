@@ -97,6 +97,7 @@ public partial class RSeqAct_AddRemoveApexClothCollision : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_AddRemoveApexClothCollision.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_AddRemoveApexClothCollision : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void RemoveClothCollision()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveClothCollision, "BmGame.RSeqAct_AddRemoveApexClothCollision.RemoveClothCollision");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +132,7 @@ public partial class RSeqAct_AddRemoveApexClothCollision : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void AddClothCollision()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClothCollision, "BmGame.RSeqAct_AddRemoveApexClothCollision.AddClothCollision");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

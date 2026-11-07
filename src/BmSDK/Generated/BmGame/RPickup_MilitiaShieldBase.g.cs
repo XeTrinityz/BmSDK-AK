@@ -84,6 +84,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override void OverrideDefaultAkAudibleSetup(BmSDK.Engine.RAkAudible akAud)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDefaultAkAudibleSetup, "BmGame.RPickup_MilitiaShieldBase.OverrideDefaultAkAudibleSetup");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetScanLocationOffset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScanLocationOffset, "BmGame.RPickup_MilitiaShieldBase.GetScanLocationOffset");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetLocationOffset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationOffset, "BmGame.RPickup_MilitiaShieldBase.GetLocationOffset");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override void GenerateScanEvent(BmSDK.BmGame.RPlayerController RPC, bool Rescanned)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateScanEvent, "BmGame.RPickup_MilitiaShieldBase.GenerateScanEvent");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override bool CanScanAndAddToMap()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanScanAndAddToMap, "BmGame.RPickup_MilitiaShieldBase.CanScanAndAddToMap");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override bool HasBeenPickedUp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBeenPickedUp, "BmGame.RPickup_MilitiaShieldBase.HasBeenPickedUp");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override BmSDK.FString GetPickedUpName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickedUpName, "BmGame.RPickup_MilitiaShieldBase.GetPickedUpName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override BmSDK.FString GetMapVisibleName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMapVisibleName, "BmGame.RPickup_MilitiaShieldBase.GetMapVisibleName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +199,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override bool GetIgnoreRayTrace()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIgnoreRayTrace, "BmGame.RPickup_MilitiaShieldBase.GetIgnoreRayTrace");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +213,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual BmSDK.FString GetLevelName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLevelName, "BmGame.RPickup_MilitiaShieldBase.GetLevelName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +227,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameInfo.ERiddlerPiece GetRiddlerPieceType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerPieceType, "BmGame.RPickup_MilitiaShieldBase.GetRiddlerPieceType");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -230,6 +241,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override float GetScanDistMax()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScanDistMax, "BmGame.RPickup_MilitiaShieldBase.GetScanDistMax");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -243,6 +255,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override BmSDK.FString GetScannedStringDesc(bool bAlreadyTagged)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScannedStringDesc, "BmGame.RPickup_MilitiaShieldBase.GetScannedStringDesc");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +270,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe override BmSDK.FString GetScannedStringTitle(bool bAlreadyTagged)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScannedStringTitle, "BmGame.RPickup_MilitiaShieldBase.GetScannedStringTitle");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -271,6 +285,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual int GetOverworldHintRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOverworldHintRange, "BmGame.RPickup_MilitiaShieldBase.GetOverworldHintRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -284,6 +299,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual bool GetSatnavToRoadAtSameHeight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSatnavToRoadAtSameHeight, "BmGame.RPickup_MilitiaShieldBase.GetSatnavToRoadAtSameHeight");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -297,6 +313,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual bool GetSatnavToRoadBelow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSatnavToRoadBelow, "BmGame.RPickup_MilitiaShieldBase.GetSatnavToRoadBelow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -310,6 +327,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual BmSDK.FString GetCustomFlag()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomFlag, "BmGame.RPickup_MilitiaShieldBase.GetCustomFlag");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -323,6 +341,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual int GetUnlockedChapter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUnlockedChapter, "BmGame.RPickup_MilitiaShieldBase.GetUnlockedChapter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -336,6 +355,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual int GetMapIconFloatUpAdjustment()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMapIconFloatUpAdjustment, "BmGame.RPickup_MilitiaShieldBase.GetMapIconFloatUpAdjustment");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -349,6 +369,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual bool UseSecretLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseSecretLocation, "BmGame.RPickup_MilitiaShieldBase.UseSecretLocation");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -362,6 +383,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual int GetSecretLocationZ()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretLocationZ, "BmGame.RPickup_MilitiaShieldBase.GetSecretLocationZ");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -375,6 +397,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual int GetSecretLocationY()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretLocationY, "BmGame.RPickup_MilitiaShieldBase.GetSecretLocationY");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -388,6 +411,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual int GetSecretLocationX()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretLocationX, "BmGame.RPickup_MilitiaShieldBase.GetSecretLocationX");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -401,6 +425,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual byte GetSecretZone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretZone, "BmGame.RPickup_MilitiaShieldBase.GetSecretZone");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -414,6 +439,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual int GetSecretPickupIndex()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretPickupIndex, "BmGame.RPickup_MilitiaShieldBase.GetSecretPickupIndex");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -427,6 +453,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual BmSDK.FString GetSecretSubType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretSubType, "BmGame.RPickup_MilitiaShieldBase.GetSecretSubType");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -440,6 +467,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual BmSDK.FString GetSecretName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretName, "BmGame.RPickup_MilitiaShieldBase.GetSecretName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -453,6 +481,7 @@ public partial class RPickup_MilitiaShieldBase : BmSDK.BmGame.RPickupBaseBase, B
     /// </summary>
     public unsafe virtual bool IsValidSecret()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidSecret, "BmGame.RPickup_MilitiaShieldBase.IsValidSecret");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

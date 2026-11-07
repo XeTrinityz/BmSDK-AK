@@ -84,6 +84,7 @@ public partial class RBMBehaviour_CombatCroc : BmSDK.BmGame.RBMBehaviour_CombatJ
     /// </summary>
     public unsafe override void GotoMoveToCombatState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoMoveToCombatState, "BmGame.RBMBehaviour_CombatCroc.GotoMoveToCombatState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_CombatCroc : BmSDK.BmGame.RBMBehaviour_CombatJ
     /// </summary>
     public unsafe override void PlayTurnStep(System.Numerics.Vector3 TargetHeading, bool bForce = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayTurnStep, "BmGame.RBMBehaviour_CombatCroc.PlayTurnStep");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RBMBehaviour_CombatCroc : BmSDK.BmGame.RBMBehaviour_CombatJ
     /// </summary>
     public unsafe override int GetAttackPriority(bool bForceAttack)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttackPriority, "BmGame.RBMBehaviour_CombatCroc.GetAttackPriority");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RBMBehaviour_CombatCroc : BmSDK.BmGame.RBMBehaviour_CombatJ
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_CombatCroc.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RBMBehaviour_CombatCroc : BmSDK.BmGame.RBMBehaviour_CombatJ
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat ForceReceiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForceToGiveToPawn, "BmGame.RBMBehaviour_CombatCroc.GetForceToGiveToPawn");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +168,7 @@ public partial class RBMBehaviour_CombatCroc : BmSDK.BmGame.RBMBehaviour_CombatJ
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetMovementForce(System.Numerics.Vector3 SourceLocation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMovementForce, "BmGame.RBMBehaviour_CombatCroc.GetMovementForce");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +190,7 @@ public partial class RBMBehaviour_CombatCroc : BmSDK.BmGame.RBMBehaviour_CombatJ
     /// </summary>
     public unsafe override System.Numerics.Vector3 GatherForcesFromVillains(float MaxForce, float MinRange)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GatherForcesFromVillains, "BmGame.RBMBehaviour_CombatCroc.GatherForcesFromVillains");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

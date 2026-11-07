@@ -84,6 +84,7 @@ public partial class RVentNetworkOutLine : BmSDK.Engine.StaticMeshActor, BmSDK.I
     /// </summary>
     public unsafe virtual void HighlightTunnelNetwork(bool bHighlight)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HighlightTunnelNetwork, "BmGame.RVentNetworkOutLine.HighlightTunnelNetwork");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

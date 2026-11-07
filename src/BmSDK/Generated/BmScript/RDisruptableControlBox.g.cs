@@ -84,6 +84,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override void PostEditChangeScript()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostEditChangeScript, "BmScript.RDisruptableControlBox.PostEditChangeScript");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override int GetDifficultyLevel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDifficultyLevel, "BmScript.RDisruptableControlBox.GetDifficultyLevel");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void EnableDisruptedControlBox()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableDisruptedControlBox, "BmScript.RDisruptableControlBox.EnableDisruptedControlBox");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void EnableControlBox()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableControlBox, "BmScript.RDisruptableControlBox.EnableControlBox");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void DisableControlBox()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableControlBox, "BmScript.RDisruptableControlBox.DisableControlBox");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RDisruptableControlBox.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmScript.RDisruptableControlBox.OnToggle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -176,6 +183,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override void FailedToDisrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FailedToDisrupt, "BmScript.RDisruptableControlBox.FailedToDisrupt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +197,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void TriggerKismetRestoreEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerKismetRestoreEvent, "BmScript.RDisruptableControlBox.TriggerKismetRestoreEvent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +211,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void TriggerKismetEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerKismetEvent, "BmScript.RDisruptableControlBox.TriggerKismetEvent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +225,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RDisruptableControlBox.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +240,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void ChangeState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeState, "BmScript.RDisruptableControlBox.ChangeState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -242,6 +254,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void ReStartLight2()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReStartLight2, "BmScript.RDisruptableControlBox.ReStartLight2");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -255,6 +268,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void ReStartLight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReStartLight, "BmScript.RDisruptableControlBox.ReStartLight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -268,6 +282,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void TriggerCombatEvents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerCombatEvents, "BmScript.RDisruptableControlBox.TriggerCombatEvents");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -281,6 +296,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void FlashScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlashScreen, "BmScript.RDisruptableControlBox.FlashScreen");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -294,6 +310,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe virtual void ScreenOff()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScreenOff, "BmScript.RDisruptableControlBox.ScreenOff");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -307,6 +324,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override void SuccessfullyDisrupted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuccessfullyDisrupted, "BmScript.RDisruptableControlBox.SuccessfullyDisrupted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -320,6 +338,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override void StopAlarmSound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAlarmSound, "BmScript.RDisruptableControlBox.StopAlarmSound");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -333,6 +352,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override void PlayAlarmSound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAlarmSound, "BmScript.RDisruptableControlBox.PlayAlarmSound");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -346,6 +366,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
     /// </summary>
     public unsafe override bool IsAlarmed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAlarmed, "BmScript.RDisruptableControlBox.IsAlarmed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

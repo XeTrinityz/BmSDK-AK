@@ -84,6 +84,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RRbStealthTakedownStage_OrderedTakedown.Tick");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe override bool FinishAttackVictim(int iVictimNumber)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAttackVictim, "BmScript.RRbStealthTakedownStage_OrderedTakedown.FinishAttackVictim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe override void Begin()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmScript.RRbStealthTakedownStage_OrderedTakedown.Begin");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe virtual void EquipGrappleGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EquipGrappleGun, "BmScript.RRbStealthTakedownStage_OrderedTakedown.EquipGrappleGun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe virtual void TakedownFireGrappleGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakedownFireGrappleGun, "BmScript.RRbStealthTakedownStage_OrderedTakedown.TakedownFireGrappleGun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmScript.RRbStealthTakedownStage_OrderedTakedown.GetReferencePosition");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +176,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe override void OverrideChosenAnim(out int Anim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideChosenAnim, "BmScript.RRbStealthTakedownStage_OrderedTakedown.OverrideChosenAnim");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -186,6 +193,7 @@ public partial class RRbStealthTakedownStage_OrderedTakedown : BmSDK.BmGame.RSte
     /// </summary>
     public unsafe override void FillInAnimNames()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FillInAnimNames, "BmScript.RRbStealthTakedownStage_OrderedTakedown.FillInAnimNames");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

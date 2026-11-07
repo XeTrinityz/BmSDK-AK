@@ -84,6 +84,7 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
     /// </summary>
     public unsafe virtual BmSDK.Rotator ModifyLaunchRotation(BmSDK.Rotator InRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyLaunchRotation, "BmGame.RPursuitModeMissileLauncher.ModifyLaunchRotation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
     /// </summary>
     public unsafe virtual void OnProjectileSpawned(BmSDK.BmGame.RProjectile Projectile, BmSDK.Engine.Actor Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnProjectileSpawned, "BmGame.RPursuitModeMissileLauncher.OnProjectileSpawned");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -120,6 +122,7 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
     /// </summary>
     public unsafe virtual void FireBatTracker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireBatTracker, "BmGame.RPursuitModeMissileLauncher.FireBatTracker");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +136,7 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTarget, "BmGame.RPursuitModeMissileLauncher.GetTarget");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +150,7 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
     /// </summary>
     public unsafe override bool FireWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireWeapon, "BmGame.RPursuitModeMissileLauncher.FireWeapon");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +164,7 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
     /// </summary>
     public unsafe override void GivenTo(BmSDK.Engine.Pawn thisPawn, bool bDoNotActivate = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GivenTo, "BmGame.RPursuitModeMissileLauncher.GivenTo");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

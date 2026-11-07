@@ -84,6 +84,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual int RecordCoverLinkFireLinks(BmSDK.Engine.CoverLink Link, BmSDK.Engine.Controller Player)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecordCoverLinkFireLinks, "Engine.GameplayEventsWriterBase.RecordCoverLinkFireLinks");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void RecordAIPathFail(BmSDK.Engine.Controller AI, BmSDK.FString Reason, System.Numerics.Vector3 Dest)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecordAIPathFail, "Engine.GameplayEventsWriterBase.RecordAIPathFail");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +117,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogSystemPollEvents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogSystemPollEvents, "Engine.GameplayEventsWriterBase.LogSystemPollEvents");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +131,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogProjectileIntEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class Proj, int Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogProjectileIntEvent, "Engine.GameplayEventsWriterBase.LogProjectileIntEvent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +149,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogDamageEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class dmgType, BmSDK.Engine.Controller Target, int Amount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogDamageEvent, "Engine.GameplayEventsWriterBase.LogDamageEvent");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +168,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogWeaponIntEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class WeaponClass, int Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogWeaponIntEvent, "Engine.GameplayEventsWriterBase.LogWeaponIntEvent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +186,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogPlayerPlayerEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Engine.Controller Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerPlayerEvent, "Engine.GameplayEventsWriterBase.LogPlayerPlayerEvent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -196,6 +203,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogPlayerKillDeath(int EventID, int KillType, BmSDK.Engine.Controller Killer, BmSDK.Class dmgType, BmSDK.Engine.Controller Dead)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerKillDeath, "Engine.GameplayEventsWriterBase.LogPlayerKillDeath");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +222,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogAllPlayerPositionsEvent(int EventID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogAllPlayerPositionsEvent, "Engine.GameplayEventsWriterBase.LogAllPlayerPositionsEvent");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -228,6 +237,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogPlayerLoginChange(int EventID, BmSDK.Engine.Controller Player, BmSDK.FString PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bSplitScreen)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerLoginChange, "Engine.GameplayEventsWriterBase.LogPlayerLoginChange");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -246,6 +256,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogPlayerSpawnEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class PawnClass, int TeamID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerSpawnEvent, "Engine.GameplayEventsWriterBase.LogPlayerSpawnEvent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -263,6 +274,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogPlayerStringEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.FString EventString)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerStringEvent, "Engine.GameplayEventsWriterBase.LogPlayerStringEvent");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -279,6 +291,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogPlayerFloatEvent(int EventID, BmSDK.Engine.Controller Player, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerFloatEvent, "Engine.GameplayEventsWriterBase.LogPlayerFloatEvent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -295,6 +308,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogPlayerIntEvent(int EventID, BmSDK.Engine.Controller Player, int Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerIntEvent, "Engine.GameplayEventsWriterBase.LogPlayerIntEvent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -311,6 +325,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogTeamStringEvent(int EventID, BmSDK.Engine.TeamInfo Team, BmSDK.FString Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogTeamStringEvent, "Engine.GameplayEventsWriterBase.LogTeamStringEvent");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +342,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogTeamFloatEvent(int EventID, BmSDK.Engine.TeamInfo Team, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogTeamFloatEvent, "Engine.GameplayEventsWriterBase.LogTeamFloatEvent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -343,6 +359,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogTeamIntEvent(int EventID, BmSDK.Engine.TeamInfo Team, int Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogTeamIntEvent, "Engine.GameplayEventsWriterBase.LogTeamIntEvent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -359,6 +376,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogGamePositionEvent(int EventID, out System.Numerics.Vector3 Position, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGamePositionEvent, "Engine.GameplayEventsWriterBase.LogGamePositionEvent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +395,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogGameFloatEvent(int EventID, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGameFloatEvent, "Engine.GameplayEventsWriterBase.LogGameFloatEvent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -392,6 +411,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogGameStringEvent(int EventID, BmSDK.FString Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGameStringEvent, "Engine.GameplayEventsWriterBase.LogGameStringEvent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -407,6 +427,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void LogGameIntEvent(int EventID, int Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGameIntEvent, "Engine.GameplayEventsWriterBase.LogGameIntEvent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -422,6 +443,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void EndLogging()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndLogging, "Engine.GameplayEventsWriterBase.EndLogging");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -435,6 +457,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void ResetLogging(float HeartbeatDelta = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetLogging, "Engine.GameplayEventsWriterBase.ResetLogging");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -449,6 +472,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void StartLogging(float HeartbeatDelta = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLogging, "Engine.GameplayEventsWriterBase.StartLogging");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -463,6 +487,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual int GetPlaylistId()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlaylistId, "Engine.GameplayEventsWriterBase.GetPlaylistId");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -476,6 +501,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual int GetGameTypeId()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGameTypeId, "Engine.GameplayEventsWriterBase.GetGameTypeId");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -489,6 +515,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void Poll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Poll, "Engine.GameplayEventsWriterBase.Poll");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -502,6 +529,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void StopPolling()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopPolling, "Engine.GameplayEventsWriterBase.StopPolling");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -515,6 +543,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual void StartPolling(float HearbeatDelta)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPolling, "Engine.GameplayEventsWriterBase.StartPolling");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -529,6 +558,7 @@ public partial class GameplayEventsWriterBase : BmSDK.Engine.GameplayEvents, BmS
     /// </summary>
     public unsafe virtual bool IsSessionInProgress()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSessionInProgress, "Engine.GameplayEventsWriterBase.IsSessionInProgress");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

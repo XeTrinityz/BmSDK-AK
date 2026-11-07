@@ -84,6 +84,7 @@ public partial class RAEC_Attack_Startle : BmSDK.BmGame.RAlertEventCoordinatorBa
     /// </summary>
     public unsafe virtual void MoveAllToAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveAllToAttack, "BmGame.RAEC_Attack_Startle.MoveAllToAttack");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_Attack_Startle : BmSDK.BmGame.RAlertEventCoordinatorBa
     /// </summary>
     public unsafe override void AssignToEvent(BmSDK.BmGame.RBMAIController Con)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignToEvent, "BmGame.RAEC_Attack_Startle.AssignToEvent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RAEC_Attack_Startle : BmSDK.BmGame.RAlertEventCoordinatorBa
     /// </summary>
     public unsafe virtual void AddGunStartled(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddGunStartled, "BmGame.RAEC_Attack_Startle.AddGunStartled");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RAEC_Attack_Startle : BmSDK.BmGame.RAlertEventCoordinatorBa
     /// </summary>
     public unsafe virtual void AddBatShocked(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddBatShocked, "BmGame.RAEC_Attack_Startle.AddBatShocked");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RAEC_Attack_Startle : BmSDK.BmGame.RAlertEventCoordinatorBa
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Attack_Startle.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class RAEC_Attack_Startle : BmSDK.BmGame.RAlertEventCoordinatorBa
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Attack_Startle.OnRemoveSoloChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

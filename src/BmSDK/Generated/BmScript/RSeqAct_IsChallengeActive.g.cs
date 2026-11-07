@@ -84,6 +84,7 @@ public partial class RSeqAct_IsChallengeActive : BmSDK.Engine.SequenceAction, Bm
     /// </summary>
     public unsafe virtual bool InChallengeMode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InChallengeMode, "BmScript.RSeqAct_IsChallengeActive.InChallengeMode");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_IsChallengeActive : BmSDK.Engine.SequenceAction, Bm
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_IsChallengeActive.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

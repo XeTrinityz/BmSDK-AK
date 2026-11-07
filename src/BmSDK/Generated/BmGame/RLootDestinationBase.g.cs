@@ -84,6 +84,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual void TryStateChange(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStateChange, "BmGame.RLootDestinationBase.TryStateChange");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual void PlayBagDroppedOffAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayBagDroppedOffAnim, "BmGame.RLootDestinationBase.PlayBagDroppedOffAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RLootDestinationBase.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RLootDestinationBase.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RLootDestinationBase.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual void GetMusterLocationAndRotation(BmSDK.Engine.Pawn requestingPawn, out System.Numerics.Vector3 musterLoc, out BmSDK.Rotator musterRot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMusterLocationAndRotation, "BmGame.RLootDestinationBase.GetMusterLocationAndRotation");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +176,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RLootDestinationBase.OnToggle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +191,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual bool IsLockedByAnyone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLockedByAnyone, "BmGame.RLootDestinationBase.IsLockedByAnyone");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +205,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual bool HasLocationLockedBy(BmSDK.Engine.Pawn inPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasLocationLockedBy, "BmGame.RLootDestinationBase.HasLocationLockedBy");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -211,6 +220,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual bool HasAvailableLocations()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasAvailableLocations, "BmGame.RLootDestinationBase.HasAvailableLocations");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -224,6 +234,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual void UnlockDropoffPoint(BmSDK.Engine.Pawn inUnlockingPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockDropoffPoint, "BmGame.RLootDestinationBase.UnlockDropoffPoint");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +249,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual void LockDropoffPoint(BmSDK.Engine.Pawn inLockingPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LockDropoffPoint, "BmGame.RLootDestinationBase.LockDropoffPoint");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -252,6 +264,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual bool OnDropOff(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDropOff, "BmGame.RLootDestinationBase.OnDropOff");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -266,6 +279,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RLootDestinationBase.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -280,6 +294,7 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
     /// </summary>
     public unsafe virtual bool IsPlayingAnim(BmSDK.Engine.SkeletalMeshComponent MeshComp)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayingAnim, "BmGame.RLootDestinationBase.IsPlayingAnim");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void Music_RemoveCustom()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_RemoveCustom, "BmScript.RChallengeModeStartPoint.Music_RemoveCustom");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void Music_ChallengeFail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_ChallengeFail, "BmScript.RChallengeModeStartPoint.Music_ChallengeFail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void Music_ChallengeSuccess()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_ChallengeSuccess, "BmScript.RChallengeModeStartPoint.Music_ChallengeSuccess");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void Music_ResetForChallenge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_ResetForChallenge, "BmScript.RChallengeModeStartPoint.Music_ResetForChallenge");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual bool AllowLongRangeInteraction(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowLongRangeInteraction, "BmScript.RChallengeModeStartPoint.AllowLongRangeInteraction");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RChallengeModeStartPoint.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void UpdateChallengeInRGameInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateChallengeInRGameInfo, "BmScript.RChallengeModeStartPoint.UpdateChallengeInRGameInfo");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -176,6 +183,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmScript.RChallengeModeStartPoint.OnToggle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void OnBackscreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBackscreen, "BmScript.RChallengeModeStartPoint.OnBackscreen");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +212,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void OnChallengeCompletion(bool bFailed, BmSDK.FString sCustomMessage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnChallengeCompletion, "BmScript.RChallengeModeStartPoint.OnChallengeCompletion");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +228,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TimerChallengeCompletionDelay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerChallengeCompletionDelay, "BmScript.RChallengeModeStartPoint.TimerChallengeCompletionDelay");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +242,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TimerEndingChallenge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerEndingChallenge, "BmScript.RChallengeModeStartPoint.TimerEndingChallenge");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -244,6 +256,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void FadeBackIn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FadeBackIn, "BmScript.RChallengeModeStartPoint.FadeBackIn");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +270,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void AbortChallenge(int nTriggerEvent, bool bPlayAbortedDialog)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AbortChallenge, "BmScript.RChallengeModeStartPoint.AbortChallenge");
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -272,6 +286,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult StopSpeechCallback(int speechId, bool interrupted)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpeechCallback, "BmScript.RChallengeModeStartPoint.StopSpeechCallback");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -287,6 +302,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void FlushLoading()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushLoading, "BmScript.RChallengeModeStartPoint.FlushLoading");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -300,6 +316,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void AfterFinishedDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AfterFinishedDialogue, "BmScript.RChallengeModeStartPoint.AfterFinishedDialogue");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -313,6 +330,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TimerAfterAbortFadeOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterAbortFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterAbortFadeOut");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -326,6 +344,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TimerAfterAbortFadeOutAfterSwitchToGameMaps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterAbortFadeOutAfterSwitchToGameMaps, "BmScript.RChallengeModeStartPoint.TimerAfterAbortFadeOutAfterSwitchToGameMaps");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -339,6 +358,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void RestartChallenge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestartChallenge, "BmScript.RChallengeModeStartPoint.RestartChallenge");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -352,6 +372,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TimerAfterRestartFadeOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterRestartFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterRestartFadeOut");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -365,6 +386,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TimerAfterRestartFadeOutAfterRespawn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterRestartFadeOutAfterRespawn, "BmScript.RChallengeModeStartPoint.TimerAfterRestartFadeOutAfterRespawn");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -378,6 +400,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void RespawnPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RespawnPlayer, "BmScript.RChallengeModeStartPoint.RespawnPlayer");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -391,6 +414,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void InitiateScreenMode(BmSDK.BmGame.RChallengeManager.ChallengeScreenModes eMode, bool bAccepted, bool bInGameStart)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitiateScreenMode, "BmScript.RChallengeModeStartPoint.InitiateScreenMode");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -407,6 +431,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TimerAfterStartFadeOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterStartFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterStartFadeOut");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -420,6 +445,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void MovePlayerHere()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePlayerHere, "BmScript.RChallengeModeStartPoint.MovePlayerHere");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -433,6 +459,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void TriggerEvent(int OutputIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEvent, "BmScript.RChallengeModeStartPoint.TriggerEvent");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -447,6 +474,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void ClearChallengeMiniScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearChallengeMiniScreen, "BmScript.RChallengeModeStartPoint.ClearChallengeMiniScreen");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -460,6 +488,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void SetChallengeMiniScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetChallengeMiniScreen, "BmScript.RChallengeModeStartPoint.SetChallengeMiniScreen");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -473,6 +502,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void TriggerChallengeAwardPointNotification()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerChallengeAwardPointNotification, "BmScript.RChallengeModeStartPoint.TriggerChallengeAwardPointNotification");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -486,6 +516,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void ClearChallengeScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearChallengeScreen, "BmScript.RChallengeModeStartPoint.ClearChallengeScreen");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -499,6 +530,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe override void SetChallengeScreen(BmSDK.BmGame.RChallengeManager.ChallengeScreenModes selected_mode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetChallengeScreen, "BmScript.RChallengeModeStartPoint.SetChallengeScreen");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -513,6 +545,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual bool OverridePreviousLines()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePreviousLines, "BmScript.RChallengeModeStartPoint.OverridePreviousLines");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -526,6 +559,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton GetInteractButton(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractButton, "BmScript.RChallengeModeStartPoint.GetInteractButton");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -540,6 +574,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual BmSDK.FString GetUpperPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUpperPrompt, "BmScript.RChallengeModeStartPoint.GetUpperPrompt");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -553,6 +588,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual float OverridesRun(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridesRun, "BmScript.RChallengeModeStartPoint.OverridesRun");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -567,6 +603,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmScript.RChallengeModeStartPoint.CanReachItem");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -581,6 +618,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationOffset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationOffset, "BmScript.RChallengeModeStartPoint.GetLocationOffset");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -594,6 +632,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual bool CanUseInCinematicMode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseInCinematicMode, "BmScript.RChallengeModeStartPoint.CanUseInCinematicMode");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -607,6 +646,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual bool MustBeCrouched(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MustBeCrouched, "BmScript.RChallengeModeStartPoint.MustBeCrouched");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -621,6 +661,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual bool IsButtonPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsButtonPrompt, "BmScript.RChallengeModeStartPoint.IsButtonPrompt");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -634,6 +675,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual float GetPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPriority, "BmScript.RChallengeModeStartPoint.GetPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -647,6 +689,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual float GetFOVDegrees(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVDegrees, "BmScript.RChallengeModeStartPoint.GetFOVDegrees");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -661,6 +704,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual float GetHeightRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeightRange, "BmScript.RChallengeModeStartPoint.GetHeightRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -674,6 +718,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual float GetRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRange, "BmScript.RChallengeModeStartPoint.GetRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -687,6 +732,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void Interact(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmScript.RChallengeModeStartPoint.Interact");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -701,6 +747,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmScript.RChallengeModeStartPoint.IsActive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -715,6 +762,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual BmSDK.FString GetPrompt(BmSDK.Engine.PlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrompt, "BmScript.RChallengeModeStartPoint.GetPrompt");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -729,6 +777,7 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
     /// </summary>
     public unsafe virtual void CompleteRestartOrAbort()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CompleteRestartOrAbort, "BmScript.RChallengeModeStartPoint.CompleteRestartOrAbort");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

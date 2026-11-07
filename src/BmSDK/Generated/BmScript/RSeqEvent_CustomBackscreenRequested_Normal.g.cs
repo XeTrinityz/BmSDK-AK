@@ -97,6 +97,7 @@ public partial class RSeqEvent_CustomBackscreenRequested_Normal : BmSDK.BmGame.R
     /// </summary>
     public unsafe override BmSDK.BmGame.RSeqEvent_CustomBackscreenRequested.BackscreenAvailability GetAvailability()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAvailability, "BmScript.RSeqEvent_CustomBackscreenRequested_Normal.GetAvailability");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

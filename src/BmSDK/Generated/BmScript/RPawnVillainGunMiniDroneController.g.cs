@@ -84,6 +84,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override int GetEquipmentPropSkeletalsIndex()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEquipmentPropSkeletalsIndex, "BmScript.RPawnVillainGunMiniDroneController.GetEquipmentPropSkeletalsIndex");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual void InformOfDroneExploding()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InformOfDroneExploding, "BmScript.RPawnVillainGunMiniDroneController.InformOfDroneExploding");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual void CodesHaveFinishedDownloading()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CodesHaveFinishedDownloading, "BmScript.RPawnVillainGunMiniDroneController.CodesHaveFinishedDownloading");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHelicopterBase FindMiniDrone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindMiniDrone, "BmScript.RPawnVillainGunMiniDroneController.FindMiniDrone");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetControllerToMiniDroneLineStartLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetControllerToMiniDroneLineStartLocation, "BmScript.RPawnVillainGunMiniDroneController.GetControllerToMiniDroneLineStartLocation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override bool HasDroneRemoteInHand()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasDroneRemoteInHand, "BmScript.RPawnVillainGunMiniDroneController.HasDroneRemoteInHand");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override BmSDK.BmGame.RHelicopterBase GetMyMiniDrone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMyMiniDrone, "BmScript.RPawnVillainGunMiniDroneController.GetMyMiniDrone");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +182,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override bool IsMinidroneController()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMinidroneController, "BmScript.RPawnVillainGunMiniDroneController.IsMinidroneController");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +196,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void ThrowRemoteAway()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowRemoteAway, "BmScript.RPawnVillainGunMiniDroneController.ThrowRemoteAway");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -201,6 +210,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override bool HasRemoteBeenThrownAway()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasRemoteBeenThrownAway, "BmScript.RPawnVillainGunMiniDroneController.HasRemoteBeenThrownAway");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +224,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override bool IsMiniDroneDisabledByREC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMiniDroneDisabledByREC, "BmScript.RPawnVillainGunMiniDroneController.IsMiniDroneDisabledByREC");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -227,6 +238,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual void MiniDroneRecoveredFromDisruptor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneRecoveredFromDisruptor, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneRecoveredFromDisruptor");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -240,6 +252,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual void MiniDroneHitByDisruptor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneHitByDisruptor, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneHitByDisruptor");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -253,6 +266,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual void SpawnJammedExplosion()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnJammedExplosion, "BmScript.RPawnVillainGunMiniDroneController.SpawnJammedExplosion");
         byte* paramsPtr = stackalloc byte[288];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -266,6 +280,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual void MiniDroneAttackingTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneAttackingTarget, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneAttackingTarget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -279,6 +294,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe virtual void MiniDroneFoundCasualty(BmSDK.BmGame.RPawnVillain Casualty)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneFoundCasualty, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneFoundCasualty");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -293,6 +309,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void GetDisruptedEquipmentLocationAndRotation(out System.Numerics.Vector3 vLocation, out BmSDK.Rotator rRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptedEquipmentLocationAndRotation, "BmScript.RPawnVillainGunMiniDroneController.GetDisruptedEquipmentLocationAndRotation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -312,6 +329,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void DisruptorDisableEquipment()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisruptorDisableEquipment, "BmScript.RPawnVillainGunMiniDroneController.DisruptorDisableEquipment");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -325,6 +343,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void UnequipMiniDroneController()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnequipMiniDroneController, "BmScript.RPawnVillainGunMiniDroneController.UnequipMiniDroneController");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -338,6 +357,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void EquipMiniDroneController()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EquipMiniDroneController, "BmScript.RPawnVillainGunMiniDroneController.EquipMiniDroneController");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -351,6 +371,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void RestoreDisruptorDisabledEquipment()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreDisruptorDisabledEquipment, "BmScript.RPawnVillainGunMiniDroneController.RestoreDisruptorDisabledEquipment");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -364,6 +385,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetDroneControllerAnimset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDroneControllerAnimset, "BmScript.RPawnVillainGunMiniDroneController.GetDroneControllerAnimset");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +399,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void AddPawnProps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPawnProps, "BmScript.RPawnVillainGunMiniDroneController.AddPawnProps");
         byte* paramsPtr = stackalloc byte[200];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -390,6 +413,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void AttachProps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachProps, "BmScript.RPawnVillainGunMiniDroneController.AttachProps");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -403,6 +427,7 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnVillainGunMiniDroneController.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

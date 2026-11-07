@@ -84,6 +84,7 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
     /// </summary>
     public unsafe virtual void UC_SetInfo(BmSDK.FString Cell, BmSDK.FString Sec, BmSDK.FString Perc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetInfo, "BmScript.RGFxMovieGCPDCount.UC_SetInfo");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
     /// </summary>
     public unsafe virtual void SetInfo(float PopCell, float PopCellMax, float PopSec, float PopSecMax)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInfo, "BmScript.RGFxMovieGCPDCount.SetInfo");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -117,6 +119,7 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
     /// </summary>
     public unsafe virtual bool CustomInit(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomInit, "BmScript.RGFxMovieGCPDCount.CustomInit");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

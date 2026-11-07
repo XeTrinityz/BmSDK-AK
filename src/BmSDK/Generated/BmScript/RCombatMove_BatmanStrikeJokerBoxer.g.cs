@@ -84,6 +84,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe override bool CanPerformNextComboMove(bool bSpecialMove = default, bool bStrike = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPerformNextComboMove, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.CanPerformNextComboMove");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe virtual void SpawnHitParticles()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnHitParticles, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.SpawnHitParticles");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe virtual void StopTrail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTrail, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.StopTrail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe virtual void StartTrail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTrail, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.StartTrail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe virtual void AllowMovementExit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowMovementExit, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.AllowMovementExit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe virtual void AllowNextStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowNextStrike, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.AllowNextStrike");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe virtual void JBHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JBHit, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.JBHit");
         byte* paramsPtr = stackalloc byte[284];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

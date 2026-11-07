@@ -84,6 +84,7 @@ public partial class RHudModuleHeavyTankScanBase : BmSDK.BmGame.RHudModule, BmSD
     /// </summary>
     public unsafe virtual void XI_HeavyTankScan_ThreeDeeAnimComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_HeavyTankScan_ThreeDeeAnimComplete, "BmGame.RHudModuleHeavyTankScanBase.XI_HeavyTankScan_ThreeDeeAnimComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RHudModuleHeavyTankScanBase : BmSDK.BmGame.RHudModule, BmSD
     /// </summary>
     public unsafe virtual void XI_HeavyTankScan_ScanResolved(float proportion_revealed_this_scan, float total_proportion_revealed, float scan_angle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_HeavyTankScan_ScanResolved, "BmGame.RHudModuleHeavyTankScanBase.XI_HeavyTankScan_ScanResolved");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RHudModuleHeavyTankScanBase : BmSDK.BmGame.RHudModule, BmSD
     /// </summary>
     public unsafe virtual void AnalyseAndOutro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnalyseAndOutro, "BmGame.RHudModuleHeavyTankScanBase.AnalyseAndOutro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RHudModuleHeavyTankScanBase : BmSDK.BmGame.RHudModule, BmSD
     /// </summary>
     public unsafe virtual void RevealParts(float AngleRangeDegrees, float AngleRangeForBack)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RevealParts, "BmGame.RHudModuleHeavyTankScanBase.RevealParts");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +145,7 @@ public partial class RHudModuleHeavyTankScanBase : BmSDK.BmGame.RHudModule, BmSD
     /// </summary>
     public unsafe virtual void SetAngles(float tank_angle_degrees, float turret_angle_degrees)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAngles, "BmGame.RHudModuleHeavyTankScanBase.SetAngles");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

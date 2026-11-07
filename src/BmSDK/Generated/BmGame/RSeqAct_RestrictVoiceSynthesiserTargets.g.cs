@@ -97,6 +97,7 @@ public partial class RSeqAct_RestrictVoiceSynthesiserTargets : BmSDK.Engine.Sequ
     /// </summary>
     public unsafe virtual void FiredAtWrongTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FiredAtWrongTarget, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.FiredAtWrongTarget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_RestrictVoiceSynthesiserTargets : BmSDK.Engine.Sequ
     /// </summary>
     public unsafe virtual bool IsCurrentTargetAllowed(BmSDK.Engine.Actor CheckTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCurrentTargetAllowed, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.IsCurrentTargetAllowed");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RSeqAct_RestrictVoiceSynthesiserTargets : BmSDK.Engine.Sequ
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

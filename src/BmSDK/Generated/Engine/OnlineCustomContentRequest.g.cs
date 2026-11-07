@@ -84,6 +84,7 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void CancelCustomContentRequest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCustomContentRequest, "Engine.OnlineCustomContentRequest.CancelCustomContentRequest");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void GetCustomContentAsString(out BmSDK.FString ContentData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContentAsString, "Engine.OnlineCustomContentRequest.GetCustomContentAsString");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void GetCustomContent(out BmSDK.TArray<byte> ContentData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContent, "Engine.OnlineCustomContentRequest.GetCustomContent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +149,7 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void StartCustomContentRequest(BmSDK.FString sContentName, BmSDK.FString sCustomId, System.IntPtr dRequestCustomContentComplete)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomContentRequest, "Engine.OnlineCustomContentRequest.StartCustomContentRequest");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +173,7 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void OnRequestCustomContentComplete(bool bWasSuccessful, BmSDK.FString sCustomId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRequestCustomContentComplete, "Engine.OnlineCustomContentRequest.OnRequestCustomContentComplete");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

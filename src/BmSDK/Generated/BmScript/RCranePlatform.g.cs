@@ -84,6 +84,7 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
     /// </summary>
     public unsafe override void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "BmScript.RCranePlatform.RigidBodyCollision");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual float GetCableLength(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCableLength, "BmScript.RCranePlatform.GetCableLength");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool IsTouchingFloor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTouchingFloor, "BmScript.RCranePlatform.IsTouchingFloor");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAttachPoint(int Index, bool bWorldPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttachPoint, "BmScript.RCranePlatform.GetAttachPoint");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +150,7 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLaunchPoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLaunchPoint, "BmScript.RCranePlatform.GetLaunchPoint");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

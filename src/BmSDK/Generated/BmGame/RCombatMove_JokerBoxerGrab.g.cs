@@ -84,6 +84,7 @@ public partial class RCombatMove_JokerBoxerGrab : BmSDK.BmGame.RCombatMove_Villa
     /// </summary>
     public unsafe override bool StartCustomStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomStrike, "BmGame.RCombatMove_JokerBoxerGrab.StartCustomStrike");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

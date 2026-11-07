@@ -79,6 +79,7 @@ public partial class GFxFSCmdHandler : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool FSCommand(BmSDK.GFxUI.GFxMoviePlayer Movie, BmSDK.GFxUI.GFxEvent_FSCommand Event, BmSDK.FString Cmd, BmSDK.FString Arg)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FSCommand, "GFxUI.GFxFSCmdHandler.FSCommand");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

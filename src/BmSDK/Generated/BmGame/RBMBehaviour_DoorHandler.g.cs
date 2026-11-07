@@ -84,6 +84,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe virtual void HandlePathFail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlePathFail, "BmGame.RBMBehaviour_DoorHandler.HandlePathFail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe virtual void FollowPath_DoorAware(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FollowPath_DoorAware, "BmGame.RBMBehaviour_DoorHandler.FollowPath_DoorAware");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe virtual bool GotLOSToFirstDoorOnPath()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotLOSToFirstDoorOnPath, "BmGame.RBMBehaviour_DoorHandler.GotLOSToFirstDoorOnPath");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe virtual void CheckNavHandleForDoors()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckNavHandleForDoors, "BmGame.RBMBehaviour_DoorHandler.CheckNavHandleForDoors");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe override void HandleBankDoorDiscovery(BmSDK.BmGame.RBankDoorBase DiscoveredDoor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleBankDoorDiscovery, "BmGame.RBMBehaviour_DoorHandler.HandleBankDoorDiscovery");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe virtual void TriggerGrateResponse(BmSDK.BmGame.RTunnelGrateBase Grate, bool canDestroy = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGrateResponse, "BmGame.RBMBehaviour_DoorHandler.TriggerGrateResponse");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe virtual void StartNavMeshSearch(System.Numerics.Vector3 Destination, bool IgnoreKnownPathObstacles = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNavMeshSearch, "BmGame.RBMBehaviour_DoorHandler.StartNavMeshSearch");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe virtual void DoBankEventBark(BmSDK.FName bark, bool bLowPriority = default, bool bNeedToOpenGate = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoBankEventBark, "BmGame.RBMBehaviour_DoorHandler.DoBankEventBark");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +205,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_DoorHandler.OnBeginInterrupt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe override void OnExitBehaviourCalled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnExitBehaviourCalled, "BmGame.RBMBehaviour_DoorHandler.OnExitBehaviourCalled");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -223,6 +233,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe override void OnExitConditionTriggered()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnExitConditionTriggered, "BmGame.RBMBehaviour_DoorHandler.OnExitConditionTriggered");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,6 +247,7 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_DoorHandler.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

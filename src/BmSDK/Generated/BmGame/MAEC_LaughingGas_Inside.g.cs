@@ -84,6 +84,7 @@ public partial class MAEC_LaughingGas_Inside : BmSDK.BmGame.RAEC_Smoke_Inside, B
     /// </summary>
     public unsafe override void OnAssign(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAssign, "BmGame.MAEC_LaughingGas_Inside.OnAssign");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

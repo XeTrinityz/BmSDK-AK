@@ -84,6 +84,7 @@ public partial class RPawnVillainMultiStageKnifeTutorial : BmSDK.BmScript.RPawnV
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateMultiStageWeaponConfig(BmSDK.GameObject NewOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateMultiStageWeaponConfig, "BmScript.RPawnVillainMultiStageKnifeTutorial.CreateMultiStageWeaponConfig");
         byte* paramsPtr = stackalloc byte[2008];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

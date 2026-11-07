@@ -229,6 +229,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetRandomOptionSumFrequency(out BmSDK.TArray<float> FreqList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRandomOptionSumFrequency, "Core.Object.GetRandomOptionSumFrequency");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -243,6 +244,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetBuildChangelistNumber()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBuildChangelistNumber, "Core.Object.GetBuildChangelistNumber");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -263,6 +265,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetEngineVersion()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEngineVersion, "Core.Object.GetEngineVersion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,6 +286,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetSystemTime(out int Year, out int Month, out int DayOfWeek, out int Day, out int Hour, out int Min, out int Sec, out int MSec)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSystemTime, "Core.Object.GetSystemTime");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +331,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString TimeStamp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimeStamp, "Core.Object.TimeStamp");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -347,6 +352,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformVectorByRotation(BmSDK.Rotator SourceRotation, System.Numerics.Vector3 SourceVector, bool bInverse = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformVectorByRotation, "Core.Object.TransformVectorByRotation");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -370,6 +376,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsCapturingMovie()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCapturingMovie, "Core.Object.IsCapturingMovie");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -390,6 +397,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsInPIE()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInPIE, "Core.Object.IsInPIE");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -410,6 +418,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FName GetPackageName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPackageName, "Core.Object.GetPackageName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -423,6 +432,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsPendingKill()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPendingKill, "Core.Object.IsPendingKill");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -443,6 +453,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float ByteToFloat(byte inputByte, bool bSigned = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ByteToFloat, "Core.Object.ByteToFloat");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -458,6 +469,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual byte FloatToByte(float inputFloat, bool bSigned = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FloatToByte, "Core.Object.FloatToByte");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -634,6 +646,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float PointDistToPlane(System.Numerics.Vector3 Point, BmSDK.Rotator Orientation, System.Numerics.Vector3 Origin, out System.Numerics.Vector3 out_ClosestPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointDistToPlane, "Core.Object.PointDistToPlane");
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -653,6 +666,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetTForSegmentPlaneIntersect(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, BmSDK.GameObject.FPlane testPlane)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTForSegmentPlaneIntersect, "Core.Object.GetTForSegmentPlaneIntersect");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -676,6 +690,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SegmentDistToSegment(System.Numerics.Vector3 A1, System.Numerics.Vector3 B1, System.Numerics.Vector3 A2, System.Numerics.Vector3 B2, out System.Numerics.Vector3 OutP1, out System.Numerics.Vector3 OutP2)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SegmentDistToSegment, "Core.Object.SegmentDistToSegment");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -706,6 +721,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SphereIntersectingLine(System.Numerics.Vector3 SphereOrigin, float SphereRadius, System.Numerics.Vector3 LineStart, System.Numerics.Vector3 LineEnd, out System.Numerics.Vector3 ClosestPoint1, out System.Numerics.Vector3 ClosestPoint2)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SphereIntersectingLine, "Core.Object.SphereIntersectingLine");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -736,6 +752,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float PointDistSquaredToLineSegment(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointDistSquaredToLineSegment, "Core.Object.PointDistSquaredToLineSegment");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -759,6 +776,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float PointDistAlongLineSegment(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointDistAlongLineSegment, "Core.Object.PointDistAlongLineSegment");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -782,6 +800,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float PointDistAlongLine(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointDistAlongLine, "Core.Object.PointDistAlongLine");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -805,6 +824,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float PointDistToSegment(System.Numerics.Vector3 Point, System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, out System.Numerics.Vector3 OutClosestPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointDistToSegment, "Core.Object.PointDistToSegment");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -831,6 +851,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float PointDistToLine(System.Numerics.Vector3 Point, System.Numerics.Vector3 Line, System.Numerics.Vector3 Origin, out System.Numerics.Vector3 OutClosestPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointDistToLine, "Core.Object.PointDistToLine");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -945,6 +966,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SaveConfig()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveConfig, "Core.Object.SaveConfig");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2075,6 +2097,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsA(BmSDK.FName ClassName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsA, "Core.Object.IsA");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2885,6 +2908,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool InCylinder(System.Numerics.Vector3 Origin, BmSDK.Rotator Dir, float Width, System.Numerics.Vector3 A, bool bIgnoreZ = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InCylinder, "Core.Object.InCylinder");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2971,6 +2995,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector4 MakeVector4(float X, float Y = default, float Z = default, float W = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeVector4, "Core.Object.MakeVector4");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2988,6 +3013,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 MakeVector(float X, float Y = default, float Z = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeVector, "Core.Object.MakeVector");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3004,6 +3030,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetYawFromDirection(System.Numerics.Vector3 Direction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetYawFromDirection, "Core.Object.GetYawFromDirection");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3965,6 +3992,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IAbs(int A)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IAbs, "Core.Object.IAbs");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

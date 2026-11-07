@@ -84,6 +84,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void HitPawn(BmSDK.BmGame.RPawnCombat OtherPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitPawn, "BmGame.RRagdollProcessor.HitPawn");
         byte* paramsPtr = stackalloc byte[344];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CheckForWallBehindHitThug(BmSDK.BmGame.RPawnCombat HitThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForWallBehindHitThug, "BmGame.RRagdollProcessor.CheckForWallBehindHitThug");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void CombatCollision(BmSDK.BmGame.RPawnCombat OtherPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatCollision, "BmGame.RRagdollProcessor.CombatCollision");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void CheckHitPawns()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckHitPawns, "BmGame.RRagdollProcessor.CheckHitPawns");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHostPawnPelvisPosition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHostPawnPelvisPosition, "BmGame.RRagdollProcessor.GetHostPawnPelvisPosition");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SwitchToHitWallWrithe()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchToHitWallWrithe, "BmGame.RRagdollProcessor.SwitchToHitWallWrithe");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ProcessHitWall()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessHitWall, "BmGame.RRagdollProcessor.ProcessHitWall");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "BmGame.RRagdollProcessor.RigidBodyCollision");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -198,6 +206,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool BodyIsHorizontalNearLocation(System.Numerics.Vector3 ContactLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BodyIsHorizontalNearLocation, "BmGame.RRagdollProcessor.BodyIsHorizontalNearLocation");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +221,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ConstrainedToNavMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstrainedToNavMesh, "BmGame.RRagdollProcessor.ConstrainedToNavMesh");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -225,6 +235,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float TimeUntilGetup()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimeUntilGetup, "BmGame.RRagdollProcessor.TimeUntilGetup");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +249,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RRagdollProcessor.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -252,6 +264,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetPelvisSpeed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPelvisSpeed, "BmGame.RRagdollProcessor.GetPelvisSpeed");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -265,6 +278,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TrackRagdollFacing(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrackRagdollFacing, "BmGame.RRagdollProcessor.TrackRagdollFacing");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -279,6 +293,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TurnOffPawnCollision()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffPawnCollision, "BmGame.RRagdollProcessor.TurnOffPawnCollision");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -292,6 +307,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ApplyARF(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyARF, "BmGame.RRagdollProcessor.ApplyARF");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -306,6 +322,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Deactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RRagdollProcessor.Deactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +336,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Reactivate(BmSDK.FName RagdollName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reactivate, "BmGame.RRagdollProcessor.Reactivate");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -333,6 +351,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TempDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TempDeactivate, "BmGame.RRagdollProcessor.TempDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -346,6 +365,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsActive()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmGame.RRagdollProcessor.IsActive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -359,6 +379,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsRagdollOn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRagdollOn, "BmGame.RRagdollProcessor.IsRagdollOn");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -372,6 +393,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void EnterState(BmSDK.BmGame.RRagdollProcessor.RagdollState NewState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterState, "BmGame.RRagdollProcessor.EnterState");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -386,6 +408,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BeginWrithe(BmSDK.FName NewRagdollName, BmSDK.BmGame.RPawnCombat.FDamageInfo NewDmgInfo, bool bKill, bool bNewFrozen)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginWrithe, "BmGame.RRagdollProcessor.BeginWrithe");
         byte* paramsPtr = stackalloc byte[344];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -403,6 +426,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ExplodeLimbs()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeLimbs, "BmGame.RRagdollProcessor.ExplodeLimbs");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -416,6 +440,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitialiseWritheAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseWritheAnim, "BmGame.RRagdollProcessor.InitialiseWritheAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -429,6 +454,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitialiseRagdollFacing()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseRagdollFacing, "BmGame.RRagdollProcessor.InitialiseRagdollFacing");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -442,6 +468,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitialiseWrithePhaseFromAnimName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseWrithePhaseFromAnimName, "BmGame.RRagdollProcessor.InitialiseWrithePhaseFromAnimName");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -455,6 +482,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitialiseWrithePhase(BmSDK.BmGame.RPawnCombat.FWritheDescription WritheDesc, float ImpulseDotPawnDir, bool bUseHitWallPhase)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseWrithePhase, "BmGame.RRagdollProcessor.InitialiseWrithePhase");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -471,6 +499,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Reset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "BmGame.RRagdollProcessor.Reset");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -484,6 +513,7 @@ public partial class RRagdollProcessor : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Initialise(BmSDK.BmGame.RPawnCombat NewPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RRagdollProcessor.Initialise");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

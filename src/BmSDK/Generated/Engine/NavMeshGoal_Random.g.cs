@@ -84,6 +84,7 @@ public partial class NavMeshGoal_Random : BmSDK.Engine.NavMeshPathGoalEvaluator,
     /// </summary>
     public unsafe override void Recycle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "Engine.NavMeshGoal_Random.Recycle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class NavMeshGoal_Random : BmSDK.Engine.NavMeshPathGoalEvaluator,
     /// </summary>
     public unsafe virtual void RecycleNative()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecycleNative, "Engine.NavMeshGoal_Random.RecycleNative");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

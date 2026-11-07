@@ -84,6 +84,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString ToString()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToString, "BmGame.RPoseConfig.ToString");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddTransitionRelaxed(BmSDK.FName MovementStanceA, BmSDK.FName MovementStanceB, BmSDK.FName FullBodyAnim, BmSDK.FName TransitionName = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddTransitionRelaxed, "BmGame.RPoseConfig.AddTransitionRelaxed");
         byte* paramsPtr = stackalloc byte[208];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -121,6 +123,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddPoseRelaxed(BmSDK.FName MovementStance, BmSDK.FName IdleFullBodyAnim, BmSDK.Engine.RAimingConfig AimingConfig = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPoseRelaxed, "BmGame.RPoseConfig.AddPoseRelaxed");
         byte* paramsPtr = stackalloc byte[460];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +140,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddPose(BmSDK.FName MovementStance, BmSDK.FName WeaponStance, BmSDK.FName IdleFullBodyAnim, BmSDK.Engine.RAimingConfig AimingConfig = default, bool AllowTurningToAim = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPose, "BmGame.RPoseConfig.AddPose");
         byte* paramsPtr = stackalloc byte[472];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

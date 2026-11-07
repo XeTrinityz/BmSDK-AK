@@ -84,6 +84,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void PreRestart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreRestart, "BmGame.RPlayerControllerCombat.PreRestart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool CantSwitchPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantSwitchPlayer, "BmGame.RPlayerControllerCombat.CantSwitchPlayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void BeatdownFromFloorPickup()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeatdownFromFloorPickup, "BmGame.RPlayerControllerCombat.BeatdownFromFloorPickup");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void UpgradeQuickGadgetToSuperGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradeQuickGadgetToSuperGadget, "BmGame.RPlayerControllerCombat.UpgradeQuickGadgetToSuperGadget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void DontQuickThrowBatarang()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DontQuickThrowBatarang, "BmGame.RPlayerControllerCombat.DontQuickThrowBatarang");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ReEnableCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReEnableCombat, "BmGame.RPlayerControllerCombat.ReEnableCombat");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void DisableCombat(float Duration = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCombat, "BmGame.RPlayerControllerCombat.DisableCombat");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -176,6 +183,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool ForceDodgeProjectile()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceDodgeProjectile, "BmGame.RPlayerControllerCombat.ForceDodgeProjectile");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +197,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void SuperGadgetTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuperGadgetTimer, "BmGame.RPlayerControllerCombat.SuperGadgetTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +211,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void KeyboardSpecialGadgetComboTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KeyboardSpecialGadgetComboTimer, "BmGame.RPlayerControllerCombat.KeyboardSpecialGadgetComboTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +225,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ReleaseQuickGadgetY()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseQuickGadgetY, "BmGame.RPlayerControllerCombat.ReleaseQuickGadgetY");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -228,6 +239,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ReleaseQuickGadgetX()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseQuickGadgetX, "BmGame.RPlayerControllerCombat.ReleaseQuickGadgetX");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -241,6 +253,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ReleaseQuickGadgetB()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseQuickGadgetB, "BmGame.RPlayerControllerCombat.ReleaseQuickGadgetB");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -254,6 +267,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ReleaseQuickGadgetA()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseQuickGadgetA, "BmGame.RPlayerControllerCombat.ReleaseQuickGadgetA");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -267,6 +281,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void QuickGadgetB()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QuickGadgetB, "BmGame.RPlayerControllerCombat.QuickGadgetB");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -280,6 +295,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void QuickGadgetX()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QuickGadgetX, "BmGame.RPlayerControllerCombat.QuickGadgetX");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -293,6 +309,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void QuickGadgetY()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QuickGadgetY, "BmGame.RPlayerControllerCombat.QuickGadgetY");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -306,6 +323,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void QuickGadgetA()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QuickGadgetA, "BmGame.RPlayerControllerCombat.QuickGadgetA");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +337,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerDamagePawn(BmSDK.BmGame.RPawnVillain Target, BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerDamagePawn, "BmGame.RPlayerControllerCombat.ServerDamagePawn");
         byte* paramsPtr = stackalloc byte[272];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -334,6 +353,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerDoHitPawn(BmSDK.BmGame.RPawnCombat DamageReceiver, float DmgAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerDoHitPawn, "BmGame.RPlayerControllerCombat.ServerDoHitPawn");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -349,6 +369,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UnRegisterComboValueReachedAction(BmSDK.BmGame.RSeqAct_ComboValueReached OldAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnRegisterComboValueReachedAction, "BmGame.RPlayerControllerCombat.UnRegisterComboValueReachedAction");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -363,6 +384,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void RegisterComboValueReachedAction(BmSDK.BmGame.RSeqAct_ComboValueReached NewAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterComboValueReachedAction, "BmGame.RPlayerControllerCombat.RegisterComboValueReachedAction");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +399,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void EnableCapeStun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableCapeStun, "BmGame.RPlayerControllerCombat.EnableCapeStun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -390,6 +413,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void DisableCapeStun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCapeStun, "BmGame.RPlayerControllerCombat.DisableCapeStun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -403,6 +427,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool CanStagger()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanStagger, "BmGame.RPlayerControllerCombat.CanStagger");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -416,6 +441,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool MakeBatmanLookAtEnemy(bool bReset = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeBatmanLookAtEnemy, "BmGame.RPlayerControllerCombat.MakeBatmanLookAtEnemy");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -430,6 +456,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ReadyGadgetOrCounterReleased()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyGadgetOrCounterReleased, "BmGame.RPlayerControllerCombat.ReadyGadgetOrCounterReleased");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -443,6 +470,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void MouseReadyGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MouseReadyGadget, "BmGame.RPlayerControllerCombat.MouseReadyGadget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -456,6 +484,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ReadyGadgetOrCounterPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyGadgetOrCounterPressed, "BmGame.RPlayerControllerCombat.ReadyGadgetOrCounterPressed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -469,6 +498,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void GadgetOrQuickStrikePressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GadgetOrQuickStrikePressed, "BmGame.RPlayerControllerCombat.GadgetOrQuickStrikePressed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -482,6 +512,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void GrappleOrStrikeGadgetPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GrappleOrStrikeGadgetPressed, "BmGame.RPlayerControllerCombat.GrappleOrStrikeGadgetPressed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -495,6 +526,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TriggerFlashBangMultiHitEvents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFlashBangMultiHitEvents, "BmGame.RPlayerControllerCombat.TriggerFlashBangMultiHitEvents");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -508,6 +540,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void RegisterGameAction(BmSDK.BmGame.RGameInfo.EGameAction Action, BmSDK.Engine.Actor XPTarget = default, int XPAmount = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterGameAction, "BmGame.RPlayerControllerCombat.RegisterGameAction");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -524,6 +557,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RPlayerControllerCombat.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -537,6 +571,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void PlayImpactRumble(float LeftAmp = default, float RightAmp = default, float Duration = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayImpactRumble, "BmGame.RPlayerControllerCombat.PlayImpactRumble");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -553,6 +588,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void NavManWTF()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavManWTF, "BmGame.RPlayerControllerCombat.NavManWTF");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -566,6 +602,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AIWTF()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AIWTF, "BmGame.RPlayerControllerCombat.AIWTF");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -579,6 +616,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TutorialWTF()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TutorialWTF, "BmGame.RPlayerControllerCombat.TutorialWTF");
         byte* paramsPtr = stackalloc byte[29];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -592,6 +630,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void PairedAnimWTF()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PairedAnimWTF, "BmGame.RPlayerControllerCombat.PairedAnimWTF");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -605,6 +644,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void StrikeWTF()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrikeWTF, "BmGame.RPlayerControllerCombat.StrikeWTF");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -618,6 +658,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CombatWTF()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatWTF, "BmGame.RPlayerControllerCombat.CombatWTF");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -631,6 +672,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool SuppressVenomCamera()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuppressVenomCamera, "BmGame.RPlayerControllerCombat.SuppressVenomCamera");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -644,6 +686,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool SuppressCombatCamera()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuppressCombatCamera, "BmGame.RPlayerControllerCombat.SuppressCombatCamera");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -657,6 +700,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool ShouldGoSlowMoOnNextHit(int ComboInc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldGoSlowMoOnNextHit, "BmGame.RPlayerControllerCombat.ShouldGoSlowMoOnNextHit");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -671,6 +715,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateCombatCameraSuppression()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCombatCameraSuppression, "BmGame.RPlayerControllerCombat.UpdateCombatCameraSuppression");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -691,6 +736,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void CombatTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatTick, "BmGame.RPlayerControllerCombat.CombatTick");
         byte* paramsPtr = stackalloc byte[208];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -705,6 +751,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void UpdateCombatHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCombatHUD, "BmGame.RPlayerControllerCombat.UpdateCombatHUD");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -718,6 +765,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DestroyFixedCombatCam()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyFixedCombatCam, "BmGame.RPlayerControllerCombat.DestroyFixedCombatCam");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -731,6 +779,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateFixedCamera(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFixedCamera, "BmGame.RPlayerControllerCombat.UpdateFixedCamera");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -745,6 +794,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void MoveFixedCamRotationTowardsPlayer(float YawFollowPercent)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveFixedCamRotationTowardsPlayer, "BmGame.RPlayerControllerCombat.MoveFixedCamRotationTowardsPlayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -759,6 +809,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetFixedCamRotation(BmSDK.Rotator baseRot, BmSDK.Rotator RotRange, float MinDist, float MaxDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFixedCamRotation, "BmGame.RPlayerControllerCombat.GetFixedCamRotation");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -776,6 +827,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFixedCamLocation(System.Numerics.Vector3 BaseLoc, System.Numerics.Vector3 LocRange, float MinDist, float MaxDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFixedCamLocation, "BmGame.RPlayerControllerCombat.GetFixedCamLocation");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -793,6 +845,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual float GetFixedCamFOV(float BaseFOV, float FovRange, float MinDist, float MaxDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFixedCamFOV, "BmGame.RPlayerControllerCombat.GetFixedCamFOV");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -810,6 +863,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void SpawnFinishedCombatMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnFinishedCombatMove, "BmGame.RPlayerControllerCombat.SpawnFinishedCombatMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -823,6 +877,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void QueueFinishedCombatMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueFinishedCombatMove, "BmGame.RPlayerControllerCombat.QueueFinishedCombatMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -836,6 +891,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetComboOnHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetComboOnHUD, "BmGame.RPlayerControllerCombat.SetComboOnHUD");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -849,6 +905,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateComboOnHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateComboOnHUD, "BmGame.RPlayerControllerCombat.UpdateComboOnHUD");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -862,6 +919,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ActualClearLastStrikeDir()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActualClearLastStrikeDir, "BmGame.RPlayerControllerCombat.ActualClearLastStrikeDir");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -875,6 +933,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearLastStrikeDir()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearLastStrikeDir, "BmGame.RPlayerControllerCombat.ClearLastStrikeDir");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -888,6 +947,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetLastStrikeDir(System.Numerics.Vector3 StrikeDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLastStrikeDir, "BmGame.RPlayerControllerCombat.SetLastStrikeDir");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -902,6 +962,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsTargetted(BmSDK.BmGame.RPawnCombat IgnoreTargetter = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTargetted, "BmGame.RPlayerControllerCombat.IsTargetted");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -916,6 +977,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void Untargetted(BmSDK.BmGame.RPawnCombat Targetter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Untargetted, "BmGame.RPlayerControllerCombat.Untargetted");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -930,6 +992,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void Targetted(BmSDK.BmGame.RPawnCombat Targetter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Targetted, "BmGame.RPlayerControllerCombat.Targetted");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -944,6 +1007,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void Lasered()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Lasered, "BmGame.RPlayerControllerCombat.Lasered");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -957,6 +1021,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void Zapped()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Zapped, "BmGame.RPlayerControllerCombat.Zapped");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -970,6 +1035,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void Stunned(bool bDontPlaySfx = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stunned, "BmGame.RPlayerControllerCombat.Stunned");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -984,6 +1050,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CheckDodge(BmSDK.BmGame.RPawnCombat Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckDodge, "BmGame.RPlayerControllerCombat.CheckDodge");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -998,6 +1065,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SpawnRunningStun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRunningStun, "BmGame.RPlayerControllerCombat.SpawnRunningStun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1011,6 +1079,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SpawnRunningStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRunningStrike, "BmGame.RPlayerControllerCombat.SpawnRunningStrike");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1024,6 +1093,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsBatmobileTakedownReady()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatmobileTakedownReady, "BmGame.RPlayerControllerCombat.IsBatmobileTakedownReady");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1037,6 +1107,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsBatmobileTakedownAllowed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatmobileTakedownAllowed, "BmGame.RPlayerControllerCombat.IsBatmobileTakedownAllowed");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1050,6 +1121,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool ShouldShowSpecialPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldShowSpecialPrompt, "BmGame.RPlayerControllerCombat.ShouldShowSpecialPrompt");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1063,6 +1135,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool SpecialUnlocked()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpecialUnlocked, "BmGame.RPlayerControllerCombat.SpecialUnlocked");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1076,6 +1149,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoDualPlayTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoDualPlayTakedown, "BmGame.RPlayerControllerCombat.CanDoDualPlayTakedown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1089,6 +1163,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoSecondaryGroupCombatMove(bool bDoComboCountCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoSecondaryGroupCombatMove, "BmGame.RPlayerControllerCombat.CanDoSecondaryGroupCombatMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1103,6 +1178,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoPrimaryGroupCombatMove(bool bDoComboCountCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoPrimaryGroupCombatMove, "BmGame.RPlayerControllerCombat.CanDoPrimaryGroupCombatMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1117,6 +1193,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoWeaponSnatch(bool bDoComboCountCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoWeaponSnatch, "BmGame.RPlayerControllerCombat.CanDoWeaponSnatch");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1131,6 +1208,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoWeaponDestroy(bool bDoComboCountCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoWeaponDestroy, "BmGame.RPlayerControllerCombat.CanDoWeaponDestroy");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1145,6 +1223,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoCombatTakedown(bool bDoComboCountCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoCombatTakedown, "BmGame.RPlayerControllerCombat.CanDoCombatTakedown");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1159,6 +1238,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoThrow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoThrow, "BmGame.RPlayerControllerCombat.CanDoThrow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1172,6 +1252,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerSpawnFailMove(BmSDK.FName FailAnim, bool bCanBecomeThrow, bool bCanBecomeTakedown, bool bCanBecomeFloorTakedown, BmSDK.FName FailCapeState, System.Numerics.Vector3 MoveDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerSpawnFailMove, "BmGame.RPlayerControllerCombat.ServerSpawnFailMove");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1191,6 +1272,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestComboTakedown(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.BmGame.RPawnPlayerCombat.FTakedownInfo Info, float CollisionDist, System.Numerics.Vector3 Dir, float Dist, BmSDK.BmGame.RPawnPlayerCombat.ETakedownType takedownType, float HitTimeForward, float HitTimeBackward, bool FoundInValidDirection, bool InstantStart, System.Numerics.Vector3 AnimPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestComboTakedown, "BmGame.RPlayerControllerCombat.ServerRequestComboTakedown");
         byte* paramsPtr = stackalloc byte[144];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1215,6 +1297,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool SpawnInterrogation(BmSDK.BmGame.RPawnVillain NewTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnInterrogation, "BmGame.RPlayerControllerCombat.SpawnInterrogation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1229,6 +1312,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TrySpawnDualComboTakedown(bool bOverrideCurrentMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnDualComboTakedown, "BmGame.RPlayerControllerCombat.TrySpawnDualComboTakedown");
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1243,6 +1327,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TrySpawnDualPlayClash(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnDualPlayClash, "BmGame.RPlayerControllerCombat.TrySpawnDualPlayClash");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1257,6 +1342,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindDualPlayClashTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindDualPlayClashTarget, "BmGame.RPlayerControllerCombat.FindDualPlayClashTarget");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1270,6 +1356,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool SpawnTakedown(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnTakedown, "BmGame.RPlayerControllerCombat.SpawnTakedown");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1284,6 +1371,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindTakedownTarget(BmSDK.Class dmgType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindTakedownTarget, "BmGame.RPlayerControllerCombat.FindTakedownTarget");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1298,6 +1386,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTakedown, "BmGame.RPlayerControllerCombat.TryTakedown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1311,6 +1400,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsValidThrowTarget(BmSDK.BmGame.RPawnVillain Target, System.Numerics.Vector3 MoveDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidThrowTarget, "BmGame.RPlayerControllerCombat.IsValidThrowTarget");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1326,6 +1416,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TrySpawnWeaponSnatch(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnWeaponSnatch, "BmGame.RPlayerControllerCombat.TrySpawnWeaponSnatch");
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1340,6 +1431,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool SpawnWeaponDestroy(bool bOverrideCurrentMove = default, BmSDK.BmGame.RPawnVillain NewTarget = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnWeaponDestroy, "BmGame.RPlayerControllerCombat.SpawnWeaponDestroy");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1355,6 +1447,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestThrow(BmSDK.BmGame.RPawnVillain Target, BmSDK.BmGame.RPawnPlayerCombat.FThrowInfo ThrowInfo, System.Numerics.Vector3 AnimPos, BmSDK.Rotator ThrowDir, bool bSetCapeState, bool bDirectThrow)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestThrow, "BmGame.RPlayerControllerCombat.ServerRequestThrow");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1374,6 +1467,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestIntoThrow(BmSDK.BmGame.RPawnVillain Target, BmSDK.BmGame.RPawnCombat.TargetStrikeResponse TargetResponse, BmSDK.Rotator MoveDir, float TargetDist, System.Numerics.Vector3 AnimPos, float AnimRot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestIntoThrow, "BmGame.RPlayerControllerCombat.ServerRequestIntoThrow");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1393,6 +1487,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool SpawnThrow(bool bOverrideCurrentMove = default, BmSDK.BmGame.RPawnVillain NewTarget = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnThrow, "BmGame.RPlayerControllerCombat.SpawnThrow");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1408,6 +1503,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryThrow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryThrow, "BmGame.RPlayerControllerCombat.TryThrow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1421,6 +1517,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestFloorTakedownSimulated(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.BmGame.RGameInfo.EGameAction ChallengeActionToTriggerIfSuccessful, float TargetDist, System.Numerics.Vector3 AnimPos, System.Numerics.Vector3 FacingDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestFloorTakedownSimulated, "BmGame.RPlayerControllerCombat.ServerRequestFloorTakedownSimulated");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1439,6 +1536,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryFloorTakedown(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryFloorTakedown, "BmGame.RPlayerControllerCombat.TryFloorTakedown");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1453,6 +1551,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryFloorStrike(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryFloorStrike, "BmGame.RPlayerControllerCombat.TryFloorStrike");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1467,6 +1566,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool TryFloorPickupThug(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryFloorPickupThug, "BmGame.RPlayerControllerCombat.TryFloorPickupThug");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1481,6 +1581,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetLastAttackTarget(BmSDK.BmGame.RPawnVillain Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLastAttackTarget, "BmGame.RPlayerControllerCombat.SetLastAttackTarget");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1495,6 +1596,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestProjectileCounter(BmSDK.BmGame.RBMCombatThrownObject ThrownObject)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestProjectileCounter, "BmGame.RPlayerControllerCombat.ServerRequestProjectileCounter");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1509,6 +1611,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestCounter(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.Class CounterDmgType, int CounterInfoIndex, float CounterRot, System.Numerics.Vector3 AnimPos, bool bFinalBlow)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestCounter, "BmGame.RPlayerControllerCombat.ServerRequestCounter");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1528,6 +1631,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryBossCounter(BmSDK.BmGame.RPawnVillain targ)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryBossCounter, "BmGame.RPlayerControllerCombat.TryBossCounter");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1542,6 +1646,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryProjectileCounter(bool bCanCheckLongRange)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryProjectileCounter, "BmGame.RPlayerControllerCombat.TryProjectileCounter");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1556,6 +1661,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnPlayerCombat.ETryCounterResult TryCounter(bool bCanFail, float TimeInitiatedByPlayer = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryCounter, "BmGame.RPlayerControllerCombat.TryCounter");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1571,6 +1677,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TrySimultaneousCounter(bool bCanStartMove, float TimeInitiatedByPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySimultaneousCounter, "BmGame.RPlayerControllerCombat.TrySimultaneousCounter");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1586,6 +1693,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryStun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStun, "BmGame.RPlayerControllerCombat.TryStun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1599,6 +1707,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.Class GetStunMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStunMove, "BmGame.RPlayerControllerCombat.GetStunMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1612,6 +1721,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerSpawnSpecialMove(BmSDK.Class MoveClass, System.Numerics.Vector3 AnimPos, BmSDK.Rotator AnimRot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerSpawnSpecialMove, "BmGame.RPlayerControllerCombat.ServerSpawnSpecialMove");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1628,6 +1738,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestStrike(BmSDK.Class StrikeClass, BmSDK.BmGame.RPawnVillain Target, BmSDK.Class dmgType, int StrikeInfoIndex, bool bOverrideTargetStrike, float Dir, int Combo, BmSDK.BmGame.RPawnCombat.TargetStrikeResponse TargetResponse)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestStrike, "BmGame.RPlayerControllerCombat.ServerRequestStrike");
         byte* paramsPtr = stackalloc byte[57];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1649,6 +1760,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryAirStrike(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryAirStrike, "BmGame.RPlayerControllerCombat.TryAirStrike");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1663,6 +1775,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryStrike(float TimeInitiatedByPlayer = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStrike, "BmGame.RPlayerControllerCombat.TryStrike");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1677,6 +1790,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetBatclawStunTarget(BmSDK.Class dmgType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatclawStunTarget, "BmGame.RPlayerControllerCombat.GetBatclawStunTarget");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1691,6 +1805,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetBatclawSlamTarget(BmSDK.Class dmgType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatclawSlamTarget, "BmGame.RPlayerControllerCombat.GetBatclawSlamTarget");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1705,6 +1820,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.Class GetQuickStrikeDamageType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetQuickStrikeDamageType, "BmGame.RPlayerControllerCombat.GetQuickStrikeDamageType");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1718,6 +1834,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.Class GetQuickStrikeType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetQuickStrikeType, "BmGame.RPlayerControllerCombat.GetQuickStrikeType");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1731,6 +1848,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.Class GetHeavyStrikeType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeavyStrikeType, "BmGame.RPlayerControllerCombat.GetHeavyStrikeType");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1744,6 +1862,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.Class GetHeavyStrikeDamageType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeavyStrikeDamageType, "BmGame.RPlayerControllerCombat.GetHeavyStrikeDamageType");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1757,6 +1876,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.Class GetCriticalStrikeDamageType()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCriticalStrikeDamageType, "BmGame.RPlayerControllerCombat.GetCriticalStrikeDamageType");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1770,6 +1890,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryBarge(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryBarge, "BmGame.RPlayerControllerCombat.TryBarge");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1784,6 +1905,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void StartRun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartRun, "BmGame.RPlayerControllerCombat.StartRun");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1797,6 +1919,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool TriggerGroundTakedown(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGroundTakedown, "BmGame.RPlayerControllerCombat.TriggerGroundTakedown");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1811,6 +1934,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnPlayerCombat.ETryCounterResult TriggerCounter(bool bCanFail)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerCounter, "BmGame.RPlayerControllerCombat.TriggerCounter");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1825,6 +1949,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryToStartCombatInterrogation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToStartCombatInterrogation, "BmGame.RPlayerControllerCombat.TryToStartCombatInterrogation");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1838,6 +1963,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool TryToStartCombatTakeDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToStartCombatTakeDown, "BmGame.RPlayerControllerCombat.TryToStartCombatTakeDown");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1851,6 +1977,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void BankPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BankPoints, "BmGame.RPlayerControllerCombat.BankPoints");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1864,6 +1991,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void BankPointsInternal()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BankPointsInternal, "BmGame.RPlayerControllerCombat.BankPointsInternal");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1877,6 +2005,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void GrabReleased()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GrabReleased, "BmGame.RPlayerControllerCombat.GrabReleased");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1890,6 +2019,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TrySecondaryGroupCombatMove(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySecondaryGroupCombatMove, "BmGame.RPlayerControllerCombat.TrySecondaryGroupCombatMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1904,6 +2034,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryPrimaryGroupCombatMove(bool bOverrideCurrentMove = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryPrimaryGroupCombatMove, "BmGame.RPlayerControllerCombat.TryPrimaryGroupCombatMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1918,6 +2049,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void GrabPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GrabPressed, "BmGame.RPlayerControllerCombat.GrabPressed");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1931,6 +2063,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void FloorTakedownModifierReleased()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FloorTakedownModifierReleased, "BmGame.RPlayerControllerCombat.FloorTakedownModifierReleased");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1944,6 +2077,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void FloorTakedownModifierPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FloorTakedownModifierPressed, "BmGame.RPlayerControllerCombat.FloorTakedownModifierPressed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1957,6 +2091,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void BlockBreakerReleased()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockBreakerReleased, "BmGame.RPlayerControllerCombat.BlockBreakerReleased");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1970,6 +2105,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DoCapeStun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoCapeStun, "BmGame.RPlayerControllerCombat.DoCapeStun");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1983,6 +2119,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CapeStunTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CapeStunTimer, "BmGame.RPlayerControllerCombat.CapeStunTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1996,6 +2133,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void TriggerBlockBreaker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerBlockBreaker, "BmGame.RPlayerControllerCombat.TriggerBlockBreaker");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2009,6 +2147,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TriggerSecondaryGroupCombatMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSecondaryGroupCombatMove, "BmGame.RPlayerControllerCombat.TriggerSecondaryGroupCombatMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2022,6 +2161,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TriggerPrimaryGroupCombatMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPrimaryGroupCombatMove, "BmGame.RPlayerControllerCombat.TriggerPrimaryGroupCombatMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2035,6 +2175,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TriggerCombatTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerCombatTakedown, "BmGame.RPlayerControllerCombat.TriggerCombatTakedown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2048,6 +2189,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TriggerWeaponDestroy()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerWeaponDestroy, "BmGame.RPlayerControllerCombat.TriggerWeaponDestroy");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2061,6 +2203,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TriggerThrow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerThrow, "BmGame.RPlayerControllerCombat.TriggerThrow");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2074,6 +2217,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void TriggerQuickStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerQuickStrike, "BmGame.RPlayerControllerCombat.TriggerQuickStrike");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2087,6 +2231,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void NewComboMoveStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NewComboMoveStarted, "BmGame.RPlayerControllerCombat.NewComboMoveStarted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2100,6 +2245,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateRunningTimers(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRunningTimers, "BmGame.RPlayerControllerCombat.UpdateRunningTimers");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2114,6 +2260,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void OnRoomChange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRoomChange, "BmGame.RPlayerControllerCombat.OnRoomChange");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2127,6 +2274,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void NotifyTakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyTakeDamage, "BmGame.RPlayerControllerCombat.NotifyTakeDamage");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2147,6 +2295,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateCombatHitVars(BmSDK.Engine.Controller InstigatedBy, int Damage, BmSDK.Class DamageType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCombatHitVars, "BmGame.RPlayerControllerCombat.UpdateCombatHitVars");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2163,6 +2312,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AddScore(int Amount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddScore, "BmGame.RPlayerControllerCombat.AddScore");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2177,6 +2327,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AddScoreForMove(BmSDK.BmGame.RGameInfo.EComboMoveType MoveType, int ComboMultiplier, BmSDK.BmGame.RPawnCombat Target, int NumTargets)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddScoreForMove, "BmGame.RPlayerControllerCombat.AddScoreForMove");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2194,6 +2345,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TurnOffCounterPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffCounterPrompt, "BmGame.RPlayerControllerCombat.TurnOffCounterPrompt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2207,6 +2359,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TurnOnCounterPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnCounterPrompt, "BmGame.RPlayerControllerCombat.TurnOnCounterPrompt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2220,6 +2373,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetComboLevel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetComboLevel, "BmGame.RPlayerControllerCombat.GetComboLevel");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2233,6 +2387,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoSpecialMove, "BmGame.RPlayerControllerCombat.CanDoSpecialMove");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2246,6 +2401,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool SpecialMoveTargetInRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpecialMoveTargetInRange, "BmGame.RPlayerControllerCombat.SpecialMoveTargetInRange");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2259,6 +2415,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void UpdateComboStatus(BmSDK.BmGame.RPawnPlayerCombat CurrentPawn, BmSDK.BmGame.RPawnPlayerCombat NewPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateComboStatus, "BmGame.RPlayerControllerCombat.UpdateComboStatus");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2274,6 +2431,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetComboLength()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetComboLength, "BmGame.RPlayerControllerCombat.GetComboLength");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2287,6 +2445,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetNumAwayFromCombo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumAwayFromCombo, "BmGame.RPlayerControllerCombat.GetNumAwayFromCombo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2300,6 +2459,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsInComboForSuper()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInComboForSuper, "BmGame.RPlayerControllerCombat.IsInComboForSuper");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2313,6 +2473,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsInCombo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInCombo, "BmGame.RPlayerControllerCombat.IsInCombo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2326,6 +2487,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetComboMinLength()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetComboMinLength, "BmGame.RPlayerControllerCombat.GetComboMinLength");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2339,6 +2501,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanContinueCombo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanContinueCombo, "BmGame.RPlayerControllerCombat.CanContinueCombo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2352,6 +2515,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DisableCombo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCombo, "BmGame.RPlayerControllerCombat.DisableCombo");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2365,6 +2529,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ContinueComboTimerComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContinueComboTimerComplete, "BmGame.RPlayerControllerCombat.ContinueComboTimerComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2378,6 +2543,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void SetComboTimerIfComboTimerRunning(float TimeToSet)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetComboTimerIfComboTimerRunning, "BmGame.RPlayerControllerCombat.SetComboTimerIfComboTimerRunning");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2392,6 +2558,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetContinueComboTimer(float ComboWindow = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetContinueComboTimer, "BmGame.RPlayerControllerCombat.SetContinueComboTimer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2406,6 +2573,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CriticalComboMoveFailed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CriticalComboMoveFailed, "BmGame.RPlayerControllerCombat.CriticalComboMoveFailed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2419,6 +2587,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CriticalBeatdownPerformed(int NumPerformed = default, bool bShowOnHud = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CriticalBeatdownPerformed, "BmGame.RPlayerControllerCombat.CriticalBeatdownPerformed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2434,6 +2603,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CriticalComboMovePerformed(int NumPerformed = default, bool bShowOnHud = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CriticalComboMovePerformed, "BmGame.RPlayerControllerCombat.CriticalComboMovePerformed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2449,6 +2619,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SpawnDropWeaponMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDropWeaponMove, "BmGame.RPlayerControllerCombat.SpawnDropWeaponMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2462,6 +2633,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ClearCombo(BmSDK.FString Reason, bool bForceDropWeapon = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearCombo, "BmGame.RPlayerControllerCombat.ClearCombo");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2477,6 +2649,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual float GetCombatMoveDurationMulti()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCombatMoveDurationMulti, "BmGame.RPlayerControllerCombat.GetCombatMoveDurationMulti");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2490,6 +2663,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TurnOffFinalBlowPP()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffFinalBlowPP, "BmGame.RPlayerControllerCombat.TurnOffFinalBlowPP");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2503,6 +2677,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TurnOnFinalBlowPP(float Amount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnFinalBlowPP, "BmGame.RPlayerControllerCombat.TurnOnFinalBlowPP");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2517,6 +2692,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsInFreeflowFocus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInFreeflowFocus, "BmGame.RPlayerControllerCombat.IsInFreeflowFocus");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2530,6 +2706,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoGadgetSpecial()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoGadgetSpecial, "BmGame.RPlayerControllerCombat.CanDoGadgetSpecial");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2543,6 +2720,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetCombatFOVModifier()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCombatFOVModifier, "BmGame.RPlayerControllerCombat.GetCombatFOVModifier");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2556,6 +2734,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual float GetBatmobileTakedownAdrenalineSpecialLimit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatmobileTakedownAdrenalineSpecialLimit, "BmGame.RPlayerControllerCombat.GetBatmobileTakedownAdrenalineSpecialLimit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2569,6 +2748,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ShowBatmobileTakedownAdrenaline()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowBatmobileTakedownAdrenaline, "BmGame.RPlayerControllerCombat.ShowBatmobileTakedownAdrenaline");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2582,6 +2762,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearBatmobileTakedownAdrenalineAtEndOfCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearBatmobileTakedownAdrenalineAtEndOfCombat, "BmGame.RPlayerControllerCombat.ClearBatmobileTakedownAdrenalineAtEndOfCombat");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2595,6 +2776,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SpendBatmobileTakedownAdrenaline()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpendBatmobileTakedownAdrenaline, "BmGame.RPlayerControllerCombat.SpendBatmobileTakedownAdrenaline");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2608,6 +2790,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncBatmobileTakedownAdrenaline(float IncAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncBatmobileTakedownAdrenaline, "BmGame.RPlayerControllerCombat.IncBatmobileTakedownAdrenaline");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2622,6 +2805,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TrySpawnDualPlayMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnDualPlayMove, "BmGame.RPlayerControllerCombat.TrySpawnDualPlayMove");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2635,6 +2819,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsRiddlerMechFight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRiddlerMechFight, "BmGame.RPlayerControllerCombat.IsRiddlerMechFight");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2648,6 +2833,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool HasDualPlayTargets()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasDualPlayTargets, "BmGame.RPlayerControllerCombat.HasDualPlayTargets");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2661,6 +2847,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void DualPlayReleased()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DualPlayReleased, "BmGame.RPlayerControllerCombat.DualPlayReleased");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2674,6 +2861,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void DualPlayPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DualPlayPressed, "BmGame.RPlayerControllerCombat.DualPlayPressed");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2687,6 +2875,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDualPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDualPlay, "BmGame.RPlayerControllerCombat.CanDualPlay");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2700,6 +2889,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearDualPlayAdrenalineAtEndOfCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDualPlayAdrenalineAtEndOfCombat, "BmGame.RPlayerControllerCombat.ClearDualPlayAdrenalineAtEndOfCombat");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2713,6 +2903,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DoDualplayAdrenalineSpent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoDualplayAdrenalineSpent, "BmGame.RPlayerControllerCombat.DoDualplayAdrenalineSpent");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2726,6 +2917,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DoTakedownStateChangeEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoTakedownStateChangeEvent, "BmGame.RPlayerControllerCombat.DoTakedownStateChangeEvent");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2739,6 +2931,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SpendDualPlayAdrenaline()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpendDualPlayAdrenaline, "BmGame.RPlayerControllerCombat.SpendDualPlayAdrenaline");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2752,6 +2945,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateDualPlayHud()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDualPlayHud, "BmGame.RPlayerControllerCombat.UpdateDualPlayHud");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2765,6 +2959,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncDualPlayAdrenaline(float IncAmount, bool bUpdateAdrenalineOnly = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncDualPlayAdrenaline, "BmGame.RPlayerControllerCombat.IncDualPlayAdrenaline");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2780,6 +2975,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetSniperPP(float Opacity, bool bAuto = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSniperPP, "BmGame.RPlayerControllerCombat.SetSniperPP");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2795,6 +2991,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TurnOffSniperPP()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffSniperPP, "BmGame.RPlayerControllerCombat.TurnOffSniperPP");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2808,6 +3005,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TurnOnSniperPP()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnSniperPP, "BmGame.RPlayerControllerCombat.TurnOnSniperPP");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2821,6 +3019,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateFreeflowFocusFX(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFreeflowFocusFX, "BmGame.RPlayerControllerCombat.UpdateFreeflowFocusFX");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2835,6 +3034,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void ClearAdrenalineAtEndOfCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAdrenalineAtEndOfCombat, "BmGame.RPlayerControllerCombat.ClearAdrenalineAtEndOfCombat");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2848,6 +3048,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearAdrenalineWhenComboLost()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAdrenalineWhenComboLost, "BmGame.RPlayerControllerCombat.ClearAdrenalineWhenComboLost");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2861,6 +3062,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearAdrenaline()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAdrenaline, "BmGame.RPlayerControllerCombat.ClearAdrenaline");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2874,6 +3076,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SpendAdrenaline()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpendAdrenaline, "BmGame.RPlayerControllerCombat.SpendAdrenaline");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2887,6 +3090,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetAdrenalineOnHud(bool reduced_by_injury = default, bool bSpecialMoveTriggered = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAdrenalineOnHud, "BmGame.RPlayerControllerCombat.SetAdrenalineOnHud");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2902,6 +3106,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual float GetAdrenalineSuperSpecialLimit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAdrenalineSuperSpecialLimit, "BmGame.RPlayerControllerCombat.GetAdrenalineSuperSpecialLimit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2915,6 +3120,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual float GetAdrenalineSpecialLimit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAdrenalineSpecialLimit, "BmGame.RPlayerControllerCombat.GetAdrenalineSpecialLimit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2928,6 +3134,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DecAdrenaline(float DecAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DecAdrenaline, "BmGame.RPlayerControllerCombat.DecAdrenaline");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2942,6 +3149,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncAdrenaline(float IncAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncAdrenaline, "BmGame.RPlayerControllerCombat.IncAdrenaline");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2956,6 +3164,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DecCombo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DecCombo, "BmGame.RPlayerControllerCombat.DecCombo");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2969,6 +3178,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncCombo(BmSDK.BmGame.RPawnCombat PawnAttacked = default, int IncAmount = default, int IncSpecialMoveCount = default, bool bDoNotIncBatmobileTakedown = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncCombo, "BmGame.RPlayerControllerCombat.IncCombo");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2986,6 +3196,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetQuickStrikeAudioParam(float Scale)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetQuickStrikeAudioParam, "BmGame.RPlayerControllerCombat.SetQuickStrikeAudioParam");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3000,6 +3211,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetComboIncCue(BmSDK.Engine.SoundCue NewCue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetComboIncCue, "BmGame.RPlayerControllerCombat.SetComboIncCue");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3014,6 +3226,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void BankXPForSave()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BankXPForSave, "BmGame.RPlayerControllerCombat.BankXPForSave");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3027,6 +3240,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual float ShowCombatBonusPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowCombatBonusPoints, "BmGame.RPlayerControllerCombat.ShowCombatBonusPoints");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3040,6 +3254,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int AwardCombatBonusPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwardCombatBonusPoints, "BmGame.RPlayerControllerCombat.AwardCombatBonusPoints");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3053,6 +3268,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AwardPredatorSkillPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwardPredatorSkillPoints, "BmGame.RPlayerControllerCombat.AwardPredatorSkillPoints");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3066,6 +3282,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AwardCombatSkillPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwardCombatSkillPoints, "BmGame.RPlayerControllerCombat.AwardCombatSkillPoints");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3079,6 +3296,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void SpottedDuringPredator(BmSDK.BmGame.RPawnVillain Spotter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpottedDuringPredator, "BmGame.RPlayerControllerCombat.SpottedDuringPredator");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3093,6 +3311,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void PlayerSpotted(BmSDK.BmGame.RPawnVillain Spotee)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerSpotted, "BmGame.RPlayerControllerCombat.PlayerSpotted");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3107,6 +3326,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AddPredatorXPBonus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPredatorXPBonus, "BmGame.RPlayerControllerCombat.AddPredatorXPBonus");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3120,6 +3340,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AddCombatXPBonus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCombatXPBonus, "BmGame.RPlayerControllerCombat.AddCombatXPBonus");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3133,6 +3354,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void UpdateStoredCombatXPInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateStoredCombatXPInfo, "BmGame.RPlayerControllerCombat.UpdateStoredCombatXPInfo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3146,6 +3368,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearXPAfterSuppression()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearXPAfterSuppression, "BmGame.RPlayerControllerCombat.ClearXPAfterSuppression");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3159,6 +3382,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void AwardXPAfterSuppression()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwardXPAfterSuppression, "BmGame.RPlayerControllerCombat.AwardXPAfterSuppression");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3172,6 +3396,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void NotifyCombatStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCombatStarted, "BmGame.RPlayerControllerCombat.NotifyCombatStarted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3185,6 +3410,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ResetPerFightStats(bool bForce = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetPerFightStats, "BmGame.RPlayerControllerCombat.ResetPerFightStats");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3199,6 +3425,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ResetMaxCombatants()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetMaxCombatants, "BmGame.RPlayerControllerCombat.ResetMaxCombatants");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3212,6 +3439,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ResetMaxComboSize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetMaxComboSize, "BmGame.RPlayerControllerCombat.ResetMaxComboSize");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3225,6 +3453,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetMaxComboSize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxComboSize, "BmGame.RPlayerControllerCombat.GetMaxComboSize");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3238,6 +3467,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncCombosStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncCombosStarted, "BmGame.RPlayerControllerCombat.IncCombosStarted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3251,6 +3481,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetAverageCombo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAverageCombo, "BmGame.RPlayerControllerCombat.GetAverageCombo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3264,6 +3495,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetNumCombosStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumCombosStarted, "BmGame.RPlayerControllerCombat.GetNumCombosStarted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3277,6 +3509,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ResetCombosStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetCombosStarted, "BmGame.RPlayerControllerCombat.ResetCombosStarted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3290,6 +3523,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void EnterComboFlow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterComboFlow, "BmGame.RPlayerControllerCombat.EnterComboFlow");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3303,6 +3537,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void OutputComboMoves()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutputComboMoves, "BmGame.RPlayerControllerCombat.OutputComboMoves");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3316,6 +3551,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearComboMoves()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearComboMoves, "BmGame.RPlayerControllerCombat.ClearComboMoves");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3329,6 +3565,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetMaxVariation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaxVariation, "BmGame.RPlayerControllerCombat.SetMaxVariation");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3342,6 +3579,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetMaxComboVariation(bool bIncludeGadgets = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxComboVariation, "BmGame.RPlayerControllerCombat.GetMaxComboVariation");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3356,6 +3594,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ResetComboMoveTypes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetComboMoveTypes, "BmGame.RPlayerControllerCombat.ResetComboMoveTypes");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3369,6 +3608,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ResetMaxComboVariation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetMaxComboVariation, "BmGame.RPlayerControllerCombat.ResetMaxComboVariation");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3382,6 +3622,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ResetGadgetVariation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetGadgetVariation, "BmGame.RPlayerControllerCombat.ResetGadgetVariation");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3395,6 +3636,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetComboGadgetVariationScore()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetComboGadgetVariationScore, "BmGame.RPlayerControllerCombat.GetComboGadgetVariationScore");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3408,6 +3650,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual int GetComboVariationScore(bool bIncludeGadgets = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetComboVariationScore, "BmGame.RPlayerControllerCombat.GetComboVariationScore");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3422,6 +3665,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void MovePerformed(BmSDK.BmGame.RGameInfo.EComboMoveType MoveType, BmSDK.BmGame.RPawnCombat Target, bool bAddScore = default, int ComboForScore = default, int NumOfTargets = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePerformed, "BmGame.RPlayerControllerCombat.MovePerformed");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3440,6 +3684,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncTutorialProgressForMove(BmSDK.BmGame.RGameInfo.EComboMoveType MoveType, BmSDK.BmGame.RPawnCombat Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncTutorialProgressForMove, "BmGame.RPlayerControllerCombat.IncTutorialProgressForMove");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3455,6 +3700,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void RepelledByBrute()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RepelledByBrute, "BmGame.RPlayerControllerCombat.RepelledByBrute");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3468,6 +3714,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void BlockedBy(BmSDK.BmGame.RPawnVillain Villain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockedBy, "BmGame.RPlayerControllerCombat.BlockedBy");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3482,6 +3729,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool ShouldShowAutoCombatHints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldShowAutoCombatHints, "BmGame.RPlayerControllerCombat.ShouldShowAutoCombatHints");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3495,6 +3743,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearChargesSinceBatarang()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearChargesSinceBatarang, "BmGame.RPlayerControllerCombat.ClearChargesSinceBatarang");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3508,6 +3757,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncChargesSinceBatarang()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncChargesSinceBatarang, "BmGame.RPlayerControllerCombat.IncChargesSinceBatarang");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3521,6 +3771,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearHitsSinceCounter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearHitsSinceCounter, "BmGame.RPlayerControllerCombat.ClearHitsSinceCounter");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3534,6 +3785,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void IncHitsSinceCounter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncHitsSinceCounter, "BmGame.RPlayerControllerCombat.IncHitsSinceCounter");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3547,6 +3799,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoComboProjectileGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoComboProjectileGadget, "BmGame.RPlayerControllerCombat.CanDoComboProjectileGadget");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3560,6 +3813,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoComboWhip()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoComboWhip, "BmGame.RPlayerControllerCombat.CanDoComboWhip");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3573,6 +3827,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanDoComboBatarang()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoComboBatarang, "BmGame.RPlayerControllerCombat.CanDoComboBatarang");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3586,6 +3841,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestRedirect(BmSDK.BmGame.RPawnVillain TargetPawn, System.Numerics.Vector3 RedirectDir, System.Numerics.Vector3 AnimPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestRedirect, "BmGame.RPlayerControllerCombat.ServerRequestRedirect");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3602,6 +3858,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool TryRedirect(BmSDK.BmGame.RPawnVillain TargetPawn = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryRedirect, "BmGame.RPlayerControllerCombat.TryRedirect");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3616,6 +3873,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerLockProjectileThrowTarget(BmSDK.BmGame.RPawnVillain ThrowTarget, BmSDK.Rotator ThrowDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerLockProjectileThrowTarget, "BmGame.RPlayerControllerCombat.ServerLockProjectileThrowTarget");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3631,6 +3889,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ServerRequestEvade(System.Numerics.Vector3 EvadeDir, BmSDK.FName EvadeName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerRequestEvade, "BmGame.RPlayerControllerCombat.ServerRequestEvade");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3646,6 +3905,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void SpawnEvade(bool bCanQueue = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnEvade, "BmGame.RPlayerControllerCombat.SpawnEvade");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3660,6 +3920,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TryToQueueEvade()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToQueueEvade, "BmGame.RPlayerControllerCombat.TryToQueueEvade");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3673,6 +3934,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool GetWallEvadeInfo(System.Numerics.Vector3 Dir, out System.Numerics.Vector3 WallLocation, out System.Numerics.Vector3 WallNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallEvadeInfo, "BmGame.RPlayerControllerCombat.GetWallEvadeInfo");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3700,6 +3962,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void DialogueModeTimeout()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueModeTimeout, "BmGame.RPlayerControllerCombat.DialogueModeTimeout");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3713,6 +3976,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void TryingToSetDialogueMode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryingToSetDialogueMode, "BmGame.RPlayerControllerCombat.TryingToSetDialogueMode");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3726,6 +3990,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void DoubleTapRun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoubleTapRun, "BmGame.RPlayerControllerCombat.DoubleTapRun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3739,6 +4004,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ClearLastTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearLastTarget, "BmGame.RPlayerControllerCombat.ClearLastTarget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3752,6 +4018,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CombatMoveFinished(BmSDK.BmGame.RCombatMove FinishedMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatMoveFinished, "BmGame.RPlayerControllerCombat.CombatMoveFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3766,6 +4033,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void CombatMoveInitialised()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatMoveInitialised, "BmGame.RPlayerControllerCombat.CombatMoveInitialised");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3779,6 +4047,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RPlayerControllerCombat.GetHelpPrompt");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3794,6 +4063,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ShowTutorial(BmSDK.BmGame.RHUDPrompt HelpPrompt, BmSDK.BmGame.RPersistentData.ETutorialType TutorialToShow)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowTutorial, "BmGame.RPlayerControllerCombat.ShowTutorial");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3809,6 +4079,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void ShowMultiStageTutorial(BmSDK.BmGame.RHUDPrompt HelpPrompt)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowMultiStageTutorial, "BmGame.RPlayerControllerCombat.ShowMultiStageTutorial");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3823,6 +4094,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHUDPrompt.EControlIcon GetAerialBeatdownIcon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialBeatdownIcon, "BmGame.RPlayerControllerCombat.GetAerialBeatdownIcon");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3836,6 +4108,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHUDPrompt.EControlIcon GetBeatdownIcon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBeatdownIcon, "BmGame.RPlayerControllerCombat.GetBeatdownIcon");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3849,6 +4122,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void GetHighestPriorityBatmobileTutorial(out BmSDK.BmGame.RPersistentData.ETutorialType BestTutorial, out BmSDK.FString BestTutorialPrompt, out BmSDK.BmGame.RHUDPrompt.EControlIcon BestControlIcon, out int bShowTutorial)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHighestPriorityBatmobileTutorial, "BmGame.RPlayerControllerCombat.GetHighestPriorityBatmobileTutorial");
         byte* paramsPtr = stackalloc byte[65];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3872,6 +4146,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void GetHighestPriorityTutorial(out BmSDK.BmGame.RPersistentData.ETutorialType BestTutorial, out BmSDK.FString BestTutorialPrompt, out BmSDK.BmGame.RHUDPrompt.EControlIcon BestControlIcon, out int bShowTutorial)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHighestPriorityTutorial, "BmGame.RPlayerControllerCombat.GetHighestPriorityTutorial");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3895,6 +4170,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool GrabbableWeaponInRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GrabbableWeaponInRange, "BmGame.RPlayerControllerCombat.GrabbableWeaponInRange");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3908,6 +4184,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CheckTutorial(BmSDK.BmGame.RPersistentData.ETutorialType CheckTutorialType, out int BestPriority, out BmSDK.BmGame.RPersistentData.ETutorialType BestTutorial, out BmSDK.FString BestPrompt, out int bShowTutorial)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckTutorial, "BmGame.RPlayerControllerCombat.CheckTutorial");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3932,6 +4209,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanTriggerCombatInterrogation(bool bCheckValidContext = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTriggerCombatInterrogation, "BmGame.RPlayerControllerCombat.CanTriggerCombatInterrogation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3946,6 +4224,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool IsInCombat(bool bForceCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInCombat, "BmGame.RPlayerControllerCombat.IsInCombat");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3960,6 +4239,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMCombatManager GetCM()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCM, "BmGame.RPlayerControllerCombat.GetCM");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3973,6 +4253,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindFloorTakedownTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindFloorTakedownTarget, "BmGame.RPlayerControllerCombat.FindFloorTakedownTarget");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -3986,6 +4267,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat FindRedirectTarget(float MaxDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindRedirectTarget, "BmGame.RPlayerControllerCombat.FindRedirectTarget");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4000,6 +4282,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 InputHeading(bool bCanBeZero = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InputHeading, "BmGame.RPlayerControllerCombat.InputHeading");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4014,6 +4297,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool HasMovementInput()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasMovementInput, "BmGame.RPlayerControllerCombat.HasMovementInput");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4027,6 +4311,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsBatarangPrimed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatarangPrimed, "BmGame.RPlayerControllerCombat.IsBatarangPrimed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4040,6 +4325,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool CheckThrowSmokeBomb()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckThrowSmokeBomb, "BmGame.RPlayerControllerCombat.CheckThrowSmokeBomb");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4053,6 +4339,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool CanDoCombat(bool CheckForEvade = default, bool bDebugOutput = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoCombat, "BmGame.RPlayerControllerCombat.CanDoCombat");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4068,6 +4355,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool CanBeAttacked()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeAttacked, "BmGame.RPlayerControllerCombat.CanBeAttacked");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4081,6 +4369,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetLasered(bool bNewValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLasered, "BmGame.RPlayerControllerCombat.SetLasered");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4095,6 +4384,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void SetZapped(bool bNewValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetZapped, "BmGame.RPlayerControllerCombat.SetZapped");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4109,6 +4399,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsLasered()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLasered, "BmGame.RPlayerControllerCombat.IsLasered");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4122,6 +4413,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsZapped()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsZapped, "BmGame.RPlayerControllerCombat.IsZapped");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4135,6 +4427,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsStunned()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStunned, "BmGame.RPlayerControllerCombat.IsStunned");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4148,6 +4441,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool HasBeenHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBeenHit, "BmGame.RPlayerControllerCombat.HasBeenHit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4161,6 +4455,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void StartBeenHitCheck()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartBeenHitCheck, "BmGame.RPlayerControllerCombat.StartBeenHitCheck");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4174,6 +4469,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool HasEverBeenHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasEverBeenHit, "BmGame.RPlayerControllerCombat.HasEverBeenHit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4187,6 +4483,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual void StartEverBeenHitCheck()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartEverBeenHitCheck, "BmGame.RPlayerControllerCombat.StartEverBeenHitCheck");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4200,6 +4497,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe override bool CanShowFloorPickupPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanShowFloorPickupPrompt, "BmGame.RPlayerControllerCombat.CanShowFloorPickupPrompt");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4213,6 +4511,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool IsValidStrikeTarget(System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType, BmSDK.BmGame.RPawnVillain TestPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidStrikeTarget, "BmGame.RPlayerControllerCombat.IsValidStrikeTarget");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4236,6 +4535,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual bool FindWeaponToPickupCacheUI(System.Numerics.Vector3 CheckDir, float CheckDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindWeaponToPickupCacheUI, "BmGame.RPlayerControllerCombat.FindWeaponToPickupCacheUI");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4258,6 +4558,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMCombatThrownObject FindWeaponToPickup(System.Numerics.Vector3 CheckDir, float CheckDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindWeaponToPickup, "BmGame.RPlayerControllerCombat.FindWeaponToPickup");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4280,6 +4581,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindDeadTarget(System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType = default, float CloseRangeDist = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindDeadTarget, "BmGame.RPlayerControllerCombat.FindDeadTarget");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4303,6 +4605,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain FindStrikeTarget(System.Numerics.Vector3 FacingDir, BmSDK.Class dmgType = default, float CloseRangeDist = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindStrikeTarget, "BmGame.RPlayerControllerCombat.FindStrikeTarget");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -4326,6 +4629,7 @@ public partial class RPlayerControllerCombat : BmSDK.BmGame.RPlayerController, B
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat GetLookAtEnemy()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLookAtEnemy, "BmGame.RPlayerControllerCombat.GetLookAtEnemy");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

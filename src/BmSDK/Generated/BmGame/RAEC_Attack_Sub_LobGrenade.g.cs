@@ -84,6 +84,7 @@ public partial class RAEC_Attack_Sub_LobGrenade : BmSDK.BmGame.RAlertEventCoordi
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Attack_Sub_LobGrenade.NotifyFinished");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_Attack_Sub_LobGrenade : BmSDK.BmGame.RAlertEventCoordi
     /// </summary>
     public unsafe virtual void InitThrow(System.Numerics.Vector3 BestThrowVel, System.Numerics.Vector3 ThrowTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitThrow, "BmGame.RAEC_Attack_Sub_LobGrenade.InitThrow");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

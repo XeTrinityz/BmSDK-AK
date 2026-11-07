@@ -84,6 +84,7 @@ public partial class RCombatMove_LieutenantSmokeReaction : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void CombatAnimHitStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitStart, "BmGame.RCombatMove_LieutenantSmokeReaction.CombatAnimHitStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_LieutenantSmokeReaction : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override void GetAnimInfo(out BmSDK.FName AnimName, out float DurationScale)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimInfo, "BmGame.RCombatMove_LieutenantSmokeReaction.GetAnimInfo");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

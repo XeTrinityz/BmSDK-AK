@@ -79,6 +79,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDetectiveModeDetectorAEC(BmSDK.BmGame.RAEC_DetectiveModeDetector_Group NewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDetectiveModeDetectorAEC, "BmGame.RAIBrain_Pred.SetDetectiveModeDetectorAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetBangOnDoorRootAEC(BmSDK.BmGame.RAEC_LockedIn_GroupBase NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBangOnDoorRootAEC, "BmGame.RAIBrain_Pred.SetBangOnDoorRootAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -107,6 +109,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetLevelScriptingRootAEC(BmSDK.BmGame.RAEC_LevelScriptingRoot NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLevelScriptingRootAEC, "BmGame.RAIBrain_Pred.SetLevelScriptingRootAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -121,6 +124,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetPostRagdollLookaround(BmSDK.BmGame.RAEC_PostRagdollLookaround NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPostRagdollLookaround, "BmGame.RAIBrain_Pred.SetPostRagdollLookaround");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -135,6 +139,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetMissingGrateAEC(BmSDK.BmGame.RAEC_MissingGrate NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMissingGrateAEC, "BmGame.RAIBrain_Pred.SetMissingGrateAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveIceBreakerAEC(BmSDK.BmGame.RAEC_IceBreaker FinishedAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveIceBreakerAEC, "BmGame.RAIBrain_Pred.RemoveIceBreakerAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddIceBreakerAEC(BmSDK.BmGame.RAEC_IceBreaker NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddIceBreakerAEC, "BmGame.RAIBrain_Pred.AddIceBreakerAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetBatarangAEC(BmSDK.BmGame.RAEC_BatarangReaction_Master NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatarangAEC, "BmGame.RAIBrain_Pred.SetBatarangAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +199,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetBankFearStartleAEC(BmSDK.BmGame.RAEC_BankFearStartle NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBankFearStartleAEC, "BmGame.RAIBrain_Pred.SetBankFearStartleAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -205,6 +214,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDroneStartleAEC(BmSDK.BmGame.RAEC_DroneStartle NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDroneStartleAEC, "BmGame.RAIBrain_Pred.SetDroneStartleAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -219,6 +229,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveJammerAEC(BmSDK.BmGame.RAEC_ExplodedJammer FinishedJammer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveJammerAEC, "BmGame.RAIBrain_Pred.RemoveJammerAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -233,6 +244,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddJammerAEC(BmSDK.BmGame.RAEC_ExplodedJammer NewJammer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddJammerAEC, "BmGame.RAIBrain_Pred.AddJammerAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +259,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveGelAEC(BmSDK.BmGame.RAEC_GelMineExplosion FinishedGel)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveGelAEC, "BmGame.RAIBrain_Pred.RemoveGelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +274,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddGelAEC(BmSDK.BmGame.RAEC_GelMineExplosion NewGel)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddGelAEC, "BmGame.RAIBrain_Pred.AddGelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -275,6 +289,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveCasAEC(BmSDK.BmGame.RAEC_CasualtyBase FinishedCas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCasAEC, "BmGame.RAIBrain_Pred.RemoveCasAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -289,6 +304,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddCasAEC(BmSDK.BmGame.RAEC_CasualtyBase NewCas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCasAEC, "BmGame.RAIBrain_Pred.AddCasAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -303,6 +319,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveWallAEC(BmSDK.BmGame.RAEC_ExplodedWall FinishedWall)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveWallAEC, "BmGame.RAIBrain_Pred.RemoveWallAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -317,6 +334,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddWallAEC(BmSDK.BmGame.RAEC_ExplodedWall NewWall)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddWallAEC, "BmGame.RAIBrain_Pred.AddWallAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -331,6 +349,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAttractEnnemiesToLocationAEC(BmSDK.BmGame.MAEC_AttractEnemiesToLocation NewAttractEnnemiesToLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAttractEnnemiesToLocationAEC, "BmGame.RAIBrain_Pred.SetAttractEnnemiesToLocationAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -345,6 +364,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasJackInBoxAEC(BmSDK.BmGame.MAEC_AttractEnemiesWithSound NewJackInBox)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasJackInBoxAEC, "BmGame.RAIBrain_Pred.HasJackInBoxAEC");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -359,6 +379,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveJackInBoxAEC(BmSDK.BmGame.MAEC_AttractEnemiesWithSound NewJackInBox)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveJackInBoxAEC, "BmGame.RAIBrain_Pred.RemoveJackInBoxAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -373,6 +394,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddJackInBoxAEC(BmSDK.BmGame.MAEC_AttractEnemiesWithSound NewJackInBox)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddJackInBoxAEC, "BmGame.RAIBrain_Pred.AddJackInBoxAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -387,6 +409,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveMineAEC(BmSDK.BmGame.RAEC_ConvergeMine FinishedMine)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMineAEC, "BmGame.RAIBrain_Pred.RemoveMineAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -401,6 +424,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddMineAEC(BmSDK.BmGame.RAEC_ConvergeMine NewMine)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMineAEC, "BmGame.RAIBrain_Pred.AddMineAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -415,6 +439,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetFrozenAEC(BmSDK.BmGame.RAEC_FrozenThug NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFrozenAEC, "BmGame.RAIBrain_Pred.SetFrozenAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -429,6 +454,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetHasGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHasGun, "BmGame.RAIBrain_Pred.GetHasGun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -442,6 +468,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetHasGun(bool bNewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHasGun, "BmGame.RAIBrain_Pred.SetHasGun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -456,6 +483,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetPrimaryAttackAECWantsThug(bool bNewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPrimaryAttackAECWantsThug, "BmGame.RAIBrain_Pred.SetPrimaryAttackAECWantsThug");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -470,6 +498,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetIsGadgetStartled(bool bNewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIsGadgetStartled, "BmGame.RAIBrain_Pred.SetIsGadgetStartled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -484,6 +513,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetIsAttackStartled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsAttackStartled, "BmGame.RAIBrain_Pred.GetIsAttackStartled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -497,6 +527,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetIsAttackStartled(bool bNewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIsAttackStartled, "BmGame.RAIBrain_Pred.SetIsAttackStartled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -511,6 +542,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetIsSniper(bool bNewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIsSniper, "BmGame.RAIBrain_Pred.SetIsSniper");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -525,6 +557,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasDiscoveredJammedGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasDiscoveredJammedGun, "BmGame.RAIBrain_Pred.HasDiscoveredJammedGun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -538,6 +571,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetHasDiscoveredJammedGun(bool bNewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHasDiscoveredJammedGun, "BmGame.RAIBrain_Pred.SetHasDiscoveredJammedGun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -552,6 +586,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveFearDartWatcherAEC(BmSDK.BmGame.RAEC_FearDart_Watcher FinishedFearDartWatcher)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFearDartWatcherAEC, "BmGame.RAIBrain_Pred.RemoveFearDartWatcherAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -566,6 +601,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddFearDartWatcherAEC(BmSDK.BmGame.RAEC_FearDart_Watcher NewFearDartWatcher)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFearDartWatcherAEC, "BmGame.RAIBrain_Pred.AddFearDartWatcherAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -580,6 +616,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddZoneToEscape(BmSDK.Engine.Volume NewZone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddZoneToEscape, "BmGame.RAIBrain_Pred.AddZoneToEscape");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -594,6 +631,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveHitByStickyConcussionGrenade(BmSDK.BmGame.MAEC_StickyConcussionGrenadeReaction FinishedReaction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveHitByStickyConcussionGrenade, "BmGame.RAIBrain_Pred.RemoveHitByStickyConcussionGrenade");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -608,6 +646,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddHitByStickyConcussionGrenade(BmSDK.BmGame.MAEC_StickyConcussionGrenadeReaction NewReaction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddHitByStickyConcussionGrenade, "BmGame.RAIBrain_Pred.AddHitByStickyConcussionGrenade");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -622,6 +661,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveOutsideSmokeAEC(BmSDK.BmGame.RAEC_Smoke_Outsider FinishedSmokePerim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveOutsideSmokeAEC, "BmGame.RAIBrain_Pred.RemoveOutsideSmokeAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -636,6 +676,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddOutsideSmokeAEC(BmSDK.BmGame.RAEC_Smoke_Outsider NewSmokePerim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddOutsideSmokeAEC, "BmGame.RAIBrain_Pred.AddOutsideSmokeAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -650,6 +691,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveInsideSmokeAEC(BmSDK.BmGame.RAEC_Smoke_Inside FinishedSmokeInside)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveInsideSmokeAEC, "BmGame.RAIBrain_Pred.RemoveInsideSmokeAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -664,6 +706,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddInsideSmokeAEC(BmSDK.BmGame.RAEC_Smoke_Inside NewSmokeInside)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddInsideSmokeAEC, "BmGame.RAIBrain_Pred.AddInsideSmokeAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -678,6 +721,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetBasicState(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBasicState, "BmGame.RAIBrain_Pred.SetBasicState");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -697,6 +741,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasLowPriorityEvent(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasLowPriorityEvent, "BmGame.RAIBrain_Pred.HasLowPriorityEvent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -716,6 +761,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsDoingJobThatClobbersManDownPerim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDoingJobThatClobbersManDownPerim, "BmGame.RAIBrain_Pred.IsDoingJobThatClobbersManDownPerim");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -729,6 +775,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasMidPriorityEvent(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasMidPriorityEvent, "BmGame.RAIBrain_Pred.HasMidPriorityEvent");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -748,6 +795,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool BagCarryIsSentryGun(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC, bool bAllowBatarangResponse)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BagCarryIsSentryGun, "BmGame.RAIBrain_Pred.BagCarryIsSentryGun");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -768,6 +816,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasLessThanShootButMoreThanChaseEvent(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasLessThanShootButMoreThanChaseEvent, "BmGame.RAIBrain_Pred.HasLessThanShootButMoreThanChaseEvent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -787,6 +836,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasFullPredEventThatInterruptsBagCarry(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasFullPredEventThatInterruptsBagCarry, "BmGame.RAIBrain_Pred.HasFullPredEventThatInterruptsBagCarry");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -806,6 +856,7 @@ public partial class RAIBrain_Pred : BmSDK.BmGame.RAIBrain, BmSDK.IGameObject
     /// </summary>
     public unsafe override void EvaluateState(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EvaluateState, "BmGame.RAIBrain_Pred.EvaluateState");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

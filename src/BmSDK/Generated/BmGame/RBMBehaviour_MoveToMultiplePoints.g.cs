@@ -97,6 +97,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override bool CanLookAtPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanLookAtPlayer, "BmGame.RBMBehaviour_MoveToMultiplePoints.CanLookAtPlayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe virtual void AtGoalFinaliseLookAt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AtGoalFinaliseLookAt, "BmGame.RBMBehaviour_MoveToMultiplePoints.AtGoalFinaliseLookAt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe virtual void AtGoalFinalise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AtGoalFinalise, "BmGame.RBMBehaviour_MoveToMultiplePoints.AtGoalFinalise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +139,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe virtual void HandlePathNotFound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlePathNotFound, "BmGame.RBMBehaviour_MoveToMultiplePoints.HandlePathNotFound");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +153,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe virtual void Repath()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Repath, "BmGame.RBMBehaviour_MoveToMultiplePoints.Repath");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +167,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe virtual void StartNavMeshSearch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNavMeshSearch, "BmGame.RBMBehaviour_MoveToMultiplePoints.StartNavMeshSearch");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +181,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe virtual bool VeryCloseToGoal(float CheckDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VeryCloseToGoal, "BmGame.RBMBehaviour_MoveToMultiplePoints.VeryCloseToGoal");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +196,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override void OnEndInterrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_MoveToMultiplePoints.OnEndInterrupt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +210,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_MoveToMultiplePoints.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +224,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override void SetInitialState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInitialState, "BmGame.RBMBehaviour_MoveToMultiplePoints.SetInitialState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -228,6 +238,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_MoveToMultiplePoints.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -241,6 +252,7 @@ public partial class RBMBehaviour_MoveToMultiplePoints : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMoveLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMoveLocation, "BmGame.RBMBehaviour_MoveToMultiplePoints.GetMoveLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

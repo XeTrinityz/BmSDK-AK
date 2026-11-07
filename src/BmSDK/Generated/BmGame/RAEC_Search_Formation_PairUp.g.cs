@@ -84,6 +84,7 @@ public partial class RAEC_Search_Formation_PairUp : BmSDK.BmGame.RAEC_Search_For
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Search_Formation_PairUp.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_Search_Formation_PairUp : BmSDK.BmGame.RAEC_Search_For
     /// </summary>
     public unsafe virtual void AddJoiningBuddy(BmSDK.BmGame.RBMAIController FollowCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddJoiningBuddy, "BmGame.RAEC_Search_Formation_PairUp.AddJoiningBuddy");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RAEC_Search_Formation_PairUp : BmSDK.BmGame.RAEC_Search_For
     /// </summary>
     public unsafe override void SetLeader(BmSDK.BmGame.RBMAIController NewLeader)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLeader, "BmGame.RAEC_Search_Formation_PairUp.SetLeader");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RB_RadialImpulseComponent : BmSDK.Engine.PrimitiveComponent
     /// </summary>
     public unsafe virtual void FireImpulse(System.Numerics.Vector3 Origin)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireImpulse, "Engine.RB_RadialImpulseComponent.FireImpulse");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

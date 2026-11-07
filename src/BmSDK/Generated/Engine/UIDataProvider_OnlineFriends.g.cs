@@ -84,6 +84,7 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     /// </summary>
     public unsafe virtual void RefreshFriendsList()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshFriendsList, "Engine.UIDataProvider_OnlineFriends.RefreshFriendsList");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     /// </summary>
     public unsafe virtual void OnLoginChange(byte LocalUserNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLoginChange, "Engine.UIDataProvider_OnlineFriends.OnLoginChange");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     /// </summary>
     public unsafe virtual void OnFriendsReadComplete(bool bWasSuccessful)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFriendsReadComplete, "Engine.UIDataProvider_OnlineFriends.OnFriendsReadComplete");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     /// </summary>
     public unsafe override void OnUnregister()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUnregister, "Engine.UIDataProvider_OnlineFriends.OnUnregister");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class UIDataProvider_OnlineFriends : BmSDK.Engine.UIDataProvider_
     /// </summary>
     public unsafe override void OnRegister(BmSDK.Engine.LocalPlayer InPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRegister, "Engine.UIDataProvider_OnlineFriends.OnRegister");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -99,6 +99,7 @@ public partial class RSeqAct_SuppressDetectiveModeThroughWalls : BmSDK.Engine.Se
     /// </summary>
     public unsafe virtual void UnregisterWithNavMeshWorld()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterWithNavMeshWorld, "BmGame.RSeqAct_SuppressDetectiveModeThroughWalls.UnregisterWithNavMeshWorld");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +120,7 @@ public partial class RSeqAct_SuppressDetectiveModeThroughWalls : BmSDK.Engine.Se
     /// </summary>
     public unsafe virtual void RegisterWithNavMeshWorld()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWithNavMeshWorld, "BmGame.RSeqAct_SuppressDetectiveModeThroughWalls.RegisterWithNavMeshWorld");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +141,7 @@ public partial class RSeqAct_SuppressDetectiveModeThroughWalls : BmSDK.Engine.Se
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SuppressDetectiveModeThroughWalls.Activated");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

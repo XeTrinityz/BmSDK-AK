@@ -79,6 +79,7 @@ public partial class MLaughingGasBase : BmSDK.BmGame.RSmokeBomb, BmSDK.IGameObje
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.MLaughingGasBase.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class MLaughingGasBase : BmSDK.BmGame.RSmokeBomb, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual BmSDK.Class GetLaughingGasReactionClass(BmSDK.BmGame.RPawnVillain PawnVillain, BmSDK.BmGame.RBMWeapon Weapon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLaughingGasReactionClass, "BmGame.MLaughingGasBase.GetLaughingGasReactionClass");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

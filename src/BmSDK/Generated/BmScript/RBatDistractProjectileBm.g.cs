@@ -84,6 +84,7 @@ public partial class RBatDistractProjectileBm : BmSDK.BmGame.RBatDistractProject
     /// </summary>
     public unsafe override void StopSpinSound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpinSound, "BmScript.RBatDistractProjectileBm.StopSpinSound");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBatDistractProjectileBm : BmSDK.BmGame.RBatDistractProject
     /// </summary>
     public unsafe override void StartSpinSound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSpinSound, "BmScript.RBatDistractProjectileBm.StartSpinSound");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

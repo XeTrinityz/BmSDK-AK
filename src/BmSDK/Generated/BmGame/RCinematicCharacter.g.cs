@@ -84,6 +84,7 @@ public partial class RCinematicCharacter : BmSDK.BmGame.RCinematicActor, BmSDK.I
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RCinematicCharacter.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

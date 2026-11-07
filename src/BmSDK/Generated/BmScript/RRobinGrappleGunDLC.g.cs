@@ -84,6 +84,7 @@ public partial class RRobinGrappleGunDLC : BmSDK.BmScript.RRobinGrappleGun, BmSD
     /// </summary>
     public unsafe override bool Grapple(BmSDK.BmGame.RSpecialMoveConfig OverrideGrappleMove = default, bool bForceSucceed = default, bool bTryQueuedGrapple = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Grapple, "BmScript.RRobinGrappleGunDLC.Grapple");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

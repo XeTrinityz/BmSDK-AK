@@ -97,6 +97,7 @@ public partial class RSeqAct_StunPlayer : BmSDK.Engine.SequenceAction, BmSDK.IGa
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_StunPlayer.Activated");
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

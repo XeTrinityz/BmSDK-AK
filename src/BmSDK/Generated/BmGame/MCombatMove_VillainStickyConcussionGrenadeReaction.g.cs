@@ -84,6 +84,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe override bool UnAwareOfPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnAwareOfPlayer, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.UnAwareOfPlayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual bool AwareOfPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwareOfPlayer, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.AwareOfPlayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult OverrideDamagedBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDamagedBy, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.OverrideDamagedBy");
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual void SetCounterInfo(bool bMirrored)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCounterInfo, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.SetCounterInfo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual bool ShouldMirror()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldMirror, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.ShouldMirror");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual void CombatAnimHitStop()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitStop, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.CombatAnimHitStop");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual void CombatAnimHitStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitStart, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.CombatAnimHitStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe override void DamageCollisionBetween(BmSDK.BmGame.RPawnCombat Pawn1, BmSDK.BmGame.RPawnCombat Pawn2, System.Numerics.Vector3 DamageDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCollisionBetween, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.DamageCollisionBetween");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -206,6 +215,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat.DamageResult DamagePawn(BmSDK.BmGame.RPawnCombat DamageReceiver)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagePawn, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.DamagePawn");
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -220,6 +230,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +245,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual void GunStop()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GunStop, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.GunStop");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +259,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual void GunStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GunStart, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.GunStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -260,6 +273,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual void StartTerrifiedAnimWithRangedWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTerrifiedAnimWithRangedWeapon, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.StartTerrifiedAnimWithRangedWeapon");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -273,6 +287,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe virtual void StartDazedAnimWithoutWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartDazedAnimWithoutWeapon, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.StartDazedAnimWithoutWeapon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -286,6 +301,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

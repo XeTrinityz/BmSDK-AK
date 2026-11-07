@@ -84,6 +84,7 @@ public partial class RBMAIAction_StompBatarang : BmSDK.BmGame.RBMAIAction, BmSDK
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_StompBatarang.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMAIAction_StompBatarang : BmSDK.BmGame.RBMAIAction, BmSDK
     /// </summary>
     public unsafe virtual void SmashSonicBatarang()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashSonicBatarang, "BmGame.RBMAIAction_StompBatarang.SmashSonicBatarang");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RBMAIAction_StompBatarang : BmSDK.BmGame.RBMAIAction, BmSDK
     /// </summary>
     public unsafe virtual void StartSmashAnim(BmSDK.BmGame.RBatDistractProjectile sB)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSmashAnim, "BmGame.RBMAIAction_StompBatarang.StartSmashAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RBMAIAction_StompBatarang : BmSDK.BmGame.RBMAIAction, BmSDK
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_StompBatarang.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

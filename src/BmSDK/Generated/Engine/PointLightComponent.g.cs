@@ -84,6 +84,7 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
     /// </summary>
     public unsafe override void OnUpdatePropertyBrightness()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyBrightness, "Engine.PointLightComponent.OnUpdatePropertyBrightness");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
     /// </summary>
     public unsafe override void OnUpdatePropertyLightColor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyLightColor, "Engine.PointLightComponent.OnUpdatePropertyLightColor");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetTranslation(System.Numerics.Vector3 NewTranslation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTranslation, "Engine.PointLightComponent.SetTranslation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetAnimTreeNodeBlendValue(BmSDK.FName setNodeName, float blendValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAnimTreeNodeBlendValue, "BmGame.RAnimNode_Cape.SetAnimTreeNodeBlendValue");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual float GetAnimTreeNodeBlendValue(BmSDK.FName getNodeName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimTreeNodeBlendValue, "BmGame.RAnimNode_Cape.GetAnimTreeNodeBlendValue");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +129,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetStateAnimNode(BmSDK.FName AnimStateName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStateAnimNode, "BmGame.RAnimNode_Cape.GetStateAnimNode");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +151,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode GetCurrentCapeAnimNode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentCapeAnimNode, "BmGame.RAnimNode_Cape.GetCurrentCapeAnimNode");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +172,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual int GetNumBonesInCape()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumBonesInCape, "BmGame.RAnimNode_Cape.GetNumBonesInCape");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +193,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual bool GetHasCurrentAnimEnded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHasCurrentAnimEnded, "BmGame.RAnimNode_Cape.GetHasCurrentAnimEnded");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -208,6 +214,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual void ResumeAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResumeAnim, "BmGame.RAnimNode_Cape.ResumeAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -228,6 +235,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual void PauseAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PauseAnim, "BmGame.RAnimNode_Cape.PauseAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +256,7 @@ public partial class RAnimNode_Cape : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGam
     /// </summary>
     public unsafe virtual void ChangeAnim(BmSDK.FName NewAnimName, BmSDK.FName NewAnimNodeName = default, bool NewIsMirrored = default, bool isBlendOldAnim = default, float BlendDuration = default, bool bBlendPose = default, float PoseBlendDuration = default, float AnimStartTime = default, float AnimPlayRate = default, BmSDK.FName SetParentTimeSyncAnimName = default, float SetParentTimeSyncAnimOffset = default, bool bSetSyncParentAnimMirroredness = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeAnim, "BmGame.RAnimNode_Cape.ChangeAnim");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

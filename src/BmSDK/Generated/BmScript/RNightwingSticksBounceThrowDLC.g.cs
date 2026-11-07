@@ -84,6 +84,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
     /// </summary>
     public unsafe override BmSDK.BmGame.RBatarangProjectile SpawnProjectile(BmSDK.Class SpawnProjectileClass, System.Numerics.Vector3 LaunchLoc, bool Managed = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnProjectile, "BmScript.RNightwingSticksBounceThrowDLC.SpawnProjectile");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
     /// </summary>
     public unsafe override void AddAutoTargetsToBouncePoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAutoTargetsToBouncePoints, "BmScript.RNightwingSticksBounceThrowDLC.AddAutoTargetsToBouncePoints");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
     /// </summary>
     public unsafe override void AddInFrontBouncePoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddInFrontBouncePoint, "BmScript.RNightwingSticksBounceThrowDLC.AddInFrontBouncePoint");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetClassNameForHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetClassNameForHUD, "BmScript.RNightwingSticksBounceThrowDLC.GetGadgetClassNameForHUD");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

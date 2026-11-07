@@ -84,6 +84,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void OnExternalUIChange(bool bIsOpening)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnExternalUIChange, "Engine.UIDataProvider_OnlinePlayerStorage.OnExternalUIChange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void OnStorageDeviceChange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStorageDeviceChange, "Engine.UIDataProvider_OnlinePlayerStorage.OnStorageDeviceChange");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void OnDeviceSelectionComplete(bool bWasSuccessful)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeviceSelectionComplete, "Engine.UIDataProvider_OnlinePlayerStorage.OnDeviceSelectionComplete");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void ShowDeviceSelection()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowDeviceSelection, "Engine.UIDataProvider_OnlinePlayerStorage.ShowDeviceSelection");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void RefreshStorageData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshStorageData, "Engine.UIDataProvider_OnlinePlayerStorage.RefreshStorageData");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void OnLoginChange(byte LocalUserNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLoginChange, "Engine.UIDataProvider_OnlinePlayerStorage.OnLoginChange");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void OnReadStorageComplete(byte LocalUserNum, bool bWasSuccessful)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReadStorageComplete, "Engine.UIDataProvider_OnlinePlayerStorage.OnReadStorageComplete");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +187,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe override void OnUnregister()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUnregister, "Engine.UIDataProvider_OnlinePlayerStorage.OnUnregister");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -193,6 +201,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe override void OnRegister(BmSDK.Engine.LocalPlayer InPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRegister, "Engine.UIDataProvider_OnlinePlayerStorage.OnRegister");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void ClearReadCompleteDelegate(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearReadCompleteDelegate, "Engine.UIDataProvider_OnlinePlayerStorage.ClearReadCompleteDelegate");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -222,6 +232,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual void AddReadCompleteDelegate(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddReadCompleteDelegate, "Engine.UIDataProvider_OnlinePlayerStorage.AddReadCompleteDelegate");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -237,6 +248,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual bool GetData(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetData, "Engine.UIDataProvider_OnlinePlayerStorage.GetData");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -252,6 +264,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual bool WriteData(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum, int DeviceID, BmSDK.Engine.OnlinePlayerStorage PlayerStorage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WriteData, "Engine.UIDataProvider_OnlinePlayerStorage.WriteData");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -269,6 +282,7 @@ public partial class UIDataProvider_OnlinePlayerStorage : BmSDK.Engine.UIDataPro
     /// </summary>
     public unsafe virtual bool ReadData(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum, int DeviceID, BmSDK.Engine.OnlinePlayerStorage PlayerStorage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadData, "Engine.UIDataProvider_OnlinePlayerStorage.ReadData");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

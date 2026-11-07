@@ -84,6 +84,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool WidgetUnloaded(BmSDK.FName WidgetName, BmSDK.FName WidgetPath, BmSDK.GFxUI.GFxObject Widget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WidgetUnloaded, "GFxUI.GFxObject.WidgetUnloaded");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool WidgetInitialized(BmSDK.FName WidgetName, BmSDK.FName WidgetPath, BmSDK.GFxUI.GFxObject Widget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WidgetInitialized, "GFxUI.GFxObject.WidgetInitialized");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -116,6 +118,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject AttachMovie(BmSDK.FString symbolname, BmSDK.FString instancename, int Depth = default, BmSDK.Class Type = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachMovie, "GFxUI.GFxObject.AttachMovie");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +143,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject CreateEmptyMovieClip(BmSDK.FString instancename, int Depth = default, BmSDK.Class Type = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateEmptyMovieClip, "GFxUI.GFxObject.CreateEmptyMovieClip");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +167,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GotoAndStopI(int Frame)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoAndStopI, "GFxUI.GFxObject.GotoAndStopI");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +189,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GotoAndStop(BmSDK.FString Frame)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoAndStop, "GFxUI.GFxObject.GotoAndStop");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -205,6 +211,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GotoAndPlayI(int Frame)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoAndPlayI, "GFxUI.GFxObject.GotoAndPlayI");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -226,6 +233,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GotoAndPlay(BmSDK.FString Frame)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoAndPlay, "GFxUI.GFxObject.GotoAndPlay");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +255,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.GFxUI.GFxObject> ActionScriptArray(BmSDK.FString Path)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptArray, "GFxUI.GFxObject.ActionScriptArray");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -268,6 +277,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject ActionScriptObject(BmSDK.FString Path)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptObject, "GFxUI.GFxObject.ActionScriptObject");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -289,6 +299,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString ActionScriptString(BmSDK.FString method)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptString, "GFxUI.GFxObject.ActionScriptString");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -310,6 +321,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float ActionScriptFloat(BmSDK.FString method)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptFloat, "GFxUI.GFxObject.ActionScriptFloat");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -331,6 +343,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int ActionScriptInt(BmSDK.FString method)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptInt, "GFxUI.GFxObject.ActionScriptInt");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -352,6 +365,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ActionScriptVoid(BmSDK.FString method)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptVoid, "GFxUI.GFxObject.ActionScriptVoid");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -373,6 +387,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue Invoke(BmSDK.FString Member, BmSDK.TArray<BmSDK.GFxUI.GFxMoviePlayer.FASValue> args)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Invoke, "GFxUI.GFxObject.Invoke");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -395,6 +410,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ActionScriptSetFunctionOn(BmSDK.GFxUI.GFxObject Target, BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptSetFunctionOn, "GFxUI.GFxObject.ActionScriptSetFunctionOn");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -417,6 +433,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ActionScriptSetFunction(BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionScriptSetFunction, "GFxUI.GFxObject.ActionScriptSetFunction");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -438,6 +455,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementMemberString(int Index, BmSDK.FString Member, BmSDK.FString S)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementMemberString, "GFxUI.GFxObject.SetElementMemberString");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -461,6 +479,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementMemberInt(int Index, BmSDK.FString Member, int I)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementMemberInt, "GFxUI.GFxObject.SetElementMemberInt");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -484,6 +503,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementMemberFloat(int Index, BmSDK.FString Member, float F)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementMemberFloat, "GFxUI.GFxObject.SetElementMemberFloat");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -507,6 +527,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementMemberBool(int Index, BmSDK.FString Member, bool B)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementMemberBool, "GFxUI.GFxObject.SetElementMemberBool");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -530,6 +551,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementMemberObject(int Index, BmSDK.FString Member, BmSDK.GFxUI.GFxObject val)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementMemberObject, "GFxUI.GFxObject.SetElementMemberObject");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -553,6 +575,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementMember(int Index, BmSDK.FString Member, BmSDK.GFxUI.GFxMoviePlayer.FASValue Arg)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementMember, "GFxUI.GFxObject.SetElementMember");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -576,6 +599,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetElementMemberString(int Index, BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementMemberString, "GFxUI.GFxObject.GetElementMemberString");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -598,6 +622,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetElementMemberInt(int Index, BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementMemberInt, "GFxUI.GFxObject.GetElementMemberInt");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -620,6 +645,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetElementMemberFloat(int Index, BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementMemberFloat, "GFxUI.GFxObject.GetElementMemberFloat");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -642,6 +668,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetElementMemberBool(int Index, BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementMemberBool, "GFxUI.GFxObject.GetElementMemberBool");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -664,6 +691,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject GetElementMemberObject(int Index, BmSDK.FString Member, BmSDK.Class Type = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementMemberObject, "GFxUI.GFxObject.GetElementMemberObject");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -687,6 +715,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue GetElementMember(int Index, BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementMember, "GFxUI.GFxObject.GetElementMember");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -709,6 +738,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementColorTransform(int Index, BmSDK.GFxUI.GFxObject.FASColorTransform cxform)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementColorTransform, "GFxUI.GFxObject.SetElementColorTransform");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -731,6 +761,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementPosition(int Index, float X, float Y)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementPosition, "GFxUI.GFxObject.SetElementPosition");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -754,6 +785,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementVisible(int Index, bool Visible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementVisible, "GFxUI.GFxObject.SetElementVisible");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -776,6 +808,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementDisplayMatrix(int Index, BmSDK.GameObject.FMatrix M)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementDisplayMatrix, "GFxUI.GFxObject.SetElementDisplayMatrix");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -798,6 +831,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementDisplayInfo(int Index, BmSDK.GFxUI.GFxObject.FASDisplayInfo D)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementDisplayInfo, "GFxUI.GFxObject.SetElementDisplayInfo");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -820,6 +854,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetElementDisplayMatrix(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementDisplayMatrix, "GFxUI.GFxObject.GetElementDisplayMatrix");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -841,6 +876,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject.FASDisplayInfo GetElementDisplayInfo(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementDisplayInfo, "GFxUI.GFxObject.GetElementDisplayInfo");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -862,6 +898,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementString(int Index, BmSDK.FString S)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementString, "GFxUI.GFxObject.SetElementString");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -884,6 +921,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementInt(int Index, int I)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementInt, "GFxUI.GFxObject.SetElementInt");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -906,6 +944,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementFloat(int Index, float F)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementFloat, "GFxUI.GFxObject.SetElementFloat");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -928,6 +967,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementBool(int Index, bool B)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementBool, "GFxUI.GFxObject.SetElementBool");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -950,6 +990,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElementObject(int Index, BmSDK.GFxUI.GFxObject val)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElementObject, "GFxUI.GFxObject.SetElementObject");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -972,6 +1013,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetElement(int Index, BmSDK.GFxUI.GFxMoviePlayer.FASValue Arg)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetElement, "GFxUI.GFxObject.SetElement");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -994,6 +1036,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetElementString(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementString, "GFxUI.GFxObject.GetElementString");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1015,6 +1058,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetElementInt(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementInt, "GFxUI.GFxObject.GetElementInt");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1036,6 +1080,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetElementFloat(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementFloat, "GFxUI.GFxObject.GetElementFloat");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1057,6 +1102,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetElementBool(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementBool, "GFxUI.GFxObject.GetElementBool");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1078,6 +1124,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject GetElementObject(int Index, BmSDK.Class Type = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElementObject, "GFxUI.GFxObject.GetElementObject");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1100,6 +1147,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue GetElement(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetElement, "GFxUI.GFxObject.GetElement");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1121,6 +1169,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetText(BmSDK.FString Text, BmSDK.Engine.TranslationContext InContext = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetText, "GFxUI.GFxObject.SetText");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1143,6 +1192,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetText()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetText, "GFxUI.GFxObject.GetText");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1163,6 +1213,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetVisible(bool Visible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVisible, "GFxUI.GFxObject.SetVisible");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1184,6 +1235,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool WriteToByteArray(BmSDK.TArray<byte> A, int bytes)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WriteToByteArray, "GFxUI.GFxObject.WriteToByteArray");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1206,6 +1258,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ReadFromByteArray(out BmSDK.TArray<byte> A, int bytes)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadFromByteArray, "GFxUI.GFxObject.ReadFromByteArray");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1228,6 +1281,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetByteArraySize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetByteArraySize, "GFxUI.GFxObject.GetByteArraySize");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1248,6 +1302,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsByteArray()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsByteArray, "GFxUI.GFxObject.IsByteArray");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1268,6 +1323,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDisplayMatrix3D(BmSDK.GameObject.FMatrix M)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayMatrix3D, "GFxUI.GFxObject.SetDisplayMatrix3D");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1289,6 +1345,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDisplayMatrix(BmSDK.GameObject.FMatrix M)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayMatrix, "GFxUI.GFxObject.SetDisplayMatrix");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1310,6 +1367,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetColorTransform(BmSDK.GFxUI.GFxObject.FASColorTransform cxform)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetColorTransform, "GFxUI.GFxObject.SetColorTransform");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1331,6 +1389,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetPosition(float X, float Y)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPosition, "GFxUI.GFxObject.SetPosition");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1353,6 +1412,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDisplayInfo(BmSDK.GFxUI.GFxObject.FASDisplayInfo D)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayInfo, "GFxUI.GFxObject.SetDisplayInfo");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1374,6 +1434,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetDisplayMatrix3D()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayMatrix3D, "GFxUI.GFxObject.GetDisplayMatrix3D");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1394,6 +1455,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetDisplayMatrix()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayMatrix, "GFxUI.GFxObject.GetDisplayMatrix");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1414,6 +1476,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject.FASColorTransform GetColorTransform()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetColorTransform, "GFxUI.GFxObject.GetColorTransform");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1434,6 +1497,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetPosition(out float X, out float Y)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPosition, "GFxUI.GFxObject.GetPosition");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1460,6 +1524,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject.FASDisplayInfo GetDisplayInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayInfo, "GFxUI.GFxObject.GetDisplayInfo");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1502,6 +1567,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetFunction(BmSDK.FString Member, BmSDK.GameObject context, BmSDK.FName fname)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFunction, "GFxUI.GFxObject.SetFunction");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1525,6 +1591,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetObject(BmSDK.FString Member, BmSDK.GFxUI.GFxObject val)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetObject, "GFxUI.GFxObject.SetObject");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1547,6 +1614,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetString(BmSDK.FString Member, BmSDK.FString S, BmSDK.Engine.TranslationContext InContext = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetString, "GFxUI.GFxObject.SetString");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1570,6 +1638,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetInt(BmSDK.FString Member, int I)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInt, "GFxUI.GFxObject.SetInt");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1592,6 +1661,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetFloat(BmSDK.FString Member, float F)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFloat, "GFxUI.GFxObject.SetFloat");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1614,6 +1684,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetBool(BmSDK.FString Member, bool B)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBool, "GFxUI.GFxObject.SetBool");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1636,6 +1707,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Set(BmSDK.FString Member, BmSDK.GFxUI.GFxMoviePlayer.FASValue Arg)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Set, "GFxUI.GFxObject.Set");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1658,6 +1730,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxObject GetObject(BmSDK.FString Member, BmSDK.Class Type = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObject, "GFxUI.GFxObject.GetObject");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1680,6 +1753,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetString(BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetString, "GFxUI.GFxObject.GetString");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1701,6 +1775,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetInt(BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInt, "GFxUI.GFxObject.GetInt");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1722,6 +1797,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetFloat(BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloat, "GFxUI.GFxObject.GetFloat");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1743,6 +1819,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetBool(BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBool, "GFxUI.GFxObject.GetBool");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1764,6 +1841,7 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GFxUI.GFxMoviePlayer.FASValue Get(BmSDK.FString Member)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Get, "GFxUI.GFxObject.Get");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2118,5 +2196,34 @@ public partial class GFxObject : BmSDK.GameObject, BmSDK.IGameObject
     {
         get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.GFxUI.GFxMoviePlayer.FGFxWidgetBinding>>(Ptr + 132); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 132); }
+    }
+}
+
+/// <summary>
+/// The static native functions of GFxObject, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class GFxObjectStatics
+{
+    private static BmSDK.Function __fn_TranslateString;
+    /// <summary>
+    /// Function: TranslateString, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.FString TranslateString(this BmSDK.GFxUI.GFxObject self, BmSDK.FString StringToTranslate, BmSDK.Engine.TranslationContext InContext = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TranslateString, "GFxUI.GFxObject.TranslateString");
+        byte* paramsPtr = stackalloc byte[56];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(StringToTranslate, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(InContext, paramsPtr + 16);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 24);
     }
 }

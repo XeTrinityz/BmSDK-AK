@@ -84,6 +84,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual void UpdateAchievements()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAchievements, "Engine.UIDataProvider_PlayerAchievements.UpdateAchievements");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual void OnLoginChange(byte LocalUserNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLoginChange, "Engine.UIDataProvider_PlayerAchievements.OnLoginChange");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe override void OnUnregister()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUnregister, "Engine.UIDataProvider_PlayerAchievements.OnUnregister");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe override void OnRegister(BmSDK.Engine.LocalPlayer InPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRegister, "Engine.UIDataProvider_PlayerAchievements.OnRegister");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual void OnPlayerAchievementUnlocked(bool bWasSuccessful)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPlayerAchievementUnlocked, "Engine.UIDataProvider_PlayerAchievements.OnPlayerAchievementUnlocked");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual void OnPlayerAchievementsChanged(int TitleId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPlayerAchievementsChanged, "Engine.UIDataProvider_PlayerAchievements.OnPlayerAchievementsChanged");
         byte* paramsPtr = stackalloc byte[29];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual void GetAchievementDetails(int AchievementId, out BmSDK.Engine.OnlineSubsystem.FAchievementDetails OutAchievementDetails)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAchievementDetails, "Engine.UIDataProvider_PlayerAchievements.GetAchievementDetails");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual BmSDK.FString GetAchievementIconPathName(int AchievementId, bool bReturnLockedIcon = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAchievementIconPathName, "Engine.UIDataProvider_PlayerAchievements.GetAchievementIconPathName");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -196,6 +204,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual void PopulateAchievementIcons()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopulateAchievementIcons, "Engine.UIDataProvider_PlayerAchievements.PopulateAchievementIcons");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -209,6 +218,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual int GetMaxTotalGamerScore()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxTotalGamerScore, "Engine.UIDataProvider_PlayerAchievements.GetMaxTotalGamerScore");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +239,7 @@ public partial class UIDataProvider_PlayerAchievements : BmSDK.Engine.UIDataProv
     /// </summary>
     public unsafe virtual int GetTotalGamerScore()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTotalGamerScore, "Engine.UIDataProvider_PlayerAchievements.GetTotalGamerScore");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

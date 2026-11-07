@@ -84,6 +84,7 @@ public partial class RCrowdSpawner_BatmanAppear : BmSDK.BmGame.RCrowdSpawner, Bm
     /// </summary>
     public unsafe override BmSDK.BmGame.RCrowdAgent SpawnAgent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnAgent, "BmGame.RCrowdSpawner_BatmanAppear.SpawnAgent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCrowdSpawner_BatmanAppear : BmSDK.BmGame.RCrowdSpawner, Bm
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetSpawnLocationVariation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSpawnLocationVariation, "BmGame.RCrowdSpawner_BatmanAppear.GetSpawnLocationVariation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RCrowdSpawner_BatmanAppear : BmSDK.BmGame.RCrowdSpawner, Bm
     /// </summary>
     public unsafe override void SpawnCrowd(int NumToSpawn, int NewFlockID = default, BmSDK.BmGame.RCrowdSequence NewCrowdSequence = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnCrowd, "BmGame.RCrowdSpawner_BatmanAppear.SpawnCrowd");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

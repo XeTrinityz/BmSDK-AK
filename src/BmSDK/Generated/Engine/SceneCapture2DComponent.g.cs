@@ -84,6 +84,7 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
     /// </summary>
     public unsafe virtual void SetView(System.Numerics.Vector3 NewLocation, BmSDK.Rotator NewRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetView, "Engine.SceneCapture2DComponent.SetView");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
     /// </summary>
     public unsafe virtual void SetCaptureParameters(BmSDK.Engine.TextureRenderTarget2D NewTextureTarget = default, float NewFOV = default, float NewNearPlane = default, float NewFarPlane = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCaptureParameters, "Engine.SceneCapture2DComponent.SetCaptureParameters");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

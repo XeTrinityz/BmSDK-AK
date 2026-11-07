@@ -84,6 +84,7 @@ public partial class RCombatMove_MultiStageShieldAttack : BmSDK.BmGame.RCombatMo
     /// </summary>
     public unsafe override void DamageCollisionBetween(BmSDK.BmGame.RPawnCombat Pawn1, BmSDK.BmGame.RPawnCombat Pawn2, System.Numerics.Vector3 DamageDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCollisionBetween, "BmScript.RCombatMove_MultiStageShieldAttack.DamageCollisionBetween");
         byte* paramsPtr = stackalloc byte[292];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

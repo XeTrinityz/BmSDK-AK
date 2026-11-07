@@ -84,6 +84,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe override void HitSomething(BmSDK.BmGame.RPawnCombat HitPawn, float Speed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitSomething, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.HitSomething");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe virtual void DetonateSmall()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetonateSmall, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.DetonateSmall");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe virtual void Detonate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detonate, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.Detonate");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class dmgType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.TakeDamage");
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +149,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe override void HitByGel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByGel, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.HitByGel");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe virtual float GetBatarangSpeedBoost()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatarangSpeedBoost, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.GetBatarangSpeedBoost");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -171,6 +177,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe virtual bool ForceHitAtEndOfFlight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceHitAtEndOfFlight, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.ForceHitAtEndOfFlight");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +191,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe virtual float GetBatarangPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatarangPriority, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.GetBatarangPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +205,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe virtual bool IsBatarangable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatarangable, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.IsBatarangable");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.B
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBatarangTargetPosition(System.Numerics.Vector3 AimLocation, System.Numerics.Vector3 AimDirection, bool bDuringTargetPhase = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatarangTargetPosition, "BmScript.RBMCombatThrownObject_HeavyObjectFireExtinguisher.GetBatarangTargetPosition");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

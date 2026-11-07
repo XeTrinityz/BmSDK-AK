@@ -84,6 +84,7 @@ public partial class RAEC_Casualty_Sub_Solo : BmSDK.BmGame.RAlertEventCoordinato
     /// </summary>
     public unsafe virtual void PlayDiscoverBark()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDiscoverBark, "BmGame.RAEC_Casualty_Sub_Solo.PlayDiscoverBark");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_Casualty_Sub_Solo : BmSDK.BmGame.RAlertEventCoordinato
     /// </summary>
     public unsafe virtual void AssignCasualty(BmSDK.BmGame.RPawnVillain NewCas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignCasualty, "BmGame.RAEC_Casualty_Sub_Solo.AssignCasualty");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RAEC_Casualty_Sub_Solo : BmSDK.BmGame.RAlertEventCoordinato
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Casualty_Sub_Solo.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

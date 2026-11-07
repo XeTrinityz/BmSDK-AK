@@ -84,6 +84,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool UpgradeLocalStorageToCloud(BmSDK.Engine.CloudStorageUpgradeHelper UpgradeHelper, bool bForceSearchAgain = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradeLocalStorageToCloud, "Engine.CloudStorageBase.UpgradeLocalStorageToCloud");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool ResolveConflictWithVersionIndex(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolveConflictWithVersionIndex, "Engine.CloudStorageBase.ResolveConflictWithVersionIndex");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +129,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool ResolveConflictWithNewestDocument()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolveConflictWithNewestDocument, "Engine.CloudStorageBase.ResolveConflictWithNewestDocument");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -147,6 +150,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool WaitForWritesToFinish(float MaxTimeSeconds = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WaitForWritesToFinish, "Engine.CloudStorageBase.WaitForWritesToFinish");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +172,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool IsStillWritingFiles()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStillWritingFiles, "Engine.CloudStorageBase.IsStillWritingFiles");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +193,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool SaveDocumentWithObject(int Index, BmSDK.GameObject ObjectData, int SaveVersion)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveDocumentWithObject, "Engine.CloudStorageBase.SaveDocumentWithObject");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -211,6 +217,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool SaveDocumentWithBytes(int Index, BmSDK.TArray<byte> ByteData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveDocumentWithBytes, "Engine.CloudStorageBase.SaveDocumentWithBytes");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -233,6 +240,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool SaveDocumentWithString(int Index, BmSDK.FString StringData)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveDocumentWithString, "Engine.CloudStorageBase.SaveDocumentWithString");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -255,6 +263,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool WriteCloudDocument(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WriteCloudDocument, "Engine.CloudStorageBase.WriteCloudDocument");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -276,6 +285,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual BmSDK.GameObject ParseDocumentAsObject(int Index, BmSDK.Class ObjectClass, int ExpectedVersion, bool bIsForConflict = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ParseDocumentAsObject, "Engine.CloudStorageBase.ParseDocumentAsObject");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -300,6 +310,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual void ParseDocumentAsBytes(int Index, out BmSDK.TArray<byte> ByteData, bool bIsForConflict = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ParseDocumentAsBytes, "Engine.CloudStorageBase.ParseDocumentAsBytes");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -323,6 +334,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual BmSDK.FString ParseDocumentAsString(int Index, bool bIsForConflict = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ParseDocumentAsString, "Engine.CloudStorageBase.ParseDocumentAsString");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -345,6 +357,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool ReadCloudDocument(int Index, bool bIsForConflict = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadCloudDocument, "Engine.CloudStorageBase.ReadCloudDocument");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -367,6 +380,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual int CreateCloudDocument(BmSDK.FString Filename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateCloudDocument, "Engine.CloudStorageBase.CreateCloudDocument");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -388,6 +402,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual BmSDK.FString GetCloudDocumentName(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCloudDocumentName, "Engine.CloudStorageBase.GetCloudDocumentName");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -409,6 +424,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual int GetNumCloudDocuments(bool bIsForConflict = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumCloudDocuments, "Engine.CloudStorageBase.GetNumCloudDocuments");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -430,6 +446,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool QueryForCloudDocuments()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueryForCloudDocuments, "Engine.CloudStorageBase.QueryForCloudDocuments");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -450,6 +467,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool WriteKeyValue(BmSDK.FString KeyName, out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceData Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WriteKeyValue, "Engine.CloudStorageBase.WriteKeyValue");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -472,6 +490,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool ReadKeyValue(BmSDK.FString KeyName, BmSDK.Engine.PlatformInterfaceBase.EPlatformInterfaceDataType Type, out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceDelegateResult Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadKeyValue, "Engine.CloudStorageBase.ReadKeyValue");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -495,6 +514,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool IsUsingLocalStorage()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsUsingLocalStorage, "Engine.CloudStorageBase.IsUsingLocalStorage");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -515,6 +535,7 @@ public partial class CloudStorageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.CloudStorageBase.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

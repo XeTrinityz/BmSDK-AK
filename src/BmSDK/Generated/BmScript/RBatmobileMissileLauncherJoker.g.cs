@@ -84,6 +84,7 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     /// </summary>
     public unsafe virtual void CheckForDeadThugs()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForDeadThugs, "BmScript.RBatmobileMissileLauncherJoker.CheckForDeadThugs");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     /// </summary>
     public unsafe override void DrawTargetsHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTargetsHUD, "BmScript.RBatmobileMissileLauncherJoker.DrawTargetsHUD");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     /// </summary>
     public unsafe virtual void GenerateFakeTargets()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateFakeTargets, "BmScript.RBatmobileMissileLauncherJoker.GenerateFakeTargets");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     /// </summary>
     public unsafe override bool IsHeavyWeaponValid()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHeavyWeaponValid, "BmScript.RBatmobileMissileLauncherJoker.IsHeavyWeaponValid");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     /// </summary>
     public unsafe override bool ReadyToFire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyToFire, "BmScript.RBatmobileMissileLauncherJoker.ReadyToFire");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
     /// </summary>
     public unsafe virtual void FireReadyEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireReadyEvent, "BmScript.RBatmobileMissileLauncherJoker.FireReadyEvent");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

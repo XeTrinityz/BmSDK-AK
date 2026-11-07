@@ -84,6 +84,7 @@ public partial class RAEC_Startle : BmSDK.BmGame.RAlertEventCoordinatorBase, BmS
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_Startle.FinishTopLevelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_Startle : BmSDK.BmGame.RAlertEventCoordinatorBase, BmS
     /// </summary>
     public unsafe virtual void StartStartle(BmSDK.BmGame.RBMAIController NewMember, System.Numerics.Vector3 StartleCentre)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartStartle, "BmGame.RAEC_Startle.StartStartle");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

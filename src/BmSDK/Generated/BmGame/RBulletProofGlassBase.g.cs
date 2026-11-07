@@ -84,6 +84,7 @@ public partial class RBulletProofGlassBase : BmSDK.Engine.StaticMeshActor, BmSDK
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBoundsForGlass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoundsForGlass, "BmGame.RBulletProofGlassBase.GetBoundsForGlass");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -79,6 +79,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual void RemoveDisruptorInteraction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveDisruptorInteraction, "BmGame.RCarriableObjectBagBase.RemoveDisruptorInteraction");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual void SpawnJammedExplosion()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnJammedExplosion, "BmGame.RCarriableObjectBagBase.SpawnJammedExplosion");
         byte* paramsPtr = stackalloc byte[308];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +107,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool IsDisrupted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDisrupted, "BmGame.RCarriableObjectBagBase.IsDisrupted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +121,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual BmSDK.FString GetDisruptorDescriptionParameters()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorDescriptionParameters, "BmGame.RCarriableObjectBagBase.GetDisruptorDescriptionParameters");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +135,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool RequiresDisruptorUpgrade()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequiresDisruptorUpgrade, "BmGame.RCarriableObjectBagBase.RequiresDisruptorUpgrade");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -144,6 +149,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool RequiresDroneDisruptor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequiresDroneDisruptor, "BmGame.RCarriableObjectBagBase.RequiresDroneDisruptor");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -157,6 +163,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual BmSDK.Engine.MeshComponent GetDisruptorTargetMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorTargetMesh, "BmGame.RCarriableObjectBagBase.GetDisruptorTargetMesh");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +177,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool HitByDisruptorGadgetSecondary()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByDisruptorGadgetSecondary, "BmGame.RCarriableObjectBagBase.HitByDisruptorGadgetSecondary");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +191,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool CanBeDisruptedSecondary()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeDisruptedSecondary, "BmGame.RCarriableObjectBagBase.CanBeDisruptedSecondary");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -196,6 +205,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual float GetDisruptorOverridePriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorOverridePriority, "BmGame.RCarriableObjectBagBase.GetDisruptorOverridePriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -209,6 +219,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool CanBeDisrupted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeDisrupted, "BmGame.RCarriableObjectBagBase.CanBeDisrupted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -222,6 +233,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool HitByDisruptorGadgetCharge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByDisruptorGadgetCharge, "BmGame.RCarriableObjectBagBase.HitByDisruptorGadgetCharge");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +247,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDisruptorTargetPosition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptorTargetPosition, "BmGame.RCarriableObjectBagBase.GetDisruptorTargetPosition");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +261,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RCarriableObjectBagBase.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -262,6 +276,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual BmSDK.FName GetDoorWaitIdleAnimName(bool bCocky)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDoorWaitIdleAnimName, "BmGame.RCarriableObjectBagBase.GetDoorWaitIdleAnimName");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -276,6 +291,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual void GetBombReactAnim(bool bFront, out BmSDK.FName AnimName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBombReactAnim, "BmGame.RCarriableObjectBagBase.GetBombReactAnim");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -293,6 +309,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual void SetBagCollision(bool bEnabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBagCollision, "BmGame.RCarriableObjectBagBase.SetBagCollision");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -307,6 +324,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual void SetXrayMatsEnabled(bool bEnabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetXrayMatsEnabled, "BmGame.RCarriableObjectBagBase.SetXrayMatsEnabled");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -321,6 +339,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe override void Init(BmSDK.BmGame.RPawnVillain Thug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RCarriableObjectBagBase.Init");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -335,6 +354,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPickupAnimStartLoc(BmSDK.BmGame.RBMPawnAI Pawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickupAnimStartLoc, "BmGame.RCarriableObjectBagBase.GetPickupAnimStartLoc");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -349,6 +369,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetPickupFromFloorRot(System.Numerics.Vector3 pawnLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickupFromFloorRot, "BmGame.RCarriableObjectBagBase.GetPickupFromFloorRot");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -363,6 +384,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBagCentre()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBagCentre, "BmGame.RCarriableObjectBagBase.GetBagCentre");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -376,6 +398,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual void ApplyImpulseAwayFromCarrier(BmSDK.Engine.Pawn carrier)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyImpulseAwayFromCarrier, "BmGame.RCarriableObjectBagBase.ApplyImpulseAwayFromCarrier");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -390,6 +413,7 @@ public partial class RCarriableObjectBagBase : BmSDK.BmGame.RCarriableObjectBase
     /// </summary>
     public unsafe virtual bool CanBePickedUpFromAnyDirection()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePickedUpFromAnyDirection, "BmGame.RCarriableObjectBagBase.CanBePickedUpFromAnyDirection");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

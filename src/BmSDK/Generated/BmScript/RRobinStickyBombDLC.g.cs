@@ -84,6 +84,7 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
     /// </summary>
     public unsafe virtual void TriggerStunnedThugKOedBySnapFlashEvents(BmSDK.BmGame.RPawnVillain Victim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerStunnedThugKOedBySnapFlashEvents, "BmScript.RRobinStickyBombDLC.TriggerStunnedThugKOedBySnapFlashEvents");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
     /// </summary>
     public unsafe virtual void TriggerMedicKOedBySnapFlashEvents(BmSDK.BmGame.RPawnVillain Victim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerMedicKOedBySnapFlashEvents, "BmScript.RRobinStickyBombDLC.TriggerMedicKOedBySnapFlashEvents");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
     /// </summary>
     public unsafe override void ExplodeBomb(BmSDK.Engine.MeshComponent Bomb, BmSDK.BmGame.RPawnVillain bombWasOnDownedEnemy)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeBomb, "BmScript.RRobinStickyBombDLC.ExplodeBomb");
         byte* paramsPtr = stackalloc byte[368];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
     /// </summary>
     public unsafe override void DetonateAll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetonateAll, "BmScript.RRobinStickyBombDLC.DetonateAll");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
     /// </summary>
     public unsafe override void VillainWasDestroyedWithStickyBombAttached(BmSDK.Engine.MeshComponent Bomb)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainWasDestroyedWithStickyBombAttached, "BmScript.RRobinStickyBombDLC.VillainWasDestroyedWithStickyBombAttached");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +159,7 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmScript.RRobinStickyBombDLC.GetGadgetCamera");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +175,7 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
     /// </summary>
     public unsafe override bool IsValidStickyBombTarget(BmSDK.BmGame.RPawnVillain Villain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidStickyBombTarget, "BmScript.RRobinStickyBombDLC.IsValidStickyBombTarget");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

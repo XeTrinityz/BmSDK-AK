@@ -84,6 +84,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe override void TakeRadiusDamage(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeRadiusDamage, "Engine.KActorFromStatic.TakeRadiusDamage");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "Engine.KActorFromStatic.Touch");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Bump(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Bump, "Engine.KActorFromStatic.Bump");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +142,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ReceiveImpulse(BmSDK.Engine.Pawn Other, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReceiveImpulse, "Engine.KActorFromStatic.ReceiveImpulse");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +159,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe override void ApplyImpulse(System.Numerics.Vector3 ImpulseDir, float ImpulseMag, System.Numerics.Vector3 HitLocation, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Class DamageType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyImpulse, "Engine.KActorFromStatic.ApplyImpulse");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +219,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BecomeStatic()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BecomeStatic, "Engine.KActorFromStatic.BecomeStatic");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -227,6 +233,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe override void OnWakeRBPhysics()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnWakeRBPhysics, "Engine.KActorFromStatic.OnWakeRBPhysics");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -240,6 +247,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe override void OnSleepRBPhysics()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSleepRBPhysics, "Engine.KActorFromStatic.OnSleepRBPhysics");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -253,6 +261,7 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DisablePrecomputedLighting()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisablePrecomputedLighting, "Engine.KActorFromStatic.DisablePrecomputedLighting");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,5 +292,54 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
     {
         get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 1000); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 1000); }
+    }
+}
+
+/// <summary>
+/// The static native functions of KActorFromStatic, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class KActorFromStaticStatics
+{
+    private static BmSDK.Function __fn_MakeDynamic;
+    /// <summary>
+    /// Function: MakeDynamic, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.Engine.KActorFromStatic MakeDynamic(this BmSDK.Engine.KActorFromStatic self, BmSDK.Engine.StaticMeshComponent MovableMesh)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeDynamic, "Engine.KActorFromStatic.MakeDynamic");
+        byte* paramsPtr = stackalloc byte[32];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(MovableMesh, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.KActorFromStatic>(paramsPtr + 8);
+    }
+
+    private static BmSDK.Function __fn_MakeStatic;
+    /// <summary>
+    /// Function: MakeStatic, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void MakeStatic(this BmSDK.Engine.KActorFromStatic self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeStatic, "Engine.KActorFromStatic.MakeStatic");
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
     }
 }

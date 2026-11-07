@@ -84,6 +84,7 @@ public partial class RPawnVillainThugFakeDeath : BmSDK.BmGame.RPawnVillainThug, 
     /// </summary>
     public unsafe virtual void GetUpFromFakeDeath(BmSDK.FName CustomGetUpAnimName, BmSDK.FName StandIdleName, BmSDK.Engine.AnimSet CustomGetUpAnimset)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUpFromFakeDeath, "BmGame.RPawnVillainThugFakeDeath.GetUpFromFakeDeath");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class RPawnVillainThugFakeDeath : BmSDK.BmGame.RPawnVillainThug, 
     /// </summary>
     public unsafe virtual void CanBeHitAgain()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeHitAgain, "BmGame.RPawnVillainThugFakeDeath.CanBeHitAgain");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RPawnVillainThugFakeDeath : BmSDK.BmGame.RPawnVillainThug, 
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RPawnVillainThugFakeDeath.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RPawnVillainThugFakeDeath : BmSDK.BmGame.RPawnVillainThug, 
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "BmGame.RPawnVillainThugFakeDeath.Died");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -143,6 +147,7 @@ public partial class RPawnVillainThugFakeDeath : BmSDK.BmGame.RPawnVillainThug, 
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult ProcessDamagedBy(out BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessDamagedBy, "BmGame.RPawnVillainThugFakeDeath.ProcessDamagedBy");
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -157,6 +162,7 @@ public partial class RPawnVillainThugFakeDeath : BmSDK.BmGame.RPawnVillainThug, 
     /// </summary>
     public unsafe override bool CanRedirect()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanRedirect, "BmGame.RPawnVillainThugFakeDeath.CanRedirect");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -79,6 +79,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetTargetDistance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetDistance, "Engine.Weapon.GetTargetDistance");
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void CacheAIController()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CacheAIController, "Engine.Weapon.CacheAIController");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +107,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void WeaponIsDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WeaponIsDown, "Engine.Weapon.WeaponIsDown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +121,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool StillFiring(byte FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StillFiring, "Engine.Weapon.StillFiring");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +136,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ShouldRefire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldRefire, "Engine.Weapon.ShouldRefire");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +150,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyWeaponFinishedFiring(byte FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyWeaponFinishedFiring, "Engine.Weapon.NotifyWeaponFinishedFiring");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +165,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyWeaponFired(byte FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyWeaponFired, "Engine.Weapon.NotifyWeaponFired");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -173,6 +180,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void HandleFinishedFiring()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleFinishedFiring, "Engine.Weapon.HandleFinishedFiring");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -186,6 +194,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool TryPutDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryPutDown, "Engine.Weapon.TryPutDown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -199,6 +208,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPhysicalFireStartLoc(System.Numerics.Vector3 AimDir = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPhysicalFireStartLoc, "Engine.Weapon.GetPhysicalFireStartLoc");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -220,6 +230,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMuzzleLoc()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMuzzleLoc, "Engine.Weapon.GetMuzzleLoc");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -233,6 +244,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void CustomFire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomFire, "Engine.Weapon.CustomFire");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -246,6 +258,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.Projectile ProjectileFire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProjectileFire, "Engine.Weapon.ProjectileFire");
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -259,6 +272,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ProcessInstantHit(byte FiringMode, BmSDK.Engine.Actor.FImpactInfo Impact, int NumHits = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessInstantHit, "Engine.Weapon.ProcessInstantHit");
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -275,6 +289,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InstantFire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstantFire, "Engine.Weapon.InstantFire");
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -302,6 +317,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.FImpactInfo CalcWeaponFire(System.Numerics.Vector3 StartTrace, System.Numerics.Vector3 EndTrace, out BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo> ImpactList, System.Numerics.Vector3 Extent)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalcWeaponFire, "Engine.Weapon.CalcWeaponFire");
         byte* paramsPtr = stackalloc byte[364];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +335,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetTraceOwner()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTraceOwner, "Engine.Weapon.GetTraceOwner");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -332,6 +349,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetTraceRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTraceRange, "Engine.Weapon.GetTraceRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -345,6 +363,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetAdjustedAim(System.Numerics.Vector3 StartFireLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAdjustedAim, "Engine.Weapon.GetAdjustedAim");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -359,6 +378,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void FireAmmunition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireAmmunition, "Engine.Weapon.FireAmmunition");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -372,6 +392,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void FireModeUpdated(byte FiringMode, bool bViaReplication)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireModeUpdated, "Engine.Weapon.FireModeUpdated");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -387,6 +408,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetCurrentFireMode(byte FiringModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentFireMode, "Engine.Weapon.SetCurrentFireMode");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -401,6 +423,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SendToFiringState(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendToFiringState, "Engine.Weapon.SendToFiringState");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -415,6 +438,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ForceEndFire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceEndFire, "Engine.Weapon.ForceEndFire");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -428,6 +452,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void EndFire(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndFire, "Engine.Weapon.EndFire");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -442,6 +467,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ServerStopFire(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerStopFire, "Engine.Weapon.ServerStopFire");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -456,6 +482,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopFire(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopFire, "Engine.Weapon.StopFire");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -470,6 +497,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BeginFire(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginFire, "Engine.Weapon.BeginFire");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -484,6 +512,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ServerStartFire(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerStartFire, "Engine.Weapon.ServerStartFire");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -498,6 +527,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StartFire(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFire, "Engine.Weapon.StartFire");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -512,6 +542,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClientWeaponSet(bool bOptionalSet, bool bDoNotActivate = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClientWeaponSet, "Engine.Weapon.ClientWeaponSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -527,6 +558,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe override void ClientGivenTo(BmSDK.Engine.Pawn NewOwner, bool bDoNotActivate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClientGivenTo, "Engine.Weapon.ClientGivenTo");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -542,6 +574,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DetachWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachWeapon, "Engine.Weapon.DetachWeapon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -555,6 +588,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AttachWeaponTo(BmSDK.Engine.SkeletalMeshComponent MeshCpnt, BmSDK.FName SocketName = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachWeaponTo, "Engine.Weapon.AttachWeaponTo");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -570,6 +604,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearFlashLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearFlashLocation, "Engine.Weapon.ClearFlashLocation");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -583,6 +618,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetFlashLocation(System.Numerics.Vector3 HitLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFlashLocation, "Engine.Weapon.SetFlashLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -597,6 +633,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearFlashCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearFlashCount, "Engine.Weapon.ClearFlashCount");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -610,6 +647,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void IncrementFlashCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncrementFlashCount, "Engine.Weapon.IncrementFlashCount");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -623,6 +661,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void WeaponEmpty()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WeaponEmpty, "Engine.Weapon.WeaponEmpty");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -636,6 +675,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool DenyPickupQuery(BmSDK.Class ItemClass, BmSDK.Engine.Actor Pickup)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DenyPickupQuery, "Engine.Weapon.DenyPickupQuery");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -651,6 +691,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PutDownWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PutDownWeapon, "Engine.Weapon.PutDownWeapon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -664,6 +705,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Activate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activate, "Engine.Weapon.Activate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -677,6 +719,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TimeWeaponEquipping()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimeWeaponEquipping, "Engine.Weapon.TimeWeaponEquipping");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -690,6 +733,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TimeWeaponPutDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimeWeaponPutDown, "Engine.Weapon.TimeWeaponPutDown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -703,6 +747,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RefireCheckTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefireCheckTimer, "Engine.Weapon.RefireCheckTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -716,6 +761,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TimeWeaponFiring(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimeWeaponFiring, "Engine.Weapon.TimeWeaponFiring");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -730,6 +776,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetFireInterval(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFireInterval, "Engine.Weapon.GetFireInterval");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -744,6 +791,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopFireEffects(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopFireEffects, "Engine.Weapon.StopFireEffects");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -758,6 +806,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PlayFireEffects(byte FireModeNum, System.Numerics.Vector3 HitLocation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFireEffects, "Engine.Weapon.PlayFireEffects");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -773,6 +822,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopWeaponAnimation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopWeaponAnimation, "Engine.Weapon.StopWeaponAnimation");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -786,6 +836,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PlayWeaponAnimation(BmSDK.FName Sequence, float fDesiredDuration, bool bLoop = default, BmSDK.Engine.SkeletalMeshComponent SkelMesh = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayWeaponAnimation, "Engine.Weapon.PlayWeaponAnimation");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -803,6 +854,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetWeaponAnimNodeSeq()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWeaponAnimNodeSeq, "Engine.Weapon.GetWeaponAnimNodeSeq");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -816,6 +868,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool FireOnRelease()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireOnRelease, "Engine.Weapon.FireOnRelease");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -829,6 +882,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CanAttack(BmSDK.Engine.Actor Other)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanAttack, "Engine.Weapon.CanAttack");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -843,6 +897,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetWeaponRating()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWeaponRating, "Engine.Weapon.GetWeaponRating");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -856,6 +911,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetAIRating()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIRating, "Engine.Weapon.GetAIRating");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -869,6 +925,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float MaxRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MaxRange, "Engine.Weapon.MaxRange");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -882,6 +939,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Rotator AddSpread(BmSDK.Rotator BaseAim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSpread, "Engine.Weapon.AddSpread");
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -896,6 +954,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Class GetProjectileClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetProjectileClass, "Engine.Weapon.GetProjectileClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -909,6 +968,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearPendingFire(int FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearPendingFire, "Engine.Weapon.ClearPendingFire");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -923,6 +983,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetPendingFire(int FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPendingFire, "Engine.Weapon.SetPendingFire");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -937,6 +998,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool PendingFire(int FireMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PendingFire, "Engine.Weapon.PendingFire");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -951,6 +1013,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetPendingFireLength()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPendingFireLength, "Engine.Weapon.GetPendingFireLength");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -964,6 +1027,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasAnyAmmo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasAnyAmmo, "Engine.Weapon.HasAnyAmmo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -977,6 +1041,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasAmmo(byte FireModeNum, int Amount = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasAmmo, "Engine.Weapon.HasAmmo");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -992,6 +1057,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int AddAmmo(int Amount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAmmo, "Engine.Weapon.AddAmmo");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1006,6 +1072,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ConsumeAmmo(byte FireModeNum)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConsumeAmmo, "Engine.Weapon.ConsumeAmmo");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1020,6 +1087,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetWeaponDebug(out BmSDK.TArray<BmSDK.FString> DebugInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWeaponDebug, "Engine.Weapon.GetWeaponDebug");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1034,6 +1102,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe override void DisplayDebug(BmSDK.Engine.HUD HUD, out float out_YL, out float out_YPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.Weapon.DisplayDebug");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1054,6 +1123,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool DenyClientWeaponSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DenyClientWeaponSet, "Engine.Weapon.DenyClientWeaponSet");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1067,6 +1137,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsFiring()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFiring, "Engine.Weapon.IsFiring");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1080,6 +1151,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClientWeaponThrown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClientWeaponThrown, "Engine.Weapon.ClientWeaponThrown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1093,6 +1165,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CanThrow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanThrow, "Engine.Weapon.CanThrow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1106,6 +1179,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe override void DropFrom(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 StartVelocity)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropFrom, "Engine.Weapon.DropFrom");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1121,6 +1195,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool DoOverridePrevWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoOverridePrevWeapon, "Engine.Weapon.DoOverridePrevWeapon");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1134,6 +1209,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool DoOverrideNextWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoOverrideNextWeapon, "Engine.Weapon.DoOverrideNextWeapon");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1147,6 +1223,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void HolderDied()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HolderDied, "Engine.Weapon.HolderDied");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1160,6 +1237,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe override void ItemRemovedFromInvManager()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemRemovedFromInvManager, "Engine.Weapon.ItemRemovedFromInvManager");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1173,6 +1251,7 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.Weapon.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

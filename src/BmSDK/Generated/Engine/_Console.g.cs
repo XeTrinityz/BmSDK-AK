@@ -84,6 +84,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateCompleteIndices()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCompleteIndices, "Engine.Console.UpdateCompleteIndices");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BuildRuntimeAutoCompleteList(bool bForce = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildRuntimeAutoCompleteList, "Engine.Console.BuildRuntimeAutoCompleteList");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AppendInputText(BmSDK.FString Text)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendInputText, "Engine.Console.AppendInputText");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +142,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ProcessControlKey(BmSDK.FName Key, BmSDK.GameObject.EInputEvent Event)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessControlKey, "Engine.Console.ProcessControlKey");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +158,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void FlushPlayerInput()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushPlayerInput, "Engine.Console.FlushPlayerInput");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +172,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool InputChar(int ControllerId, BmSDK.FString Unicode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InputChar, "Engine.Console.InputChar");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -182,6 +188,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool InputKey(int ControllerId, BmSDK.FName Key, BmSDK.GameObject.EInputEvent Event, float AmountDepressed = default, bool bGamepad = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InputKey, "Engine.Console.InputKey");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -200,6 +207,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PostRender_Console(BmSDK.Engine.Canvas Canvas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostRender_Console, "Engine.Console.PostRender_Console");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +222,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StartTyping(BmSDK.FString Text)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTyping, "Engine.Console.StartTyping");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -228,6 +237,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OutputText(BmSDK.FString Text)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutputText, "Engine.Console.OutputText");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -242,6 +252,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OutputTextLine(BmSDK.FString Text)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutputTextLine, "Engine.Console.OutputTextLine");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -256,6 +267,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearOutput()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearOutput, "Engine.Console.ClearOutput");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -269,6 +281,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ConsoleCommand(BmSDK.FString Command)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConsoleCommand, "Engine.Console.ConsoleCommand");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,6 +296,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PurgeCommandFromHistory(BmSDK.FString Command)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PurgeCommandFromHistory, "Engine.Console.PurgeCommandFromHistory");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -297,6 +311,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetCursorPos(int Position)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCursorPos, "Engine.Console.SetCursorPos");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -311,6 +326,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetInputText(BmSDK.FString Text)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInputText, "Engine.Console.SetInputText");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -325,6 +341,7 @@ public partial class _Console : BmSDK.Engine.Interaction, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Initialized()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialized, "Engine.Console.Initialized");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

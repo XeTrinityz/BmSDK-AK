@@ -84,6 +84,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPhysicalEvidenceBase.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RPhysicalEvidenceBase.OnToggle");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void SetParticlesActiveInternal(bool _ParticlesActiveAlwaysOn, bool _ParticlesActiveEvidenceMarker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParticlesActiveInternal, "BmGame.RPhysicalEvidenceBase.SetParticlesActiveInternal");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void SetParticlesActive(bool ParticlesActive)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParticlesActive, "BmGame.RPhysicalEvidenceBase.SetParticlesActive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void show(float _show, int ShowMode = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_show, "BmGame.RPhysicalEvidenceBase.show");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void InitialiseDna()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseDna, "BmGame.RPhysicalEvidenceBase.InitialiseDna");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +174,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRotation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRotation, "BmGame.RPhysicalEvidenceBase.GetRotation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual float GetSize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSize, "BmGame.RPhysicalEvidenceBase.GetSize");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +202,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocation, "BmGame.RPhysicalEvidenceBase.GetLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void SetInXrayMode(bool On, bool bForceOff)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInXrayMode, "BmGame.RPhysicalEvidenceBase.SetInXrayMode");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -222,6 +232,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool CanBeScanned()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeScanned, "BmGame.RPhysicalEvidenceBase.CanBeScanned");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +246,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual BmSDK.BmGame.REvidence GetEvidenceInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEvidenceInfo, "BmGame.RPhysicalEvidenceBase.GetEvidenceInfo");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +260,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void SetUnscanned()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUnscanned, "BmGame.RPhysicalEvidenceBase.SetUnscanned");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +274,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void SetMovieScanned()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMovieScanned, "BmGame.RPhysicalEvidenceBase.SetMovieScanned");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -274,6 +288,7 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void AutomaticallySetVisibility()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutomaticallySetVisibility, "BmGame.RPhysicalEvidenceBase.AutomaticallySetVisibility");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

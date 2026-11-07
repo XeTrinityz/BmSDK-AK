@@ -84,6 +84,7 @@ public partial class RThugMineablePointVent : BmSDK.BmGame.RThugMineablePointBas
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetStandPoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStandPoint, "BmGame.RThugMineablePointVent.GetStandPoint");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RSeqAct_GrappleToVantagePoint : BmSDK.Engine.SequenceAction
     /// </summary>
     public unsafe virtual void Grapple()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Grapple, "BmGame.RSeqAct_GrappleToVantagePoint.Grapple");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

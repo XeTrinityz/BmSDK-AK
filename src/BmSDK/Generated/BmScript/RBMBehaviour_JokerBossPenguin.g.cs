@@ -84,6 +84,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual bool CanSeeBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeBatman, "BmScript.RBMBehaviour_JokerBossPenguin.CanSeeBatman");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void ShotByJokerGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotByJokerGun, "BmScript.RBMBehaviour_JokerBossPenguin.ShotByJokerGun");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void DisAllowWaveDeath()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisAllowWaveDeath, "BmScript.RBMBehaviour_JokerBossPenguin.DisAllowWaveDeath");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void DisAllowPleadDeath()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisAllowPleadDeath, "BmScript.RBMBehaviour_JokerBossPenguin.DisAllowPleadDeath");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void AllowPleadDeath()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowPleadDeath, "BmScript.RBMBehaviour_JokerBossPenguin.AllowPleadDeath");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void JokerGunFired()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerGunFired, "BmScript.RBMBehaviour_JokerBossPenguin.JokerGunFired");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void GetReadyToShootBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReadyToShootBatman, "BmScript.RBMBehaviour_JokerBossPenguin.GetReadyToShootBatman");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

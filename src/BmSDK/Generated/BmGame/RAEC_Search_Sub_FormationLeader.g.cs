@@ -79,6 +79,7 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe virtual void DoPassingGesture(BmSDK.BmGame.RAEC_Search_Sub_FormationLeader OtherGroupLeadAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPassingGesture, "BmGame.RAEC_Search_Sub_FormationLeader.DoPassingGesture");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe virtual bool CanDoPassingGesture()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoPassingGesture, "BmGame.RAEC_Search_Sub_FormationLeader.CanDoPassingGesture");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +108,7 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe virtual bool PreventNextLegStarting()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreventNextLegStarting, "BmGame.RAEC_Search_Sub_FormationLeader.PreventNextLegStarting");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +122,7 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe virtual void SetHasBackwardsFollower(bool bNewVal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHasBackwardsFollower, "BmGame.RAEC_Search_Sub_FormationLeader.SetHasBackwardsFollower");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +137,7 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_FormationLeader.GetCurrentPathHandle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

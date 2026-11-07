@@ -84,6 +84,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void onOverlayAnimationComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_onOverlayAnimationComplete, "BmScript.MGFxWidgetOverlayScreenLegal.onOverlayAnimationComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void onTransistionCompleteCallback(bool bIsActive)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_onTransistionCompleteCallback, "BmScript.MGFxWidgetOverlayScreenLegal.onTransistionCompleteCallback");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void Terminate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Terminate, "BmScript.MGFxWidgetOverlayScreenLegal.Terminate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void SendData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendData, "BmScript.MGFxWidgetOverlayScreenLegal.SendData");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void OnMouseWheel(int btnIdx, bool directionUp)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMouseWheel, "BmScript.MGFxWidgetOverlayScreenLegal.OnMouseWheel");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void KeyInput(int Key)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KeyInput, "BmScript.MGFxWidgetOverlayScreenLegal.KeyInput");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void NavUp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavUp, "BmScript.MGFxWidgetOverlayScreenLegal.NavUp");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -179,6 +186,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void NavDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavDown, "BmScript.MGFxWidgetOverlayScreenLegal.NavDown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +200,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void OnPressB()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPressB, "BmScript.MGFxWidgetOverlayScreenLegal.OnPressB");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -205,6 +214,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void OnPressA()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPressA, "BmScript.MGFxWidgetOverlayScreenLegal.OnPressA");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +228,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override float GetMinYForScrolling()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMinYForScrolling, "BmScript.MGFxWidgetOverlayScreenLegal.GetMinYForScrolling");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +242,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override float GetMaxYForScrolling()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxYForScrolling, "BmScript.MGFxWidgetOverlayScreenLegal.GetMaxYForScrolling");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -244,6 +256,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void ScrollToPosition(float ScrollBlockY)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScrollToPosition, "BmScript.MGFxWidgetOverlayScreenLegal.ScrollToPosition");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -258,6 +271,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe virtual void ScrollImage(int directon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScrollImage, "BmScript.MGFxWidgetOverlayScreenLegal.ScrollImage");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -272,6 +286,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe virtual void SetupScroller()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupScroller, "BmScript.MGFxWidgetOverlayScreenLegal.SetupScroller");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -285,6 +300,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe virtual void UpdateTitle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTitle, "BmScript.MGFxWidgetOverlayScreenLegal.UpdateTitle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -298,6 +314,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void OnImageLoadComplete(BmSDK.GFxUI.GFxObject pRef)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnImageLoadComplete, "BmScript.MGFxWidgetOverlayScreenLegal.OnImageLoadComplete");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -312,6 +329,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe virtual void FreeTexture()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeTexture, "BmScript.MGFxWidgetOverlayScreenLegal.FreeTexture");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -325,6 +343,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe virtual void DisplayImage()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayImage, "BmScript.MGFxWidgetOverlayScreenLegal.DisplayImage");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -338,6 +357,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe virtual void LoadImage(BmSDK.TArray<byte> sourceImage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadImage, "BmScript.MGFxWidgetOverlayScreenLegal.LoadImage");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -352,6 +372,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override bool WidgetInitialized(BmSDK.FName WidgetName, BmSDK.FName WidgetPath, BmSDK.GFxUI.GFxObject Widget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WidgetInitialized, "BmScript.MGFxWidgetOverlayScreenLegal.WidgetInitialized");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -368,6 +389,7 @@ public partial class MGFxWidgetOverlayScreenLegal : BmSDK.BmScript.MGFxWidgetOve
     /// </summary>
     public unsafe override void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmScript.MGFxWidgetOverlayScreenLegal.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

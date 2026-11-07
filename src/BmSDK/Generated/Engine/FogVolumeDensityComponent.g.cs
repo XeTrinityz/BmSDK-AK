@@ -79,6 +79,7 @@ public partial class FogVolumeDensityComponent : BmSDK.Engine.ActorComponent, Bm
     /// </summary>
     public unsafe virtual void SetEnabled(bool bSetEnabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.FogVolumeDensityComponent.SetEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

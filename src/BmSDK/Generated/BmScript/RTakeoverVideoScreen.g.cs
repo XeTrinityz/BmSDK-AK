@@ -84,6 +84,7 @@ public partial class RTakeoverVideoScreen : BmSDK.BmGame.RTakeoverVideoScreenBas
     /// </summary>
     public unsafe virtual void SetOverrideMaterial()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverrideMaterial, "BmScript.RTakeoverVideoScreen.SetOverrideMaterial");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RTakeoverVideoScreen : BmSDK.BmGame.RTakeoverVideoScreenBas
     /// </summary>
     public unsafe override void SetStaticTransitionParameter(float val)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStaticTransitionParameter, "BmScript.RTakeoverVideoScreen.SetStaticTransitionParameter");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RTakeoverVideoScreen : BmSDK.BmGame.RTakeoverVideoScreenBas
     /// </summary>
     public unsafe override void RevertToStandardTexture()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RevertToStandardTexture, "BmScript.RTakeoverVideoScreen.RevertToStandardTexture");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RTakeoverVideoScreen : BmSDK.BmGame.RTakeoverVideoScreenBas
     /// </summary>
     public unsafe override void SetTakeoverTexture(BmSDK.Engine.TextureRenderTarget2D takeoverTexture)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTakeoverTexture, "BmScript.RTakeoverVideoScreen.SetTakeoverTexture");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

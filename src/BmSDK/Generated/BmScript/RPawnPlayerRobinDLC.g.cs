@@ -84,6 +84,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override BmSDK.BmGame.RInventoryGadget GetRobinStickyBombAsInventoryGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRobinStickyBombAsInventoryGadget, "BmScript.RPawnPlayerRobinDLC.GetRobinStickyBombAsInventoryGadget");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPawnPlayerRobinDLC.Tick");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void CombatMoveInitialised(BmSDK.BmGame.RCombatMove NewMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatMoveInitialised, "BmScript.RPawnPlayerRobinDLC.CombatMoveInitialised");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void SetupPlayerSpecificCombatAnimsets()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupPlayerSpecificCombatAnimsets, "BmScript.RPawnPlayerRobinDLC.SetupPlayerSpecificCombatAnimsets");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override bool CanDoThrowCounter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoThrowCounter, "BmScript.RPawnPlayerRobinDLC.CanDoThrowCounter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void PlayCantTakedownMinigunnerThought()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCantTakedownMinigunnerThought, "BmScript.RPawnPlayerRobinDLC.PlayCantTakedownMinigunnerThought");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override bool CanPerformFearTakedowns()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPerformFearTakedowns, "BmScript.RPawnPlayerRobinDLC.CanPerformFearTakedowns");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override int GetExplosiveGelPositionInGadgetList()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetExplosiveGelPositionInGadgetList, "BmScript.RPawnPlayerRobinDLC.GetExplosiveGelPositionInGadgetList");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void DebugGiveAllGadgets()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugGiveAllGadgets, "BmScript.RPawnPlayerRobinDLC.DebugGiveAllGadgets");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +212,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void AddDefaultInventory()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDefaultInventory, "BmScript.RPawnPlayerRobinDLC.AddDefaultInventory");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +226,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void DeployShield(BmSDK.BmScript.RRobinStaffShield Shield)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeployShield, "BmScript.RPawnPlayerRobinDLC.DeployShield");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -230,6 +241,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void DelayedHideWeaponsInCinematicMode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DelayedHideWeaponsInCinematicMode, "BmScript.RPawnPlayerRobinDLC.DelayedHideWeaponsInCinematicMode");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -243,6 +255,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override BmSDK.FName GetAfterCombatAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAfterCombatAnim, "BmScript.RPawnPlayerRobinDLC.GetAfterCombatAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -256,6 +269,7 @@ public partial class RPawnPlayerRobinDLC : BmSDK.BmScript.RPawnPlayerRobin, BmSD
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnPlayerRobinDLC.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

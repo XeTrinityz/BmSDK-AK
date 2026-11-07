@@ -84,6 +84,7 @@ public partial class RExitPoints : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ShowDebug(BmSDK.Engine.Actor DebugActor, bool bPerm = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowDebug, "BmGame.RExitPoints.ShowDebug");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

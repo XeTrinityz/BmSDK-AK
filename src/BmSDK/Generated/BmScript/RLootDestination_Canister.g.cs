@@ -84,6 +84,7 @@ public partial class RLootDestination_Canister : BmSDK.BmGame.RLootDestinationBa
     /// </summary>
     public unsafe override bool OnDropOff(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDropOff, "BmScript.RLootDestination_Canister.OnDropOff");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

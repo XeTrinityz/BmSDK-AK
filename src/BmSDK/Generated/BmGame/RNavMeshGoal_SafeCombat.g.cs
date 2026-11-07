@@ -84,6 +84,7 @@ public partial class RNavMeshGoal_SafeCombat : BmSDK.Engine.NavMeshPathGoalEvalu
     /// </summary>
     public unsafe override void Recycle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "BmGame.RNavMeshGoal_SafeCombat.Recycle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RNavMeshGoal_SafeCombat : BmSDK.Engine.NavMeshPathGoalEvalu
     /// </summary>
     public unsafe virtual void RecycleNative()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecycleNative, "BmGame.RNavMeshGoal_SafeCombat.RecycleNative");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

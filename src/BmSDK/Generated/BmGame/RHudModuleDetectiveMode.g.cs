@@ -84,6 +84,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void HideScannerDetail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideScannerDetail, "BmGame.RHudModuleDetectiveMode.HideScannerDetail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetScannerDetailPrivate(BmSDK.FString swfmovie_name, bool bScanned)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScannerDetailPrivate, "BmGame.RHudModuleDetectiveMode.SetScannerDetailPrivate");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetScannerDetail(float location_x, float location_y, float location_depth, BmSDK.BmGame.RPhysicalEvidenceBase CSE)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScannerDetail, "BmGame.RHudModuleDetectiveMode.SetScannerDetail");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void HideEvidenceDetail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideEvidenceDetail, "BmGame.RHudModuleDetectiveMode.HideEvidenceDetail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetEvidenceDetailPrivate(float location_x, float location_y, float location_depth, BmSDK.FString swfmovie_name, bool bScanned)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEvidenceDetailPrivate, "BmGame.RHudModuleDetectiveMode.SetEvidenceDetailPrivate");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +165,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetEvidenceDetail(float location_x, float location_y, float location_depth, BmSDK.BmGame.RPhysicalEvidenceBase CSE)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEvidenceDetail, "BmGame.RHudModuleDetectiveMode.SetEvidenceDetail");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +183,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void UpdateCachedEvidence(BmSDK.GFxUI.SwfMovie NewEvidence)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCachedEvidence, "BmGame.RHudModuleDetectiveMode.UpdateCachedEvidence");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +198,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void HideInfoText()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideInfoText, "BmGame.RHudModuleDetectiveMode.HideInfoText");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +212,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetInfoText(float location_x, float location_y, float location_depth, BmSDK.FString Heading, BmSDK.FString Description, bool Warning)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInfoText, "BmGame.RHudModuleDetectiveMode.SetInfoText");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -223,6 +232,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void HideNPCDetail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideNPCDetail, "BmGame.RHudModuleDetectiveMode.HideNPCDetail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,6 +246,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetNPCDetail(float location_x, float location_y, float location_depth, int physical_state_enum, int weapon_enum, int extra_info_enum, bool is_armoured, BmSDK.FString optional_name)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNPCDetail, "BmGame.RHudModuleDetectiveMode.SetNPCDetail");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +268,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void HideSmokePercentage()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideSmokePercentage, "BmGame.RHudModuleDetectiveMode.HideSmokePercentage");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -270,6 +282,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetSmokePercentage(int SmokePercentage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSmokePercentage, "BmGame.RHudModuleDetectiveMode.SetSmokePercentage");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -284,6 +297,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetNPCCountString(int total, BmSDK.FString Str)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNPCCountString, "BmGame.RHudModuleDetectiveMode.SetNPCCountString");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -299,6 +313,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void UpdateNPCCounts(int Armed, int UnArmed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateNPCCounts, "BmGame.RHudModuleDetectiveMode.UpdateNPCCounts");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -314,6 +329,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void CloseCurrentDetail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseCurrentDetail, "BmGame.RHudModuleDetectiveMode.CloseCurrentDetail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +343,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void ClearDetailIfMatches(BmSDK.BmGame.RHudModuleDetectiveMode.DetailDisplayType _TestDetailType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDetailIfMatches, "BmGame.RHudModuleDetectiveMode.ClearDetailIfMatches");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -341,6 +358,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetCurrentDetail(BmSDK.BmGame.RHudModuleDetectiveMode.DetailDisplayType _CurrentDetailType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentDetail, "BmGame.RHudModuleDetectiveMode.SetCurrentDetail");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -355,6 +373,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void Detective_InfoBoxOpenSound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detective_InfoBoxOpenSound, "BmGame.RHudModuleDetectiveMode.Detective_InfoBoxOpenSound");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -368,6 +387,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe override void SetVisible(bool is_visible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVisible, "BmGame.RHudModuleDetectiveMode.SetVisible");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -382,6 +402,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleDetectiveMode.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -395,6 +416,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe override void InitialiseFlash()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseFlash, "BmGame.RHudModuleDetectiveMode.InitialiseFlash");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -408,6 +430,7 @@ public partial class RHudModuleDetectiveMode : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleDetectiveMode.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

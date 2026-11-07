@@ -84,6 +84,7 @@ public partial class RCapeRenderingComponent : BmSDK.Engine.ActorComponent, BmSD
     /// </summary>
     public unsafe virtual void HandleDebugLineDrawing()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleDebugLineDrawing, "BmGame.RCapeRenderingComponent.HandleDebugLineDrawing");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

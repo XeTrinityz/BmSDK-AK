@@ -97,6 +97,7 @@ public partial class RSeqAct_FadeSound : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool TickFade(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickFade, "BmGame.RSeqAct_FadeSound.TickFade");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_FadeSound : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     /// </summary>
     public unsafe virtual void SetFadeType(bool FadeIn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFadeType, "BmGame.RSeqAct_FadeSound.SetFadeType");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

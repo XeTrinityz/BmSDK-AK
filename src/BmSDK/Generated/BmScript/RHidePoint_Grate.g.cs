@@ -84,6 +84,7 @@ public partial class RHidePoint_Grate : BmSDK.BmGame.RHidePoint_GrateBase, BmSDK
     /// </summary>
     public unsafe override void MovePawnTo(BmSDK.Engine.Pawn PawnToMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePawnTo, "BmScript.RHidePoint_Grate.MovePawnTo");
         byte* paramsPtr = stackalloc byte[208];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHidePoint_Grate : BmSDK.BmGame.RHidePoint_GrateBase, BmSDK
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnVillain FindTargetAboveGrate(BmSDK.BmGame.RPlayerController CheckingController)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindTargetAboveGrate, "BmScript.RHidePoint_Grate.FindTargetAboveGrate");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

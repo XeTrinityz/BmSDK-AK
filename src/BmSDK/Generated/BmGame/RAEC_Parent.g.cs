@@ -84,6 +84,7 @@ public partial class RAEC_Parent : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSD
     /// </summary>
     public unsafe override void AssignToEvent(BmSDK.BmGame.RBMAIController Con)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignToEvent, "BmGame.RAEC_Parent.AssignToEvent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_Parent : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSD
     /// </summary>
     public unsafe override bool WantsToGlanceAt(BmSDK.Engine.Actor TestTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WantsToGlanceAt, "BmGame.RAEC_Parent.WantsToGlanceAt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RAEC_Parent : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSD
     /// </summary>
     public unsafe virtual void SetNewFearLevel(BmSDK.BmGame.RBMRoomAIState.VillainFearLevel NewFearLevel)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNewFearLevel, "BmGame.RAEC_Parent.SetNewFearLevel");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RAEC_Parent : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSD
     /// </summary>
     public unsafe virtual void SetRoom(BmSDK.BmGame.RBMRoomAIState NewRoomState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRoom, "BmGame.RAEC_Parent.SetRoom");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RAEC_Parent : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSD
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.RAEC_Parent.GetBarkPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

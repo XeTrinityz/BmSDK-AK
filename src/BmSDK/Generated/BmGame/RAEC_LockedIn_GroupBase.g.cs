@@ -79,6 +79,7 @@ public partial class RAEC_LockedIn_GroupBase : BmSDK.BmGame.RAlertEventCoordinat
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_LockedIn_GroupBase.Tick");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

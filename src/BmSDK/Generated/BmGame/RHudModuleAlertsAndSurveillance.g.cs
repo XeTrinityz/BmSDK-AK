@@ -84,6 +84,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetSurveillanceStationAndSpeaker(BmSDK.FString surv_station, BmSDK.FString surv_speaker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSurveillanceStationAndSpeaker, "BmGame.RHudModuleAlertsAndSurveillance.SetSurveillanceStationAndSpeaker");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetInterceptAngleAndRangePrivate(int AngleToInterceptActor, int DistanceToInterceptActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInterceptAngleAndRangePrivate, "BmGame.RHudModuleAlertsAndSurveillance.SetInterceptAngleAndRangePrivate");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetInterceptAngleAndRange(int AngleToInterceptActor, int DistanceToInterceptActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInterceptAngleAndRange, "BmGame.RHudModuleAlertsAndSurveillance.SetInterceptAngleAndRange");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetSurveillanceMovieState(BmSDK.FString surv_type, BmSDK.FString surv_frame)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSurveillanceMovieState, "BmGame.RHudModuleAlertsAndSurveillance.SetSurveillanceMovieState");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -144,6 +148,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetInvestigateModeActive(bool is_active)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInvestigateModeActive, "BmGame.RHudModuleAlertsAndSurveillance.SetInvestigateModeActive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetSurveillanceMode(BmSDK.BmGame.RHudModuleAlertsAndSurveillance.SurveillanceModes surv_mode, BmSDK.FString surv_station, BmSDK.FString surv_speaker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSurveillanceMode, "BmGame.RHudModuleAlertsAndSurveillance.SetSurveillanceMode");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -174,6 +180,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void HideAudioAlert()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideAudioAlert, "BmGame.RHudModuleAlertsAndSurveillance.HideAudioAlert");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -187,6 +194,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetTripleTrailParamsPrivate(bool is_visible, int active_trail_index, bool trail_0_complete, bool trail_1_complete, bool trail_2_complete)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTripleTrailParamsPrivate, "BmGame.RHudModuleAlertsAndSurveillance.SetTripleTrailParamsPrivate");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -205,6 +213,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void DisableTripleTrail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableTripleTrail, "BmGame.RHudModuleAlertsAndSurveillance.DisableTripleTrail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +227,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void UpdateTripleTrail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTripleTrail, "BmGame.RHudModuleAlertsAndSurveillance.UpdateTripleTrail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +241,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetTripleTrailFocus(BmSDK.BmGame.REvidence TheEvidence)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTripleTrailFocus, "BmGame.RHudModuleAlertsAndSurveillance.SetTripleTrailFocus");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -245,6 +256,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetupTripleTracker(BmSDK.FString name0, BmSDK.FString name1, BmSDK.FString name2)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupTripleTracker, "BmGame.RHudModuleAlertsAndSurveillance.SetupTripleTracker");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +273,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetForensicTrailString(BmSDK.FString trail_name)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForensicTrailString, "BmGame.RHudModuleAlertsAndSurveillance.SetForensicTrailString");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -275,6 +288,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe virtual void SetForensicTrail(BmSDK.BmGame.REvidence TheEvidence)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForensicTrail, "BmGame.RHudModuleAlertsAndSurveillance.SetForensicTrail");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -289,6 +303,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe override void InitialiseFlash()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseFlash, "BmGame.RHudModuleAlertsAndSurveillance.InitialiseFlash");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -302,6 +317,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleAlertsAndSurveillance.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -315,6 +331,7 @@ public partial class RHudModuleAlertsAndSurveillance : BmSDK.BmGame.RHudModule, 
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleAlertsAndSurveillance.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

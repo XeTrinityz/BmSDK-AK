@@ -79,6 +79,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RBMCombatPoint_EnvironmentAttackObject.OnToggle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe virtual void UpdateVillainInSamePylon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVillainInSamePylon, "BmGame.RBMCombatPoint_EnvironmentAttackObject.UpdateVillainInSamePylon");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +108,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetVillainInRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainInRange, "BmGame.RBMCombatPoint_EnvironmentAttackObject.GetVillainInRange");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +122,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override void UpdateHighlight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateHighlight, "BmGame.RBMCombatPoint_EnvironmentAttackObject.UpdateHighlight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +136,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RBMCombatPoint_EnvironmentAttackObject.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +151,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe virtual void FadedStateChanged()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FadedStateChanged, "BmGame.RBMCombatPoint_EnvironmentAttackObject.FadedStateChanged");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +165,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override void DoRangeCheck()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoRangeCheck, "BmGame.RBMCombatPoint_EnvironmentAttackObject.DoRangeCheck");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -172,6 +179,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override void UsedByPawn(BmSDK.BmGame.RPawnCombat NewUser, BmSDK.Engine.Actor NewTarget = default, bool bUsedDuringTaunt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedByPawn, "BmGame.RBMCombatPoint_EnvironmentAttackObject.UsedByPawn");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +196,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override void SetCurrentVillainHighlight(bool bOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentVillainHighlight, "BmGame.RBMCombatPoint_EnvironmentAttackObject.SetCurrentVillainHighlight");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +211,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override bool CanBeUsedByPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeUsedByPlayer, "BmGame.RBMCombatPoint_EnvironmentAttackObject.CanBeUsedByPlayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +225,7 @@ public partial class RBMCombatPoint_EnvironmentAttackObject : BmSDK.BmGame.RBMCo
     /// </summary>
     public unsafe override bool CanBeUsedByPawn(BmSDK.BmGame.RPawnCombat NewUser, BmSDK.Engine.Actor TargetActor, bool bTaunting)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeUsedByPawn, "BmGame.RBMCombatPoint_EnvironmentAttackObject.CanBeUsedByPawn");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

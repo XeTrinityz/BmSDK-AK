@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_RelativeAnimMovePairedWithNPC : BmSDK.
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_RelativeAnimMovePairedWithNPC.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSpecialMoveInstance_RelativeAnimMovePairedWithNPC : BmSDK.
     /// </summary>
     public unsafe virtual void PlayLinkedTransition(BmSDK.BmGame.RBMPawnAI LinkedPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayLinkedTransition, "BmScript.RSpecialMoveInstance_RelativeAnimMovePairedWithNPC.PlayLinkedTransition");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RSpecialMoveInstance_RelativeAnimMovePairedWithNPC : BmSDK.
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_RelativeAnimMovePairedWithNPC.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class DirectionalLightComponent : BmSDK.Engine.LightComponent, Bm
     /// </summary>
     public unsafe override void OnUpdatePropertyBrightness()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyBrightness, "Engine.DirectionalLightComponent.OnUpdatePropertyBrightness");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class DirectionalLightComponent : BmSDK.Engine.LightComponent, Bm
     /// </summary>
     public unsafe override void OnUpdatePropertyLightColor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyLightColor, "Engine.DirectionalLightComponent.OnUpdatePropertyLightColor");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

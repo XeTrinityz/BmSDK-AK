@@ -84,6 +84,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetMiddleInfo(BmSDK.FString line1)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMiddleInfo, "BmGame.RHudModuleExtraSequence.SetMiddleInfo");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetSideInfo(int side_index, BmSDK.FString line1, BmSDK.FString line2, BmSDK.FString icon_string)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSideInfo, "BmGame.RHudModuleExtraSequence.SetSideInfo");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +117,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void DoOutro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoOutro, "BmGame.RHudModuleExtraSequence.DoOutro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +131,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetSpeedBar(float Speed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpeedBar, "BmGame.RHudModuleExtraSequence.SetSpeedBar");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void HideReticle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideReticle, "BmGame.RHudModuleExtraSequence.HideReticle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetReticle(float ret_x, float ret_y, BmSDK.FString ret_anim, float ret_lockon, float scan_progress)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetReticle, "BmGame.RHudModuleExtraSequence.SetReticle");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -173,6 +179,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetupTargetNames(BmSDK.TArray<BmSDK.FString> names_and_states)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupTargetNames, "BmGame.RHudModuleExtraSequence.SetupTargetNames");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -187,6 +194,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetWorkerFound(BmSDK.FString worker_name, BmSDK.FString worker_info, BmSDK.FString worker_id)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWorkerFound, "BmGame.RHudModuleExtraSequence.SetWorkerFound");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +211,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe virtual void SetIsInvestigateModeAuto()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIsInvestigateModeAuto, "BmGame.RHudModuleExtraSequence.SetIsInvestigateModeAuto");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +225,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleExtraSequence.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +239,7 @@ public partial class RHudModuleExtraSequence : BmSDK.BmGame.RHudModule, BmSDK.IG
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleExtraSequence.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

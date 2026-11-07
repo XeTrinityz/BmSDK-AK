@@ -84,6 +84,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RemoveForceTickIfCloseObject(BmSDK.GameObject OldObject)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveForceTickIfCloseObject, "BmGame.RBMAIController.RemoveForceTickIfCloseObject");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddForceTickIfCloseObject(BmSDK.GameObject NewObject, bool bSetInAIManager = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddForceTickIfCloseObject, "BmGame.RBMAIController.AddForceTickIfCloseObject");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool ShouldForceTickIfClose()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldForceTickIfClose, "BmGame.RBMAIController.ShouldForceTickIfClose");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RemoveForceTickObject(BmSDK.GameObject OldObject)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveForceTickObject, "BmGame.RBMAIController.RemoveForceTickObject");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddForceTickObject(BmSDK.GameObject NewObject, bool bSetInAIManager = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddForceTickObject, "BmGame.RBMAIController.AddForceTickObject");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool ShouldForceTick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldForceTick, "BmGame.RBMAIController.ShouldForceTick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +181,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FString GetUniqueIdentifier()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUniqueIdentifier, "BmGame.RBMAIController.GetUniqueIdentifier");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +195,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool CanPairUp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPairUp, "BmGame.RBMAIController.CanPairUp");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -201,6 +209,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IdleConfigIsBlockingLowPriorityPred()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IdleConfigIsBlockingLowPriorityPred, "BmGame.RBMAIController.IdleConfigIsBlockingLowPriorityPred");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +223,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void TakedownCancelled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakedownCancelled, "BmGame.RBMAIController.TakedownCancelled");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -227,6 +237,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsPlacingMine()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlacingMine, "BmGame.RBMAIController.IsPlacingMine");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -240,6 +251,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyGunJamDiscovered()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGunJamDiscovered, "BmGame.RBMAIController.NotifyGunJamDiscovered");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -253,6 +265,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsLockedUp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLockedUp, "BmGame.RBMAIController.IsLockedUp");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -266,6 +279,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsPredThugInSmoke()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPredThugInSmoke, "BmGame.RBMAIController.IsPredThugInSmoke");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -279,6 +293,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyPathEdgeReached(BmSDK.BmGame.RBMAIAction NotifyAction, BmSDK.BmGame.RNavigationHandle NotifyHandle, int EdgeID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPathEdgeReached, "BmGame.RBMAIController.NotifyPathEdgeReached");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -295,6 +310,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyPathFound(BmSDK.BmGame.RBMAIAction NotifyAction, BmSDK.BmGame.RNavigationHandle NotifyHandle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPathFound, "BmGame.RBMAIController.NotifyPathFound");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -310,6 +326,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyEvent(BmSDK.BmGame.RBMAIAction NotifyAction, BmSDK.FString EventType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEvent, "BmGame.RBMAIController.NotifyEvent");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -325,6 +342,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyFailed(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFailed, "BmGame.RBMAIController.NotifyFailed");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -339,6 +357,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyStopped(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyStopped, "BmGame.RBMAIController.NotifyStopped");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -353,6 +372,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RBMAIController.NotifyFinished");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -367,6 +387,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SeenAnotherThug(BmSDK.BmGame.RPawnVillain SeenPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SeenAnotherThug, "BmGame.RBMAIController.SeenAnotherThug");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -381,6 +402,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void FinishGlance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishGlance, "BmGame.RBMAIController.FinishGlance");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -394,6 +416,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool GlanceCurrentlyHandled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GlanceCurrentlyHandled, "BmGame.RBMAIController.GlanceCurrentlyHandled");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -407,6 +430,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool ApplyGlance(BmSDK.BmGame.AlertInstance GlanceTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyGlance, "BmGame.RBMAIController.ApplyGlance");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -421,6 +445,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void UpdateGlanceTarget(BmSDK.BmGame.AlertInstance NewBestGlanceable)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateGlanceTarget, "BmGame.RBMAIController.UpdateGlanceTarget");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -435,6 +460,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PawnBumpedByPlayer(BmSDK.BmGame.RPawnPlayer Player)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnBumpedByPlayer, "BmGame.RBMAIController.PawnBumpedByPlayer");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -449,6 +475,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void EndPredator()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndPredator, "BmGame.RBMAIController.EndPredator");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -462,6 +489,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsClaimedBy(BmSDK.BmGame.RAlertEventCoordinatorBase TestCoord)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsClaimedBy, "BmGame.RBMAIController.IsClaimedBy");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -476,6 +504,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool SuccessfullyClaimedBy(BmSDK.BmGame.RAlertEventCoordinatorSolo NewCoord)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuccessfullyClaimedBy, "BmGame.RBMAIController.SuccessfullyClaimedBy");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -490,6 +519,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool HasCorrectTopLevelAECFor(BmSDK.BmGame.RAlertEventCoordinatorBase TestAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasCorrectTopLevelAECFor, "BmGame.RBMAIController.HasCorrectTopLevelAECFor");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -504,6 +534,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsLitePredThug()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLitePredThug, "BmGame.RBMAIController.IsLitePredThug");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -517,6 +548,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void NotifyGunEmpty()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGunEmpty, "BmGame.RBMAIController.NotifyGunEmpty");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -530,6 +562,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void GetUpNotify()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUpNotify, "BmGame.RBMAIController.GetUpNotify");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -543,6 +576,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void IsBeingTakenDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBeingTakenDown, "BmGame.RBMAIController.IsBeingTakenDown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -556,6 +590,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PlayHangAttackScream()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHangAttackScream, "BmGame.RBMAIController.PlayHangAttackScream");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -569,6 +604,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController.BatmanGrabType CanBatmanGrab()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBatmanGrab, "BmGame.RBMAIController.CanBatmanGrab");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -582,6 +618,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void GetAlertState(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAlertState, "BmGame.RBMAIController.GetAlertState");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -596,6 +633,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void InformOfDroneExploding()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InformOfDroneExploding, "BmGame.RBMAIController.InformOfDroneExploding");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -609,6 +647,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void BroadcastBatmanSpottedToSnipers(BmSDK.Engine.Actor PlayerActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BroadcastBatmanSpottedToSnipers, "BmGame.RBMAIController.BroadcastBatmanSpottedToSnipers");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -630,6 +669,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PredThugDisarmed(bool bPostponeReaction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PredThugDisarmed, "BmGame.RBMAIController.PredThugDisarmed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -644,6 +684,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetupNoisyTakedownWithNoReaction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupNoisyTakedownWithNoReaction, "BmGame.RBMAIController.SetupNoisyTakedownWithNoReaction");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -657,6 +698,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void DoNoisyTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoNoisyTakedown, "BmGame.RBMAIController.DoNoisyTakedown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -670,6 +712,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddAlert(BmSDK.Engine.Actor NewActor, System.Numerics.Vector3 NewLocation, bool bAddIfNew = default, float BackDateTime = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAlert, "BmGame.RBMAIController.AddAlert");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -687,6 +730,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RemoveAlertActor(BmSDK.Engine.Actor ExAlertActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAlertActor, "BmGame.RBMAIController.RemoveAlertActor");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -701,6 +745,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddNewAlertActor(BmSDK.Engine.Actor NewAlertActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddNewAlertActor, "BmGame.RBMAIController.AddNewAlertActor");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -715,6 +760,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void FireDualPlayPawnSeenEvents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireDualPlayPawnSeenEvents, "BmGame.RBMAIController.FireDualPlayPawnSeenEvents");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -728,6 +774,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void FireSeenEvents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireSeenEvents, "BmGame.RBMAIController.FireSeenEvents");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -741,6 +788,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool ShouldIgnoreSilentPredator()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldIgnoreSilentPredator, "BmGame.RBMAIController.ShouldIgnoreSilentPredator");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -754,6 +802,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RoomFearChanged(BmSDK.BmGame.RBMRoomAIState.VillainFearLevel NewLevel)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RoomFearChanged, "BmGame.RBMAIController.RoomFearChanged");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -768,6 +817,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMRoomAIState.VillainFearLevel GetAnimationFearLevel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimationFearLevel, "BmGame.RBMAIController.GetAnimationFearLevel");
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -781,6 +831,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMRoomAIState.VillainFearLevel GetDialogueFearLevel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDialogueFearLevel, "BmGame.RBMAIController.GetDialogueFearLevel");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -794,6 +845,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void DrawViewCone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawViewCone, "BmGame.RBMAIController.DrawViewCone");
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -807,6 +859,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void GetAIThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIThoughts, "BmGame.RBMAIController.GetAIThoughts");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -821,6 +874,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddThought(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, BmSDK.FString ThoughtText, int R = default, int G = default, int B = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddThought, "BmGame.RBMAIController.AddThought");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -839,6 +893,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe override void RemoveFromAIManager()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFromAIManager, "BmGame.RBMAIController.RemoveFromAIManager");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -852,6 +907,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ProcessCarCollisionWarning(BmSDK.Engine.Actor V, float Speed, BmSDK.BmGame.RGameInfo.EEvadeVehicleType EvadeType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessCarCollisionWarning, "BmGame.RBMAIController.ProcessCarCollisionWarning");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -868,6 +924,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool CanCheckFalling()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCheckFalling, "BmGame.RBMAIController.CanCheckFalling");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -888,6 +945,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool DodgeLineLaunchKick(BmSDK.BmGame.RPawnPlayer Attacker, System.Numerics.Vector3 KickDirection)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DodgeLineLaunchKick, "BmGame.RBMAIController.DodgeLineLaunchKick");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -903,6 +961,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool DodgeDropAttack(BmSDK.BmGame.RPawnPlayer Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DodgeDropAttack, "BmGame.RBMAIController.DodgeDropAttack");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -917,6 +976,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool CheckDodgeProjectile(BmSDK.BmGame.RPawn Thrower, BmSDK.FName TargetBone, System.Numerics.Vector3 ProjPos, int BatarangID, bool bForceDodge = default, bool bSteerableProj = default, bool bDodgeAwayFromPosition = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckDodgeProjectile, "BmGame.RBMAIController.CheckDodgeProjectile");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -937,6 +997,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.Class GetDodgeClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDodgeClass, "BmGame.RBMAIController.GetDodgeClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -950,6 +1011,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool CanDodgeProjectile(System.Numerics.Vector3 ThrownFromPos, int CheckBatarangID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDodgeProjectile, "BmGame.RBMAIController.CanDodgeProjectile");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -965,6 +1027,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void BlockAttack(BmSDK.BmGame.RPawnCombat Attacker, BmSDK.Class dmgType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockAttack, "BmGame.RBMAIController.BlockAttack");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -980,6 +1043,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PrepareToBlockAttack(BmSDK.BmGame.RPawnCombat Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepareToBlockAttack, "BmGame.RBMAIController.PrepareToBlockAttack");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -994,6 +1058,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RepelAttack(BmSDK.BmGame.RPawnCombat Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RepelAttack, "BmGame.RBMAIController.RepelAttack");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1008,6 +1073,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RepelledAttacker(BmSDK.BmGame.RPawnCombat Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RepelledAttacker, "BmGame.RBMAIController.RepelledAttacker");
         byte* paramsPtr = stackalloc byte[272];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1022,6 +1088,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool HandleStickyGelHit(BmSDK.BmGame.RPawnPlayer Player, System.Numerics.Vector3 HitNormal, BmSDK.BmGame.RExplosiveGelBomb Proj = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleStickyGelHit, "BmGame.RBMAIController.HandleStickyGelHit");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1038,6 +1105,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool HandleFreezeVentHit(BmSDK.BmGame.RPawnPlayer Player)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleFreezeVentHit, "BmGame.RBMAIController.HandleFreezeVentHit");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1052,6 +1120,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool HandleFreezeClusterGrenadeHit(BmSDK.BmGame.RPawnPlayer Player, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleFreezeClusterGrenadeHit, "BmGame.RBMAIController.HandleFreezeClusterGrenadeHit");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1067,6 +1136,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool HandleFreezeBlastHit(BmSDK.BmGame.RPawnPlayer Player, System.Numerics.Vector3 HitNormal, BmSDK.BmGame.RFreezeSprayProjectile Proj = default, bool bInstantFreeze = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleFreezeBlastHit, "BmGame.RBMAIController.HandleFreezeBlastHit");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1084,6 +1154,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void TakeElectricityDamage(System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor HitActor = default, bool bKill = default, BmSDK.Class dmgType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeElectricityDamage, "BmGame.RBMAIController.TakeElectricityDamage");
         byte* paramsPtr = stackalloc byte[316];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1102,6 +1173,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void GoRagdoll(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo, BmSDK.BmGame.RGameInfo.RagdollStunType NewStunType = default, bool bKill = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoRagdoll, "BmGame.RBMAIController.GoRagdoll");
         byte* paramsPtr = stackalloc byte[308];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1118,6 +1190,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsStunned()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStunned, "BmGame.RBMAIController.IsStunned");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1138,6 +1211,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetStunnedRagdoll(bool bNewValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStunnedRagdoll, "BmGame.RBMAIController.SetStunnedRagdoll");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1152,6 +1226,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void Redirected()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Redirected, "BmGame.RBMAIController.Redirected");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1165,6 +1240,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool CanBeHitInCombat(BmSDK.BmGame.RDamageType DamageType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeHitInCombat, "BmGame.RBMAIController.CanBeHitInCombat");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1179,6 +1255,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void CombatMoveInitialised(BmSDK.BmGame.RCombatMove NewMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatMoveInitialised, "BmGame.RBMAIController.CombatMoveInitialised");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1193,6 +1270,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMCombatManager GetCM()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCM, "BmGame.RBMAIController.GetCM");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1206,6 +1284,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void DemoteBehaviour(BmSDK.BmGame.RBMBehaviour BehaviourToDemote)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DemoteBehaviour, "BmGame.RBMAIController.DemoteBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1220,6 +1299,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PromoteBehaviour(BmSDK.BmGame.RBMBehaviour BehaviourToPromote)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PromoteBehaviour, "BmGame.RBMAIController.PromoteBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1234,6 +1314,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void InstantExitBehaviour(BmSDK.BmGame.RBMBehaviour BehaviourToExit, bool bCallEndInterrupt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstantExitBehaviour, "BmGame.RBMAIController.InstantExitBehaviour");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1249,6 +1330,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void TickBehaviour(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickBehaviour, "BmGame.RBMAIController.TickBehaviour");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1270,6 +1352,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual float GetTimeUntilFreeToAct()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeUntilFreeToAct, "BmGame.RBMAIController.GetTimeUntilFreeToAct");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1283,6 +1366,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsWalkingTowards(System.Numerics.Vector3 TestPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWalkingTowards, "BmGame.RBMAIController.IsWalkingTowards");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1297,6 +1381,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool PointIsValidLookatPos(System.Numerics.Vector3 TestPos, bool bDoTrace = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointIsValidLookatPos, "BmGame.RBMAIController.PointIsValidLookatPos");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1312,6 +1397,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDirectionOfFocus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDirectionOfFocus, "BmGame.RBMAIController.GetDirectionOfFocus");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1325,6 +1411,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SpawnDefaultBehaviour()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDefaultBehaviour, "BmGame.RBMAIController.SpawnDefaultBehaviour");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1338,6 +1425,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FName GetEntryAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEntryAnim, "BmGame.RBMAIController.GetEntryAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1351,6 +1439,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetEntryAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEntryAnimSet, "BmGame.RBMAIController.GetEntryAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1364,6 +1453,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsValidBarkSpeaker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidBarkSpeaker, "BmGame.RBMAIController.IsValidBarkSpeaker");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1377,6 +1467,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ProcessWeaponChange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessWeaponChange, "BmGame.RBMAIController.ProcessWeaponChange");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1390,6 +1481,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void WeaponChanged()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WeaponChanged, "BmGame.RBMAIController.WeaponChanged");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1403,6 +1495,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool ShouldCombatantForceCombatCamera()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldCombatantForceCombatCamera, "BmGame.RBMAIController.ShouldCombatantForceCombatCamera");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1416,6 +1509,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool ShouldCombatantLockDoors()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldCombatantLockDoors, "BmGame.RBMAIController.ShouldCombatantLockDoors");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1429,6 +1523,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ClearCombatBehaviour(BmSDK.BmGame.RBMBehaviour_Combat CombatBehaviourToClear)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearCombatBehaviour, "BmGame.RBMAIController.ClearCombatBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1443,6 +1538,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SetCombatBehaviour(BmSDK.BmGame.RBMBehaviour_Combat NewCombatBehaviour)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCombatBehaviour, "BmGame.RBMAIController.SetCombatBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1457,6 +1553,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void SpawnCombatBehaviour()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnCombatBehaviour, "BmGame.RBMAIController.SpawnCombatBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1470,6 +1567,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ExitCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitCombat, "BmGame.RBMAIController.ExitCombat");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1483,6 +1581,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void EnterCombat(bool bCanReactFirst = default, bool bForceIntoCombat = default, bool bFearTakedownReaction = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterCombat, "BmGame.RBMAIController.EnterCombat");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1499,6 +1598,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PlayReactionWhileInCombat(System.Numerics.Vector3 EventLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayReactionWhileInCombat, "BmGame.RBMAIController.PlayReactionWhileInCombat");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1513,6 +1613,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool RioterShouldAvoidCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RioterShouldAvoidCombat, "BmGame.RBMAIController.RioterShouldAvoidCombat");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1526,6 +1627,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void EnterCombatWithDefaults()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterCombatWithDefaults, "BmGame.RBMAIController.EnterCombatWithDefaults");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1539,6 +1641,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void DelayedEnterCombat(float Delay)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DelayedEnterCombat, "BmGame.RBMAIController.DelayedEnterCombat");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1553,6 +1656,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PlayEnterCombatCue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayEnterCombatCue, "BmGame.RBMAIController.PlayEnterCombatCue");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1566,6 +1670,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void HandleNoise(BmSDK.BmGame.RPawnPlayer PlayerInstigator)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleNoise, "BmGame.RBMAIController.HandleNoise");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1580,6 +1685,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBehaviourCustomEyeLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourCustomEyeLocation, "BmGame.RBMAIController.GetBehaviourCustomEyeLocation");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1593,6 +1699,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AdjustAnimatedAimDir(System.Numerics.Vector3 AnimatedDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustAnimatedAimDir, "BmGame.RBMAIController.AdjustAnimatedAimDir");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1614,6 +1721,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void DoPlayerLookAt(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPlayerLookAt, "BmGame.RBMAIController.DoPlayerLookAt");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1628,6 +1736,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool CanLookAtPlayer(BmSDK.BmGame.RPawnPlayer PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanLookAtPlayer, "BmGame.RBMAIController.CanLookAtPlayer");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1642,6 +1751,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void UpdateNotVisibleAlert(float DeltaTime, BmSDK.BmGame.AlertInstance A)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateNotVisibleAlert, "BmGame.RBMAIController.UpdateNotVisibleAlert");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1664,6 +1774,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FString GetAlertText(BmSDK.BmGame.AlertInstance Al)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAlertText, "BmGame.RBMAIController.GetAlertText");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1678,6 +1789,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool GetLOSText(BmSDK.Engine.Actor TestActor, out BmSDK.FString LOSString, out byte R, out byte G, out byte B)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLOSText, "BmGame.RBMAIController.GetLOSText");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1702,6 +1814,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void TriggerPawnActivatedEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPawnActivatedEvent, "BmGame.RBMAIController.TriggerPawnActivatedEvent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1715,6 +1828,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool TriggerPawnEvent(BmSDK.Class EventClass)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPawnEvent, "BmGame.RBMAIController.TriggerPawnEvent");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1729,6 +1843,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void OutputBehaviourStack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutputBehaviourStack, "BmGame.RBMAIController.OutputBehaviourStack");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1742,6 +1857,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void BehaviourStateChanged(BmSDK.FName NewState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BehaviourStateChanged, "BmGame.RBMAIController.BehaviourStateChanged");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1756,6 +1872,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ExitConditionActivated(BmSDK.FString ExitConditionString)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitConditionActivated, "BmGame.RBMAIController.ExitConditionActivated");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1770,6 +1887,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddToBehaviourHistory(BmSDK.FString BehaviourInfoString)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToBehaviourHistory, "BmGame.RBMAIController.AddToBehaviourHistory");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1784,6 +1902,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour GetBehaviourOfClass(BmSDK.Class TestClass, bool bExact = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourOfClass, "BmGame.RBMAIController.GetBehaviourOfClass");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1799,6 +1918,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool HasBehaviourOfClass(BmSDK.Class TestClass, bool bExact = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBehaviourOfClass, "BmGame.RBMAIController.HasBehaviourOfClass");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1814,6 +1934,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsBehaviourActive(int Index = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBehaviourActive, "BmGame.RBMAIController.IsBehaviourActive");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1828,6 +1949,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RemoveBehaviourFromList(BmSDK.BmGame.RBMBehaviour BehaviourToRemove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveBehaviourFromList, "BmGame.RBMAIController.RemoveBehaviourFromList");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1842,6 +1964,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour GetFirstNonInterruptBehaviour()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstNonInterruptBehaviour, "BmGame.RBMAIController.GetFirstNonInterruptBehaviour");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1855,6 +1978,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour GetLastBehaviour()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLastBehaviour, "BmGame.RBMAIController.GetLastBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1868,6 +1992,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void TryClearSpecialMoves()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryClearSpecialMoves, "BmGame.RBMAIController.TryClearSpecialMoves");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1881,6 +2006,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ClearSpawnedBehaviours()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearSpawnedBehaviours, "BmGame.RBMAIController.ClearSpawnedBehaviours");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1894,6 +2020,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ClearBehavioursOfClass(BmSDK.Class TestClass, bool bExact = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearBehavioursOfClass, "BmGame.RBMAIController.ClearBehavioursOfClass");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1909,6 +2036,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ClearInterruptBehaviours(bool bCallEndInterrupt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearInterruptBehaviours, "BmGame.RBMAIController.ClearInterruptBehaviours");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1923,6 +2051,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ClearNonInterruptBehaviours()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNonInterruptBehaviours, "BmGame.RBMAIController.ClearNonInterruptBehaviours");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1936,6 +2065,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ClearBehaviourList()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearBehaviourList, "BmGame.RBMAIController.ClearBehaviourList");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1956,6 +2086,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RemoveExitCondition(BmSDK.BmGame.RBMExitCondition ToRemove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveExitCondition, "BmGame.RBMAIController.RemoveExitCondition");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1970,6 +2101,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void AddExitCondition(BmSDK.BmGame.RBMExitCondition NewExitCondition)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddExitCondition, "BmGame.RBMAIController.AddExitCondition");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1984,6 +2116,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour SpawnBehaviour(BmSDK.Class BehaviourClass, BmSDK.BmGame.RBMBehaviour ParentBehaviour = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnBehaviour, "BmGame.RBMAIController.SpawnBehaviour");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1999,6 +2132,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour NativeSpawnBehaviour(BmSDK.Class BehaviourClass)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativeSpawnBehaviour, "BmGame.RBMAIController.NativeSpawnBehaviour");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2013,6 +2147,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ActivateSpawnedBehaviour(BmSDK.BmGame.RBMBehaviour SpawnedBehaviour)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateSpawnedBehaviour, "BmGame.RBMAIController.ActivateSpawnedBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2027,6 +2162,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour CreateSpawnedBehaviour(BmSDK.Class BehaviourClass)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateSpawnedBehaviour, "BmGame.RBMAIController.CreateSpawnedBehaviour");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2041,6 +2177,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RegisterSpawnedBehaviour(BmSDK.BmGame.RBMBehaviour NewBehaviour)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterSpawnedBehaviour, "BmGame.RBMAIController.RegisterSpawnedBehaviour");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2055,6 +2192,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool PriorityIsGreaterThan(BmSDK.BmGame.RBMBehaviour BehA, BmSDK.BmGame.RBMBehaviour BehB)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PriorityIsGreaterThan, "BmGame.RBMAIController.PriorityIsGreaterThan");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2070,6 +2208,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RegisterNewBehaviour(BmSDK.BmGame.RBMBehaviour NewBehaviour, bool bInsertAtEnd = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterNewBehaviour, "BmGame.RBMAIController.RegisterNewBehaviour");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2085,6 +2224,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void HandleNewBehaviour(BmSDK.BmGame.RBMBehaviour NewBehaviour)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleNewBehaviour, "BmGame.RBMAIController.HandleNewBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2099,6 +2239,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void CleanUpBeforeRemove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CleanUpBeforeRemove, "BmGame.RBMAIController.CleanUpBeforeRemove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2112,6 +2253,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ClearFakeDeadBehaviours()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearFakeDeadBehaviours, "BmGame.RBMAIController.ClearFakeDeadBehaviours");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2125,6 +2267,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RBMAIController.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2138,6 +2281,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe override void PawnDied(BmSDK.Engine.Pawn inPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnDied, "BmGame.RBMAIController.PawnDied");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2152,6 +2296,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe override void UnPossess()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnPossess, "BmGame.RBMAIController.UnPossess");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2165,6 +2310,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void RoomStateChanged()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RoomStateChanged, "BmGame.RBMAIController.RoomStateChanged");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2178,6 +2324,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void PostInitCharacter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostInitCharacter, "BmGame.RBMAIController.PostInitCharacter");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2191,6 +2338,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ReRegisterController()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReRegisterController, "BmGame.RBMAIController.ReRegisterController");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2204,6 +2352,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe override void Possess(BmSDK.Engine.Pawn inPawn, bool bVehicleTransition)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Possess, "BmGame.RBMAIController.Possess");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2219,6 +2368,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void TickMe()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickMe, "BmGame.RBMAIController.TickMe");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2232,6 +2382,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsInBehaviourControlled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInBehaviourControlled, "BmGame.RBMAIController.IsInBehaviourControlled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2245,6 +2396,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBMAIController.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2258,6 +2410,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsBatarangable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatarangable, "BmGame.RBMAIController.IsBatarangable");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2271,6 +2424,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FName GetDroneControlStanceName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDroneControlStanceName, "BmGame.RBMAIController.GetDroneControlStanceName");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2284,6 +2438,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe override void SetTickIsDisabled(bool bInDisabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTickIsDisabled, "BmGame.RBMAIController.SetTickIsDisabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2305,6 +2460,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPathNode_FenceJump FindRailingForPoint(System.Numerics.Vector3 LockPoint, out System.Numerics.Vector3 LockPosition)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindRailingForPoint, "BmGame.RBMAIController.FindRailingForPoint");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2329,6 +2485,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.AlertInstance.VisibilityCategory CalcVisibilityFor(BmSDK.Engine.Actor A, System.Numerics.Vector3 Checkpoint = default, float CanSeePercent = default, System.Numerics.Vector3 LookDir = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalcVisibilityFor, "BmGame.RBMAIController.CalcVisibilityFor");
         byte* paramsPtr = stackalloc byte[53];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2353,6 +2510,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.AlertInstance FindAlertFor(BmSDK.Engine.Actor A)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindAlertFor, "BmGame.RBMAIController.FindAlertFor");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2374,6 +2532,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.AlertInstance FindAlertForPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindAlertForPlayer, "BmGame.RBMAIController.FindAlertForPlayer");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2394,6 +2553,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool PawnIsChunkyTick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnIsChunkyTick, "BmGame.RBMAIController.PawnIsChunkyTick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2414,6 +2574,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool PawnInStasis()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnInStasis, "BmGame.RBMAIController.PawnInStasis");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2434,6 +2595,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ShutDownBehaviour(BmSDK.BmGame.RBMBehaviour BehaviourToExit, bool bCallEndInterrupt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDownBehaviour, "BmGame.RBMAIController.ShutDownBehaviour");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2456,6 +2618,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void TickBehaviourState(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickBehaviourState, "BmGame.RBMAIController.TickBehaviourState");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2477,6 +2640,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIManager GetAIManager()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIManager, "BmGame.RBMAIController.GetAIManager");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2497,6 +2661,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void DoFaceFXForFear()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoFaceFXForFear, "BmGame.RBMAIController.DoFaceFXForFear");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2517,6 +2682,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FName GetSilentPredatorGlanceStanceName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSilentPredatorGlanceStanceName, "BmGame.RBMAIController.GetSilentPredatorGlanceStanceName");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2537,6 +2703,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.FName GetSilentPredatorStanceName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSilentPredatorStanceName, "BmGame.RBMAIController.GetSilentPredatorStanceName");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2557,6 +2724,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ProcessSpottedNotifies()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessSpottedNotifies, "BmGame.RBMAIController.ProcessSpottedNotifies");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2577,6 +2745,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void ProcessSpottableAlerts(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessSpottableAlerts, "BmGame.RBMAIController.ProcessSpottableAlerts");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2598,6 +2767,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVisionCheckEyeLoc()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVisionCheckEyeLoc, "BmGame.RBMAIController.GetVisionCheckEyeLoc");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2618,6 +2788,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetViewDir(bool bFixUpAnimAimDir = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetViewDir, "BmGame.RBMAIController.GetViewDir");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2639,6 +2810,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController.FOVcategory IsPointInFOVWithLookDir(System.Numerics.Vector3 TestPos, System.Numerics.Vector3 LookDir, bool bUseActualAimDirForCloseCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPointInFOVWithLookDir, "BmGame.RBMAIController.IsPointInFOVWithLookDir");
         byte* paramsPtr = stackalloc byte[45];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2662,6 +2834,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController.FOVcategory IsPointInFOV(System.Numerics.Vector3 TestPos, bool bFixUpAnimAimDir = default, bool bUseActualAimDirForCloseCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPointInFOV, "BmGame.RBMAIController.IsPointInFOV");
         byte* paramsPtr = stackalloc byte[37];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2685,6 +2858,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController.FOVcategory IsInFOV(BmSDK.Engine.Actor TestActor, bool bFixUpAnimAimDir = default, bool bUseActualAimDirForCloseCheck = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInFOV, "BmGame.RBMAIController.IsInFOV");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2708,6 +2882,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool IsRunningBehaviour(BmSDK.BmGame.RBMBehaviour TestBehaviour)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRunningBehaviour, "BmGame.RBMAIController.IsRunningBehaviour");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2729,6 +2904,7 @@ public partial class RBMAIController : BmSDK.Engine.AIController, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMBehaviour GetBehaviour(int Index = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviour, "BmGame.RBMAIController.GetBehaviour");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

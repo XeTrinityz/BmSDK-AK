@@ -84,6 +84,7 @@ public partial class RSeqCond_InLevel : BmSDK.Engine.SequenceCondition, BmSDK.IG
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqCond_InLevel.Activated");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqCond_InLevel : BmSDK.Engine.SequenceCondition, BmSDK.IG
     /// </summary>
     public unsafe virtual bool IsInLevel(BmSDK.FName Level)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInLevel, "BmGame.RSeqCond_InLevel.IsInLevel");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetDecalMaterial()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDecalMaterial, "Engine.RockDecalComponent.GetDecalMaterial");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
     /// </summary>
     public unsafe virtual void SetDecalMaterial(BmSDK.Engine.MaterialInterface NewDecalMaterial)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDecalMaterial, "Engine.RockDecalComponent.SetDecalMaterial");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

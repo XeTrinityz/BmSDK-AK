@@ -84,6 +84,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override BmSDK.FName GetTargetEndStance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetEndStance, "BmScript.RBMCombatPoint_JokerBossCell.GetTargetEndStance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnPlayerCombat GetPlayerInRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerInRange, "BmScript.RBMCombatPoint_JokerBossCell.GetPlayerInRange");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnVillain GetVillainInRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainInRange, "BmScript.RBMCombatPoint_JokerBossCell.GetVillainInRange");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override void UsedByPawn(BmSDK.BmGame.RPawnCombat NewUser, BmSDK.Engine.Actor NewTarget = default, bool bUsedDuringTaunt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedByPawn, "BmScript.RBMCombatPoint_JokerBossCell.UsedByPawn");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override bool ShouldKill()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldKill, "BmScript.RBMCombatPoint_JokerBossCell.ShouldKill");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override BmSDK.FName GetAnimName(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimName, "BmScript.RBMCombatPoint_JokerBossCell.GetAnimName");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +173,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override void SetupHighlightMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupHighlightMesh, "BmScript.RBMCombatPoint_JokerBossCell.SetupHighlightMesh");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +187,7 @@ public partial class RBMCombatPoint_JokerBossCell : BmSDK.BmGame.RBMCombatPoint_
     /// </summary>
     public unsafe override void SetMyPylon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMyPylon, "BmScript.RBMCombatPoint_JokerBossCell.SetMyPylon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

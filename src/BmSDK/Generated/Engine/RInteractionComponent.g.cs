@@ -84,6 +84,7 @@ public partial class RInteractionComponent : BmSDK.Engine.ActorComponent, BmSDK.
     /// </summary>
     public unsafe virtual void RemoveRelevantInteraction(BmSDK.FName InteractionToRemove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveRelevantInteraction, "Engine.RInteractionComponent.RemoveRelevantInteraction");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class RInteractionComponent : BmSDK.Engine.ActorComponent, BmSDK.
     /// </summary>
     public unsafe virtual void AddRelevantInteraction(BmSDK.FName NewInteraction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRelevantInteraction, "Engine.RInteractionComponent.AddRelevantInteraction");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

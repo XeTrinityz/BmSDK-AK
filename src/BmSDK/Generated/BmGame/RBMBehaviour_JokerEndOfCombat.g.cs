@@ -97,6 +97,7 @@ public partial class RBMBehaviour_JokerEndOfCombat : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void BeginJokerTauntDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginJokerTauntDialogue, "BmGame.RBMBehaviour_JokerEndOfCombat.BeginJokerTauntDialogue");
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RBMBehaviour_JokerEndOfCombat : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual bool JokerInShot()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerInShot, "BmGame.RBMBehaviour_JokerEndOfCombat.JokerInShot");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RBMBehaviour_JokerEndOfCombat : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_JokerEndOfCombat.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet CustomCombatAnimsets()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomCombatAnimsets, "BmScript.RPawnBossJokerNukeGun.CustomCombatAnimsets");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool CanDoFinalBlow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoFinalBlow, "BmScript.RPawnBossJokerNukeGun.CanDoFinalBlow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool IsAwareOfPlayer(BmSDK.BmGame.RPawnPlayer PlayerPawn, BmSDK.Class dmgType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAwareOfPlayer, "BmScript.RPawnBossJokerNukeGun.IsAwareOfPlayer");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateBasicWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.TArray<BmSDK.Engine.AnimSet> AnimSets, BmSDK.Engine.AnimSet TurnAnimSet = default, bool bForWeap = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateBasicWeaponConfig, "BmScript.RPawnBossJokerNukeGun.CreateBasicWeaponConfig");
         byte* paramsPtr = stackalloc byte[2136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe virtual void JokerPunched()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerPunched, "BmScript.RPawnBossJokerNukeGun.JokerPunched");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult DamagedBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagedBy, "BmScript.RPawnBossJokerNukeGun.DamagedBy");
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +175,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override void Tick(float UpdateTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPawnBossJokerNukeGun.Tick");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +190,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnVillain ForcePickupTarget(BmSDK.BmGame.RPawnVillain OldTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForcePickupTarget, "BmScript.RPawnBossJokerNukeGun.ForcePickupTarget");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +205,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool CanRedirect()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanRedirect, "BmScript.RPawnBossJokerNukeGun.CanRedirect");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FLinearColor GetJokerSickVector()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerSickVector, "BmScript.RPawnBossJokerNukeGun.GetJokerSickVector");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -223,6 +233,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe virtual void SetJokerSickLevel(BmSDK.BmGame.RPawnPlayer PlayerJoker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetJokerSickLevel, "BmScript.RPawnBossJokerNukeGun.SetJokerSickLevel");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -237,6 +248,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe virtual void UpdateJokerSickLevel(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateJokerSickLevel, "BmScript.RPawnBossJokerNukeGun.UpdateJokerSickLevel");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -251,6 +263,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override void SetExplosionVisualDamage(float NewValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetExplosionVisualDamage, "BmScript.RPawnBossJokerNukeGun.SetExplosionVisualDamage");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -265,6 +278,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnBossJokerNukeGun.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +292,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool ShouldForceBeatDownEnd()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldForceBeatDownEnd, "BmScript.RPawnBossJokerNukeGun.ShouldForceBeatDownEnd");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -291,6 +306,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool AreTakedownsFatal()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreTakedownsFatal, "BmScript.RPawnBossJokerNukeGun.AreTakedownsFatal");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -304,6 +320,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool CheckBossCounter(BmSDK.BmGame.RPawnVillain targ)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckBossCounter, "BmScript.RPawnBossJokerNukeGun.CheckBossCounter");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -318,6 +335,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool IsDamageAllowed(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDamageAllowed, "BmScript.RPawnBossJokerNukeGun.IsDamageAllowed");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -332,6 +350,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool ShouldComboTakedownKill(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldComboTakedownKill, "BmScript.RPawnBossJokerNukeGun.ShouldComboTakedownKill");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -346,6 +365,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool SpawnOverrideTakedown(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnOverrideTakedown, "BmScript.RPawnBossJokerNukeGun.SpawnOverrideTakedown");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -360,6 +380,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool OverridePreviousLines()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePreviousLines, "BmScript.RPawnBossJokerNukeGun.OverridePreviousLines");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -373,6 +394,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton GetInteractButton(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractButton, "BmScript.RPawnBossJokerNukeGun.GetInteractButton");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -387,6 +409,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override BmSDK.FString GetPrompt(BmSDK.Engine.PlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrompt, "BmScript.RPawnBossJokerNukeGun.GetPrompt");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -401,6 +424,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmScript.RPawnBossJokerNukeGun.IsActive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -415,6 +439,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool IsButtonPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsButtonPrompt, "BmScript.RPawnBossJokerNukeGun.IsButtonPrompt");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -428,6 +453,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override void Interact(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmScript.RPawnBossJokerNukeGun.Interact");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -442,6 +468,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override void CheckForHitBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForHitBatman, "BmScript.RPawnBossJokerNukeGun.CheckForHitBatman");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -455,6 +482,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetLocationOffset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationOffset, "BmScript.RPawnBossJokerNukeGun.GetLocationOffset");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -468,6 +496,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override float GetPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPriority, "BmScript.RPawnBossJokerNukeGun.GetPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -481,6 +510,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override float GetFOVDegrees(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVDegrees, "BmScript.RPawnBossJokerNukeGun.GetFOVDegrees");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -495,6 +525,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool MustBeCrouched(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MustBeCrouched, "BmScript.RPawnBossJokerNukeGun.MustBeCrouched");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -509,6 +540,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool CanUseInCinematicMode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseInCinematicMode, "BmScript.RPawnBossJokerNukeGun.CanUseInCinematicMode");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -522,6 +554,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override BmSDK.FString GetUpperPrompt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUpperPrompt, "BmScript.RPawnBossJokerNukeGun.GetUpperPrompt");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -535,6 +568,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmScript.RPawnBossJokerNukeGun.CanReachItem");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -549,6 +583,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override float OverridesRun(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridesRun, "BmScript.RPawnBossJokerNukeGun.OverridesRun");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -563,6 +598,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override float GetHeightRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeightRange, "BmScript.RPawnBossJokerNukeGun.GetHeightRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -576,6 +612,7 @@ public partial class RPawnBossJokerNukeGun : BmSDK.BmGame.RPawnVillainThug, BmSD
     /// </summary>
     public unsafe override float GetRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRange, "BmScript.RPawnBossJokerNukeGun.GetRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

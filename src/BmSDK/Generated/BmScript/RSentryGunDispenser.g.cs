@@ -84,6 +84,7 @@ public partial class RSentryGunDispenser : BmSDK.BmGame.RLootSourceBase, BmSDK.I
     /// </summary>
     public unsafe override void SetXrayMaterials()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetXrayMaterials, "BmScript.RSentryGunDispenser.SetXrayMaterials");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSentryGunDispenser : BmSDK.BmGame.RLootSourceBase, BmSDK.I
     /// </summary>
     public unsafe override bool HitByDisruptorGadgetCharge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByDisruptorGadgetCharge, "BmScript.RSentryGunDispenser.HitByDisruptorGadgetCharge");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSentryGunDispenser : BmSDK.BmGame.RLootSourceBase, BmSDK.I
     /// </summary>
     public unsafe override void SetLootExhausted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLootExhausted, "BmScript.RSentryGunDispenser.SetLootExhausted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RSentryGunDispenser : BmSDK.BmGame.RLootSourceBase, BmSDK.I
     /// </summary>
     public unsafe override void BagSpawned(BmSDK.BmGame.RCarriableObjectBagBase NewBag)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BagSpawned, "BmScript.RSentryGunDispenser.BagSpawned");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RSentryGunDispenser : BmSDK.BmGame.RLootSourceBase, BmSDK.I
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RSentryGunDispenser.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

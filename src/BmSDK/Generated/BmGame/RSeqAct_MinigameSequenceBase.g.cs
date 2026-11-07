@@ -92,6 +92,7 @@ public partial class RSeqAct_MinigameSequenceBase : BmSDK.Engine.SeqAct_Latent, 
     /// </summary>
     public unsafe virtual void SetGadgetsEnabled(bool are_enabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGadgetsEnabled, "BmGame.RSeqAct_MinigameSequenceBase.SetGadgetsEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class RSeqAct_MinigameSequenceBase : BmSDK.Engine.SeqAct_Latent, 
     /// </summary>
     public unsafe virtual void TickMinigame(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickMinigame, "BmGame.RSeqAct_MinigameSequenceBase.TickMinigame");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

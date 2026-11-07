@@ -97,6 +97,7 @@ public partial class RSeqAct_DistanceTracker : BmSDK.Engine.SeqAct_Latent, BmSDK
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_DistanceTracker.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_DistanceTracker : BmSDK.Engine.SeqAct_Latent, BmSDK
     /// </summary>
     public unsafe virtual void TickUpdate(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickUpdate, "BmGame.RSeqAct_DistanceTracker.TickUpdate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

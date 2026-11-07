@@ -84,6 +84,7 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     /// </summary>
     public unsafe virtual void SetEnabled(bool NewEnabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.RLightShaftVolumeComponent.SetEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     /// </summary>
     public unsafe virtual bool UpdateBrightness(float NewBrightness)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBrightness, "Engine.RLightShaftVolumeComponent.UpdateBrightness");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +128,7 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
     /// </summary>
     public unsafe virtual bool SetConeAngleAndRadius(float NewConeAngle, float NewRadius)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetConeAngleAndRadius, "Engine.RLightShaftVolumeComponent.SetConeAngleAndRadius");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

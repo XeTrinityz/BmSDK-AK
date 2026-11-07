@@ -84,6 +84,7 @@ public partial class RSeqAct_RandomSwitchForGameOver : BmSDK.Engine.SeqAct_Switc
     /// </summary>
     public unsafe virtual void CopyOutState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyOutState, "BmGame.RSeqAct_RandomSwitchForGameOver.CopyOutState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_RandomSwitchForGameOver : BmSDK.Engine.SeqAct_Switc
     /// </summary>
     public unsafe virtual void CopyInState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyInState, "BmGame.RSeqAct_RandomSwitchForGameOver.CopyInState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

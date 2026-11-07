@@ -79,6 +79,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void ResetForChallenge(bool bChallengeStarted)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetForChallenge, "BmGame.RGooSpray.ResetForChallenge");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetLaunchLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLaunchLocation, "BmGame.RGooSpray.GetLaunchLocation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +108,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmGame.RGooSpray.GetGadgetCamera");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -121,6 +124,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override BmSDK.Engine.Actor FireGadgetGliding()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireGadgetGliding, "BmGame.RGooSpray.FireGadgetGliding");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -134,6 +138,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool UpgradeToSuperComboGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradeToSuperComboGadget, "BmGame.RGooSpray.UpgradeToSuperComboGadget");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -147,6 +152,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void ThrowProjectile()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowProjectile, "BmGame.RGooSpray.ThrowProjectile");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +166,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override BmSDK.BmGame.RGadgetProjectileBase GetProjectileArchetype(bool bSecondary)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetProjectileArchetype, "BmGame.RGooSpray.GetProjectileArchetype");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -174,6 +181,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool CanQuickFire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanQuickFire, "BmGame.RGooSpray.CanQuickFire");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -187,6 +195,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool UseDetonator()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseDetonator, "BmGame.RGooSpray.UseDetonator");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -200,6 +209,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool FireGadgetCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireGadgetCombat, "BmGame.RGooSpray.FireGadgetCombat");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -213,6 +223,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void MergeServerGelSpray(BmSDK.BmGame.RExplosiveGooMine ServerMine)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MergeServerGelSpray, "BmGame.RGooSpray.MergeServerGelSpray");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +245,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RGooSpray.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +259,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void RemovePlacedGel(bool IgnoreTitanCrates = default, bool IgnoreHelis = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemovePlacedGel, "BmGame.RGooSpray.RemovePlacedGel");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -262,6 +275,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void RemoveGelForMatinee()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveGelForMatinee, "BmGame.RGooSpray.RemoveGelForMatinee");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -275,6 +289,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void OnRoomChange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRoomChange, "BmGame.RGooSpray.OnRoomChange");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -288,6 +303,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool DisplayTutorial()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayTutorial, "BmGame.RGooSpray.DisplayTutorial");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -301,6 +317,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void StopDetonateAudio()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopDetonateAudio, "BmGame.RGooSpray.StopDetonateAudio");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -314,6 +331,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void PlayDetonateAudio()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDetonateAudio, "BmGame.RGooSpray.PlayDetonateAudio");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +345,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void TriggerFailedEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFailedEvent, "BmGame.RGooSpray.TriggerFailedEvent");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -340,6 +359,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RGooSpray.GetHelpPrompt");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -355,6 +375,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool CanPlaceGooMine(BmSDK.BmGame.RPawnVillain Villain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPlaceGooMine, "BmGame.RGooSpray.CanPlaceGooMine");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -369,6 +390,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void UpdateTargets()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTargets, "BmGame.RGooSpray.UpdateTargets");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -382,6 +404,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool BeginDetonate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginDetonate, "BmGame.RGooSpray.BeginDetonate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -395,6 +418,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void PlayHostageInDangerLine()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHostageInDangerLine, "BmGame.RGooSpray.PlayHostageInDangerLine");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -408,6 +432,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void DetonateTarget(BmSDK.Engine.Actor Target, float TimeDelay)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetonateTarget, "BmGame.RGooSpray.DetonateTarget");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -423,6 +448,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void ActualDetonateTarget(BmSDK.Engine.Actor Target, float TimeDelay)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActualDetonateTarget, "BmGame.RGooSpray.ActualDetonateTarget");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -438,6 +464,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void DoExplodeStartle(BmSDK.Engine.Actor BombOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoExplodeStartle, "BmGame.RGooSpray.DoExplodeStartle");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -452,6 +479,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void ExplodeVillainMine(BmSDK.Engine.MeshComponent Mine)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeVillainMine, "BmGame.RGooSpray.ExplodeVillainMine");
         byte* paramsPtr = stackalloc byte[356];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -466,6 +494,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool IsValidMineTarget(BmSDK.Engine.Actor TestActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidMineTarget, "BmGame.RGooSpray.IsValidMineTarget");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -480,6 +509,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void DetonatorPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetonatorPressed, "BmGame.RGooSpray.DetonatorPressed");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -493,6 +523,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void PlayFailedGelAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFailedGelAnim, "BmGame.RGooSpray.PlayFailedGelAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -506,6 +537,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void PlayDetonatorAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDetonatorAnim, "BmGame.RGooSpray.PlayDetonatorAnim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -519,6 +551,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void DrawTargets(BmSDK.Engine.HUD H, bool quickGelOnly = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTargets, "BmGame.RGooSpray.DrawTargets");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -534,6 +567,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVillainSocketLocation(BmSDK.BmGame.RPawnVillain Victim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainSocketLocation, "BmGame.RGooSpray.GetVillainSocketLocation");
         byte* paramsPtr = stackalloc byte[244];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -548,6 +582,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void AttachToHand(BmSDK.FName CustomBone = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToHand, "BmGame.RGooSpray.AttachToHand");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -562,6 +597,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void AttachToBelt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToBelt, "BmGame.RGooSpray.AttachToBelt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -575,6 +611,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool UpdateTouchingEnemies()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTouchingEnemies, "BmGame.RGooSpray.UpdateTouchingEnemies");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -595,6 +632,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RGooSpray.Tick");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -609,6 +647,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool UnequipSelf()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnequipSelf, "BmGame.RGooSpray.UnequipSelf");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -622,6 +661,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void ExplodeAllGooMines()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeAllGooMines, "BmGame.RGooSpray.ExplodeAllGooMines");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -635,6 +675,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void DetonateAll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetonateAll, "BmGame.RGooSpray.DetonateAll");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -648,6 +689,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool CanThrowGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanThrowGadget, "BmGame.RGooSpray.CanThrowGadget");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -661,6 +703,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void PlayGooExplosionReaction(System.Numerics.Vector3 ExplosionLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayGooExplosionReaction, "BmGame.RGooSpray.PlayGooExplosionReaction");
         byte* paramsPtr = stackalloc byte[192];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -675,6 +718,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void UnequipGelSpray2()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnequipGelSpray2, "BmGame.RGooSpray.UnequipGelSpray2");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -688,6 +732,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void EquipGelSpray2()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EquipGelSpray2, "BmGame.RGooSpray.EquipGelSpray2");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -701,6 +746,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void ExplodeParticles()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeParticles, "BmGame.RGooSpray.ExplodeParticles");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -714,6 +760,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void EndGelSpray2()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndGelSpray2, "BmGame.RGooSpray.EndGelSpray2");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -727,6 +774,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void StartGelSpray2()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartGelSpray2, "BmGame.RGooSpray.StartGelSpray2");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -740,6 +788,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void EndGelSpray()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndGelSpray, "BmGame.RGooSpray.EndGelSpray");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -753,6 +802,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void StartGelSpray()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartGelSpray, "BmGame.RGooSpray.StartGelSpray");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -766,6 +816,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void PlayerTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmGame.RGooSpray.PlayerTick");
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -780,6 +831,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmGame.RGooSpray.GetPrimedPose");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -807,6 +859,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool IsValidTarget(BmSDK.Engine.Actor Target, BmSDK.Engine.PrimitiveComponent Component)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidTarget, "BmGame.RGooSpray.IsValidTarget");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -829,6 +882,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void UseExplosiveGel(bool CombatFire = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseExplosiveGel, "BmGame.RGooSpray.UseExplosiveGel");
         byte* paramsPtr = stackalloc byte[564];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -843,6 +897,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool CheckAutoTarget(BmSDK.Engine.Actor Target, out System.Numerics.Vector3 TargetPosition, out float OverridePriority, out float OverrideMaxRange, out byte DoLOSCheck)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAutoTarget, "BmGame.RGooSpray.CheckAutoTarget");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -869,6 +924,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool ShouldInstantDetonate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldInstantDetonate, "BmGame.RGooSpray.ShouldInstantDetonate");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -882,6 +938,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool IsSprayingGel()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSprayingGel, "BmGame.RGooSpray.IsSprayingGel");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -895,6 +952,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool CanIOnlyDetonate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanIOnlyDetonate, "BmGame.RGooSpray.CanIOnlyDetonate");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -908,6 +966,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RGooSpray.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -921,6 +980,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe override bool CanDisableTick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDisableTick, "BmGame.RGooSpray.CanDisableTick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -934,6 +994,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual void UpdateForceZeroAmmo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateForceZeroAmmo, "BmGame.RGooSpray.UpdateForceZeroAmmo");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -947,6 +1008,7 @@ public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGame
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetCurrentDetonateTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentDetonateTarget, "BmGame.RGooSpray.GetCurrentDetonateTarget");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

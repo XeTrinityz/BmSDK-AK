@@ -84,6 +84,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPawnVillainDollotronTutorial.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe override bool CanDoFinalBlow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoFinalBlow, "BmScript.RPawnVillainDollotronTutorial.CanDoFinalBlow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void StopRiseCamera()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopRiseCamera, "BmScript.RPawnVillainDollotronTutorial.StopRiseCamera");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe override void OnFinishGettingUpFromRagdoll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFinishGettingUpFromRagdoll, "BmScript.RPawnVillainDollotronTutorial.OnFinishGettingUpFromRagdoll");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void UpdateCameraLook(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCameraLook, "BmScript.RPawnVillainDollotronTutorial.UpdateCameraLook");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void StartZoomOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartZoomOut, "BmScript.RPawnVillainDollotronTutorial.StartZoomOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void StartBMLine()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartBMLine, "BmScript.RPawnVillainDollotronTutorial.StartBMLine");
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void PlayRiseCamera()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayRiseCamera, "BmScript.RPawnVillainDollotronTutorial.PlayRiseCamera");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void RiseMyPretty()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiseMyPretty, "BmScript.RPawnVillainDollotronTutorial.RiseMyPretty");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +212,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void TickLOS()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickLOS, "BmScript.RPawnVillainDollotronTutorial.TickLOS");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +226,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void TickDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickDialogue, "BmScript.RPawnVillainDollotronTutorial.TickDialogue");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +240,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void CheckDialogueStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckDialogueStart, "BmScript.RPawnVillainDollotronTutorial.CheckDialogueStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -242,6 +254,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void CheckLOSStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLOSStart, "BmScript.RPawnVillainDollotronTutorial.CheckLOSStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -255,6 +268,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe virtual void TutorialDone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TutorialDone, "BmScript.RPawnVillainDollotronTutorial.TutorialDone");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -268,6 +282,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "BmScript.RPawnVillainDollotronTutorial.Died");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -284,6 +299,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
     /// </summary>
     public unsafe override void PostInitCharacter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostInitCharacter, "BmScript.RPawnVillainDollotronTutorial.PostInitCharacter");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

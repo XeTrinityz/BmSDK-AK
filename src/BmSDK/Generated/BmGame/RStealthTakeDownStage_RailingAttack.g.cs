@@ -84,6 +84,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe override void Begin()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmGame.RStealthTakeDownStage_RailingAttack.Begin");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +113,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe virtual void SetupRope(float RopeLen)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupRope, "BmGame.RStealthTakeDownStage_RailingAttack.SetupRope");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +128,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe virtual void CreateRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateRope, "BmGame.RStealthTakeDownStage_RailingAttack.CreateRope");
         byte* paramsPtr = stackalloc byte[216];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +142,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe override bool FinishAttackVictim(int iVictimNumber)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAttackVictim, "BmGame.RStealthTakeDownStage_RailingAttack.FinishAttackVictim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +157,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe override BmSDK.FName GetWritheAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWritheAnim, "BmGame.RStealthTakeDownStage_RailingAttack.GetWritheAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +171,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe override BmSDK.FName GetFinishState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFinishState, "BmGame.RStealthTakeDownStage_RailingAttack.GetFinishState");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -179,6 +185,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe virtual void FindRopeAttachPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindRopeAttachPoints, "BmGame.RStealthTakeDownStage_RailingAttack.FindRopeAttachPoints");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +199,7 @@ public partial class RStealthTakeDownStage_RailingAttack : BmSDK.BmGame.RStealth
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmGame.RStealthTakeDownStage_RailingAttack.GetReferencePosition");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

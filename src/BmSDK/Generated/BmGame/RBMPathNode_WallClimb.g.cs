@@ -84,6 +84,7 @@ public partial class RBMPathNode_WallClimb : BmSDK.BmGame.RBMPathNode_VariablePo
     /// </summary>
     public unsafe virtual void UseWallClimb(BmSDK.BmGame.RBMPawnAI User, int EdgeType, System.Numerics.Vector3 JumpDirection, System.Numerics.Vector3 JumpLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseWallClimb, "BmGame.RBMPathNode_WallClimb.UseWallClimb");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -101,6 +102,7 @@ public partial class RBMPathNode_WallClimb : BmSDK.BmGame.RBMPathNode_VariablePo
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetReferencePoint(BmSDK.BmGame.RBMPawnAI Jumper)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePoint, "BmGame.RBMPathNode_WallClimb.GetReferencePoint");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

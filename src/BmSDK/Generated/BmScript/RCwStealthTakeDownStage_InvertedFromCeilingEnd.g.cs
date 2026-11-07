@@ -84,6 +84,7 @@ public partial class RCwStealthTakeDownStage_InvertedFromCeilingEnd : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void ResetCamera()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetCamera, "BmScript.RCwStealthTakeDownStage_InvertedFromCeilingEnd.ResetCamera");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCwStealthTakeDownStage_InvertedFromCeilingEnd : BmSDK.BmGa
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmScript.RCwStealthTakeDownStage_InvertedFromCeilingEnd.GetReferencePosition");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

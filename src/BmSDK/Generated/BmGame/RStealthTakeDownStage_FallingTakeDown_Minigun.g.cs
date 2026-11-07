@@ -84,6 +84,7 @@ public partial class RStealthTakeDownStage_FallingTakeDown_Minigun : BmSDK.BmGam
     /// </summary>
     public unsafe override void PlayVictimAnim(int iVictimNumber, float OverrideStartTime = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayVictimAnim, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.PlayVictimAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RStealthTakeDownStage_FallingTakeDown_Minigun : BmSDK.BmGam
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetPlayerAnimset(BmSDK.BmGame.RPawnPlayer Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerAnimset, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.GetPlayerAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RStealthTakeDownStage_FallingTakeDown_Minigun : BmSDK.BmGam
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet ChooseVictimAnimSet(BmSDK.BmGame.RPawnPlayer Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseVictimAnimSet, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.ChooseVictimAnimSet");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

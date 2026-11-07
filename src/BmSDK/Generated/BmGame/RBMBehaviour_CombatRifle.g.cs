@@ -84,6 +84,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override bool UpdateVisionCheck(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVisionCheck, "BmGame.RBMBehaviour_CombatRifle.UpdateVisionCheck");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat ForceReceiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForceToGiveToPawn, "BmGame.RBMBehaviour_CombatRifle.GetForceToGiveToPawn");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -122,6 +124,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetWaitForCombatMovementForce()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWaitForCombatMovementForce, "BmGame.RBMBehaviour_CombatRifle.GetWaitForCombatMovementForce");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -135,6 +138,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe virtual void SpawnJammedBatmobileAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnJammedBatmobileAttack, "BmGame.RBMBehaviour_CombatRifle.SpawnJammedBatmobileAttack");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +152,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe virtual void SpawnBatmobileAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnBatmobileAttack, "BmGame.RBMBehaviour_CombatRifle.SpawnBatmobileAttack");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -161,6 +166,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override bool IsCurrentCombatantWhileTaunting()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCurrentCombatantWhileTaunting, "BmGame.RBMBehaviour_CombatRifle.IsCurrentCombatantWhileTaunting");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -174,6 +180,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override int GetAttackPriority(bool bForceAttack)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttackPriority, "BmGame.RBMBehaviour_CombatRifle.GetAttackPriority");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +195,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override bool ShouldRetreatFromBatmobile()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldRetreatFromBatmobile, "BmGame.RBMBehaviour_CombatRifle.ShouldRetreatFromBatmobile");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -201,6 +209,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_CombatRifle.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +223,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override bool ShouldUseEnvironment(float DeltaTime, bool bForceCheck)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldUseEnvironment, "BmGame.RBMBehaviour_CombatRifle.ShouldUseEnvironment");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +239,7 @@ public partial class RBMBehaviour_CombatRifle : BmSDK.BmGame.RBMBehaviour_Combat
     /// </summary>
     public unsafe override bool CanDodgeProjectile(System.Numerics.Vector3 ThrownFromPos, int CheckBatarangID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDodgeProjectile, "BmGame.RBMBehaviour_CombatRifle.CanDodgeProjectile");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

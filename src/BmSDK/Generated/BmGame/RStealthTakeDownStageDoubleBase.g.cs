@@ -79,6 +79,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmGame.RStealthTakeDownStageDoubleBase.GetReferencePosition");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
     /// </summary>
     public unsafe virtual void TriggerVictim2Frozen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerVictim2Frozen, "BmGame.RStealthTakeDownStageDoubleBase.TriggerVictim2Frozen");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
     /// </summary>
     public unsafe virtual void TriggerVictim2NotFrozen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerVictim2NotFrozen, "BmGame.RStealthTakeDownStageDoubleBase.TriggerVictim2NotFrozen");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
     /// </summary>
     public unsafe virtual void TriggerVictim2()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerVictim2, "BmGame.RStealthTakeDownStageDoubleBase.TriggerVictim2");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
     /// </summary>
     public unsafe override void Begin()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmGame.RStealthTakeDownStageDoubleBase.Begin");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
     /// </summary>
     public unsafe override int GetStageAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStageAnim, "BmGame.RStealthTakeDownStageDoubleBase.GetStageAnim");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

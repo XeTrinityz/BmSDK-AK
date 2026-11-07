@@ -84,6 +84,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AudioRemoteWheelSpinActive()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioRemoteWheelSpinActive, "Engine.AkVehicle.AudioRemoteWheelSpinActive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioEject()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioEject, "Engine.AkVehicle.AudioEject");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioRemoteWheelSpin(bool Active)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioRemoteWheelSpin, "Engine.AkVehicle.AudioRemoteWheelSpin");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioRemoteCalledIn(bool remoting)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioRemoteCalledIn, "Engine.AkVehicle.AudioRemoteCalledIn");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +156,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override void StopVehicleSounds()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopVehicleSounds, "Engine.AkVehicle.StopVehicleSounds");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +170,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PawnLeft(BmSDK.Engine.Pawn P, bool trunk)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnLeft, "Engine.AkVehicle.PawnLeft");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +186,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PawnEntered(BmSDK.Engine.Pawn P, bool trunk)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnEntered, "Engine.AkVehicle.PawnEntered");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +202,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override void DriverLeft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DriverLeft, "Engine.AkVehicle.DriverLeft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -208,6 +216,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool DriverEnter(BmSDK.Engine.Pawn P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DriverEnter, "Engine.AkVehicle.DriverEnter");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -222,6 +231,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "Engine.AkVehicle.Died");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +248,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioSetSwitch(BmSDK.Engine.AkSwitchName switchToSet)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioSetSwitch, "Engine.AkVehicle.AudioSetSwitch");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -252,6 +263,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioSkidToStop(float timeBeforeSkidStops)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioSkidToStop, "Engine.AkVehicle.AudioSkidToStop");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -273,6 +285,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioSetDrivingHillFactor(float factor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioSetDrivingHillFactor, "Engine.AkVehicle.AudioSetDrivingHillFactor");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -294,6 +307,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioSetDrivingMode(BmSDK.Engine.AkVehicleSoundInfo.EDrivingModes DrivingMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioSetDrivingMode, "Engine.AkVehicle.AudioSetDrivingMode");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -315,6 +329,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioVehicleHasBeenTeleported(float SecondToSettle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioVehicleHasBeenTeleported, "Engine.AkVehicle.AudioVehicleHasBeenTeleported");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -336,6 +351,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AudioGetClutch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioGetClutch, "Engine.AkVehicle.AudioGetClutch");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -356,6 +372,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioSquealing(float squealAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioSquealing, "Engine.AkVehicle.AudioSquealing");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +394,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override void AudioDrifting(bool isDrifting)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioDrifting, "Engine.AkVehicle.AudioDrifting");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -398,6 +416,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override void AudioWheelSpinning(bool setWheelSpinning)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioWheelSpinning, "Engine.AkVehicle.AudioWheelSpinning");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -419,6 +438,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AudioForceBrake(bool setForceBrake)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioForceBrake, "Engine.AkVehicle.AudioForceBrake");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -440,6 +460,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override void AudioStopAllWheels()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioStopAllWheels, "Engine.AkVehicle.AudioStopAllWheels");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -460,6 +481,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override void AudioStopWheelSqueal(BmSDK.FName WheelBone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioStopWheelSqueal, "Engine.AkVehicle.AudioStopWheelSqueal");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -481,6 +503,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe override void AudioUpdateWheelSqueal(BmSDK.FName WheelBone, float SquealValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioUpdateWheelSqueal, "Engine.AkVehicle.AudioUpdateWheelSqueal");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -503,6 +526,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetNumSteerableWheelsOnGround()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumSteerableWheelsOnGround, "Engine.AkVehicle.GetNumSteerableWheelsOnGround");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -523,6 +547,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetNumWheelsOnFlatGround(float flatNormalZ)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumWheelsOnFlatGround, "Engine.AkVehicle.GetNumWheelsOnFlatGround");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -544,6 +569,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetNumWheelsOnGround()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumWheelsOnGround, "Engine.AkVehicle.GetNumWheelsOnGround");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -564,6 +590,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AudioVehicleRotating()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioVehicleRotating, "Engine.AkVehicle.AudioVehicleRotating");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -584,6 +611,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AudioAltGetForceWheelSpin()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioAltGetForceWheelSpin, "Engine.AkVehicle.AudioAltGetForceWheelSpin");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -604,6 +632,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AudioGetForceStop()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioGetForceStop, "Engine.AkVehicle.AudioGetForceStop");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -624,6 +653,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AudioAltRPMIsPriority(int Mode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioAltRPMIsPriority, "Engine.AkVehicle.AudioAltRPMIsPriority");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -645,6 +675,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float AudioGetAlternateLoad(int Mode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioGetAlternateLoad, "Engine.AkVehicle.AudioGetAlternateLoad");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -666,6 +697,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AudioGetAlternateRPMVector()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioGetAlternateRPMVector, "Engine.AkVehicle.AudioGetAlternateRPMVector");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -686,6 +718,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float AudioGetAlternateRPM(int Mode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioGetAlternateRPM, "Engine.AkVehicle.AudioGetAlternateRPM");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -707,6 +740,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int AudioInAlternativeMode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioInAlternativeMode, "Engine.AkVehicle.AudioInAlternativeMode");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -727,6 +761,7 @@ public partial class AkVehicle : BmSDK.Engine.SVehicle, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float AudioGetRPM(bool unlerped = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioGetRPM, "Engine.AkVehicle.AudioGetRPM");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

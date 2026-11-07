@@ -84,6 +84,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void HitDestructibleProp(BmSDK.BmGame.RDestructibleProp Prop)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitDestructibleProp, "BmGame.RPawn.HitDestructibleProp");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetInterceptHudLocation(out System.Numerics.Vector3 HudLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInterceptHudLocation, "BmGame.RPawn.GetInterceptHudLocation");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CanSpeakDuringDeath(BmSDK.Engine.AkDialogueSpeech Speech)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpeakDuringDeath, "BmGame.RPawn.CanSpeakDuringDeath");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +131,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CanSpeakIncapacitated(BmSDK.Engine.AkDialogueSpeech Speech)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpeakIncapacitated, "BmGame.RPawn.CanSpeakIncapacitated");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetIncapacitatedCantSpeakReason()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIncapacitatedCantSpeakReason, "BmGame.RPawn.GetIncapacitatedCantSpeakReason");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override BmSDK.FString CantSpeakReason(BmSDK.Engine.AkDialogueSpeech Speech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, bool dlgContinuation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantSpeakReason, "BmGame.RPawn.CantSpeakReason");
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -173,6 +179,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool CanSpeak(BmSDK.Engine.AkDialogueSpeech Speech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, bool dlgContinuation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpeak, "BmGame.RPawn.CanSpeak");
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +198,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override bool ShouldContinueSurveillance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldContinueSurveillance, "BmGame.RPawn.ShouldContinueSurveillance");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -211,6 +219,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDry()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDry, "BmGame.RPawn.SetDry");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -224,6 +233,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetWet(BmSDK.BmGame.RWaterVolumeBase Water)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWet, "BmGame.RPawn.SetWet");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +248,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetWetShallow(float Amount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWetShallow, "BmGame.RPawn.SetWetShallow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -252,6 +263,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetGlass(bool bTouch)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGlass, "BmGame.RPawn.SetGlass");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -266,6 +278,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPersistentDebugData GetPDD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPDD, "BmGame.RPawn.GetPDD");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -286,6 +299,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DrawDebugGraphics()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebugGraphics, "BmGame.RPawn.DrawDebugGraphics");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -299,6 +313,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetColourForType(BmSDK.Engine.Pawn.PawnHistoryType T, out byte R, out byte G, out byte B)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetColourForType, "BmGame.RPawn.SetColourForType");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -322,6 +337,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetTypeAsString(BmSDK.Engine.Pawn.PawnHistoryType T)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTypeAsString, "BmGame.RPawn.GetTypeAsString");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -336,6 +352,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString BuildHistoryStringFor(BmSDK.BmGame.RPawn.FHistoryInfo HI)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildHistoryStringFor, "BmGame.RPawn.BuildHistoryStringFor");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -350,6 +367,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ShouldDisplayType(BmSDK.Engine.Pawn.PawnHistoryType T)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldDisplayType, "BmGame.RPawn.ShouldDisplayType");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -364,6 +382,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OutputThoughtHistory()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutputThoughtHistory, "BmGame.RPawn.OutputThoughtHistory");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +396,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void AddToThoughtHistory(BmSDK.FString BehaviourInfoString, BmSDK.Engine.Pawn.PawnHistoryType T = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToThoughtHistory, "BmGame.RPawn.AddToThoughtHistory");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -399,6 +419,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, BmSDK.FName SubGroup)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThoughts, "BmGame.RPawn.GetThoughts");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -414,6 +435,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AdvanceThoughtHistoryItem()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdvanceThoughtHistoryItem, "BmGame.RPawn.AdvanceThoughtHistoryItem");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -427,6 +449,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void KillEmotes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillEmotes, "BmGame.RPawn.KillEmotes");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -440,6 +463,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void TeleportPhysics()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TeleportPhysics, "BmGame.RPawn.TeleportPhysics");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -460,6 +484,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnSetFaceFXRegister(BmSDK.BmGame.RSeqAct_SetFaceFXRegister SeqAct)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetFaceFXRegister, "BmGame.RPawn.OnSetFaceFXRegister");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -474,6 +499,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void AnimationTriggerCallback(BmSDK.FName TagName, BmSDK.TArray<BmSDK.FString> Params, BmSDK.Engine.AnimSet TagAnimSet, float Time)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnimationTriggerCallback, "BmGame.RPawn.AnimationTriggerCallback");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -491,6 +517,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void CrushedBy(BmSDK.Engine.Pawn OtherPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrushedBy, "BmGame.RPawn.CrushedBy");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -505,6 +532,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLookAtLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLookAtLocation, "BmGame.RPawn.GetLookAtLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -518,6 +546,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsValidBarkSpeaker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidBarkSpeaker, "BmGame.RPawn.IsValidBarkSpeaker");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -531,6 +560,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void CleanUpSounds()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CleanUpSounds, "BmGame.RPawn.CleanUpSounds");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -544,6 +574,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopFootstepContinuous()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopFootstepContinuous, "BmGame.RPawn.StopFootstepContinuous");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -557,6 +588,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnFootstepNotify(BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact, BmSDK.BmGame.RAnimNotify_Footstep.EFootstepSurfaceFinder SurfaceFinder, System.Numerics.Vector3 FootLocation, float BlendWeight)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFootstepNotify, "BmGame.RPawn.OnFootstepNotify");
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -575,6 +607,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool FindFootstepSurface(BmSDK.BmGame.RAnimNotify_Footstep.EFootstepSurfaceFinder Type, BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact, out System.Numerics.Vector3 InOut_FootLocation, out System.Numerics.Vector3 Out_Normal, out BmSDK.Engine.PhysicalMaterial Out_Material, out BmSDK.Engine.Actor out_Actor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindFootstepSurface, "BmGame.RPawn.FindFootstepSurface");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -610,6 +643,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SpawnFootstepParticles(BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact, System.Numerics.Vector3 FootLocation, BmSDK.Engine.RPhysicalMaterialProperty Property)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnFootstepParticles, "BmGame.RPawn.SpawnFootstepParticles");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -627,6 +661,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetFootstepEffectDepth(System.Numerics.Vector3 FootLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFootstepEffectDepth, "BmGame.RPawn.GetFootstepEffectDepth");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -648,6 +683,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent FindContactNameWet(BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindContactNameWet, "BmGame.RPawn.FindContactNameWet");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -663,6 +699,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent FindContactName(BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindContactName, "BmGame.RPawn.FindContactName");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -678,6 +715,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void OnSetMaterial(BmSDK.Engine.SeqAct_SetMaterial Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterial, "BmGame.RPawn.OnSetMaterial");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -692,6 +730,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnSetRotation(BmSDK.BmGame.RSeqAct_SetRotation Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetRotation, "BmGame.RPawn.OnSetRotation");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -706,6 +745,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void gibbedBy(BmSDK.Engine.Actor Other)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_gibbedBy, "BmGame.RPawn.gibbedBy");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -720,6 +760,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmGame.RPawn.TakeDamage");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -740,6 +781,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FName GetBoneNameFromBodyPart(BmSDK.BmGame.RPawn.StunnedHitType BodyPart)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneNameFromBodyPart, "BmGame.RPawn.GetBoneNameFromBodyPart");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -754,6 +796,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn.StunnedHitType GetBodyPartFromBoneName(BmSDK.FName BoneName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBodyPartFromBoneName, "BmGame.RPawn.GetBodyPartFromBoneName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -768,6 +811,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RPawn.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -781,6 +825,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SyncMeshTranslationToCollisionCylinder()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SyncMeshTranslationToCollisionCylinder, "BmGame.RPawn.SyncMeshTranslationToCollisionCylinder");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -794,6 +839,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPawn.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -807,6 +853,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RPawn.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -820,6 +867,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ChangeComponentDepthPriorityGroup(BmSDK.Engine.Scene.ESceneDepthPriorityGroup FromDPG, BmSDK.Engine.Scene.ESceneDepthPriorityGroup ToDPG)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeComponentDepthPriorityGroup, "BmGame.RPawn.ChangeComponentDepthPriorityGroup");
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -842,6 +890,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetCorrectTickGroupForMeshesWithApexCloth()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCorrectTickGroupForMeshesWithApexCloth, "BmGame.RPawn.SetCorrectTickGroupForMeshesWithApexCloth");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -862,6 +911,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void WakeUpAllRFlaps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WakeUpAllRFlaps, "BmGame.RPawn.WakeUpAllRFlaps");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -882,6 +932,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PutAllRFlapsToSleep(bool bDeepSleep)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PutAllRFlapsToSleep, "BmGame.RPawn.PutAllRFlapsToSleep");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -903,6 +954,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsIncapacitated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsIncapacitated, "BmGame.RPawn.IsIncapacitated");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -923,6 +975,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestReachable(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 TargetPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestReachable, "BmGame.RPawn.GetNearestReachable");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -945,6 +998,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetSafePoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSafePoint, "BmGame.RPawn.GetSafePoint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -965,6 +1019,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsSafe()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSafe, "BmGame.RPawn.IsSafe");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -985,6 +1040,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsActorSafe(BmSDK.Engine.Actor A)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActorSafe, "BmGame.RPawn.IsActorSafe");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -999,6 +1055,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetLocationIgnoringCollision(System.Numerics.Vector3 NewLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLocationIgnoringCollision, "BmGame.RPawn.SetLocationIgnoringCollision");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1020,6 +1077,7 @@ public partial class RPawn : BmSDK.Engine.Pawn, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMeshComponent GetHeadMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeadMesh, "BmGame.RPawn.GetHeadMesh");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

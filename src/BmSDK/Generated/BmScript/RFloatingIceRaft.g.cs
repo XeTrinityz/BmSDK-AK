@@ -84,6 +84,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe override void SetDamageFx(System.Numerics.Vector3 HitLocation, float Degree)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageFx, "BmScript.RFloatingIceRaft.SetDamageFx");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RFloatingIceRaft.Tick");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void DestroyNow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyNow, "BmScript.RFloatingIceRaft.DestroyNow");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe override void DestroyRaft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyRaft, "BmScript.RFloatingIceRaft.DestroyRaft");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmScript.RFloatingIceRaft.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void FadeInDone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FadeInDone, "BmScript.RFloatingIceRaft.FadeInDone");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void GrowRaft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GrowRaft, "BmScript.RFloatingIceRaft.GrowRaft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RFloatingIceRaft : BmSDK.BmGame.RFloatingRaft, BmSDK.IGameO
     /// </summary>
     public unsafe override void Initialise(BmSDK.BmGame.RPawnPlayer NewPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RFloatingIceRaft.Initialise");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

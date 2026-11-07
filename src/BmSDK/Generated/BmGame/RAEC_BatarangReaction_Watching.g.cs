@@ -84,6 +84,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_BatarangReaction_Watching.OnBeginShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void ClearTestRequests()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearTestRequests, "BmGame.RAEC_BatarangReaction_Watching.ClearTestRequests");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void PlayRepeatHitLine(BmSDK.BmGame.RPawnVillain TalkPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayRepeatHitLine, "BmGame.RAEC_BatarangReaction_Watching.PlayRepeatHitLine");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual int GetNumNotStunnedThugsInEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumNotStunnedThugsInEvent, "BmGame.RAEC_BatarangReaction_Watching.GetNumNotStunnedThugsInEvent");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetThugToBeTalkedTo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThugToBeTalkedTo, "BmGame.RAEC_BatarangReaction_Watching.GetThugToBeTalkedTo");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController GetNearestValidThugToLastImpact()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestValidThugToLastImpact, "BmGame.RAEC_BatarangReaction_Watching.GetNearestValidThugToLastImpact");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController GetRandomThugToSpeakIfNobodyIsRECed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRandomThugToSpeakIfNobodyIsRECed, "BmGame.RAEC_BatarangReaction_Watching.GetRandomThugToSpeakIfNobodyIsRECed");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -176,6 +183,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController GetRandomThugToSpeak()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRandomThugToSpeak, "BmGame.RAEC_BatarangReaction_Watching.GetRandomThugToSpeak");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +197,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual bool ProcessThugSearch(BmSDK.TArray<BmSDK.BmGame.RMultiNavHandleWrapper> TargetThugSearch, bool bUncappedDist)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessThugSearch, "BmGame.RAEC_BatarangReaction_Watching.ProcessThugSearch");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +213,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual bool PawnCanSeeLastPoint(BmSDK.BmGame.RBMPawnAI TestPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnCanSeeLastPoint, "BmGame.RAEC_BatarangReaction_Watching.PawnCanSeeLastPoint");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +228,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void InitThugSearch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitThugSearch, "BmGame.RAEC_BatarangReaction_Watching.InitThugSearch");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +242,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void StartResponderSearch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartResponderSearch, "BmGame.RAEC_BatarangReaction_Watching.StartResponderSearch");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -244,6 +256,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual bool ResponderSearchActive()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResponderSearchActive, "BmGame.RAEC_BatarangReaction_Watching.ResponderSearchActive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +270,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void DoJumpReaction(System.Numerics.Vector3 HitLoc, System.Numerics.Vector3 ThrownFromPos, bool bThrownFromGarg, float JumpRange, int NewBRangID = default, bool bDueToBodyDrop = default, BmSDK.BmGame.RBMAIController BodyDodger = default, bool bTerrorShootStartle = default, bool bAwardRECScareMedal = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoJumpReaction, "BmGame.RAEC_BatarangReaction_Watching.DoJumpReaction");
         byte* paramsPtr = stackalloc byte[152];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -279,6 +293,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual bool HasThugsReacting()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasThugsReacting, "BmGame.RAEC_BatarangReaction_Watching.HasThugsReacting");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -292,6 +307,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void ExitIntoAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitIntoAttack, "BmGame.RAEC_BatarangReaction_Watching.ExitIntoAttack");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -305,6 +321,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void WatcherStarted(BmSDK.BmGame.RAEC_Brang_Sub_WatchBatarang StartingWatcher)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WatcherStarted, "BmGame.RAEC_BatarangReaction_Watching.WatcherStarted");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +336,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void ThugGotBatarangedOutOfFrozen(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugGotBatarangedOutOfFrozen, "BmGame.RAEC_BatarangReaction_Watching.ThugGotBatarangedOutOfFrozen");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -333,6 +351,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void ThugGotUpFromBatarang(BmSDK.BmGame.RPawnVillain TestThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugGotUpFromBatarang, "BmGame.RAEC_BatarangReaction_Watching.ThugGotUpFromBatarang");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -347,6 +366,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void ManDownBodyDodge(BmSDK.BmGame.RBMAIController Dodger, System.Numerics.Vector3 HitLoc, System.Numerics.Vector3 ThrownFromPos, bool bThrownFromGarg, int LaunchID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManDownBodyDodge, "BmGame.RAEC_BatarangReaction_Watching.ManDownBodyDodge");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -365,6 +385,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void ThugHit(BmSDK.BmGame.RPawnVillain NewVictim, System.Numerics.Vector3 HitLoc, System.Numerics.Vector3 ThrownFromPos, bool bThrownFromGarg, BmSDK.BmGame.RBMAIController.BRAECReactionType Type, int NewLaunchID, bool bAwardRECScareMedal = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugHit, "BmGame.RAEC_BatarangReaction_Watching.ThugHit");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -385,6 +406,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void MakeRicochetNoise(System.Numerics.Vector3 HitLoc, System.Numerics.Vector3 ThrownFromPos, bool bThrownFromGarg, float JumpRange, int LaunchID, bool bTerrorShootStartle = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeRicochetNoise, "BmGame.RAEC_BatarangReaction_Watching.MakeRicochetNoise");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -404,6 +426,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual void CheckForThrowReaction(System.Numerics.Vector3 ThrownFromPos, BmSDK.BmGame.RBMAIController.BRAECReactionType Type, int LaunchID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForThrowReaction, "BmGame.RAEC_BatarangReaction_Watching.CheckForThrowReaction");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -420,6 +443,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual bool GetParamsFromReactionType(BmSDK.BmGame.RBMAIController.BRAECReactionType TestType, out float JumpRange)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetParamsFromReactionType, "BmGame.RAEC_BatarangReaction_Watching.GetParamsFromReactionType");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -437,6 +461,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe virtual bool ThugSawThrow(System.Numerics.Vector3 ThrownFromPos, int NewLaunchID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugSawThrow, "BmGame.RAEC_BatarangReaction_Watching.ThugSawThrow");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -452,6 +477,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe override void GetAIThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIThoughts, "BmGame.RAEC_BatarangReaction_Watching.GetAIThoughts");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -466,6 +492,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_BatarangReaction_Watching.OnRemoveSoloChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -480,6 +507,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_BatarangReaction_Watching.Tick");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -494,6 +522,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.RAEC_BatarangReaction_Watching.GetBarkPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -507,6 +536,7 @@ public partial class RAEC_BatarangReaction_Watching : BmSDK.BmGame.RAlertEventCo
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RAEC_BatarangReaction_Watching.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

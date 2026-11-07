@@ -84,6 +84,7 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsBankStreamPreloaded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBankStreamPreloaded, "Engine.AkBank.IsBankStreamPreloaded");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool PreloadBankStreams(bool preload, BmSDK.Engine.AkWwise.EAkIOStreamPriorities Priority = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreloadBankStreams, "Engine.AkBank.PreloadBankStreams");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +128,7 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsBankLoadComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBankLoadComplete, "Engine.AkBank.IsBankLoadComplete");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +149,7 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ReloadBank()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReloadBank, "Engine.AkBank.ReloadBank");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +170,7 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UnloadBank(bool performDeferredUnload)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnloadBank, "Engine.AkBank.UnloadBank");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -187,6 +192,7 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool LoadBank(bool performDeferredLoad)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadBank, "Engine.AkBank.LoadBank");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

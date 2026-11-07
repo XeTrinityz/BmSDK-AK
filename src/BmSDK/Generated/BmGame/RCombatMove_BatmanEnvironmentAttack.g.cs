@@ -84,6 +84,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void UnhideBatmanForJokerBoss()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnhideBatmanForJokerBoss, "BmGame.RCombatMove_BatmanEnvironmentAttack.UnhideBatmanForJokerBoss");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual BmSDK.FName GetTargetEndStance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetEndStance, "BmGame.RCombatMove_BatmanEnvironmentAttack.GetTargetEndStance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual bool ShouldKill()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldKill, "BmGame.RCombatMove_BatmanEnvironmentAttack.ShouldKill");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual BmSDK.FName GetAnimName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimName, "BmGame.RCombatMove_BatmanEnvironmentAttack.GetAnimName");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_BatmanEnvironmentAttack.ExitMove");
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override void ExitMoveForPawn(BmSDK.BmGame.RPawnCombat ExitPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMoveForPawn, "BmGame.RCombatMove_BatmanEnvironmentAttack.ExitMoveForPawn");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override void MoveOverridenForPawn(BmSDK.BmGame.RPawnCombat OverridenPawn, BmSDK.BmGame.RCombatMove NewMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveOverridenForPawn, "BmGame.RCombatMove_BatmanEnvironmentAttack.MoveOverridenForPawn");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override void AllowNextStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowNextStrike, "BmGame.RCombatMove_BatmanEnvironmentAttack.AllowNextStrike");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +199,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override bool CanBeTargettedByPlayer(BmSDK.BmGame.RPawnCombat TestPawn, BmSDK.Class DamageType, BmSDK.BmGame.RPawnPlayerCombat NewPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeTargettedByPlayer, "BmGame.RCombatMove_BatmanEnvironmentAttack.CanBeTargettedByPlayer");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override bool CanReceiveAttackFromPawn(BmSDK.BmGame.RPawnCombat TestPawn, BmSDK.BmGame.RPawnCombat NewAttacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReceiveAttackFromPawn, "BmGame.RCombatMove_BatmanEnvironmentAttack.CanReceiveAttackFromPawn");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -222,6 +232,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override bool CanNewAttackBeStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanNewAttackBeStarted, "BmGame.RCombatMove_BatmanEnvironmentAttack.CanNewAttackBeStarted");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +246,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override bool CanBeShotDead()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeShotDead, "BmGame.RCombatMove_BatmanEnvironmentAttack.CanBeShotDead");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +260,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_BatmanEnvironmentAttack.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +274,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void FireDestroyedEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireDestroyedEvent, "BmGame.RCombatMove_BatmanEnvironmentAttack.FireDestroyedEvent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -274,6 +288,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void CameraFinishEarly()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CameraFinishEarly, "BmGame.RCombatMove_BatmanEnvironmentAttack.CameraFinishEarly");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -287,6 +302,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void SpeedUp()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeedUp, "BmGame.RCombatMove_BatmanEnvironmentAttack.SpeedUp");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -300,6 +316,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void SlowDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SlowDown, "BmGame.RCombatMove_BatmanEnvironmentAttack.SlowDown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -313,6 +330,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void SwapMesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapMesh, "BmGame.RCombatMove_BatmanEnvironmentAttack.SwapMesh");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -326,6 +344,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void FxEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FxEvent, "BmGame.RCombatMove_BatmanEnvironmentAttack.FxEvent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -339,6 +358,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void DropObject()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropObject, "BmGame.RCombatMove_BatmanEnvironmentAttack.DropObject");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -352,6 +372,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void GrabObject()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GrabObject, "BmGame.RCombatMove_BatmanEnvironmentAttack.GrabObject");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -365,6 +386,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void KillTarget(BmSDK.Class dmgType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillTarget, "BmGame.RCombatMove_BatmanEnvironmentAttack.KillTarget");
         byte* paramsPtr = stackalloc byte[272];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -379,6 +401,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void EnvKONoRagdoll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnvKONoRagdoll, "BmGame.RCombatMove_BatmanEnvironmentAttack.EnvKONoRagdoll");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -392,6 +415,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void EnvKORagdoll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnvKORagdoll, "BmGame.RCombatMove_BatmanEnvironmentAttack.EnvKORagdoll");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -405,6 +429,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void DamageHitNoReaction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageHitNoReaction, "BmGame.RCombatMove_BatmanEnvironmentAttack.DamageHitNoReaction");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -418,6 +443,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void DamageHitManualExitmove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageHitManualExitmove, "BmGame.RCombatMove_BatmanEnvironmentAttack.DamageHitManualExitmove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -431,6 +457,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void DamageHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageHit, "BmGame.RCombatMove_BatmanEnvironmentAttack.DamageHit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -444,6 +471,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void HitThug()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitThug, "BmGame.RCombatMove_BatmanEnvironmentAttack.HitThug");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -457,6 +485,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
     /// </summary>
     public unsafe virtual void ThugRumble()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugRumble, "BmGame.RCombatMove_BatmanEnvironmentAttack.ThugRumble");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

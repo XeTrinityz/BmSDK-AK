@@ -84,6 +84,7 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAboveEnd : BmSD
     /// </summary>
     public unsafe virtual void FinishGrapple()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishGrapple, "BmScript.RStealthTakedownStage_ChainTakedown_FearFromAboveEnd.FinishGrapple");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAboveEnd : BmSD
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmScript.RStealthTakedownStage_ChainTakedown_FearFromAboveEnd.GetReferencePosition");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

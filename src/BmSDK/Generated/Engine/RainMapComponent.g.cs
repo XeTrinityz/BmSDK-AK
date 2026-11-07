@@ -84,6 +84,7 @@ public partial class RainMapComponent : BmSDK.Engine.ActorComponent, BmSDK.IGame
     /// </summary>
     public unsafe virtual void SetHidden(bool bInHidden)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidden, "Engine.RainMapComponent.SetHidden");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

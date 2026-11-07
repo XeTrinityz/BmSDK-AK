@@ -97,6 +97,7 @@ public partial class RSeqAct_SetCustomBatmobileGetIn : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_SetCustomBatmobileGetIn.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

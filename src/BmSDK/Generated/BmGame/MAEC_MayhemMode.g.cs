@@ -84,6 +84,7 @@ public partial class MAEC_MayhemMode : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     /// </summary>
     public unsafe override void AssignToEvent(BmSDK.BmGame.RBMAIController Con)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignToEvent, "BmGame.MAEC_MayhemMode.AssignToEvent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class MAEC_MayhemMode : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     /// </summary>
     public unsafe virtual bool IsNewController(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsNewController, "BmGame.MAEC_MayhemMode.IsNewController");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class MAEC_MayhemMode : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.MAEC_MayhemMode.Tick");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class MAEC_MayhemMode : BmSDK.BmGame.RAlertEventCoordinatorBase, 
     /// </summary>
     public unsafe virtual void AddAttacker(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAttacker, "BmGame.MAEC_MayhemMode.AddAttacker");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

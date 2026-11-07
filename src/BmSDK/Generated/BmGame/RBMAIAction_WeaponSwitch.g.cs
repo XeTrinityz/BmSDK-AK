@@ -79,6 +79,7 @@ public partial class RBMAIAction_WeaponSwitch : BmSDK.BmGame.RBMAIAction, BmSDK.
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameRI.WeaponSwitchCallbackResult WeaponSwitchCallback(BmSDK.Engine.Inventory NewWeapon, BmSDK.Engine.Inventory OldWeapon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WeaponSwitchCallback, "BmGame.RBMAIAction_WeaponSwitch.WeaponSwitchCallback");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

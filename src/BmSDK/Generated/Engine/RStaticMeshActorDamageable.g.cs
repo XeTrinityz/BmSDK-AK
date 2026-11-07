@@ -84,6 +84,7 @@ public partial class RStaticMeshActorDamageable : BmSDK.Engine.StaticMeshActor, 
     /// </summary>
     public unsafe virtual void ReceiveHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReceiveHit, "Engine.RStaticMeshActorDamageable.ReceiveHit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

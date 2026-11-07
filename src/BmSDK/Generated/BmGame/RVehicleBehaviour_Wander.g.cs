@@ -84,6 +84,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe virtual void UpdateUturn(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateUturn, "BmGame.RVehicleBehaviour_Wander.UpdateUturn");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe virtual void StartUturn(System.Numerics.Vector3 DirAfterTurn, float DistToBatman, System.Numerics.Vector3 dirToBatman, bool RunAwayAfter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartUturn, "BmGame.RVehicleBehaviour_Wander.StartUturn");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +117,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RVehicleBehaviour_Wander.Tick");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe virtual bool IsPointWithinRangeOfPenguinVan(System.Numerics.Vector3 Loc, float Radius)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPointWithinRangeOfPenguinVan, "BmGame.RVehicleBehaviour_Wander.IsPointWithinRangeOfPenguinVan");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -144,6 +148,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override int GetTimeSliceMask()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeSliceMask, "BmGame.RVehicleBehaviour_Wander.GetTimeSliceMask");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -157,6 +162,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override void UpdateSelfDriveLineLimits()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSelfDriveLineLimits, "BmGame.RVehicleBehaviour_Wander.UpdateSelfDriveLineLimits");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +176,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe virtual bool HaveLosToBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HaveLosToBatman, "BmGame.RVehicleBehaviour_Wander.HaveLosToBatman");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +190,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override int ChooseNextLink(BmSDK.BmGame.RRoadNetwork Roads, out int LinkEndPt, System.Numerics.Vector3 AwayFromBatman = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseNextLink, "BmGame.RVehicleBehaviour_Wander.ChooseNextLink");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -201,6 +209,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override void AddCustomChooseNextLinkAvoidLocations(out BmSDK.TArray<System.Numerics.Vector3> AvoidLocations, out BmSDK.TArray<float> AvoidLocationsConeCos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCustomChooseNextLinkAvoidLocations, "BmGame.RVehicleBehaviour_Wander.AddCustomChooseNextLinkAvoidLocations");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +225,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe virtual void GotoCombatBehaviour()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoCombatBehaviour, "BmGame.RVehicleBehaviour_Wander.GotoCombatBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -229,6 +239,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override bool AllowRetainSelfDrive(BmSDK.BmGame.RVehicleBehaviour Next)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowRetainSelfDrive, "BmGame.RVehicleBehaviour_Wander.AllowRetainSelfDrive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -243,6 +254,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override void ExitBehaviour(BmSDK.BmGame.RVehicleBehaviour NextBehaviour)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitBehaviour, "BmGame.RVehicleBehaviour_Wander.ExitBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +269,7 @@ public partial class RVehicleBehaviour_Wander : BmSDK.BmGame.RVehicleBehaviour_R
     /// </summary>
     public unsafe override void EnterBehaviour(BmSDK.BmGame.RVehicleBehaviour PreviousBehaviour)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterBehaviour, "BmGame.RVehicleBehaviour_Wander.EnterBehaviour");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

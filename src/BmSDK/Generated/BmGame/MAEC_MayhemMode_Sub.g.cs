@@ -84,6 +84,7 @@ public partial class MAEC_MayhemMode_Sub : BmSDK.BmGame.RAlertEventCoordinatorSo
     /// </summary>
     public unsafe virtual void SetStartleLoc(System.Numerics.Vector3 NewPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStartleLoc, "BmGame.MAEC_MayhemMode_Sub.SetStartleLoc");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class MAEC_MayhemMode_Sub : BmSDK.BmGame.RAlertEventCoordinatorSo
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.MAEC_MayhemMode_Sub.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

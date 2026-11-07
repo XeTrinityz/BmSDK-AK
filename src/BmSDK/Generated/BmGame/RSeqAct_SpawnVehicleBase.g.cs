@@ -79,6 +79,7 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual void SpawnedActorBatmanSeen(BmSDK.Engine.Actor ExActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnedActorBatmanSeen, "BmGame.RSeqAct_SpawnVehicleBase.SpawnedActorBatmanSeen");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual void SpawnedActorDied(BmSDK.Engine.Actor ExActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnedActorDied, "BmGame.RSeqAct_SpawnVehicleBase.SpawnedActorDied");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -107,6 +109,7 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual bool IsNewGamePlus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsNewGamePlus, "BmGame.RSeqAct_SpawnVehicleBase.IsNewGamePlus");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual void UpdateNewGamePlus()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateNewGamePlus, "BmGame.RSeqAct_SpawnVehicleBase.UpdateNewGamePlus");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

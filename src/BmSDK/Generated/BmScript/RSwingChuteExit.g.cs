@@ -84,6 +84,7 @@ public partial class RSwingChuteExit : BmSDK.BmGame.RSwingChuteExitBase, BmSDK.I
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RSwingChuteExit.Tick");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RSwingChuteExit : BmSDK.BmGame.RSwingChuteExitBase, BmSDK.I
     /// </summary>
     public unsafe override void PlayGrateAnim(BmSDK.FName GrateAnim, float Rate = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayGrateAnim, "BmScript.RSwingChuteExit.PlayGrateAnim");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

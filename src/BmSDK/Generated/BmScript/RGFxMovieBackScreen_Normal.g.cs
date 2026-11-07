@@ -84,6 +84,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetSideOverlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetSideOverlay, "BmScript.RGFxMovieBackScreen_Normal.XI_GetSideOverlay");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult XI_OnLineStopped(BmSDK.Engine.AkDialogueLine dlgLine, BmSDK.Engine.AkDialogueEvent dlgEvent, BmSDK.GameObject dlgSpeaker, bool interrupted)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnLineStopped, "BmScript.RGFxMovieBackScreen_Normal.XI_OnLineStopped");
         byte* paramsPtr = stackalloc byte[45];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult XI_OnLineStarted(BmSDK.Engine.AkDialogueLine dlgLine, BmSDK.Engine.AkDialogueEvent dlgEvent, BmSDK.GameObject dlgSpeaker, bool bBarkSquelch)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnLineStarted, "BmScript.RGFxMovieBackScreen_Normal.XI_OnLineStarted");
         byte* paramsPtr = stackalloc byte[45];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult XI_OnSpeechStopped(int speechId, bool interrupted)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnSpeechStopped, "BmScript.RGFxMovieBackScreen_Normal.XI_OnSpeechStopped");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +150,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult XI_OnSpeechStarted(int speechId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnSpeechStarted, "BmScript.RGFxMovieBackScreen_Normal.XI_OnSpeechStarted");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +165,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_IsDialogActive()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsDialogActive, "BmScript.RGFxMovieBackScreen_Normal.XI_IsDialogActive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -173,6 +179,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_StopDialog()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_StopDialog, "BmScript.RGFxMovieBackScreen_Normal.XI_StopDialog");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -186,6 +193,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_PlayDialog(BmSDK.FString RefName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PlayDialog, "BmScript.RGFxMovieBackScreen_Normal.XI_PlayDialog");
         byte* paramsPtr = stackalloc byte[168];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -200,6 +208,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void LeaderboardTick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LeaderboardTick, "BmScript.RGFxMovieBackScreen_Normal.LeaderboardTick");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -213,6 +222,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool IsPollingBoards()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPollingBoards, "BmScript.RGFxMovieBackScreen_Normal.IsPollingBoards");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -226,6 +236,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void FetchLeaderboard()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FetchLeaderboard, "BmScript.RGFxMovieBackScreen_Normal.FetchLeaderboard");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -239,6 +250,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_TriggerLeaderboard(int FriendCount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_TriggerLeaderboard, "BmScript.RGFxMovieBackScreen_Normal.UC_TriggerLeaderboard");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -253,6 +265,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void SendLeaderBoardToFlash(int Id, int total, BmSDK.TArray<int> FriendIndex, BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> NetIDs, BmSDK.TArray<int> Ranks, BmSDK.TArray<BmSDK.FString> NickNames, BmSDK.TArray<int> Medals, BmSDK.TArray<float> Scores, BmSDK.TArray<int> RivalPoints, BmSDK.TArray<float> Story, BmSDK.TArray<float> MW, BmSDK.TArray<float> AR)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendLeaderBoardToFlash, "BmScript.RGFxMovieBackScreen_Normal.SendLeaderBoardToFlash");
         byte* paramsPtr = stackalloc byte[228];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +291,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_SetLeaderboardLine(int Index, int Rank, BmSDK.FString NickName, int Medals, BmSDK.FString Score, bool bIsMe)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetLeaderboardLine, "BmScript.RGFxMovieBackScreen_Normal.UC_SetLeaderboardLine");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -297,6 +311,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RegisterLeaderboardPath(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RegisterLeaderboardPath, "BmScript.RGFxMovieBackScreen_Normal.XI_RegisterLeaderboardPath");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -311,6 +326,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetVideoProgressName(BmSDK.FString MissionName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetVideoProgressName, "BmScript.RGFxMovieBackScreen_Normal.XI_GetVideoProgressName");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -325,6 +341,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void XI_OpenScreen(BmSDK.FString ScreenName, bool bIsFirstScreen)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OpenScreen, "BmScript.RGFxMovieBackScreen_Normal.XI_OpenScreen");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -340,6 +357,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void XI_Tick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Tick, "BmScript.RGFxMovieBackScreen_Normal.XI_Tick");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -353,6 +371,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_PromptClicked(int PromptId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PromptClicked, "BmScript.RGFxMovieBackScreen_Normal.XI_PromptClicked");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -367,6 +386,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void XI_OnOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnOut, "BmScript.RGFxMovieBackScreen_Normal.XI_OnOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -380,6 +400,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override int XI_SetupTabMenu(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetupTabMenu, "BmScript.RGFxMovieBackScreen_Normal.XI_SetupTabMenu");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -394,6 +415,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void PlayAzraelMinigameDialogue(byte dialogue_index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAzraelMinigameDialogue, "BmScript.RGFxMovieBackScreen_Normal.PlayAzraelMinigameDialogue");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -408,6 +430,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_SetRumbleFromFlash(float left_rumble, float right_rumble)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetRumbleFromFlash, "BmScript.RGFxMovieBackScreen_Normal.XI_SetRumbleFromFlash");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -423,6 +446,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void SetMouseCursorEnabled(bool is_enabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMouseCursorEnabled, "BmScript.RGFxMovieBackScreen_Normal.SetMouseCursorEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -437,6 +461,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void PreemptivelyBlockInputForMinigame()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreemptivelyBlockInputForMinigame, "BmScript.RGFxMovieBackScreen_Normal.PreemptivelyBlockInputForMinigame");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -450,6 +475,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void PrepBatmanChallengeRequirements(out BmSDK.TArray<int> AreNotPossible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepBatmanChallengeRequirements, "BmScript.RGFxMovieBackScreen_Normal.PrepBatmanChallengeRequirements");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -464,6 +490,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_RiddlerScreenShowMapItemSecret(BmSDK.FString sItemName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddlerScreenShowMapItemSecret, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddlerScreenShowMapItemSecret");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -478,6 +505,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RiddlerScreenGotoReward(BmSDK.FString sReward)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddlerScreenGotoReward, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddlerScreenGotoReward");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -492,6 +520,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RiddlerScreenUnlockReward(BmSDK.FString sReward)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddlerScreenUnlockReward, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddlerScreenUnlockReward");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -506,6 +535,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RiddlerScreenSetPieceCompleted(int nPuzzle, int nPiece)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddlerScreenSetPieceCompleted, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddlerScreenSetPieceCompleted");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -521,6 +551,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RiddlerScreenSetPieceViewed(int nPuzzle, int nPiece)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddlerScreenSetPieceViewed, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddlerScreenSetPieceViewed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -536,6 +567,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RiddlerScreenSetPieceActive(int nPuzzle, int nPiece)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddlerScreenSetPieceActive, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddlerScreenSetPieceActive");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -551,6 +583,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RiddlerScreenRequestData(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddlerScreenRequestData, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddlerScreenRequestData");
         byte* paramsPtr = stackalloc byte[144];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -565,6 +598,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_RiddlerScreenSetSelection(int nPuzzleId, int nPieceIndex, bool bImmediate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_RiddlerScreenSetSelection, "BmScript.RGFxMovieBackScreen_Normal.UC_RiddlerScreenSetSelection");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -581,6 +615,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_RiddlerScreenAddPuzzle(int nId, BmSDK.FString sCategory, BmSDK.FString sPuzzle, BmSDK.FString sPrize)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_RiddlerScreenAddPuzzle, "BmScript.RGFxMovieBackScreen_Normal.UC_RiddlerScreenAddPuzzle");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -598,6 +633,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_CitySave(int Index, int PageIndex, int TapeIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CitySave, "BmScript.RGFxMovieBackScreen_Normal.XI_CitySave");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -614,6 +650,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_BioSave(int LocIndex, int Loc0Index, int Loc1Index, int Loc2Index, int PageIndex, int TapeIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_BioSave, "BmScript.RGFxMovieBackScreen_Normal.XI_BioSave");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -633,6 +670,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_ClearCityStoryNew(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ClearCityStoryNew, "BmScript.RGFxMovieBackScreen_Normal.XI_ClearCityStoryNew");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -647,6 +685,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_ClearBioNew(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ClearBioNew, "BmScript.RGFxMovieBackScreen_Normal.XI_ClearBioNew");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -661,6 +700,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RequestBiosLocNews(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestBiosLocNews, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestBiosLocNews");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -675,6 +715,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RequestBiosData(int PageId, BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestBiosData, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestBiosData");
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -690,6 +731,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RequestBiosBaseData(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestBiosBaseData, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestBiosBaseData");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -704,6 +746,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void GetBioCharacterList(out BmSDK.TArray<BmSDK.FString> CharList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBioCharacterList, "BmScript.RGFxMovieBackScreen_Normal.GetBioCharacterList");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -718,6 +761,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_UpgradeScreenCommit(BmSDK.FString sUpgrade, int nValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_UpgradeScreenCommit, "BmScript.RGFxMovieBackScreen_Normal.XI_UpgradeScreenCommit");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -733,6 +777,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_UpgradeScreenRequestPage(BmSDK.FString sPage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_UpgradeScreenRequestPage, "BmScript.RGFxMovieBackScreen_Normal.XI_UpgradeScreenRequestPage");
         byte* paramsPtr = stackalloc byte[272];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -747,6 +792,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_UpgradeScreenRequestExperience()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_UpgradeScreenRequestExperience, "BmScript.RGFxMovieBackScreen_Normal.XI_UpgradeScreenRequestExperience");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -760,6 +806,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_UpgradeScreenSetup(BmSDK.FString sPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_UpgradeScreenSetup, "BmScript.RGFxMovieBackScreen_Normal.XI_UpgradeScreenSetup");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -774,6 +821,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_UpgradeScreenViewedItem(BmSDK.FString sUpgrade)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_UpgradeScreenViewedItem, "BmScript.RGFxMovieBackScreen_Normal.XI_UpgradeScreenViewedItem");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -788,6 +836,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_UpgradeAddNode(int nX, int nY, int nDX, int nDY, BmSDK.FString sUpgrade, BmSDK.FString sIcon, BmSDK.FString sBackground, BmSDK.FString sState, BmSDK.FString sAction, int nValue, int nTotal, float fScale)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_UpgradeAddNode, "BmScript.RGFxMovieBackScreen_Normal.UC_UpgradeAddNode");
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -813,6 +862,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_UpgradeAddHeader(int nNodeX, int nNodeY, BmSDK.FString sHeader, bool bLeftJustify, float fOX, float fOY, float fTX, float fTY)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_UpgradeAddHeader, "BmScript.RGFxMovieBackScreen_Normal.UC_UpgradeAddHeader");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -834,6 +884,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_UpgradeSetExperience(int nAwards, int nPoints, int nTotal, BmSDK.FString sDescription, int iPlayerLevel, int iUpgradesRemaining)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_UpgradeSetExperience, "BmScript.RGFxMovieBackScreen_Normal.UC_UpgradeSetExperience");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -853,6 +904,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_GetFanActive(int FloorNumber)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetFanActive, "BmScript.RGFxMovieBackScreen_Normal.XI_GetFanActive");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -867,6 +919,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual float XI_GetBatmobileScrewState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetBatmobileScrewState, "BmScript.RGFxMovieBackScreen_Normal.XI_GetBatmobileScrewState");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -880,6 +933,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_GetStickAngMag(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetStickAngMag, "BmScript.RGFxMovieBackScreen_Normal.XI_GetStickAngMag");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -894,6 +948,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual float GetCameraRotation(int Axis)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraRotation, "BmScript.RGFxMovieBackScreen_Normal.GetCameraRotation");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -908,6 +963,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString GetPlayerRoomDescription()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerRoomDescription, "BmScript.RGFxMovieBackScreen_Normal.GetPlayerRoomDescription");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -921,6 +977,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_RiddleNameCorrect(BmSDK.FString ItemName, BmSDK.FString InName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RiddleNameCorrect, "BmScript.RGFxMovieBackScreen_Normal.XI_RiddleNameCorrect");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -936,6 +993,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_SetCustomWaypointSideStoryInfo(BmSDK.FString SS_Character, BmSDK.FString VisibleFlag, BmSDK.FString DoneFlag, BmSDK.FString StatesNew)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetCustomWaypointSideStoryInfo, "BmScript.RGFxMovieBackScreen_Normal.XI_SetCustomWaypointSideStoryInfo");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -953,6 +1011,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void XI_SetIconState(bool bVisible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetIconState, "BmScript.RGFxMovieBackScreen_Normal.XI_SetIconState");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -967,6 +1026,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_SetCustomWaypoint(bool bEnabled, float atX, float atY, float atZ, BmSDK.FString WaypointName, BmSDK.FString WaypointTypeName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetCustomWaypoint, "BmScript.RGFxMovieBackScreen_Normal.XI_SetCustomWaypoint");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -986,6 +1046,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_OnCustomWaypointDisabled(BmSDK.FString WaypointName, BmSDK.FString WaypointTypeName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnCustomWaypointDisabled, "BmScript.RGFxMovieBackScreen_Normal.XI_OnCustomWaypointDisabled");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1001,6 +1062,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_GetFloorZAtPosition(float atX, float atY, float atZ)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetFloorZAtPosition, "BmScript.RGFxMovieBackScreen_Normal.XI_GetFloorZAtPosition");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1017,6 +1079,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_ChangeIconFilter(int FilterId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ChangeIconFilter, "BmScript.RGFxMovieBackScreen_Normal.XI_ChangeIconFilter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1031,6 +1094,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.TArray<int> GetActiveFilters()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActiveFilters, "BmScript.RGFxMovieBackScreen_Normal.GetActiveFilters");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1044,6 +1108,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RemoveMapObj(BmSDK.FString ItemName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RemoveMapObj, "BmScript.RGFxMovieBackScreen_Normal.XI_RemoveMapObj");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1058,6 +1123,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_MapSave(int DBIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_MapSave, "BmScript.RGFxMovieBackScreen_Normal.XI_MapSave");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1072,6 +1138,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RequestMapIconData(BmSDK.FString MapName, BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestMapIconData, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestMapIconData");
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1087,6 +1154,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void RequestMapFlagData(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestMapFlagData, "BmScript.RGFxMovieBackScreen_Normal.RequestMapFlagData");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1101,6 +1169,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RequestMapData(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestMapData, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestMapData");
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1115,6 +1184,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_FetchSelectedItemData(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_FetchSelectedItemData, "BmScript.RGFxMovieBackScreen_Normal.XI_FetchSelectedItemData");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1129,6 +1199,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_SetIconInfo(int Index, BmSDK.FString TypeName, BmSDK.FString instancename, int X, int Y, int Z, int Flags, BmSDK.FString RemapTypeName, BmSDK.FString RemapInstanceName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetIconInfo, "BmScript.RGFxMovieBackScreen_Normal.UC_SetIconInfo");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1151,6 +1222,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetHowToUnlockMsg(BmSDK.FString instancename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetHowToUnlockMsg, "BmScript.RGFxMovieBackScreen_Normal.XI_GetHowToUnlockMsg");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1165,6 +1237,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_IsChallengeUnLocked(BmSDK.FString instancename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsChallengeUnLocked, "BmScript.RGFxMovieBackScreen_Normal.XI_IsChallengeUnLocked");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1179,6 +1252,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_IsChallengeRevealed(BmSDK.FString instancename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsChallengeRevealed, "BmScript.RGFxMovieBackScreen_Normal.XI_IsChallengeRevealed");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1193,6 +1267,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetMedalCount(BmSDK.FString instancename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetMedalCount, "BmScript.RGFxMovieBackScreen_Normal.XI_GetMedalCount");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1207,6 +1282,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual int GetARChallengeMedalCount(BmSDK.FString instancename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetARChallengeMedalCount, "BmScript.RGFxMovieBackScreen_Normal.GetARChallengeMedalCount");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1221,6 +1297,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetActualChallengeDesc(BmSDK.FString instancename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetActualChallengeDesc, "BmScript.RGFxMovieBackScreen_Normal.XI_GetActualChallengeDesc");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1235,6 +1312,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetActualChallengeName(BmSDK.FString instancename, bool bMixedCase)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetActualChallengeName, "BmScript.RGFxMovieBackScreen_Normal.XI_GetActualChallengeName");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1250,6 +1328,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString GetCoOrdStr()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCoOrdStr, "BmScript.RGFxMovieBackScreen_Normal.GetCoOrdStr");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1263,6 +1342,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual int XI_Map3DMoveBy(float DX, float DY, float dRotation, float dElevation, float dDistance)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Map3DMoveBy, "BmScript.RGFxMovieBackScreen_Normal.XI_Map3DMoveBy");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1281,6 +1361,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual int ApplyLimits()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyLimits, "BmScript.RGFxMovieBackScreen_Normal.ApplyLimits");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1294,6 +1375,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_GetScreenSize(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetScreenSize, "BmScript.RGFxMovieBackScreen_Normal.XI_GetScreenSize");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1308,6 +1390,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_GetMouseCoodinates(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetMouseCoodinates, "BmScript.RGFxMovieBackScreen_Normal.XI_GetMouseCoodinates");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1322,6 +1405,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_GetbUsingGamepad(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetbUsingGamepad, "BmScript.RGFxMovieBackScreen_Normal.XI_GetbUsingGamepad");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1336,6 +1420,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_Map3DCityArea(BmSDK.FString sArea)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_Map3DCityArea, "BmScript.RGFxMovieBackScreen_Normal.UC_Map3DCityArea");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1350,6 +1435,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_GetMap3DCoordinates()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetMap3DCoordinates, "BmScript.RGFxMovieBackScreen_Normal.XI_GetMap3DCoordinates");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1363,6 +1449,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_Map3DMoved(float ToPosX, float ToPosY, float ToPosZ, float toRot, float ToElev, float ToDist, BmSDK.FString CoOrdStr)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_Map3DMoved, "BmScript.RGFxMovieBackScreen_Normal.UC_Map3DMoved");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1383,6 +1470,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UC_PushCoOrd(BmSDK.FString CoOrdStr, bool bMoving, bool bTilting)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_PushCoOrd, "BmScript.RGFxMovieBackScreen_Normal.UC_PushCoOrd");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1399,6 +1487,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 FindFloor(System.Numerics.Vector3 pos, System.Numerics.Vector3 Dest)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindFloor, "BmScript.RGFxMovieBackScreen_Normal.FindFloor");
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1414,6 +1503,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual int XI_CalcMapScreenStick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CalcMapScreenStick, "BmScript.RGFxMovieBackScreen_Normal.XI_CalcMapScreenStick");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1427,6 +1517,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void SetupNextPanTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupNextPanTarget, "BmScript.RGFxMovieBackScreen_Normal.SetupNextPanTarget");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1440,6 +1531,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void SetPanWait()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPanWait, "BmScript.RGFxMovieBackScreen_Normal.SetPanWait");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1453,6 +1545,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_PanToXYZ(float X, float Y, float Z)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PanToXYZ, "BmScript.RGFxMovieBackScreen_Normal.XI_PanToXYZ");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1469,6 +1562,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_CenterMap()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CenterMap, "BmScript.RGFxMovieBackScreen_Normal.XI_CenterMap");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1482,6 +1576,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_CanCenter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CanCenter, "BmScript.RGFxMovieBackScreen_Normal.XI_CanCenter");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1495,6 +1590,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual int FindItemInList(BmSDK.FString ItemName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindItemInList, "BmScript.RGFxMovieBackScreen_Normal.FindItemInList");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1509,6 +1605,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetDroneDifficulty(BmSDK.FString IconInstanceName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetDroneDifficulty, "BmScript.RGFxMovieBackScreen_Normal.XI_GetDroneDifficulty");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1523,6 +1620,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetRiddlerInfoFor(BmSDK.FString ItemTypeName, BmSDK.FString ItemName, bool bIs2DMap)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetRiddlerInfoFor, "BmScript.RGFxMovieBackScreen_Normal.XI_GetRiddlerInfoFor");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1539,6 +1637,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_FetchSecretsCountFor(BmSDK.FString PrevLocName, BmSDK.FString NextLocName, BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_FetchSecretsCountFor, "BmScript.RGFxMovieBackScreen_Normal.XI_FetchSecretsCountFor");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1555,6 +1654,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString GetSecretsLocationName(BmSDK.FString sName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSecretsLocationName, "BmScript.RGFxMovieBackScreen_Normal.GetSecretsLocationName");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1569,6 +1669,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_SecretsCounterAvailable()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SecretsCounterAvailable, "BmScript.RGFxMovieBackScreen_Normal.XI_SecretsCounterAvailable");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1582,6 +1683,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void SetMap3DThreatLevel(int Area, bool bAllowThreats)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMap3DThreatLevel, "BmScript.RGFxMovieBackScreen_Normal.SetMap3DThreatLevel");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1597,6 +1699,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UpdateThreatMeter(int NewArea, bool TutorialMode = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateThreatMeter, "BmScript.RGFxMovieBackScreen_Normal.UpdateThreatMeter");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1612,6 +1715,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void DoThreatLevelIntroAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoThreatLevelIntroAnim, "BmScript.RGFxMovieBackScreen_Normal.DoThreatLevelIntroAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1625,6 +1729,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void SetThreatLevel(BmSDK.FString sCityName, BmSDK.FString sThreats, bool bBatmobileAvailable, bool bTutorialMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThreatLevel, "BmScript.RGFxMovieBackScreen_Normal.SetThreatLevel");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1642,6 +1747,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RegisterThreatLevelMeter(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RegisterThreatLevelMeter, "BmScript.RGFxMovieBackScreen_Normal.XI_RegisterThreatLevelMeter");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1656,6 +1762,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RefreshThreatLevelMeter(int AreaId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RefreshThreatLevelMeter, "BmScript.RGFxMovieBackScreen_Normal.XI_RefreshThreatLevelMeter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1670,6 +1777,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual int RoughlyCalcCityArea(float PosX, float PosY)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RoughlyCalcCityArea, "BmScript.RGFxMovieBackScreen_Normal.RoughlyCalcCityArea");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1685,6 +1793,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_OutroTween()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OutroTween, "BmScript.RGFxMovieBackScreen_Normal.XI_OutroTween");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1698,6 +1807,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void XI_OnOutro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnOutro, "BmScript.RGFxMovieBackScreen_Normal.XI_OnOutro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1711,6 +1821,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual bool XI_IntroTween()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IntroTween, "BmScript.RGFxMovieBackScreen_Normal.XI_IntroTween");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1724,6 +1835,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void XI_OnIn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnIn, "BmScript.RGFxMovieBackScreen_Normal.XI_OnIn");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1737,6 +1849,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void XI_OnIntro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnIntro, "BmScript.RGFxMovieBackScreen_Normal.XI_OnIntro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1750,6 +1863,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void SetMap3DRenderingCustomWaypoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMap3DRenderingCustomWaypoint, "BmScript.RGFxMovieBackScreen_Normal.SetMap3DRenderingCustomWaypoint");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1763,6 +1877,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void Setup3DAutopan(bool bIsSubMap)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Setup3DAutopan, "BmScript.RGFxMovieBackScreen_Normal.Setup3DAutopan");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1777,6 +1892,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void RequestStickCameraData(BmSDK.FString TargetPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestStickCameraData, "BmScript.RGFxMovieBackScreen_Normal.RequestStickCameraData");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1791,6 +1907,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void UpdateVolumes(BmSDK.FString PlayerMap, BmSDK.FString TargettedIcon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVolumes, "BmScript.RGFxMovieBackScreen_Normal.UpdateVolumes");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1806,6 +1923,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void ClearMeshVolumes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMeshVolumes, "BmScript.RGFxMovieBackScreen_Normal.ClearMeshVolumes");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1819,6 +1937,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void FindHighlightVolumeActors()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindHighlightVolumeActors, "BmScript.RGFxMovieBackScreen_Normal.FindHighlightVolumeActors");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1832,6 +1951,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RequestMapScreen3DData(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestMapScreen3DData, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestMapScreen3DData");
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1846,6 +1966,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual BmSDK.FString GetObjectiveStyle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectiveStyle, "BmScript.RGFxMovieBackScreen_Normal.GetObjectiveStyle");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1859,6 +1980,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override bool IsOverworldGameplay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOverworldGameplay, "BmScript.RGFxMovieBackScreen_Normal.IsOverworldGameplay");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1872,6 +1994,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void XI_RequestMapScreenData(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestMapScreenData, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestMapScreenData");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1886,6 +2009,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual int XI_RequestObjectiveData(BmSDK.FString TargetBasePath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestObjectiveData, "BmScript.RGFxMovieBackScreen_Normal.XI_RequestObjectiveData");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1900,6 +2024,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void StoreVariablesToPData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoreVariablesToPData, "BmScript.RGFxMovieBackScreen_Normal.StoreVariablesToPData");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1913,6 +2038,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe override void SetVariablesFromPData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVariablesFromPData, "BmScript.RGFxMovieBackScreen_Normal.SetVariablesFromPData");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -1926,6 +2052,7 @@ public partial class RGFxMovieBackScreen_Normal : BmSDK.BmGame.RGFxMovieBackScre
     /// </summary>
     public unsafe virtual void SetVariablesFromPDD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVariablesFromPDD, "BmScript.RGFxMovieBackScreen_Normal.SetVariablesFromPDD");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

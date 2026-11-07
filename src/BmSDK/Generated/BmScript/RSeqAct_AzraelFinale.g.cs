@@ -97,6 +97,7 @@ public partial class RSeqAct_AzraelFinale : BmSDK.BmGame.RSeqAct_HelpText, BmSDK
     /// </summary>
     public unsafe override BmSDK.BmGame.RHUDPrompt.FHelpLine GetLine(int I)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLine, "BmScript.RSeqAct_AzraelFinale.GetLine");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_AzraelFinale : BmSDK.BmGame.RSeqAct_HelpText, BmSDK
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_AzraelFinale.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class RSeqAct_AzraelFinale : BmSDK.BmGame.RSeqAct_HelpText, BmSDK
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_AzraelFinale.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class RSeqAct_AzraelFinale : BmSDK.BmGame.RSeqAct_HelpText, BmSDK
     /// </summary>
     public unsafe virtual void AddSword()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSword, "BmScript.RSeqAct_AzraelFinale.AddSword");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +155,7 @@ public partial class RSeqAct_AzraelFinale : BmSDK.BmGame.RSeqAct_HelpText, BmSDK
     /// </summary>
     public unsafe virtual void RemoveSword()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveSword, "BmScript.RSeqAct_AzraelFinale.RemoveSword");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -97,6 +97,7 @@ public partial class RAnimationCapture : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
     /// </summary>
     public unsafe virtual void SetupOurPawns()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupOurPawns, "BmGame.RAnimationCapture.SetupOurPawns");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

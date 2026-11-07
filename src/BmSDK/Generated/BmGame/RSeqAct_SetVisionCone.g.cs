@@ -84,6 +84,7 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     /// </summary>
     public unsafe virtual void SetVisionConeForPawn(BmSDK.BmGame.RPawnVillain TargetPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVisionConeForPawn, "BmGame.RSeqAct_SetVisionCone.SetVisionConeForPawn");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RSeqAct_SetVisionCone : BmSDK.Engine.SequenceAction, BmSDK.
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SetVisionCone.Activated");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

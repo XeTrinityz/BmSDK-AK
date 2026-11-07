@@ -79,6 +79,7 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     /// </summary>
     public unsafe override bool StopsProjectile(BmSDK.Engine.Projectile P, BmSDK.Engine.PrimitiveComponent HitComponent = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopsProjectile, "Engine.PortalTeleporter.StopsProjectile");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -94,6 +95,7 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     /// </summary>
     public unsafe virtual BmSDK.Engine.TextureRenderTarget2D CreatePortalTexture()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreatePortalTexture, "Engine.PortalTeleporter.CreatePortalTexture");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformHitLocation(System.Numerics.Vector3 HitLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformHitLocation, "Engine.PortalTeleporter.TransformHitLocation");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -135,6 +138,7 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformVectorDir(System.Numerics.Vector3 V)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformVectorDir, "Engine.PortalTeleporter.TransformVectorDir");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -156,6 +160,7 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
     /// </summary>
     public unsafe virtual bool TransformActor(BmSDK.Engine.Actor A)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformActor, "Engine.PortalTeleporter.TransformActor");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

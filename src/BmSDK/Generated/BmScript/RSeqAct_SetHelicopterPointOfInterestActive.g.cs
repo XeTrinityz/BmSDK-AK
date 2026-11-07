@@ -84,6 +84,7 @@ public partial class RSeqAct_SetHelicopterPointOfInterestActive : BmSDK.Engine.S
     /// </summary>
     public unsafe virtual void SetPointsActive(bool _active)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPointsActive, "BmScript.RSeqAct_SetHelicopterPointOfInterestActive.SetPointsActive");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RSeqAct_SetHelicopterPointOfInterestActive : BmSDK.Engine.S
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SetHelicopterPointOfInterestActive.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

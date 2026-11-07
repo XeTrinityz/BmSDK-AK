@@ -79,6 +79,7 @@ public partial class GameplayEventsHandler : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveFilter(int EventID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFilter, "Engine.GameplayEventsHandler.RemoveFilter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class GameplayEventsHandler : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddFilter(int EventID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFilter, "Engine.GameplayEventsHandler.AddFilter");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -107,6 +109,7 @@ public partial class GameplayEventsHandler : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ResolveGroupFilters()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolveGroupFilters, "Engine.GameplayEventsHandler.ResolveGroupFilters");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -120,6 +123,7 @@ public partial class GameplayEventsHandler : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PostProcessStream()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostProcessStream, "Engine.GameplayEventsHandler.PostProcessStream");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +137,7 @@ public partial class GameplayEventsHandler : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PreProcessStream()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreProcessStream, "Engine.GameplayEventsHandler.PreProcessStream");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class GameplayEventsHandler : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetReader(BmSDK.Engine.GameplayEventsReader NewReader)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetReader, "Engine.GameplayEventsHandler.SetReader");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

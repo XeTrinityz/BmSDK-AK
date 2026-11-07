@@ -84,6 +84,7 @@ public partial class RBMAIAction_NervousCorner_Out : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_NervousCorner_Out.ActionTick");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMAIAction_NervousCorner_Out : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe virtual void StartCorner(System.Numerics.Vector3 TargetPos, float TargetYaw)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCorner, "BmGame.RBMAIAction_NervousCorner_Out.StartCorner");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RBMAIAction_NervousCorner_Out : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMAIAction_NervousCorner_Out.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RBMAIAction_NervousCorner_Out : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_NervousCorner_Out.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RBMAIAction_NervousCorner_Out : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe virtual void SetAggressive(bool bNewAgg)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAggressive, "BmGame.RBMAIAction_NervousCorner_Out.SetAggressive");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class RBMAIAction_NervousCorner_Out : BmSDK.BmGame.RBMAIAction, B
     /// </summary>
     public unsafe virtual void SetCornerPos(System.Numerics.Vector3 pos, float Yaw)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCornerPos, "BmGame.RBMAIAction_NervousCorner_Out.SetCornerPos");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

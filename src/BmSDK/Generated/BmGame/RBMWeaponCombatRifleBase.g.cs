@@ -84,6 +84,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe virtual void TurnDownLight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnDownLight, "BmGame.RBMWeaponCombatRifleBase.TurnDownLight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe virtual void TurnUpLight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnUpLight, "BmGame.RBMWeaponCombatRifleBase.TurnUpLight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe virtual void TurnOnVisibilityLight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnVisibilityLight, "BmGame.RBMWeaponCombatRifleBase.TurnOnVisibilityLight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override void UpdateWeaponSnatchAura()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateWeaponSnatchAura, "BmGame.RBMWeaponCombatRifleBase.UpdateWeaponSnatchAura");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override void DetachWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachWeapon, "BmGame.RBMWeaponCombatRifleBase.DetachWeapon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override float GetRECPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRECPriority, "BmGame.RBMWeaponCombatRifleBase.GetRECPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override float GetBatClawPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatClawPriority, "BmGame.RBMWeaponCombatRifleBase.GetBatClawPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +182,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override void StartWeaponFireAudio(bool Burst)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartWeaponFireAudio, "BmGame.RBMWeaponCombatRifleBase.StartWeaponFireAudio");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +197,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateWeaponConfig(BmSDK.GameObject NewOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeaponConfig, "BmGame.RBMWeaponCombatRifleBase.CreateWeaponConfig");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +230,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override void ShowWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowWeapon, "BmGame.RBMWeaponCombatRifleBase.ShowWeapon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +244,7 @@ public partial class RBMWeaponCombatRifleBase : BmSDK.BmGame.RBMWeaponRanged, Bm
     /// </summary>
     public unsafe override void HideWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideWeapon, "BmGame.RBMWeaponCombatRifleBase.HideWeapon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

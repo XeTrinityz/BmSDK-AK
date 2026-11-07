@@ -97,6 +97,7 @@ public partial class RSeqAct_SetPawnsREvidence : BmSDK.Engine.SequenceAction, Bm
     /// </summary>
     public unsafe virtual void Set()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Set, "BmGame.RSeqAct_SetPawnsREvidence.Set");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

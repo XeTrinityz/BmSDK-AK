@@ -97,6 +97,7 @@ public partial class RSeqAct_FlashTextureMovieControl : BmSDK.BmGame.RSeqAct_Fla
     /// </summary>
     public unsafe virtual void FetchAudioSource(out BmSDK.TArray<float> pos, out BmSDK.TArray<float> Rot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FetchAudioSource, "BmScript.RSeqAct_FlashTextureMovieControl.FetchAudioSource");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +113,7 @@ public partial class RSeqAct_FlashTextureMovieControl : BmSDK.BmGame.RSeqAct_Fla
     /// </summary>
     public unsafe override void AtEndClose()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AtEndClose, "BmScript.RSeqAct_FlashTextureMovieControl.AtEndClose");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class RSeqAct_FlashTextureMovieControl : BmSDK.BmGame.RSeqAct_Fla
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_FlashTextureMovieControl.Activated");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

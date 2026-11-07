@@ -84,6 +84,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe virtual BmSDK.FString ConstructExitMsg(BmSDK.FString BaseMsg)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstructExitMsg, "BmScript.RGFxMovieUI_InstallationMessage.ConstructExitMsg");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe override void XI_OnOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnOut, "BmScript.RGFxMovieUI_InstallationMessage.XI_OnOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe override void OnFadeCompleted_Callback()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFadeCompleted_Callback, "BmScript.RGFxMovieUI_InstallationMessage.OnFadeCompleted_Callback");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe virtual void XI_OnB()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnB, "BmScript.RGFxMovieUI_InstallationMessage.XI_OnB");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe virtual void XI_OnA()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnA, "BmScript.RGFxMovieUI_InstallationMessage.XI_OnA");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetTimeAsHHMMSS(float TimeSec)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetTimeAsHHMMSS, "BmScript.RGFxMovieUI_InstallationMessage.XI_GetTimeAsHHMMSS");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe virtual int XI_GetPercent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetPercent, "BmScript.RGFxMovieUI_InstallationMessage.XI_GetPercent");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe override void PopupRequester_Callback(BmSDK.BmGame.RGFxMoviePopupRequester ThePopUpMsg, int ButtonId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopupRequester_Callback, "BmScript.RGFxMovieUI_InstallationMessage.PopupRequester_Callback");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +200,7 @@ public partial class RGFxMovieUI_InstallationMessage : BmSDK.BmGame.RGFxMovieUI,
     /// </summary>
     public unsafe virtual bool CustomInit(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomInit, "BmScript.RGFxMovieUI_InstallationMessage.CustomInit");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

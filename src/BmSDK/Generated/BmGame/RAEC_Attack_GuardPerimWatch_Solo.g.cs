@@ -84,6 +84,7 @@ public partial class RAEC_Attack_GuardPerimWatch_Solo : BmSDK.BmGame.RAlertEvent
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Attack_GuardPerimWatch_Solo.OnBeginShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_Attack_GuardPerimWatch_Solo : BmSDK.BmGame.RAlertEvent
     /// </summary>
     public unsafe virtual void FindPointOnPathThatLeavesGuardVol()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindPointOnPathThatLeavesGuardVol, "BmGame.RAEC_Attack_GuardPerimWatch_Solo.FindPointOnPathThatLeavesGuardVol");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAEC_Attack_GuardPerimWatch_Solo : BmSDK.BmGame.RAlertEvent
     /// </summary>
     public unsafe virtual void CreateActions()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateActions, "BmGame.RAEC_Attack_GuardPerimWatch_Solo.CreateActions");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RAEC_Attack_GuardPerimWatch_Solo : BmSDK.BmGame.RAlertEvent
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RAEC_Attack_GuardPerimWatch_Solo.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RAEC_Attack_GuardPerimWatch_Solo : BmSDK.BmGame.RAlertEvent
     /// </summary>
     public unsafe override void OnStartChild()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_Attack_GuardPerimWatch_Solo.OnStartChild");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

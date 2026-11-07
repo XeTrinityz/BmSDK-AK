@@ -84,6 +84,7 @@ public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGame
     /// </summary>
     public unsafe virtual int GetGlanceScore()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlanceScore, "BmGame.RMissingWallGrateAIMarker.GetGlanceScore");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGame
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RMissingWallGrateAIMarker.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGame
     /// </summary>
     public unsafe virtual void EventFinished()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EventFinished, "BmGame.RMissingWallGrateAIMarker.EventFinished");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGame
     /// </summary>
     public unsafe virtual void MissingGrateNoticedBy(BmSDK.BmGame.RBMAIController Spotter)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MissingGrateNoticedBy, "BmGame.RMissingWallGrateAIMarker.MissingGrateNoticedBy");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGame
     /// </summary>
     public unsafe virtual void SetAIRoomState(BmSDK.BmGame.RBMRoomAIState NewRoomState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAIRoomState, "BmGame.RMissingWallGrateAIMarker.SetAIRoomState");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

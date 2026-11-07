@@ -84,6 +84,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe virtual bool ShouldStopAndShootPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStopAndShootPlayer, "BmGame.RBMBehaviour_BagCarrierBase.ShouldStopAndShootPlayer");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe virtual bool IsLongWayFromDropoff()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLongWayFromDropoff, "BmGame.RBMBehaviour_BagCarrierBase.IsLongWayFromDropoff");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe virtual float GetDistFromDropoff()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDistFromDropoff, "BmGame.RBMBehaviour_BagCarrierBase.GetDistFromDropoff");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe virtual void SetOverridingDropOffPoint(BmSDK.BmGame.RLootDestinationBase dropoffPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverridingDropOffPoint, "BmGame.RBMBehaviour_BagCarrierBase.SetOverridingDropOffPoint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe virtual void SetOverridingPickupPoint(BmSDK.BmGame.RLootSourceBase PickupPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverridingPickupPoint, "BmGame.RBMBehaviour_BagCarrierBase.SetOverridingPickupPoint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe virtual void UnlockCurrentDropoffPoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockCurrentDropoffPoint, "BmGame.RBMBehaviour_BagCarrierBase.UnlockCurrentDropoffPoint");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe virtual void UnlockPickupPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockPickupPoints, "BmGame.RBMBehaviour_BagCarrierBase.UnlockPickupPoints");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_BagCarrierBase.OnBeginInterrupt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RBMBehaviour_BagCarrierBase : BmSDK.BmGame.RBMBehaviour_Doo
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_BagCarrierBase.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

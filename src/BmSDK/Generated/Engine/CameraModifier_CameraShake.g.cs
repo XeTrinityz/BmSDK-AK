@@ -84,6 +84,7 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     /// </summary>
     public unsafe override bool ModifyCamera(BmSDK.Engine.Camera Camera, float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyCamera, "Engine.CameraModifier_CameraShake.ModifyCamera");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -109,6 +110,7 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     /// </summary>
     public unsafe virtual void UpdateCameraShake(float DeltaTime, out BmSDK.Engine.CameraModifier_CameraShake.FCameraShakeInstance Shake, out BmSDK.GameObject.FTPOV OutPOV)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCameraShake, "Engine.CameraModifier_CameraShake.UpdateCameraShake");
         byte* paramsPtr = stackalloc byte[204];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -134,6 +136,7 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     /// </summary>
     public unsafe virtual void RemoveAllCameraShakes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAllCameraShakes, "Engine.CameraModifier_CameraShake.RemoveAllCameraShakes");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -147,6 +150,7 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     /// </summary>
     public unsafe virtual void RemoveCameraShake(BmSDK.Engine.CameraShake Shake)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCameraShake, "Engine.CameraModifier_CameraShake.RemoveCameraShake");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -161,6 +165,7 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     /// </summary>
     public unsafe virtual void AddCameraShake(BmSDK.Engine.CameraShake NewShake, float Scale, BmSDK.Engine.Camera.ECameraAnimPlaySpace PlaySpace = default, BmSDK.Rotator UserPlaySpaceRot = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCameraShake, "Engine.CameraModifier_CameraShake.AddCameraShake");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +183,7 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     /// </summary>
     public unsafe virtual BmSDK.Engine.CameraModifier_CameraShake.FCameraShakeInstance InitializeShake(BmSDK.Engine.CameraShake NewShake, float Scale, BmSDK.Engine.Camera.ECameraAnimPlaySpace PlaySpace, BmSDK.Rotator UserPlaySpaceRot = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitializeShake, "Engine.CameraModifier_CameraShake.InitializeShake");
         byte* paramsPtr = stackalloc byte[348];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +201,7 @@ public partial class CameraModifier_CameraShake : BmSDK.Engine.CameraModifier, B
     /// </summary>
     public unsafe virtual void ReinitShake(int ActiveShakeIdx, float Scale)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReinitShake, "Engine.CameraModifier_CameraShake.ReinitShake");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

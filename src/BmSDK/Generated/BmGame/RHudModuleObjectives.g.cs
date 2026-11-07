@@ -84,6 +84,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe virtual void XI_ObjectiveBarFilled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ObjectiveBarFilled, "BmGame.RHudModuleObjectives.XI_ObjectiveBarFilled");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe virtual void XI_ObjectiveItemShown(int arrow_type, BmSDK.FString CustomIconString)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ObjectiveItemShown, "BmGame.RHudModuleObjectives.XI_ObjectiveItemShown");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe virtual void FlushObjectivePrivate(BmSDK.FString Title)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushObjectivePrivate, "BmGame.RHudModuleObjectives.FlushObjectivePrivate");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe virtual void AddObjectivePrivate(float Time, BmSDK.FString Title, BmSDK.FString Desc, BmSDK.FString OrgDesc, int ArrowType, bool bForceShowMap, BmSDK.FString BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicatorm, BmSDK.FString mostWantedUnlocksString)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddObjectivePrivate, "BmGame.RHudModuleObjectives.AddObjectivePrivate");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +153,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe virtual void ObjectivesPromptCallback(BmSDK.FString PadStr, BmSDK.FString KeyStr)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ObjectivesPromptCallback, "BmGame.RHudModuleObjectives.ObjectivesPromptCallback");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +169,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe virtual void SendQueuedInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendQueuedInfo, "BmGame.RHudModuleObjectives.SendQueuedInfo");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +183,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleObjectives.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +197,7 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleObjectives.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

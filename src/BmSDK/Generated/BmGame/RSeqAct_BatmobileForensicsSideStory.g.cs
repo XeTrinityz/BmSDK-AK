@@ -97,6 +97,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void DebugLineTest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugLineTest, "BmGame.RSeqAct_BatmobileForensicsSideStory.DebugLineTest");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual bool DoPulse()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPulse, "BmGame.RSeqAct_BatmobileForensicsSideStory.DoPulse");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual bool IsActorInCone(int actor_index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActorInCone, "BmGame.RSeqAct_BatmobileForensicsSideStory.IsActorInCone");
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +140,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void SetUpPulseParams()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUpPulseParams, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetUpPulseParams");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +154,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual bool TryToActivateTrail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToActivateTrail, "BmGame.RSeqAct_BatmobileForensicsSideStory.TryToActivateTrail");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +168,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void ForensicsTick(float DeltaT)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForensicsTick, "BmGame.RSeqAct_BatmobileForensicsSideStory.ForensicsTick");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +183,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void SetDisplayIndex(float new_disp_index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayIndex, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetDisplayIndex");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +198,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBatmobileForensicsBaseActor GetActorByPlusTwoIndex(int actor_index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorByPlusTwoIndex, "BmGame.RSeqAct_BatmobileForensicsSideStory.GetActorByPlusTwoIndex");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -205,6 +213,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void SortNodes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SortNodes, "BmGame.RSeqAct_BatmobileForensicsSideStory.SortNodes");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +227,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void SetTrailEngaged(bool is_engaged)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTrailEngaged, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetTrailEngaged");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -232,6 +242,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void SetTrailComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTrailComplete, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetTrailComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -245,6 +256,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void SetInBatmobile(bool in_batmobile)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInBatmobile, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetInBatmobile");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -259,6 +271,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_BatmobileForensicsSideStory.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -272,6 +285,7 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
     /// </summary>
     public unsafe virtual void SetRegistered(bool do_register)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRegistered, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetRegistered");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

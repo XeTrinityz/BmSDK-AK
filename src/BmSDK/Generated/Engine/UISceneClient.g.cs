@@ -79,6 +79,7 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitializeSceneClient()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitializeSceneClient, "Engine.UISceneClient.InitializeSceneClient");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetInverseCanvasToScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInverseCanvasToScreen, "Engine.UISceneClient.GetInverseCanvasToScreen");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetCanvasToScreen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCanvasToScreen, "Engine.UISceneClient.GetCanvasToScreen");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +135,7 @@ public partial class UISceneClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsUIActive(int Flags = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsUIActive, "Engine.UISceneClient.IsUIActive");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

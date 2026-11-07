@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmScript.RSpecialMoveInstance_CanisterCarry.GetHelpPrompt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe override void HandleAction(BmSDK.FName actionName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleAction, "BmScript.RSpecialMoveInstance_CanisterCarry.HandleAction");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void StartAudioBeeps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAudioBeeps, "BmScript.RSpecialMoveInstance_CanisterCarry.StartAudioBeeps");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void EndManualMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndManualMove, "BmScript.RSpecialMoveInstance_CanisterCarry.EndManualMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void BeginManualMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginManualMove, "BmScript.RSpecialMoveInstance_CanisterCarry.BeginManualMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void JokerGunShot()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerGunShot, "BmScript.RSpecialMoveInstance_CanisterCarry.JokerGunShot");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_CanisterCarry.CancelSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -179,6 +186,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CanisterCarry.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +200,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void DropCanister()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropCanister, "BmScript.RSpecialMoveInstance_CanisterCarry.DropCanister");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -205,6 +214,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void AttachCanister()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachCanister, "BmScript.RSpecialMoveInstance_CanisterCarry.AttachCanister");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +228,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig CreateSpecialWalkWeaponConfig()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateSpecialWalkWeaponConfig, "BmScript.RSpecialMoveInstance_CanisterCarry.CreateSpecialWalkWeaponConfig");
         byte* paramsPtr = stackalloc byte[468];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +242,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe override void CustomEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomEvent, "BmScript.RSpecialMoveInstance_CanisterCarry.CustomEvent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -244,6 +256,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual BmSDK.FName GetWarningAnimation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWarningAnimation, "BmScript.RSpecialMoveInstance_CanisterCarry.GetWarningAnimation");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +270,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual bool DetachOnWarning()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachOnWarning, "BmScript.RSpecialMoveInstance_CanisterCarry.DetachOnWarning");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -270,6 +284,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void FireWarningEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireWarningEvent, "BmScript.RSpecialMoveInstance_CanisterCarry.FireWarningEvent");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,6 +298,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CanisterCarry.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -297,6 +313,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void StopBeeps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopBeeps, "BmScript.RSpecialMoveInstance_CanisterCarry.StopBeeps");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -310,6 +327,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe virtual void StartBeeps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartBeeps, "BmScript.RSpecialMoveInstance_CanisterCarry.StartBeeps");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -323,6 +341,7 @@ public partial class RSpecialMoveInstance_CanisterCarry : BmSDK.BmGame.RSpecialM
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CanisterCarry.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[204];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

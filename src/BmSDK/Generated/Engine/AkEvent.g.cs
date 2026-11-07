@@ -84,6 +84,7 @@ public partial class AkEvent : BmSDK.Engine.AkAsset, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsAudibleAt(float distanceUU, bool resultIfUnknown)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAudibleAt, "Engine.AkEvent.IsAudibleAt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

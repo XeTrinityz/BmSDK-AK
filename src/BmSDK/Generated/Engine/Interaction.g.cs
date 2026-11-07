@@ -84,6 +84,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyPlayerRemoved(int PlayerIndex, BmSDK.Engine.LocalPlayer RemovedPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPlayerRemoved, "Engine.Interaction.NotifyPlayerRemoved");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyPlayerAdded(int PlayerIndex, BmSDK.Engine.LocalPlayer AddedPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPlayerAdded, "Engine.Interaction.NotifyPlayerAdded");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyGameSessionEnded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGameSessionEnded, "Engine.Interaction.NotifyGameSessionEnded");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Initialized()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialized, "Engine.Interaction.Initialized");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnInitialize()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnInitialize, "Engine.Interaction.OnInitialize");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.Interaction.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -173,6 +179,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PostRender(BmSDK.Engine.Canvas Canvas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostRender, "Engine.Interaction.PostRender");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -187,6 +194,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "Engine.Interaction.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -201,6 +209,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool OnReceivedNativeInputChar(int ControllerId, BmSDK.FString Unicode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedNativeInputChar, "Engine.Interaction.OnReceivedNativeInputChar");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +225,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool OnReceivedNativeInputAxis(int ControllerId, BmSDK.FName Key, float Delta, float DeltaTime, bool bGamepad = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedNativeInputAxis, "Engine.Interaction.OnReceivedNativeInputAxis");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -270,6 +280,7 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool OnReceivedNativeInputKey(int ControllerId, BmSDK.FName Key, BmSDK.GameObject.EInputEvent EventType, float AmountDepressed = default, bool bGamepad = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedNativeInputKey, "Engine.Interaction.OnReceivedNativeInputKey");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

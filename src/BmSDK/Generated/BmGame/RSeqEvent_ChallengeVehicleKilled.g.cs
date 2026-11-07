@@ -84,6 +84,7 @@ public partial class RSeqEvent_ChallengeVehicleKilled : BmSDK.Engine.SequenceEve
     /// </summary>
     public unsafe virtual void TriggerEvent(BmSDK.Engine.Actor hVehicle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEvent, "BmGame.RSeqEvent_ChallengeVehicleKilled.TriggerEvent");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RSeqEvent_ChallengeVehicleKilled : BmSDK.Engine.SequenceEve
     /// </summary>
     public unsafe virtual BmSDK.GameObject GetArchetype(BmSDK.Engine.Actor hActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetArchetype, "BmGame.RSeqEvent_ChallengeVehicleKilled.GetArchetype");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

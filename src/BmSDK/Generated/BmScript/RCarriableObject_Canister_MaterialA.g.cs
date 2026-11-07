@@ -84,6 +84,7 @@ public partial class RCarriableObject_Canister_MaterialA : BmSDK.BmScript.RCarri
     /// </summary>
     public unsafe override void Init(BmSDK.BmGame.RPawnVillain Thug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmScript.RCarriableObject_Canister_MaterialA.Init");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

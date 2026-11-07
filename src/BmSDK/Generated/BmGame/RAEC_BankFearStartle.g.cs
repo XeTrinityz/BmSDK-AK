@@ -84,6 +84,7 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_BankFearStartle.FinishTopLevelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe virtual void FearTakedownStartle(BmSDK.BmGame.RPawnVillain Screamer, BmSDK.Engine.Actor ForceMissActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FearTakedownStartle, "BmGame.RAEC_BankFearStartle.FearTakedownStartle");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe virtual void AddGunStartled(BmSDK.BmGame.RBMAIController NewCon, System.Numerics.Vector3 StartleLoc, BmSDK.Engine.Actor ForceMissActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddGunStartled, "BmGame.RAEC_BankFearStartle.AddGunStartled");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
     /// </summary>
     public unsafe override bool WantsToGlanceAt(BmSDK.Engine.Actor TestTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WantsToGlanceAt, "BmGame.RAEC_BankFearStartle.WantsToGlanceAt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

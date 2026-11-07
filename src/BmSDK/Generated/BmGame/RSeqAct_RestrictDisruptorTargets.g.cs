@@ -97,6 +97,7 @@ public partial class RSeqAct_RestrictDisruptorTargets : BmSDK.Engine.SequenceAct
     /// </summary>
     public unsafe virtual void FiredAtWrongTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FiredAtWrongTarget, "BmGame.RSeqAct_RestrictDisruptorTargets.FiredAtWrongTarget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_RestrictDisruptorTargets : BmSDK.Engine.SequenceAct
     /// </summary>
     public unsafe virtual bool IsCurrentTargetAllowed(BmSDK.Engine.Actor CheckTarget, bool bTrackerTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCurrentTargetAllowed, "BmGame.RSeqAct_RestrictDisruptorTargets.IsCurrentTargetAllowed");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class RSeqAct_RestrictDisruptorTargets : BmSDK.Engine.SequenceAct
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_RestrictDisruptorTargets.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class HelpCommandlet : BmSDK.Commandlet, BmSDK.IGameObject
     /// </summary>
     public unsafe override int Main(BmSDK.FString Params)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Main, "Core.HelpCommandlet.Main");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

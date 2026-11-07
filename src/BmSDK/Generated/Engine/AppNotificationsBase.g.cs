@@ -84,6 +84,7 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual void DebugLogNotification(out BmSDK.Engine.AppNotificationsBase.FNotificationInfo Notification)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugLogNotification, "Engine.AppNotificationsBase.DebugLogNotification");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual void OnReceivedRemoteNotification(out BmSDK.Engine.AppNotificationsBase.FNotificationInfo Notification, bool bWasAppActive)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedRemoteNotification, "Engine.AppNotificationsBase.OnReceivedRemoteNotification");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual void OnReceivedLocalNotification(out BmSDK.Engine.AppNotificationsBase.FNotificationInfo Notification, bool bWasAppActive)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedLocalNotification, "Engine.AppNotificationsBase.OnReceivedLocalNotification");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +131,7 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual void CancelAllScheduledLocalNotifications()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelAllScheduledLocalNotifications, "Engine.AppNotificationsBase.CancelAllScheduledLocalNotifications");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +152,7 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual void ScheduleLocalNotification(out BmSDK.Engine.AppNotificationsBase.FNotificationInfo Notification, int StartOffsetSeconds)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScheduleLocalNotification, "Engine.AppNotificationsBase.ScheduleLocalNotification");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +175,7 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual bool WasLaunchedViaNotification()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WasLaunchedViaNotification, "Engine.AppNotificationsBase.WasLaunchedViaNotification");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +189,7 @@ public partial class AppNotificationsBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.AppNotificationsBase.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

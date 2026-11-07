@@ -84,6 +84,7 @@ public partial class RSeqAct_GameActionPerformedWithTarget : BmSDK.BmGame.RSeqAc
     /// </summary>
     public unsafe override void GameActionPerformed(BmSDK.BmGame.RGameInfo.EGameAction ActionPerformed, BmSDK.Engine.Actor Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GameActionPerformed, "BmGame.RSeqAct_GameActionPerformedWithTarget.GameActionPerformed");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RBMWeaponBatmanCarryJokerCop : BmSDK.BmGame.RBMWeapon, BmSD
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateWeaponConfig(BmSDK.GameObject NewOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeaponConfig, "BmScript.RBMWeaponBatmanCarryJokerCop.CreateWeaponConfig");
         byte* paramsPtr = stackalloc byte[1528];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMWeaponBatmanCarryJokerCop : BmSDK.BmGame.RBMWeapon, BmSD
     /// </summary>
     public unsafe override void ItemRemovedFromInvManager()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemRemovedFromInvManager, "BmScript.RBMWeaponBatmanCarryJokerCop.ItemRemovedFromInvManager");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RBMWeaponBatmanCarryJokerCop : BmSDK.BmGame.RBMWeapon, BmSD
     /// </summary>
     public unsafe override void GivenTo(BmSDK.Engine.Pawn thisPawn, bool bDoNotActivate = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GivenTo, "BmScript.RBMWeaponBatmanCarryJokerCop.GivenTo");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

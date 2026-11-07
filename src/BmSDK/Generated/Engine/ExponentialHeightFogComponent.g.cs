@@ -84,6 +84,7 @@ public partial class ExponentialHeightFogComponent : BmSDK.Engine.ActorComponent
     /// </summary>
     public unsafe virtual void SetEnabled(bool bSetEnabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.ExponentialHeightFogComponent.SetEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

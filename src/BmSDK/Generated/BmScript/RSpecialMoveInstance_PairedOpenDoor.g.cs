@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override bool PlaySpecialCameraAnim(BmSDK.BmGame.RPlayerController InController, BmSDK.FName AnimName, bool bPlaying, bool bCamMirrored, float FOV = default, bool bLoop = default, float AnimStartTime = default, bool bProportionalMotion = default, float fBlendInTime = default, BmSDK.Engine.SkeletalMeshComponent SlavedToSkelComponent = default, BmSDK.Engine.AnimSequence SlavedToAnim = default, bool bIgnoreBlend = default, bool bBlendEvenIfInactive = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySpecialCameraAnim, "BmScript.RSpecialMoveInstance_PairedOpenDoor.PlaySpecialCameraAnim");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetRobinAnimationSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRobinAnimationSet, "BmScript.RSpecialMoveInstance_PairedOpenDoor.GetRobinAnimationSet");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe virtual BmSDK.FName GetRobinAnimationName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRobinAnimationName, "BmScript.RSpecialMoveInstance_PairedOpenDoor.GetRobinAnimationName");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +139,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe virtual BmSDK.FName GetCatwomanAnimationNameFollowing()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCatwomanAnimationNameFollowing, "BmScript.RSpecialMoveInstance_PairedOpenDoor.GetCatwomanAnimationNameFollowing");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +153,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe virtual bool UseReverseDoorAnim(BmSDK.Engine.Actor Door)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseReverseDoorAnim, "BmScript.RSpecialMoveInstance_PairedOpenDoor.UseReverseDoorAnim");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +168,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimSet, "BmScript.RSpecialMoveInstance_PairedOpenDoor.GetAnimSet");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -176,6 +182,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override void PickRandomAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickRandomAnim, "BmScript.RSpecialMoveInstance_PairedOpenDoor.PickRandomAnim");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +196,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_PairedOpenDoor.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +210,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_PairedOpenDoor.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +225,7 @@ public partial class RSpecialMoveInstance_PairedOpenDoor : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_PairedOpenDoor.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

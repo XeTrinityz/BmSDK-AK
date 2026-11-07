@@ -84,6 +84,7 @@ public partial class RBMAIAction_PauseAtTopOfLadder : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_PauseAtTopOfLadder.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMAIAction_PauseAtTopOfLadder : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe virtual void CancelLooking()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelLooking, "BmGame.RBMAIAction_PauseAtTopOfLadder.CancelLooking");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RBMAIAction_PauseAtTopOfLadder : BmSDK.BmGame.RBMAIAction, 
     /// </summary>
     public unsafe virtual void SetLookPoints(BmSDK.TArray<System.Numerics.Vector3> NewLookPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLookPoints, "BmGame.RBMAIAction_PauseAtTopOfLadder.SetLookPoints");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

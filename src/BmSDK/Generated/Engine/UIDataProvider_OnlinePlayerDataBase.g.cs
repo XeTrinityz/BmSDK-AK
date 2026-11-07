@@ -79,6 +79,7 @@ public partial class UIDataProvider_OnlinePlayerDataBase : BmSDK.Engine.UIDataPr
     /// </summary>
     public unsafe virtual void OnUnregister()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUnregister, "Engine.UIDataProvider_OnlinePlayerDataBase.OnUnregister");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class UIDataProvider_OnlinePlayerDataBase : BmSDK.Engine.UIDataPr
     /// </summary>
     public unsafe virtual void OnRegister(BmSDK.Engine.LocalPlayer InPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRegister, "Engine.UIDataProvider_OnlinePlayerDataBase.OnRegister");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

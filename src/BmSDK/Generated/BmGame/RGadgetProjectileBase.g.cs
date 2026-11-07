@@ -84,6 +84,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void ProximityTriggered(BmSDK.BmGame.RPawnVillain NearbyVillain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProximityTriggered, "BmGame.RGadgetProjectileBase.ProximityTriggered");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe override BmSDK.Engine.RPhysicalMaterialProperty GetImpactMaterial(BmSDK.Engine.Actor.FImpactInfo Impact)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetImpactMaterial, "BmGame.RGadgetProjectileBase.GetImpactMaterial");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void TriggerSniperReaction(System.Numerics.Vector3 EventLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSniperReaction, "BmGame.RGadgetProjectileBase.TriggerSniperReaction");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void TriggerCombatReaction(System.Numerics.Vector3 EventLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerCombatReaction, "BmGame.RGadgetProjectileBase.TriggerCombatReaction");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void PredAIStartleReaction(System.Numerics.Vector3 SafeNoiseLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PredAIStartleReaction, "BmGame.RGadgetProjectileBase.PredAIStartleReaction");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +159,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void TriggerAIReaction(System.Numerics.Vector3 SafeNoiseLocation, bool bWasBoothButton)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAIReaction, "BmGame.RGadgetProjectileBase.TriggerAIReaction");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +175,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void TriggerNoiseEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerNoiseEvent, "BmGame.RGadgetProjectileBase.TriggerNoiseEvent");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -182,6 +189,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool IsBlockedByActorComp(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBlockedByActorComp, "BmGame.RGadgetProjectileBase.IsBlockedByActorComp");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +212,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RGadgetProjectileBase.Touch");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +230,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void SetCookTime(float CookTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCookTime, "BmGame.RGadgetProjectileBase.SetCookTime");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +245,7 @@ public partial class RGadgetProjectileBase : BmSDK.BmGame.RProjectile, BmSDK.IGa
     /// </summary>
     public unsafe virtual void Fire(System.Numerics.Vector3 LaunchLocation, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 StartSpeed, bool bSecondary, BmSDK.Engine.Actor Target, System.Numerics.Vector3 ActualTargetLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Fire, "BmGame.RGadgetProjectileBase.Fire");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

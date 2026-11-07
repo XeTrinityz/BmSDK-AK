@@ -84,6 +84,7 @@ public partial class RBMAIAction_Cower : BmSDK.BmGame.RBMAIAction, BmSDK.IGameOb
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_Cower.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMAIAction_Cower : BmSDK.BmGame.RBMAIAction, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void StartCowerAnim(float Facing)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCowerAnim, "BmGame.RBMAIAction_Cower.StartCowerAnim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RBMAIAction_Cower : BmSDK.BmGame.RBMAIAction, BmSDK.IGameOb
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_Cower.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RBMAIAction_Cower : BmSDK.BmGame.RBMAIAction, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void SetFleePoint(BmSDK.BmGame.RPredHostageFleePoint NewFleePoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFleePoint, "BmGame.RBMAIAction_Cower.SetFleePoint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

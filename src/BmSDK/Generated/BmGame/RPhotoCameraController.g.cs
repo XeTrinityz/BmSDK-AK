@@ -84,6 +84,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void InitInputSystem()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitInputSystem, "BmGame.RPhotoCameraController.InitInputSystem");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void Teleport()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Teleport, "BmGame.RPhotoCameraController.Teleport");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void StoreSettings()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoreSettings, "BmGame.RPhotoCameraController.StoreSettings");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void FetchSettings()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FetchSettings, "BmGame.RPhotoCameraController.FetchSettings");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void DumpSettings()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpSettings, "BmGame.RPhotoCameraController.DumpSettings");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void SetDefaultSettings()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDefaultSettings, "BmGame.RPhotoCameraController.SetDefaultSettings");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void PutSettings(BmSDK.TArray<float> Settings)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PutSettings, "BmGame.RPhotoCameraController.PutSettings");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +190,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void GetSettings(out BmSDK.TArray<float> Settings)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSettings, "BmGame.RPhotoCameraController.GetSettings");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +212,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void Set(BmSDK.FString ItemName, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Set, "BmGame.RPhotoCameraController.Set");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -219,6 +228,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual float Get(BmSDK.FString ItemName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Get, "BmGame.RPhotoCameraController.Get");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -233,6 +243,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void AdjustItem(BmSDK.FString ItemName, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustItem, "BmGame.RPhotoCameraController.AdjustItem");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +259,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual float ExposureFromUI(float InValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExposureFromUI, "BmGame.RPhotoCameraController.ExposureFromUI");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -262,6 +274,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual float ExposureToUI(float InValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExposureToUI, "BmGame.RPhotoCameraController.ExposureToUI");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -276,6 +289,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual float DofApertureFromUI(float InValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DofApertureFromUI, "BmGame.RPhotoCameraController.DofApertureFromUI");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -290,6 +304,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual float DofApertureToUI(float InValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DofApertureToUI, "BmGame.RPhotoCameraController.DofApertureToUI");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -304,6 +319,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void ModifyMoveDeltaForOcean(System.Numerics.Vector3 InitialLocation, out System.Numerics.Vector3 Delta)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyMoveDeltaForOcean, "BmGame.RPhotoCameraController.ModifyMoveDeltaForOcean");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -328,6 +344,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void InitPlayerReplicationInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitPlayerReplicationInfo, "BmGame.RPhotoCameraController.InitPlayerReplicationInfo");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -341,6 +358,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void PlayerTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmGame.RPhotoCameraController.PlayerTick");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -355,6 +373,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void Pause()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Pause, "BmGame.RPhotoCameraController.Pause");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -368,6 +387,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void SetPlayersOnly(bool bPlayersOnly)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlayersOnly, "BmGame.RPhotoCameraController.SetPlayersOnly");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -382,6 +402,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void OnDeactivate(BmSDK.Engine.PlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RPhotoCameraController.OnDeactivate");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -396,6 +417,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void OnActivate(BmSDK.Engine.PlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RPhotoCameraController.OnActivate");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -410,6 +432,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPhotoCameraController.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -423,6 +446,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void DebugUpdateCinematicCapes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugUpdateCinematicCapes, "BmGame.RPhotoCameraController.DebugUpdateCinematicCapes");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -436,6 +460,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe void UpdateBatmansCapeInternal(BmSDK.BmGame.RCapeComponent CapeComponent)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBatmansCapeInternal, "BmGame.RPhotoCameraController.UpdateBatmansCapeInternal");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -457,6 +482,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe override void RegisterOnlineDelegates()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterOnlineDelegates, "BmGame.RPhotoCameraController.RegisterOnlineDelegates");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -470,6 +496,7 @@ public partial class RPhotoCameraController : BmSDK.Engine.DebugCameraController
     /// </summary>
     public unsafe virtual void InheritCurrentPPSettings()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InheritCurrentPPSettings, "BmGame.RPhotoCameraController.InheritCurrentPPSettings");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -92,6 +92,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void ChangeIntoOrOutOfScanMode(bool bInScanMode)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeIntoOrOutOfScanMode, "BmGame.RSeqAct_AugmentedForensicsBase.ChangeIntoOrOutOfScanMode");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void AutoFillTimelineWhenScannerModeEntered()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutoFillTimelineWhenScannerModeEntered, "BmGame.RSeqAct_AugmentedForensicsBase.AutoFillTimelineWhenScannerModeEntered");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +121,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SendCursorToFlash()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendCursorToFlash, "BmGame.RSeqAct_AugmentedForensicsBase.SendCursorToFlash");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +135,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void FillTimelineWithDirectorTrack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FillTimelineWithDirectorTrack, "BmGame.RSeqAct_AugmentedForensicsBase.FillTimelineWithDirectorTrack");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +149,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SendTimelineToFlash(BmSDK.FString timeline_anim, float director_start_prop)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendTimelineToFlash, "BmGame.RSeqAct_AugmentedForensicsBase.SendTimelineToFlash");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +165,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void OverrideReconstructionRate(float recon_rate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideReconstructionRate, "BmGame.RSeqAct_AugmentedForensicsBase.OverrideReconstructionRate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -174,6 +180,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void ChangeToPlaybackDirectorTrack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeToPlaybackDirectorTrack, "BmGame.RSeqAct_AugmentedForensicsBase.ChangeToPlaybackDirectorTrack");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -187,6 +194,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SetDirectorAndSlomo(int director_index, int slomo_index, int playback_director_index = default, int playback_slomo_index = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDirectorAndSlomo, "BmGame.RSeqAct_AugmentedForensicsBase.SetDirectorAndSlomo");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +212,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void AutoPlayBack(float start_time, float end_time, float reconstruction_end_time)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutoPlayBack, "BmGame.RSeqAct_AugmentedForensicsBase.AutoPlayBack");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -220,6 +229,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SetScrubbingDirectionAudio(int NewScrubbingAudioDirection)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScrubbingDirectionAudio, "BmGame.RSeqAct_AugmentedForensicsBase.SetScrubbingDirectionAudio");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +244,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SetTimeProportion(float Proportion)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTimeProportion, "BmGame.RSeqAct_AugmentedForensicsBase.SetTimeProportion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +259,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SetMatineeTime(float new_time)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMatineeTime, "BmGame.RSeqAct_AugmentedForensicsBase.SetMatineeTime");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -262,6 +274,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SetMatineePlaypack(float playback_speed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMatineePlaypack, "BmGame.RSeqAct_AugmentedForensicsBase.SetMatineePlaypack");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,6 +296,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SetActorHidden(BmSDK.Engine.Actor the_actor, bool is_hidden)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActorHidden, "BmGame.RSeqAct_AugmentedForensicsBase.SetActorHidden");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -305,6 +319,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void SetDirectorAndSloMoGroup(int director_index, int slomo_index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDirectorAndSloMoGroup, "BmGame.RSeqAct_AugmentedForensicsBase.SetDirectorAndSloMoGroup");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +342,7 @@ public partial class RSeqAct_AugmentedForensicsBase : BmSDK.Engine.SeqAct_Latent
     /// </summary>
     public unsafe virtual void InitialiseMatinee()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseMatinee, "BmGame.RSeqAct_AugmentedForensicsBase.InitialiseMatinee");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

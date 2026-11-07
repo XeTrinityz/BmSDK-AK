@@ -84,6 +84,7 @@ public partial class RFreezeClusterTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGam
     /// </summary>
     public unsafe virtual void ForceFindTouchingActors()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceFindTouchingActors, "BmGame.RFreezeClusterTrapBase.ForceFindTouchingActors");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

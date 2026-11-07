@@ -84,6 +84,7 @@ public partial class RBMBalloonBolasProjectileBase : BmSDK.BmGame.RBatarangProje
     /// </summary>
     public unsafe virtual void SpawnRopeAndBalloon(BmSDK.BmGame.RPawnVillain HitThug)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRopeAndBalloon, "BmGame.RBMBalloonBolasProjectileBase.SpawnRopeAndBalloon");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -97,6 +97,7 @@ public partial class RBMBehaviour_JokerRooftop : BmSDK.BmGame.RBMBehaviour_Joker
     /// </summary>
     public unsafe virtual bool JokerInShot()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerInShot, "BmScript.RBMBehaviour_JokerRooftop.JokerInShot");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RBMBehaviour_JokerRooftop : BmSDK.BmGame.RBMBehaviour_Joker
     /// </summary>
     public unsafe virtual void BeginOverlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginOverlay, "BmScript.RBMBehaviour_JokerRooftop.BeginOverlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RBMBehaviour_JokerRooftop : BmSDK.BmGame.RBMBehaviour_Joker
     /// </summary>
     public unsafe override bool DoesJokerTypeTrumpMine(BmSDK.FString NewCaseIdentifier)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoesJokerTypeTrumpMine, "BmScript.RBMBehaviour_JokerRooftop.DoesJokerTypeTrumpMine");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +140,7 @@ public partial class RBMBehaviour_JokerRooftop : BmSDK.BmGame.RBMBehaviour_Joker
     /// </summary>
     public unsafe virtual void MeetingPointHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MeetingPointHit, "BmScript.RBMBehaviour_JokerRooftop.MeetingPointHit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +154,7 @@ public partial class RBMBehaviour_JokerRooftop : BmSDK.BmGame.RBMBehaviour_Joker
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_JokerRooftop.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +168,7 @@ public partial class RBMBehaviour_JokerRooftop : BmSDK.BmGame.RBMBehaviour_Joker
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_JokerRooftop.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

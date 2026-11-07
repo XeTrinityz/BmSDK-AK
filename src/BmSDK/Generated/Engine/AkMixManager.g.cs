@@ -116,3 +116,54 @@ public partial class AkMixManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 }
+
+/// <summary>
+/// The static native functions of AkMixManager, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class AkMixManagerStatics
+{
+    private static BmSDK.Function __fn_RemoveMixTemplate;
+    /// <summary>
+    /// Function: RemoveMixTemplate, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void RemoveMixTemplate(this BmSDK.Engine.AkMixManager self, BmSDK.Engine.AkMixTemplate MixTemplate, bool forceRemove = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMixTemplate, "Engine.AkMixManager.RemoveMixTemplate");
+        byte* paramsPtr = stackalloc byte[28];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(MixTemplate, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(forceRemove, paramsPtr + 8);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_AddMixTemplate;
+    /// <summary>
+    /// Function: AddMixTemplate, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void AddMixTemplate(this BmSDK.Engine.AkMixManager self, BmSDK.Engine.AkMixTemplate MixTemplate)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMixTemplate, "Engine.AkMixManager.AddMixTemplate");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(MixTemplate, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+}

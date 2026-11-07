@@ -84,6 +84,7 @@ public partial class RRemoveDebrisInBoxActor : BmSDK.Engine.Actor, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle inAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RRemoveDebrisInBoxActor.OnToggle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RRemoveDebrisInBoxActor : BmSDK.Engine.Actor, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void RemoveDebris()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveDebris, "BmGame.RRemoveDebrisInBoxActor.RemoveDebris");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

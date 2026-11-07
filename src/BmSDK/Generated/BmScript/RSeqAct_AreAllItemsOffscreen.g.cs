@@ -97,6 +97,7 @@ public partial class RSeqAct_AreAllItemsOffscreen : BmSDK.Engine.SeqAct_Latent, 
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_AreAllItemsOffscreen.Update");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_AreAllItemsOffscreen : BmSDK.Engine.SeqAct_Latent, 
     /// </summary>
     public unsafe virtual bool NotLookingAtItem(BmSDK.Engine.Actor TestItem)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotLookingAtItem, "BmScript.RSeqAct_AreAllItemsOffscreen.NotLookingAtItem");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

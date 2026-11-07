@@ -84,6 +84,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RestoreDefaultSleepFamily(BmSDK.Engine.PhysicsAsset InAsset)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreDefaultSleepFamily, "Engine.PhysicsAssetInstance.RestoreDefaultSleepFamily");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OverrideSleepFamily(BmSDK.Engine.RB_BodySetup.ESleepFamily SleepFamily)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideSleepFamily, "Engine.PhysicsAssetInstance.OverrideSleepFamily");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +128,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetEnableCollisionWithKActorsWhenCrouched(BmSDK.Engine.PhysicsAsset InPhysicsAsset, bool bEnableHeadCollisionWithKActors)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnableCollisionWithKActorsWhenCrouched, "Engine.PhysicsAssetInstance.SetEnableCollisionWithKActorsWhenCrouched");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +151,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDamping(float LinearDamping, float AngularDamping)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamping, "Engine.PhysicsAssetInstance.SetDamping");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +174,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDampingRampupProportion(float NewDampingRampupProportion)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDampingRampupProportion, "Engine.PhysicsAssetInstance.SetDampingRampupProportion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +196,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_ConstraintInstance FindConstraintInstance(BmSDK.FName ConName, BmSDK.Engine.PhysicsAsset InAsset)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindConstraintInstance, "Engine.PhysicsAssetInstance.FindConstraintInstance");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -213,6 +219,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodyInstance FindBodyInstance(BmSDK.FName BodyName, BmSDK.Engine.PhysicsAsset InAsset)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindBodyInstance, "Engine.PhysicsAssetInstance.FindBodyInstance");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +242,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetFullAnimWeightBonesFixed(bool bNewFixed, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFullAnimWeightBonesFixed, "Engine.PhysicsAssetInstance.SetFullAnimWeightBonesFixed");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +265,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetFullAnimWeightBlockRigidBody(bool bNewBlockRigidBody, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFullAnimWeightBlockRigidBody, "Engine.PhysicsAssetInstance.SetFullAnimWeightBlockRigidBody");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -279,6 +288,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetNamedBodiesBlockRigidBody(bool bNewBlockRigidBody, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedBodiesBlockRigidBody, "Engine.PhysicsAssetInstance.SetNamedBodiesBlockRigidBody");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -302,6 +312,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetNamedMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSetOtherBodiesToComplement = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedMotorsAngularVelocityDrive, "Engine.PhysicsAssetInstance.SetNamedMotorsAngularVelocityDrive");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +338,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetNamedMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSetOtherBodiesToComplement = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedMotorsAngularPositionDrive, "Engine.PhysicsAssetInstance.SetNamedMotorsAngularPositionDrive");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -352,6 +364,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, BmSDK.Engine.SkeletalMeshComponent SkelMesh = default, bool bSkipFullAnimWeightBodies = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllMotorsAngularDriveParams, "Engine.PhysicsAssetInstance.SetAllMotorsAngularDriveParams");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +390,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSkipFullAnimWeightBodies = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllMotorsAngularVelocityDrive, "Engine.PhysicsAssetInstance.SetAllMotorsAngularVelocityDrive");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -401,6 +415,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.Engine.SkeletalMeshComponent SkelMesh = default, bool bSkipFullAnimWeightBodies = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllMotorsAngularPositionDrive, "Engine.PhysicsAssetInstance.SetAllMotorsAngularPositionDrive");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -425,6 +440,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ForceAllBodiesBelowUnfixed(out BmSDK.FName InBoneName, BmSDK.Engine.PhysicsAsset InAsset, BmSDK.Engine.SkeletalMeshComponent InSkelMesh, bool InbInstanceAlwaysFullAnimWeight)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceAllBodiesBelowUnfixed, "Engine.PhysicsAssetInstance.ForceAllBodiesBelowUnfixed");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -451,6 +467,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetGroupBodiesFixed(bool bNewFixed, BmSDK.FName GroupName, BmSDK.Engine.SkeletalMeshComponent SkelMesh, bool bSetOtherBodiesToComplement = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGroupBodiesFixed, "Engine.PhysicsAssetInstance.SetGroupBodiesFixed");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -475,6 +492,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetNamedBodiesFixed(bool bNewFixed, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMesh, bool bSetOtherBodiesToComplement = default, bool bSkipFullAnimWeightBodies = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedBodiesFixed, "Engine.PhysicsAssetInstance.SetNamedBodiesFixed");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -500,6 +518,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAllBodiesFixed(bool bNewFixed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllBodiesFixed, "Engine.PhysicsAssetInstance.SetAllBodiesFixed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -521,6 +540,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetTotalMassBelowBone(BmSDK.FName InBoneName, BmSDK.Engine.PhysicsAsset InAsset, BmSDK.Engine.SkeletalMesh InSkelMesh)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTotalMassBelowBone, "Engine.PhysicsAssetInstance.GetTotalMassBelowBone");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -544,6 +564,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetAngularDriveScale(float InAngularSpringScale, float InAngularDampingScale, float InAngularForceLimitScale)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAngularDriveScale, "Engine.PhysicsAssetInstance.SetAngularDriveScale");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -567,6 +588,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetLinearDriveScale(float InLinearSpringScale, float InLinearDampingScale, float InLinearForceLimitScale)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLinearDriveScale, "Engine.PhysicsAssetInstance.SetLinearDriveScale");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -590,6 +612,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void EnableCollision(BmSDK.Engine.RB_BodyInstance BodyA, BmSDK.Engine.RB_BodyInstance BodyB)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableCollision, "Engine.PhysicsAssetInstance.EnableCollision");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -612,6 +635,7 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DisableCollision(BmSDK.Engine.RB_BodyInstance BodyA, BmSDK.Engine.RB_BodyInstance BodyB)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCollision, "Engine.PhysicsAssetInstance.DisableCollision");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

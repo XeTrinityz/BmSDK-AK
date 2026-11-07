@@ -97,6 +97,7 @@ public partial class RSeqAct_CheckPointMine : BmSDK.Engine.SequenceAction, BmSDK
     /// </summary>
     public unsafe virtual void HandleInputLinks()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInputLinks, "BmScript.RSeqAct_CheckPointMine.HandleInputLinks");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_CheckPointMine : BmSDK.Engine.SequenceAction, BmSDK
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_CheckPointMine.Activated");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override void StartDisperse()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartDisperse, "BmGame.RAEC_Casualty_Sub_CheckCas.StartDisperse");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override bool HasLongWayLeftToRun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasLongWayLeftToRun, "BmGame.RAEC_Casualty_Sub_CheckCas.HasLongWayLeftToRun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override bool HasDoneConsole()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasDoneConsole, "BmGame.RAEC_Casualty_Sub_CheckCas.HasDoneConsole");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override bool IsAtCasualty()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAtCasualty, "BmGame.RAEC_Casualty_Sub_CheckCas.IsAtCasualty");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override bool HasDoneDiscoverGesture()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasDoneDiscoverGesture, "BmGame.RAEC_Casualty_Sub_CheckCas.HasDoneDiscoverGesture");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override void AssignCasualty(BmSDK.BmGame.RPawnVillain NewCas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignCasualty, "BmGame.RAEC_Casualty_Sub_CheckCas.AssignCasualty");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override void NotifyEvent(BmSDK.BmGame.RBMAIAction EventAction, BmSDK.FString EventType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEvent, "BmGame.RAEC_Casualty_Sub_CheckCas.NotifyEvent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override void NotifyFailed(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFailed, "BmGame.RAEC_Casualty_Sub_CheckCas.NotifyFailed");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +200,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Casualty_Sub_CheckCas.NotifyFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -206,6 +215,7 @@ public partial class RAEC_Casualty_Sub_CheckCas : BmSDK.BmGame.RAEC_Casualty_Sub
     /// </summary>
     public unsafe override void GetAIThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIThoughts, "BmGame.RAEC_Casualty_Sub_CheckCas.GetAIThoughts");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

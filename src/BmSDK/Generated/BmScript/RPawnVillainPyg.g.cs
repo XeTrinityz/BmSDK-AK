@@ -84,6 +84,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override void SetInXrayMode(bool show, bool bForceOff)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInXrayMode, "BmScript.RPawnVillainPyg.SetInXrayMode");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual void BreakMask()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakMask, "BmScript.RPawnVillainPyg.BreakMask");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult ProcessDamagedBy(out BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessDamagedBy, "BmScript.RPawnVillainPyg.ProcessDamagedBy");
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override bool CanAttachExplosiveGelBomb()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanAttachExplosiveGelBomb, "BmScript.RPawnVillainPyg.CanAttachExplosiveGelBomb");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.Class GetSmokeBombReactionClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSmokeBombReactionClass, "BmScript.RPawnVillainPyg.GetSmokeBombReactionClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override bool CanBeFrozen()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeFrozen, "BmScript.RPawnVillainPyg.CanBeFrozen");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override float GetBatClawPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatClawPriority, "BmScript.RPawnVillainPyg.GetBatClawPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual void RecoverFromStunned()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecoverFromStunned, "BmScript.RPawnVillainPyg.RecoverFromStunned");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +199,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetStunnedByCleaver()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStunnedByCleaver, "BmScript.RPawnVillainPyg.SetStunnedByCleaver");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +213,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual bool IsAtTakedownablePoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAtTakedownablePoint, "BmScript.RPawnVillainPyg.IsAtTakedownablePoint");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +227,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.Class GetDodgeClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDodgeClass, "BmScript.RPawnVillainPyg.GetDodgeClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -230,6 +241,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual bool TryFindNewTablePoint(System.Numerics.Vector3 AttackerLoc, out int DestTablePtIdx)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryFindNewTablePoint, "BmScript.RPawnVillainPyg.TryFindNewTablePoint");
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +259,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual bool IsHidePointSafe(System.Numerics.Vector3 AttackerLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHidePointSafe, "BmScript.RPawnVillainPyg.IsHidePointSafe");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +274,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCurrentTablePointLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentTablePointLocation, "BmScript.RPawnVillainPyg.GetCurrentTablePointLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -274,6 +288,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override void PlayCombatBarkTaunt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCombatBarkTaunt, "BmScript.RPawnVillainPyg.PlayCombatBarkTaunt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -287,6 +302,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override void PlayCombatBark(BmSDK.FName EventName, bool bUseWeapon, BmSDK.BmGame.RBMWeapon OverrideWeapon = default, BmSDK.FName OverrideWeaponFlag = default, BmSDK.BmGame.RBarkValDef.FlagTypeEnum FlagType = default, BmSDK.FName FlagValue = default, BmSDK.BmGame.RPawnPlayer OverridePlayer = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCombatBark, "BmScript.RPawnVillainPyg.PlayCombatBark");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -307,6 +323,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override bool SpawnOverrideTakedown(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnOverrideTakedown, "BmScript.RPawnVillainPyg.SpawnOverrideTakedown");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -321,6 +338,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override bool CanBeHitInCombat(BmSDK.BmGame.RDamageType DamageType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeHitInCombat, "BmScript.RPawnVillainPyg.CanBeHitInCombat");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -335,6 +353,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetCameraAnimset(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraAnimset, "BmScript.RPawnVillainPyg.GetCameraAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -349,6 +368,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override bool CanReceiveSuperStun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReceiveSuperStun, "BmScript.RPawnVillainPyg.CanReceiveSuperStun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -362,6 +382,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override bool ShouldGoRagdoll(BmSDK.Class dmgType, float DamageAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldGoRagdoll, "BmScript.RPawnVillainPyg.ShouldGoRagdoll");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +398,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override void PlayDying(BmSDK.Class DamageType, System.Numerics.Vector3 HitLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDying, "BmScript.RPawnVillainPyg.PlayDying");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -392,6 +414,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.Class GetRagdollClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRagdollClass, "BmScript.RPawnVillainPyg.GetRagdollClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -405,6 +428,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateRagdollWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.Engine.AnimSet AnimSet1, BmSDK.Engine.AnimSet AnimSet2, BmSDK.Engine.AnimSet AnimSet3 = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateRagdollWeaponConfig, "BmScript.RPawnVillainPyg.CreateRagdollWeaponConfig");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -422,6 +446,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetPlayerEnvTakedownAnimset(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerEnvTakedownAnimset, "BmScript.RPawnVillainPyg.GetPlayerEnvTakedownAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -436,6 +461,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetVillainEnvTakedownAnimset(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainEnvTakedownAnimset, "BmScript.RPawnVillainPyg.GetVillainEnvTakedownAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -450,6 +476,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetFailedPairedAnimMoveAnimsetBm()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFailedPairedAnimMoveAnimsetBm, "BmScript.RPawnVillainPyg.GetFailedPairedAnimMoveAnimsetBm");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -463,6 +490,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override void GetFailedPairedAnimMoveAnimset(out BmSDK.Engine.AnimSet MyAnimset, BmSDK.BmGame.RPawnCombat OtherPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFailedPairedAnimMoveAnimset, "BmScript.RPawnVillainPyg.GetFailedPairedAnimMoveAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -480,6 +508,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override float GetEnvironmentObjectTakedownPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEnvironmentObjectTakedownPriority, "BmScript.RPawnVillainPyg.GetEnvironmentObjectTakedownPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -493,6 +522,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMCombatThrownObject Disarm(BmSDK.Class DisarmDamageType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Disarm, "BmScript.RPawnVillainPyg.Disarm");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -507,6 +537,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override float GetTargetPriority(BmSDK.BmGame.RPawnCombat Attacker, BmSDK.Class dmgType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetPriority, "BmScript.RPawnVillainPyg.GetTargetPriority");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -522,6 +553,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe virtual void AddWindow(BmSDK.Engine.Actor NewWindow)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddWindow, "BmScript.RPawnVillainPyg.AddWindow");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -536,6 +568,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult HitByBatarang(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByBatarang, "BmScript.RPawnVillainPyg.HitByBatarang");
         byte* paramsPtr = stackalloc byte[109];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -556,6 +589,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override bool IsDamageAllowed(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDamageAllowed, "BmScript.RPawnVillainPyg.IsDamageAllowed");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -570,6 +604,7 @@ public partial class RPawnVillainPyg : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGam
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnVillainPyg.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

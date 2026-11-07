@@ -84,6 +84,7 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPointAtDistanceAlongSplineRope(float DistanceAlongRope)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPointAtDistanceAlongSplineRope, "BmGame.RSimpleRopeComponent.GetPointAtDistanceAlongSplineRope");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
     /// </summary>
     public unsafe override void FinaliseRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinaliseRope, "BmGame.RSimpleRopeComponent.FinaliseRope");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
     /// </summary>
     public unsafe override void InitialiseRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseRope, "BmGame.RSimpleRopeComponent.InitialiseRope");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +148,7 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
     /// </summary>
     public unsafe override void UpdateRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRope, "BmGame.RSimpleRopeComponent.UpdateRope");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

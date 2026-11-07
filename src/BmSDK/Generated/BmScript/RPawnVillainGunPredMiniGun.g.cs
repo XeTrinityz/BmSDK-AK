@@ -84,6 +84,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override void PlayAttemptedTakedownDialogueLine(BmSDK.BmGame.RPawnPlayer Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAttemptedTakedownDialogueLine, "BmScript.RPawnVillainGunPredMiniGun.PlayAttemptedTakedownDialogueLine");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override float GetBlockBreakerStunTime(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBlockBreakerStunTime, "BmScript.RPawnVillainGunPredMiniGun.GetBlockBreakerStunTime");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.FString CantSpeakReason(BmSDK.Engine.AkDialogueSpeech Speech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, bool dlgContinuation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantSpeakReason, "BmScript.RPawnVillainGunPredMiniGun.CantSpeakReason");
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +133,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override bool CanSpeak(BmSDK.Engine.AkDialogueSpeech Speech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, bool dlgContinuation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpeak, "BmScript.RPawnVillainGunPredMiniGun.CanSpeak");
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +152,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetFallingTakedownAttackerAnimset(BmSDK.BmGame.RPawnPlayer Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFallingTakedownAttackerAnimset, "BmScript.RPawnVillainGunPredMiniGun.GetFallingTakedownAttackerAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +167,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetFallingTakedownAnimset(BmSDK.BmGame.RPawnPlayer Attacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFallingTakedownAnimset, "BmScript.RPawnVillainGunPredMiniGun.GetFallingTakedownAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -176,6 +182,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult HitByBatarang(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByBatarang, "BmScript.RPawnVillainGunPredMiniGun.HitByBatarang");
         byte* paramsPtr = stackalloc byte[110];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -196,6 +203,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override void PlayHitReaction(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHitReaction, "BmScript.RPawnVillainGunPredMiniGun.PlayHitReaction");
         byte* paramsPtr = stackalloc byte[280];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +218,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override bool VulnerableToDualTeamTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VulnerableToDualTeamTakedown, "BmScript.RPawnVillainGunPredMiniGun.VulnerableToDualTeamTakedown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -223,6 +232,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override bool SpawnSpecialAttack(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn, BmSDK.Class dmgType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnSpecialAttack, "BmScript.RPawnVillainGunPredMiniGun.SpawnSpecialAttack");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +248,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override bool DoGrenadeVentThrow(System.Numerics.Vector3 ThrowVel, BmSDK.Rotator SpawnRot, System.Numerics.Vector3 TargetLoc, out BmSDK.BmGame.RProjectile_GrenadeBase NadeProj)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoGrenadeVentThrow, "BmScript.RPawnVillainGunPredMiniGun.DoGrenadeVentThrow");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +268,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.BmGame.RVantageMineBase SpawnVantageMine()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnVantageMine, "BmScript.RPawnVillainGunPredMiniGun.SpawnVantageMine");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -270,6 +282,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override void SetHealth()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHealth, "BmScript.RPawnVillainGunPredMiniGun.SetHealth");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,6 +296,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override float GetNonFatalTakedownDamage()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNonFatalTakedownDamage, "BmScript.RPawnVillainGunPredMiniGun.GetNonFatalTakedownDamage");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -296,6 +310,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetVoiceSynthAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVoiceSynthAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetVoiceSynthAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -309,6 +324,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetVaultExplosivesAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVaultExplosivesAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetVaultExplosivesAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -322,6 +338,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetCorePredAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCorePredAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetCorePredAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -335,6 +352,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetManDownAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetManDownAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetManDownAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -348,6 +366,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetGrateLookAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGrateLookAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetGrateLookAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -361,6 +380,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetLedgeLookAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLedgeLookAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetLedgeLookAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -374,6 +394,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetBuddyBumpAnimset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBuddyBumpAnimset, "BmScript.RPawnVillainGunPredMiniGun.GetBuddyBumpAnimset");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -387,6 +408,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetBuddyJoinAnimset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBuddyJoinAnimset, "BmScript.RPawnVillainGunPredMiniGun.GetBuddyJoinAnimset");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -400,6 +422,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetSideRoomSearchAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSideRoomSearchAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetSideRoomSearchAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -413,6 +436,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetPairedCornerAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPairedCornerAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetPairedCornerAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -426,6 +450,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetSoloCornerAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSoloCornerAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetSoloCornerAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -439,6 +464,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateLadderWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.Engine.AnimSet AnimSet1, BmSDK.Engine.AnimSet AnimSet2 = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateLadderWeaponConfig, "BmScript.RPawnVillainGunPredMiniGun.CreateLadderWeaponConfig");
         byte* paramsPtr = stackalloc byte[3424];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -455,6 +481,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMWeapon CreateWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeapon, "BmScript.RPawnVillainGunPredMiniGun.CreateWeapon");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -468,6 +495,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override void InitialisePlayerSpecificAnimsets(BmSDK.BmGame.RPawnPlayerCombat NewPlayer, int PlayerIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialisePlayerSpecificAnimsets, "BmScript.RPawnVillainGunPredMiniGun.InitialisePlayerSpecificAnimsets");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -483,6 +511,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override bool CanEverDoBagCarrier()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanEverDoBagCarrier, "BmScript.RPawnVillainGunPredMiniGun.CanEverDoBagCarrier");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -496,6 +525,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetMedicAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMedicAnimSet, "BmScript.RPawnVillainGunPredMiniGun.GetMedicAnimSet");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -509,6 +539,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override void TickGunFire(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickGunFire, "BmScript.RPawnVillainGunPredMiniGun.TickGunFire");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -523,6 +554,7 @@ public partial class RPawnVillainGunPredMiniGun : BmSDK.BmGame.RPawnVillainGunPr
     /// </summary>
     public unsafe override void AddPawnProps()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPawnProps, "BmScript.RPawnVillainGunPredMiniGun.AddPawnProps");
         byte* paramsPtr = stackalloc byte[200];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

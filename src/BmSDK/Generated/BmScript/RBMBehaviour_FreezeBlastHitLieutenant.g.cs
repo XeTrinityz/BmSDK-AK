@@ -84,6 +84,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
     /// </summary>
     public unsafe virtual void LieutenantHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LieutenantHit, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.LieutenantHit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
     /// </summary>
     public unsafe virtual void BreakTorso()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakTorso, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.BreakTorso");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
     /// </summary>
     public unsafe virtual void BreakRight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakRight, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.BreakRight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
     /// </summary>
     public unsafe virtual void BreakLeft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakLeft, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.BreakLeft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
     /// </summary>
     public unsafe override void Initialise(BmSDK.BmGame.RPawnPlayer Instigator, System.Numerics.Vector3 HitNorm, bool bInstantFreeze = default, BmSDK.BmGame.RFreezeSprayProjectile Proj = default, bool bShouldAlwaysRagdoll = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.Initialise");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

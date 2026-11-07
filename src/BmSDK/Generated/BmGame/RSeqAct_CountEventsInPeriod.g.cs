@@ -97,6 +97,7 @@ public partial class RSeqAct_CountEventsInPeriod : BmSDK.Engine.SequenceAction, 
     /// </summary>
     public unsafe virtual void TryTriggerSuccess()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerSuccess, "BmGame.RSeqAct_CountEventsInPeriod.TryTriggerSuccess");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_CountEventsInPeriod : BmSDK.Engine.SequenceAction, 
     /// </summary>
     public unsafe virtual void RemoveExpiredEvents()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveExpiredEvents, "BmGame.RSeqAct_CountEventsInPeriod.RemoveExpiredEvents");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_CountEventsInPeriod : BmSDK.Engine.SequenceAction, 
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_CountEventsInPeriod.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

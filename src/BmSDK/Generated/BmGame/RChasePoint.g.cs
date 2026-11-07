@@ -84,6 +84,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ShowChaseBranch(BmSDK.Engine.Actor DrawActor, System.Numerics.Vector3 Offset, float ChaseDist, float ChaseTime, BmSDK.Engine.Actor TestActor = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowChaseBranch, "BmGame.RChasePoint.ShowChaseBranch");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -102,6 +103,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool RecursiveHasChecked()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecursiveHasChecked, "BmGame.RChasePoint.RecursiveHasChecked");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +117,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasUncheckedVerts(float ChaseTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasUncheckedVerts, "BmGame.RChasePoint.HasUncheckedVerts");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasTooManyUncheckedVisibleVerts(float TimeSinceStart)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasTooManyUncheckedVisibleVerts, "BmGame.RChasePoint.HasTooManyUncheckedVisibleVerts");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -143,6 +147,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RChasePoint FindNextBranchChild(float TimeSinceStart)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindNextBranchChild, "BmGame.RChasePoint.FindNextBranchChild");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -157,6 +162,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void FindTipsFromCompletelyUncheckedBranches(out BmSDK.TArray<BmSDK.BmGame.RChasePoint> UncheckedTips)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindTipsFromCompletelyUncheckedBranches, "BmGame.RChasePoint.FindTipsFromCompletelyUncheckedBranches");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -171,6 +177,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetNumAvailableAtBranch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumAvailableAtBranch, "BmGame.RChasePoint.GetNumAvailableAtBranch");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +191,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetNumDownBranchRecursive()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumDownBranchRecursive, "BmGame.RChasePoint.GetNumDownBranchRecursive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +205,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetNumAssignedDownBranch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumAssignedDownBranch, "BmGame.RChasePoint.GetNumAssignedDownBranch");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UnregisterChaser(BmSDK.BmGame.RAEC_Attack_Sub_Chase ExChaser)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterChaser, "BmGame.RChasePoint.UnregisterChaser");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -224,6 +234,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RegisterChaser(BmSDK.BmGame.RAEC_Attack_Sub_Chase NewChaser)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterChaser, "BmGame.RChasePoint.RegisterChaser");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +249,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddAbstractChaser()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAbstractChaser, "BmGame.RChasePoint.AddAbstractChaser");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -251,6 +263,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Register()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Register, "BmGame.RChasePoint.Register");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -271,6 +284,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RecursiveInvalidate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecursiveInvalidate, "BmGame.RChasePoint.RecursiveInvalidate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -291,6 +305,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsLadderJumpDown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLadderJumpDown, "BmGame.RChasePoint.IsLadderJumpDown");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -311,6 +326,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsSpecialTraverseEdge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSpecialTraverseEdge, "BmGame.RChasePoint.IsSpecialTraverseEdge");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -331,6 +347,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetVert2()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVert2, "BmGame.RChasePoint.GetVert2");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -351,6 +368,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetVert1()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVert1, "BmGame.RChasePoint.GetVert1");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -371,6 +389,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsOnSubmesh()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOnSubmesh, "BmGame.RChasePoint.IsOnSubmesh");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -391,6 +410,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetRadiusFromCenter(System.Numerics.Vector3 TreeLocation, out float MaxRadiusSq)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRadiusFromCenter, "BmGame.RChasePoint.GetRadiusFromCenter");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -415,6 +435,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetAveragePointLocation(out System.Numerics.Vector3 TreeLocation, out int NumPoints)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAveragePointLocation, "BmGame.RChasePoint.GetAveragePointLocation");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -441,6 +462,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetTreeBounds(out System.Numerics.Vector3 TreeLocation, out float TreeRadius)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTreeBounds, "BmGame.RChasePoint.GetTreeBounds");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -467,6 +489,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasBeenChecked()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBeenChecked, "BmGame.RChasePoint.HasBeenChecked");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -487,6 +510,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void MarkAsChecked()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MarkAsChecked, "BmGame.RChasePoint.MarkAsChecked");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -507,6 +531,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveBranch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveBranch, "BmGame.RChasePoint.RemoveBranch");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -527,6 +552,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool BranchContainsLocation(System.Numerics.Vector3 TestLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BranchContainsLocation, "BmGame.RChasePoint.BranchContainsLocation");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -548,6 +574,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RChasePoint GetIntersectionWithHandlePath(BmSDK.BmGame.RNavigationHandle TestHandle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIntersectionWithHandlePath, "BmGame.RChasePoint.GetIntersectionWithHandlePath");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -569,6 +596,7 @@ public partial class RChasePoint : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsValid()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValid, "BmGame.RChasePoint.IsValid");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

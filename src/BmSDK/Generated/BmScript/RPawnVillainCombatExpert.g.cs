@@ -84,6 +84,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void InitialisePlayerSpecificAnimsets(BmSDK.BmGame.RPawnPlayerCombat NewPlayer, int PlayerIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialisePlayerSpecificAnimsets, "BmScript.RPawnVillainCombatExpert.InitialisePlayerSpecificAnimsets");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void PlaySound_ImpactAI(BmSDK.Engine.Actor playOn, bool bIsStrike, bool bFinishingBlow, bool bIsHeadImpact, bool bIsPunch, bool bIsStrong, bool bIsBlocked, bool bCanEmote = default, bool bIsQuick = default, bool bPlayerAttacked = default, bool bForceEmote = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySound_ImpactAI, "BmScript.RPawnVillainCombatExpert.PlaySound_ImpactAI");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig CreateCombatWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.Engine.AnimSet AnimSet1, BmSDK.Engine.AnimSet AnimSet2, BmSDK.Engine.AnimSet AnimSet3, BmSDK.Engine.AnimSet AnimSet4, BmSDK.Engine.AnimSet AnimSet5)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateCombatWeaponConfig, "BmScript.RPawnVillainCombatExpert.CreateCombatWeaponConfig");
         byte* paramsPtr = stackalloc byte[6928];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +145,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateRagdollWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.Engine.AnimSet AnimSet1, BmSDK.Engine.AnimSet AnimSet2, BmSDK.Engine.AnimSet AnimSet3 = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateRagdollWeaponConfig, "BmScript.RPawnVillainCombatExpert.CreateRagdollWeaponConfig");
         byte* paramsPtr = stackalloc byte[4852];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +163,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateWeaponConfigUnarmed(BmSDK.GameObject NewOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeaponConfigUnarmed, "BmScript.RPawnVillainCombatExpert.CreateWeaponConfigUnarmed");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -186,6 +191,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetPlayerAerialAttackAnimset(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerAerialAttackAnimset, "BmScript.RPawnVillainCombatExpert.GetPlayerAerialAttackAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -200,6 +206,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetVillainAerialAttackAnimset(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainAerialAttackAnimset, "BmScript.RPawnVillainCombatExpert.GetVillainAerialAttackAnimset");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -214,6 +221,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void StartAttackingFX(int CTypeInt, BmSDK.BmGame.RPlayerController PC = default, BmSDK.FName OverrideBoneName = default, bool bForceShow = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAttackingFX, "BmScript.RPawnVillainCombatExpert.StartAttackingFX");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +239,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.Engine.ParticleSystem GetStrikeImpactPS()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeImpactPS, "BmScript.RPawnVillainCombatExpert.GetStrikeImpactPS");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -244,6 +253,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.Engine.ParticleSystem GetStrikeTrailPS()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeTrailPS, "BmScript.RPawnVillainCombatExpert.GetStrikeTrailPS");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +267,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.FName GetPlayerImpactBone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerImpactBone, "BmScript.RPawnVillainCombatExpert.GetPlayerImpactBone");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -270,6 +281,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe virtual bool SpawnVulnerableStrike(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnVulnerableStrike, "BmScript.RPawnVillainCombatExpert.SpawnVulnerableStrike");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -284,6 +296,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe virtual bool SpawnBlock(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnBlock, "BmScript.RPawnVillainCombatExpert.SpawnBlock");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -298,6 +311,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe virtual bool SpawnNormalStrike(BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnNormalStrike, "BmScript.RPawnVillainCombatExpert.SpawnNormalStrike");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -312,6 +326,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override bool OverrideCanDodgeProjectile(System.Numerics.Vector3 ThrownFromPos, int CheckBatarangID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideCanDodgeProjectile, "BmScript.RPawnVillainCombatExpert.OverrideCanDodgeProjectile");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +342,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void DodgeStrike(BmSDK.BmGame.RPawnCombat Attacker, BmSDK.Class dmgType, bool bFar)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DodgeStrike, "BmScript.RPawnVillainCombatExpert.DodgeStrike");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -343,6 +359,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override bool CanDodgeAttack(BmSDK.BmGame.RPawnCombat Attacker, BmSDK.Class dmgType, bool bFar)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDodgeAttack, "BmScript.RPawnVillainCombatExpert.CanDodgeAttack");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -359,6 +376,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe virtual float GetDodgeChance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDodgeChance, "BmScript.RPawnVillainCombatExpert.GetDodgeChance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -372,6 +390,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override bool ShouldGoRagdoll(BmSDK.Class dmgType, float DamageAmount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldGoRagdoll, "BmScript.RPawnVillainCombatExpert.ShouldGoRagdoll");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -387,6 +406,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override bool CanBePushedBy(BmSDK.BmGame.RPawnVillain Pusher)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePushedBy, "BmScript.RPawnVillainCombatExpert.CanBePushedBy");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -401,6 +421,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMWeapon CreateWeapon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeapon, "BmScript.RPawnVillainCombatExpert.CreateWeapon");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -414,6 +435,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnVillainCombatExpert.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -427,6 +449,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void BladeOff()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BladeOff, "BmScript.RPawnVillainCombatExpert.BladeOff");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -440,6 +463,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void BladeOn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BladeOn, "BmScript.RPawnVillainCombatExpert.BladeOn");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -453,6 +477,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void EyesOff()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EyesOff, "BmScript.RPawnVillainCombatExpert.EyesOff");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -466,6 +491,7 @@ public partial class RPawnVillainCombatExpert : BmSDK.BmGame.RPawnVillainCombatE
     /// </summary>
     public unsafe override void EyesOn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EyesOn, "BmScript.RPawnVillainCombatExpert.EyesOn");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

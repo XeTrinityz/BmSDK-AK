@@ -84,6 +84,7 @@ public partial class RDestructibleProp_LampPost : BmSDK.BmGame.RDestructibleProp
     /// </summary>
     public unsafe override void OverrideDamageParams(out float BaseDamage, out float DamageRadius, out float Momentum, BmSDK.Class DamageType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDamageParams, "BmGame.RDestructibleProp_LampPost.OverrideDamageParams");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -107,6 +108,7 @@ public partial class RDestructibleProp_LampPost : BmSDK.BmGame.RDestructibleProp
     /// </summary>
     public unsafe override void SetDamageStage(int Stage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageStage, "BmGame.RDestructibleProp_LampPost.SetDamageStage");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual bool CheckForVectorParameterConflicts(BmSDK.FName ParameterName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForVectorParameterConflicts, "Engine.MaterialInstanceTimeVarying.CheckForVectorParameterConflicts");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual float GetMaxDurationFromAllParameters()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxDurationFromAllParameters, "Engine.MaterialInstanceTimeVarying.GetMaxDurationFromAllParameters");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe override void ClearParameterValues()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearParameterValues, "Engine.MaterialInstanceTimeVarying.ClearParameterValues");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -145,6 +148,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe override void SetFontParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Font FontValue, int FontPage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFontParameterValue, "Engine.MaterialInstanceTimeVarying.SetFontParameterValue");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +172,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual void SetVectorStartTime(BmSDK.FName ParameterName, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorStartTime, "Engine.MaterialInstanceTimeVarying.SetVectorStartTime");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +195,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual void SetLinearColorCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveLinearColor Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLinearColorCurveParameterValue, "Engine.MaterialInstanceTimeVarying.SetLinearColorCurveParameterValue");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +218,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual void SetLinearColorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLinearColorParameterValue, "Engine.MaterialInstanceTimeVarying.SetLinearColorParameterValue");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,6 +243,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual void SetVectorCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveVector Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorCurveParameterValue, "Engine.MaterialInstanceTimeVarying.SetVectorCurveParameterValue");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -258,6 +266,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe override void SetVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorParameterValue, "Engine.MaterialInstanceTimeVarying.SetVectorParameterValue");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -282,6 +291,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe override void SetTextureParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Texture Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTextureParameterValue, "Engine.MaterialInstanceTimeVarying.SetTextureParameterValue");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -304,6 +314,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual void SetDuration(float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDuration, "Engine.MaterialInstanceTimeVarying.SetDuration");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -325,6 +336,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe virtual void SetScalarStartTime(BmSDK.FName ParameterName, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScalarStartTime, "Engine.MaterialInstanceTimeVarying.SetScalarStartTime");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -347,6 +359,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe override void SetScalarCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveFloat Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScalarCurveParameterValue, "Engine.MaterialInstanceTimeVarying.SetScalarCurveParameterValue");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -369,6 +382,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe override void SetScalarParameterValue(BmSDK.FName ParameterName, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScalarParameterValue, "Engine.MaterialInstanceTimeVarying.SetScalarParameterValue");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -391,6 +405,7 @@ public partial class MaterialInstanceTimeVarying : BmSDK.Engine.MaterialInstance
     /// </summary>
     public unsafe override void SetParent(BmSDK.Engine.MaterialInterface NewParent)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParent, "Engine.MaterialInstanceTimeVarying.SetParent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

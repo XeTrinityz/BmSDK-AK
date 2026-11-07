@@ -84,6 +84,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override void InitialisePlayerSpecificAnimsets(BmSDK.BmGame.RPawnPlayerCombat NewPlayer, int PlayerIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialisePlayerSpecificAnimsets, "BmScript.RPawnBossFakeScarecrow.InitialisePlayerSpecificAnimsets");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override bool HoldCameraOnMeAfterStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HoldCameraOnMeAfterStrike, "BmScript.RPawnBossFakeScarecrow.HoldCameraOnMeAfterStrike");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override void SetHealth()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHealth, "BmScript.RPawnBossFakeScarecrow.SetHealth");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe virtual void StandUpRequest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StandUpRequest, "BmScript.RPawnBossFakeScarecrow.StandUpRequest");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe virtual void LastOneStanding()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LastOneStanding, "BmScript.RPawnBossFakeScarecrow.LastOneStanding");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override bool CanDoFinalBlow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoFinalBlow, "BmScript.RPawnBossFakeScarecrow.CanDoFinalBlow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult DamagedBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagedBy, "BmScript.RPawnBossFakeScarecrow.DamagedBy");
         byte* paramsPtr = stackalloc byte[266];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmScript.RPawnBossFakeScarecrow.TakeDamage");
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -198,6 +206,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override float GetBlockBreakerStunTime(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBlockBreakerStunTime, "BmScript.RPawnBossFakeScarecrow.GetBlockBreakerStunTime");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +221,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override float GetCameraLookAtPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraLookAtPriority, "BmScript.RPawnBossFakeScarecrow.GetCameraLookAtPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -225,6 +235,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe virtual void AllowGetUpHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowGetUpHit, "BmScript.RPawnBossFakeScarecrow.AllowGetUpHit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +249,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPawnBossFakeScarecrow.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -252,6 +264,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override BmSDK.Class GetRagdollClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRagdollClass, "BmScript.RPawnBossFakeScarecrow.GetRagdollClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -265,6 +278,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe virtual void EndThrowCameraAlign()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndThrowCameraAlign, "BmScript.RPawnBossFakeScarecrow.EndThrowCameraAlign");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +292,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override bool CanSpeakIncapacitated(BmSDK.Engine.AkDialogueSpeech Speech)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpeakIncapacitated, "BmScript.RPawnBossFakeScarecrow.CanSpeakIncapacitated");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -292,6 +307,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override int OverridePickupThugDirection(int SuggestedDir)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePickupThugDirection, "BmScript.RPawnBossFakeScarecrow.OverridePickupThugDirection");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -306,6 +322,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override bool IsBarkPreventedByStunnedRagdoll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBarkPreventedByStunnedRagdoll, "BmScript.RPawnBossFakeScarecrow.IsBarkPreventedByStunnedRagdoll");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +336,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe virtual void MakeBatmanNormal()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeBatmanNormal, "BmScript.RPawnBossFakeScarecrow.MakeBatmanNormal");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -332,6 +350,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe virtual void MakeBatmanJokerfied()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeBatmanJokerfied, "BmScript.RPawnBossFakeScarecrow.MakeBatmanJokerfied");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -345,6 +364,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmScript.RPawnBossFakeScarecrow.IsActive");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -359,6 +379,7 @@ public partial class RPawnBossFakeScarecrow : BmSDK.BmGame.RPawnVillainThug, BmS
     /// </summary>
     public unsafe override void Interact(BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmScript.RPawnBossFakeScarecrow.Interact");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

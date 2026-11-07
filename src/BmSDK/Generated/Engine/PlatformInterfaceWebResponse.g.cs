@@ -84,6 +84,7 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
     /// </summary>
     public unsafe virtual BmSDK.FString GetHeaderValue(BmSDK.FString HeaderName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeaderValue, "Engine.PlatformInterfaceWebResponse.GetHeaderValue");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
     /// </summary>
     public unsafe virtual void GetHeader(int HeaderIndex, out BmSDK.FString Header, out BmSDK.FString Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeader, "Engine.PlatformInterfaceWebResponse.GetHeader");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +130,7 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
     /// </summary>
     public unsafe virtual int GetNumHeaders()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumHeaders, "Engine.PlatformInterfaceWebResponse.GetNumHeaders");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void EndCameraZoom()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.EndCameraZoom");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void AllowShootInZoom()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowShootInZoom, "BmScript.RBMBehaviour_JokerBossTwoface.AllowShootInZoom");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void StartCameraZoom()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.StartCameraZoom");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void ShotJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotJoker");
         byte* paramsPtr = stackalloc byte[212];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void ShotByJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotByJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotByJoker");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +154,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void JokerGunFired()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerGunFired, "BmScript.RBMBehaviour_JokerBossTwoface.JokerGunFired");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +168,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual bool CanSeeJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeJoker, "BmScript.RBMBehaviour_JokerBossTwoface.CanSeeJoker");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +182,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual void TwoFaceTalkingOver()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TwoFaceTalkingOver, "BmScript.RBMBehaviour_JokerBossTwoface.TwoFaceTalkingOver");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +196,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual float GetJokerDist()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerDist, "BmScript.RBMBehaviour_JokerBossTwoface.GetJokerDist");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

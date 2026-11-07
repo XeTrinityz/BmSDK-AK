@@ -84,6 +84,7 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SpawnObjectiveMarker.Activated");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
     /// </summary>
     public unsafe virtual void SpawnMarkers(BmSDK.TArray<BmSDK.GameObject> SpawnPoints)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnMarkers, "BmGame.RSeqAct_SpawnObjectiveMarker.SpawnMarkers");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RSeqAct_SpawnObjectiveMarker : BmSDK.Engine.SequenceAction,
     /// </summary>
     public unsafe virtual void StoreObjVar(BmSDK.FString Ident, int Index, BmSDK.GameObject Obj)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoreObjVar, "BmGame.RSeqAct_SpawnObjectiveMarker.StoreObjVar");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

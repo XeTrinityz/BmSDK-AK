@@ -84,6 +84,7 @@ public partial class RPhysicalEvidenceTrail : BmSDK.BmGame.RPhysicalEvidenceBase
     /// </summary>
     public unsafe virtual void DoShowNow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoShowNow, "BmGame.RPhysicalEvidenceTrail.DoShowNow");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPhysicalEvidenceTrail : BmSDK.BmGame.RPhysicalEvidenceBase
     /// </summary>
     public unsafe override void AutomaticallySetVisibility()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutomaticallySetVisibility, "BmGame.RPhysicalEvidenceTrail.AutomaticallySetVisibility");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

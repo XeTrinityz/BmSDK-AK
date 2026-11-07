@@ -84,6 +84,7 @@ public partial class RMagneticBlastNw : BmSDK.BmScript.RMagneticBlastBm, BmSDK.I
     /// </summary>
     public unsafe override void FinishFiring()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishFiring, "BmScript.RMagneticBlastNw.FinishFiring");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

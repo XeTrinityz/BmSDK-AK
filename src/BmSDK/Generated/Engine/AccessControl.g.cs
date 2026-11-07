@@ -84,6 +84,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsPendingAuth(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerUID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPendingAuth, "Engine.AccessControl.IsPendingAuth");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Cleanup(bool bExit = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cleanup, "Engine.AccessControl.Cleanup");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyExit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyExit, "Engine.AccessControl.NotifyExit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyGameEnding()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGameEnding, "Engine.AccessControl.NotifyGameEnding");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyServerTravel(bool bSeamless)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyServerTravel, "Engine.AccessControl.NotifyServerTravel");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +157,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnDestroyOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDestroyOnlineGameComplete, "Engine.AccessControl.OnDestroyOnlineGameComplete");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +187,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnClientConnectionClose(BmSDK.Engine.Player ClientConnection)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClientConnectionClose, "Engine.AccessControl.OnClientConnectionClose");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +202,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ListenHostAuthTimeout()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ListenHostAuthTimeout, "Engine.AccessControl.ListenHostAuthTimeout");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -208,6 +216,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void EndListenHostAuth()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndListenHostAuth, "Engine.AccessControl.EndListenHostAuth");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +230,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ContinueListenHostAuth()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContinueListenHostAuth, "Engine.AccessControl.ContinueListenHostAuth");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +244,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BeginListenHostAuth(bool bRetry = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginListenHostAuth, "Engine.AccessControl.BeginListenHostAuth");
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -248,6 +259,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyStartOnlineGame()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyStartOnlineGame, "Engine.AccessControl.NotifyStartOnlineGame");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +273,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ProcessServerAuthRetryRequest(BmSDK.Engine.Player ClientConnection)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessServerAuthRetryRequest, "Engine.AccessControl.ProcessServerAuthRetryRequest");
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -275,6 +288,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ProcessServerAuthRequest(BmSDK.Engine.Player ClientConnection, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int ClientPort)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessServerAuthRequest, "Engine.AccessControl.ProcessServerAuthRequest");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -292,6 +306,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnClientAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, BmSDK.Engine.Player ClientConnection, BmSDK.FString ExtraInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClientAuthComplete, "Engine.AccessControl.OnClientAuthComplete");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -309,6 +324,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ProcessClientAuthResponse(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int AuthTicketUID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessClientAuthResponse, "Engine.AccessControl.ProcessClientAuthResponse");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -325,6 +341,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnAuthReady()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAuthReady, "Engine.AccessControl.OnAuthReady");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -338,6 +355,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PendingAuthTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PendingAuthTimer, "Engine.AccessControl.PendingAuthTimer");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -351,6 +369,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void PreLogin(BmSDK.FString Options, BmSDK.FString Address, BmSDK.Engine.OnlineSubsystem.FUniqueNetId UniqueId, bool bSupportsAuth, out BmSDK.FString OutError, bool bSpectator)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreLogin, "Engine.AccessControl.PreLogin");
         byte* paramsPtr = stackalloc byte[188];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -370,6 +389,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearAuthDelegates(bool bExiting)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAuthDelegates, "Engine.AccessControl.ClearAuthDelegates");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -384,6 +404,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RegisterAuthDelegates()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterAuthDelegates, "Engine.AccessControl.RegisterAuthDelegates");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -397,6 +418,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitAuthHooks()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitAuthHooks, "Engine.AccessControl.InitAuthHooks");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -410,6 +432,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsIDBanned(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId NetId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsIDBanned, "Engine.AccessControl.IsIDBanned");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -426,6 +449,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CheckIPPolicy(BmSDK.FString Address)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckIPPolicy, "Engine.AccessControl.CheckIPPolicy");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -440,6 +464,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ValidLogin(BmSDK.FString UserName, BmSDK.FString Password)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ValidLogin, "Engine.AccessControl.ValidLogin");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -455,6 +480,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ParseAdminOptions(BmSDK.FString Options)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ParseAdminOptions, "Engine.AccessControl.ParseAdminOptions");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -469,6 +495,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AdminExited(BmSDK.Engine.PlayerController P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdminExited, "Engine.AccessControl.AdminExited");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -483,6 +510,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AdminEntered(BmSDK.Engine.PlayerController P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdminEntered, "Engine.AccessControl.AdminEntered");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -497,6 +525,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AdminLogout(BmSDK.Engine.PlayerController P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdminLogout, "Engine.AccessControl.AdminLogout");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -511,6 +540,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AdminLogin(BmSDK.Engine.PlayerController P, BmSDK.FString Password)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdminLogin, "Engine.AccessControl.AdminLogin");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -526,6 +556,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool KickPlayer(BmSDK.Engine.PlayerController C, BmSDK.FString KickReason)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KickPlayer, "Engine.AccessControl.KickPlayer");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -541,6 +572,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ForceKickPlayer(BmSDK.Engine.PlayerController C, BmSDK.FString KickReason)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceKickPlayer, "Engine.AccessControl.ForceKickPlayer");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -556,6 +588,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void KickBan(BmSDK.FString Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KickBan, "Engine.AccessControl.KickBan");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -570,6 +603,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Kick(BmSDK.FString Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Kick, "Engine.AccessControl.Kick");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -584,6 +618,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.Controller GetControllerFromString(BmSDK.FString Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetControllerFromString, "Engine.AccessControl.GetControllerFromString");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -598,6 +633,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool RequiresPassword()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequiresPassword, "Engine.AccessControl.RequiresPassword");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -611,6 +647,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetGamePassword(BmSDK.FString P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGamePassword, "Engine.AccessControl.SetGamePassword");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -625,6 +662,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetAdminPassword(BmSDK.FString P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAdminPassword, "Engine.AccessControl.SetAdminPassword");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -639,6 +677,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsAdmin(BmSDK.Engine.PlayerController P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAdmin, "Engine.AccessControl.IsAdmin");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -653,6 +692,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.AccessControl.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -666,6 +706,7 @@ public partial class AccessControl : BmSDK.Engine.Info, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.AccessControl.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

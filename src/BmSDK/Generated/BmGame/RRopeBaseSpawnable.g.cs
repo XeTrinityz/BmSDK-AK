@@ -84,6 +84,7 @@ public partial class RRopeBaseSpawnable : BmSDK.BmGame.RRopeBase, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void MulticastSetupHangingFearRope(BmSDK.BmGame.RRopeBaseSpawnable.FHangingFearRopeSetupParams SetupParams)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MulticastSetupHangingFearRope, "BmGame.RRopeBaseSpawnable.MulticastSetupHangingFearRope");
         byte* paramsPtr = stackalloc byte[168];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

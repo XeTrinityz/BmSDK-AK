@@ -79,6 +79,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetProcessRequestCompleteDelegate(System.IntPtr ProcessRequestCompleteDelegate)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetProcessRequestCompleteDelegate, "Engine.HttpRequestInterface.SetProcessRequestCompleteDelegate");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -102,6 +103,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual void OnProcessRequestComplete(BmSDK.Engine.HttpRequestInterface OriginalRequest, BmSDK.Engine.HttpResponseInterface InHttpResponse, bool bDidSucceed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnProcessRequestComplete, "Engine.HttpRequestInterface.OnProcessRequestComplete");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual bool ProcessRequest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessRequest, "Engine.HttpRequestInterface.ProcessRequest");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetHeader(BmSDK.FString HeaderName, BmSDK.FString HeaderValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHeader, "Engine.HttpRequestInterface.SetHeader");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +164,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetContentAsString(BmSDK.FString ContentString)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetContentAsString, "Engine.HttpRequestInterface.SetContentAsString");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +186,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetContent(out BmSDK.TArray<byte> ContentPayload)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetContent, "Engine.HttpRequestInterface.SetContent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -202,6 +208,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetURL(BmSDK.FString URL)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetURL, "Engine.HttpRequestInterface.SetURL");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -223,6 +230,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.HttpRequestInterface SetVerb(BmSDK.FString Verb)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVerb, "Engine.HttpRequestInterface.SetVerb");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -244,6 +252,7 @@ public partial class HttpRequestInterface : BmSDK.Engine.HttpBaseInterface, BmSD
     /// </summary>
     public unsafe virtual BmSDK.FString GetVerb()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVerb, "Engine.HttpRequestInterface.GetVerb");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

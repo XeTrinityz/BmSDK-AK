@@ -97,6 +97,7 @@ public partial class RSeqAct_SideStory_Query : BmSDK.Engine.SequenceAction, BmSD
     /// </summary>
     public unsafe virtual void CompareByValue(int Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CompareByValue, "BmScript.RSeqAct_SideStory_Query.CompareByValue");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_SideStory_Query : BmSDK.Engine.SequenceAction, BmSD
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SideStory_Query.Activated");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

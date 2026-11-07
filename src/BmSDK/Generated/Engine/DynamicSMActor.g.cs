@@ -79,6 +79,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe virtual void SetLightEnvironmentToNotBeDynamic()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLightEnvironmentToNotBeDynamic, "Engine.DynamicSMActor.SetLightEnvironmentToNotBeDynamic");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe override void Detach(BmSDK.Engine.Actor Other)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detach, "Engine.DynamicSMActor.Detach");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +108,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe override void Attach(BmSDK.Engine.Actor Other)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Attach, "Engine.DynamicSMActor.Attach");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -120,6 +123,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe override bool CanBasePawn(BmSDK.Engine.Pawn P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBasePawn, "Engine.DynamicSMActor.CanBasePawn");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -134,6 +138,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe virtual void SetStaticMesh(BmSDK.Engine.StaticMesh NewMesh, System.Numerics.Vector3 NewTranslation = default, BmSDK.Rotator NewRotation = default, System.Numerics.Vector3 NewScale3D = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStaticMesh, "Engine.DynamicSMActor.SetStaticMesh");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe virtual void OnSetMaterialInstance(BmSDK.Engine.RSeqAct_SetMaterialInstance Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterialInstance, "Engine.DynamicSMActor.OnSetMaterialInstance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe virtual void OnSetMaterial(BmSDK.Engine.SeqAct_SetMaterial Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterial, "Engine.DynamicSMActor.OnSetMaterial");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -179,6 +186,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe virtual void OnSetMesh(BmSDK.Engine.SeqAct_SetMesh Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMesh, "Engine.DynamicSMActor.OnSetMesh");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -193,6 +201,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe override void ReplicatedEvent(BmSDK.FName VarName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplicatedEvent, "Engine.DynamicSMActor.ReplicatedEvent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class DynamicSMActor : BmSDK.Engine.RStaticClimbableActor, BmSDK.
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.DynamicSMActor.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

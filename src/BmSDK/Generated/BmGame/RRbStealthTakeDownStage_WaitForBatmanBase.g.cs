@@ -84,6 +84,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe override void End(bool bLastStage = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_End, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.End");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe override void Cancel(bool SetState = default, bool bAbandonVictims = default, bool bResetPlayerPose = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cancel, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.Cancel");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe virtual void FailedTakedown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FailedTakedown, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.FailedTakedown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe virtual void BatmanStartedGlideKick()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BatmanStartedGlideKick, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.BatmanStartedGlideKick");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe virtual void TooLateToAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TooLateToAttack, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.TooLateToAttack");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe virtual void SwitchToBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchToBatman, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.SwitchToBatman");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe virtual void TimeOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimeOut, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.TimeOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -179,6 +186,7 @@ public partial class RRbStealthTakeDownStage_WaitForBatmanBase : BmSDK.BmGame.RS
     /// </summary>
     public unsafe override void Begin()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmGame.RRbStealthTakeDownStage_WaitForBatmanBase.Begin");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

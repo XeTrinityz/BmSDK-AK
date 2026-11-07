@@ -84,6 +84,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_VillainReviveCasualty.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override bool GetAdditionalTargetPriority(BmSDK.Class dmgType, BmSDK.BmGame.RPawnCombat TargetPawn, out float AdditionalPriority)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAdditionalTargetPriority, "BmGame.RCombatMove_VillainReviveCasualty.GetAdditionalTargetPriority");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +117,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void PlayFinishedReviveBark()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFinishedReviveBark, "BmGame.RCombatMove_VillainReviveCasualty.PlayFinishedReviveBark");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +131,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void PlayReviveBark()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayReviveBark, "BmGame.RCombatMove_VillainReviveCasualty.PlayReviveBark");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +145,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetForceToGiveToPawn(BmSDK.BmGame.RPawnCombat Receiver, float MaxForce, float MinRange = default, float MaxRange = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForceToGiveToPawn, "BmGame.RCombatMove_VillainReviveCasualty.GetForceToGiveToPawn");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override bool OverrideForceToGiveToPawn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideForceToGiveToPawn, "BmGame.RCombatMove_VillainReviveCasualty.OverrideForceToGiveToPawn");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -171,6 +177,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void PlayStandUpAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayStandUpAnim, "BmGame.RCombatMove_VillainReviveCasualty.PlayStandUpAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +191,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void PlayRevive()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayRevive, "BmGame.RCombatMove_VillainReviveCasualty.PlayRevive");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +205,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void SetReviveAnims()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetReviveAnims, "BmGame.RCombatMove_VillainReviveCasualty.SetReviveAnims");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_VillainReviveCasualty.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -223,6 +233,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void StartCasualtyChargeUpVfx()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCasualtyChargeUpVfx, "BmGame.RCombatMove_VillainReviveCasualty.StartCasualtyChargeUpVfx");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,6 +247,7 @@ public partial class RCombatMove_VillainReviveCasualty : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void StartReviveGetup()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartReviveGetup, "BmGame.RCombatMove_VillainReviveCasualty.StartReviveGetup");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
     /// </summary>
     public unsafe override void DeleteDLC(BmSDK.FString DLCName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeleteDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.DeleteDLC");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
     /// </summary>
     public unsafe virtual void AppendDLC(out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineContent> Bundles)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.AppendDLC");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +121,7 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
     /// </summary>
     public unsafe virtual void OnReadContentComplete(bool bWasSuccessful)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReadContentComplete, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.OnReadContentComplete");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +136,7 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
     /// </summary>
     public unsafe override void ClearAllContent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAllContent, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.ClearAllContent");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +150,7 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
     /// </summary>
     public unsafe override void FindDLC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.FindDLC");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

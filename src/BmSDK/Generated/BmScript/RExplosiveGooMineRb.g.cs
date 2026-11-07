@@ -84,6 +84,7 @@ public partial class RExplosiveGooMineRb : BmSDK.BmScript.RExplosiveGooMineBm, B
     /// </summary>
     public unsafe override void TickAudio(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickAudio, "BmScript.RExplosiveGooMineRb.TickAudio");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RExplosiveGooMineRb : BmSDK.BmScript.RExplosiveGooMineBm, B
     /// </summary>
     public unsafe override void PlayExplosionSound()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayExplosionSound, "BmScript.RExplosiveGooMineRb.PlayExplosionSound");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

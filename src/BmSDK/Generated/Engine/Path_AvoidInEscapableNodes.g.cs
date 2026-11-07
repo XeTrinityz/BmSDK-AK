@@ -84,6 +84,7 @@ public partial class Path_AvoidInEscapableNodes : BmSDK.Engine.PathConstraint, B
     /// </summary>
     public unsafe override void Recycle()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "Engine.Path_AvoidInEscapableNodes.Recycle");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class Path_AvoidInEscapableNodes : BmSDK.Engine.PathConstraint, B
     /// </summary>
     public unsafe void CachePawnReacFlags(BmSDK.Engine.Pawn P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CachePawnReacFlags, "Engine.Path_AvoidInEscapableNodes.CachePawnReacFlags");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.DecalComponent SpawnDecal(BmSDK.Engine.MaterialInterface DecalMaterial, System.Numerics.Vector3 DecalLocation, BmSDK.Rotator DecalOrientation, float Width, float Height, float Thickness, bool bNoClip, float DecalRotation = default, BmSDK.Engine.PrimitiveComponent HitComponent = default, bool bProjectOnTerrain = default, bool bProjectOnSkeletalMeshes = default, BmSDK.FName HitBone = default, int HitNodeIndex = default, int HitLevelIndex = default, float InDecalLifeSpan = default, int InFracturedStaticMeshComponentIndex = default, float InDepthBias = default, System.Numerics.Vector2 InBlendRange = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDecal, "Engine.DecalManager.SpawnDecal");
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -115,6 +116,7 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.DecalComponent GetPooledComponent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPooledComponent, "Engine.DecalManager.GetPooledComponent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +161,7 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CanSpawnDecals()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpawnDecals, "Engine.DecalManager.CanSpawnDecals");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -172,6 +175,7 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DecalFinished(BmSDK.Engine.DecalComponent Decal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DecalFinished, "Engine.DecalManager.DecalFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,5 +287,32 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
     {
         get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.Engine.DecalManager.FActiveDecalInfo>>(Ptr + 712); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 712); }
+    }
+}
+
+/// <summary>
+/// The static native functions of DecalManager, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class DecalManagerStatics
+{
+    private static BmSDK.Function __fn_AreDynamicDecalsEnabled;
+    /// <summary>
+    /// Function: AreDynamicDecalsEnabled, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static bool AreDynamicDecalsEnabled(this BmSDK.Engine.DecalManager self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreDynamicDecalsEnabled, "Engine.DecalManager.AreDynamicDecalsEnabled");
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 }

@@ -84,6 +84,7 @@ public partial class RVehicleBehaviour_StopAndSpawnHushBadGuys : BmSDK.BmGame.RV
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RVehicleBehaviour_StopAndSpawnHushBadGuys.Tick");
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

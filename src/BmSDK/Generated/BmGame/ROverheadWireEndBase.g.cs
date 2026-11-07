@@ -84,6 +84,7 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.ROverheadWireEndBase.UnlinkToActor");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.ROverheadWireEndBase.LinkToActor");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
     /// </summary>
     public unsafe virtual void LinkToOtherEnd(BmSDK.BmGame.ROverheadWireEndBase OtherEnd)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToOtherEnd, "BmGame.ROverheadWireEndBase.LinkToOtherEnd");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +136,7 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
     /// </summary>
     public unsafe virtual void AdjustWire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustWire, "BmGame.ROverheadWireEndBase.AdjustWire");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

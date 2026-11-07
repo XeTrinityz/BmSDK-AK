@@ -84,6 +84,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmScript.RDestructibleProp_TakeoverVideoScreen.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe override void PreStreamOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmScript.RDestructibleProp_TakeoverVideoScreen.PreStreamOut");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmScript.RDestructibleProp_TakeoverVideoScreen.PreBeginPlay");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe virtual void SetOverrideMaterial()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverrideMaterial, "BmScript.RDestructibleProp_TakeoverVideoScreen.SetOverrideMaterial");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe virtual void SetStaticTransitionParameter(float val)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStaticTransitionParameter, "BmScript.RDestructibleProp_TakeoverVideoScreen.SetStaticTransitionParameter");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe virtual void RevertToStandardTexture()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RevertToStandardTexture, "BmScript.RDestructibleProp_TakeoverVideoScreen.RevertToStandardTexture");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe virtual void SetTakeoverTexture(BmSDK.Engine.TextureRenderTarget2D takeoverTexture)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTakeoverTexture, "BmScript.RDestructibleProp_TakeoverVideoScreen.SetTakeoverTexture");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe virtual bool CanBeTakenOverByScarecrow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeTakenOverByScarecrow, "BmScript.RDestructibleProp_TakeoverVideoScreen.CanBeTakenOverByScarecrow");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestr
     /// </summary>
     public unsafe virtual bool CanBeTakenOverByRiddler()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeTakenOverByRiddler, "BmScript.RDestructibleProp_TakeoverVideoScreen.CanBeTakenOverByRiddler");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

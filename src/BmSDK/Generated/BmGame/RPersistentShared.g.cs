@@ -84,6 +84,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpgradesPurchasedAdjust(int nUpgrades)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradesPurchasedAdjust, "BmGame.RPersistentShared.UpgradesPurchasedAdjust");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpgradePointsSpent(int nPoints)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradePointsSpent, "BmGame.RPersistentShared.UpgradePointsSpent");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpgradePointsEarned(int nPoints)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradePointsEarned, "BmGame.RPersistentShared.UpgradePointsEarned");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetEpisodeProgress(int Uid, out int OutProgress, out int OutNew)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEpisodeProgress, "BmGame.RPersistentShared.GetEpisodeProgress");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +150,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetEpisodeProgress(int Uid, int Percent)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEpisodeProgress, "BmGame.RPersistentShared.SetEpisodeProgress");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -161,6 +166,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearStoryNew(int Uid)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearStoryNew, "BmGame.RPersistentShared.ClearStoryNew");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +181,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsEpisodeNew(int Uid)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEpisodeNew, "BmGame.RPersistentShared.IsEpisodeNew");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +196,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void IncSkillPointCategoryCount(BmSDK.BmGame.RPersistentShared.SkillPointCategories Category, int IncAmount = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncSkillPointCategoryCount, "BmGame.RPersistentShared.IncSkillPointCategoryCount");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +212,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddSkillPointDetail(BmSDK.FString DetailString)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSkillPointDetail, "BmGame.RPersistentShared.AddSkillPointDetail");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -218,6 +227,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearSkillPointDetails()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearSkillPointDetails, "BmGame.RPersistentShared.ClearSkillPointDetails");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +241,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SkillPointEncounterFinished(int SkillPointsEarned, BmSDK.BmGame.RPlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkillPointEncounterFinished, "BmGame.RPersistentShared.SkillPointEncounterFinished");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -246,6 +257,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetRiddlerProgressionProportion()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerProgressionProportion, "BmGame.RPersistentShared.GetRiddlerProgressionProportion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -259,6 +271,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetRiddlerProgressionAbsolute()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerProgressionAbsolute, "BmGame.RPersistentShared.GetRiddlerProgressionAbsolute");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -272,6 +285,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool AllCamerasBroken()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllCamerasBroken, "BmGame.RPersistentShared.AllCamerasBroken");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -285,6 +299,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreasePenguinBrokenCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreasePenguinBrokenCount, "BmGame.RPersistentShared.IncreasePenguinBrokenCount");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -299,6 +314,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreaseJokerBalloonPoppedCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseJokerBalloonPoppedCount, "BmGame.RPersistentShared.IncreaseJokerBalloonPoppedCount");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -313,6 +329,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreaseJokerTeethCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseJokerTeethCount, "BmGame.RPersistentShared.IncreaseJokerTeethCount");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -327,6 +344,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreaseRiddleCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseRiddleCount, "BmGame.RPersistentShared.IncreaseRiddleCount");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -341,6 +359,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int CWTotalPossiblePickupsAndChallenges()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CWTotalPossiblePickupsAndChallenges, "BmGame.RPersistentShared.CWTotalPossiblePickupsAndChallenges");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -354,6 +373,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int CWPickupsAndChallengesCompleteCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CWPickupsAndChallengesCompleteCount, "BmGame.RPersistentShared.CWPickupsAndChallengesCompleteCount");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -367,6 +387,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool CWPickupsAndChallengesComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CWPickupsAndChallengesComplete, "BmGame.RPersistentShared.CWPickupsAndChallengesComplete");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -380,6 +401,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetCWPickupsTotalCollected()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCWPickupsTotalCollected, "BmGame.RPersistentShared.GetCWPickupsTotalCollected");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -393,6 +415,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreaseCWPickupCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseCWPickupCount, "BmGame.RPersistentShared.IncreaseCWPickupCount");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -407,6 +430,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreasePickupCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreasePickupCount, "BmGame.RPersistentShared.IncreasePickupCount");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -421,6 +445,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreaseBrokenDemonSealCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseBrokenDemonSealCount, "BmGame.RPersistentShared.IncreaseBrokenDemonSealCount");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -434,6 +459,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int IncreaseBrokenHarleyHeadCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseBrokenHarleyHeadCount, "BmGame.RPersistentShared.IncreaseBrokenHarleyHeadCount");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -447,6 +473,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateBatChallenge(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry, float InValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBatChallenge, "BmGame.RPersistentShared.UpdateBatChallenge");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -462,6 +489,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsBatChallengeAsBeaten(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatChallengeAsBeaten, "BmGame.RPersistentShared.IsBatChallengeAsBeaten");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -476,6 +504,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetBatChallengeAsBeaten(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatChallengeAsBeaten, "BmGame.RPersistentShared.SetBatChallengeAsBeaten");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -490,6 +519,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetBatChallengeValueNeeded(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatChallengeValueNeeded, "BmGame.RPersistentShared.GetBatChallengeValueNeeded");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -504,6 +534,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetBatChallengeValueBest(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatChallengeValueBest, "BmGame.RPersistentShared.GetBatChallengeValueBest");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -518,6 +549,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetBatChallengeValueCurrent(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatChallengeValueCurrent, "BmGame.RPersistentShared.GetBatChallengeValueCurrent");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -532,6 +564,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetRiddlerLocationDataValue(int LocIndex, int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerLocationDataValue, "BmGame.RPersistentShared.GetRiddlerLocationDataValue");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -547,6 +580,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetRiddlerLocationData(int LocIndex, int Index, int Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRiddlerLocationData, "BmGame.RPersistentShared.SetRiddlerLocationData");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -563,6 +597,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.TArray<int> GetRiddlerLocationData(int LocIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerLocationData, "BmGame.RPersistentShared.GetRiddlerLocationData");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -577,6 +612,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsRiddlerAreaUnlocked(int LocIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRiddlerAreaUnlocked, "BmGame.RPersistentShared.IsRiddlerAreaUnlocked");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -591,6 +627,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UnlockRiddlerArea(int LocIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockRiddlerArea, "BmGame.RPersistentShared.UnlockRiddlerArea");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -605,6 +642,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearRiddlerAreaNew(int LocIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearRiddlerAreaNew, "BmGame.RPersistentShared.ClearRiddlerAreaNew");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -619,6 +657,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetRiddlerTotalCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerTotalCount, "BmGame.RPersistentShared.GetRiddlerTotalCount");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -632,6 +671,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetRiddlerAreaTotalCount(int LocIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerAreaTotalCount, "BmGame.RPersistentShared.GetRiddlerAreaTotalCount");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -646,6 +686,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Set_PercentEntry(bool bPlus, BmSDK.BmGame.RPersistentShared.EPercentData Item, float Value)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Set_PercentEntry, "BmGame.RPersistentShared.Set_PercentEntry");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -662,6 +703,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float Get_PercentEntry(bool bPlus, BmSDK.BmGame.RPersistentShared.EPercentData Item)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Get_PercentEntry, "BmGame.RPersistentShared.Get_PercentEntry");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -677,6 +719,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int CountCityStoryNew(int StartAt, int Count)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CountCityStoryNew, "BmGame.RPersistentShared.CountCityStoryNew");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -692,6 +735,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int CountBiosNew()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CountBiosNew, "BmGame.RPersistentShared.CountBiosNew");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -705,6 +749,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int CountOfBiosUnlocked()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CountOfBiosUnlocked, "BmGame.RPersistentShared.CountOfBiosUnlocked");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -718,6 +763,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsBioUnlocked(BmSDK.BmGame.RGameInfo.EBioCharacter inBio)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBioUnlocked, "BmGame.RPersistentShared.IsBioUnlocked");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -732,6 +778,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Dump()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Dump, "BmGame.RPersistentShared.Dump");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -745,6 +792,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DumpStats()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpStats, "BmGame.RPersistentShared.DumpStats");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -758,6 +806,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString PadStr(BmSDK.FString InStr, int DesiredLen)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PadStr, "BmGame.RPersistentShared.PadStr");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -773,6 +822,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString FloatArrayToString(BmSDK.TArray<float> Values)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FloatArrayToString, "BmGame.RPersistentShared.FloatArrayToString");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -787,6 +837,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString IntArrayToString(BmSDK.TArray<int> Values)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IntArrayToString, "BmGame.RPersistentShared.IntArrayToString");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -801,6 +852,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString ByteArrayToString(BmSDK.TArray<byte> Values)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ByteArrayToString, "BmGame.RPersistentShared.ByteArrayToString");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -815,6 +867,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AwardUpgradePointsForNewlyCompletedChallenges()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwardUpgradePointsForNewlyCompletedChallenges, "BmGame.RPersistentShared.AwardUpgradePointsForNewlyCompletedChallenges");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -835,6 +888,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsSharedFlagSet(BmSDK.FString FlagName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSharedFlagSet, "BmGame.RPersistentShared.IsSharedFlagSet");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -856,6 +910,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetSharedFlag(BmSDK.FString FlagName, bool bTrue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSharedFlag, "BmGame.RPersistentShared.SetSharedFlag");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RBarkGroupContext_Combat : BmSDK.BmGame.RBarkGroupContext, 
     /// </summary>
     public unsafe override BmSDK.TArray<BmSDK.Engine.AkDialogueComponent> GetDlgComponentsOfGroup()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDlgComponentsOfGroup, "BmGame.RBarkGroupContext_Combat.GetDlgComponentsOfGroup");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

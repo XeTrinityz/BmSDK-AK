@@ -84,6 +84,7 @@ public partial class RRHDBm : BmSDK.BmGame.RRHD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ConversationReTriggerTimeout()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConversationReTriggerTimeout, "BmScript.RRHDBm.ConversationReTriggerTimeout");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RRHDBm : BmSDK.BmGame.RRHD, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PlayCodesNeededDialogue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCodesNeededDialogue, "BmScript.RRHDBm.PlayCodesNeededDialogue");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

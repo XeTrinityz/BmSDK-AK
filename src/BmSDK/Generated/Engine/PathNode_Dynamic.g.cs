@@ -84,6 +84,7 @@ public partial class PathNode_Dynamic : BmSDK.Engine.PathNode, BmSDK.IGameObject
     /// </summary>
     public unsafe override BmSDK.FString GetDebugAbbrev()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDebugAbbrev, "Engine.PathNode_Dynamic.GetDebugAbbrev");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

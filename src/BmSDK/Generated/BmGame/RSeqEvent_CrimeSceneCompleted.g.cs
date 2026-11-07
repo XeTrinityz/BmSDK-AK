@@ -97,6 +97,7 @@ public partial class RSeqEvent_CrimeSceneCompleted : BmSDK.Engine.SequenceEvent,
     /// </summary>
     public unsafe virtual void EvidenceTotalChanged(int TotalCollected, int TotalInCrimeScene)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EvidenceTotalChanged, "BmGame.RSeqEvent_CrimeSceneCompleted.EvidenceTotalChanged");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

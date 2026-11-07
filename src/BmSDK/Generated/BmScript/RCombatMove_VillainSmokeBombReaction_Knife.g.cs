@@ -84,6 +84,7 @@ public partial class RCombatMove_VillainSmokeBombReaction_Knife : BmSDK.BmGame.R
     /// </summary>
     public unsafe override void SetCounterInfo(bool bMirrored)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCounterInfo, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.SetCounterInfo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RCombatMove_VillainSmokeBombReaction_Knife : BmSDK.BmGame.R
     /// </summary>
     public unsafe override void CombatAnimHitStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitStart, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.CombatAnimHitStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RCombatMove_VillainSmokeBombReaction_Knife : BmSDK.BmGame.R
     /// </summary>
     public unsafe override bool ShouldMirror()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldMirror, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.ShouldMirror");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class Player : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SwitchController(BmSDK.Engine.PlayerController PC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchController, "Engine.Player.SwitchController");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

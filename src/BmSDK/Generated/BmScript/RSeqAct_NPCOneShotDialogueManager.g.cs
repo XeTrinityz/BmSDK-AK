@@ -97,6 +97,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
     /// </summary>
     public unsafe virtual void TriggerConnectedSpeechAction()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerConnectedSpeechAction, "BmScript.RSeqAct_NPCOneShotDialogueManager.TriggerConnectedSpeechAction");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
     /// </summary>
     public unsafe virtual void ChooseNextLine()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseNextLine, "BmScript.RSeqAct_NPCOneShotDialogueManager.ChooseNextLine");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
     /// </summary>
     public unsafe virtual void ResetUnplayedLines()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetUnplayedLines, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetUnplayedLines");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +139,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
     /// </summary>
     public unsafe virtual void ResetTimer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetTimer, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetTimer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +153,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
     /// </summary>
     public unsafe virtual void HandleInputLinks()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInputLinks, "BmScript.RSeqAct_NPCOneShotDialogueManager.HandleInputLinks");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -162,6 +167,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_NPCOneShotDialogueManager.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

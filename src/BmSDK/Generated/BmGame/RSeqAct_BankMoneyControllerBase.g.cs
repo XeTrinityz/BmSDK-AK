@@ -79,6 +79,7 @@ public partial class RSeqAct_BankMoneyControllerBase : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe virtual void NotifyCashPlacedInBag(int Amount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCashPlacedInBag, "BmGame.RSeqAct_BankMoneyControllerBase.NotifyCashPlacedInBag");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RSeqAct_BankMoneyControllerBase : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe virtual void NotifyCashRemovedFromBank(int Amount)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCashRemovedFromBank, "BmGame.RSeqAct_BankMoneyControllerBase.NotifyCashRemovedFromBank");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

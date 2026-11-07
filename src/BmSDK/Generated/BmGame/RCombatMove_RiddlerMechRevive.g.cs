@@ -84,6 +84,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_RiddlerMechRevive.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe override void MoveOverridenForPawn(BmSDK.BmGame.RPawnCombat OverridenPawn, BmSDK.BmGame.RCombatMove NewMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveOverridenForPawn, "BmGame.RCombatMove_RiddlerMechRevive.MoveOverridenForPawn");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe virtual void SetRevive(BmSDK.BmGame.RPawnVillain Robot, BmSDK.BmGame.RPawnVillainRiddlerMechSuitBase ReviveMech)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRevive, "BmGame.RCombatMove_RiddlerMechRevive.SetRevive");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe virtual void UpdatePreRevive(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePreRevive, "BmGame.RCombatMove_RiddlerMechRevive.UpdatePreRevive");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +145,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe virtual void AddCasualty(BmSDK.BmGame.RPawnVillain DeadRobot)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCasualty, "BmGame.RCombatMove_RiddlerMechRevive.AddCasualty");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe virtual void ReviveAll()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReviveAll, "BmGame.RCombatMove_RiddlerMechRevive.ReviveAll");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +174,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_RiddlerMechRevive.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RCombatMove_RiddlerMechRevive : BmSDK.BmGame.RCombatMove, B
     /// </summary>
     public unsafe virtual void WakeCasualty()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WakeCasualty, "BmGame.RCombatMove_RiddlerMechRevive.WakeCasualty");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

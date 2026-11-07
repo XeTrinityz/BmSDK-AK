@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_RelativeAnimWithTravelAnim : BmSDK.BmG
     /// </summary>
     public unsafe override void FinalAnimStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinalAnimStarted, "BmGame.RSpecialMoveInstance_RelativeAnimWithTravelAnim.FinalAnimStarted");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSpecialMoveInstance_RelativeAnimWithTravelAnim : BmSDK.BmG
     /// </summary>
     public unsafe override void PickRandomAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickRandomAnim, "BmGame.RSpecialMoveInstance_RelativeAnimWithTravelAnim.PickRandomAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

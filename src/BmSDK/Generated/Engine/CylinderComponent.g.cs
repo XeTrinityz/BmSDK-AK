@@ -84,6 +84,7 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetExtent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetExtent, "Engine.CylinderComponent.GetExtent");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
     /// </summary>
     public unsafe virtual void SetCylinderSize(float NewRadius, float NewHeight)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCylinderSize, "Engine.CylinderComponent.SetCylinderSize");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

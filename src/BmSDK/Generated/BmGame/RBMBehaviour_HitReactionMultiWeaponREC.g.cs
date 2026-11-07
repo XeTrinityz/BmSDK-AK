@@ -84,6 +84,7 @@ public partial class RBMBehaviour_HitReactionMultiWeaponREC : BmSDK.BmGame.RBMBe
     /// </summary>
     public unsafe virtual void BumpedIntoPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BumpedIntoPlayer, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.BumpedIntoPlayer");
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_HitReactionMultiWeaponREC : BmSDK.BmGame.RBMBe
     /// </summary>
     public unsafe virtual void UpdateHitThugs()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateHitThugs, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.UpdateHitThugs");
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_HitReactionMultiWeaponREC : BmSDK.BmGame.RBMBe
     /// </summary>
     public unsafe override void Initialise(BmSDK.BmGame.RPawnCombat.FDamageInfo NewDmgInfo, bool bNewInterruptedHitReaction = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.Initialise");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

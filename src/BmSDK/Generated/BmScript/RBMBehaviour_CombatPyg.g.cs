@@ -84,6 +84,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override bool OverrideHitReaction(out BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideHitReaction, "BmScript.RBMBehaviour_CombatPyg.OverrideHitReaction");
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override void OnSpawnMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSpawnMove, "BmScript.RBMBehaviour_CombatPyg.OnSpawnMove");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override int GetAttackPriority(bool bForceAttack)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttackPriority, "BmScript.RBMBehaviour_CombatPyg.GetAttackPriority");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override void PlayStepInDirection(System.Numerics.Vector3 MoveDir, System.Numerics.Vector3 FrontDir, float MoveSize, float ForceSize, float MoveAmnt)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayStepInDirection, "BmScript.RBMBehaviour_CombatPyg.PlayStepInDirection");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -143,6 +147,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSafeFromBatmanPosition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSafeFromBatmanPosition, "BmScript.RBMBehaviour_CombatPyg.GetSafeFromBatmanPosition");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -156,6 +161,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe virtual void MoveToAnotherPoint(BmSDK.BmScript.RBMCombatPoint_PygTable.EPygTableMoveState CurrMoveState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveToAnotherPoint, "BmScript.RBMBehaviour_CombatPyg.MoveToAnotherPoint");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +176,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe virtual void CheckHidePointSafe()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckHidePointSafe, "BmScript.RBMBehaviour_CombatPyg.CheckHidePointSafe");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +190,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override void GotoMoveToCombatState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoMoveToCombatState, "BmScript.RBMBehaviour_CombatPyg.GotoMoveToCombatState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -196,6 +204,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override BmSDK.FName GetTauntMoveStance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTauntMoveStance, "BmScript.RBMBehaviour_CombatPyg.GetTauntMoveStance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -209,6 +218,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override void GetPossibleMoves(out BmSDK.TArray<BmSDK.Class> PossibleMoves)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPossibleMoves, "BmScript.RBMBehaviour_CombatPyg.GetPossibleMoves");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -223,6 +233,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override void OnDeactivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_CombatPyg.OnDeactivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,6 +247,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_CombatPyg.OnActivate");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

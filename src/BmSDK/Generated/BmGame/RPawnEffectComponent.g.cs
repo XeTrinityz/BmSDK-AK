@@ -79,6 +79,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopTorso(bool bPlayBreakEffect = default, float Delay = default, bool bPlayIceExplodeEffect = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTorso, "BmGame.RPawnEffectComponent.StopTorso");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -95,6 +96,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopRightLeg(bool bPlayBreakEffect = default, float Delay = default, bool bPlayIceExplodeEffect = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopRightLeg, "BmGame.RPawnEffectComponent.StopRightLeg");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopLeftLeg(bool bPlayBreakEffect = default, float Delay = default, bool bPlayIceExplodeEffect = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopLeftLeg, "BmGame.RPawnEffectComponent.StopLeftLeg");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +130,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearExitVfx()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearExitVfx, "BmGame.RPawnEffectComponent.ClearExitVfx");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RPawnEffectComponent.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -154,6 +159,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NativeTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativeTick, "BmGame.RPawnEffectComponent.NativeTick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -175,6 +181,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetFreezeTime()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFreezeTime, "BmGame.RPawnEffectComponent.GetFreezeTime");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +195,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetFloorFreezeTime()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloorFreezeTime, "BmGame.RPawnEffectComponent.GetFloorFreezeTime");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -201,6 +209,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Deactivate(bool bIsEarlyInterrupt)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RPawnEffectComponent.Deactivate");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +224,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopBreakDelayedInternal()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopBreakDelayedInternal, "BmGame.RPawnEffectComponent.StopBreakDelayedInternal");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -228,6 +238,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StopDelayedInternal()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopDelayedInternal, "BmGame.RPawnEffectComponent.StopDelayedInternal");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -241,6 +252,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Stop(bool bPlayBreakEffect = default, float Delay = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "BmGame.RPawnEffectComponent.Stop");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -256,6 +268,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Start(float fDrawScale = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Start, "BmGame.RPawnEffectComponent.Start");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -270,6 +283,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Deinit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deinit, "BmGame.RPawnEffectComponent.Deinit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -283,6 +297,7 @@ public partial class RPawnEffectComponent : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Initialize(BmSDK.BmGame.RPawnVillain Owner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialize, "BmGame.RPawnEffectComponent.Initialize");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

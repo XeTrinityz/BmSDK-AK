@@ -84,6 +84,7 @@ public partial class RPawnVillainGunPredMiniGunDualPlayTutorial : BmSDK.BmScript
     /// </summary>
     public unsafe override bool CanBeHitInCombat(BmSDK.BmGame.RDamageType DamageType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeHitInCombat, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.CanBeHitInCombat");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RPawnVillainGunPredMiniGunDualPlayTutorial : BmSDK.BmScript
     /// </summary>
     public unsafe override bool ShouldMiss(float TestDistSq, BmSDK.Engine.Actor TrackedTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldMiss, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.ShouldMiss");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RPawnVillainGunPredMiniGunDualPlayTutorial : BmSDK.BmScript
     /// </summary>
     public unsafe override void ActionStanceUpdated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionStanceUpdated, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.ActionStanceUpdated");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

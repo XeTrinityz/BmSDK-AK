@@ -97,6 +97,7 @@ public partial class RSeqAct_StartGauntletMovie : BmSDK.BmGame.RSeqAct_StartGaun
     /// </summary>
     public unsafe virtual BmSDK.FString ResolvePortraitNames()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolvePortraitNames, "BmScript.RSeqAct_StartGauntletMovie.ResolvePortraitNames");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_StartGauntletMovie : BmSDK.BmGame.RSeqAct_StartGaun
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_StartGauntletMovie.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_StartGauntletMovie : BmSDK.BmGame.RSeqAct_StartGaun
     /// </summary>
     public unsafe virtual void EndMovie()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndMovie, "BmScript.RSeqAct_StartGauntletMovie.EndMovie");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +139,7 @@ public partial class RSeqAct_StartGauntletMovie : BmSDK.BmGame.RSeqAct_StartGaun
     /// </summary>
     public unsafe virtual void StartMovie(bool bAutoPause)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartMovie, "BmScript.RSeqAct_StartGauntletMovie.StartMovie");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

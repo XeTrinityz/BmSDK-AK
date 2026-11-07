@@ -84,6 +84,7 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
     /// </summary>
     public unsafe virtual void DestroySpawnedActor()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroySpawnedActor, "BmScript.RSeqAct_SpawnPlayerCharacter.DestroySpawnedActor");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
     /// </summary>
     public unsafe override void OnDataLoaded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDataLoaded, "BmScript.RSeqAct_SpawnPlayerCharacter.OnDataLoaded");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SpawnPlayerCharacter.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

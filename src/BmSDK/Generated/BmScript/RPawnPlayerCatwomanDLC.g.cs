@@ -84,6 +84,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override BmSDK.BmGame.RSpecialMoveConfig GetJumpToChuteToCrawlSpaceMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJumpToChuteToCrawlSpaceMove, "BmScript.RPawnPlayerCatwomanDLC.GetJumpToChuteToCrawlSpaceMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override BmSDK.BmGame.RSpecialMoveConfig GetCrawlSpaceToChuteMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCrawlSpaceToChuteMove, "BmScript.RPawnPlayerCatwomanDLC.GetCrawlSpaceToChuteMove");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override void InvestigateModeEyes(bool bOnOrOff)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InvestigateModeEyes, "BmScript.RPawnPlayerCatwomanDLC.InvestigateModeEyes");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetCornerCoverIdleOverlayAnimset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCornerCoverIdleOverlayAnimset, "BmScript.RPawnPlayerCatwomanDLC.GetCornerCoverIdleOverlayAnimset");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override void TriggerPounceToCeilingMove(System.Numerics.Vector3 Position)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPounceToCeilingMove, "BmScript.RPawnPlayerCatwomanDLC.TriggerPounceToCeilingMove");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override bool CanReceiveAttackFromPawn(BmSDK.BmGame.RPawnCombat NewAttacker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReceiveAttackFromPawn, "BmScript.RPawnPlayerCatwomanDLC.CanReceiveAttackFromPawn");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +171,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override void SetupPlayerSpecificCombatAnimsets()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupPlayerSpecificCombatAnimsets, "BmScript.RPawnPlayerCatwomanDLC.SetupPlayerSpecificCombatAnimsets");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override bool CanGlideKickWindows()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanGlideKickWindows, "BmScript.RPawnPlayerCatwomanDLC.CanGlideKickWindows");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -191,6 +199,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override void OpenGrateFromBelow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenGrateFromBelow, "BmScript.RPawnPlayerCatwomanDLC.OpenGrateFromBelow");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -204,6 +213,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override void OpenGrateFromAbove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenGrateFromAbove, "BmScript.RPawnPlayerCatwomanDLC.OpenGrateFromAbove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +227,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override void UnPossessed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnPossessed, "BmScript.RPawnPlayerCatwomanDLC.UnPossessed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -230,6 +241,7 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
     /// </summary>
     public unsafe override void AddDefaultInventory()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDefaultInventory, "BmScript.RPawnPlayerCatwomanDLC.AddDefaultInventory");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

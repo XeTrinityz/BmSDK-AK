@@ -84,6 +84,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RHUDBase.PreBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe override void DrawHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RHUDBase.DrawHUD");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool ShouldDrawHUD()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldDrawHUD, "BmGame.RHUDBase.ShouldDrawHUD");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PostRender()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostRender, "BmGame.RHUDBase.PostRender");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetRenderGFX(bool bRender)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRenderGFX, "BmGame.RHUDBase.SetRenderGFX");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -157,6 +162,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RenderDebugQuadTreeMap()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RenderDebugQuadTreeMap, "BmGame.RHUDBase.RenderDebugQuadTreeMap");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +183,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RenderDebugMiniMap()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RenderDebugMiniMap, "BmGame.RHUDBase.RenderDebugMiniMap");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +204,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ToggleDebugMiniMap()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleDebugMiniMap, "BmGame.RHUDBase.ToggleDebugMiniMap");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +225,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DumpAssets(bool bViewIt = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpAssets, "BmGame.RHUDBase.DumpAssets");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -238,6 +247,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearDuplicateWarningsAndErrors()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDuplicateWarningsAndErrors, "BmGame.RHUDBase.ClearDuplicateWarningsAndErrors");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -258,6 +268,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DisplayWarningsAndErrors(bool ShowDuplicates, bool Outline, int Max)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayWarningsAndErrors, "BmGame.RHUDBase.DisplayWarningsAndErrors");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -281,6 +292,7 @@ public partial class RHUDBase : BmSDK.Engine.HUD, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ClearWarningsAndErrors()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearWarningsAndErrors, "BmGame.RHUDBase.ClearWarningsAndErrors");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

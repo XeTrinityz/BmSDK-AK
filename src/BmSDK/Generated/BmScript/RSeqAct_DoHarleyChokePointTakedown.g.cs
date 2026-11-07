@@ -97,6 +97,7 @@ public partial class RSeqAct_DoHarleyChokePointTakedown : BmSDK.Engine.SeqAct_La
     /// </summary>
     public unsafe virtual void ActivateHarleyDead()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateHarleyDead, "BmScript.RSeqAct_DoHarleyChokePointTakedown.ActivateHarleyDead");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_DoHarleyChokePointTakedown : BmSDK.Engine.SeqAct_La
     /// </summary>
     public unsafe virtual void SpawnMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnMove, "BmScript.RSeqAct_DoHarleyChokePointTakedown.SpawnMove");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_DoHarleyChokePointTakedown : BmSDK.Engine.SeqAct_La
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_DoHarleyChokePointTakedown.Update");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

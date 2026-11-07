@@ -84,6 +84,7 @@ public partial class RPawnVillainMultiStageArmoured : BmSDK.BmScript.RPawnVillai
     /// </summary>
     public unsafe override BmSDK.FName GetRedirectWeaponStance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRedirectWeaponStance, "BmScript.RPawnVillainMultiStageArmoured.GetRedirectWeaponStance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

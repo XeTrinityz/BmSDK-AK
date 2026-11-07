@@ -84,6 +84,7 @@ public partial class RDownloadableContentManager : BmSDK.Engine.DownloadableCont
     /// </summary>
     public unsafe virtual void UnloadDLC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnloadDLC, "BmGame.RDownloadableContentManager.UnloadDLC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RDownloadableContentManager : BmSDK.Engine.DownloadableCont
     /// </summary>
     public unsafe override void RefreshDLCEnumComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLCEnumComplete, "BmGame.RDownloadableContentManager.RefreshDLCEnumComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RDownloadableContentManager : BmSDK.Engine.DownloadableCont
     /// </summary>
     public unsafe override void RefreshDLC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLC, "BmGame.RDownloadableContentManager.RefreshDLC");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RDownloadableContentManager : BmSDK.Engine.DownloadableCont
     /// </summary>
     public unsafe virtual bool IsScanInProgress()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsScanInProgress, "BmGame.RDownloadableContentManager.IsScanInProgress");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

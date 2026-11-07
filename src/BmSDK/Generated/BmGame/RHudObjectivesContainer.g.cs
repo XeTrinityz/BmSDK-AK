@@ -84,6 +84,7 @@ public partial class RHudObjectivesContainer : BmSDK.GameObject, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void FlushPendingObjectiveMessage(BmSDK.FString Title)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushPendingObjectiveMessage, "BmGame.RHudObjectivesContainer.FlushPendingObjectiveMessage");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHudObjectivesContainer : BmSDK.GameObject, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void QueueObjectiveMessageCustomIcon(float Time, BmSDK.FString Title, BmSDK.FString Desc, BmSDK.FString OrgDesc, BmSDK.FString CustomIconName, bool bForceShowMap, BmSDK.FString BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicator, BmSDK.FString MostWantedPipeSeparatedArray = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueObjectiveMessageCustomIcon, "BmGame.RHudObjectivesContainer.QueueObjectiveMessageCustomIcon");
         byte* paramsPtr = stackalloc byte[224];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RHudObjectivesContainer : BmSDK.GameObject, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void QueueObjectiveMessage(float Time, BmSDK.FString Title, BmSDK.FString Desc, BmSDK.FString OrgDesc, int ArrowType, bool bForceShowMap, BmSDK.FString BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicator)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueObjectiveMessage, "BmGame.RHudObjectivesContainer.QueueObjectiveMessage");
         byte* paramsPtr = stackalloc byte[196];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

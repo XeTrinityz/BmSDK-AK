@@ -84,6 +84,7 @@ public partial class RAEC_PauseAndLook : BmSDK.BmGame.RAlertEventCoordinatorSolo
     /// </summary>
     public unsafe virtual void Init(bool bSetLookPoint = default, System.Numerics.Vector3 LookPoint = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RAEC_PauseAndLook.Init");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

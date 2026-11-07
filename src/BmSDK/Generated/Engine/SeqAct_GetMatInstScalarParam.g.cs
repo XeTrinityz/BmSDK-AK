@@ -84,6 +84,7 @@ public partial class SeqAct_GetMatInstScalarParam : BmSDK.Engine.SequenceAction,
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "Engine.SeqAct_GetMatInstScalarParam.Activated");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class SeqAct_GetMatInstScalarParam : BmSDK.Engine.SequenceAction,
     /// </summary>
     public unsafe virtual void GetScalar(out float Scalar)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScalar, "Engine.SeqAct_GetMatInstScalarParam.GetScalar");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

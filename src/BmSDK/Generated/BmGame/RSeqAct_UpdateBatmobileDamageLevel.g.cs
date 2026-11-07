@@ -84,6 +84,7 @@ public partial class RSeqAct_UpdateBatmobileDamageLevel : BmSDK.Engine.SequenceA
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_UpdateBatmobileDamageLevel.Activated");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_UpdateBatmobileDamageLevel : BmSDK.Engine.SequenceA
     /// </summary>
     public unsafe virtual void OnDataLoaded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDataLoaded, "BmGame.RSeqAct_UpdateBatmobileDamageLevel.OnDataLoaded");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +132,7 @@ public partial class RSeqAct_UpdateBatmobileDamageLevel : BmSDK.Engine.SequenceA
     /// </summary>
     public unsafe virtual void ReleaseData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseData, "BmGame.RSeqAct_UpdateBatmobileDamageLevel.ReleaseData");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +153,7 @@ public partial class RSeqAct_UpdateBatmobileDamageLevel : BmSDK.Engine.SequenceA
     /// </summary>
     public unsafe virtual void LoadData()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadData, "BmGame.RSeqAct_UpdateBatmobileDamageLevel.LoadData");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

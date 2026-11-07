@@ -84,6 +84,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void LogErrorMessage(BmSDK.FString ErrorName, BmSDK.FString ErrorMessage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogErrorMessage, "Engine.MultiProviderAnalytics.LogErrorMessage");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void EndStringEventParamArray(BmSDK.FString EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndStringEventParamArray, "Engine.MultiProviderAnalytics.EndStringEventParamArray");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +130,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void LogStringEventParamArray(BmSDK.FString EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray, bool bTimed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogStringEventParamArray, "Engine.MultiProviderAnalytics.LogStringEventParamArray");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +154,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void EndStringEventParam(BmSDK.FString EventName, BmSDK.FString ParamName, BmSDK.FString ParamValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndStringEventParam, "Engine.MultiProviderAnalytics.EndStringEventParam");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -174,6 +178,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void LogStringEventParam(BmSDK.FString EventName, BmSDK.FString ParamName, BmSDK.FString ParamValue, bool bTimed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogStringEventParam, "Engine.MultiProviderAnalytics.LogStringEventParam");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -198,6 +203,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void EndStringEvent(BmSDK.FString EventName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndStringEvent, "Engine.MultiProviderAnalytics.EndStringEvent");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -219,6 +225,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void LogStringEvent(BmSDK.FString EventName, bool bTimed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogStringEvent, "Engine.MultiProviderAnalytics.LogStringEvent");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -241,6 +248,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void EndSession()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndSession, "Engine.MultiProviderAnalytics.EndSession");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -261,6 +269,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void StartSession()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSession, "Engine.MultiProviderAnalytics.StartSession");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -281,6 +290,7 @@ public partial class MultiProviderAnalytics : BmSDK.Engine.AnalyticEventsBase, B
     /// </summary>
     public unsafe override void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.MultiProviderAnalytics.Init");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

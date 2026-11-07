@@ -84,6 +84,7 @@ public partial class RJokerRooftopPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.I
     /// </summary>
     public unsafe override bool CanBasePawn(BmSDK.Engine.Pawn P)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBasePawn, "BmGame.RJokerRooftopPointBase.CanBasePawn");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RJokerRooftopPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.I
     /// </summary>
     public unsafe virtual void InitMeshes()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitMeshes, "BmGame.RJokerRooftopPointBase.InitMeshes");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

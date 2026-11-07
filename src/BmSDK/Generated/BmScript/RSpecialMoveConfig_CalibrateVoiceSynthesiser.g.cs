@@ -84,6 +84,7 @@ public partial class RSpecialMoveConfig_CalibrateVoiceSynthesiser : BmSDK.BmGame
     /// </summary>
     public unsafe virtual void UnloadAudio()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnloadAudio, "BmScript.RSpecialMoveConfig_CalibrateVoiceSynthesiser.UnloadAudio");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSpecialMoveConfig_CalibrateVoiceSynthesiser : BmSDK.BmGame
     /// </summary>
     public unsafe virtual bool IsAudioLoaded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAudioLoaded, "BmScript.RSpecialMoveConfig_CalibrateVoiceSynthesiser.IsAudioLoaded");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSpecialMoveConfig_CalibrateVoiceSynthesiser : BmSDK.BmGame
     /// </summary>
     public unsafe virtual void LoadAudio()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadAudio, "BmScript.RSpecialMoveConfig_CalibrateVoiceSynthesiser.LoadAudio");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

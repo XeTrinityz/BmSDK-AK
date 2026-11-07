@@ -84,6 +84,7 @@ public partial class RSeqAct_IntThresholdChecker : BmSDK.Engine.SequenceAction, 
     /// </summary>
     public unsafe virtual bool IsValueInThreshold(int Value, int ThresholdIdx)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValueInThreshold, "BmGame.RSeqAct_IntThresholdChecker.IsValueInThreshold");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RSeqAct_IntThresholdChecker : BmSDK.Engine.SequenceAction, 
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_IntThresholdChecker.Activated");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

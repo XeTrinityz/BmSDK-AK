@@ -84,6 +84,7 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
     /// </summary>
     public unsafe virtual void Finalise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Finalise, "BmGame.RConstrainingComponent.Finalise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
     /// </summary>
     public unsafe virtual void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RConstrainingComponent.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
     /// </summary>
     public unsafe virtual bool UpdateRBConstraints(bool bNoPhys = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRBConstraints, "BmGame.RConstrainingComponent.UpdateRBConstraints");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
     /// </summary>
     public unsafe virtual void ClearRBConstraints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearRBConstraints, "BmGame.RConstrainingComponent.ClearRBConstraints");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +155,7 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
     /// </summary>
     public unsafe virtual void AddRBConstraint(BmSDK.Engine.RB_ConstraintSetup ConstraintSetup)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRBConstraint, "BmGame.RConstrainingComponent.AddRBConstraint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -172,6 +177,7 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
     /// </summary>
     public unsafe virtual bool GetIsSyncronised()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsSyncronised, "BmGame.RConstrainingComponent.GetIsSyncronised");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +198,7 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
     /// </summary>
     public unsafe virtual bool GetHasRBConstraints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHasRBConstraints, "BmGame.RConstrainingComponent.GetHasRBConstraints");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

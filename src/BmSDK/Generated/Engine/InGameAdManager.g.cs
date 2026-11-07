@@ -84,6 +84,7 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
     /// </summary>
     public unsafe virtual void SetPauseWhileAdOpen(bool bShouldPause)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPauseWhileAdOpen, "Engine.InGameAdManager.SetPauseWhileAdOpen");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
     /// </summary>
     public unsafe virtual void ForceCloseAd()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceCloseAd, "Engine.InGameAdManager.ForceCloseAd");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
     /// </summary>
     public unsafe virtual void HideBanner()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideBanner, "Engine.InGameAdManager.HideBanner");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
     /// </summary>
     public unsafe virtual void ShowBanner(bool bShowBottomOfScreen)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowBanner, "Engine.InGameAdManager.ShowBanner");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -159,6 +163,7 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.InGameAdManager.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

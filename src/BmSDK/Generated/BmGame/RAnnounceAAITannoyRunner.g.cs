@@ -84,6 +84,7 @@ public partial class RAnnounceAAITannoyRunner : BmSDK.GameObject, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void FlushQueue()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushQueue, "BmGame.RAnnounceAAITannoyRunner.FlushQueue");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAnnounceAAITannoyRunner : BmSDK.GameObject, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual bool TryComboUpWithMines()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryComboUpWithMines, "BmGame.RAnnounceAAITannoyRunner.TryComboUpWithMines");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAnnounceAAITannoyRunner : BmSDK.GameObject, BmSDK.IGameObj
     /// </summary>
     public unsafe virtual void Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RAnnounceAAITannoyRunner.Update");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

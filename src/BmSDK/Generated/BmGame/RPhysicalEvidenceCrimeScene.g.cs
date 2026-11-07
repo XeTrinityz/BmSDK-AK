@@ -84,6 +84,7 @@ public partial class RPhysicalEvidenceCrimeScene : BmSDK.BmGame.RPhysicalEvidenc
     /// </summary>
     public unsafe override void AutomaticallySetVisibility()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutomaticallySetVisibility, "BmGame.RPhysicalEvidenceCrimeScene.AutomaticallySetVisibility");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPhysicalEvidenceCrimeScene : BmSDK.BmGame.RPhysicalEvidenc
     /// </summary>
     public unsafe virtual void AutoPopulateParentCrimeScene()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutoPopulateParentCrimeScene, "BmGame.RPhysicalEvidenceCrimeScene.AutoPopulateParentCrimeScene");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

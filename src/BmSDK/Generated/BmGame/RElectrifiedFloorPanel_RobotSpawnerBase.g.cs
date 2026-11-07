@@ -79,6 +79,7 @@ public partial class RElectrifiedFloorPanel_RobotSpawnerBase : BmSDK.BmGame.REle
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMeshCentre()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMeshCentre, "BmGame.RElectrifiedFloorPanel_RobotSpawnerBase.GetMeshCentre");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

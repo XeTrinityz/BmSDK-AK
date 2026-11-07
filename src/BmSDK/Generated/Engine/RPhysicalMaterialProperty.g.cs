@@ -102,6 +102,7 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
     /// </summary>
     public unsafe virtual void SpawnHitEffect(BmSDK.Engine.Actor.FImpactInfo Impact, BmSDK.Engine.RPhysicalMaterialProperty.EPhysMaterialImpactTypes ImpactType, BmSDK.Engine.AkEvent ImpactSound, bool bPlaySound = default, float Wetness = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnHitEffect, "Engine.RPhysicalMaterialProperty.SpawnHitEffect");
         byte* paramsPtr = stackalloc byte[376];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +139,7 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
     /// </summary>
     public unsafe virtual void HitEffectParticleSystemFinished(BmSDK.Engine.ParticleSystemComponent PSC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitEffectParticleSystemFinished, "Engine.RPhysicalMaterialProperty.HitEffectParticleSystemFinished");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

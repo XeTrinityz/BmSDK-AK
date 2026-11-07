@@ -79,6 +79,7 @@ public partial class GameplayEvents : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString GetFilename()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFilename, "Engine.GameplayEvents.GetFilename");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class GameplayEvents : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void CloseStatsFile()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseStatsFile, "Engine.GameplayEvents.CloseStatsFile");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +107,7 @@ public partial class GameplayEvents : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool OpenStatsFile(BmSDK.FString Filename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenStatsFile, "Engine.GameplayEvents.OpenStatsFile");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

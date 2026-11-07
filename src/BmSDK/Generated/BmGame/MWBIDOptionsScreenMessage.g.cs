@@ -84,6 +84,7 @@ public partial class MWBIDOptionsScreenMessage : BmSDK.BmGame.MWBIDDataMessage, 
     /// </summary>
     public unsafe override void Flush()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Flush, "BmGame.MWBIDOptionsScreenMessage.Flush");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MWBIDOptionsScreenMessage : BmSDK.BmGame.MWBIDDataMessage, 
     /// </summary>
     public unsafe override void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.MWBIDOptionsScreenMessage.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

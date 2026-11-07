@@ -84,6 +84,7 @@ public partial class REmitter : BmSDK.Engine.Emitter, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GoIntoStasis()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoIntoStasis, "Engine.REmitter.GoIntoStasis");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class REmitter : BmSDK.Engine.Emitter, BmSDK.IGameObject
     /// </summary>
     public unsafe override void OnParticleSystemFinished(BmSDK.Engine.ParticleSystemComponent FinishedComponent)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnParticleSystemFinished, "Engine.REmitter.OnParticleSystemFinished");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

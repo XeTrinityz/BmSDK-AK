@@ -97,6 +97,7 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_FilmPredatorJokers.Update");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     /// </summary>
     public unsafe virtual bool JokerHallucinationsAllowed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerHallucinationsAllowed, "BmScript.RSeqAct_FilmPredatorJokers.JokerHallucinationsAllowed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RJokerRooftopPoint FindSpawnPoint(bool bHightLightSpheres = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSpawnPoint, "BmScript.RSeqAct_FilmPredatorJokers.FindSpawnPoint");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     /// </summary>
     public unsafe virtual void SpawnRooftopJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRooftopJoker, "BmScript.RSeqAct_FilmPredatorJokers.SpawnRooftopJoker");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +155,7 @@ public partial class RSeqAct_FilmPredatorJokers : BmSDK.Engine.SeqAct_Latent, Bm
     /// </summary>
     public unsafe virtual bool JokerInView()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerInView, "BmScript.RSeqAct_FilmPredatorJokers.JokerInView");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

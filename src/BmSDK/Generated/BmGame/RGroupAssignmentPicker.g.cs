@@ -84,6 +84,7 @@ public partial class RGroupAssignmentPicker : BmSDK.StateObject, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool Update()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RGroupAssignmentPicker.Update");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RGroupAssignmentPicker : BmSDK.StateObject, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual void ScriptInitExecution()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScriptInitExecution, "BmGame.RGroupAssignmentPicker.ScriptInitExecution");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

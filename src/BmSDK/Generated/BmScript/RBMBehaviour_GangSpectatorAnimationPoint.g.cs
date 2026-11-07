@@ -97,6 +97,7 @@ public partial class RBMBehaviour_GangSpectatorAnimationPoint : BmSDK.BmScript.R
     /// </summary>
     public unsafe virtual void Cheer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cheer, "BmScript.RBMBehaviour_GangSpectatorAnimationPoint.Cheer");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RBMBehaviour_GangSpectatorAnimationPoint : BmSDK.BmScript.R
     /// </summary>
     public unsafe override bool StartAnimationInAnyDirection()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAnimationInAnyDirection, "BmScript.RBMBehaviour_GangSpectatorAnimationPoint.StartAnimationInAnyDirection");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RBMBehaviour_GangSpectatorAnimationPoint : BmSDK.BmScript.R
     /// </summary>
     public unsafe override void SetCustomAnyDirectionAnimSettings(BmSDK.FName PrevState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomAnyDirectionAnimSettings, "BmScript.RBMBehaviour_GangSpectatorAnimationPoint.SetCustomAnyDirectionAnimSettings");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +140,7 @@ public partial class RBMBehaviour_GangSpectatorAnimationPoint : BmSDK.BmScript.R
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWatchingPOILocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWatchingPOILocation, "BmScript.RBMBehaviour_GangSpectatorAnimationPoint.GetWatchingPOILocation");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +154,7 @@ public partial class RBMBehaviour_GangSpectatorAnimationPoint : BmSDK.BmScript.R
     /// </summary>
     public unsafe virtual bool SuggestPOI(BmSDK.BmGame.RGangInteractPointBase SuggestedPOI)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuggestPOI, "BmScript.RBMBehaviour_GangSpectatorAnimationPoint.SuggestPOI");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +169,7 @@ public partial class RBMBehaviour_GangSpectatorAnimationPoint : BmSDK.BmScript.R
     /// </summary>
     public unsafe virtual bool POIStillValid()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_POIStillValid, "BmScript.RBMBehaviour_GangSpectatorAnimationPoint.POIStillValid");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +183,7 @@ public partial class RBMBehaviour_GangSpectatorAnimationPoint : BmSDK.BmScript.R
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_GangSpectatorAnimationPoint.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

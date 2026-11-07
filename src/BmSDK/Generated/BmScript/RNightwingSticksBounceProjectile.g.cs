@@ -84,6 +84,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe override void VillainHit(BmSDK.BmGame.RPawnVillain Target)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainHit, "BmScript.RNightwingSticksBounceProjectile.VillainHit");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe virtual void SpawnWallRicochetFX(BmSDK.Engine.Pawn HitPawn, System.Numerics.Vector3 NewLocation, System.Numerics.Vector3 HitNormal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnWallRicochetFX, "BmScript.RNightwingSticksBounceProjectile.SpawnWallRicochetFX");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe virtual void CollideRicochetStick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CollideRicochetStick, "BmScript.RNightwingSticksBounceProjectile.CollideRicochetStick");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +131,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe virtual void OrientAlongVelocity(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OrientAlongVelocity, "BmScript.RNightwingSticksBounceProjectile.OrientAlongVelocity");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe virtual void DoSticksRicochet(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor HitActor)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoSticksRicochet, "BmScript.RNightwingSticksBounceProjectile.DoSticksRicochet");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -157,6 +162,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe virtual void DeactivateTrail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateTrail, "BmScript.RNightwingSticksBounceProjectile.DeactivateTrail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -170,6 +176,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe virtual void EnablePhysics()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnablePhysics, "BmScript.RNightwingSticksBounceProjectile.EnablePhysics");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +190,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RNightwingSticksBounceProjectile.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

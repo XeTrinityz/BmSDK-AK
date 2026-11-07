@@ -84,6 +84,7 @@ public partial class RSeqAct_GFxMovieOutroMovie : BmSDK.Engine.SequenceAction, B
     /// </summary>
     public unsafe override bool IsValidLevelSequenceObject()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidLevelSequenceObject, "BmGame.RSeqAct_GFxMovieOutroMovie.IsValidLevelSequenceObject");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

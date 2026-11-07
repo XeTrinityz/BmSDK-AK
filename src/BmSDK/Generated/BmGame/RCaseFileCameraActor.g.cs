@@ -84,6 +84,7 @@ public partial class RCaseFileCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
     /// </summary>
     public unsafe virtual void PlayerMove(float DeltaTime, System.Numerics.Vector3 newAccel, float SpeedPercent)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerMove, "BmGame.RCaseFileCameraActor.PlayerMove");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class RCaseFileCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
     /// </summary>
     public unsafe virtual bool IsInsideCrimeScene(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInsideCrimeScene, "BmGame.RCaseFileCameraActor.IsInsideCrimeScene");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RCaseFileCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
     /// </summary>
     public unsafe virtual void InitFromOtherCameraActor(BmSDK.BmGame.RCameraActor OtherCamera, BmSDK.BmGame.RCrimeSceneBase CrimeVolume)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitFromOtherCameraActor, "BmGame.RCaseFileCameraActor.InitFromOtherCameraActor");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override bool IsAttacking()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAttacking, "BmGame.MCombatMove_BlackMaskGunShot.IsAttacking");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.MCombatMove_BlackMaskGunShot.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override void ExitMoveForPawn(BmSDK.BmGame.RPawnCombat PawnToExit)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMoveForPawn, "BmGame.MCombatMove_BlackMaskGunShot.ExitMoveForPawn");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe virtual bool ShouldInterruptAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldInterruptAttack, "BmGame.MCombatMove_BlackMaskGunShot.ShouldInterruptAttack");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe virtual void TrackPawn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrackPawn, "BmGame.MCombatMove_BlackMaskGunShot.TrackPawn");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override float GetDamageAmount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDamageAmount, "BmGame.MCombatMove_BlackMaskGunShot.GetDamageAmount");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult DamagePawn(BmSDK.BmGame.RPawnCombat DamageReceiver)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagePawn, "BmGame.MCombatMove_BlackMaskGunShot.DamagePawn");
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override void CanCounterStop()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCounterStop, "BmGame.MCombatMove_BlackMaskGunShot.CanCounterStop");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe virtual void VillainAttack()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainAttack, "BmGame.MCombatMove_BlackMaskGunShot.VillainAttack");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +212,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe virtual void NearThugEvade()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NearThugEvade, "BmGame.MCombatMove_BlackMaskGunShot.NearThugEvade");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -216,6 +226,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe virtual bool CheckVillainInTheWay(BmSDK.Engine.Actor BlackMask, BmSDK.BmGame.RPawnVillain Thug, BmSDK.Engine.Actor Redhood)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckVillainInTheWay, "BmGame.MCombatMove_BlackMaskGunShot.CheckVillainInTheWay");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -232,6 +243,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.MCombatMove_BlackMaskGunShot.GetHelpPrompt");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +259,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override void CanCounterStart()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCounterStart, "BmGame.MCombatMove_BlackMaskGunShot.CanCounterStart");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -260,6 +273,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override bool SetAttackInfoFromNotify(BmSDK.BmGame.RAnimNotify_VillainAttack AttackNotify)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAttackInfoFromNotify, "BmGame.MCombatMove_BlackMaskGunShot.SetAttackInfoFromNotify");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -274,6 +288,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override bool FindAndUseAnimAttackInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindAndUseAnimAttackInfo, "BmGame.MCombatMove_BlackMaskGunShot.FindAndUseAnimAttackInfo");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -287,6 +302,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override bool StartCustomCounter(BmSDK.BmGame.RPawnPlayerCombat Counterer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomCounter, "BmGame.MCombatMove_BlackMaskGunShot.StartCustomCounter");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -301,6 +317,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe virtual void SpawnCounter(BmSDK.BmGame.RPawnPlayer Redhood, BmSDK.BmGame.RPawnVillain TargetPawn, float TimeInitiatedByPlayer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnCounter, "BmGame.MCombatMove_BlackMaskGunShot.SpawnCounter");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -317,6 +334,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameInfo.CounterLimb GetCounterLimb(BmSDK.BmGame.RPawnCombat TestPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCounterLimb, "BmGame.MCombatMove_BlackMaskGunShot.GetCounterLimb");
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -331,6 +349,7 @@ public partial class MCombatMove_BlackMaskGunShot : BmSDK.BmGame.RCombatMove_Vil
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.MCombatMove_BlackMaskGunShot.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

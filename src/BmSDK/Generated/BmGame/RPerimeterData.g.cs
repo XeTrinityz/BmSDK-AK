@@ -84,6 +84,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetNumPointsFree()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumPointsFree, "BmGame.RPerimeterData.GetNumPointsFree");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ThugAtStandPoint(BmSDK.BmGame.RAEC_Casualty_Sub_Perim Arrivee)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugAtStandPoint, "BmGame.RPerimeterData.ThugAtStandPoint");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetFirstOccupiedAntiClockwise(int StartIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstOccupiedAntiClockwise, "BmGame.RPerimeterData.GetFirstOccupiedAntiClockwise");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetFirstOccupiedClockwise(int StartIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstOccupiedClockwise, "BmGame.RPerimeterData.GetFirstOccupiedClockwise");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.TArray<System.Numerics.Vector3> GetWatchList(int StandPointIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWatchList, "BmGame.RPerimeterData.GetWatchList");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAEC_Casualty_Sub_Perim GetWatcherAtIndex(int StandPointIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWatcherAtIndex, "BmGame.RPerimeterData.GetWatcherAtIndex");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +173,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool HasWatcher(int StandPointIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasWatcher, "BmGame.RPerimeterData.HasWatcher");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void FreeWatcher(BmSDK.BmGame.RAEC_Casualty_Sub_Perim Watcher)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeWatcher, "BmGame.RPerimeterData.FreeWatcher");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -195,6 +203,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetWatcher(int StandPointIndex, BmSDK.BmGame.RAEC_Casualty_Sub_Perim Watcher)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWatcher, "BmGame.RPerimeterData.SetWatcher");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class RPerimeterData : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void InitFromPathResults(BmSDK.BmGame.RExitPoints ExitPoints)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitFromPathResults, "BmGame.RPerimeterData.InitFromPathResults");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

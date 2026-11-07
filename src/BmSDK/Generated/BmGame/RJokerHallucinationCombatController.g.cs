@@ -84,6 +84,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnJokerHallucination.CombatQualityType GetCombatQuality()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCombatQuality, "BmGame.RJokerHallucinationCombatController.GetCombatQuality");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindSpawnPoint(BmSDK.BmGame.RPawnJokerHallucination.CombatQualityType QualityType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSpawnPoint, "BmGame.RJokerHallucinationCombatController.FindSpawnPoint");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     /// </summary>
     public unsafe virtual bool SpawnIncidentalJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnIncidentalJoker, "BmGame.RJokerHallucinationCombatController.SpawnIncidentalJoker");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     /// </summary>
     public unsafe virtual void GenerateCombatPoints()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateCombatPoints, "BmGame.RJokerHallucinationCombatController.GenerateCombatPoints");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     /// </summary>
     public unsafe virtual void TrySpawnJokerCombatOverTaunt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnJokerCombatOverTaunt, "BmGame.RJokerHallucinationCombatController.TrySpawnJokerCombatOverTaunt");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +155,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     /// </summary>
     public unsafe virtual bool InCombat()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InCombat, "BmGame.RJokerHallucinationCombatController.InCombat");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -163,6 +169,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
     /// </summary>
     public unsafe virtual void Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RJokerHallucinationCombatController.Update");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual bool IsCraneMoving()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCraneMoving, "BmScript.RControllableCrane.IsCraneMoving");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void TurnCraneLeft(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnCraneLeft, "BmScript.RControllableCrane.TurnCraneLeft");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void TurnCraneRight(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnCraneRight, "BmScript.RControllableCrane.TurnCraneRight");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void MoveCraneLeft(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveCraneLeft, "BmScript.RControllableCrane.MoveCraneLeft");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void MoveCraneRight(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveCraneRight, "BmScript.RControllableCrane.MoveCraneRight");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void LowerCrane(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LowerCrane, "BmScript.RControllableCrane.LowerCrane");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +173,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void RaiseCrane(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RaiseCrane, "BmScript.RControllableCrane.RaiseCrane");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void GetCurrentFloorHeight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentFloorHeight, "BmScript.RControllableCrane.GetCurrentFloorHeight");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +202,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void ClearMatinee()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMatinee, "BmScript.RControllableCrane.ClearMatinee");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void SetMatinee(BmSDK.Engine.SeqAct_Interp M)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMatinee, "BmScript.RControllableCrane.SetMatinee");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +231,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RControllableCrane.Tick");
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -235,6 +246,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe override void OnToggleHidden(BmSDK.Engine.SeqAct_ToggleHidden Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggleHidden, "BmScript.RControllableCrane.OnToggleHidden");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -249,6 +261,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void UpdateAudio()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAudio, "BmScript.RControllableCrane.UpdateAudio");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -262,6 +275,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAttachPoint(int Index, bool bWorldPos)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttachPoint, "BmScript.RControllableCrane.GetAttachPoint");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -277,6 +291,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RControllableCrane.Initialise");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -290,6 +305,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void SaveGame()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveGame, "BmScript.RControllableCrane.SaveGame");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -303,6 +319,7 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
     /// </summary>
     public unsafe virtual void TryLoadSaveGame()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryLoadSaveGame, "BmScript.RControllableCrane.TryLoadSaveGame");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

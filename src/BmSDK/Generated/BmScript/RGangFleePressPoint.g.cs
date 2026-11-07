@@ -84,6 +84,7 @@ public partial class RGangFleePressPoint : BmSDK.BmGame.RGangFleePressPointBase,
     /// </summary>
     public unsafe override BmSDK.Class GetBehaviourClass()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourClass, "BmScript.RGangFleePressPoint.GetBehaviourClass");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

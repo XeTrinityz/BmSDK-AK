@@ -84,6 +84,7 @@ public partial class RReachSpec : BmSDK.Engine.ReachSpec, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RemoveBlocker(BmSDK.GameObject NewUnblocker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveBlocker, "BmGame.RReachSpec.RemoveBlocker");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class RReachSpec : BmSDK.Engine.ReachSpec, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void AddBlocker(BmSDK.GameObject NewBlocker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddBlocker, "BmGame.RReachSpec.AddBlocker");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

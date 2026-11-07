@@ -84,6 +84,7 @@ public partial class InAppMessageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool ShowInAppEmailUI(BmSDK.FString InitialSubject = default, BmSDK.FString InitialMessage = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowInAppEmailUI, "Engine.InAppMessageBase.ShowInAppEmailUI");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class InAppMessageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual bool ShowInAppSMSUI(BmSDK.FString InitialMessage = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowInAppSMSUI, "Engine.InAppMessageBase.ShowInAppSMSUI");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +129,7 @@ public partial class InAppMessageBase : BmSDK.Engine.PlatformInterfaceBase, BmSD
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.InAppMessageBase.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -97,6 +97,7 @@ public partial class RSeqEvent_ItemInvestigated : BmSDK.Engine.SequenceEvent, Bm
     /// </summary>
     public unsafe virtual bool Handle(BmSDK.Engine.Actor InOriginator, int typeNo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Handle, "BmGame.RSeqEvent_ItemInvestigated.Handle");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

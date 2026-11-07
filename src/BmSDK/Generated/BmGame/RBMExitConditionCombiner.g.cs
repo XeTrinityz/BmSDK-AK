@@ -84,6 +84,7 @@ public partial class RBMExitConditionCombiner : BmSDK.BmGame.RBMExitCondition, B
     /// </summary>
     public unsafe virtual void TriggerExitConditionCombiner()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerExitConditionCombiner, "BmGame.RBMExitConditionCombiner.TriggerExitConditionCombiner");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

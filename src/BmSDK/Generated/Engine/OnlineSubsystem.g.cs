@@ -79,6 +79,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void ETWEvent(BmSDK.Engine.OnlineSubsystem.EStatEventType InEvent, BmSDK.Engine.PlayerController Player, BmSDK.FString InProperties, System.Numerics.Vector3 InLocation = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ETWEvent, "Engine.OnlineSubsystem.ETWEvent");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -103,6 +104,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void BuildVoiceRecMap()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildVoiceRecMap, "Engine.OnlineSubsystem.BuildVoiceRecMap");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool OnlineDebugCommand(int Command, int Parameter = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnlineDebugCommand, "Engine.OnlineSubsystem.OnlineDebugCommand");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetDebugSpewLevel(int DebugSpewLevel)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDebugSpewLevel, "Engine.OnlineSubsystem.SetDebugSpewLevel");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +156,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DumpVoiceRegistration()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpVoiceRegistration, "Engine.OnlineSubsystem.DumpVoiceRegistration");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +170,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DumpSessionState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpSessionState, "Engine.OnlineSubsystem.DumpSessionState");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +218,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetBuildUniqueId()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBuildUniqueId, "Engine.OnlineSubsystem.GetBuildUniqueId");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -232,6 +239,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineSubsystem.FUniqueNetId GetPlayerUniqueNetIdFromIndex(int UserIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerUniqueNetIdFromIndex, "Engine.OnlineSubsystem.GetPlayerUniqueNetIdFromIndex");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -293,6 +301,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.GameObject GetNamedInterface(BmSDK.FName InterfaceName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNamedInterface, "Engine.OnlineSubsystem.GetNamedInterface");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -307,6 +316,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetNamedInterface(BmSDK.FName InterfaceName, BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedInterface, "Engine.OnlineSubsystem.SetNamedInterface");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -322,6 +332,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetSharedCloudInterface(BmSDK.GameObject InCloudInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSharedCloudInterface, "Engine.OnlineSubsystem.SetSharedCloudInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -336,6 +347,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetUserCloudInterface(BmSDK.GameObject InCloudInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUserCloudInterface, "Engine.OnlineSubsystem.SetUserCloudInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -350,6 +362,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetAuthInterface(BmSDK.GameObject InAuthInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAuthInterface, "Engine.OnlineSubsystem.SetAuthInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -364,6 +377,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetSocialInterface(BmSDK.GameObject InSocialInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSocialInterface, "Engine.OnlineSubsystem.SetSocialInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -378,6 +392,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetTitleFileCacheInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTitleFileCacheInterface, "Engine.OnlineSubsystem.SetTitleFileCacheInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -392,6 +407,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetTitleFileInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTitleFileInterface, "Engine.OnlineSubsystem.SetTitleFileInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -406,6 +422,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetPartyChatInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPartyChatInterface, "Engine.OnlineSubsystem.SetPartyChatInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -420,6 +437,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetCustomContentCacheInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomContentCacheInterface, "Engine.OnlineSubsystem.SetCustomContentCacheInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -434,6 +452,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetCustomContentInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomContentInterface, "Engine.OnlineSubsystem.SetCustomContentInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -448,6 +467,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetNewsInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNewsInterface, "Engine.OnlineSubsystem.SetNewsInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -462,6 +482,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetStatsInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStatsInterface, "Engine.OnlineSubsystem.SetStatsInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -476,6 +497,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetWebInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWebInterface, "Engine.OnlineSubsystem.SetWebInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -490,6 +512,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetVoiceInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVoiceInterface, "Engine.OnlineSubsystem.SetVoiceInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -504,6 +527,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetContentInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetContentInterface, "Engine.OnlineSubsystem.SetContentInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -518,6 +542,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetGameInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGameInterface, "Engine.OnlineSubsystem.SetGameInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -532,6 +557,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetSystemInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSystemInterface, "Engine.OnlineSubsystem.SetSystemInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -546,6 +572,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetPlayerInterfaceEx(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlayerInterfaceEx, "Engine.OnlineSubsystem.SetPlayerInterfaceEx");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -560,6 +587,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetPlayerInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlayerInterface, "Engine.OnlineSubsystem.SetPlayerInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -574,6 +602,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetAccountInterface(BmSDK.GameObject NewInterface)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAccountInterface, "Engine.OnlineSubsystem.SetAccountInterface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -588,6 +617,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void Exit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Exit, "Engine.OnlineSubsystem.Exit");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -601,6 +631,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool PostInit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostInit, "Engine.OnlineSubsystem.PostInit");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -614,6 +645,7 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.OnlineSubsystem.Init");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -2774,5 +2806,81 @@ public partial class OnlineSubsystem : BmSDK.GameObject, BmSDK.IGameObject
     {
         get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 556); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 556); }
+    }
+}
+
+/// <summary>
+/// The static native functions of OnlineSubsystem, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class OnlineSubsystemStatics
+{
+    private static BmSDK.Function __fn_GetNumSupportedLogins;
+    /// <summary>
+    /// Function: GetNumSupportedLogins, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static int GetNumSupportedLogins(this BmSDK.Engine.OnlineSubsystem self)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumSupportedLogins, "Engine.OnlineSubsystem.GetNumSupportedLogins");
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Function __fn_StringToUniqueNetId;
+    /// <summary>
+    /// Function: StringToUniqueNetId, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static bool StringToUniqueNetId(this BmSDK.Engine.OnlineSubsystem self, BmSDK.FString UniqueNetIdString, out BmSDK.Engine.OnlineSubsystem.FUniqueNetId out_UniqueId)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StringToUniqueNetId, "Engine.OnlineSubsystem.StringToUniqueNetId");
+        byte* paramsPtr = stackalloc byte[44];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(UniqueNetIdString, paramsPtr + 0);
+        System.Runtime.CompilerServices.Unsafe.SkipInit(out out_UniqueId);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(out_UniqueId, paramsPtr + 16);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        out_UniqueId = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.OnlineSubsystem.FUniqueNetId>(paramsPtr + 16);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
+    }
+
+    private static BmSDK.Function __fn_UniqueNetIdToString;
+    /// <summary>
+    /// Function: UniqueNetIdToString, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static BmSDK.FString UniqueNetIdToString(this BmSDK.Engine.OnlineSubsystem self, out BmSDK.Engine.OnlineSubsystem.FUniqueNetId IdToConvert)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UniqueNetIdToString, "Engine.OnlineSubsystem.UniqueNetIdToString");
+        byte* paramsPtr = stackalloc byte[40];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        System.Runtime.CompilerServices.Unsafe.SkipInit(out IdToConvert);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(IdToConvert, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        IdToConvert = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.OnlineSubsystem.FUniqueNetId>(paramsPtr + 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 }

@@ -84,6 +84,7 @@ public partial class RMovingRadialImpulseActor : BmSDK.Engine.RB_RadialImpulseAc
     /// </summary>
     public unsafe virtual void OnFireImpulse()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFireImpulse, "BmGame.RMovingRadialImpulseActor.OnFireImpulse");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RMovingRadialImpulseActor : BmSDK.Engine.RB_RadialImpulseAc
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle inAction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RMovingRadialImpulseActor.OnToggle");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

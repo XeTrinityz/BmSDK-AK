@@ -79,6 +79,7 @@ public partial class RSeqEvent_TakedownBase : BmSDK.Engine.SequenceEvent, BmSDK.
     /// </summary>
     public unsafe virtual void SetVictim(int victimNumber, BmSDK.BmGame.RPawnVillain Victim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVictim, "BmGame.RSeqEvent_TakedownBase.SetVictim");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

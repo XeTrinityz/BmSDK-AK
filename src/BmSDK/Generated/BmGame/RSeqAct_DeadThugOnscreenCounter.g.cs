@@ -84,6 +84,7 @@ public partial class RSeqAct_DeadThugOnscreenCounter : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe override void Deactivated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivated, "BmGame.RSeqAct_DeadThugOnscreenCounter.Deactivated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RSeqAct_DeadThugOnscreenCounter : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_DeadThugOnscreenCounter.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RSeqAct_DeadThugOnscreenCounter : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe virtual void NotifyThugTakenOut(BmSDK.BmGame.RBMPawnAI PawnTakenOut)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyThugTakenOut, "BmGame.RSeqAct_DeadThugOnscreenCounter.NotifyThugTakenOut");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RSeqAct_DeadThugOnscreenCounter : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_DeadThugOnscreenCounter.Update");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RSeqAct_DeadThugOnscreenCounter : BmSDK.Engine.SeqAct_Laten
     /// </summary>
     public unsafe virtual bool BlockLevelName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockLevelName, "BmGame.RSeqAct_DeadThugOnscreenCounter.BlockLevelName");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

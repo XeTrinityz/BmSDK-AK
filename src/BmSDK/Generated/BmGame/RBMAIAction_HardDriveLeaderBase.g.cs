@@ -79,6 +79,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe virtual bool CarrierIncoming()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CarrierIncoming, "BmGame.RBMAIAction_HardDriveLeaderBase.CarrierIncoming");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -92,6 +93,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCharacter.FCustomTransitionConfig GetGestureAnimFor(System.Numerics.Vector3 DestLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGestureAnimFor, "BmGame.RBMAIAction_HardDriveLeaderBase.GetGestureAnimFor");
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +108,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCharacter.FCustomTransitionConfig GetGuardIdleAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGuardIdleAnim, "BmGame.RBMAIAction_HardDriveLeaderBase.GetGuardIdleAnim");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -119,6 +122,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe override bool HandlesGlance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlesGlance, "BmGame.RBMAIAction_HardDriveLeaderBase.HandlesGlance");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +136,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_HardDriveLeaderBase.ActionTick");
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +151,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe virtual void PlayGesture(System.Numerics.Vector3 TargetDestLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayGesture, "BmGame.RBMAIAction_HardDriveLeaderBase.PlayGesture");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +166,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe virtual void PlayIdleAnim(BmSDK.BmGame.RPawnCharacter.FCustomTransitionConfig CustomIdleAnim)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayIdleAnim, "BmGame.RBMAIAction_HardDriveLeaderBase.PlayIdleAnim");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -174,6 +181,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe override void SetGuardPoint(BmSDK.BmGame.RGuardPoint NewGuardPoint)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGuardPoint, "BmGame.RBMAIAction_HardDriveLeaderBase.SetGuardPoint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -188,6 +196,7 @@ public partial class RBMAIAction_HardDriveLeaderBase : BmSDK.BmGame.RBMAIAction_
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_HardDriveLeaderBase.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

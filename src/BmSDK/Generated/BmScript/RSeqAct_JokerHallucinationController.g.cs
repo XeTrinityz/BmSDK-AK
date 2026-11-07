@@ -97,6 +97,7 @@ public partial class RSeqAct_JokerHallucinationController : BmSDK.BmGame.RSeqAct
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_JokerHallucinationController.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_JokerHallucinationController : BmSDK.BmGame.RSeqAct
     /// </summary>
     public unsafe virtual bool CanSeeSpawnPoint(System.Numerics.Vector3 LocationToCheck)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeSpawnPoint, "BmScript.RSeqAct_JokerHallucinationController.CanSeeSpawnPoint");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RSeqAct_JokerHallucinationController : BmSDK.BmGame.RSeqAct
     /// </summary>
     public unsafe virtual bool PickJokerToSpawn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickJokerToSpawn, "BmScript.RSeqAct_JokerHallucinationController.PickJokerToSpawn");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +140,7 @@ public partial class RSeqAct_JokerHallucinationController : BmSDK.BmGame.RSeqAct
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_JokerHallucinationController.Update");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

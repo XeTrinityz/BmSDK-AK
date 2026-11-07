@@ -84,6 +84,7 @@ public partial class LightEnvironmentComponent : BmSDK.Engine.ActorComponent, Bm
     /// </summary>
     public unsafe virtual bool IsEnabled()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEnabled, "Engine.LightEnvironmentComponent.IsEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class LightEnvironmentComponent : BmSDK.Engine.ActorComponent, Bm
     /// </summary>
     public unsafe virtual void SetEnabled(bool bNewEnabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.LightEnvironmentComponent.SetEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

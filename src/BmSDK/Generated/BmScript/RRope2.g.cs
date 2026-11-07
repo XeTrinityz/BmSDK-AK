@@ -84,6 +84,7 @@ public partial class RRope2 : BmSDK.BmGame.RRope2Base, BmSDK.IGameObject
     /// </summary>
     public unsafe override BmSDK.BmGame.RRope2Base SpawnRope()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRope, "BmScript.RRope2.SpawnRope");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

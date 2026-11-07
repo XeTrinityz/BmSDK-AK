@@ -84,6 +84,7 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FBoxSphereBounds GetOwnerBounds()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOwnerBounds, "Engine.DynamicLightEnvironmentComponent.GetOwnerBounds");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
     /// </summary>
     public unsafe virtual void ResetEnvironment()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetEnvironment, "Engine.DynamicLightEnvironmentComponent.ResetEnvironment");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

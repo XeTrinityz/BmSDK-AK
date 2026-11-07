@@ -79,6 +79,7 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
     /// </summary>
     public unsafe virtual void SetEnabled(bool Enabled)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.ApexFieldSamplerComponent.SetEnabled");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -100,6 +101,7 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
     /// </summary>
     public unsafe virtual void DoInitRBPhys()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoInitRBPhys, "Engine.ApexFieldSamplerComponent.DoInitRBPhys");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

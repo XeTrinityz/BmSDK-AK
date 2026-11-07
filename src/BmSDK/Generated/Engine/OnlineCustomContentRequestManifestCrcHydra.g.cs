@@ -84,6 +84,7 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
     /// </summary>
     public unsafe virtual void CrcDownloadComplete(bool bWasSuccessful, BmSDK.FString sCustomId)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrcDownloadComplete, "Engine.OnlineCustomContentRequestManifestCrcHydra.CrcDownloadComplete");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
     /// </summary>
     public unsafe virtual void CrcDownloadStarted()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrcDownloadStarted, "Engine.OnlineCustomContentRequestManifestCrcHydra.CrcDownloadStarted");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
     /// </summary>
     public unsafe virtual void OnCrcDownloadComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCrcDownloadComplete, "Engine.OnlineCustomContentRequestManifestCrcHydra.OnCrcDownloadComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +135,7 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
     /// </summary>
     public unsafe override void CancelCustomContentRequest()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCustomContentRequest, "Engine.OnlineCustomContentRequestManifestCrcHydra.CancelCustomContentRequest");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

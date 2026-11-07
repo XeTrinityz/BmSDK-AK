@@ -84,6 +84,7 @@ public partial class RBMAIAction_ThermalCheck_Cocky : BmSDK.BmGame.RBMAIAction_T
     /// </summary>
     public unsafe override BmSDK.FName GetInTransName()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInTransName, "BmGame.RBMAIAction_ThermalCheck_Cocky.GetInTransName");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

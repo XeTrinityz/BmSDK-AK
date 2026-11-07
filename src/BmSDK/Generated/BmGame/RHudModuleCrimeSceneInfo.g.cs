@@ -84,6 +84,7 @@ public partial class RHudModuleCrimeSceneInfo : BmSDK.BmGame.RHudModule, BmSDK.I
     /// </summary>
     public unsafe virtual void UpdateCompletionText(BmSDK.FString CompletionText)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCompletionText, "BmGame.RHudModuleCrimeSceneInfo.UpdateCompletionText");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHudModuleCrimeSceneInfo : BmSDK.BmGame.RHudModule, BmSDK.I
     /// </summary>
     public unsafe virtual void InitCrimeSceneInfoCaseFile(BmSDK.FString CaseFileName, BmSDK.FString CrimeSceneScreenName, BmSDK.FString CompletionText)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitCrimeSceneInfoCaseFile, "BmGame.RHudModuleCrimeSceneInfo.InitCrimeSceneInfoCaseFile");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -114,6 +116,7 @@ public partial class RHudModuleCrimeSceneInfo : BmSDK.BmGame.RHudModule, BmSDK.I
     /// </summary>
     public unsafe virtual void InitCrimeSceneInfo(BmSDK.FString CrimeSceneScreenName, BmSDK.FString CompletionText)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitCrimeSceneInfo, "BmGame.RHudModuleCrimeSceneInfo.InitCrimeSceneInfo");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -129,6 +132,7 @@ public partial class RHudModuleCrimeSceneInfo : BmSDK.BmGame.RHudModule, BmSDK.I
     /// </summary>
     public unsafe override void InitialiseFlash()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseFlash, "BmGame.RHudModuleCrimeSceneInfo.InitialiseFlash");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -142,6 +146,7 @@ public partial class RHudModuleCrimeSceneInfo : BmSDK.BmGame.RHudModule, BmSDK.I
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleCrimeSceneInfo.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +160,7 @@ public partial class RHudModuleCrimeSceneInfo : BmSDK.BmGame.RHudModule, BmSDK.I
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleCrimeSceneInfo.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

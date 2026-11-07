@@ -84,6 +84,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe virtual void StartNavSearch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNavSearch, "BmGame.MAEC_ShootStickyConcussionGrenade.StartNavSearch");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe virtual void GatherPointsFromCenter(System.Numerics.Vector3 TargetLoc, BmSDK.Rotator rotator1, float Radius)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GatherPointsFromCenter, "BmGame.MAEC_ShootStickyConcussionGrenade.GatherPointsFromCenter");
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe virtual void StartGatherPointsFromCenter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartGatherPointsFromCenter, "BmGame.MAEC_ShootStickyConcussionGrenade.StartGatherPointsFromCenter");
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe virtual void InitSubGoal(BmSDK.BmGame.RNavigationHandle NavHandle = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitSubGoal, "BmGame.MAEC_ShootStickyConcussionGrenade.InitSubGoal");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -140,6 +144,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.MAEC_ShootStickyConcussionGrenade.OnBeginShutdown");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +158,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe virtual void ClearNavHandles()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNavHandles, "BmGame.MAEC_ShootStickyConcussionGrenade.ClearNavHandles");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe override void OnAssign(BmSDK.BmGame.RBMAIController NewCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAssign, "BmGame.MAEC_ShootStickyConcussionGrenade.OnAssign");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +187,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.MAEC_ShootStickyConcussionGrenade.GetBarkPriority");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -193,6 +201,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.MAEC_ShootStickyConcussionGrenade.OnRemoveSoloChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class MAEC_ShootStickyConcussionGrenade : BmSDK.BmGame.RAlertEven
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.MAEC_ShootStickyConcussionGrenade.FinishTopLevelAEC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

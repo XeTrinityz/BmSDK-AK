@@ -84,6 +84,7 @@ public partial class RB_ForceComponentCylindrical : BmSDK.Engine.RB_ForceCompone
     /// </summary>
     public unsafe override BmSDK.Engine.RB_ForceComponent Clone()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Clone, "Engine.RB_ForceComponentCylindrical.Clone");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

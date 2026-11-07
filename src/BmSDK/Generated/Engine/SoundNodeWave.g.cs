@@ -84,6 +84,7 @@ public partial class SoundNodeWave : BmSDK.Engine.SoundNode, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GeneratePCMData(out BmSDK.TArray<byte> Buffer, int SamplesNeeded)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GeneratePCMData, "Engine.SoundNodeWave.GeneratePCMData");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

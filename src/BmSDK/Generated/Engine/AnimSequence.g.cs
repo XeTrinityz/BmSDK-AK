@@ -84,6 +84,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetFirstNotifyRealTime(BmSDK.Class NotifyClass, out float Realtime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstNotifyRealTime, "Engine.AnimSequence.GetFirstNotifyRealTime");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -108,6 +109,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool GetFirstNotifyNormalizedTime(BmSDK.Class NotifyClass, out float NormalizedTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstNotifyNormalizedTime, "Engine.AnimSequence.GetFirstNotifyNormalizedTime");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -132,6 +134,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.FString ToString(bool Verbose = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToString, "Engine.AnimSequence.ToString");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -153,6 +156,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetRealTimeLength()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRealTimeLength, "Engine.AnimSequence.GetRealTimeLength");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -173,6 +177,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromFractionalFrameIndex(float FrameIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNormalizedTimeFromFractionalFrameIndex, "Engine.AnimSequence.GetNormalizedTimeFromFractionalFrameIndex");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +199,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetAnimTimeFromFractionalFrameIndex(float FrameIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimTimeFromFractionalFrameIndex, "Engine.AnimSequence.GetAnimTimeFromFractionalFrameIndex");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -215,6 +221,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromFrameIndex(int FrameIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNormalizedTimeFromFrameIndex, "Engine.AnimSequence.GetNormalizedTimeFromFrameIndex");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,6 +243,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetAnimTimeFromFrameIndex(int FrameIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimTimeFromFrameIndex, "Engine.AnimSequence.GetAnimTimeFromFrameIndex");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -257,6 +265,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetFractionalFrameIndexFromAnimTime(float AnimTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFractionalFrameIndexFromAnimTime, "Engine.AnimSequence.GetFractionalFrameIndexFromAnimTime");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -278,6 +287,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetFractionalFrameIndexFromNormalizedTime(float NormalizedTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFractionalFrameIndexFromNormalizedTime, "Engine.AnimSequence.GetFractionalFrameIndexFromNormalizedTime");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -299,6 +309,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetNormalizedDurationFromAnimDuration(float AnimLength)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNormalizedDurationFromAnimDuration, "Engine.AnimSequence.GetNormalizedDurationFromAnimDuration");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -320,6 +331,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromAnimTime(float AnimTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNormalizedTimeFromAnimTime, "Engine.AnimSequence.GetNormalizedTimeFromAnimTime");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -341,6 +353,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetNormalizedTimeFromRealTime(float Realtime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNormalizedTimeFromRealTime, "Engine.AnimSequence.GetNormalizedTimeFromRealTime");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -362,6 +375,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetRealTimeFromNormalizedTime(float NormalizedTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRealTimeFromNormalizedTime, "Engine.AnimSequence.GetRealTimeFromNormalizedTime");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -383,6 +397,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetAnimTimeFromNormalizedTime(float NormalizedTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimTimeFromNormalizedTime, "Engine.AnimSequence.GetAnimTimeFromNormalizedTime");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -404,6 +419,7 @@ public partial class AnimSequence : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetNotifyTimeByClass(BmSDK.Class NotifyClass, float PlayRate, float StartPosition, out BmSDK.Engine.AnimNotify out_Notify, out float out_Duration)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNotifyTimeByClass, "Engine.AnimSequence.GetNotifyTimeByClass");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

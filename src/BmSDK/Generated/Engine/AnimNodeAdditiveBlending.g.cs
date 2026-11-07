@@ -84,6 +84,7 @@ public partial class AnimNodeAdditiveBlending : BmSDK.Engine.AnimNodeBlend, BmSD
     /// </summary>
     public unsafe override void SetBlendTarget(float BlendTarget, float BlendTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlendTarget, "Engine.AnimNodeAdditiveBlending.SetBlendTarget");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

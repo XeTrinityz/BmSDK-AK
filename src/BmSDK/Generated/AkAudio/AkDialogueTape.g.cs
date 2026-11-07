@@ -201,3 +201,54 @@ public partial class AkDialogueTape : BmSDK.Engine.AkHash, BmSDK.IGameObject
         AK_TAPE_MAX = 6,
     }
 }
+
+/// <summary>
+/// The static native functions of AkDialogueTape, callable on an instance. A static native may read the object it runs on, and the static form runs it on the class default object, which has no world.
+/// </summary>
+public static class AkDialogueTapeStatics
+{
+    private static BmSDK.Function __fn_Stop;
+    /// <summary>
+    /// Function: Stop, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static void Stop(this BmSDK.AkAudio.AkDialogueTape self, BmSDK.AkAudio.AkDialogueTape dlgTape)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "AkAudio.AkDialogueTape.Stop");
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTape, paramsPtr + 0);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return;
+    }
+
+    private static BmSDK.Function __fn_Start;
+    /// <summary>
+    /// Function: Start, run on <paramref name="self"/> rather than the class default object
+    /// </summary>
+    public unsafe static int Start(this BmSDK.AkAudio.AkDialogueTape self, BmSDK.AkAudio.AkDialogueTape dlgTape, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgCallbacks)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(self);
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Start, "AkAudio.AkDialogueTape.Start");
+        byte* paramsPtr = stackalloc byte[144];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTape, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgCallbacks, paramsPtr + 8);
+        var oldFlags = funcManaged.FunctionFlags;
+        var oldNative = funcManaged.iNative;
+        funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
+        funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
+        funcManaged.iNative = 0;
+        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        funcManaged.iNative = oldNative;
+        funcManaged.FunctionFlags = oldFlags;
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 124);
+    }
+}

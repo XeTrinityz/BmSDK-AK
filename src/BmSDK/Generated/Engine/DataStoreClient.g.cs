@@ -84,6 +84,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void DebugDumpDataStoreInfo(bool bVerbose)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugDumpDataStoreInfo, "Engine.DataStoreClient.DebugDumpDataStoreInfo");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void NotifyGameSessionEnded()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGameSessionEnded, "Engine.DataStoreClient.NotifyGameSessionEnded");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Class FindDataStoreClass(BmSDK.Class RequiredMetaClass)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindDataStoreClass, "Engine.DataStoreClient.FindDataStoreClass");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void GetPlayerDataStoreClasses(out BmSDK.TArray<BmSDK.Class> out_DataStoreClasses)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerDataStoreClasses, "Engine.DataStoreClient.GetPlayerDataStoreClasses");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +143,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int FindPlayerDataStoreIndex(BmSDK.Engine.LocalPlayer PlayerOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindPlayerDataStoreIndex, "Engine.DataStoreClient.FindPlayerDataStoreIndex");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +165,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool UnregisterDataStore(BmSDK.Engine.UIDataStore DataStore)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterDataStore, "Engine.DataStoreClient.UnregisterDataStore");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +187,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool RegisterDataStore(BmSDK.Engine.UIDataStore DataStore, BmSDK.Engine.LocalPlayer PlayerOwner = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterDataStore, "Engine.DataStoreClient.RegisterDataStore");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +210,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.UIDataStore CreateDataStore(BmSDK.Class DataStoreClass)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateDataStore, "Engine.DataStoreClient.CreateDataStore");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -224,6 +232,7 @@ public partial class DataStoreClient : BmSDK.Engine.UIRoot, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.UIDataStore FindDataStore(BmSDK.FName DataStoreTag, BmSDK.Engine.LocalPlayer PlayerOwner = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindDataStore, "Engine.DataStoreClient.FindDataStore");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

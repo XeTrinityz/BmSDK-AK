@@ -84,6 +84,7 @@ public partial class RPawnPlayer_Gordon : BmSDK.BmScript.RPawnPlayer_BruceWayne,
     /// </summary>
     public unsafe virtual void GordonGoFP()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GordonGoFP, "BmScript.RPawnPlayer_Gordon.GordonGoFP");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

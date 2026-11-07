@@ -84,6 +84,7 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetTimeSinceLastSighting(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeSinceLastSighting, "BmGame.RPathNode.GetTimeSinceLastSighting");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void UpdateLastSeenTime(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLastSeenTime, "BmGame.RPathNode.UpdateLastSeenTime");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +128,7 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool IsSafe(BmSDK.Engine.Pawn TestPawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSafe, "BmGame.RPathNode.IsSafe");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

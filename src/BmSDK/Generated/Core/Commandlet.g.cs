@@ -79,6 +79,7 @@ public partial class Commandlet : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int Main(BmSDK.FString Params)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Main, "Core.Commandlet.Main");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

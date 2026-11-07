@@ -84,6 +84,7 @@ public partial class RSeqEvent_CustomBackscreenRequested : BmSDK.BmGame.RSeqEven
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSeqEvent_CustomBackscreenRequested.BackscreenAvailability GetAvailability()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAvailability, "BmGame.RSeqEvent_CustomBackscreenRequested.GetAvailability");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

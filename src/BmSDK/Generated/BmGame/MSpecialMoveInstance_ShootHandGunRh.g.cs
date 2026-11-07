@@ -84,6 +84,7 @@ public partial class MSpecialMoveInstance_ShootHandGunRh : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override void NotifyTakeDamage(int Damage, BmSDK.Class DamageType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyTakeDamage, "BmGame.MSpecialMoveInstance_ShootHandGunRh.NotifyTakeDamage");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class MSpecialMoveInstance_ShootHandGunRh : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override bool CanDoCombat(bool CheckForEvade = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoCombat, "BmGame.MSpecialMoveInstance_ShootHandGunRh.CanDoCombat");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class MSpecialMoveInstance_ShootHandGunRh : BmSDK.BmGame.RSpecial
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.MSpecialMoveInstance_ShootHandGunRh.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

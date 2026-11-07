@@ -84,6 +84,7 @@ public partial class RBMWeaponRifle_BagCarrier : BmSDK.BmScript.RBMWeaponRiflePr
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig GetPowerCellWeaponConfig()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPowerCellWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetPowerCellWeaponConfig");
         byte* paramsPtr = stackalloc byte[880];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMWeaponRifle_BagCarrier : BmSDK.BmScript.RBMWeaponRiflePr
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig GetHardDriveWeaponConfig()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHardDriveWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetHardDriveWeaponConfig");
         byte* paramsPtr = stackalloc byte[880];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMWeaponRifle_BagCarrier : BmSDK.BmScript.RBMWeaponRiflePr
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig GetBankExtraWeaponConfig()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBankExtraWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetBankExtraWeaponConfig");
         byte* paramsPtr = stackalloc byte[3720];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMWeaponRifle_BagCarrier : BmSDK.BmScript.RBMWeaponRiflePr
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateWeaponConfig(BmSDK.GameObject NewOwner)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.CreateWeaponConfig");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

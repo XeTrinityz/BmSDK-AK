@@ -84,6 +84,7 @@ public partial class TranslationContext : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool RegisterTranslatorTag(BmSDK.Engine.TranslatorTag InTagHandler)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterTranslatorTag, "Engine.TranslationContext.RegisterTranslatorTag");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

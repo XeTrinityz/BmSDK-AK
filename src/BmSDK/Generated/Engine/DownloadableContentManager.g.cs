@@ -84,6 +84,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void OnRefreshComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRefreshComplete, "Engine.DownloadableContentManager.OnRefreshComplete");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void AddPackagesToFullyLoad(BmSDK.FString Filename)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPackagesToFullyLoad, "Engine.DownloadableContentManager.AddPackagesToFullyLoad");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -118,6 +120,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void RefreshDLCEnumComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLCEnumComplete, "Engine.DownloadableContentManager.RefreshDLCEnumComplete");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +134,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void RefreshDLC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLC, "Engine.DownloadableContentManager.RefreshDLC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -144,6 +148,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FString> GetListOfBadBundles(bool bCorrupt)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetListOfBadBundles, "Engine.DownloadableContentManager.GetListOfBadBundles");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -158,6 +163,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual bool AreAnyBundlesInvalidUser()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreAnyBundlesInvalidUser, "Engine.DownloadableContentManager.AreAnyBundlesInvalidUser");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -171,6 +177,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual bool AreAnyBundlesCorrupt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreAnyBundlesCorrupt, "Engine.DownloadableContentManager.AreAnyBundlesCorrupt");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -184,6 +191,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void ClearALLDLC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearALLDLC, "Engine.DownloadableContentManager.ClearALLDLC");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -197,6 +205,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.DownloadableContentManager.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -210,6 +219,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void InstallNonPackageFiles(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallNonPackageFiles, "Engine.DownloadableContentManager.InstallNonPackageFiles");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +241,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void InstallPackages(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallPackages, "Engine.DownloadableContentManager.InstallPackages");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -252,6 +263,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void UpdateObjectLists()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateObjectLists, "Engine.DownloadableContentManager.UpdateObjectLists");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -272,6 +284,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void MarkPerObjectConfigPendingKill(BmSDK.FString Section)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MarkPerObjectConfigPendingKill, "Engine.DownloadableContentManager.MarkPerObjectConfigPendingKill");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -293,6 +306,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void AddSectionToObjectList(BmSDK.FString Section)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSectionToObjectList, "Engine.DownloadableContentManager.AddSectionToObjectList");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -314,6 +328,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void FlushOpenHandles()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushOpenHandles, "Engine.DownloadableContentManager.FlushOpenHandles");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -334,6 +349,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual bool GetRockDLCCachePath(BmSDK.FName BaseName, out BmSDK.FString Path)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRockDLCCachePath, "Engine.DownloadableContentManager.GetRockDLCCachePath");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -356,6 +372,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual bool GetDLCNonPackageFilePath(BmSDK.FName NonPackageFileName, out BmSDK.FString Path)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDLCNonPackageFilePath, "Engine.DownloadableContentManager.GetDLCNonPackageFilePath");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -378,6 +395,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void ClearDLC()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDLC, "Engine.DownloadableContentManager.ClearDLC");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -398,6 +416,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual void InstallDLCs(out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineContent> DLCBundles)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallDLCs, "Engine.DownloadableContentManager.InstallDLCs");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -419,6 +438,7 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
     /// </summary>
     public unsafe virtual bool InstallDLC(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallDLC, "Engine.DownloadableContentManager.InstallDLC");
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

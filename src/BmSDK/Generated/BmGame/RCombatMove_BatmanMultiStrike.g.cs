@@ -84,6 +84,7 @@ public partial class RCombatMove_BatmanMultiStrike : BmSDK.BmGame.RCombatMove_Ba
     /// </summary>
     public unsafe virtual void AddTarget(BmSDK.BmGame.RPawnVillain NewTarget)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddTarget, "BmGame.RCombatMove_BatmanMultiStrike.AddTarget");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RCombatMove_BatmanMultiStrike : BmSDK.BmGame.RCombatMove_Ba
     /// </summary>
     public unsafe override void StartImpact()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartImpact, "BmGame.RCombatMove_BatmanMultiStrike.StartImpact");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

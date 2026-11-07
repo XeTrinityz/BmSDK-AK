@@ -84,6 +84,7 @@ public partial class RHudModuleHackingMode : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void TriggerErrorAnim(BmSDK.FString ErrorMessage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerErrorAnim, "BmGame.RHudModuleHackingMode.TriggerErrorAnim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RHudModuleHackingMode : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetCursorLocation(float X, float Y)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCursorLocation, "BmGame.RHudModuleHackingMode.SetCursorLocation");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -113,6 +115,7 @@ public partial class RHudModuleHackingMode : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetCurrentSubroutineInfo(BmSDK.FString subroutineName, BmSDK.FString subroutineDescription, int CurrentIconIndex, int NextIconIndex, bool playSwapAnim, bool NeedToDisplayNumberTargets, int NumberTargets)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentSubroutineInfo, "BmGame.RHudModuleHackingMode.SetCurrentSubroutineInfo");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -133,6 +136,7 @@ public partial class RHudModuleHackingMode : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe virtual void SetHackingPanelVisibility(bool bVisible)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHackingPanelVisibility, "BmGame.RHudModuleHackingMode.SetHackingPanelVisibility");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -147,6 +151,7 @@ public partial class RHudModuleHackingMode : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe override void Close()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleHackingMode.Close");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -160,6 +165,7 @@ public partial class RHudModuleHackingMode : BmSDK.BmGame.RHudModule, BmSDK.IGam
     /// </summary>
     public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleHackingMode.Init");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

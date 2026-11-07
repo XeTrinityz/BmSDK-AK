@@ -84,6 +84,7 @@ public partial class MAEC_JackInBoxExplosion : BmSDK.BmGame.RAEC_GelMineExplosio
     /// </summary>
     public unsafe virtual void PlayExclaimBark(BmSDK.BmGame.RBMAIController BarkC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayExclaimBark, "BmGame.MAEC_JackInBoxExplosion.PlayExclaimBark");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

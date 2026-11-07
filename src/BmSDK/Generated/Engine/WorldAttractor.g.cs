@@ -84,6 +84,7 @@ public partial class WorldAttractor : BmSDK.Engine.Actor, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void OnSetWorldAttractorParam(BmSDK.Engine.SeqAct_SetWorldAttractorParam Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetWorldAttractorParam, "Engine.WorldAttractor.OnSetWorldAttractorParam");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

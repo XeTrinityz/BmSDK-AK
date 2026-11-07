@@ -84,6 +84,7 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual int GetProductIndex(BmSDK.FString Identifier)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetProductIndex, "Engine.MicroTransactionBase.GetProductIndex");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual bool BeginPurchase(int Index)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginPurchase, "Engine.MicroTransactionBase.BeginPurchase");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +128,7 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual bool IsAllowedToMakePurchases()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAllowedToMakePurchases, "Engine.MicroTransactionBase.IsAllowedToMakePurchases");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -146,6 +149,7 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual bool QueryForAvailablePurchases()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueryForAvailablePurchases, "Engine.MicroTransactionBase.QueryForAvailablePurchases");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +170,7 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
     /// </summary>
     public unsafe virtual void Init()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.MicroTransactionBase.Init");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

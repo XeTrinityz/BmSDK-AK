@@ -84,6 +84,7 @@ public partial class RSeqAct_SetMaterialInstance : BmSDK.Engine.SequenceAction, 
     /// </summary>
     public unsafe virtual void CreateInstance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateInstance, "Engine.RSeqAct_SetMaterialInstance.CreateInstance");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

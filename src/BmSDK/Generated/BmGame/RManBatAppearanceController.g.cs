@@ -84,6 +84,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnManBatBase SpawnManbatAppearance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnManbatAppearance, "BmGame.RManBatAppearanceController.SpawnManbatAppearance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -104,6 +105,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool IsSpaceForManbatAnimation(BmSDK.FName AnimName, BmSDK.Engine.Actor TestActor, float CheckDistance, System.Numerics.Vector3 TestLoc = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSpaceForManbatAnimation, "BmGame.RManBatAppearanceController.IsSpaceForManbatAnimation");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -128,6 +130,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.AnimSet> GetManbatAnimSet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetManbatAnimSet, "BmGame.RManBatAppearanceController.GetManbatAnimSet");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +144,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool IsManbatAnimationLoaded(BmSDK.FName AnimName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsManbatAnimationLoaded, "BmGame.RManBatAppearanceController.IsManbatAnimationLoaded");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -155,6 +159,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool ManbatAppearanceAllowed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManbatAppearanceAllowed, "BmGame.RManBatAppearanceController.ManbatAppearanceAllowed");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -168,6 +173,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual void DoManbatAppearance(bool bAllowInterupt, bool bIgnoreCollisionCheck)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoManbatAppearance, "BmGame.RManBatAppearanceController.DoManbatAppearance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -183,6 +189,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual BmSDK.Engine.WorldInfo GetWorldInfo()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWorldInfo, "BmGame.RManBatAppearanceController.GetWorldInfo");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -196,6 +203,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool HasAnimBeenUsedRecently(BmSDK.BmGame.RPawnJokerHallucination.TypesOfHallucination AppearanceType, BmSDK.FName AnimationName, int NumHistoryToCheck)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasAnimBeenUsedRecently, "BmGame.RManBatAppearanceController.HasAnimBeenUsedRecently");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -212,6 +220,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual void RegisterManbatAppearance(BmSDK.BmGame.RPawnJokerHallucination.TypesOfHallucination AppearanceType, BmSDK.FName AnimationName)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterManbatAppearance, "BmGame.RManBatAppearanceController.RegisterManbatAppearance");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -227,6 +236,7 @@ public partial class RManBatAppearanceController : BmSDK.GameObject, BmSDK.IGame
     /// </summary>
     public unsafe virtual bool ShouldSpawnManBatThisTime(BmSDK.BmGame.RPawnJokerHallucination.TypesOfHallucination AppearanceType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldSpawnManBatThisTime, "BmGame.RManBatAppearanceController.ShouldSpawnManBatThisTime");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RAEC_Search_Formation_Corner : BmSDK.BmGame.RAEC_Search_For
     /// </summary>
     public unsafe virtual void InAnimFinished(BmSDK.BmGame.RAEC_Search_Sub_Corner callingAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InAnimFinished, "BmGame.RAEC_Search_Formation_Corner.InAnimFinished");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RAEC_Search_Formation_Corner : BmSDK.BmGame.RAEC_Search_For
     /// </summary>
     public unsafe override void AddFollower(BmSDK.BmGame.RBMAIController FollowCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFollower, "BmGame.RAEC_Search_Formation_Corner.AddFollower");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RAEC_Search_Formation_Corner : BmSDK.BmGame.RAEC_Search_For
     /// </summary>
     public unsafe override void SetLeader(BmSDK.BmGame.RBMAIController NewLeader)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLeader, "BmGame.RAEC_Search_Formation_Corner.SetLeader");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -126,6 +129,7 @@ public partial class RAEC_Search_Formation_Corner : BmSDK.BmGame.RAEC_Search_For
     /// </summary>
     public unsafe virtual void Init(BmSDK.BmGame.RBMAIAction_PairedCorner.ePairedCornerAnimType inAnimVariant)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RAEC_Search_Formation_Corner.Init");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

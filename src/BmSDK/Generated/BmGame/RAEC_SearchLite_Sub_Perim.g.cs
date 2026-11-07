@@ -84,6 +84,7 @@ public partial class RAEC_SearchLite_Sub_Perim : BmSDK.BmGame.RAlertEventCoordin
     /// </summary>
     public unsafe virtual bool ForceWaitForPingPong()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceWaitForPingPong, "BmGame.RAEC_SearchLite_Sub_Perim.ForceWaitForPingPong");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RAEC_SearchLite_Sub_Perim : BmSDK.BmGame.RAlertEventCoordin
     /// </summary>
     public unsafe virtual void GetNextPoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextPoint, "BmGame.RAEC_SearchLite_Sub_Perim.GetNextPoint");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RAEC_SearchLite_Sub_Perim : BmSDK.BmGame.RAlertEventCoordin
     /// </summary>
     public unsafe virtual void StartUninformedSearch()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartUninformedSearch, "BmGame.RAEC_SearchLite_Sub_Perim.StartUninformedSearch");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RAEC_SearchLite_Sub_Perim : BmSDK.BmGame.RAlertEventCoordin
     /// </summary>
     public unsafe virtual void StartPatrol()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPatrol, "BmGame.RAEC_SearchLite_Sub_Perim.StartPatrol");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +140,7 @@ public partial class RAEC_SearchLite_Sub_Perim : BmSDK.BmGame.RAlertEventCoordin
     /// </summary>
     public unsafe override void OnStartChild()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_SearchLite_Sub_Perim.OnStartChild");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

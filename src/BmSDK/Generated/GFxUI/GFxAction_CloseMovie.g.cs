@@ -84,6 +84,7 @@ public partial class GFxAction_CloseMovie : BmSDK.Engine.SequenceAction, BmSDK.I
     /// </summary>
     public unsafe override bool IsValidLevelSequenceObject()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidLevelSequenceObject, "GFxUI.GFxAction_CloseMovie.IsValidLevelSequenceObject");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

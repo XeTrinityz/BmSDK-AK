@@ -84,6 +84,7 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
     /// </summary>
     public unsafe override bool CanBePickedUpFromAnyDirection()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePickedUpFromAnyDirection, "BmScript.RCarriableObject_Canister.CanBePickedUpFromAnyDirection");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
     /// </summary>
     public unsafe override void ApplyImpulseAwayFromCarrier(BmSDK.Engine.Pawn carrier)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyImpulseAwayFromCarrier, "BmScript.RCarriableObject_Canister.ApplyImpulseAwayFromCarrier");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetPickupAnimStartLoc(BmSDK.BmGame.RBMPawnAI Pawn)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickupAnimStartLoc, "BmScript.RCarriableObject_Canister.GetPickupAnimStartLoc");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
     /// </summary>
     public unsafe override BmSDK.Rotator GetPickupFromFloorRot(System.Numerics.Vector3 pawnLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickupFromFloorRot, "BmScript.RCarriableObject_Canister.GetPickupFromFloorRot");
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

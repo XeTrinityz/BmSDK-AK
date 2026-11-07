@@ -79,6 +79,7 @@ public partial class RSeqAct_StartGauntletMovieBase : BmSDK.Engine.SequenceActio
     /// </summary>
     public unsafe virtual void DisablePropertySheet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisablePropertySheet, "BmGame.RSeqAct_StartGauntletMovieBase.DisablePropertySheet");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -99,6 +100,7 @@ public partial class RSeqAct_StartGauntletMovieBase : BmSDK.Engine.SequenceActio
     /// </summary>
     public unsafe virtual void EnablePropertySheet()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnablePropertySheet, "BmGame.RSeqAct_StartGauntletMovieBase.EnablePropertySheet");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

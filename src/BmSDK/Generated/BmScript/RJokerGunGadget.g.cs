@@ -84,6 +84,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void UpdateWalkingVelocity(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateWalkingVelocity, "BmScript.RJokerGunGadget.UpdateWalkingVelocity");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override bool CheckAutoTarget(BmSDK.Engine.Actor BatarangTarget, out System.Numerics.Vector3 BatarangTargetPosition, out float OverridePriority, out float OverrideMaxRange, out byte DoLOSCheck)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAutoTarget, "BmScript.RJokerGunGadget.CheckAutoTarget");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +126,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override void PreRender(BmSDK.Engine.Canvas HudCanvas)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreRender, "BmScript.RJokerGunGadget.PreRender");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +141,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override void CancelGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelGadget, "BmScript.RJokerGunGadget.CancelGadget");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +155,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override bool AimGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AimGadget, "BmScript.RJokerGunGadget.AimGadget");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +169,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual BmSDK.FName GetJokerGunAutoFireAnim(BmSDK.Rotator ThrowDirection, out BmSDK.BmGame.RPawnPlayerAnim.AimingConfigDesc AimingConfig)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerGunAutoFireAnim, "BmScript.RJokerGunGadget.GetJokerGunAutoFireAnim");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +187,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor CalculateAutoTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateAutoTarget, "BmScript.RJokerGunGadget.CalculateAutoTarget");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +201,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void UpdateGadgetLookSensitivity(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateGadgetLookSensitivity, "BmScript.RJokerGunGadget.UpdateGadgetLookSensitivity");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -208,6 +216,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RJokerGunGadget.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +230,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateHitImpulse(BmSDK.Engine.Actor.FImpactInfo HitImpactInfo, int HitVillainIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateHitImpulse, "BmScript.RJokerGunGadget.CalculateHitImpulse");
         byte* paramsPtr = stackalloc byte[144];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -236,6 +246,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual float CalculateHitDamage(BmSDK.Engine.Actor.FImpactInfo HitImpactInfo)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateHitDamage, "BmScript.RJokerGunGadget.CalculateHitDamage");
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -250,6 +261,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void AlertPeopleToGunFire()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlertPeopleToGunFire, "BmScript.RJokerGunGadget.AlertPeopleToGunFire");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -263,6 +275,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void TriggerGunFireRumble()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGunFireRumble, "BmScript.RJokerGunGadget.TriggerGunFireRumble");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -276,6 +289,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void TriggerGunMuzzleFlashEffect()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGunMuzzleFlashEffect, "BmScript.RJokerGunGadget.TriggerGunMuzzleFlashEffect");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -289,6 +303,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual BmSDK.Engine.RPhysicalMaterialProperty GetImpactMaterial(BmSDK.Engine.Actor.FImpactInfo Impact)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetImpactMaterial, "BmScript.RJokerGunGadget.GetImpactMaterial");
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -303,6 +318,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void CreateHitEffect(bool bHitSomething, BmSDK.Engine.Actor.FImpactInfo HitImpactInfo, bool bSpawnTracer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateHitEffect, "BmScript.RJokerGunGadget.CreateHitEffect");
         byte* paramsPtr = stackalloc byte[220];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +335,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void FireGunServer(BmSDK.Rotator FireRotation, System.Numerics.Vector3 FirePosition, bool bNoDamage)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireGunServer, "BmScript.RJokerGunGadget.FireGunServer");
         byte* paramsPtr = stackalloc byte[536];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -335,6 +352,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual bool IsTwoface(BmSDK.BmGame.RPawnVillain HitVillain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTwoface, "BmScript.RJokerGunGadget.IsTwoface");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -349,6 +367,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual bool IsRiddlerHostage(BmSDK.BmGame.RPawnVillain HitVillain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRiddlerHostage, "BmScript.RJokerGunGadget.IsRiddlerHostage");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -363,6 +382,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual bool IsRiddler(BmSDK.BmGame.RPawnVillain HitVillain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRiddler, "BmScript.RJokerGunGadget.IsRiddler");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -377,6 +397,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual bool IsPenguin(BmSDK.BmGame.RPawnVillain HitVillain)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPenguin, "BmScript.RJokerGunGadget.IsPenguin");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -391,6 +412,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void TriggerGunEffects()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGunEffects, "BmScript.RJokerGunGadget.TriggerGunEffects");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -404,6 +426,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void FireGunClient()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireGunClient, "BmScript.RJokerGunGadget.FireGunClient");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -417,6 +440,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void FireGun()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireGun, "BmScript.RJokerGunGadget.FireGun");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -430,6 +454,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void ShootVentThug()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShootVentThug, "BmScript.RJokerGunGadget.ShootVentThug");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -443,6 +468,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void CalculateBulletTrajectory(bool bFirst)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateBulletTrajectory, "BmScript.RJokerGunGadget.CalculateBulletTrajectory");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -457,6 +483,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override float GetGadgetLookSensitivity(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetLookSensitivity, "BmScript.RJokerGunGadget.GetGadgetLookSensitivity");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -471,6 +498,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override void AdditiveArmAvoidance()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdditiveArmAvoidance, "BmScript.RJokerGunGadget.AdditiveArmAvoidance");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -484,6 +512,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override bool ShouldAimAt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldAimAt, "BmScript.RJokerGunGadget.ShouldAimAt");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -497,6 +526,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override bool CanThrowGadget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanThrowGadget, "BmScript.RJokerGunGadget.CanThrowGadget");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -510,6 +540,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmScript.RJokerGunGadget.GetGadgetCamera");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -525,6 +556,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmScript.RJokerGunGadget.GetPrimedPose");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -552,6 +584,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override void CameraZoomChanged(bool bCurrentlyZoomed)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CameraZoomChanged, "BmScript.RJokerGunGadget.CameraZoomChanged");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -579,6 +612,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe override void SetJokerRoom3(bool On)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetJokerRoom3, "BmScript.RJokerGunGadget.SetJokerRoom3");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -593,6 +627,7 @@ public partial class RJokerGunGadget : BmSDK.BmGame.RJokerGunGadgetBase, BmSDK.I
     /// </summary>
     public unsafe virtual void SetAutomaticZoomCamera(bool On)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAutomaticZoomCamera, "BmScript.RJokerGunGadget.SetAutomaticZoomCamera");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

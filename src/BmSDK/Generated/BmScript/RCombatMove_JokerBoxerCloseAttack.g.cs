@@ -84,6 +84,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override void ExitMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmScript.RCombatMove_JokerBoxerCloseAttack.ExitMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override void MoveOverridenForPawn(BmSDK.BmGame.RPawnCombat OverridenPawn, BmSDK.BmGame.RCombatMove NewMove)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveOverridenForPawn, "BmScript.RCombatMove_JokerBoxerCloseAttack.MoveOverridenForPawn");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -112,6 +114,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void PlayHitPlayerBark()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHitPlayerBark, "BmScript.RCombatMove_JokerBoxerCloseAttack.PlayHitPlayerBark");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +128,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual bool PlayerIsPullingAway()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerIsPullingAway, "BmScript.RCombatMove_JokerBoxerCloseAttack.PlayerIsPullingAway");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual bool PlayerIsCounteringProperly()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerIsCounteringProperly, "BmScript.RCombatMove_JokerBoxerCloseAttack.PlayerIsCounteringProperly");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void BreakoutHeadlock()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakoutHeadlock, "BmScript.RCombatMove_JokerBoxerCloseAttack.BreakoutHeadlock");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override bool StartCustomCounter(BmSDK.BmGame.RPawnPlayerCombat Counterer)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomCounter, "BmScript.RCombatMove_JokerBoxerCloseAttack.StartCustomCounter");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -178,6 +185,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void PlayCounterAnim(bool bPlayIdle)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCounterAnim, "BmScript.RCombatMove_JokerBoxerCloseAttack.PlayCounterAnim");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -192,6 +200,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void PlayStrikeAnim(BmSDK.FName AnimName, bool bRotationOnly = default, float StartTime = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayStrikeAnim, "BmScript.RCombatMove_JokerBoxerCloseAttack.PlayStrikeAnim");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -208,6 +217,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override bool AllowAnotherAttacker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowAnotherAttacker, "BmScript.RCombatMove_JokerBoxerCloseAttack.AllowAnotherAttacker");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +231,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override bool IsAttacking()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAttacking, "BmScript.RCombatMove_JokerBoxerCloseAttack.IsAttacking");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -234,6 +245,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual bool TargetMovingAway()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TargetMovingAway, "BmScript.RCombatMove_JokerBoxerCloseAttack.TargetMovingAway");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -247,6 +259,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat.DamageResult DamagePawn(BmSDK.BmGame.RPawnCombat DamageReceiver, bool bHeavy, bool bLeftHit, bool bHitAlt = default, bool bSendPlayerBack = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagePawn, "BmScript.RCombatMove_JokerBoxerCloseAttack.DamagePawn");
         byte* paramsPtr = stackalloc byte[304];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -265,6 +278,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override bool CanPerformNextComboMove(bool bSpecialMove = default, bool bStrike = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPerformNextComboMove, "BmScript.RCombatMove_JokerBoxerCloseAttack.CanPerformNextComboMove");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -280,6 +294,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override void PlayAbortAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAbortAnim, "BmScript.RCombatMove_JokerBoxerCloseAttack.PlayAbortAnim");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -293,6 +308,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual bool ShouldStartNextStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStartNextStrike, "BmScript.RCombatMove_JokerBoxerCloseAttack.ShouldStartNextStrike");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -306,6 +322,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override void StopTargetting()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTargetting, "BmScript.RCombatMove_JokerBoxerCloseAttack.StopTargetting");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -319,6 +336,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void DamageCollisionDeactivated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCollisionDeactivated, "BmScript.RCombatMove_JokerBoxerCloseAttack.DamageCollisionDeactivated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -332,6 +350,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual BmSDK.FName GetDamageBone(bool bLeft)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDamageBone, "BmScript.RCombatMove_JokerBoxerCloseAttack.GetDamageBone");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -346,6 +365,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void OnPlayHaymaker(BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId NewId, float TimeLeftOver)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPlayHaymaker, "BmScript.RCombatMove_JokerBoxerCloseAttack.OnPlayHaymaker");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -361,6 +381,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void OnPlayHeadlockLoop(BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId NewId, float TimeLeftOver)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPlayHeadlockLoop, "BmScript.RCombatMove_JokerBoxerCloseAttack.OnPlayHeadlockLoop");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -376,6 +397,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void StartAttackState()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAttackState, "BmScript.RCombatMove_JokerBoxerCloseAttack.StartAttackState");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -389,6 +411,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual BmSDK.FName GetStrikeAnim()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeAnim, "BmScript.RCombatMove_JokerBoxerCloseAttack.GetStrikeAnim");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -402,6 +425,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetStrikeLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeLocation, "BmScript.RCombatMove_JokerBoxerCloseAttack.GetStrikeLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -415,6 +439,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void DamageNearbyThug(System.Numerics.Vector3 DamageSource)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageNearbyThug, "BmScript.RCombatMove_JokerBoxerCloseAttack.DamageNearbyThug");
         byte* paramsPtr = stackalloc byte[308];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -429,6 +454,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe override void Initialise()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RCombatMove_JokerBoxerCloseAttack.Initialise");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -442,6 +468,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Queue5End()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Queue5End, "BmScript.RCombatMove_JokerBoxerCloseAttack.Queue5End");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -455,6 +482,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Queue4End()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Queue4End, "BmScript.RCombatMove_JokerBoxerCloseAttack.Queue4End");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -468,6 +496,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Queue3End()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Queue3End, "BmScript.RCombatMove_JokerBoxerCloseAttack.Queue3End");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -481,6 +510,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Queue2End()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Queue2End, "BmScript.RCombatMove_JokerBoxerCloseAttack.Queue2End");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -494,6 +524,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Queue2Mid()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Queue2Mid, "BmScript.RCombatMove_JokerBoxerCloseAttack.Queue2Mid");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -507,6 +538,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Branch34()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Branch34, "BmScript.RCombatMove_JokerBoxerCloseAttack.Branch34");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -520,6 +552,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Branch35()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Branch35, "BmScript.RCombatMove_JokerBoxerCloseAttack.Branch35");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -533,6 +566,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void Branch345()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Branch345, "BmScript.RCombatMove_JokerBoxerCloseAttack.Branch345");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -546,6 +580,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void QueueHaymaker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueHaymaker, "BmScript.RCombatMove_JokerBoxerCloseAttack.QueueHaymaker");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -559,6 +594,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void HeadlockStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HeadlockStrike, "BmScript.RCombatMove_JokerBoxerCloseAttack.HeadlockStrike");
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -572,6 +608,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void QueueHeadlock()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueHeadlock, "BmScript.RCombatMove_JokerBoxerCloseAttack.QueueHeadlock");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -585,6 +622,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void HeadlockContact()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HeadlockContact, "BmScript.RCombatMove_JokerBoxerCloseAttack.HeadlockContact");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -598,6 +636,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void NormalSpeed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NormalSpeed, "BmScript.RCombatMove_JokerBoxerCloseAttack.NormalSpeed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -611,6 +650,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void StopTrail()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTrail, "BmScript.RCombatMove_JokerBoxerCloseAttack.StopTrail");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -624,6 +664,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void StartTrailRight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTrailRight, "BmScript.RCombatMove_JokerBoxerCloseAttack.StartTrailRight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -637,6 +678,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void StartTrailLeft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTrailLeft, "BmScript.RCombatMove_JokerBoxerCloseAttack.StartTrailLeft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -650,6 +692,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void LastCombatAnimHitRight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LastCombatAnimHitRight, "BmScript.RCombatMove_JokerBoxerCloseAttack.LastCombatAnimHitRight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -663,6 +706,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void LastCombatAnimHitLeft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LastCombatAnimHitLeft, "BmScript.RCombatMove_JokerBoxerCloseAttack.LastCombatAnimHitLeft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -676,6 +720,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void AllowNextStrike()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowNextStrike, "BmScript.RCombatMove_JokerBoxerCloseAttack.AllowNextStrike");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -689,6 +734,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual bool ShouldHitPlayer()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldHitPlayer, "BmScript.RCombatMove_JokerBoxerCloseAttack.ShouldHitPlayer");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -702,6 +748,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual bool VeryCloseToTarget()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VeryCloseToTarget, "BmScript.RCombatMove_JokerBoxerCloseAttack.VeryCloseToTarget");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -715,6 +762,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual bool AllowedToHit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowedToHit, "BmScript.RCombatMove_JokerBoxerCloseAttack.AllowedToHit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -728,6 +776,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void CombatAnimHitRightLight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitRightLight, "BmScript.RCombatMove_JokerBoxerCloseAttack.CombatAnimHitRightLight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -741,6 +790,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void CombatAnimHitLeftLightAlt()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitLeftLightAlt, "BmScript.RCombatMove_JokerBoxerCloseAttack.CombatAnimHitLeftLightAlt");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -754,6 +804,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void CombatAnimHitLeftLight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitLeftLight, "BmScript.RCombatMove_JokerBoxerCloseAttack.CombatAnimHitLeftLight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -767,6 +818,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void CombatAnimHitRightHeavy()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitRightHeavy, "BmScript.RCombatMove_JokerBoxerCloseAttack.CombatAnimHitRightHeavy");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -780,6 +832,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void CombatAnimHitRight()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitRight, "BmScript.RCombatMove_JokerBoxerCloseAttack.CombatAnimHitRight");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -793,6 +846,7 @@ public partial class RCombatMove_JokerBoxerCloseAttack : BmSDK.BmGame.RCombatMov
     /// </summary>
     public unsafe virtual void CombatAnimHitLeft()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitLeft, "BmScript.RCombatMove_JokerBoxerCloseAttack.CombatAnimHitLeft");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RBMCombatThrownObject_CleaverDeflectRight : BmSDK.BmScript.
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetDeflectLoc(BmSDK.BmGame.RPawnPlayerCombat Batman)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDeflectLoc, "BmScript.RBMCombatThrownObject_CleaverDeflectRight.GetDeflectLoc");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

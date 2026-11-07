@@ -79,6 +79,7 @@ public partial class RBMPathNode_VariablePositionTraverseProxy : BmSDK.BmGame.RB
     /// </summary>
     public unsafe override void UnlockSlot(BmSDK.BmGame.RPawn User)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockSlot, "BmGame.RBMPathNode_VariablePositionTraverseProxy.UnlockSlot");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RBMPathNode_VariablePositionTraverseProxy : BmSDK.BmGame.RB
     /// </summary>
     public unsafe override bool GetDynamicMoveSlotFor(BmSDK.BmGame.RPawn User, System.Numerics.Vector3 DestPoint, out System.Numerics.Vector3 SlotLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDynamicMoveSlotFor, "BmGame.RBMPathNode_VariablePositionTraverseProxy.GetDynamicMoveSlotFor");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RBMPathNode_VariablePositionTraverseProxy : BmSDK.BmGame.RB
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPathNode_SpecialMove GetSpecialMoveNode()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSpecialMoveNode, "BmGame.RBMPathNode_VariablePositionTraverseProxy.GetSpecialMoveNode");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RBMPathNode_VariablePositionTraverseProxy : BmSDK.BmGame.RB
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetIntersectionPoint(System.Numerics.Vector3 pawnLoc, System.Numerics.Vector3 DestLoc)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIntersectionPoint, "BmGame.RBMPathNode_VariablePositionTraverseProxy.GetIntersectionPoint");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

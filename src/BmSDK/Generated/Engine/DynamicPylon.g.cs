@@ -84,6 +84,7 @@ public partial class DynamicPylon : BmSDK.Engine.Pylon, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StoppedMoving()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoppedMoving, "Engine.DynamicPylon.StoppedMoving");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class DynamicPylon : BmSDK.Engine.Pylon, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void StartedMoving()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartedMoving, "Engine.DynamicPylon.StartedMoving");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class DynamicPylon : BmSDK.Engine.Pylon, BmSDK.IGameObject
     /// </summary>
     public unsafe override void FlushDynamicEdges()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushDynamicEdges, "Engine.DynamicPylon.FlushDynamicEdges");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -130,6 +133,7 @@ public partial class DynamicPylon : BmSDK.Engine.Pylon, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void RebuildDynamicEdges()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RebuildDynamicEdges, "Engine.DynamicPylon.RebuildDynamicEdges");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -150,6 +154,7 @@ public partial class DynamicPylon : BmSDK.Engine.Pylon, BmSDK.IGameObject
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.DynamicPylon.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

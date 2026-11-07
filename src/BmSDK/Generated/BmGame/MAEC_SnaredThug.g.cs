@@ -84,6 +84,7 @@ public partial class MAEC_SnaredThug : BmSDK.BmGame.RAEC_FrozenThug, BmSDK.IGame
     /// </summary>
     public unsafe override void OnAssign(BmSDK.BmGame.RBMAIController FrozenCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAssign, "BmGame.MAEC_SnaredThug.OnAssign");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

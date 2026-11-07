@@ -84,6 +84,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual bool HasAliasMappingForPlatform(BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType DesiredPlatform)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasAliasMappingForPlatform, "Engine.UIDataStore_InputAlias.HasAliasMappingForPlatform");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -106,6 +107,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual int FindInputAliasIndex(BmSDK.FName DesiredAlias)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindInputAliasIndex, "Engine.UIDataStore_InputAlias.FindInputAliasIndex");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +129,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual bool GetAliasInputKeyDataByIndex(out BmSDK.Engine.UIRoot.FRawInputKeyEventData out_InputKeyData, int AliasIndex, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAliasInputKeyDataByIndex, "Engine.UIDataStore_InputAlias.GetAliasInputKeyDataByIndex");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +155,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual bool GetAliasInputKeyData(out BmSDK.Engine.UIRoot.FRawInputKeyEventData out_InputKeyData, BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAliasInputKeyData, "Engine.UIDataStore_InputAlias.GetAliasInputKeyData");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +181,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual BmSDK.FName GetAliasInputKeyNameByIndex(int AliasIndex, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAliasInputKeyNameByIndex, "Engine.UIDataStore_InputAlias.GetAliasInputKeyNameByIndex");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -199,6 +204,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual BmSDK.FName GetAliasInputKeyName(BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAliasInputKeyName, "Engine.UIDataStore_InputAlias.GetAliasInputKeyName");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -221,6 +227,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual BmSDK.FString GetAliasFontMarkupByIndex(int AliasIndex, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAliasFontMarkupByIndex, "Engine.UIDataStore_InputAlias.GetAliasFontMarkupByIndex");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -243,6 +250,7 @@ public partial class UIDataStore_InputAlias : BmSDK.Engine.UIDataStore_StringBas
     /// </summary>
     public unsafe virtual BmSDK.FString GetAliasFontMarkup(BmSDK.FName DesiredAlias, BmSDK.Engine.UIRoot.EInputPlatformType OverridePlatform = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAliasFontMarkup, "Engine.UIDataStore_InputAlias.GetAliasFontMarkup");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

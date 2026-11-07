@@ -84,6 +84,7 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
     /// </summary>
     public unsafe virtual bool GetAggregateMappingIDs(int EventID, out int AggregateID, out int TargetAggregateID)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAggregateMappingIDs, "Engine.GameStatsAggregator.GetAggregateMappingIDs");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
     /// </summary>
     public unsafe virtual void Reset()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.GameStatsAggregator.Reset");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -131,6 +133,7 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
     /// </summary>
     public unsafe override void PostProcessStream()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostProcessStream, "Engine.GameStatsAggregator.PostProcessStream");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +154,7 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
     /// </summary>
     public unsafe override void PreProcessStream()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreProcessStream, "Engine.GameStatsAggregator.PreProcessStream");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

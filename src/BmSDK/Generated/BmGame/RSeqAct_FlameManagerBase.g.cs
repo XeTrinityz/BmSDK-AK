@@ -92,6 +92,7 @@ public partial class RSeqAct_FlameManagerBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual void SuppressFireInArea(System.Numerics.Vector3 area_centre, float area_radius)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuppressFireInArea, "BmGame.RSeqAct_FlameManagerBase.SuppressFireInArea");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -107,6 +108,7 @@ public partial class RSeqAct_FlameManagerBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor SpawnFlame(System.Numerics.Vector3 FlameLocation, bool onWater = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnFlame, "BmGame.RSeqAct_FlameManagerBase.SpawnFlame");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -122,6 +124,7 @@ public partial class RSeqAct_FlameManagerBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual void HandleFlameStrike(System.Numerics.Vector3 HitLocation, BmSDK.Engine.Actor HitActor, bool onWater = default, bool bTestForHitBatman = default, float hurt_bm_range = default, float FlameImpactDamage = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleFlameStrike, "BmGame.RSeqAct_FlameManagerBase.HandleFlameStrike");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +144,7 @@ public partial class RSeqAct_FlameManagerBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual void CreateFirestorm(System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, float Radius)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateFirestorm, "BmGame.RSeqAct_FlameManagerBase.CreateFirestorm");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -157,6 +161,7 @@ public partial class RSeqAct_FlameManagerBase : BmSDK.Engine.SeqAct_Latent, BmSD
     /// </summary>
     public unsafe virtual void RegisterWithPlayerController(bool DoRegister)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWithPlayerController, "BmGame.RSeqAct_FlameManagerBase.RegisterWithPlayerController");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

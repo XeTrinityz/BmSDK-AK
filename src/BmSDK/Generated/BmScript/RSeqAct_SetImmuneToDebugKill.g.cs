@@ -84,6 +84,7 @@ public partial class RSeqAct_SetImmuneToDebugKill : BmSDK.Engine.SeqAct_Latent, 
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SetImmuneToDebugKill.Activated");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

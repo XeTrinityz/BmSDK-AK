@@ -84,6 +84,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void SetRumble(float Rumble)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRumble, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.SetRumble");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -98,6 +99,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.FinishSpecialMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void HackingMiniGameWon()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HackingMiniGameWon, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.HackingMiniGameWon");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void PlayCalibrationComplete()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCalibrationComplete, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayCalibrationComplete");
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.UpdateSpecialMove");
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void PushControllerToFlash(float left_y, float right_y)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushControllerToFlash, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PushControllerToFlash");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -166,6 +172,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void AudioParams(float _PitchValue, float _FilterValue)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioParams, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.AudioParams");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -181,6 +188,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void PlayAudio()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAudio, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayAudio");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +202,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void StopVoicePlayback()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StopVoicePlayback");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -207,6 +216,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void StartVoicePlayback()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartVoicePlayback");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -220,6 +230,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void PlayVoiceNormal()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayVoiceNormal, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayVoiceNormal");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -233,6 +244,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void ClosingDialogueBoxAfterOutro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosingDialogueBoxAfterOutro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterOutro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -246,6 +258,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void ClosingDialogueBoxAfterScan()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosingDialogueBoxAfterScan, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterScan");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -259,6 +272,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void ClosingDialogueBoxAfterIntro()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosingDialogueBoxAfterIntro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterIntro");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -272,6 +286,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void WinClearPrompts()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinClearPrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.WinClearPrompts");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -285,6 +300,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void UpdatePrompts()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.UpdatePrompts");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -298,6 +314,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void StartDOFChange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartDOFChange, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartDOFChange");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -311,6 +328,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void InitialSetupVoiceSynthMinigame()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialSetupVoiceSynthMinigame, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.InitialSetupVoiceSynthMinigame");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -324,6 +342,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.TriggerSpecialMove");
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -338,6 +357,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
     /// </summary>
     public unsafe virtual void VoiceSampleCallback(int CallbackFlags, BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID, int MarkerTypeID, float Duration)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VoiceSampleCallback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.VoiceSampleCallback");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

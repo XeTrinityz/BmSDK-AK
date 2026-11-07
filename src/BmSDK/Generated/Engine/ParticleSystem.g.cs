@@ -84,6 +84,7 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetMaxLifespan(float InComponentDelay)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxLifespan, "Engine.ParticleSystem.GetMaxLifespan");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -105,6 +106,7 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual bool SetLODDistance(int LODLevelIndex, float InDistance)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLODDistance, "Engine.ParticleSystem.SetLODDistance");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -127,6 +129,7 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual void SetCurrentLODMethod(BmSDK.Engine.ParticleSystem.ParticleSystemLODMethod InMethod)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentLODMethod, "Engine.ParticleSystem.SetCurrentLODMethod");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -148,6 +151,7 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual float GetLODDistance(int LODLevelIndex)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLODDistance, "Engine.ParticleSystem.GetLODDistance");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -169,6 +173,7 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual int GetLODLevelCount()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLODLevelCount, "Engine.ParticleSystem.GetLODLevelCount");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -189,6 +194,7 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem.ParticleSystemLODMethod GetCurrentLODMethod()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentLODMethod, "Engine.ParticleSystem.GetCurrentLODMethod");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -209,6 +215,7 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem EffectiveParticleSystemAfterPhysXOverride()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EffectiveParticleSystemAfterPhysXOverride, "Engine.ParticleSystem.EffectiveParticleSystemAfterPhysXOverride");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

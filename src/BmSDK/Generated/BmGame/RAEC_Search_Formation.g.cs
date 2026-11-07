@@ -79,6 +79,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual void RegisterSplit(BmSDK.BmGame.RBMAIController SplitCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterSplit, "BmGame.RAEC_Search_Formation.RegisterSplit");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -93,6 +94,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe override void NotifyChildStolen(BmSDK.BmGame.RAlertEventCoordinatorSolo StoleFromAEC, BmSDK.BmGame.RAlertEventCoordinatorSolo StealingAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyChildStolen, "BmGame.RAEC_Search_Formation.NotifyChildStolen");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -108,6 +110,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual bool FollowerWantsLeaderToSlow()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FollowerWantsLeaderToSlow, "BmGame.RAEC_Search_Formation.FollowerWantsLeaderToSlow");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -121,6 +124,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual void GetBestFollowersForBranchOff(out BmSDK.BmGame.RBMAIController SplitGroupLeader, out BmSDK.TArray<BmSDK.BmGame.RBMAIController> SplitFollowers)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestFollowersForBranchOff, "BmGame.RAEC_Search_Formation.GetBestFollowersForBranchOff");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -138,6 +142,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual bool GroupShouldSplit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GroupShouldSplit, "BmGame.RAEC_Search_Formation.GroupShouldSplit");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual int GetSplitCap()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSplitCap, "BmGame.RAEC_Search_Formation.GetSplitCap");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual bool RefuseBuddy()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefuseBuddy, "BmGame.RAEC_Search_Formation.RefuseBuddy");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -177,6 +184,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual void InitSplitThugs()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitSplitThugs, "BmGame.RAEC_Search_Formation.InitSplitThugs");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -190,6 +198,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual void AssessPotentialSplit()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssessPotentialSplit, "BmGame.RAEC_Search_Formation.AssessPotentialSplit");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -203,6 +212,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual void AddFollower(BmSDK.BmGame.RBMAIController FollowCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFollower, "BmGame.RAEC_Search_Formation.AddFollower");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -217,6 +227,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe virtual void SetLeader(BmSDK.BmGame.RBMAIController LeaderCon)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLeader, "BmGame.RAEC_Search_Formation.SetLeader");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -231,6 +242,7 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Search_Formation.OnRemoveSoloChild");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

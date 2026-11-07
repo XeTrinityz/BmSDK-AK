@@ -84,6 +84,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual void ForceSlaveToRef()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceSlaveToRef, "BmGame.RPawnJokerHallucinationThug.ForceSlaveToRef");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual bool InterceptNewJokerCall(BmSDK.BmGame.RPawnJokerHallucination.TypesOfHallucination AppearanceType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterceptNewJokerCall, "BmGame.RPawnJokerHallucinationThug.InterceptNewJokerCall");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual void StopAimAtBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAimAtBatman, "BmGame.RPawnJokerHallucinationThug.StopAimAtBatman");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual void AimAtBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AimAtBatman, "BmGame.RPawnJokerHallucinationThug.AimAtBatman");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual void JokerHallucinationFadeNotify(BmSDK.BmGame.RAnimNotify_JokerHallucination.EFadeType FadeType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerHallucinationFadeNotify, "BmGame.RPawnJokerHallucinationThug.JokerHallucinationFadeNotify");
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe override void TellControllerAboutCollisionWarning(BmSDK.Engine.Actor V, float Speed, BmSDK.BmGame.RGameInfo.EEvadeVehicleType EvadeType)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TellControllerAboutCollisionWarning, "BmGame.RPawnJokerHallucinationThug.TellControllerAboutCollisionWarning");
         byte* paramsPtr = stackalloc byte[29];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -167,6 +173,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual bool IsFadedOut()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFadedOut, "BmGame.RPawnJokerHallucinationThug.IsFadedOut");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +187,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual void DestroyMe()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyMe, "BmGame.RPawnJokerHallucinationThug.DestroyMe");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -193,6 +201,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual bool CanBeSeenByBatmanForFadeIn()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeSeenByBatmanForFadeIn, "BmGame.RPawnJokerHallucinationThug.CanBeSeenByBatmanForFadeIn");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -206,6 +215,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual bool CanBeSeenByBatman()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeSeenByBatman, "BmGame.RPawnJokerHallucinationThug.CanBeSeenByBatman");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -219,6 +229,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual void FireDestroyEvent()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireDestroyEvent, "BmGame.RPawnJokerHallucinationThug.FireDestroyEvent");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -232,6 +243,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RPawnJokerHallucinationThug.Tick");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -246,6 +258,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe virtual void UpdateJoker(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateJoker, "BmGame.RPawnJokerHallucinationThug.UpdateJoker");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -281,6 +294,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe override void PostInitCharacter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostInitCharacter, "BmGame.RPawnJokerHallucinationThug.PostInitCharacter");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -294,6 +308,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe override void OnDestroy(BmSDK.Engine.SeqAct_Destroy Action)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDestroy, "BmGame.RPawnJokerHallucinationThug.OnDestroy");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -308,6 +323,7 @@ public partial class RPawnJokerHallucinationThug : BmSDK.BmGame.RPawnVillainThug
     /// </summary>
     public unsafe override void Destroyed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RPawnJokerHallucinationThug.Destroyed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

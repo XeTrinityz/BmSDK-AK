@@ -84,6 +84,7 @@ public partial class RBarkConvoData_FlagNode : BmSDK.Engine.AkHash, BmSDK.IGameO
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.AkDialogueVoice> GetVoiceList()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVoiceList, "BmGame.RBarkConvoData_FlagNode.GetVoiceList");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

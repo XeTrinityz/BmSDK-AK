@@ -84,6 +84,7 @@ public partial class RBMBehaviour_FakeScarecrowRagdoll : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override void DeactivateStunnedFX()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateStunnedFX, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.DeactivateStunnedFX");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMBehaviour_FakeScarecrowRagdoll : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override void ActivateStunnedFX()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateStunnedFX, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.ActivateStunnedFX");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMBehaviour_FakeScarecrowRagdoll : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override float GetGetupTimerStartTime()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGetupTimerStartTime, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.GetGetupTimerStartTime");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +126,7 @@ public partial class RBMBehaviour_FakeScarecrowRagdoll : BmSDK.BmGame.RBMBehavio
     /// </summary>
     public unsafe override void OnActivate()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.OnActivate");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

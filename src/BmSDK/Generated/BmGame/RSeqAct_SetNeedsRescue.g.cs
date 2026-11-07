@@ -97,6 +97,7 @@ public partial class RSeqAct_SetNeedsRescue : BmSDK.Engine.SequenceAction, BmSDK
     /// </summary>
     public unsafe virtual void SetNR()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNR, "BmGame.RSeqAct_SetNeedsRescue.SetNR");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

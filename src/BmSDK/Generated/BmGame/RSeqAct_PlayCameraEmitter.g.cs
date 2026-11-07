@@ -97,6 +97,7 @@ public partial class RSeqAct_PlayCameraEmitter : BmSDK.Engine.SequenceAction, Bm
     /// </summary>
     public unsafe virtual void PlayEmitter()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayEmitter, "BmGame.RSeqAct_PlayCameraEmitter.PlayEmitter");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

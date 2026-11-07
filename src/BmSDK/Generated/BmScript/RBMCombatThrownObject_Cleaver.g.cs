@@ -84,6 +84,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     /// </summary>
     public unsafe override bool CanHitPlayerInCounterMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanHitPlayerInCounterMove, "BmScript.RBMCombatThrownObject_Cleaver.CanHitPlayerInCounterMove");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     /// </summary>
     public unsafe override float GetCounterRange()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCounterRange, "BmScript.RBMCombatThrownObject_Cleaver.GetCounterRange");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +112,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RBMCombatThrownObject_Cleaver.Tick");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     /// </summary>
     public unsafe override void HitPawnValueChanged()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitPawnValueChanged, "BmScript.RBMCombatThrownObject_Cleaver.HitPawnValueChanged");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     /// </summary>
     public unsafe virtual void StopAttackingFX(bool bSuccessfulCounter = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAttackingFX, "BmScript.RBMCombatThrownObject_Cleaver.StopAttackingFX");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -151,6 +156,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     /// </summary>
     public unsafe virtual void StartAttackingFX()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAttackingFX, "BmScript.RBMCombatThrownObject_Cleaver.StartAttackingFX");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -164,6 +170,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RBMCombatThrownObject_Cleaver.PostBeginPlay");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

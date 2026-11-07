@@ -97,6 +97,7 @@ public partial class RSeqAct_SlowMo : BmSDK.Engine.SequenceAction, BmSDK.IGameOb
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SlowMo.Activated");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_SlowMo : BmSDK.Engine.SequenceAction, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void TimerAfterCancelTransition()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterCancelTransition, "BmGame.RSeqAct_SlowMo.TimerAfterCancelTransition");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_SlowMo : BmSDK.Engine.SequenceAction, BmSDK.IGameOb
     /// </summary>
     public unsafe virtual void TimerAfterDuration()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterDuration, "BmGame.RSeqAct_SlowMo.TimerAfterDuration");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

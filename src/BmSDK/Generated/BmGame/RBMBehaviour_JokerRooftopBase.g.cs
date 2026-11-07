@@ -79,6 +79,7 @@ public partial class RBMBehaviour_JokerRooftopBase : BmSDK.BmGame.RBMBehaviour, 
     /// </summary>
     public unsafe virtual bool DoesJokerTypeTrumpMine(BmSDK.FString NewCaseIdentifier)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoesJokerTypeTrumpMine, "BmGame.RBMBehaviour_JokerRooftopBase.DoesJokerTypeTrumpMine");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

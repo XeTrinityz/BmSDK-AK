@@ -84,6 +84,7 @@ public partial class REvadeOverrideVolume : BmSDK.Engine.Volume, BmSDK.IGameObje
     /// </summary>
     public unsafe virtual bool OverrideEvade(BmSDK.BmGame.RPlayerController CheckingPC, System.Numerics.Vector3 Direction)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideEvade, "BmGame.REvadeOverrideVolume.OverrideEvade");
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

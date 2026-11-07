@@ -97,6 +97,7 @@ public partial class RSeqAct_CinematicModeWaitForButton : BmSDK.BmGame.RSeqAct_C
     /// </summary>
     public unsafe override void DualPlayPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DualPlayPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.DualPlayPressed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -110,6 +111,7 @@ public partial class RSeqAct_CinematicModeWaitForButton : BmSDK.BmGame.RSeqAct_C
     /// </summary>
     public unsafe override void BattleModeMove()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BattleModeMove, "BmScript.RSeqAct_CinematicModeWaitForButton.BattleModeMove");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -123,6 +125,7 @@ public partial class RSeqAct_CinematicModeWaitForButton : BmSDK.BmGame.RSeqAct_C
     /// </summary>
     public unsafe override void BattleModePressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BattleModePressed, "BmScript.RSeqAct_CinematicModeWaitForButton.BattleModePressed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -136,6 +139,7 @@ public partial class RSeqAct_CinematicModeWaitForButton : BmSDK.BmGame.RSeqAct_C
     /// </summary>
     public unsafe override void YButtonPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_YButtonPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.YButtonPressed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -149,6 +153,7 @@ public partial class RSeqAct_CinematicModeWaitForButton : BmSDK.BmGame.RSeqAct_C
     /// </summary>
     public unsafe override void AButtonPressed()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AButtonPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.AButtonPressed");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

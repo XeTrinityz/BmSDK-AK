@@ -84,6 +84,7 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
     /// </summary>
     public unsafe virtual void ClearEnvironmentFeatures()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearEnvironmentFeatures, "BmGame.REnvironmentCheckTicker.ClearEnvironmentFeatures");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
     /// </summary>
     public unsafe virtual bool FrontBarrierIsEdge()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FrontBarrierIsEdge, "BmGame.REnvironmentCheckTicker.FrontBarrierIsEdge");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -117,6 +119,7 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
     /// </summary>
     public unsafe virtual void UpdateShimmyEnv(float CollisionHeight, float CollisionRadius, float DeltaTime, bool bForClimbingDown = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateShimmyEnv, "BmGame.REnvironmentCheckTicker.UpdateShimmyEnv");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -141,6 +144,7 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
     /// </summary>
     public unsafe virtual void CheckSurroundingEnvironment(float CollisionHeight, float CollisionRadius, float DeltaTime, BmSDK.Engine.PrimitiveComponent HintPrimitive = default)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckSurroundingEnvironment, "BmGame.REnvironmentCheckTicker.CheckSurroundingEnvironment");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

@@ -84,6 +84,7 @@ public partial class RCrowdSequence_BatmanAppearInitial : BmSDK.BmGame.RCrowdSeq
     /// </summary>
     public unsafe override void EndSequence()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndSequence, "BmGame.RCrowdSequence_BatmanAppearInitial.EndSequence");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -97,6 +98,7 @@ public partial class RCrowdSequence_BatmanAppearInitial : BmSDK.BmGame.RCrowdSeq
     /// </summary>
     public unsafe override void UpdateAttractors(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAttractors, "BmGame.RCrowdSequence_BatmanAppearInitial.UpdateAttractors");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +113,7 @@ public partial class RCrowdSequence_BatmanAppearInitial : BmSDK.BmGame.RCrowdSeq
     /// </summary>
     public unsafe virtual void SkipFirstStage()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipFirstStage, "BmGame.RCrowdSequence_BatmanAppearInitial.SkipFirstStage");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -124,6 +127,7 @@ public partial class RCrowdSequence_BatmanAppearInitial : BmSDK.BmGame.RCrowdSeq
     /// </summary>
     public unsafe override void CreateAttractors()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateAttractors, "BmGame.RCrowdSequence_BatmanAppearInitial.CreateAttractors");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -137,6 +141,7 @@ public partial class RCrowdSequence_BatmanAppearInitial : BmSDK.BmGame.RCrowdSeq
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetSpawnLocation()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSpawnLocation, "BmGame.RCrowdSequence_BatmanAppearInitial.GetSpawnLocation");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);

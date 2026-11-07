@@ -97,6 +97,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_JokerBossCombatController.Update");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -111,6 +112,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe virtual void ClearUpJokers(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearUpJokers, "BmScript.RSeqAct_JokerBossCombatController.ClearUpJokers");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -125,6 +127,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe virtual void UpdateFight(float DeltaTime)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFight, "BmScript.RSeqAct_JokerBossCombatController.UpdateFight");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -139,6 +142,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe virtual bool SpawnJoker()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnJoker, "BmScript.RSeqAct_JokerBossCombatController.SpawnJoker");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -152,6 +156,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RJokerCombatSpawnPoint GetNewSpawnPoint()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNewSpawnPoint, "BmScript.RSeqAct_JokerBossCombatController.GetNewSpawnPoint");
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -165,6 +170,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe virtual void JokerDied(BmSDK.BmScript.RPawnBossJokerCombat DeadJoker, bool bFromFatal)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerDied, "BmScript.RSeqAct_JokerBossCombatController.JokerDied");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -180,6 +186,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe virtual void FatalTakedown(BmSDK.BmScript.RPawnBossJokerCombat DeadJoker)
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FatalTakedown, "BmScript.RSeqAct_JokerBossCombatController.FatalTakedown");
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
@@ -194,6 +201,7 @@ public partial class RSeqAct_JokerBossCombatController : BmSDK.BmGame.RSeqAct_Co
     /// </summary>
     public unsafe override void Activated()
     {
+        BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_JokerBossCombatController.Activated");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
