@@ -27,6 +27,9 @@ internal static class RedirectManager
     /// </summary>
     private static readonly Stack<RedirectCall> s_redirectCalls = [];
 
+    /// <summary>The redirect call running right now, or null outside one.</summary>
+    public static RedirectCall? Current => s_redirectCalls.TryPeek(out var call) ? call : null;
+
     /// <summary>
     /// Bumped whenever a redirect is registered or unregistered. A <see cref="Function"/> remembers
     /// the generation at which it last checked for redirects, so the ProcessInternal detour only
@@ -181,6 +184,8 @@ internal static class RedirectManager
             return;
         }
 
+        call.Stack = (IntPtr)stackPtr;
+        call.Result = Result;
         try
         {
             redir.Run(selfObj, funcObj, stackPtr, Result);

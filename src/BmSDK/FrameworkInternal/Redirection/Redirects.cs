@@ -119,6 +119,10 @@ internal sealed record RedirectCall(
     /// <summary>Whether the original function has run for this call (by a redirect, or as the base).</summary>
     public bool OriginalRan;
 
+    /// <summary>The frame and result buffer of the call being redirected, for <see cref="Framework.Redirects.RunOriginal()"/>.</summary>
+    public IntPtr Stack;
+    public IntPtr Result;
+
     public IGenericRedirect? NextRedirect() =>
         _currIndex < Redirs.Length ? Redirs[_currIndex++] : null;
 
