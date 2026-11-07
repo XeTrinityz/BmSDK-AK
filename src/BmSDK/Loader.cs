@@ -89,11 +89,15 @@ internal static class Loader
 
         // Key presses are delivered from here rather than the world tick, so they still arrive while
         // the game is paused or in a cutscene. Scripts hear about them once they have run Main().
-        RunGuarded(() =>
+        try
         {
             InputManager.Tick(dispatch: s_hasGameInited);
             InputRouting.Tick();
-        });
+        }
+        catch (Exception ex)
+        {
+            Abort(ex);
+        }
 
         return _EngineTickDetourBase!.Invoke(self);
     }
@@ -103,10 +107,11 @@ internal static class Loader
 
     // Detour for UObject::ProcessInternal(). Runs on every UnrealScript call in the game, so it must
     // not allocate: a function's path and lifecycle role are worked out once per UFunction (see
-    // Classify), and whether any redirect targets it is cached until the set of redirects changes.
+    // Classify), whether any redirect targets it is cached until the set of redirects changes, and
+    // the guard is a plain try/catch rather than a captured lambda.
     private static unsafe void ProcessInternalDetour(IntPtr self, IntPtr Stack, IntPtr Result)
     {
-        RunGuarded(() =>
+        try
         {
             IntPtr selfPtr = self;
             FFrame* stackPtr = (FFrame*)Stack.ToPointer();
@@ -175,7 +180,11 @@ internal static class Loader
 
             // Call base impl. Redirected implementations are expected to reach this by calling "themselves" a second time.
             _ProcessInternalDetourBase!.Invoke(self, Stack, Result);
-        });
+        }
+        catch (Exception ex)
+        {
+            Abort(ex);
+        }
     }
 
     /// <summary>Works out a function's path and lifecycle role, once per UFunction wrapper.</summary>
@@ -254,7 +263,8 @@ internal static class Loader
         // Call base impl to instantiate UObject
         _AddObjectDelegateDetourBase!.Invoke(self, InIndex);
 
-        RunGuarded(() =>
+        // Runs for every object the game creates: no captured lambda here.
+        try
         {
             var obj = MarshalUtil.GetOrCreateWrapper(self);
 
@@ -263,7 +273,11 @@ internal static class Loader
             {
                 ScriptComponentManager.TryAutoAttachComponents(obj, objNotLoaded: true);
             }
-        });
+        }
+        catch (Exception ex)
+        {
+            Abort(ex);
+        }
     }
 
     // Detour for UObject::ConditionalPostLoad()
@@ -279,7 +293,7 @@ internal static class Loader
         }
 
         // Configure redirected functions
-        RunGuarded(() =>
+        try
         {
             var obj = MarshalUtil.GetOrCreateWrapper(self);
             if (obj is Function func)
@@ -292,14 +306,25 @@ internal static class Loader
             {
                 ScriptComponentManager.TryAutoAttachComponents(obj, objNotLoaded: true);
             }
-        });
+        }
+        catch (Exception ex)
+        {
+            Abort(ex);
+        }
     }
 
     // Detour for UObject::ConditionalDestroy()
     private static void ConditionalDestroyDetour(IntPtr self)
     {
         // Destroy this object's managed instance
-        RunGuarded(() => MarshalUtil.DestroyManagedWrapper(self));
+        try
+        {
+            MarshalUtil.DestroyManagedWrapper(self);
+        }
+        catch (Exception ex)
+        {
+            Abort(ex);
+        }
 
         // Call base impl
         _ConditionalDestroyDetourBase!.Invoke(self);
@@ -313,10 +338,16 @@ internal static class Loader
         }
         catch (Exception ex)
         {
-            // Just abort, because otherwise UE3 will crash anyway but print
-            // its more-or-less useless DBGHELP messages.
-            Debug.LogError(ex.ToString());
-            Environment.Exit(1);
+            Abort(ex);
         }
+    }
+
+    /// <summary>A fault inside BmSDK itself (mod exceptions are handled by <see cref="ModGuard"/>).</summary>
+    private static void Abort(Exception ex)
+    {
+        // Just abort, because otherwise UE3 will crash anyway but print
+        // its more-or-less useless DBGHELP messages.
+        Debug.LogError(ex.ToString());
+        Environment.Exit(1);
     }
 }
