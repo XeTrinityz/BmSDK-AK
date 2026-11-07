@@ -86,6 +86,15 @@ internal static class Loader
     {
         // Run the scheduled callbacks
         EngineSynchronizationContext.Instance.ExecutePending();
+
+        // Key presses are delivered from here rather than the world tick, so they still arrive while
+        // the game is paused or in a cutscene. Scripts hear about them once they have run Main().
+        RunGuarded(() =>
+        {
+            InputManager.Tick(dispatch: s_hasGameInited);
+            InputRouting.Tick();
+        });
+
         return _EngineTickDetourBase!.Invoke(self);
     }
 
@@ -139,9 +148,6 @@ internal static class Loader
 
                 // Notify scripts of game tick
                 case Function.Lifecycle.Tick:
-                    // Tick framework stuff
-                    InputManager.Tick();
-
                     // Call OnTick() for scripts
                     ScriptManager.Scripts.ForEach(script =>
                         ModGuard.Run(script, script.Name, "OnTick", script.OnTick)
@@ -198,6 +204,8 @@ internal static class Loader
             0x100 or 0x104 => InputManager.OnKeyDown((Keys)(uint)message.WParam),
             // WM_KEYUP, WM_SYSKEYUP
             0x101 or 0x105 => InputManager.OnKeyUp((Keys)(uint)message.WParam),
+            // WM_CHAR, WM_DEADCHAR, WM_SYSCHAR, WM_SYSDEADCHAR: the text form of the press before it
+            0x102 or 0x103 or 0x106 or 0x107 => InputManager.OnChar(),
             // WM_LBUTTONDOWN, WM_LBUTTONDBLCLK / WM_LBUTTONUP
             0x201 or 0x203 => InputManager.OnKeyDown(Keys.LButton),
             0x202 => InputManager.OnKeyUp(Keys.LButton),

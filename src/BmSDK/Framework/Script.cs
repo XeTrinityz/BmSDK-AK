@@ -42,7 +42,8 @@ public abstract class Script
 
     /// <summary>
     /// Called every time a key or mouse button is pressed, whether or not the key is swallowed
-    /// (see <see cref="Keyboard"/>).
+    /// (see <see cref="Keyboard"/>). Delivered from the engine tick, so it fires while the game is
+    /// paused or in a cutscene too.
     /// </summary>
     public virtual void OnKeyDown(Keys key) { }
 
