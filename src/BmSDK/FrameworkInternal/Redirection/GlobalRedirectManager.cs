@@ -156,6 +156,9 @@ internal sealed class GlobalRedirectManager(BindingFlags genericRedirSearchFlags
         // Execute detour
         var result = redirInfo.Invoker.Invoke(obj: null, arguments: args);
 
+        // Hand ref/out arguments back to the caller
+        stackPtr->WriteBackParams(redirInfo.GetParamTypes(funcObj), args, funcObj.IsStatic ? 0 : 1);
+
         // Marshal result back (if non-void)
         if (result != null && redirMethod.ReturnType != typeof(void))
         {

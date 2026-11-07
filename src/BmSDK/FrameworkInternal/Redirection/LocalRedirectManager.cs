@@ -181,6 +181,9 @@ internal sealed class LocalRedirectManager(BindingFlags genericRedirSearchFlags)
         // Execute detour
         var result = localRedirInfo.Invoker.Invoke(obj: localRedirInfo.Component, arguments: args);
 
+        // Hand ref/out arguments back to the caller
+        stackPtr->WriteBackParams(localRedirInfo.ParamTypes, args, 0);
+
         // Marshal result back (if non-void)
         if (result != null && redirFunc.ReturnType != typeof(void))
         {

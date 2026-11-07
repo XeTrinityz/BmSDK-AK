@@ -139,6 +139,18 @@ internal sealed record RedirectCall(
             paramsSize
         );
 
+        // Out parameters live with the caller, not in the frame's locals (see FFrame.OutParms): pass
+        // their current values in, and hand the function's results back to the caller afterwards.
+        var layout = TargetFunc.GetParamLayout();
+        foreach (ref readonly var param in layout.AsSpan())
+        {
+            if (param.IsOut)
+            {
+                var addr = stackPtr->ParamAddress(param);
+                Buffer.MemoryCopy(addr.ToPointer(), argsPtr + param.Offset, param.Size, param.Size);
+            }
+        }
+
         // Call the actual target function and not an override
         GameFunctions.ProcessEvent(
             TargetObj.Ptr,
@@ -146,6 +158,15 @@ internal sealed record RedirectCall(
             (IntPtr)argsPtr,
             IntPtr.Zero
         );
+
+        foreach (ref readonly var param in layout.AsSpan())
+        {
+            if (param.IsOut)
+            {
+                var addr = stackPtr->ParamAddress(param);
+                Buffer.MemoryCopy(argsPtr + param.Offset, addr.ToPointer(), param.Size, param.Size);
+            }
+        }
 
         // If there is a return value, pass it through
         TargetFunc.ResolveReturn();

@@ -39,15 +39,25 @@ public partial class Function
     internal int RedirectGeneration = -1;
     internal bool MayRedirect;
 
+    /// <summary>One parameter's place in a call frame (see <see cref="FFrame"/>).</summary>
+    internal readonly record struct ParamLayout(IntPtr Property, int Offset, int Size, bool IsOut);
+
     // Cached parameter layout for redirects (see FFrame.ParamsToManaged and RedirectCall.RunOriginal).
-    internal int[]? ParamOffsets;
+    internal ParamLayout[]? Params;
     internal int ParamsBytes = -1;
     internal bool ReturnResolved;
     internal int ReturnOffset;
     internal int ReturnSize;
 
-    internal int[] GetParamOffsets() =>
-        ParamOffsets ??= EnumerateParams().Select(p => (int)p.Offset).ToArray();
+    internal ParamLayout[] GetParamLayout() =>
+        Params ??= EnumerateParams()
+            .Select(p => new ParamLayout(
+                p.Ptr,
+                p.Offset,
+                p.ElementSize * Math.Max(p.ArrayDim, 1),
+                p.PropertyFlags.HasFlag(Property.EPropertyFlags.CPF_OutParm)
+            ))
+            .ToArray();
 
     internal int GetParamsBytes() =>
         ParamsBytes >= 0 ? ParamsBytes : ParamsBytes = EnumerateParams().Sum(p => p.ElementSize);
