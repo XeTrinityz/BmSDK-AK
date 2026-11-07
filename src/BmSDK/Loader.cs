@@ -111,13 +111,16 @@ internal static class Loader
     // the guard is a plain try/catch rather than a captured lambda.
     private static unsafe void ProcessInternalDetour(IntPtr self, IntPtr Stack, IntPtr Result)
     {
+        // Kept outside the try so a native fault inside the game's own function body can be named below.
+        string? funcName = null;
+        GameObject? selfObj = null;
         try
         {
             IntPtr selfPtr = self;
             FFrame* stackPtr = (FFrame*)Stack.ToPointer();
-            var selfObj = MarshalUtil.ToManaged<GameObject>(&selfPtr);
+            selfObj = MarshalUtil.ToManaged<GameObject>(&selfPtr);
             var funcObj = MarshalUtil.ToManaged<Function>(&stackPtr->Node);
-            var funcName = funcObj.CachedPath ?? Classify(funcObj);
+            funcName = funcObj.CachedPath ?? Classify(funcObj);
 
             switch (funcObj.LifecycleKind)
             {
@@ -183,6 +186,19 @@ internal static class Loader
         }
         catch (Exception ex)
         {
+            // A hardware fault in the game's code surfaces here as an SEHException with no clue where it was: name
+            // the UnrealScript function that was running and the object it ran on, which is usually enough to find it.
+            string where = "?";
+            try
+            {
+                where = (funcName ?? "?") + " on " + (selfObj != null ? selfObj.GetPathName() : "?");
+            }
+            catch
+            {
+                // Naming the object must never hide the original failure.
+            }
+
+            Debug.LogError("ProcessInternal failed while the game ran " + where);
             Abort(ex);
         }
     }
