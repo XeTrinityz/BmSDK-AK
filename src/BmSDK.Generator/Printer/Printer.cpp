@@ -245,7 +245,9 @@ void Printer::PrintClass(const ClassInfo& _class, ostream& out)
         Printer::Indent(out) << "protected " << _class.ManagedName << "(nint ptr)";
         if (_class.Name == "Object")
         {
-            out << " { Ptr = ptr; }" << endl;
+            // Only script code gets here, by making an object itself. The wrapper is registered so
+            // it is marked invalid when the game destroys the object.
+            out << " { Ptr = ptr; BmSDK.Framework.MarshalUtil.RegisterConstructed(this); }" << endl;
         }
         else
         {

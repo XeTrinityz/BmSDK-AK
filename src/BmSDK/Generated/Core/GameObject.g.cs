@@ -31,7 +31,7 @@ public partial class GameObject : BmSDK.IGameObject
     /// <summary>
     /// Constructs a new wrapper instance from the given object pointer.
     /// </summary>
-    protected GameObject(nint ptr) { Ptr = ptr; }
+    protected GameObject(nint ptr) { Ptr = ptr; BmSDK.Framework.MarshalUtil.RegisterConstructed(this); }
 
     /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
     public void AttachScriptComponent<TComponent>(TComponent component)

@@ -17,6 +17,12 @@ public static unsafe class MarshalUtil
 
     private static readonly Dictionary<IntPtr, GameObject> s_managedObjects = [];
 
+    /// <summary>
+    /// Wrappers a script made with <c>new</c> for an object the game had already handed a wrapper
+    /// out for, kept so they are marked invalid along with it.
+    /// </summary>
+    private static readonly Dictionary<IntPtr, List<GameObject>> s_twinWrappers = [];
+
     // The game creates and destroys objects on its loading threads as the city streams in, so the
     // wrapper tables and FindObjectsCache are shared with the main thread. Nothing inside this lock
     // calls into the game, so it can't deadlock against the engine's own locks.
@@ -226,6 +232,39 @@ public static unsafe class MarshalUtil
         }
     }
 
+    /// <summary>
+    /// Registers the wrapper of an object a script made itself, with <c>new</c> or by spawning an
+    /// actor. Without this the wrapper is never found when the game destroys the object, so its
+    /// <see cref="GameObject.IsValid"/> stays true forever and the next call on it reads freed memory.
+    /// </summary>
+    internal static void RegisterConstructed(GameObject obj)
+    {
+        if (obj.Ptr == IntPtr.Zero)
+        {
+            return;
+        }
+
+        lock (WrapperLock)
+        {
+            // Making the object can run game code that asks for its wrapper before the constructor
+            // gets here, like a redirect on an actor's PostBeginPlay. That wrapper stays the
+            // object's own, and this one is remembered beside it.
+            if (s_managedObjects.TryGetValue(obj.Ptr, out var existing) && existing != obj)
+            {
+                if (!s_twinWrappers.TryGetValue(obj.Ptr, out var twins))
+                {
+                    s_twinWrappers[obj.Ptr] = twins = [];
+                }
+
+                twins.Add(obj);
+                return;
+            }
+
+            s_managedObjects[obj.Ptr] = obj;
+            FindObjectsCache.Register(obj);
+        }
+    }
+
     private static GameObject GetOrCreateWrapperLocked(IntPtr objPtr)
     {
         // Get cached object wrapper
@@ -424,6 +463,7 @@ public static unsafe class MarshalUtil
     internal static void DestroyManagedWrapper(IntPtr objPtr)
     {
         GameObject? obj;
+        List<GameObject>? twins;
         lock (WrapperLock)
         {
             if (s_pendingEarly.Count > 0)
@@ -431,10 +471,21 @@ public static unsafe class MarshalUtil
                 s_pendingEarly.Remove(objPtr);
             }
 
-            if (!s_managedObjects.TryGetValue(objPtr, out obj))
+            s_twinWrappers.Remove(objPtr, out twins);
+            s_managedObjects.TryGetValue(objPtr, out obj);
+        }
+
+        if (twins != null)
+        {
+            foreach (var twin in twins)
             {
-                return;
+                twin.Ptr = IntPtr.Zero;
             }
+        }
+
+        if (obj == null)
+        {
+            return;
         }
 
         // Script components run mod code, so they're detached outside the lock, while the wrapper is
