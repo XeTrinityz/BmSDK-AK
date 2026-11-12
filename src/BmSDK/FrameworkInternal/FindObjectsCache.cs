@@ -27,11 +27,30 @@ internal static class FindObjectsCache
     public static IEnumerable<T> FindObjects<T>()
         where T : GameObject
     {
-        foreach (var bucket in BucketsFor(typeof(T)))
+        List<GameObject>[] buckets;
+        lock (MarshalUtil.WrapperLock)
         {
-            for (var i = 0; i < bucket.Count; i++)
+            buckets = BucketsFor(typeof(T));
+        }
+
+        // Loading threads add and remove entries while this runs, so each read takes the lock. The
+        // lock isn't held across the yield, so the caller's own code never runs inside it.
+        foreach (var bucket in buckets)
+        {
+            for (var i = 0; ; i++)
             {
-                yield return (T)bucket[i];
+                GameObject obj;
+                lock (MarshalUtil.WrapperLock)
+                {
+                    if (i >= bucket.Count)
+                    {
+                        break;
+                    }
+
+                    obj = bucket[i];
+                }
+
+                yield return (T)obj;
             }
         }
     }
@@ -62,6 +81,7 @@ internal static class FindObjectsCache
         return buckets;
     }
 
+    // Register and Unregister are only called with MarshalUtil.WrapperLock held.
     public static void Register(GameObject obj)
     {
         // Omit CDOs, invalid objects from type cache

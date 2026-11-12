@@ -17,6 +17,11 @@ public static unsafe class MarshalUtil
 
     private static readonly Dictionary<IntPtr, GameObject> s_managedObjects = [];
 
+    // The game creates and destroys objects on its loading threads as the city streams in, so the
+    // wrapper tables and FindObjectsCache are shared with the main thread. Nothing inside this lock
+    // calls into the game, so it can't deadlock against the engine's own locks.
+    internal static readonly System.Threading.Lock WrapperLock = new();
+
     /// <summary>Classes already reported as unknown, so each is logged once rather than per object.</summary>
     private static readonly HashSet<string> s_unknownClassesLogged = [];
 
@@ -215,6 +220,14 @@ public static unsafe class MarshalUtil
     /// <returns>Managed wrapper of unmanaged pointer</returns>
     internal static GameObject GetOrCreateWrapper(IntPtr objPtr)
     {
+        lock (WrapperLock)
+        {
+            return GetOrCreateWrapperLocked(objPtr);
+        }
+    }
+
+    private static GameObject GetOrCreateWrapperLocked(IntPtr objPtr)
+    {
         // Get cached object wrapper
         if (s_managedObjects.TryGetValue(objPtr, out var existingObj))
         {
@@ -410,32 +423,43 @@ public static unsafe class MarshalUtil
 
     internal static void DestroyManagedWrapper(IntPtr objPtr)
     {
-        if (s_pendingEarly.Count > 0)
+        GameObject? obj;
+        lock (WrapperLock)
         {
-            s_pendingEarly.Remove(objPtr);
-        }
-
-        if (s_managedObjects.TryGetValue(objPtr, out var obj))
-        {
-            FindObjectsCache.Unregister(obj);
-
-            // Detach all script components
-            if (obj.HasScriptComponents)
+            if (s_pendingEarly.Count > 0)
             {
-                obj.DetachAllScriptComponents();
+                s_pendingEarly.Remove(objPtr);
             }
 
-            // A class is going away: its address may be reused by another class later.
-            if (obj is Class)
+            if (!s_managedObjects.TryGetValue(objPtr, out obj))
             {
-                s_wrapperTypes.Remove(objPtr);
+                return;
             }
-
-            // Mark managed wrapper as invalid
-            obj.Ptr = IntPtr.Zero;
-
-            // Remove managed wrapper from storage
-            s_managedObjects.Remove(objPtr);
         }
+
+        // Script components run mod code, so they're detached outside the lock, while the wrapper is
+        // still registered as before.
+        if (obj.HasScriptComponents)
+        {
+            obj.DetachAllScriptComponents();
+        }
+
+        lock (WrapperLock)
+        {
+            if (s_managedObjects.TryGetValue(objPtr, out var current) && current == obj)
+            {
+                s_managedObjects.Remove(objPtr);
+                FindObjectsCache.Unregister(obj);
+
+                // A class is going away: its address may be reused by another class later.
+                if (obj is Class)
+                {
+                    s_wrapperTypes.Remove(objPtr);
+                }
+            }
+        }
+
+        // Mark managed wrapper as invalid
+        obj.Ptr = IntPtr.Zero;
     }
 }
