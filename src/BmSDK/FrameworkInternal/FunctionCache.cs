@@ -28,7 +28,14 @@ internal static class FunctionCache
     // override a function differently, so every call site forgets what it resolved.
     private static int s_generation;
 
-    public static void ClassDestroyed() => s_generation++;
+    public static void ClassDestroyed()
+    {
+        s_generation++;
+        lock (s_declared)
+        {
+            s_declared.Clear();
+        }
+    }
 
     public static Function Get(ref Function? slot, string path)
     {
@@ -87,35 +94,64 @@ internal static class FunctionCache
         return resolved;
     }
 
+    // The functions each class declares itself, by name, built once per class from raw memory: no
+    // wrappers are made, and a class's properties are walked past once rather than for every call site.
+    private static readonly Dictionary<IntPtr, Dictionary<long, IntPtr>> s_declared = [];
+    private static IntPtr s_functionClass;
+
+    private const int FieldNext = 84;
+    private const int StructChildren = 100;
+
     // Walks the object's class chain for the closest function of the same name, stopping at the class
     // that declares it. States are left out, so the answer only depends on the class and can be cached.
     // The game's own FindFunction can't be used: it reads a state frame at a fixed place in the object
     // before it checks whether to skip states, and on this build most objects have a script field there.
     private static unsafe Function Resolve(Function declared, GameObject self)
     {
-        var name = *(FName*)(declared.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer();
+        var name = *(long*)(declared.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer();
         var owner = *(IntPtr*)(declared.Ptr + GameDefine.MemberOffsets.Object__Outer).ToPointer();
 
-        for (var cls = self.Class as Struct; cls is { IsValid: true }; cls = cls.SuperStruct)
+        var cls = *(IntPtr*)(self.Ptr + GameDefine.MemberOffsets.Object__Class).ToPointer();
+        for (; cls != IntPtr.Zero && cls != owner; cls = *(IntPtr*)(cls + GameDefine.MemberOffsets.Struct__SuperStruct).ToPointer())
         {
-            if (cls.Ptr == owner)
+            IntPtr found;
+            lock (s_declared)
             {
-                return declared;
+                found = DeclaredBy(cls).GetValueOrDefault(name);
             }
 
-            foreach (var field in cls.EnumerateFields())
+            if (found != IntPtr.Zero && found != declared.Ptr)
             {
-                if (field is Function func && func.Ptr != declared.Ptr)
-                {
-                    var funcName = *(FName*)(func.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer();
-                    if (funcName.Index == name.Index && funcName.Number == name.Number)
-                    {
-                        return func;
-                    }
-                }
+                return MarshalUtil.GetOrCreateWrapper(found) as Function ?? declared;
             }
         }
 
         return declared;
+    }
+
+    // Callers hold the s_declared lock.
+    private static unsafe Dictionary<long, IntPtr> DeclaredBy(IntPtr cls)
+    {
+        if (s_declared.TryGetValue(cls, out var table))
+        {
+            return table;
+        }
+
+        if (s_functionClass == IntPtr.Zero)
+        {
+            s_functionClass = Function.StaticClass().Ptr;
+        }
+
+        table = [];
+        for (var field = *(IntPtr*)(cls + StructChildren).ToPointer(); field != IntPtr.Zero; field = *(IntPtr*)(field + FieldNext).ToPointer())
+        {
+            if (*(IntPtr*)(field + GameDefine.MemberOffsets.Object__Class).ToPointer() == s_functionClass)
+            {
+                table[*(long*)(field + GameDefine.MemberOffsets.Object__Name).ToPointer()] = field;
+            }
+        }
+
+        s_declared[cls] = table;
+        return table;
     }
 }
