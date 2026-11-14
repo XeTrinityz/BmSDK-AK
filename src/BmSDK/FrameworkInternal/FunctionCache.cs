@@ -87,16 +87,35 @@ internal static class FunctionCache
         return resolved;
     }
 
-    // The class chain only (Global = 1): the object's current state can't be part of a cached answer.
+    // Walks the object's class chain for the closest function of the same name, stopping at the class
+    // that declares it. States are left out, so the answer only depends on the class and can be cached.
+    // The game's own FindFunction can't be used: it reads a state frame at a fixed place in the object
+    // before it checks whether to skip states, and on this build most objects have a script field there.
     private static unsafe Function Resolve(Function declared, GameObject self)
     {
         var name = *(FName*)(declared.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer();
-        var found = GameFunctions.FindFunction(self.Ptr, name, 1);
-        if (found == IntPtr.Zero || found == declared.Ptr)
+        var owner = *(IntPtr*)(declared.Ptr + GameDefine.MemberOffsets.Object__Outer).ToPointer();
+
+        for (var cls = self.Class as Struct; cls is { IsValid: true }; cls = cls.SuperStruct)
         {
-            return declared;
+            if (cls.Ptr == owner)
+            {
+                return declared;
+            }
+
+            foreach (var field in cls.EnumerateFields())
+            {
+                if (field is Function func && func.Ptr != declared.Ptr)
+                {
+                    var funcName = *(FName*)(func.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer();
+                    if (funcName.Index == name.Index && funcName.Number == name.Number)
+                    {
+                        return func;
+                    }
+                }
+            }
         }
 
-        return MarshalUtil.GetOrCreateWrapper(found) as Function ?? declared;
+        return declared;
     }
 }
