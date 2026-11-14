@@ -78,31 +78,31 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<DownloadableContentManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnRefreshComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRefreshComplete;
     /// <summary>
     /// Function: OnRefreshComplete
     /// </summary>
     public unsafe virtual void OnRefreshComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRefreshComplete, "Engine.DownloadableContentManager.OnRefreshComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRefreshComplete, "Engine.DownloadableContentManager.OnRefreshComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddPackagesToFullyLoad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPackagesToFullyLoad;
     /// <summary>
     /// Function: AddPackagesToFullyLoad
     /// </summary>
-    public unsafe virtual void AddPackagesToFullyLoad(BmSDK.FString Filename)
+    public unsafe virtual void AddPackagesToFullyLoad(BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPackagesToFullyLoad, "Engine.DownloadableContentManager.AddPackagesToFullyLoad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPackagesToFullyLoad, "Engine.DownloadableContentManager.AddPackagesToFullyLoad", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -111,45 +111,46 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshDLCEnumComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDLCEnumComplete;
     /// <summary>
     /// Function: RefreshDLCEnumComplete
     /// </summary>
     public unsafe virtual void RefreshDLCEnumComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLCEnumComplete, "Engine.DownloadableContentManager.RefreshDLCEnumComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshDLCEnumComplete, "Engine.DownloadableContentManager.RefreshDLCEnumComplete", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDLC;
     /// <summary>
     /// Function: RefreshDLC
     /// </summary>
     public unsafe virtual void RefreshDLC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLC, "Engine.DownloadableContentManager.RefreshDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshDLC, "Engine.DownloadableContentManager.RefreshDLC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetListOfBadBundles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetListOfBadBundles;
     /// <summary>
     /// Function: GetListOfBadBundles
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FString> GetListOfBadBundles(bool bCorrupt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetListOfBadBundles, "Engine.DownloadableContentManager.GetListOfBadBundles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetListOfBadBundles, "Engine.DownloadableContentManager.GetListOfBadBundles", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCorrupt, paramsPtr + 0);
@@ -157,70 +158,70 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.FString>>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AreAnyBundlesInvalidUser;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AreAnyBundlesInvalidUser;
     /// <summary>
     /// Function: AreAnyBundlesInvalidUser
     /// </summary>
     public unsafe virtual bool AreAnyBundlesInvalidUser()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreAnyBundlesInvalidUser, "Engine.DownloadableContentManager.AreAnyBundlesInvalidUser");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AreAnyBundlesInvalidUser, "Engine.DownloadableContentManager.AreAnyBundlesInvalidUser", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AreAnyBundlesCorrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AreAnyBundlesCorrupt;
     /// <summary>
     /// Function: AreAnyBundlesCorrupt
     /// </summary>
     public unsafe virtual bool AreAnyBundlesCorrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreAnyBundlesCorrupt, "Engine.DownloadableContentManager.AreAnyBundlesCorrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AreAnyBundlesCorrupt, "Engine.DownloadableContentManager.AreAnyBundlesCorrupt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearALLDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearALLDLC;
     /// <summary>
     /// Function: ClearALLDLC
     /// </summary>
     public unsafe virtual void ClearALLDLC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearALLDLC, "Engine.DownloadableContentManager.ClearALLDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearALLDLC, "Engine.DownloadableContentManager.ClearALLDLC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.DownloadableContentManager.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.DownloadableContentManager.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InstallNonPackageFiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallNonPackageFiles;
     /// <summary>
     /// Function: InstallNonPackageFiles
     /// </summary>
     public unsafe virtual void InstallNonPackageFiles(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallNonPackageFiles, "Engine.DownloadableContentManager.InstallNonPackageFiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstallNonPackageFiles, "Engine.DownloadableContentManager.InstallNonPackageFiles", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -235,14 +236,14 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_InstallPackages;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallPackages;
     /// <summary>
     /// Function: InstallPackages
     /// </summary>
     public unsafe virtual void InstallPackages(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallPackages, "Engine.DownloadableContentManager.InstallPackages");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstallPackages, "Engine.DownloadableContentManager.InstallPackages", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -257,14 +258,14 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateObjectLists;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateObjectLists;
     /// <summary>
     /// Function: UpdateObjectLists
     /// </summary>
     public unsafe virtual void UpdateObjectLists()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateObjectLists, "Engine.DownloadableContentManager.UpdateObjectLists");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateObjectLists, "Engine.DownloadableContentManager.UpdateObjectLists", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -278,17 +279,17 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_MarkPerObjectConfigPendingKill;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MarkPerObjectConfigPendingKill;
     /// <summary>
     /// Function: MarkPerObjectConfigPendingKill
     /// </summary>
-    public unsafe virtual void MarkPerObjectConfigPendingKill(BmSDK.FString Section)
+    public unsafe virtual void MarkPerObjectConfigPendingKill(BmSDK.FStringArg Section)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MarkPerObjectConfigPendingKill, "Engine.DownloadableContentManager.MarkPerObjectConfigPendingKill");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MarkPerObjectConfigPendingKill, "Engine.DownloadableContentManager.MarkPerObjectConfigPendingKill", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Section, paramsPtr + 0);
+        Section.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -297,20 +298,21 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddSectionToObjectList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSectionToObjectList;
     /// <summary>
     /// Function: AddSectionToObjectList
     /// </summary>
-    public unsafe virtual void AddSectionToObjectList(BmSDK.FString Section)
+    public unsafe virtual void AddSectionToObjectList(BmSDK.FStringArg Section)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSectionToObjectList, "Engine.DownloadableContentManager.AddSectionToObjectList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSectionToObjectList, "Engine.DownloadableContentManager.AddSectionToObjectList", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Section, paramsPtr + 0);
+        Section.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -319,17 +321,18 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FlushOpenHandles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushOpenHandles;
     /// <summary>
     /// Function: FlushOpenHandles
     /// </summary>
     public unsafe virtual void FlushOpenHandles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushOpenHandles, "Engine.DownloadableContentManager.FlushOpenHandles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushOpenHandles, "Engine.DownloadableContentManager.FlushOpenHandles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -343,14 +346,14 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetRockDLCCachePath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRockDLCCachePath;
     /// <summary>
     /// Function: GetRockDLCCachePath
     /// </summary>
     public unsafe virtual bool GetRockDLCCachePath(BmSDK.FName BaseName, out BmSDK.FString Path)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRockDLCCachePath, "Engine.DownloadableContentManager.GetRockDLCCachePath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRockDLCCachePath, "Engine.DownloadableContentManager.GetRockDLCCachePath", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BaseName, paramsPtr + 0);
@@ -366,14 +369,14 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_GetDLCNonPackageFilePath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDLCNonPackageFilePath;
     /// <summary>
     /// Function: GetDLCNonPackageFilePath
     /// </summary>
     public unsafe virtual bool GetDLCNonPackageFilePath(BmSDK.FName NonPackageFileName, out BmSDK.FString Path)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDLCNonPackageFilePath, "Engine.DownloadableContentManager.GetDLCNonPackageFilePath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDLCNonPackageFilePath, "Engine.DownloadableContentManager.GetDLCNonPackageFilePath", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NonPackageFileName, paramsPtr + 0);
@@ -389,14 +392,14 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_ClearDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDLC;
     /// <summary>
     /// Function: ClearDLC
     /// </summary>
     public unsafe virtual void ClearDLC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDLC, "Engine.DownloadableContentManager.ClearDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDLC, "Engine.DownloadableContentManager.ClearDLC", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -410,14 +413,14 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_InstallDLCs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallDLCs;
     /// <summary>
     /// Function: InstallDLCs
     /// </summary>
     public unsafe virtual void InstallDLCs(out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineContent> DLCBundles)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallDLCs, "Engine.DownloadableContentManager.InstallDLCs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstallDLCs, "Engine.DownloadableContentManager.InstallDLCs", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -432,14 +435,14 @@ public partial class DownloadableContentManager : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_InstallDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallDLC;
     /// <summary>
     /// Function: InstallDLC
     /// </summary>
     public unsafe virtual bool InstallDLC(out BmSDK.Engine.OnlineSubsystem.FOnlineContent DLCBundle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallDLC, "Engine.DownloadableContentManager.InstallDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstallDLC, "Engine.DownloadableContentManager.InstallDLC", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

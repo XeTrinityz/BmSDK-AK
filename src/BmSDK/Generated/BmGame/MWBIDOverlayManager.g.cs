@@ -78,14 +78,14 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<MWBIDOverlayManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OverlayScreenDataCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverlayScreenDataCallback;
     /// <summary>
     /// Function: OverlayScreenDataCallback
     /// </summary>
     public unsafe virtual void OverlayScreenDataCallback(BmSDK.BmGame.MWBIDDataMessage Data)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverlayScreenDataCallback, "BmGame.MWBIDOverlayManager.OverlayScreenDataCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverlayScreenDataCallback, "BmGame.MWBIDOverlayManager.OverlayScreenDataCallback", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Data, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetNetworkStatus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNetworkStatus;
     /// <summary>
     /// Function: GetNetworkStatus
     /// </summary>
     public unsafe virtual void GetNetworkStatus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNetworkStatus, "BmGame.MWBIDOverlayManager.GetNetworkStatus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNetworkStatus, "BmGame.MWBIDOverlayManager.GetNetworkStatus", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -121,14 +121,14 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsIneligibleAgeDueToFirstParty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsIneligibleAgeDueToFirstParty;
     /// <summary>
     /// Function: IsIneligibleAgeDueToFirstParty
     /// </summary>
     public unsafe virtual bool IsIneligibleAgeDueToFirstParty()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsIneligibleAgeDueToFirstParty, "BmGame.MWBIDOverlayManager.IsIneligibleAgeDueToFirstParty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsIneligibleAgeDueToFirstParty, "BmGame.MWBIDOverlayManager.IsIneligibleAgeDueToFirstParty", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -142,14 +142,14 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetStatus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStatus;
     /// <summary>
     /// Function: GetStatus
     /// </summary>
     public unsafe virtual BmSDK.BmGame.MWBIDOverlayManager.WBIDStatus GetStatus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStatus, "BmGame.MWBIDOverlayManager.GetStatus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStatus, "BmGame.MWBIDOverlayManager.GetStatus", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -163,56 +163,56 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.MWBIDOverlayManager.WBIDStatus>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetRewardsScreenError;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRewardsScreenError;
     /// <summary>
     /// Function: SetRewardsScreenError
     /// </summary>
     public unsafe virtual void SetRewardsScreenError()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRewardsScreenError, "BmGame.MWBIDOverlayManager.SetRewardsScreenError");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRewardsScreenError, "BmGame.MWBIDOverlayManager.SetRewardsScreenError", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateWBIDWidgets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWBIDWidgets;
     /// <summary>
     /// Function: UpdateWBIDWidgets
     /// </summary>
     public unsafe virtual void UpdateWBIDWidgets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateWBIDWidgets, "BmGame.MWBIDOverlayManager.UpdateWBIDWidgets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateWBIDWidgets, "BmGame.MWBIDOverlayManager.UpdateWBIDWidgets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Terminate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Terminate;
     /// <summary>
     /// Function: Terminate
     /// </summary>
     public unsafe virtual void Terminate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Terminate, "BmGame.MWBIDOverlayManager.Terminate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Terminate, "BmGame.MWBIDOverlayManager.Terminate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowNextOverlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowNextOverlay;
     /// <summary>
     /// Function: ShowNextOverlay
     /// </summary>
     public unsafe virtual void ShowNextOverlay(BmSDK.BmGame.MWBIDOverlayManager.E_WBID_Screen_Type Type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowNextOverlay, "BmGame.MWBIDOverlayManager.ShowNextOverlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowNextOverlay, "BmGame.MWBIDOverlayManager.ShowNextOverlay", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 0);
@@ -220,28 +220,28 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DeQueue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeQueue;
     /// <summary>
     /// Function: DeQueue
     /// </summary>
     public unsafe virtual void DeQueue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeQueue, "BmGame.MWBIDOverlayManager.DeQueue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeQueue, "BmGame.MWBIDOverlayManager.DeQueue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Queue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Queue;
     /// <summary>
     /// Function: Queue
     /// </summary>
     public unsafe virtual void Queue(BmSDK.BmGame.MWBIDOverlayManager.E_WBID_Screen_Type Type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Queue, "BmGame.MWBIDOverlayManager.Queue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Queue, "BmGame.MWBIDOverlayManager.Queue", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 0);
@@ -249,14 +249,14 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetEmailFormPreData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEmailFormPreData;
     /// <summary>
     /// Function: SetEmailFormPreData
     /// </summary>
     public unsafe virtual void SetEmailFormPreData(BmSDK.BmGame.MWBIDOverlayManager.FEmailForm_PreData pData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEmailFormPreData, "BmGame.MWBIDOverlayManager.SetEmailFormPreData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEmailFormPreData, "BmGame.MWBIDOverlayManager.SetEmailFormPreData", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pData, paramsPtr + 0);
@@ -264,14 +264,14 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetGenericOverlayInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGenericOverlayInfo;
     /// <summary>
     /// Function: SetGenericOverlayInfo
     /// </summary>
     public unsafe virtual void SetGenericOverlayInfo(BmSDK.BmGame.MWBIDOverlayManager.FGenericOverlay_Data pData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGenericOverlayInfo, "BmGame.MWBIDOverlayManager.SetGenericOverlayInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGenericOverlayInfo, "BmGame.MWBIDOverlayManager.SetGenericOverlayInfo", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pData, paramsPtr + 0);
@@ -279,14 +279,14 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetNetworkStatus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNetworkStatus;
     /// <summary>
     /// Function: SetNetworkStatus
     /// </summary>
     public unsafe virtual void SetNetworkStatus(BmSDK.BmGame.MWBIDOverlayManager.FNetworkStatus_Data pData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNetworkStatus, "BmGame.MWBIDOverlayManager.SetNetworkStatus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNetworkStatus, "BmGame.MWBIDOverlayManager.SetNetworkStatus", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pData, paramsPtr + 0);
@@ -294,28 +294,28 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DeRegisterDataCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeRegisterDataCallback;
     /// <summary>
     /// Function: DeRegisterDataCallback
     /// </summary>
     public unsafe virtual void DeRegisterDataCallback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeRegisterDataCallback, "BmGame.MWBIDOverlayManager.DeRegisterDataCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeRegisterDataCallback, "BmGame.MWBIDOverlayManager.DeRegisterDataCallback", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterDataCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterDataCallback;
     /// <summary>
     /// Function: RegisterDataCallback
     /// </summary>
     public unsafe virtual void RegisterDataCallback(System.IntPtr cb)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterDataCallback, "BmGame.MWBIDOverlayManager.RegisterDataCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterDataCallback, "BmGame.MWBIDOverlayManager.RegisterDataCallback", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(cb, paramsPtr + 0);
@@ -323,42 +323,42 @@ public partial class MWBIDOverlayManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Destroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroy;
     /// <summary>
     /// Function: Destroy
     /// </summary>
     public unsafe virtual void Destroy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroy, "BmGame.MWBIDOverlayManager.Destroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroy, "BmGame.MWBIDOverlayManager.Destroy", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.MWBIDOverlayManager.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.MWBIDOverlayManager.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DataCallbackFnc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DataCallbackFnc;
     /// <summary>
     /// Function: DataCallbackFnc
     /// </summary>
     public unsafe virtual void DataCallbackFnc(BmSDK.BmGame.MWBIDDataMessage Data)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DataCallbackFnc, "BmGame.MWBIDOverlayManager.DataCallbackFnc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DataCallbackFnc, "BmGame.MWBIDOverlayManager.DataCallbackFnc", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Data, paramsPtr + 0);

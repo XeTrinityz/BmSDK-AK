@@ -78,14 +78,14 @@ public partial class RPawnPlayerJoker : BmSDK.BmGame.RPawnPlayerJokerBase, BmSDK
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerJoker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayShotReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayShotReaction;
     /// <summary>
     /// Function: PlayShotReaction
     /// </summary>
     public unsafe override void PlayShotReaction(System.Numerics.Vector3 HitDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayShotReaction, "BmScript.RPawnPlayerJoker.PlayShotReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayShotReaction, "BmScript.RPawnPlayerJoker.PlayShotReaction", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitDir, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RPawnPlayerJoker : BmSDK.BmGame.RPawnPlayerJokerBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_ShotBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShotBy;
     /// <summary>
     /// Function: ShotBy
     /// </summary>
     public unsafe override void ShotBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo, System.Numerics.Vector3 HitLocation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotBy, "BmScript.RPawnPlayerJoker.ShotBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShotBy, "BmScript.RPawnPlayerJoker.ShotBy", this);
         byte* paramsPtr = stackalloc byte[280];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgInfo, paramsPtr + 0);
@@ -109,28 +109,28 @@ public partial class RPawnPlayerJoker : BmSDK.BmGame.RPawnPlayerJokerBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AddDefaultInventory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDefaultInventory;
     /// <summary>
     /// Function: AddDefaultInventory
     /// </summary>
     public unsafe override void AddDefaultInventory()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDefaultInventory, "BmScript.RPawnPlayerJoker.AddDefaultInventory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDefaultInventory, "BmScript.RPawnPlayerJoker.AddDefaultInventory", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginBatmanSurprise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginBatmanSurprise;
     /// <summary>
     /// Function: BeginBatmanSurprise
     /// </summary>
     public unsafe override void BeginBatmanSurprise(BmSDK.Engine.Volume Vol)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginBatmanSurprise, "BmScript.RPawnPlayerJoker.BeginBatmanSurprise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginBatmanSurprise, "BmScript.RPawnPlayerJoker.BeginBatmanSurprise", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vol, paramsPtr + 0);
@@ -138,56 +138,56 @@ public partial class RPawnPlayerJoker : BmSDK.BmGame.RPawnPlayerJokerBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_EnableGunCursor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableGunCursor;
     /// <summary>
     /// Function: EnableGunCursor
     /// </summary>
     public unsafe virtual void EnableGunCursor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableGunCursor, "BmScript.RPawnPlayerJoker.EnableGunCursor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableGunCursor, "BmScript.RPawnPlayerJoker.EnableGunCursor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugGiveAllGadgets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugGiveAllGadgets;
     /// <summary>
     /// Function: DebugGiveAllGadgets
     /// </summary>
     public unsafe override void DebugGiveAllGadgets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugGiveAllGadgets, "BmScript.RPawnPlayerJoker.DebugGiveAllGadgets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugGiveAllGadgets, "BmScript.RPawnPlayerJoker.DebugGiveAllGadgets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGunOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGunOut;
     /// <summary>
     /// Function: GetGunOut
     /// </summary>
     public unsafe virtual void GetGunOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGunOut, "BmScript.RPawnPlayerJoker.GetGunOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGunOut, "BmScript.RPawnPlayerJoker.GetGunOut", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPawnPlayerJoker.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RPawnPlayerJoker.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -195,56 +195,56 @@ public partial class RPawnPlayerJoker : BmSDK.BmGame.RPawnPlayerJokerBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetJokerSickVector;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJokerSickVector;
     /// <summary>
     /// Function: GetJokerSickVector
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FLinearColor GetJokerSickVector()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerSickVector, "BmScript.RPawnPlayerJoker.GetJokerSickVector");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJokerSickVector, "BmScript.RPawnPlayerJoker.GetJokerSickVector", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FLinearColor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateSickMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSickMaterials;
     /// <summary>
     /// Function: UpdateSickMaterials
     /// </summary>
     public unsafe virtual void UpdateSickMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSickMaterials, "BmScript.RPawnPlayerJoker.UpdateSickMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSickMaterials, "BmScript.RPawnPlayerJoker.UpdateSickMaterials", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowScreenShakeOnShot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowScreenShakeOnShot;
     /// <summary>
     /// Function: AllowScreenShakeOnShot
     /// </summary>
     public unsafe override bool AllowScreenShakeOnShot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowScreenShakeOnShot, "BmScript.RPawnPlayerJoker.AllowScreenShakeOnShot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowScreenShakeOnShot, "BmScript.RPawnPlayerJoker.AllowScreenShakeOnShot", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnPlayerJoker.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RPawnPlayerJoker.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

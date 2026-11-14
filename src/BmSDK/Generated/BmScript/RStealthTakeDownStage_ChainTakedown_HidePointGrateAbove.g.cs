@@ -78,14 +78,14 @@ public partial class RStealthTakeDownStage_ChainTakedown_HidePointGrateAbove : B
         where TComponent : class, Framework.IScriptComponent<RStealthTakeDownStage_ChainTakedown_HidePointGrateAbove>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GotoStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoStage;
     /// <summary>
     /// Function: GotoStage
     /// </summary>
     public unsafe override void GotoStage(BmSDK.BmGame.RGameInfo.EStealthTakeDownStages NextStageClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoStage, "BmScript.RStealthTakeDownStage_ChainTakedown_HidePointGrateAbove.GotoStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotoStage, "BmScript.RStealthTakeDownStage_ChainTakedown_HidePointGrateAbove.GotoStage", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextStageClass, paramsPtr + 0);

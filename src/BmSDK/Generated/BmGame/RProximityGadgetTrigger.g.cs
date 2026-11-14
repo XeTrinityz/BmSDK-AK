@@ -78,14 +78,14 @@ public partial class RProximityGadgetTrigger : BmSDK.BmGame.RThugTrap, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RProximityGadgetTrigger>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetCylinderSize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCylinderSize;
     /// <summary>
     /// Function: SetCylinderSize
     /// </summary>
     public unsafe virtual void SetCylinderSize(float Radius = default, float Height = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCylinderSize, "BmGame.RProximityGadgetTrigger.SetCylinderSize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCylinderSize, "BmGame.RProximityGadgetTrigger.SetCylinderSize", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Radius, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RProximityGadgetTrigger : BmSDK.BmGame.RThugTrap, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_CheckExplode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckExplode;
     /// <summary>
     /// Function: CheckExplode
     /// </summary>
     public unsafe virtual void CheckExplode(BmSDK.BmGame.RPawnVillain VillainTouched)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckExplode, "BmGame.RProximityGadgetTrigger.CheckExplode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckExplode, "BmGame.RProximityGadgetTrigger.CheckExplode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainTouched, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RProximityGadgetTrigger : BmSDK.BmGame.RThugTrap, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_ProximityTriggerInvulnerable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProximityTriggerInvulnerable;
     /// <summary>
     /// Function: ProximityTriggerInvulnerable
     /// </summary>
     public unsafe virtual bool ProximityTriggerInvulnerable(BmSDK.BmGame.RPawnVillain VillainTouched)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProximityTriggerInvulnerable, "BmGame.RProximityGadgetTrigger.ProximityTriggerInvulnerable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProximityTriggerInvulnerable, "BmGame.RProximityGadgetTrigger.ProximityTriggerInvulnerable", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainTouched, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RProximityGadgetTrigger : BmSDK.BmGame.RThugTrap, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RProximityGadgetTrigger.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RProximityGadgetTrigger.Touch", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);

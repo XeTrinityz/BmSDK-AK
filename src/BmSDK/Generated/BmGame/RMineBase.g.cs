@@ -73,14 +73,14 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RMineBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetDangerEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDangerEffects;
     /// <summary>
     /// Function: SetDangerEffects
     /// </summary>
     public unsafe virtual void SetDangerEffects(float NewSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDangerEffects, "BmGame.RMineBase.SetDangerEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDangerEffects, "BmGame.RMineBase.SetDangerEffects", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSpeed, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDangerEffectsNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDangerEffectsNative;
     /// <summary>
     /// Function: SetDangerEffectsNative
     /// </summary>
     public unsafe virtual void SetDangerEffectsNative(float NewSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDangerEffectsNative, "BmGame.RMineBase.SetDangerEffectsNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDangerEffectsNative, "BmGame.RMineBase.SetDangerEffectsNative", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSpeed, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetPrimedEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrimedEffects;
     /// <summary>
     /// Function: SetPrimedEffects
     /// </summary>
     public unsafe virtual void SetPrimedEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPrimedEffects, "BmGame.RMineBase.SetPrimedEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPrimedEffects, "BmGame.RMineBase.SetPrimedEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -131,14 +131,14 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisarmedEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisarmedEffects;
     /// <summary>
     /// Function: SetDisarmedEffects
     /// </summary>
     public unsafe virtual void SetDisarmedEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisarmedEffects, "BmGame.RMineBase.SetDisarmedEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisarmedEffects, "BmGame.RMineBase.SetDisarmedEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -152,56 +152,56 @@ public partial class RMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Disarm;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Disarm;
     /// <summary>
     /// Function: Disarm
     /// </summary>
     public unsafe virtual void Disarm()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Disarm, "BmGame.RMineBase.Disarm");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Disarm, "BmGame.RMineBase.Disarm", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ExplodeFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExplodeFX;
     /// <summary>
     /// Function: ExplodeFX
     /// </summary>
     public unsafe virtual void ExplodeFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeFX, "BmGame.RMineBase.ExplodeFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExplodeFX, "BmGame.RMineBase.ExplodeFX", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoDamage;
     /// <summary>
     /// Function: DoDamage
     /// </summary>
     public unsafe virtual void DoDamage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoDamage, "BmGame.RMineBase.DoDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoDamage, "BmGame.RMineBase.DoDamage", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BlowUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlowUp;
     /// <summary>
     /// Function: BlowUp
     /// </summary>
     public unsafe virtual void BlowUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlowUp, "BmGame.RMineBase.BlowUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlowUp, "BmGame.RMineBase.BlowUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

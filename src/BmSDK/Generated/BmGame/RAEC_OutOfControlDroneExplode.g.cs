@@ -78,56 +78,56 @@ public partial class RAEC_OutOfControlDroneExplode : BmSDK.BmGame.RAlertEventCoo
         where TComponent : class, Framework.IScriptComponent<RAEC_OutOfControlDroneExplode>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_OutOfControlDroneExplode.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_OutOfControlDroneExplode.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DiscoverControllerDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DiscoverControllerDown;
     /// <summary>
     /// Function: DiscoverControllerDown
     /// </summary>
     public unsafe virtual void DiscoverControllerDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DiscoverControllerDown, "BmGame.RAEC_OutOfControlDroneExplode.DiscoverControllerDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DiscoverControllerDown, "BmGame.RAEC_OutOfControlDroneExplode.DiscoverControllerDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GlanceEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GlanceEnd;
     /// <summary>
     /// Function: GlanceEnd
     /// </summary>
     public unsafe virtual void GlanceEnd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GlanceEnd, "BmGame.RAEC_OutOfControlDroneExplode.GlanceEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GlanceEnd, "BmGame.RAEC_OutOfControlDroneExplode.GlanceEnd", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartExplodeReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartExplodeReaction;
     /// <summary>
     /// Function: StartExplodeReaction
     /// </summary>
     public unsafe virtual void StartExplodeReaction(BmSDK.BmGame.RPawnVillain NewDroneConPawn, System.Numerics.Vector3 ExplodeLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartExplodeReaction, "BmGame.RAEC_OutOfControlDroneExplode.StartExplodeReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartExplodeReaction, "BmGame.RAEC_OutOfControlDroneExplode.StartExplodeReaction", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDroneConPawn, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RAEC_OutOfControlDroneExplode : BmSDK.BmGame.RAlertEventCoo
         return;
     }
 
-    private static BmSDK.Function __fn_FinishTopLevelAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishTopLevelAEC;
     /// <summary>
     /// Function: FinishTopLevelAEC
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_OutOfControlDroneExplode.FinishTopLevelAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_OutOfControlDroneExplode.FinishTopLevelAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StolenCon, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RAEC_OutOfControlDroneExplode : BmSDK.BmGame.RAlertEventCoo
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_OutOfControlDroneExplode.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_OutOfControlDroneExplode.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RAEC_OutOfControlDroneExplode : BmSDK.BmGame.RAlertEventCoo
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveGroupChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveGroupChild;
     /// <summary>
     /// Function: OnRemoveGroupChild
     /// </summary>
     public unsafe override void OnRemoveGroupChild(BmSDK.BmGame.RAlertEventCoordinatorBase RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_OutOfControlDroneExplode.OnRemoveGroupChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_OutOfControlDroneExplode.OnRemoveGroupChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class RAEC_OutOfControlDroneExplode : BmSDK.BmGame.RAlertEventCoo
         return;
     }
 
-    private static BmSDK.Function __fn_GetBarkPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBarkPriority;
     /// <summary>
     /// Function: GetBarkPriority
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.RAEC_OutOfControlDroneExplode.GetBarkPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBarkPriority, "BmGame.RAEC_OutOfControlDroneExplode.GetBarkPriority", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RSilentPredatorCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_LookAround;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookAround;
     /// <summary>
     /// Function: LookAround
     /// </summary>
     public unsafe virtual void LookAround(float DeltaTime, BmSDK.Rotator LookInput)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookAround, "BmGame.RSilentPredatorCamera.LookAround");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookAround, "BmGame.RSilentPredatorCamera.LookAround", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -101,28 +101,28 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_CancelCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCamera;
     /// <summary>
     /// Function: CancelCamera
     /// </summary>
     public unsafe virtual void CancelCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCamera, "BmGame.RSilentPredatorCamera.CancelCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelCamera, "BmGame.RSilentPredatorCamera.CancelCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OutOfPredatorView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OutOfPredatorView;
     /// <summary>
     /// Function: OutOfPredatorView
     /// </summary>
     public unsafe virtual bool OutOfPredatorView()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutOfPredatorView, "BmGame.RSilentPredatorCamera.OutOfPredatorView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OutOfPredatorView, "BmGame.RSilentPredatorCamera.OutOfPredatorView", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -136,14 +136,14 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateHeartBeat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHeartBeat;
     /// <summary>
     /// Function: UpdateHeartBeat
     /// </summary>
     public unsafe virtual void UpdateHeartBeat(float DeltaTime, int FearLevel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateHeartBeat, "BmGame.RSilentPredatorCamera.UpdateHeartBeat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateHeartBeat, "BmGame.RSilentPredatorCamera.UpdateHeartBeat", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RSilentPredatorCamera.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RSilentPredatorCamera.Tick", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -167,28 +167,28 @@ public partial class RSilentPredatorCamera : BmSDK.BmGame.RCameraActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe virtual void Stop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "BmGame.RSilentPredatorCamera.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "BmGame.RSilentPredatorCamera.Stop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RSilentPredatorCamera.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RSilentPredatorCamera.Initialise", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);

@@ -73,14 +73,14 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AnimNode>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ReplayAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplayAnim;
     /// <summary>
     /// Function: ReplayAnim
     /// </summary>
     public unsafe virtual void ReplayAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplayAnim, "Engine.AnimNode.ReplayAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReplayAnim, "Engine.AnimNode.ReplayAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAnim;
     /// <summary>
     /// Function: StopAnim
     /// </summary>
     public unsafe virtual void StopAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAnim, "Engine.AnimNode.StopAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAnim, "Engine.AnimNode.StopAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -115,14 +115,14 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PlayAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnim;
     /// <summary>
     /// Function: PlayAnim
     /// </summary>
     public unsafe virtual void PlayAnim(bool bLoop = default, float Rate = default, float StartTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAnim, "Engine.AnimNode.PlayAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAnim, "Engine.AnimNode.PlayAnim", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bLoop, paramsPtr + 0);
@@ -139,14 +139,14 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FindAnimNode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimNode;
     /// <summary>
     /// Function: FindAnimNode
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode FindAnimNode(BmSDK.FName InNodeName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindAnimNode, "Engine.AnimNode.FindAnimNode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindAnimNode, "Engine.AnimNode.FindAnimNode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InNodeName, paramsPtr + 0);
@@ -161,42 +161,42 @@ public partial class AnimNode : BmSDK.Engine.AnimObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimNode>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnCeaseRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCeaseRelevant;
     /// <summary>
     /// Function: OnCeaseRelevant
     /// </summary>
     public unsafe virtual void OnCeaseRelevant()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCeaseRelevant, "Engine.AnimNode.OnCeaseRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCeaseRelevant, "Engine.AnimNode.OnCeaseRelevant", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBecomeRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBecomeRelevant;
     /// <summary>
     /// Function: OnBecomeRelevant
     /// </summary>
     public unsafe virtual void OnBecomeRelevant()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBecomeRelevant, "Engine.AnimNode.OnBecomeRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBecomeRelevant, "Engine.AnimNode.OnBecomeRelevant", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnInit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnInit;
     /// <summary>
     /// Function: OnInit
     /// </summary>
     public unsafe virtual void OnInit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnInit, "Engine.AnimNode.OnInit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnInit, "Engine.AnimNode.OnInit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

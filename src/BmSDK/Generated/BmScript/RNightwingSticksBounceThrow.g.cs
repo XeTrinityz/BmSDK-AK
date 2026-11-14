@@ -78,14 +78,14 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         where TComponent : class, Framework.IScriptComponent<RNightwingSticksBounceThrow>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetPrimedPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrimedPose;
     /// <summary>
     /// Function: GetPrimedPose
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmScript.RNightwingSticksBounceThrow.GetPrimedPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrimedPose, "BmScript.RNightwingSticksBounceThrow.GetPrimedPose", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StanceIsCrouched);
@@ -106,28 +106,28 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_DrawAimingHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawAimingHUD;
     /// <summary>
     /// Function: DrawAimingHUD
     /// </summary>
     public unsafe override void DrawAimingHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawAimingHUD, "BmScript.RNightwingSticksBounceThrow.DrawAimingHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawAimingHUD, "BmScript.RNightwingSticksBounceThrow.DrawAimingHUD", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoAffectCombo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoAffectCombo;
     /// <summary>
     /// Function: DoAffectCombo
     /// </summary>
     public unsafe override void DoAffectCombo(BmSDK.BmGame.RPlayerControllerCombat PC, BmSDK.BmGame.RBatarangProjectile Projectile, BmSDK.Engine.Actor ThisTarget, bool bDodged)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoAffectCombo, "BmScript.RNightwingSticksBounceThrow.DoAffectCombo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoAffectCombo, "BmScript.RNightwingSticksBounceThrow.DoAffectCombo", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnProjectile;
     /// <summary>
     /// Function: SpawnProjectile
     /// </summary>
     public unsafe override BmSDK.BmGame.RBatarangProjectile SpawnProjectile(BmSDK.Class SpawnProjectileClass, System.Numerics.Vector3 LaunchLoc, bool Managed = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnProjectile, "BmScript.RNightwingSticksBounceThrow.SpawnProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnProjectile, "BmScript.RNightwingSticksBounceThrow.SpawnProjectile", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnProjectileClass, paramsPtr + 0);
@@ -155,14 +155,14 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBatarangProjectile>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_GetInitialDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInitialDirection;
     /// <summary>
     /// Function: GetInitialDirection
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetInitialDirection(System.Numerics.Vector3 StartLocation, float BatarangSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInitialDirection, "BmScript.RNightwingSticksBounceThrow.GetInitialDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInitialDirection, "BmScript.RNightwingSticksBounceThrow.GetInitialDirection", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -171,56 +171,56 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_DrawDebugTrajectory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebugTrajectory;
     /// <summary>
     /// Function: DrawDebugTrajectory
     /// </summary>
     public unsafe virtual void DrawDebugTrajectory()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebugTrajectory, "BmScript.RNightwingSticksBounceThrow.DrawDebugTrajectory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawDebugTrajectory, "BmScript.RNightwingSticksBounceThrow.DrawDebugTrajectory", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanThrowGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanThrowGadget;
     /// <summary>
     /// Function: CanThrowGadget
     /// </summary>
     public unsafe override bool CanThrowGadget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanThrowGadget, "BmScript.RNightwingSticksBounceThrow.CanThrowGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanThrowGadget, "BmScript.RNightwingSticksBounceThrow.CanThrowGadget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetThrowStartLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThrowStartLocation;
     /// <summary>
     /// Function: GetThrowStartLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetThrowStartLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThrowStartLocation, "BmScript.RNightwingSticksBounceThrow.GetThrowStartLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThrowStartLocation, "BmScript.RNightwingSticksBounceThrow.GetThrowStartLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddAutoTargetExtraTargets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAutoTargetExtraTargets;
     /// <summary>
     /// Function: AddAutoTargetExtraTargets
     /// </summary>
     public unsafe virtual void AddAutoTargetExtraTargets(BmSDK.BmGame.RPawnVillain HitVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAutoTargetExtraTargets, "BmScript.RNightwingSticksBounceThrow.AddAutoTargetExtraTargets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAutoTargetExtraTargets, "BmScript.RNightwingSticksBounceThrow.AddAutoTargetExtraTargets", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitVillain, paramsPtr + 0);
@@ -228,56 +228,56 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AddAutoTargetsToBouncePoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAutoTargetsToBouncePoints;
     /// <summary>
     /// Function: AddAutoTargetsToBouncePoints
     /// </summary>
     public unsafe virtual void AddAutoTargetsToBouncePoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAutoTargetsToBouncePoints, "BmScript.RNightwingSticksBounceThrow.AddAutoTargetsToBouncePoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAutoTargetsToBouncePoints, "BmScript.RNightwingSticksBounceThrow.AddAutoTargetsToBouncePoints", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddInFrontBouncePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddInFrontBouncePoint;
     /// <summary>
     /// Function: AddInFrontBouncePoint
     /// </summary>
     public unsafe virtual void AddInFrontBouncePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddInFrontBouncePoint, "BmScript.RNightwingSticksBounceThrow.AddInFrontBouncePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddInFrontBouncePoint, "BmScript.RNightwingSticksBounceThrow.AddInFrontBouncePoint", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTarget;
     /// <summary>
     /// Function: UpdateTarget
     /// </summary>
     public unsafe override void UpdateTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTarget, "BmScript.RNightwingSticksBounceThrow.UpdateTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTarget, "BmScript.RNightwingSticksBounceThrow.UpdateTarget", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateBouncePointsAge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBouncePointsAge;
     /// <summary>
     /// Function: UpdateBouncePointsAge
     /// </summary>
     public unsafe virtual void UpdateBouncePointsAge(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBouncePointsAge, "BmScript.RNightwingSticksBounceThrow.UpdateBouncePointsAge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateBouncePointsAge, "BmScript.RNightwingSticksBounceThrow.UpdateBouncePointsAge", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -285,28 +285,28 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToBelt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToBelt;
     /// <summary>
     /// Function: AttachToBelt
     /// </summary>
     public unsafe override void AttachToBelt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToBelt, "BmScript.RNightwingSticksBounceThrow.AttachToBelt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToBelt, "BmScript.RNightwingSticksBounceThrow.AttachToBelt", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToHand;
     /// <summary>
     /// Function: AttachToHand
     /// </summary>
     public unsafe override void AttachToHand(BmSDK.FName CustomBone = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToHand, "BmScript.RNightwingSticksBounceThrow.AttachToHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToHand, "BmScript.RNightwingSticksBounceThrow.AttachToHand", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomBone, paramsPtr + 0);
@@ -314,14 +314,14 @@ public partial class RNightwingSticksBounceThrow : BmSDK.BmGame.RBatarang, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_FireGadgetCombat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireGadgetCombat;
     /// <summary>
     /// Function: FireGadgetCombat
     /// </summary>
     public unsafe override bool FireGadgetCombat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireGadgetCombat, "BmScript.RNightwingSticksBounceThrow.FireGadgetCombat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireGadgetCombat, "BmScript.RNightwingSticksBounceThrow.FireGadgetCombat", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

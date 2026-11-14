@@ -78,28 +78,28 @@ public partial class RBMBehaviour_Flee_PredHostage : BmSDK.BmGame.RBMBehaviour_A
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_Flee_PredHostage>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FailedToFlee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FailedToFlee;
     /// <summary>
     /// Function: FailedToFlee
     /// </summary>
     public unsafe virtual void FailedToFlee()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FailedToFlee, "BmGame.RBMBehaviour_Flee_PredHostage.FailedToFlee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FailedToFlee, "BmGame.RBMBehaviour_Flee_PredHostage.FailedToFlee", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFailed;
     /// <summary>
     /// Function: NotifyFailed
     /// </summary>
     public unsafe override void NotifyFailed(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFailed, "BmGame.RBMBehaviour_Flee_PredHostage.NotifyFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFailed, "BmGame.RBMBehaviour_Flee_PredHostage.NotifyFailed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RBMBehaviour_Flee_PredHostage : BmSDK.BmGame.RBMBehaviour_A
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RBMBehaviour_Flee_PredHostage.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RBMBehaviour_Flee_PredHostage.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -122,56 +122,56 @@ public partial class RBMBehaviour_Flee_PredHostage : BmSDK.BmGame.RBMBehaviour_A
         return;
     }
 
-    private static BmSDK.Function __fn_SetFleePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFleePoint;
     /// <summary>
     /// Function: SetFleePoint
     /// </summary>
     public unsafe virtual bool SetFleePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFleePoint, "BmGame.RBMBehaviour_Flee_PredHostage.SetFleePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFleePoint, "BmGame.RBMBehaviour_Flee_PredHostage.SetFleePoint", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetupMultiNavHandleWrapper;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupMultiNavHandleWrapper;
     /// <summary>
     /// Function: SetupMultiNavHandleWrapper
     /// </summary>
     public unsafe virtual void SetupMultiNavHandleWrapper()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupMultiNavHandleWrapper, "BmGame.RBMBehaviour_Flee_PredHostage.SetupMultiNavHandleWrapper");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupMultiNavHandleWrapper, "BmGame.RBMBehaviour_Flee_PredHostage.SetupMultiNavHandleWrapper", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_Flee_PredHostage.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_Flee_PredHostage.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_Flee_PredHostage.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMBehaviour_Flee_PredHostage.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

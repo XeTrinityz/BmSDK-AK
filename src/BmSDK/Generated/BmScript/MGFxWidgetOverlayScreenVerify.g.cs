@@ -78,70 +78,70 @@ public partial class MGFxWidgetOverlayScreenVerify : BmSDK.BmScript.MGFxWidgetOv
         where TComponent : class, Framework.IScriptComponent<MGFxWidgetOverlayScreenVerify>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NavDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavDown;
     /// <summary>
     /// Function: NavDown
     /// </summary>
     public unsafe override void NavDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavDown, "BmScript.MGFxWidgetOverlayScreenVerify.NavDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavDown, "BmScript.MGFxWidgetOverlayScreenVerify.NavDown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NavUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavUp;
     /// <summary>
     /// Function: NavUp
     /// </summary>
     public unsafe override void NavUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavUp, "BmScript.MGFxWidgetOverlayScreenVerify.NavUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavUp, "BmScript.MGFxWidgetOverlayScreenVerify.NavUp", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NavRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavRight;
     /// <summary>
     /// Function: NavRight
     /// </summary>
     public unsafe override void NavRight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavRight, "BmScript.MGFxWidgetOverlayScreenVerify.NavRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavRight, "BmScript.MGFxWidgetOverlayScreenVerify.NavRight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NavLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavLeft;
     /// <summary>
     /// Function: NavLeft
     /// </summary>
     public unsafe override void NavLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavLeft, "BmScript.MGFxWidgetOverlayScreenVerify.NavLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavLeft, "BmScript.MGFxWidgetOverlayScreenVerify.NavLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnMouseRollOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnMouseRollOut;
     /// <summary>
     /// Function: OnMouseRollOut
     /// </summary>
     public unsafe override void OnMouseRollOut(int btnIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMouseRollOut, "BmScript.MGFxWidgetOverlayScreenVerify.OnMouseRollOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnMouseRollOut, "BmScript.MGFxWidgetOverlayScreenVerify.OnMouseRollOut", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(btnIdx, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class MGFxWidgetOverlayScreenVerify : BmSDK.BmScript.MGFxWidgetOv
         return;
     }
 
-    private static BmSDK.Function __fn_OnMouseRollOver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnMouseRollOver;
     /// <summary>
     /// Function: OnMouseRollOver
     /// </summary>
     public unsafe override void OnMouseRollOver(int btnIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMouseRollOver, "BmScript.MGFxWidgetOverlayScreenVerify.OnMouseRollOver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnMouseRollOver, "BmScript.MGFxWidgetOverlayScreenVerify.OnMouseRollOver", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(btnIdx, paramsPtr + 0);
@@ -164,42 +164,42 @@ public partial class MGFxWidgetOverlayScreenVerify : BmSDK.BmScript.MGFxWidgetOv
         return;
     }
 
-    private static BmSDK.Function __fn_OnPressB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPressB;
     /// <summary>
     /// Function: OnPressB
     /// </summary>
     public unsafe override void OnPressB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPressB, "BmScript.MGFxWidgetOverlayScreenVerify.OnPressB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPressB, "BmScript.MGFxWidgetOverlayScreenVerify.OnPressB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnPressA;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPressA;
     /// <summary>
     /// Function: OnPressA
     /// </summary>
     public unsafe override void OnPressA()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPressA, "BmScript.MGFxWidgetOverlayScreenVerify.OnPressA");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPressA, "BmScript.MGFxWidgetOverlayScreenVerify.OnPressA", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetFocussed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFocussed;
     /// <summary>
     /// Function: SetFocussed
     /// </summary>
     public unsafe virtual void SetFocussed(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFocussed, "BmScript.MGFxWidgetOverlayScreenVerify.SetFocussed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFocussed, "BmScript.MGFxWidgetOverlayScreenVerify.SetFocussed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -207,14 +207,14 @@ public partial class MGFxWidgetOverlayScreenVerify : BmSDK.BmScript.MGFxWidgetOv
         return;
     }
 
-    private static BmSDK.Function __fn_SetButtonID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetButtonID;
     /// <summary>
     /// Function: SetButtonID
     /// </summary>
     public unsafe virtual void SetButtonID(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetButtonID, "BmScript.MGFxWidgetOverlayScreenVerify.SetButtonID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetButtonID, "BmScript.MGFxWidgetOverlayScreenVerify.SetButtonID", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -222,30 +222,31 @@ public partial class MGFxWidgetOverlayScreenVerify : BmSDK.BmScript.MGFxWidgetOv
         return;
     }
 
-    private static BmSDK.Function __fn_SetButtonLabel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetButtonLabel;
     /// <summary>
     /// Function: SetButtonLabel
     /// </summary>
-    public unsafe virtual void SetButtonLabel(int Id, BmSDK.FString Label)
+    public unsafe virtual void SetButtonLabel(int Id, BmSDK.FStringArg Label)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetButtonLabel, "BmScript.MGFxWidgetOverlayScreenVerify.SetButtonLabel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetButtonLabel, "BmScript.MGFxWidgetOverlayScreenVerify.SetButtonLabel", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 4);
+        Label.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_WidgetInitialized;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WidgetInitialized;
     /// <summary>
     /// Function: WidgetInitialized
     /// </summary>
     public unsafe override bool WidgetInitialized(BmSDK.FName WidgetName, BmSDK.FName WidgetPath, BmSDK.GFxUI.GFxObject Widget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WidgetInitialized, "BmScript.MGFxWidgetOverlayScreenVerify.WidgetInitialized");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WidgetInitialized, "BmScript.MGFxWidgetOverlayScreenVerify.WidgetInitialized", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WidgetName, paramsPtr + 0);
@@ -255,14 +256,14 @@ public partial class MGFxWidgetOverlayScreenVerify : BmSDK.BmScript.MGFxWidgetOv
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmScript.MGFxWidgetOverlayScreenVerify.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmScript.MGFxWidgetOverlayScreenVerify.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

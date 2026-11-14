@@ -78,14 +78,14 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
         where TComponent : class, Framework.IScriptComponent<RBatmobileAbseilHookBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CantPull;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CantPull;
     /// <summary>
     /// Function: CantPull
     /// </summary>
     public unsafe virtual void CantPull(BmSDK.BmGame.RPlayerController PC, BmSDK.BmGame.RBatmobileWinch Winch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantPull, "BmGame.RBatmobileAbseilHookBase.CantPull");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CantPull, "BmGame.RBatmobileAbseilHookBase.CantPull", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -94,42 +94,42 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
         return;
     }
 
-    private static BmSDK.Function __fn_SetMaxLengthToDefault;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaxLengthToDefault;
     /// <summary>
     /// Function: SetMaxLengthToDefault
     /// </summary>
     public unsafe virtual void SetMaxLengthToDefault()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaxLengthToDefault, "BmGame.RBatmobileAbseilHookBase.SetMaxLengthToDefault");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaxLengthToDefault, "BmGame.RBatmobileAbseilHookBase.SetMaxLengthToDefault", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMaxLengthToCurrentLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaxLengthToCurrentLength;
     /// <summary>
     /// Function: SetMaxLengthToCurrentLength
     /// </summary>
     public unsafe virtual void SetMaxLengthToCurrentLength()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaxLengthToCurrentLength, "BmGame.RBatmobileAbseilHookBase.SetMaxLengthToCurrentLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaxLengthToCurrentLength, "BmGame.RBatmobileAbseilHookBase.SetMaxLengthToCurrentLength", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WinchReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WinchReleased;
     /// <summary>
     /// Function: WinchReleased
     /// </summary>
     public unsafe virtual void WinchReleased(BmSDK.BmGame.RBatmobileWinch Winch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchReleased, "BmGame.RBatmobileAbseilHookBase.WinchReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinchReleased, "BmGame.RBatmobileAbseilHookBase.WinchReleased", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Winch, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
         return;
     }
 
-    private static BmSDK.Function __fn_WinchAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WinchAttached;
     /// <summary>
     /// Function: WinchAttached
     /// </summary>
     public unsafe virtual void WinchAttached(BmSDK.BmGame.RBatmobileWinch Winch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchAttached, "BmGame.RBatmobileAbseilHookBase.WinchAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinchAttached, "BmGame.RBatmobileAbseilHookBase.WinchAttached", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Winch, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
         return;
     }
 
-    private static BmSDK.Function __fn_GetHarpoonTriggerTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonTriggerTargetLocation;
     /// <summary>
     /// Function: GetHarpoonTriggerTargetLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetHarpoonTriggerTargetLocation(System.Numerics.Vector3 PlayerLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHarpoonTriggerTargetLocation, "BmGame.RBatmobileAbseilHookBase.GetHarpoonTriggerTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHarpoonTriggerTargetLocation, "BmGame.RBatmobileAbseilHookBase.GetHarpoonTriggerTargetLocation", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerLocation, paramsPtr + 0);
@@ -167,14 +167,14 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsBatmobileInAngleLimits;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatmobileInAngleLimits;
     /// <summary>
     /// Function: IsBatmobileInAngleLimits
     /// </summary>
     public unsafe virtual bool IsBatmobileInAngleLimits(BmSDK.Engine.Actor Batmobile, BmSDK.BmGame.RBatmobileWinch Winch, out System.Numerics.Vector3 LimitVec)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatmobileInAngleLimits, "BmGame.RBatmobileAbseilHookBase.IsBatmobileInAngleLimits");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBatmobileInAngleLimits, "BmGame.RBatmobileAbseilHookBase.IsBatmobileInAngleLimits", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Batmobile, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class RBatmobileAbseilHookBase : BmSDK.BmGame.RHarpoonTriggerBase
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBatmobileAbseilHookBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RBatmobileAbseilHookBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

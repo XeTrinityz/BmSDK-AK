@@ -78,28 +78,28 @@ public partial class CameraShake : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<CameraShake>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetLocOscillationMagnitude;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocOscillationMagnitude;
     /// <summary>
     /// Function: GetLocOscillationMagnitude
     /// </summary>
     public unsafe virtual float GetLocOscillationMagnitude()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocOscillationMagnitude, "Engine.CameraShake.GetLocOscillationMagnitude");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocOscillationMagnitude, "Engine.CameraShake.GetLocOscillationMagnitude", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRotOscillationMagnitude;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotOscillationMagnitude;
     /// <summary>
     /// Function: GetRotOscillationMagnitude
     /// </summary>
     public unsafe virtual float GetRotOscillationMagnitude()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRotOscillationMagnitude, "Engine.CameraShake.GetRotOscillationMagnitude");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRotOscillationMagnitude, "Engine.CameraShake.GetRotOscillationMagnitude", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

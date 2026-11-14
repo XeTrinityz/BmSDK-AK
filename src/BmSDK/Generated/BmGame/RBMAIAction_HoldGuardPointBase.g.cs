@@ -73,56 +73,56 @@ public partial class RBMAIAction_HoldGuardPointBase : BmSDK.BmGame.RBMAIAction, 
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_HoldGuardPointBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetWatchAim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWatchAim;
     /// <summary>
     /// Function: SetWatchAim
     /// </summary>
     public unsafe virtual void SetWatchAim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWatchAim, "BmGame.RBMAIAction_HoldGuardPointBase.SetWatchAim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWatchAim, "BmGame.RBMAIAction_HoldGuardPointBase.SetWatchAim", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNewWatchActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNewWatchActor;
     /// <summary>
     /// Function: GetNewWatchActor
     /// </summary>
     public unsafe virtual void GetNewWatchActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNewWatchActor, "BmGame.RBMAIAction_HoldGuardPointBase.GetNewWatchActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNewWatchActor, "BmGame.RBMAIAction_HoldGuardPointBase.GetNewWatchActor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_HoldGuardPointBase.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMAIAction_HoldGuardPointBase.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetGuardPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGuardPoint;
     /// <summary>
     /// Function: SetGuardPoint
     /// </summary>
     public unsafe virtual void SetGuardPoint(BmSDK.BmGame.RGuardPoint NewGuardPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGuardPoint, "BmGame.RBMAIAction_HoldGuardPointBase.SetGuardPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGuardPoint, "BmGame.RBMAIAction_HoldGuardPointBase.SetGuardPoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGuardPoint, paramsPtr + 0);

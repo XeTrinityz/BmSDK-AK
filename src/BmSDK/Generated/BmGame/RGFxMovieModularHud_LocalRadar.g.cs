@@ -78,14 +78,14 @@ public partial class RGFxMovieModularHud_LocalRadar : BmSDK.BmGame.RGFxMovieModu
         where TComponent : class, Framework.IScriptComponent<RGFxMovieModularHud_LocalRadar>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ManualAdvanceTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ManualAdvanceTick;
     /// <summary>
     /// Function: ManualAdvanceTick
     /// </summary>
     public unsafe override void ManualAdvanceTick(float DeltaT)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManualAdvanceTick, "BmGame.RGFxMovieModularHud_LocalRadar.ManualAdvanceTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ManualAdvanceTick, "BmGame.RGFxMovieModularHud_LocalRadar.ManualAdvanceTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaT, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RGFxMovieModularHud_LocalRadar : BmSDK.BmGame.RGFxMovieModu
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterAsManualAdvanceMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterAsManualAdvanceMovie;
     /// <summary>
     /// Function: RegisterAsManualAdvanceMovie
     /// </summary>
     public unsafe override void RegisterAsManualAdvanceMovie(bool do_register)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterAsManualAdvanceMovie, "BmGame.RGFxMovieModularHud_LocalRadar.RegisterAsManualAdvanceMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterAsManualAdvanceMovie, "BmGame.RGFxMovieModularHud_LocalRadar.RegisterAsManualAdvanceMovie", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(do_register, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RGFxMovieModularHud_LocalRadar : BmSDK.BmGame.RGFxMovieModu
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieModularHud_LocalRadar.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxMovieModularHud_LocalRadar.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

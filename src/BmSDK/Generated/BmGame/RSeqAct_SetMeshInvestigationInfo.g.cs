@@ -91,14 +91,14 @@ public partial class RSeqAct_SetMeshInvestigationInfo : BmSDK.Engine.SequenceAct
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Set;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Set;
     /// <summary>
     /// Function: Set
     /// </summary>
     public unsafe virtual void Set()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Set, "BmGame.RSeqAct_SetMeshInvestigationInfo.Set");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Set, "BmGame.RSeqAct_SetMeshInvestigationInfo.Set", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

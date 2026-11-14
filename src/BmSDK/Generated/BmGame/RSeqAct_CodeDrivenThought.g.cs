@@ -91,42 +91,42 @@ public partial class RSeqAct_CodeDrivenThought : BmSDK.Engine.SequenceAction, Bm
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerConnectedSpeechAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerConnectedSpeechAction;
     /// <summary>
     /// Function: TriggerConnectedSpeechAction
     /// </summary>
     public unsafe virtual void TriggerConnectedSpeechAction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerConnectedSpeechAction, "BmGame.RSeqAct_CodeDrivenThought.TriggerConnectedSpeechAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerConnectedSpeechAction, "BmGame.RSeqAct_CodeDrivenThought.TriggerConnectedSpeechAction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckInputs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckInputs;
     /// <summary>
     /// Function: CheckInputs
     /// </summary>
     public unsafe virtual void CheckInputs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckInputs, "BmGame.RSeqAct_CodeDrivenThought.CheckInputs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckInputs, "BmGame.RSeqAct_CodeDrivenThought.CheckInputs", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_CodeDrivenThought.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_CodeDrivenThought.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

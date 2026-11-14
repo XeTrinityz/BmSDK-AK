@@ -73,14 +73,14 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         where TComponent : class, Framework.IScriptComponent<MPawnPlayerHarleyQuinnBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SpawnComboTakeDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnComboTakeDown;
     /// <summary>
     /// Function: SpawnComboTakeDown
     /// </summary>
     public unsafe override void SpawnComboTakeDown(BmSDK.BmGame.RPawnVillain TargetPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnComboTakeDown, "BmGame.MPawnPlayerHarleyQuinnBase.SpawnComboTakeDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnComboTakeDown, "BmGame.MPawnPlayerHarleyQuinnBase.SpawnComboTakeDown", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPawn, paramsPtr + 0);
@@ -88,84 +88,84 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_CanDoSecondaryGroupCombatMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoSecondaryGroupCombatMove;
     /// <summary>
     /// Function: CanDoSecondaryGroupCombatMove
     /// </summary>
     public unsafe override bool CanDoSecondaryGroupCombatMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoSecondaryGroupCombatMove, "BmGame.MPawnPlayerHarleyQuinnBase.CanDoSecondaryGroupCombatMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoSecondaryGroupCombatMove, "BmGame.MPawnPlayerHarleyQuinnBase.CanDoSecondaryGroupCombatMove", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayReminderConversation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayReminderConversation;
     /// <summary>
     /// Function: PlayReminderConversation
     /// </summary>
     public unsafe virtual void PlayReminderConversation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayReminderConversation, "BmGame.MPawnPlayerHarleyQuinnBase.PlayReminderConversation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayReminderConversation, "BmGame.MPawnPlayerHarleyQuinnBase.PlayReminderConversation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnEquipBaseBallBat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnEquipBaseBallBat;
     /// <summary>
     /// Function: UnEquipBaseBallBat
     /// </summary>
     public unsafe virtual void UnEquipBaseBallBat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnEquipBaseBallBat, "BmGame.MPawnPlayerHarleyQuinnBase.UnEquipBaseBallBat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnEquipBaseBallBat, "BmGame.MPawnPlayerHarleyQuinnBase.UnEquipBaseBallBat", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HoldOnBaseBallBat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HoldOnBaseBallBat;
     /// <summary>
     /// Function: HoldOnBaseBallBat
     /// </summary>
     public unsafe virtual void HoldOnBaseBallBat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HoldOnBaseBallBat, "BmGame.MPawnPlayerHarleyQuinnBase.HoldOnBaseBallBat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HoldOnBaseBallBat, "BmGame.MPawnPlayerHarleyQuinnBase.HoldOnBaseBallBat", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyTutorialCompleted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyTutorialCompleted;
     /// <summary>
     /// Function: NotifyTutorialCompleted
     /// </summary>
     public unsafe virtual void NotifyTutorialCompleted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyTutorialCompleted, "BmGame.MPawnPlayerHarleyQuinnBase.NotifyTutorialCompleted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyTutorialCompleted, "BmGame.MPawnPlayerHarleyQuinnBase.NotifyTutorialCompleted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SelectDeathTip_HQ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectDeathTip_HQ;
     /// <summary>
     /// Function: SelectDeathTip_HQ
     /// </summary>
     public unsafe virtual BmSDK.FString SelectDeathTip_HQ(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectDeathTip_HQ, "BmGame.MPawnPlayerHarleyQuinnBase.SelectDeathTip_HQ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectDeathTip_HQ, "BmGame.MPawnPlayerHarleyQuinnBase.SelectDeathTip_HQ", this);
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -175,14 +175,14 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_SelectDeathMovie_HQ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectDeathMovie_HQ;
     /// <summary>
     /// Function: SelectDeathMovie_HQ
     /// </summary>
     public unsafe virtual BmSDK.FString SelectDeathMovie_HQ(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectDeathMovie_HQ, "BmGame.MPawnPlayerHarleyQuinnBase.SelectDeathMovie_HQ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectDeathMovie_HQ, "BmGame.MPawnPlayerHarleyQuinnBase.SelectDeathMovie_HQ", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_Died;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Died;
     /// <summary>
     /// Function: Died
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "BmGame.MPawnPlayerHarleyQuinnBase.Died");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Died, "BmGame.MPawnPlayerHarleyQuinnBase.Died", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -209,70 +209,70 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.MPawnPlayerHarleyQuinnBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.MPawnPlayerHarleyQuinnBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnPossessed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnPossessed;
     /// <summary>
     /// Function: UnPossessed
     /// </summary>
     public unsafe override void UnPossessed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnPossessed, "BmGame.MPawnPlayerHarleyQuinnBase.UnPossessed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnPossessed, "BmGame.MPawnPlayerHarleyQuinnBase.UnPossessed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HasBeenSeen_UpdateData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasBeenSeen_UpdateData;
     /// <summary>
     /// Function: HasBeenSeen_UpdateData
     /// </summary>
     public unsafe override void HasBeenSeen_UpdateData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBeenSeen_UpdateData, "BmGame.MPawnPlayerHarleyQuinnBase.HasBeenSeen_UpdateData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasBeenSeen_UpdateData, "BmGame.MPawnPlayerHarleyQuinnBase.HasBeenSeen_UpdateData", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HidePointLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HidePointLeft;
     /// <summary>
     /// Function: HidePointLeft
     /// </summary>
     public unsafe virtual void HidePointLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HidePointLeft, "BmGame.MPawnPlayerHarleyQuinnBase.HidePointLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HidePointLeft, "BmGame.MPawnPlayerHarleyQuinnBase.HidePointLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HidePointEntered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HidePointEntered;
     /// <summary>
     /// Function: HidePointEntered
     /// </summary>
     public unsafe virtual void HidePointEntered(BmSDK.BmGame.RHidePoint TargetHidePoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HidePointEntered, "BmGame.MPawnPlayerHarleyQuinnBase.HidePointEntered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HidePointEntered, "BmGame.MPawnPlayerHarleyQuinnBase.HidePointEntered", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetHidePoint, paramsPtr + 0);
@@ -280,42 +280,42 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_CurrentRoomCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CurrentRoomCallback;
     /// <summary>
     /// Function: CurrentRoomCallback
     /// </summary>
     public unsafe override void CurrentRoomCallback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CurrentRoomCallback, "BmGame.MPawnPlayerHarleyQuinnBase.CurrentRoomCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CurrentRoomCallback, "BmGame.MPawnPlayerHarleyQuinnBase.CurrentRoomCallback", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoCustomVisCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoCustomVisCheck;
     /// <summary>
     /// Function: DoCustomVisCheck
     /// </summary>
     public unsafe override bool DoCustomVisCheck()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoCustomVisCheck, "BmGame.MPawnPlayerHarleyQuinnBase.DoCustomVisCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoCustomVisCheck, "BmGame.MPawnPlayerHarleyQuinnBase.DoCustomVisCheck", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CleanImportantIdleConversations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanImportantIdleConversations;
     /// <summary>
     /// Function: CleanImportantIdleConversations
     /// </summary>
     public unsafe virtual void CleanImportantIdleConversations()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CleanImportantIdleConversations, "BmGame.MPawnPlayerHarleyQuinnBase.CleanImportantIdleConversations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CleanImportantIdleConversations, "BmGame.MPawnPlayerHarleyQuinnBase.CleanImportantIdleConversations", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -329,14 +329,14 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayerThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerThoughts;
     /// <summary>
     /// Function: GetPlayerThoughts
     /// </summary>
     public unsafe override void GetPlayerThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerThoughts, "BmGame.MPawnPlayerHarleyQuinnBase.GetPlayerThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerThoughts, "BmGame.MPawnPlayerHarleyQuinnBase.GetPlayerThoughts", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -351,14 +351,14 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldAutoClimbAfterGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldAutoClimbAfterGrapple;
     /// <summary>
     /// Function: ShouldAutoClimbAfterGrapple
     /// </summary>
     public unsafe virtual bool ShouldAutoClimbAfterGrapple(System.Numerics.Vector3 ApproxClimbLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldAutoClimbAfterGrapple, "BmGame.MPawnPlayerHarleyQuinnBase.ShouldAutoClimbAfterGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldAutoClimbAfterGrapple, "BmGame.MPawnPlayerHarleyQuinnBase.ShouldAutoClimbAfterGrapple", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ApproxClimbLoc, paramsPtr + 0);
@@ -373,28 +373,28 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CheckDetonateTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckDetonateTarget;
     /// <summary>
     /// Function: CheckDetonateTarget
     /// </summary>
     public unsafe virtual void CheckDetonateTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckDetonateTarget, "BmGame.MPawnPlayerHarleyQuinnBase.CheckDetonateTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckDetonateTarget, "BmGame.MPawnPlayerHarleyQuinnBase.CheckDetonateTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateMayhemMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateMayhemMode;
     /// <summary>
     /// Function: ActivateMayhemMode
     /// </summary>
     public unsafe virtual void ActivateMayhemMode(bool val, bool bForce = default, bool bCausedByCineMode = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.ActivateMayhemMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.ActivateMayhemMode", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(val, paramsPtr + 0);
@@ -404,42 +404,42 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerMayhemMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerMayhemMode;
     /// <summary>
     /// Function: TriggerMayhemMode
     /// </summary>
     public unsafe virtual void TriggerMayhemMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.TriggerMayhemMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.TriggerMayhemMode", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanActivateMayhemMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanActivateMayhemMode;
     /// <summary>
     /// Function: CanActivateMayhemMode
     /// </summary>
     public unsafe virtual bool CanActivateMayhemMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanActivateMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.CanActivateMayhemMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanActivateMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.CanActivateMayhemMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NumberPawnInCurrentLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NumberPawnInCurrentLevel;
     /// <summary>
     /// Function: NumberPawnInCurrentLevel
     /// </summary>
     public unsafe virtual int NumberPawnInCurrentLevel(bool OnlyValidCombatant = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NumberPawnInCurrentLevel, "BmGame.MPawnPlayerHarleyQuinnBase.NumberPawnInCurrentLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NumberPawnInCurrentLevel, "BmGame.MPawnPlayerHarleyQuinnBase.NumberPawnInCurrentLevel", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OnlyValidCombatant, paramsPtr + 0);
@@ -447,42 +447,42 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateMayhemMeterHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMayhemMeterHUD;
     /// <summary>
     /// Function: UpdateMayhemMeterHUD
     /// </summary>
     public unsafe virtual void UpdateMayhemMeterHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMayhemMeterHUD, "BmGame.MPawnPlayerHarleyQuinnBase.UpdateMayhemMeterHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMayhemMeterHUD, "BmGame.MPawnPlayerHarleyQuinnBase.UpdateMayhemMeterHUD", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldDeactivateMayhemMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldDeactivateMayhemMode;
     /// <summary>
     /// Function: ShouldDeactivateMayhemMode
     /// </summary>
     public unsafe virtual bool ShouldDeactivateMayhemMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldDeactivateMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.ShouldDeactivateMayhemMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldDeactivateMayhemMode, "BmGame.MPawnPlayerHarleyQuinnBase.ShouldDeactivateMayhemMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetHelpMayhemModeInstructionPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpMayhemModeInstructionPrompt;
     /// <summary>
     /// Function: GetHelpMayhemModeInstructionPrompt
     /// </summary>
     public unsafe virtual void GetHelpMayhemModeInstructionPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpMayhemModeInstructionPrompt, "BmGame.MPawnPlayerHarleyQuinnBase.GetHelpMayhemModeInstructionPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpMayhemModeInstructionPrompt, "BmGame.MPawnPlayerHarleyQuinnBase.GetHelpMayhemModeInstructionPrompt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -491,14 +491,14 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_GetMayhemPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMayhemPrompt;
     /// <summary>
     /// Function: GetMayhemPrompt
     /// </summary>
     public unsafe virtual void GetMayhemPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMayhemPrompt, "BmGame.MPawnPlayerHarleyQuinnBase.GetMayhemPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMayhemPrompt, "BmGame.MPawnPlayerHarleyQuinnBase.GetMayhemPrompt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -507,28 +507,28 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_ForceSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceSpecialMove;
     /// <summary>
     /// Function: ForceSpecialMove
     /// </summary>
     public unsafe virtual bool ForceSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceSpecialMove, "BmGame.MPawnPlayerHarleyQuinnBase.ForceSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceSpecialMove, "BmGame.MPawnPlayerHarleyQuinnBase.ForceSpecialMove", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DamagedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamagedBy;
     /// <summary>
     /// Function: DamagedBy
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult DamagedBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagedBy, "BmGame.MPawnPlayerHarleyQuinnBase.DamagedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamagedBy, "BmGame.MPawnPlayerHarleyQuinnBase.DamagedBy", this);
         byte* paramsPtr = stackalloc byte[266];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgInfo, paramsPtr + 0);
@@ -536,14 +536,14 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 248);
     }
 
-    private static BmSDK.Function __fn_IncMayhemMeter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncMayhemMeter;
     /// <summary>
     /// Function: IncMayhemMeter
     /// </summary>
     public unsafe virtual void IncMayhemMeter(BmSDK.BmGame.MPawnPlayerHarleyQuinnBase.EHarleyMayhemMove MayhemMove, BmSDK.BmGame.RPawnVillain Villain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncMayhemMeter, "BmGame.MPawnPlayerHarleyQuinnBase.IncMayhemMeter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncMayhemMeter, "BmGame.MPawnPlayerHarleyQuinnBase.IncMayhemMeter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MayhemMove, paramsPtr + 0);
@@ -552,56 +552,56 @@ public partial class MPawnPlayerHarleyQuinnBase : BmSDK.BmGame.RPawnPlayerCatwom
         return;
     }
 
-    private static BmSDK.Function __fn_OnModifyMayhemMeter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnModifyMayhemMeter;
     /// <summary>
     /// Function: OnModifyMayhemMeter
     /// </summary>
     public unsafe virtual void OnModifyMayhemMeter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnModifyMayhemMeter, "BmGame.MPawnPlayerHarleyQuinnBase.OnModifyMayhemMeter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnModifyMayhemMeter, "BmGame.MPawnPlayerHarleyQuinnBase.OnModifyMayhemMeter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LoadHealth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadHealth;
     /// <summary>
     /// Function: LoadHealth
     /// </summary>
     public unsafe override void LoadHealth()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadHealth, "BmGame.MPawnPlayerHarleyQuinnBase.LoadHealth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadHealth, "BmGame.MPawnPlayerHarleyQuinnBase.LoadHealth", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitMayhemMeterHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMayhemMeterHUD;
     /// <summary>
     /// Function: InitMayhemMeterHUD
     /// </summary>
     public unsafe virtual void InitMayhemMeterHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitMayhemMeterHUD, "BmGame.MPawnPlayerHarleyQuinnBase.InitMayhemMeterHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitMayhemMeterHUD, "BmGame.MPawnPlayerHarleyQuinnBase.InitMayhemMeterHUD", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowAttracMayhemModeMeter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowAttracMayhemModeMeter;
     /// <summary>
     /// Function: ShowAttracMayhemModeMeter
     /// </summary>
     public unsafe virtual void ShowAttracMayhemModeMeter(bool Enable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowAttracMayhemModeMeter, "BmGame.MPawnPlayerHarleyQuinnBase.ShowAttracMayhemModeMeter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowAttracMayhemModeMeter, "BmGame.MPawnPlayerHarleyQuinnBase.ShowAttracMayhemModeMeter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Enable, paramsPtr + 0);

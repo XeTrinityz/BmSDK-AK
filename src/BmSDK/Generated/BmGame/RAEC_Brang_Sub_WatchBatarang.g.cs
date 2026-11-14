@@ -78,14 +78,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         where TComponent : class, Framework.IScriptComponent<RAEC_Brang_Sub_WatchBatarang>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AdjustWatchPointForFloor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustWatchPointForFloor;
     /// <summary>
     /// Function: AdjustWatchPointForFloor
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AdjustWatchPointForFloor(System.Numerics.Vector3 CurrentPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustWatchPointForFloor, "BmGame.RAEC_Brang_Sub_WatchBatarang.AdjustWatchPointForFloor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdjustWatchPointForFloor, "BmGame.RAEC_Brang_Sub_WatchBatarang.AdjustWatchPointForFloor", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentPoint, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CanDodgeProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDodgeProjectile;
     /// <summary>
     /// Function: CanDodgeProjectile
     /// </summary>
     public unsafe override bool CanDodgeProjectile(System.Numerics.Vector3 ThrownFromPos, int CheckBatarangID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDodgeProjectile, "BmGame.RAEC_Brang_Sub_WatchBatarang.CanDodgeProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDodgeProjectile, "BmGame.RAEC_Brang_Sub_WatchBatarang.CanDodgeProjectile", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThrownFromPos, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetWatchPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWatchPoint;
     /// <summary>
     /// Function: SetWatchPoint
     /// </summary>
     public unsafe virtual void SetWatchPoint(System.Numerics.Vector3 NewWatchPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWatchPoint, "BmGame.RAEC_Brang_Sub_WatchBatarang.SetWatchPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWatchPoint, "BmGame.RAEC_Brang_Sub_WatchBatarang.SetWatchPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewWatchPoint, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_StartleForCasualtyImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartleForCasualtyImpact;
     /// <summary>
     /// Function: StartleForCasualtyImpact
     /// </summary>
     public unsafe virtual void StartleForCasualtyImpact(System.Numerics.Vector3 NewPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleForCasualtyImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.StartleForCasualtyImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartleForCasualtyImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.StartleForCasualtyImpact", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPos, paramsPtr + 0);
@@ -139,14 +139,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_StartleForImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartleForImpact;
     /// <summary>
     /// Function: StartleForImpact
     /// </summary>
     public unsafe virtual void StartleForImpact(System.Numerics.Vector3 NewPos, bool bTerrorShootStartle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleForImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.StartleForImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartleForImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.StartleForImpact", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPos, paramsPtr + 0);
@@ -155,14 +155,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_GlanceAtImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GlanceAtImpact;
     /// <summary>
     /// Function: GlanceAtImpact
     /// </summary>
     public unsafe virtual void GlanceAtImpact(System.Numerics.Vector3 GlanceLoc, float NewGlanceTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GlanceAtImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.GlanceAtImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GlanceAtImpact, "BmGame.RAEC_Brang_Sub_WatchBatarang.GlanceAtImpact", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GlanceLoc, paramsPtr + 0);
@@ -171,14 +171,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_AssignNewPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignNewPosition;
     /// <summary>
     /// Function: AssignNewPosition
     /// </summary>
     public unsafe virtual void AssignNewPosition(System.Numerics.Vector3 NewPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignNewPosition, "BmGame.RAEC_Brang_Sub_WatchBatarang.AssignNewPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AssignNewPosition, "BmGame.RAEC_Brang_Sub_WatchBatarang.AssignNewPosition", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPos, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class RAEC_Brang_Sub_WatchBatarang : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Brang_Sub_WatchBatarang.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RAEC_Brang_Sub_WatchBatarang.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);

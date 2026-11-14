@@ -73,14 +73,14 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
         where TComponent : class, Framework.IScriptComponent<SceneCaptureComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe virtual void SetEnabled(bool bEnable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.SceneCaptureComponent.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "Engine.SceneCaptureComponent.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnable, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class SceneCaptureComponent : BmSDK.Engine.ActorComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetFrameRate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFrameRate;
     /// <summary>
     /// Function: SetFrameRate
     /// </summary>
     public unsafe virtual void SetFrameRate(float NewFrameRate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFrameRate, "Engine.SceneCaptureComponent.SetFrameRate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFrameRate, "Engine.SceneCaptureComponent.SetFrameRate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewFrameRate, paramsPtr + 0);

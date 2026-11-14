@@ -78,14 +78,14 @@ public partial class RVehicleBehaviour_FlyingDeathSpiral : BmSDK.BmGame.RVehicle
         where TComponent : class, Framework.IScriptComponent<RVehicleBehaviour_FlyingDeathSpiral>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RVehicleBehaviour_FlyingDeathSpiral.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RVehicleBehaviour_FlyingDeathSpiral.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RVehicleBehaviour_FlyingDeathSpiral : BmSDK.BmGame.RVehicle
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyRigidBodyCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyRigidBodyCollision;
     /// <summary>
     /// Function: NotifyRigidBodyCollision
     /// </summary>
     public unsafe override void NotifyRigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComp, float Speed, bool HitGround)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyRigidBodyCollision, "BmGame.RVehicleBehaviour_FlyingDeathSpiral.NotifyRigidBodyCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyRigidBodyCollision, "BmGame.RVehicleBehaviour_FlyingDeathSpiral.NotifyRigidBodyCollision", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitComp, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RVehicleBehaviour_FlyingDeathSpiral : BmSDK.BmGame.RVehicle
         return;
     }
 
-    private static BmSDK.Function __fn_EnterBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnterBehaviour;
     /// <summary>
     /// Function: EnterBehaviour
     /// </summary>
     public unsafe override void EnterBehaviour(BmSDK.BmGame.RVehicleBehaviour PreviousBehaviour)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterBehaviour, "BmGame.RVehicleBehaviour_FlyingDeathSpiral.EnterBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnterBehaviour, "BmGame.RVehicleBehaviour_FlyingDeathSpiral.EnterBehaviour", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PreviousBehaviour, paramsPtr + 0);

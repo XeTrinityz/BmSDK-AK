@@ -78,14 +78,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         where TComponent : class, Framework.IScriptComponent<RLevelTransitionDoorBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AllowLongRangeInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowLongRangeInteraction;
     /// <summary>
     /// Function: AllowLongRangeInteraction
     /// </summary>
     public unsafe virtual bool AllowLongRangeInteraction(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowLongRangeInteraction, "BmGame.RLevelTransitionDoorBase.AllowLongRangeInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowLongRangeInteraction, "BmGame.RLevelTransitionDoorBase.AllowLongRangeInteraction", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsValidTargetComp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTargetComp;
     /// <summary>
     /// Function: IsValidTargetComp
     /// </summary>
     public unsafe virtual bool IsValidTargetComp(BmSDK.Engine.PrimitiveComponent TargetComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidTargetComp, "BmGame.RLevelTransitionDoorBase.IsValidTargetComp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidTargetComp, "BmGame.RLevelTransitionDoorBase.IsValidTargetComp", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetComp, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetMotorActivationFXLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMotorActivationFXLocation;
     /// <summary>
     /// Function: GetMotorActivationFXLocation
     /// </summary>
     public unsafe virtual void GetMotorActivationFXLocation(BmSDK.Engine.PrimitiveComponent MotorComp, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMotorActivationFXLocation, "BmGame.RLevelTransitionDoorBase.GetMotorActivationFXLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMotorActivationFXLocation, "BmGame.RLevelTransitionDoorBase.GetMotorActivationFXLocation", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MotorComp, paramsPtr + 0);
@@ -129,14 +129,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetAutoTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetLocation;
     /// <summary>
     /// Function: GetAutoTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAutoTargetLocation(System.Numerics.Vector3 PlayerPosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAutoTargetLocation, "BmGame.RLevelTransitionDoorBase.GetAutoTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAutoTargetLocation, "BmGame.RLevelTransitionDoorBase.GetAutoTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerPosition, paramsPtr + 0);
@@ -144,28 +144,28 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CanRECAutoTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanRECAutoTarget;
     /// <summary>
     /// Function: CanRECAutoTarget
     /// </summary>
     public unsafe virtual bool CanRECAutoTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanRECAutoTarget, "BmGame.RLevelTransitionDoorBase.CanRECAutoTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanRECAutoTarget, "BmGame.RLevelTransitionDoorBase.CanRECAutoTarget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HitByREC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitByREC;
     /// <summary>
     /// Function: HitByREC
     /// </summary>
     public unsafe virtual bool HitByREC(System.Numerics.Vector3 HitLoc, BmSDK.Engine.PrimitiveComponent OtherComp, BmSDK.BmGame.RMagneticBlast.MBImpulseType ImpulseType, BmSDK.BmGame.RMagneticBlastReceiver RECProjectile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByREC, "BmGame.RLevelTransitionDoorBase.HitByREC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitByREC, "BmGame.RLevelTransitionDoorBase.HitByREC", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitLoc, paramsPtr + 0);
@@ -176,14 +176,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_CanReachItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReachItem;
     /// <summary>
     /// Function: CanReachItem
     /// </summary>
     public unsafe virtual bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmGame.RLevelTransitionDoorBase.CanReachItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanReachItem, "BmGame.RLevelTransitionDoorBase.CanReachItem", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckingPawn, paramsPtr + 0);
@@ -198,14 +198,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OverridesRun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridesRun;
     /// <summary>
     /// Function: OverridesRun
     /// </summary>
     public unsafe virtual float OverridesRun(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridesRun, "BmGame.RLevelTransitionDoorBase.OverridesRun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridesRun, "BmGame.RLevelTransitionDoorBase.OverridesRun", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -213,56 +213,56 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RLevelTransitionDoorBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RLevelTransitionDoorBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DetachVisibleComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachVisibleComponents;
     /// <summary>
     /// Function: DetachVisibleComponents
     /// </summary>
     public unsafe override void DetachVisibleComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachVisibleComponents, "BmGame.RLevelTransitionDoorBase.DetachVisibleComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachVisibleComponents, "BmGame.RLevelTransitionDoorBase.DetachVisibleComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachVisibleComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachVisibleComponents;
     /// <summary>
     /// Function: AttachVisibleComponents
     /// </summary>
     public unsafe override void AttachVisibleComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachVisibleComponents, "BmGame.RLevelTransitionDoorBase.AttachVisibleComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachVisibleComponents, "BmGame.RLevelTransitionDoorBase.AttachVisibleComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandleKismetAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleKismetAction;
     /// <summary>
     /// Function: HandleKismetAction
     /// </summary>
     public unsafe override void HandleKismetAction(int Index, BmSDK.BmGame.RSeqAct_ModifyDoor Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleKismetAction, "BmGame.RLevelTransitionDoorBase.HandleKismetAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleKismetAction, "BmGame.RLevelTransitionDoorBase.HandleKismetAction", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -271,28 +271,28 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_UnlockDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlockDoor;
     /// <summary>
     /// Function: UnlockDoor
     /// </summary>
     public unsafe virtual void UnlockDoor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockDoor, "BmGame.RLevelTransitionDoorBase.UnlockDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlockDoor, "BmGame.RLevelTransitionDoorBase.UnlockDoor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LockDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LockDoor;
     /// <summary>
     /// Function: LockDoor
     /// </summary>
     public unsafe virtual void LockDoor(bool immediate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LockDoor, "BmGame.RLevelTransitionDoorBase.LockDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LockDoor, "BmGame.RLevelTransitionDoorBase.LockDoor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(immediate, paramsPtr + 0);
@@ -300,14 +300,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetSaveDesc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSaveDesc;
     /// <summary>
     /// Function: GetSaveDesc
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameRI.FDebugSaveDescription GetSaveDesc(bool bEnterFromFront)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSaveDesc, "BmGame.RLevelTransitionDoorBase.GetSaveDesc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSaveDesc, "BmGame.RLevelTransitionDoorBase.GetSaveDesc", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnterFromFront, paramsPtr + 0);
@@ -315,14 +315,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameRI.FDebugSaveDescription>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_OpenByOtherPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenByOtherPlayer;
     /// <summary>
     /// Function: OpenByOtherPlayer
     /// </summary>
     public unsafe virtual void OpenByOtherPlayer(bool bFront)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenByOtherPlayer, "BmGame.RLevelTransitionDoorBase.OpenByOtherPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenByOtherPlayer, "BmGame.RLevelTransitionDoorBase.OpenByOtherPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFront, paramsPtr + 0);
@@ -330,70 +330,70 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerUsedDoorEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerUsedDoorEvent;
     /// <summary>
     /// Function: TriggerUsedDoorEvent
     /// </summary>
     public unsafe virtual void TriggerUsedDoorEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerUsedDoorEvent, "BmGame.RLevelTransitionDoorBase.TriggerUsedDoorEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerUsedDoorEvent, "BmGame.RLevelTransitionDoorBase.TriggerUsedDoorEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetDoorAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDoorAnimName;
     /// <summary>
     /// Function: GetDoorAnimName
     /// </summary>
     public unsafe virtual BmSDK.FName GetDoorAnimName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDoorAnimName, "BmGame.RLevelTransitionDoorBase.GetDoorAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDoorAnimName, "BmGame.RLevelTransitionDoorBase.GetDoorAnimName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPlayerMoveConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerMoveConfig;
     /// <summary>
     /// Function: GetPlayerMoveConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSpecialMoveConfig GetPlayerMoveConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerMoveConfig, "BmGame.RLevelTransitionDoorBase.GetPlayerMoveConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerMoveConfig, "BmGame.RLevelTransitionDoorBase.GetPlayerMoveConfig", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSpecialMoveConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanDualUseDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDualUseDoor;
     /// <summary>
     /// Function: CanDualUseDoor
     /// </summary>
     public unsafe virtual bool CanDualUseDoor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDualUseDoor, "BmGame.RLevelTransitionDoorBase.CanDualUseDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDualUseDoor, "BmGame.RLevelTransitionDoorBase.CanDualUseDoor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnToggleHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggleHidden;
     /// <summary>
     /// Function: OnToggleHidden
     /// </summary>
     public unsafe override void OnToggleHidden(BmSDK.Engine.SeqAct_ToggleHidden Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggleHidden, "BmGame.RLevelTransitionDoorBase.OnToggleHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggleHidden, "BmGame.RLevelTransitionDoorBase.OnToggleHidden", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -401,14 +401,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RLevelTransitionDoorBase.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RLevelTransitionDoorBase.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -416,28 +416,28 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_ForceFinishPlayerAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceFinishPlayerAnim;
     /// <summary>
     /// Function: ForceFinishPlayerAnim
     /// </summary>
     public unsafe virtual void ForceFinishPlayerAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceFinishPlayerAnim, "BmGame.RLevelTransitionDoorBase.ForceFinishPlayerAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceFinishPlayerAnim, "BmGame.RLevelTransitionDoorBase.ForceFinishPlayerAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerPlayerAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPlayerAnim;
     /// <summary>
     /// Function: TriggerPlayerAnim
     /// </summary>
     public unsafe virtual void TriggerPlayerAnim(BmSDK.BmGame.RSpecialMoveConfig SpecialMove, BmSDK.Engine.SkeletalMeshComponent SyncSkelMeshComp = default, BmSDK.FName SyncSkelMeshAnim = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPlayerAnim, "BmGame.RLevelTransitionDoorBase.TriggerPlayerAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPlayerAnim, "BmGame.RLevelTransitionDoorBase.TriggerPlayerAnim", this);
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpecialMove, paramsPtr + 0);
@@ -447,28 +447,28 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_CanUseInCinematicMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseInCinematicMode;
     /// <summary>
     /// Function: CanUseInCinematicMode
     /// </summary>
     public unsafe virtual bool CanUseInCinematicMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseInCinematicMode, "BmGame.RLevelTransitionDoorBase.CanUseInCinematicMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUseInCinematicMode, "BmGame.RLevelTransitionDoorBase.CanUseInCinematicMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MustBeCrouched;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MustBeCrouched;
     /// <summary>
     /// Function: MustBeCrouched
     /// </summary>
     public unsafe virtual bool MustBeCrouched(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MustBeCrouched, "BmGame.RLevelTransitionDoorBase.MustBeCrouched");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MustBeCrouched, "BmGame.RLevelTransitionDoorBase.MustBeCrouched", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -476,28 +476,28 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsButtonPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsButtonPrompt;
     /// <summary>
     /// Function: IsButtonPrompt
     /// </summary>
     public unsafe virtual bool IsButtonPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsButtonPrompt, "BmGame.RLevelTransitionDoorBase.IsButtonPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsButtonPrompt, "BmGame.RLevelTransitionDoorBase.IsButtonPrompt", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActive;
     /// <summary>
     /// Function: IsActive
     /// </summary>
     public unsafe virtual bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmGame.RLevelTransitionDoorBase.IsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActive, "BmGame.RLevelTransitionDoorBase.IsActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -505,42 +505,42 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetUpperPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUpperPrompt;
     /// <summary>
     /// Function: GetUpperPrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetUpperPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUpperPrompt, "BmGame.RLevelTransitionDoorBase.GetUpperPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUpperPrompt, "BmGame.RLevelTransitionDoorBase.GetUpperPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPriority;
     /// <summary>
     /// Function: GetPriority
     /// </summary>
     public unsafe virtual float GetPriority()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPriority, "BmGame.RLevelTransitionDoorBase.GetPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPriority, "BmGame.RLevelTransitionDoorBase.GetPriority", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFOVDegrees;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVDegrees;
     /// <summary>
     /// Function: GetFOVDegrees
     /// </summary>
     public unsafe virtual float GetFOVDegrees(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVDegrees, "BmGame.RLevelTransitionDoorBase.GetFOVDegrees");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVDegrees, "BmGame.RLevelTransitionDoorBase.GetFOVDegrees", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -548,56 +548,56 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetHeightRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeightRange;
     /// <summary>
     /// Function: GetHeightRange
     /// </summary>
     public unsafe virtual float GetHeightRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeightRange, "BmGame.RLevelTransitionDoorBase.GetHeightRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeightRange, "BmGame.RLevelTransitionDoorBase.GetHeightRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRange;
     /// <summary>
     /// Function: GetRange
     /// </summary>
     public unsafe virtual float GetRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRange, "BmGame.RLevelTransitionDoorBase.GetRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRange, "BmGame.RLevelTransitionDoorBase.GetRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayLockedSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayLockedSound;
     /// <summary>
     /// Function: PlayLockedSound
     /// </summary>
     public unsafe virtual void PlayLockedSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayLockedSound, "BmGame.RLevelTransitionDoorBase.PlayLockedSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayLockedSound, "BmGame.RLevelTransitionDoorBase.PlayLockedSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UseDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UseDoor;
     /// <summary>
     /// Function: UseDoor
     /// </summary>
     public unsafe virtual void UseDoor(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseDoor, "BmGame.RLevelTransitionDoorBase.UseDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UseDoor, "BmGame.RLevelTransitionDoorBase.UseDoor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -605,14 +605,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_Interact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Interact;
     /// <summary>
     /// Function: Interact
     /// </summary>
     public unsafe virtual void Interact(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmGame.RLevelTransitionDoorBase.Interact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Interact, "BmGame.RLevelTransitionDoorBase.Interact", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -620,42 +620,42 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerAfterUsedWhenLockedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAfterUsedWhenLockedEvent;
     /// <summary>
     /// Function: TriggerAfterUsedWhenLockedEvent
     /// </summary>
     public unsafe virtual void TriggerAfterUsedWhenLockedEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAfterUsedWhenLockedEvent, "BmGame.RLevelTransitionDoorBase.TriggerAfterUsedWhenLockedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerAfterUsedWhenLockedEvent, "BmGame.RLevelTransitionDoorBase.TriggerAfterUsedWhenLockedEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeLockedLogo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeLockedLogo;
     /// <summary>
     /// Function: ChangeLockedLogo
     /// </summary>
     public unsafe virtual void ChangeLockedLogo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeLockedLogo, "BmGame.RLevelTransitionDoorBase.ChangeLockedLogo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeLockedLogo, "BmGame.RLevelTransitionDoorBase.ChangeLockedLogo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCombatLockType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCombatLockType;
     /// <summary>
     /// Function: GetCombatLockType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.ECombatLockType GetCombatLockType(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCombatLockType, "BmGame.RLevelTransitionDoorBase.GetCombatLockType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCombatLockType, "BmGame.RLevelTransitionDoorBase.GetCombatLockType", this);
         byte* paramsPtr = stackalloc byte[26];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -663,14 +663,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.ECombatLockType>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsGlobalLockActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGlobalLockActive;
     /// <summary>
     /// Function: IsGlobalLockActive
     /// </summary>
     public unsafe virtual bool IsGlobalLockActive(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGlobalLockActive, "BmGame.RLevelTransitionDoorBase.IsGlobalLockActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsGlobalLockActive, "BmGame.RLevelTransitionDoorBase.IsGlobalLockActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -678,14 +678,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnDoorSideAffectedByGlobalLock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDoorSideAffectedByGlobalLock;
     /// <summary>
     /// Function: OnDoorSideAffectedByGlobalLock
     /// </summary>
     public unsafe virtual bool OnDoorSideAffectedByGlobalLock(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDoorSideAffectedByGlobalLock, "BmGame.RLevelTransitionDoorBase.OnDoorSideAffectedByGlobalLock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDoorSideAffectedByGlobalLock, "BmGame.RLevelTransitionDoorBase.OnDoorSideAffectedByGlobalLock", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -693,14 +693,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnSetMaterialInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetMaterialInstance;
     /// <summary>
     /// Function: OnSetMaterialInstance
     /// </summary>
     public unsafe virtual void OnSetMaterialInstance(BmSDK.Engine.RSeqAct_SetMaterialInstance Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterialInstance, "BmGame.RLevelTransitionDoorBase.OnSetMaterialInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetMaterialInstance, "BmGame.RLevelTransitionDoorBase.OnSetMaterialInstance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -708,14 +708,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetMaterial;
     /// <summary>
     /// Function: OnSetMaterial
     /// </summary>
     public unsafe virtual void OnSetMaterial(BmSDK.Engine.SeqAct_SetMaterial Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterial, "BmGame.RLevelTransitionDoorBase.OnSetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetMaterial, "BmGame.RLevelTransitionDoorBase.OnSetMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -723,42 +723,42 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetLocationOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationOffset;
     /// <summary>
     /// Function: GetLocationOffset
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationOffset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationOffset, "BmGame.RLevelTransitionDoorBase.GetLocationOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationOffset, "BmGame.RLevelTransitionDoorBase.GetLocationOffset", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OverridePreviousLines;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridePreviousLines;
     /// <summary>
     /// Function: OverridePreviousLines
     /// </summary>
     public unsafe virtual bool OverridePreviousLines()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePreviousLines, "BmGame.RLevelTransitionDoorBase.OverridePreviousLines");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridePreviousLines, "BmGame.RLevelTransitionDoorBase.OverridePreviousLines", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetInteractButton;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractButton;
     /// <summary>
     /// Function: GetInteractButton
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton GetInteractButton(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractButton, "BmGame.RLevelTransitionDoorBase.GetInteractButton");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractButton, "BmGame.RLevelTransitionDoorBase.GetInteractButton", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -766,14 +766,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrompt;
     /// <summary>
     /// Function: GetPrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetPrompt(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrompt, "BmGame.RLevelTransitionDoorBase.GetPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrompt, "BmGame.RLevelTransitionDoorBase.GetPrompt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -781,14 +781,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetInvestigateHighlighted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInvestigateHighlighted;
     /// <summary>
     /// Function: SetInvestigateHighlighted
     /// </summary>
     public unsafe override void SetInvestigateHighlighted(BmSDK.Engine.MaterialInstanceConstant highMat, bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInvestigateHighlighted, "BmGame.RLevelTransitionDoorBase.SetInvestigateHighlighted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInvestigateHighlighted, "BmGame.RLevelTransitionDoorBase.SetInvestigateHighlighted", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(highMat, paramsPtr + 0);
@@ -797,14 +797,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetPadlockPointInLocalSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPadlockPointInLocalSpace;
     /// <summary>
     /// Function: GetPadlockPointInLocalSpace
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPadlockPointInLocalSpace()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPadlockPointInLocalSpace, "BmGame.RLevelTransitionDoorBase.GetPadlockPointInLocalSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPadlockPointInLocalSpace, "BmGame.RLevelTransitionDoorBase.GetPadlockPointInLocalSpace", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -818,14 +818,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetDisabledBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisabledBy;
     /// <summary>
     /// Function: SetDisabledBy
     /// </summary>
     public unsafe override void SetDisabledBy(BmSDK.BmGame.RLevelTransition LT)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisabledBy, "BmGame.RLevelTransitionDoorBase.SetDisabledBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisabledBy, "BmGame.RLevelTransitionDoorBase.SetDisabledBy", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LT, paramsPtr + 0);
@@ -833,14 +833,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float TimeDelta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RLevelTransitionDoorBase.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RLevelTransitionDoorBase.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimeDelta, paramsPtr + 0);
@@ -848,14 +848,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetupDoorBlocker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupDoorBlocker;
     /// <summary>
     /// Function: SetupDoorBlocker
     /// </summary>
     public unsafe virtual void SetupDoorBlocker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupDoorBlocker, "BmGame.RLevelTransitionDoorBase.SetupDoorBlocker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupDoorBlocker, "BmGame.RLevelTransitionDoorBase.SetupDoorBlocker", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -869,14 +869,14 @@ public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, 
         return;
     }
 
-    private static BmSDK.Function __fn_InitFromDoorDefinition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitFromDoorDefinition;
     /// <summary>
     /// Function: InitFromDoorDefinition
     /// </summary>
     public unsafe virtual void InitFromDoorDefinition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitFromDoorDefinition, "BmGame.RLevelTransitionDoorBase.InitFromDoorDefinition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitFromDoorDefinition, "BmGame.RLevelTransitionDoorBase.InitFromDoorDefinition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -73,14 +73,14 @@ public partial class DistributionFloat : BmSDK.Component, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<DistributionFloat>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetFloatValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatValue;
     /// <summary>
     /// Function: GetFloatValue
     /// </summary>
     public unsafe virtual float GetFloatValue(float F = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatValue, "Core.DistributionFloat.GetFloatValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatValue, "Core.DistributionFloat.GetFloatValue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(F, paramsPtr + 0);

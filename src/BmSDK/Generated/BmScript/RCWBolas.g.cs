@@ -78,28 +78,28 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCWBolas>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetName;
     /// <summary>
     /// Function: GetName
     /// </summary>
     public unsafe override BmSDK.FString GetName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetName, "BmScript.RCWBolas.GetName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetName, "BmScript.RCWBolas.GetName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetInXrayMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInXrayMode;
     /// <summary>
     /// Function: SetInXrayMode
     /// </summary>
     public unsafe override void SetInXrayMode(bool On, bool bForceOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInXrayMode, "BmScript.RCWBolas.SetInXrayMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInXrayMode, "BmScript.RCWBolas.SetInXrayMode", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToHand;
     /// <summary>
     /// Function: AttachToHand
     /// </summary>
     public unsafe override void AttachToHand(BmSDK.FName CustomBone = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToHand, "BmScript.RCWBolas.AttachToHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToHand, "BmScript.RCWBolas.AttachToHand", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomBone, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CalculateEquipBoneName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateEquipBoneName;
     /// <summary>
     /// Function: CalculateEquipBoneName
     /// </summary>
     public unsafe override void CalculateEquipBoneName(out BmSDK.FName OutEquipBoneName, out BmSDK.FName OutEquipBoneName2, out BmSDK.Rotator OutRelativeRotation, BmSDK.FName CustomBone = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateEquipBoneName, "BmScript.RCWBolas.CalculateEquipBoneName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateEquipBoneName, "BmScript.RCWBolas.CalculateEquipBoneName", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutEquipBoneName);
@@ -147,28 +147,28 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToBelt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToBelt;
     /// <summary>
     /// Function: AttachToBelt
     /// </summary>
     public unsafe override void AttachToBelt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToBelt, "BmScript.RCWBolas.AttachToBelt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToBelt, "BmScript.RCWBolas.AttachToBelt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ThrowBatarangHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThrowBatarangHand;
     /// <summary>
     /// Function: ThrowBatarangHand
     /// </summary>
     public unsafe override void ThrowBatarangHand(BmSDK.FName LaunchBone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowBatarangHand, "BmScript.RCWBolas.ThrowBatarangHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThrowBatarangHand, "BmScript.RCWBolas.ThrowBatarangHand", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LaunchBone, paramsPtr + 0);
@@ -176,28 +176,28 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTarget;
     /// <summary>
     /// Function: UpdateTarget
     /// </summary>
     public unsafe override void UpdateTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTarget, "BmScript.RCWBolas.UpdateTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTarget, "BmScript.RCWBolas.UpdateTarget", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGadgetCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetCamera;
     /// <summary>
     /// Function: GetGadgetCamera
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmScript.RCWBolas.GetGadgetCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGadgetCamera, "BmScript.RCWBolas.GetGadgetCamera", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSoftCover, paramsPtr + 0);
@@ -206,28 +206,28 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetThrowReferencePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThrowReferencePoint;
     /// <summary>
     /// Function: GetThrowReferencePoint
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetThrowReferencePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThrowReferencePoint, "BmScript.RCWBolas.GetThrowReferencePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThrowReferencePoint, "BmScript.RCWBolas.GetThrowReferencePoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetThrowFinishPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThrowFinishPose;
     /// <summary>
     /// Function: GetThrowFinishPose
     /// </summary>
     public unsafe override BmSDK.FName GetThrowFinishPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThrowFinishPose, "BmScript.RCWBolas.GetThrowFinishPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThrowFinishPose, "BmScript.RCWBolas.GetThrowFinishPose", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StanceIsCrouched);
@@ -240,14 +240,14 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetPrimedPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrimedPose;
     /// <summary>
     /// Function: GetPrimedPose
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmScript.RCWBolas.GetPrimedPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrimedPose, "BmScript.RCWBolas.GetPrimedPose", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StanceIsCrouched);
@@ -268,28 +268,28 @@ public partial class RCWBolas : BmSDK.BmGame.RBatarang, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RCWBolas.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RCWBolas.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetImpactAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetImpactAudioEvent;
     /// <summary>
     /// Function: GetImpactAudioEvent
     /// </summary>
     public unsafe override BmSDK.Engine.AkEvent GetImpactAudioEvent(BmSDK.Engine.AkWwise.EAkWorldMaterial Mat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetImpactAudioEvent, "BmScript.RCWBolas.GetImpactAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetImpactAudioEvent, "BmScript.RCWBolas.GetImpactAudioEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Mat, paramsPtr + 0);

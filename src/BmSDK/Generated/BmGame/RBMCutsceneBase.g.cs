@@ -78,14 +78,14 @@ public partial class RBMCutsceneBase : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RBMCutsceneBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFOV;
     /// <summary>
     /// Function: SetFOV
     /// </summary>
     public unsafe override void SetFOV(float NewFOV, float TimeToChange)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFOV, "BmGame.RBMCutsceneBase.SetFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFOV, "BmGame.RBMCutsceneBase.SetFOV", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewFOV, paramsPtr + 0);
@@ -94,56 +94,56 @@ public partial class RBMCutsceneBase : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_Skip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Skip;
     /// <summary>
     /// Function: Skip
     /// </summary>
     public unsafe virtual void Skip()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Skip, "BmGame.RBMCutsceneBase.Skip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Skip, "BmGame.RBMCutsceneBase.Skip", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanSkip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSkip;
     /// <summary>
     /// Function: CanSkip
     /// </summary>
     public unsafe virtual bool CanSkip()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSkip, "BmGame.RBMCutsceneBase.CanSkip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSkip, "BmGame.RBMCutsceneBase.CanSkip", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PickCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickCamera;
     /// <summary>
     /// Function: PickCamera
     /// </summary>
     public unsafe virtual void PickCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickCamera, "BmGame.RBMCutsceneBase.PickCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickCamera, "BmGame.RBMCutsceneBase.PickCamera", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseCutscene;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseCutscene;
     /// <summary>
     /// Function: InitialiseCutscene
     /// </summary>
     public unsafe virtual void InitialiseCutscene(BmSDK.BmGame.RPlayerController NewCutsceneOwner, BmSDK.BmGame.RPawn NewCutsceneTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseCutscene, "BmGame.RBMCutsceneBase.InitialiseCutscene");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseCutscene, "BmGame.RBMCutsceneBase.InitialiseCutscene", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCutsceneOwner, paramsPtr + 0);
@@ -152,70 +152,70 @@ public partial class RBMCutsceneBase : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_GetCamFocusRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCamFocusRotation;
     /// <summary>
     /// Function: GetCamFocusRotation
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetCamFocusRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCamFocusRotation, "BmGame.RBMCutsceneBase.GetCamFocusRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCamFocusRotation, "BmGame.RBMCutsceneBase.GetCamFocusRotation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCamFocusLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCamFocusLocation;
     /// <summary>
     /// Function: GetCamFocusLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCamFocusLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCamFocusLocation, "BmGame.RBMCutsceneBase.GetCamFocusLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCamFocusLocation, "BmGame.RBMCutsceneBase.GetCamFocusLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EndCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndCam;
     /// <summary>
     /// Function: EndCam
     /// </summary>
     public unsafe virtual void EndCam()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndCam, "BmGame.RBMCutsceneBase.EndCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndCam, "BmGame.RBMCutsceneBase.EndCam", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetTargetPawnLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetPawnLocation;
     /// <summary>
     /// Function: GetTargetPawnLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTargetPawnLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetPawnLocation, "BmGame.RBMCutsceneBase.GetTargetPawnLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetPawnLocation, "BmGame.RBMCutsceneBase.GetTargetPawnLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitialiseBoneFollowers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseBoneFollowers;
     /// <summary>
     /// Function: InitialiseBoneFollowers
     /// </summary>
     public unsafe virtual void InitialiseBoneFollowers(BmSDK.FName TargetBoneToFollow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseBoneFollowers, "BmGame.RBMCutsceneBase.InitialiseBoneFollowers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseBoneFollowers, "BmGame.RBMCutsceneBase.InitialiseBoneFollowers", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetBoneToFollow, paramsPtr + 0);

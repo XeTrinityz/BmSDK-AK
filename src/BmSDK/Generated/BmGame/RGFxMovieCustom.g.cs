@@ -78,42 +78,42 @@ public partial class RGFxMovieCustom : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RGFxMovieCustom>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_XI_OnOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnOut;
     /// <summary>
     /// Function: XI_OnOut
     /// </summary>
     public unsafe virtual void XI_OnOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnOut, "BmGame.RGFxMovieCustom.XI_OnOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnOut, "BmGame.RGFxMovieCustom.XI_OnOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnTick;
     /// <summary>
     /// Function: XI_OnTick
     /// </summary>
     public unsafe virtual void XI_OnTick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnTick, "BmGame.RGFxMovieCustom.XI_OnTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnTick, "BmGame.RGFxMovieCustom.XI_OnTick", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnOutroClose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnOutroClose;
     /// <summary>
     /// Function: OnOutroClose
     /// </summary>
     public unsafe override void OnOutroClose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnOutroClose, "BmGame.RGFxMovieCustom.OnOutroClose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnOutroClose, "BmGame.RGFxMovieCustom.OnOutroClose", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

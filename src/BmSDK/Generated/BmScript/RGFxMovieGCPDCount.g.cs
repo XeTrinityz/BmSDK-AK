@@ -78,31 +78,34 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
         where TComponent : class, Framework.IScriptComponent<RGFxMovieGCPDCount>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UC_SetInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetInfo;
     /// <summary>
     /// Function: UC_SetInfo
     /// </summary>
-    public unsafe virtual void UC_SetInfo(BmSDK.FString Cell, BmSDK.FString Sec, BmSDK.FString Perc)
+    public unsafe virtual void UC_SetInfo(BmSDK.FStringArg Cell, BmSDK.FStringArg Sec, BmSDK.FStringArg Perc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetInfo, "BmScript.RGFxMovieGCPDCount.UC_SetInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetInfo, "BmScript.RGFxMovieGCPDCount.UC_SetInfo", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Cell, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Sec, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Perc, paramsPtr + 32);
+        Cell.WriteTo(paramsPtr + 0);
+        Sec.WriteTo(paramsPtr + 16);
+        Perc.WriteTo(paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInfo;
     /// <summary>
     /// Function: SetInfo
     /// </summary>
     public unsafe virtual void SetInfo(float PopCell, float PopCellMax, float PopSec, float PopSecMax)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInfo, "BmScript.RGFxMovieGCPDCount.SetInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInfo, "BmScript.RGFxMovieGCPDCount.SetInfo", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PopCell, paramsPtr + 0);
@@ -113,14 +116,14 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
         return;
     }
 
-    private static BmSDK.Function __fn_CustomInit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CustomInit;
     /// <summary>
     /// Function: CustomInit
     /// </summary>
     public unsafe virtual bool CustomInit(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomInit, "BmScript.RGFxMovieGCPDCount.CustomInit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CustomInit, "BmScript.RGFxMovieGCPDCount.CustomInit", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);

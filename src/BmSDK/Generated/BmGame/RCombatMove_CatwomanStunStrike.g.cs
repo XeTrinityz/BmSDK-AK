@@ -78,14 +78,14 @@ public partial class RCombatMove_CatwomanStunStrike : BmSDK.BmGame.RCombatMove_B
         where TComponent : class, Framework.IScriptComponent<RCombatMove_CatwomanStunStrike>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetDamageInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageInfo;
     /// <summary>
     /// Function: SetDamageInfo
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.FDamageInfo SetDamageInfo(BmSDK.BmGame.RPawnCombat DamageReceiver, float DmgAmount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageInfo, "BmGame.RCombatMove_CatwomanStunStrike.SetDamageInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDamageInfo, "BmGame.RCombatMove_CatwomanStunStrike.SetDamageInfo", this);
         byte* paramsPtr = stackalloc byte[524];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageReceiver, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RCombatMove_CatwomanStunStrike : BmSDK.BmGame.RCombatMove_B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.FDamageInfo>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_UpdateStunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStunning;
     /// <summary>
     /// Function: UpdateStunning
     /// </summary>
     public unsafe override void UpdateStunning(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateStunning, "BmGame.RCombatMove_CatwomanStunStrike.UpdateStunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateStunning, "BmGame.RCombatMove_CatwomanStunStrike.UpdateStunning", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -109,28 +109,28 @@ public partial class RCombatMove_CatwomanStunStrike : BmSDK.BmGame.RCombatMove_B
         return;
     }
 
-    private static BmSDK.Function __fn_SecondStrikeContact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SecondStrikeContact;
     /// <summary>
     /// Function: SecondStrikeContact
     /// </summary>
     public unsafe virtual void SecondStrikeContact()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SecondStrikeContact, "BmGame.RCombatMove_CatwomanStunStrike.SecondStrikeContact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SecondStrikeContact, "BmGame.RCombatMove_CatwomanStunStrike.SecondStrikeContact", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StrikeContact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StrikeContact;
     /// <summary>
     /// Function: StrikeContact
     /// </summary>
     public unsafe override void StrikeContact(bool bPreStrike)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrikeContact, "BmGame.RCombatMove_CatwomanStunStrike.StrikeContact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StrikeContact, "BmGame.RCombatMove_CatwomanStunStrike.StrikeContact", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPreStrike, paramsPtr + 0);

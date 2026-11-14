@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_SwingToVantagePoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanCancelSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCancelSwing;
     /// <summary>
     /// Function: CanCancelSwing
     /// </summary>
     public unsafe virtual bool CanCancelSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCancelSwing, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CanCancelSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanCancelSwing, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CanCancelSwing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,70 +99,70 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NextSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NextSwing;
     /// <summary>
     /// Function: NextSwing
     /// </summary>
     public unsafe virtual void NextSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NextSwing, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.NextSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NextSwing, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.NextSwing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNextHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextHidePoint;
     /// <summary>
     /// Function: GetNextHidePoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetNextHidePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextHidePoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetNextHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNextHidePoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetNextHidePoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RHidePoint>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTargetHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetHidePoint;
     /// <summary>
     /// Function: GetTargetHidePoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetTargetHidePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetHidePoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetTargetHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetHidePoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetTargetHidePoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RHidePoint>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanUpdateGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUpdateGrapple;
     /// <summary>
     /// Function: CanUpdateGrapple
     /// </summary>
     public unsafe virtual bool CanUpdateGrapple()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUpdateGrapple, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CanUpdateGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUpdateGrapple, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CanUpdateGrapple", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetNextHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNextHidePoint;
     /// <summary>
     /// Function: SetNextHidePoint
     /// </summary>
     public unsafe virtual void SetNextHidePoint(BmSDK.BmGame.RHidePoint NextPoint, System.Numerics.Vector3 NextPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNextHidePoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SetNextHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNextHidePoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SetNextHidePoint", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextPoint, paramsPtr + 0);
@@ -171,84 +171,84 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldCorrectForClientError;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldCorrectForClientError;
     /// <summary>
     /// Function: ShouldCorrectForClientError
     /// </summary>
     public unsafe override bool ShouldCorrectForClientError()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldCorrectForClientError, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.ShouldCorrectForClientError");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldCorrectForClientError, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.ShouldCorrectForClientError", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerSwingCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSwingCamera;
     /// <summary>
     /// Function: TriggerSwingCamera
     /// </summary>
     public unsafe virtual void TriggerSwingCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSwingCamera, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.TriggerSwingCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSwingCamera, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.TriggerSwingCamera", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ReleaseSwingRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseSwingRope;
     /// <summary>
     /// Function: ReleaseSwingRope
     /// </summary>
     public unsafe virtual void ReleaseSwingRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseSwingRope, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.ReleaseSwingRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReleaseSwingRope, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.ReleaseSwingRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwingFireGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwingFireGrapple;
     /// <summary>
     /// Function: SwingFireGrapple
     /// </summary>
     public unsafe virtual void SwingFireGrapple()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwingFireGrapple, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SwingFireGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwingFireGrapple, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SwingFireGrapple", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
     /// <summary>
     /// Function: CancelSpecialMove
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CancelSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CancelSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextSpecialMove, paramsPtr + 0);
@@ -256,28 +256,28 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyLandingCapeState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyLandingCapeState;
     /// <summary>
     /// Function: ApplyLandingCapeState
     /// </summary>
     public unsafe virtual void ApplyLandingCapeState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyLandingCapeState, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.ApplyLandingCapeState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyLandingCapeState, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.ApplyLandingCapeState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetLandDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLandDirection;
     /// <summary>
     /// Function: GetLandDirection
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLandDirection(BmSDK.FName AnimName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLandDirection, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetLandDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLandDirection, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetLandDirection", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -285,28 +285,28 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_DrawTrajectory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTrajectory;
     /// <summary>
     /// Function: DrawTrajectory
     /// </summary>
     public unsafe virtual void DrawTrajectory()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTrajectory, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.DrawTrajectory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTrajectory, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.DrawTrajectory", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetSwingEndLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSwingEndLocation;
     /// <summary>
     /// Function: GetSwingEndLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSwingEndLocation(System.Numerics.Vector3 Direction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSwingEndLocation, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetSwingEndLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSwingEndLocation, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.GetSwingEndLocation", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Direction, paramsPtr + 0);
@@ -314,28 +314,28 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetGrappleSwingState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGrappleSwingState;
     /// <summary>
     /// Function: SetGrappleSwingState
     /// </summary>
     public unsafe virtual void SetGrappleSwingState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGrappleSwingState, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SetGrappleSwingState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGrappleSwingState, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SetGrappleSwingState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[476];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -343,14 +343,14 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTrajectory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrajectory;
     /// <summary>
     /// Function: UpdateTrajectory
     /// </summary>
     public unsafe virtual float UpdateTrajectory(float DeltaTime, out System.Numerics.Vector3 Position, out BmSDK.Rotator PlayerRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTrajectory, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.UpdateTrajectory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTrajectory, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.UpdateTrajectory", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -371,14 +371,14 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_SetupTrajectory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupTrajectory;
     /// <summary>
     /// Function: SetupTrajectory
     /// </summary>
     public unsafe virtual void SetupTrajectory(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, float DefaultDistance, float DefaultRadius, float AnimationDuration, float DurationPower, bool SwingFromPointAboveTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupTrajectory, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SetupTrajectory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupTrajectory, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.SetupTrajectory", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -399,14 +399,14 @@ public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_CalculateFireToPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFireToPoint;
     /// <summary>
     /// Function: CalculateFireToPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateFireToPoint(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, float DefaultDistance, float DefaultRadius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateFireToPoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CalculateFireToPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateFireToPoint, "BmGame.RSpecialMoveInstance_SwingToVantagePoint.CalculateFireToPoint", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);

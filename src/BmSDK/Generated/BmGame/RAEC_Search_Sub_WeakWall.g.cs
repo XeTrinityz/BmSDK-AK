@@ -78,28 +78,28 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_WeakWall>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetGunDamageType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGunDamageType;
     /// <summary>
     /// Function: GetGunDamageType
     /// </summary>
     public unsafe virtual BmSDK.Class GetGunDamageType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGunDamageType, "BmGame.RAEC_Search_Sub_WeakWall.GetGunDamageType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGunDamageType, "BmGame.RAEC_Search_Sub_WeakWall.GetGunDamageType", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Class>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Search_Sub_WeakWall.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_Search_Sub_WeakWall.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
         return;
     }
 
-    private static BmSDK.Function __fn_StartFromSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFromSearch;
     /// <summary>
     /// Function: StartFromSearch
     /// </summary>
     public unsafe virtual void StartFromSearch(BmSDK.BmGame.RBMAIController NewCon, BmSDK.BmGame.RDestructibleProp_FractureWall inWeakWall, System.Numerics.Vector3 inWallLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_WeakWall.StartFromSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_WeakWall.StartFromSearch", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFailed;
     /// <summary>
     /// Function: NotifyFailed
     /// </summary>
     public unsafe override void NotifyFailed(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFailed, "BmGame.RAEC_Search_Sub_WeakWall.NotifyFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFailed, "BmGame.RAEC_Search_Sub_WeakWall.NotifyFailed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -139,14 +139,14 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Search_Sub_WeakWall.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RAEC_Search_Sub_WeakWall.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -154,112 +154,112 @@ public partial class RAEC_Search_Sub_WeakWall : BmSDK.BmGame.RAEC_Search_Sub_For
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Search_Sub_WeakWall.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Search_Sub_WeakWall.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnVillainStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnVillainStolen;
     /// <summary>
     /// Function: OnVillainStolen
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_WeakWall.OnVillainStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_WeakWall.OnVillainStolen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Cleanup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cleanup;
     /// <summary>
     /// Function: Cleanup
     /// </summary>
     public unsafe virtual void Cleanup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cleanup, "BmGame.RAEC_Search_Sub_WeakWall.Cleanup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cleanup, "BmGame.RAEC_Search_Sub_WeakWall.Cleanup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InPositionToShoot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InPositionToShoot;
     /// <summary>
     /// Function: InPositionToShoot
     /// </summary>
     public unsafe virtual bool InPositionToShoot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InPositionToShoot, "BmGame.RAEC_Search_Sub_WeakWall.InPositionToShoot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InPositionToShoot, "BmGame.RAEC_Search_Sub_WeakWall.InPositionToShoot", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckLOSToWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLOSToWall;
     /// <summary>
     /// Function: CheckLOSToWall
     /// </summary>
     public unsafe virtual void CheckLOSToWall()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLOSToWall, "BmGame.RAEC_Search_Sub_WeakWall.CheckLOSToWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLOSToWall, "BmGame.RAEC_Search_Sub_WeakWall.CheckLOSToWall", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrentPathHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentPathHandle;
     /// <summary>
     /// Function: GetCurrentPathHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_WeakWall.GetCurrentPathHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_WeakWall.GetCurrentPathHandle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopWallFiring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopWallFiring;
     /// <summary>
     /// Function: StopWallFiring
     /// </summary>
     public unsafe virtual void StopWallFiring()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopWallFiring, "BmGame.RAEC_Search_Sub_WeakWall.StopWallFiring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopWallFiring, "BmGame.RAEC_Search_Sub_WeakWall.StopWallFiring", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartWallFiring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartWallFiring;
     /// <summary>
     /// Function: StartWallFiring
     /// </summary>
     public unsafe virtual void StartWallFiring()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartWallFiring, "BmGame.RAEC_Search_Sub_WeakWall.StartWallFiring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartWallFiring, "BmGame.RAEC_Search_Sub_WeakWall.StartWallFiring", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

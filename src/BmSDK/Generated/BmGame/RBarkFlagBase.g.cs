@@ -78,70 +78,70 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RBarkFlagBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetFlagsAsString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlagsAsString;
     /// <summary>
     /// Function: GetFlagsAsString
     /// </summary>
     public unsafe virtual BmSDK.FString GetFlagsAsString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFlagsAsString, "BmGame.RBarkFlagBase.GetFlagsAsString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFlagsAsString, "BmGame.RBarkFlagBase.GetFlagsAsString", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DumpToLog;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpToLog;
     /// <summary>
     /// Function: DumpToLog
     /// </summary>
     public unsafe virtual void DumpToLog()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpToLog, "BmGame.RBarkFlagBase.DumpToLog");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpToLog, "BmGame.RBarkFlagBase.DumpToLog", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldAutoTagAsNeverOverRadio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldAutoTagAsNeverOverRadio;
     /// <summary>
     /// Function: ShouldAutoTagAsNeverOverRadio
     /// </summary>
     public unsafe virtual bool ShouldAutoTagAsNeverOverRadio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldAutoTagAsNeverOverRadio, "BmGame.RBarkFlagBase.ShouldAutoTagAsNeverOverRadio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldAutoTagAsNeverOverRadio, "BmGame.RBarkFlagBase.ShouldAutoTagAsNeverOverRadio", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldAutoTagAsAllowKnockedOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldAutoTagAsAllowKnockedOut;
     /// <summary>
     /// Function: ShouldAutoTagAsAllowKnockedOut
     /// </summary>
     public unsafe virtual bool ShouldAutoTagAsAllowKnockedOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldAutoTagAsAllowKnockedOut, "BmGame.RBarkFlagBase.ShouldAutoTagAsAllowKnockedOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldAutoTagAsAllowKnockedOut, "BmGame.RBarkFlagBase.ShouldAutoTagAsAllowKnockedOut", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearAllOfType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllOfType;
     /// <summary>
     /// Function: ClearAllOfType
     /// </summary>
     public unsafe virtual void ClearAllOfType(BmSDK.BmGame.RBarkValDef.FlagTypeEnum PurgeType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAllOfType, "BmGame.RBarkFlagBase.ClearAllOfType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAllOfType, "BmGame.RBarkFlagBase.ClearAllOfType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PurgeType, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetInterestWeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInterestWeight;
     /// <summary>
     /// Function: GetInterestWeight
     /// </summary>
     public unsafe virtual int GetInterestWeight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInterestWeight, "BmGame.RBarkFlagBase.GetInterestWeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInterestWeight, "BmGame.RBarkFlagBase.GetInterestWeight", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -185,14 +185,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ValueIsValid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ValueIsValid;
     /// <summary>
     /// Function: ValueIsValid
     /// </summary>
     public unsafe virtual bool ValueIsValid(BmSDK.BmGame.RBarkValDef.FlagTypeEnum CheckType, BmSDK.FName CheckValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ValueIsValid, "BmGame.RBarkFlagBase.ValueIsValid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ValueIsValid, "BmGame.RBarkFlagBase.ValueIsValid", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckType, paramsPtr + 0);
@@ -208,14 +208,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_HasTheseFlags;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasTheseFlags;
     /// <summary>
     /// Function: HasTheseFlags
     /// </summary>
     public unsafe virtual bool HasTheseFlags(BmSDK.BmGame.RBarkFlagBase OtherBase)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasTheseFlags, "BmGame.RBarkFlagBase.HasTheseFlags");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasTheseFlags, "BmGame.RBarkFlagBase.HasTheseFlags", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OtherBase, paramsPtr + 0);
@@ -230,14 +230,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetAllValuesForType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllValuesForType;
     /// <summary>
     /// Function: GetAllValuesForType
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FName> GetAllValuesForType(BmSDK.BmGame.RBarkValDef.FlagTypeEnum TestType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllValuesForType, "BmGame.RBarkFlagBase.GetAllValuesForType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllValuesForType, "BmGame.RBarkFlagBase.GetAllValuesForType", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestType, paramsPtr + 0);
@@ -252,14 +252,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.FName>>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetValueForType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetValueForType;
     /// <summary>
     /// Function: GetValueForType
     /// </summary>
     public unsafe virtual BmSDK.FName GetValueForType(BmSDK.BmGame.RBarkValDef.FlagTypeEnum TestType, int TestIndex = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetValueForType, "BmGame.RBarkFlagBase.GetValueForType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetValueForType, "BmGame.RBarkFlagBase.GetValueForType", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestType, paramsPtr + 0);
@@ -289,14 +289,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AddFlagStruct;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFlagStruct;
     /// <summary>
     /// Function: AddFlagStruct
     /// </summary>
     public unsafe virtual void AddFlagStruct(BmSDK.BmGame.RBarkFlagBase.FBarkFlag NewFlag)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFlagStruct, "BmGame.RBarkFlagBase.AddFlagStruct");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFlagStruct, "BmGame.RBarkFlagBase.AddFlagStruct", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewFlag, paramsPtr + 0);
@@ -304,14 +304,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFlag;
     /// <summary>
     /// Function: RemoveFlag
     /// </summary>
     public unsafe virtual void RemoveFlag(BmSDK.BmGame.RBarkValDef.FlagTypeEnum PurgeType, BmSDK.FName PurgeName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFlag, "BmGame.RBarkFlagBase.RemoveFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveFlag, "BmGame.RBarkFlagBase.RemoveFlag", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PurgeType, paramsPtr + 0);
@@ -320,14 +320,14 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFlag;
     /// <summary>
     /// Function: AddFlag
     /// </summary>
     public unsafe virtual bool AddFlag(BmSDK.BmGame.RBarkValDef.FlagTypeEnum Type, BmSDK.FName NewName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFlag, "BmGame.RBarkFlagBase.AddFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFlag, "BmGame.RBarkFlagBase.AddFlag", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 0);
@@ -336,17 +336,17 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_BuildFromString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildFromString;
     /// <summary>
     /// Function: BuildFromString
     /// </summary>
-    public unsafe virtual bool BuildFromString(BmSDK.FString Input)
+    public unsafe virtual bool BuildFromString(BmSDK.FStringArg Input)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildFromString, "BmGame.RBarkFlagBase.BuildFromString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildFromString, "BmGame.RBarkFlagBase.BuildFromString", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
+        Input.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -355,6 +355,7 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
@@ -362,12 +363,12 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: ValueFromString
     /// </summary>
-    public unsafe static BmSDK.FName ValueFromString(BmSDK.FString Input)
+    public unsafe static BmSDK.FName ValueFromString(BmSDK.FStringArg Input)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ValueFromString, "BmGame.RBarkFlagBase.ValueFromString");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
+        Input.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -376,6 +377,7 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 16);
     }
 
@@ -383,12 +385,12 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: TypeFromString
     /// </summary>
-    public unsafe static BmSDK.BmGame.RBarkValDef.FlagTypeEnum TypeFromString(BmSDK.FString Input)
+    public unsafe static BmSDK.BmGame.RBarkValDef.FlagTypeEnum TypeFromString(BmSDK.FStringArg Input)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TypeFromString, "BmGame.RBarkFlagBase.TypeFromString");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
+        Input.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -397,6 +399,7 @@ public partial class RBarkFlagBase : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBarkValDef.FlagTypeEnum>(paramsPtr + 16);
     }
 
@@ -479,13 +482,13 @@ public static class RBarkFlagBaseStatics
     /// <summary>
     /// Function: ValueFromString, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static BmSDK.FName ValueFromString(this BmSDK.BmGame.RBarkFlagBase self, BmSDK.FString Input)
+    public unsafe static BmSDK.FName ValueFromString(this BmSDK.BmGame.RBarkFlagBase self, BmSDK.FStringArg Input)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ValueFromString, "BmGame.RBarkFlagBase.ValueFromString");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
+        Input.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -494,6 +497,7 @@ public static class RBarkFlagBaseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 16);
     }
 
@@ -501,13 +505,13 @@ public static class RBarkFlagBaseStatics
     /// <summary>
     /// Function: TypeFromString, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static BmSDK.BmGame.RBarkValDef.FlagTypeEnum TypeFromString(this BmSDK.BmGame.RBarkFlagBase self, BmSDK.FString Input)
+    public unsafe static BmSDK.BmGame.RBarkValDef.FlagTypeEnum TypeFromString(this BmSDK.BmGame.RBarkFlagBase self, BmSDK.FStringArg Input)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TypeFromString, "BmGame.RBarkFlagBase.TypeFromString");
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
+        Input.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -516,6 +520,7 @@ public static class RBarkFlagBaseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBarkValDef.FlagTypeEnum>(paramsPtr + 16);
     }
 }

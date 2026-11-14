@@ -78,14 +78,14 @@ public partial class RSlideVolume : BmSDK.BmGame.REvadeOverrideVolume, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RSlideVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RSlideVolume.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.RSlideVolume.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSlideVolume : BmSDK.BmGame.REvadeOverrideVolume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToActor;
     /// <summary>
     /// Function: LinkToActor
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.RSlideVolume.LinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToActor, "BmGame.RSlideVolume.LinkToActor", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RSlideVolume : BmSDK.BmGame.REvadeOverrideVolume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CalculateSlideDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateSlideDirection;
     /// <summary>
     /// Function: CalculateSlideDirection
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateSlideDirection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateSlideDirection, "BmGame.RSlideVolume.CalculateSlideDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateSlideDirection, "BmGame.RSlideVolume.CalculateSlideDirection", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

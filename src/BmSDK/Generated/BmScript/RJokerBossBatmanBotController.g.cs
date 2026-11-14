@@ -78,168 +78,168 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
         where TComponent : class, Framework.IScriptComponent<RJokerBossBatmanBotController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanDoSteamVent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoSteamVent;
     /// <summary>
     /// Function: CanDoSteamVent
     /// </summary>
     public unsafe virtual bool CanDoSteamVent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoSteamVent, "BmScript.RJokerBossBatmanBotController.CanDoSteamVent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoSteamVent, "BmScript.RJokerBossBatmanBotController.CanDoSteamVent", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanDoLantern;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoLantern;
     /// <summary>
     /// Function: CanDoLantern
     /// </summary>
     public unsafe virtual bool CanDoLantern()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoLantern, "BmScript.RJokerBossBatmanBotController.CanDoLantern");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoLantern, "BmScript.RJokerBossBatmanBotController.CanDoLantern", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyShot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyShot;
     /// <summary>
     /// Function: NotifyShot
     /// </summary>
     public unsafe virtual void NotifyShot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyShot, "BmScript.RJokerBossBatmanBotController.NotifyShot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyShot, "BmScript.RJokerBossBatmanBotController.NotifyShot", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyShow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyShow;
     /// <summary>
     /// Function: NotifyShow
     /// </summary>
     public unsafe virtual void NotifyShow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyShow, "BmScript.RJokerBossBatmanBotController.NotifyShow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyShow, "BmScript.RJokerBossBatmanBotController.NotifyShow", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyHideInstant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyHideInstant;
     /// <summary>
     /// Function: NotifyHideInstant
     /// </summary>
     public unsafe virtual void NotifyHideInstant()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyHideInstant, "BmScript.RJokerBossBatmanBotController.NotifyHideInstant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyHideInstant, "BmScript.RJokerBossBatmanBotController.NotifyHideInstant", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyHide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyHide;
     /// <summary>
     /// Function: NotifyHide
     /// </summary>
     public unsafe virtual void NotifyHide()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyHide, "BmScript.RJokerBossBatmanBotController.NotifyHide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyHide, "BmScript.RJokerBossBatmanBotController.NotifyHide", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActualShow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActualShow;
     /// <summary>
     /// Function: ActualShow
     /// </summary>
     public unsafe virtual void ActualShow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActualShow, "BmScript.RJokerBossBatmanBotController.ActualShow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActualShow, "BmScript.RJokerBossBatmanBotController.ActualShow", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActualHide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActualHide;
     /// <summary>
     /// Function: ActualHide
     /// </summary>
     public unsafe virtual void ActualHide()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActualHide, "BmScript.RJokerBossBatmanBotController.ActualHide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActualHide, "BmScript.RJokerBossBatmanBotController.ActualHide", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginAppearFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginAppearFX;
     /// <summary>
     /// Function: BeginAppearFX
     /// </summary>
     public unsafe virtual void BeginAppearFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginAppearFX, "BmScript.RJokerBossBatmanBotController.BeginAppearFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginAppearFX, "BmScript.RJokerBossBatmanBotController.BeginAppearFX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginTeleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginTeleport;
     /// <summary>
     /// Function: BeginTeleport
     /// </summary>
     public unsafe virtual void BeginTeleport()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginTeleport, "BmScript.RJokerBossBatmanBotController.BeginTeleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginTeleport, "BmScript.RJokerBossBatmanBotController.BeginTeleport", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetJokerSickVector;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJokerSickVector;
     /// <summary>
     /// Function: GetJokerSickVector
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FLinearColor GetJokerSickVector()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerSickVector, "BmScript.RJokerBossBatmanBotController.GetJokerSickVector");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJokerSickVector, "BmScript.RJokerBossBatmanBotController.GetJokerSickVector", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FLinearColor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateJokerSickLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateJokerSickLevel;
     /// <summary>
     /// Function: UpdateJokerSickLevel
     /// </summary>
     public unsafe virtual void UpdateJokerSickLevel(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateJokerSickLevel, "BmScript.RJokerBossBatmanBotController.UpdateJokerSickLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateJokerSickLevel, "BmScript.RJokerBossBatmanBotController.UpdateJokerSickLevel", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -247,98 +247,98 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
         return;
     }
 
-    private static BmSDK.Function __fn_SetJokerFullySick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetJokerFullySick;
     /// <summary>
     /// Function: SetJokerFullySick
     /// </summary>
     public unsafe virtual void SetJokerFullySick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetJokerFullySick, "BmScript.RJokerBossBatmanBotController.SetJokerFullySick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetJokerFullySick, "BmScript.RJokerBossBatmanBotController.SetJokerFullySick", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ProgressJokerSickLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProgressJokerSickLevel;
     /// <summary>
     /// Function: ProgressJokerSickLevel
     /// </summary>
     public unsafe virtual void ProgressJokerSickLevel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProgressJokerSickLevel, "BmScript.RJokerBossBatmanBotController.ProgressJokerSickLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProgressJokerSickLevel, "BmScript.RJokerBossBatmanBotController.ProgressJokerSickLevel", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_JokerNearEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JokerNearEdge;
     /// <summary>
     /// Function: JokerNearEdge
     /// </summary>
     public unsafe virtual bool JokerNearEdge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerNearEdge, "BmScript.RJokerBossBatmanBotController.JokerNearEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JokerNearEdge, "BmScript.RJokerBossBatmanBotController.JokerNearEdge", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayerPulledTrigger;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerPulledTrigger;
     /// <summary>
     /// Function: PlayerPulledTrigger
     /// </summary>
     public unsafe virtual bool PlayerPulledTrigger()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerPulledTrigger, "BmScript.RJokerBossBatmanBotController.PlayerPulledTrigger");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerPulledTrigger, "BmScript.RJokerBossBatmanBotController.PlayerPulledTrigger", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HitByJokerShotgun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitByJokerShotgun;
     /// <summary>
     /// Function: HitByJokerShotgun
     /// </summary>
     public unsafe virtual void HitByJokerShotgun()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByJokerShotgun, "BmScript.RJokerBossBatmanBotController.HitByJokerShotgun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitByJokerShotgun, "BmScript.RJokerBossBatmanBotController.HitByJokerShotgun", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanDoRedHerring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoRedHerring;
     /// <summary>
     /// Function: CanDoRedHerring
     /// </summary>
     public unsafe virtual bool CanDoRedHerring()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoRedHerring, "BmScript.RJokerBossBatmanBotController.CanDoRedHerring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoRedHerring, "BmScript.RJokerBossBatmanBotController.CanDoRedHerring", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTakedown;
     /// <summary>
     /// Function: CanTakedown
     /// </summary>
     public unsafe virtual bool CanTakedown(BmSDK.BmScript.RJokerBossBatmanBotController.JokerBossTakedownTypes takedownType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTakedown, "BmScript.RJokerBossBatmanBotController.CanTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTakedown, "BmScript.RJokerBossBatmanBotController.CanTakedown", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(takedownType, paramsPtr + 0);
@@ -346,14 +346,14 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateFades;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFades;
     /// <summary>
     /// Function: UpdateFades
     /// </summary>
     public unsafe virtual void UpdateFades(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFades, "BmScript.RJokerBossBatmanBotController.UpdateFades");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFades, "BmScript.RJokerBossBatmanBotController.UpdateFades", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -361,14 +361,14 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
         return;
     }
 
-    private static BmSDK.Function __fn_SwapMatsToFadeMats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapMatsToFadeMats;
     /// <summary>
     /// Function: SwapMatsToFadeMats
     /// </summary>
     public unsafe virtual void SwapMatsToFadeMats(bool ToFade)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapMatsToFadeMats, "BmScript.RJokerBossBatmanBotController.SwapMatsToFadeMats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapMatsToFadeMats, "BmScript.RJokerBossBatmanBotController.SwapMatsToFadeMats", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ToFade, paramsPtr + 0);
@@ -376,42 +376,42 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
         return;
     }
 
-    private static BmSDK.Function __fn_GoingToRedHerring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoingToRedHerring;
     /// <summary>
     /// Function: GoingToRedHerring
     /// </summary>
     public unsafe virtual void GoingToRedHerring()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoingToRedHerring, "BmScript.RJokerBossBatmanBotController.GoingToRedHerring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoingToRedHerring, "BmScript.RJokerBossBatmanBotController.GoingToRedHerring", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForRedHerring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForRedHerring;
     /// <summary>
     /// Function: CheckForRedHerring
     /// </summary>
     public unsafe virtual void CheckForRedHerring()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForRedHerring, "BmScript.RJokerBossBatmanBotController.CheckForRedHerring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForRedHerring, "BmScript.RJokerBossBatmanBotController.CheckForRedHerring", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RJokerBossBatmanBotController.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RJokerBossBatmanBotController.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -419,56 +419,56 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayerPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerPawn;
     /// <summary>
     /// Function: GetPlayerPawn
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnPlayer GetPlayerPawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerPawn, "BmScript.RJokerBossBatmanBotController.GetPlayerPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerPawn, "BmScript.RJokerBossBatmanBotController.GetPlayerPawn", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnPlayer>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearNavigation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavigation;
     /// <summary>
     /// Function: ClearNavigation
     /// </summary>
     public unsafe virtual void ClearNavigation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNavigation, "BmScript.RJokerBossBatmanBotController.ClearNavigation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNavigation, "BmScript.RJokerBossBatmanBotController.ClearNavigation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnPossess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnPossess;
     /// <summary>
     /// Function: UnPossess
     /// </summary>
     public unsafe override void UnPossess()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnPossess, "BmScript.RJokerBossBatmanBotController.UnPossess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnPossess, "BmScript.RJokerBossBatmanBotController.UnPossess", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Possess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Possess;
     /// <summary>
     /// Function: Possess
     /// </summary>
     public unsafe override void Possess(BmSDK.Engine.Pawn inPawn, bool bVehicleTransition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Possess, "BmScript.RJokerBossBatmanBotController.Possess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Possess, "BmScript.RJokerBossBatmanBotController.Possess", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inPawn, paramsPtr + 0);
@@ -477,14 +477,14 @@ public partial class RJokerBossBatmanBotController : BmSDK.BmGame.RBotController
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RJokerBossBatmanBotController.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RJokerBossBatmanBotController.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

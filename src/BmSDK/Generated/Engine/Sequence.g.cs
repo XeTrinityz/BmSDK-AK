@@ -78,14 +78,14 @@ public partial class Sequence : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Sequence>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe virtual void SetEnabled(bool bInEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.Sequence.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "Engine.Sequence.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInEnabled, paramsPtr + 0);
@@ -100,31 +100,31 @@ public partial class Sequence : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.Sequence.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.Sequence.Reset", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FindSeqObjectsByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSeqObjectsByName;
     /// <summary>
     /// Function: FindSeqObjectsByName
     /// </summary>
-    public unsafe virtual void FindSeqObjectsByName(BmSDK.FString SeqObjName, bool bCheckComment, out BmSDK.TArray<BmSDK.Engine.SequenceObject> OutputObjects, bool bRecursive = default, bool bUseFullLevelName = default)
+    public unsafe virtual void FindSeqObjectsByName(BmSDK.FStringArg SeqObjName, bool bCheckComment, out BmSDK.TArray<BmSDK.Engine.SequenceObject> OutputObjects, bool bRecursive = default, bool bUseFullLevelName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSeqObjectsByName, "Engine.Sequence.FindSeqObjectsByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSeqObjectsByName, "Engine.Sequence.FindSeqObjectsByName", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SeqObjName, paramsPtr + 0);
+        SeqObjName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCheckComment, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bRecursive, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bUseFullLevelName, paramsPtr + 40);
@@ -136,18 +136,19 @@ public partial class Sequence : BmSDK.Engine.SequenceOp, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         OutputObjects = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.SequenceObject>>(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_FindSeqObjectsByClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSeqObjectsByClass;
     /// <summary>
     /// Function: FindSeqObjectsByClass
     /// </summary>
     public unsafe virtual void FindSeqObjectsByClass(BmSDK.Class DesiredClass, bool bRecursive, out BmSDK.TArray<BmSDK.Engine.SequenceObject> OutputObjects)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSeqObjectsByClass, "Engine.Sequence.FindSeqObjectsByClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSeqObjectsByClass, "Engine.Sequence.FindSeqObjectsByClass", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredClass, paramsPtr + 0);

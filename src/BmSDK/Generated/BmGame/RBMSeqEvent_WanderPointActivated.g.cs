@@ -78,14 +78,14 @@ public partial class RBMSeqEvent_WanderPointActivated : BmSDK.BmGame.RBMSeqEvent
         where TComponent : class, Framework.IScriptComponent<RBMSeqEvent_WanderPointActivated>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ActivateForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateForPawn;
     /// <summary>
     /// Function: ActivateForPawn
     /// </summary>
     public unsafe virtual bool ActivateForPawn(BmSDK.BmGame.RBMPawnAI NewUser, BmSDK.BmGame.RWanderPoint WanderPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateForPawn, "BmGame.RBMSeqEvent_WanderPointActivated.ActivateForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateForPawn, "BmGame.RBMSeqEvent_WanderPointActivated.ActivateForPawn", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUser, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RBMSeqEvent_WanderPointActivated : BmSDK.BmGame.RBMSeqEvent
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_HasOutputForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasOutputForPawn;
     /// <summary>
     /// Function: HasOutputForPawn
     /// </summary>
     public unsafe virtual bool HasOutputForPawn(BmSDK.BmGame.RBMPawnAI TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasOutputForPawn, "BmGame.RBMSeqEvent_WanderPointActivated.HasOutputForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasOutputForPawn, "BmGame.RBMSeqEvent_WanderPointActivated.HasOutputForPawn", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RBMSeqEvent_WanderPointActivated : BmSDK.BmGame.RBMSeqEvent
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetOutputsForWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOutputsForWeapon;
     /// <summary>
     /// Function: GetOutputsForWeapon
     /// </summary>
     public unsafe virtual BmSDK.TArray<int> GetOutputsForWeapon(BmSDK.BmGame.RBMWeapon TestWeapon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOutputsForWeapon, "BmGame.RBMSeqEvent_WanderPointActivated.GetOutputsForWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOutputsForWeapon, "BmGame.RBMSeqEvent_WanderPointActivated.GetOutputsForWeapon", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestWeapon, paramsPtr + 0);

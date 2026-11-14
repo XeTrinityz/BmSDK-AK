@@ -78,14 +78,14 @@ public partial class RBatmobileDroneScanner : BmSDK.BmGame.RVehicleWeapon, BmSDK
         where TComponent : class, Framework.IScriptComponent<RBatmobileDroneScanner>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CheckAutoTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAutoTarget;
     /// <summary>
     /// Function: CheckAutoTarget
     /// </summary>
     public unsafe override bool CheckAutoTarget(BmSDK.Engine.Actor Target, out System.Numerics.Vector3 TargetPosition, out float OverridePriority, out float OverrideMaxRange, out byte DoLOSCheck)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAutoTarget, "BmGame.RBatmobileDroneScanner.CheckAutoTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckAutoTarget, "BmGame.RBatmobileDroneScanner.CheckAutoTarget", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -105,28 +105,28 @@ public partial class RBatmobileDroneScanner : BmSDK.BmGame.RVehicleWeapon, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_DeployDownloadHud;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeployDownloadHud;
     /// <summary>
     /// Function: DeployDownloadHud
     /// </summary>
     public unsafe virtual void DeployDownloadHud()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeployDownloadHud, "BmGame.RBatmobileDroneScanner.DeployDownloadHud");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeployDownloadHud, "BmGame.RBatmobileDroneScanner.DeployDownloadHud", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ScanComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScanComplete;
     /// <summary>
     /// Function: ScanComplete
     /// </summary>
     public unsafe virtual void ScanComplete(bool correct_drone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScanComplete, "BmGame.RBatmobileDroneScanner.ScanComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScanComplete, "BmGame.RBatmobileDroneScanner.ScanComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(correct_drone, paramsPtr + 0);
@@ -134,14 +134,14 @@ public partial class RBatmobileDroneScanner : BmSDK.BmGame.RVehicleWeapon, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_IsHeavyWeaponValid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHeavyWeaponValid;
     /// <summary>
     /// Function: IsHeavyWeaponValid
     /// </summary>
     public unsafe override bool IsHeavyWeaponValid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHeavyWeaponValid, "BmGame.RBatmobileDroneScanner.IsHeavyWeaponValid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHeavyWeaponValid, "BmGame.RBatmobileDroneScanner.IsHeavyWeaponValid", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
         where TComponent : class, Framework.IScriptComponent<RSeqAct_UpdateBatmanDamageLevel>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_UpdateBatmanDamageLevel.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_UpdateBatmanDamageLevel.Activated", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -105,14 +105,14 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TransferData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TransferData;
     /// <summary>
     /// Function: TransferData
     /// </summary>
     public unsafe virtual void TransferData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransferData, "BmGame.RSeqAct_UpdateBatmanDamageLevel.TransferData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TransferData, "BmGame.RSeqAct_UpdateBatmanDamageLevel.TransferData", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -126,14 +126,14 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
         return;
     }
 
-    private static BmSDK.Function __fn_OnDataLoaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDataLoaded;
     /// <summary>
     /// Function: OnDataLoaded
     /// </summary>
     public unsafe virtual void OnDataLoaded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDataLoaded, "BmGame.RSeqAct_UpdateBatmanDamageLevel.OnDataLoaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDataLoaded, "BmGame.RSeqAct_UpdateBatmanDamageLevel.OnDataLoaded", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -147,14 +147,14 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
         return;
     }
 
-    private static BmSDK.Function __fn_ReleaseData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseData;
     /// <summary>
     /// Function: ReleaseData
     /// </summary>
     public unsafe virtual void ReleaseData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseData, "BmGame.RSeqAct_UpdateBatmanDamageLevel.ReleaseData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReleaseData, "BmGame.RSeqAct_UpdateBatmanDamageLevel.ReleaseData", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -168,14 +168,14 @@ public partial class RSeqAct_UpdateBatmanDamageLevel : BmSDK.Engine.SequenceActi
         return;
     }
 
-    private static BmSDK.Function __fn_LoadData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadData;
     /// <summary>
     /// Function: LoadData
     /// </summary>
     public unsafe virtual void LoadData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadData, "BmGame.RSeqAct_UpdateBatmanDamageLevel.LoadData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadData, "BmGame.RSeqAct_UpdateBatmanDamageLevel.LoadData", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

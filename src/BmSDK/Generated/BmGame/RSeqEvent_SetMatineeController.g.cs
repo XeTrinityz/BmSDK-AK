@@ -91,42 +91,42 @@ public partial class RSeqEvent_SetMatineeController : BmSDK.Engine.SequenceEvent
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateLinkToMatinee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLinkToMatinee;
     /// <summary>
     /// Function: UpdateLinkToMatinee
     /// </summary>
     public unsafe virtual void UpdateLinkToMatinee()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLinkToMatinee, "BmGame.RSeqEvent_SetMatineeController.UpdateLinkToMatinee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLinkToMatinee, "BmGame.RSeqEvent_SetMatineeController.UpdateLinkToMatinee", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Toggled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Toggled;
     /// <summary>
     /// Function: Toggled
     /// </summary>
     public unsafe override void Toggled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Toggled, "BmGame.RSeqEvent_SetMatineeController.Toggled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Toggled, "BmGame.RSeqEvent_SetMatineeController.Toggled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterEvent;
     /// <summary>
     /// Function: RegisterEvent
     /// </summary>
     public unsafe override void RegisterEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterEvent, "BmGame.RSeqEvent_SetMatineeController.RegisterEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterEvent, "BmGame.RSeqEvent_SetMatineeController.RegisterEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

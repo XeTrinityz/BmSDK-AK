@@ -78,42 +78,42 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         where TComponent : class, Framework.IScriptComponent<RBMDeathCutscene_ShoulderCam>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMDeathCutscene_ShoulderCam.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMDeathCutscene_ShoulderCam.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetViewTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetViewTarget;
     /// <summary>
     /// Function: ResetViewTarget
     /// </summary>
     public unsafe override void ResetViewTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetViewTarget, "BmGame.RBMDeathCutscene_ShoulderCam.ResetViewTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetViewTarget, "BmGame.RBMDeathCutscene_ShoulderCam.ResetViewTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RBMDeathCutscene_ShoulderCam.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RBMDeathCutscene_ShoulderCam.Tick", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         return;
     }
 
-    private static BmSDK.Function __fn_GetAndUpdatePostImpactFocusPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAndUpdatePostImpactFocusPoint;
     /// <summary>
     /// Function: GetAndUpdatePostImpactFocusPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAndUpdatePostImpactFocusPoint(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAndUpdatePostImpactFocusPoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetAndUpdatePostImpactFocusPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAndUpdatePostImpactFocusPoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetAndUpdatePostImpactFocusPoint", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_MoveCam_Linear;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveCam_Linear;
     /// <summary>
     /// Function: MoveCam_Linear
     /// </summary>
     public unsafe virtual void MoveCam_Linear(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveCam_Linear, "BmGame.RBMDeathCutscene_ShoulderCam.MoveCam_Linear");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveCam_Linear, "BmGame.RBMDeathCutscene_ShoulderCam.MoveCam_Linear", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         return;
     }
 
-    private static BmSDK.Function __fn_SetSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpeed;
     /// <summary>
     /// Function: SetSpeed
     /// </summary>
     public unsafe virtual void SetSpeed(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpeed, "BmGame.RBMDeathCutscene_ShoulderCam.SetSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSpeed, "BmGame.RBMDeathCutscene_ShoulderCam.SetSpeed", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -166,112 +166,112 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         return;
     }
 
-    private static BmSDK.Function __fn_GetTimeUntilImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeUntilImpact;
     /// <summary>
     /// Function: GetTimeUntilImpact
     /// </summary>
     public unsafe virtual float GetTimeUntilImpact()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeUntilImpact, "BmGame.RBMDeathCutscene_ShoulderCam.GetTimeUntilImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimeUntilImpact, "BmGame.RBMDeathCutscene_ShoulderCam.GetTimeUntilImpact", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetImpactFocusPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetImpactFocusPoint;
     /// <summary>
     /// Function: GetImpactFocusPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetImpactFocusPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetImpactFocusPoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetImpactFocusPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetImpactFocusPoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetImpactFocusPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetAerial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAerial;
     /// <summary>
     /// Function: SetAerial
     /// </summary>
     public unsafe virtual void SetAerial()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAerial, "BmGame.RBMDeathCutscene_ShoulderCam.SetAerial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAerial, "BmGame.RBMDeathCutscene_ShoulderCam.SetAerial", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayerStrikePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerStrikePoint;
     /// <summary>
     /// Function: GetPlayerStrikePoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPlayerStrikePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerStrikePoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetPlayerStrikePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerStrikePoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetPlayerStrikePoint", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTargetImpactPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetImpactPoint;
     /// <summary>
     /// Function: GetTargetImpactPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTargetImpactPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetImpactPoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetTargetImpactPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetImpactPoint, "BmGame.RBMDeathCutscene_ShoulderCam.GetTargetImpactPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitialiseAdditionalBoneFollowers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseAdditionalBoneFollowers;
     /// <summary>
     /// Function: InitialiseAdditionalBoneFollowers
     /// </summary>
     public unsafe virtual void InitialiseAdditionalBoneFollowers()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseAdditionalBoneFollowers, "BmGame.RBMDeathCutscene_ShoulderCam.InitialiseAdditionalBoneFollowers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseAdditionalBoneFollowers, "BmGame.RBMDeathCutscene_ShoulderCam.InitialiseAdditionalBoneFollowers", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetSlowMoOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSlowMoOff;
     /// <summary>
     /// Function: SetSlowMoOff
     /// </summary>
     public unsafe virtual void SetSlowMoOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSlowMoOff, "BmGame.RBMDeathCutscene_ShoulderCam.SetSlowMoOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSlowMoOff, "BmGame.RBMDeathCutscene_ShoulderCam.SetSlowMoOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetSlowMoSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSlowMoSpeed;
     /// <summary>
     /// Function: SetSlowMoSpeed
     /// </summary>
     public unsafe virtual void SetSlowMoSpeed(float Speed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSlowMoSpeed, "BmGame.RBMDeathCutscene_ShoulderCam.SetSlowMoSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSlowMoSpeed, "BmGame.RBMDeathCutscene_ShoulderCam.SetSlowMoSpeed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speed, paramsPtr + 0);
@@ -279,14 +279,14 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         return;
     }
 
-    private static BmSDK.Function __fn_StrikeImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StrikeImpact;
     /// <summary>
     /// Function: StrikeImpact
     /// </summary>
     public unsafe override void StrikeImpact(bool bFinalImpact = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrikeImpact, "BmGame.RBMDeathCutscene_ShoulderCam.StrikeImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StrikeImpact, "BmGame.RBMDeathCutscene_ShoulderCam.StrikeImpact", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFinalImpact, paramsPtr + 0);
@@ -294,14 +294,14 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         return;
     }
 
-    private static BmSDK.Function __fn_CheckStartPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckStartPosition;
     /// <summary>
     /// Function: CheckStartPosition
     /// </summary>
     public unsafe virtual void CheckStartPosition(System.Numerics.Vector3 StartPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckStartPosition, "BmGame.RBMDeathCutscene_ShoulderCam.CheckStartPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckStartPosition, "BmGame.RBMDeathCutscene_ShoulderCam.CheckStartPosition", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPos, paramsPtr + 0);
@@ -309,28 +309,28 @@ public partial class RBMDeathCutscene_ShoulderCam : BmSDK.BmGame.RBMDeathCutscen
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override bool OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMDeathCutscene_ShoulderCam.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMDeathCutscene_ShoulderCam.OnActivate", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetViewTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewTarget;
     /// <summary>
     /// Function: SetViewTarget
     /// </summary>
     public unsafe override void SetViewTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetViewTarget, "BmGame.RBMDeathCutscene_ShoulderCam.SetViewTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetViewTarget, "BmGame.RBMDeathCutscene_ShoulderCam.SetViewTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

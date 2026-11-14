@@ -78,14 +78,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         where TComponent : class, Framework.IScriptComponent<RRope2SimplePhysicsUpdater>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PutToSleep;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PutToSleep;
     /// <summary>
     /// Function: PutToSleep
     /// </summary>
     public unsafe virtual void PutToSleep()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PutToSleep, "BmGame.RRope2SimplePhysicsUpdater.PutToSleep");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PutToSleep, "BmGame.RRope2SimplePhysicsUpdater.PutToSleep", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,19 +99,19 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return;
     }
 
-    private static BmSDK.Function __fn_GetThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThoughts;
     /// <summary>
     /// Function: GetThoughts
     /// </summary>
-    public unsafe override void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FString IndentString = default)
+    public unsafe override void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FStringArg IndentString = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThoughts, "BmGame.RRope2SimplePhysicsUpdater.GetThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThoughts, "BmGame.RRope2SimplePhysicsUpdater.GetThoughts", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ThoughtLocationOverride);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThoughtLocationOverride, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(IndentString, paramsPtr + 28);
+        IndentString.WriteTo(paramsPtr + 28);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -120,19 +120,20 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 28);
         ThoughtList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.Actor.FThought>>(paramsPtr + 0);
         ThoughtLocationOverride = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTargetTighteningFactor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetTighteningFactor;
     /// <summary>
     /// Function: SetTargetTighteningFactor
     /// </summary>
     public unsafe virtual void SetTargetTighteningFactor(float NewTargetTighteningFactor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTargetTighteningFactor, "BmGame.RRope2SimplePhysicsUpdater.SetTargetTighteningFactor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTargetTighteningFactor, "BmGame.RRope2SimplePhysicsUpdater.SetTargetTighteningFactor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTargetTighteningFactor, paramsPtr + 0);
@@ -147,14 +148,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return;
     }
 
-    private static BmSDK.Function __fn_CalculateLowestDanglePointNearXYPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateLowestDanglePointNearXYPos;
     /// <summary>
     /// Function: CalculateLowestDanglePointNearXYPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateLowestDanglePointNearXYPos(BmSDK.BmGame.RRope2Component RopeComp, System.Numerics.Vector3 XYPos, out float RopePos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateLowestDanglePointNearXYPos, "BmGame.RRope2SimplePhysicsUpdater.CalculateLowestDanglePointNearXYPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateLowestDanglePointNearXYPos, "BmGame.RRope2SimplePhysicsUpdater.CalculateLowestDanglePointNearXYPos", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RopeComp, paramsPtr + 0);
@@ -173,14 +174,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_CalculateLowestDanglePointForRopePos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateLowestDanglePointForRopePos;
     /// <summary>
     /// Function: CalculateLowestDanglePointForRopePos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateLowestDanglePointForRopePos(float RopePos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateLowestDanglePointForRopePos, "BmGame.RRope2SimplePhysicsUpdater.CalculateLowestDanglePointForRopePos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateLowestDanglePointForRopePos, "BmGame.RRope2SimplePhysicsUpdater.CalculateLowestDanglePointForRopePos", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RopePos, paramsPtr + 0);
@@ -195,14 +196,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ClearAllControlPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllControlPoints;
     /// <summary>
     /// Function: ClearAllControlPoints
     /// </summary>
     public unsafe virtual void ClearAllControlPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAllControlPoints, "BmGame.RRope2SimplePhysicsUpdater.ClearAllControlPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAllControlPoints, "BmGame.RRope2SimplePhysicsUpdater.ClearAllControlPoints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -216,14 +217,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveControlPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveControlPoint;
     /// <summary>
     /// Function: RemoveControlPoint
     /// </summary>
     public unsafe virtual void RemoveControlPoint(BmSDK.BmGame.RRope2SimplePhysicsControlPoint RemovePoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveControlPoint, "BmGame.RRope2SimplePhysicsUpdater.RemoveControlPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveControlPoint, "BmGame.RRope2SimplePhysicsUpdater.RemoveControlPoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemovePoint, paramsPtr + 0);
@@ -238,14 +239,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return;
     }
 
-    private static BmSDK.Function __fn_AddControlPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddControlPoint;
     /// <summary>
     /// Function: AddControlPoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2SimplePhysicsControlPoint AddControlPoint(float AddRopePosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddControlPoint, "BmGame.RRope2SimplePhysicsUpdater.AddControlPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddControlPoint, "BmGame.RRope2SimplePhysicsUpdater.AddControlPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AddRopePosition, paramsPtr + 0);
@@ -260,14 +261,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RRope2SimplePhysicsControlPoint>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetControlPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetControlPoint;
     /// <summary>
     /// Function: GetControlPoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRope2SimplePhysicsControlPoint GetControlPoint(int ControlPointIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetControlPoint, "BmGame.RRope2SimplePhysicsUpdater.GetControlPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetControlPoint, "BmGame.RRope2SimplePhysicsUpdater.GetControlPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControlPointIndex, paramsPtr + 0);
@@ -282,14 +283,14 @@ public partial class RRope2SimplePhysicsUpdater : BmSDK.BmGame.RRope2BasePhysics
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RRope2SimplePhysicsControlPoint>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNumControlPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumControlPoints;
     /// <summary>
     /// Function: GetNumControlPoints
     /// </summary>
     public unsafe virtual int GetNumControlPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumControlPoints, "BmGame.RRope2SimplePhysicsUpdater.GetNumControlPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumControlPoints, "BmGame.RRope2SimplePhysicsUpdater.GetNumControlPoints", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

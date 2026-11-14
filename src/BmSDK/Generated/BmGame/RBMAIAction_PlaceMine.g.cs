@@ -78,14 +78,14 @@ public partial class RBMAIAction_PlaceMine : BmSDK.BmGame.RBMAIAction, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_PlaceMine>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_PlaceMine.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.RBMAIAction_PlaceMine.ActionTick", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,56 +93,56 @@ public partial class RBMAIAction_PlaceMine : BmSDK.BmGame.RBMAIAction, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PlaceMine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaceMine;
     /// <summary>
     /// Function: PlaceMine
     /// </summary>
     public unsafe virtual void PlaceMine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaceMine, "BmGame.RBMAIAction_PlaceMine.PlaceMine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaceMine, "BmGame.RBMAIAction_PlaceMine.PlaceMine", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MineInHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MineInHand;
     /// <summary>
     /// Function: MineInHand
     /// </summary>
     public unsafe virtual void MineInHand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MineInHand, "BmGame.RBMAIAction_PlaceMine.MineInHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MineInHand, "BmGame.RBMAIAction_PlaceMine.MineInHand", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartShockAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartShockAnim;
     /// <summary>
     /// Function: StartShockAnim
     /// </summary>
     public unsafe virtual void StartShockAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartShockAnim, "BmGame.RBMAIAction_PlaceMine.StartShockAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartShockAnim, "BmGame.RBMAIAction_PlaceMine.StartShockAnim", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPlaceAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPlaceAnim;
     /// <summary>
     /// Function: StartPlaceAnim
     /// </summary>
     public unsafe virtual void StartPlaceAnim(System.Numerics.Vector3 MineAnimPos, float MineAnimYaw)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPlaceAnim, "BmGame.RBMAIAction_PlaceMine.StartPlaceAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPlaceAnim, "BmGame.RBMAIAction_PlaceMine.StartPlaceAnim", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MineAnimPos, paramsPtr + 0);
@@ -151,28 +151,28 @@ public partial class RBMAIAction_PlaceMine : BmSDK.BmGame.RBMAIAction, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMAIAction_PlaceMine.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMAIAction_PlaceMine.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupMinePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupMinePoint;
     /// <summary>
     /// Function: SetupMinePoint
     /// </summary>
     public unsafe virtual void SetupMinePoint(BmSDK.BmGame.RThugMineablePointBase NewMinePoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupMinePoint, "BmGame.RBMAIAction_PlaceMine.SetupMinePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupMinePoint, "BmGame.RBMAIAction_PlaceMine.SetupMinePoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMinePoint, paramsPtr + 0);

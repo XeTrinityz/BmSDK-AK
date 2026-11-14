@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_RelativeAnimMoveSkippable : BmSDK.BmGa
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_RelativeAnimMoveSkippable>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSpecialMove;
     /// <summary>
     /// Function: UpdateSpecialMove
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_RelativeAnimMoveSkippable.UpdateSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_RelativeAnimMoveSkippable.UpdateSpecialMove", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSpecialMoveInstance_RelativeAnimMoveSkippable : BmSDK.BmGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AnyInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AnyInput;
     /// <summary>
     /// Function: AnyInput
     /// </summary>
     public unsafe virtual bool AnyInput()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnyInput, "BmGame.RSpecialMoveInstance_RelativeAnimMoveSkippable.AnyInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AnyInput, "BmGame.RSpecialMoveInstance_RelativeAnimMoveSkippable.AnyInput", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

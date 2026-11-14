@@ -78,14 +78,14 @@ public partial class RSpecialMoveConfig_CwJump : BmSDK.BmGame.RSpecialMoveConfig
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveConfig_CwJump>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CheckFreeJumpSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckFreeJumpSpace;
     /// <summary>
     /// Function: CheckFreeJumpSpace
     /// </summary>
     public unsafe virtual bool CheckFreeJumpSpace(BmSDK.BmGame.RPawnPlayer Player, BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckFreeJumpSpace, "BmScript.RSpecialMoveConfig_CwJump.CheckFreeJumpSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckFreeJumpSpace, "BmScript.RSpecialMoveConfig_CwJump.CheckFreeJumpSpace", this);
         byte* paramsPtr = stackalloc byte[396];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RSpecialMoveConfig_CwJump : BmSDK.BmGame.RSpecialMoveConfig
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 140);
     }
 
-    private static BmSDK.Function __fn_UpdateLocator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocator;
     /// <summary>
     /// Function: UpdateLocator
     /// </summary>
     public unsafe virtual void UpdateLocator(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, BmSDK.BmGame.RPawnPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLocator, "BmScript.RSpecialMoveConfig_CwJump.UpdateLocator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLocator, "BmScript.RSpecialMoveConfig_CwJump.UpdateLocator", this);
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Loc);
@@ -112,14 +112,14 @@ public partial class RSpecialMoveConfig_CwJump : BmSDK.BmGame.RSpecialMoveConfig
         return;
     }
 
-    private static BmSDK.Function __fn_GetAnimSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimSet;
     /// <summary>
     /// Function: GetAnimSet
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetAnimSet(BmSDK.BmGame.RPawnPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimSet, "BmScript.RSpecialMoveConfig_CwJump.GetAnimSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimSet, "BmScript.RSpecialMoveConfig_CwJump.GetAnimSet", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -127,14 +127,14 @@ public partial class RSpecialMoveConfig_CwJump : BmSDK.BmGame.RSpecialMoveConfig
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetFreeRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFreeRotation;
     /// <summary>
     /// Function: GetFreeRotation
     /// </summary>
     public unsafe override BmSDK.Rotator GetFreeRotation(BmSDK.BmGame.RPlayerController Controller, BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFreeRotation, "BmScript.RSpecialMoveConfig_CwJump.GetFreeRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFreeRotation, "BmScript.RSpecialMoveConfig_CwJump.GetFreeRotation", this);
         byte* paramsPtr = stackalloc byte[188];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Controller, paramsPtr + 0);

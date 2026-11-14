@@ -78,14 +78,14 @@ public partial class RBMCombatThrownObject_Predator : BmSDK.BmGame.RBMCombatThro
         where TComponent : class, Framework.IScriptComponent<RBMCombatThrownObject_Predator>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanBePickedUpBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBePickedUpBy;
     /// <summary>
     /// Function: CanBePickedUpBy
     /// </summary>
     public unsafe override bool CanBePickedUpBy(BmSDK.BmGame.RBMPawnAI NewUser, bool bInCombat, bool bTaunting)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePickedUpBy, "BmGame.RBMCombatThrownObject_Predator.CanBePickedUpBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBePickedUpBy, "BmGame.RBMCombatThrownObject_Predator.CanBePickedUpBy", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUser, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class RBMCombatThrownObject_Predator : BmSDK.BmGame.RBMCombatThro
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBMCombatThrownObject_Predator.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RBMCombatThrownObject_Predator.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

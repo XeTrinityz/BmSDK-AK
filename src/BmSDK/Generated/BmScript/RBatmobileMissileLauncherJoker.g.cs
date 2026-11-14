@@ -78,84 +78,84 @@ public partial class RBatmobileMissileLauncherJoker : BmSDK.BmGame.RBatmobileMis
         where TComponent : class, Framework.IScriptComponent<RBatmobileMissileLauncherJoker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CheckForDeadThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForDeadThugs;
     /// <summary>
     /// Function: CheckForDeadThugs
     /// </summary>
     public unsafe virtual void CheckForDeadThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForDeadThugs, "BmScript.RBatmobileMissileLauncherJoker.CheckForDeadThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForDeadThugs, "BmScript.RBatmobileMissileLauncherJoker.CheckForDeadThugs", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTargetsHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTargetsHUD;
     /// <summary>
     /// Function: DrawTargetsHUD
     /// </summary>
     public unsafe override void DrawTargetsHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTargetsHUD, "BmScript.RBatmobileMissileLauncherJoker.DrawTargetsHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTargetsHUD, "BmScript.RBatmobileMissileLauncherJoker.DrawTargetsHUD", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GenerateFakeTargets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateFakeTargets;
     /// <summary>
     /// Function: GenerateFakeTargets
     /// </summary>
     public unsafe virtual void GenerateFakeTargets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateFakeTargets, "BmScript.RBatmobileMissileLauncherJoker.GenerateFakeTargets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GenerateFakeTargets, "BmScript.RBatmobileMissileLauncherJoker.GenerateFakeTargets", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsHeavyWeaponValid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHeavyWeaponValid;
     /// <summary>
     /// Function: IsHeavyWeaponValid
     /// </summary>
     public unsafe override bool IsHeavyWeaponValid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHeavyWeaponValid, "BmScript.RBatmobileMissileLauncherJoker.IsHeavyWeaponValid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHeavyWeaponValid, "BmScript.RBatmobileMissileLauncherJoker.IsHeavyWeaponValid", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ReadyToFire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadyToFire;
     /// <summary>
     /// Function: ReadyToFire
     /// </summary>
     public unsafe override bool ReadyToFire()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyToFire, "BmScript.RBatmobileMissileLauncherJoker.ReadyToFire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadyToFire, "BmScript.RBatmobileMissileLauncherJoker.ReadyToFire", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FireReadyEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireReadyEvent;
     /// <summary>
     /// Function: FireReadyEvent
     /// </summary>
     public unsafe virtual void FireReadyEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireReadyEvent, "BmScript.RBatmobileMissileLauncherJoker.FireReadyEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireReadyEvent, "BmScript.RBatmobileMissileLauncherJoker.FireReadyEvent", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

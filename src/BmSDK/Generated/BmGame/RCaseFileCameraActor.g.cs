@@ -78,14 +78,14 @@ public partial class RCaseFileCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RCaseFileCameraActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayerMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerMove;
     /// <summary>
     /// Function: PlayerMove
     /// </summary>
     public unsafe virtual void PlayerMove(float DeltaTime, System.Numerics.Vector3 newAccel, float SpeedPercent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerMove, "BmGame.RCaseFileCameraActor.PlayerMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerMove, "BmGame.RCaseFileCameraActor.PlayerMove", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class RCaseFileCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_IsInsideCrimeScene;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsideCrimeScene;
     /// <summary>
     /// Function: IsInsideCrimeScene
     /// </summary>
     public unsafe virtual bool IsInsideCrimeScene(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInsideCrimeScene, "BmGame.RCaseFileCameraActor.IsInsideCrimeScene");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInsideCrimeScene, "BmGame.RCaseFileCameraActor.IsInsideCrimeScene", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RCaseFileCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_InitFromOtherCameraActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitFromOtherCameraActor;
     /// <summary>
     /// Function: InitFromOtherCameraActor
     /// </summary>
     public unsafe virtual void InitFromOtherCameraActor(BmSDK.BmGame.RCameraActor OtherCamera, BmSDK.BmGame.RCrimeSceneBase CrimeVolume)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitFromOtherCameraActor, "BmGame.RCaseFileCameraActor.InitFromOtherCameraActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitFromOtherCameraActor, "BmGame.RCaseFileCameraActor.InitFromOtherCameraActor", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OtherCamera, paramsPtr + 0);

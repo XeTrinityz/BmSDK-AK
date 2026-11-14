@@ -78,28 +78,28 @@ public partial class RPawnPlayerJoker_Ch5Hallucination : BmSDK.BmGame.RPawnPlaye
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerJoker_Ch5Hallucination>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_VisibilitySwitchTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VisibilitySwitchTimer;
     /// <summary>
     /// Function: VisibilitySwitchTimer
     /// </summary>
     public unsafe virtual void VisibilitySwitchTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VisibilitySwitchTimer, "BmScript.RPawnPlayerJoker_Ch5Hallucination.VisibilitySwitchTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VisibilitySwitchTimer, "BmScript.RPawnPlayerJoker_Ch5Hallucination.VisibilitySwitchTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPawnPlayerJoker_Ch5Hallucination.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RPawnPlayerJoker_Ch5Hallucination.Tick", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

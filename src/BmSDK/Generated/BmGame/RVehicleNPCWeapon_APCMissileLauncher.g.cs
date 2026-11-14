@@ -78,14 +78,14 @@ public partial class RVehicleNPCWeapon_APCMissileLauncher : BmSDK.BmGame.RVehicl
         where TComponent : class, Framework.IScriptComponent<RVehicleNPCWeapon_APCMissileLauncher>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CancelAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAttack;
     /// <summary>
     /// Function: CancelAttack
     /// </summary>
     public unsafe override void CancelAttack(bool DueToBeingRammed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelAttack, "BmGame.RVehicleNPCWeapon_APCMissileLauncher.CancelAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelAttack, "BmGame.RVehicleNPCWeapon_APCMissileLauncher.CancelAttack", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DueToBeingRammed, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RVehicleNPCWeapon_APCMissileLauncher : BmSDK.BmGame.RVehicl
         return;
     }
 
-    private static BmSDK.Function __fn_CreateAimingPoseConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateAimingPoseConfig;
     /// <summary>
     /// Function: CreateAimingPoseConfig
     /// </summary>
     public unsafe override bool CreateAimingPoseConfig(BmSDK.BmGame.RBMPawnAI Pawn, BmSDK.Engine.AnimSet Anims)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateAimingPoseConfig, "BmGame.RVehicleNPCWeapon_APCMissileLauncher.CreateAimingPoseConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateAimingPoseConfig, "BmGame.RVehicleNPCWeapon_APCMissileLauncher.CreateAimingPoseConfig", this);
         byte* paramsPtr = stackalloc byte[1052];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RVehicleNPCWeapon_APCMissileLauncher : BmSDK.BmGame.RVehicl
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_UpdatePawnAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawnAnim;
     /// <summary>
     /// Function: UpdatePawnAnim
     /// </summary>
     public unsafe override float UpdatePawnAnim(System.Numerics.Vector3 Target, float DeltaTime, bool IsFiring)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePawnAnim, "BmGame.RVehicleNPCWeapon_APCMissileLauncher.UpdatePawnAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePawnAnim, "BmGame.RVehicleNPCWeapon_APCMissileLauncher.UpdatePawnAnim", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);

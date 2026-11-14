@@ -91,42 +91,42 @@ public partial class RSeqAct_SetTVTexture : BmSDK.Engine.SequenceAction, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SetTVTexture.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_SetTVTexture.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetStatic;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStatic;
     /// <summary>
     /// Function: SetStatic
     /// </summary>
     public unsafe virtual void SetStatic()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStatic, "BmScript.RSeqAct_SetTVTexture.SetStatic");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStatic, "BmScript.RSeqAct_SetTVTexture.SetStatic", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTexture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTexture;
     /// <summary>
     /// Function: SetTexture
     /// </summary>
     public unsafe virtual void SetTexture(BmSDK.Engine.Texture Texture)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTexture, "BmScript.RSeqAct_SetTVTexture.SetTexture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTexture, "BmScript.RSeqAct_SetTVTexture.SetTexture", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Texture, paramsPtr + 0);

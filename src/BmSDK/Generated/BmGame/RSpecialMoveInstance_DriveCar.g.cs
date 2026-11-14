@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_DriveCar>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ToggleBatmansRagdoll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleBatmansRagdoll;
     /// <summary>
     /// Function: ToggleBatmansRagdoll
     /// </summary>
     public unsafe virtual void ToggleBatmansRagdoll(bool bEnableRagdoll)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleBatmansRagdoll, "BmGame.RSpecialMoveInstance_DriveCar.ToggleBatmansRagdoll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleBatmansRagdoll, "BmGame.RSpecialMoveInstance_DriveCar.ToggleBatmansRagdoll", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnableRagdoll, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
         return;
     }
 
-    private static BmSDK.Function __fn_CancelSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
     /// <summary>
     /// Function: CancelSpecialMove
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.CancelSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.CancelSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextSpecialMove, paramsPtr + 0);
@@ -108,70 +108,70 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetEndMovementStance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEndMovementStance;
     /// <summary>
     /// Function: GetEndMovementStance
     /// </summary>
     public unsafe override BmSDK.FName GetEndMovementStance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEndMovementStance, "BmGame.RSpecialMoveInstance_DriveCar.GetEndMovementStance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEndMovementStance, "BmGame.RSpecialMoveInstance_DriveCar.GetEndMovementStance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ApplyBrakes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyBrakes;
     /// <summary>
     /// Function: ApplyBrakes
     /// </summary>
     public unsafe virtual void ApplyBrakes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyBrakes, "BmGame.RSpecialMoveInstance_DriveCar.ApplyBrakes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyBrakes, "BmGame.RSpecialMoveInstance_DriveCar.ApplyBrakes", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchToCar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchToCar;
     /// <summary>
     /// Function: SwitchToCar
     /// </summary>
     public unsafe virtual void SwitchToCar()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchToCar, "BmGame.RSpecialMoveInstance_DriveCar.SwitchToCar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchToCar, "BmGame.RSpecialMoveInstance_DriveCar.SwitchToCar", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePlayerAnims;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerAnims;
     /// <summary>
     /// Function: UpdatePlayerAnims
     /// </summary>
     public unsafe virtual void UpdatePlayerAnims(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePlayerAnims, "BmGame.RSpecialMoveInstance_DriveCar.UpdatePlayerAnims");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePlayerAnims, "BmGame.RSpecialMoveInstance_DriveCar.UpdatePlayerAnims", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -179,14 +179,14 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSpecialMove;
     /// <summary>
     /// Function: UpdateSpecialMove
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.UpdateSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.UpdateSpecialMove", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -194,56 +194,56 @@ public partial class RSpecialMoveInstance_DriveCar : BmSDK.BmGame.RSpecialMoveIn
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetCustomIdle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomIdle;
     /// <summary>
     /// Function: GetCustomIdle
     /// </summary>
     public unsafe override BmSDK.BmGame.RAnimConfig.FCustomAnimConfig GetCustomIdle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomIdle, "BmGame.RSpecialMoveInstance_DriveCar.GetCustomIdle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomIdle, "BmGame.RSpecialMoveInstance_DriveCar.GetCustomIdle", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAnimConfig.FCustomAnimConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CloseCockpit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseCockpit;
     /// <summary>
     /// Function: CloseCockpit
     /// </summary>
     public unsafe virtual void CloseCockpit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseCockpit, "BmGame.RSpecialMoveInstance_DriveCar.CloseCockpit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseCockpit, "BmGame.RSpecialMoveInstance_DriveCar.CloseCockpit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OpenCockpit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenCockpit;
     /// <summary>
     /// Function: OpenCockpit
     /// </summary>
     public unsafe virtual void OpenCockpit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenCockpit, "BmGame.RSpecialMoveInstance_DriveCar.OpenCockpit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenCockpit, "BmGame.RSpecialMoveInstance_DriveCar.OpenCockpit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_DriveCar.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);

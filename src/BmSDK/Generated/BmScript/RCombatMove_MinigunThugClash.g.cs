@@ -78,42 +78,42 @@ public partial class RCombatMove_MinigunThugClash : BmSDK.BmGame.RCombatMove_Vil
         where TComponent : class, Framework.IScriptComponent<RCombatMove_MinigunThugClash>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayCounter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCounter;
     /// <summary>
     /// Function: PlayCounter
     /// </summary>
     public unsafe override void PlayCounter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCounter, "BmScript.RCombatMove_MinigunThugClash.PlayCounter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCounter, "BmScript.RCombatMove_MinigunThugClash.PlayCounter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DetectRun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetectRun;
     /// <summary>
     /// Function: DetectRun
     /// </summary>
     public unsafe virtual bool DetectRun()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetectRun, "BmScript.RCombatMove_MinigunThugClash.DetectRun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetectRun, "BmScript.RCombatMove_MinigunThugClash.DetectRun", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFOV;
     /// <summary>
     /// Function: UpdateFOV
     /// </summary>
     public unsafe virtual void UpdateFOV(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFOV, "BmScript.RCombatMove_MinigunThugClash.UpdateFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFOV, "BmScript.RCombatMove_MinigunThugClash.UpdateFOV", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -121,28 +121,28 @@ public partial class RCombatMove_MinigunThugClash : BmSDK.BmGame.RCombatMove_Vil
         return;
     }
 
-    private static BmSDK.Function __fn_ExitMinigunTgBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMinigunTgBehaviour;
     /// <summary>
     /// Function: ExitMinigunTgBehaviour
     /// </summary>
     public unsafe virtual void ExitMinigunTgBehaviour()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMinigunTgBehaviour, "BmScript.RCombatMove_MinigunThugClash.ExitMinigunTgBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMinigunTgBehaviour, "BmScript.RCombatMove_MinigunThugClash.ExitMinigunTgBehaviour", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ExitMoveForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMoveForPawn;
     /// <summary>
     /// Function: ExitMoveForPawn
     /// </summary>
     public unsafe override void ExitMoveForPawn(BmSDK.BmGame.RPawnCombat ExitingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMoveForPawn, "BmScript.RCombatMove_MinigunThugClash.ExitMoveForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMoveForPawn, "BmScript.RCombatMove_MinigunThugClash.ExitMoveForPawn", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExitingPawn, paramsPtr + 0);
@@ -150,112 +150,112 @@ public partial class RCombatMove_MinigunThugClash : BmSDK.BmGame.RCombatMove_Vil
         return;
     }
 
-    private static BmSDK.Function __fn_GetCameraAnimset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraAnimset;
     /// <summary>
     /// Function: GetCameraAnimset
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetCameraAnimset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraAnimset, "BmScript.RCombatMove_MinigunThugClash.GetCameraAnimset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCameraAnimset, "BmScript.RCombatMove_MinigunThugClash.GetCameraAnimset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IncrementClash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementClash;
     /// <summary>
     /// Function: IncrementClash
     /// </summary>
     public unsafe override void IncrementClash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncrementClash, "BmScript.RCombatMove_MinigunThugClash.IncrementClash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncrementClash, "BmScript.RCombatMove_MinigunThugClash.IncrementClash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrClash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrClash;
     /// <summary>
     /// Function: GetCurrClash
     /// </summary>
     public unsafe override int GetCurrClash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrClash, "BmScript.RCombatMove_MinigunThugClash.GetCurrClash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrClash, "BmScript.RCombatMove_MinigunThugClash.GetCurrClash", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RCombatMove_MinigunThugClash.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmScript.RCombatMove_MinigunThugClash.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinalHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinalHit;
     /// <summary>
     /// Function: FinalHit
     /// </summary>
     public unsafe override void FinalHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinalHit, "BmScript.RCombatMove_MinigunThugClash.FinalHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinalHit, "BmScript.RCombatMove_MinigunThugClash.FinalHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IntoClashHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IntoClashHit;
     /// <summary>
     /// Function: IntoClashHit
     /// </summary>
     public unsafe override void IntoClashHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IntoClashHit, "BmScript.RCombatMove_MinigunThugClash.IntoClashHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IntoClashHit, "BmScript.RCombatMove_MinigunThugClash.IntoClashHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Hit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Hit;
     /// <summary>
     /// Function: Hit
     /// </summary>
     public unsafe override void Hit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Hit, "BmScript.RCombatMove_MinigunThugClash.Hit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Hit, "BmScript.RCombatMove_MinigunThugClash.Hit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HitLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitLight;
     /// <summary>
     /// Function: HitLight
     /// </summary>
     public unsafe override void HitLight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitLight, "BmScript.RCombatMove_MinigunThugClash.HitLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitLight, "BmScript.RCombatMove_MinigunThugClash.HitLight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

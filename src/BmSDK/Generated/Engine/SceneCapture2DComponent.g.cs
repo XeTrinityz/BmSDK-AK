@@ -78,14 +78,14 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
         where TComponent : class, Framework.IScriptComponent<SceneCapture2DComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetView;
     /// <summary>
     /// Function: SetView
     /// </summary>
     public unsafe virtual void SetView(System.Numerics.Vector3 NewLocation, BmSDK.Rotator NewRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetView, "Engine.SceneCapture2DComponent.SetView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetView, "Engine.SceneCapture2DComponent.SetView", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLocation, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class SceneCapture2DComponent : BmSDK.Engine.SceneCaptureComponen
         return;
     }
 
-    private static BmSDK.Function __fn_SetCaptureParameters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureParameters;
     /// <summary>
     /// Function: SetCaptureParameters
     /// </summary>
     public unsafe virtual void SetCaptureParameters(BmSDK.Engine.TextureRenderTarget2D NewTextureTarget = default, float NewFOV = default, float NewNearPlane = default, float NewFarPlane = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCaptureParameters, "Engine.SceneCapture2DComponent.SetCaptureParameters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCaptureParameters, "Engine.SceneCapture2DComponent.SetCaptureParameters", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTextureTarget, paramsPtr + 0);

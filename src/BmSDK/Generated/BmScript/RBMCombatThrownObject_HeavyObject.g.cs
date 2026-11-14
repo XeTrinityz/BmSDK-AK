@@ -73,28 +73,28 @@ public partial class RBMCombatThrownObject_HeavyObject : BmSDK.BmGame.RBMCombatT
         where TComponent : class, Framework.IScriptComponent<RBMCombatThrownObject_HeavyObject>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CaughtByPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CaughtByPlayer;
     /// <summary>
     /// Function: CaughtByPlayer
     /// </summary>
     public unsafe override void CaughtByPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CaughtByPlayer, "BmScript.RBMCombatThrownObject_HeavyObject.CaughtByPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CaughtByPlayer, "BmScript.RBMCombatThrownObject_HeavyObject.CaughtByPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HitSomething;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitSomething;
     /// <summary>
     /// Function: HitSomething
     /// </summary>
     public unsafe override void HitSomething(BmSDK.BmGame.RPawnCombat HitPawn, float Speed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitSomething, "BmScript.RBMCombatThrownObject_HeavyObject.HitSomething");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitSomething, "BmScript.RBMCombatThrownObject_HeavyObject.HitSomething", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);
@@ -103,28 +103,28 @@ public partial class RBMCombatThrownObject_HeavyObject : BmSDK.BmGame.RBMCombatT
         return;
     }
 
-    private static BmSDK.Function __fn_HitPawnValueChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitPawnValueChanged;
     /// <summary>
     /// Function: HitPawnValueChanged
     /// </summary>
     public unsafe override void HitPawnValueChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitPawnValueChanged, "BmScript.RBMCombatThrownObject_HeavyObject.HitPawnValueChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitPawnValueChanged, "BmScript.RBMCombatThrownObject_HeavyObject.HitPawnValueChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopAttackingFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAttackingFX;
     /// <summary>
     /// Function: StopAttackingFX
     /// </summary>
     public unsafe virtual void StopAttackingFX(bool bSuccessfulCounter = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAttackingFX, "BmScript.RBMCombatThrownObject_HeavyObject.StopAttackingFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAttackingFX, "BmScript.RBMCombatThrownObject_HeavyObject.StopAttackingFX", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuccessfulCounter, paramsPtr + 0);
@@ -132,70 +132,70 @@ public partial class RBMCombatThrownObject_HeavyObject : BmSDK.BmGame.RBMCombatT
         return;
     }
 
-    private static BmSDK.Function __fn_StartAttackingFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAttackingFX;
     /// <summary>
     /// Function: StartAttackingFX
     /// </summary>
     public unsafe virtual void StartAttackingFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAttackingFX, "BmScript.RBMCombatThrownObject_HeavyObject.StartAttackingFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAttackingFX, "BmScript.RBMCombatThrownObject_HeavyObject.StartAttackingFX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanStillBeUsedByPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanStillBeUsedByPlayer;
     /// <summary>
     /// Function: CanStillBeUsedByPlayer
     /// </summary>
     public unsafe override bool CanStillBeUsedByPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanStillBeUsedByPlayer, "BmScript.RBMCombatThrownObject_HeavyObject.CanStillBeUsedByPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanStillBeUsedByPlayer, "BmScript.RBMCombatThrownObject_HeavyObject.CanStillBeUsedByPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EnableStasis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableStasis;
     /// <summary>
     /// Function: EnableStasis
     /// </summary>
     public unsafe virtual void EnableStasis()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableStasis, "BmScript.RBMCombatThrownObject_HeavyObject.EnableStasis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableStasis, "BmScript.RBMCombatThrownObject_HeavyObject.EnableStasis", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DelayedSetCanHitPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DelayedSetCanHitPawn;
     /// <summary>
     /// Function: DelayedSetCanHitPawn
     /// </summary>
     public unsafe virtual void DelayedSetCanHitPawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DelayedSetCanHitPawn, "BmScript.RBMCombatThrownObject_HeavyObject.DelayedSetCanHitPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DelayedSetCanHitPawn, "BmScript.RBMCombatThrownObject_HeavyObject.DelayedSetCanHitPawn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCanHitPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCanHitPawn;
     /// <summary>
     /// Function: SetCanHitPawn
     /// </summary>
     public unsafe override void SetCanHitPawn(bool bNewValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCanHitPawn, "BmScript.RBMCombatThrownObject_HeavyObject.SetCanHitPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCanHitPawn, "BmScript.RBMCombatThrownObject_HeavyObject.SetCanHitPawn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewValue, paramsPtr + 0);
@@ -203,14 +203,14 @@ public partial class RBMCombatThrownObject_HeavyObject : BmSDK.BmGame.RBMCombatT
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RBMCombatThrownObject_HeavyObject.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RBMCombatThrownObject_HeavyObject.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

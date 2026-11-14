@@ -73,14 +73,14 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<HttpBaseInterface>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetContent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContent;
     /// <summary>
     /// Function: GetContent
     /// </summary>
     public unsafe virtual void GetContent(out BmSDK.TArray<byte> Content)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetContent, "Engine.HttpBaseInterface.GetContent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetContent, "Engine.HttpBaseInterface.GetContent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -95,14 +95,14 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURL;
     /// <summary>
     /// Function: GetURL
     /// </summary>
     public unsafe virtual BmSDK.FString GetURL()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetURL, "Engine.HttpBaseInterface.GetURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetURL, "Engine.HttpBaseInterface.GetURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -116,14 +116,14 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetContentLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentLength;
     /// <summary>
     /// Function: GetContentLength
     /// </summary>
     public unsafe virtual int GetContentLength()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetContentLength, "Engine.HttpBaseInterface.GetContentLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetContentLength, "Engine.HttpBaseInterface.GetContentLength", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -137,14 +137,14 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetContentType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentType;
     /// <summary>
     /// Function: GetContentType
     /// </summary>
     public unsafe virtual BmSDK.FString GetContentType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetContentType, "Engine.HttpBaseInterface.GetContentType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetContentType, "Engine.HttpBaseInterface.GetContentType", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -158,17 +158,17 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetURLParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURLParameter;
     /// <summary>
     /// Function: GetURLParameter
     /// </summary>
-    public unsafe virtual BmSDK.FString GetURLParameter(BmSDK.FString ParameterName)
+    public unsafe virtual BmSDK.FString GetURLParameter(BmSDK.FStringArg ParameterName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetURLParameter, "Engine.HttpBaseInterface.GetURLParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetURLParameter, "Engine.HttpBaseInterface.GetURLParameter", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
+        ParameterName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -177,17 +177,18 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetHeaders;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeaders;
     /// <summary>
     /// Function: GetHeaders
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FString> GetHeaders()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeaders, "Engine.HttpBaseInterface.GetHeaders");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeaders, "Engine.HttpBaseInterface.GetHeaders", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -201,17 +202,17 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.FString>>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetHeader;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeader;
     /// <summary>
     /// Function: GetHeader
     /// </summary>
-    public unsafe virtual BmSDK.FString GetHeader(BmSDK.FString HeaderName)
+    public unsafe virtual BmSDK.FString GetHeader(BmSDK.FStringArg HeaderName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeader, "Engine.HttpBaseInterface.GetHeader");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeader, "Engine.HttpBaseInterface.GetHeader", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(HeaderName, paramsPtr + 0);
+        HeaderName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -220,6 +221,7 @@ public partial class HttpBaseInterface : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 }

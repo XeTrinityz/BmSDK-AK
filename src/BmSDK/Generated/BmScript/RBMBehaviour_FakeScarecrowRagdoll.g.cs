@@ -78,56 +78,56 @@ public partial class RBMBehaviour_FakeScarecrowRagdoll : BmSDK.BmGame.RBMBehavio
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_FakeScarecrowRagdoll>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DeactivateStunnedFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateStunnedFX;
     /// <summary>
     /// Function: DeactivateStunnedFX
     /// </summary>
     public unsafe override void DeactivateStunnedFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateStunnedFX, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.DeactivateStunnedFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateStunnedFX, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.DeactivateStunnedFX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateStunnedFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateStunnedFX;
     /// <summary>
     /// Function: ActivateStunnedFX
     /// </summary>
     public unsafe override void ActivateStunnedFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateStunnedFX, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.ActivateStunnedFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateStunnedFX, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.ActivateStunnedFX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGetupTimerStartTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGetupTimerStartTime;
     /// <summary>
     /// Function: GetGetupTimerStartTime
     /// </summary>
     public unsafe override float GetGetupTimerStartTime()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGetupTimerStartTime, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.GetGetupTimerStartTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGetupTimerStartTime, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.GetGetupTimerStartTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmScript.RBMBehaviour_FakeScarecrowRagdoll.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

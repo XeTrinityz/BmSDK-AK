@@ -78,17 +78,17 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<IniLocPatcher>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateLocFileName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocFileName;
     /// <summary>
     /// Function: UpdateLocFileName
     /// </summary>
-    public unsafe virtual BmSDK.FString UpdateLocFileName(BmSDK.FString Filename)
+    public unsafe virtual BmSDK.FString UpdateLocFileName(BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLocFileName, "Engine.IniLocPatcher.UpdateLocFileName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLocFileName, "Engine.IniLocPatcher.UpdateLocFileName", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -97,31 +97,32 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ClearCachedFiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCachedFiles;
     /// <summary>
     /// Function: ClearCachedFiles
     /// </summary>
     public unsafe virtual void ClearCachedFiles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearCachedFiles, "Engine.IniLocPatcher.ClearCachedFiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearCachedFiles, "Engine.IniLocPatcher.ClearCachedFiles", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearReadFileDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearReadFileDelegate;
     /// <summary>
     /// Function: ClearReadFileDelegate
     /// </summary>
     public unsafe virtual void ClearReadFileDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearReadFileDelegate, "Engine.IniLocPatcher.ClearReadFileDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadFileDelegate, "Engine.IniLocPatcher.ClearReadFileDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ReadTitleFileCompleteDelegate, paramsPtr + 0);
@@ -129,14 +130,14 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddReadFileDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddReadFileDelegate;
     /// <summary>
     /// Function: AddReadFileDelegate
     /// </summary>
     public unsafe virtual void AddReadFileDelegate(System.IntPtr ReadTitleFileCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddReadFileDelegate, "Engine.IniLocPatcher.AddReadFileDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadFileDelegate, "Engine.IniLocPatcher.AddReadFileDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ReadTitleFileCompleteDelegate, paramsPtr + 0);
@@ -144,32 +145,33 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddFileToDownload;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFileToDownload;
     /// <summary>
     /// Function: AddFileToDownload
     /// </summary>
-    public unsafe virtual void AddFileToDownload(BmSDK.FString Filename)
+    public unsafe virtual void AddFileToDownload(BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFileToDownload, "Engine.IniLocPatcher.AddFileToDownload");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFileToDownload, "Engine.IniLocPatcher.AddFileToDownload", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessIniLocFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessIniLocFile;
     /// <summary>
     /// Function: ProcessIniLocFile
     /// </summary>
-    public unsafe virtual void ProcessIniLocFile(BmSDK.FString Filename, bool bIsUnicode, out BmSDK.TArray<byte> FileData)
+    public unsafe virtual void ProcessIniLocFile(BmSDK.FStringArg Filename, bool bIsUnicode, out BmSDK.TArray<byte> FileData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessIniLocFile, "Engine.IniLocPatcher.ProcessIniLocFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessIniLocFile, "Engine.IniLocPatcher.ProcessIniLocFile", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsUnicode, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -179,177 +181,184 @@ public partial class IniLocPatcher : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         FileData = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<byte>>(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForAllFilesComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForAllFilesComplete;
     /// <summary>
     /// Function: CheckForAllFilesComplete
     /// </summary>
     public unsafe virtual void CheckForAllFilesComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForAllFilesComplete, "Engine.IniLocPatcher.CheckForAllFilesComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForAllFilesComplete, "Engine.IniLocPatcher.CheckForAllFilesComplete", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerDownloadCompleteDelegates;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerDownloadCompleteDelegates;
     /// <summary>
     /// Function: TriggerDownloadCompleteDelegates
     /// </summary>
-    public unsafe virtual void TriggerDownloadCompleteDelegates(bool bSuccess, BmSDK.FString Filename)
+    public unsafe virtual void TriggerDownloadCompleteDelegates(bool bSuccess, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerDownloadCompleteDelegates, "Engine.IniLocPatcher.TriggerDownloadCompleteDelegates");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerDownloadCompleteDelegates, "Engine.IniLocPatcher.TriggerDownloadCompleteDelegates", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuccess, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnFileCacheSaveComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFileCacheSaveComplete;
     /// <summary>
     /// Function: OnFileCacheSaveComplete
     /// </summary>
-    public unsafe virtual void OnFileCacheSaveComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken)
+    public unsafe virtual void OnFileCacheSaveComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFileCacheSaveComplete, "Engine.IniLocPatcher.OnFileCacheSaveComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFileCacheSaveComplete, "Engine.IniLocPatcher.OnFileCacheSaveComplete", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bytesTransferred, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnFileCacheLoadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFileCacheLoadComplete;
     /// <summary>
     /// Function: OnFileCacheLoadComplete
     /// </summary>
-    public unsafe virtual void OnFileCacheLoadComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken)
+    public unsafe virtual void OnFileCacheLoadComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFileCacheLoadComplete, "Engine.IniLocPatcher.OnFileCacheLoadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFileCacheLoadComplete, "Engine.IniLocPatcher.OnFileCacheLoadComplete", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bytesTransferred, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDownloadFileComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDownloadFileComplete;
     /// <summary>
     /// Function: OnDownloadFileComplete
     /// </summary>
-    public unsafe virtual void OnDownloadFileComplete(bool bWasSuccessful, BmSDK.FString Filename)
+    public unsafe virtual void OnDownloadFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDownloadFileComplete, "Engine.IniLocPatcher.OnDownloadFileComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDownloadFileComplete, "Engine.IniLocPatcher.OnDownloadFileComplete", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_StartLoadingFiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLoadingFiles;
     /// <summary>
     /// Function: StartLoadingFiles
     /// </summary>
     public unsafe virtual void StartLoadingFiles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLoadingFiles, "Engine.IniLocPatcher.StartLoadingFiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartLoadingFiles, "Engine.IniLocPatcher.StartLoadingFiles", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnRequestTitleFileListComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRequestTitleFileListComplete;
     /// <summary>
     /// Function: OnRequestTitleFileListComplete
     /// </summary>
-    public unsafe virtual void OnRequestTitleFileListComplete(bool bWasSuccessful, BmSDK.FString ResultStr)
+    public unsafe virtual void OnRequestTitleFileListComplete(bool bWasSuccessful, BmSDK.FStringArg ResultStr)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRequestTitleFileListComplete, "Engine.IniLocPatcher.OnRequestTitleFileListComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRequestTitleFileListComplete, "Engine.IniLocPatcher.OnRequestTitleFileListComplete", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ResultStr, paramsPtr + 4);
+        ResultStr.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_DownloadFiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DownloadFiles;
     /// <summary>
     /// Function: DownloadFiles
     /// </summary>
     public unsafe virtual void DownloadFiles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DownloadFiles, "Engine.IniLocPatcher.DownloadFiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DownloadFiles, "Engine.IniLocPatcher.DownloadFiles", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.IniLocPatcher.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.IniLocPatcher.Init", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnAllTitleFilesCompleted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAllTitleFilesCompleted;
     /// <summary>
     /// Function: OnAllTitleFilesCompleted
     /// </summary>
     public unsafe virtual void OnAllTitleFilesCompleted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAllTitleFilesCompleted, "Engine.IniLocPatcher.OnAllTitleFilesCompleted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAllTitleFilesCompleted, "Engine.IniLocPatcher.OnAllTitleFilesCompleted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnReadTitleFileComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnReadTitleFileComplete;
     /// <summary>
     /// Function: OnReadTitleFileComplete
     /// </summary>
-    public unsafe virtual void OnReadTitleFileComplete(bool bWasSuccessful, BmSDK.FString Filename)
+    public unsafe virtual void OnReadTitleFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReadTitleFileComplete, "Engine.IniLocPatcher.OnReadTitleFileComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnReadTitleFileComplete, "Engine.IniLocPatcher.OnReadTitleFileComplete", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 

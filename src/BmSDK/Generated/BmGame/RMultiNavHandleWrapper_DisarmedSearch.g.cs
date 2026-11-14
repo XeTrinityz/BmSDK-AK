@@ -78,28 +78,28 @@ public partial class RMultiNavHandleWrapper_DisarmedSearch : BmSDK.BmGame.RMulti
         where TComponent : class, Framework.IScriptComponent<RMultiNavHandleWrapper_DisarmedSearch>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FreeAllHandles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeAllHandles;
     /// <summary>
     /// Function: FreeAllHandles
     /// </summary>
     public unsafe override void FreeAllHandles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeAllHandles, "BmGame.RMultiNavHandleWrapper_DisarmedSearch.FreeAllHandles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreeAllHandles, "BmGame.RMultiNavHandleWrapper_DisarmedSearch.FreeAllHandles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetShortestPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShortestPath;
     /// <summary>
     /// Function: GetShortestPath
     /// </summary>
     public unsafe override bool GetShortestPath(out float bestDist, out int BestPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetShortestPath, "BmGame.RMultiNavHandleWrapper_DisarmedSearch.GetShortestPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetShortestPath, "BmGame.RMultiNavHandleWrapper_DisarmedSearch.GetShortestPath", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out bestDist);
@@ -112,14 +112,14 @@ public partial class RMultiNavHandleWrapper_DisarmedSearch : BmSDK.BmGame.RMulti
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddDestActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDestActor;
     /// <summary>
     /// Function: AddDestActor
     /// </summary>
     public unsafe virtual void AddDestActor(System.Numerics.Vector3 NewLoc, BmSDK.Engine.Actor NewActor, int NewIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDestActor, "BmGame.RMultiNavHandleWrapper_DisarmedSearch.AddDestActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDestActor, "BmGame.RMultiNavHandleWrapper_DisarmedSearch.AddDestActor", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLoc, paramsPtr + 0);

@@ -73,14 +73,14 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
         where TComponent : class, Framework.IScriptComponent<PortalTeleporter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_StopsProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopsProjectile;
     /// <summary>
     /// Function: StopsProjectile
     /// </summary>
     public unsafe override bool StopsProjectile(BmSDK.Engine.Projectile P, BmSDK.Engine.PrimitiveComponent HitComponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopsProjectile, "Engine.PortalTeleporter.StopsProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopsProjectile, "Engine.PortalTeleporter.StopsProjectile", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -89,14 +89,14 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_CreatePortalTexture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreatePortalTexture;
     /// <summary>
     /// Function: CreatePortalTexture
     /// </summary>
     public unsafe virtual BmSDK.Engine.TextureRenderTarget2D CreatePortalTexture()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreatePortalTexture, "Engine.PortalTeleporter.CreatePortalTexture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreatePortalTexture, "Engine.PortalTeleporter.CreatePortalTexture", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -110,14 +110,14 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.TextureRenderTarget2D>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TransformHitLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformHitLocation;
     /// <summary>
     /// Function: TransformHitLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformHitLocation(System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformHitLocation, "Engine.PortalTeleporter.TransformHitLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TransformHitLocation, "Engine.PortalTeleporter.TransformHitLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitLocation, paramsPtr + 0);
@@ -132,14 +132,14 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_TransformVectorDir;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformVectorDir;
     /// <summary>
     /// Function: TransformVectorDir
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TransformVectorDir(System.Numerics.Vector3 V)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformVectorDir, "Engine.PortalTeleporter.TransformVectorDir");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TransformVectorDir, "Engine.PortalTeleporter.TransformVectorDir", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -154,14 +154,14 @@ public partial class PortalTeleporter : BmSDK.Engine.SceneCapturePortalActor, Bm
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_TransformActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformActor;
     /// <summary>
     /// Function: TransformActor
     /// </summary>
     public unsafe virtual bool TransformActor(BmSDK.Engine.Actor A)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformActor, "Engine.PortalTeleporter.TransformActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TransformActor, "Engine.PortalTeleporter.TransformActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);

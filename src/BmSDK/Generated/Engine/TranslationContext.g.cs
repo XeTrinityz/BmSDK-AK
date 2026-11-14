@@ -78,14 +78,14 @@ public partial class TranslationContext : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<TranslationContext>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RegisterTranslatorTag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterTranslatorTag;
     /// <summary>
     /// Function: RegisterTranslatorTag
     /// </summary>
     public unsafe virtual bool RegisterTranslatorTag(BmSDK.Engine.TranslatorTag InTagHandler)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterTranslatorTag, "Engine.TranslationContext.RegisterTranslatorTag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterTranslatorTag, "Engine.TranslationContext.RegisterTranslatorTag", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InTagHandler, paramsPtr + 0);

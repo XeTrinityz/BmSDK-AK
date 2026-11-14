@@ -78,14 +78,14 @@ public partial class SeqAct_AkAudioEvent : BmSDK.Engine.SequenceAction, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<SeqAct_AkAudioEvent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SoundCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SoundCallback;
     /// <summary>
     /// Function: SoundCallback
     /// </summary>
     public unsafe virtual void SoundCallback(int CallbackFlags, BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SoundCallback, "AkAudio.SeqAct_AkAudioEvent.SoundCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SoundCallback, "AkAudio.SeqAct_AkAudioEvent.SoundCallback", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CallbackFlags, paramsPtr + 0);

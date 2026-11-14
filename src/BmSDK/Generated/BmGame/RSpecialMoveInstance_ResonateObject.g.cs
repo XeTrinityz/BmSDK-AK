@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_ResonateObject>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdatePCResonatorPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePCResonatorPos;
     /// <summary>
     /// Function: UpdatePCResonatorPos
     /// </summary>
     public unsafe virtual void UpdatePCResonatorPos(BmSDK.BmGame.RPlayerInput Input, float DeltaTime, float TurnSpeed, float Accel, float Decel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePCResonatorPos, "BmGame.RSpecialMoveInstance_ResonateObject.UpdatePCResonatorPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePCResonatorPos, "BmGame.RSpecialMoveInstance_ResonateObject.UpdatePCResonatorPos", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
@@ -104,14 +104,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_GetLeftAndRightAngles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLeftAndRightAngles;
     /// <summary>
     /// Function: GetLeftAndRightAngles
     /// </summary>
     public unsafe virtual void GetLeftAndRightAngles(out float LeftAngle, out float RightAngle, float RawLeftX, float RawLeftY, float RawRightX, float RawRightY)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLeftAndRightAngles, "BmGame.RSpecialMoveInstance_ResonateObject.GetLeftAndRightAngles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLeftAndRightAngles, "BmGame.RSpecialMoveInstance_ResonateObject.GetLeftAndRightAngles", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out LeftAngle);
@@ -135,14 +135,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_SetTimerParam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTimerParam;
     /// <summary>
     /// Function: SetTimerParam
     /// </summary>
     public unsafe virtual void SetTimerParam(float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTimerParam, "BmGame.RSpecialMoveInstance_ResonateObject.SetTimerParam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTimerParam, "BmGame.RSpecialMoveInstance_ResonateObject.SetTimerParam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
@@ -150,28 +150,28 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateDifficulty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDifficulty;
     /// <summary>
     /// Function: UpdateDifficulty
     /// </summary>
     public unsafe virtual void UpdateDifficulty()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDifficulty, "BmGame.RSpecialMoveInstance_ResonateObject.UpdateDifficulty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDifficulty, "BmGame.RSpecialMoveInstance_ResonateObject.UpdateDifficulty", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisplayScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayScore;
     /// <summary>
     /// Function: SetDisplayScore
     /// </summary>
     public unsafe virtual void SetDisplayScore(float DisplayScore)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayScore, "BmGame.RSpecialMoveInstance_ResonateObject.SetDisplayScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisplayScore, "BmGame.RSpecialMoveInstance_ResonateObject.SetDisplayScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DisplayScore, paramsPtr + 0);
@@ -179,14 +179,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_ResonatorLookAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResonatorLookAt;
     /// <summary>
     /// Function: ResonatorLookAt
     /// </summary>
     public unsafe virtual void ResonatorLookAt(System.Numerics.Vector3 LookAt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResonatorLookAt, "BmGame.RSpecialMoveInstance_ResonateObject.ResonatorLookAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResonatorLookAt, "BmGame.RSpecialMoveInstance_ResonateObject.ResonatorLookAt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LookAt, paramsPtr + 0);
@@ -194,56 +194,56 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveResonator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveResonator;
     /// <summary>
     /// Function: RemoveResonator
     /// </summary>
     public unsafe virtual void RemoveResonator()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveResonator, "BmGame.RSpecialMoveInstance_ResonateObject.RemoveResonator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveResonator, "BmGame.RSpecialMoveInstance_ResonateObject.RemoveResonator", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PowerOffScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PowerOffScreen;
     /// <summary>
     /// Function: PowerOffScreen
     /// </summary>
     public unsafe virtual void PowerOffScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PowerOffScreen, "BmGame.RSpecialMoveInstance_ResonateObject.PowerOffScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PowerOffScreen, "BmGame.RSpecialMoveInstance_ResonateObject.PowerOffScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
     /// <summary>
     /// Function: CancelSpecialMove
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.CancelSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.CancelSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextSpecialMove, paramsPtr + 0);
@@ -251,56 +251,56 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_SuccessfullActivateDisruptor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuccessfullActivateDisruptor;
     /// <summary>
     /// Function: SuccessfullActivateDisruptor
     /// </summary>
     public unsafe virtual void SuccessfullActivateDisruptor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuccessfullActivateDisruptor, "BmGame.RSpecialMoveInstance_ResonateObject.SuccessfullActivateDisruptor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuccessfullActivateDisruptor, "BmGame.RSpecialMoveInstance_ResonateObject.SuccessfullActivateDisruptor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TargetPasswordFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TargetPasswordFound;
     /// <summary>
     /// Function: TargetPasswordFound
     /// </summary>
     public unsafe virtual void TargetPasswordFound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TargetPasswordFound, "BmGame.RSpecialMoveInstance_ResonateObject.TargetPasswordFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TargetPasswordFound, "BmGame.RSpecialMoveInstance_ResonateObject.TargetPasswordFound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResonatorFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResonatorFailed;
     /// <summary>
     /// Function: ResonatorFailed
     /// </summary>
     public unsafe virtual void ResonatorFailed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResonatorFailed, "BmGame.RSpecialMoveInstance_ResonateObject.ResonatorFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResonatorFailed, "BmGame.RSpecialMoveInstance_ResonateObject.ResonatorFailed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AlignCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlignCamera;
     /// <summary>
     /// Function: AlignCamera
     /// </summary>
     public unsafe virtual void AlignCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlignCamera, "BmGame.RSpecialMoveInstance_ResonateObject.AlignCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlignCamera, "BmGame.RSpecialMoveInstance_ResonateObject.AlignCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -314,14 +314,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_InterpThumb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpThumb;
     /// <summary>
     /// Function: InterpThumb
     /// </summary>
     public unsafe virtual float InterpThumb(float DesiredPos, float CurrentPos, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterpThumb, "BmGame.RSpecialMoveInstance_ResonateObject.InterpThumb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterpThumb, "BmGame.RSpecialMoveInstance_ResonateObject.InterpThumb", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredPos, paramsPtr + 0);
@@ -338,14 +338,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetRumble;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRumble;
     /// <summary>
     /// Function: SetRumble
     /// </summary>
     public unsafe virtual void SetRumble(float left_rumble, float right_rumble)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRumble, "BmGame.RSpecialMoveInstance_ResonateObject.SetRumble");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRumble, "BmGame.RSpecialMoveInstance_ResonateObject.SetRumble", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(left_rumble, paramsPtr + 0);
@@ -354,14 +354,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSpecialMove;
     /// <summary>
     /// Function: UpdateSpecialMove
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.UpdateSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.UpdateSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -369,14 +369,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmGame.RSpecialMoveInstance_ResonateObject.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[216];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);
@@ -384,14 +384,14 @@ public partial class RSpecialMoveInstance_ResonateObject : BmSDK.BmGame.RSpecial
         return;
     }
 
-    private static BmSDK.Function __fn_IsInteruptable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInteruptable;
     /// <summary>
     /// Function: IsInteruptable
     /// </summary>
     public unsafe override bool IsInteruptable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInteruptable, "BmGame.RSpecialMoveInstance_ResonateObject.IsInteruptable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInteruptable, "BmGame.RSpecialMoveInstance_ResonateObject.IsInteruptable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

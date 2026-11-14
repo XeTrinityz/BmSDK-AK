@@ -73,14 +73,14 @@ public partial class NavMeshGoal_Filter : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<NavMeshGoal_Filter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDumpString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDumpString;
     /// <summary>
     /// Function: GetDumpString
     /// </summary>
     public unsafe virtual BmSDK.FString GetDumpString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDumpString, "Engine.NavMeshGoal_Filter.GetDumpString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDumpString, "Engine.NavMeshGoal_Filter.GetDumpString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

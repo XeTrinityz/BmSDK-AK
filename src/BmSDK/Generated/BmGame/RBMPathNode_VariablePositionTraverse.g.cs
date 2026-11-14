@@ -73,14 +73,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         where TComponent : class, Framework.IScriptComponent<RBMPathNode_VariablePositionTraverse>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetBestProxyForPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestProxyForPoint;
     /// <summary>
     /// Function: GetBestProxyForPoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPathNode_VariablePositionTraverseProxy GetBestProxyForPoint(System.Numerics.Vector3 TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestProxyForPoint, "BmGame.RBMPathNode_VariablePositionTraverse.GetBestProxyForPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBestProxyForPoint, "BmGame.RBMPathNode_VariablePositionTraverse.GetBestProxyForPoint", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPoint, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMPathNode_VariablePositionTraverseProxy>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_TryUpwards;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryUpwards;
     /// <summary>
     /// Function: TryUpwards
     /// </summary>
     public unsafe virtual float TryUpwards(float StartPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryUpwards, "BmGame.RBMPathNode_VariablePositionTraverse.TryUpwards");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryUpwards, "BmGame.RBMPathNode_VariablePositionTraverse.TryUpwards", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPoint, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TryDownwards;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryDownwards;
     /// <summary>
     /// Function: TryDownwards
     /// </summary>
     public unsafe virtual float TryDownwards(float StartPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryDownwards, "BmGame.RBMPathNode_VariablePositionTraverse.TryDownwards");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryDownwards, "BmGame.RBMPathNode_VariablePositionTraverse.TryDownwards", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPoint, paramsPtr + 0);
@@ -118,14 +118,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsFree;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFree;
     /// <summary>
     /// Function: IsFree
     /// </summary>
     public unsafe virtual bool IsFree(float TestPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFree, "BmGame.RBMPathNode_VariablePositionTraverse.IsFree");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFree, "BmGame.RBMPathNode_VariablePositionTraverse.IsFree", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPos, paramsPtr + 0);
@@ -133,14 +133,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNearestEdgeUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestEdgeUp;
     /// <summary>
     /// Function: GetNearestEdgeUp
     /// </summary>
     public unsafe virtual float GetNearestEdgeUp(float TestPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestEdgeUp, "BmGame.RBMPathNode_VariablePositionTraverse.GetNearestEdgeUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNearestEdgeUp, "BmGame.RBMPathNode_VariablePositionTraverse.GetNearestEdgeUp", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPos, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNearestEdgeDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestEdgeDown;
     /// <summary>
     /// Function: GetNearestEdgeDown
     /// </summary>
     public unsafe virtual float GetNearestEdgeDown(float TestPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestEdgeDown, "BmGame.RBMPathNode_VariablePositionTraverse.GetNearestEdgeDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNearestEdgeDown, "BmGame.RBMPathNode_VariablePositionTraverse.GetNearestEdgeDown", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPos, paramsPtr + 0);
@@ -163,14 +163,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AttemptLockForProxy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttemptLockForProxy;
     /// <summary>
     /// Function: AttemptLockForProxy
     /// </summary>
     public unsafe virtual bool AttemptLockForProxy(BmSDK.BmGame.RPawn User, System.Numerics.Vector3 DestPoint, BmSDK.BmGame.RBMPathNode_VariablePositionTraverseProxy Proxy, out System.Numerics.Vector3 SlotLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttemptLockForProxy, "BmGame.RBMPathNode_VariablePositionTraverse.AttemptLockForProxy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttemptLockForProxy, "BmGame.RBMPathNode_VariablePositionTraverse.AttemptLockForProxy", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -183,14 +183,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_GetClosestPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPoint;
     /// <summary>
     /// Function: GetClosestPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetClosestPoint(BmSDK.BmGame.RPawn User, BmSDK.BmGame.RBMPathNode_VariablePositionTraverseProxy Proxy, out System.Numerics.Vector3 PreferredLocVect, out float distAlongLine)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestPoint, "BmGame.RBMPathNode_VariablePositionTraverse.GetClosestPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestPoint, "BmGame.RBMPathNode_VariablePositionTraverse.GetClosestPoint", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -205,14 +205,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetJumpLandLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJumpLandLocation;
     /// <summary>
     /// Function: GetJumpLandLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetJumpLandLocation(BmSDK.BmGame.RPawn User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJumpLandLocation, "BmGame.RBMPathNode_VariablePositionTraverse.GetJumpLandLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJumpLandLocation, "BmGame.RBMPathNode_VariablePositionTraverse.GetJumpLandLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -220,14 +220,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetJumpLockLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJumpLockLocation;
     /// <summary>
     /// Function: GetJumpLockLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetJumpLockLocation(BmSDK.BmGame.RPawn User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJumpLockLocation, "BmGame.RBMPathNode_VariablePositionTraverse.GetJumpLockLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJumpLockLocation, "BmGame.RBMPathNode_VariablePositionTraverse.GetJumpLockLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -235,14 +235,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsInJumpLockList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInJumpLockList;
     /// <summary>
     /// Function: IsInJumpLockList
     /// </summary>
     public unsafe virtual bool IsInJumpLockList(BmSDK.BmGame.RPawn User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInJumpLockList, "BmGame.RBMPathNode_VariablePositionTraverse.IsInJumpLockList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInJumpLockList, "BmGame.RBMPathNode_VariablePositionTraverse.IsInJumpLockList", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -250,14 +250,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_JumpUnlock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpUnlock;
     /// <summary>
     /// Function: JumpUnlock
     /// </summary>
     public unsafe virtual void JumpUnlock(BmSDK.BmGame.RPawn User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JumpUnlock, "BmGame.RBMPathNode_VariablePositionTraverse.JumpUnlock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JumpUnlock, "BmGame.RBMPathNode_VariablePositionTraverse.JumpUnlock", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -265,28 +265,28 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return;
     }
 
-    private static BmSDK.Function __fn_DrawDebugInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebugInfo;
     /// <summary>
     /// Function: DrawDebugInfo
     /// </summary>
     public unsafe virtual void DrawDebugInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebugInfo, "BmGame.RBMPathNode_VariablePositionTraverse.DrawDebugInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawDebugInfo, "BmGame.RBMPathNode_VariablePositionTraverse.DrawDebugInfo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetReferencePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferencePoint;
     /// <summary>
     /// Function: GetReferencePoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetReferencePoint(BmSDK.BmGame.RBMPawnAI Jumper)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePoint, "BmGame.RBMPathNode_VariablePositionTraverse.GetReferencePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReferencePoint, "BmGame.RBMPathNode_VariablePositionTraverse.GetReferencePoint", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Jumper, paramsPtr + 0);
@@ -294,14 +294,14 @@ public partial class RBMPathNode_VariablePositionTraverse : BmSDK.BmGame.RBMPath
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsNaN;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNaN;
     /// <summary>
     /// Function: IsNaN
     /// </summary>
     public unsafe virtual bool IsNaN(System.Numerics.Vector3 TestVector)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsNaN, "BmGame.RBMPathNode_VariablePositionTraverse.IsNaN");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsNaN, "BmGame.RBMPathNode_VariablePositionTraverse.IsNaN", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestVector, paramsPtr + 0);

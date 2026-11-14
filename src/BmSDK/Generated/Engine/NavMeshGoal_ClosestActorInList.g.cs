@@ -78,14 +78,14 @@ public partial class NavMeshGoal_ClosestActorInList : BmSDK.Engine.NavMeshPathGo
         where TComponent : class, Framework.IScriptComponent<NavMeshGoal_ClosestActorInList>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RecycleInternal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecycleInternal;
     /// <summary>
     /// Function: RecycleInternal
     /// </summary>
     public unsafe virtual void RecycleInternal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecycleInternal, "Engine.NavMeshGoal_ClosestActorInList.RecycleInternal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecycleInternal, "Engine.NavMeshGoal_ClosestActorInList.RecycleInternal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class NavMeshGoal_ClosestActorInList : BmSDK.Engine.NavMeshPathGo
         return;
     }
 
-    private static BmSDK.Function __fn_Recycle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Recycle;
     /// <summary>
     /// Function: Recycle
     /// </summary>
     public unsafe override void Recycle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "Engine.NavMeshGoal_ClosestActorInList.Recycle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Recycle, "Engine.NavMeshGoal_ClosestActorInList.Recycle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

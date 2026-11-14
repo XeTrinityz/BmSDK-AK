@@ -78,14 +78,14 @@ public partial class RGFxMoviePLMResume : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RGFxMoviePLMResume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_XI_OnY;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnY;
     /// <summary>
     /// Function: XI_OnY
     /// </summary>
     public unsafe virtual void XI_OnY(int ControllerId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnY, "BmGame.RGFxMoviePLMResume.XI_OnY");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnY, "BmGame.RGFxMoviePLMResume.XI_OnY", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerId, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RGFxMoviePLMResume : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnB;
     /// <summary>
     /// Function: XI_OnB
     /// </summary>
     public unsafe virtual void XI_OnB(int ControllerId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnB, "BmGame.RGFxMoviePLMResume.XI_OnB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnB, "BmGame.RGFxMoviePLMResume.XI_OnB", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerId, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RGFxMoviePLMResume : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnA;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnA;
     /// <summary>
     /// Function: XI_OnA
     /// </summary>
     public unsafe virtual void XI_OnA(int ControllerId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnA, "BmGame.RGFxMoviePLMResume.XI_OnA");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnA, "BmGame.RGFxMoviePLMResume.XI_OnA", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerId, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RGFxMoviePLMResume : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_XI_GetMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetMessage;
     /// <summary>
     /// Function: XI_GetMessage
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetMessage(int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetMessage, "BmGame.RGFxMoviePLMResume.XI_GetMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetMessage, "BmGame.RGFxMoviePLMResume.XI_GetMessage", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RGFxMoviePLMResume : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_Close;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Close;
     /// <summary>
     /// Function: Close
     /// </summary>
     public unsafe override void Close(bool Unload = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RGFxMoviePLMResume.Close");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Close, "BmGame.RGFxMoviePLMResume.Close", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Unload, paramsPtr + 0);
@@ -153,14 +153,14 @@ public partial class RGFxMoviePLMResume : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMoviePLMResume.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxMoviePLMResume.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

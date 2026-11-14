@@ -73,14 +73,14 @@ public partial class RStaticClimbableActor : BmSDK.Engine.Actor, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RStaticClimbableActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DisableShimmy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableShimmy;
     /// <summary>
     /// Function: DisableShimmy
     /// </summary>
     public unsafe virtual void DisableShimmy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableShimmy, "Engine.RStaticClimbableActor.DisableShimmy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableShimmy, "Engine.RStaticClimbableActor.DisableShimmy", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class RStaticClimbableActor : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EnableRailings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableRailings;
     /// <summary>
     /// Function: EnableRailings
     /// </summary>
     public unsafe virtual void EnableRailings()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableRailings, "Engine.RStaticClimbableActor.EnableRailings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableRailings, "Engine.RStaticClimbableActor.EnableRailings", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -115,14 +115,14 @@ public partial class RStaticClimbableActor : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetBatmanCanClimb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmanCanClimb;
     /// <summary>
     /// Function: SetBatmanCanClimb
     /// </summary>
     public unsafe override void SetBatmanCanClimb(bool bCanClimb)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatmanCanClimb, "Engine.RStaticClimbableActor.SetBatmanCanClimb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatmanCanClimb, "Engine.RStaticClimbableActor.SetBatmanCanClimb", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCanClimb, paramsPtr + 0);

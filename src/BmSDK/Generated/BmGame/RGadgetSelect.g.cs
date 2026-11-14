@@ -78,28 +78,28 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RGadgetSelect>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DisplayedGadgetChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayedGadgetChanged;
     /// <summary>
     /// Function: DisplayedGadgetChanged
     /// </summary>
     public unsafe virtual void DisplayedGadgetChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayedGadgetChanged, "BmGame.RGadgetSelect.DisplayedGadgetChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayedGadgetChanged, "BmGame.RGadgetSelect.DisplayedGadgetChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe virtual void DrawHUD(BmSDK.Engine.HUD H)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RGadgetSelect.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmGame.RGadgetSelect.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TickMainThread;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickMainThread;
     /// <summary>
     /// Function: TickMainThread
     /// </summary>
     public unsafe virtual void TickMainThread(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickMainThread, "BmGame.RGadgetSelect.TickMainThread");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickMainThread, "BmGame.RGadgetSelect.TickMainThread", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ShowFailedGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowFailedGadget;
     /// <summary>
     /// Function: ShowFailedGadget
     /// </summary>
     public unsafe virtual void ShowFailedGadget(BmSDK.BmGame.RInventoryGadget TheGadget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowFailedGadget, "BmGame.RGadgetSelect.ShowFailedGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowFailedGadget, "BmGame.RGadgetSelect.ShowFailedGadget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheGadget, paramsPtr + 0);
@@ -137,70 +137,70 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SendGadgetsToFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendGadgetsToFlash;
     /// <summary>
     /// Function: SendGadgetsToFlash
     /// </summary>
     public unsafe virtual void SendGadgetsToFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendGadgetsToFlash, "BmGame.RGadgetSelect.SendGadgetsToFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendGadgetsToFlash, "BmGame.RGadgetSelect.SendGadgetsToFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GoOffscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoOffscreen;
     /// <summary>
     /// Function: GoOffscreen
     /// </summary>
     public unsafe virtual void GoOffscreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoOffscreen, "BmGame.RGadgetSelect.GoOffscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoOffscreen, "BmGame.RGadgetSelect.GoOffscreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HideGadgetSelect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideGadgetSelect;
     /// <summary>
     /// Function: HideGadgetSelect
     /// </summary>
     public unsafe virtual void HideGadgetSelect()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideGadgetSelect, "BmGame.RGadgetSelect.HideGadgetSelect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideGadgetSelect, "BmGame.RGadgetSelect.HideGadgetSelect", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GadgetUpdated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GadgetUpdated;
     /// <summary>
     /// Function: GadgetUpdated
     /// </summary>
     public unsafe virtual void GadgetUpdated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GadgetUpdated, "BmGame.RGadgetSelect.GadgetUpdated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GadgetUpdated, "BmGame.RGadgetSelect.GadgetUpdated", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGadgetSelect.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGadgetSelect.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -208,14 +208,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DoubleGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoubleGadget;
     /// <summary>
     /// Function: DoubleGadget
     /// </summary>
     public unsafe virtual void DoubleGadget(byte Row, byte column)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoubleGadget, "BmGame.RGadgetSelect.DoubleGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoubleGadget, "BmGame.RGadgetSelect.DoubleGadget", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Row, paramsPtr + 0);
@@ -224,14 +224,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GadgetSelected;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GadgetSelected;
     /// <summary>
     /// Function: GadgetSelected
     /// </summary>
     public unsafe virtual void GadgetSelected(byte Row, byte column)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GadgetSelected, "BmGame.RGadgetSelect.GadgetSelected");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GadgetSelected, "BmGame.RGadgetSelect.GadgetSelected", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Row, paramsPtr + 0);
@@ -240,14 +240,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CycleGadgets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CycleGadgets;
     /// <summary>
     /// Function: CycleGadgets
     /// </summary>
     public unsafe virtual void CycleGadgets(int Direction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CycleGadgets, "BmGame.RGadgetSelect.CycleGadgets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CycleGadgets, "BmGame.RGadgetSelect.CycleGadgets", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Direction, paramsPtr + 0);
@@ -255,42 +255,42 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PrevGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrevGadget;
     /// <summary>
     /// Function: PrevGadget
     /// </summary>
     public unsafe virtual void PrevGadget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrevGadget, "BmGame.RGadgetSelect.PrevGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrevGadget, "BmGame.RGadgetSelect.PrevGadget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NextGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NextGadget;
     /// <summary>
     /// Function: NextGadget
     /// </summary>
     public unsafe virtual void NextGadget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NextGadget, "BmGame.RGadgetSelect.NextGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NextGadget, "BmGame.RGadgetSelect.NextGadget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SelectGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectGadget;
     /// <summary>
     /// Function: SelectGadget
     /// </summary>
     public unsafe virtual void SelectGadget(int Gadget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectGadget, "BmGame.RGadgetSelect.SelectGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectGadget, "BmGame.RGadgetSelect.SelectGadget", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Gadget, paramsPtr + 0);
@@ -298,14 +298,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSelectedGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSelectedGadget;
     /// <summary>
     /// Function: UpdateSelectedGadget
     /// </summary>
     public unsafe virtual void UpdateSelectedGadget(float DeltaTime, bool bCanCycleGadgets)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSelectedGadget, "BmGame.RGadgetSelect.UpdateSelectedGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSelectedGadget, "BmGame.RGadgetSelect.UpdateSelectedGadget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -321,14 +321,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RGadgetSelect.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RGadgetSelect.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -336,14 +336,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetHUDHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHUDHidden;
     /// <summary>
     /// Function: SetHUDHidden
     /// </summary>
     public unsafe virtual void SetHUDHidden(bool bHide, bool bImmediate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHUDHidden, "BmGame.RGadgetSelect.SetHUDHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHUDHidden, "BmGame.RGadgetSelect.SetHUDHidden", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHide, paramsPtr + 0);
@@ -352,14 +352,14 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AutoSelectGadgetAndOpenHud;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoSelectGadgetAndOpenHud;
     /// <summary>
     /// Function: AutoSelectGadgetAndOpenHud
     /// </summary>
     public unsafe virtual void AutoSelectGadgetAndOpenHud(BmSDK.Class GadgetClass, bool ShowChangeOnHud = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutoSelectGadgetAndOpenHud, "BmGame.RGadgetSelect.AutoSelectGadgetAndOpenHud");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AutoSelectGadgetAndOpenHud, "BmGame.RGadgetSelect.AutoSelectGadgetAndOpenHud", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GadgetClass, paramsPtr + 0);
@@ -368,42 +368,42 @@ public partial class RGadgetSelect : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GadgetGadgetSelected;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GadgetGadgetSelected;
     /// <summary>
     /// Function: GadgetGadgetSelected
     /// </summary>
     public unsafe virtual void GadgetGadgetSelected()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GadgetGadgetSelected, "BmGame.RGadgetSelect.GadgetGadgetSelected");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GadgetGadgetSelected, "BmGame.RGadgetSelect.GadgetGadgetSelected", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PawnChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnChanged;
     /// <summary>
     /// Function: PawnChanged
     /// </summary>
     public unsafe virtual void PawnChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnChanged, "BmGame.RGadgetSelect.PawnChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PawnChanged, "BmGame.RGadgetSelect.PawnChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPC;
     /// <summary>
     /// Function: GetPC
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPlayerController GetPC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPC, "BmGame.RGadgetSelect.GetPC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPC, "BmGame.RGadgetSelect.GetPC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

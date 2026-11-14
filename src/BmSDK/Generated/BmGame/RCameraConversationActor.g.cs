@@ -78,14 +78,14 @@ public partial class RCameraConversationActor : BmSDK.Engine.Actor, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RCameraConversationActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyCameraDeleted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyCameraDeleted;
     /// <summary>
     /// Function: NotifyCameraDeleted
     /// </summary>
     public unsafe virtual void NotifyCameraDeleted(BmSDK.BmGame.RCameraActor_Conversation Camera)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCameraDeleted, "BmGame.RCameraConversationActor.NotifyCameraDeleted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyCameraDeleted, "BmGame.RCameraConversationActor.NotifyCameraDeleted", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Camera, paramsPtr + 0);

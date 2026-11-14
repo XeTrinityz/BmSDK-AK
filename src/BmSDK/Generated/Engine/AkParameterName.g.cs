@@ -78,14 +78,14 @@ public partial class AkParameterName : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkParameterName>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_MapParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MapParameterValue;
     /// <summary>
     /// Function: MapParameterValue
     /// </summary>
     public unsafe virtual float MapParameterValue(float curValue, float rangeMin = default, float rangeMax = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MapParameterValue, "Engine.AkParameterName.MapParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MapParameterValue, "Engine.AkParameterName.MapParameterValue", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(curValue, paramsPtr + 0);
@@ -102,14 +102,14 @@ public partial class AkParameterName : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ClampParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampParameterValue;
     /// <summary>
     /// Function: ClampParameterValue
     /// </summary>
     public unsafe virtual float ClampParameterValue(float curValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClampParameterValue, "Engine.AkParameterName.ClampParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClampParameterValue, "Engine.AkParameterName.ClampParameterValue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(curValue, paramsPtr + 0);

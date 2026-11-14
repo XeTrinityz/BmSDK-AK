@@ -73,14 +73,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RCwGrappleGunBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetLastGrapplePointFromClimbInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLastGrapplePointFromClimbInfo;
     /// <summary>
     /// Function: GetLastGrapplePointFromClimbInfo
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGrapplePoint.FGrapplePointInfo GetLastGrapplePointFromClimbInfo(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLastGrapplePointFromClimbInfo, "BmGame.RCwGrappleGunBase.GetLastGrapplePointFromClimbInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLastGrapplePointFromClimbInfo, "BmGame.RCwGrappleGunBase.GetLastGrapplePointFromClimbInfo", this);
         byte* paramsPtr = stackalloc byte[1192];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -95,14 +95,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGrapplePoint.FGrapplePointInfo>(paramsPtr + 1096);
     }
 
-    private static BmSDK.Function __fn_SetGrapplePointFromClimbInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGrapplePointFromClimbInfo;
     /// <summary>
     /// Function: SetGrapplePointFromClimbInfo
     /// </summary>
     public unsafe virtual void SetGrapplePointFromClimbInfo(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGrapplePointFromClimbInfo, "BmGame.RCwGrappleGunBase.SetGrapplePointFromClimbInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGrapplePointFromClimbInfo, "BmGame.RCwGrappleGunBase.SetGrapplePointFromClimbInfo", this);
         byte* paramsPtr = stackalloc byte[1112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -117,14 +117,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_PointAndLineCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PointAndLineCheck;
     /// <summary>
     /// Function: PointAndLineCheck
     /// </summary>
     public unsafe virtual bool PointAndLineCheck(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 End, System.Numerics.Vector3 Start, System.Numerics.Vector3 Extent, int ExtraTraceFlags = default, bool bIgnoreRailings = default, bool bDebugDraw = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointAndLineCheck, "BmGame.RCwGrappleGunBase.PointAndLineCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PointAndLineCheck, "BmGame.RCwGrappleGunBase.PointAndLineCheck", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitLocation);
@@ -150,14 +150,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_GetChainStartLocator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChainStartLocator;
     /// <summary>
     /// Function: GetChainStartLocator
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RClimbLocator GetChainStartLocator(System.Numerics.Vector3 PlayerLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChainStartLocator, "BmGame.RCwGrappleGunBase.GetChainStartLocator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetChainStartLocator, "BmGame.RCwGrappleGunBase.GetChainStartLocator", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerLocation, paramsPtr + 0);
@@ -172,14 +172,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RClimbLocator>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetLocatorChainLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocatorChainLocation;
     /// <summary>
     /// Function: GetLocatorChainLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocatorChainLocation(BmSDK.BmGame.RClimbLocator LowestChainLocator, System.Numerics.Vector3 InLocation, System.Numerics.Vector3 TargetLocation, bool bAlignLowerPoints = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocatorChainLocation, "BmGame.RCwGrappleGunBase.GetLocatorChainLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocatorChainLocation, "BmGame.RCwGrappleGunBase.GetLocatorChainLocation", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LowestChainLocator, paramsPtr + 0);
@@ -197,14 +197,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_HandleGlobalPounceTargeting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleGlobalPounceTargeting;
     /// <summary>
     /// Function: HandleGlobalPounceTargeting
     /// </summary>
     public unsafe virtual void HandleGlobalPounceTargeting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleGlobalPounceTargeting, "BmGame.RCwGrappleGunBase.HandleGlobalPounceTargeting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleGlobalPounceTargeting, "BmGame.RCwGrappleGunBase.HandleGlobalPounceTargeting", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -218,14 +218,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_PickNextLowerSwingHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickNextLowerSwingHeight;
     /// <summary>
     /// Function: PickNextLowerSwingHeight
     /// </summary>
     public unsafe virtual bool PickNextLowerSwingHeight(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickNextLowerSwingHeight, "BmGame.RCwGrappleGunBase.PickNextLowerSwingHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickNextLowerSwingHeight, "BmGame.RCwGrappleGunBase.PickNextLowerSwingHeight", this);
         byte* paramsPtr = stackalloc byte[1116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -240,14 +240,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 1096);
     }
 
-    private static BmSDK.Function __fn_CheckForCeilingTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForCeilingTarget;
     /// <summary>
     /// Function: CheckForCeilingTarget
     /// </summary>
     public unsafe virtual bool CheckForCeilingTarget(out System.Numerics.Vector3 CeilingTargetLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForCeilingTarget, "BmGame.RCwGrappleGunBase.CheckForCeilingTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForCeilingTarget, "BmGame.RCwGrappleGunBase.CheckForCeilingTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out CeilingTargetLocation);
@@ -264,14 +264,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CheckThisGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckThisGrapple;
     /// <summary>
     /// Function: CheckThisGrapple
     /// </summary>
     public unsafe virtual bool CheckThisGrapple(BmSDK.BmGame.RGrapplePoint ThisGrapplePoint = default, BmSDK.BmGame.RHidePoint ThisHidePoint = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckThisGrapple, "BmGame.RCwGrappleGunBase.CheckThisGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckThisGrapple, "BmGame.RCwGrappleGunBase.CheckThisGrapple", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThisGrapplePoint, paramsPtr + 0);
@@ -287,14 +287,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetInBoundVector;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInBoundVector;
     /// <summary>
     /// Function: GetInBoundVector
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetInBoundVector(System.Numerics.Vector3 StartVelocity, System.Numerics.Vector3 EndVelocity)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInBoundVector, "BmGame.RCwGrappleGunBase.GetInBoundVector");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInBoundVector, "BmGame.RCwGrappleGunBase.GetInBoundVector", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartVelocity, paramsPtr + 0);
@@ -310,14 +310,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_StoreCurrentClimbInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreCurrentClimbInfo;
     /// <summary>
     /// Function: StoreCurrentClimbInfo
     /// </summary>
     public unsafe virtual void StoreCurrentClimbInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoreCurrentClimbInfo, "BmGame.RCwGrappleGunBase.StoreCurrentClimbInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StoreCurrentClimbInfo, "BmGame.RCwGrappleGunBase.StoreCurrentClimbInfo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -331,14 +331,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_DrawPounceBlockingVolumes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawPounceBlockingVolumes;
     /// <summary>
     /// Function: DrawPounceBlockingVolumes
     /// </summary>
     public unsafe virtual bool DrawPounceBlockingVolumes(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, bool bDrawPersistent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawPounceBlockingVolumes, "BmGame.RCwGrappleGunBase.DrawPounceBlockingVolumes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawPounceBlockingVolumes, "BmGame.RCwGrappleGunBase.DrawPounceBlockingVolumes", this);
         byte* paramsPtr = stackalloc byte[1120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDrawPersistent, paramsPtr + 1096);
@@ -354,14 +354,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 1100);
     }
 
-    private static BmSDK.Function __fn_CheckWallPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckWallPounce;
     /// <summary>
     /// Function: CheckWallPounce
     /// </summary>
     public unsafe virtual bool CheckWallPounce(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath NewPath, int FromPoint, bool bOptimisePass, bool bTweakFinalPounce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckWallPounce, "BmGame.RCwGrappleGunBase.CheckWallPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckWallPounce, "BmGame.RCwGrappleGunBase.CheckWallPounce", this);
         byte* paramsPtr = stackalloc byte[1336];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FromPoint, paramsPtr + 1304);
@@ -380,14 +380,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 1316);
     }
 
-    private static BmSDK.Function __fn_OptimisePath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OptimisePath;
     /// <summary>
     /// Function: OptimisePath
     /// </summary>
     public unsafe virtual void OptimisePath(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, bool bIgnoreDangleEdges)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OptimisePath, "BmGame.RCwGrappleGunBase.OptimisePath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OptimisePath, "BmGame.RCwGrappleGunBase.OptimisePath", this);
         byte* paramsPtr = stackalloc byte[1116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIgnoreDangleEdges, paramsPtr + 1096);
@@ -403,14 +403,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GetClosestLandEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestLandEdge;
     /// <summary>
     /// Function: GetClosestLandEdge
     /// </summary>
     public unsafe virtual bool GetClosestLandEdge(System.Numerics.Vector3 OriginalLocation, System.Numerics.Vector3 OriginalNormal, out BmSDK.TArray<BmSDK.BmGame.RCwGrappleGunBase.FClimbLedges> Ledges, float HTolerance, float VToleranceUp, float VExtraDangleToleranceUp, float VToleranceDown, bool bIgnoreLimits, bool bIgnoreDangle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestLandEdge, "BmGame.RCwGrappleGunBase.GetClosestLandEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestLandEdge, "BmGame.RCwGrappleGunBase.GetClosestLandEdge", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OriginalLocation, paramsPtr + 0);
@@ -433,14 +433,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 64);
     }
 
-    private static BmSDK.Function __fn_DrawClimbRoute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawClimbRoute;
     /// <summary>
     /// Function: DrawClimbRoute
     /// </summary>
     public unsafe virtual void DrawClimbRoute(bool bPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawClimbRoute, "BmGame.RCwGrappleGunBase.DrawClimbRoute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawClimbRoute, "BmGame.RCwGrappleGunBase.DrawClimbRoute", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPersistent, paramsPtr + 0);
@@ -448,14 +448,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_IsWallClimbMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWallClimbMove;
     /// <summary>
     /// Function: IsWallClimbMove
     /// </summary>
     public unsafe virtual bool IsWallClimbMove(BmSDK.BmGame.RSpecialMoveConfig Config)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWallClimbMove, "BmGame.RCwGrappleGunBase.IsWallClimbMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWallClimbMove, "BmGame.RCwGrappleGunBase.IsWallClimbMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Config, paramsPtr + 0);
@@ -463,14 +463,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_StartWallClimbCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartWallClimbCamera;
     /// <summary>
     /// Function: StartWallClimbCamera
     /// </summary>
     public unsafe virtual void StartWallClimbCamera(System.Numerics.Vector3 CurrentLandLocation, int FirstClimbPointIndex = default, bool bEstimatedLandPoint = default, bool bFromSwing = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartWallClimbCamera, "BmGame.RCwGrappleGunBase.StartWallClimbCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartWallClimbCamera, "BmGame.RCwGrappleGunBase.StartWallClimbCamera", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentLandLocation, paramsPtr + 0);
@@ -481,14 +481,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_CanClimbToHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanClimbToHidePoint;
     /// <summary>
     /// Function: CanClimbToHidePoint
     /// </summary>
     public unsafe virtual bool CanClimbToHidePoint(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 GrappleLocation, System.Numerics.Vector3 WallNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanClimbToHidePoint, "BmGame.RCwGrappleGunBase.CanClimbToHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanClimbToHidePoint, "BmGame.RCwGrappleGunBase.CanClimbToHidePoint", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -505,14 +505,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_CanClimbToGrapplePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanClimbToGrapplePoint;
     /// <summary>
     /// Function: CanClimbToGrapplePoint
     /// </summary>
     public unsafe virtual bool CanClimbToGrapplePoint(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 GrappleLocation, System.Numerics.Vector3 WallNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanClimbToGrapplePoint, "BmGame.RCwGrappleGunBase.CanClimbToGrapplePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanClimbToGrapplePoint, "BmGame.RCwGrappleGunBase.CanClimbToGrapplePoint", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -529,14 +529,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_ClampToLineSegment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampToLineSegment;
     /// <summary>
     /// Function: ClampToLineSegment
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 ClampToLineSegment(System.Numerics.Vector3 P, System.Numerics.Vector3 A, System.Numerics.Vector3 B)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClampToLineSegment, "BmGame.RCwGrappleGunBase.ClampToLineSegment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClampToLineSegment, "BmGame.RCwGrappleGunBase.ClampToLineSegment", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -553,14 +553,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_InitialWallCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialWallCheck;
     /// <summary>
     /// Function: InitialWallCheck
     /// </summary>
     public unsafe virtual bool InitialWallCheck(System.Numerics.Vector3 WallLocation, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 Right, float OutTolerance, float InTolerance, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 TargetWallLocation, out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath NewPath, BmSDK.BmGame.RCwGrappleGunBase.EStartPoints StartCheck, bool bForcePounceCheck, out System.Numerics.Vector3 NewWallLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialWallCheck, "BmGame.RCwGrappleGunBase.InitialWallCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialWallCheck, "BmGame.RCwGrappleGunBase.InitialWallCheck", this);
         byte* paramsPtr = stackalloc byte[316];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WallLocation, paramsPtr + 0);
@@ -587,14 +587,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 296);
     }
 
-    private static BmSDK.Function __fn_CreateClimbRoute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateClimbRoute;
     /// <summary>
     /// Function: CreateClimbRoute
     /// </summary>
     public unsafe virtual bool CreateClimbRoute(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, bool bPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateClimbRoute, "BmGame.RCwGrappleGunBase.CreateClimbRoute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateClimbRoute, "BmGame.RCwGrappleGunBase.CreateClimbRoute", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Loc);
@@ -612,14 +612,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 136);
     }
 
-    private static BmSDK.Function __fn_CheckPounceToGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPounceToGrapple;
     /// <summary>
     /// Function: CheckPounceToGrapple
     /// </summary>
     public unsafe virtual bool CheckPounceToGrapple(System.Numerics.Vector3 TargetLoc, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 playerLoc, bool bDrawDebug = default, bool bDrawPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckPounceToGrapple, "BmGame.RCwGrappleGunBase.CheckPounceToGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckPounceToGrapple, "BmGame.RCwGrappleGunBase.CheckPounceToGrapple", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetLoc, paramsPtr + 0);
@@ -638,14 +638,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 44);
     }
 
-    private static BmSDK.Function __fn_InitialPathCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialPathCheck;
     /// <summary>
     /// Function: InitialPathCheck
     /// </summary>
     public unsafe virtual bool InitialPathCheck(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath NewPath, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 TargetWallLocation, System.Numerics.Vector3 WallLocation, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 CheckExtent, bool bLimitCheckToPlane)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialPathCheck, "BmGame.RCwGrappleGunBase.InitialPathCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialPathCheck, "BmGame.RCwGrappleGunBase.InitialPathCheck", this);
         byte* paramsPtr = stackalloc byte[292];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetLocation, paramsPtr + 208);
@@ -666,14 +666,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 272);
     }
 
-    private static BmSDK.Function __fn_CheckPounceToWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPounceToWall;
     /// <summary>
     /// Function: CheckPounceToWall
     /// </summary>
     public unsafe virtual bool CheckPounceToWall(System.Numerics.Vector3 WallLoc, System.Numerics.Vector3 WallNormal, System.Numerics.Vector3 playerLoc, bool bLimitCheckToPlane, bool bDrawDebug = default, bool bDrawPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckPounceToWall, "BmGame.RCwGrappleGunBase.CheckPounceToWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckPounceToWall, "BmGame.RCwGrappleGunBase.CheckPounceToWall", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WallLoc, paramsPtr + 0);
@@ -693,14 +693,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_GetBestWallClimbIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestWallClimbIndex;
     /// <summary>
     /// Function: GetBestWallClimbIndex
     /// </summary>
     public unsafe virtual int GetBestWallClimbIndex(System.Numerics.Vector3 EndLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestWallClimbIndex, "BmGame.RCwGrappleGunBase.GetBestWallClimbIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBestWallClimbIndex, "BmGame.RCwGrappleGunBase.GetBestWallClimbIndex", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndLocation, paramsPtr + 0);
@@ -715,14 +715,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetAerialSwingGrappleTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingGrappleTarget;
     /// <summary>
     /// Function: GetAerialSwingGrappleTarget
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingGrappleTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialSwingGrappleTarget, "BmGame.RCwGrappleGunBase.GetAerialSwingGrappleTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialSwingGrappleTarget, "BmGame.RCwGrappleGunBase.GetAerialSwingGrappleTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -736,14 +736,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAerialSwingTargetNormal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingTargetNormal;
     /// <summary>
     /// Function: GetAerialSwingTargetNormal
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingTargetNormal(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialSwingTargetNormal, "BmGame.RCwGrappleGunBase.GetAerialSwingTargetNormal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialSwingTargetNormal, "BmGame.RCwGrappleGunBase.GetAerialSwingTargetNormal", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGrapplePoint, paramsPtr + 0);
@@ -759,14 +759,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetAerialSwingTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingTargetLocation;
     /// <summary>
     /// Function: GetAerialSwingTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingTargetLocation(bool bOnlyEstimate = default, bool bOnWall = default, bool bDebugDraw = default, bool bDrawPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialSwingTargetLocation, "BmGame.RCwGrappleGunBase.GetAerialSwingTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialSwingTargetLocation, "BmGame.RCwGrappleGunBase.GetAerialSwingTargetLocation", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOnlyEstimate, paramsPtr + 0);
@@ -784,14 +784,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetAerialSwingEstimatedTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingEstimatedTarget;
     /// <summary>
     /// Function: GetAerialSwingEstimatedTarget
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAerialSwingEstimatedTarget(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialSwingEstimatedTarget, "BmGame.RCwGrappleGunBase.GetAerialSwingEstimatedTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialSwingEstimatedTarget, "BmGame.RCwGrappleGunBase.GetAerialSwingEstimatedTarget", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGrapplePoint, paramsPtr + 0);
@@ -807,14 +807,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetIdealSwingParameters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIdealSwingParameters;
     /// <summary>
     /// Function: GetIdealSwingParameters
     /// </summary>
     public unsafe virtual void GetIdealSwingParameters(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, System.Numerics.Vector3 WallLocation, out float IdealSwingTime, out float IdealSwingLength)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIdealSwingParameters, "BmGame.RCwGrappleGunBase.GetIdealSwingParameters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIdealSwingParameters, "BmGame.RCwGrappleGunBase.GetIdealSwingParameters", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -830,14 +830,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GetAerialSwingWallEndParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingWallEndParams;
     /// <summary>
     /// Function: GetAerialSwingWallEndParams
     /// </summary>
     public unsafe virtual bool GetAerialSwingWallEndParams(out System.Numerics.Vector3 PlayerLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialSwingWallEndParams, "BmGame.RCwGrappleGunBase.GetAerialSwingWallEndParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialSwingWallEndParams, "BmGame.RCwGrappleGunBase.GetAerialSwingWallEndParams", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out PlayerLocation);
@@ -854,14 +854,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetAerialSwingEndParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingEndParams;
     /// <summary>
     /// Function: GetAerialSwingEndParams
     /// </summary>
     public unsafe virtual void GetAerialSwingEndParams(out System.Numerics.Vector3 PlayerLocation, bool bOnlyEstimate = default, bool bDebugDraw = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialSwingEndParams, "BmGame.RCwGrappleGunBase.GetAerialSwingEndParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialSwingEndParams, "BmGame.RCwGrappleGunBase.GetAerialSwingEndParams", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out PlayerLocation);
@@ -880,14 +880,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GetAerialSwingStartParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialSwingStartParams;
     /// <summary>
     /// Function: GetAerialSwingStartParams
     /// </summary>
     public unsafe virtual bool GetAerialSwingStartParams(out System.Numerics.Vector3 Origin, out System.Numerics.Vector3 StartVelocity, out float StartTime, bool bDrawDebug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialSwingStartParams, "BmGame.RCwGrappleGunBase.GetAerialSwingStartParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialSwingStartParams, "BmGame.RCwGrappleGunBase.GetAerialSwingStartParams", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Origin);
@@ -911,14 +911,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_IsValidClimbStartPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidClimbStartPoint;
     /// <summary>
     /// Function: IsValidClimbStartPoint
     /// </summary>
     public unsafe virtual bool IsValidClimbStartPoint(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath CheckPath, bool bNewPath = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidClimbStartPoint, "BmGame.RCwGrappleGunBase.IsValidClimbStartPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidClimbStartPoint, "BmGame.RCwGrappleGunBase.IsValidClimbStartPoint", this);
         byte* paramsPtr = stackalloc byte[232];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewPath, paramsPtr + 208);
@@ -934,14 +934,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 212);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingGrappleTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingGrappleTarget;
     /// <summary>
     /// Function: GetEdgeSwingGrappleTarget
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingGrappleTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingGrappleTarget, "BmGame.RCwGrappleGunBase.GetEdgeSwingGrappleTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingGrappleTarget, "BmGame.RCwGrappleGunBase.GetEdgeSwingGrappleTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -955,14 +955,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingGrappleTargetingParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingGrappleTargetingParams;
     /// <summary>
     /// Function: GetEdgeSwingGrappleTargetingParams
     /// </summary>
     public unsafe virtual void GetEdgeSwingGrappleTargetingParams(out System.Numerics.Vector3 Origin, out BmSDK.Rotator AimDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingGrappleTargetingParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingGrappleTargetingParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingGrappleTargetingParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingGrappleTargetingParams", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Origin);
@@ -982,14 +982,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingWallLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingWallLocation;
     /// <summary>
     /// Function: GetEdgeSwingWallLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingWallLocation(out System.Numerics.Vector3 WallNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingWallLocation, "BmGame.RCwGrappleGunBase.GetEdgeSwingWallLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingWallLocation, "BmGame.RCwGrappleGunBase.GetEdgeSwingWallLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out WallNormal);
@@ -1006,14 +1006,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingWallEndParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingWallEndParams;
     /// <summary>
     /// Function: GetEdgeSwingWallEndParams
     /// </summary>
     public unsafe virtual void GetEdgeSwingWallEndParams(out System.Numerics.Vector3 PlayerLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingWallEndParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingWallEndParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingWallEndParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingWallEndParams", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out PlayerLocation);
@@ -1030,14 +1030,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingEndParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingEndParams;
     /// <summary>
     /// Function: GetEdgeSwingEndParams
     /// </summary>
     public unsafe virtual void GetEdgeSwingEndParams(out System.Numerics.Vector3 PlayerLocation, bool bOnlyEstimate = default, bool bDebugDraw = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingEndParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingEndParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingEndParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingEndParams", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out PlayerLocation);
@@ -1056,14 +1056,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingTargetNormal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingTargetNormal;
     /// <summary>
     /// Function: GetEdgeSwingTargetNormal
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingTargetNormal(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingTargetNormal, "BmGame.RCwGrappleGunBase.GetEdgeSwingTargetNormal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingTargetNormal, "BmGame.RCwGrappleGunBase.GetEdgeSwingTargetNormal", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGrapplePoint, paramsPtr + 0);
@@ -1079,14 +1079,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingTargetLocation;
     /// <summary>
     /// Function: GetEdgeSwingTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingTargetLocation(bool bOnlyEstimate = default, bool bOnWall = default, bool bDebugDraw = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingTargetLocation, "BmGame.RCwGrappleGunBase.GetEdgeSwingTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingTargetLocation, "BmGame.RCwGrappleGunBase.GetEdgeSwingTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOnlyEstimate, paramsPtr + 0);
@@ -1103,14 +1103,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingEstimatedTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingEstimatedTarget;
     /// <summary>
     /// Function: GetEdgeSwingEstimatedTarget
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingEstimatedTarget(BmSDK.BmGame.RGrapplePoint NewGrapplePoint = default, System.Numerics.Vector3 TargetLocation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingEstimatedTarget, "BmGame.RCwGrappleGunBase.GetEdgeSwingEstimatedTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingEstimatedTarget, "BmGame.RCwGrappleGunBase.GetEdgeSwingEstimatedTarget", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGrapplePoint, paramsPtr + 0);
@@ -1126,14 +1126,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingStartParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingStartParams;
     /// <summary>
     /// Function: GetEdgeSwingStartParams
     /// </summary>
     public unsafe virtual bool GetEdgeSwingStartParams(out System.Numerics.Vector3 Origin, out System.Numerics.Vector3 StartVelocity, out float StartTime, bool bDrawDebug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingStartParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingStartParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingStartParams, "BmGame.RCwGrappleGunBase.GetEdgeSwingStartParams", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Origin);
@@ -1157,14 +1157,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_IsWallClimbStartInDirectPounceRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWallClimbStartInDirectPounceRange;
     /// <summary>
     /// Function: IsWallClimbStartInDirectPounceRange
     /// </summary>
     public unsafe virtual bool IsWallClimbStartInDirectPounceRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWallClimbStartInDirectPounceRange, "BmGame.RCwGrappleGunBase.IsWallClimbStartInDirectPounceRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWallClimbStartInDirectPounceRange, "BmGame.RCwGrappleGunBase.IsWallClimbStartInDirectPounceRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1178,14 +1178,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsHidePointInClimbDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHidePointInClimbDistance;
     /// <summary>
     /// Function: IsHidePointInClimbDistance
     /// </summary>
     public unsafe virtual bool IsHidePointInClimbDistance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHidePointInClimbDistance, "BmGame.RCwGrappleGunBase.IsHidePointInClimbDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHidePointInClimbDistance, "BmGame.RCwGrappleGunBase.IsHidePointInClimbDistance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1199,14 +1199,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsHidePointInPounceDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHidePointInPounceDistance;
     /// <summary>
     /// Function: IsHidePointInPounceDistance
     /// </summary>
     public unsafe virtual bool IsHidePointInPounceDistance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHidePointInPounceDistance, "BmGame.RCwGrappleGunBase.IsHidePointInPounceDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHidePointInPounceDistance, "BmGame.RCwGrappleGunBase.IsHidePointInPounceDistance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1220,14 +1220,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsGrapplePointInClimbDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGrapplePointInClimbDistance;
     /// <summary>
     /// Function: IsGrapplePointInClimbDistance
     /// </summary>
     public unsafe virtual bool IsGrapplePointInClimbDistance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGrapplePointInClimbDistance, "BmGame.RCwGrappleGunBase.IsGrapplePointInClimbDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsGrapplePointInClimbDistance, "BmGame.RCwGrappleGunBase.IsGrapplePointInClimbDistance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1241,14 +1241,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsGrapplePointInPounceDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGrapplePointInPounceDistance;
     /// <summary>
     /// Function: IsGrapplePointInPounceDistance
     /// </summary>
     public unsafe virtual bool IsGrapplePointInPounceDistance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGrapplePointInPounceDistance, "BmGame.RCwGrappleGunBase.IsGrapplePointInPounceDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsGrapplePointInPounceDistance, "BmGame.RCwGrappleGunBase.IsGrapplePointInPounceDistance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1262,14 +1262,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TraceGroundPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceGroundPath;
     /// <summary>
     /// Function: TraceGroundPath
     /// </summary>
     public unsafe virtual bool TraceGroundPath(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 DirXY, int Steps, float HeightTolerance, bool bDebugExtraPounce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceGroundPath, "BmGame.RCwGrappleGunBase.TraceGroundPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceGroundPath, "BmGame.RCwGrappleGunBase.TraceGroundPath", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -1289,14 +1289,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_TraceGround;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceGround;
     /// <summary>
     /// Function: TraceGround
     /// </summary>
     public unsafe virtual bool TraceGround(out System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Direction, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, bool bDebugExtraPounce)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceGround, "BmGame.RCwGrappleGunBase.TraceGround");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceGround, "BmGame.RCwGrappleGunBase.TraceGround", this);
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitLocation);
@@ -1318,14 +1318,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 160);
     }
 
-    private static BmSDK.Function __fn_CanLongPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanLongPounce;
     /// <summary>
     /// Function: CanLongPounce
     /// </summary>
     public unsafe virtual bool CanLongPounce(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo Info, bool bHideOrGrapplePoint, System.Numerics.Vector3 WallLocation, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, bool bDebugLongPounce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanLongPounce, "BmGame.RCwGrappleGunBase.CanLongPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanLongPounce, "BmGame.RCwGrappleGunBase.CanLongPounce", this);
         byte* paramsPtr = stackalloc byte[1268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHideOrGrapplePoint, paramsPtr + 1096);
@@ -1346,14 +1346,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 1248);
     }
 
-    private static BmSDK.Function __fn_CheckLongPounceFloor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLongPounceFloor;
     /// <summary>
     /// Function: CheckLongPounceFloor
     /// </summary>
     public unsafe virtual bool CheckLongPounceFloor(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, System.Numerics.Vector3 WallLocation, System.Numerics.Vector3 WallNormal, bool bDebugDraw = default, bool bDebugLongPounce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLongPounceFloor, "BmGame.RCwGrappleGunBase.CheckLongPounceFloor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLongPounceFloor, "BmGame.RCwGrappleGunBase.CheckLongPounceFloor", this);
         byte* paramsPtr = stackalloc byte[184];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Loc);
@@ -1374,14 +1374,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 164);
     }
 
-    private static BmSDK.Function __fn_IsLongPounceDist;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLongPounceDist;
     /// <summary>
     /// Function: IsLongPounceDist
     /// </summary>
     public unsafe virtual bool IsLongPounceDist(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 WallLocation, bool bDirectPounceCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLongPounceDist, "BmGame.RCwGrappleGunBase.IsLongPounceDist");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLongPounceDist, "BmGame.RCwGrappleGunBase.IsLongPounceDist", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -1398,14 +1398,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_CheckAerialSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAerialSwing;
     /// <summary>
     /// Function: CheckAerialSwing
     /// </summary>
     public unsafe virtual bool CheckAerialSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAerialSwing, "BmGame.RCwGrappleGunBase.CheckAerialSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckAerialSwing, "BmGame.RCwGrappleGunBase.CheckAerialSwing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1419,14 +1419,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckAerialSwingCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAerialSwingCollision;
     /// <summary>
     /// Function: CheckAerialSwingCollision
     /// </summary>
     public unsafe virtual bool CheckAerialSwingCollision(out System.Numerics.Vector3 FirstHitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAerialSwingCollision, "BmGame.RCwGrappleGunBase.CheckAerialSwingCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckAerialSwingCollision, "BmGame.RCwGrappleGunBase.CheckAerialSwingCollision", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out FirstHitLocation);
@@ -1443,14 +1443,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CheckEdgeSwingCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckEdgeSwingCollision;
     /// <summary>
     /// Function: CheckEdgeSwingCollision
     /// </summary>
     public unsafe virtual bool CheckEdgeSwingCollision(out System.Numerics.Vector3 FirstHitLocation, bool bTryShortJump = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckEdgeSwingCollision, "BmGame.RCwGrappleGunBase.CheckEdgeSwingCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckEdgeSwingCollision, "BmGame.RCwGrappleGunBase.CheckEdgeSwingCollision", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out FirstHitLocation);
@@ -1468,14 +1468,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_UpdateInitialLocator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInitialLocator;
     /// <summary>
     /// Function: UpdateInitialLocator
     /// </summary>
     public unsafe virtual bool UpdateInitialLocator(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbPath CheckPath, bool bNewPath = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateInitialLocator, "BmGame.RCwGrappleGunBase.UpdateInitialLocator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateInitialLocator, "BmGame.RCwGrappleGunBase.UpdateInitialLocator", this);
         byte* paramsPtr = stackalloc byte[364];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Loc);
@@ -1494,14 +1494,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 344);
     }
 
-    private static BmSDK.Function __fn_CheckSwingFromEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSwingFromEdge;
     /// <summary>
     /// Function: CheckSwingFromEdge
     /// </summary>
     public unsafe virtual bool CheckSwingFromEdge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckSwingFromEdge, "BmGame.RCwGrappleGunBase.CheckSwingFromEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckSwingFromEdge, "BmGame.RCwGrappleGunBase.CheckSwingFromEdge", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1515,14 +1515,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GotSwingTargetPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GotSwingTargetPoint;
     /// <summary>
     /// Function: GotSwingTargetPoint
     /// </summary>
     public unsafe virtual bool GotSwingTargetPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotSwingTargetPoint, "BmGame.RCwGrappleGunBase.GotSwingTargetPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotSwingTargetPoint, "BmGame.RCwGrappleGunBase.GotSwingTargetPoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1536,14 +1536,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GotEdgeSwingTargetPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GotEdgeSwingTargetPoint;
     /// <summary>
     /// Function: GotEdgeSwingTargetPoint
     /// </summary>
     public unsafe virtual bool GotEdgeSwingTargetPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotEdgeSwingTargetPoint, "BmGame.RCwGrappleGunBase.GotEdgeSwingTargetPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotEdgeSwingTargetPoint, "BmGame.RCwGrappleGunBase.GotEdgeSwingTargetPoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1557,14 +1557,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAutoSwingToGargoyle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoSwingToGargoyle;
     /// <summary>
     /// Function: IsAutoSwingToGargoyle
     /// </summary>
     public unsafe virtual bool IsAutoSwingToGargoyle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAutoSwingToGargoyle, "BmGame.RCwGrappleGunBase.IsAutoSwingToGargoyle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAutoSwingToGargoyle, "BmGame.RCwGrappleGunBase.IsAutoSwingToGargoyle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1578,14 +1578,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAutoSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoSwing;
     /// <summary>
     /// Function: IsAutoSwing
     /// </summary>
     public unsafe virtual bool IsAutoSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAutoSwing, "BmGame.RCwGrappleGunBase.IsAutoSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAutoSwing, "BmGame.RCwGrappleGunBase.IsAutoSwing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1599,14 +1599,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckDelayedSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckDelayedSwing;
     /// <summary>
     /// Function: CheckDelayedSwing
     /// </summary>
     public unsafe virtual bool CheckDelayedSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckDelayedSwing, "BmGame.RCwGrappleGunBase.CheckDelayedSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckDelayedSwing, "BmGame.RCwGrappleGunBase.CheckDelayedSwing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1620,14 +1620,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HandlePounceTargeting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandlePounceTargeting;
     /// <summary>
     /// Function: HandlePounceTargeting
     /// </summary>
     public unsafe virtual void HandlePounceTargeting(bool bGrappleCheck = default, int Iteration = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlePounceTargeting, "BmGame.RCwGrappleGunBase.HandlePounceTargeting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandlePounceTargeting, "BmGame.RCwGrappleGunBase.HandlePounceTargeting", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bGrappleCheck, paramsPtr + 0);
@@ -1643,14 +1643,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSwingPaths;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSwingPaths;
     /// <summary>
     /// Function: UpdateSwingPaths
     /// </summary>
     public unsafe virtual bool UpdateSwingPaths()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSwingPaths, "BmGame.RCwGrappleGunBase.UpdateSwingPaths");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSwingPaths, "BmGame.RCwGrappleGunBase.UpdateSwingPaths", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1664,14 +1664,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SwingLineCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwingLineCheck;
     /// <summary>
     /// Function: SwingLineCheck
     /// </summary>
     public unsafe virtual bool SwingLineCheck(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 EndLocation, System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 CheckExtent, bool bStartWithPointCheck, bool bDrawDebug = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwingLineCheck, "BmGame.RCwGrappleGunBase.SwingLineCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwingLineCheck, "BmGame.RCwGrappleGunBase.SwingLineCheck", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitLocation);
@@ -1696,14 +1696,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 68);
     }
 
-    private static BmSDK.Function __fn_GetJumpVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJumpVelocity;
     /// <summary>
     /// Function: GetJumpVelocity
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetJumpVelocity(System.Numerics.Vector3 Direction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJumpVelocity, "BmGame.RCwGrappleGunBase.GetJumpVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJumpVelocity, "BmGame.RCwGrappleGunBase.GetJumpVelocity", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Direction, paramsPtr + 0);
@@ -1718,14 +1718,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_UpdateFlightPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFlightPath;
     /// <summary>
     /// Function: UpdateFlightPath
     /// </summary>
     public unsafe virtual void UpdateFlightPath(float DeltaTime, bool bModifyTranitionTime, bool bFirstFrame)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFlightPath, "BmGame.RCwGrappleGunBase.UpdateFlightPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFlightPath, "BmGame.RCwGrappleGunBase.UpdateFlightPath", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1742,14 +1742,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GetFlightPathDeltaTangent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathDeltaTangent;
     /// <summary>
     /// Function: GetFlightPathDeltaTangent
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathDeltaTangent(out BmSDK.BmGame.RCwGrappleGunBase.FSwingParameters SP, float Proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFlightPathDeltaTangent, "BmGame.RCwGrappleGunBase.GetFlightPathDeltaTangent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFlightPathDeltaTangent, "BmGame.RCwGrappleGunBase.GetFlightPathDeltaTangent", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SP);
@@ -1767,14 +1767,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 96);
     }
 
-    private static BmSDK.Function __fn_GetFlightPathTangent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathTangent;
     /// <summary>
     /// Function: GetFlightPathTangent
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathTangent(out BmSDK.BmGame.RCwGrappleGunBase.FSwingParameters SP, float Proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFlightPathTangent, "BmGame.RCwGrappleGunBase.GetFlightPathTangent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFlightPathTangent, "BmGame.RCwGrappleGunBase.GetFlightPathTangent", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SP);
@@ -1792,14 +1792,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 96);
     }
 
-    private static BmSDK.Function __fn_GetFlightPathPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlightPathPosition;
     /// <summary>
     /// Function: GetFlightPathPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFlightPathPosition(out BmSDK.BmGame.RCwGrappleGunBase.FSwingParameters SP, float Proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFlightPathPosition, "BmGame.RCwGrappleGunBase.GetFlightPathPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFlightPathPosition, "BmGame.RCwGrappleGunBase.GetFlightPathPosition", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SP);
@@ -1817,14 +1817,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 96);
     }
 
-    private static BmSDK.Function __fn_DrawSwingPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawSwingPath;
     /// <summary>
     /// Function: DrawSwingPath
     /// </summary>
     public unsafe virtual void DrawSwingPath(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo, bool bPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawSwingPath, "BmGame.RCwGrappleGunBase.DrawSwingPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawSwingPath, "BmGame.RCwGrappleGunBase.DrawSwingPath", this);
         byte* paramsPtr = stackalloc byte[1116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPersistent, paramsPtr + 1096);
@@ -1840,14 +1840,14 @@ public partial class RCwGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_CalculateSwingPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateSwingPath;
     /// <summary>
     /// Function: CalculateSwingPath
     /// </summary>
     public unsafe virtual bool CalculateSwingPath(out BmSDK.BmGame.RCwGrappleGunBase.FWallClimbInfo ClimbInfo, System.Numerics.Vector3 DesiredStartLocation, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 StartVelocity, System.Numerics.Vector3 EndVelocity, float IdealSwingTime, float IdealSwingLength, float CheckSizeMod, out System.Numerics.Vector3 FirstHitLocation, bool bDebugDraw, bool bDrawPersistent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateSwingPath, "BmGame.RCwGrappleGunBase.CalculateSwingPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateSwingPath, "BmGame.RCwGrappleGunBase.CalculateSwingPath", this);
         byte* paramsPtr = stackalloc byte[1196];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredStartLocation, paramsPtr + 1096);

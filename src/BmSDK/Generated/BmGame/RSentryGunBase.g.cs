@@ -73,14 +73,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         where TComponent : class, Framework.IScriptComponent<RSentryGunBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SeenByThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SeenByThug;
     /// <summary>
     /// Function: SeenByThug
     /// </summary>
     public unsafe virtual void SeenByThug(BmSDK.BmGame.RBMAIController SpotterCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SeenByThug, "BmGame.RSentryGunBase.SeenByThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SeenByThug, "BmGame.RSentryGunBase.SeenByThug", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpotterCon, paramsPtr + 0);
@@ -88,42 +88,42 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetGlanceScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlanceScore;
     /// <summary>
     /// Function: GetGlanceScore
     /// </summary>
     public unsafe virtual int GetGlanceScore()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlanceScore, "BmGame.RSentryGunBase.GetGlanceScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlanceScore, "BmGame.RSentryGunBase.GetGlanceScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetVoiceSynthLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoiceSynthLocation;
     /// <summary>
     /// Function: GetVoiceSynthLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetVoiceSynthLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVoiceSynthLocation, "BmGame.RSentryGunBase.GetVoiceSynthLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVoiceSynthLocation, "BmGame.RSentryGunBase.GetVoiceSynthLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AllowLongRangeInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowLongRangeInteraction;
     /// <summary>
     /// Function: AllowLongRangeInteraction
     /// </summary>
     public unsafe virtual bool AllowLongRangeInteraction(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowLongRangeInteraction, "BmGame.RSentryGunBase.AllowLongRangeInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowLongRangeInteraction, "BmGame.RSentryGunBase.AllowLongRangeInteraction", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -131,14 +131,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Explode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Explode;
     /// <summary>
     /// Function: Explode
     /// </summary>
     public unsafe virtual void Explode(bool bDoFx = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Explode, "BmGame.RSentryGunBase.Explode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Explode, "BmGame.RSentryGunBase.Explode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDoFx, paramsPtr + 0);
@@ -146,14 +146,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_HitByBMBL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitByBMBL;
     /// <summary>
     /// Function: HitByBMBL
     /// </summary>
     public unsafe virtual void HitByBMBL(System.Numerics.Vector3 HitVelocity)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByBMBL, "BmGame.RSentryGunBase.HitByBMBL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitByBMBL, "BmGame.RSentryGunBase.HitByBMBL", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitVelocity, paramsPtr + 0);
@@ -161,14 +161,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamageFromWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamageFromWeapon;
     /// <summary>
     /// Function: TakeDamageFromWeapon
     /// </summary>
     public unsafe override BmSDK.Engine.Actor.EWeaponDamageResult TakeDamageFromWeapon(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default, bool bHeadShot = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamageFromWeapon, "BmGame.RSentryGunBase.TakeDamageFromWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamageFromWeapon, "BmGame.RSentryGunBase.TakeDamageFromWeapon", this);
         byte* paramsPtr = stackalloc byte[125];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -184,14 +184,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EWeaponDamageResult>(paramsPtr + 108);
     }
 
-    private static BmSDK.Function __fn_RigidBodyCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyCollision;
     /// <summary>
     /// Function: RigidBodyCollision
     /// </summary>
     public unsafe override void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "BmGame.RSentryGunBase.RigidBodyCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RigidBodyCollision, "BmGame.RSentryGunBase.RigidBodyCollision", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitComponent, paramsPtr + 0);
@@ -205,28 +205,28 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerAIAlert;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAIAlert;
     /// <summary>
     /// Function: TriggerAIAlert
     /// </summary>
     public unsafe virtual void TriggerAIAlert()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAIAlert, "BmGame.RSentryGunBase.TriggerAIAlert");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerAIAlert, "BmGame.RSentryGunBase.TriggerAIAlert", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetXrayHighlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetXrayHighlight;
     /// <summary>
     /// Function: SetXrayHighlight
     /// </summary>
     public unsafe virtual void SetXrayHighlight(bool bHighlightEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetXrayHighlight, "BmGame.RSentryGunBase.SetXrayHighlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetXrayHighlight, "BmGame.RSentryGunBase.SetXrayHighlight", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHighlightEnabled, paramsPtr + 0);
@@ -234,84 +234,84 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerDeployedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerDeployedEvent;
     /// <summary>
     /// Function: TriggerDeployedEvent
     /// </summary>
     public unsafe virtual void TriggerDeployedEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerDeployedEvent, "BmGame.RSentryGunBase.TriggerDeployedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerDeployedEvent, "BmGame.RSentryGunBase.TriggerDeployedEvent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Deploy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deploy;
     /// <summary>
     /// Function: Deploy
     /// </summary>
     public unsafe virtual void Deploy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deploy, "BmGame.RSentryGunBase.Deploy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deploy, "BmGame.RSentryGunBase.Deploy", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchOffMuzzleFlash2;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchOffMuzzleFlash2;
     /// <summary>
     /// Function: SwitchOffMuzzleFlash2
     /// </summary>
     public unsafe virtual void SwitchOffMuzzleFlash2()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchOffMuzzleFlash2, "BmGame.RSentryGunBase.SwitchOffMuzzleFlash2");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchOffMuzzleFlash2, "BmGame.RSentryGunBase.SwitchOffMuzzleFlash2", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchOffMuzzleFlash1;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchOffMuzzleFlash1;
     /// <summary>
     /// Function: SwitchOffMuzzleFlash1
     /// </summary>
     public unsafe virtual void SwitchOffMuzzleFlash1()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchOffMuzzleFlash1, "BmGame.RSentryGunBase.SwitchOffMuzzleFlash1");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchOffMuzzleFlash1, "BmGame.RSentryGunBase.SwitchOffMuzzleFlash1", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchOffMuzzleFlash0;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchOffMuzzleFlash0;
     /// <summary>
     /// Function: SwitchOffMuzzleFlash0
     /// </summary>
     public unsafe virtual void SwitchOffMuzzleFlash0()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchOffMuzzleFlash0, "BmGame.RSentryGunBase.SwitchOffMuzzleFlash0");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchOffMuzzleFlash0, "BmGame.RSentryGunBase.SwitchOffMuzzleFlash0", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoShotFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoShotFX;
     /// <summary>
     /// Function: DoShotFX
     /// </summary>
     public unsafe virtual void DoShotFX(System.Numerics.Vector3 TargetLoc, bool bDoImpactFX, BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoShotFX, "BmGame.RSentryGunBase.DoShotFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoShotFX, "BmGame.RSentryGunBase.DoShotFX", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetLoc, paramsPtr + 0);
@@ -321,42 +321,42 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachFiringComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachFiringComponents;
     /// <summary>
     /// Function: AttachFiringComponents
     /// </summary>
     public unsafe virtual void AttachFiringComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachFiringComponents, "BmGame.RSentryGunBase.AttachFiringComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachFiringComponents, "BmGame.RSentryGunBase.AttachFiringComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShootCustom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShootCustom;
     /// <summary>
     /// Function: ShootCustom
     /// </summary>
     public unsafe virtual void ShootCustom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShootCustom, "BmGame.RSentryGunBase.ShootCustom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShootCustom, "BmGame.RSentryGunBase.ShootCustom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShootRobot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShootRobot;
     /// <summary>
     /// Function: ShootRobot
     /// </summary>
     public unsafe virtual void ShootRobot(bool bAllowHit = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShootRobot, "BmGame.RSentryGunBase.ShootRobot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShootRobot, "BmGame.RSentryGunBase.ShootRobot", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllowHit, paramsPtr + 0);
@@ -364,28 +364,28 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerPlayerDamagedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPlayerDamagedEvent;
     /// <summary>
     /// Function: TriggerPlayerDamagedEvent
     /// </summary>
     public unsafe virtual void TriggerPlayerDamagedEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPlayerDamagedEvent, "BmGame.RSentryGunBase.TriggerPlayerDamagedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPlayerDamagedEvent, "BmGame.RSentryGunBase.TriggerPlayerDamagedEvent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShootPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShootPlayer;
     /// <summary>
     /// Function: ShootPlayer
     /// </summary>
     public unsafe virtual void ShootPlayer(bool bOnlyBatmobileVisible, bool bAllowHit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShootPlayer, "BmGame.RSentryGunBase.ShootPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShootPlayer, "BmGame.RSentryGunBase.ShootPlayer", this);
         byte* paramsPtr = stackalloc byte[440];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOnlyBatmobileVisible, paramsPtr + 0);
@@ -394,56 +394,56 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_DrawDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebug;
     /// <summary>
     /// Function: DrawDebug
     /// </summary>
     public unsafe virtual void DrawDebug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebug, "BmGame.RSentryGunBase.DrawDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawDebug, "BmGame.RSentryGunBase.DrawDebug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickJammed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickJammed;
     /// <summary>
     /// Function: TickJammed
     /// </summary>
     public unsafe virtual void TickJammed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickJammed, "BmGame.RSentryGunBase.TickJammed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickJammed, "BmGame.RSentryGunBase.TickJammed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickPoweredDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickPoweredDown;
     /// <summary>
     /// Function: TickPoweredDown
     /// </summary>
     public unsafe virtual void TickPoweredDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickPoweredDown, "BmGame.RSentryGunBase.TickPoweredDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickPoweredDown, "BmGame.RSentryGunBase.TickPoweredDown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerShootingSeqEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerShootingSeqEvent;
     /// <summary>
     /// Function: TriggerShootingSeqEvent
     /// </summary>
     public unsafe virtual void TriggerShootingSeqEvent(bool bStartedShooting)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerShootingSeqEvent, "BmGame.RSentryGunBase.TriggerShootingSeqEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerShootingSeqEvent, "BmGame.RSentryGunBase.TriggerShootingSeqEvent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bStartedShooting, paramsPtr + 0);
@@ -451,14 +451,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggleHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggleHidden;
     /// <summary>
     /// Function: OnToggleHidden
     /// </summary>
     public unsafe override void OnToggleHidden(BmSDK.Engine.SeqAct_ToggleHidden Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggleHidden, "BmGame.RSentryGunBase.OnToggleHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggleHidden, "BmGame.RSentryGunBase.OnToggleHidden", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -466,42 +466,42 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachLights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachLights;
     /// <summary>
     /// Function: AttachLights
     /// </summary>
     public unsafe virtual void AttachLights()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachLights, "BmGame.RSentryGunBase.AttachLights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachLights, "BmGame.RSentryGunBase.AttachLights", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishDieing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishDieing;
     /// <summary>
     /// Function: FinishDieing
     /// </summary>
     public unsafe virtual void FinishDieing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishDieing, "BmGame.RSentryGunBase.FinishDieing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishDieing, "BmGame.RSentryGunBase.FinishDieing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GoPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoPhysics;
     /// <summary>
     /// Function: GoPhysics
     /// </summary>
     public unsafe virtual void GoPhysics(bool bTriggerEvent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoPhysics, "BmGame.RSentryGunBase.GoPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoPhysics, "BmGame.RSentryGunBase.GoPhysics", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTriggerEvent, paramsPtr + 0);
@@ -509,84 +509,84 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GoPhysicsAndTriggerEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoPhysicsAndTriggerEvent;
     /// <summary>
     /// Function: GoPhysicsAndTriggerEvent
     /// </summary>
     public unsafe virtual void GoPhysicsAndTriggerEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoPhysicsAndTriggerEvent, "BmGame.RSentryGunBase.GoPhysicsAndTriggerEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoPhysicsAndTriggerEvent, "BmGame.RSentryGunBase.GoPhysicsAndTriggerEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableSentryGun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableSentryGun;
     /// <summary>
     /// Function: DisableSentryGun
     /// </summary>
     public unsafe virtual void DisableSentryGun()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableSentryGun, "BmGame.RSentryGunBase.DisableSentryGun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableSentryGun, "BmGame.RSentryGunBase.DisableSentryGun", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndRECReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndRECReaction;
     /// <summary>
     /// Function: EndRECReaction
     /// </summary>
     public unsafe virtual void EndRECReaction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndRECReaction, "BmGame.RSentryGunBase.EndRECReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndRECReaction, "BmGame.RSentryGunBase.EndRECReaction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickRECReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickRECReaction;
     /// <summary>
     /// Function: TickRECReaction
     /// </summary>
     public unsafe virtual void TickRECReaction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickRECReaction, "BmGame.RSentryGunBase.TickRECReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickRECReaction, "BmGame.RSentryGunBase.TickRECReaction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HitByREC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitByREC;
     /// <summary>
     /// Function: HitByREC
     /// </summary>
     public unsafe virtual void HitByREC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByREC, "BmGame.RSentryGunBase.HitByREC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitByREC, "BmGame.RSentryGunBase.HitByREC", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Trigger;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Trigger;
     /// <summary>
     /// Function: Trigger
     /// </summary>
     public unsafe virtual bool Trigger(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Trigger, "BmGame.RSentryGunBase.Trigger");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Trigger, "BmGame.RSentryGunBase.Trigger", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -594,28 +594,28 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UnBlind;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnBlind;
     /// <summary>
     /// Function: UnBlind
     /// </summary>
     public unsafe virtual void UnBlind()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnBlind, "BmGame.RSentryGunBase.UnBlind");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnBlind, "BmGame.RSentryGunBase.UnBlind", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetInteractButton;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractButton;
     /// <summary>
     /// Function: GetInteractButton
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton GetInteractButton(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractButton, "BmGame.RSentryGunBase.GetInteractButton");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractButton, "BmGame.RSentryGunBase.GetInteractButton", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -623,42 +623,42 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OverridePreviousLines;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridePreviousLines;
     /// <summary>
     /// Function: OverridePreviousLines
     /// </summary>
     public unsafe virtual bool OverridePreviousLines()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePreviousLines, "BmGame.RSentryGunBase.OverridePreviousLines");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridePreviousLines, "BmGame.RSentryGunBase.OverridePreviousLines", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetUpperPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUpperPrompt;
     /// <summary>
     /// Function: GetUpperPrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetUpperPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUpperPrompt, "BmGame.RSentryGunBase.GetUpperPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUpperPrompt, "BmGame.RSentryGunBase.GetUpperPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OverridesRun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridesRun;
     /// <summary>
     /// Function: OverridesRun
     /// </summary>
     public unsafe virtual float OverridesRun(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridesRun, "BmGame.RSentryGunBase.OverridesRun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridesRun, "BmGame.RSentryGunBase.OverridesRun", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -666,14 +666,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CanReachItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReachItem;
     /// <summary>
     /// Function: CanReachItem
     /// </summary>
     public unsafe virtual bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmGame.RSentryGunBase.CanReachItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanReachItem, "BmGame.RSentryGunBase.CanReachItem", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckingPawn, paramsPtr + 0);
@@ -681,42 +681,42 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetLocationOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationOffset;
     /// <summary>
     /// Function: GetLocationOffset
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationOffset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationOffset, "BmGame.RSentryGunBase.GetLocationOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationOffset, "BmGame.RSentryGunBase.GetLocationOffset", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanUseInCinematicMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseInCinematicMode;
     /// <summary>
     /// Function: CanUseInCinematicMode
     /// </summary>
     public unsafe virtual bool CanUseInCinematicMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseInCinematicMode, "BmGame.RSentryGunBase.CanUseInCinematicMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUseInCinematicMode, "BmGame.RSentryGunBase.CanUseInCinematicMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetIdleAudioEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIdleAudioEnabled;
     /// <summary>
     /// Function: SetIdleAudioEnabled
     /// </summary>
     public unsafe virtual void SetIdleAudioEnabled(bool bAudioEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIdleAudioEnabled, "BmGame.RSentryGunBase.SetIdleAudioEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetIdleAudioEnabled, "BmGame.RSentryGunBase.SetIdleAudioEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAudioEnabled, paramsPtr + 0);
@@ -724,56 +724,56 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_CancelTakedownAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelTakedownAnim;
     /// <summary>
     /// Function: CancelTakedownAnim
     /// </summary>
     public unsafe virtual void CancelTakedownAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelTakedownAnim, "BmGame.RSentryGunBase.CancelTakedownAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelTakedownAnim, "BmGame.RSentryGunBase.CancelTakedownAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SentryGunGoPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SentryGunGoPhysics;
     /// <summary>
     /// Function: SentryGunGoPhysics
     /// </summary>
     public unsafe virtual void SentryGunGoPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SentryGunGoPhysics, "BmGame.RSentryGunBase.SentryGunGoPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SentryGunGoPhysics, "BmGame.RSentryGunBase.SentryGunGoPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SentryGunTakenOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SentryGunTakenOut;
     /// <summary>
     /// Function: SentryGunTakenOut
     /// </summary>
     public unsafe virtual void SentryGunTakenOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SentryGunTakenOut, "BmGame.RSentryGunBase.SentryGunTakenOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SentryGunTakenOut, "BmGame.RSentryGunBase.SentryGunTakenOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartTakedownAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTakedownAnim;
     /// <summary>
     /// Function: StartTakedownAnim
     /// </summary>
     public unsafe virtual void StartTakedownAnim(bool bBMInFront, BmSDK.Engine.AnimSet OverrideAnimset = default, BmSDK.FName OverrideAnimName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTakedownAnim, "BmGame.RSentryGunBase.StartTakedownAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTakedownAnim, "BmGame.RSentryGunBase.StartTakedownAnim", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bBMInFront, paramsPtr + 0);
@@ -783,14 +783,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_Interact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Interact;
     /// <summary>
     /// Function: Interact
     /// </summary>
     public unsafe virtual void Interact(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmGame.RSentryGunBase.Interact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Interact, "BmGame.RSentryGunBase.Interact", this);
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -798,14 +798,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_MustBeCrouched;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MustBeCrouched;
     /// <summary>
     /// Function: MustBeCrouched
     /// </summary>
     public unsafe virtual bool MustBeCrouched(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MustBeCrouched, "BmGame.RSentryGunBase.MustBeCrouched");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MustBeCrouched, "BmGame.RSentryGunBase.MustBeCrouched", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -813,28 +813,28 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsButtonPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsButtonPrompt;
     /// <summary>
     /// Function: IsButtonPrompt
     /// </summary>
     public unsafe virtual bool IsButtonPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsButtonPrompt, "BmGame.RSentryGunBase.IsButtonPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsButtonPrompt, "BmGame.RSentryGunBase.IsButtonPrompt", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActive;
     /// <summary>
     /// Function: IsActive
     /// </summary>
     public unsafe virtual bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmGame.RSentryGunBase.IsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActive, "BmGame.RSentryGunBase.IsActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -842,28 +842,28 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPriority;
     /// <summary>
     /// Function: GetPriority
     /// </summary>
     public unsafe virtual float GetPriority()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPriority, "BmGame.RSentryGunBase.GetPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPriority, "BmGame.RSentryGunBase.GetPriority", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFOVDegrees;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVDegrees;
     /// <summary>
     /// Function: GetFOVDegrees
     /// </summary>
     public unsafe virtual float GetFOVDegrees(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVDegrees, "BmGame.RSentryGunBase.GetFOVDegrees");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVDegrees, "BmGame.RSentryGunBase.GetFOVDegrees", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -871,42 +871,42 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetHeightRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeightRange;
     /// <summary>
     /// Function: GetHeightRange
     /// </summary>
     public unsafe virtual float GetHeightRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeightRange, "BmGame.RSentryGunBase.GetHeightRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeightRange, "BmGame.RSentryGunBase.GetHeightRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRange;
     /// <summary>
     /// Function: GetRange
     /// </summary>
     public unsafe virtual float GetRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRange, "BmGame.RSentryGunBase.GetRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRange, "BmGame.RSentryGunBase.GetRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrompt;
     /// <summary>
     /// Function: GetPrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetPrompt(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrompt, "BmGame.RSentryGunBase.GetPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrompt, "BmGame.RSentryGunBase.GetPrompt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -914,84 +914,84 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SwitchOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchOff;
     /// <summary>
     /// Function: SwitchOff
     /// </summary>
     public unsafe virtual void SwitchOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchOff, "BmGame.RSentryGunBase.SwitchOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchOff, "BmGame.RSentryGunBase.SwitchOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchOn;
     /// <summary>
     /// Function: SwitchOn
     /// </summary>
     public unsafe virtual void SwitchOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchOn, "BmGame.RSentryGunBase.SwitchOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchOn, "BmGame.RSentryGunBase.SwitchOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRECTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRECTargetLocation;
     /// <summary>
     /// Function: GetRECTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRECTargetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRECTargetLocation, "BmGame.RSentryGunBase.GetRECTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRECTargetLocation, "BmGame.RSentryGunBase.GetRECTargetLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDisplayTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayTargetLocation;
     /// <summary>
     /// Function: GetDisplayTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDisplayTargetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayTargetLocation, "BmGame.RSentryGunBase.GetDisplayTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayTargetLocation, "BmGame.RSentryGunBase.GetDisplayTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RequiresBlindDroneUpgrade;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RequiresBlindDroneUpgrade;
     /// <summary>
     /// Function: RequiresBlindDroneUpgrade
     /// </summary>
     public unsafe virtual bool RequiresBlindDroneUpgrade()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequiresBlindDroneUpgrade, "BmGame.RSentryGunBase.RequiresBlindDroneUpgrade");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RequiresBlindDroneUpgrade, "BmGame.RSentryGunBase.RequiresBlindDroneUpgrade", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanTrigger;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTrigger;
     /// <summary>
     /// Function: CanTrigger
     /// </summary>
     public unsafe virtual bool CanTrigger(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTrigger, "BmGame.RSentryGunBase.CanTrigger");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTrigger, "BmGame.RSentryGunBase.CanTrigger", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -999,14 +999,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CanBeTargettedByRHD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeTargettedByRHD;
     /// <summary>
     /// Function: CanBeTargettedByRHD
     /// </summary>
     public unsafe virtual bool CanBeTargettedByRHD(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeTargettedByRHD, "BmGame.RSentryGunBase.CanBeTargettedByRHD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeTargettedByRHD, "BmGame.RSentryGunBase.CanBeTargettedByRHD", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1014,140 +1014,140 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetDisplayLockOnState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayLockOnState;
     /// <summary>
     /// Function: GetDisplayLockOnState
     /// </summary>
     public unsafe virtual BmSDK.FString GetDisplayLockOnState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayLockOnState, "BmGame.RSentryGunBase.GetDisplayLockOnState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayLockOnState, "BmGame.RSentryGunBase.GetDisplayLockOnState", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDisplayTitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayTitle;
     /// <summary>
     /// Function: GetDisplayTitle
     /// </summary>
     public unsafe virtual BmSDK.FString GetDisplayTitle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayTitle, "BmGame.RSentryGunBase.GetDisplayTitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayTitle, "BmGame.RSentryGunBase.GetDisplayTitle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDisplayDescription;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayDescription;
     /// <summary>
     /// Function: GetDisplayDescription
     /// </summary>
     public unsafe virtual BmSDK.FString GetDisplayDescription()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayDescription, "BmGame.RSentryGunBase.GetDisplayDescription");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayDescription, "BmGame.RSentryGunBase.GetDisplayDescription", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDisplayIconName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayIconName;
     /// <summary>
     /// Function: GetDisplayIconName
     /// </summary>
     public unsafe virtual BmSDK.FString GetDisplayIconName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayIconName, "BmGame.RSentryGunBase.GetDisplayIconName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayIconName, "BmGame.RSentryGunBase.GetDisplayIconName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NeedDisplayRefresh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedDisplayRefresh;
     /// <summary>
     /// Function: NeedDisplayRefresh
     /// </summary>
     public unsafe virtual bool NeedDisplayRefresh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NeedDisplayRefresh, "BmGame.RSentryGunBase.NeedDisplayRefresh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NeedDisplayRefresh, "BmGame.RSentryGunBase.NeedDisplayRefresh", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetInteractionPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractionPrompt;
     /// <summary>
     /// Function: GetInteractionPrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetInteractionPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractionPrompt, "BmGame.RSentryGunBase.GetInteractionPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractionPrompt, "BmGame.RSentryGunBase.GetInteractionPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldInteractionPromptBeDisplayedInCentreOfScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldInteractionPromptBeDisplayedInCentreOfScreen;
     /// <summary>
     /// Function: ShouldInteractionPromptBeDisplayedInCentreOfScreen
     /// </summary>
     public unsafe virtual bool ShouldInteractionPromptBeDisplayedInCentreOfScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldInteractionPromptBeDisplayedInCentreOfScreen, "BmGame.RSentryGunBase.ShouldInteractionPromptBeDisplayedInCentreOfScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldInteractionPromptBeDisplayedInCentreOfScreen, "BmGame.RSentryGunBase.ShouldInteractionPromptBeDisplayedInCentreOfScreen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetInteractionPromptSecondary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractionPromptSecondary;
     /// <summary>
     /// Function: GetInteractionPromptSecondary
     /// </summary>
     public unsafe virtual BmSDK.FString GetInteractionPromptSecondary()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractionPromptSecondary, "BmGame.RSentryGunBase.GetInteractionPromptSecondary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractionPromptSecondary, "BmGame.RSentryGunBase.GetInteractionPromptSecondary", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetInteractionType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractionType;
     /// <summary>
     /// Function: GetInteractionType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRemoteControlLowSecurityInterface.EOmnitronInteractionType GetInteractionType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractionType, "BmGame.RSentryGunBase.GetInteractionType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractionType, "BmGame.RSentryGunBase.GetInteractionType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RRemoteControlLowSecurityInterface.EOmnitronInteractionType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerSecondary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSecondary;
     /// <summary>
     /// Function: TriggerSecondary
     /// </summary>
     public unsafe virtual bool TriggerSecondary(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSecondary, "BmGame.RSentryGunBase.TriggerSecondary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSecondary, "BmGame.RSentryGunBase.TriggerSecondary", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1155,28 +1155,28 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CanTargetTroughWalls;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTargetTroughWalls;
     /// <summary>
     /// Function: CanTargetTroughWalls
     /// </summary>
     public unsafe virtual bool CanTargetTroughWalls()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTargetTroughWalls, "BmGame.RSentryGunBase.CanTargetTroughWalls");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTargetTroughWalls, "BmGame.RSentryGunBase.CanTargetTroughWalls", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMiniGameHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMiniGameHelpPrompt;
     /// <summary>
     /// Function: GetMiniGameHelpPrompt
     /// </summary>
     public unsafe virtual void GetMiniGameHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMiniGameHelpPrompt, "BmGame.RSentryGunBase.GetMiniGameHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMiniGameHelpPrompt, "BmGame.RSentryGunBase.GetMiniGameHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -1185,14 +1185,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLeft;
     /// <summary>
     /// Function: TriggerLeft
     /// </summary>
     public unsafe virtual void TriggerLeft(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLeft, "BmGame.RSentryGunBase.TriggerLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLeft, "BmGame.RSentryGunBase.TriggerLeft", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1200,14 +1200,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerRight;
     /// <summary>
     /// Function: TriggerRight
     /// </summary>
     public unsafe virtual void TriggerRight(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerRight, "BmGame.RSentryGunBase.TriggerRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerRight, "BmGame.RSentryGunBase.TriggerRight", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1215,14 +1215,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyPlayerIceRaft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyPlayerIceRaft;
     /// <summary>
     /// Function: DestroyPlayerIceRaft
     /// </summary>
     public unsafe virtual void DestroyPlayerIceRaft(BmSDK.BmGame.RPawnPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyPlayerIceRaft, "BmGame.RSentryGunBase.DestroyPlayerIceRaft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyPlayerIceRaft, "BmGame.RSentryGunBase.DestroyPlayerIceRaft", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -1230,56 +1230,56 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RSentryGunBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RSentryGunBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RSentryGunBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RSentryGunBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay_Delayed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay_Delayed;
     /// <summary>
     /// Function: PostBeginPlay_Delayed
     /// </summary>
     public unsafe virtual void PostBeginPlay_Delayed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay_Delayed, "BmGame.RSentryGunBase.PostBeginPlay_Delayed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay_Delayed, "BmGame.RSentryGunBase.PostBeginPlay_Delayed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRotationRootOrientation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootOrientation;
     /// <summary>
     /// Function: GetRotationRootOrientation
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRotationRootOrientation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRotationRootOrientation, "BmGame.RSentryGunBase.GetRotationRootOrientation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRotationRootOrientation, "BmGame.RSentryGunBase.GetRotationRootOrientation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1293,14 +1293,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRotationRootLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationRootLocation;
     /// <summary>
     /// Function: GetRotationRootLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRotationRootLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRotationRootLocation, "BmGame.RSentryGunBase.GetRotationRootLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRotationRootLocation, "BmGame.RSentryGunBase.GetRotationRootLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1314,14 +1314,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNextAimTargetIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextAimTargetIndex;
     /// <summary>
     /// Function: GetNextAimTargetIndex
     /// </summary>
     public unsafe virtual int GetNextAimTargetIndex()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextAimTargetIndex, "BmGame.RSentryGunBase.GetNextAimTargetIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNextAimTargetIndex, "BmGame.RSentryGunBase.GetNextAimTargetIndex", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1335,14 +1335,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClosestAimTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestAimTarget;
     /// <summary>
     /// Function: GetClosestAimTarget
     /// </summary>
     public unsafe virtual int GetClosestAimTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestAimTarget, "BmGame.RSentryGunBase.GetClosestAimTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestAimTarget, "BmGame.RSentryGunBase.GetClosestAimTarget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1356,14 +1356,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdatePlayerVis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerVis;
     /// <summary>
     /// Function: UpdatePlayerVis
     /// </summary>
     public unsafe virtual bool UpdatePlayerVis(BmSDK.Engine.Actor actorToTest)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePlayerVis, "BmGame.RSentryGunBase.UpdatePlayerVis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePlayerVis, "BmGame.RSentryGunBase.UpdatePlayerVis", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(actorToTest, paramsPtr + 0);
@@ -1378,14 +1378,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetAllRobotsInCone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllRobotsInCone;
     /// <summary>
     /// Function: GetAllRobotsInCone
     /// </summary>
     public unsafe virtual void GetAllRobotsInCone(out BmSDK.TArray<BmSDK.BmGame.RPawnVillainThug> activeRobots)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllRobotsInCone, "BmGame.RSentryGunBase.GetAllRobotsInCone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllRobotsInCone, "BmGame.RSentryGunBase.GetAllRobotsInCone", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1400,14 +1400,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCurrentRotationRate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCurrentRotationRate;
     /// <summary>
     /// Function: UpdateCurrentRotationRate
     /// </summary>
     public unsafe virtual void UpdateCurrentRotationRate(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCurrentRotationRate, "BmGame.RSentryGunBase.UpdateCurrentRotationRate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCurrentRotationRate, "BmGame.RSentryGunBase.UpdateCurrentRotationRate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1422,14 +1422,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetTimeTillMaxRotationRate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeTillMaxRotationRate;
     /// <summary>
     /// Function: GetTimeTillMaxRotationRate
     /// </summary>
     public unsafe virtual float GetTimeTillMaxRotationRate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeTillMaxRotationRate, "BmGame.RSentryGunBase.GetTimeTillMaxRotationRate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimeTillMaxRotationRate, "BmGame.RSentryGunBase.GetTimeTillMaxRotationRate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1443,14 +1443,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanShootCustom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootCustom;
     /// <summary>
     /// Function: CanShootCustom
     /// </summary>
     public unsafe virtual bool CanShootCustom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanShootCustom, "BmGame.RSentryGunBase.CanShootCustom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanShootCustom, "BmGame.RSentryGunBase.CanShootCustom", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1464,14 +1464,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanShootPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootPlayer;
     /// <summary>
     /// Function: CanShootPlayer
     /// </summary>
     public unsafe virtual bool CanShootPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanShootPlayer, "BmGame.RSentryGunBase.CanShootPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanShootPlayer, "BmGame.RSentryGunBase.CanShootPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1485,14 +1485,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateOrientation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOrientation;
     /// <summary>
     /// Function: UpdateOrientation
     /// </summary>
     public unsafe virtual void UpdateOrientation(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateOrientation, "BmGame.RSentryGunBase.UpdateOrientation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateOrientation, "BmGame.RSentryGunBase.UpdateOrientation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1507,14 +1507,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetLightMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLightMode;
     /// <summary>
     /// Function: SetLightMode
     /// </summary>
     public unsafe virtual void SetLightMode(BmSDK.BmGame.RSentryGunLightsBase.eLightMode lightMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLightMode, "BmGame.RSentryGunBase.SetLightMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLightMode, "BmGame.RSentryGunBase.SetLightMode", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(lightMode, paramsPtr + 0);
@@ -1529,14 +1529,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLight;
     /// <summary>
     /// Function: UpdateLight
     /// </summary>
     public unsafe virtual void UpdateLight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLight, "BmGame.RSentryGunBase.UpdateLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLight, "BmGame.RSentryGunBase.UpdateLight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1550,14 +1550,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_StopFiringSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopFiringSound;
     /// <summary>
     /// Function: StopFiringSound
     /// </summary>
     public unsafe virtual void StopFiringSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopFiringSound, "BmGame.RSentryGunBase.StopFiringSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopFiringSound, "BmGame.RSentryGunBase.StopFiringSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1571,14 +1571,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_StartFiringSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFiringSound;
     /// <summary>
     /// Function: StartFiringSound
     /// </summary>
     public unsafe virtual void StartFiringSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFiringSound, "BmGame.RSentryGunBase.StartFiringSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFiringSound, "BmGame.RSentryGunBase.StartFiringSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1592,14 +1592,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRobotAttacking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRobotAttacking;
     /// <summary>
     /// Function: UpdateRobotAttacking
     /// </summary>
     public unsafe virtual void UpdateRobotAttacking(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRobotAttacking, "BmGame.RSentryGunBase.UpdateRobotAttacking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRobotAttacking, "BmGame.RSentryGunBase.UpdateRobotAttacking", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1614,14 +1614,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_IsPoweredDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPoweredDown;
     /// <summary>
     /// Function: IsPoweredDown
     /// </summary>
     public unsafe virtual bool IsPoweredDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPoweredDown, "BmGame.RSentryGunBase.IsPoweredDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPoweredDown, "BmGame.RSentryGunBase.IsPoweredDown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1635,14 +1635,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsBlinded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlinded;
     /// <summary>
     /// Function: IsBlinded
     /// </summary>
     public unsafe virtual bool IsBlinded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBlinded, "BmGame.RSentryGunBase.IsBlinded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBlinded, "BmGame.RSentryGunBase.IsBlinded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1656,14 +1656,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBlindedTimeRemaining;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBlindedTimeRemaining;
     /// <summary>
     /// Function: GetBlindedTimeRemaining
     /// </summary>
     public unsafe virtual float GetBlindedTimeRemaining()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBlindedTimeRemaining, "BmGame.RSentryGunBase.GetBlindedTimeRemaining");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBlindedTimeRemaining, "BmGame.RSentryGunBase.GetBlindedTimeRemaining", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1677,14 +1677,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFOVCheckLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
     /// Function: GetFOVCheckLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetFOVCheckLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVCheckLocation, "BmGame.RSentryGunBase.GetFOVCheckLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVCheckLocation, "BmGame.RSentryGunBase.GetFOVCheckLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1698,14 +1698,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
     /// Function: GetTargetLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetLocation, "BmGame.RSentryGunBase.GetTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetLocation, "BmGame.RSentryGunBase.GetTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RequestedBy, paramsPtr + 0);
@@ -1721,14 +1721,14 @@ public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_RaycastForLightRadius;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RaycastForLightRadius;
     /// <summary>
     /// Function: RaycastForLightRadius
     /// </summary>
     public unsafe virtual float RaycastForLightRadius()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RaycastForLightRadius, "BmGame.RSentryGunBase.RaycastForLightRadius");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RaycastForLightRadius, "BmGame.RSentryGunBase.RaycastForLightRadius", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

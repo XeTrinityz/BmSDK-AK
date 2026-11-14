@@ -73,14 +73,14 @@ public partial class RVehicleWalkerBase : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RVehicleWalkerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateFallingLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFallingLocation;
     /// <summary>
     /// Function: UpdateFallingLocation
     /// </summary>
     public unsafe virtual void UpdateFallingLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFallingLocation, "BmGame.RVehicleWalkerBase.UpdateFallingLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFallingLocation, "BmGame.RVehicleWalkerBase.UpdateFallingLocation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class RVehicleWalkerBase : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_TryToDodgeHeavyCannon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryToDodgeHeavyCannon;
     /// <summary>
     /// Function: TryToDodgeHeavyCannon
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TryToDodgeHeavyCannon(System.Numerics.Vector3 WeaponOrigin, System.Numerics.Vector3 FireDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToDodgeHeavyCannon, "BmGame.RVehicleWalkerBase.TryToDodgeHeavyCannon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryToDodgeHeavyCannon, "BmGame.RVehicleWalkerBase.TryToDodgeHeavyCannon", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WeaponOrigin, paramsPtr + 0);
@@ -117,14 +117,14 @@ public partial class RVehicleWalkerBase : BmSDK.BmGame.RVehicleNPC, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_SelfDrive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelfDrive;
     /// <summary>
     /// Function: SelfDrive
     /// </summary>
     public unsafe override bool SelfDrive(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelfDrive, "BmGame.RVehicleWalkerBase.SelfDrive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelfDrive, "BmGame.RVehicleWalkerBase.SelfDrive", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

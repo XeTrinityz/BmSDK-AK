@@ -78,14 +78,14 @@ public partial class RStealthTakedownStage_ChainTakedown_DropToGrab : BmSDK.BmGa
         where TComponent : class, Framework.IScriptComponent<RStealthTakedownStage_ChainTakedown_DropToGrab>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RStealthTakedownStage_ChainTakedown_DropToGrab.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RStealthTakedownStage_ChainTakedown_DropToGrab.Tick", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RStealthTakedownStage_ChainTakedown_DropToGrab : BmSDK.BmGa
         return;
     }
 
-    private static BmSDK.Function __fn_GetReferencePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferencePosition;
     /// <summary>
     /// Function: GetReferencePosition
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmGame.RStealthTakedownStage_ChainTakedown_DropToGrab.GetReferencePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReferencePosition, "BmGame.RStealthTakedownStage_ChainTakedown_DropToGrab.GetReferencePosition", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ReferencePosition);
@@ -113,14 +113,14 @@ public partial class RStealthTakedownStage_ChainTakedown_DropToGrab : BmSDK.BmGa
         return;
     }
 
-    private static BmSDK.Function __fn_Begin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Begin;
     /// <summary>
     /// Function: Begin
     /// </summary>
     public unsafe override void Begin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmGame.RStealthTakedownStage_ChainTakedown_DropToGrab.Begin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Begin, "BmGame.RStealthTakedownStage_ChainTakedown_DropToGrab.Begin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

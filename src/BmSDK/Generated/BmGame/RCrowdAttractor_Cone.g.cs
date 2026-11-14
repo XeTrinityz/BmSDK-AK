@@ -78,14 +78,14 @@ public partial class RCrowdAttractor_Cone : BmSDK.BmGame.RCrowdAttractor, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RCrowdAttractor_Cone>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAttractionForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttractionForce;
     /// <summary>
     /// Function: GetAttractionForce
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAttractionForce(BmSDK.BmGame.RCrowdAgent Agent, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttractionForce, "BmGame.RCrowdAttractor_Cone.GetAttractionForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAttractionForce, "BmGame.RCrowdAttractor_Cone.GetAttractionForce", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Agent, paramsPtr + 0);

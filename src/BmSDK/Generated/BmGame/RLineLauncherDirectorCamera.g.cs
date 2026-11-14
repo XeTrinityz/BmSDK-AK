@@ -78,14 +78,14 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
         where TComponent : class, Framework.IScriptComponent<RLineLauncherDirectorCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FindBestCentrePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBestCentrePoint;
     /// <summary>
     /// Function: FindBestCentrePoint
     /// </summary>
     public unsafe virtual void FindBestCentrePoint(out System.Numerics.Vector3 StartPoint, out System.Numerics.Vector3 EndPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindBestCentrePoint, "BmGame.RLineLauncherDirectorCamera.FindBestCentrePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindBestCentrePoint, "BmGame.RLineLauncherDirectorCamera.FindBestCentrePoint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StartPoint);
@@ -105,14 +105,14 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_SetupPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupPosition;
     /// <summary>
     /// Function: SetupPosition
     /// </summary>
     public unsafe virtual void SetupPosition(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupPosition, "BmGame.RLineLauncherDirectorCamera.SetupPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupPosition, "BmGame.RLineLauncherDirectorCamera.SetupPosition", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -127,42 +127,42 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_CameraReturn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CameraReturn;
     /// <summary>
     /// Function: CameraReturn
     /// </summary>
     public unsafe virtual void CameraReturn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CameraReturn, "BmGame.RLineLauncherDirectorCamera.CameraReturn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CameraReturn, "BmGame.RLineLauncherDirectorCamera.CameraReturn", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishUp;
     /// <summary>
     /// Function: FinishUp
     /// </summary>
     public unsafe virtual void FinishUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishUp, "BmGame.RLineLauncherDirectorCamera.FinishUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishUp, "BmGame.RLineLauncherDirectorCamera.FinishUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RLineLauncherDirectorCamera.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RLineLauncherDirectorCamera.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RLineLauncherDirectorCamera : BmSDK.BmGame.RCameraActor, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_SetupLineLauncher;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupLineLauncher;
     /// <summary>
     /// Function: SetupLineLauncher
     /// </summary>
     public unsafe virtual void SetupLineLauncher(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, BmSDK.BmGame.RPlayerController Batman)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupLineLauncher, "BmGame.RLineLauncherDirectorCamera.SetupLineLauncher");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupLineLauncher, "BmGame.RLineLauncherDirectorCamera.SetupLineLauncher", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPoint, paramsPtr + 0);

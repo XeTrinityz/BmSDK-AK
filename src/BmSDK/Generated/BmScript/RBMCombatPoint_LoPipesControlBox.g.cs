@@ -78,14 +78,14 @@ public partial class RBMCombatPoint_LoPipesControlBox : BmSDK.BmGame.RBMCombatPo
         where TComponent : class, Framework.IScriptComponent<RBMCombatPoint_LoPipesControlBox>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DebugReset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugReset;
     /// <summary>
     /// Function: DebugReset
     /// </summary>
     public unsafe virtual void DebugReset(BmSDK.BmGame.RBMCombatManager CM)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugReset, "BmScript.RBMCombatPoint_LoPipesControlBox.DebugReset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugReset, "BmScript.RBMCombatPoint_LoPipesControlBox.DebugReset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CM, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RBMCombatPoint_LoPipesControlBox : BmSDK.BmGame.RBMCombatPo
         return;
     }
 
-    private static BmSDK.Function __fn_OnFxEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFxEvent;
     /// <summary>
     /// Function: OnFxEvent
     /// </summary>
     public unsafe virtual void OnFxEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFxEvent, "BmScript.RBMCombatPoint_LoPipesControlBox.OnFxEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFxEvent, "BmScript.RBMCombatPoint_LoPipesControlBox.OnFxEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetControlBoxMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetControlBoxMaterial;
     /// <summary>
     /// Function: SetControlBoxMaterial
     /// </summary>
     public unsafe virtual void SetControlBoxMaterial(bool bBoxActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetControlBoxMaterial, "BmScript.RBMCombatPoint_LoPipesControlBox.SetControlBoxMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetControlBoxMaterial, "BmScript.RBMCombatPoint_LoPipesControlBox.SetControlBoxMaterial", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bBoxActive, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RBMCombatPoint_LoPipesControlBox : BmSDK.BmGame.RBMCombatPo
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmScript.RBMCombatPoint_LoPipesControlBox.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmScript.RBMCombatPoint_LoPipesControlBox.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class RBMCombatPoint_LoPipesControlBox : BmSDK.BmGame.RBMCombatPo
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RBMCombatPoint_LoPipesControlBox.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RBMCombatPoint_LoPipesControlBox.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

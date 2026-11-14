@@ -78,28 +78,28 @@ public partial class RCombatMove_RiddlerMechToggleRobotColour : BmSDK.BmGame.RCo
         where TComponent : class, Framework.IScriptComponent<RCombatMove_RiddlerMechToggleRobotColour>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ExitMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove
     /// </summary>
     public unsafe override void ExitMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.ExitMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.ExitMove", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ExitMoveForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMoveForPawn;
     /// <summary>
     /// Function: ExitMoveForPawn
     /// </summary>
     public unsafe override void ExitMoveForPawn(BmSDK.BmGame.RPawnCombat PawnToExit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMoveForPawn, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.ExitMoveForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMoveForPawn, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.ExitMoveForPawn", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToExit, paramsPtr + 0);
@@ -107,70 +107,70 @@ public partial class RCombatMove_RiddlerMechToggleRobotColour : BmSDK.BmGame.RCo
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.Initialise", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RobotFloorFx;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RobotFloorFx;
     /// <summary>
     /// Function: RobotFloorFx
     /// </summary>
     public unsafe virtual void RobotFloorFx()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RobotFloorFx, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.RobotFloorFx");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RobotFloorFx, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.RobotFloorFx", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleColour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleColour;
     /// <summary>
     /// Function: ToggleColour
     /// </summary>
     public unsafe virtual void ToggleColour()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleColour, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.ToggleColour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleColour, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.ToggleColour", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinaliseRobotColour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinaliseRobotColour;
     /// <summary>
     /// Function: FinaliseRobotColour
     /// </summary>
     public unsafe virtual void FinaliseRobotColour()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinaliseRobotColour, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.FinaliseRobotColour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinaliseRobotColour, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.FinaliseRobotColour", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOnLights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOnLights;
     /// <summary>
     /// Function: TurnOnLights
     /// </summary>
     public unsafe virtual void TurnOnLights()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnLights, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.TurnOnLights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOnLights, "BmGame.RCombatMove_RiddlerMechToggleRobotColour.TurnOnLights", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

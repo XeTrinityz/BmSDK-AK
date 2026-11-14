@@ -78,14 +78,14 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
         where TComponent : class, Framework.IScriptComponent<ROverheadWireEndBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.ROverheadWireEndBase.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.ROverheadWireEndBase.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToActor;
     /// <summary>
     /// Function: LinkToActor
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.ROverheadWireEndBase.LinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToActor, "BmGame.ROverheadWireEndBase.LinkToActor", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToOtherEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToOtherEnd;
     /// <summary>
     /// Function: LinkToOtherEnd
     /// </summary>
     public unsafe virtual void LinkToOtherEnd(BmSDK.BmGame.ROverheadWireEndBase OtherEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToOtherEnd, "BmGame.ROverheadWireEndBase.LinkToOtherEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToOtherEnd, "BmGame.ROverheadWireEndBase.LinkToOtherEnd", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OtherEnd, paramsPtr + 0);
@@ -130,14 +130,14 @@ public partial class ROverheadWireEndBase : BmSDK.BmGame.RSnapToPositionActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_AdjustWire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustWire;
     /// <summary>
     /// Function: AdjustWire
     /// </summary>
     public unsafe virtual void AdjustWire()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustWire, "BmGame.ROverheadWireEndBase.AdjustWire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdjustWire, "BmGame.ROverheadWireEndBase.AdjustWire", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

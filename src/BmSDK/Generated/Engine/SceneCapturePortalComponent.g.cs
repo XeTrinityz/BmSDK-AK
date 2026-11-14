@@ -78,14 +78,14 @@ public partial class SceneCapturePortalComponent : BmSDK.Engine.SceneCaptureComp
         where TComponent : class, Framework.IScriptComponent<SceneCapturePortalComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetCaptureParameters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureParameters;
     /// <summary>
     /// Function: SetCaptureParameters
     /// </summary>
     public unsafe virtual void SetCaptureParameters(BmSDK.Engine.TextureRenderTarget2D NewTextureTarget = default, float NewScaleFOV = default, BmSDK.Engine.Actor NewViewDest = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCaptureParameters, "Engine.SceneCapturePortalComponent.SetCaptureParameters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCaptureParameters, "Engine.SceneCapturePortalComponent.SetCaptureParameters", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTextureTarget, paramsPtr + 0);

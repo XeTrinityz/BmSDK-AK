@@ -91,42 +91,42 @@ public partial class RSeqAct_TutorialLookAt : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CancelZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelZoom;
     /// <summary>
     /// Function: CancelZoom
     /// </summary>
     public unsafe virtual void CancelZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelZoom, "BmGame.RSeqAct_TutorialLookAt.CancelZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelZoom, "BmGame.RSeqAct_TutorialLookAt.CancelZoom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerZoom;
     /// <summary>
     /// Function: TriggerZoom
     /// </summary>
     public unsafe virtual void TriggerZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerZoom, "BmGame.RSeqAct_TutorialLookAt.TriggerZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerZoom, "BmGame.RSeqAct_TutorialLookAt.TriggerZoom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerLookAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLookAt;
     /// <summary>
     /// Function: TriggerLookAt
     /// </summary>
     public unsafe virtual void TriggerLookAt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLookAt, "BmGame.RSeqAct_TutorialLookAt.TriggerLookAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLookAt, "BmGame.RSeqAct_TutorialLookAt.TriggerLookAt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

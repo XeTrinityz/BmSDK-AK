@@ -78,14 +78,14 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RBatmobileSonar>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetMeshOwner;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMeshOwner;
     /// <summary>
     /// Function: SetMeshOwner
     /// </summary>
     public unsafe virtual void SetMeshOwner(BmSDK.Engine.Actor NewOwner, BmSDK.Engine.ActorComponent MeshComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMeshOwner, "BmGame.RBatmobileSonar.SetMeshOwner");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMeshOwner, "BmGame.RBatmobileSonar.SetMeshOwner", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateScannedMeshes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateScannedMeshes;
     /// <summary>
     /// Function: UpdateScannedMeshes
     /// </summary>
     public unsafe virtual void UpdateScannedMeshes(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateScannedMeshes, "BmGame.RBatmobileSonar.UpdateScannedMeshes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateScannedMeshes, "BmGame.RBatmobileSonar.UpdateScannedMeshes", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -116,28 +116,28 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_ReadyToFire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadyToFire;
     /// <summary>
     /// Function: ReadyToFire
     /// </summary>
     public unsafe override bool ReadyToFire()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyToFire, "BmGame.RBatmobileSonar.ReadyToFire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadyToFire, "BmGame.RBatmobileSonar.ReadyToFire", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FireForensicPulseSideStory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireForensicPulseSideStory;
     /// <summary>
     /// Function: FireForensicPulseSideStory
     /// </summary>
     public unsafe virtual void FireForensicPulseSideStory(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireForensicPulseSideStory, "BmGame.RBatmobileSonar.FireForensicPulseSideStory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireForensicPulseSideStory, "BmGame.RBatmobileSonar.FireForensicPulseSideStory", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_FireForensicPulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireForensicPulse;
     /// <summary>
     /// Function: FireForensicPulse
     /// </summary>
     public unsafe virtual void FireForensicPulse(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireForensicPulse, "BmGame.RBatmobileSonar.FireForensicPulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireForensicPulse, "BmGame.RBatmobileSonar.FireForensicPulse", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -160,28 +160,28 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_CanDisableTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDisableTick;
     /// <summary>
     /// Function: CanDisableTick
     /// </summary>
     public unsafe override bool CanDisableTick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDisableTick, "BmGame.RBatmobileSonar.CanDisableTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDisableTick, "BmGame.RBatmobileSonar.CanDisableTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AlertNearbyVehicles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlertNearbyVehicles;
     /// <summary>
     /// Function: AlertNearbyVehicles
     /// </summary>
     public unsafe virtual void AlertNearbyVehicles(System.Numerics.Vector3 pos, float Range)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlertNearbyVehicles, "BmGame.RBatmobileSonar.AlertNearbyVehicles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlertNearbyVehicles, "BmGame.RBatmobileSonar.AlertNearbyVehicles", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pos, paramsPtr + 0);
@@ -190,14 +190,14 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_StunNearbyVillains;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StunNearbyVillains;
     /// <summary>
     /// Function: StunNearbyVillains
     /// </summary>
     public unsafe virtual void StunNearbyVillains(System.Numerics.Vector3 pos, float knockDownRange, float stunRange, float AlertRange, float StunTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StunNearbyVillains, "BmGame.RBatmobileSonar.StunNearbyVillains");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StunNearbyVillains, "BmGame.RBatmobileSonar.StunNearbyVillains", this);
         byte* paramsPtr = stackalloc byte[340];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pos, paramsPtr + 0);
@@ -209,112 +209,112 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_StopBatmobileMoving;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopBatmobileMoving;
     /// <summary>
     /// Function: StopBatmobileMoving
     /// </summary>
     public unsafe virtual void StopBatmobileMoving()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopBatmobileMoving, "BmGame.RBatmobileSonar.StopBatmobileMoving");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopBatmobileMoving, "BmGame.RBatmobileSonar.StopBatmobileMoving", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanBattleDodge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBattleDodge;
     /// <summary>
     /// Function: CanBattleDodge
     /// </summary>
     public unsafe override bool CanBattleDodge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBattleDodge, "BmGame.RBatmobileSonar.CanBattleDodge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBattleDodge, "BmGame.RBatmobileSonar.CanBattleDodge", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UnequipSelf;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnequipSelf;
     /// <summary>
     /// Function: UnequipSelf
     /// </summary>
     public unsafe override bool UnequipSelf()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnequipSelf, "BmGame.RBatmobileSonar.UnequipSelf");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnequipSelf, "BmGame.RBatmobileSonar.UnequipSelf", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopCameraShake;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCameraShake;
     /// <summary>
     /// Function: StopCameraShake
     /// </summary>
     public unsafe virtual void StopCameraShake()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopCameraShake, "BmGame.RBatmobileSonar.StopCameraShake");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopCameraShake, "BmGame.RBatmobileSonar.StopCameraShake", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ButtonReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ButtonReleased;
     /// <summary>
     /// Function: ButtonReleased
     /// </summary>
     public unsafe override void ButtonReleased()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ButtonReleased, "BmGame.RBatmobileSonar.ButtonReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ButtonReleased, "BmGame.RBatmobileSonar.ButtonReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OwnerDied;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OwnerDied;
     /// <summary>
     /// Function: OwnerDied
     /// </summary>
     public unsafe override void OwnerDied()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OwnerDied, "BmGame.RBatmobileSonar.OwnerDied");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OwnerDied, "BmGame.RBatmobileSonar.OwnerDied", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ScannedVehiclesOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScannedVehiclesOff;
     /// <summary>
     /// Function: ScannedVehiclesOff
     /// </summary>
     public unsafe virtual void ScannedVehiclesOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScannedVehiclesOff, "BmGame.RBatmobileSonar.ScannedVehiclesOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScannedVehiclesOff, "BmGame.RBatmobileSonar.ScannedVehiclesOff", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CreateScannedMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateScannedMesh;
     /// <summary>
     /// Function: CreateScannedMesh
     /// </summary>
     public unsafe virtual void CreateScannedMesh(BmSDK.Engine.Actor Target, BmSDK.Engine.SkeletalMeshComponent MeshToHighlight, out int NumScannedVehicles, BmSDK.Engine.MaterialInterface MaterialToUse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateScannedMesh, "BmGame.RBatmobileSonar.CreateScannedMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateScannedMesh, "BmGame.RBatmobileSonar.CreateScannedMesh", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -327,154 +327,154 @@ public partial class RBatmobileSonar : BmSDK.BmGame.RVehicleWeapon, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_PerformVehicleScan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PerformVehicleScan;
     /// <summary>
     /// Function: PerformVehicleScan
     /// </summary>
     public unsafe virtual void PerformVehicleScan()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PerformVehicleScan, "BmGame.RBatmobileSonar.PerformVehicleScan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PerformVehicleScan, "BmGame.RBatmobileSonar.PerformVehicleScan", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FirePulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FirePulse;
     /// <summary>
     /// Function: FirePulse
     /// </summary>
     public unsafe virtual bool FirePulse()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FirePulse, "BmGame.RBatmobileSonar.FirePulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FirePulse, "BmGame.RBatmobileSonar.FirePulse", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyOwnerDamaged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyOwnerDamaged;
     /// <summary>
     /// Function: NotifyOwnerDamaged
     /// </summary>
     public unsafe override void NotifyOwnerDamaged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyOwnerDamaged, "BmGame.RBatmobileSonar.NotifyOwnerDamaged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyOwnerDamaged, "BmGame.RBatmobileSonar.NotifyOwnerDamaged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DriverLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DriverLeft;
     /// <summary>
     /// Function: DriverLeft
     /// </summary>
     public unsafe override void DriverLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DriverLeft, "BmGame.RBatmobileSonar.DriverLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DriverLeft, "BmGame.RBatmobileSonar.DriverLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BattleModeExitted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BattleModeExitted;
     /// <summary>
     /// Function: BattleModeExitted
     /// </summary>
     public unsafe override void BattleModeExitted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BattleModeExitted, "BmGame.RBatmobileSonar.BattleModeExitted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BattleModeExitted, "BmGame.RBatmobileSonar.BattleModeExitted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NoScannerOffSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NoScannerOffSound;
     /// <summary>
     /// Function: NoScannerOffSound
     /// </summary>
     public unsafe virtual void NoScannerOffSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NoScannerOffSound, "BmGame.RBatmobileSonar.NoScannerOffSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NoScannerOffSound, "BmGame.RBatmobileSonar.NoScannerOffSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NoScannerOnSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NoScannerOnSound;
     /// <summary>
     /// Function: NoScannerOnSound
     /// </summary>
     public unsafe virtual void NoScannerOnSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NoScannerOnSound, "BmGame.RBatmobileSonar.NoScannerOnSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NoScannerOnSound, "BmGame.RBatmobileSonar.NoScannerOnSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FireWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireWeapon;
     /// <summary>
     /// Function: FireWeapon
     /// </summary>
     public unsafe override bool FireWeapon()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireWeapon, "BmGame.RBatmobileSonar.FireWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireWeapon, "BmGame.RBatmobileSonar.FireWeapon", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SonarReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SonarReleased;
     /// <summary>
     /// Function: SonarReleased
     /// </summary>
     public unsafe virtual void SonarReleased()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SonarReleased, "BmGame.RBatmobileSonar.SonarReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SonarReleased, "BmGame.RBatmobileSonar.SonarReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SonarPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SonarPressed;
     /// <summary>
     /// Function: SonarPressed
     /// </summary>
     public unsafe virtual void SonarPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SonarPressed, "BmGame.RBatmobileSonar.SonarPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SonarPressed, "BmGame.RBatmobileSonar.SonarPressed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBatmobileSonar.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RBatmobileSonar.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

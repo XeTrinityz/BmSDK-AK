@@ -78,42 +78,42 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_RiotRunBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Cleanup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cleanup;
     /// <summary>
     /// Function: Cleanup
     /// </summary>
     public unsafe override void Cleanup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cleanup, "BmGame.RBMAIAction_RiotRunBase.Cleanup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cleanup, "BmGame.RBMAIAction_RiotRunBase.Cleanup", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandlesGlance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandlesGlance;
     /// <summary>
     /// Function: HandlesGlance
     /// </summary>
     public unsafe override bool HandlesGlance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlesGlance, "BmGame.RBMAIAction_RiotRunBase.HandlesGlance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandlesGlance, "BmGame.RBMAIAction_RiotRunBase.HandlesGlance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_RiotRunBase.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.RBMAIAction_RiotRunBase.ActionTick", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -121,28 +121,28 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ForceFleeRunVariant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceFleeRunVariant;
     /// <summary>
     /// Function: ForceFleeRunVariant
     /// </summary>
     public unsafe virtual bool ForceFleeRunVariant()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceFleeRunVariant, "BmGame.RBMAIAction_RiotRunBase.ForceFleeRunVariant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceFleeRunVariant, "BmGame.RBMAIAction_RiotRunBase.ForceFleeRunVariant", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_VeryCloseToGoal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VeryCloseToGoal;
     /// <summary>
     /// Function: VeryCloseToGoal
     /// </summary>
     public unsafe virtual bool VeryCloseToGoal(float CheckDist, float CheckDist2D)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VeryCloseToGoal, "BmGame.RBMAIAction_RiotRunBase.VeryCloseToGoal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VeryCloseToGoal, "BmGame.RBMAIAction_RiotRunBase.VeryCloseToGoal", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckDist, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UpdateRandomLookAtPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRandomLookAtPos;
     /// <summary>
     /// Function: UpdateRandomLookAtPos
     /// </summary>
     public unsafe override void UpdateRandomLookAtPos(BmSDK.Rotator RandCentre, float RandWidth, float RandVertUp = default, float RandVertDown = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRandomLookAtPos, "BmGame.RBMAIAction_RiotRunBase.UpdateRandomLookAtPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRandomLookAtPos, "BmGame.RBMAIAction_RiotRunBase.UpdateRandomLookAtPos", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RandCentre, paramsPtr + 0);
@@ -169,28 +169,28 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForFriendlies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForFriendlies;
     /// <summary>
     /// Function: CheckForFriendlies
     /// </summary>
     public unsafe virtual bool CheckForFriendlies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForFriendlies, "BmGame.RBMAIAction_RiotRunBase.CheckForFriendlies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForFriendlies, "BmGame.RBMAIAction_RiotRunBase.CheckForFriendlies", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MoveToInit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveToInit;
     /// <summary>
     /// Function: MoveToInit
     /// </summary>
     public unsafe virtual void MoveToInit(BmSDK.FName IdleName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveToInit, "BmGame.RBMAIAction_RiotRunBase.MoveToInit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveToInit, "BmGame.RBMAIAction_RiotRunBase.MoveToInit", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IdleName, paramsPtr + 0);
@@ -198,14 +198,14 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         return;
     }
 
-    private static BmSDK.Function __fn_GetNavHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavHandle;
     /// <summary>
     /// Function: GetNavHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetNavHandle(bool bFullSmooth = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavHandle, "BmGame.RBMAIAction_RiotRunBase.GetNavHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavHandle, "BmGame.RBMAIAction_RiotRunBase.GetNavHandle", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFullSmooth, paramsPtr + 0);
@@ -213,56 +213,56 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_BuildHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildHandle;
     /// <summary>
     /// Function: BuildHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle BuildHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildHandle, "BmGame.RBMAIAction_RiotRunBase.BuildHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildHandle, "BmGame.RBMAIAction_RiotRunBase.BuildHandle", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMAIAction_RiotRunBase.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMAIAction_RiotRunBase.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_RiotRunBase.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMAIAction_RiotRunBase.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowRunVariants;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowRunVariants;
     /// <summary>
     /// Function: AllowRunVariants
     /// </summary>
     public unsafe virtual void AllowRunVariants(bool bAllow, bool bAllowCorners, bool bFleeing, bool bNoPushOffs = default, bool bNoOvershoot = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowRunVariants, "BmGame.RBMAIAction_RiotRunBase.AllowRunVariants");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowRunVariants, "BmGame.RBMAIAction_RiotRunBase.AllowRunVariants", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllow, paramsPtr + 0);
@@ -274,14 +274,14 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         return;
     }
 
-    private static BmSDK.Function __fn_SetGoalList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGoalList;
     /// <summary>
     /// Function: SetGoalList
     /// </summary>
     public unsafe virtual void SetGoalList(BmSDK.TArray<System.Numerics.Vector3> NewGoalList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGoalList, "BmGame.RBMAIAction_RiotRunBase.SetGoalList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGoalList, "BmGame.RBMAIAction_RiotRunBase.SetGoalList", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGoalList, paramsPtr + 0);
@@ -289,14 +289,14 @@ public partial class RBMAIAction_RiotRunBase : BmSDK.BmGame.RBMAIAction_BaseMove
         return;
     }
 
-    private static BmSDK.Function __fn_SetupGoal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupGoal;
     /// <summary>
     /// Function: SetupGoal
     /// </summary>
     public unsafe virtual void SetupGoal(System.Numerics.Vector3 NewGoalPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupGoal, "BmGame.RBMAIAction_RiotRunBase.SetupGoal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupGoal, "BmGame.RBMAIAction_RiotRunBase.SetupGoal", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGoalPos, paramsPtr + 0);

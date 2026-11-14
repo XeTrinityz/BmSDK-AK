@@ -78,14 +78,14 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         where TComponent : class, Framework.IScriptComponent<RPredatorStartleControlBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetLocationForVoiceSynthesiserCheckAutoTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationForVoiceSynthesiserCheckAutoTarget;
     /// <summary>
     /// Function: GetLocationForVoiceSynthesiserCheckAutoTarget
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationForVoiceSynthesiserCheckAutoTarget(System.Numerics.Vector3 vBatmanLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationForVoiceSynthesiserCheckAutoTarget, "BmGame.RPredatorStartleControlBase.GetLocationForVoiceSynthesiserCheckAutoTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationForVoiceSynthesiserCheckAutoTarget, "BmGame.RPredatorStartleControlBase.GetLocationForVoiceSynthesiserCheckAutoTarget", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vBatmanLocation, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetActiveTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveTarget;
     /// <summary>
     /// Function: SetActiveTarget
     /// </summary>
     public unsafe virtual void SetActiveTarget(bool bActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActiveTarget, "BmGame.RPredatorStartleControlBase.SetActiveTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActiveTarget, "BmGame.RPredatorStartleControlBase.SetActiveTarget", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bActive, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         return;
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RPredatorStartleControlBase.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.RPredatorStartleControlBase.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToActor;
     /// <summary>
     /// Function: LinkToActor
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.RPredatorStartleControlBase.LinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToActor, "BmGame.RPredatorStartleControlBase.LinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -138,42 +138,42 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_StartlePointDisabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartlePointDisabled;
     /// <summary>
     /// Function: StartlePointDisabled
     /// </summary>
     public unsafe virtual void StartlePointDisabled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartlePointDisabled, "BmGame.RPredatorStartleControlBase.StartlePointDisabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartlePointDisabled, "BmGame.RPredatorStartleControlBase.StartlePointDisabled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ReEnable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReEnable;
     /// <summary>
     /// Function: ReEnable
     /// </summary>
     public unsafe virtual void ReEnable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReEnable, "BmGame.RPredatorStartleControlBase.ReEnable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReEnable, "BmGame.RPredatorStartleControlBase.ReEnable", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSecondary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSecondary;
     /// <summary>
     /// Function: TriggerSecondary
     /// </summary>
     public unsafe override bool TriggerSecondary(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSecondary, "BmGame.RPredatorStartleControlBase.TriggerSecondary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSecondary, "BmGame.RPredatorStartleControlBase.TriggerSecondary", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Trigger;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Trigger;
     /// <summary>
     /// Function: Trigger
     /// </summary>
     public unsafe override bool Trigger(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Trigger, "BmGame.RPredatorStartleControlBase.Trigger");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Trigger, "BmGame.RPredatorStartleControlBase.Trigger", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -196,14 +196,14 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetMiniGameHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMiniGameHelpPrompt;
     /// <summary>
     /// Function: GetMiniGameHelpPrompt
     /// </summary>
     public unsafe override void GetMiniGameHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMiniGameHelpPrompt, "BmGame.RPredatorStartleControlBase.GetMiniGameHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMiniGameHelpPrompt, "BmGame.RPredatorStartleControlBase.GetMiniGameHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -212,70 +212,70 @@ public partial class RPredatorStartleControlBase : BmSDK.BmGame.RRemoteControlBa
         return;
     }
 
-    private static BmSDK.Function __fn_GetInteractionPromptSecondary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractionPromptSecondary;
     /// <summary>
     /// Function: GetInteractionPromptSecondary
     /// </summary>
     public unsafe override BmSDK.FString GetInteractionPromptSecondary()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractionPromptSecondary, "BmGame.RPredatorStartleControlBase.GetInteractionPromptSecondary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractionPromptSecondary, "BmGame.RPredatorStartleControlBase.GetInteractionPromptSecondary", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetInteractionPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractionPrompt;
     /// <summary>
     /// Function: GetInteractionPrompt
     /// </summary>
     public unsafe override BmSDK.FString GetInteractionPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractionPrompt, "BmGame.RPredatorStartleControlBase.GetInteractionPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractionPrompt, "BmGame.RPredatorStartleControlBase.GetInteractionPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDescription;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDescription;
     /// <summary>
     /// Function: GetDescription
     /// </summary>
     public unsafe virtual BmSDK.FString GetDescription()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDescription, "BmGame.RPredatorStartleControlBase.GetDescription");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDescription, "BmGame.RPredatorStartleControlBase.GetDescription", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDisplayTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayTargetLocation;
     /// <summary>
     /// Function: GetDisplayTargetLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetDisplayTargetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayTargetLocation, "BmGame.RPredatorStartleControlBase.GetDisplayTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayTargetLocation, "BmGame.RPredatorStartleControlBase.GetDisplayTargetLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPredatorStartleControlBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RPredatorStartleControlBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<DecalComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsWaitingForResetToDefaultsToComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWaitingForResetToDefaultsToComplete;
     /// <summary>
     /// Function: IsWaitingForResetToDefaultsToComplete
     /// </summary>
     public unsafe virtual bool IsWaitingForResetToDefaultsToComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWaitingForResetToDefaultsToComplete, "Engine.DecalComponent.IsWaitingForResetToDefaultsToComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWaitingForResetToDefaultsToComplete, "Engine.DecalComponent.IsWaitingForResetToDefaultsToComplete", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDecalMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecalMaterial;
     /// <summary>
     /// Function: GetDecalMaterial
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetDecalMaterial()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDecalMaterial, "Engine.DecalComponent.GetDecalMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDecalMaterial, "Engine.DecalComponent.GetDecalMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInterface>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetDecalMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDecalMaterial;
     /// <summary>
     /// Function: SetDecalMaterial
     /// </summary>
     public unsafe virtual void SetDecalMaterial(BmSDK.Engine.MaterialInterface NewDecalMaterial)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDecalMaterial, "Engine.DecalComponent.SetDecalMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDecalMaterial, "Engine.DecalComponent.SetDecalMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDecalMaterial, paramsPtr + 0);
@@ -142,14 +142,14 @@ public partial class DecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_ResetToDefaults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetToDefaults;
     /// <summary>
     /// Function: ResetToDefaults
     /// </summary>
     public unsafe virtual void ResetToDefaults()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetToDefaults, "Engine.DecalComponent.ResetToDefaults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetToDefaults, "Engine.DecalComponent.ResetToDefaults", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

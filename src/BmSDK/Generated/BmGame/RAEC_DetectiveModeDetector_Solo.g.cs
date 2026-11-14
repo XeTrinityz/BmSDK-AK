@@ -78,14 +78,14 @@ public partial class RAEC_DetectiveModeDetector_Solo : BmSDK.BmGame.RAlertEventC
         where TComponent : class, Framework.IScriptComponent<RAEC_DetectiveModeDetector_Solo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_DetectiveModeDetector_Solo.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RAEC_DetectiveModeDetector_Solo.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RAEC_DetectiveModeDetector_Solo : BmSDK.BmGame.RAlertEventC
         return;
     }
 
-    private static BmSDK.Function __fn_TryRestartDetection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryRestartDetection;
     /// <summary>
     /// Function: TryRestartDetection
     /// </summary>
     public unsafe virtual void TryRestartDetection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryRestartDetection, "BmGame.RAEC_DetectiveModeDetector_Solo.TryRestartDetection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryRestartDetection, "BmGame.RAEC_DetectiveModeDetector_Solo.TryRestartDetection", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopDetection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopDetection;
     /// <summary>
     /// Function: StopDetection
     /// </summary>
     public unsafe virtual void StopDetection(bool bDetectiveModeOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopDetection, "BmGame.RAEC_DetectiveModeDetector_Solo.StopDetection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopDetection, "BmGame.RAEC_DetectiveModeDetector_Solo.StopDetection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDetectiveModeOn, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RAEC_DetectiveModeDetector_Solo : BmSDK.BmGame.RAlertEventC
         return;
     }
 
-    private static BmSDK.Function __fn_OnStartChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStartChild;
     /// <summary>
     /// Function: OnStartChild
     /// </summary>
     public unsafe override void OnStartChild()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_DetectiveModeDetector_Solo.OnStartChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStartChild, "BmGame.RAEC_DetectiveModeDetector_Solo.OnStartChild", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

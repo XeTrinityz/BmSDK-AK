@@ -78,14 +78,14 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<DecalManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SpawnDecal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDecal;
     /// <summary>
     /// Function: SpawnDecal
     /// </summary>
     public unsafe virtual BmSDK.Engine.DecalComponent SpawnDecal(BmSDK.Engine.MaterialInterface DecalMaterial, System.Numerics.Vector3 DecalLocation, BmSDK.Rotator DecalOrientation, float Width, float Height, float Thickness, bool bNoClip, float DecalRotation = default, BmSDK.Engine.PrimitiveComponent HitComponent = default, bool bProjectOnTerrain = default, bool bProjectOnSkeletalMeshes = default, BmSDK.FName HitBone = default, int HitNodeIndex = default, int HitLevelIndex = default, float InDecalLifeSpan = default, int InFracturedStaticMeshComponentIndex = default, float InDepthBias = default, System.Numerics.Vector2 InBlendRange = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDecal, "Engine.DecalManager.SpawnDecal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnDecal, "Engine.DecalManager.SpawnDecal", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DecalMaterial, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.DecalComponent>(paramsPtr + 104);
     }
 
-    private static BmSDK.Function __fn_GetPooledComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPooledComponent;
     /// <summary>
     /// Function: GetPooledComponent
     /// </summary>
     public unsafe virtual BmSDK.Engine.DecalComponent GetPooledComponent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPooledComponent, "Engine.DecalManager.GetPooledComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPooledComponent, "Engine.DecalManager.GetPooledComponent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -155,28 +155,28 @@ public partial class DecalManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CanSpawnDecals;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSpawnDecals;
     /// <summary>
     /// Function: CanSpawnDecals
     /// </summary>
     public unsafe virtual bool CanSpawnDecals()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpawnDecals, "Engine.DecalManager.CanSpawnDecals");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSpawnDecals, "Engine.DecalManager.CanSpawnDecals", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DecalFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DecalFinished;
     /// <summary>
     /// Function: DecalFinished
     /// </summary>
     public unsafe virtual void DecalFinished(BmSDK.Engine.DecalComponent Decal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DecalFinished, "Engine.DecalManager.DecalFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DecalFinished, "Engine.DecalManager.DecalFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Decal, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
         where TComponent : class, Framework.IScriptComponent<RCombatMove_BatmanBeatdownMiss>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetDamageInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageInfo;
     /// <summary>
     /// Function: SetDamageInfo
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.FDamageInfo SetDamageInfo(BmSDK.BmGame.RPawnCombat DamageReceiver, float DmgAmount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageInfo, "BmScript.RCombatMove_BatmanBeatdownMiss.SetDamageInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDamageInfo, "BmScript.RCombatMove_BatmanBeatdownMiss.SetDamageInfo", this);
         byte* paramsPtr = stackalloc byte[524];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageReceiver, paramsPtr + 0);
@@ -94,42 +94,42 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.FDamageInfo>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetStrikeAnimSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStrikeAnimSet;
     /// <summary>
     /// Function: GetStrikeAnimSet
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetStrikeAnimSet()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeAnimSet, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnimSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStrikeAnimSet, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnimSet", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetStrikeAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStrikeAnim;
     /// <summary>
     /// Function: GetStrikeAnim
     /// </summary>
     public unsafe override BmSDK.FName GetStrikeAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeAnim, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStrikeAnim, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldStartFinalBlowCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldStartFinalBlowCam;
     /// <summary>
     /// Function: ShouldStartFinalBlowCam
     /// </summary>
     public unsafe override bool ShouldStartFinalBlowCam()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStartFinalBlowCam, "BmScript.RCombatMove_BatmanBeatdownMiss.ShouldStartFinalBlowCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldStartFinalBlowCam, "BmScript.RCombatMove_BatmanBeatdownMiss.ShouldStartFinalBlowCam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

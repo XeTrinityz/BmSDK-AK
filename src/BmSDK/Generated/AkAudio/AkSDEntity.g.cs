@@ -73,14 +73,14 @@ public partial class AkSDEntity : BmSDK.AkAudio.AkSDNode, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkSDEntity>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetVariableName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVariableName;
     /// <summary>
     /// Function: GetVariableName
     /// </summary>
     public unsafe virtual BmSDK.FString GetVariableName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVariableName, "AkAudio.AkSDEntity.GetVariableName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVariableName, "AkAudio.AkSDEntity.GetVariableName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

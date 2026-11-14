@@ -78,14 +78,14 @@ public partial class FaceFXAsset : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<FaceFXAsset>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnmountFaceFXAnimSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnmountFaceFXAnimSet;
     /// <summary>
     /// Function: UnmountFaceFXAnimSet
     /// </summary>
     public unsafe virtual void UnmountFaceFXAnimSet(BmSDK.Engine.FaceFXAnimSet AnimSet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnmountFaceFXAnimSet, "Engine.FaceFXAsset.UnmountFaceFXAnimSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnmountFaceFXAnimSet, "Engine.FaceFXAsset.UnmountFaceFXAnimSet", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSet, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class FaceFXAsset : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_MountFaceFXAnimSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MountFaceFXAnimSet;
     /// <summary>
     /// Function: MountFaceFXAnimSet
     /// </summary>
     public unsafe virtual void MountFaceFXAnimSet(BmSDK.Engine.FaceFXAnimSet AnimSet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MountFaceFXAnimSet, "Engine.FaceFXAsset.MountFaceFXAnimSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MountFaceFXAnimSet, "Engine.FaceFXAsset.MountFaceFXAnimSet", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSet, paramsPtr + 0);

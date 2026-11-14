@@ -78,14 +78,14 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RChuteCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RChuteCamera.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RChuteCamera.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BlendInDone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendInDone;
     /// <summary>
     /// Function: BlendInDone
     /// </summary>
     public unsafe virtual void BlendInDone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlendInDone, "BmGame.RChuteCamera.BlendInDone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlendInDone, "BmGame.RChuteCamera.BlendInDone", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init(BmSDK.BmGame.RPawnPlayer Player, BmSDK.BmGame.R3rdPersonCamera PlayerCamera, BmSDK.BmGame.RSwingChutePointBase _ChuteStart, BmSDK.BmGame.RSwingChuteExitBase _ChuteExit, float CheckSizeMod)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RChuteCamera.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RChuteCamera.Init", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetCameraPathPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraPathPosition;
     /// <summary>
     /// Function: GetCameraPathPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCameraPathPosition(float Proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraPathPosition, "BmGame.RChuteCamera.GetCameraPathPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCameraPathPosition, "BmGame.RChuteCamera.GetCameraPathPosition", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Proportion, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetCameraPathDeltaTangent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraPathDeltaTangent;
     /// <summary>
     /// Function: GetCameraPathDeltaTangent
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCameraPathDeltaTangent(float Proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraPathDeltaTangent, "BmGame.RChuteCamera.GetCameraPathDeltaTangent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCameraPathDeltaTangent, "BmGame.RChuteCamera.GetCameraPathDeltaTangent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Proportion, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetCameraPathTangent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraPathTangent;
     /// <summary>
     /// Function: GetCameraPathTangent
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCameraPathTangent(float Proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraPathTangent, "BmGame.RChuteCamera.GetCameraPathTangent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCameraPathTangent, "BmGame.RChuteCamera.GetCameraPathTangent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Proportion, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateCameraPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraPath;
     /// <summary>
     /// Function: UpdateCameraPath
     /// </summary>
     public unsafe virtual void UpdateCameraPath(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCameraPath, "BmGame.RChuteCamera.UpdateCameraPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCameraPath, "BmGame.RChuteCamera.UpdateCameraPath", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -214,14 +214,14 @@ public partial class RChuteCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CalculateCameraPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateCameraPath;
     /// <summary>
     /// Function: CalculateCameraPath
     /// </summary>
     public unsafe virtual void CalculateCameraPath(BmSDK.BmGame.RPawnPlayer Player, BmSDK.BmGame.R3rdPersonCamera PlayerCamera, BmSDK.BmGame.RSwingChutePointBase _ChuteStart, BmSDK.BmGame.RSwingChuteExitBase _ChuteExit, float CheckSizeMod)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateCameraPath, "BmGame.RChuteCamera.CalculateCameraPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateCameraPath, "BmGame.RChuteCamera.CalculateCameraPath", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);

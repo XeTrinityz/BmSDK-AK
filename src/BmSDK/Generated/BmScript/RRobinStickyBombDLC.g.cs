@@ -78,14 +78,14 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
         where TComponent : class, Framework.IScriptComponent<RRobinStickyBombDLC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TriggerStunnedThugKOedBySnapFlashEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerStunnedThugKOedBySnapFlashEvents;
     /// <summary>
     /// Function: TriggerStunnedThugKOedBySnapFlashEvents
     /// </summary>
     public unsafe virtual void TriggerStunnedThugKOedBySnapFlashEvents(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerStunnedThugKOedBySnapFlashEvents, "BmScript.RRobinStickyBombDLC.TriggerStunnedThugKOedBySnapFlashEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerStunnedThugKOedBySnapFlashEvents, "BmScript.RRobinStickyBombDLC.TriggerStunnedThugKOedBySnapFlashEvents", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerMedicKOedBySnapFlashEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerMedicKOedBySnapFlashEvents;
     /// <summary>
     /// Function: TriggerMedicKOedBySnapFlashEvents
     /// </summary>
     public unsafe virtual void TriggerMedicKOedBySnapFlashEvents(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerMedicKOedBySnapFlashEvents, "BmScript.RRobinStickyBombDLC.TriggerMedicKOedBySnapFlashEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerMedicKOedBySnapFlashEvents, "BmScript.RRobinStickyBombDLC.TriggerMedicKOedBySnapFlashEvents", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ExplodeBomb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExplodeBomb;
     /// <summary>
     /// Function: ExplodeBomb
     /// </summary>
     public unsafe override void ExplodeBomb(BmSDK.Engine.MeshComponent Bomb, BmSDK.BmGame.RPawnVillain bombWasOnDownedEnemy)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeBomb, "BmScript.RRobinStickyBombDLC.ExplodeBomb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExplodeBomb, "BmScript.RRobinStickyBombDLC.ExplodeBomb", this);
         byte* paramsPtr = stackalloc byte[368];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Bomb, paramsPtr + 0);
@@ -124,28 +124,28 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_DetonateAll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetonateAll;
     /// <summary>
     /// Function: DetonateAll
     /// </summary>
     public unsafe override void DetonateAll()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetonateAll, "BmScript.RRobinStickyBombDLC.DetonateAll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetonateAll, "BmScript.RRobinStickyBombDLC.DetonateAll", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VillainWasDestroyedWithStickyBombAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainWasDestroyedWithStickyBombAttached;
     /// <summary>
     /// Function: VillainWasDestroyedWithStickyBombAttached
     /// </summary>
     public unsafe override void VillainWasDestroyedWithStickyBombAttached(BmSDK.Engine.MeshComponent Bomb)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainWasDestroyedWithStickyBombAttached, "BmScript.RRobinStickyBombDLC.VillainWasDestroyedWithStickyBombAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainWasDestroyedWithStickyBombAttached, "BmScript.RRobinStickyBombDLC.VillainWasDestroyedWithStickyBombAttached", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Bomb, paramsPtr + 0);
@@ -153,14 +153,14 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_GetGadgetCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetCamera;
     /// <summary>
     /// Function: GetGadgetCamera
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmScript.RRobinStickyBombDLC.GetGadgetCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGadgetCamera, "BmScript.RRobinStickyBombDLC.GetGadgetCamera", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSoftCover, paramsPtr + 0);
@@ -169,14 +169,14 @@ public partial class RRobinStickyBombDLC : BmSDK.BmScript.RRobinStickyBomb, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsValidStickyBombTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidStickyBombTarget;
     /// <summary>
     /// Function: IsValidStickyBombTarget
     /// </summary>
     public unsafe override bool IsValidStickyBombTarget(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidStickyBombTarget, "BmScript.RRobinStickyBombDLC.IsValidStickyBombTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidStickyBombTarget, "BmScript.RRobinStickyBombDLC.IsValidStickyBombTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);

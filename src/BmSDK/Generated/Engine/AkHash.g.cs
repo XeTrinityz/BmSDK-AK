@@ -82,12 +82,12 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: StringToHash
     /// </summary>
-    public unsafe static int StringToHash(BmSDK.FString strToHash)
+    public unsafe static int StringToHash(BmSDK.FStringArg strToHash)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StringToHash, "Engine.AkHash.StringToHash");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(strToHash, paramsPtr + 0);
+        strToHash.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -96,6 +96,7 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
@@ -120,14 +121,14 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetHashString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHashString;
     /// <summary>
     /// Function: GetHashString
     /// </summary>
     public unsafe virtual BmSDK.FString GetHashString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHashString, "Engine.AkHash.GetHashString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHashString, "Engine.AkHash.GetHashString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -141,14 +142,14 @@ public partial class AkHash : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetHashValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHashValue;
     /// <summary>
     /// Function: GetHashValue
     /// </summary>
     public unsafe virtual int GetHashValue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHashValue, "Engine.AkHash.GetHashValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHashValue, "Engine.AkHash.GetHashValue", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -190,13 +191,13 @@ public static class AkHashStatics
     /// <summary>
     /// Function: StringToHash, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static int StringToHash(this BmSDK.Engine.AkHash self, BmSDK.FString strToHash)
+    public unsafe static int StringToHash(this BmSDK.Engine.AkHash self, BmSDK.FStringArg strToHash)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StringToHash, "Engine.AkHash.StringToHash");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(strToHash, paramsPtr + 0);
+        strToHash.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -205,6 +206,7 @@ public static class AkHashStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 

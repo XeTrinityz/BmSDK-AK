@@ -78,28 +78,28 @@ public partial class RGargoyleBombBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RGargoyleBombBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BatmanOnGargoyle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BatmanOnGargoyle;
     /// <summary>
     /// Function: BatmanOnGargoyle
     /// </summary>
     public unsafe virtual void BatmanOnGargoyle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BatmanOnGargoyle, "BmGame.RGargoyleBombBase.BatmanOnGargoyle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BatmanOnGargoyle, "BmGame.RGargoyleBombBase.BatmanOnGargoyle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateBomb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateBomb;
     /// <summary>
     /// Function: ActivateBomb
     /// </summary>
     public unsafe virtual void ActivateBomb()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateBomb, "BmGame.RGargoyleBombBase.ActivateBomb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateBomb, "BmGame.RGargoyleBombBase.ActivateBomb", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

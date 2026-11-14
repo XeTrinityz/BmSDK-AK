@@ -78,14 +78,14 @@ public partial class RSeqEvent_ChallengeVehicleKilled : BmSDK.Engine.SequenceEve
         where TComponent : class, Framework.IScriptComponent<RSeqEvent_ChallengeVehicleKilled>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TriggerEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEvent;
     /// <summary>
     /// Function: TriggerEvent
     /// </summary>
     public unsafe virtual void TriggerEvent(BmSDK.Engine.Actor hVehicle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEvent, "BmGame.RSeqEvent_ChallengeVehicleKilled.TriggerEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEvent, "BmGame.RSeqEvent_ChallengeVehicleKilled.TriggerEvent", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(hVehicle, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSeqEvent_ChallengeVehicleKilled : BmSDK.Engine.SequenceEve
         return;
     }
 
-    private static BmSDK.Function __fn_GetArchetype;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetArchetype;
     /// <summary>
     /// Function: GetArchetype
     /// </summary>
     public unsafe virtual BmSDK.GameObject GetArchetype(BmSDK.Engine.Actor hActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetArchetype, "BmGame.RSeqEvent_ChallengeVehicleKilled.GetArchetype");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetArchetype, "BmGame.RSeqEvent_ChallengeVehicleKilled.GetArchetype", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(hActor, paramsPtr + 0);

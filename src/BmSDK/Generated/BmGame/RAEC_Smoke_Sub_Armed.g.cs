@@ -78,28 +78,28 @@ public partial class RAEC_Smoke_Sub_Armed : BmSDK.BmGame.RAlertEventCoordinatorS
         where TComponent : class, Framework.IScriptComponent<RAEC_Smoke_Sub_Armed>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DisarmedDuringSmoke;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisarmedDuringSmoke;
     /// <summary>
     /// Function: DisarmedDuringSmoke
     /// </summary>
     public unsafe virtual void DisarmedDuringSmoke()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisarmedDuringSmoke, "BmGame.RAEC_Smoke_Sub_Armed.DisarmedDuringSmoke");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisarmedDuringSmoke, "BmGame.RAEC_Smoke_Sub_Armed.DisarmedDuringSmoke", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetShootTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShootTarget;
     /// <summary>
     /// Function: GetShootTarget
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetShootTarget(System.Numerics.Vector3 SmokeCentre)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetShootTarget, "BmGame.RAEC_Smoke_Sub_Armed.GetShootTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetShootTarget, "BmGame.RAEC_Smoke_Sub_Armed.GetShootTarget", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SmokeCentre, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RAEC_Smoke_Sub_Armed : BmSDK.BmGame.RAlertEventCoordinatorS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init(BmSDK.BmGame.RSmokeScreen NewSmokeScreen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RAEC_Smoke_Sub_Armed.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RAEC_Smoke_Sub_Armed.Init", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSmokeScreen, paramsPtr + 0);

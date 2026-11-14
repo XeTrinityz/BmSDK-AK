@@ -78,14 +78,14 @@ public partial class RMine_StaticMesh : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<RMine_StaticMesh>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetPrimedEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrimedEffects;
     /// <summary>
     /// Function: SetPrimedEffects
     /// </summary>
     public unsafe override void SetPrimedEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPrimedEffects, "BmGame.RMine_StaticMesh.SetPrimedEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPrimedEffects, "BmGame.RMine_StaticMesh.SetPrimedEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RMine_StaticMesh : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisarmedEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisarmedEffects;
     /// <summary>
     /// Function: SetDisarmedEffects
     /// </summary>
     public unsafe override void SetDisarmedEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisarmedEffects, "BmGame.RMine_StaticMesh.SetDisarmedEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisarmedEffects, "BmGame.RMine_StaticMesh.SetDisarmedEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class RMine_StaticMesh : BmSDK.BmGame.RMineBase, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RMine_StaticMesh.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RMine_StaticMesh.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

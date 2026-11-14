@@ -78,42 +78,42 @@ public partial class RCombatMove_LieutenantJumpAttack : BmSDK.BmGame.RCombatMove
         where TComponent : class, Framework.IScriptComponent<RCombatMove_LieutenantJumpAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ExitMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove
     /// </summary>
     public unsafe override void ExitMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_LieutenantJumpAttack.ExitMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.RCombatMove_LieutenantJumpAttack.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanPlayHitReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayHitReaction;
     /// <summary>
     /// Function: CanPlayHitReaction
     /// </summary>
     public unsafe override bool CanPlayHitReaction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPlayHitReaction, "BmGame.RCombatMove_LieutenantJumpAttack.CanPlayHitReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPlayHitReaction, "BmGame.RCombatMove_LieutenantJumpAttack.CanPlayHitReaction", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DamageCollisionBetween;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageCollisionBetween;
     /// <summary>
     /// Function: DamageCollisionBetween
     /// </summary>
     public unsafe override void DamageCollisionBetween(BmSDK.BmGame.RPawnCombat Pawn1, BmSDK.BmGame.RPawnCombat Pawn2, System.Numerics.Vector3 DamageDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCollisionBetween, "BmGame.RCombatMove_LieutenantJumpAttack.DamageCollisionBetween");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageCollisionBetween, "BmGame.RCombatMove_LieutenantJumpAttack.DamageCollisionBetween", this);
         byte* paramsPtr = stackalloc byte[292];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn1, paramsPtr + 0);
@@ -123,70 +123,70 @@ public partial class RCombatMove_LieutenantJumpAttack : BmSDK.BmGame.RCombatMove
         return;
     }
 
-    private static BmSDK.Function __fn_StopTracking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopTracking;
     /// <summary>
     /// Function: StopTracking
     /// </summary>
     public unsafe virtual void StopTracking()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTracking, "BmGame.RCombatMove_LieutenantJumpAttack.StopTracking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopTracking, "BmGame.RCombatMove_LieutenantJumpAttack.StopTracking", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckCancel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckCancel;
     /// <summary>
     /// Function: CheckCancel
     /// </summary>
     public unsafe virtual void CheckCancel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckCancel, "BmGame.RCombatMove_LieutenantJumpAttack.CheckCancel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckCancel, "BmGame.RCombatMove_LieutenantJumpAttack.CheckCancel", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CombatAnimHitEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CombatAnimHitEnd;
     /// <summary>
     /// Function: CombatAnimHitEnd
     /// </summary>
     public unsafe override void CombatAnimHitEnd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitEnd, "BmGame.RCombatMove_LieutenantJumpAttack.CombatAnimHitEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatAnimHitEnd, "BmGame.RCombatMove_LieutenantJumpAttack.CombatAnimHitEnd", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CombatAnimHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CombatAnimHit;
     /// <summary>
     /// Function: CombatAnimHit
     /// </summary>
     public unsafe override void CombatAnimHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHit, "BmGame.RCombatMove_LieutenantJumpAttack.CombatAnimHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatAnimHit, "BmGame.RCombatMove_LieutenantJumpAttack.CombatAnimHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanRespondToDamageType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanRespondToDamageType;
     /// <summary>
     /// Function: CanRespondToDamageType
     /// </summary>
     public unsafe override bool CanRespondToDamageType(BmSDK.Class dmgType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanRespondToDamageType, "BmGame.RCombatMove_LieutenantJumpAttack.CanRespondToDamageType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanRespondToDamageType, "BmGame.RCombatMove_LieutenantJumpAttack.CanRespondToDamageType", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 0);
@@ -194,14 +194,14 @@ public partial class RCombatMove_LieutenantJumpAttack : BmSDK.BmGame.RCombatMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_LieutenantJumpAttack.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCombatMove_LieutenantJumpAttack.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

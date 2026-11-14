@@ -73,14 +73,14 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         where TComponent : class, Framework.IScriptComponent<RSeqAct_JokerRooftopControllerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetJokerPointFromBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJokerPointFromBehaviour;
     /// <summary>
     /// Function: GetJokerPointFromBehaviour
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RJokerRooftopPointBase GetJokerPointFromBehaviour(BmSDK.BmGame.RBMBehaviour JokerBehav)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerPointFromBehaviour, "BmGame.RSeqAct_JokerRooftopControllerBase.GetJokerPointFromBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJokerPointFromBehaviour, "BmGame.RSeqAct_JokerRooftopControllerBase.GetJokerPointFromBehaviour", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JokerBehav, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RJokerRooftopPointBase>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_JokerInView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JokerInView;
     /// <summary>
     /// Function: JokerInView
     /// </summary>
     public unsafe virtual bool JokerInView(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerInView, "BmGame.RSeqAct_JokerRooftopControllerBase.JokerInView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JokerInView, "BmGame.RSeqAct_JokerRooftopControllerBase.JokerInView", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -103,84 +103,84 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_DrawTestingSpheres;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTestingSpheres;
     /// <summary>
     /// Function: DrawTestingSpheres
     /// </summary>
     public unsafe virtual void DrawTestingSpheres()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTestingSpheres, "BmGame.RSeqAct_JokerRooftopControllerBase.DrawTestingSpheres");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTestingSpheres, "BmGame.RSeqAct_JokerRooftopControllerBase.DrawTestingSpheres", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnRooftopJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnRooftopJoker;
     /// <summary>
     /// Function: SpawnRooftopJoker
     /// </summary>
     public unsafe virtual void SpawnRooftopJoker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRooftopJoker, "BmGame.RSeqAct_JokerRooftopControllerBase.SpawnRooftopJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnRooftopJoker, "BmGame.RSeqAct_JokerRooftopControllerBase.SpawnRooftopJoker", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayDialogue;
     /// <summary>
     /// Function: PlayDialogue
     /// </summary>
     public unsafe virtual void PlayDialogue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDialogue, "BmGame.RSeqAct_JokerRooftopControllerBase.PlayDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayDialogue, "BmGame.RSeqAct_JokerRooftopControllerBase.PlayDialogue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartNextDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNextDialogue;
     /// <summary>
     /// Function: StartNextDialogue
     /// </summary>
     public unsafe virtual void StartNextDialogue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNextDialogue, "BmGame.RSeqAct_JokerRooftopControllerBase.StartNextDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartNextDialogue, "BmGame.RSeqAct_JokerRooftopControllerBase.StartNextDialogue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnAllJokers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnAllJokers;
     /// <summary>
     /// Function: SpawnAllJokers
     /// </summary>
     public unsafe virtual void SpawnAllJokers()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnAllJokers, "BmGame.RSeqAct_JokerRooftopControllerBase.SpawnAllJokers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnAllJokers, "BmGame.RSeqAct_JokerRooftopControllerBase.SpawnAllJokers", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_JokerHallucinationsAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JokerHallucinationsAllowed;
     /// <summary>
     /// Function: JokerHallucinationsAllowed
     /// </summary>
     public unsafe virtual bool JokerHallucinationsAllowed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerHallucinationsAllowed, "BmGame.RSeqAct_JokerRooftopControllerBase.JokerHallucinationsAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JokerHallucinationsAllowed, "BmGame.RSeqAct_JokerRooftopControllerBase.JokerHallucinationsAllowed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -194,14 +194,14 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_JokerRooftopControllerBase.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_JokerRooftopControllerBase.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetDebugValues;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugValues;
     /// <summary>
     /// Function: GetDebugValues
     /// </summary>
     public unsafe virtual void GetDebugValues()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDebugValues, "BmGame.RSeqAct_JokerRooftopControllerBase.GetDebugValues");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDebugValues, "BmGame.RSeqAct_JokerRooftopControllerBase.GetDebugValues", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -230,14 +230,14 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return;
     }
 
-    private static BmSDK.Function __fn_NativeUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeUpdate;
     /// <summary>
     /// Function: NativeUpdate
     /// </summary>
     public unsafe virtual bool NativeUpdate(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativeUpdate, "BmGame.RSeqAct_JokerRooftopControllerBase.NativeUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NativeUpdate, "BmGame.RSeqAct_JokerRooftopControllerBase.NativeUpdate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -252,14 +252,14 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CancelConversationLoading;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelConversationLoading;
     /// <summary>
     /// Function: CancelConversationLoading
     /// </summary>
     public unsafe virtual void CancelConversationLoading()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelConversationLoading, "BmGame.RSeqAct_JokerRooftopControllerBase.CancelConversationLoading");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelConversationLoading, "BmGame.RSeqAct_JokerRooftopControllerBase.CancelConversationLoading", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -273,14 +273,14 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return;
     }
 
-    private static BmSDK.Function __fn_InitConversation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitConversation;
     /// <summary>
     /// Function: InitConversation
     /// </summary>
     public unsafe virtual bool InitConversation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitConversation, "BmGame.RSeqAct_JokerRooftopControllerBase.InitConversation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitConversation, "BmGame.RSeqAct_JokerRooftopControllerBase.InitConversation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -294,17 +294,17 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LoadConversation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadConversation;
     /// <summary>
     /// Function: LoadConversation
     /// </summary>
-    public unsafe virtual bool LoadConversation(BmSDK.FString StringPackageName)
+    public unsafe virtual bool LoadConversation(BmSDK.FStringArg StringPackageName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadConversation, "BmGame.RSeqAct_JokerRooftopControllerBase.LoadConversation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadConversation, "BmGame.RSeqAct_JokerRooftopControllerBase.LoadConversation", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StringPackageName, paramsPtr + 0);
+        StringPackageName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -313,6 +313,7 @@ public partial class RSeqAct_JokerRooftopControllerBase : BmSDK.Engine.SeqAct_La
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 

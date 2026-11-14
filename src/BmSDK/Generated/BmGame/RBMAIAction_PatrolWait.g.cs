@@ -78,14 +78,14 @@ public partial class RBMAIAction_PatrolWait : BmSDK.BmGame.RBMAIAction_PatrolWai
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_PatrolWait>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ChangeIdle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeIdle;
     /// <summary>
     /// Function: ChangeIdle
     /// </summary>
     public unsafe virtual void ChangeIdle(BmSDK.FName NewIdle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeIdle, "BmGame.RBMAIAction_PatrolWait.ChangeIdle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeIdle, "BmGame.RBMAIAction_PatrolWait.ChangeIdle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewIdle, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RBMAIAction_PatrolWait : BmSDK.BmGame.RBMAIAction_PatrolWai
         return;
     }
 
-    private static BmSDK.Function __fn_PlayShortOverlayAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayShortOverlayAnim;
     /// <summary>
     /// Function: PlayShortOverlayAnim
     /// </summary>
     public unsafe override void PlayShortOverlayAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayShortOverlayAnim, "BmGame.RBMAIAction_PatrolWait.PlayShortOverlayAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayShortOverlayAnim, "BmGame.RBMAIAction_PatrolWait.PlayShortOverlayAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayIdleOverlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayIdleOverlay;
     /// <summary>
     /// Function: PlayIdleOverlay
     /// </summary>
     public unsafe virtual void PlayIdleOverlay(BmSDK.FName NewOverlay)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayIdleOverlay, "BmGame.RBMAIAction_PatrolWait.PlayIdleOverlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayIdleOverlay, "BmGame.RBMAIAction_PatrolWait.PlayIdleOverlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOverlay, paramsPtr + 0);
@@ -122,28 +122,28 @@ public partial class RBMAIAction_PatrolWait : BmSDK.BmGame.RBMAIAction_PatrolWai
         return;
     }
 
-    private static BmSDK.Function __fn_PlayLongOverlayAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayLongOverlayAnim;
     /// <summary>
     /// Function: PlayLongOverlayAnim
     /// </summary>
     public unsafe override void PlayLongOverlayAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayLongOverlayAnim, "BmGame.RBMAIAction_PatrolWait.PlayLongOverlayAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayLongOverlayAnim, "BmGame.RBMAIAction_PatrolWait.PlayLongOverlayAnim", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPause;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPause;
     /// <summary>
     /// Function: StartPause
     /// </summary>
     public unsafe virtual void StartPause(BmSDK.FName IdleName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPause, "BmGame.RBMAIAction_PatrolWait.StartPause");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPause, "BmGame.RBMAIAction_PatrolWait.StartPause", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IdleName, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RBMAIAction_PatrolWait : BmSDK.BmGame.RBMAIAction_PatrolWai
         return;
     }
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_PatrolWait.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.RBMAIAction_PatrolWait.ActionTick", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -166,28 +166,28 @@ public partial class RBMAIAction_PatrolWait : BmSDK.BmGame.RBMAIAction_PatrolWai
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMAIAction_PatrolWait.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMAIAction_PatrolWait.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_PatrolWait.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMAIAction_PatrolWait.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

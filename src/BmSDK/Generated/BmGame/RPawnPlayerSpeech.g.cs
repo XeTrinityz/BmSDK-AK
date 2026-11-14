@@ -73,14 +73,14 @@ public partial class RPawnPlayerSpeech : BmSDK.BmGame.RPawnPlayerCombat, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerSpeech>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAkDialogueComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkDialogueComponent;
     /// <summary>
     /// Function: GetAkDialogueComponent
     /// </summary>
     public unsafe override BmSDK.Engine.AkDialogueComponent GetAkDialogueComponent(bool allowCreate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAkDialogueComponent, "BmGame.RPawnPlayerSpeech.GetAkDialogueComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAkDialogueComponent, "BmGame.RPawnPlayerSpeech.GetAkDialogueComponent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allowCreate, paramsPtr + 0);

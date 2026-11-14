@@ -78,14 +78,14 @@ public partial class RBMBalloonBolasProjectileBase : BmSDK.BmGame.RBatarangProje
         where TComponent : class, Framework.IScriptComponent<RBMBalloonBolasProjectileBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SpawnRopeAndBalloon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnRopeAndBalloon;
     /// <summary>
     /// Function: SpawnRopeAndBalloon
     /// </summary>
     public unsafe virtual void SpawnRopeAndBalloon(BmSDK.BmGame.RPawnVillain HitThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRopeAndBalloon, "BmGame.RBMBalloonBolasProjectileBase.SpawnRopeAndBalloon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnRopeAndBalloon, "BmGame.RBMBalloonBolasProjectileBase.SpawnRopeAndBalloon", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitThug, paramsPtr + 0);

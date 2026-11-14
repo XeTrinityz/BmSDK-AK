@@ -73,14 +73,14 @@ public partial class RSeqAct_StartGauntletMovieBase : BmSDK.Engine.SequenceActio
         where TComponent : class, Framework.IScriptComponent<RSeqAct_StartGauntletMovieBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DisablePropertySheet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisablePropertySheet;
     /// <summary>
     /// Function: DisablePropertySheet
     /// </summary>
     public unsafe virtual void DisablePropertySheet()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisablePropertySheet, "BmGame.RSeqAct_StartGauntletMovieBase.DisablePropertySheet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisablePropertySheet, "BmGame.RSeqAct_StartGauntletMovieBase.DisablePropertySheet", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class RSeqAct_StartGauntletMovieBase : BmSDK.Engine.SequenceActio
         return;
     }
 
-    private static BmSDK.Function __fn_EnablePropertySheet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnablePropertySheet;
     /// <summary>
     /// Function: EnablePropertySheet
     /// </summary>
     public unsafe virtual void EnablePropertySheet()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnablePropertySheet, "BmGame.RSeqAct_StartGauntletMovieBase.EnablePropertySheet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnablePropertySheet, "BmGame.RSeqAct_StartGauntletMovieBase.EnablePropertySheet", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

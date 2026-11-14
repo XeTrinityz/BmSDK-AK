@@ -78,14 +78,14 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
         where TComponent : class, Framework.IScriptComponent<RPawnVillainGunMinelayer>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_WakeFromDead;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeFromDead;
     /// <summary>
     /// Function: WakeFromDead
     /// </summary>
     public unsafe override void WakeFromDead(BmSDK.BmGame.RPawnCharacter NewGetUpMaster = default, BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId NewGetUpMasterAnimID = default, BmSDK.Engine.AnimSet NewGetUpAnimset = default, BmSDK.FName NewGetUpAnimName = default, BmSDK.FName GetUpMovementStance = default, bool bDoAnim = default, bool bAnimImmediate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WakeFromDead, "BmScript.RPawnVillainGunMinelayer.WakeFromDead");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WakeFromDead, "BmScript.RPawnVillainGunMinelayer.WakeFromDead", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGetUpMaster, paramsPtr + 0);
@@ -99,14 +99,14 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
         return;
     }
 
-    private static BmSDK.Function __fn_Died;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Died;
     /// <summary>
     /// Function: Died
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "BmScript.RPawnVillainGunMinelayer.Died");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Died, "BmScript.RPawnVillainGunMinelayer.Died", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_SwitchEquipmentXrayMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchEquipmentXrayMaterial;
     /// <summary>
     /// Function: SwitchEquipmentXrayMaterial
     /// </summary>
     public unsafe override void SwitchEquipmentXrayMaterial(BmSDK.Engine.MaterialInterface NewMIC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchEquipmentXrayMaterial, "BmScript.RPawnVillainGunMinelayer.SwitchEquipmentXrayMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchEquipmentXrayMaterial, "BmScript.RPawnVillainGunMinelayer.SwitchEquipmentXrayMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMIC, paramsPtr + 0);
@@ -131,14 +131,14 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
         return;
     }
 
-    private static BmSDK.Function __fn_GetDisruptedEquipmentLocationAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisruptedEquipmentLocationAndRotation;
     /// <summary>
     /// Function: GetDisruptedEquipmentLocationAndRotation
     /// </summary>
     public unsafe override void GetDisruptedEquipmentLocationAndRotation(out System.Numerics.Vector3 vLocation, out BmSDK.Rotator rRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptedEquipmentLocationAndRotation, "BmScript.RPawnVillainGunMinelayer.GetDisruptedEquipmentLocationAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisruptedEquipmentLocationAndRotation, "BmScript.RPawnVillainGunMinelayer.GetDisruptedEquipmentLocationAndRotation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out vLocation);
@@ -151,70 +151,70 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
         return;
     }
 
-    private static BmSDK.Function __fn_DisruptorDisableEquipment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisruptorDisableEquipment;
     /// <summary>
     /// Function: DisruptorDisableEquipment
     /// </summary>
     public unsafe override void DisruptorDisableEquipment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisruptorDisableEquipment, "BmScript.RPawnVillainGunMinelayer.DisruptorDisableEquipment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisruptorDisableEquipment, "BmScript.RPawnVillainGunMinelayer.DisruptorDisableEquipment", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RestoreDisruptorDisabledEquipment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreDisruptorDisabledEquipment;
     /// <summary>
     /// Function: RestoreDisruptorDisabledEquipment
     /// </summary>
     public unsafe override void RestoreDisruptorDisabledEquipment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreDisruptorDisabledEquipment, "BmScript.RPawnVillainGunMinelayer.RestoreDisruptorDisabledEquipment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreDisruptorDisabledEquipment, "BmScript.RPawnVillainGunMinelayer.RestoreDisruptorDisabledEquipment", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetMineInVentTFRConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMineInVentTFRConfig;
     /// <summary>
     /// Function: GetMineInVentTFRConfig
     /// </summary>
     public unsafe override BmSDK.BmGame.RTransitionFromRunConfig GetMineInVentTFRConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMineInVentTFRConfig, "BmScript.RPawnVillainGunMinelayer.GetMineInVentTFRConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMineInVentTFRConfig, "BmScript.RPawnVillainGunMinelayer.GetMineInVentTFRConfig", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RTransitionFromRunConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMinelayerAnimset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinelayerAnimset;
     /// <summary>
     /// Function: GetMinelayerAnimset
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetMinelayerAnimset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMinelayerAnimset, "BmScript.RPawnVillainGunMinelayer.GetMinelayerAnimset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMinelayerAnimset, "BmScript.RPawnVillainGunMinelayer.GetMinelayerAnimset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetGrabMineHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGrabMineHidden;
     /// <summary>
     /// Function: SetGrabMineHidden
     /// </summary>
     public unsafe override void SetGrabMineHidden(bool bNewVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGrabMineHidden, "BmScript.RPawnVillainGunMinelayer.SetGrabMineHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGrabMineHidden, "BmScript.RPawnVillainGunMinelayer.SetGrabMineHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewVal, paramsPtr + 0);
@@ -222,70 +222,70 @@ public partial class RPawnVillainGunMinelayer : BmSDK.BmScript.RPawnVillainGunPr
         return;
     }
 
-    private static BmSDK.Function __fn_GetMineMeshComps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMineMeshComps;
     /// <summary>
     /// Function: GetMineMeshComps
     /// </summary>
     public unsafe virtual void GetMineMeshComps()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMineMeshComps, "BmScript.RPawnVillainGunMinelayer.GetMineMeshComps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMineMeshComps, "BmScript.RPawnVillainGunMinelayer.GetMineMeshComps", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachProps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachProps;
     /// <summary>
     /// Function: AttachProps
     /// </summary>
     public unsafe override void AttachProps()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachProps, "BmScript.RPawnVillainGunMinelayer.AttachProps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachProps, "BmScript.RPawnVillainGunMinelayer.AttachProps", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddPawnProps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPawnProps;
     /// <summary>
     /// Function: AddPawnProps
     /// </summary>
     public unsafe override void AddPawnProps()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPawnProps, "BmScript.RPawnVillainGunMinelayer.AddPawnProps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPawnProps, "BmScript.RPawnVillainGunMinelayer.AddPawnProps", this);
         byte* paramsPtr = stackalloc byte[568];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostInitCharacter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostInitCharacter;
     /// <summary>
     /// Function: PostInitCharacter
     /// </summary>
     public unsafe override void PostInitCharacter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostInitCharacter, "BmScript.RPawnVillainGunMinelayer.PostInitCharacter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostInitCharacter, "BmScript.RPawnVillainGunMinelayer.PostInitCharacter", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnMine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnMine;
     /// <summary>
     /// Function: SpawnMine
     /// </summary>
     public unsafe override bool SpawnMine(BmSDK.BmGame.RThugMineablePointBase TargetMinePoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnMine, "BmScript.RPawnVillainGunMinelayer.SpawnMine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnMine, "BmScript.RPawnVillainGunMinelayer.SpawnMine", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetMinePoint, paramsPtr + 0);

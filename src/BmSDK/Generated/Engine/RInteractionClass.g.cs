@@ -78,14 +78,14 @@ public partial class RInteractionClass : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RInteractionClass>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ContainsActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsActor;
     /// <summary>
     /// Function: ContainsActor
     /// </summary>
     public unsafe virtual bool ContainsActor(BmSDK.Engine.Actor TestActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContainsActor, "Engine.RInteractionClass.ContainsActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ContainsActor, "Engine.RInteractionClass.ContainsActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestActor, paramsPtr + 0);

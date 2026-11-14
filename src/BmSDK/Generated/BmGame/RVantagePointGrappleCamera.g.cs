@@ -78,28 +78,28 @@ public partial class RVantagePointGrappleCamera : BmSDK.BmGame.RCameraActor, BmS
         where TComponent : class, Framework.IScriptComponent<RVantagePointGrappleCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FreezeCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreezeCamera;
     /// <summary>
     /// Function: FreezeCamera
     /// </summary>
     public unsafe virtual void FreezeCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreezeCamera, "BmGame.RVantagePointGrappleCamera.FreezeCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreezeCamera, "BmGame.RVantagePointGrappleCamera.FreezeCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RVantagePointGrappleCamera.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RVantagePointGrappleCamera.Tick", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RVantagePointGrappleCamera : BmSDK.BmGame.RCameraActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_SetUpCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUpCamera;
     /// <summary>
     /// Function: SetUpCamera
     /// </summary>
     public unsafe virtual void SetUpCamera(BmSDK.BmGame.RHidePoint VantagePoint, System.Numerics.Vector3 GrappleLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUpCamera, "BmGame.RVantagePointGrappleCamera.SetUpCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUpCamera, "BmGame.RVantagePointGrappleCamera.SetUpCamera", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VantagePoint, paramsPtr + 0);

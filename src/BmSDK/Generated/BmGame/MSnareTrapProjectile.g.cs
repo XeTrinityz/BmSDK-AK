@@ -73,14 +73,14 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         where TComponent : class, Framework.IScriptComponent<MSnareTrapProjectile>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Detonate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Detonate;
     /// <summary>
     /// Function: Detonate
     /// </summary>
     public unsafe virtual void Detonate(BmSDK.BmGame.RPawnVillain Victim, bool bTriggeredByTrap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detonate, "BmGame.MSnareTrapProjectile.Detonate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Detonate, "BmGame.MSnareTrapProjectile.Detonate", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -89,14 +89,14 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnExplosionVFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnExplosionVFX;
     /// <summary>
     /// Function: SpawnExplosionVFX
     /// </summary>
     public unsafe virtual void SpawnExplosionVFX(BmSDK.BmGame.RPawnVillain Victim, bool bTriggeredByTrap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnExplosionVFX, "BmGame.MSnareTrapProjectile.SpawnExplosionVFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnExplosionVFX, "BmGame.MSnareTrapProjectile.SpawnExplosionVFX", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -105,14 +105,14 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return;
     }
 
-    private static BmSDK.Function __fn_DoesThugHaveGun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesThugHaveGun;
     /// <summary>
     /// Function: DoesThugHaveGun
     /// </summary>
     public unsafe virtual bool DoesThugHaveGun(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoesThugHaveGun, "BmGame.MSnareTrapProjectile.DoesThugHaveGun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoesThugHaveGun, "BmGame.MSnareTrapProjectile.DoesThugHaveGun", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -120,14 +120,14 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_DoesThugHaveShield;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesThugHaveShield;
     /// <summary>
     /// Function: DoesThugHaveShield
     /// </summary>
     public unsafe virtual bool DoesThugHaveShield(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoesThugHaveShield, "BmGame.MSnareTrapProjectile.DoesThugHaveShield");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoesThugHaveShield, "BmGame.MSnareTrapProjectile.DoesThugHaveShield", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -135,14 +135,14 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Ricochet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Ricochet;
     /// <summary>
     /// Function: Ricochet
     /// </summary>
     public unsafe virtual void Ricochet(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor HitActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Ricochet, "BmGame.MSnareTrapProjectile.Ricochet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Ricochet, "BmGame.MSnareTrapProjectile.Ricochet", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return;
     }
 
-    private static BmSDK.Function __fn_HitWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitWall;
     /// <summary>
     /// Function: HitWall
     /// </summary>
     public unsafe override void HitWall(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor Wall, BmSDK.Engine.PrimitiveComponent WallComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitWall, "BmGame.MSnareTrapProjectile.HitWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitWall, "BmGame.MSnareTrapProjectile.HitWall", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 0);
@@ -168,28 +168,28 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyProjectile;
     /// <summary>
     /// Function: DestroyProjectile
     /// </summary>
     public unsafe virtual void DestroyProjectile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyProjectile, "BmGame.MSnareTrapProjectile.DestroyProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyProjectile, "BmGame.MSnareTrapProjectile.DestroyProjectile", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ProximityTriggered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProximityTriggered;
     /// <summary>
     /// Function: ProximityTriggered
     /// </summary>
     public unsafe override void ProximityTriggered(BmSDK.BmGame.RPawnVillain HitVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProximityTriggered, "BmGame.MSnareTrapProjectile.ProximityTriggered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProximityTriggered, "BmGame.MSnareTrapProjectile.ProximityTriggered", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitVillain, paramsPtr + 0);
@@ -197,14 +197,14 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return;
     }
 
-    private static BmSDK.Function __fn_Deploy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deploy;
     /// <summary>
     /// Function: Deploy
     /// </summary>
     public unsafe virtual void Deploy(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deploy, "BmGame.MSnareTrapProjectile.Deploy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deploy, "BmGame.MSnareTrapProjectile.Deploy", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -215,56 +215,56 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return;
     }
 
-    private static BmSDK.Function __fn_GadgetNoiseEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GadgetNoiseEvent;
     /// <summary>
     /// Function: GadgetNoiseEvent
     /// </summary>
     public unsafe virtual void GadgetNoiseEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GadgetNoiseEvent, "BmGame.MSnareTrapProjectile.GadgetNoiseEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GadgetNoiseEvent, "BmGame.MSnareTrapProjectile.GadgetNoiseEvent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.MSnareTrapProjectile.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.MSnareTrapProjectile.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnDelayedTrigger;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDelayedTrigger;
     /// <summary>
     /// Function: SpawnDelayedTrigger
     /// </summary>
     public unsafe virtual void SpawnDelayedTrigger()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDelayedTrigger, "BmGame.MSnareTrapProjectile.SpawnDelayedTrigger");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnDelayedTrigger, "BmGame.MSnareTrapProjectile.SpawnDelayedTrigger", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Fire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Fire;
     /// <summary>
     /// Function: Fire
     /// </summary>
     public unsafe override void Fire(System.Numerics.Vector3 LaunchLocation, System.Numerics.Vector3 TargetLocation, System.Numerics.Vector3 StartSpeed, bool bSecondary, BmSDK.Engine.Actor Target, System.Numerics.Vector3 ActualTargetLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Fire, "BmGame.MSnareTrapProjectile.Fire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Fire, "BmGame.MSnareTrapProjectile.Fire", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LaunchLocation, paramsPtr + 0);
@@ -277,28 +277,28 @@ public partial class MSnareTrapProjectile : BmSDK.BmGame.RGadgetProjectileBase, 
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.MSnareTrapProjectile.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.MSnareTrapProjectile.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetLookAtRotator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookAtRotator;
     /// <summary>
     /// Function: GetLookAtRotator
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetLookAtRotator(System.Numerics.Vector3 Direction, System.Numerics.Vector3 Up)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLookAtRotator, "BmGame.MSnareTrapProjectile.GetLookAtRotator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLookAtRotator, "BmGame.MSnareTrapProjectile.GetLookAtRotator", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Direction, paramsPtr + 0);

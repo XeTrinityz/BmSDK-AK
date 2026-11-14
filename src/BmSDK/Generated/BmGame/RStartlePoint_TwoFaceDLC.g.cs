@@ -78,28 +78,28 @@ public partial class RStartlePoint_TwoFaceDLC : BmSDK.BmGame.RStartlePoint_Bank,
         where TComponent : class, Framework.IScriptComponent<RStartlePoint_TwoFaceDLC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetupDroneStartleAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupDroneStartleAEC;
     /// <summary>
     /// Function: SetupDroneStartleAEC
     /// </summary>
     public unsafe override void SetupDroneStartleAEC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupDroneStartleAEC, "BmGame.RStartlePoint_TwoFaceDLC.SetupDroneStartleAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupDroneStartleAEC, "BmGame.RStartlePoint_TwoFaceDLC.SetupDroneStartleAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FindStartleThugsFromPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindStartleThugsFromPoint;
     /// <summary>
     /// Function: FindStartleThugsFromPoint
     /// </summary>
     public unsafe override void FindStartleThugsFromPoint(out BmSDK.TArray<BmSDK.BmGame.RPawnVillain> ThugList, bool bFindAllThugs)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindStartleThugsFromPoint, "BmGame.RStartlePoint_TwoFaceDLC.FindStartleThugsFromPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindStartleThugsFromPoint, "BmGame.RStartlePoint_TwoFaceDLC.FindStartleThugsFromPoint", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFindAllThugs, paramsPtr + 16);
@@ -108,14 +108,14 @@ public partial class RStartlePoint_TwoFaceDLC : BmSDK.BmGame.RStartlePoint_Bank,
         return;
     }
 
-    private static BmSDK.Function __fn_StartleThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartleThug;
     /// <summary>
     /// Function: StartleThug
     /// </summary>
     public unsafe override void StartleThug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleThug, "BmGame.RStartlePoint_TwoFaceDLC.StartleThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartleThug, "BmGame.RStartlePoint_TwoFaceDLC.StartleThug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -178,14 +178,14 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.OnlineSubsystem>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DestroyNamedNetDriver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyNamedNetDriver;
     /// <summary>
     /// Function: DestroyNamedNetDriver
     /// </summary>
     public unsafe virtual void DestroyNamedNetDriver(BmSDK.FName NetDriverName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyNamedNetDriver, "Engine.GameEngine.DestroyNamedNetDriver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyNamedNetDriver, "Engine.GameEngine.DestroyNamedNetDriver", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NetDriverName, paramsPtr + 0);
@@ -200,14 +200,14 @@ public partial class GameEngine : BmSDK.Engine._Engine, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CreateNamedNetDriver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateNamedNetDriver;
     /// <summary>
     /// Function: CreateNamedNetDriver
     /// </summary>
     public unsafe virtual bool CreateNamedNetDriver(BmSDK.FName NetDriverName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateNamedNetDriver, "Engine.GameEngine.CreateNamedNetDriver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateNamedNetDriver, "Engine.GameEngine.CreateNamedNetDriver", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NetDriverName, paramsPtr + 0);

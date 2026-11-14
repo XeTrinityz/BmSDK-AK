@@ -78,14 +78,14 @@ public partial class RCapeRenderingComponent : BmSDK.Engine.ActorComponent, BmSD
         where TComponent : class, Framework.IScriptComponent<RCapeRenderingComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HandleDebugLineDrawing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleDebugLineDrawing;
     /// <summary>
     /// Function: HandleDebugLineDrawing
     /// </summary>
     public unsafe virtual void HandleDebugLineDrawing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleDebugLineDrawing, "BmGame.RCapeRenderingComponent.HandleDebugLineDrawing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleDebugLineDrawing, "BmGame.RCapeRenderingComponent.HandleDebugLineDrawing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -73,14 +73,14 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RBankDoorBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Nuke;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Nuke;
     /// <summary>
     /// Function: Nuke
     /// </summary>
     public unsafe virtual void Nuke(bool bSilent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Nuke, "BmGame.RBankDoorBase.Nuke");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Nuke, "BmGame.RBankDoorBase.Nuke", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSilent, paramsPtr + 0);
@@ -88,28 +88,28 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_Detonated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Detonated;
     /// <summary>
     /// Function: Detonated
     /// </summary>
     public unsafe virtual void Detonated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detonated, "BmGame.RBankDoorBase.Detonated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Detonated, "BmGame.RBankDoorBase.Detonated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetAnimRefPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimRefPoint;
     /// <summary>
     /// Function: GetAnimRefPoint
     /// </summary>
     public unsafe virtual void GetAnimRefPoint(System.Numerics.Vector3 pawnLoc, out System.Numerics.Vector3 animRefLoc, out BmSDK.Rotator animRefRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimRefPoint, "BmGame.RBankDoorBase.GetAnimRefPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimRefPoint, "BmGame.RBankDoorBase.GetAnimRefPoint", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pawnLoc, paramsPtr + 0);
@@ -123,42 +123,42 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RBankDoorBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RBankDoorBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RBankDoorBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RBankDoorBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetExtraTranslation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetExtraTranslation;
     /// <summary>
     /// Function: GetExtraTranslation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetExtraTranslation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetExtraTranslation, "BmGame.RBankDoorBase.GetExtraTranslation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetExtraTranslation, "BmGame.RBankDoorBase.GetExtraTranslation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -172,56 +172,56 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateMeshPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMeshPos;
     /// <summary>
     /// Function: UpdateMeshPos
     /// </summary>
     public unsafe virtual void UpdateMeshPos()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMeshPos, "BmGame.RBankDoorBase.UpdateMeshPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMeshPos, "BmGame.RBankDoorBase.UpdateMeshPos", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoorFinishedClosing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoorFinishedClosing;
     /// <summary>
     /// Function: DoorFinishedClosing
     /// </summary>
     public unsafe virtual void DoorFinishedClosing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoorFinishedClosing, "BmGame.RBankDoorBase.DoorFinishedClosing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoorFinishedClosing, "BmGame.RBankDoorBase.DoorFinishedClosing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoorFinishedOpening;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoorFinishedOpening;
     /// <summary>
     /// Function: DoorFinishedOpening
     /// </summary>
     public unsafe virtual void DoorFinishedOpening()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoorFinishedOpening, "BmGame.RBankDoorBase.DoorFinishedOpening");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoorFinishedOpening, "BmGame.RBankDoorBase.DoorFinishedOpening", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RBankDoorBase.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RBankDoorBase.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -229,70 +229,70 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_CloseDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseDoor;
     /// <summary>
     /// Function: CloseDoor
     /// </summary>
     public unsafe virtual void CloseDoor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseDoor, "BmGame.RBankDoorBase.CloseDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseDoor, "BmGame.RBankDoorBase.CloseDoor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OpenDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenDoor;
     /// <summary>
     /// Function: OpenDoor
     /// </summary>
     public unsafe virtual void OpenDoor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenDoor, "BmGame.RBankDoorBase.OpenDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenDoor, "BmGame.RBankDoorBase.OpenDoor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveDetectiveModeHighlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDetectiveModeHighlight;
     /// <summary>
     /// Function: RemoveDetectiveModeHighlight
     /// </summary>
     public unsafe virtual void RemoveDetectiveModeHighlight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveDetectiveModeHighlight, "BmGame.RBankDoorBase.RemoveDetectiveModeHighlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveDetectiveModeHighlight, "BmGame.RBankDoorBase.RemoveDetectiveModeHighlight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateInvestigateOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInvestigateOffset;
     /// <summary>
     /// Function: UpdateInvestigateOffset
     /// </summary>
     public unsafe virtual void UpdateInvestigateOffset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateInvestigateOffset, "BmGame.RBankDoorBase.UpdateInvestigateOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateInvestigateOffset, "BmGame.RBankDoorBase.UpdateInvestigateOffset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PawnHasLOSToDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnHasLOSToDoor;
     /// <summary>
     /// Function: PawnHasLOSToDoor
     /// </summary>
     public unsafe virtual bool PawnHasLOSToDoor(BmSDK.BmGame.RPawn Pawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnHasLOSToDoor, "BmGame.RBankDoorBase.PawnHasLOSToDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PawnHasLOSToDoor, "BmGame.RBankDoorBase.PawnHasLOSToDoor", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn, paramsPtr + 0);
@@ -300,28 +300,28 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_StopNearbyThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopNearbyThugs;
     /// <summary>
     /// Function: StopNearbyThugs
     /// </summary>
     public unsafe virtual void StopNearbyThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopNearbyThugs, "BmGame.RBankDoorBase.StopNearbyThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopNearbyThugs, "BmGame.RBankDoorBase.StopNearbyThugs", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe override void SetEnabled(bool bInEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "BmGame.RBankDoorBase.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "BmGame.RBankDoorBase.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInEnabled, paramsPtr + 0);
@@ -329,28 +329,28 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBankDoorBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RBankDoorBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
     /// Function: GetTargetLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetLocation, "BmGame.RBankDoorBase.GetTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetLocation, "BmGame.RBankDoorBase.GetTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RequestedBy, paramsPtr + 0);
@@ -366,14 +366,14 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_UnRegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
     /// Function: UnRegisterObstacle
     /// </summary>
     public unsafe override void UnRegisterObstacle(bool bInstant = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnRegisterObstacle, "BmGame.RBankDoorBase.UnRegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnRegisterObstacle, "BmGame.RBankDoorBase.UnRegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInstant, paramsPtr + 0);
@@ -388,14 +388,14 @@ public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
     /// Function: RegisterObstacle
     /// </summary>
     public unsafe override void RegisterObstacle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterObstacle, "BmGame.RBankDoorBase.RegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterObstacle, "BmGame.RBankDoorBase.RegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

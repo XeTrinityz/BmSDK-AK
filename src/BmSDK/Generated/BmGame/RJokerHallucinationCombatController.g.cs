@@ -78,28 +78,28 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         where TComponent : class, Framework.IScriptComponent<RJokerHallucinationCombatController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetCombatQuality;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCombatQuality;
     /// <summary>
     /// Function: GetCombatQuality
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnJokerHallucination.CombatQualityType GetCombatQuality()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCombatQuality, "BmGame.RJokerHallucinationCombatController.GetCombatQuality");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCombatQuality, "BmGame.RJokerHallucinationCombatController.GetCombatQuality", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnJokerHallucination.CombatQualityType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindSpawnPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSpawnPoint;
     /// <summary>
     /// Function: FindSpawnPoint
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindSpawnPoint(BmSDK.BmGame.RPawnJokerHallucination.CombatQualityType QualityType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSpawnPoint, "BmGame.RJokerHallucinationCombatController.FindSpawnPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSpawnPoint, "BmGame.RJokerHallucinationCombatController.FindSpawnPoint", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(QualityType, paramsPtr + 0);
@@ -107,70 +107,70 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SpawnIncidentalJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnIncidentalJoker;
     /// <summary>
     /// Function: SpawnIncidentalJoker
     /// </summary>
     public unsafe virtual bool SpawnIncidentalJoker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnIncidentalJoker, "BmGame.RJokerHallucinationCombatController.SpawnIncidentalJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnIncidentalJoker, "BmGame.RJokerHallucinationCombatController.SpawnIncidentalJoker", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GenerateCombatPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateCombatPoints;
     /// <summary>
     /// Function: GenerateCombatPoints
     /// </summary>
     public unsafe virtual void GenerateCombatPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateCombatPoints, "BmGame.RJokerHallucinationCombatController.GenerateCombatPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GenerateCombatPoints, "BmGame.RJokerHallucinationCombatController.GenerateCombatPoints", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TrySpawnJokerCombatOverTaunt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrySpawnJokerCombatOverTaunt;
     /// <summary>
     /// Function: TrySpawnJokerCombatOverTaunt
     /// </summary>
     public unsafe virtual void TrySpawnJokerCombatOverTaunt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnJokerCombatOverTaunt, "BmGame.RJokerHallucinationCombatController.TrySpawnJokerCombatOverTaunt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrySpawnJokerCombatOverTaunt, "BmGame.RJokerHallucinationCombatController.TrySpawnJokerCombatOverTaunt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InCombat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InCombat;
     /// <summary>
     /// Function: InCombat
     /// </summary>
     public unsafe virtual bool InCombat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InCombat, "BmGame.RJokerHallucinationCombatController.InCombat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InCombat, "BmGame.RJokerHallucinationCombatController.InCombat", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe virtual void Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RJokerHallucinationCombatController.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RJokerHallucinationCombatController.Update", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class CameraActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<CameraActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DisplayDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayDebug;
     /// <summary>
     /// Function: DisplayDebug
     /// </summary>
     public unsafe override void DisplayDebug(BmSDK.Engine.HUD HUD, out float out_YL, out float out_YPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.CameraActor.DisplayDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayDebug, "Engine.CameraActor.DisplayDebug", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -99,14 +99,14 @@ public partial class CameraActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetCameraView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraView;
     /// <summary>
     /// Function: GetCameraView
     /// </summary>
     public unsafe virtual void GetCameraView(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraView, "Engine.CameraActor.GetCameraView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCameraView, "Engine.CameraActor.GetCameraView", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

@@ -78,28 +78,28 @@ public partial class RAEC_Search_Sub_CornerTerrified : BmSDK.BmGame.RAlertEventC
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_CornerTerrified>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsPlayerBehind;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerBehind;
     /// <summary>
     /// Function: IsPlayerBehind
     /// </summary>
     public unsafe virtual bool IsPlayerBehind()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayerBehind, "BmGame.RAEC_Search_Sub_CornerTerrified.IsPlayerBehind");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayerBehind, "BmGame.RAEC_Search_Sub_CornerTerrified.IsPlayerBehind", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartFromSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFromSearch;
     /// <summary>
     /// Function: StartFromSearch
     /// </summary>
     public unsafe virtual void StartFromSearch(BmSDK.BmGame.RBMAIController NewCon, BmSDK.BmGame.RCornerWallMarker NewStartCorner, BmSDK.BmGame.RCornerWallMarker NewEndCorner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_CornerTerrified.StartFromSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_CornerTerrified.StartFromSearch", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RAEC_Search_Sub_CornerTerrified : BmSDK.BmGame.RAlertEventC
         return;
     }
 
-    private static BmSDK.Function __fn_OnVillainStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnVillainStolen;
     /// <summary>
     /// Function: OnVillainStolen
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_CornerTerrified.OnVillainStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_CornerTerrified.OnVillainStolen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

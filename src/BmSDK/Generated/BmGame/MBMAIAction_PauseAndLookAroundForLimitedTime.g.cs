@@ -78,14 +78,14 @@ public partial class MBMAIAction_PauseAndLookAroundForLimitedTime : BmSDK.BmGame
         where TComponent : class, Framework.IScriptComponent<MBMAIAction_PauseAndLookAroundForLimitedTime>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.ActionTick", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,42 +93,42 @@ public partial class MBMAIAction_PauseAndLookAroundForLimitedTime : BmSDK.BmGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTimeLimit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTimeLimit;
     /// <summary>
     /// Function: SetTimeLimit
     /// </summary>
     public unsafe virtual void SetTimeLimit(float newTimeLimit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTimeLimit, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.SetTimeLimit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTimeLimit, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.SetTimeLimit", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(newTimeLimit, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class MBMAIAction_PauseAndLookAroundForLimitedTime : BmSDK.BmGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetLookLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLookLocation;
     /// <summary>
     /// Function: SetLookLocation
     /// </summary>
     public unsafe virtual void SetLookLocation(System.Numerics.Vector3 NewLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLookLocation, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.SetLookLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLookLocation, "BmGame.MBMAIAction_PauseAndLookAroundForLimitedTime.SetLookLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLoc, paramsPtr + 0);

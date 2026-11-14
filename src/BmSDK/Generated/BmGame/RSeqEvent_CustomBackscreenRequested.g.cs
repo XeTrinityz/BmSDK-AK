@@ -78,14 +78,14 @@ public partial class RSeqEvent_CustomBackscreenRequested : BmSDK.BmGame.RSeqEven
         where TComponent : class, Framework.IScriptComponent<RSeqEvent_CustomBackscreenRequested>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAvailability;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvailability;
     /// <summary>
     /// Function: GetAvailability
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSeqEvent_CustomBackscreenRequested.BackscreenAvailability GetAvailability()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAvailability, "BmGame.RSeqEvent_CustomBackscreenRequested.GetAvailability");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAvailability, "BmGame.RSeqEvent_CustomBackscreenRequested.GetAvailability", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

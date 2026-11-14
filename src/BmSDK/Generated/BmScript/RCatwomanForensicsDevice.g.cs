@@ -78,14 +78,14 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
         where TComponent : class, Framework.IScriptComponent<RCatwomanForensicsDevice>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RestoreMaterialsForXray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreMaterialsForXray;
     /// <summary>
     /// Function: RestoreMaterialsForXray
     /// </summary>
     public unsafe override void RestoreMaterialsForXray(bool force_swap = default, bool DoNotSwapPlayerPawn = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreMaterialsForXray, "BmScript.RCatwomanForensicsDevice.RestoreMaterialsForXray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreMaterialsForXray, "BmScript.RCatwomanForensicsDevice.RestoreMaterialsForXray", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(force_swap, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
         return;
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe override void DrawHUD(BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmScript.RCatwomanForensicsDevice.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmScript.RCatwomanForensicsDevice.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
         return;
     }
 
-    private static BmSDK.Function __fn_SwapMaterialsForXray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapMaterialsForXray;
     /// <summary>
     /// Function: SwapMaterialsForXray
     /// </summary>
     public unsafe override void SwapMaterialsForXray(bool force_swap = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapMaterialsForXray, "BmScript.RCatwomanForensicsDevice.SwapMaterialsForXray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapMaterialsForXray, "BmScript.RCatwomanForensicsDevice.SwapMaterialsForXray", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(force_swap, paramsPtr + 0);
@@ -124,28 +124,28 @@ public partial class RCatwomanForensicsDevice : BmSDK.BmGame.RForensicsDevice, B
         return;
     }
 
-    private static BmSDK.Function __fn_GetForensicsRenderType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForensicsRenderType;
     /// <summary>
     /// Function: GetForensicsRenderType
     /// </summary>
     public unsafe override bool GetForensicsRenderType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForensicsRenderType, "BmScript.RCatwomanForensicsDevice.GetForensicsRenderType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetForensicsRenderType, "BmScript.RCatwomanForensicsDevice.GetForensicsRenderType", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetForensicsRenderType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForensicsRenderType;
     /// <summary>
     /// Function: SetForensicsRenderType
     /// </summary>
     public unsafe override void SetForensicsRenderType(bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForensicsRenderType, "BmScript.RCatwomanForensicsDevice.SetForensicsRenderType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetForensicsRenderType, "BmScript.RCatwomanForensicsDevice.SetForensicsRenderType", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);

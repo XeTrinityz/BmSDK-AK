@@ -78,42 +78,42 @@ public partial class RAEC_DisruptedJammerReaction : BmSDK.BmGame.RAlertEventCoor
         where TComponent : class, Framework.IScriptComponent<RAEC_DisruptedJammerReaction>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_DisruptedJammerReaction.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_DisruptedJammerReaction.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FreeThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeThugs;
     /// <summary>
     /// Function: FreeThugs
     /// </summary>
     public unsafe virtual void FreeThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeThugs, "BmGame.RAEC_DisruptedJammerReaction.FreeThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreeThugs, "BmGame.RAEC_DisruptedJammerReaction.FreeThugs", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoBark;
     /// <summary>
     /// Function: DoBark
     /// </summary>
     public unsafe virtual void DoBark(BmSDK.FName BarkType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoBark, "BmGame.RAEC_DisruptedJammerReaction.DoBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoBark, "BmGame.RAEC_DisruptedJammerReaction.DoBark", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BarkType, paramsPtr + 0);
@@ -121,28 +121,28 @@ public partial class RAEC_DisruptedJammerReaction : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_DoNoiseHasBeenShutdownResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoNoiseHasBeenShutdownResponse;
     /// <summary>
     /// Function: DoNoiseHasBeenShutdownResponse
     /// </summary>
     public unsafe virtual void DoNoiseHasBeenShutdownResponse()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoNoiseHasBeenShutdownResponse, "BmGame.RAEC_DisruptedJammerReaction.DoNoiseHasBeenShutdownResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoNoiseHasBeenShutdownResponse, "BmGame.RAEC_DisruptedJammerReaction.DoNoiseHasBeenShutdownResponse", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_DisruptedJammerReaction.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_DisruptedJammerReaction.Tick", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RAEC_DisruptedJammerReaction : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_DisruptedJammerReaction.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_DisruptedJammerReaction.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -165,14 +165,14 @@ public partial class RAEC_DisruptedJammerReaction : BmSDK.BmGame.RAlertEventCoor
         return;
     }
 
-    private static BmSDK.Function __fn_OnAssign;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAssign;
     /// <summary>
     /// Function: OnAssign
     /// </summary>
     public unsafe override void OnAssign(BmSDK.BmGame.RBMAIController NewMember)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAssign, "BmGame.RAEC_DisruptedJammerReaction.OnAssign");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAssign, "BmGame.RAEC_DisruptedJammerReaction.OnAssign", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMember, paramsPtr + 0);

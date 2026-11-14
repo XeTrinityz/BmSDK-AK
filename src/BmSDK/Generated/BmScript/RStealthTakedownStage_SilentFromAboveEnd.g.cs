@@ -78,28 +78,28 @@ public partial class RStealthTakedownStage_SilentFromAboveEnd : BmSDK.BmGame.RSt
         where TComponent : class, Framework.IScriptComponent<RStealthTakedownStage_SilentFromAboveEnd>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BlockPlayerFromForceCrouching;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockPlayerFromForceCrouching;
     /// <summary>
     /// Function: BlockPlayerFromForceCrouching
     /// </summary>
     public unsafe override bool BlockPlayerFromForceCrouching()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockPlayerFromForceCrouching, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.BlockPlayerFromForceCrouching");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlockPlayerFromForceCrouching, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.BlockPlayerFromForceCrouching", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FinishAttackVictim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishAttackVictim;
     /// <summary>
     /// Function: FinishAttackVictim
     /// </summary>
     public unsafe override bool FinishAttackVictim(int iVictimNumber)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAttackVictim, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.FinishAttackVictim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishAttackVictim, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.FinishAttackVictim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iVictimNumber, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RStealthTakedownStage_SilentFromAboveEnd : BmSDK.BmGame.RSt
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GotoStageEx;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoStageEx;
     /// <summary>
     /// Function: GotoStageEx
     /// </summary>
     public unsafe override void GotoStageEx(BmSDK.BmGame.RGameInfo.EStealthTakeDownStages NextStageClass, bool bClientRequest = default, BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator EscapeLoc = default, bool bEscapeTakedown = default, bool bNextStageIsFearTakedown = default, bool bNextStageIsKnockoutSmash = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoStageEx, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.GotoStageEx");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotoStageEx, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.GotoStageEx", this);
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextStageClass, paramsPtr + 0);
@@ -127,14 +127,14 @@ public partial class RStealthTakedownStage_SilentFromAboveEnd : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_Cancel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cancel;
     /// <summary>
     /// Function: Cancel
     /// </summary>
     public unsafe override void Cancel(bool SetState = default, bool bAbandonVictims = default, bool bResetPlayerPose = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cancel, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.Cancel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cancel, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.Cancel", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SetState, paramsPtr + 0);
@@ -144,28 +144,28 @@ public partial class RStealthTakedownStage_SilentFromAboveEnd : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_FinishGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishGrapple;
     /// <summary>
     /// Function: FinishGrapple
     /// </summary>
     public unsafe virtual void FinishGrapple()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishGrapple, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.FinishGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishGrapple, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.FinishGrapple", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OverrideChosenAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideChosenAnim;
     /// <summary>
     /// Function: OverrideChosenAnim
     /// </summary>
     public unsafe override void OverrideChosenAnim(out int Anim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideChosenAnim, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.OverrideChosenAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideChosenAnim, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.OverrideChosenAnim", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Anim);
@@ -175,14 +175,14 @@ public partial class RStealthTakedownStage_SilentFromAboveEnd : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_GetReferencePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferencePosition;
     /// <summary>
     /// Function: GetReferencePosition
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.GetReferencePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReferencePosition, "BmScript.RStealthTakedownStage_SilentFromAboveEnd.GetReferencePosition", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ReferencePosition);

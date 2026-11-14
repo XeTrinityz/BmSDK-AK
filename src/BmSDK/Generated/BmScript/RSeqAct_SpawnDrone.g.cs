@@ -78,56 +78,56 @@ public partial class RSeqAct_SpawnDrone : BmSDK.BmGame.RSeqAct_SpawnDroneBase, B
         where TComponent : class, Framework.IScriptComponent<RSeqAct_SpawnDrone>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyDestroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyDestroyed;
     /// <summary>
     /// Function: NotifyDestroyed
     /// </summary>
     public unsafe virtual void NotifyDestroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyDestroyed, "BmScript.RSeqAct_SpawnDrone.NotifyDestroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyDestroyed, "BmScript.RSeqAct_SpawnDrone.NotifyDestroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyBlinded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyBlinded;
     /// <summary>
     /// Function: NotifyBlinded
     /// </summary>
     public unsafe virtual void NotifyBlinded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBlinded, "BmScript.RSeqAct_SpawnDrone.NotifyBlinded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyBlinded, "BmScript.RSeqAct_SpawnDrone.NotifyBlinded", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyHitByDisruptor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyHitByDisruptor;
     /// <summary>
     /// Function: NotifyHitByDisruptor
     /// </summary>
     public unsafe virtual void NotifyHitByDisruptor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyHitByDisruptor, "BmScript.RSeqAct_SpawnDrone.NotifyHitByDisruptor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyHitByDisruptor, "BmScript.RSeqAct_SpawnDrone.NotifyHitByDisruptor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SpawnDrone.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_SpawnDrone.Activated", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

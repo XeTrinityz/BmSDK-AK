@@ -78,14 +78,14 @@ public partial class RCombatMove_BatmanMultiStrike : BmSDK.BmGame.RCombatMove_Ba
         where TComponent : class, Framework.IScriptComponent<RCombatMove_BatmanMultiStrike>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AddTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTarget;
     /// <summary>
     /// Function: AddTarget
     /// </summary>
     public unsafe virtual void AddTarget(BmSDK.BmGame.RPawnVillain NewTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddTarget, "BmGame.RCombatMove_BatmanMultiStrike.AddTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddTarget, "BmGame.RCombatMove_BatmanMultiStrike.AddTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTarget, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RCombatMove_BatmanMultiStrike : BmSDK.BmGame.RCombatMove_Ba
         return;
     }
 
-    private static BmSDK.Function __fn_StartImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartImpact;
     /// <summary>
     /// Function: StartImpact
     /// </summary>
     public unsafe override void StartImpact()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartImpact, "BmGame.RCombatMove_BatmanMultiStrike.StartImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartImpact, "BmGame.RCombatMove_BatmanMultiStrike.StartImpact", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -73,182 +73,182 @@ public partial class RPawnVillainCombatExpertBase : BmSDK.BmGame.RPawnVillainNin
         where TComponent : class, Framework.IScriptComponent<RPawnVillainCombatExpertBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IncNumTimesHitWhileVulnerable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncNumTimesHitWhileVulnerable;
     /// <summary>
     /// Function: IncNumTimesHitWhileVulnerable
     /// </summary>
     public unsafe virtual void IncNumTimesHitWhileVulnerable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncNumTimesHitWhileVulnerable, "BmGame.RPawnVillainCombatExpertBase.IncNumTimesHitWhileVulnerable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncNumTimesHitWhileVulnerable, "BmGame.RPawnVillainCombatExpertBase.IncNumTimesHitWhileVulnerable", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IncBlocks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncBlocks;
     /// <summary>
     /// Function: IncBlocks
     /// </summary>
     public unsafe virtual void IncBlocks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncBlocks, "BmGame.RPawnVillainCombatExpertBase.IncBlocks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncBlocks, "BmGame.RPawnVillainCombatExpertBase.IncBlocks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHealth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHealth;
     /// <summary>
     /// Function: SetHealth
     /// </summary>
     public unsafe override void SetHealth()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHealth, "BmGame.RPawnVillainCombatExpertBase.SetHealth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHealth, "BmGame.RPawnVillainCombatExpertBase.SetHealth", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostInitCharacter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostInitCharacter;
     /// <summary>
     /// Function: PostInitCharacter
     /// </summary>
     public unsafe override void PostInitCharacter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostInitCharacter, "BmGame.RPawnVillainCombatExpertBase.PostInitCharacter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostInitCharacter, "BmGame.RPawnVillainCombatExpertBase.PostInitCharacter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BladeOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BladeOff;
     /// <summary>
     /// Function: BladeOff
     /// </summary>
     public unsafe virtual void BladeOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BladeOff, "BmGame.RPawnVillainCombatExpertBase.BladeOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BladeOff, "BmGame.RPawnVillainCombatExpertBase.BladeOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BladeOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BladeOn;
     /// <summary>
     /// Function: BladeOn
     /// </summary>
     public unsafe virtual void BladeOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BladeOn, "BmGame.RPawnVillainCombatExpertBase.BladeOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BladeOn, "BmGame.RPawnVillainCombatExpertBase.BladeOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EyesOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EyesOff;
     /// <summary>
     /// Function: EyesOff
     /// </summary>
     public unsafe virtual void EyesOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EyesOff, "BmGame.RPawnVillainCombatExpertBase.EyesOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EyesOff, "BmGame.RPawnVillainCombatExpertBase.EyesOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EyesOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EyesOn;
     /// <summary>
     /// Function: EyesOn
     /// </summary>
     public unsafe virtual void EyesOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EyesOn, "BmGame.RPawnVillainCombatExpertBase.EyesOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EyesOn, "BmGame.RPawnVillainCombatExpertBase.EyesOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetStrikeImpactPS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStrikeImpactPS;
     /// <summary>
     /// Function: GetStrikeImpactPS
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem GetStrikeImpactPS()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeImpactPS, "BmGame.RPawnVillainCombatExpertBase.GetStrikeImpactPS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStrikeImpactPS, "BmGame.RPawnVillainCombatExpertBase.GetStrikeImpactPS", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.ParticleSystem>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetStrikeTrailPS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStrikeTrailPS;
     /// <summary>
     /// Function: GetStrikeTrailPS
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem GetStrikeTrailPS()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStrikeTrailPS, "BmGame.RPawnVillainCombatExpertBase.GetStrikeTrailPS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStrikeTrailPS, "BmGame.RPawnVillainCombatExpertBase.GetStrikeTrailPS", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.ParticleSystem>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPlayerImpactBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerImpactBone;
     /// <summary>
     /// Function: GetPlayerImpactBone
     /// </summary>
     public unsafe virtual BmSDK.FName GetPlayerImpactBone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerImpactBone, "BmGame.RPawnVillainCombatExpertBase.GetPlayerImpactBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerImpactBone, "BmGame.RPawnVillainCombatExpertBase.GetPlayerImpactBone", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetBlock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlock;
     /// <summary>
     /// Function: SetBlock
     /// </summary>
     public unsafe virtual void SetBlock()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlock, "BmGame.RPawnVillainCombatExpertBase.SetBlock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBlock, "BmGame.RPawnVillainCombatExpertBase.SetBlock", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetVulnerable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVulnerable;
     /// <summary>
     /// Function: SetVulnerable
     /// </summary>
     public unsafe virtual void SetVulnerable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVulnerable, "BmGame.RPawnVillainCombatExpertBase.SetVulnerable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVulnerable, "BmGame.RPawnVillainCombatExpertBase.SetVulnerable", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

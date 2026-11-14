@@ -73,14 +73,14 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<OnlineStatsRead>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetRankForPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRankForPlayer;
     /// <summary>
     /// Function: GetRankForPlayer
     /// </summary>
     public unsafe virtual int GetRankForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRankForPlayer, "Engine.OnlineStatsRead.GetRankForPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRankForPlayer, "Engine.OnlineStatsRead.GetRankForPlayer", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 0);
@@ -95,17 +95,17 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPlayer;
     /// <summary>
     /// Function: AddPlayer
     /// </summary>
-    public unsafe virtual void AddPlayer(BmSDK.FString PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
+    public unsafe virtual void AddPlayer(BmSDK.FStringArg PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPlayer, "Engine.OnlineStatsRead.AddPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPlayer, "Engine.OnlineStatsRead.AddPlayer", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerName, paramsPtr + 0);
+        PlayerName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -115,17 +115,18 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsStatZero;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStatZero;
     /// <summary>
     /// Function: IsStatZero
     /// </summary>
     public unsafe virtual bool IsStatZero(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStatZero, "Engine.OnlineStatsRead.IsStatZero");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStatZero, "Engine.OnlineStatsRead.IsStatZero", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 0);
@@ -141,14 +142,14 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetStatValueForPlayerAsString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStatValueForPlayerAsString;
     /// <summary>
     /// Function: GetStatValueForPlayerAsString
     /// </summary>
     public unsafe virtual bool GetStatValueForPlayerAsString(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, out BmSDK.FString StatValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStatValueForPlayerAsString, "Engine.OnlineStatsRead.GetStatValueForPlayerAsString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStatValueForPlayerAsString, "Engine.OnlineStatsRead.GetStatValueForPlayerAsString", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 0);
@@ -165,14 +166,14 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_SetFloatStatValueForPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatStatValueForPlayer;
     /// <summary>
     /// Function: SetFloatStatValueForPlayer
     /// </summary>
     public unsafe virtual bool SetFloatStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, float StatValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFloatStatValueForPlayer, "Engine.OnlineStatsRead.SetFloatStatValueForPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFloatStatValueForPlayer, "Engine.OnlineStatsRead.SetFloatStatValueForPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 0);
@@ -189,14 +190,14 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetFloatStatValueForPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatStatValueForPlayer;
     /// <summary>
     /// Function: GetFloatStatValueForPlayer
     /// </summary>
     public unsafe virtual bool GetFloatStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, out float StatValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatStatValueForPlayer, "Engine.OnlineStatsRead.GetFloatStatValueForPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatStatValueForPlayer, "Engine.OnlineStatsRead.GetFloatStatValueForPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 0);
@@ -215,14 +216,14 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetIntStatValueForPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIntStatValueForPlayer;
     /// <summary>
     /// Function: SetIntStatValueForPlayer
     /// </summary>
     public unsafe virtual bool SetIntStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, int StatValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIntStatValueForPlayer, "Engine.OnlineStatsRead.SetIntStatValueForPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetIntStatValueForPlayer, "Engine.OnlineStatsRead.SetIntStatValueForPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 0);
@@ -239,14 +240,14 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetIntStatValueForPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIntStatValueForPlayer;
     /// <summary>
     /// Function: GetIntStatValueForPlayer
     /// </summary>
     public unsafe virtual bool GetIntStatValueForPlayer(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int StatColumnNo, out int StatValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIntStatValueForPlayer, "Engine.OnlineStatsRead.GetIntStatValueForPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIntStatValueForPlayer, "Engine.OnlineStatsRead.GetIntStatValueForPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 0);
@@ -265,14 +266,14 @@ public partial class OnlineStatsRead : BmSDK.Engine.OnlineStats, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_OnReadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnReadComplete;
     /// <summary>
     /// Function: OnReadComplete
     /// </summary>
     public unsafe virtual void OnReadComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReadComplete, "Engine.OnlineStatsRead.OnReadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnReadComplete, "Engine.OnlineStatsRead.OnReadComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

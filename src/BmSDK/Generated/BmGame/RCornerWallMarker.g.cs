@@ -78,14 +78,14 @@ public partial class RCornerWallMarker : BmSDK.BmGame.RCornerWallMarkerBase, BmS
         where TComponent : class, Framework.IScriptComponent<RCornerWallMarker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAmbushDir;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAmbushDir;
     /// <summary>
     /// Function: GetAmbushDir
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RCornerPointBase.AmbushDir GetAmbushDir(BmSDK.BmGame.RCornerWallMarker AmbushEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAmbushDir, "BmGame.RCornerWallMarker.GetAmbushDir");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAmbushDir, "BmGame.RCornerWallMarker.GetAmbushDir", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AmbushEnd, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RCornerWallMarker : BmSDK.BmGame.RCornerWallMarkerBase, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RCornerPointBase.AmbushDir>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UnLock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnLock;
     /// <summary>
     /// Function: UnLock
     /// </summary>
     public unsafe virtual void UnLock(BmSDK.BmGame.RBMAIController Unlocker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnLock, "BmGame.RCornerWallMarker.UnLock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnLock, "BmGame.RCornerWallMarker.UnLock", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Unlocker, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RCornerWallMarker : BmSDK.BmGame.RCornerWallMarkerBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_Lock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Lock;
     /// <summary>
     /// Function: Lock
     /// </summary>
     public unsafe virtual void Lock(BmSDK.BmGame.RBMAIController NewLockee)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Lock, "BmGame.RCornerWallMarker.Lock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Lock, "BmGame.RCornerWallMarker.Lock", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLockee, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RBMAIAction_TerrifiedSearchMove : BmSDK.BmGame.RBMAIAction_
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_TerrifiedSearchMove>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DoTerrorTurn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoTerrorTurn;
     /// <summary>
     /// Function: DoTerrorTurn
     /// </summary>
     public unsafe virtual void DoTerrorTurn(bool bBackToFront)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoTerrorTurn, "BmGame.RBMAIAction_TerrifiedSearchMove.DoTerrorTurn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoTerrorTurn, "BmGame.RBMAIAction_TerrifiedSearchMove.DoTerrorTurn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bBackToFront, paramsPtr + 0);
@@ -93,42 +93,42 @@ public partial class RBMAIAction_TerrifiedSearchMove : BmSDK.BmGame.RBMAIAction_
         return;
     }
 
-    private static BmSDK.Function __fn_HandlesGlance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandlesGlance;
     /// <summary>
     /// Function: HandlesGlance
     /// </summary>
     public unsafe override bool HandlesGlance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlesGlance, "BmGame.RBMAIAction_TerrifiedSearchMove.HandlesGlance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandlesGlance, "BmGame.RBMAIAction_TerrifiedSearchMove.HandlesGlance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckForPlayerCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForPlayerCollision;
     /// <summary>
     /// Function: CheckForPlayerCollision
     /// </summary>
     public unsafe virtual void CheckForPlayerCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForPlayerCollision, "BmGame.RBMAIAction_TerrifiedSearchMove.CheckForPlayerCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForPlayerCollision, "BmGame.RBMAIAction_TerrifiedSearchMove.CheckForPlayerCollision", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PathFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PathFound;
     /// <summary>
     /// Function: PathFound
     /// </summary>
     public unsafe override void PathFound(BmSDK.BmGame.RNavigationHandle NotifyHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PathFound, "BmGame.RBMAIAction_TerrifiedSearchMove.PathFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PathFound, "BmGame.RBMAIAction_TerrifiedSearchMove.PathFound", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NotifyHandle, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RBMAIAction_TerrifiedSearchMove : BmSDK.BmGame.RBMAIAction_
         return;
     }
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_TerrifiedSearchMove.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.RBMAIAction_TerrifiedSearchMove.ActionTick", this);
         byte* paramsPtr = stackalloc byte[22];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -151,84 +151,84 @@ public partial class RBMAIAction_TerrifiedSearchMove : BmSDK.BmGame.RBMAIAction_
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetDirectionOfFocus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDirectionOfFocus;
     /// <summary>
     /// Function: GetDirectionOfFocus
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetDirectionOfFocus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDirectionOfFocus, "BmGame.RBMAIAction_TerrifiedSearchMove.GetDirectionOfFocus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDirectionOfFocus, "BmGame.RBMAIAction_TerrifiedSearchMove.GetDirectionOfFocus", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAlignedForTurn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAlignedForTurn;
     /// <summary>
     /// Function: IsAlignedForTurn
     /// </summary>
     public unsafe virtual bool IsAlignedForTurn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAlignedForTurn, "BmGame.RBMAIAction_TerrifiedSearchMove.IsAlignedForTurn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAlignedForTurn, "BmGame.RBMAIAction_TerrifiedSearchMove.IsAlignedForTurn", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanTurn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTurn;
     /// <summary>
     /// Function: CanTurn
     /// </summary>
     public unsafe virtual bool CanTurn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTurn, "BmGame.RBMAIAction_TerrifiedSearchMove.CanTurn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTurn, "BmGame.RBMAIAction_TerrifiedSearchMove.CanTurn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BuildHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildHandle;
     /// <summary>
     /// Function: BuildHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle BuildHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildHandle, "BmGame.RBMAIAction_TerrifiedSearchMove.BuildHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildHandle, "BmGame.RBMAIAction_TerrifiedSearchMove.BuildHandle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_TerrifiedSearchMove.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMAIAction_TerrifiedSearchMove.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupGoal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupGoal;
     /// <summary>
     /// Function: SetupGoal
     /// </summary>
     public unsafe virtual void SetupGoal(System.Numerics.Vector3 NewGoalPos, bool bNewUseAdditionalPoint = default, System.Numerics.Vector3 NewGoalPosSecond = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupGoal, "BmGame.RBMAIAction_TerrifiedSearchMove.SetupGoal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupGoal, "BmGame.RBMAIAction_TerrifiedSearchMove.SetupGoal", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGoalPos, paramsPtr + 0);

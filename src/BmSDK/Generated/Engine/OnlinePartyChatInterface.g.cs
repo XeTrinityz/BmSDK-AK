@@ -53,7 +53,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnPartyMembersInfoChanged
     /// </summary>
-    public unsafe void OnPartyMembersInfoChanged(BmSDK.FString PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int CustomData1, int CustomData2, int CustomData3, int CustomData4);
+    public unsafe void OnPartyMembersInfoChanged(BmSDK.FStringArg PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, int CustomData1, int CustomData2, int CustomData3, int CustomData4);
 
     /// <summary>
     /// Function: ClearPartyMemberListChangedDelegate
@@ -68,7 +68,7 @@ public partial interface OnlinePartyChatInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnPartyMemberListChanged
     /// </summary>
-    public unsafe void OnPartyMemberListChanged(bool bJoinedOrLeft, BmSDK.FString PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID);
+    public unsafe void OnPartyMemberListChanged(bool bJoinedOrLeft, BmSDK.FStringArg PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID);
 
     /// <summary>
     /// Function: GetPartyMemberInformation

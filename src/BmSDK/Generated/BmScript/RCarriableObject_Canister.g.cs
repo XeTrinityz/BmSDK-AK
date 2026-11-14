@@ -78,28 +78,28 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
         where TComponent : class, Framework.IScriptComponent<RCarriableObject_Canister>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanBePickedUpFromAnyDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBePickedUpFromAnyDirection;
     /// <summary>
     /// Function: CanBePickedUpFromAnyDirection
     /// </summary>
     public unsafe override bool CanBePickedUpFromAnyDirection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePickedUpFromAnyDirection, "BmScript.RCarriableObject_Canister.CanBePickedUpFromAnyDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBePickedUpFromAnyDirection, "BmScript.RCarriableObject_Canister.CanBePickedUpFromAnyDirection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ApplyImpulseAwayFromCarrier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyImpulseAwayFromCarrier;
     /// <summary>
     /// Function: ApplyImpulseAwayFromCarrier
     /// </summary>
     public unsafe override void ApplyImpulseAwayFromCarrier(BmSDK.Engine.Pawn carrier)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyImpulseAwayFromCarrier, "BmScript.RCarriableObject_Canister.ApplyImpulseAwayFromCarrier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyImpulseAwayFromCarrier, "BmScript.RCarriableObject_Canister.ApplyImpulseAwayFromCarrier", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(carrier, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
         return;
     }
 
-    private static BmSDK.Function __fn_GetPickupAnimStartLoc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPickupAnimStartLoc;
     /// <summary>
     /// Function: GetPickupAnimStartLoc
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetPickupAnimStartLoc(BmSDK.BmGame.RBMPawnAI Pawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickupAnimStartLoc, "BmScript.RCarriableObject_Canister.GetPickupAnimStartLoc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPickupAnimStartLoc, "BmScript.RCarriableObject_Canister.GetPickupAnimStartLoc", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RCarriableObject_Canister : BmSDK.BmGame.RCarriableObjectBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPickupFromFloorRot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPickupFromFloorRot;
     /// <summary>
     /// Function: GetPickupFromFloorRot
     /// </summary>
     public unsafe override BmSDK.Rotator GetPickupFromFloorRot(System.Numerics.Vector3 pawnLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickupFromFloorRot, "BmScript.RCarriableObject_Canister.GetPickupFromFloorRot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPickupFromFloorRot, "BmScript.RCarriableObject_Canister.GetPickupFromFloorRot", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pawnLoc, paramsPtr + 0);

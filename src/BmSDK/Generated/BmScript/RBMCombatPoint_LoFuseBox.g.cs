@@ -78,14 +78,14 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
         where TComponent : class, Framework.IScriptComponent<RBMCombatPoint_LoFuseBox>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsValidLoc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidLoc;
     /// <summary>
     /// Function: IsValidLoc
     /// </summary>
     public unsafe override bool IsValidLoc(BmSDK.BmGame.RPawnPlayerCombat TestPlayer, BmSDK.BmGame.RPawnVillain TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidLoc, "BmScript.RBMCombatPoint_LoFuseBox.IsValidLoc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidLoc, "BmScript.RBMCombatPoint_LoFuseBox.IsValidLoc", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPlayer, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_PlayDestroyAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayDestroyAnim;
     /// <summary>
     /// Function: PlayDestroyAnim
     /// </summary>
     public unsafe override bool PlayDestroyAnim(BmSDK.FName AnimName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDestroyAnim, "BmScript.RBMCombatPoint_LoFuseBox.PlayDestroyAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayDestroyAnim, "BmScript.RBMCombatPoint_LoFuseBox.PlayDestroyAnim", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimName;
     /// <summary>
     /// Function: GetAnimName
     /// </summary>
     public unsafe override BmSDK.FName GetAnimName(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimName, "BmScript.RBMCombatPoint_LoFuseBox.GetAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimName, "BmScript.RBMCombatPoint_LoFuseBox.GetAnimName", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPawn, paramsPtr + 0);
@@ -125,56 +125,56 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetMeshYawOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMeshYawOffset;
     /// <summary>
     /// Function: GetMeshYawOffset
     /// </summary>
     public unsafe override float GetMeshYawOffset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMeshYawOffset, "BmScript.RBMCombatPoint_LoFuseBox.GetMeshYawOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMeshYawOffset, "BmScript.RBMCombatPoint_LoFuseBox.GetMeshYawOffset", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopElectric;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopElectric;
     /// <summary>
     /// Function: StopElectric
     /// </summary>
     public unsafe virtual void StopElectric()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopElectric, "BmScript.RBMCombatPoint_LoFuseBox.StopElectric");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopElectric, "BmScript.RBMCombatPoint_LoFuseBox.StopElectric", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnFxEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFxEvent;
     /// <summary>
     /// Function: OnFxEvent
     /// </summary>
     public unsafe override void OnFxEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFxEvent, "BmScript.RBMCombatPoint_LoFuseBox.OnFxEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFxEvent, "BmScript.RBMCombatPoint_LoFuseBox.OnFxEvent", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UsedByPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UsedByPawn;
     /// <summary>
     /// Function: UsedByPawn
     /// </summary>
     public unsafe override void UsedByPawn(BmSDK.BmGame.RPawnCombat NewUser, BmSDK.Engine.Actor NewTarget = default, bool bUsedDuringTaunt = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedByPawn, "BmScript.RBMCombatPoint_LoFuseBox.UsedByPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UsedByPawn, "BmScript.RBMCombatPoint_LoFuseBox.UsedByPawn", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUser, paramsPtr + 0);
@@ -184,14 +184,14 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
         return;
     }
 
-    private static BmSDK.Function __fn_DebugReset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugReset;
     /// <summary>
     /// Function: DebugReset
     /// </summary>
     public unsafe override void DebugReset(BmSDK.BmGame.RBMCombatManager CM)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugReset, "BmScript.RBMCombatPoint_LoFuseBox.DebugReset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugReset, "BmScript.RBMCombatPoint_LoFuseBox.DebugReset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CM, paramsPtr + 0);
@@ -199,42 +199,42 @@ public partial class RBMCombatPoint_LoFuseBox : BmSDK.BmGame.RBMCombatPoint_Envi
         return;
     }
 
-    private static BmSDK.Function __fn_OnSwapMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSwapMesh;
     /// <summary>
     /// Function: OnSwapMesh
     /// </summary>
     public unsafe override void OnSwapMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSwapMesh, "BmScript.RBMCombatPoint_LoFuseBox.OnSwapMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSwapMesh, "BmScript.RBMCombatPoint_LoFuseBox.OnSwapMesh", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupHighlightMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupHighlightMesh;
     /// <summary>
     /// Function: SetupHighlightMesh
     /// </summary>
     public unsafe override void SetupHighlightMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupHighlightMesh, "BmScript.RBMCombatPoint_LoFuseBox.SetupHighlightMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupHighlightMesh, "BmScript.RBMCombatPoint_LoFuseBox.SetupHighlightMesh", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterStasisCheckMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterStasisCheckMesh;
     /// <summary>
     /// Function: RegisterStasisCheckMesh
     /// </summary>
     public unsafe override void RegisterStasisCheckMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterStasisCheckMesh, "BmScript.RBMCombatPoint_LoFuseBox.RegisterStasisCheckMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterStasisCheckMesh, "BmScript.RBMCombatPoint_LoFuseBox.RegisterStasisCheckMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

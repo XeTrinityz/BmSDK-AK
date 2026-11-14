@@ -78,42 +78,42 @@ public partial class RSeqAct_SpawnPlayerCharacter : BmSDK.BmGame.RSeqAct_Spawner
         where TComponent : class, Framework.IScriptComponent<RSeqAct_SpawnPlayerCharacter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DestroySpawnedActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroySpawnedActor;
     /// <summary>
     /// Function: DestroySpawnedActor
     /// </summary>
     public unsafe virtual void DestroySpawnedActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroySpawnedActor, "BmScript.RSeqAct_SpawnPlayerCharacter.DestroySpawnedActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroySpawnedActor, "BmScript.RSeqAct_SpawnPlayerCharacter.DestroySpawnedActor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDataLoaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDataLoaded;
     /// <summary>
     /// Function: OnDataLoaded
     /// </summary>
     public unsafe override void OnDataLoaded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDataLoaded, "BmScript.RSeqAct_SpawnPlayerCharacter.OnDataLoaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDataLoaded, "BmScript.RSeqAct_SpawnPlayerCharacter.OnDataLoaded", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SpawnPlayerCharacter.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_SpawnPlayerCharacter.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

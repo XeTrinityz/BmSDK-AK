@@ -78,14 +78,14 @@ public partial class RBMAIAction_SmokePerim : BmSDK.BmGame.RBMAIAction, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_SmokePerim>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_SmokePerim.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.RBMAIAction_SmokePerim.ActionTick", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RBMAIAction_SmokePerim : BmSDK.BmGame.RBMAIAction, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PlayLookAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayLookAnim;
     /// <summary>
     /// Function: PlayLookAnim
     /// </summary>
     public unsafe virtual void PlayLookAnim(BmSDK.FName AnimName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayLookAnim, "BmGame.RBMAIAction_SmokePerim.PlayLookAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayLookAnim, "BmGame.RBMAIAction_SmokePerim.PlayLookAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -108,28 +108,28 @@ public partial class RBMAIAction_SmokePerim : BmSDK.BmGame.RBMAIAction, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_FaceAtIsCloseEnoughToTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FaceAtIsCloseEnoughToTarget;
     /// <summary>
     /// Function: FaceAtIsCloseEnoughToTarget
     /// </summary>
     public unsafe virtual bool FaceAtIsCloseEnoughToTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FaceAtIsCloseEnoughToTarget, "BmGame.RBMAIAction_SmokePerim.FaceAtIsCloseEnoughToTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FaceAtIsCloseEnoughToTarget, "BmGame.RBMAIAction_SmokePerim.FaceAtIsCloseEnoughToTarget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetLifetime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLifetime;
     /// <summary>
     /// Function: SetLifetime
     /// </summary>
     public unsafe virtual void SetLifetime(float NewLifetime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLifetime, "BmGame.RBMAIAction_SmokePerim.SetLifetime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLifetime, "BmGame.RBMAIAction_SmokePerim.SetLifetime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLifetime, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class RBMAIAction_SmokePerim : BmSDK.BmGame.RBMAIAction, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetAimTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAimTarget;
     /// <summary>
     /// Function: SetAimTarget
     /// </summary>
     public unsafe virtual void SetAimTarget(System.Numerics.Vector3 NewTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAimTarget, "BmGame.RBMAIAction_SmokePerim.SetAimTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAimTarget, "BmGame.RBMAIAction_SmokePerim.SetAimTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTarget, paramsPtr + 0);

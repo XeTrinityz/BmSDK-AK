@@ -78,28 +78,28 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<AkDialogueComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetRecentVoiceId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRecentVoiceId;
     /// <summary>
     /// Function: GetRecentVoiceId
     /// </summary>
     public unsafe virtual int GetRecentVoiceId()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRecentVoiceId, "Engine.AkDialogueComponent.GetRecentVoiceId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRecentVoiceId, "Engine.AkDialogueComponent.GetRecentVoiceId", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsDefault;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDefault;
     /// <summary>
     /// Function: IsDefault
     /// </summary>
     public unsafe virtual bool IsDefault()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDefault, "Engine.AkDialogueComponent.IsDefault");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDefault, "Engine.AkDialogueComponent.IsDefault", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -113,14 +113,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetDefault;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDefault;
     /// <summary>
     /// Function: SetDefault
     /// </summary>
     public unsafe virtual void SetDefault(bool MakeDefault)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDefault, "Engine.AkDialogueComponent.SetDefault");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDefault, "Engine.AkDialogueComponent.SetDefault", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MakeDefault, paramsPtr + 0);
@@ -135,14 +135,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldKillDialogueOnDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldKillDialogueOnDestroy;
     /// <summary>
     /// Function: ShouldKillDialogueOnDestroy
     /// </summary>
     public unsafe virtual bool ShouldKillDialogueOnDestroy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldKillDialogueOnDestroy, "Engine.AkDialogueComponent.ShouldKillDialogueOnDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldKillDialogueOnDestroy, "Engine.AkDialogueComponent.ShouldKillDialogueOnDestroy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -156,14 +156,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_KillDialogueOnDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillDialogueOnDestroy;
     /// <summary>
     /// Function: KillDialogueOnDestroy
     /// </summary>
     public unsafe virtual void KillDialogueOnDestroy(bool Kill)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillDialogueOnDestroy, "Engine.AkDialogueComponent.KillDialogueOnDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillDialogueOnDestroy, "Engine.AkDialogueComponent.KillDialogueOnDestroy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Kill, paramsPtr + 0);
@@ -178,14 +178,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetCustomVoiceSubtitleLookup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomVoiceSubtitleLookup;
     /// <summary>
     /// Function: GetCustomVoiceSubtitleLookup
     /// </summary>
     public unsafe virtual BmSDK.FString GetCustomVoiceSubtitleLookup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomVoiceSubtitleLookup, "Engine.AkDialogueComponent.GetCustomVoiceSubtitleLookup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomVoiceSubtitleLookup, "Engine.AkDialogueComponent.GetCustomVoiceSubtitleLookup", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -199,14 +199,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearCustomVoiceSubtitleLookup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCustomVoiceSubtitleLookup;
     /// <summary>
     /// Function: ClearCustomVoiceSubtitleLookup
     /// </summary>
     public unsafe virtual void ClearCustomVoiceSubtitleLookup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearCustomVoiceSubtitleLookup, "Engine.AkDialogueComponent.ClearCustomVoiceSubtitleLookup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearCustomVoiceSubtitleLookup, "Engine.AkDialogueComponent.ClearCustomVoiceSubtitleLookup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -220,17 +220,17 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetCustomVoiceSubtitleLookup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCustomVoiceSubtitleLookup;
     /// <summary>
     /// Function: SetCustomVoiceSubtitleLookup
     /// </summary>
-    public unsafe virtual void SetCustomVoiceSubtitleLookup(BmSDK.FString voiceSubLookup)
+    public unsafe virtual void SetCustomVoiceSubtitleLookup(BmSDK.FStringArg voiceSubLookup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomVoiceSubtitleLookup, "Engine.AkDialogueComponent.SetCustomVoiceSubtitleLookup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCustomVoiceSubtitleLookup, "Engine.AkDialogueComponent.SetCustomVoiceSubtitleLookup", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(voiceSubLookup, paramsPtr + 0);
+        voiceSubLookup.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -239,21 +239,22 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerEmote;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEmote;
     /// <summary>
     /// Function: TriggerEmote
     /// </summary>
-    public unsafe virtual int TriggerEmote(BmSDK.Engine.AkEmoteType emType, BmSDK.FString dlgTag = default)
+    public unsafe virtual int TriggerEmote(BmSDK.Engine.AkEmoteType emType, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEmote, "Engine.AkDialogueComponent.TriggerEmote");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEmote, "Engine.AkDialogueComponent.TriggerEmote", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(emType, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 8);
+        dlgTag.WriteTo(paramsPtr + 8);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -262,17 +263,18 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_GetVoice;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoice;
     /// <summary>
     /// Function: GetVoice
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueVoice GetVoice()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVoice, "Engine.AkDialogueComponent.GetVoice");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVoice, "Engine.AkDialogueComponent.GetVoice", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -286,14 +288,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueVoice>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetVoice;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVoice;
     /// <summary>
     /// Function: SetVoice
     /// </summary>
     public unsafe virtual void SetVoice(BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVoice, "Engine.AkDialogueComponent.SetVoice");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVoice, "Engine.AkDialogueComponent.SetVoice", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgVoice, paramsPtr + 0);
@@ -308,14 +310,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_IsEmoting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEmoting;
     /// <summary>
     /// Function: IsEmoting
     /// </summary>
     public unsafe virtual bool IsEmoting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEmoting, "Engine.AkDialogueComponent.IsEmoting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEmoting, "Engine.AkDialogueComponent.IsEmoting", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -329,14 +331,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EmotesAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EmotesAllowed;
     /// <summary>
     /// Function: EmotesAllowed
     /// </summary>
     public unsafe virtual bool EmotesAllowed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EmotesAllowed, "Engine.AkDialogueComponent.EmotesAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EmotesAllowed, "Engine.AkDialogueComponent.EmotesAllowed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -350,14 +352,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AllowEmotes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowEmotes;
     /// <summary>
     /// Function: AllowEmotes
     /// </summary>
     public unsafe virtual void AllowEmotes(bool allow, bool stopEmote = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowEmotes, "Engine.AkDialogueComponent.AllowEmotes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowEmotes, "Engine.AkDialogueComponent.AllowEmotes", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allow, paramsPtr + 0);
@@ -373,14 +375,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_HasSpoken;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasSpoken;
     /// <summary>
     /// Function: HasSpoken
     /// </summary>
     public unsafe virtual bool HasSpoken(out float timeSinceLastSpoke)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasSpoken, "Engine.AkDialogueComponent.HasSpoken");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasSpoken, "Engine.AkDialogueComponent.HasSpoken", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out timeSinceLastSpoke);
@@ -397,14 +399,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsSpeechSuppressingPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeechSuppressingPrompts;
     /// <summary>
     /// Function: IsSpeechSuppressingPrompts
     /// </summary>
     public unsafe virtual bool IsSpeechSuppressingPrompts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSpeechSuppressingPrompts, "Engine.AkDialogueComponent.IsSpeechSuppressingPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSpeechSuppressingPrompts, "Engine.AkDialogueComponent.IsSpeechSuppressingPrompts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -418,14 +420,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsWaitingToSpeak;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWaitingToSpeak;
     /// <summary>
     /// Function: IsWaitingToSpeak
     /// </summary>
     public unsafe virtual bool IsWaitingToSpeak(bool rightNow = default, bool withPlayer = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWaitingToSpeak, "Engine.AkDialogueComponent.IsWaitingToSpeak");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWaitingToSpeak, "Engine.AkDialogueComponent.IsWaitingToSpeak", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(rightNow, paramsPtr + 0);
@@ -441,14 +443,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsSpeakingLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeakingLine;
     /// <summary>
     /// Function: IsSpeakingLine
     /// </summary>
     public unsafe virtual bool IsSpeakingLine(BmSDK.Engine.AkDialogueLine thisLine)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSpeakingLine, "Engine.AkDialogueComponent.IsSpeakingLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSpeakingLine, "Engine.AkDialogueComponent.IsSpeakingLine", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(thisLine, paramsPtr + 0);
@@ -463,14 +465,14 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsSpeaking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeaking;
     /// <summary>
     /// Function: IsSpeaking
     /// </summary>
     public unsafe virtual bool IsSpeaking(bool rightNow = default, bool withPlayer = default, bool checkVoiceAlso = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSpeaking, "Engine.AkDialogueComponent.IsSpeaking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSpeaking, "Engine.AkDialogueComponent.IsSpeaking", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(rightNow, paramsPtr + 0);
@@ -487,18 +489,18 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_InterruptSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterruptSpeech;
     /// <summary>
     /// Function: InterruptSpeech
     /// </summary>
-    public unsafe virtual void InterruptSpeech(float fadeTime = default, BmSDK.FString dlgTag = default)
+    public unsafe virtual void InterruptSpeech(float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterruptSpeech, "Engine.AkDialogueComponent.InterruptSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterruptSpeech, "Engine.AkDialogueComponent.InterruptSpeech", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fadeTime, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 4);
+        dlgTag.WriteTo(paramsPtr + 4);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -507,21 +509,22 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_StopSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeech;
     /// <summary>
     /// Function: StopSpeech
     /// </summary>
-    public unsafe virtual void StopSpeech(bool exceptEmotes, BmSDK.FString dlgTag = default)
+    public unsafe virtual void StopSpeech(bool exceptEmotes, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpeech, "Engine.AkDialogueComponent.StopSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSpeech, "Engine.AkDialogueComponent.StopSpeech", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(exceptEmotes, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 4);
+        dlgTag.WriteTo(paramsPtr + 4);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -530,21 +533,22 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_StartSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeech;
     /// <summary>
     /// Function: StartSpeech
     /// </summary>
-    public unsafe virtual int StartSpeech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, BmSDK.FString dlgTag = default)
+    public unsafe virtual int StartSpeech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, out BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSpeech, "Engine.AkDialogueComponent.StartSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSpeech, "Engine.AkDialogueComponent.StartSpeech", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgSpeech, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 124);
+        dlgTag.WriteTo(paramsPtr + 124);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -553,6 +557,7 @@ public partial class AkDialogueComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 124);
         dlgOpts = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogue.FAkSpeechOptions>(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 140);
     }

@@ -101,14 +101,14 @@ public partial class Texture2D : BmSDK.Engine.Texture, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Texture2D>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetPrestreamMipLevels;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPrestreamMipLevels;
     /// <summary>
     /// Function: SetPrestreamMipLevels
     /// </summary>
     public unsafe virtual void SetPrestreamMipLevels(float ForceDuration, bool FullMips, bool HighPriority, bool GentleLastRenderTimeHint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPrestreamMipLevels, "Engine.Texture2D.SetPrestreamMipLevels");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPrestreamMipLevels, "Engine.Texture2D.SetPrestreamMipLevels", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForceDuration, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class Texture2D : BmSDK.Engine.Texture, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetForceMipLevelsToBeResident;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceMipLevelsToBeResident;
     /// <summary>
     /// Function: SetForceMipLevelsToBeResident
     /// </summary>
     public unsafe virtual void SetForceMipLevelsToBeResident(float Seconds, int CinematicTextureGroups = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForceMipLevelsToBeResident, "Engine.Texture2D.SetForceMipLevelsToBeResident");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetForceMipLevelsToBeResident, "Engine.Texture2D.SetForceMipLevelsToBeResident", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Seconds, paramsPtr + 0);

@@ -78,70 +78,70 @@ public partial class MHackSubroutine : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<MHackSubroutine>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanBeExecuted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeExecuted;
     /// <summary>
     /// Function: CanBeExecuted
     /// </summary>
     public unsafe virtual bool CanBeExecuted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeExecuted, "BmGame.MHackSubroutine.CanBeExecuted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeExecuted, "BmGame.MHackSubroutine.CanBeExecuted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsRunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRunning;
     /// <summary>
     /// Function: IsRunning
     /// </summary>
     public unsafe virtual bool IsRunning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRunning, "BmGame.MHackSubroutine.IsRunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRunning, "BmGame.MHackSubroutine.IsRunning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Interrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Interrupt;
     /// <summary>
     /// Function: Interrupt
     /// </summary>
     public unsafe virtual void Interrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interrupt, "BmGame.MHackSubroutine.Interrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Interrupt, "BmGame.MHackSubroutine.Interrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanBeInterrupted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeInterrupted;
     /// <summary>
     /// Function: CanBeInterrupted
     /// </summary>
     public unsafe virtual bool CanBeInterrupted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeInterrupted, "BmGame.MHackSubroutine.CanBeInterrupted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeInterrupted, "BmGame.MHackSubroutine.CanBeInterrupted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Execute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Execute;
     /// <summary>
     /// Function: Execute
     /// </summary>
     public unsafe virtual bool Execute(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Execute, "BmGame.MHackSubroutine.Execute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Execute, "BmGame.MHackSubroutine.Execute", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class MHackSubroutine : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetAffectedActorsFromLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAffectedActorsFromLocation;
     /// <summary>
     /// Function: GetAffectedActorsFromLocation
     /// </summary>
     public unsafe virtual void GetAffectedActorsFromLocation(out BmSDK.TArray<BmSDK.Engine.Actor> AffectedActors, System.Numerics.Vector3 ObjectLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAffectedActorsFromLocation, "BmGame.MHackSubroutine.GetAffectedActorsFromLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAffectedActorsFromLocation, "BmGame.MHackSubroutine.GetAffectedActorsFromLocation", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectLocation, paramsPtr + 16);
@@ -165,14 +165,14 @@ public partial class MHackSubroutine : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InitializeFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitializeFor;
     /// <summary>
     /// Function: InitializeFor
     /// </summary>
     public unsafe virtual void InitializeFor(BmSDK.BmGame.MHackableInterface Interface, BmSDK.BmGame.MHackableInterface.FSubroutineDefinition Define)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitializeFor, "BmGame.MHackSubroutine.InitializeFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitializeFor, "BmGame.MHackSubroutine.InitializeFor", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Interface, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RSaveGameManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateLocationID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLocationID;
     /// <summary>
     /// Function: UpdateLocationID
     /// </summary>
     public unsafe virtual void UpdateLocationID()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLocationID, "BmGame.RSaveGameManager.UpdateLocationID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLocationID, "BmGame.RSaveGameManager.UpdateLocationID", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetStringAsHHMMSSFromTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringAsHHMMSSFromTime;
     /// <summary>
     /// Function: GetStringAsHHMMSSFromTime
     /// </summary>
     public unsafe virtual BmSDK.FString GetStringAsHHMMSSFromTime(float TimeSecs)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringAsHHMMSSFromTime, "BmGame.RSaveGameManager.GetStringAsHHMMSSFromTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringAsHHMMSSFromTime, "BmGame.RSaveGameManager.GetStringAsHHMMSSFromTime", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimeSecs, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetStringForLocationID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringForLocationID;
     /// <summary>
     /// Function: GetStringForLocationID
     /// </summary>
     public unsafe virtual BmSDK.FString GetStringForLocationID(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringForLocationID, "BmGame.RSaveGameManager.GetStringForLocationID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringForLocationID, "BmGame.RSaveGameManager.GetStringForLocationID", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -143,14 +143,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetIDForLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIDForLocation;
     /// <summary>
     /// Function: GetIDForLocation
     /// </summary>
     public unsafe virtual int GetIDForLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIDForLocation, "BmGame.RSaveGameManager.GetIDForLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIDForLocation, "BmGame.RSaveGameManager.GetIDForLocation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -164,14 +164,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MakeLocalisedDateString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeLocalisedDateString;
     /// <summary>
     /// Function: MakeLocalisedDateString
     /// </summary>
     public unsafe virtual BmSDK.FString MakeLocalisedDateString(int Day, int Month, int Year)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeLocalisedDateString, "BmGame.RSaveGameManager.MakeLocalisedDateString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MakeLocalisedDateString, "BmGame.RSaveGameManager.MakeLocalisedDateString", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Day, paramsPtr + 0);
@@ -188,14 +188,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ProcessSavedGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessSavedGame;
     /// <summary>
     /// Function: ProcessSavedGame
     /// </summary>
     public unsafe virtual void ProcessSavedGame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessSavedGame, "BmGame.RSaveGameManager.ProcessSavedGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessSavedGame, "BmGame.RSaveGameManager.ProcessSavedGame", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -209,14 +209,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DecompressSavedGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DecompressSavedGame;
     /// <summary>
     /// Function: DecompressSavedGame
     /// </summary>
     public unsafe virtual void DecompressSavedGame(bool bHeaderOnly = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DecompressSavedGame, "BmGame.RSaveGameManager.DecompressSavedGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DecompressSavedGame, "BmGame.RSaveGameManager.DecompressSavedGame", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHeaderOnly, paramsPtr + 0);
@@ -231,14 +231,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DecompressShared;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DecompressShared;
     /// <summary>
     /// Function: DecompressShared
     /// </summary>
     public unsafe virtual void DecompressShared(bool bHeaderOnly = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DecompressShared, "BmGame.RSaveGameManager.DecompressShared");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DecompressShared, "BmGame.RSaveGameManager.DecompressShared", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHeaderOnly, paramsPtr + 0);
@@ -253,14 +253,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DecompressOptions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DecompressOptions;
     /// <summary>
     /// Function: DecompressOptions
     /// </summary>
     public unsafe virtual void DecompressOptions(bool bHeaderOnly = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DecompressOptions, "BmGame.RSaveGameManager.DecompressOptions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DecompressOptions, "BmGame.RSaveGameManager.DecompressOptions", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHeaderOnly, paramsPtr + 0);
@@ -275,14 +275,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LoadPDataBuffer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPDataBuffer;
     /// <summary>
     /// Function: LoadPDataBuffer
     /// </summary>
     public unsafe virtual void LoadPDataBuffer(int AsSlotX)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadPDataBuffer, "BmGame.RSaveGameManager.LoadPDataBuffer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadPDataBuffer, "BmGame.RSaveGameManager.LoadPDataBuffer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AsSlotX, paramsPtr + 0);
@@ -297,14 +297,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SavePDataBuffer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SavePDataBuffer;
     /// <summary>
     /// Function: SavePDataBuffer
     /// </summary>
     public unsafe virtual void SavePDataBuffer(int AsSlotX)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SavePDataBuffer, "BmGame.RSaveGameManager.SavePDataBuffer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SavePDataBuffer, "BmGame.RSaveGameManager.SavePDataBuffer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AsSlotX, paramsPtr + 0);
@@ -319,14 +319,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetActiveStorySlotID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveStorySlotID;
     /// <summary>
     /// Function: SetActiveStorySlotID
     /// </summary>
     public unsafe virtual void SetActiveStorySlotID(BmSDK.BmGame.RSaveGameManager.StorySlots SlotID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActiveStorySlotID, "BmGame.RSaveGameManager.SetActiveStorySlotID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActiveStorySlotID, "BmGame.RSaveGameManager.SetActiveStorySlotID", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotID, paramsPtr + 0);
@@ -341,14 +341,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetActiveStorySlotID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveStorySlotID;
     /// <summary>
     /// Function: GetActiveStorySlotID
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSaveGameManager.StorySlots GetActiveStorySlotID()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActiveStorySlotID, "BmGame.RSaveGameManager.GetActiveStorySlotID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActiveStorySlotID, "BmGame.RSaveGameManager.GetActiveStorySlotID", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -362,14 +362,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSaveGameManager.StorySlots>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetIfSaveDataValidForSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIfSaveDataValidForSlot;
     /// <summary>
     /// Function: SetIfSaveDataValidForSlot
     /// </summary>
     public unsafe virtual void SetIfSaveDataValidForSlot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIfSaveDataValidForSlot, "BmGame.RSaveGameManager.SetIfSaveDataValidForSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetIfSaveDataValidForSlot, "BmGame.RSaveGameManager.SetIfSaveDataValidForSlot", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -383,14 +383,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsSaveDataValidForSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSaveDataValidForSlot;
     /// <summary>
     /// Function: IsSaveDataValidForSlot
     /// </summary>
     public unsafe virtual bool IsSaveDataValidForSlot(int Slot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSaveDataValidForSlot, "BmGame.RSaveGameManager.IsSaveDataValidForSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSaveDataValidForSlot, "BmGame.RSaveGameManager.IsSaveDataValidForSlot", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Slot, paramsPtr + 0);
@@ -405,14 +405,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_JoinSaveBuffers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinSaveBuffers;
     /// <summary>
     /// Function: JoinSaveBuffers
     /// </summary>
     public unsafe virtual void JoinSaveBuffers()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JoinSaveBuffers, "BmGame.RSaveGameManager.JoinSaveBuffers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JoinSaveBuffers, "BmGame.RSaveGameManager.JoinSaveBuffers", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -426,14 +426,14 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StoreOptionsToMemory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreOptionsToMemory;
     /// <summary>
     /// Function: StoreOptionsToMemory
     /// </summary>
     public unsafe virtual bool StoreOptionsToMemory(bool bSharedToo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoreOptionsToMemory, "BmGame.RSaveGameManager.StoreOptionsToMemory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StoreOptionsToMemory, "BmGame.RSaveGameManager.StoreOptionsToMemory", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSharedToo, paramsPtr + 0);
@@ -448,18 +448,18 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_LoadDebugStartPointInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDebugStartPointInfo;
     /// <summary>
     /// Function: LoadDebugStartPointInfo
     /// </summary>
-    public unsafe virtual void LoadDebugStartPointInfo(BmSDK.BmGame.RPlayerController RPC, BmSDK.FString SaveGameType, out BmSDK.TArray<BmSDK.BmGame.RSaveGameManager.FRSaveGameSummaryInfo> StartPoints)
+    public unsafe virtual void LoadDebugStartPointInfo(BmSDK.BmGame.RPlayerController RPC, BmSDK.FStringArg SaveGameType, out BmSDK.TArray<BmSDK.BmGame.RSaveGameManager.FRSaveGameSummaryInfo> StartPoints)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadDebugStartPointInfo, "BmGame.RSaveGameManager.LoadDebugStartPointInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadDebugStartPointInfo, "BmGame.RSaveGameManager.LoadDebugStartPointInfo", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SaveGameType, paramsPtr + 8);
+        SaveGameType.WriteTo(paramsPtr + 8);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -468,21 +468,22 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         StartPoints = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RSaveGameManager.FRSaveGameSummaryInfo>>(paramsPtr + 24);
         return;
     }
 
-    private static BmSDK.Function __fn_LoadBSG;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadBSG;
     /// <summary>
     /// Function: LoadBSG
     /// </summary>
-    public unsafe virtual int LoadBSG(BmSDK.FString Filename)
+    public unsafe virtual int LoadBSG(BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadBSG, "BmGame.RSaveGameManager.LoadBSG");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadBSG, "BmGame.RSaveGameManager.LoadBSG", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -491,17 +492,18 @@ public partial class RSaveGameManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RSaveGameManager.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RSaveGameManager.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

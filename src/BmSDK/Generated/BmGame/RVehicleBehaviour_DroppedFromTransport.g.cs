@@ -78,28 +78,28 @@ public partial class RVehicleBehaviour_DroppedFromTransport : BmSDK.BmGame.RVehi
         where TComponent : class, Framework.IScriptComponent<RVehicleBehaviour_DroppedFromTransport>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsInvincible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInvincible;
     /// <summary>
     /// Function: IsInvincible
     /// </summary>
     public unsafe override bool IsInvincible()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInvincible, "BmGame.RVehicleBehaviour_DroppedFromTransport.IsInvincible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInvincible, "BmGame.RVehicleBehaviour_DroppedFromTransport.IsInvincible", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RVehicleBehaviour_DroppedFromTransport.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RVehicleBehaviour_DroppedFromTransport.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RVehicleBehaviour_DroppedFromTransport : BmSDK.BmGame.RVehi
         return;
     }
 
-    private static BmSDK.Function __fn_ExitBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitBehaviour;
     /// <summary>
     /// Function: ExitBehaviour
     /// </summary>
     public unsafe override void ExitBehaviour(BmSDK.BmGame.RVehicleBehaviour NextBehaviour)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitBehaviour, "BmGame.RVehicleBehaviour_DroppedFromTransport.ExitBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitBehaviour, "BmGame.RVehicleBehaviour_DroppedFromTransport.ExitBehaviour", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextBehaviour, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RVehicleBehaviour_DroppedFromTransport : BmSDK.BmGame.RVehi
         return;
     }
 
-    private static BmSDK.Function __fn_EnterBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnterBehaviour;
     /// <summary>
     /// Function: EnterBehaviour
     /// </summary>
     public unsafe override void EnterBehaviour(BmSDK.BmGame.RVehicleBehaviour PreviousBehaviour)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterBehaviour, "BmGame.RVehicleBehaviour_DroppedFromTransport.EnterBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnterBehaviour, "BmGame.RVehicleBehaviour_DroppedFromTransport.EnterBehaviour", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PreviousBehaviour, paramsPtr + 0);

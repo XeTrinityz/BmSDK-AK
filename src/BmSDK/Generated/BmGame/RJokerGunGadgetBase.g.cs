@@ -73,14 +73,14 @@ public partial class RJokerGunGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RJokerGunGadgetBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetJokerRoom3;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetJokerRoom3;
     /// <summary>
     /// Function: SetJokerRoom3
     /// </summary>
     public unsafe virtual void SetJokerRoom3(bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetJokerRoom3, "BmGame.RJokerGunGadgetBase.SetJokerRoom3");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetJokerRoom3, "BmGame.RJokerGunGadgetBase.SetJokerRoom3", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RJokerGunGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_GetShouldKnockHelmetOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShouldKnockHelmetOff;
     /// <summary>
     /// Function: GetShouldKnockHelmetOff
     /// </summary>
     public unsafe virtual bool GetShouldKnockHelmetOff(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetShouldKnockHelmetOff, "BmGame.RJokerGunGadgetBase.GetShouldKnockHelmetOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetShouldKnockHelmetOff, "BmGame.RJokerGunGadgetBase.GetShouldKnockHelmetOff", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RJokerGunGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetWritheAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWritheAnimName;
     /// <summary>
     /// Function: GetWritheAnimName
     /// </summary>
     public unsafe virtual BmSDK.FName GetWritheAnimName(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWritheAnimName, "BmGame.RJokerGunGadgetBase.GetWritheAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWritheAnimName, "BmGame.RJokerGunGadgetBase.GetWritheAnimName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -132,14 +132,14 @@ public partial class RJokerGunGadgetBase : BmSDK.BmGame.RInventoryGadget, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CalculateFireGunHitResult;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateFireGunHitResult;
     /// <summary>
     /// Function: CalculateFireGunHitResult
     /// </summary>
     public unsafe virtual bool CalculateFireGunHitResult(BmSDK.Rotator FireRotation, System.Numerics.Vector3 FirePosition, out BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo> OutImpactInfo, float CheckBoxExtent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateFireGunHitResult, "BmGame.RJokerGunGadgetBase.CalculateFireGunHitResult");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateFireGunHitResult, "BmGame.RJokerGunGadgetBase.CalculateFireGunHitResult", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FireRotation, paramsPtr + 0);

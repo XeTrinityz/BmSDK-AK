@@ -78,56 +78,56 @@ public partial class RBMBehaviour_ChinookPassenger : BmSDK.BmGame.RBMBehaviour, 
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_ChinookPassenger>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnEndInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnEndInterrupt;
     /// <summary>
     /// Function: OnEndInterrupt
     /// </summary>
     public unsafe override void OnEndInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_ChinookPassenger.OnEndInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_ChinookPassenger.OnEndInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnterCombatTauntPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnterCombatTauntPose;
     /// <summary>
     /// Function: EnterCombatTauntPose
     /// </summary>
     public unsafe virtual void EnterCombatTauntPose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterCombatTauntPose, "BmGame.RBMBehaviour_ChinookPassenger.EnterCombatTauntPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnterCombatTauntPose, "BmGame.RBMBehaviour_ChinookPassenger.EnterCombatTauntPose", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AlertToPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlertToPlayer;
     /// <summary>
     /// Function: AlertToPlayer
     /// </summary>
     public unsafe virtual void AlertToPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlertToPlayer, "BmGame.RBMBehaviour_ChinookPassenger.AlertToPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlertToPlayer, "BmGame.RBMBehaviour_ChinookPassenger.AlertToPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayTransitionIntoIdle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayTransitionIntoIdle;
     /// <summary>
     /// Function: PlayTransitionIntoIdle
     /// </summary>
     public unsafe virtual void PlayTransitionIntoIdle(BmSDK.FName TransitionAnimName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayTransitionIntoIdle, "BmGame.RBMBehaviour_ChinookPassenger.PlayTransitionIntoIdle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayTransitionIntoIdle, "BmGame.RBMBehaviour_ChinookPassenger.PlayTransitionIntoIdle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TransitionAnimName, paramsPtr + 0);
@@ -135,56 +135,56 @@ public partial class RBMBehaviour_ChinookPassenger : BmSDK.BmGame.RBMBehaviour, 
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForPlayerClose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForPlayerClose;
     /// <summary>
     /// Function: CheckForPlayerClose
     /// </summary>
     public unsafe virtual void CheckForPlayerClose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForPlayerClose, "BmGame.RBMBehaviour_ChinookPassenger.CheckForPlayerClose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForPlayerClose, "BmGame.RBMBehaviour_ChinookPassenger.CheckForPlayerClose", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartAbseiling;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAbseiling;
     /// <summary>
     /// Function: StartAbseiling
     /// </summary>
     public unsafe virtual bool StartAbseiling()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAbseiling, "BmGame.RBMBehaviour_ChinookPassenger.StartAbseiling");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAbseiling, "BmGame.RBMBehaviour_ChinookPassenger.StartAbseiling", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetupPassengerInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupPassengerInfo;
     /// <summary>
     /// Function: SetupPassengerInfo
     /// </summary>
     public unsafe virtual void SetupPassengerInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupPassengerInfo, "BmGame.RBMBehaviour_ChinookPassenger.SetupPassengerInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupPassengerInfo, "BmGame.RBMBehaviour_ChinookPassenger.SetupPassengerInfo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_ChinookPassenger.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMBehaviour_ChinookPassenger.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

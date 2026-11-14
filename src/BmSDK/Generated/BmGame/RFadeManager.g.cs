@@ -78,56 +78,56 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RFadeManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HasFinishedAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasFinishedAudio;
     /// <summary>
     /// Function: HasFinishedAudio
     /// </summary>
     public unsafe virtual bool HasFinishedAudio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasFinishedAudio, "BmGame.RFadeManager.HasFinishedAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasFinishedAudio, "BmGame.RFadeManager.HasFinishedAudio", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HasFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasFinished;
     /// <summary>
     /// Function: HasFinished
     /// </summary>
     public unsafe virtual bool HasFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasFinished, "BmGame.RFadeManager.HasFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasFinished, "BmGame.RFadeManager.HasFinished", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsFadedOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFadedOut;
     /// <summary>
     /// Function: IsFadedOut
     /// </summary>
     public unsafe virtual bool IsFadedOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFadedOut, "BmGame.RFadeManager.IsFadedOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFadedOut, "BmGame.RFadeManager.IsFadedOut", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RFadeManager.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RFadeManager.Tick", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -135,28 +135,28 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PushFadeToUi;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushFadeToUi;
     /// <summary>
     /// Function: PushFadeToUi
     /// </summary>
     public unsafe virtual void PushFadeToUi()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushFadeToUi, "BmGame.RFadeManager.PushFadeToUi");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushFadeToUi, "BmGame.RFadeManager.PushFadeToUi", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetFadeInstantly;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFadeInstantly;
     /// <summary>
     /// Function: SetFadeInstantly
     /// </summary>
     public unsafe virtual void SetFadeInstantly(float FadePerc, bool InFadeDuringMovieCapture = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFadeInstantly, "BmGame.RFadeManager.SetFadeInstantly");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFadeInstantly, "BmGame.RFadeManager.SetFadeInstantly", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FadePerc, paramsPtr + 0);
@@ -165,14 +165,14 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetIndependentFadeType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIndependentFadeType;
     /// <summary>
     /// Function: SetIndependentFadeType
     /// </summary>
     public unsafe virtual void SetIndependentFadeType(BmSDK.FName Identifier, bool FadeIn, float FadeT, float DelayBeforeStartFade = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIndependentFadeType, "BmGame.RFadeManager.SetIndependentFadeType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetIndependentFadeType, "BmGame.RFadeManager.SetIndependentFadeType", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Identifier, paramsPtr + 0);
@@ -183,14 +183,14 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetFadeType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFadeType;
     /// <summary>
     /// Function: SetFadeType
     /// </summary>
     public unsafe virtual void SetFadeType(bool FadeIn, float FadeT, bool fadesAudio, bool InFadeDuringMovieCapture = default, float FadeColR = default, float FadeColG = default, float FadeColB = default, float DelayBeforeStartFade = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFadeType, "BmGame.RFadeManager.SetFadeType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFadeType, "BmGame.RFadeManager.SetFadeType", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FadeIn, paramsPtr + 0);
@@ -205,14 +205,14 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartAudioFadeIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAudioFadeIn;
     /// <summary>
     /// Function: StartAudioFadeIn
     /// </summary>
     public unsafe virtual void StartAudioFadeIn(float FadeT)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAudioFadeIn, "BmGame.RFadeManager.StartAudioFadeIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAudioFadeIn, "BmGame.RFadeManager.StartAudioFadeIn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FadeT, paramsPtr + 0);
@@ -220,14 +220,14 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartAudioFadeOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAudioFadeOut;
     /// <summary>
     /// Function: StartAudioFadeOut
     /// </summary>
     public unsafe virtual void StartAudioFadeOut(float FadeT)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAudioFadeOut, "BmGame.RFadeManager.StartAudioFadeOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAudioFadeOut, "BmGame.RFadeManager.StartAudioFadeOut", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FadeT, paramsPtr + 0);
@@ -235,28 +235,28 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RFadeManager.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RFadeManager.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolume;
     /// <summary>
     /// Function: GetVolume
     /// </summary>
     public unsafe virtual float GetVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVolume, "BmGame.RFadeManager.GetVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVolume, "BmGame.RFadeManager.GetVolume", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -270,14 +270,14 @@ public partial class RFadeManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVolume;
     /// <summary>
     /// Function: SetVolume
     /// </summary>
     public unsafe virtual void SetVolume(float Vol)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVolume, "BmGame.RFadeManager.SetVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVolume, "BmGame.RFadeManager.SetVolume", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vol, paramsPtr + 0);

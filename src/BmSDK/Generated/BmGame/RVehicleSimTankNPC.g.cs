@@ -78,14 +78,14 @@ public partial class RVehicleSimTankNPC : BmSDK.BmGame.RVehicleSimNPC, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RVehicleSimTankNPC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetPoweredDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPoweredDown;
     /// <summary>
     /// Function: SetPoweredDown
     /// </summary>
     public unsafe virtual void SetPoweredDown(bool Down)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPoweredDown, "BmGame.RVehicleSimTankNPC.SetPoweredDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPoweredDown, "BmGame.RVehicleSimTankNPC.SetPoweredDown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Down, paramsPtr + 0);

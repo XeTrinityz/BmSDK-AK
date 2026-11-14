@@ -78,14 +78,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         where TComponent : class, Framework.IScriptComponent<RBMCombatThrownObject_HeavyObjectExplosive>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BeingPickedUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeingPickedUp;
     /// <summary>
     /// Function: BeingPickedUp
     /// </summary>
     public unsafe override void BeingPickedUp(BmSDK.BmGame.RBMPawnAI NewUser)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeingPickedUp, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.BeingPickedUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeingPickedUp, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.BeingPickedUp", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUser, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return;
     }
 
-    private static BmSDK.Function __fn_CanBePickedUpBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBePickedUpBy;
     /// <summary>
     /// Function: CanBePickedUpBy
     /// </summary>
     public unsafe override bool CanBePickedUpBy(BmSDK.BmGame.RBMPawnAI NewUser, bool bInCombat, bool bTaunting)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePickedUpBy, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.CanBePickedUpBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBePickedUpBy, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.CanBePickedUpBy", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUser, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_DamageNearbyThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageNearbyThugs;
     /// <summary>
     /// Function: DamageNearbyThugs
     /// </summary>
     public unsafe virtual void DamageNearbyThugs(BmSDK.BmGame.RPawnCombat HitPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageNearbyThugs, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.DamageNearbyThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageNearbyThugs, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.DamageNearbyThugs", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return;
     }
 
-    private static BmSDK.Function __fn_ExplodePawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExplodePawn;
     /// <summary>
     /// Function: ExplodePawn
     /// </summary>
     public unsafe virtual void ExplodePawn(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.BmGame.RPawnCombat HitPawn = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodePawn, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.ExplodePawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExplodePawn, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.ExplodePawn", this);
         byte* paramsPtr = stackalloc byte[280];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPawn, paramsPtr + 0);
@@ -141,14 +141,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return;
     }
 
-    private static BmSDK.Function __fn_Detonate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Detonate;
     /// <summary>
     /// Function: Detonate
     /// </summary>
     public unsafe virtual void Detonate(BmSDK.BmGame.RPawnCombat HitPawn = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detonate, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.Detonate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Detonate, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.Detonate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);
@@ -156,14 +156,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class dmgType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Damage, paramsPtr + 0);
@@ -177,14 +177,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return;
     }
 
-    private static BmSDK.Function __fn_HitCombatPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitCombatPawn;
     /// <summary>
     /// Function: HitCombatPawn
     /// </summary>
     public unsafe override void HitCombatPawn(BmSDK.BmGame.RPawnCombat HitPawn, float Speed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitCombatPawn, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.HitCombatPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitCombatPawn, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.HitCombatPawn", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);
@@ -193,14 +193,14 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return;
     }
 
-    private static BmSDK.Function __fn_HitSomething;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitSomething;
     /// <summary>
     /// Function: HitSomething
     /// </summary>
     public unsafe override void HitSomething(BmSDK.BmGame.RPawnCombat HitPawn, float Speed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitSomething, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.HitSomething");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitSomething, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.HitSomething", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);
@@ -209,70 +209,70 @@ public partial class RBMCombatThrownObject_HeavyObjectExplosive : BmSDK.BmScript
         return;
     }
 
-    private static BmSDK.Function __fn_GetBatarangSpeedBoost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatarangSpeedBoost;
     /// <summary>
     /// Function: GetBatarangSpeedBoost
     /// </summary>
     public unsafe virtual float GetBatarangSpeedBoost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatarangSpeedBoost, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.GetBatarangSpeedBoost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatarangSpeedBoost, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.GetBatarangSpeedBoost", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ForceHitAtEndOfFlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceHitAtEndOfFlight;
     /// <summary>
     /// Function: ForceHitAtEndOfFlight
     /// </summary>
     public unsafe virtual bool ForceHitAtEndOfFlight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceHitAtEndOfFlight, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.ForceHitAtEndOfFlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceHitAtEndOfFlight, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.ForceHitAtEndOfFlight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBatarangPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatarangPriority;
     /// <summary>
     /// Function: GetBatarangPriority
     /// </summary>
     public unsafe virtual float GetBatarangPriority()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatarangPriority, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.GetBatarangPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatarangPriority, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.GetBatarangPriority", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsBatarangable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatarangable;
     /// <summary>
     /// Function: IsBatarangable
     /// </summary>
     public unsafe virtual bool IsBatarangable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatarangable, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.IsBatarangable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBatarangable, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.IsBatarangable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBatarangTargetPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatarangTargetPosition;
     /// <summary>
     /// Function: GetBatarangTargetPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBatarangTargetPosition(System.Numerics.Vector3 AimLocation, System.Numerics.Vector3 AimDirection, bool bDuringTargetPhase = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatarangTargetPosition, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.GetBatarangTargetPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatarangTargetPosition, "BmScript.RBMCombatThrownObject_HeavyObjectExplosive.GetBatarangTargetPosition", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AimLocation, paramsPtr + 0);

@@ -78,28 +78,28 @@ public partial class RLootSourceBankBase : BmSDK.BmGame.RLootSourceBase, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RLootSourceBankBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetLootNotExhausted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLootNotExhausted;
     /// <summary>
     /// Function: SetLootNotExhausted
     /// </summary>
     public unsafe override void SetLootNotExhausted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLootNotExhausted, "BmGame.RLootSourceBankBase.SetLootNotExhausted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLootNotExhausted, "BmGame.RLootSourceBankBase.SetLootNotExhausted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetLootExhausted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLootExhausted;
     /// <summary>
     /// Function: SetLootExhausted
     /// </summary>
     public unsafe override void SetLootExhausted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLootExhausted, "BmGame.RLootSourceBankBase.SetLootExhausted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLootExhausted, "BmGame.RLootSourceBankBase.SetLootExhausted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

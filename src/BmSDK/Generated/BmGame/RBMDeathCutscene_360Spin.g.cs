@@ -78,14 +78,14 @@ public partial class RBMDeathCutscene_360Spin : BmSDK.BmGame.RBMDeathCutscene_Sh
         where TComponent : class, Framework.IScriptComponent<RBMDeathCutscene_360Spin>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_MoveCam_Linear;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveCam_Linear;
     /// <summary>
     /// Function: MoveCam_Linear
     /// </summary>
     public unsafe override void MoveCam_Linear(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveCam_Linear, "BmGame.RBMDeathCutscene_360Spin.MoveCam_Linear");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveCam_Linear, "BmGame.RBMDeathCutscene_360Spin.MoveCam_Linear", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RBMDeathCutscene_360Spin : BmSDK.BmGame.RBMDeathCutscene_Sh
         return;
     }
 
-    private static BmSDK.Function __fn_SetSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpeed;
     /// <summary>
     /// Function: SetSpeed
     /// </summary>
     public unsafe override void SetSpeed(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpeed, "BmGame.RBMDeathCutscene_360Spin.SetSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSpeed, "BmGame.RBMDeathCutscene_360Spin.SetSpeed", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -108,28 +108,28 @@ public partial class RBMDeathCutscene_360Spin : BmSDK.BmGame.RBMDeathCutscene_Sh
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override bool OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMDeathCutscene_360Spin.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMDeathCutscene_360Spin.OnActivate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetViewTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewTarget;
     /// <summary>
     /// Function: SetViewTarget
     /// </summary>
     public unsafe override void SetViewTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetViewTarget, "BmGame.RBMDeathCutscene_360Spin.SetViewTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetViewTarget, "BmGame.RBMDeathCutscene_360Spin.SetViewTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

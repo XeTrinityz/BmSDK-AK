@@ -78,28 +78,28 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
         where TComponent : class, Framework.IScriptComponent<OnlineProfileSettings>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ModifyAvailableProfileSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyAvailableProfileSettings;
     /// <summary>
     /// Function: ModifyAvailableProfileSettings
     /// </summary>
     public unsafe virtual void ModifyAvailableProfileSettings()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyAvailableProfileSettings, "Engine.OnlineProfileSettings.ModifyAvailableProfileSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyAvailableProfileSettings, "Engine.OnlineProfileSettings.ModifyAvailableProfileSettings", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AppendVersionToReadIds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendVersionToReadIds;
     /// <summary>
     /// Function: AppendVersionToReadIds
     /// </summary>
     public unsafe virtual void AppendVersionToReadIds()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendVersionToReadIds, "Engine.OnlineProfileSettings.AppendVersionToReadIds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AppendVersionToReadIds, "Engine.OnlineProfileSettings.AppendVersionToReadIds", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -113,14 +113,14 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
         return;
     }
 
-    private static BmSDK.Function __fn_SetToDefaults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetToDefaults;
     /// <summary>
     /// Function: SetToDefaults
     /// </summary>
     public unsafe override void SetToDefaults()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetToDefaults, "Engine.OnlineProfileSettings.SetToDefaults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetToDefaults, "Engine.OnlineProfileSettings.SetToDefaults", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -134,14 +134,14 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
         return;
     }
 
-    private static BmSDK.Function __fn_GetProfileSettingDefaultFloat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingDefaultFloat;
     /// <summary>
     /// Function: GetProfileSettingDefaultFloat
     /// </summary>
     public unsafe virtual bool GetProfileSettingDefaultFloat(int ProfileSettingId, out float DefaultFloat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetProfileSettingDefaultFloat, "Engine.OnlineProfileSettings.GetProfileSettingDefaultFloat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetProfileSettingDefaultFloat, "Engine.OnlineProfileSettings.GetProfileSettingDefaultFloat", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ProfileSettingId, paramsPtr + 0);
@@ -159,14 +159,14 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetProfileSettingDefaultInt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingDefaultInt;
     /// <summary>
     /// Function: GetProfileSettingDefaultInt
     /// </summary>
     public unsafe virtual bool GetProfileSettingDefaultInt(int ProfileSettingId, out int DefaultInt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetProfileSettingDefaultInt, "Engine.OnlineProfileSettings.GetProfileSettingDefaultInt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetProfileSettingDefaultInt, "Engine.OnlineProfileSettings.GetProfileSettingDefaultInt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ProfileSettingId, paramsPtr + 0);
@@ -184,14 +184,14 @@ public partial class OnlineProfileSettings : BmSDK.Engine.OnlinePlayerStorage, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetProfileSettingDefaultId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProfileSettingDefaultId;
     /// <summary>
     /// Function: GetProfileSettingDefaultId
     /// </summary>
     public unsafe virtual bool GetProfileSettingDefaultId(int ProfileSettingId, out int DefaultId, out int ListIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetProfileSettingDefaultId, "Engine.OnlineProfileSettings.GetProfileSettingDefaultId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetProfileSettingDefaultId, "Engine.OnlineProfileSettings.GetProfileSettingDefaultId", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ProfileSettingId, paramsPtr + 0);

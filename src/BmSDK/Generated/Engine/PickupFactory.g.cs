@@ -73,112 +73,112 @@ public partial class PickupFactory : BmSDK.Engine.NavigationPoint, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<PickupFactory>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DelayRespawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DelayRespawn;
     /// <summary>
     /// Function: DelayRespawn
     /// </summary>
     public unsafe virtual bool DelayRespawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DelayRespawn, "Engine.PickupFactory.DelayRespawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DelayRespawn, "Engine.PickupFactory.DelayRespawn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.PickupFactory.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "Engine.PickupFactory.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetPickupVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPickupVisible;
     /// <summary>
     /// Function: SetPickupVisible
     /// </summary>
     public unsafe virtual void SetPickupVisible()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPickupVisible, "Engine.PickupFactory.SetPickupVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPickupVisible, "Engine.PickupFactory.SetPickupVisible", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetPickupHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPickupHidden;
     /// <summary>
     /// Function: SetPickupHidden
     /// </summary>
     public unsafe virtual void SetPickupHidden()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPickupHidden, "Engine.PickupFactory.SetPickupHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPickupHidden, "Engine.PickupFactory.SetPickupHidden", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RespawnEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RespawnEffect;
     /// <summary>
     /// Function: RespawnEffect
     /// </summary>
     public unsafe virtual void RespawnEffect()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RespawnEffect, "Engine.PickupFactory.RespawnEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RespawnEffect, "Engine.PickupFactory.RespawnEffect", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRespawnTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRespawnTime;
     /// <summary>
     /// Function: GetRespawnTime
     /// </summary>
     public unsafe virtual float GetRespawnTime()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRespawnTime, "Engine.PickupFactory.GetRespawnTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRespawnTime, "Engine.PickupFactory.GetRespawnTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RecheckValidTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecheckValidTouch;
     /// <summary>
     /// Function: RecheckValidTouch
     /// </summary>
     public unsafe virtual void RecheckValidTouch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecheckValidTouch, "Engine.PickupFactory.RecheckValidTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecheckValidTouch, "Engine.PickupFactory.RecheckValidTouch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PickedUpBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickedUpBy;
     /// <summary>
     /// Function: PickedUpBy
     /// </summary>
     public unsafe virtual void PickedUpBy(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickedUpBy, "Engine.PickupFactory.PickedUpBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickedUpBy, "Engine.PickupFactory.PickedUpBy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class PickupFactory : BmSDK.Engine.NavigationPoint, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_GiveTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GiveTo;
     /// <summary>
     /// Function: GiveTo
     /// </summary>
     public unsafe virtual void GiveTo(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GiveTo, "Engine.PickupFactory.GiveTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GiveTo, "Engine.PickupFactory.GiveTo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -201,14 +201,14 @@ public partial class PickupFactory : BmSDK.Engine.NavigationPoint, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_ReadyToPickup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadyToPickup;
     /// <summary>
     /// Function: ReadyToPickup
     /// </summary>
     public unsafe virtual bool ReadyToPickup(float MaxWait)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyToPickup, "Engine.PickupFactory.ReadyToPickup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadyToPickup, "Engine.PickupFactory.ReadyToPickup", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxWait, paramsPtr + 0);
@@ -216,14 +216,14 @@ public partial class PickupFactory : BmSDK.Engine.NavigationPoint, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SpawnCopyFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnCopyFor;
     /// <summary>
     /// Function: SpawnCopyFor
     /// </summary>
     public unsafe virtual void SpawnCopyFor(BmSDK.Engine.Pawn Recipient)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnCopyFor, "Engine.PickupFactory.SpawnCopyFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnCopyFor, "Engine.PickupFactory.SpawnCopyFor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Recipient, paramsPtr + 0);
@@ -231,14 +231,14 @@ public partial class PickupFactory : BmSDK.Engine.NavigationPoint, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_DetourWeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetourWeight;
     /// <summary>
     /// Function: DetourWeight
     /// </summary>
     public unsafe override float DetourWeight(BmSDK.Engine.Pawn Other, float PathWeight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetourWeight, "Engine.PickupFactory.DetourWeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetourWeight, "Engine.PickupFactory.DetourWeight", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -247,140 +247,140 @@ public partial class PickupFactory : BmSDK.Engine.NavigationPoint, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_StartSleeping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSleeping;
     /// <summary>
     /// Function: StartSleeping
     /// </summary>
     public unsafe virtual void StartSleeping()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSleeping, "Engine.PickupFactory.StartSleeping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSleeping, "Engine.PickupFactory.StartSleeping", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRespawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRespawn;
     /// <summary>
     /// Function: SetRespawn
     /// </summary>
     public unsafe virtual void SetRespawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRespawn, "Engine.PickupFactory.SetRespawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRespawn, "Engine.PickupFactory.SetRespawn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForErrors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForErrors;
     /// <summary>
     /// Function: CheckForErrors
     /// </summary>
     public unsafe override bool CheckForErrors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForErrors, "Engine.PickupFactory.CheckForErrors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForErrors, "Engine.PickupFactory.CheckForErrors", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.PickupFactory.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.PickupFactory.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetPickupMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPickupMesh;
     /// <summary>
     /// Function: SetPickupMesh
     /// </summary>
     public unsafe virtual void SetPickupMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPickupMesh, "Engine.PickupFactory.SetPickupMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPickupMesh, "Engine.PickupFactory.SetPickupMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDown;
     /// <summary>
     /// Function: ShutDown
     /// </summary>
     public unsafe override void ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDown, "Engine.PickupFactory.ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShutDown, "Engine.PickupFactory.ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.PickupFactory.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.PickupFactory.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitializePickup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitializePickup;
     /// <summary>
     /// Function: InitializePickup
     /// </summary>
     public unsafe virtual void InitializePickup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitializePickup, "Engine.PickupFactory.InitializePickup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitializePickup, "Engine.PickupFactory.InitializePickup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "Engine.PickupFactory.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "Engine.PickupFactory.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ReplicatedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplicatedEvent;
     /// <summary>
     /// Function: ReplicatedEvent
     /// </summary>
     public unsafe override void ReplicatedEvent(BmSDK.FName VarName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplicatedEvent, "Engine.PickupFactory.ReplicatedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReplicatedEvent, "Engine.PickupFactory.ReplicatedEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VarName, paramsPtr + 0);

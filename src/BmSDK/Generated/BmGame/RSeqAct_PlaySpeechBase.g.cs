@@ -86,28 +86,28 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NeedsRadioMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedsRadioMode;
     /// <summary>
     /// Function: NeedsRadioMode
     /// </summary>
     public unsafe virtual bool NeedsRadioMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NeedsRadioMode, "BmGame.RSeqAct_PlaySpeechBase.NeedsRadioMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NeedsRadioMode, "BmGame.RSeqAct_PlaySpeechBase.NeedsRadioMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsDialogueSkippable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDialogueSkippable;
     /// <summary>
     /// Function: IsDialogueSkippable
     /// </summary>
     public unsafe virtual bool IsDialogueSkippable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDialogueSkippable, "BmGame.RSeqAct_PlaySpeechBase.IsDialogueSkippable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDialogueSkippable, "BmGame.RSeqAct_PlaySpeechBase.IsDialogueSkippable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -118,172 +118,177 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
     /// <summary>
     /// Function: OnScreenMessage
     /// </summary>
-    public unsafe static void OnScreenMessage(BmSDK.BmGame.RPlayerController RPC, BmSDK.FString msg)
+    public unsafe static void OnScreenMessage(BmSDK.BmGame.RPlayerController RPC, BmSDK.FStringArg msg)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnScreenMessage, "BmGame.RSeqAct_PlaySpeechBase.OnScreenMessage");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(msg, paramsPtr + 8);
+        msg.WriteTo(paramsPtr + 8);
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
-    private static BmSDK.Function __fn_SkipMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipMovie;
     /// <summary>
     /// Function: SkipMovie
     /// </summary>
     public unsafe virtual void SkipMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipMovie, "BmGame.RSeqAct_PlaySpeechBase.SkipMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipMovie, "BmGame.RSeqAct_PlaySpeechBase.SkipMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DialogueTapGauntletCUEFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueTapGauntletCUEFromMovie;
     /// <summary>
     /// Function: DialogueTapGauntletCUEFromMovie
     /// </summary>
     public unsafe virtual void DialogueTapGauntletCUEFromMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueTapGauntletCUEFromMovie, "BmGame.RSeqAct_PlaySpeechBase.DialogueTapGauntletCUEFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DialogueTapGauntletCUEFromMovie, "BmGame.RSeqAct_PlaySpeechBase.DialogueTapGauntletCUEFromMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DialogueOverCUEFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueOverCUEFromMovie;
     /// <summary>
     /// Function: DialogueOverCUEFromMovie
     /// </summary>
     public unsafe virtual void DialogueOverCUEFromMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueOverCUEFromMovie, "BmGame.RSeqAct_PlaySpeechBase.DialogueOverCUEFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DialogueOverCUEFromMovie, "BmGame.RSeqAct_PlaySpeechBase.DialogueOverCUEFromMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LineCUEFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LineCUEFromMovie;
     /// <summary>
     /// Function: LineCUEFromMovie
     /// </summary>
     public unsafe virtual void LineCUEFromMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LineCUEFromMovie, "BmGame.RSeqAct_PlaySpeechBase.LineCUEFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LineCUEFromMovie, "BmGame.RSeqAct_PlaySpeechBase.LineCUEFromMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DialogueTOCFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueTOCFromMovie;
     /// <summary>
     /// Function: DialogueTOCFromMovie
     /// </summary>
-    public unsafe virtual void DialogueTOCFromMovie(BmSDK.FString TOC)
+    public unsafe virtual void DialogueTOCFromMovie(BmSDK.FStringArg TOC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueTOCFromMovie, "BmGame.RSeqAct_PlaySpeechBase.DialogueTOCFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DialogueTOCFromMovie, "BmGame.RSeqAct_PlaySpeechBase.DialogueTOCFromMovie", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TOC, paramsPtr + 0);
+        TOC.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SkipMovie_FromCue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipMovie_FromCue;
     /// <summary>
     /// Function: SkipMovie_FromCue
     /// </summary>
     public unsafe virtual void SkipMovie_FromCue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipMovie_FromCue, "BmGame.RSeqAct_PlaySpeechBase.SkipMovie_FromCue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipMovie_FromCue, "BmGame.RSeqAct_PlaySpeechBase.SkipMovie_FromCue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyMovieAboutToEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyMovieAboutToEnd;
     /// <summary>
     /// Function: NotifyMovieAboutToEnd
     /// </summary>
     public unsafe virtual void NotifyMovieAboutToEnd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyMovieAboutToEnd, "BmGame.RSeqAct_PlaySpeechBase.NotifyMovieAboutToEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyMovieAboutToEnd, "BmGame.RSeqAct_PlaySpeechBase.NotifyMovieAboutToEnd", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyMovieFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyMovieFinished;
     /// <summary>
     /// Function: NotifyMovieFinished
     /// </summary>
-    public unsafe virtual void NotifyMovieFinished(BmSDK.FString VideoResource)
+    public unsafe virtual void NotifyMovieFinished(BmSDK.FStringArg VideoResource)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyMovieFinished, "BmGame.RSeqAct_PlaySpeechBase.NotifyMovieFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyMovieFinished, "BmGame.RSeqAct_PlaySpeechBase.NotifyMovieFinished", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(VideoResource, paramsPtr + 0);
+        VideoResource.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlaySpeechDesignerWarn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySpeechDesignerWarn;
     /// <summary>
     /// Function: PlaySpeechDesignerWarn
     /// </summary>
-    public unsafe virtual void PlaySpeechDesignerWarn(BmSDK.FString Text, bool addSelfInfo = default, bool noWarn = default)
+    public unsafe virtual void PlaySpeechDesignerWarn(BmSDK.FStringArg Text, bool addSelfInfo = default, bool noWarn = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySpeechDesignerWarn, "BmGame.RSeqAct_PlaySpeechBase.PlaySpeechDesignerWarn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySpeechDesignerWarn, "BmGame.RSeqAct_PlaySpeechBase.PlaySpeechDesignerWarn", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(addSelfInfo, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(noWarn, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlaySpeechDesignerInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySpeechDesignerInfo;
     /// <summary>
     /// Function: PlaySpeechDesignerInfo
     /// </summary>
-    public unsafe virtual void PlaySpeechDesignerInfo(BmSDK.FString Text, bool addSelfInfo = default)
+    public unsafe virtual void PlaySpeechDesignerInfo(BmSDK.FStringArg Text, bool addSelfInfo = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySpeechDesignerInfo, "BmGame.RSeqAct_PlaySpeechBase.PlaySpeechDesignerInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySpeechDesignerInfo, "BmGame.RSeqAct_PlaySpeechBase.PlaySpeechDesignerInfo", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(addSelfInfo, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SuspendStasis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuspendStasis;
     /// <summary>
     /// Function: SuspendStasis
     /// </summary>
     public unsafe virtual void SuspendStasis(bool bSuspendStasis)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuspendStasis, "BmGame.RSeqAct_PlaySpeechBase.SuspendStasis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuspendStasis, "BmGame.RSeqAct_PlaySpeechBase.SuspendStasis", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuspendStasis, paramsPtr + 0);
@@ -291,14 +296,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForMissedCustomOutputs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForMissedCustomOutputs;
     /// <summary>
     /// Function: CheckForMissedCustomOutputs
     /// </summary>
     public unsafe virtual void CheckForMissedCustomOutputs(BmSDK.Engine.AkDialogueLine Line)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForMissedCustomOutputs, "BmGame.RSeqAct_PlaySpeechBase.CheckForMissedCustomOutputs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForMissedCustomOutputs, "BmGame.RSeqAct_PlaySpeechBase.CheckForMissedCustomOutputs", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Line, paramsPtr + 0);
@@ -306,14 +311,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForCustomOutput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForCustomOutput;
     /// <summary>
     /// Function: CheckForCustomOutput
     /// </summary>
     public unsafe virtual void CheckForCustomOutput(bool bSkippingLine = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForCustomOutput, "BmGame.RSeqAct_PlaySpeechBase.CheckForCustomOutput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForCustomOutput, "BmGame.RSeqAct_PlaySpeechBase.CheckForCustomOutput", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSkippingLine, paramsPtr + 0);
@@ -321,28 +326,28 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldPlayMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPlayMovie;
     /// <summary>
     /// Function: ShouldPlayMovie
     /// </summary>
     public unsafe virtual bool ShouldPlayMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPlayMovie, "BmGame.RSeqAct_PlaySpeechBase.ShouldPlayMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPlayMovie, "BmGame.RSeqAct_PlaySpeechBase.ShouldPlayMovie", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_PlaySpeechBase.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_PlaySpeechBase.Update", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -350,42 +355,42 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_InitialiseVariables;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseVariables;
     /// <summary>
     /// Function: InitialiseVariables
     /// </summary>
     public unsafe virtual void InitialiseVariables()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseVariables, "BmGame.RSeqAct_PlaySpeechBase.InitialiseVariables");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseVariables, "BmGame.RSeqAct_PlaySpeechBase.InitialiseVariables", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoPlayerSpeechCleanup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPlayerSpeechCleanup;
     /// <summary>
     /// Function: DoPlayerSpeechCleanup
     /// </summary>
     public unsafe virtual void DoPlayerSpeechCleanup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPlayerSpeechCleanup, "BmGame.RSeqAct_PlaySpeechBase.DoPlayerSpeechCleanup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPlayerSpeechCleanup, "BmGame.RSeqAct_PlaySpeechBase.DoPlayerSpeechCleanup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LineStopped;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LineStopped;
     /// <summary>
     /// Function: LineStopped
     /// </summary>
     public unsafe virtual void LineStopped(BmSDK.GameObject Speaker, bool bInterrupted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LineStopped, "BmGame.RSeqAct_PlaySpeechBase.LineStopped");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LineStopped, "BmGame.RSeqAct_PlaySpeechBase.LineStopped", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speaker, paramsPtr + 0);
@@ -394,14 +399,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_LineStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LineStarted;
     /// <summary>
     /// Function: LineStarted
     /// </summary>
     public unsafe virtual bool LineStarted(BmSDK.GameObject Speaker, BmSDK.Engine.AkDialogueLine Line)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LineStarted, "BmGame.RSeqAct_PlaySpeechBase.LineStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LineStarted, "BmGame.RSeqAct_PlaySpeechBase.LineStarted", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speaker, paramsPtr + 0);
@@ -410,14 +415,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SpeechStopped;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeechStopped;
     /// <summary>
     /// Function: SpeechStopped
     /// </summary>
     public unsafe virtual void SpeechStopped(bool bInterrupted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeechStopped, "BmGame.RSeqAct_PlaySpeechBase.SpeechStopped");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeechStopped, "BmGame.RSeqAct_PlaySpeechBase.SpeechStopped", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInterrupted, paramsPtr + 0);
@@ -425,84 +430,84 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SpeechStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeechStarted;
     /// <summary>
     /// Function: SpeechStarted
     /// </summary>
     public unsafe virtual void SpeechStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeechStarted, "BmGame.RSeqAct_PlaySpeechBase.SpeechStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeechStarted, "BmGame.RSeqAct_PlaySpeechBase.SpeechStarted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FreeBarkLock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeBarkLock;
     /// <summary>
     /// Function: FreeBarkLock
     /// </summary>
     public unsafe virtual void FreeBarkLock()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeBarkLock, "BmGame.RSeqAct_PlaySpeechBase.FreeBarkLock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreeBarkLock, "BmGame.RSeqAct_PlaySpeechBase.FreeBarkLock", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetBarkLock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBarkLock;
     /// <summary>
     /// Function: SetBarkLock
     /// </summary>
     public unsafe virtual void SetBarkLock()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBarkLock, "BmGame.RSeqAct_PlaySpeechBase.SetBarkLock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBarkLock, "BmGame.RSeqAct_PlaySpeechBase.SetBarkLock", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnStopSpeechTriggered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStopSpeechTriggered;
     /// <summary>
     /// Function: OnStopSpeechTriggered
     /// </summary>
     public unsafe virtual void OnStopSpeechTriggered()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStopSpeechTriggered, "BmGame.RSeqAct_PlaySpeechBase.OnStopSpeechTriggered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStopSpeechTriggered, "BmGame.RSeqAct_PlaySpeechBase.OnStopSpeechTriggered", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnPlaySpeechTriggered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPlaySpeechTriggered;
     /// <summary>
     /// Function: OnPlaySpeechTriggered
     /// </summary>
     public unsafe virtual void OnPlaySpeechTriggered()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPlaySpeechTriggered, "BmGame.RSeqAct_PlaySpeechBase.OnPlaySpeechTriggered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPlaySpeechTriggered, "BmGame.RSeqAct_PlaySpeechBase.OnPlaySpeechTriggered", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsGameLoading;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGameLoading;
     /// <summary>
     /// Function: IsGameLoading
     /// </summary>
     public unsafe virtual bool IsGameLoading()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGameLoading, "BmGame.RSeqAct_PlaySpeechBase.IsGameLoading");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsGameLoading, "BmGame.RSeqAct_PlaySpeechBase.IsGameLoading", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -516,14 +521,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BlockedByCineMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockedByCineMode;
     /// <summary>
     /// Function: BlockedByCineMode
     /// </summary>
     public unsafe virtual bool BlockedByCineMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockedByCineMode, "BmGame.RSeqAct_PlaySpeechBase.BlockedByCineMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlockedByCineMode, "BmGame.RSeqAct_PlaySpeechBase.BlockedByCineMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -537,14 +542,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ChangeWaitForNotifies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeWaitForNotifies;
     /// <summary>
     /// Function: ChangeWaitForNotifies
     /// </summary>
     public unsafe virtual void ChangeWaitForNotifies(bool bWait)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeWaitForNotifies, "BmGame.RSeqAct_PlaySpeechBase.ChangeWaitForNotifies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeWaitForNotifies, "BmGame.RSeqAct_PlaySpeechBase.ChangeWaitForNotifies", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWait, paramsPtr + 0);
@@ -559,14 +564,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_IsWaitingForNotifies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWaitingForNotifies;
     /// <summary>
     /// Function: IsWaitingForNotifies
     /// </summary>
     public unsafe virtual bool IsWaitingForNotifies(bool waitingNow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWaitingForNotifies, "BmGame.RSeqAct_PlaySpeechBase.IsWaitingForNotifies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWaitingForNotifies, "BmGame.RSeqAct_PlaySpeechBase.IsWaitingForNotifies", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(waitingNow, paramsPtr + 0);
@@ -581,14 +586,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsMovieTypeConvo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMovieTypeConvo;
     /// <summary>
     /// Function: IsMovieTypeConvo
     /// </summary>
     public unsafe virtual bool IsMovieTypeConvo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMovieTypeConvo, "BmGame.RSeqAct_PlaySpeechBase.IsMovieTypeConvo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMovieTypeConvo, "BmGame.RSeqAct_PlaySpeechBase.IsMovieTypeConvo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -602,17 +607,17 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlaySpeechDesignerInfoNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySpeechDesignerInfoNative;
     /// <summary>
     /// Function: PlaySpeechDesignerInfoNative
     /// </summary>
-    public unsafe virtual void PlaySpeechDesignerInfoNative(BmSDK.FString Text)
+    public unsafe virtual void PlaySpeechDesignerInfoNative(BmSDK.FStringArg Text)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySpeechDesignerInfoNative, "BmGame.RSeqAct_PlaySpeechBase.PlaySpeechDesignerInfoNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySpeechDesignerInfoNative, "BmGame.RSeqAct_PlaySpeechBase.PlaySpeechDesignerInfoNative", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -621,17 +626,18 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsMoviePlaying;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMoviePlaying;
     /// <summary>
     /// Function: IsMoviePlaying
     /// </summary>
     public unsafe virtual bool IsMoviePlaying()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMoviePlaying, "BmGame.RSeqAct_PlaySpeechBase.IsMoviePlaying");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMoviePlaying, "BmGame.RSeqAct_PlaySpeechBase.IsMoviePlaying", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -645,14 +651,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsSpeechMissing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeechMissing;
     /// <summary>
     /// Function: IsSpeechMissing
     /// </summary>
     public unsafe virtual bool IsSpeechMissing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSpeechMissing, "BmGame.RSeqAct_PlaySpeechBase.IsSpeechMissing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSpeechMissing, "BmGame.RSeqAct_PlaySpeechBase.IsSpeechMissing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -666,17 +672,17 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SearchForMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchForMovie;
     /// <summary>
     /// Function: SearchForMovie
     /// </summary>
-    public unsafe virtual bool SearchForMovie(BmSDK.FString MovieName)
+    public unsafe virtual bool SearchForMovie(BmSDK.FStringArg MovieName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SearchForMovie, "BmGame.RSeqAct_PlaySpeechBase.SearchForMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SearchForMovie, "BmGame.RSeqAct_PlaySpeechBase.SearchForMovie", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MovieName, paramsPtr + 0);
+        MovieName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -685,17 +691,18 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetCurrentDialogueTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentDialogueTime;
     /// <summary>
     /// Function: GetCurrentDialogueTime
     /// </summary>
     public unsafe virtual float GetCurrentDialogueTime(BmSDK.Engine.Actor SearchActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentDialogueTime, "BmGame.RSeqAct_PlaySpeechBase.GetCurrentDialogueTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentDialogueTime, "BmGame.RSeqAct_PlaySpeechBase.GetCurrentDialogueTime", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SearchActor, paramsPtr + 0);
@@ -710,14 +717,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SkipLineNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipLineNative;
     /// <summary>
     /// Function: SkipLineNative
     /// </summary>
     public unsafe virtual void SkipLineNative()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipLineNative, "BmGame.RSeqAct_PlaySpeechBase.SkipLineNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipLineNative, "BmGame.RSeqAct_PlaySpeechBase.SkipLineNative", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -731,14 +738,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_StopSpeechNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeechNative;
     /// <summary>
     /// Function: StopSpeechNative
     /// </summary>
     public unsafe virtual void StopSpeechNative()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpeechNative, "BmGame.RSeqAct_PlaySpeechBase.StopSpeechNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSpeechNative, "BmGame.RSeqAct_PlaySpeechBase.StopSpeechNative", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -752,14 +759,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_StartSpeechNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeechNative;
     /// <summary>
     /// Function: StartSpeechNative
     /// </summary>
     public unsafe virtual bool StartSpeechNative()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSpeechNative, "BmGame.RSeqAct_PlaySpeechBase.StartSpeechNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSpeechNative, "BmGame.RSeqAct_PlaySpeechBase.StartSpeechNative", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -773,14 +780,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryStartSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStartSpeech;
     /// <summary>
     /// Function: TryStartSpeech
     /// </summary>
     public unsafe virtual bool TryStartSpeech()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStartSpeech, "BmGame.RSeqAct_PlaySpeechBase.TryStartSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryStartSpeech, "BmGame.RSeqAct_PlaySpeechBase.TryStartSpeech", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -794,14 +801,14 @@ public partial class RSeqAct_PlaySpeechBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HandleInputLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInputLinks;
     /// <summary>
     /// Function: HandleInputLinks
     /// </summary>
     public unsafe virtual void HandleInputLinks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInputLinks, "BmGame.RSeqAct_PlaySpeechBase.HandleInputLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleInputLinks, "BmGame.RSeqAct_PlaySpeechBase.HandleInputLinks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

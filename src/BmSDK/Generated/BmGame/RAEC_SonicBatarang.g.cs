@@ -78,84 +78,84 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
         where TComponent : class, Framework.IScriptComponent<RAEC_SonicBatarang>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ThugHasArrivedAtTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugHasArrivedAtTarget;
     /// <summary>
     /// Function: ThugHasArrivedAtTarget
     /// </summary>
     public unsafe virtual void ThugHasArrivedAtTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugHasArrivedAtTarget, "BmGame.RAEC_SonicBatarang.ThugHasArrivedAtTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugHasArrivedAtTarget, "BmGame.RAEC_SonicBatarang.ThugHasArrivedAtTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_SonicBatarang.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_SonicBatarang.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BrangDetonated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BrangDetonated;
     /// <summary>
     /// Function: BrangDetonated
     /// </summary>
     public unsafe virtual void BrangDetonated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BrangDetonated, "BmGame.RAEC_SonicBatarang.BrangDetonated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BrangDetonated, "BmGame.RAEC_SonicBatarang.BrangDetonated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OmnitronFakeTargetFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OmnitronFakeTargetFailed;
     /// <summary>
     /// Function: OmnitronFakeTargetFailed
     /// </summary>
     public unsafe virtual void OmnitronFakeTargetFailed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OmnitronFakeTargetFailed, "BmGame.RAEC_SonicBatarang.OmnitronFakeTargetFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OmnitronFakeTargetFailed, "BmGame.RAEC_SonicBatarang.OmnitronFakeTargetFailed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsThugCarryingOutOrder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsThugCarryingOutOrder;
     /// <summary>
     /// Function: IsThugCarryingOutOrder
     /// </summary>
     public unsafe virtual bool IsThugCarryingOutOrder()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsThugCarryingOutOrder, "BmGame.RAEC_SonicBatarang.IsThugCarryingOutOrder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsThugCarryingOutOrder, "BmGame.RAEC_SonicBatarang.IsThugCarryingOutOrder", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_SonicBatarang.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_SonicBatarang.Tick", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -163,28 +163,28 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
         return;
     }
 
-    private static BmSDK.Function __fn_DeviceBeeped;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeviceBeeped;
     /// <summary>
     /// Function: DeviceBeeped
     /// </summary>
     public unsafe virtual bool DeviceBeeped()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeviceBeeped, "BmGame.RAEC_SonicBatarang.DeviceBeeped");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeviceBeeped, "BmGame.RAEC_SonicBatarang.DeviceBeeped", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_WantsToGlanceAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WantsToGlanceAt;
     /// <summary>
     /// Function: WantsToGlanceAt
     /// </summary>
     public unsafe override bool WantsToGlanceAt(BmSDK.Engine.Actor TestTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WantsToGlanceAt, "BmGame.RAEC_SonicBatarang.WantsToGlanceAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WantsToGlanceAt, "BmGame.RAEC_SonicBatarang.WantsToGlanceAt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestTarget, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsPossibleToClaim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPossibleToClaim;
     /// <summary>
     /// Function: IsPossibleToClaim
     /// </summary>
     public unsafe virtual bool IsPossibleToClaim(BmSDK.BmGame.RBMAIController TestCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPossibleToClaim, "BmGame.RAEC_SonicBatarang.IsPossibleToClaim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPossibleToClaim, "BmGame.RAEC_SonicBatarang.IsPossibleToClaim", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestCon, paramsPtr + 0);
@@ -207,28 +207,28 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetBarkPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBarkPriority;
     /// <summary>
     /// Function: GetBarkPriority
     /// </summary>
     public unsafe override int GetBarkPriority()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBarkPriority, "BmGame.RAEC_SonicBatarang.GetBarkPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBarkPriority, "BmGame.RAEC_SonicBatarang.GetBarkPriority", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FinishTopLevelAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishTopLevelAEC;
     /// <summary>
     /// Function: FinishTopLevelAEC
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_SonicBatarang.FinishTopLevelAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_SonicBatarang.FinishTopLevelAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StolenCon, paramsPtr + 0);
@@ -236,14 +236,14 @@ public partial class RAEC_SonicBatarang : BmSDK.BmGame.RAlertEventCoordinatorBas
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_SonicBatarang.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_SonicBatarang.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);

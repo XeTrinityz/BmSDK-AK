@@ -78,14 +78,14 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         where TComponent : class, Framework.IScriptComponent<RockDecalComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDecalMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDecalMaterial;
     /// <summary>
     /// Function: GetDecalMaterial
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetDecalMaterial()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDecalMaterial, "Engine.RockDecalComponent.GetDecalMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDecalMaterial, "Engine.RockDecalComponent.GetDecalMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RockDecalComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInterface>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetDecalMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDecalMaterial;
     /// <summary>
     /// Function: SetDecalMaterial
     /// </summary>
     public unsafe virtual void SetDecalMaterial(BmSDK.Engine.MaterialInterface NewDecalMaterial)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDecalMaterial, "Engine.RockDecalComponent.SetDecalMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDecalMaterial, "Engine.RockDecalComponent.SetDecalMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDecalMaterial, paramsPtr + 0);

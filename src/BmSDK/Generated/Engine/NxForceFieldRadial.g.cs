@@ -78,14 +78,14 @@ public partial class NxForceFieldRadial : BmSDK.Engine.NxForceField, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<NxForceFieldRadial>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DoInitRBPhys;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoInitRBPhys;
     /// <summary>
     /// Function: DoInitRBPhys
     /// </summary>
     public unsafe override void DoInitRBPhys()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoInitRBPhys, "Engine.NxForceFieldRadial.DoInitRBPhys");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoInitRBPhys, "Engine.NxForceFieldRadial.DoInitRBPhys", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

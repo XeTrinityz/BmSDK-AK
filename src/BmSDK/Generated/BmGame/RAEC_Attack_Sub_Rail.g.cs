@@ -78,56 +78,56 @@ public partial class RAEC_Attack_Sub_Rail : BmSDK.BmGame.RAEC_Attack_Sub_Converg
         where TComponent : class, Framework.IScriptComponent<RAEC_Attack_Sub_Rail>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Attack_Sub_Rail.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Attack_Sub_Rail.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetMoveToPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMoveToPoint;
     /// <summary>
     /// Function: GetMoveToPoint
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetMoveToPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMoveToPoint, "BmGame.RAEC_Attack_Sub_Rail.GetMoveToPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMoveToPoint, "BmGame.RAEC_Attack_Sub_Rail.GetMoveToPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMoveDestForCurrentFence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMoveDestForCurrentFence;
     /// <summary>
     /// Function: GetMoveDestForCurrentFence
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMoveDestForCurrentFence()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMoveDestForCurrentFence, "BmGame.RAEC_Attack_Sub_Rail.GetMoveDestForCurrentFence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMoveDestForCurrentFence, "BmGame.RAEC_Attack_Sub_Rail.GetMoveDestForCurrentFence", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NeedsToRunToFence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedsToRunToFence;
     /// <summary>
     /// Function: NeedsToRunToFence
     /// </summary>
     public unsafe virtual bool NeedsToRunToFence(System.Numerics.Vector3 MoveDest)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NeedsToRunToFence, "BmGame.RAEC_Attack_Sub_Rail.NeedsToRunToFence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NeedsToRunToFence, "BmGame.RAEC_Attack_Sub_Rail.NeedsToRunToFence", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveDest, paramsPtr + 0);
@@ -135,56 +135,56 @@ public partial class RAEC_Attack_Sub_Rail : BmSDK.BmGame.RAEC_Attack_Sub_Converg
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsAlreadyOnFence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAlreadyOnFence;
     /// <summary>
     /// Function: IsAlreadyOnFence
     /// </summary>
     public unsafe virtual bool IsAlreadyOnFence()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAlreadyOnFence, "BmGame.RAEC_Attack_Sub_Rail.IsAlreadyOnFence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAlreadyOnFence, "BmGame.RAEC_Attack_Sub_Rail.IsAlreadyOnFence", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HandOverFenceLock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandOverFenceLock;
     /// <summary>
     /// Function: HandOverFenceLock
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPathNode_FenceJumpProxy HandOverFenceLock()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandOverFenceLock, "BmGame.RAEC_Attack_Sub_Rail.HandOverFenceLock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandOverFenceLock, "BmGame.RAEC_Attack_Sub_Rail.HandOverFenceLock", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMPathNode_FenceJumpProxy>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAtRail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAtRail;
     /// <summary>
     /// Function: IsAtRail
     /// </summary>
     public unsafe virtual bool IsAtRail()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAtRail, "BmGame.RAEC_Attack_Sub_Rail.IsAtRail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAtRail, "BmGame.RAEC_Attack_Sub_Rail.IsAtRail", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitOnFence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitOnFence;
     /// <summary>
     /// Function: InitOnFence
     /// </summary>
     public unsafe virtual void InitOnFence(BmSDK.BmGame.RPawnPlayer TargetPlayer, BmSDK.BmGame.RBMPathNode_FenceJumpProxy NewDestFence)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitOnFence, "BmGame.RAEC_Attack_Sub_Rail.InitOnFence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitOnFence, "BmGame.RAEC_Attack_Sub_Rail.InitOnFence", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPlayer, paramsPtr + 0);
@@ -193,14 +193,14 @@ public partial class RAEC_Attack_Sub_Rail : BmSDK.BmGame.RAEC_Attack_Sub_Converg
         return;
     }
 
-    private static BmSDK.Function __fn_OnVillainStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnVillainStolen;
     /// <summary>
     /// Function: OnVillainStolen
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Attack_Sub_Rail.OnVillainStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnVillainStolen, "BmGame.RAEC_Attack_Sub_Rail.OnVillainStolen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

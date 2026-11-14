@@ -78,42 +78,42 @@ public partial class RPlayerRI : BmSDK.Engine.PlayerReplicationInfo, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RPlayerRI>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ShowChallengeStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowChallengeStats;
     /// <summary>
     /// Function: ShowChallengeStats
     /// </summary>
     public unsafe virtual void ShowChallengeStats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowChallengeStats, "BmGame.RPlayerRI.ShowChallengeStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowChallengeStats, "BmGame.RPlayerRI.ShowChallengeStats", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PublishCombatChallengeStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PublishCombatChallengeStats;
     /// <summary>
     /// Function: PublishCombatChallengeStats
     /// </summary>
     public unsafe virtual void PublishCombatChallengeStats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PublishCombatChallengeStats, "BmGame.RPlayerRI.PublishCombatChallengeStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PublishCombatChallengeStats, "BmGame.RPlayerRI.PublishCombatChallengeStats", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearChallengeStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearChallengeStats;
     /// <summary>
     /// Function: ClearChallengeStats
     /// </summary>
     public unsafe virtual void ClearChallengeStats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearChallengeStats, "BmGame.RPlayerRI.ClearChallengeStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearChallengeStats, "BmGame.RPlayerRI.ClearChallengeStats", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

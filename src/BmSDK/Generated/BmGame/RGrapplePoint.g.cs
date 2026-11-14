@@ -78,14 +78,14 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RGrapplePoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DebugDrawClimbLocatorChain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDrawClimbLocatorChain;
     /// <summary>
     /// Function: DebugDrawClimbLocatorChain
     /// </summary>
     public unsafe virtual void DebugDrawClimbLocatorChain()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugDrawClimbLocatorChain, "BmGame.RGrapplePoint.DebugDrawClimbLocatorChain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugDrawClimbLocatorChain, "BmGame.RGrapplePoint.DebugDrawClimbLocatorChain", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -124,14 +124,14 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetGrappleEndPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrappleEndPoints;
     /// <summary>
     /// Function: GetGrappleEndPoints
     /// </summary>
     public unsafe virtual void GetGrappleEndPoints(out System.Numerics.Vector3 OutPointA, out System.Numerics.Vector3 OutPointB)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGrappleEndPoints, "BmGame.RGrapplePoint.GetGrappleEndPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGrappleEndPoints, "BmGame.RGrapplePoint.GetGrappleEndPoints", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutPointA);
@@ -151,28 +151,28 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetCentrePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCentrePoint;
     /// <summary>
     /// Function: GetCentrePoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCentrePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCentrePoint, "BmGame.RGrapplePoint.GetCentrePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCentrePoint, "BmGame.RGrapplePoint.GetCentrePoint", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RGrapplePoint.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.RGrapplePoint.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -180,14 +180,14 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RGrapplePoint.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RGrapplePoint.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -195,14 +195,14 @@ public partial class RGrapplePoint : BmSDK.BmGame.RSnapToPositionActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterGrapplePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterGrapplePoint;
     /// <summary>
     /// Function: RegisterGrapplePoint
     /// </summary>
     public unsafe virtual void RegisterGrapplePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterGrapplePoint, "BmGame.RGrapplePoint.RegisterGrapplePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterGrapplePoint, "BmGame.RGrapplePoint.RegisterGrapplePoint", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

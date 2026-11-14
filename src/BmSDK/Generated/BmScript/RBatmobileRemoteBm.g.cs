@@ -78,252 +78,252 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RBatmobileRemoteBm>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyReachedHardRemoteLimit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyReachedHardRemoteLimit;
     /// <summary>
     /// Function: NotifyReachedHardRemoteLimit
     /// </summary>
     public unsafe override void NotifyReachedHardRemoteLimit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyReachedHardRemoteLimit, "BmScript.RBatmobileRemoteBm.NotifyReachedHardRemoteLimit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyReachedHardRemoteLimit, "BmScript.RBatmobileRemoteBm.NotifyReachedHardRemoteLimit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnGadgetWheelSelected;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnGadgetWheelSelected;
     /// <summary>
     /// Function: OnGadgetWheelSelected
     /// </summary>
     public unsafe override void OnGadgetWheelSelected()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnGadgetWheelSelected, "BmScript.RBatmobileRemoteBm.OnGadgetWheelSelected");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnGadgetWheelSelected, "BmScript.RBatmobileRemoteBm.OnGadgetWheelSelected", this);
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPC;
     /// <summary>
     /// Function: GetPC
     /// </summary>
     public unsafe override BmSDK.BmGame.RPlayerController GetPC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPC, "BmScript.RBatmobileRemoteBm.GetPC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPC, "BmScript.RBatmobileRemoteBm.GetPC", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPlayerController>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFiringAnimationOverlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFiringAnimationOverlay;
     /// <summary>
     /// Function: GetFiringAnimationOverlay
     /// </summary>
     public unsafe virtual BmSDK.FName GetFiringAnimationOverlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFiringAnimationOverlay, "BmScript.RBatmobileRemoteBm.GetFiringAnimationOverlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFiringAnimationOverlay, "BmScript.RBatmobileRemoteBm.GetFiringAnimationOverlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartChargingJammer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartChargingJammer;
     /// <summary>
     /// Function: StartChargingJammer
     /// </summary>
     public unsafe virtual void StartChargingJammer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartChargingJammer, "BmScript.RBatmobileRemoteBm.StartChargingJammer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartChargingJammer, "BmScript.RBatmobileRemoteBm.StartChargingJammer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyBatmanPickedUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyBatmanPickedUp;
     /// <summary>
     /// Function: NotifyBatmanPickedUp
     /// </summary>
     public unsafe override void NotifyBatmanPickedUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBatmanPickedUp, "BmScript.RBatmobileRemoteBm.NotifyBatmanPickedUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyBatmanPickedUp, "BmScript.RBatmobileRemoteBm.NotifyBatmanPickedUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyRemoteDriveCancelled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyRemoteDriveCancelled;
     /// <summary>
     /// Function: NotifyRemoteDriveCancelled
     /// </summary>
     public unsafe override void NotifyRemoteDriveCancelled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyRemoteDriveCancelled, "BmScript.RBatmobileRemoteBm.NotifyRemoteDriveCancelled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyRemoteDriveCancelled, "BmScript.RBatmobileRemoteBm.NotifyRemoteDriveCancelled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyCallBatmobileToMe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyCallBatmobileToMe;
     /// <summary>
     /// Function: NotifyCallBatmobileToMe
     /// </summary>
     public unsafe override void NotifyCallBatmobileToMe()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCallBatmobileToMe, "BmScript.RBatmobileRemoteBm.NotifyCallBatmobileToMe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyCallBatmobileToMe, "BmScript.RBatmobileRemoteBm.NotifyCallBatmobileToMe", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PowerOffScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PowerOffScreen;
     /// <summary>
     /// Function: PowerOffScreen
     /// </summary>
     public unsafe virtual void PowerOffScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PowerOffScreen, "BmScript.RBatmobileRemoteBm.PowerOffScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PowerOffScreen, "BmScript.RBatmobileRemoteBm.PowerOffScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PowerOnScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PowerOnScreen;
     /// <summary>
     /// Function: PowerOnScreen
     /// </summary>
     public unsafe virtual void PowerOnScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PowerOnScreen, "BmScript.RBatmobileRemoteBm.PowerOnScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PowerOnScreen, "BmScript.RBatmobileRemoteBm.PowerOnScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DontMoveCursor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DontMoveCursor;
     /// <summary>
     /// Function: DontMoveCursor
     /// </summary>
     public unsafe virtual void DontMoveCursor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DontMoveCursor, "BmScript.RBatmobileRemoteBm.DontMoveCursor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DontMoveCursor, "BmScript.RBatmobileRemoteBm.DontMoveCursor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetAimAtRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAimAtRotation;
     /// <summary>
     /// Function: GetAimAtRotation
     /// </summary>
     public unsafe override BmSDK.Rotator GetAimAtRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAimAtRotation, "BmScript.RBatmobileRemoteBm.GetAimAtRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAimAtRotation, "BmScript.RBatmobileRemoteBm.GetAimAtRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearTarget;
     /// <summary>
     /// Function: ClearTarget
     /// </summary>
     public unsafe virtual void ClearTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearTarget, "BmScript.RBatmobileRemoteBm.ClearTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearTarget, "BmScript.RBatmobileRemoteBm.ClearTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowFailIcon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowFailIcon;
     /// <summary>
     /// Function: ShowFailIcon
     /// </summary>
     public unsafe virtual void ShowFailIcon()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowFailIcon, "BmScript.RBatmobileRemoteBm.ShowFailIcon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowFailIcon, "BmScript.RBatmobileRemoteBm.ShowFailIcon", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTarget;
     /// <summary>
     /// Function: DrawTarget
     /// </summary>
     public unsafe virtual void DrawTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTarget, "BmScript.RBatmobileRemoteBm.DrawTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTarget, "BmScript.RBatmobileRemoteBm.DrawTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelCallBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCallBatmobile;
     /// <summary>
     /// Function: CancelCallBatmobile
     /// </summary>
     public unsafe virtual void CancelCallBatmobile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCallBatmobile, "BmScript.RBatmobileRemoteBm.CancelCallBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelCallBatmobile, "BmScript.RBatmobileRemoteBm.CancelCallBatmobile", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CallBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CallBatmobile;
     /// <summary>
     /// Function: CallBatmobile
     /// </summary>
     public unsafe virtual void CallBatmobile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CallBatmobile, "BmScript.RBatmobileRemoteBm.CallBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CallBatmobile, "BmScript.RBatmobileRemoteBm.CallBatmobile", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayerTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerTick;
     /// <summary>
     /// Function: PlayerTick
     /// </summary>
     public unsafe override void PlayerTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmScript.RBatmobileRemoteBm.PlayerTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerTick, "BmScript.RBatmobileRemoteBm.PlayerTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -331,14 +331,14 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetFireAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFireAnim;
     /// <summary>
     /// Function: GetFireAnim
     /// </summary>
     public unsafe virtual BmSDK.FName GetFireAnim(BmSDK.Rotator ThrowDirection, out BmSDK.BmGame.RPawnPlayerAnim.AimingConfigDesc AimingConfig, bool Mirrored)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFireAnim, "BmScript.RBatmobileRemoteBm.GetFireAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFireAnim, "BmScript.RBatmobileRemoteBm.GetFireAnim", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThrowDirection, paramsPtr + 0);
@@ -350,14 +350,14 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetPrimedPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrimedPose;
     /// <summary>
     /// Function: GetPrimedPose
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmScript.RBatmobileRemoteBm.GetPrimedPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrimedPose, "BmScript.RBatmobileRemoteBm.GetPrimedPose", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StanceIsCrouched);
@@ -378,14 +378,14 @@ public partial class RBatmobileRemoteBm : BmSDK.BmGame.RBatmobileRemote, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmScript.RBatmobileRemoteBm.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmScript.RBatmobileRemoteBm.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);

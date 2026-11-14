@@ -78,14 +78,14 @@ public partial class RGangInteractPoint : BmSDK.BmGame.RGangInteractPointBase, B
         where TComponent : class, Framework.IScriptComponent<RGangInteractPoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFinished;
     /// <summary>
     /// Function: SetFinished
     /// </summary>
     public unsafe override void SetFinished(BmSDK.BmGame.RBMPawnAI P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFinished, "BmScript.RGangInteractPoint.SetFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFinished, "BmScript.RGangInteractPoint.SetFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RGangInteractPoint : BmSDK.BmGame.RGangInteractPointBase, B
         return;
     }
 
-    private static BmSDK.Function __fn_SetInUse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInUse;
     /// <summary>
     /// Function: SetInUse
     /// </summary>
     public unsafe override void SetInUse(BmSDK.BmGame.RBMPawnAI UsagePawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInUse, "BmScript.RGangInteractPoint.SetInUse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInUse, "BmScript.RGangInteractPoint.SetInUse", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UsagePawn, paramsPtr + 0);
@@ -108,42 +108,42 @@ public partial class RGangInteractPoint : BmSDK.BmGame.RGangInteractPointBase, B
         return;
     }
 
-    private static BmSDK.Function __fn_GetPOILocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPOILocation;
     /// <summary>
     /// Function: GetPOILocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetPOILocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPOILocation, "BmScript.RGangInteractPoint.GetPOILocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPOILocation, "BmScript.RGangInteractPoint.GetPOILocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSelectionScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSelectionScore;
     /// <summary>
     /// Function: GetSelectionScore
     /// </summary>
     public unsafe override float GetSelectionScore()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSelectionScore, "BmScript.RGangInteractPoint.GetSelectionScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSelectionScore, "BmScript.RGangInteractPoint.GetSelectionScore", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBehaviourClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBehaviourClass;
     /// <summary>
     /// Function: GetBehaviourClass
     /// </summary>
     public unsafe override BmSDK.Class GetBehaviourClass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourClass, "BmScript.RGangInteractPoint.GetBehaviourClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBehaviourClass, "BmScript.RGangInteractPoint.GetBehaviourClass", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

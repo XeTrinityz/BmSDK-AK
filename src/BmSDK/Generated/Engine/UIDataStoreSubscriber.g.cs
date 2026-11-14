@@ -38,5 +38,5 @@ public partial interface UIDataStoreSubscriber : BmSDK.Interface
     /// <summary>
     /// Function: SetDataStoreBinding
     /// </summary>
-    public unsafe void SetDataStoreBinding(BmSDK.FString MarkupText, int BindingIndex = default);
+    public unsafe void SetDataStoreBinding(BmSDK.FStringArg MarkupText, int BindingIndex = default);
 }

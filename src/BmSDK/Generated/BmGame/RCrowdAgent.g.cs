@@ -78,14 +78,14 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCrowdAgent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AdvanceFlockStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceFlockStage;
     /// <summary>
     /// Function: AdvanceFlockStage
     /// </summary>
     public unsafe virtual void AdvanceFlockStage(int StageNum = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdvanceFlockStage, "BmGame.RCrowdAgent.AdvanceFlockStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdvanceFlockStage, "BmGame.RCrowdAgent.AdvanceFlockStage", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StageNum, paramsPtr + 0);
@@ -93,42 +93,42 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyAgent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyAgent;
     /// <summary>
     /// Function: DestroyAgent
     /// </summary>
     public unsafe virtual void DestroyAgent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyAgent, "BmGame.RCrowdAgent.DestroyAgent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyAgent, "BmGame.RCrowdAgent.DestroyAgent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KillAgent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillAgent;
     /// <summary>
     /// Function: KillAgent
     /// </summary>
     public unsafe virtual void KillAgent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillAgent, "BmGame.RCrowdAgent.KillAgent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillAgent, "BmGame.RCrowdAgent.KillAgent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmGame.RCrowdAgent.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "BmGame.RCrowdAgent.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -142,28 +142,28 @@ public partial class RCrowdAgent : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RCrowdAgent.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RCrowdAgent.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanRespondToAttractor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanRespondToAttractor;
     /// <summary>
     /// Function: CanRespondToAttractor
     /// </summary>
     public unsafe virtual bool CanRespondToAttractor(BmSDK.BmGame.RCrowdAttractor Attractor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanRespondToAttractor, "BmGame.RCrowdAgent.CanRespondToAttractor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanRespondToAttractor, "BmGame.RCrowdAgent.CanRespondToAttractor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attractor, paramsPtr + 0);

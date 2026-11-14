@@ -91,44 +91,45 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.LocHelper>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLegalCountry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLegalCountry;
     /// <summary>
     /// Function: GetLegalCountry
     /// </summary>
     public unsafe virtual BmSDK.FString GetLegalCountry()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLegalCountry, "Engine.LocHelper.GetLegalCountry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLegalCountry, "Engine.LocHelper.GetLegalCountry", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindCountryCodeInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindCountryCodeInfo;
     /// <summary>
     /// Function: FindCountryCodeInfo
     /// </summary>
-    public unsafe virtual bool FindCountryCodeInfo(BmSDK.FString CountryCode, out BmSDK.Engine.LocHelper.FCountryCodeMap Output)
+    public unsafe virtual bool FindCountryCodeInfo(BmSDK.FStringArg CountryCode, out BmSDK.Engine.LocHelper.FCountryCodeMap Output)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindCountryCodeInfo, "Engine.LocHelper.FindCountryCodeInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindCountryCodeInfo, "Engine.LocHelper.FindCountryCodeInfo", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CountryCode, paramsPtr + 0);
+        CountryCode.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         Output = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.LocHelper.FCountryCodeMap>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_GetValidAge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetValidAge;
     /// <summary>
     /// Function: GetValidAge
     /// </summary>
     public unsafe virtual int GetValidAge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetValidAge, "Engine.LocHelper.GetValidAge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetValidAge, "Engine.LocHelper.GetValidAge", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -142,14 +143,14 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetIsCountryValid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsCountryValid;
     /// <summary>
     /// Function: GetIsCountryValid
     /// </summary>
     public unsafe virtual bool GetIsCountryValid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsCountryValid, "Engine.LocHelper.GetIsCountryValid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIsCountryValid, "Engine.LocHelper.GetIsCountryValid", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -163,14 +164,14 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetIsAgeValid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsAgeValid;
     /// <summary>
     /// Function: GetIsAgeValid
     /// </summary>
     public unsafe virtual bool GetIsAgeValid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsAgeValid, "Engine.LocHelper.GetIsAgeValid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIsAgeValid, "Engine.LocHelper.GetIsAgeValid", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -184,14 +185,14 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCountry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCountry;
     /// <summary>
     /// Function: GetCountry
     /// </summary>
     public unsafe virtual BmSDK.FString GetCountry()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCountry, "Engine.LocHelper.GetCountry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCountry, "Engine.LocHelper.GetCountry", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -205,14 +206,14 @@ public partial class LocHelper : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCountryCodeLookupIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCountryCodeLookupIndex;
     /// <summary>
     /// Function: GetCountryCodeLookupIndex
     /// </summary>
     public unsafe virtual int GetCountryCodeLookupIndex()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCountryCodeLookupIndex, "Engine.LocHelper.GetCountryCodeLookupIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCountryCodeLookupIndex, "Engine.LocHelper.GetCountryCodeLookupIndex", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

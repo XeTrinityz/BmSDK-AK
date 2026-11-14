@@ -78,14 +78,14 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RBMWeaponChokePoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDamage;
     /// <summary>
     /// Function: GetDamage
     /// </summary>
     public unsafe override float GetDamage(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDamage, "BmScript.RBMWeaponChokePoint.GetDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDamage, "BmScript.RBMWeaponChokePoint.GetDamage", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetLaunchLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLaunchLocation;
     /// <summary>
     /// Function: GetLaunchLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLaunchLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLaunchLocation, "BmScript.RBMWeaponChokePoint.GetLaunchLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLaunchLocation, "BmScript.RBMWeaponChokePoint.GetLaunchLocation", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FireHomingRocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireHomingRocket;
     /// <summary>
     /// Function: FireHomingRocket
     /// </summary>
     public unsafe virtual void FireHomingRocket(BmSDK.Engine.Actor TargetActor, System.Numerics.Vector3 FireDirection = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireHomingRocket, "BmScript.RBMWeaponChokePoint.FireHomingRocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireHomingRocket, "BmScript.RBMWeaponChokePoint.FireHomingRocket", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetActor, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FireFastRocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireFastRocket;
     /// <summary>
     /// Function: FireFastRocket
     /// </summary>
     public unsafe virtual void FireFastRocket(System.Numerics.Vector3 FireDirection = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireFastRocket, "BmScript.RBMWeaponChokePoint.FireFastRocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireFastRocket, "BmScript.RBMWeaponChokePoint.FireFastRocket", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FireDirection, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FireRocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireRocket;
     /// <summary>
     /// Function: FireRocket
     /// </summary>
     public unsafe virtual void FireRocket(System.Numerics.Vector3 FireDirection = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireRocket, "BmScript.RBMWeaponChokePoint.FireRocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireRocket, "BmScript.RBMWeaponChokePoint.FireRocket", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FireDirection, paramsPtr + 0);
@@ -153,14 +153,14 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RBMWeaponChokePoint.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RBMWeaponChokePoint.Tick", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -168,56 +168,56 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetLookFromLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookFromLocation;
     /// <summary>
     /// Function: GetLookFromLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLookFromLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLookFromLocation, "BmScript.RBMWeaponChokePoint.GetLookFromLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLookFromLocation, "BmScript.RBMWeaponChokePoint.GetLookFromLocation", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TurnOffVisibleSight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOffVisibleSight;
     /// <summary>
     /// Function: TurnOffVisibleSight
     /// </summary>
     public unsafe virtual void TurnOffVisibleSight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffVisibleSight, "BmScript.RBMWeaponChokePoint.TurnOffVisibleSight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOffVisibleSight, "BmScript.RBMWeaponChokePoint.TurnOffVisibleSight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOnVisibleSight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOnVisibleSight;
     /// <summary>
     /// Function: TurnOnVisibleSight
     /// </summary>
     public unsafe virtual void TurnOnVisibleSight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnVisibleSight, "BmScript.RBMWeaponChokePoint.TurnOnVisibleSight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOnVisibleSight, "BmScript.RBMWeaponChokePoint.TurnOnVisibleSight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachWeapon;
     /// <summary>
     /// Function: AttachWeapon
     /// </summary>
     public unsafe override void AttachWeapon()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachWeapon, "BmScript.RBMWeaponChokePoint.AttachWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachWeapon, "BmScript.RBMWeaponChokePoint.AttachWeapon", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -237,14 +237,14 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CreateWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateWeaponConfig;
     /// <summary>
     /// Function: CreateWeaponConfig
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateWeaponConfig(BmSDK.GameObject NewOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeaponConfig, "BmScript.RBMWeaponChokePoint.CreateWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateWeaponConfig, "BmScript.RBMWeaponChokePoint.CreateWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);
@@ -252,14 +252,14 @@ public partial class RBMWeaponChokePoint : BmSDK.BmGame.RBMWeaponRanged, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CreateBasicGunWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateBasicGunWeaponConfig;
     /// <summary>
     /// Function: CreateBasicGunWeaponConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig CreateBasicGunWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.Engine.AnimSet AnimSet1)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateBasicGunWeaponConfig, "BmScript.RBMWeaponChokePoint.CreateBasicGunWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateBasicGunWeaponConfig, "BmScript.RBMWeaponChokePoint.CreateBasicGunWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[896];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RKillVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BatarangCameraStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BatarangCameraStarted;
     /// <summary>
     /// Function: BatarangCameraStarted
     /// </summary>
     public unsafe virtual void BatarangCameraStarted(BmSDK.BmGame.RBatarangCamera bc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BatarangCameraStarted, "BmGame.RKillVolume.BatarangCameraStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BatarangCameraStarted, "BmGame.RKillVolume.BatarangCameraStarted", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bc, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BatarangCameraFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BatarangCameraFinished;
     /// <summary>
     /// Function: BatarangCameraFinished
     /// </summary>
     public unsafe virtual void BatarangCameraFinished(BmSDK.BmGame.RBatarangCamera bc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BatarangCameraFinished, "BmGame.RKillVolume.BatarangCameraFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BatarangCameraFinished, "BmGame.RKillVolume.BatarangCameraFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bc, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FindClosestRescuePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestRescuePoint;
     /// <summary>
     /// Function: FindClosestRescuePoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRescuePoint FindClosestRescuePoint(BmSDK.Engine.Actor RescueActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindClosestRescuePoint, "BmGame.RKillVolume.FindClosestRescuePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindClosestRescuePoint, "BmGame.RKillVolume.FindClosestRescuePoint", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RescueActor, paramsPtr + 0);
@@ -123,42 +123,42 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RRescuePoint>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_StopEntryAmbience;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopEntryAmbience;
     /// <summary>
     /// Function: StopEntryAmbience
     /// </summary>
     public unsafe virtual void StopEntryAmbience()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopEntryAmbience, "BmGame.RKillVolume.StopEntryAmbience");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopEntryAmbience, "BmGame.RKillVolume.StopEntryAmbience", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayEntryAmbience;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayEntryAmbience;
     /// <summary>
     /// Function: PlayEntryAmbience
     /// </summary>
     public unsafe virtual void PlayEntryAmbience()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayEntryAmbience, "BmGame.RKillVolume.PlayEntryAmbience");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayEntryAmbience, "BmGame.RKillVolume.PlayEntryAmbience", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RKillVolume.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RKillVolume.OnToggle", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_WhackBatmanWhileRemoteControllingBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WhackBatmanWhileRemoteControllingBatmobile;
     /// <summary>
     /// Function: WhackBatmanWhileRemoteControllingBatmobile
     /// </summary>
     public unsafe virtual void WhackBatmanWhileRemoteControllingBatmobile(BmSDK.BmGame.RPawnPlayer Batman)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WhackBatmanWhileRemoteControllingBatmobile, "BmGame.RKillVolume.WhackBatmanWhileRemoteControllingBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WhackBatmanWhileRemoteControllingBatmobile, "BmGame.RKillVolume.WhackBatmanWhileRemoteControllingBatmobile", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Batman, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetBatmanInVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmanInVolume;
     /// <summary>
     /// Function: SetBatmanInVolume
     /// </summary>
     public unsafe virtual void SetBatmanInVolume(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatmanInVolume, "BmGame.RKillVolume.SetBatmanInVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatmanInVolume, "BmGame.RKillVolume.SetBatmanInVolume", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -196,28 +196,28 @@ public partial class RKillVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_KillPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillPlayer;
     /// <summary>
     /// Function: KillPlayer
     /// </summary>
     public unsafe virtual void KillPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillPlayer, "BmGame.RKillVolume.KillPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillPlayer, "BmGame.RKillVolume.KillPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RKillVolume.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RKillVolume.Touch", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);

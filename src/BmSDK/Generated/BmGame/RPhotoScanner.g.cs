@@ -78,28 +78,28 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPhotoScanner>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetScannerPower;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScannerPower;
     /// <summary>
     /// Function: GetScannerPower
     /// </summary>
     public unsafe virtual float GetScannerPower()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScannerPower, "BmGame.RPhotoScanner.GetScannerPower");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScannerPower, "BmGame.RPhotoScanner.GetScannerPower", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe virtual void DrawHUD(BmSDK.Engine.HUD H)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RPhotoScanner.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmGame.RPhotoScanner.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDetailToEvidence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDetailToEvidence;
     /// <summary>
     /// Function: SetDetailToEvidence
     /// </summary>
     public unsafe virtual void SetDetailToEvidence(BmSDK.Engine.HUD H, BmSDK.BmGame.RPhysicalEvidenceCrimeScene TheEvidence)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDetailToEvidence, "BmGame.RPhotoScanner.SetDetailToEvidence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDetailToEvidence, "BmGame.RPhotoScanner.SetDetailToEvidence", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateDeepScanZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDeepScanZoom;
     /// <summary>
     /// Function: UpdateDeepScanZoom
     /// </summary>
     public unsafe virtual void UpdateDeepScanZoom(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDeepScanZoom, "BmGame.RPhotoScanner.UpdateDeepScanZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDeepScanZoom, "BmGame.RPhotoScanner.UpdateDeepScanZoom", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -138,28 +138,28 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResolveDeepScanZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveDeepScanZoom;
     /// <summary>
     /// Function: ResolveDeepScanZoom
     /// </summary>
     public unsafe virtual void ResolveDeepScanZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolveDeepScanZoom, "BmGame.RPhotoScanner.ResolveDeepScanZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResolveDeepScanZoom, "BmGame.RPhotoScanner.ResolveDeepScanZoom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDeepScanZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDeepScanZoom;
     /// <summary>
     /// Function: SetDeepScanZoom
     /// </summary>
     public unsafe virtual void SetDeepScanZoom(float target_zoom, bool Snap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDeepScanZoom, "BmGame.RPhotoScanner.SetDeepScanZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDeepScanZoom, "BmGame.RPhotoScanner.SetDeepScanZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(target_zoom, paramsPtr + 0);
@@ -168,14 +168,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateZoom;
     /// <summary>
     /// Function: UpdateZoom
     /// </summary>
     public unsafe virtual void UpdateZoom(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateZoom, "BmGame.RPhotoScanner.UpdateZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateZoom, "BmGame.RPhotoScanner.UpdateZoom", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -183,126 +183,126 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetZoom;
     /// <summary>
     /// Function: ResetZoom
     /// </summary>
     public unsafe virtual void ResetZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetZoom, "BmGame.RPhotoScanner.ResetZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetZoom, "BmGame.RPhotoScanner.ResetZoom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopScanning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopScanning;
     /// <summary>
     /// Function: StopScanning
     /// </summary>
     public unsafe virtual void StopScanning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopScanning, "BmGame.RPhotoScanner.StopScanning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopScanning, "BmGame.RPhotoScanner.StopScanning", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LockScanning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LockScanning;
     /// <summary>
     /// Function: LockScanning
     /// </summary>
     public unsafe virtual void LockScanning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LockScanning, "BmGame.RPhotoScanner.LockScanning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LockScanning, "BmGame.RPhotoScanner.LockScanning", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartScanning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartScanning;
     /// <summary>
     /// Function: StartScanning
     /// </summary>
     public unsafe virtual bool StartScanning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartScanning, "BmGame.RPhotoScanner.StartScanning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartScanning, "BmGame.RPhotoScanner.StartScanning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetName;
     /// <summary>
     /// Function: GetName
     /// </summary>
     public unsafe virtual BmSDK.FString GetName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetName, "BmGame.RPhotoScanner.GetName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetName, "BmGame.RPhotoScanner.GetName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CompleteAnimFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CompleteAnimFinished;
     /// <summary>
     /// Function: CompleteAnimFinished
     /// </summary>
     public unsafe virtual void CompleteAnimFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CompleteAnimFinished, "BmGame.RPhotoScanner.CompleteAnimFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CompleteAnimFinished, "BmGame.RPhotoScanner.CompleteAnimFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ScanComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScanComplete;
     /// <summary>
     /// Function: ScanComplete
     /// </summary>
     public unsafe virtual void ScanComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScanComplete, "BmGame.RPhotoScanner.ScanComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScanComplete, "BmGame.RPhotoScanner.ScanComplete", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginReplay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginReplay;
     /// <summary>
     /// Function: BeginReplay
     /// </summary>
     public unsafe virtual void BeginReplay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginReplay, "BmGame.RPhotoScanner.BeginReplay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginReplay, "BmGame.RPhotoScanner.BeginReplay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetScannerCursorVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScannerCursorVisible;
     /// <summary>
     /// Function: SetScannerCursorVisible
     /// </summary>
     public unsafe virtual void SetScannerCursorVisible(bool IsVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScannerCursorVisible, "BmGame.RPhotoScanner.SetScannerCursorVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetScannerCursorVisible, "BmGame.RPhotoScanner.SetScannerCursorVisible", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsVisible, paramsPtr + 0);
@@ -310,14 +310,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetMarkerPositionPercentage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMarkerPositionPercentage;
     /// <summary>
     /// Function: SetMarkerPositionPercentage
     /// </summary>
     public unsafe virtual void SetMarkerPositionPercentage(float Percent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMarkerPositionPercentage, "BmGame.RPhotoScanner.SetMarkerPositionPercentage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMarkerPositionPercentage, "BmGame.RPhotoScanner.SetMarkerPositionPercentage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Percent, paramsPtr + 0);
@@ -325,14 +325,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetScannerPercentageComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScannerPercentageComplete;
     /// <summary>
     /// Function: SetScannerPercentageComplete
     /// </summary>
     public unsafe virtual void SetScannerPercentageComplete(float Percent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScannerPercentageComplete, "BmGame.RPhotoScanner.SetScannerPercentageComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetScannerPercentageComplete, "BmGame.RPhotoScanner.SetScannerPercentageComplete", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Percent, paramsPtr + 0);
@@ -340,14 +340,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DeselectEvidenceSection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeselectEvidenceSection;
     /// <summary>
     /// Function: DeselectEvidenceSection
     /// </summary>
     public unsafe virtual void DeselectEvidenceSection(int timeIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeselectEvidenceSection, "BmGame.RPhotoScanner.DeselectEvidenceSection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeselectEvidenceSection, "BmGame.RPhotoScanner.DeselectEvidenceSection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeIndex, paramsPtr + 0);
@@ -355,14 +355,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCameraMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCameraMode;
     /// <summary>
     /// Function: SetCameraMode
     /// </summary>
     public unsafe virtual void SetCameraMode(int Mode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCameraMode, "BmGame.RPhotoScanner.SetCameraMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCameraMode, "BmGame.RPhotoScanner.SetCameraMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Mode, paramsPtr + 0);
@@ -370,14 +370,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCaseFileMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaseFileMode;
     /// <summary>
     /// Function: SetCaseFileMode
     /// </summary>
     public unsafe virtual void SetCaseFileMode(int ScanState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCaseFileMode, "BmGame.RPhotoScanner.SetCaseFileMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCaseFileMode, "BmGame.RPhotoScanner.SetCaseFileMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScanState, paramsPtr + 0);
@@ -385,14 +385,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SelectEvidenceSection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectEvidenceSection;
     /// <summary>
     /// Function: SelectEvidenceSection
     /// </summary>
     public unsafe virtual void SelectEvidenceSection(int timeIndex, int ScanState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectEvidenceSection, "BmGame.RPhotoScanner.SelectEvidenceSection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectEvidenceSection, "BmGame.RPhotoScanner.SelectEvidenceSection", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeIndex, paramsPtr + 0);
@@ -401,14 +401,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddEvidenceSection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddEvidenceSection;
     /// <summary>
     /// Function: AddEvidenceSection
     /// </summary>
     public unsafe virtual void AddEvidenceSection(int StartIndex, int endIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddEvidenceSection, "BmGame.RPhotoScanner.AddEvidenceSection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddEvidenceSection, "BmGame.RPhotoScanner.AddEvidenceSection", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartIndex, paramsPtr + 0);
@@ -417,14 +417,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddSimpleEvidenceSection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSimpleEvidenceSection;
     /// <summary>
     /// Function: AddSimpleEvidenceSection
     /// </summary>
     public unsafe virtual void AddSimpleEvidenceSection(int Percentage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSimpleEvidenceSection, "BmGame.RPhotoScanner.AddSimpleEvidenceSection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSimpleEvidenceSection, "BmGame.RPhotoScanner.AddSimpleEvidenceSection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Percentage, paramsPtr + 0);
@@ -432,14 +432,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeKeypointEvidence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeKeypointEvidence;
     /// <summary>
     /// Function: ChangeKeypointEvidence
     /// </summary>
     public unsafe virtual void ChangeKeypointEvidence(BmSDK.BmGame.RPhysicalEvidenceBase dnaSplat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeKeypointEvidence, "BmGame.RPhotoScanner.ChangeKeypointEvidence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeKeypointEvidence, "BmGame.RPhotoScanner.ChangeKeypointEvidence", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dnaSplat, paramsPtr + 0);
@@ -447,14 +447,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetScannerState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScannerState;
     /// <summary>
     /// Function: SetScannerState
     /// </summary>
     public unsafe virtual void SetScannerState(BmSDK.BmGame.RPhotoScanner.PhotoScannerStates new_state)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScannerState, "BmGame.RPhotoScanner.SetScannerState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetScannerState, "BmGame.RPhotoScanner.SetScannerState", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_state, paramsPtr + 0);
@@ -462,14 +462,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerFirstTimeFocusEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFirstTimeFocusEvent;
     /// <summary>
     /// Function: TriggerFirstTimeFocusEvent
     /// </summary>
     public unsafe virtual void TriggerFirstTimeFocusEvent(bool SetSpotted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFirstTimeFocusEvent, "BmGame.RPhotoScanner.TriggerFirstTimeFocusEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerFirstTimeFocusEvent, "BmGame.RPhotoScanner.TriggerFirstTimeFocusEvent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SetSpotted, paramsPtr + 0);
@@ -477,14 +477,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerScanEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerScanEvent;
     /// <summary>
     /// Function: TriggerScanEvent
     /// </summary>
     public unsafe virtual void TriggerScanEvent(BmSDK.BmGame.RSeqEvent_CrimeSceneEvidenceScanning.CrimeSceneEvidenceEvent ScanEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerScanEvent, "BmGame.RPhotoScanner.TriggerScanEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerScanEvent, "BmGame.RPhotoScanner.TriggerScanEvent", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScanEvent, paramsPtr + 0);
@@ -492,56 +492,56 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetDetectedFrameName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDetectedFrameName;
     /// <summary>
     /// Function: GetDetectedFrameName
     /// </summary>
     public unsafe virtual BmSDK.FString GetDetectedFrameName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDetectedFrameName, "BmGame.RPhotoScanner.GetDetectedFrameName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDetectedFrameName, "BmGame.RPhotoScanner.GetDetectedFrameName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCompletedFrameName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCompletedFrameName;
     /// <summary>
     /// Function: GetCompletedFrameName
     /// </summary>
     public unsafe virtual BmSDK.FString GetCompletedFrameName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCompletedFrameName, "BmGame.RPhotoScanner.GetCompletedFrameName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCompletedFrameName, "BmGame.RPhotoScanner.GetCompletedFrameName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetScanningFrameName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScanningFrameName;
     /// <summary>
     /// Function: GetScanningFrameName
     /// </summary>
     public unsafe virtual BmSDK.FString GetScanningFrameName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScanningFrameName, "BmGame.RPhotoScanner.GetScanningFrameName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScanningFrameName, "BmGame.RPhotoScanner.GetScanningFrameName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayerTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerTick;
     /// <summary>
     /// Function: PlayerTick
     /// </summary>
     public unsafe virtual void PlayerTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmGame.RPhotoScanner.PlayerTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerTick, "BmGame.RPhotoScanner.PlayerTick", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -549,56 +549,56 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsRunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRunning;
     /// <summary>
     /// Function: IsRunning
     /// </summary>
     public unsafe virtual bool IsRunning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRunning, "BmGame.RPhotoScanner.IsRunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRunning, "BmGame.RPhotoScanner.IsRunning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPhotoScanner.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RPhotoScanner.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Deactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deactivate;
     /// <summary>
     /// Function: Deactivate
     /// </summary>
     public unsafe virtual void Deactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RPhotoScanner.Deactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deactivate, "BmGame.RPhotoScanner.Deactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activate;
     /// <summary>
     /// Function: Activate
     /// </summary>
     public unsafe virtual void Activate(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activate, "BmGame.RPhotoScanner.Activate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activate, "BmGame.RPhotoScanner.Activate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -606,14 +606,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TestPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TestPos;
     /// <summary>
     /// Function: TestPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 TestPos(System.Numerics.Vector3 TestPosition, BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TestPos, "BmGame.RPhotoScanner.TestPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TestPos, "BmGame.RPhotoScanner.TestPos", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPosition, paramsPtr + 0);
@@ -622,14 +622,14 @@ public partial class RPhotoScanner : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_IsSelectedByCursor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSelectedByCursor;
     /// <summary>
     /// Function: IsSelectedByCursor
     /// </summary>
     public unsafe virtual bool IsSelectedByCursor(BmSDK.Engine.StaticMeshComponent TestMesh, System.Numerics.Vector3 Origin, float Scale, BmSDK.Engine.Canvas Canvas, out System.Numerics.Vector2 cmin, out System.Numerics.Vector2 cmax)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSelectedByCursor, "BmGame.RPhotoScanner.IsSelectedByCursor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSelectedByCursor, "BmGame.RPhotoScanner.IsSelectedByCursor", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestMesh, paramsPtr + 0);

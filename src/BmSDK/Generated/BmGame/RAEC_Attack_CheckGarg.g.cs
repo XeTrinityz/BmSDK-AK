@@ -78,112 +78,112 @@ public partial class RAEC_Attack_CheckGarg : BmSDK.BmGame.RAlertEventCoordinator
         where TComponent : class, Framework.IScriptComponent<RAEC_Attack_CheckGarg>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Attack_CheckGarg.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Attack_CheckGarg.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNumGargCheckers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumGargCheckers;
     /// <summary>
     /// Function: GetNumGargCheckers
     /// </summary>
     public unsafe virtual int GetNumGargCheckers()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumGargCheckers, "BmGame.RAEC_Attack_CheckGarg.GetNumGargCheckers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumGargCheckers, "BmGame.RAEC_Attack_CheckGarg.GetNumGargCheckers", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitThugSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitThugSearch;
     /// <summary>
     /// Function: InitThugSearch
     /// </summary>
     public unsafe virtual void InitThugSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitThugSearch, "BmGame.RAEC_Attack_CheckGarg.InitThugSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitThugSearch, "BmGame.RAEC_Attack_CheckGarg.InitThugSearch", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartAPS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAPS;
     /// <summary>
     /// Function: StartAPS
     /// </summary>
     public unsafe virtual void StartAPS()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAPS, "BmGame.RAEC_Attack_CheckGarg.StartAPS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAPS, "BmGame.RAEC_Attack_CheckGarg.StartAPS", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearThugSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearThugSearch;
     /// <summary>
     /// Function: ClearThugSearch
     /// </summary>
     public unsafe virtual void ClearThugSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearThugSearch, "BmGame.RAEC_Attack_CheckGarg.ClearThugSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearThugSearch, "BmGame.RAEC_Attack_CheckGarg.ClearThugSearch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelChase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelChase;
     /// <summary>
     /// Function: CancelChase
     /// </summary>
     public unsafe virtual void CancelChase()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelChase, "BmGame.RAEC_Attack_CheckGarg.CancelChase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelChase, "BmGame.RAEC_Attack_CheckGarg.CancelChase", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PrepChase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrepChase;
     /// <summary>
     /// Function: PrepChase
     /// </summary>
     public unsafe virtual void PrepChase()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepChase, "BmGame.RAEC_Attack_CheckGarg.PrepChase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrepChase, "BmGame.RAEC_Attack_CheckGarg.PrepChase", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Attack_CheckGarg.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Attack_CheckGarg.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -191,28 +191,28 @@ public partial class RAEC_Attack_CheckGarg : BmSDK.BmGame.RAlertEventCoordinator
         return;
     }
 
-    private static BmSDK.Function __fn_GargChecked;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GargChecked;
     /// <summary>
     /// Function: GargChecked
     /// </summary>
     public unsafe virtual void GargChecked()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GargChecked, "BmGame.RAEC_Attack_CheckGarg.GargChecked");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GargChecked, "BmGame.RAEC_Attack_CheckGarg.GargChecked", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RAEC_Attack_CheckGarg.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RAEC_Attack_CheckGarg.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

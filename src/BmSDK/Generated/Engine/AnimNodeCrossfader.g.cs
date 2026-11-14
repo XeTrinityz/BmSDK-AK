@@ -78,14 +78,14 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<AnimNodeCrossfader>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetActiveChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveChild;
     /// <summary>
     /// Function: GetActiveChild
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetActiveChild()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActiveChild, "Engine.AnimNodeCrossfader.GetActiveChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActiveChild, "Engine.AnimNodeCrossfader.GetActiveChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimNodeSequence>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimName;
     /// <summary>
     /// Function: GetAnimName
     /// </summary>
     public unsafe virtual BmSDK.FName GetAnimName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimName, "Engine.AnimNodeCrossfader.GetAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimName, "Engine.AnimNodeCrossfader.GetAnimName", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BlendToLoopingAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendToLoopingAnim;
     /// <summary>
     /// Function: BlendToLoopingAnim
     /// </summary>
     public unsafe virtual void BlendToLoopingAnim(BmSDK.FName AnimSeqName, float BlendInTime = default, float Rate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlendToLoopingAnim, "Engine.AnimNodeCrossfader.BlendToLoopingAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlendToLoopingAnim, "Engine.AnimNodeCrossfader.BlendToLoopingAnim", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSeqName, paramsPtr + 0);
@@ -144,14 +144,14 @@ public partial class AnimNodeCrossfader : BmSDK.Engine.AnimNodeBlend, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_PlayOneShotAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayOneShotAnim;
     /// <summary>
     /// Function: PlayOneShotAnim
     /// </summary>
     public unsafe virtual void PlayOneShotAnim(BmSDK.FName AnimSeqName, float BlendInTime = default, float BlendOutTime = default, bool bDontBlendOut = default, float Rate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayOneShotAnim, "Engine.AnimNodeCrossfader.PlayOneShotAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayOneShotAnim, "Engine.AnimNodeCrossfader.PlayOneShotAnim", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSeqName, paramsPtr + 0);

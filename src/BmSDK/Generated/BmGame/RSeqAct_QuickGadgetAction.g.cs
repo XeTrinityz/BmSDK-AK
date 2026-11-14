@@ -73,14 +73,14 @@ public partial class RSeqAct_QuickGadgetAction : BmSDK.Engine.SeqAct_Latent, BmS
         where TComponent : class, Framework.IScriptComponent<RSeqAct_QuickGadgetAction>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AddHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddHelpPrompt;
     /// <summary>
     /// Function: AddHelpPrompt
     /// </summary>
     public unsafe virtual void AddHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddHelpPrompt, "BmGame.RSeqAct_QuickGadgetAction.AddHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddHelpPrompt, "BmGame.RSeqAct_QuickGadgetAction.AddHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -88,28 +88,28 @@ public partial class RSeqAct_QuickGadgetAction : BmSDK.Engine.SeqAct_Latent, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_GadgetFireNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GadgetFireNotify;
     /// <summary>
     /// Function: GadgetFireNotify
     /// </summary>
     public unsafe virtual void GadgetFireNotify()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GadgetFireNotify, "BmGame.RSeqAct_QuickGadgetAction.GadgetFireNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GadgetFireNotify, "BmGame.RSeqAct_QuickGadgetAction.GadgetFireNotify", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FireQuickGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireQuickGadget;
     /// <summary>
     /// Function: FireQuickGadget
     /// </summary>
     public unsafe virtual void FireQuickGadget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireQuickGadget, "BmGame.RSeqAct_QuickGadgetAction.FireQuickGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireQuickGadget, "BmGame.RSeqAct_QuickGadgetAction.FireQuickGadget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

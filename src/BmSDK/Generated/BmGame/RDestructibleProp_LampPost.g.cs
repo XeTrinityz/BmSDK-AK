@@ -78,14 +78,14 @@ public partial class RDestructibleProp_LampPost : BmSDK.BmGame.RDestructibleProp
         where TComponent : class, Framework.IScriptComponent<RDestructibleProp_LampPost>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OverrideDamageParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDamageParams;
     /// <summary>
     /// Function: OverrideDamageParams
     /// </summary>
     public unsafe override void OverrideDamageParams(out float BaseDamage, out float DamageRadius, out float Momentum, BmSDK.Class DamageType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDamageParams, "BmGame.RDestructibleProp_LampPost.OverrideDamageParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDamageParams, "BmGame.RDestructibleProp_LampPost.OverrideDamageParams", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out BaseDamage);
@@ -102,14 +102,14 @@ public partial class RDestructibleProp_LampPost : BmSDK.BmGame.RDestructibleProp
         return;
     }
 
-    private static BmSDK.Function __fn_SetDamageStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageStage;
     /// <summary>
     /// Function: SetDamageStage
     /// </summary>
     public unsafe override void SetDamageStage(int Stage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageStage, "BmGame.RDestructibleProp_LampPost.SetDamageStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDamageStage, "BmGame.RDestructibleProp_LampPost.SetDamageStage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Stage, paramsPtr + 0);

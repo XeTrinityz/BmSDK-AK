@@ -78,14 +78,14 @@ public partial class RReachSpec : BmSDK.Engine.ReachSpec, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RReachSpec>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RemoveBlocker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveBlocker;
     /// <summary>
     /// Function: RemoveBlocker
     /// </summary>
     public unsafe virtual void RemoveBlocker(BmSDK.GameObject NewUnblocker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveBlocker, "BmGame.RReachSpec.RemoveBlocker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveBlocker, "BmGame.RReachSpec.RemoveBlocker", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUnblocker, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RReachSpec : BmSDK.Engine.ReachSpec, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddBlocker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddBlocker;
     /// <summary>
     /// Function: AddBlocker
     /// </summary>
     public unsafe virtual void AddBlocker(BmSDK.GameObject NewBlocker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddBlocker, "BmGame.RReachSpec.AddBlocker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddBlocker, "BmGame.RReachSpec.AddBlocker", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBlocker, paramsPtr + 0);

@@ -73,42 +73,42 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         where TComponent : class, Framework.IScriptComponent<RFreezeClusterGrenade>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RFreezeClusterGrenade.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RFreezeClusterGrenade.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnRoomChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRoomChange;
     /// <summary>
     /// Function: OnRoomChange
     /// </summary>
     public unsafe override void OnRoomChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRoomChange, "BmGame.RFreezeClusterGrenade.OnRoomChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRoomChange, "BmGame.RFreezeClusterGrenade.OnRoomChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Throw;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Throw;
     /// <summary>
     /// Function: Throw
     /// </summary>
     public unsafe override bool Throw(bool bSecondary = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Throw, "BmGame.RFreezeClusterGrenade.Throw");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Throw, "BmGame.RFreezeClusterGrenade.Throw", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSecondary, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SpawnIceSphere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnIceSphere;
     /// <summary>
     /// Function: SpawnIceSphere
     /// </summary>
     public unsafe virtual void SpawnIceSphere(System.Numerics.Vector3 SpawnLocation, BmSDK.Rotator SpawnRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnIceSphere, "BmGame.RFreezeClusterGrenade.SpawnIceSphere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnIceSphere, "BmGame.RFreezeClusterGrenade.SpawnIceSphere", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnLocation, paramsPtr + 0);
@@ -132,14 +132,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_DoFloorBlastEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFloorBlastEffects;
     /// <summary>
     /// Function: DoFloorBlastEffects
     /// </summary>
     public unsafe virtual void DoFloorBlastEffects(System.Numerics.Vector3 Position, bool bNoGroundParticles = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoFloorBlastEffects, "BmGame.RFreezeClusterGrenade.DoFloorBlastEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoFloorBlastEffects, "BmGame.RFreezeClusterGrenade.DoFloorBlastEffects", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_HitFloorBlastVictims;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitFloorBlastVictims;
     /// <summary>
     /// Function: HitFloorBlastVictims
     /// </summary>
     public unsafe virtual bool HitFloorBlastVictims(System.Numerics.Vector3 CheckLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitFloorBlastVictims, "BmGame.RFreezeClusterGrenade.HitFloorBlastVictims");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitFloorBlastVictims, "BmGame.RFreezeClusterGrenade.HitFloorBlastVictims", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckLocation, paramsPtr + 0);
@@ -163,14 +163,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_FreezeVictimLegs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreezeVictimLegs;
     /// <summary>
     /// Function: FreezeVictimLegs
     /// </summary>
     public unsafe virtual bool FreezeVictimLegs(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreezeVictimLegs, "BmGame.RFreezeClusterGrenade.FreezeVictimLegs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreezeVictimLegs, "BmGame.RFreezeClusterGrenade.FreezeVictimLegs", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -178,14 +178,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CanFreezeVillain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanFreezeVillain;
     /// <summary>
     /// Function: CanFreezeVillain
     /// </summary>
     public unsafe virtual bool CanFreezeVillain(BmSDK.BmGame.RPawnVillain V)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanFreezeVillain, "BmGame.RFreezeClusterGrenade.CanFreezeVillain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanFreezeVillain, "BmGame.RFreezeClusterGrenade.CanFreezeVillain", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -193,56 +193,56 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TriggerFreezeBlastHitEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFreezeBlastHitEvent;
     /// <summary>
     /// Function: TriggerFreezeBlastHitEvent
     /// </summary>
     public unsafe virtual void TriggerFreezeBlastHitEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFreezeBlastHitEvent, "BmGame.RFreezeClusterGrenade.TriggerFreezeBlastHitEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerFreezeBlastHitEvent, "BmGame.RFreezeClusterGrenade.TriggerFreezeBlastHitEvent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayThrowSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayThrowSound;
     /// <summary>
     /// Function: PlayThrowSound
     /// </summary>
     public unsafe virtual void PlayThrowSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayThrowSound, "BmGame.RFreezeClusterGrenade.PlayThrowSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayThrowSound, "BmGame.RFreezeClusterGrenade.PlayThrowSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ThrowProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThrowProjectile;
     /// <summary>
     /// Function: ThrowProjectile
     /// </summary>
     public unsafe override void ThrowProjectile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowProjectile, "BmGame.RFreezeClusterGrenade.ThrowProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThrowProjectile, "BmGame.RFreezeClusterGrenade.ThrowProjectile", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToHand;
     /// <summary>
     /// Function: AttachToHand
     /// </summary>
     public unsafe override void AttachToHand(BmSDK.FName CustomBone = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToHand, "BmGame.RFreezeClusterGrenade.AttachToHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToHand, "BmGame.RFreezeClusterGrenade.AttachToHand", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomBone, paramsPtr + 0);
@@ -250,28 +250,28 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyClusterTraps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyClusterTraps;
     /// <summary>
     /// Function: DestroyClusterTraps
     /// </summary>
     public unsafe virtual void DestroyClusterTraps()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyClusterTraps, "BmGame.RFreezeClusterGrenade.DestroyClusterTraps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyClusterTraps, "BmGame.RFreezeClusterGrenade.DestroyClusterTraps", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnFreezeAll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnFreezeAll;
     /// <summary>
     /// Function: UnFreezeAll
     /// </summary>
     public unsafe virtual void UnFreezeAll(bool bIgnoreRaft = default, BmSDK.BmGame.RPawnVillain IgnoreVillain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnFreezeAll, "BmGame.RFreezeClusterGrenade.UnFreezeAll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnFreezeAll, "BmGame.RFreezeClusterGrenade.UnFreezeAll", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIgnoreRaft, paramsPtr + 0);
@@ -280,14 +280,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_CheckAutoTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAutoTarget;
     /// <summary>
     /// Function: CheckAutoTarget
     /// </summary>
     public unsafe override bool CheckAutoTarget(BmSDK.Engine.Actor Target, out System.Numerics.Vector3 TargetPosition, out float OverridePriority, out float OverrideMaxRange, out byte DoLOSCheck)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAutoTarget, "BmGame.RFreezeClusterGrenade.CheckAutoTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckAutoTarget, "BmGame.RFreezeClusterGrenade.CheckAutoTarget", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -307,14 +307,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_RemovePendingIceRaftProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemovePendingIceRaftProjectile;
     /// <summary>
     /// Function: RemovePendingIceRaftProjectile
     /// </summary>
     public unsafe virtual void RemovePendingIceRaftProjectile(BmSDK.BmGame.RFreezeClusterGrenadeProjectile Projectile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemovePendingIceRaftProjectile, "BmGame.RFreezeClusterGrenade.RemovePendingIceRaftProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemovePendingIceRaftProjectile, "BmGame.RFreezeClusterGrenade.RemovePendingIceRaftProjectile", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Projectile, paramsPtr + 0);
@@ -322,14 +322,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_AddPendingIceRaftProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPendingIceRaftProjectile;
     /// <summary>
     /// Function: AddPendingIceRaftProjectile
     /// </summary>
     public unsafe virtual void AddPendingIceRaftProjectile(BmSDK.BmGame.RFreezeClusterGrenadeProjectile Projectile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPendingIceRaftProjectile, "BmGame.RFreezeClusterGrenade.AddPendingIceRaftProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPendingIceRaftProjectile, "BmGame.RFreezeClusterGrenade.AddPendingIceRaftProjectile", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Projectile, paramsPtr + 0);
@@ -337,14 +337,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveClusterTrap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveClusterTrap;
     /// <summary>
     /// Function: RemoveClusterTrap
     /// </summary>
     public unsafe virtual void RemoveClusterTrap(BmSDK.BmGame.RFreezeClusterTrapBase Trap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveClusterTrap, "BmGame.RFreezeClusterGrenade.RemoveClusterTrap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveClusterTrap, "BmGame.RFreezeClusterGrenade.RemoveClusterTrap", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Trap, paramsPtr + 0);
@@ -352,14 +352,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_AddClusterTrap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClusterTrap;
     /// <summary>
     /// Function: AddClusterTrap
     /// </summary>
     public unsafe virtual void AddClusterTrap(BmSDK.BmGame.RFreezeClusterTrapBase Trap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClusterTrap, "BmGame.RFreezeClusterGrenade.AddClusterTrap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClusterTrap, "BmGame.RFreezeClusterGrenade.AddClusterTrap", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Trap, paramsPtr + 0);
@@ -367,14 +367,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveFrozenVillain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFrozenVillain;
     /// <summary>
     /// Function: RemoveFrozenVillain
     /// </summary>
     public unsafe virtual void RemoveFrozenVillain(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFrozenVillain, "BmGame.RFreezeClusterGrenade.RemoveFrozenVillain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveFrozenVillain, "BmGame.RFreezeClusterGrenade.RemoveFrozenVillain", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -382,14 +382,14 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_AddFrozenVillain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFrozenVillain;
     /// <summary>
     /// Function: AddFrozenVillain
     /// </summary>
     public unsafe virtual void AddFrozenVillain(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFrozenVillain, "BmGame.RFreezeClusterGrenade.AddFrozenVillain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFrozenVillain, "BmGame.RFreezeClusterGrenade.AddFrozenVillain", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -397,42 +397,42 @@ public partial class RFreezeClusterGrenade : BmSDK.BmGame.RProjectileGadgetBase,
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RFreezeClusterGrenade.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RFreezeClusterGrenade.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetStopFreezeIceBubbleAkEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStopFreezeIceBubbleAkEvent;
     /// <summary>
     /// Function: GetStopFreezeIceBubbleAkEvent
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetStopFreezeIceBubbleAkEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStopFreezeIceBubbleAkEvent, "BmGame.RFreezeClusterGrenade.GetStopFreezeIceBubbleAkEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStopFreezeIceBubbleAkEvent, "BmGame.RFreezeClusterGrenade.GetStopFreezeIceBubbleAkEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkEvent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPlayFreezeIceBubbleAkEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayFreezeIceBubbleAkEvent;
     /// <summary>
     /// Function: GetPlayFreezeIceBubbleAkEvent
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetPlayFreezeIceBubbleAkEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayFreezeIceBubbleAkEvent, "BmGame.RFreezeClusterGrenade.GetPlayFreezeIceBubbleAkEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayFreezeIceBubbleAkEvent, "BmGame.RFreezeClusterGrenade.GetPlayFreezeIceBubbleAkEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

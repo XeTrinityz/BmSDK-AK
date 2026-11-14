@@ -78,55 +78,60 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RDynamicMenu>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RenderItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RenderItem;
     /// <summary>
     /// Function: RenderItem
     /// </summary>
-    public unsafe virtual void RenderItem(BmSDK.FString Label, BmSDK.FString Item)
+    public unsafe virtual void RenderItem(BmSDK.FStringArg Label, BmSDK.FStringArg Item)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RenderItem, "BmGame.RDynamicMenu.RenderItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RenderItem, "BmGame.RDynamicMenu.RenderItem", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Item, paramsPtr + 16);
+        Label.WriteTo(paramsPtr + 0);
+        Item.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_RenderCustomItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RenderCustomItem;
     /// <summary>
     /// Function: RenderCustomItem
     /// </summary>
-    public unsafe virtual void RenderCustomItem(BmSDK.FString Label, BmSDK.FString Item, byte R, byte G, byte B)
+    public unsafe virtual void RenderCustomItem(BmSDK.FStringArg Label, BmSDK.FStringArg Item, byte R, byte G, byte B)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RenderCustomItem, "BmGame.RDynamicMenu.RenderCustomItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RenderCustomItem, "BmGame.RDynamicMenu.RenderCustomItem", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Item, paramsPtr + 16);
+        Label.WriteTo(paramsPtr + 0);
+        Item.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(G, paramsPtr + 33);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 34);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldRenderItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldRenderItem;
     /// <summary>
     /// Function: ShouldRenderItem
     /// </summary>
-    public unsafe virtual bool ShouldRenderItem(BmSDK.FString Label, bool readOnly = default, bool labelOnly = default)
+    public unsafe virtual bool ShouldRenderItem(BmSDK.FStringArg Label, bool readOnly = default, bool labelOnly = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldRenderItem, "BmGame.RDynamicMenu.ShouldRenderItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldRenderItem, "BmGame.RDynamicMenu.ShouldRenderItem", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(readOnly, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(labelOnly, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
@@ -159,14 +164,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DoMenu;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMenu;
     /// <summary>
     /// Function: DoMenu
     /// </summary>
     public unsafe virtual bool DoMenu(BmSDK.Engine.Canvas C, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoMenu, "BmGame.RDynamicMenu.DoMenu");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoMenu, "BmGame.RDynamicMenu.DoMenu", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -175,14 +180,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_DoMenuInternal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMenuInternal;
     /// <summary>
     /// Function: DoMenuInternal
     /// </summary>
     public unsafe virtual bool DoMenuInternal(BmSDK.Engine.Canvas C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoMenuInternal, "BmGame.RDynamicMenu.DoMenuInternal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoMenuInternal, "BmGame.RDynamicMenu.DoMenuInternal", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -190,14 +195,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PressedNumber;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedNumber;
     /// <summary>
     /// Function: PressedNumber
     /// </summary>
     public unsafe virtual void PressedNumber(int Num)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedNumber, "BmGame.RDynamicMenu.PressedNumber");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedNumber, "BmGame.RDynamicMenu.PressedNumber", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num, paramsPtr + 0);
@@ -205,42 +210,42 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PressedStepDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedStepDown;
     /// <summary>
     /// Function: PressedStepDown
     /// </summary>
     public unsafe virtual void PressedStepDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedStepDown, "BmGame.RDynamicMenu.PressedStepDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedStepDown, "BmGame.RDynamicMenu.PressedStepDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PressedStepUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedStepUp;
     /// <summary>
     /// Function: PressedStepUp
     /// </summary>
     public unsafe virtual void PressedStepUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedStepUp, "BmGame.RDynamicMenu.PressedStepUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedStepUp, "BmGame.RDynamicMenu.PressedStepUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ReleasedInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleasedInput;
     /// <summary>
     /// Function: ReleasedInput
     /// </summary>
     public unsafe virtual void ReleasedInput(int Input)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleasedInput, "BmGame.RDynamicMenu.ReleasedInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReleasedInput, "BmGame.RDynamicMenu.ReleasedInput", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
@@ -248,14 +253,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PressedInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedInput;
     /// <summary>
     /// Function: PressedInput
     /// </summary>
     public unsafe virtual void PressedInput(int Input)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedInput, "BmGame.RDynamicMenu.PressedInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedInput, "BmGame.RDynamicMenu.PressedInput", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Input, paramsPtr + 0);
@@ -263,98 +268,98 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SelectCurrentItemY;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectCurrentItemY;
     /// <summary>
     /// Function: SelectCurrentItemY
     /// </summary>
     public unsafe virtual void SelectCurrentItemY()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectCurrentItemY, "BmGame.RDynamicMenu.SelectCurrentItemY");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectCurrentItemY, "BmGame.RDynamicMenu.SelectCurrentItemY", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SelectCurrentItemX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectCurrentItemX;
     /// <summary>
     /// Function: SelectCurrentItemX
     /// </summary>
     public unsafe virtual void SelectCurrentItemX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectCurrentItemX, "BmGame.RDynamicMenu.SelectCurrentItemX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectCurrentItemX, "BmGame.RDynamicMenu.SelectCurrentItemX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SelectCurrentItemB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectCurrentItemB;
     /// <summary>
     /// Function: SelectCurrentItemB
     /// </summary>
     public unsafe virtual void SelectCurrentItemB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectCurrentItemB, "BmGame.RDynamicMenu.SelectCurrentItemB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectCurrentItemB, "BmGame.RDynamicMenu.SelectCurrentItemB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SelectCurrentItemA;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectCurrentItemA;
     /// <summary>
     /// Function: SelectCurrentItemA
     /// </summary>
     public unsafe virtual void SelectCurrentItemA()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectCurrentItemA, "BmGame.RDynamicMenu.SelectCurrentItemA");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectCurrentItemA, "BmGame.RDynamicMenu.SelectCurrentItemA", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GoToNextPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoToNextPage;
     /// <summary>
     /// Function: GoToNextPage
     /// </summary>
     public unsafe virtual void GoToNextPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoToNextPage, "BmGame.RDynamicMenu.GoToNextPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoToNextPage, "BmGame.RDynamicMenu.GoToNextPage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GoToPrevPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoToPrevPage;
     /// <summary>
     /// Function: GoToPrevPage
     /// </summary>
     public unsafe virtual void GoToPrevPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoToPrevPage, "BmGame.RDynamicMenu.GoToPrevPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoToPrevPage, "BmGame.RDynamicMenu.GoToPrevPage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisplayed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayed;
     /// <summary>
     /// Function: SetDisplayed
     /// </summary>
     public unsafe virtual void SetDisplayed(bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayed, "BmGame.RDynamicMenu.SetDisplayed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisplayed, "BmGame.RDynamicMenu.SetDisplayed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -362,43 +367,44 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPage;
     /// <summary>
     /// Function: SetPage
     /// </summary>
-    public unsafe virtual void SetPage(BmSDK.FString PageTitle)
+    public unsafe virtual void SetPage(BmSDK.FStringArg PageTitle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPage, "BmGame.RDynamicMenu.SetPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPage, "BmGame.RDynamicMenu.SetPage", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PageTitle, paramsPtr + 0);
+        PageTitle.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldPauseGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPauseGame;
     /// <summary>
     /// Function: ShouldPauseGame
     /// </summary>
     public unsafe virtual bool ShouldPauseGame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseGame, "BmGame.RDynamicMenu.ShouldPauseGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPauseGame, "BmGame.RDynamicMenu.ShouldPauseGame", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PageSetNumberShortcut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PageSetNumberShortcut;
     /// <summary>
     /// Function: PageSetNumberShortcut
     /// </summary>
     public unsafe virtual void PageSetNumberShortcut(int Num, int Page = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PageSetNumberShortcut, "BmGame.RDynamicMenu.PageSetNumberShortcut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PageSetNumberShortcut, "BmGame.RDynamicMenu.PageSetNumberShortcut", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num, paramsPtr + 0);
@@ -407,14 +413,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ItemSetNumberShortcut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemSetNumberShortcut;
     /// <summary>
     /// Function: ItemSetNumberShortcut
     /// </summary>
     public unsafe virtual void ItemSetNumberShortcut(int Num)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemSetNumberShortcut, "BmGame.RDynamicMenu.ItemSetNumberShortcut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemSetNumberShortcut, "BmGame.RDynamicMenu.ItemSetNumberShortcut", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num, paramsPtr + 0);
@@ -422,419 +428,445 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ItemGap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemGap;
     /// <summary>
     /// Function: ItemGap
     /// </summary>
     public unsafe virtual void ItemGap()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemGap, "BmGame.RDynamicMenu.ItemGap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemGap, "BmGame.RDynamicMenu.ItemGap", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ItemFRO;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemFRO;
     /// <summary>
     /// Function: ItemFRO
     /// </summary>
-    public unsafe virtual void ItemFRO(BmSDK.FString Label, float Value, byte R = default, byte G = default, byte B = default)
+    public unsafe virtual void ItemFRO(BmSDK.FStringArg Label, float Value, byte R = default, byte G = default, byte B = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemFRO, "BmGame.RDynamicMenu.ItemFRO");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemFRO, "BmGame.RDynamicMenu.ItemFRO", this);
         byte* paramsPtr = stackalloc byte[39];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(G, paramsPtr + 21);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 22);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ItemIRO;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemIRO;
     /// <summary>
     /// Function: ItemIRO
     /// </summary>
-    public unsafe virtual void ItemIRO(BmSDK.FString Label, int Value, byte R = default, byte G = default, byte B = default)
+    public unsafe virtual void ItemIRO(BmSDK.FStringArg Label, int Value, byte R = default, byte G = default, byte B = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemIRO, "BmGame.RDynamicMenu.ItemIRO");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemIRO, "BmGame.RDynamicMenu.ItemIRO", this);
         byte* paramsPtr = stackalloc byte[39];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(G, paramsPtr + 21);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 22);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ItemBRO;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemBRO;
     /// <summary>
     /// Function: ItemBRO
     /// </summary>
-    public unsafe virtual void ItemBRO(BmSDK.FString Label, bool Value, byte R = default, byte G = default, byte B = default)
+    public unsafe virtual void ItemBRO(BmSDK.FStringArg Label, bool Value, byte R = default, byte G = default, byte B = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemBRO, "BmGame.RDynamicMenu.ItemBRO");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemBRO, "BmGame.RDynamicMenu.ItemBRO", this);
         byte* paramsPtr = stackalloc byte[39];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(G, paramsPtr + 21);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 22);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ItemRO;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemRO;
     /// <summary>
     /// Function: ItemRO
     /// </summary>
-    public unsafe virtual void ItemRO(BmSDK.FString Label, byte R = default, byte G = default, byte B = default)
+    public unsafe virtual void ItemRO(BmSDK.FStringArg Label, byte R = default, byte G = default, byte B = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemRO, "BmGame.RDynamicMenu.ItemRO");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemRO, "BmGame.RDynamicMenu.ItemRO", this);
         byte* paramsPtr = stackalloc byte[35];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(G, paramsPtr + 17);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 18);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RItemCol;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemCol;
     /// <summary>
     /// Function: RItemCol
     /// </summary>
-    public unsafe virtual BmSDK.GameObject.FColor RItemCol(BmSDK.FString Label, BmSDK.GameObject.FColor Value)
+    public unsafe virtual BmSDK.GameObject.FColor RItemCol(BmSDK.FStringArg Label, BmSDK.GameObject.FColor Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemCol, "BmGame.RDynamicMenu.RItemCol");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemCol, "BmGame.RDynamicMenu.RItemCol", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FColor>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_RItemV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemV;
     /// <summary>
     /// Function: RItemV
     /// </summary>
-    public unsafe virtual System.Numerics.Vector3 RItemV(BmSDK.FString label1, BmSDK.FString label2, BmSDK.FString label3, System.Numerics.Vector3 Value, float MinValue, float MaxValue, float StepSize)
+    public unsafe virtual System.Numerics.Vector3 RItemV(BmSDK.FStringArg label1, BmSDK.FStringArg label2, BmSDK.FStringArg label3, System.Numerics.Vector3 Value, float MinValue, float MaxValue, float StepSize)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemV, "BmGame.RDynamicMenu.RItemV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemV, "BmGame.RDynamicMenu.RItemV", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(label1, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(label2, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(label3, paramsPtr + 32);
+        label1.WriteTo(paramsPtr + 0);
+        label2.WriteTo(paramsPtr + 16);
+        label3.WriteTo(paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 48);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 60);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 64);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StepSize, paramsPtr + 68);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_RItemFExp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemFExp;
     /// <summary>
     /// Function: RItemFExp
     /// </summary>
-    public unsafe virtual float RItemFExp(BmSDK.FString Label, float Value, float MinValue, float MaxValue, float stepMult)
+    public unsafe virtual float RItemFExp(BmSDK.FStringArg Label, float Value, float MinValue, float MaxValue, float stepMult)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemFExp, "BmGame.RDynamicMenu.RItemFExp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemFExp, "BmGame.RDynamicMenu.RItemFExp", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(stepMult, paramsPtr + 28);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_RItemF;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemF;
     /// <summary>
     /// Function: RItemF
     /// </summary>
-    public unsafe virtual float RItemF(BmSDK.FString Label, float Value, float MinValue, float MaxValue, float StepSize)
+    public unsafe virtual float RItemF(BmSDK.FStringArg Label, float Value, float MinValue, float MaxValue, float StepSize)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemF, "BmGame.RDynamicMenu.RItemF");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemF, "BmGame.RDynamicMenu.RItemF", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StepSize, paramsPtr + 28);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_RItemByte;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemByte;
     /// <summary>
     /// Function: RItemByte
     /// </summary>
-    public unsafe virtual byte RItemByte(BmSDK.FString Label, byte Value, int MinValue, int MaxValue)
+    public unsafe virtual byte RItemByte(BmSDK.FStringArg Label, byte Value, int MinValue, int MaxValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemByte, "BmGame.RDynamicMenu.RItemByte");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemByte, "BmGame.RDynamicMenu.RItemByte", this);
         byte* paramsPtr = stackalloc byte[45];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_RItemI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemI;
     /// <summary>
     /// Function: RItemI
     /// </summary>
-    public unsafe virtual int RItemI(BmSDK.FString Label, int Value, int MinValue, int MaxValue, int Step = default)
+    public unsafe virtual int RItemI(BmSDK.FStringArg Label, int Value, int MinValue, int MaxValue, int Step = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemI, "BmGame.RDynamicMenu.RItemI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemI, "BmGame.RDynamicMenu.RItemI", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Step, paramsPtr + 28);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_RItemL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemL;
     /// <summary>
     /// Function: RItemL
     /// </summary>
-    public unsafe virtual int RItemL(BmSDK.FString Label, int Value, BmSDK.TArray<BmSDK.FString> List, BmSDK.TArray<BmSDK.FString> details = default)
+    public unsafe virtual int RItemL(BmSDK.FStringArg Label, int Value, BmSDK.TArray<BmSDK.FString> List, BmSDK.TArray<BmSDK.FString> details = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemL, "BmGame.RDynamicMenu.RItemL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemL, "BmGame.RDynamicMenu.RItemL", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(List, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(details, paramsPtr + 36);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 52);
     }
 
-    private static BmSDK.Function __fn_RItemB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RItemB;
     /// <summary>
     /// Function: RItemB
     /// </summary>
-    public unsafe virtual bool RItemB(BmSDK.FString Label, bool Value, BmSDK.FString details = default)
+    public unsafe virtual bool RItemB(BmSDK.FStringArg Label, bool Value, BmSDK.FStringArg details = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RItemB, "BmGame.RDynamicMenu.RItemB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RItemB, "BmGame.RDynamicMenu.RItemB", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(details, paramsPtr + 20);
+        details.WriteTo(paramsPtr + 20);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_ItemButtonExtended;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemButtonExtended;
     /// <summary>
     /// Function: ItemButtonExtended
     /// </summary>
-    public unsafe virtual int ItemButtonExtended(BmSDK.FString Label, bool highlight = default, byte R = default, byte G = default, byte B = default)
+    public unsafe virtual int ItemButtonExtended(BmSDK.FStringArg Label, bool highlight = default, byte R = default, byte G = default, byte B = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemButtonExtended, "BmGame.RDynamicMenu.ItemButtonExtended");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemButtonExtended, "BmGame.RDynamicMenu.ItemButtonExtended", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(highlight, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(G, paramsPtr + 21);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 22);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_ItemButton;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemButton;
     /// <summary>
     /// Function: ItemButton
     /// </summary>
-    public unsafe virtual bool ItemButton(BmSDK.FString Label, bool highlight = default, BmSDK.FString details = default, byte R = default, byte G = default, byte B = default)
+    public unsafe virtual bool ItemButton(BmSDK.FStringArg Label, bool highlight = default, BmSDK.FStringArg details = default, byte R = default, byte G = default, byte B = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemButton, "BmGame.RDynamicMenu.ItemButton");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemButton, "BmGame.RDynamicMenu.ItemButton", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(highlight, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(details, paramsPtr + 20);
+        details.WriteTo(paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(G, paramsPtr + 37);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 38);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_ItemCol;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemCol;
     /// <summary>
     /// Function: ItemCol
     /// </summary>
-    public unsafe virtual bool ItemCol(BmSDK.FString Label, out BmSDK.GameObject.FColor Value)
+    public unsafe virtual bool ItemCol(BmSDK.FStringArg Label, out BmSDK.GameObject.FColor Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemCol, "BmGame.RDynamicMenu.ItemCol");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemCol, "BmGame.RDynamicMenu.ItemCol", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         Value = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FColor>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_ItemV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemV;
     /// <summary>
     /// Function: ItemV
     /// </summary>
-    public unsafe virtual bool ItemV(BmSDK.FString label1, BmSDK.FString label2, BmSDK.FString label3, out System.Numerics.Vector3 Value, float MinValue, float MaxValue, float StepSize)
+    public unsafe virtual bool ItemV(BmSDK.FStringArg label1, BmSDK.FStringArg label2, BmSDK.FStringArg label3, out System.Numerics.Vector3 Value, float MinValue, float MaxValue, float StepSize)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemV, "BmGame.RDynamicMenu.ItemV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemV, "BmGame.RDynamicMenu.ItemV", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(label1, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(label2, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(label3, paramsPtr + 32);
+        label1.WriteTo(paramsPtr + 0);
+        label2.WriteTo(paramsPtr + 16);
+        label3.WriteTo(paramsPtr + 32);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 48);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 60);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 64);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StepSize, paramsPtr + 68);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         Value = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 48);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_ItemFExp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemFExp;
     /// <summary>
     /// Function: ItemFExp
     /// </summary>
-    public unsafe virtual bool ItemFExp(BmSDK.FString Label, out float Value, float MinValue, float MaxValue, float stepMult)
+    public unsafe virtual bool ItemFExp(BmSDK.FStringArg Label, out float Value, float MinValue, float MaxValue, float stepMult)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemFExp, "BmGame.RDynamicMenu.ItemFExp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemFExp, "BmGame.RDynamicMenu.ItemFExp", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(stepMult, paramsPtr + 28);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         Value = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_ItemF;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemF;
     /// <summary>
     /// Function: ItemF
     /// </summary>
-    public unsafe virtual bool ItemF(BmSDK.FString Label, out float Value, float MinValue, float MaxValue, float StepSize)
+    public unsafe virtual bool ItemF(BmSDK.FStringArg Label, out float Value, float MinValue, float MaxValue, float StepSize)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemF, "BmGame.RDynamicMenu.ItemF");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemF, "BmGame.RDynamicMenu.ItemF", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StepSize, paramsPtr + 28);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         Value = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_ItemByte;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemByte;
     /// <summary>
     /// Function: ItemByte
     /// </summary>
-    public unsafe virtual bool ItemByte(BmSDK.FString Label, out byte Value, int MinValue, int MaxValue)
+    public unsafe virtual bool ItemByte(BmSDK.FStringArg Label, out byte Value, int MinValue, int MaxValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemByte, "BmGame.RDynamicMenu.ItemByte");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemByte, "BmGame.RDynamicMenu.ItemByte", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         Value = BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_ItemI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemI;
     /// <summary>
     /// Function: ItemI
     /// </summary>
-    public unsafe virtual bool ItemI(BmSDK.FString Label, out int Value, int MinValue, int MaxValue, int Step = default)
+    public unsafe virtual bool ItemI(BmSDK.FStringArg Label, out int Value, int MinValue, int MaxValue, int Step = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemI, "BmGame.RDynamicMenu.ItemI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemI, "BmGame.RDynamicMenu.ItemI", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinValue, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxValue, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Step, paramsPtr + 28);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         Value = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_ItemLabelL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemLabelL;
     /// <summary>
     /// Function: ItemLabelL
     /// </summary>
     public unsafe virtual bool ItemLabelL(out int Value, BmSDK.TArray<BmSDK.FString> List)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemLabelL, "BmGame.RDynamicMenu.ItemLabelL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemLabelL, "BmGame.RDynamicMenu.ItemLabelL", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
@@ -845,17 +877,17 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_ItemL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ItemL;
     /// <summary>
     /// Function: ItemL
     /// </summary>
-    public unsafe virtual bool ItemL(BmSDK.FString Label, out int Value, BmSDK.TArray<BmSDK.FString> List, BmSDK.TArray<BmSDK.FString> details = default)
+    public unsafe virtual bool ItemL(BmSDK.FStringArg Label, out int Value, BmSDK.TArray<BmSDK.FString> List, BmSDK.TArray<BmSDK.FString> details = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ItemL, "BmGame.RDynamicMenu.ItemL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ItemL, "BmGame.RDynamicMenu.ItemL", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 0);
+        Label.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(List, paramsPtr + 20);
@@ -863,18 +895,19 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         Value = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 52);
     }
 
-    private static BmSDK.Function __fn_UpdateItemL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateItemL;
     /// <summary>
     /// Function: UpdateItemL
     /// </summary>
     public unsafe virtual bool UpdateItemL(out int Value, BmSDK.TArray<BmSDK.FString> List)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateItemL, "BmGame.RDynamicMenu.UpdateItemL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateItemL, "BmGame.RDynamicMenu.UpdateItemL", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
@@ -885,30 +918,31 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_Title;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Title;
     /// <summary>
     /// Function: Title
     /// </summary>
-    public unsafe virtual bool Title(BmSDK.FString _Title, bool bUseNumberShortcut = default)
+    public unsafe virtual bool Title(BmSDK.FStringArg _Title, bool bUseNumberShortcut = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Title, "BmGame.RDynamicMenu.Title");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Title, "BmGame.RDynamicMenu.Title", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_Title, paramsPtr + 0);
+        _Title.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bUseNumberShortcut, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SetTitleFont;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTitleFont;
     /// <summary>
     /// Function: SetTitleFont
     /// </summary>
     public unsafe virtual void SetTitleFont(BmSDK.Engine.Font NewTitleFont)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTitleFont, "BmGame.RDynamicMenu.SetTitleFont");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTitleFont, "BmGame.RDynamicMenu.SetTitleFont", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTitleFont, paramsPtr + 0);
@@ -916,14 +950,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetItemFont;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetItemFont;
     /// <summary>
     /// Function: SetItemFont
     /// </summary>
     public unsafe virtual void SetItemFont(BmSDK.Engine.Font NewItemFont)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetItemFont, "BmGame.RDynamicMenu.SetItemFont");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetItemFont, "BmGame.RDynamicMenu.SetItemFont", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewItemFont, paramsPtr + 0);
@@ -931,14 +965,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaSeconds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RDynamicMenu.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RDynamicMenu.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaSeconds, paramsPtr + 0);
@@ -946,28 +980,28 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RDynamicMenu.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RDynamicMenu.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NumberInputFExp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NumberInputFExp;
     /// <summary>
     /// Function: NumberInputFExp
     /// </summary>
     public unsafe virtual bool NumberInputFExp(out float Value, float MinValue, float MaxValue, float stepMult)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NumberInputFExp, "BmGame.RDynamicMenu.NumberInputFExp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NumberInputFExp, "BmGame.RDynamicMenu.NumberInputFExp", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
@@ -980,14 +1014,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_NumberInputF;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NumberInputF;
     /// <summary>
     /// Function: NumberInputF
     /// </summary>
     public unsafe virtual bool NumberInputF(out float Value, float MinValue, float MaxValue, float StepSize)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NumberInputF, "BmGame.RDynamicMenu.NumberInputF");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NumberInputF, "BmGame.RDynamicMenu.NumberInputF", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
@@ -1000,14 +1034,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_NumberInputB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NumberInputB;
     /// <summary>
     /// Function: NumberInputB
     /// </summary>
     public unsafe virtual bool NumberInputB(out byte Value, int MinValue, int MaxValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NumberInputB, "BmGame.RDynamicMenu.NumberInputB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NumberInputB, "BmGame.RDynamicMenu.NumberInputB", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
@@ -1019,14 +1053,14 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_NumberInputI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NumberInputI;
     /// <summary>
     /// Function: NumberInputI
     /// </summary>
     public unsafe virtual bool NumberInputI(out int Value, int MinValue, int MaxValue, int Step)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NumberInputI, "BmGame.RDynamicMenu.NumberInputI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NumberInputI, "BmGame.RDynamicMenu.NumberInputI", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Value);
@@ -1039,70 +1073,70 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_PressedIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedIn;
     /// <summary>
     /// Function: PressedIn
     /// </summary>
     public unsafe virtual bool PressedIn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedIn, "BmGame.RDynamicMenu.PressedIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedIn, "BmGame.RDynamicMenu.PressedIn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PressedInY;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedInY;
     /// <summary>
     /// Function: PressedInY
     /// </summary>
     public unsafe virtual bool PressedInY()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedInY, "BmGame.RDynamicMenu.PressedInY");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedInY, "BmGame.RDynamicMenu.PressedInY", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PressedInX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedInX;
     /// <summary>
     /// Function: PressedInX
     /// </summary>
     public unsafe virtual bool PressedInX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedInX, "BmGame.RDynamicMenu.PressedInX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedInX, "BmGame.RDynamicMenu.PressedInX", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PressedInB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedInB;
     /// <summary>
     /// Function: PressedInB
     /// </summary>
     public unsafe virtual bool PressedInB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedInB, "BmGame.RDynamicMenu.PressedInB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedInB, "BmGame.RDynamicMenu.PressedInB", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PressedInA;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PressedInA;
     /// <summary>
     /// Function: PressedInA
     /// </summary>
     public unsafe virtual bool PressedInA()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PressedInA, "BmGame.RDynamicMenu.PressedInA");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PressedInA, "BmGame.RDynamicMenu.PressedInA", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -1137,126 +1171,126 @@ public partial class RDynamicMenu : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnThisItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnThisItem;
     /// <summary>
     /// Function: OnThisItem
     /// </summary>
     public unsafe virtual bool OnThisItem()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnThisItem, "BmGame.RDynamicMenu.OnThisItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnThisItem, "BmGame.RDynamicMenu.OnThisItem", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnThisPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnThisPage;
     /// <summary>
     /// Function: OnThisPage
     /// </summary>
     public unsafe virtual bool OnThisPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnThisPage, "BmGame.RDynamicMenu.OnThisPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnThisPage, "BmGame.RDynamicMenu.OnThisPage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitialisingPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialisingPage;
     /// <summary>
     /// Function: InitialisingPage
     /// </summary>
     public unsafe virtual bool InitialisingPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialisingPage, "BmGame.RDynamicMenu.InitialisingPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialisingPage, "BmGame.RDynamicMenu.InitialisingPage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsBeingDisplayed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBeingDisplayed;
     /// <summary>
     /// Function: IsBeingDisplayed
     /// </summary>
     public unsafe virtual bool IsBeingDisplayed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBeingDisplayed, "BmGame.RDynamicMenu.IsBeingDisplayed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBeingDisplayed, "BmGame.RDynamicMenu.IsBeingDisplayed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitialisingThisPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialisingThisPage;
     /// <summary>
     /// Function: InitialisingThisPage
     /// </summary>
     public unsafe virtual bool InitialisingThisPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialisingThisPage, "BmGame.RDynamicMenu.InitialisingThisPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialisingThisPage, "BmGame.RDynamicMenu.InitialisingThisPage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ViewingThisPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ViewingThisPage;
     /// <summary>
     /// Function: ViewingThisPage
     /// </summary>
     public unsafe virtual bool ViewingThisPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ViewingThisPage, "BmGame.RDynamicMenu.ViewingThisPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ViewingThisPage, "BmGame.RDynamicMenu.ViewingThisPage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoMenuItems;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMenuItems;
     /// <summary>
     /// Function: DoMenuItems
     /// </summary>
     public unsafe virtual void DoMenuItems()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoMenuItems, "BmGame.RDynamicMenu.DoMenuItems");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoMenuItems, "BmGame.RDynamicMenu.DoMenuItems", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnMenuClosed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnMenuClosed;
     /// <summary>
     /// Function: OnMenuClosed
     /// </summary>
     public unsafe virtual void OnMenuClosed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMenuClosed, "BmGame.RDynamicMenu.OnMenuClosed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnMenuClosed, "BmGame.RDynamicMenu.OnMenuClosed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnMenuOpened;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnMenuOpened;
     /// <summary>
     /// Function: OnMenuOpened
     /// </summary>
     public unsafe virtual void OnMenuOpened()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMenuOpened, "BmGame.RDynamicMenu.OnMenuOpened");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnMenuOpened, "BmGame.RDynamicMenu.OnMenuOpened", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

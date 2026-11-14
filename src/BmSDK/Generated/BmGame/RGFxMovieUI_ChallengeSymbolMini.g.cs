@@ -78,14 +78,14 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_ChallengeSymbolMini>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnAspectRatioChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAspectRatioChanged;
     /// <summary>
     /// Function: OnAspectRatioChanged
     /// </summary>
     public unsafe override void OnAspectRatioChanged(float aspect_ratio)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAspectRatioChanged, "BmGame.RGFxMovieUI_ChallengeSymbolMini.OnAspectRatioChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAspectRatioChanged, "BmGame.RGFxMovieUI_ChallengeSymbolMini.OnAspectRatioChanged", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(aspect_ratio, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetStars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetStars;
     /// <summary>
     /// Function: UC_SetStars
     /// </summary>
     public unsafe virtual void UC_SetStars(int nStars)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetStars, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetStars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetStars, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetStars", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nStars, paramsPtr + 0);
@@ -108,45 +108,47 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetIcon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetIcon;
     /// <summary>
     /// Function: UC_SetIcon
     /// </summary>
-    public unsafe virtual void UC_SetIcon(int nIcon, BmSDK.FString sState)
+    public unsafe virtual void UC_SetIcon(int nIcon, BmSDK.FStringArg sState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetIcon, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetIcon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetIcon, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetIcon", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nIcon, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sState, paramsPtr + 4);
+        sState.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetMode;
     /// <summary>
     /// Function: UC_SetMode
     /// </summary>
-    public unsafe virtual void UC_SetMode(BmSDK.FString sMode)
+    public unsafe virtual void UC_SetMode(BmSDK.FStringArg sMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetMode, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetMode, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetMode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sMode, paramsPtr + 0);
+        sMode.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetShow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetShow;
     /// <summary>
     /// Function: UC_SetShow
     /// </summary>
     public unsafe virtual void UC_SetShow(bool bShow, bool bInitial)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetShow, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetShow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetShow, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetShow", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShow, paramsPtr + 0);
@@ -155,42 +157,42 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Tick;
     /// <summary>
     /// Function: XI_Tick
     /// </summary>
     public unsafe override void XI_Tick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Tick, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Tick, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_FetchBoards;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_FetchBoards;
     /// <summary>
     /// Function: XI_FetchBoards
     /// </summary>
     public unsafe virtual void XI_FetchBoards()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_FetchBoards, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_FetchBoards");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_FetchBoards, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_FetchBoards", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_TriggerLeaderboard;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_TriggerLeaderboard;
     /// <summary>
     /// Function: UC_TriggerLeaderboard
     /// </summary>
     public unsafe virtual void UC_TriggerLeaderboard(int FriendCount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_TriggerLeaderboard, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_TriggerLeaderboard");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_TriggerLeaderboard, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_TriggerLeaderboard", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FriendCount, paramsPtr + 0);
@@ -198,14 +200,14 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
         return;
     }
 
-    private static BmSDK.Function __fn_SendLeaderBoardToFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendLeaderBoardToFlash;
     /// <summary>
     /// Function: SendLeaderBoardToFlash
     /// </summary>
     public unsafe override void SendLeaderBoardToFlash(int Id, int total, BmSDK.TArray<int> FriendIndex, BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> NetIDs, BmSDK.TArray<int> Ranks, BmSDK.TArray<BmSDK.FString> NickNames, BmSDK.TArray<int> Medals, BmSDK.TArray<float> Scores, BmSDK.TArray<int> RivalPoints, BmSDK.TArray<float> Story, BmSDK.TArray<float> MW, BmSDK.TArray<float> AR)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendLeaderBoardToFlash, "BmGame.RGFxMovieUI_ChallengeSymbolMini.SendLeaderBoardToFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendLeaderBoardToFlash, "BmGame.RGFxMovieUI_ChallengeSymbolMini.SendLeaderBoardToFlash", this);
         byte* paramsPtr = stackalloc byte[244];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -224,174 +226,176 @@ public partial class RGFxMovieUI_ChallengeSymbolMini : BmSDK.BmGame.RGFxMovieUI,
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetLeaderboardLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetLeaderboardLine;
     /// <summary>
     /// Function: UC_SetLeaderboardLine
     /// </summary>
-    public unsafe virtual void UC_SetLeaderboardLine(int Index, int Rank, BmSDK.FString NickName, int Medals, BmSDK.FString Score, bool bIsSelf)
+    public unsafe virtual void UC_SetLeaderboardLine(int Index, int Rank, BmSDK.FStringArg NickName, int Medals, BmSDK.FStringArg Score, bool bIsSelf)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetLeaderboardLine, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetLeaderboardLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetLeaderboardLine, "BmGame.RGFxMovieUI_ChallengeSymbolMini.UC_SetLeaderboardLine", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Rank, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NickName, paramsPtr + 8);
+        NickName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Medals, paramsPtr + 24);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Score, paramsPtr + 28);
+        Score.WriteTo(paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsSelf, paramsPtr + 44);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 28);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_SetupContents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_SetupContents;
     /// <summary>
     /// Function: XI_SetupContents
     /// </summary>
     public unsafe virtual void XI_SetupContents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetupContents, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_SetupContents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_SetupContents, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_SetupContents", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_IsSignedInOnline;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_IsSignedInOnline;
     /// <summary>
     /// Function: XI_IsSignedInOnline
     /// </summary>
     public unsafe override bool XI_IsSignedInOnline()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsSignedInOnline, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_IsSignedInOnline");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_IsSignedInOnline, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_IsSignedInOnline", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_CanPlayOnline;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_CanPlayOnline;
     /// <summary>
     /// Function: XI_CanPlayOnline
     /// </summary>
     public unsafe override bool XI_CanPlayOnline()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CanPlayOnline, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_CanPlayOnline");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_CanPlayOnline, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_CanPlayOnline", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_GetNickName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetNickName;
     /// <summary>
     /// Function: XI_GetNickName
     /// </summary>
     public unsafe override BmSDK.FString XI_GetNickName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetNickName, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_GetNickName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetNickName, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_GetNickName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_GetDescription;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetDescription;
     /// <summary>
     /// Function: XI_GetDescription
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetDescription()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetDescription, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_GetDescription");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetDescription, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_GetDescription", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_GetTitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetTitle;
     /// <summary>
     /// Function: XI_GetTitle
     /// </summary>
     public unsafe override BmSDK.FString XI_GetTitle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetTitle, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_GetTitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetTitle, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_GetTitle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPollingBoards;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPollingBoards;
     /// <summary>
     /// Function: IsPollingBoards
     /// </summary>
     public unsafe virtual bool IsPollingBoards()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPollingBoards, "BmGame.RGFxMovieUI_ChallengeSymbolMini.IsPollingBoards");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPollingBoards, "BmGame.RGFxMovieUI_ChallengeSymbolMini.IsPollingBoards", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDown;
     /// <summary>
     /// Function: ShutDown
     /// </summary>
     public unsafe virtual void ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDown, "BmGame.RGFxMovieUI_ChallengeSymbolMini.ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShutDown, "BmGame.RGFxMovieUI_ChallengeSymbolMini.ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_ShutDown;
     /// <summary>
     /// Function: XI_ShutDown
     /// </summary>
     public unsafe virtual void XI_ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ShutDown, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_ShutDown, "BmGame.RGFxMovieUI_ChallengeSymbolMini.XI_ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CloseScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseScreen;
     /// <summary>
     /// Function: CloseScreen
     /// </summary>
     public unsafe override void CloseScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseScreen, "BmGame.RGFxMovieUI_ChallengeSymbolMini.CloseScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseScreen, "BmGame.RGFxMovieUI_ChallengeSymbolMini.CloseScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieUI_ChallengeSymbolMini.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxMovieUI_ChallengeSymbolMini.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

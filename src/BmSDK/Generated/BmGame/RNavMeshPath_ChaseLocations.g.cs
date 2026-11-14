@@ -78,28 +78,28 @@ public partial class RNavMeshPath_ChaseLocations : BmSDK.Engine.NavMeshPathConst
         where TComponent : class, Framework.IScriptComponent<RNavMeshPath_ChaseLocations>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Recycle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Recycle;
     /// <summary>
     /// Function: Recycle
     /// </summary>
     public unsafe override void Recycle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "BmGame.RNavMeshPath_ChaseLocations.Recycle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Recycle, "BmGame.RNavMeshPath_ChaseLocations.Recycle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowDebug;
     /// <summary>
     /// Function: ShowDebug
     /// </summary>
     public unsafe virtual void ShowDebug(BmSDK.Engine.Actor DebugActor, bool bPerm = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowDebug, "BmGame.RNavMeshPath_ChaseLocations.ShowDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowDebug, "BmGame.RNavMeshPath_ChaseLocations.ShowDebug", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DebugActor, paramsPtr + 0);

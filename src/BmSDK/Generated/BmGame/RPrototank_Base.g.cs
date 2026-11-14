@@ -78,14 +78,14 @@ public partial class RPrototank_Base : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPrototank_Base>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanSeeTargetWhenUnaware;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeTargetWhenUnaware;
     /// <summary>
     /// Function: CanSeeTargetWhenUnaware
     /// </summary>
     public unsafe virtual bool CanSeeTargetWhenUnaware(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeTargetWhenUnaware, "BmGame.RPrototank_Base.CanSeeTargetWhenUnaware");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSeeTargetWhenUnaware, "BmGame.RPrototank_Base.CanSeeTargetWhenUnaware", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -93,42 +93,42 @@ public partial class RPrototank_Base : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetEncounterType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEncounterType;
     /// <summary>
     /// Function: GetEncounterType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVehicleNPC.EVehicleCombatEncounterType GetEncounterType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEncounterType, "BmGame.RPrototank_Base.GetEncounterType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEncounterType, "BmGame.RPrototank_Base.GetEncounterType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RVehicleNPC.EVehicleCombatEncounterType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetComboTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetComboTimer;
     /// <summary>
     /// Function: GetComboTimer
     /// </summary>
     public unsafe virtual float GetComboTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetComboTimer, "BmGame.RPrototank_Base.GetComboTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetComboTimer, "BmGame.RPrototank_Base.GetComboTimer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HeavyWeaponImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HeavyWeaponImpact;
     /// <summary>
     /// Function: HeavyWeaponImpact
     /// </summary>
     public unsafe virtual void HeavyWeaponImpact(System.Numerics.Vector3 InvestigateLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HeavyWeaponImpact, "BmGame.RPrototank_Base.HeavyWeaponImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HeavyWeaponImpact, "BmGame.RPrototank_Base.HeavyWeaponImpact", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InvestigateLoc, paramsPtr + 0);
@@ -136,42 +136,42 @@ public partial class RPrototank_Base : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAttackTimeBonus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttackTimeBonus;
     /// <summary>
     /// Function: GetAttackTimeBonus
     /// </summary>
     public unsafe virtual float GetAttackTimeBonus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttackTimeBonus, "BmGame.RPrototank_Base.GetAttackTimeBonus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAttackTimeBonus, "BmGame.RPrototank_Base.GetAttackTimeBonus", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanDoSimultaneousAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoSimultaneousAttack;
     /// <summary>
     /// Function: CanDoSimultaneousAttack
     /// </summary>
     public unsafe virtual bool CanDoSimultaneousAttack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoSimultaneousAttack, "BmGame.RPrototank_Base.CanDoSimultaneousAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoSimultaneousAttack, "BmGame.RPrototank_Base.CanDoSimultaneousAttack", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InCombat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InCombat;
     /// <summary>
     /// Function: InCombat
     /// </summary>
     public unsafe virtual bool InCombat(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InCombat, "BmGame.RPrototank_Base.InCombat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InCombat, "BmGame.RPrototank_Base.InCombat", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -179,28 +179,28 @@ public partial class RPrototank_Base : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsAttacking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAttacking;
     /// <summary>
     /// Function: IsAttacking
     /// </summary>
     public unsafe virtual bool IsAttacking()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAttacking, "BmGame.RPrototank_Base.IsAttacking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAttacking, "BmGame.RPrototank_Base.IsAttacking", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanAttackTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanAttackTarget;
     /// <summary>
     /// Function: CanAttackTarget
     /// </summary>
     public unsafe virtual bool CanAttackTarget(BmSDK.Engine.Actor Target, int WeaponID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanAttackTarget, "BmGame.RPrototank_Base.CanAttackTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanAttackTarget, "BmGame.RPrototank_Base.CanAttackTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class RPrototank_Base : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_StartAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAttack;
     /// <summary>
     /// Function: StartAttack
     /// </summary>
     public unsafe virtual void StartAttack(BmSDK.Engine.Actor Target, float AttackWarningTime, System.Numerics.Vector3 AttackLoc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAttack, "BmGame.RPrototank_Base.StartAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAttack, "BmGame.RPrototank_Base.StartAttack", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -226,28 +226,28 @@ public partial class RPrototank_Base : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAttack;
     /// <summary>
     /// Function: StopAttack
     /// </summary>
     public unsafe virtual void StopAttack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAttack, "BmGame.RPrototank_Base.StopAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAttack, "BmGame.RPrototank_Base.StopAttack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RammedByVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RammedByVehicle;
     /// <summary>
     /// Function: RammedByVehicle
     /// </summary>
     public unsafe virtual bool RammedByVehicle(BmSDK.BmGame.RVehicle RammingVehicle, BmSDK.FName RammedBoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RammedByVehicle, "BmGame.RPrototank_Base.RammedByVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RammedByVehicle, "BmGame.RPrototank_Base.RammedByVehicle", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RammingVehicle, paramsPtr + 0);
@@ -256,14 +256,14 @@ public partial class RPrototank_Base : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetMinRamSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinRamSpeed;
     /// <summary>
     /// Function: GetMinRamSpeed
     /// </summary>
     public unsafe virtual float GetMinRamSpeed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMinRamSpeed, "BmGame.RPrototank_Base.GetMinRamSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMinRamSpeed, "BmGame.RPrototank_Base.GetMinRamSpeed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

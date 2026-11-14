@@ -78,28 +78,28 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RObjectiveMarker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetFilename;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFilename;
     /// <summary>
     /// Function: GetFilename
     /// </summary>
     public unsafe virtual BmSDK.FString GetFilename()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFilename, "BmGame.RObjectiveMarker.GetFilename");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFilename, "BmGame.RObjectiveMarker.GetFilename", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
     /// Function: SetHidden
     /// </summary>
     public unsafe override void SetHidden(bool Hidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidden, "BmGame.RObjectiveMarker.SetHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidden, "BmGame.RObjectiveMarker.SetHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Hidden, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetVisuallySuppressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVisuallySuppressed;
     /// <summary>
     /// Function: SetVisuallySuppressed
     /// </summary>
     public unsafe virtual void SetVisuallySuppressed(bool suppressed, bool force_update = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVisuallySuppressed, "BmGame.RObjectiveMarker.SetVisuallySuppressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVisuallySuppressed, "BmGame.RObjectiveMarker.SetVisuallySuppressed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(suppressed, paramsPtr + 0);
@@ -123,28 +123,28 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnBatSignal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnBatSignal;
     /// <summary>
     /// Function: SpawnBatSignal
     /// </summary>
     public unsafe virtual void SpawnBatSignal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnBatSignal, "BmGame.RObjectiveMarker.SpawnBatSignal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnBatSignal, "BmGame.RObjectiveMarker.SpawnBatSignal", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRiddlerObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRiddlerObjective;
     /// <summary>
     /// Function: SetRiddlerObjective
     /// </summary>
     public unsafe virtual void SetRiddlerObjective(bool _riddlerObjective)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRiddlerObjective, "BmGame.RObjectiveMarker.SetRiddlerObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRiddlerObjective, "BmGame.RObjectiveMarker.SetRiddlerObjective", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_riddlerObjective, paramsPtr + 0);
@@ -152,56 +152,56 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetMarker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetMarker;
     /// <summary>
     /// Function: ResetMarker
     /// </summary>
     public unsafe virtual void ResetMarker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetMarker, "BmGame.RObjectiveMarker.ResetMarker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetMarker, "BmGame.RObjectiveMarker.ResetMarker", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHiddenOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHiddenOff;
     /// <summary>
     /// Function: SetHiddenOff
     /// </summary>
     public unsafe virtual void SetHiddenOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHiddenOff, "BmGame.RObjectiveMarker.SetHiddenOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHiddenOff, "BmGame.RObjectiveMarker.SetHiddenOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHiddenOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHiddenOn;
     /// <summary>
     /// Function: SetHiddenOn
     /// </summary>
     public unsafe virtual void SetHiddenOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHiddenOn, "BmGame.RObjectiveMarker.SetHiddenOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHiddenOn, "BmGame.RObjectiveMarker.SetHiddenOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHiddenDeferred;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHiddenDeferred;
     /// <summary>
     /// Function: SetHiddenDeferred
     /// </summary>
     public unsafe virtual void SetHiddenDeferred(bool Hidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHiddenDeferred, "BmGame.RObjectiveMarker.SetHiddenDeferred");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHiddenDeferred, "BmGame.RObjectiveMarker.SetHiddenDeferred", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Hidden, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EnableWaypointVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableWaypointVolume;
     /// <summary>
     /// Function: EnableWaypointVolume
     /// </summary>
     public unsafe virtual void EnableWaypointVolume(bool do_enable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableWaypointVolume, "BmGame.RObjectiveMarker.EnableWaypointVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableWaypointVolume, "BmGame.RObjectiveMarker.EnableWaypointVolume", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(do_enable, paramsPtr + 0);
@@ -224,14 +224,14 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetUsingWaypoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUsingWaypoint;
     /// <summary>
     /// Function: SetUsingWaypoint
     /// </summary>
     public unsafe virtual void SetUsingWaypoint(bool should_use_waypoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUsingWaypoint, "BmGame.RObjectiveMarker.SetUsingWaypoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUsingWaypoint, "BmGame.RObjectiveMarker.SetUsingWaypoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(should_use_waypoint, paramsPtr + 0);
@@ -239,28 +239,28 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckWaypointLogic;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckWaypointLogic;
     /// <summary>
     /// Function: CheckWaypointLogic
     /// </summary>
     public unsafe virtual void CheckWaypointLogic()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckWaypointLogic, "BmGame.RObjectiveMarker.CheckWaypointLogic");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckWaypointLogic, "BmGame.RObjectiveMarker.CheckWaypointLogic", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHudTargetActuallyVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHudTargetActuallyVisible;
     /// <summary>
     /// Function: SetHudTargetActuallyVisible
     /// </summary>
     public unsafe virtual void SetHudTargetActuallyVisible(bool make_visible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHudTargetActuallyVisible, "BmGame.RObjectiveMarker.SetHudTargetActuallyVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHudTargetActuallyVisible, "BmGame.RObjectiveMarker.SetHudTargetActuallyVisible", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(make_visible, paramsPtr + 0);
@@ -268,14 +268,14 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UnTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnTouch;
     /// <summary>
     /// Function: UnTouch
     /// </summary>
     public unsafe override void UnTouch(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnTouch, "BmGame.RObjectiveMarker.UnTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnTouch, "BmGame.RObjectiveMarker.UnTouch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -283,14 +283,14 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RObjectiveMarker.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RObjectiveMarker.Touch", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -301,14 +301,14 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetHudTargetVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHudTargetVisible;
     /// <summary>
     /// Function: SetHudTargetVisible
     /// </summary>
     public unsafe virtual void SetHudTargetVisible(bool make_visible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHudTargetVisible, "BmGame.RObjectiveMarker.SetHudTargetVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHudTargetVisible, "BmGame.RObjectiveMarker.SetHudTargetVisible", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(make_visible, paramsPtr + 0);
@@ -316,14 +316,14 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetParkingMarkerVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParkingMarkerVisible;
     /// <summary>
     /// Function: SetParkingMarkerVisible
     /// </summary>
     public unsafe virtual void SetParkingMarkerVisible(bool make_visible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParkingMarkerVisible, "BmGame.RObjectiveMarker.SetParkingMarkerVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetParkingMarkerVisible, "BmGame.RObjectiveMarker.SetParkingMarkerVisible", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(make_visible, paramsPtr + 0);
@@ -331,28 +331,28 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckHudTargetVisibility;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckHudTargetVisibility;
     /// <summary>
     /// Function: CheckHudTargetVisibility
     /// </summary>
     public unsafe virtual void CheckHudTargetVisibility()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckHudTargetVisibility, "BmGame.RObjectiveMarker.CheckHudTargetVisibility");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckHudTargetVisibility, "BmGame.RObjectiveMarker.CheckHudTargetVisibility", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMarkerPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMarkerPosition;
     /// <summary>
     /// Function: SetMarkerPosition
     /// </summary>
     public unsafe virtual void SetMarkerPosition(System.Numerics.Vector3 new_pos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMarkerPosition, "BmGame.RObjectiveMarker.SetMarkerPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMarkerPosition, "BmGame.RObjectiveMarker.SetMarkerPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_pos, paramsPtr + 0);
@@ -360,56 +360,56 @@ public partial class RObjectiveMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckWaypointExists;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckWaypointExists;
     /// <summary>
     /// Function: CheckWaypointExists
     /// </summary>
     public unsafe virtual void CheckWaypointExists()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckWaypointExists, "BmGame.RObjectiveMarker.CheckWaypointExists");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckWaypointExists, "BmGame.RObjectiveMarker.CheckWaypointExists", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RObjectiveMarker.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RObjectiveMarker.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RObjectiveMarker.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RObjectiveMarker.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RObjectiveMarker.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RObjectiveMarker.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class RWinchableDoubleDoor : BmSDK.BmScript.RWinchableWall, BmSDK
         where TComponent : class, Framework.IScriptComponent<RWinchableDoubleDoor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Broken;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Broken;
     /// <summary>
     /// Function: Broken
     /// </summary>
     public unsafe override void Broken(BmSDK.BmGame.RPlayerController Controller)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Broken, "BmScript.RWinchableDoubleDoor.Broken");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Broken, "BmScript.RWinchableDoubleDoor.Broken", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Controller, paramsPtr + 0);

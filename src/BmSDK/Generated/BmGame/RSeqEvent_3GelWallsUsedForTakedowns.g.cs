@@ -78,14 +78,14 @@ public partial class RSeqEvent_3GelWallsUsedForTakedowns : BmSDK.Engine.Sequence
         where TComponent : class, Framework.IScriptComponent<RSeqEvent_3GelWallsUsedForTakedowns>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RegisterWallUsedForTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWallUsedForTakedown;
     /// <summary>
     /// Function: RegisterWallUsedForTakedown
     /// </summary>
     public unsafe virtual void RegisterWallUsedForTakedown(BmSDK.Engine.Actor Wall)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWallUsedForTakedown, "BmGame.RSeqEvent_3GelWallsUsedForTakedowns.RegisterWallUsedForTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterWallUsedForTakedown, "BmGame.RSeqEvent_3GelWallsUsedForTakedowns.RegisterWallUsedForTakedown", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Wall, paramsPtr + 0);

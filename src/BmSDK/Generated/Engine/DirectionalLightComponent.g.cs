@@ -78,28 +78,28 @@ public partial class DirectionalLightComponent : BmSDK.Engine.LightComponent, Bm
         where TComponent : class, Framework.IScriptComponent<DirectionalLightComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnUpdatePropertyBrightness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdatePropertyBrightness;
     /// <summary>
     /// Function: OnUpdatePropertyBrightness
     /// </summary>
     public unsafe override void OnUpdatePropertyBrightness()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyBrightness, "Engine.DirectionalLightComponent.OnUpdatePropertyBrightness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdatePropertyBrightness, "Engine.DirectionalLightComponent.OnUpdatePropertyBrightness", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnUpdatePropertyLightColor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdatePropertyLightColor;
     /// <summary>
     /// Function: OnUpdatePropertyLightColor
     /// </summary>
     public unsafe override void OnUpdatePropertyLightColor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyLightColor, "Engine.DirectionalLightComponent.OnUpdatePropertyLightColor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdatePropertyLightColor, "Engine.DirectionalLightComponent.OnUpdatePropertyLightColor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

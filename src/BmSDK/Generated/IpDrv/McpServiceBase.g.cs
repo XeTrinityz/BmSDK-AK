@@ -78,42 +78,42 @@ public partial class McpServiceBase : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<McpServiceBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAppAccessURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAppAccessURL;
     /// <summary>
     /// Function: GetAppAccessURL
     /// </summary>
     public unsafe virtual BmSDK.FString GetAppAccessURL()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAppAccessURL, "IpDrv.McpServiceBase.GetAppAccessURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAppAccessURL, "IpDrv.McpServiceBase.GetAppAccessURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBaseURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBaseURL;
     /// <summary>
     /// Function: GetBaseURL
     /// </summary>
     public unsafe virtual BmSDK.FString GetBaseURL()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBaseURL, "IpDrv.McpServiceBase.GetBaseURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBaseURL, "IpDrv.McpServiceBase.GetBaseURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "IpDrv.McpServiceBase.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "IpDrv.McpServiceBase.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

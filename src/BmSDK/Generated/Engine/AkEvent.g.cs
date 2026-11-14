@@ -78,14 +78,14 @@ public partial class AkEvent : BmSDK.Engine.AkAsset, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkEvent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsAudibleAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAudibleAt;
     /// <summary>
     /// Function: IsAudibleAt
     /// </summary>
     public unsafe virtual bool IsAudibleAt(float distanceUU, bool resultIfUnknown)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAudibleAt, "Engine.AkEvent.IsAudibleAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAudibleAt, "Engine.AkEvent.IsAudibleAt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(distanceUU, paramsPtr + 0);

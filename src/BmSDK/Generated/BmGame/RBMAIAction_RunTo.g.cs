@@ -78,28 +78,28 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_RunTo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HandlesGlance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandlesGlance;
     /// <summary>
     /// Function: HandlesGlance
     /// </summary>
     public unsafe override bool HandlesGlance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlesGlance, "BmGame.RBMAIAction_RunTo.HandlesGlance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandlesGlance, "BmGame.RBMAIAction_RunTo.HandlesGlance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_RunTo.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.RBMAIAction_RunTo.ActionTick", this);
         byte* paramsPtr = stackalloc byte[89];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -107,28 +107,28 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_BuildHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildHandle;
     /// <summary>
     /// Function: BuildHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle BuildHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildHandle, "BmGame.RBMAIAction_RunTo.BuildHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildHandle, "BmGame.RBMAIAction_RunTo.BuildHandle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetCanExitEarlyIfSeeDest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCanExitEarlyIfSeeDest;
     /// <summary>
     /// Function: SetCanExitEarlyIfSeeDest
     /// </summary>
     public unsafe virtual void SetCanExitEarlyIfSeeDest(bool bNewCanExitEarlyIfSeeDest, float NewCanSeeDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCanExitEarlyIfSeeDest, "BmGame.RBMAIAction_RunTo.SetCanExitEarlyIfSeeDest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCanExitEarlyIfSeeDest, "BmGame.RBMAIAction_RunTo.SetCanExitEarlyIfSeeDest", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewCanExitEarlyIfSeeDest, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetWalkDist;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWalkDist;
     /// <summary>
     /// Function: SetWalkDist
     /// </summary>
     public unsafe virtual void SetWalkDist(float NewWalkDist)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWalkDist, "BmGame.RBMAIAction_RunTo.SetWalkDist");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWalkDist, "BmGame.RBMAIAction_RunTo.SetWalkDist", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewWalkDist, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetAimTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAimTarget;
     /// <summary>
     /// Function: SetAimTarget
     /// </summary>
     public unsafe virtual void SetAimTarget(BmSDK.Engine.Actor NewTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAimTarget, "BmGame.RBMAIAction_RunTo.SetAimTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAimTarget, "BmGame.RBMAIAction_RunTo.SetAimTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTarget, paramsPtr + 0);
@@ -167,14 +167,14 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetDestActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDestActor;
     /// <summary>
     /// Function: SetDestActor
     /// </summary>
     public unsafe virtual void SetDestActor(BmSDK.Engine.Actor NewActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDestActor, "BmGame.RBMAIAction_RunTo.SetDestActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDestActor, "BmGame.RBMAIAction_RunTo.SetDestActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewActor, paramsPtr + 0);
@@ -182,14 +182,14 @@ public partial class RBMAIAction_RunTo : BmSDK.BmGame.RBMAIAction_BaseMove, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetupGoal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupGoal;
     /// <summary>
     /// Function: SetupGoal
     /// </summary>
     public unsafe virtual void SetupGoal(System.Numerics.Vector3 NewGoalPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupGoal, "BmGame.RBMAIAction_RunTo.SetupGoal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupGoal, "BmGame.RBMAIAction_RunTo.SetupGoal", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGoalPos, paramsPtr + 0);

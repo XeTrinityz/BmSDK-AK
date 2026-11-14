@@ -78,14 +78,14 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RFlaps_BodySetup>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FindPhysAssetBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPhysAssetBody;
     /// <summary>
     /// Function: FindPhysAssetBody
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodySetup FindPhysAssetBody()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindPhysAssetBody, "Engine.RFlaps_BodySetup.FindPhysAssetBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindPhysAssetBody, "Engine.RFlaps_BodySetup.FindPhysAssetBody", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RB_BodySetup>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindPhysAssetBodyIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPhysAssetBodyIndex;
     /// <summary>
     /// Function: FindPhysAssetBodyIndex
     /// </summary>
     public unsafe virtual int FindPhysAssetBodyIndex()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindPhysAssetBodyIndex, "Engine.RFlaps_BodySetup.FindPhysAssetBodyIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindPhysAssetBodyIndex, "Engine.RFlaps_BodySetup.FindPhysAssetBodyIndex", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class RFlaps_BodySetup : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindParticleIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindParticleIndex;
     /// <summary>
     /// Function: FindParticleIndex
     /// </summary>
     public unsafe virtual int FindParticleIndex(BmSDK.FName ParticleName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindParticleIndex, "Engine.RFlaps_BodySetup.FindParticleIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindParticleIndex, "Engine.RFlaps_BodySetup.FindParticleIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParticleName, paramsPtr + 0);

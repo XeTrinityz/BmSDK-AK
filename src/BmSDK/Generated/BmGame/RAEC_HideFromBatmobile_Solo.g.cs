@@ -78,14 +78,14 @@ public partial class RAEC_HideFromBatmobile_Solo : BmSDK.BmGame.RAlertEventCoord
         where TComponent : class, Framework.IScriptComponent<RAEC_HideFromBatmobile_Solo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetHideAnimOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHideAnimOffset;
     /// <summary>
     /// Function: GetHideAnimOffset
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHideAnimOffset(BmSDK.BmGame.RPredHideFromBatmobilePoint NewPoint, BmSDK.Class HideType, out float MeetingPointTravelDist)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHideAnimOffset, "BmGame.RAEC_HideFromBatmobile_Solo.GetHideAnimOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHideAnimOffset, "BmGame.RAEC_HideFromBatmobile_Solo.GetHideAnimOffset", this);
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPoint, paramsPtr + 0);
@@ -97,14 +97,14 @@ public partial class RAEC_HideFromBatmobile_Solo : BmSDK.BmGame.RAlertEventCoord
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SetHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidePoint;
     /// <summary>
     /// Function: SetHidePoint
     /// </summary>
     public unsafe virtual void SetHidePoint(BmSDK.BmGame.RPredHideFromBatmobilePoint NewPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidePoint, "BmGame.RAEC_HideFromBatmobile_Solo.SetHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidePoint, "BmGame.RAEC_HideFromBatmobile_Solo.SetHidePoint", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPoint, paramsPtr + 0);

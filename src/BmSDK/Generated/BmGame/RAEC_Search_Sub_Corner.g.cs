@@ -78,56 +78,56 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_Corner>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsCornerLockedBySomeoneInThisGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCornerLockedBySomeoneInThisGroup;
     /// <summary>
     /// Function: IsCornerLockedBySomeoneInThisGroup
     /// </summary>
     public unsafe virtual bool IsCornerLockedBySomeoneInThisGroup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCornerLockedBySomeoneInThisGroup, "BmGame.RAEC_Search_Sub_Corner.IsCornerLockedBySomeoneInThisGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCornerLockedBySomeoneInThisGroup, "BmGame.RAEC_Search_Sub_Corner.IsCornerLockedBySomeoneInThisGroup", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPlayerBehind;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerBehind;
     /// <summary>
     /// Function: IsPlayerBehind
     /// </summary>
     public unsafe virtual bool IsPlayerBehind()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayerBehind, "BmGame.RAEC_Search_Sub_Corner.IsPlayerBehind");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayerBehind, "BmGame.RAEC_Search_Sub_Corner.IsPlayerBehind", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsThugVisibleFromCornerEndNavCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsThugVisibleFromCornerEndNavCheck;
     /// <summary>
     /// Function: IsThugVisibleFromCornerEndNavCheck
     /// </summary>
     public unsafe virtual bool IsThugVisibleFromCornerEndNavCheck()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsThugVisibleFromCornerEndNavCheck, "BmGame.RAEC_Search_Sub_Corner.IsThugVisibleFromCornerEndNavCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsThugVisibleFromCornerEndNavCheck, "BmGame.RAEC_Search_Sub_Corner.IsThugVisibleFromCornerEndNavCheck", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartFromSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFromSearch;
     /// <summary>
     /// Function: StartFromSearch
     /// </summary>
     public unsafe virtual void StartFromSearch(BmSDK.BmGame.RBMAIController NewCon, BmSDK.BmGame.RCornerWallMarker NewStartCorner, BmSDK.BmGame.RCornerWallMarker NewEndCorner, bool bLeader, BmSDK.BmGame.RBMAIAction_PairedCorner.ePairedCornerAnimType pairedAnimVariant)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_Corner.StartFromSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_Corner.StartFromSearch", this);
         byte* paramsPtr = stackalloc byte[45];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -139,58 +139,59 @@ public partial class RAEC_Search_Sub_Corner : BmSDK.BmGame.RAEC_Search_Sub_Forma
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyEvent;
     /// <summary>
     /// Function: NotifyEvent
     /// </summary>
-    public unsafe override void NotifyEvent(BmSDK.BmGame.RBMAIAction NotifyAction, BmSDK.FString EventType)
+    public unsafe override void NotifyEvent(BmSDK.BmGame.RBMAIAction NotifyAction, BmSDK.FStringArg EventType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEvent, "BmGame.RAEC_Search_Sub_Corner.NotifyEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyEvent, "BmGame.RAEC_Search_Sub_Corner.NotifyEvent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NotifyAction, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventType, paramsPtr + 8);
+        EventType.WriteTo(paramsPtr + 8);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
-    private static BmSDK.Function __fn_OnVillainStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnVillainStolen;
     /// <summary>
     /// Function: OnVillainStolen
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_Corner.OnVillainStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_Corner.OnVillainStolen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PairedInAnimFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PairedInAnimFinished;
     /// <summary>
     /// Function: PairedInAnimFinished
     /// </summary>
     public unsafe virtual void PairedInAnimFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PairedInAnimFinished, "BmGame.RAEC_Search_Sub_Corner.PairedInAnimFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PairedInAnimFinished, "BmGame.RAEC_Search_Sub_Corner.PairedInAnimFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrentPathHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentPathHandle;
     /// <summary>
     /// Function: GetCurrentPathHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_Corner.GetCurrentPathHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_Corner.GetCurrentPathHandle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

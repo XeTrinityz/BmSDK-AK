@@ -78,14 +78,14 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RSnowComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DisableSnowSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableSnowSound;
     /// <summary>
     /// Function: DisableSnowSound
     /// </summary>
     public unsafe virtual void DisableSnowSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableSnowSound, "Engine.RSnowComponent.DisableSnowSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableSnowSound, "Engine.RSnowComponent.DisableSnowSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RSnowComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_EnableSnowSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableSnowSound;
     /// <summary>
     /// Function: EnableSnowSound
     /// </summary>
     public unsafe virtual void EnableSnowSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableSnowSound, "Engine.RSnowComponent.EnableSnowSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableSnowSound, "Engine.RSnowComponent.EnableSnowSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

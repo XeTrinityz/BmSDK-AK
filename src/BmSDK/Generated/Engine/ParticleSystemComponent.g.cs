@@ -78,14 +78,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         where TComponent : class, Framework.IScriptComponent<ParticleSystemComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetStopSpawning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStopSpawning;
     /// <summary>
     /// Function: SetStopSpawning
     /// </summary>
     public unsafe virtual void SetStopSpawning(int InEmitterIndex, bool bInStopSpawning)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStopSpawning, "Engine.ParticleSystemComponent.SetStopSpawning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStopSpawning, "Engine.ParticleSystemComponent.SetStopSpawning", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InEmitterIndex, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_ResetToDefaults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetToDefaults;
     /// <summary>
     /// Function: ResetToDefaults
     /// </summary>
     public unsafe virtual void ResetToDefaults()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetToDefaults, "Engine.ParticleSystemComponent.ResetToDefaults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetToDefaults, "Engine.ParticleSystemComponent.ResetToDefaults", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -122,14 +122,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActive;
     /// <summary>
     /// Function: SetActive
     /// </summary>
     public unsafe virtual void SetActive(bool bNowActive, bool bFlagAsJustAttached = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActive, "Engine.ParticleSystemComponent.SetActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActive, "Engine.ParticleSystemComponent.SetActive", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNowActive, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetVectorArrayElementParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorArrayElementParameter;
     /// <summary>
     /// Function: SetVectorArrayElementParameter
     /// </summary>
     public unsafe virtual void SetVectorArrayElementParameter(BmSDK.FName ParameterName, int Index, System.Numerics.Vector3 Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorArrayElementParameter, "Engine.ParticleSystemComponent.SetVectorArrayElementParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVectorArrayElementParameter, "Engine.ParticleSystemComponent.SetVectorArrayElementParameter", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -169,14 +169,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetVectorArrayParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorArrayParameter;
     /// <summary>
     /// Function: SetVectorArrayParameter
     /// </summary>
     public unsafe virtual void SetVectorArrayParameter(BmSDK.FName ParameterName, out BmSDK.TArray<System.Numerics.Vector3> Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorArrayParameter, "Engine.ParticleSystemComponent.SetVectorArrayParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVectorArrayParameter, "Engine.ParticleSystemComponent.SetVectorArrayParameter", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_ClearParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearParameter;
     /// <summary>
     /// Function: ClearParameter
     /// </summary>
     public unsafe virtual void ClearParameter(BmSDK.FName ParameterName, BmSDK.Engine.ParticleSystemComponent.EParticleSysParamType ParameterType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearParameter, "Engine.ParticleSystemComponent.ClearParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearParameter, "Engine.ParticleSystemComponent.ClearParameter", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -215,14 +215,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetMaterialParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterialParameter;
     /// <summary>
     /// Function: GetMaterialParameter
     /// </summary>
     public unsafe virtual bool GetMaterialParameter(BmSDK.FName InName, out BmSDK.Engine.MaterialInterface OutMaterial)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaterialParameter, "Engine.ParticleSystemComponent.GetMaterialParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMaterialParameter, "Engine.ParticleSystemComponent.GetMaterialParameter", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InName, paramsPtr + 0);
@@ -240,14 +240,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetActorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorParameter;
     /// <summary>
     /// Function: GetActorParameter
     /// </summary>
     public unsafe virtual bool GetActorParameter(BmSDK.FName InName, out BmSDK.Engine.Actor OutActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorParameter, "Engine.ParticleSystemComponent.GetActorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorParameter, "Engine.ParticleSystemComponent.GetActorParameter", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InName, paramsPtr + 0);
@@ -265,14 +265,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetColorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetColorParameter;
     /// <summary>
     /// Function: GetColorParameter
     /// </summary>
     public unsafe virtual bool GetColorParameter(BmSDK.FName InName, out BmSDK.GameObject.FColor OutColor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetColorParameter, "Engine.ParticleSystemComponent.GetColorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetColorParameter, "Engine.ParticleSystemComponent.GetColorParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InName, paramsPtr + 0);
@@ -290,14 +290,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetVectorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVectorParameter;
     /// <summary>
     /// Function: GetVectorParameter
     /// </summary>
     public unsafe virtual bool GetVectorParameter(BmSDK.FName InName, out System.Numerics.Vector3 OutVector)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVectorParameter, "Engine.ParticleSystemComponent.GetVectorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVectorParameter, "Engine.ParticleSystemComponent.GetVectorParameter", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InName, paramsPtr + 0);
@@ -315,14 +315,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetFloatParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatParameter;
     /// <summary>
     /// Function: GetFloatParameter
     /// </summary>
     public unsafe virtual bool GetFloatParameter(BmSDK.FName InName, out float OutFloat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatParameter, "Engine.ParticleSystemComponent.GetFloatParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatParameter, "Engine.ParticleSystemComponent.GetFloatParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InName, paramsPtr + 0);
@@ -340,14 +340,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetSpawnScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpawnScale;
     /// <summary>
     /// Function: SetSpawnScale
     /// </summary>
     public unsafe virtual void SetSpawnScale(float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpawnScale, "Engine.ParticleSystemComponent.SetSpawnScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSpawnScale, "Engine.ParticleSystemComponent.SetSpawnScale", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 0);
@@ -362,14 +362,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetSpawnScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSpawnScale;
     /// <summary>
     /// Function: GetSpawnScale
     /// </summary>
     public unsafe virtual float GetSpawnScale()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSpawnScale, "Engine.ParticleSystemComponent.GetSpawnScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSpawnScale, "Engine.ParticleSystemComponent.GetSpawnScale", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -383,14 +383,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetMaterialParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterialParameter;
     /// <summary>
     /// Function: SetMaterialParameter
     /// </summary>
     public unsafe virtual void SetMaterialParameter(BmSDK.FName ParameterName, BmSDK.Engine.MaterialInterface Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaterialParameter, "Engine.ParticleSystemComponent.SetMaterialParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaterialParameter, "Engine.ParticleSystemComponent.SetMaterialParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -406,14 +406,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetActorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActorParameter;
     /// <summary>
     /// Function: SetActorParameter
     /// </summary>
     public unsafe virtual void SetActorParameter(BmSDK.FName ParameterName, BmSDK.Engine.Actor Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActorParameter, "Engine.ParticleSystemComponent.SetActorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActorParameter, "Engine.ParticleSystemComponent.SetActorParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -429,14 +429,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetColorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetColorParameter;
     /// <summary>
     /// Function: SetColorParameter
     /// </summary>
     public unsafe virtual void SetColorParameter(BmSDK.FName ParameterName, BmSDK.GameObject.FColor Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetColorParameter, "Engine.ParticleSystemComponent.SetColorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetColorParameter, "Engine.ParticleSystemComponent.SetColorParameter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -452,14 +452,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetVectorRandParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorRandParameter;
     /// <summary>
     /// Function: SetVectorRandParameter
     /// </summary>
     public unsafe virtual void SetVectorRandParameter(BmSDK.FName ParameterName, out System.Numerics.Vector3 Param, out System.Numerics.Vector3 ParamLow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorRandParameter, "Engine.ParticleSystemComponent.SetVectorRandParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVectorRandParameter, "Engine.ParticleSystemComponent.SetVectorRandParameter", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -480,14 +480,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetVectorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorParameter;
     /// <summary>
     /// Function: SetVectorParameter
     /// </summary>
     public unsafe virtual void SetVectorParameter(BmSDK.FName ParameterName, System.Numerics.Vector3 Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorParameter, "Engine.ParticleSystemComponent.SetVectorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVectorParameter, "Engine.ParticleSystemComponent.SetVectorParameter", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -503,14 +503,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetFloatRandParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatRandParameter;
     /// <summary>
     /// Function: SetFloatRandParameter
     /// </summary>
     public unsafe virtual void SetFloatRandParameter(BmSDK.FName ParameterName, float Param, float ParamLow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFloatRandParameter, "Engine.ParticleSystemComponent.SetFloatRandParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFloatRandParameter, "Engine.ParticleSystemComponent.SetFloatRandParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -527,14 +527,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetFloatParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatParameter;
     /// <summary>
     /// Function: SetFloatParameter
     /// </summary>
     public unsafe virtual void SetFloatParameter(BmSDK.FName ParameterName, float Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFloatParameter, "Engine.ParticleSystemComponent.SetFloatParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFloatParameter, "Engine.ParticleSystemComponent.SetFloatParameter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -550,14 +550,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetEditorLODLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEditorLODLevel;
     /// <summary>
     /// Function: GetEditorLODLevel
     /// </summary>
     public unsafe virtual int GetEditorLODLevel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEditorLODLevel, "Engine.ParticleSystemComponent.GetEditorLODLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEditorLODLevel, "Engine.ParticleSystemComponent.GetEditorLODLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -571,14 +571,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLODLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLODLevel;
     /// <summary>
     /// Function: GetLODLevel
     /// </summary>
     public unsafe virtual int GetLODLevel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLODLevel, "Engine.ParticleSystemComponent.GetLODLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLODLevel, "Engine.ParticleSystemComponent.GetLODLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -592,14 +592,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetEditorLODLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEditorLODLevel;
     /// <summary>
     /// Function: SetEditorLODLevel
     /// </summary>
     public unsafe virtual void SetEditorLODLevel(int InLODLevel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEditorLODLevel, "Engine.ParticleSystemComponent.SetEditorLODLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEditorLODLevel, "Engine.ParticleSystemComponent.SetEditorLODLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InLODLevel, paramsPtr + 0);
@@ -614,14 +614,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetLODLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLODLevel;
     /// <summary>
     /// Function: SetLODLevel
     /// </summary>
     public unsafe virtual void SetLODLevel(int InLODLevel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLODLevel, "Engine.ParticleSystemComponent.SetLODLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLODLevel, "Engine.ParticleSystemComponent.SetLODLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InLODLevel, paramsPtr + 0);
@@ -636,14 +636,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetEmitterRate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEmitterRate;
     /// <summary>
     /// Function: SetEmitterRate
     /// </summary>
     public unsafe virtual void SetEmitterRate(int EmitterIndex, float MinRate, float MaxRate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEmitterRate, "Engine.ParticleSystemComponent.SetEmitterRate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEmitterRate, "Engine.ParticleSystemComponent.SetEmitterRate", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -660,14 +660,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SystemHasCompleted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SystemHasCompleted;
     /// <summary>
     /// Function: SystemHasCompleted
     /// </summary>
     public unsafe virtual bool SystemHasCompleted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SystemHasCompleted, "Engine.ParticleSystemComponent.SystemHasCompleted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SystemHasCompleted, "Engine.ParticleSystemComponent.SystemHasCompleted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -681,14 +681,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMaxLifespan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxLifespan;
     /// <summary>
     /// Function: GetMaxLifespan
     /// </summary>
     public unsafe virtual float GetMaxLifespan()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxLifespan, "Engine.ParticleSystemComponent.GetMaxLifespan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMaxLifespan, "Engine.ParticleSystemComponent.GetMaxLifespan", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -702,14 +702,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AnyParticlesActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AnyParticlesActive;
     /// <summary>
     /// Function: AnyParticlesActive
     /// </summary>
     public unsafe virtual bool AnyParticlesActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnyParticlesActive, "Engine.ParticleSystemComponent.AnyParticlesActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AnyParticlesActive, "Engine.ParticleSystemComponent.AnyParticlesActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -723,14 +723,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetBaseVelocityRadial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBaseVelocityRadial;
     /// <summary>
     /// Function: SetBaseVelocityRadial
     /// </summary>
     public unsafe virtual void SetBaseVelocityRadial(System.Numerics.Vector3 pos, float velInner, float velOuter, float Radius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBaseVelocityRadial, "Engine.ParticleSystemComponent.SetBaseVelocityRadial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBaseVelocityRadial, "Engine.ParticleSystemComponent.SetBaseVelocityRadial", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pos, paramsPtr + 0);
@@ -748,14 +748,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_DetermineLODLevelForLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetermineLODLevelForLocation;
     /// <summary>
     /// Function: DetermineLODLevelForLocation
     /// </summary>
     public unsafe virtual int DetermineLODLevelForLocation(out System.Numerics.Vector3 EffectLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetermineLODLevelForLocation, "Engine.ParticleSystemComponent.DetermineLODLevelForLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetermineLODLevelForLocation, "Engine.ParticleSystemComponent.DetermineLODLevelForLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out EffectLocation);
@@ -772,14 +772,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetBeamTargetStrength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetStrength;
     /// <summary>
     /// Function: SetBeamTargetStrength
     /// </summary>
     public unsafe virtual void SetBeamTargetStrength(int EmitterIndex, float NewTargetStrength, int TargetIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamTargetStrength, "Engine.ParticleSystemComponent.SetBeamTargetStrength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamTargetStrength, "Engine.ParticleSystemComponent.SetBeamTargetStrength", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -796,14 +796,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamTargetTangent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetTangent;
     /// <summary>
     /// Function: SetBeamTargetTangent
     /// </summary>
     public unsafe virtual void SetBeamTargetTangent(int EmitterIndex, System.Numerics.Vector3 NewTangentPoint, int TargetIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamTargetTangent, "Engine.ParticleSystemComponent.SetBeamTargetTangent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamTargetTangent, "Engine.ParticleSystemComponent.SetBeamTargetTangent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -820,14 +820,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamTargetActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetActor;
     /// <summary>
     /// Function: SetBeamTargetActor
     /// </summary>
     public unsafe virtual void SetBeamTargetActor(int EmitterIndex, BmSDK.Engine.Actor Actor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamTargetActor, "Engine.ParticleSystemComponent.SetBeamTargetActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamTargetActor, "Engine.ParticleSystemComponent.SetBeamTargetActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -843,14 +843,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamTargetPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTargetPoint;
     /// <summary>
     /// Function: SetBeamTargetPoint
     /// </summary>
     public unsafe virtual void SetBeamTargetPoint(int EmitterIndex, System.Numerics.Vector3 NewTargetPoint, int TargetIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamTargetPoint, "Engine.ParticleSystemComponent.SetBeamTargetPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamTargetPoint, "Engine.ParticleSystemComponent.SetBeamTargetPoint", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -867,14 +867,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamSourceStrength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourceStrength;
     /// <summary>
     /// Function: SetBeamSourceStrength
     /// </summary>
     public unsafe virtual void SetBeamSourceStrength(int EmitterIndex, float NewSourceStrength, int SourceIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamSourceStrength, "Engine.ParticleSystemComponent.SetBeamSourceStrength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamSourceStrength, "Engine.ParticleSystemComponent.SetBeamSourceStrength", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -891,14 +891,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamSourceTangent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourceTangent;
     /// <summary>
     /// Function: SetBeamSourceTangent
     /// </summary>
     public unsafe virtual void SetBeamSourceTangent(int EmitterIndex, System.Numerics.Vector3 NewTangentPoint, int SourceIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamSourceTangent, "Engine.ParticleSystemComponent.SetBeamSourceTangent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamSourceTangent, "Engine.ParticleSystemComponent.SetBeamSourceTangent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -915,14 +915,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamSourceActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourceActor;
     /// <summary>
     /// Function: SetBeamSourceActor
     /// </summary>
     public unsafe virtual void SetBeamSourceActor(int EmitterIndex, BmSDK.Engine.Actor Actor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamSourceActor, "Engine.ParticleSystemComponent.SetBeamSourceActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamSourceActor, "Engine.ParticleSystemComponent.SetBeamSourceActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -938,14 +938,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamSourcePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamSourcePoint;
     /// <summary>
     /// Function: SetBeamSourcePoint
     /// </summary>
     public unsafe virtual void SetBeamSourcePoint(int EmitterIndex, System.Numerics.Vector3 NewSourcePoint, int SourceIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamSourcePoint, "Engine.ParticleSystemComponent.SetBeamSourcePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamSourcePoint, "Engine.ParticleSystemComponent.SetBeamSourcePoint", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -962,14 +962,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamDistance;
     /// <summary>
     /// Function: SetBeamDistance
     /// </summary>
     public unsafe virtual void SetBeamDistance(int EmitterIndex, float Distance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamDistance, "Engine.ParticleSystemComponent.SetBeamDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamDistance, "Engine.ParticleSystemComponent.SetBeamDistance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -985,14 +985,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamEndPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamEndPoint;
     /// <summary>
     /// Function: SetBeamEndPoint
     /// </summary>
     public unsafe virtual void SetBeamEndPoint(int EmitterIndex, System.Numerics.Vector3 NewEndPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamEndPoint, "Engine.ParticleSystemComponent.SetBeamEndPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamEndPoint, "Engine.ParticleSystemComponent.SetBeamEndPoint", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -1008,14 +1008,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamTessellationFactor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamTessellationFactor;
     /// <summary>
     /// Function: SetBeamTessellationFactor
     /// </summary>
     public unsafe virtual void SetBeamTessellationFactor(int EmitterIndex, float NewFactor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamTessellationFactor, "Engine.ParticleSystemComponent.SetBeamTessellationFactor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamTessellationFactor, "Engine.ParticleSystemComponent.SetBeamTessellationFactor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -1031,14 +1031,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetBeamType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBeamType;
     /// <summary>
     /// Function: SetBeamType
     /// </summary>
     public unsafe virtual void SetBeamType(int EmitterIndex, int NewMethod)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBeamType, "Engine.ParticleSystemComponent.SetBeamType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBeamType, "Engine.ParticleSystemComponent.SetBeamType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -1054,14 +1054,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_RewindEmitterInstances;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RewindEmitterInstances;
     /// <summary>
     /// Function: RewindEmitterInstances
     /// </summary>
     public unsafe virtual void RewindEmitterInstances()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RewindEmitterInstances, "Engine.ParticleSystemComponent.RewindEmitterInstances");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RewindEmitterInstances, "Engine.ParticleSystemComponent.RewindEmitterInstances", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1075,14 +1075,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_RewindEmitterInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RewindEmitterInstance;
     /// <summary>
     /// Function: RewindEmitterInstance
     /// </summary>
     public unsafe virtual void RewindEmitterInstance(int EmitterIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RewindEmitterInstance, "Engine.ParticleSystemComponent.RewindEmitterInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RewindEmitterInstance, "Engine.ParticleSystemComponent.RewindEmitterInstance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -1097,14 +1097,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetKillOnCompleted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetKillOnCompleted;
     /// <summary>
     /// Function: SetKillOnCompleted
     /// </summary>
     public unsafe virtual void SetKillOnCompleted(int EmitterIndex, bool bKill)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetKillOnCompleted, "Engine.ParticleSystemComponent.SetKillOnCompleted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetKillOnCompleted, "Engine.ParticleSystemComponent.SetKillOnCompleted", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -1120,14 +1120,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetKillOnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetKillOnDeactivate;
     /// <summary>
     /// Function: SetKillOnDeactivate
     /// </summary>
     public unsafe virtual void SetKillOnDeactivate(int EmitterIndex, bool bKill)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetKillOnDeactivate, "Engine.ParticleSystemComponent.SetKillOnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetKillOnDeactivate, "Engine.ParticleSystemComponent.SetKillOnDeactivate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EmitterIndex, paramsPtr + 0);
@@ -1143,14 +1143,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetSkipBoundsUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkipBoundsUpdate;
     /// <summary>
     /// Function: GetSkipBoundsUpdate
     /// </summary>
     public unsafe virtual bool GetSkipBoundsUpdate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSkipBoundsUpdate, "Engine.ParticleSystemComponent.GetSkipBoundsUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSkipBoundsUpdate, "Engine.ParticleSystemComponent.GetSkipBoundsUpdate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1164,14 +1164,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetSkipBoundsUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkipBoundsUpdate;
     /// <summary>
     /// Function: SetSkipBoundsUpdate
     /// </summary>
     public unsafe virtual void SetSkipBoundsUpdate(bool bInSkipBoundsUpdate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSkipBoundsUpdate, "Engine.ParticleSystemComponent.SetSkipBoundsUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSkipBoundsUpdate, "Engine.ParticleSystemComponent.SetSkipBoundsUpdate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInSkipBoundsUpdate, paramsPtr + 0);
@@ -1186,14 +1186,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetSkipUpdateDynamicDataDuringTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkipUpdateDynamicDataDuringTick;
     /// <summary>
     /// Function: GetSkipUpdateDynamicDataDuringTick
     /// </summary>
     public unsafe virtual bool GetSkipUpdateDynamicDataDuringTick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSkipUpdateDynamicDataDuringTick, "Engine.ParticleSystemComponent.GetSkipUpdateDynamicDataDuringTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSkipUpdateDynamicDataDuringTick, "Engine.ParticleSystemComponent.GetSkipUpdateDynamicDataDuringTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1207,14 +1207,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetSkipUpdateDynamicDataDuringTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkipUpdateDynamicDataDuringTick;
     /// <summary>
     /// Function: SetSkipUpdateDynamicDataDuringTick
     /// </summary>
     public unsafe virtual void SetSkipUpdateDynamicDataDuringTick(bool bInSkipUpdateDynamicDataDuringTick)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSkipUpdateDynamicDataDuringTick, "Engine.ParticleSystemComponent.SetSkipUpdateDynamicDataDuringTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSkipUpdateDynamicDataDuringTick, "Engine.ParticleSystemComponent.SetSkipUpdateDynamicDataDuringTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInSkipUpdateDynamicDataDuringTick, paramsPtr + 0);
@@ -1229,14 +1229,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_KillParticlesInEmitter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillParticlesInEmitter;
     /// <summary>
     /// Function: KillParticlesInEmitter
     /// </summary>
     public unsafe virtual void KillParticlesInEmitter(BmSDK.FName InEmitterName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillParticlesInEmitter, "Engine.ParticleSystemComponent.KillParticlesInEmitter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillParticlesInEmitter, "Engine.ParticleSystemComponent.KillParticlesInEmitter", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InEmitterName, paramsPtr + 0);
@@ -1251,14 +1251,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_ForceKillParticlesWithEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceKillParticlesWithEvents;
     /// <summary>
     /// Function: ForceKillParticlesWithEvents
     /// </summary>
     public unsafe virtual void ForceKillParticlesWithEvents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceKillParticlesWithEvents, "Engine.ParticleSystemComponent.ForceKillParticlesWithEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceKillParticlesWithEvents, "Engine.ParticleSystemComponent.ForceKillParticlesWithEvents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1272,14 +1272,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_ResetSpawnFraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetSpawnFraction;
     /// <summary>
     /// Function: ResetSpawnFraction
     /// </summary>
     public unsafe virtual void ResetSpawnFraction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetSpawnFraction, "Engine.ParticleSystemComponent.ResetSpawnFraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetSpawnFraction, "Engine.ParticleSystemComponent.ResetSpawnFraction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1293,14 +1293,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyEnteringStasis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyEnteringStasis;
     /// <summary>
     /// Function: NotifyEnteringStasis
     /// </summary>
     public unsafe virtual void NotifyEnteringStasis()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEnteringStasis, "Engine.ParticleSystemComponent.NotifyEnteringStasis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyEnteringStasis, "Engine.ParticleSystemComponent.NotifyEnteringStasis", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1314,14 +1314,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_KillParticlesForced;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillParticlesForced;
     /// <summary>
     /// Function: KillParticlesForced
     /// </summary>
     public unsafe virtual void KillParticlesForced()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillParticlesForced, "Engine.ParticleSystemComponent.KillParticlesForced");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillParticlesForced, "Engine.ParticleSystemComponent.KillParticlesForced", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1335,14 +1335,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_DeactivateSystemDeferred;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateSystemDeferred;
     /// <summary>
     /// Function: DeactivateSystemDeferred
     /// </summary>
     public unsafe virtual void DeactivateSystemDeferred()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateSystemDeferred, "Engine.ParticleSystemComponent.DeactivateSystemDeferred");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateSystemDeferred, "Engine.ParticleSystemComponent.DeactivateSystemDeferred", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1356,14 +1356,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_DeactivateSystem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateSystem;
     /// <summary>
     /// Function: DeactivateSystem
     /// </summary>
     public unsafe virtual void DeactivateSystem()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateSystem, "Engine.ParticleSystemComponent.DeactivateSystem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateSystem, "Engine.ParticleSystemComponent.DeactivateSystem", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1377,14 +1377,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateSystemDeferred;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateSystemDeferred;
     /// <summary>
     /// Function: ActivateSystemDeferred
     /// </summary>
     public unsafe virtual void ActivateSystemDeferred(bool bFlagAsJustAttached = default, bool DontUpdateTransform = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateSystemDeferred, "Engine.ParticleSystemComponent.ActivateSystemDeferred");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateSystemDeferred, "Engine.ParticleSystemComponent.ActivateSystemDeferred", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFlagAsJustAttached, paramsPtr + 0);
@@ -1400,14 +1400,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateSystem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateSystem;
     /// <summary>
     /// Function: ActivateSystem
     /// </summary>
     public unsafe virtual void ActivateSystem(bool bFlagAsJustAttached = default, bool DontUpdateTransform = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateSystem, "Engine.ParticleSystemComponent.ActivateSystem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateSystem, "Engine.ParticleSystemComponent.ActivateSystem", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFlagAsJustAttached, paramsPtr + 0);
@@ -1423,14 +1423,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_SetTemplate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTemplate;
     /// <summary>
     /// Function: SetTemplate
     /// </summary>
     public unsafe virtual void SetTemplate(BmSDK.Engine.ParticleSystem NewTemplate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTemplate, "Engine.ParticleSystemComponent.SetTemplate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTemplate, "Engine.ParticleSystemComponent.SetTemplate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTemplate, paramsPtr + 0);
@@ -1445,14 +1445,14 @@ public partial class ParticleSystemComponent : BmSDK.Engine.PrimitiveComponent, 
         return;
     }
 
-    private static BmSDK.Function __fn_OnSystemFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSystemFinished;
     /// <summary>
     /// Function: OnSystemFinished
     /// </summary>
     public unsafe virtual void OnSystemFinished(BmSDK.Engine.ParticleSystemComponent PSystem)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSystemFinished, "Engine.ParticleSystemComponent.OnSystemFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSystemFinished, "Engine.ParticleSystemComponent.OnSystemFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PSystem, paramsPtr + 0);

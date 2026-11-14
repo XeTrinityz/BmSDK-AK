@@ -78,14 +78,14 @@ public partial class RAnimNotify_PlayGadgetAnim : BmSDK.Engine.AnimNotify, BmSDK
         where TComponent : class, Framework.IScriptComponent<RAnimNotify_PlayGadgetAnim>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TriggerGadgetAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerGadgetAnim;
     /// <summary>
     /// Function: TriggerGadgetAnim
     /// </summary>
     public unsafe virtual void TriggerGadgetAnim(BmSDK.BmGame.RPawnPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGadgetAnim, "BmGame.RAnimNotify_PlayGadgetAnim.TriggerGadgetAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerGadgetAnim, "BmGame.RAnimNotify_PlayGadgetAnim.TriggerGadgetAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);

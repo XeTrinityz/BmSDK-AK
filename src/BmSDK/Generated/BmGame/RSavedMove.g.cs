@@ -93,28 +93,28 @@ public partial class RSavedMove : BmSDK.Engine.SavedMove, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EDoubleClickDir>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CompressedFlags;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CompressedFlags;
     /// <summary>
     /// Function: CompressedFlags
     /// </summary>
     public unsafe override byte CompressedFlags()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CompressedFlags, "BmGame.RSavedMove.CompressedFlags");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CompressedFlags, "BmGame.RSavedMove.CompressedFlags", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsImportantMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsImportantMove;
     /// <summary>
     /// Function: IsImportantMove
     /// </summary>
     public unsafe override bool IsImportantMove(System.Numerics.Vector3 CompareAccel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsImportantMove, "BmGame.RSavedMove.IsImportantMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsImportantMove, "BmGame.RSavedMove.IsImportantMove", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CompareAccel, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RSavedMove : BmSDK.Engine.SavedMove, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CanCombineWith;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCombineWith;
     /// <summary>
     /// Function: CanCombineWith
     /// </summary>
     public unsafe override bool CanCombineWith(BmSDK.Engine.SavedMove NewMove, BmSDK.Engine.Pawn inPawn, float MaxDelta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCombineWith, "BmGame.RSavedMove.CanCombineWith");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanCombineWith, "BmGame.RSavedMove.CanCombineWith", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMove, paramsPtr + 0);

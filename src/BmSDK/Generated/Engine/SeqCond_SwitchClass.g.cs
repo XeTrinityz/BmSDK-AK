@@ -78,14 +78,14 @@ public partial class SeqCond_SwitchClass : BmSDK.Engine.SeqCond_SwitchBase, BmSD
         where TComponent : class, Framework.IScriptComponent<SeqCond_SwitchClass>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RemoveValueEntry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveValueEntry;
     /// <summary>
     /// Function: RemoveValueEntry
     /// </summary>
     public unsafe override void RemoveValueEntry(int RemoveIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveValueEntry, "Engine.SeqCond_SwitchClass.RemoveValueEntry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveValueEntry, "Engine.SeqCond_SwitchClass.RemoveValueEntry", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemoveIndex, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class SeqCond_SwitchClass : BmSDK.Engine.SeqCond_SwitchBase, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_InsertValueEntry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InsertValueEntry;
     /// <summary>
     /// Function: InsertValueEntry
     /// </summary>
     public unsafe override void InsertValueEntry(int InsertIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InsertValueEntry, "Engine.SeqCond_SwitchClass.InsertValueEntry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InsertValueEntry, "Engine.SeqCond_SwitchClass.InsertValueEntry", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InsertIndex, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class SeqCond_SwitchClass : BmSDK.Engine.SeqCond_SwitchBase, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_IsFallThruEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFallThruEnabled;
     /// <summary>
     /// Function: IsFallThruEnabled
     /// </summary>
     public unsafe override bool IsFallThruEnabled(int ValueIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFallThruEnabled, "Engine.SeqCond_SwitchClass.IsFallThruEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFallThruEnabled, "Engine.SeqCond_SwitchClass.IsFallThruEnabled", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ValueIndex, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class SeqCond_SwitchClass : BmSDK.Engine.SeqCond_SwitchBase, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_VerifyDefaultCaseValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyDefaultCaseValue;
     /// <summary>
     /// Function: VerifyDefaultCaseValue
     /// </summary>
     public unsafe override void VerifyDefaultCaseValue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VerifyDefaultCaseValue, "Engine.SeqCond_SwitchClass.VerifyDefaultCaseValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VerifyDefaultCaseValue, "Engine.SeqCond_SwitchClass.VerifyDefaultCaseValue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

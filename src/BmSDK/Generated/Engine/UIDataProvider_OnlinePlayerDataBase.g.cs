@@ -73,28 +73,28 @@ public partial class UIDataProvider_OnlinePlayerDataBase : BmSDK.Engine.UIDataPr
         where TComponent : class, Framework.IScriptComponent<UIDataProvider_OnlinePlayerDataBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnUnregister;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUnregister;
     /// <summary>
     /// Function: OnUnregister
     /// </summary>
     public unsafe virtual void OnUnregister()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUnregister, "Engine.UIDataProvider_OnlinePlayerDataBase.OnUnregister");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUnregister, "Engine.UIDataProvider_OnlinePlayerDataBase.OnUnregister", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnRegister;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRegister;
     /// <summary>
     /// Function: OnRegister
     /// </summary>
     public unsafe virtual void OnRegister(BmSDK.Engine.LocalPlayer InPlayer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRegister, "Engine.UIDataProvider_OnlinePlayerDataBase.OnRegister");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRegister, "Engine.UIDataProvider_OnlinePlayerDataBase.OnRegister", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InPlayer, paramsPtr + 0);

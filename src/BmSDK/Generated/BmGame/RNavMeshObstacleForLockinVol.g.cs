@@ -78,28 +78,28 @@ public partial class RNavMeshObstacleForLockinVol : BmSDK.Engine.NavMeshObstacle
         where TComponent : class, Framework.IScriptComponent<RNavMeshObstacleForLockinVol>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetupEncompassCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupEncompassCheck;
     /// <summary>
     /// Function: SetupEncompassCheck
     /// </summary>
     public unsafe virtual void SetupEncompassCheck()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupEncompassCheck, "BmGame.RNavMeshObstacleForLockinVol.SetupEncompassCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupEncompassCheck, "BmGame.RNavMeshObstacleForLockinVol.SetupEncompassCheck", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StaggerPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StaggerPawn;
     /// <summary>
     /// Function: StaggerPawn
     /// </summary>
     public unsafe virtual void StaggerPawn(BmSDK.BmGame.RPawnVillain PawnToDamage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StaggerPawn, "BmGame.RNavMeshObstacleForLockinVol.StaggerPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StaggerPawn, "BmGame.RNavMeshObstacleForLockinVol.StaggerPawn", this);
         byte* paramsPtr = stackalloc byte[296];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToDamage, paramsPtr + 0);
@@ -107,28 +107,28 @@ public partial class RNavMeshObstacleForLockinVol : BmSDK.Engine.NavMeshObstacle
         return;
     }
 
-    private static BmSDK.Function __fn_StaggerNearbyThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StaggerNearbyThugs;
     /// <summary>
     /// Function: StaggerNearbyThugs
     /// </summary>
     public unsafe virtual void StaggerNearbyThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StaggerNearbyThugs, "BmGame.RNavMeshObstacleForLockinVol.StaggerNearbyThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StaggerNearbyThugs, "BmGame.RNavMeshObstacleForLockinVol.StaggerNearbyThugs", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe override void SetEnabled(bool bInEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "BmGame.RNavMeshObstacleForLockinVol.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "BmGame.RNavMeshObstacleForLockinVol.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInEnabled, paramsPtr + 0);

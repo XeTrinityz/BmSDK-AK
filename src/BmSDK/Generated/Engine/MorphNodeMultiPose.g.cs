@@ -78,14 +78,14 @@ public partial class MorphNodeMultiPose : BmSDK.Engine.MorphNodeBase, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<MorphNodeMultiPose>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateMorphTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMorphTarget;
     /// <summary>
     /// Function: UpdateMorphTarget
     /// </summary>
     public unsafe virtual bool UpdateMorphTarget(BmSDK.Engine.MorphTarget Target, float InWeight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMorphTarget, "Engine.MorphNodeMultiPose.UpdateMorphTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMorphTarget, "Engine.MorphNodeMultiPose.UpdateMorphTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class MorphNodeMultiPose : BmSDK.Engine.MorphNodeBase, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_RemoveMorphTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveMorphTarget;
     /// <summary>
     /// Function: RemoveMorphTarget
     /// </summary>
     public unsafe virtual void RemoveMorphTarget(BmSDK.FName MorphTargetName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMorphTarget, "Engine.MorphNodeMultiPose.RemoveMorphTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveMorphTarget, "Engine.MorphNodeMultiPose.RemoveMorphTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MorphTargetName, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class MorphNodeMultiPose : BmSDK.Engine.MorphNodeBase, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_AddMorphTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddMorphTarget;
     /// <summary>
     /// Function: AddMorphTarget
     /// </summary>
     public unsafe virtual bool AddMorphTarget(BmSDK.FName MorphTargetName, float InWeight = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMorphTarget, "Engine.MorphNodeMultiPose.AddMorphTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddMorphTarget, "Engine.MorphNodeMultiPose.AddMorphTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MorphTargetName, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPersistentShared>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpgradesPurchasedAdjust;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradesPurchasedAdjust;
     /// <summary>
     /// Function: UpgradesPurchasedAdjust
     /// </summary>
     public unsafe virtual void UpgradesPurchasedAdjust(int nUpgrades)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradesPurchasedAdjust, "BmGame.RPersistentShared.UpgradesPurchasedAdjust");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpgradesPurchasedAdjust, "BmGame.RPersistentShared.UpgradesPurchasedAdjust", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nUpgrades, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpgradePointsSpent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradePointsSpent;
     /// <summary>
     /// Function: UpgradePointsSpent
     /// </summary>
     public unsafe virtual void UpgradePointsSpent(int nPoints)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradePointsSpent, "BmGame.RPersistentShared.UpgradePointsSpent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpgradePointsSpent, "BmGame.RPersistentShared.UpgradePointsSpent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nPoints, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpgradePointsEarned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradePointsEarned;
     /// <summary>
     /// Function: UpgradePointsEarned
     /// </summary>
     public unsafe virtual void UpgradePointsEarned(int nPoints)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradePointsEarned, "BmGame.RPersistentShared.UpgradePointsEarned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpgradePointsEarned, "BmGame.RPersistentShared.UpgradePointsEarned", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nPoints, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetEpisodeProgress;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEpisodeProgress;
     /// <summary>
     /// Function: GetEpisodeProgress
     /// </summary>
     public unsafe virtual void GetEpisodeProgress(int Uid, out int OutProgress, out int OutNew)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEpisodeProgress, "BmGame.RPersistentShared.GetEpisodeProgress");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEpisodeProgress, "BmGame.RPersistentShared.GetEpisodeProgress", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Uid, paramsPtr + 0);
@@ -144,14 +144,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetEpisodeProgress;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEpisodeProgress;
     /// <summary>
     /// Function: SetEpisodeProgress
     /// </summary>
     public unsafe virtual void SetEpisodeProgress(int Uid, int Percent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEpisodeProgress, "BmGame.RPersistentShared.SetEpisodeProgress");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEpisodeProgress, "BmGame.RPersistentShared.SetEpisodeProgress", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Uid, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearStoryNew;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearStoryNew;
     /// <summary>
     /// Function: ClearStoryNew
     /// </summary>
     public unsafe virtual void ClearStoryNew(int Uid)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearStoryNew, "BmGame.RPersistentShared.ClearStoryNew");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearStoryNew, "BmGame.RPersistentShared.ClearStoryNew", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Uid, paramsPtr + 0);
@@ -175,14 +175,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsEpisodeNew;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEpisodeNew;
     /// <summary>
     /// Function: IsEpisodeNew
     /// </summary>
     public unsafe virtual bool IsEpisodeNew(int Uid)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEpisodeNew, "BmGame.RPersistentShared.IsEpisodeNew");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEpisodeNew, "BmGame.RPersistentShared.IsEpisodeNew", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Uid, paramsPtr + 0);
@@ -190,14 +190,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IncSkillPointCategoryCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncSkillPointCategoryCount;
     /// <summary>
     /// Function: IncSkillPointCategoryCount
     /// </summary>
     public unsafe virtual void IncSkillPointCategoryCount(BmSDK.BmGame.RPersistentShared.SkillPointCategories Category, int IncAmount = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncSkillPointCategoryCount, "BmGame.RPersistentShared.IncSkillPointCategoryCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncSkillPointCategoryCount, "BmGame.RPersistentShared.IncSkillPointCategoryCount", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Category, paramsPtr + 0);
@@ -206,43 +206,44 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddSkillPointDetail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSkillPointDetail;
     /// <summary>
     /// Function: AddSkillPointDetail
     /// </summary>
-    public unsafe virtual void AddSkillPointDetail(BmSDK.FString DetailString)
+    public unsafe virtual void AddSkillPointDetail(BmSDK.FStringArg DetailString)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSkillPointDetail, "BmGame.RPersistentShared.AddSkillPointDetail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSkillPointDetail, "BmGame.RPersistentShared.AddSkillPointDetail", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(DetailString, paramsPtr + 0);
+        DetailString.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearSkillPointDetails;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearSkillPointDetails;
     /// <summary>
     /// Function: ClearSkillPointDetails
     /// </summary>
     public unsafe virtual void ClearSkillPointDetails()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearSkillPointDetails, "BmGame.RPersistentShared.ClearSkillPointDetails");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearSkillPointDetails, "BmGame.RPersistentShared.ClearSkillPointDetails", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SkillPointEncounterFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkillPointEncounterFinished;
     /// <summary>
     /// Function: SkillPointEncounterFinished
     /// </summary>
     public unsafe virtual void SkillPointEncounterFinished(int SkillPointsEarned, BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkillPointEncounterFinished, "BmGame.RPersistentShared.SkillPointEncounterFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkillPointEncounterFinished, "BmGame.RPersistentShared.SkillPointEncounterFinished", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkillPointsEarned, paramsPtr + 0);
@@ -251,56 +252,56 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetRiddlerProgressionProportion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerProgressionProportion;
     /// <summary>
     /// Function: GetRiddlerProgressionProportion
     /// </summary>
     public unsafe virtual float GetRiddlerProgressionProportion()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerProgressionProportion, "BmGame.RPersistentShared.GetRiddlerProgressionProportion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerProgressionProportion, "BmGame.RPersistentShared.GetRiddlerProgressionProportion", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRiddlerProgressionAbsolute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerProgressionAbsolute;
     /// <summary>
     /// Function: GetRiddlerProgressionAbsolute
     /// </summary>
     public unsafe virtual int GetRiddlerProgressionAbsolute()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerProgressionAbsolute, "BmGame.RPersistentShared.GetRiddlerProgressionAbsolute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerProgressionAbsolute, "BmGame.RPersistentShared.GetRiddlerProgressionAbsolute", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AllCamerasBroken;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllCamerasBroken;
     /// <summary>
     /// Function: AllCamerasBroken
     /// </summary>
     public unsafe virtual bool AllCamerasBroken()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllCamerasBroken, "BmGame.RPersistentShared.AllCamerasBroken");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllCamerasBroken, "BmGame.RPersistentShared.AllCamerasBroken", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IncreasePenguinBrokenCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreasePenguinBrokenCount;
     /// <summary>
     /// Function: IncreasePenguinBrokenCount
     /// </summary>
     public unsafe virtual int IncreasePenguinBrokenCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreasePenguinBrokenCount, "BmGame.RPersistentShared.IncreasePenguinBrokenCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreasePenguinBrokenCount, "BmGame.RPersistentShared.IncreasePenguinBrokenCount", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Zone, paramsPtr + 0);
@@ -308,14 +309,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IncreaseJokerBalloonPoppedCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreaseJokerBalloonPoppedCount;
     /// <summary>
     /// Function: IncreaseJokerBalloonPoppedCount
     /// </summary>
     public unsafe virtual int IncreaseJokerBalloonPoppedCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseJokerBalloonPoppedCount, "BmGame.RPersistentShared.IncreaseJokerBalloonPoppedCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreaseJokerBalloonPoppedCount, "BmGame.RPersistentShared.IncreaseJokerBalloonPoppedCount", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Zone, paramsPtr + 0);
@@ -323,14 +324,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IncreaseJokerTeethCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreaseJokerTeethCount;
     /// <summary>
     /// Function: IncreaseJokerTeethCount
     /// </summary>
     public unsafe virtual int IncreaseJokerTeethCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseJokerTeethCount, "BmGame.RPersistentShared.IncreaseJokerTeethCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreaseJokerTeethCount, "BmGame.RPersistentShared.IncreaseJokerTeethCount", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Zone, paramsPtr + 0);
@@ -338,14 +339,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IncreaseRiddleCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreaseRiddleCount;
     /// <summary>
     /// Function: IncreaseRiddleCount
     /// </summary>
     public unsafe virtual int IncreaseRiddleCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseRiddleCount, "BmGame.RPersistentShared.IncreaseRiddleCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreaseRiddleCount, "BmGame.RPersistentShared.IncreaseRiddleCount", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Zone, paramsPtr + 0);
@@ -353,70 +354,70 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CWTotalPossiblePickupsAndChallenges;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CWTotalPossiblePickupsAndChallenges;
     /// <summary>
     /// Function: CWTotalPossiblePickupsAndChallenges
     /// </summary>
     public unsafe virtual int CWTotalPossiblePickupsAndChallenges()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CWTotalPossiblePickupsAndChallenges, "BmGame.RPersistentShared.CWTotalPossiblePickupsAndChallenges");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CWTotalPossiblePickupsAndChallenges, "BmGame.RPersistentShared.CWTotalPossiblePickupsAndChallenges", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CWPickupsAndChallengesCompleteCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CWPickupsAndChallengesCompleteCount;
     /// <summary>
     /// Function: CWPickupsAndChallengesCompleteCount
     /// </summary>
     public unsafe virtual int CWPickupsAndChallengesCompleteCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CWPickupsAndChallengesCompleteCount, "BmGame.RPersistentShared.CWPickupsAndChallengesCompleteCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CWPickupsAndChallengesCompleteCount, "BmGame.RPersistentShared.CWPickupsAndChallengesCompleteCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CWPickupsAndChallengesComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CWPickupsAndChallengesComplete;
     /// <summary>
     /// Function: CWPickupsAndChallengesComplete
     /// </summary>
     public unsafe virtual bool CWPickupsAndChallengesComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CWPickupsAndChallengesComplete, "BmGame.RPersistentShared.CWPickupsAndChallengesComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CWPickupsAndChallengesComplete, "BmGame.RPersistentShared.CWPickupsAndChallengesComplete", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCWPickupsTotalCollected;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCWPickupsTotalCollected;
     /// <summary>
     /// Function: GetCWPickupsTotalCollected
     /// </summary>
     public unsafe virtual int GetCWPickupsTotalCollected()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCWPickupsTotalCollected, "BmGame.RPersistentShared.GetCWPickupsTotalCollected");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCWPickupsTotalCollected, "BmGame.RPersistentShared.GetCWPickupsTotalCollected", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IncreaseCWPickupCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreaseCWPickupCount;
     /// <summary>
     /// Function: IncreaseCWPickupCount
     /// </summary>
     public unsafe virtual int IncreaseCWPickupCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseCWPickupCount, "BmGame.RPersistentShared.IncreaseCWPickupCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreaseCWPickupCount, "BmGame.RPersistentShared.IncreaseCWPickupCount", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Zone, paramsPtr + 0);
@@ -424,14 +425,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IncreasePickupCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreasePickupCount;
     /// <summary>
     /// Function: IncreasePickupCount
     /// </summary>
     public unsafe virtual int IncreasePickupCount(BmSDK.BmGame.RGameInfo.ERiddlerLocationName Zone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreasePickupCount, "BmGame.RPersistentShared.IncreasePickupCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreasePickupCount, "BmGame.RPersistentShared.IncreasePickupCount", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Zone, paramsPtr + 0);
@@ -439,42 +440,42 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IncreaseBrokenDemonSealCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreaseBrokenDemonSealCount;
     /// <summary>
     /// Function: IncreaseBrokenDemonSealCount
     /// </summary>
     public unsafe virtual int IncreaseBrokenDemonSealCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseBrokenDemonSealCount, "BmGame.RPersistentShared.IncreaseBrokenDemonSealCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreaseBrokenDemonSealCount, "BmGame.RPersistentShared.IncreaseBrokenDemonSealCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IncreaseBrokenHarleyHeadCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncreaseBrokenHarleyHeadCount;
     /// <summary>
     /// Function: IncreaseBrokenHarleyHeadCount
     /// </summary>
     public unsafe virtual int IncreaseBrokenHarleyHeadCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncreaseBrokenHarleyHeadCount, "BmGame.RPersistentShared.IncreaseBrokenHarleyHeadCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncreaseBrokenHarleyHeadCount, "BmGame.RPersistentShared.IncreaseBrokenHarleyHeadCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateBatChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBatChallenge;
     /// <summary>
     /// Function: UpdateBatChallenge
     /// </summary>
     public unsafe virtual void UpdateBatChallenge(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry, float InValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBatChallenge, "BmGame.RPersistentShared.UpdateBatChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateBatChallenge, "BmGame.RPersistentShared.UpdateBatChallenge", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Entry, paramsPtr + 0);
@@ -483,14 +484,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsBatChallengeAsBeaten;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatChallengeAsBeaten;
     /// <summary>
     /// Function: IsBatChallengeAsBeaten
     /// </summary>
     public unsafe virtual bool IsBatChallengeAsBeaten(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatChallengeAsBeaten, "BmGame.RPersistentShared.IsBatChallengeAsBeaten");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBatChallengeAsBeaten, "BmGame.RPersistentShared.IsBatChallengeAsBeaten", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Entry, paramsPtr + 0);
@@ -498,14 +499,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetBatChallengeAsBeaten;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatChallengeAsBeaten;
     /// <summary>
     /// Function: SetBatChallengeAsBeaten
     /// </summary>
     public unsafe virtual void SetBatChallengeAsBeaten(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatChallengeAsBeaten, "BmGame.RPersistentShared.SetBatChallengeAsBeaten");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatChallengeAsBeaten, "BmGame.RPersistentShared.SetBatChallengeAsBeaten", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Entry, paramsPtr + 0);
@@ -513,14 +514,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetBatChallengeValueNeeded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatChallengeValueNeeded;
     /// <summary>
     /// Function: GetBatChallengeValueNeeded
     /// </summary>
     public unsafe virtual float GetBatChallengeValueNeeded(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatChallengeValueNeeded, "BmGame.RPersistentShared.GetBatChallengeValueNeeded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatChallengeValueNeeded, "BmGame.RPersistentShared.GetBatChallengeValueNeeded", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Entry, paramsPtr + 0);
@@ -528,14 +529,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetBatChallengeValueBest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatChallengeValueBest;
     /// <summary>
     /// Function: GetBatChallengeValueBest
     /// </summary>
     public unsafe virtual float GetBatChallengeValueBest(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatChallengeValueBest, "BmGame.RPersistentShared.GetBatChallengeValueBest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatChallengeValueBest, "BmGame.RPersistentShared.GetBatChallengeValueBest", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Entry, paramsPtr + 0);
@@ -543,14 +544,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetBatChallengeValueCurrent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatChallengeValueCurrent;
     /// <summary>
     /// Function: GetBatChallengeValueCurrent
     /// </summary>
     public unsafe virtual float GetBatChallengeValueCurrent(BmSDK.BmGame.RPersistentData.EBatmanChallenge Entry)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatChallengeValueCurrent, "BmGame.RPersistentShared.GetBatChallengeValueCurrent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatChallengeValueCurrent, "BmGame.RPersistentShared.GetBatChallengeValueCurrent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Entry, paramsPtr + 0);
@@ -558,14 +559,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetRiddlerLocationDataValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerLocationDataValue;
     /// <summary>
     /// Function: GetRiddlerLocationDataValue
     /// </summary>
     public unsafe virtual int GetRiddlerLocationDataValue(int LocIndex, int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerLocationDataValue, "BmGame.RPersistentShared.GetRiddlerLocationDataValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerLocationDataValue, "BmGame.RPersistentShared.GetRiddlerLocationDataValue", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocIndex, paramsPtr + 0);
@@ -574,14 +575,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetRiddlerLocationData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRiddlerLocationData;
     /// <summary>
     /// Function: SetRiddlerLocationData
     /// </summary>
     public unsafe virtual void SetRiddlerLocationData(int LocIndex, int Index, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRiddlerLocationData, "BmGame.RPersistentShared.SetRiddlerLocationData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRiddlerLocationData, "BmGame.RPersistentShared.SetRiddlerLocationData", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocIndex, paramsPtr + 0);
@@ -591,14 +592,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetRiddlerLocationData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerLocationData;
     /// <summary>
     /// Function: GetRiddlerLocationData
     /// </summary>
     public unsafe virtual BmSDK.TArray<int> GetRiddlerLocationData(int LocIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerLocationData, "BmGame.RPersistentShared.GetRiddlerLocationData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerLocationData, "BmGame.RPersistentShared.GetRiddlerLocationData", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocIndex, paramsPtr + 0);
@@ -606,14 +607,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<int>>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsRiddlerAreaUnlocked;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRiddlerAreaUnlocked;
     /// <summary>
     /// Function: IsRiddlerAreaUnlocked
     /// </summary>
     public unsafe virtual bool IsRiddlerAreaUnlocked(int LocIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRiddlerAreaUnlocked, "BmGame.RPersistentShared.IsRiddlerAreaUnlocked");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRiddlerAreaUnlocked, "BmGame.RPersistentShared.IsRiddlerAreaUnlocked", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocIndex, paramsPtr + 0);
@@ -621,14 +622,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UnlockRiddlerArea;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlockRiddlerArea;
     /// <summary>
     /// Function: UnlockRiddlerArea
     /// </summary>
     public unsafe virtual void UnlockRiddlerArea(int LocIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockRiddlerArea, "BmGame.RPersistentShared.UnlockRiddlerArea");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlockRiddlerArea, "BmGame.RPersistentShared.UnlockRiddlerArea", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocIndex, paramsPtr + 0);
@@ -636,14 +637,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearRiddlerAreaNew;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearRiddlerAreaNew;
     /// <summary>
     /// Function: ClearRiddlerAreaNew
     /// </summary>
     public unsafe virtual void ClearRiddlerAreaNew(int LocIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearRiddlerAreaNew, "BmGame.RPersistentShared.ClearRiddlerAreaNew");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRiddlerAreaNew, "BmGame.RPersistentShared.ClearRiddlerAreaNew", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocIndex, paramsPtr + 0);
@@ -651,28 +652,28 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetRiddlerTotalCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerTotalCount;
     /// <summary>
     /// Function: GetRiddlerTotalCount
     /// </summary>
     public unsafe virtual int GetRiddlerTotalCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerTotalCount, "BmGame.RPersistentShared.GetRiddlerTotalCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerTotalCount, "BmGame.RPersistentShared.GetRiddlerTotalCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRiddlerAreaTotalCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerAreaTotalCount;
     /// <summary>
     /// Function: GetRiddlerAreaTotalCount
     /// </summary>
     public unsafe virtual int GetRiddlerAreaTotalCount(int LocIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerAreaTotalCount, "BmGame.RPersistentShared.GetRiddlerAreaTotalCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerAreaTotalCount, "BmGame.RPersistentShared.GetRiddlerAreaTotalCount", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocIndex, paramsPtr + 0);
@@ -680,14 +681,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_Set_PercentEntry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Set_PercentEntry;
     /// <summary>
     /// Function: Set_PercentEntry
     /// </summary>
     public unsafe virtual void Set_PercentEntry(bool bPlus, BmSDK.BmGame.RPersistentShared.EPercentData Item, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Set_PercentEntry, "BmGame.RPersistentShared.Set_PercentEntry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Set_PercentEntry, "BmGame.RPersistentShared.Set_PercentEntry", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlus, paramsPtr + 0);
@@ -697,14 +698,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Get_PercentEntry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Get_PercentEntry;
     /// <summary>
     /// Function: Get_PercentEntry
     /// </summary>
     public unsafe virtual float Get_PercentEntry(bool bPlus, BmSDK.BmGame.RPersistentShared.EPercentData Item)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Get_PercentEntry, "BmGame.RPersistentShared.Get_PercentEntry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Get_PercentEntry, "BmGame.RPersistentShared.Get_PercentEntry", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlus, paramsPtr + 0);
@@ -713,14 +714,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CountCityStoryNew;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CountCityStoryNew;
     /// <summary>
     /// Function: CountCityStoryNew
     /// </summary>
     public unsafe virtual int CountCityStoryNew(int StartAt, int Count)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CountCityStoryNew, "BmGame.RPersistentShared.CountCityStoryNew");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CountCityStoryNew, "BmGame.RPersistentShared.CountCityStoryNew", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartAt, paramsPtr + 0);
@@ -729,42 +730,42 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CountBiosNew;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CountBiosNew;
     /// <summary>
     /// Function: CountBiosNew
     /// </summary>
     public unsafe virtual int CountBiosNew()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CountBiosNew, "BmGame.RPersistentShared.CountBiosNew");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CountBiosNew, "BmGame.RPersistentShared.CountBiosNew", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CountOfBiosUnlocked;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CountOfBiosUnlocked;
     /// <summary>
     /// Function: CountOfBiosUnlocked
     /// </summary>
     public unsafe virtual int CountOfBiosUnlocked()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CountOfBiosUnlocked, "BmGame.RPersistentShared.CountOfBiosUnlocked");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CountOfBiosUnlocked, "BmGame.RPersistentShared.CountOfBiosUnlocked", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsBioUnlocked;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBioUnlocked;
     /// <summary>
     /// Function: IsBioUnlocked
     /// </summary>
     public unsafe virtual bool IsBioUnlocked(BmSDK.BmGame.RGameInfo.EBioCharacter inBio)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBioUnlocked, "BmGame.RPersistentShared.IsBioUnlocked");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBioUnlocked, "BmGame.RPersistentShared.IsBioUnlocked", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inBio, paramsPtr + 0);
@@ -772,58 +773,59 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_Dump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Dump;
     /// <summary>
     /// Function: Dump
     /// </summary>
     public unsafe virtual void Dump()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Dump, "BmGame.RPersistentShared.Dump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Dump, "BmGame.RPersistentShared.Dump", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DumpStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpStats;
     /// <summary>
     /// Function: DumpStats
     /// </summary>
     public unsafe virtual void DumpStats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpStats, "BmGame.RPersistentShared.DumpStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpStats, "BmGame.RPersistentShared.DumpStats", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PadStr;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PadStr;
     /// <summary>
     /// Function: PadStr
     /// </summary>
-    public unsafe virtual BmSDK.FString PadStr(BmSDK.FString InStr, int DesiredLen)
+    public unsafe virtual BmSDK.FString PadStr(BmSDK.FStringArg InStr, int DesiredLen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PadStr, "BmGame.RPersistentShared.PadStr");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PadStr, "BmGame.RPersistentShared.PadStr", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(InStr, paramsPtr + 0);
+        InStr.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredLen, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_FloatArrayToString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FloatArrayToString;
     /// <summary>
     /// Function: FloatArrayToString
     /// </summary>
     public unsafe virtual BmSDK.FString FloatArrayToString(BmSDK.TArray<float> Values)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FloatArrayToString, "BmGame.RPersistentShared.FloatArrayToString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FloatArrayToString, "BmGame.RPersistentShared.FloatArrayToString", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Values, paramsPtr + 0);
@@ -831,14 +833,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_IntArrayToString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IntArrayToString;
     /// <summary>
     /// Function: IntArrayToString
     /// </summary>
     public unsafe virtual BmSDK.FString IntArrayToString(BmSDK.TArray<int> Values)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IntArrayToString, "BmGame.RPersistentShared.IntArrayToString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IntArrayToString, "BmGame.RPersistentShared.IntArrayToString", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Values, paramsPtr + 0);
@@ -846,14 +848,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ByteArrayToString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ByteArrayToString;
     /// <summary>
     /// Function: ByteArrayToString
     /// </summary>
     public unsafe virtual BmSDK.FString ByteArrayToString(BmSDK.TArray<byte> Values)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ByteArrayToString, "BmGame.RPersistentShared.ByteArrayToString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ByteArrayToString, "BmGame.RPersistentShared.ByteArrayToString", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Values, paramsPtr + 0);
@@ -861,14 +863,14 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_AwardUpgradePointsForNewlyCompletedChallenges;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AwardUpgradePointsForNewlyCompletedChallenges;
     /// <summary>
     /// Function: AwardUpgradePointsForNewlyCompletedChallenges
     /// </summary>
     public unsafe virtual void AwardUpgradePointsForNewlyCompletedChallenges()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwardUpgradePointsForNewlyCompletedChallenges, "BmGame.RPersistentShared.AwardUpgradePointsForNewlyCompletedChallenges");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AwardUpgradePointsForNewlyCompletedChallenges, "BmGame.RPersistentShared.AwardUpgradePointsForNewlyCompletedChallenges", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -882,17 +884,17 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsSharedFlagSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSharedFlagSet;
     /// <summary>
     /// Function: IsSharedFlagSet
     /// </summary>
-    public unsafe virtual bool IsSharedFlagSet(BmSDK.FString FlagName)
+    public unsafe virtual bool IsSharedFlagSet(BmSDK.FStringArg FlagName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSharedFlagSet, "BmGame.RPersistentShared.IsSharedFlagSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSharedFlagSet, "BmGame.RPersistentShared.IsSharedFlagSet", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -901,20 +903,21 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetSharedFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSharedFlag;
     /// <summary>
     /// Function: SetSharedFlag
     /// </summary>
-    public unsafe virtual void SetSharedFlag(BmSDK.FString FlagName, bool bTrue)
+    public unsafe virtual void SetSharedFlag(BmSDK.FStringArg FlagName, bool bTrue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSharedFlag, "BmGame.RPersistentShared.SetSharedFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSharedFlag, "BmGame.RPersistentShared.SetSharedFlag", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTrue, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -924,6 +927,7 @@ public partial class RPersistentShared : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 

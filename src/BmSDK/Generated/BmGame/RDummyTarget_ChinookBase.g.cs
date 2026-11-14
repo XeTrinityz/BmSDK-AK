@@ -73,28 +73,28 @@ public partial class RDummyTarget_ChinookBase : BmSDK.BmGame.RDummyTarget, BmSDK
         where TComponent : class, Framework.IScriptComponent<RDummyTarget_ChinookBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetChinookMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChinookMesh;
     /// <summary>
     /// Function: GetChinookMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMesh GetChinookMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChinookMesh, "BmGame.RDummyTarget_ChinookBase.GetChinookMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetChinookMesh, "BmGame.RDummyTarget_ChinookBase.GetChinookMesh", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.SkeletalMesh>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetChinookMeshVisibility;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChinookMeshVisibility;
     /// <summary>
     /// Function: SetChinookMeshVisibility
     /// </summary>
     public unsafe virtual void SetChinookMeshVisibility(bool bVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetChinookMeshVisibility, "BmGame.RDummyTarget_ChinookBase.SetChinookMeshVisibility");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetChinookMeshVisibility, "BmGame.RDummyTarget_ChinookBase.SetChinookMeshVisibility", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bVisible, paramsPtr + 0);

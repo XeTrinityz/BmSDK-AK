@@ -73,28 +73,28 @@ public partial class RSeqAct_SpawnerBase : BmSDK.Engine.SequenceAction, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RSeqAct_SpawnerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnDataLoaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDataLoaded;
     /// <summary>
     /// Function: OnDataLoaded
     /// </summary>
     public unsafe virtual void OnDataLoaded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDataLoaded, "BmGame.RSeqAct_SpawnerBase.OnDataLoaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDataLoaded, "BmGame.RSeqAct_SpawnerBase.OnDataLoaded", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCharacterData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCharacterData;
     /// <summary>
     /// Function: SetCharacterData
     /// </summary>
     public unsafe virtual void SetCharacterData(out int Slot, BmSDK.FName PlayableCharacterName, BmSDK.BmGame.RAddContentPlayerCharacter PlayableCharacter, BmSDK.BmGame.RAddContentPlayerCharacterMesh CharacterMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCharacterData, "BmGame.RSeqAct_SpawnerBase.SetCharacterData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCharacterData, "BmGame.RSeqAct_SpawnerBase.SetCharacterData", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Slot);
@@ -114,17 +114,17 @@ public partial class RSeqAct_SpawnerBase : BmSDK.Engine.SequenceAction, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_StoreObjVar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreObjVar;
     /// <summary>
     /// Function: StoreObjVar
     /// </summary>
-    public unsafe virtual void StoreObjVar(BmSDK.FString Ident, int Index, BmSDK.GameObject Obj)
+    public unsafe virtual void StoreObjVar(BmSDK.FStringArg Ident, int Index, BmSDK.GameObject Obj)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoreObjVar, "BmGame.RSeqAct_SpawnerBase.StoreObjVar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StoreObjVar, "BmGame.RSeqAct_SpawnerBase.StoreObjVar", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Ident, paramsPtr + 0);
+        Ident.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 20);
         var oldFlags = funcManaged.FunctionFlags;
@@ -135,6 +135,7 @@ public partial class RSeqAct_SpawnerBase : BmSDK.Engine.SequenceAction, BmSDK.IG
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 }

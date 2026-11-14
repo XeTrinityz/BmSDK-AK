@@ -78,28 +78,28 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<RHidePoint_Mesh>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DamagedByBomb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamagedByBomb;
     /// <summary>
     /// Function: DamagedByBomb
     /// </summary>
     public unsafe override void DamagedByBomb()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagedByBomb, "BmGame.RHidePoint_Mesh.DamagedByBomb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamagedByBomb, "BmGame.RHidePoint_Mesh.DamagedByBomb", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TakeRadiusDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeRadiusDamage;
     /// <summary>
     /// Function: TakeRadiusDamage
     /// </summary>
     public unsafe override void TakeRadiusDamage(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeRadiusDamage, "BmGame.RHidePoint_Mesh.TakeRadiusDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeRadiusDamage, "BmGame.RHidePoint_Mesh.TakeRadiusDamage", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 0);
@@ -115,14 +115,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamageFromWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamageFromWeapon;
     /// <summary>
     /// Function: TakeDamageFromWeapon
     /// </summary>
     public unsafe override BmSDK.Engine.Actor.EWeaponDamageResult TakeDamageFromWeapon(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default, bool bHeadShot = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamageFromWeapon, "BmGame.RHidePoint_Mesh.TakeDamageFromWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamageFromWeapon, "BmGame.RHidePoint_Mesh.TakeDamageFromWeapon", this);
         byte* paramsPtr = stackalloc byte[125];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EWeaponDamageResult>(paramsPtr + 108);
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmGame.RHidePoint_Mesh.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "BmGame.RHidePoint_Mesh.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Damage, paramsPtr + 0);
@@ -159,14 +159,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_GetMineAttachSocketWorldLocationAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMineAttachSocketWorldLocationAndRotation;
     /// <summary>
     /// Function: GetMineAttachSocketWorldLocationAndRotation
     /// </summary>
     public unsafe override bool GetMineAttachSocketWorldLocationAndRotation(BmSDK.FName InSocketName, out System.Numerics.Vector3 OutLocation, out BmSDK.Rotator OutRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMineAttachSocketWorldLocationAndRotation, "BmGame.RHidePoint_Mesh.GetMineAttachSocketWorldLocationAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMineAttachSocketWorldLocationAndRotation, "BmGame.RHidePoint_Mesh.GetMineAttachSocketWorldLocationAndRotation", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSocketName, paramsPtr + 0);
@@ -180,14 +180,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_SetInThermalMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInThermalMode;
     /// <summary>
     /// Function: SetInThermalMode
     /// </summary>
     public unsafe override void SetInThermalMode(bool On, bool bForceOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInThermalMode, "BmGame.RHidePoint_Mesh.SetInThermalMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInThermalMode, "BmGame.RHidePoint_Mesh.SetInThermalMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -196,14 +196,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_SetInvestigateHighlighted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInvestigateHighlighted;
     /// <summary>
     /// Function: SetInvestigateHighlighted
     /// </summary>
     public unsafe override void SetInvestigateHighlighted(BmSDK.Engine.MaterialInstanceConstant highMat, bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInvestigateHighlighted, "BmGame.RHidePoint_Mesh.SetInvestigateHighlighted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInvestigateHighlighted, "BmGame.RHidePoint_Mesh.SetInvestigateHighlighted", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(highMat, paramsPtr + 0);
@@ -212,70 +212,70 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_ResetXrayAndThermalState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetXrayAndThermalState;
     /// <summary>
     /// Function: ResetXrayAndThermalState
     /// </summary>
     public unsafe virtual void ResetXrayAndThermalState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetXrayAndThermalState, "BmGame.RHidePoint_Mesh.ResetXrayAndThermalState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetXrayAndThermalState, "BmGame.RHidePoint_Mesh.ResetXrayAndThermalState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDestroyedHelpText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDestroyedHelpText;
     /// <summary>
     /// Function: SetDestroyedHelpText
     /// </summary>
     public unsafe override void SetDestroyedHelpText()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDestroyedHelpText, "BmGame.RHidePoint_Mesh.SetDestroyedHelpText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDestroyedHelpText, "BmGame.RHidePoint_Mesh.SetDestroyedHelpText", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WillSmashIfShot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WillSmashIfShot;
     /// <summary>
     /// Function: WillSmashIfShot
     /// </summary>
     public unsafe override bool WillSmashIfShot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WillSmashIfShot, "BmGame.RHidePoint_Mesh.WillSmashIfShot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WillSmashIfShot, "BmGame.RHidePoint_Mesh.WillSmashIfShot", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ScanDone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScanDone;
     /// <summary>
     /// Function: ScanDone
     /// </summary>
     public unsafe virtual void ScanDone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScanDone, "BmGame.RHidePoint_Mesh.ScanDone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScanDone, "BmGame.RHidePoint_Mesh.ScanDone", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerScanFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerScanFX;
     /// <summary>
     /// Function: TriggerScanFX
     /// </summary>
     public unsafe override void TriggerScanFX(BmSDK.Engine.ParticleSystem ScanFX)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerScanFX, "BmGame.RHidePoint_Mesh.TriggerScanFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerScanFX, "BmGame.RHidePoint_Mesh.TriggerScanFX", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScanFX, paramsPtr + 0);
@@ -283,28 +283,28 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_GetStaticMeshForXRayScan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStaticMeshForXRayScan;
     /// <summary>
     /// Function: GetStaticMeshForXRayScan
     /// </summary>
     public unsafe virtual BmSDK.Engine.StaticMesh GetStaticMeshForXRayScan()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStaticMeshForXRayScan, "BmGame.RHidePoint_Mesh.GetStaticMeshForXRayScan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStaticMeshForXRayScan, "BmGame.RHidePoint_Mesh.GetStaticMeshForXRayScan", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.StaticMesh>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayerWalkedOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerWalkedOn;
     /// <summary>
     /// Function: PlayerWalkedOn
     /// </summary>
     public unsafe virtual void PlayerWalkedOn(BmSDK.BmGame.RPawnPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerWalkedOn, "BmGame.RHidePoint_Mesh.PlayerWalkedOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerWalkedOn, "BmGame.RHidePoint_Mesh.PlayerWalkedOn", this);
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -312,56 +312,56 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RHidePoint_Mesh.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RHidePoint_Mesh.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SmashDueToGunDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashDueToGunDamage;
     /// <summary>
     /// Function: SmashDueToGunDamage
     /// </summary>
     public unsafe virtual void SmashDueToGunDamage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashDueToGunDamage, "BmGame.RHidePoint_Mesh.SmashDueToGunDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashDueToGunDamage, "BmGame.RHidePoint_Mesh.SmashDueToGunDamage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PartSmashDueToGunDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PartSmashDueToGunDamage;
     /// <summary>
     /// Function: PartSmashDueToGunDamage
     /// </summary>
     public unsafe virtual void PartSmashDueToGunDamage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PartSmashDueToGunDamage, "BmGame.RHidePoint_Mesh.PartSmashDueToGunDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PartSmashDueToGunDamage, "BmGame.RHidePoint_Mesh.PartSmashDueToGunDamage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TakeGunDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeGunDamage;
     /// <summary>
     /// Function: TakeGunDamage
     /// </summary>
     public unsafe override void TakeGunDamage(float DamageAmount, BmSDK.BmGame.RBMPawnAI AttackingPawn, BmSDK.Class dmgType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeGunDamage, "BmGame.RHidePoint_Mesh.TakeGunDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeGunDamage, "BmGame.RHidePoint_Mesh.TakeGunDamage", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -371,28 +371,28 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_IsBreakable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBreakable;
     /// <summary>
     /// Function: IsBreakable
     /// </summary>
     public unsafe virtual bool IsBreakable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBreakable, "BmGame.RHidePoint_Mesh.IsBreakable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBreakable, "BmGame.RHidePoint_Mesh.IsBreakable", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetDangerEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDangerEffects;
     /// <summary>
     /// Function: SetDangerEffects
     /// </summary>
     public unsafe virtual void SetDangerEffects(float NewSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDangerEffects, "BmGame.RHidePoint_Mesh.SetDangerEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDangerEffects, "BmGame.RHidePoint_Mesh.SetDangerEffects", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSpeed, paramsPtr + 0);
@@ -400,14 +400,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_SetMine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMine;
     /// <summary>
     /// Function: SetMine
     /// </summary>
     public unsafe override void SetMine(BmSDK.BmGame.RVantageMineBase NewMine)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMine, "BmGame.RHidePoint_Mesh.SetMine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMine, "BmGame.RHidePoint_Mesh.SetMine", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMine, paramsPtr + 0);
@@ -415,14 +415,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_ReformToInitialState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReformToInitialState;
     /// <summary>
     /// Function: ReformToInitialState
     /// </summary>
     public unsafe virtual void ReformToInitialState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReformToInitialState, "BmGame.RHidePoint_Mesh.ReformToInitialState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReformToInitialState, "BmGame.RHidePoint_Mesh.ReformToInitialState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -436,14 +436,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateGargoyleCollisionShortlyAfterTakingDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGargoyleCollisionShortlyAfterTakingDamage;
     /// <summary>
     /// Function: UpdateGargoyleCollisionShortlyAfterTakingDamage
     /// </summary>
     public unsafe virtual void UpdateGargoyleCollisionShortlyAfterTakingDamage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateGargoyleCollisionShortlyAfterTakingDamage, "BmGame.RHidePoint_Mesh.UpdateGargoyleCollisionShortlyAfterTakingDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateGargoyleCollisionShortlyAfterTakingDamage, "BmGame.RHidePoint_Mesh.UpdateGargoyleCollisionShortlyAfterTakingDamage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -457,14 +457,14 @@ public partial class RHidePoint_Mesh : BmSDK.BmGame.RHidePoint, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_GetVantagePointMeshComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVantagePointMeshComponent;
     /// <summary>
     /// Function: GetVantagePointMeshComponent
     /// </summary>
     public unsafe virtual BmSDK.Engine.MeshComponent GetVantagePointMeshComponent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVantagePointMeshComponent, "BmGame.RHidePoint_Mesh.GetVantagePointMeshComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVantagePointMeshComponent, "BmGame.RHidePoint_Mesh.GetVantagePointMeshComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

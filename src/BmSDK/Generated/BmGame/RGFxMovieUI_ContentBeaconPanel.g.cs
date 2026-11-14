@@ -78,44 +78,45 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_ContentBeaconPanel>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ContentBeaconContentLoaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ContentBeaconContentLoaded;
     /// <summary>
     /// Function: ContentBeaconContentLoaded
     /// </summary>
-    public unsafe virtual void ContentBeaconContentLoaded(bool bWasSuccessful, BmSDK.FString sCustomId)
+    public unsafe virtual void ContentBeaconContentLoaded(bool bWasSuccessful, BmSDK.FStringArg sCustomId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContentBeaconContentLoaded, "BmGame.RGFxMovieUI_ContentBeaconPanel.ContentBeaconContentLoaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ContentBeaconContentLoaded, "BmGame.RGFxMovieUI_ContentBeaconPanel.ContentBeaconContentLoaded", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 4);
+        sCustomId.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnFadeCompleted_Callback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFadeCompleted_Callback;
     /// <summary>
     /// Function: OnFadeCompleted_Callback
     /// </summary>
     public unsafe override void OnFadeCompleted_Callback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFadeCompleted_Callback, "BmGame.RGFxMovieUI_ContentBeaconPanel.OnFadeCompleted_Callback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFadeCompleted_Callback, "BmGame.RGFxMovieUI_ContentBeaconPanel.OnFadeCompleted_Callback", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PopupRequester_Callback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PopupRequester_Callback;
     /// <summary>
     /// Function: PopupRequester_Callback
     /// </summary>
     public unsafe override void PopupRequester_Callback(BmSDK.BmGame.RGFxMoviePopupRequester iPopup, int nButtonId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopupRequester_Callback, "BmGame.RGFxMovieUI_ContentBeaconPanel.PopupRequester_Callback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PopupRequester_Callback, "BmGame.RGFxMovieUI_ContentBeaconPanel.PopupRequester_Callback", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iPopup, paramsPtr + 0);
@@ -124,101 +125,104 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
         return;
     }
 
-    private static BmSDK.Function __fn_XI_HandleModeChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_HandleModeChange;
     /// <summary>
     /// Function: XI_HandleModeChange
     /// </summary>
-    public unsafe virtual void XI_HandleModeChange(BmSDK.FString sMode)
+    public unsafe virtual void XI_HandleModeChange(BmSDK.FStringArg sMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_HandleModeChange, "BmGame.RGFxMovieUI_ContentBeaconPanel.XI_HandleModeChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_HandleModeChange, "BmGame.RGFxMovieUI_ContentBeaconPanel.XI_HandleModeChange", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sMode, paramsPtr + 0);
+        sMode.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_HandleAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_HandleAction;
     /// <summary>
     /// Function: XI_HandleAction
     /// </summary>
-    public unsafe virtual void XI_HandleAction(BmSDK.FString sAction)
+    public unsafe virtual void XI_HandleAction(BmSDK.FStringArg sAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_HandleAction, "BmGame.RGFxMovieUI_ContentBeaconPanel.XI_HandleAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_HandleAction, "BmGame.RGFxMovieUI_ContentBeaconPanel.XI_HandleAction", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sAction, paramsPtr + 0);
+        sAction.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_ReadyForSetup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_ReadyForSetup;
     /// <summary>
     /// Function: XI_ReadyForSetup
     /// </summary>
     public unsafe virtual void XI_ReadyForSetup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ReadyForSetup, "BmGame.RGFxMovieUI_ContentBeaconPanel.XI_ReadyForSetup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_ReadyForSetup, "BmGame.RGFxMovieUI_ContentBeaconPanel.XI_ReadyForSetup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_ClearKeyDowns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_ClearKeyDowns;
     /// <summary>
     /// Function: UC_ClearKeyDowns
     /// </summary>
     public unsafe virtual void UC_ClearKeyDowns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_ClearKeyDowns, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_ClearKeyDowns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_ClearKeyDowns, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_ClearKeyDowns", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetImageFromPackage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetImageFromPackage;
     /// <summary>
     /// Function: UC_SetImageFromPackage
     /// </summary>
-    public unsafe virtual void UC_SetImageFromPackage(BmSDK.FString sPackage)
+    public unsafe virtual void UC_SetImageFromPackage(BmSDK.FStringArg sPackage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetImageFromPackage, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetImageFromPackage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetImageFromPackage, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetImageFromPackage", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sPackage, paramsPtr + 0);
+        sPackage.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetImageError;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetImageError;
     /// <summary>
     /// Function: UC_SetImageError
     /// </summary>
     public unsafe virtual void UC_SetImageError()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetImageError, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetImageError");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetImageError, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetImageError", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetImage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetImage;
     /// <summary>
     /// Function: UC_SetImage
     /// </summary>
     public unsafe virtual void UC_SetImage(BmSDK.GFxUI.GFxObject iImage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetImage, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetImage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetImage, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetImage", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iImage, paramsPtr + 0);
@@ -226,61 +230,66 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetAction;
     /// <summary>
     /// Function: UC_SetAction
     /// </summary>
-    public unsafe virtual void UC_SetAction(BmSDK.FString sAction, BmSDK.FString sText)
+    public unsafe virtual void UC_SetAction(BmSDK.FStringArg sAction, BmSDK.FStringArg sText)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetAction, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetAction, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetAction", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sAction, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sText, paramsPtr + 16);
+        sAction.WriteTo(paramsPtr + 0);
+        sText.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetText;
     /// <summary>
     /// Function: UC_SetText
     /// </summary>
-    public unsafe virtual void UC_SetText(BmSDK.FString sComponent, BmSDK.FString sText)
+    public unsafe virtual void UC_SetText(BmSDK.FStringArg sComponent, BmSDK.FStringArg sText)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetText, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetText, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetText", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sComponent, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sText, paramsPtr + 16);
+        sComponent.WriteTo(paramsPtr + 0);
+        sText.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetMode;
     /// <summary>
     /// Function: UC_SetMode
     /// </summary>
-    public unsafe virtual void UC_SetMode(BmSDK.FString sMode)
+    public unsafe virtual void UC_SetMode(BmSDK.FStringArg sMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetMode, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetMode, "BmGame.RGFxMovieUI_ContentBeaconPanel.UC_SetMode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sMode, paramsPtr + 0);
+        sMode.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ForceFocus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceFocus;
     /// <summary>
     /// Function: ForceFocus
     /// </summary>
     public unsafe virtual void ForceFocus(bool bFocus)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceFocus, "BmGame.RGFxMovieUI_ContentBeaconPanel.ForceFocus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceFocus, "BmGame.RGFxMovieUI_ContentBeaconPanel.ForceFocus", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFocus, paramsPtr + 0);
@@ -288,14 +297,14 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
         return;
     }
 
-    private static BmSDK.Function __fn_OnAspectRatioChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAspectRatioChanged;
     /// <summary>
     /// Function: OnAspectRatioChanged
     /// </summary>
     public unsafe override void OnAspectRatioChanged(float fAspect)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAspectRatioChanged, "BmGame.RGFxMovieUI_ContentBeaconPanel.OnAspectRatioChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAspectRatioChanged, "BmGame.RGFxMovieUI_ContentBeaconPanel.OnAspectRatioChanged", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fAspect, paramsPtr + 0);
@@ -303,14 +312,14 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
         return;
     }
 
-    private static BmSDK.Function __fn_Setup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Setup;
     /// <summary>
     /// Function: Setup
     /// </summary>
     public unsafe virtual void Setup(BmSDK.BmGame.RGameInfo.EContentBeaconDisplayMode eDisplayMode, int nBeaconIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Setup, "BmGame.RGFxMovieUI_ContentBeaconPanel.Setup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Setup, "BmGame.RGFxMovieUI_ContentBeaconPanel.Setup", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(eDisplayMode, paramsPtr + 0);
@@ -319,14 +328,14 @@ public partial class RGFxMovieUI_ContentBeaconPanel : BmSDK.BmGame.RGFxMovieUI, 
         return;
     }
 
-    private static BmSDK.Function __fn_Initialize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialize;
     /// <summary>
     /// Function: Initialize
     /// </summary>
     public unsafe virtual void Initialize(BmSDK.Engine.LocalPlayer iPlayer, BmSDK.BmGame.RGameInfo.EContentBeaconDisplayMode eDisplayMode, int nBeaconIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialize, "BmGame.RGFxMovieUI_ContentBeaconPanel.Initialize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialize, "BmGame.RGFxMovieUI_ContentBeaconPanel.Initialize", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iPlayer, paramsPtr + 0);

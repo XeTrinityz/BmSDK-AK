@@ -78,28 +78,28 @@ public partial class RCombatMove_HarleyDualTakedown : BmSDK.BmGame.RCombatMove, 
         where TComponent : class, Framework.IScriptComponent<RCombatMove_HarleyDualTakedown>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ExitMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove
     /// </summary>
     public unsafe override void ExitMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmScript.RCombatMove_HarleyDualTakedown.ExitMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmScript.RCombatMove_HarleyDualTakedown.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ExitMoveForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMoveForPawn;
     /// <summary>
     /// Function: ExitMoveForPawn
     /// </summary>
     public unsafe override void ExitMoveForPawn(BmSDK.BmGame.RPawnCombat PawnToExit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMoveForPawn, "BmScript.RCombatMove_HarleyDualTakedown.ExitMoveForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMoveForPawn, "BmScript.RCombatMove_HarleyDualTakedown.ExitMoveForPawn", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToExit, paramsPtr + 0);
@@ -107,70 +107,70 @@ public partial class RCombatMove_HarleyDualTakedown : BmSDK.BmGame.RCombatMove, 
         return;
     }
 
-    private static BmSDK.Function __fn_PlayTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayTakedown;
     /// <summary>
     /// Function: PlayTakedown
     /// </summary>
     public unsafe virtual void PlayTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayTakedown, "BmScript.RCombatMove_HarleyDualTakedown.PlayTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayTakedown, "BmScript.RCombatMove_HarleyDualTakedown.PlayTakedown", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RCombatMove_HarleyDualTakedown.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmScript.RCombatMove_HarleyDualTakedown.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KillHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillHit;
     /// <summary>
     /// Function: KillHit
     /// </summary>
     public unsafe virtual void KillHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillHit, "BmScript.RCombatMove_HarleyDualTakedown.KillHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillHit, "BmScript.RCombatMove_HarleyDualTakedown.KillHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StrikeHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StrikeHit;
     /// <summary>
     /// Function: StrikeHit
     /// </summary>
     public unsafe virtual void StrikeHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrikeHit, "BmScript.RCombatMove_HarleyDualTakedown.StrikeHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StrikeHit, "BmScript.RCombatMove_HarleyDualTakedown.StrikeHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BlockHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockHit;
     /// <summary>
     /// Function: BlockHit
     /// </summary>
     public unsafe virtual void BlockHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockHit, "BmScript.RCombatMove_HarleyDualTakedown.BlockHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlockHit, "BmScript.RCombatMove_HarleyDualTakedown.BlockHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

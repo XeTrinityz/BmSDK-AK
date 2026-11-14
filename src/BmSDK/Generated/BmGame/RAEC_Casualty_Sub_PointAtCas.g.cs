@@ -78,42 +78,42 @@ public partial class RAEC_Casualty_Sub_PointAtCas : BmSDK.BmGame.RAEC_Casualty_S
         where TComponent : class, Framework.IScriptComponent<RAEC_Casualty_Sub_PointAtCas>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsAtCasualty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAtCasualty;
     /// <summary>
     /// Function: IsAtCasualty
     /// </summary>
     public unsafe override bool IsAtCasualty()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAtCasualty, "BmGame.RAEC_Casualty_Sub_PointAtCas.IsAtCasualty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAtCasualty, "BmGame.RAEC_Casualty_Sub_PointAtCas.IsAtCasualty", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HasDoneDiscoverGesture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasDoneDiscoverGesture;
     /// <summary>
     /// Function: HasDoneDiscoverGesture
     /// </summary>
     public unsafe override bool HasDoneDiscoverGesture()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasDoneDiscoverGesture, "BmGame.RAEC_Casualty_Sub_PointAtCas.HasDoneDiscoverGesture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasDoneDiscoverGesture, "BmGame.RAEC_Casualty_Sub_PointAtCas.HasDoneDiscoverGesture", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Casualty_Sub_PointAtCas.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RAEC_Casualty_Sub_PointAtCas.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RAEC_Casualty_Sub_PointAtCas : BmSDK.BmGame.RAEC_Casualty_S
         return;
     }
 
-    private static BmSDK.Function __fn_AssignCasualty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignCasualty;
     /// <summary>
     /// Function: AssignCasualty
     /// </summary>
     public unsafe override void AssignCasualty(BmSDK.BmGame.RPawnVillain NewCas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignCasualty, "BmGame.RAEC_Casualty_Sub_PointAtCas.AssignCasualty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AssignCasualty, "BmGame.RAEC_Casualty_Sub_PointAtCas.AssignCasualty", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCas, paramsPtr + 0);

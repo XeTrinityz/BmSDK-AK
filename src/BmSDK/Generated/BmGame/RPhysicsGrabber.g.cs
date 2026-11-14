@@ -78,14 +78,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RPhysicsGrabber>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CalculateDiscoveryMethod;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateDiscoveryMethod;
     /// <summary>
     /// Function: CalculateDiscoveryMethod
     /// </summary>
     public unsafe virtual bool CalculateDiscoveryMethod(BmSDK.Engine.Actor Actor, BmSDK.Engine.Actor.FTraceHitInfo Hit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateDiscoveryMethod, "BmGame.RPhysicsGrabber.CalculateDiscoveryMethod");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateDiscoveryMethod, "BmGame.RPhysicsGrabber.CalculateDiscoveryMethod", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Actor, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_PhysObjectDetectorUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PhysObjectDetectorUpdate;
     /// <summary>
     /// Function: PhysObjectDetectorUpdate
     /// </summary>
     public unsafe virtual bool PhysObjectDetectorUpdate(System.Numerics.Vector3 GrabberLocation, BmSDK.Rotator GrabberRotation, out float OutUnrealHitDistance, out BmSDK.Engine.Actor OutHitActor, out BmSDK.Engine.RB_BodyInstance OutHitBodyInstance, out System.Numerics.Vector3 OutHitShapeBoundsCentre, out System.Numerics.Vector3 OutHitShapeBoundsExtents, out System.Numerics.Vector3 OutHitLocation, out System.Numerics.Vector3 OutHitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PhysObjectDetectorUpdate, "BmGame.RPhysicsGrabber.PhysObjectDetectorUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PhysObjectDetectorUpdate, "BmGame.RPhysicsGrabber.PhysObjectDetectorUpdate", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GrabberLocation, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 92);
     }
 
-    private static BmSDK.Function __fn_PlayerTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerTick;
     /// <summary>
     /// Function: PlayerTick
     /// </summary>
     public unsafe override void PlayerTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmGame.RPhysicsGrabber.PlayerTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerTick, "BmGame.RPhysicsGrabber.PlayerTick", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -160,42 +160,42 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_StopPhysicsDrag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopPhysicsDrag;
     /// <summary>
     /// Function: StopPhysicsDrag
     /// </summary>
     public unsafe virtual void StopPhysicsDrag()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopPhysicsDrag, "BmGame.RPhysicsGrabber.StopPhysicsDrag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopPhysicsDrag, "BmGame.RPhysicsGrabber.StopPhysicsDrag", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPhysicsDrag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPhysicsDrag;
     /// <summary>
     /// Function: StartPhysicsDrag
     /// </summary>
     public unsafe virtual void StartPhysicsDrag()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPhysicsDrag, "BmGame.RPhysicsGrabber.StartPhysicsDrag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPhysicsDrag, "BmGame.RPhysicsGrabber.StartPhysicsDrag", this);
         byte* paramsPtr = stackalloc byte[144];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PhysicsDragRaycast;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PhysicsDragRaycast;
     /// <summary>
     /// Function: PhysicsDragRaycast
     /// </summary>
     public unsafe virtual void PhysicsDragRaycast(out BmSDK.Engine.Actor HitActor, out BmSDK.Engine.PrimitiveComponent HitComponent, out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, out float HitDistance, out BmSDK.FName HitBoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PhysicsDragRaycast, "BmGame.RPhysicsGrabber.PhysicsDragRaycast");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PhysicsDragRaycast, "BmGame.RPhysicsGrabber.PhysicsDragRaycast", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitActor);
@@ -220,28 +220,28 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_CancelGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelGadget;
     /// <summary>
     /// Function: CancelGadget
     /// </summary>
     public unsafe override void CancelGadget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelGadget, "BmGame.RPhysicsGrabber.CancelGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelGadget, "BmGame.RPhysicsGrabber.CancelGadget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RPhysicsGrabber.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RPhysicsGrabber.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -250,14 +250,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetRBBodyInstancePointerString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRBBodyInstancePointerString;
     /// <summary>
     /// Function: GetRBBodyInstancePointerString
     /// </summary>
     public unsafe virtual BmSDK.FString GetRBBodyInstancePointerString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRBBodyInstancePointerString, "BmGame.RPhysicsGrabber.GetRBBodyInstancePointerString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRBBodyInstancePointerString, "BmGame.RPhysicsGrabber.GetRBBodyInstancePointerString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -271,14 +271,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe override void DrawHUD(BmSDK.Engine.HUD H)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RPhysicsGrabber.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmGame.RPhysicsGrabber.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -286,14 +286,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_DoNavMeshSurfaceTypeRender;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoNavMeshSurfaceTypeRender;
     /// <summary>
     /// Function: DoNavMeshSurfaceTypeRender
     /// </summary>
     public unsafe virtual void DoNavMeshSurfaceTypeRender(BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoNavMeshSurfaceTypeRender, "BmGame.RPhysicsGrabber.DoNavMeshSurfaceTypeRender");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoNavMeshSurfaceTypeRender, "BmGame.RPhysicsGrabber.DoNavMeshSurfaceTypeRender", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -301,42 +301,42 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerImpactEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerImpactEffect;
     /// <summary>
     /// Function: TriggerImpactEffect
     /// </summary>
     public unsafe virtual void TriggerImpactEffect()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerImpactEffect, "BmGame.RPhysicsGrabber.TriggerImpactEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerImpactEffect, "BmGame.RPhysicsGrabber.TriggerImpactEffect", this);
         byte* paramsPtr = stackalloc byte[228];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleImpactType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleImpactType;
     /// <summary>
     /// Function: ToggleImpactType
     /// </summary>
     public unsafe virtual void ToggleImpactType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleImpactType, "BmGame.RPhysicsGrabber.ToggleImpactType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleImpactType, "BmGame.RPhysicsGrabber.ToggleImpactType", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoSurfaceTypeRender;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoSurfaceTypeRender;
     /// <summary>
     /// Function: DoSurfaceTypeRender
     /// </summary>
     public unsafe virtual void DoSurfaceTypeRender(BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoSurfaceTypeRender, "BmGame.RPhysicsGrabber.DoSurfaceTypeRender");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoSurfaceTypeRender, "BmGame.RPhysicsGrabber.DoSurfaceTypeRender", this);
         byte* paramsPtr = stackalloc byte[328];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -344,29 +344,30 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_CopyToClipboard;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyToClipboard;
     /// <summary>
     /// Function: CopyToClipboard
     /// </summary>
-    public unsafe virtual void CopyToClipboard(BmSDK.FString MeshName)
+    public unsafe virtual void CopyToClipboard(BmSDK.FStringArg MeshName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyToClipboard, "BmGame.RPhysicsGrabber.CopyToClipboard");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CopyToClipboard, "BmGame.RPhysicsGrabber.CopyToClipboard", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MeshName, paramsPtr + 0);
+        MeshName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRMaterial;
     /// <summary>
     /// Function: GetRMaterial
     /// </summary>
     public unsafe virtual BmSDK.Engine.RPhysicalMaterialProperty GetRMaterial(BmSDK.Engine.PhysicalMaterial PhysMaterial)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRMaterial, "BmGame.RPhysicsGrabber.GetRMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRMaterial, "BmGame.RPhysicsGrabber.GetRMaterial", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PhysMaterial, paramsPtr + 0);
@@ -374,14 +375,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RPhysicalMaterialProperty>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetSurfaceType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSurfaceType;
     /// <summary>
     /// Function: GetSurfaceType
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetSurfaceType(out BmSDK.Engine.Actor.FImpactInfo HitInfo, out float Dist, out BmSDK.Engine.Actor.FImpactInfo Foot, out BmSDK.Engine.PhysicalMaterial simpleCollision, out int usingSimple, out float simpleDifference)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSurfaceType, "BmGame.RPhysicsGrabber.GetSurfaceType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSurfaceType, "BmGame.RPhysicsGrabber.GetSurfaceType", this);
         byte* paramsPtr = stackalloc byte[484];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitInfo);
@@ -420,70 +421,70 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SecondaryButtonPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SecondaryButtonPressed;
     /// <summary>
     /// Function: SecondaryButtonPressed
     /// </summary>
     public unsafe override void SecondaryButtonPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SecondaryButtonPressed, "BmGame.RPhysicsGrabber.SecondaryButtonPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SecondaryButtonPressed, "BmGame.RPhysicsGrabber.SecondaryButtonPressed", this);
         byte* paramsPtr = stackalloc byte[236];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ButtonReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ButtonReleased;
     /// <summary>
     /// Function: ButtonReleased
     /// </summary>
     public unsafe override void ButtonReleased()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ButtonReleased, "BmGame.RPhysicsGrabber.ButtonReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ButtonReleased, "BmGame.RPhysicsGrabber.ButtonReleased", this);
         byte* paramsPtr = stackalloc byte[236];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ButtonPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ButtonPressed;
     /// <summary>
     /// Function: ButtonPressed
     /// </summary>
     public unsafe override void ButtonPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ButtonPressed, "BmGame.RPhysicsGrabber.ButtonPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ButtonPressed, "BmGame.RPhysicsGrabber.ButtonPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetName;
     /// <summary>
     /// Function: GetName
     /// </summary>
     public unsafe override BmSDK.FString GetName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetName, "BmGame.RPhysicsGrabber.GetName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetName, "BmGame.RPhysicsGrabber.GetName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetStartEndTracePoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStartEndTracePoints;
     /// <summary>
     /// Function: GetStartEndTracePoints
     /// </summary>
     public unsafe virtual void GetStartEndTracePoints(out System.Numerics.Vector3 TraceStart, out System.Numerics.Vector3 TraceEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStartEndTracePoints, "BmGame.RPhysicsGrabber.GetStartEndTracePoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStartEndTracePoints, "BmGame.RPhysicsGrabber.GetStartEndTracePoints", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out TraceStart);
@@ -503,14 +504,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetApexDestructibleChunkIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetApexDestructibleChunkIndex;
     /// <summary>
     /// Function: GetApexDestructibleChunkIndex
     /// </summary>
     public unsafe virtual int GetApexDestructibleChunkIndex(BmSDK.BmGame.RApexStaticDestructibleComponent ApexComponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetApexDestructibleChunkIndex, "BmGame.RPhysicsGrabber.GetApexDestructibleChunkIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetApexDestructibleChunkIndex, "BmGame.RPhysicsGrabber.GetApexDestructibleChunkIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ApexComponent, paramsPtr + 0);
@@ -525,14 +526,14 @@ public partial class RPhysicsGrabber : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetNavMeshInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshInfo;
     /// <summary>
     /// Function: GetNavMeshInfo
     /// </summary>
     public unsafe virtual bool GetNavMeshInfo(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, out BmSDK.FString NavMeshString, out System.Numerics.Vector3 NavMeshHitPoint, out System.Numerics.Vector3 NavMeshHitNormal, out int StringR, out int StringG, out int StringB)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavMeshInfo, "BmGame.RPhysicsGrabber.GetNavMeshInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavMeshInfo, "BmGame.RPhysicsGrabber.GetNavMeshInfo", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RAEC_Casualty_Sub_ShootCasDown : BmSDK.BmGame.RAEC_Casualty
         where TComponent : class, Framework.IScriptComponent<RAEC_Casualty_Sub_ShootCasDown>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AssignCasualty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignCasualty;
     /// <summary>
     /// Function: AssignCasualty
     /// </summary>
     public unsafe override void AssignCasualty(BmSDK.BmGame.RPawnVillain NewCas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignCasualty, "BmGame.RAEC_Casualty_Sub_ShootCasDown.AssignCasualty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AssignCasualty, "BmGame.RAEC_Casualty_Sub_ShootCasDown.AssignCasualty", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCas, paramsPtr + 0);

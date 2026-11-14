@@ -73,14 +73,14 @@ public partial class RB_ForceComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RB_ForceComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AttachCloneToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachCloneToActor;
     /// <summary>
     /// Function: AttachCloneToActor
     /// </summary>
     public unsafe virtual void AttachCloneToActor(BmSDK.Engine.Actor NewOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachCloneToActor, "Engine.RB_ForceComponent.AttachCloneToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachCloneToActor, "Engine.RB_ForceComponent.AttachCloneToActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RB_ForceComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetBaseCloneParameters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBaseCloneParameters;
     /// <summary>
     /// Function: SetBaseCloneParameters
     /// </summary>
     public unsafe virtual void SetBaseCloneParameters(BmSDK.Engine.RB_ForceComponent ForceComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBaseCloneParameters, "Engine.RB_ForceComponent.SetBaseCloneParameters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBaseCloneParameters, "Engine.RB_ForceComponent.SetBaseCloneParameters", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForceComp, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class RB_ForceComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_Clone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Clone;
     /// <summary>
     /// Function: Clone
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_ForceComponent Clone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Clone, "Engine.RB_ForceComponent.Clone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Clone, "Engine.RB_ForceComponent.Clone", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

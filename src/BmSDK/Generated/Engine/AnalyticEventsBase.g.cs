@@ -78,18 +78,18 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         where TComponent : class, Framework.IScriptComponent<AnalyticEventsBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_LogErrorMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogErrorMessage;
     /// <summary>
     /// Function: LogErrorMessage
     /// </summary>
-    public unsafe virtual void LogErrorMessage(BmSDK.FString ErrorName, BmSDK.FString ErrorMessage)
+    public unsafe virtual void LogErrorMessage(BmSDK.FStringArg ErrorName, BmSDK.FStringArg ErrorMessage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogErrorMessage, "Engine.AnalyticEventsBase.LogErrorMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogErrorMessage, "Engine.AnalyticEventsBase.LogErrorMessage", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ErrorName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ErrorMessage, paramsPtr + 16);
+        ErrorName.WriteTo(paramsPtr + 0);
+        ErrorMessage.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -98,20 +98,22 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_EndStringEventParamArray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndStringEventParamArray;
     /// <summary>
     /// Function: EndStringEventParamArray
     /// </summary>
-    public unsafe virtual void EndStringEventParamArray(BmSDK.FString EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray)
+    public unsafe virtual void EndStringEventParamArray(BmSDK.FStringArg EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndStringEventParamArray, "Engine.AnalyticEventsBase.EndStringEventParamArray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndStringEventParamArray, "Engine.AnalyticEventsBase.EndStringEventParamArray", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
+        EventName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamArray, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -121,20 +123,21 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LogStringEventParamArray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogStringEventParamArray;
     /// <summary>
     /// Function: LogStringEventParamArray
     /// </summary>
-    public unsafe virtual void LogStringEventParamArray(BmSDK.FString EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray, bool bTimed)
+    public unsafe virtual void LogStringEventParamArray(BmSDK.FStringArg EventName, BmSDK.TArray<BmSDK.Engine.AnalyticEventsBase.FEventStringParam> ParamArray, bool bTimed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogStringEventParamArray, "Engine.AnalyticEventsBase.LogStringEventParamArray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogStringEventParamArray, "Engine.AnalyticEventsBase.LogStringEventParamArray", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
+        EventName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamArray, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTimed, paramsPtr + 32);
         var oldFlags = funcManaged.FunctionFlags;
@@ -145,22 +148,23 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndStringEventParam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndStringEventParam;
     /// <summary>
     /// Function: EndStringEventParam
     /// </summary>
-    public unsafe virtual void EndStringEventParam(BmSDK.FString EventName, BmSDK.FString ParamName, BmSDK.FString ParamValue)
+    public unsafe virtual void EndStringEventParam(BmSDK.FStringArg EventName, BmSDK.FStringArg ParamName, BmSDK.FStringArg ParamValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndStringEventParam, "Engine.AnalyticEventsBase.EndStringEventParam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndStringEventParam, "Engine.AnalyticEventsBase.EndStringEventParam", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamName, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamValue, paramsPtr + 32);
+        EventName.WriteTo(paramsPtr + 0);
+        ParamName.WriteTo(paramsPtr + 16);
+        ParamValue.WriteTo(paramsPtr + 32);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -169,22 +173,25 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return;
     }
 
-    private static BmSDK.Function __fn_LogStringEventParam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogStringEventParam;
     /// <summary>
     /// Function: LogStringEventParam
     /// </summary>
-    public unsafe virtual void LogStringEventParam(BmSDK.FString EventName, BmSDK.FString ParamName, BmSDK.FString ParamValue, bool bTimed)
+    public unsafe virtual void LogStringEventParam(BmSDK.FStringArg EventName, BmSDK.FStringArg ParamName, BmSDK.FStringArg ParamValue, bool bTimed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogStringEventParam, "Engine.AnalyticEventsBase.LogStringEventParam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogStringEventParam, "Engine.AnalyticEventsBase.LogStringEventParam", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamName, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamValue, paramsPtr + 32);
+        EventName.WriteTo(paramsPtr + 0);
+        ParamName.WriteTo(paramsPtr + 16);
+        ParamValue.WriteTo(paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTimed, paramsPtr + 48);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -194,20 +201,23 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return;
     }
 
-    private static BmSDK.Function __fn_EndStringEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndStringEvent;
     /// <summary>
     /// Function: EndStringEvent
     /// </summary>
-    public unsafe virtual void EndStringEvent(BmSDK.FString EventName)
+    public unsafe virtual void EndStringEvent(BmSDK.FStringArg EventName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndStringEvent, "Engine.AnalyticEventsBase.EndStringEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndStringEvent, "Engine.AnalyticEventsBase.EndStringEvent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
+        EventName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -216,20 +226,21 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LogStringEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogStringEvent;
     /// <summary>
     /// Function: LogStringEvent
     /// </summary>
-    public unsafe virtual void LogStringEvent(BmSDK.FString EventName, bool bTimed)
+    public unsafe virtual void LogStringEvent(BmSDK.FStringArg EventName, bool bTimed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogStringEvent, "Engine.AnalyticEventsBase.LogStringEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogStringEvent, "Engine.AnalyticEventsBase.LogStringEvent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
+        EventName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTimed, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -239,17 +250,18 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndSession;
     /// <summary>
     /// Function: EndSession
     /// </summary>
     public unsafe virtual void EndSession()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndSession, "Engine.AnalyticEventsBase.EndSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndSession, "Engine.AnalyticEventsBase.EndSession", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -263,14 +275,14 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_StartSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSession;
     /// <summary>
     /// Function: StartSession
     /// </summary>
     public unsafe virtual void StartSession()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSession, "Engine.AnalyticEventsBase.StartSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSession, "Engine.AnalyticEventsBase.StartSession", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -284,14 +296,14 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.AnalyticEventsBase.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.AnalyticEventsBase.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -305,14 +317,14 @@ public partial class AnalyticEventsBase : BmSDK.Engine.PlatformInterfaceBase, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_IsSessionInProgress;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSessionInProgress;
     /// <summary>
     /// Function: IsSessionInProgress
     /// </summary>
     public unsafe virtual bool IsSessionInProgress()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSessionInProgress, "Engine.AnalyticEventsBase.IsSessionInProgress");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSessionInProgress, "Engine.AnalyticEventsBase.IsSessionInProgress", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

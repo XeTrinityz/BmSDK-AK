@@ -78,18 +78,19 @@ public partial class RAEC_Search_Sub_VantageMine : BmSDK.BmGame.RAEC_Search_Sub_
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_VantageMine>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AddVantageResponseAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVantageResponseAction;
     /// <summary>
     /// Function: AddVantageResponseAction
     /// </summary>
-    public unsafe override void AddVantageResponseAction(BmSDK.FString actionlabel)
+    public unsafe override void AddVantageResponseAction(BmSDK.FStringArg actionlabel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddVantageResponseAction, "BmGame.RAEC_Search_Sub_VantageMine.AddVantageResponseAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddVantageResponseAction, "BmGame.RAEC_Search_Sub_VantageMine.AddVantageResponseAction", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(actionlabel, paramsPtr + 0);
+        actionlabel.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 }

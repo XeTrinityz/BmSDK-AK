@@ -78,14 +78,14 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         where TComponent : class, Framework.IScriptComponent<RLootDestinationBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TryStateChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStateChange;
     /// <summary>
     /// Function: TryStateChange
     /// </summary>
     public unsafe virtual void TryStateChange(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStateChange, "BmGame.RLootDestinationBase.TryStateChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryStateChange, "BmGame.RLootDestinationBase.TryStateChange", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pawnDroppingOff, paramsPtr + 0);
@@ -93,70 +93,70 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_PlayBagDroppedOffAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayBagDroppedOffAnim;
     /// <summary>
     /// Function: PlayBagDroppedOffAnim
     /// </summary>
     public unsafe virtual void PlayBagDroppedOffAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayBagDroppedOffAnim, "BmGame.RLootDestinationBase.PlayBagDroppedOffAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayBagDroppedOffAnim, "BmGame.RLootDestinationBase.PlayBagDroppedOffAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RLootDestinationBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RLootDestinationBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RLootDestinationBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RLootDestinationBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RLootDestinationBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RLootDestinationBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetMusterLocationAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMusterLocationAndRotation;
     /// <summary>
     /// Function: GetMusterLocationAndRotation
     /// </summary>
     public unsafe virtual void GetMusterLocationAndRotation(BmSDK.Engine.Pawn requestingPawn, out System.Numerics.Vector3 musterLoc, out BmSDK.Rotator musterRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMusterLocationAndRotation, "BmGame.RLootDestinationBase.GetMusterLocationAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMusterLocationAndRotation, "BmGame.RLootDestinationBase.GetMusterLocationAndRotation", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(requestingPawn, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RLootDestinationBase.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RLootDestinationBase.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -185,28 +185,28 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_IsLockedByAnyone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLockedByAnyone;
     /// <summary>
     /// Function: IsLockedByAnyone
     /// </summary>
     public unsafe virtual bool IsLockedByAnyone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLockedByAnyone, "BmGame.RLootDestinationBase.IsLockedByAnyone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLockedByAnyone, "BmGame.RLootDestinationBase.IsLockedByAnyone", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HasLocationLockedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLocationLockedBy;
     /// <summary>
     /// Function: HasLocationLockedBy
     /// </summary>
     public unsafe virtual bool HasLocationLockedBy(BmSDK.Engine.Pawn inPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasLocationLockedBy, "BmGame.RLootDestinationBase.HasLocationLockedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasLocationLockedBy, "BmGame.RLootDestinationBase.HasLocationLockedBy", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inPawn, paramsPtr + 0);
@@ -214,28 +214,28 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_HasAvailableLocations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasAvailableLocations;
     /// <summary>
     /// Function: HasAvailableLocations
     /// </summary>
     public unsafe virtual bool HasAvailableLocations()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasAvailableLocations, "BmGame.RLootDestinationBase.HasAvailableLocations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasAvailableLocations, "BmGame.RLootDestinationBase.HasAvailableLocations", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UnlockDropoffPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlockDropoffPoint;
     /// <summary>
     /// Function: UnlockDropoffPoint
     /// </summary>
     public unsafe virtual void UnlockDropoffPoint(BmSDK.Engine.Pawn inUnlockingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockDropoffPoint, "BmGame.RLootDestinationBase.UnlockDropoffPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlockDropoffPoint, "BmGame.RLootDestinationBase.UnlockDropoffPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inUnlockingPawn, paramsPtr + 0);
@@ -243,14 +243,14 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_LockDropoffPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LockDropoffPoint;
     /// <summary>
     /// Function: LockDropoffPoint
     /// </summary>
     public unsafe virtual void LockDropoffPoint(BmSDK.Engine.Pawn inLockingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LockDropoffPoint, "BmGame.RLootDestinationBase.LockDropoffPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LockDropoffPoint, "BmGame.RLootDestinationBase.LockDropoffPoint", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inLockingPawn, paramsPtr + 0);
@@ -258,14 +258,14 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_OnDropOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDropOff;
     /// <summary>
     /// Function: OnDropOff
     /// </summary>
     public unsafe virtual bool OnDropOff(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDropOff, "BmGame.RLootDestinationBase.OnDropOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDropOff, "BmGame.RLootDestinationBase.OnDropOff", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pawnDroppingOff, paramsPtr + 0);
@@ -273,14 +273,14 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RLootDestinationBase.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RLootDestinationBase.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -288,14 +288,14 @@ public partial class RLootDestinationBase : BmSDK.Engine.SkeletalMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_IsPlayingAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayingAnim;
     /// <summary>
     /// Function: IsPlayingAnim
     /// </summary>
     public unsafe virtual bool IsPlayingAnim(BmSDK.Engine.SkeletalMeshComponent MeshComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayingAnim, "BmGame.RLootDestinationBase.IsPlayingAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayingAnim, "BmGame.RLootDestinationBase.IsPlayingAnim", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MeshComp, paramsPtr + 0);

@@ -91,42 +91,42 @@ public partial class RSeqAct_SlowMo : BmSDK.Engine.SequenceAction, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SlowMo.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_SlowMo.Activated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerAfterCancelTransition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerAfterCancelTransition;
     /// <summary>
     /// Function: TimerAfterCancelTransition
     /// </summary>
     public unsafe virtual void TimerAfterCancelTransition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterCancelTransition, "BmGame.RSeqAct_SlowMo.TimerAfterCancelTransition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerAfterCancelTransition, "BmGame.RSeqAct_SlowMo.TimerAfterCancelTransition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerAfterDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerAfterDuration;
     /// <summary>
     /// Function: TimerAfterDuration
     /// </summary>
     public unsafe virtual void TimerAfterDuration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterDuration, "BmGame.RSeqAct_SlowMo.TimerAfterDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerAfterDuration, "BmGame.RSeqAct_SlowMo.TimerAfterDuration", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

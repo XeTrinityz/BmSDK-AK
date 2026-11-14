@@ -78,14 +78,14 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
         where TComponent : class, Framework.IScriptComponent<RGangInteractChineseStandGlass>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFinished;
     /// <summary>
     /// Function: SetFinished
     /// </summary>
     public unsafe override void SetFinished(BmSDK.BmGame.RBMPawnAI P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFinished, "BmScript.RGangInteractChineseStandGlass.SetFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFinished, "BmScript.RGangInteractChineseStandGlass.SetFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
         return;
     }
 
-    private static BmSDK.Function __fn_SetInUse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInUse;
     /// <summary>
     /// Function: SetInUse
     /// </summary>
     public unsafe override void SetInUse(BmSDK.BmGame.RBMPawnAI UsagePawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInUse, "BmScript.RGangInteractChineseStandGlass.SetInUse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInUse, "BmScript.RGangInteractChineseStandGlass.SetInUse", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UsagePawn, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
         return;
     }
 
-    private static BmSDK.Function __fn_CrackObject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrackObject;
     /// <summary>
     /// Function: CrackObject
     /// </summary>
     public unsafe override void CrackObject(System.Numerics.Vector3 SmashLocation, System.Numerics.Vector3 SmashNormal, System.Numerics.Vector3 SmashSpeed, bool bCanSmash, bool bForceSmash, BmSDK.Engine.Actor SmashActor = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackObject, "BmScript.RGangInteractChineseStandGlass.CrackObject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackObject, "BmScript.RGangInteractChineseStandGlass.CrackObject", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SmashLocation, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RGangInteractChineseStandGlass : BmSDK.BmGame.RGangInteract
         return;
     }
 
-    private static BmSDK.Function __fn_GetBehaviourClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBehaviourClass;
     /// <summary>
     /// Function: GetBehaviourClass
     /// </summary>
     public unsafe override BmSDK.Class GetBehaviourClass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourClass, "BmScript.RGangInteractChineseStandGlass.GetBehaviourClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBehaviourClass, "BmScript.RGangInteractChineseStandGlass.GetBehaviourClass", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

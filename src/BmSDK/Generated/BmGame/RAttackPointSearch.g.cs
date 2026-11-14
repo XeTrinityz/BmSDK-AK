@@ -78,42 +78,42 @@ public partial class RAttackPointSearch : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RAttackPointSearch>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetThoughtString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThoughtString;
     /// <summary>
     /// Function: GetThoughtString
     /// </summary>
     public unsafe virtual BmSDK.FString GetThoughtString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThoughtString, "BmGame.RAttackPointSearch.GetThoughtString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThoughtString, "BmGame.RAttackPointSearch.GetThoughtString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Release;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Release;
     /// <summary>
     /// Function: Release
     /// </summary>
     public unsafe virtual void Release()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Release, "BmGame.RAttackPointSearch.Release");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Release, "BmGame.RAttackPointSearch.Release", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSearch;
     /// <summary>
     /// Function: StartSearch
     /// </summary>
     public unsafe virtual void StartSearch(System.Numerics.Vector3 NewTargetLocation, float NewAttackRadius, BmSDK.FName NewClaimName, BmSDK.BmGame.RAttackPointSearch.StanceVisType NewStanceToCheck, BmSDK.TArray<BmSDK.Engine.Pylon> NewPylonList, float NewSubDivideSizeTarget, bool bNewAutoAdjustToFloor, bool bNewAdjustHeightForHumanTargetSize)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSearch, "BmGame.RAttackPointSearch.StartSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSearch, "BmGame.RAttackPointSearch.StartSearch", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTargetLocation, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RAttackPointSearch : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ShowDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowDebug;
     /// <summary>
     /// Function: ShowDebug
     /// </summary>
     public unsafe virtual void ShowDebug(bool bPermanent = default, BmSDK.FName DrawIDName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowDebug, "BmGame.RAttackPointSearch.ShowDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowDebug, "BmGame.RAttackPointSearch.ShowDebug", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPermanent, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RAttackPointSearch : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SearchFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchFinished;
     /// <summary>
     /// Function: SearchFinished
     /// </summary>
     public unsafe virtual bool SearchFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SearchFinished, "BmGame.RAttackPointSearch.SearchFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SearchFinished, "BmGame.RAttackPointSearch.SearchFinished", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -172,14 +172,14 @@ public partial class RAttackPointSearch : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAvailable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAvailable;
     /// <summary>
     /// Function: IsAvailable
     /// </summary>
     public unsafe virtual bool IsAvailable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAvailable, "BmGame.RAttackPointSearch.IsAvailable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAvailable, "BmGame.RAttackPointSearch.IsAvailable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -193,14 +193,14 @@ public partial class RAttackPointSearch : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Search;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Search;
     /// <summary>
     /// Function: Search
     /// </summary>
     public unsafe virtual void Search(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Search, "BmGame.RAttackPointSearch.Search");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Search, "BmGame.RAttackPointSearch.Search", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

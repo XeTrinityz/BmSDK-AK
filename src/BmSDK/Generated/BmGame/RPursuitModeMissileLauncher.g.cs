@@ -78,14 +78,14 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
         where TComponent : class, Framework.IScriptComponent<RPursuitModeMissileLauncher>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ModifyLaunchRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyLaunchRotation;
     /// <summary>
     /// Function: ModifyLaunchRotation
     /// </summary>
     public unsafe virtual BmSDK.Rotator ModifyLaunchRotation(BmSDK.Rotator InRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyLaunchRotation, "BmGame.RPursuitModeMissileLauncher.ModifyLaunchRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyLaunchRotation, "BmGame.RPursuitModeMissileLauncher.ModifyLaunchRotation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InRotation, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_OnProjectileSpawned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnProjectileSpawned;
     /// <summary>
     /// Function: OnProjectileSpawned
     /// </summary>
     public unsafe virtual void OnProjectileSpawned(BmSDK.BmGame.RProjectile Projectile, BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnProjectileSpawned, "BmGame.RPursuitModeMissileLauncher.OnProjectileSpawned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnProjectileSpawned, "BmGame.RPursuitModeMissileLauncher.OnProjectileSpawned", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Projectile, paramsPtr + 0);
@@ -116,56 +116,56 @@ public partial class RPursuitModeMissileLauncher : BmSDK.BmGame.RVehicleWeapon, 
         return;
     }
 
-    private static BmSDK.Function __fn_FireBatTracker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireBatTracker;
     /// <summary>
     /// Function: FireBatTracker
     /// </summary>
     public unsafe virtual void FireBatTracker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireBatTracker, "BmGame.RPursuitModeMissileLauncher.FireBatTracker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireBatTracker, "BmGame.RPursuitModeMissileLauncher.FireBatTracker", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTarget;
     /// <summary>
     /// Function: GetTarget
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTarget, "BmGame.RPursuitModeMissileLauncher.GetTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTarget, "BmGame.RPursuitModeMissileLauncher.GetTarget", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FireWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireWeapon;
     /// <summary>
     /// Function: FireWeapon
     /// </summary>
     public unsafe override bool FireWeapon()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireWeapon, "BmGame.RPursuitModeMissileLauncher.FireWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireWeapon, "BmGame.RPursuitModeMissileLauncher.FireWeapon", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GivenTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GivenTo;
     /// <summary>
     /// Function: GivenTo
     /// </summary>
     public unsafe override void GivenTo(BmSDK.Engine.Pawn thisPawn, bool bDoNotActivate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GivenTo, "BmGame.RPursuitModeMissileLauncher.GivenTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GivenTo, "BmGame.RPursuitModeMissileLauncher.GivenTo", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(thisPawn, paramsPtr + 0);

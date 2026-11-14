@@ -78,126 +78,126 @@ public partial class RGFxMovieUI_DLCScanning : BmSDK.BmGame.RGFxMovieUI, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_DLCScanning>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DLC_IsScanActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DLC_IsScanActive;
     /// <summary>
     /// Function: DLC_IsScanActive
     /// </summary>
     public unsafe virtual bool DLC_IsScanActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DLC_IsScanActive, "BmScript.RGFxMovieUI_DLCScanning.DLC_IsScanActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DLC_IsScanActive, "BmScript.RGFxMovieUI_DLCScanning.DLC_IsScanActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DLC_RemoveScanNotifyComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DLC_RemoveScanNotifyComplete;
     /// <summary>
     /// Function: DLC_RemoveScanNotifyComplete
     /// </summary>
     public unsafe virtual void DLC_RemoveScanNotifyComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DLC_RemoveScanNotifyComplete, "BmScript.RGFxMovieUI_DLCScanning.DLC_RemoveScanNotifyComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DLC_RemoveScanNotifyComplete, "BmScript.RGFxMovieUI_DLCScanning.DLC_RemoveScanNotifyComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DLC_AddScanNotifyComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DLC_AddScanNotifyComplete;
     /// <summary>
     /// Function: DLC_AddScanNotifyComplete
     /// </summary>
     public unsafe virtual void DLC_AddScanNotifyComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DLC_AddScanNotifyComplete, "BmScript.RGFxMovieUI_DLCScanning.DLC_AddScanNotifyComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DLC_AddScanNotifyComplete, "BmScript.RGFxMovieUI_DLCScanning.DLC_AddScanNotifyComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Tick;
     /// <summary>
     /// Function: XI_Tick
     /// </summary>
     public unsafe override void XI_Tick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Tick, "BmScript.RGFxMovieUI_DLCScanning.XI_Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Tick, "BmScript.RGFxMovieUI_DLCScanning.XI_Tick", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnOut;
     /// <summary>
     /// Function: XI_OnOut
     /// </summary>
     public unsafe override void XI_OnOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnOut, "BmScript.RGFxMovieUI_DLCScanning.XI_OnOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnOut, "BmScript.RGFxMovieUI_DLCScanning.XI_OnOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnIn;
     /// <summary>
     /// Function: XI_OnIn
     /// </summary>
     public unsafe override void XI_OnIn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnIn, "BmScript.RGFxMovieUI_DLCScanning.XI_OnIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnIn, "BmScript.RGFxMovieUI_DLCScanning.XI_OnIn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshDLCEnumComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDLCEnumComplete;
     /// <summary>
     /// Function: RefreshDLCEnumComplete
     /// </summary>
     public unsafe virtual void RefreshDLCEnumComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLCEnumComplete, "BmScript.RGFxMovieUI_DLCScanning.RefreshDLCEnumComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshDLCEnumComplete, "BmScript.RGFxMovieUI_DLCScanning.RefreshDLCEnumComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CloseDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseDown;
     /// <summary>
     /// Function: CloseDown
     /// </summary>
     public unsafe virtual void CloseDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseDown, "BmScript.RGFxMovieUI_DLCScanning.CloseDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseDown, "BmScript.RGFxMovieUI_DLCScanning.CloseDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmScript.RGFxMovieUI_DLCScanning.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmScript.RGFxMovieUI_DLCScanning.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class MCombatMove_RedhoodBeatdownAtRange : BmSDK.BmGame.RCombatMo
         where TComponent : class, Framework.IScriptComponent<MCombatMove_RedhoodBeatdownAtRange>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_StrikeContact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StrikeContact;
     /// <summary>
     /// Function: StrikeContact
     /// </summary>
     public unsafe override void StrikeContact(bool bPreStrike)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrikeContact, "BmGame.MCombatMove_RedhoodBeatdownAtRange.StrikeContact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StrikeContact, "BmGame.MCombatMove_RedhoodBeatdownAtRange.StrikeContact", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPreStrike, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class MCombatMove_RedhoodBeatdownAtRange : BmSDK.BmGame.RCombatMo
         return;
     }
 
-    private static BmSDK.Function __fn_GetValidTargetStrikeRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetValidTargetStrikeRange;
     /// <summary>
     /// Function: GetValidTargetStrikeRange
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameInfo.StrikeRange GetValidTargetStrikeRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetValidTargetStrikeRange, "BmGame.MCombatMove_RedhoodBeatdownAtRange.GetValidTargetStrikeRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetValidTargetStrikeRange, "BmGame.MCombatMove_RedhoodBeatdownAtRange.GetValidTargetStrikeRange", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.StrikeRange>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetDamageInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageInfo;
     /// <summary>
     /// Function: SetDamageInfo
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.FDamageInfo SetDamageInfo(BmSDK.BmGame.RPawnCombat DamageReceiver, float DmgAmount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageInfo, "BmGame.MCombatMove_RedhoodBeatdownAtRange.SetDamageInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDamageInfo, "BmGame.MCombatMove_RedhoodBeatdownAtRange.SetDamageInfo", this);
         byte* paramsPtr = stackalloc byte[524];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageReceiver, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class MCombatMove_RedhoodBeatdownAtRange : BmSDK.BmGame.RCombatMo
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.FDamageInfo>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_PlayStrike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayStrike;
     /// <summary>
     /// Function: PlayStrike
     /// </summary>
     public unsafe override void PlayStrike(bool bQueue, bool bSimulated)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayStrike, "BmGame.MCombatMove_RedhoodBeatdownAtRange.PlayStrike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayStrike, "BmGame.MCombatMove_RedhoodBeatdownAtRange.PlayStrike", this);
         byte* paramsPtr = stackalloc byte[324];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bQueue, paramsPtr + 0);

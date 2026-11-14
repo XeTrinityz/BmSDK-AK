@@ -78,14 +78,14 @@ public partial class RGFxMovieUI_FrontendCredits : BmSDK.BmGame.RGFxMovieUI, BmS
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_FrontendCredits>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_XI_CreditsTrigger;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_CreditsTrigger;
     /// <summary>
     /// Function: XI_CreditsTrigger
     /// </summary>
     public unsafe virtual void XI_CreditsTrigger(int TriggerId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CreditsTrigger, "BmScript.RGFxMovieUI_FrontendCredits.XI_CreditsTrigger");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_CreditsTrigger, "BmScript.RGFxMovieUI_FrontendCredits.XI_CreditsTrigger", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TriggerId, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RGFxMovieUI_FrontendCredits : BmSDK.BmGame.RGFxMovieUI, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_XI_ShowB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_ShowB;
     /// <summary>
     /// Function: XI_ShowB
     /// </summary>
     public unsafe virtual void XI_ShowB(bool bShow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ShowB, "BmScript.RGFxMovieUI_FrontendCredits.XI_ShowB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_ShowB, "BmScript.RGFxMovieUI_FrontendCredits.XI_ShowB", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShow, paramsPtr + 0);
@@ -108,127 +108,128 @@ public partial class RGFxMovieUI_FrontendCredits : BmSDK.BmGame.RGFxMovieUI, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_XI_CanShowB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_CanShowB;
     /// <summary>
     /// Function: XI_CanShowB
     /// </summary>
     public unsafe virtual bool XI_CanShowB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CanShowB, "BmScript.RGFxMovieUI_FrontendCredits.XI_CanShowB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_CanShowB, "BmScript.RGFxMovieUI_FrontendCredits.XI_CanShowB", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_SkipCredits;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_SkipCredits;
     /// <summary>
     /// Function: XI_SkipCredits
     /// </summary>
     public unsafe virtual void XI_SkipCredits()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SkipCredits, "BmScript.RGFxMovieUI_FrontendCredits.XI_SkipCredits");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_SkipCredits, "BmScript.RGFxMovieUI_FrontendCredits.XI_SkipCredits", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_CreditsDone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_CreditsDone;
     /// <summary>
     /// Function: XI_CreditsDone
     /// </summary>
     public unsafe virtual void XI_CreditsDone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_CreditsDone, "BmScript.RGFxMovieUI_FrontendCredits.XI_CreditsDone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_CreditsDone, "BmScript.RGFxMovieUI_FrontendCredits.XI_CreditsDone", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FirstSkip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FirstSkip;
     /// <summary>
     /// Function: FirstSkip
     /// </summary>
     public unsafe virtual void FirstSkip()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FirstSkip, "BmScript.RGFxMovieUI_FrontendCredits.FirstSkip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FirstSkip, "BmScript.RGFxMovieUI_FrontendCredits.FirstSkip", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Tick;
     /// <summary>
     /// Function: XI_Tick
     /// </summary>
     public unsafe override void XI_Tick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Tick, "BmScript.RGFxMovieUI_FrontendCredits.XI_Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Tick, "BmScript.RGFxMovieUI_FrontendCredits.XI_Tick", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_RequestCredits;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_RequestCredits;
     /// <summary>
     /// Function: XI_RequestCredits
     /// </summary>
-    public unsafe virtual void XI_RequestCredits(BmSDK.FString TargetPath)
+    public unsafe virtual void XI_RequestCredits(BmSDK.FStringArg TargetPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestCredits, "BmScript.RGFxMovieUI_FrontendCredits.XI_RequestCredits");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_RequestCredits, "BmScript.RGFxMovieUI_FrontendCredits.XI_RequestCredits", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPath, paramsPtr + 0);
+        TargetPath.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBackReal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBackReal;
     /// <summary>
     /// Function: OnBackReal
     /// </summary>
     public unsafe virtual void OnBackReal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBackReal, "BmScript.RGFxMovieUI_FrontendCredits.OnBackReal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBackReal, "BmScript.RGFxMovieUI_FrontendCredits.OnBackReal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnBack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnBack;
     /// <summary>
     /// Function: XI_OnBack
     /// </summary>
     public unsafe override void XI_OnBack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnBack, "BmScript.RGFxMovieUI_FrontendCredits.XI_OnBack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnBack, "BmScript.RGFxMovieUI_FrontendCredits.XI_OnBack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmScript.RGFxMovieUI_FrontendCredits.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmScript.RGFxMovieUI_FrontendCredits.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

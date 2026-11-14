@@ -73,28 +73,28 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerCatwomanBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetCornerCoverIdleOverlayAnimset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCornerCoverIdleOverlayAnimset;
     /// <summary>
     /// Function: GetCornerCoverIdleOverlayAnimset
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSet GetCornerCoverIdleOverlayAnimset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCornerCoverIdleOverlayAnimset, "BmGame.RPawnPlayerCatwomanBase.GetCornerCoverIdleOverlayAnimset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCornerCoverIdleOverlayAnimset, "BmGame.RPawnPlayerCatwomanBase.GetCornerCoverIdleOverlayAnimset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckRiddleScanVisibility;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckRiddleScanVisibility;
     /// <summary>
     /// Function: CheckRiddleScanVisibility
     /// </summary>
     public unsafe override bool CheckRiddleScanVisibility(BmSDK.GameObject.FTPOV CameraPOV, out BmSDK.BmGame.RGameInfo.FVisibilityResult ReasonItFailed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckRiddleScanVisibility, "BmGame.RPawnPlayerCatwomanBase.CheckRiddleScanVisibility");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckRiddleScanVisibility, "BmGame.RPawnPlayerCatwomanBase.CheckRiddleScanVisibility", this);
         byte* paramsPtr = stackalloc byte[152];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CameraPOV, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_RiddleFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RiddleFound;
     /// <summary>
     /// Function: RiddleFound
     /// </summary>
     public unsafe virtual void RiddleFound(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiddleFound, "BmGame.RPawnPlayerCatwomanBase.RiddleFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiddleFound, "BmGame.RPawnPlayerCatwomanBase.RiddleFound", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -118,28 +118,28 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetRiddle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddle;
     /// <summary>
     /// Function: GetRiddle
     /// </summary>
     public unsafe virtual BmSDK.FString GetRiddle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddle, "BmGame.RPawnPlayerCatwomanBase.GetRiddle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddle, "BmGame.RPawnPlayerCatwomanBase.GetRiddle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RiddleReScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RiddleReScanned;
     /// <summary>
     /// Function: RiddleReScanned
     /// </summary>
     public unsafe virtual void RiddleReScanned(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiddleReScanned, "BmGame.RPawnPlayerCatwomanBase.RiddleReScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiddleReScanned, "BmGame.RPawnPlayerCatwomanBase.RiddleReScanned", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -147,14 +147,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_TakePhoto;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakePhoto;
     /// <summary>
     /// Function: TakePhoto
     /// </summary>
     public unsafe override void TakePhoto(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakePhoto, "BmGame.RPawnPlayerCatwomanBase.TakePhoto");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakePhoto, "BmGame.RPawnPlayerCatwomanBase.TakePhoto", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -162,42 +162,42 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ReleaseWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseWall;
     /// <summary>
     /// Function: ReleaseWall
     /// </summary>
     public unsafe virtual void ReleaseWall()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseWall, "BmGame.RPawnPlayerCatwomanBase.ReleaseWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReleaseWall, "BmGame.RPawnPlayerCatwomanBase.ReleaseWall", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClimbOnWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClimbOnWall;
     /// <summary>
     /// Function: ClimbOnWall
     /// </summary>
     public unsafe virtual void ClimbOnWall()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClimbOnWall, "BmGame.RPawnPlayerCatwomanBase.ClimbOnWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClimbOnWall, "BmGame.RPawnPlayerCatwomanBase.ClimbOnWall", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisplayCatwomanWhipRappelPromptIfNecessary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayCatwomanWhipRappelPromptIfNecessary;
     /// <summary>
     /// Function: DisplayCatwomanWhipRappelPromptIfNecessary
     /// </summary>
     public unsafe virtual void DisplayCatwomanWhipRappelPromptIfNecessary(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bDisplayPromptInCentreOfScreen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayCatwomanWhipRappelPromptIfNecessary, "BmGame.RPawnPlayerCatwomanBase.DisplayCatwomanWhipRappelPromptIfNecessary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayCatwomanWhipRappelPromptIfNecessary, "BmGame.RPawnPlayerCatwomanBase.DisplayCatwomanWhipRappelPromptIfNecessary", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -206,28 +206,28 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_IsCatwomanTouchingAWallClimbVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCatwomanTouchingAWallClimbVolume;
     /// <summary>
     /// Function: IsCatwomanTouchingAWallClimbVolume
     /// </summary>
     public unsafe virtual bool IsCatwomanTouchingAWallClimbVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCatwomanTouchingAWallClimbVolume, "BmGame.RPawnPlayerCatwomanBase.IsCatwomanTouchingAWallClimbVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCatwomanTouchingAWallClimbVolume, "BmGame.RPawnPlayerCatwomanBase.IsCatwomanTouchingAWallClimbVolume", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanJumpOffWallStick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanJumpOffWallStick;
     /// <summary>
     /// Function: CanJumpOffWallStick
     /// </summary>
     public unsafe virtual bool CanJumpOffWallStick(BmSDK.BmGame.RSpecialMoveConfig Config, BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanJumpOffWallStick, "BmGame.RPawnPlayerCatwomanBase.CanJumpOffWallStick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanJumpOffWallStick, "BmGame.RPawnPlayerCatwomanBase.CanJumpOffWallStick", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Config, paramsPtr + 0);
@@ -236,14 +236,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 140);
     }
 
-    private static BmSDK.Function __fn_FlushDebugDraws;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushDebugDraws;
     /// <summary>
     /// Function: FlushDebugDraws
     /// </summary>
     public unsafe virtual void FlushDebugDraws(bool bOnlyOncePerFrame = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushDebugDraws, "BmGame.RPawnPlayerCatwomanBase.FlushDebugDraws");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushDebugDraws, "BmGame.RPawnPlayerCatwomanBase.FlushDebugDraws", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOnlyOncePerFrame, paramsPtr + 0);
@@ -258,14 +258,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_OnHelicopterHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnHelicopterHit;
     /// <summary>
     /// Function: OnHelicopterHit
     /// </summary>
     public unsafe virtual void OnHelicopterHit(BmSDK.BmGame.RHelicopterBase Heli, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnHelicopterHit, "BmGame.RPawnPlayerCatwomanBase.OnHelicopterHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnHelicopterHit, "BmGame.RPawnPlayerCatwomanBase.OnHelicopterHit", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Heli, paramsPtr + 0);
@@ -275,14 +275,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ClampPointToCeilingVolumes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampPointToCeilingVolumes;
     /// <summary>
     /// Function: ClampPointToCeilingVolumes
     /// </summary>
     public unsafe virtual bool ClampPointToCeilingVolumes(out System.Numerics.Vector3 Point, float ExtraShiftInwards = default, bool bDebugDraw = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClampPointToCeilingVolumes, "BmGame.RPawnPlayerCatwomanBase.ClampPointToCeilingVolumes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClampPointToCeilingVolumes, "BmGame.RPawnPlayerCatwomanBase.ClampPointToCeilingVolumes", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Point);
@@ -301,14 +301,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_UpdateTouchingCeilingVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTouchingCeilingVolume;
     /// <summary>
     /// Function: UpdateTouchingCeilingVolume
     /// </summary>
     public unsafe virtual void UpdateTouchingCeilingVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTouchingCeilingVolume, "BmGame.RPawnPlayerCatwomanBase.UpdateTouchingCeilingVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTouchingCeilingVolume, "BmGame.RPawnPlayerCatwomanBase.UpdateTouchingCeilingVolume", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -322,70 +322,70 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ButtonMashPenalty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ButtonMashPenalty;
     /// <summary>
     /// Function: ButtonMashPenalty
     /// </summary>
     public unsafe virtual void ButtonMashPenalty()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ButtonMashPenalty, "BmGame.RPawnPlayerCatwomanBase.ButtonMashPenalty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ButtonMashPenalty, "BmGame.RPawnPlayerCatwomanBase.ButtonMashPenalty", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetAutoSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAutoSwing;
     /// <summary>
     /// Function: ResetAutoSwing
     /// </summary>
     public unsafe virtual void ResetAutoSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetAutoSwing, "BmGame.RPawnPlayerCatwomanBase.ResetAutoSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetAutoSwing, "BmGame.RPawnPlayerCatwomanBase.ResetAutoSwing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerAerialWhipPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAerialWhipPounce;
     /// <summary>
     /// Function: TriggerAerialWhipPounce
     /// </summary>
     public unsafe virtual bool TriggerAerialWhipPounce()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAerialWhipPounce, "BmGame.RPawnPlayerCatwomanBase.TriggerAerialWhipPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerAerialWhipPounce, "BmGame.RPawnPlayerCatwomanBase.TriggerAerialWhipPounce", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingGrappleLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingGrappleLocation;
     /// <summary>
     /// Function: GetEdgeSwingGrappleLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingGrappleLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingGrappleLocation, "BmGame.RPawnPlayerCatwomanBase.GetEdgeSwingGrappleLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingGrappleLocation, "BmGame.RPawnPlayerCatwomanBase.GetEdgeSwingGrappleLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingWallLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingWallLocation;
     /// <summary>
     /// Function: GetEdgeSwingWallLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingWallLocation(out System.Numerics.Vector3 WallNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingWallLocation, "BmGame.RPawnPlayerCatwomanBase.GetEdgeSwingWallLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingWallLocation, "BmGame.RPawnPlayerCatwomanBase.GetEdgeSwingWallLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out WallNormal);
@@ -395,70 +395,70 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetEdgeSwingStartLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEdgeSwingStartLocation;
     /// <summary>
     /// Function: GetEdgeSwingStartLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEdgeSwingStartLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEdgeSwingStartLocation, "BmGame.RPawnPlayerCatwomanBase.GetEdgeSwingStartLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEdgeSwingStartLocation, "BmGame.RPawnPlayerCatwomanBase.GetEdgeSwingStartLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAutoSwingToGargoyle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoSwingToGargoyle;
     /// <summary>
     /// Function: IsAutoSwingToGargoyle
     /// </summary>
     public unsafe virtual bool IsAutoSwingToGargoyle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAutoSwingToGargoyle, "BmGame.RPawnPlayerCatwomanBase.IsAutoSwingToGargoyle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAutoSwingToGargoyle, "BmGame.RPawnPlayerCatwomanBase.IsAutoSwingToGargoyle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAutoSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoSwing;
     /// <summary>
     /// Function: IsAutoSwing
     /// </summary>
     public unsafe virtual bool IsAutoSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAutoSwing, "BmGame.RPawnPlayerCatwomanBase.IsAutoSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAutoSwing, "BmGame.RPawnPlayerCatwomanBase.IsAutoSwing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsConcealedDuringSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsConcealedDuringSwing;
     /// <summary>
     /// Function: IsConcealedDuringSwing
     /// </summary>
     public unsafe virtual bool IsConcealedDuringSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsConcealedDuringSwing, "BmGame.RPawnPlayerCatwomanBase.IsConcealedDuringSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsConcealedDuringSwing, "BmGame.RPawnPlayerCatwomanBase.IsConcealedDuringSwing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetAutoSwingState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoSwingState;
     /// <summary>
     /// Function: SetAutoSwingState
     /// </summary>
     public unsafe virtual void SetAutoSwingState(BmSDK.BmGame.RPawnPlayerCatwomanBase.EAutoSwingState State)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAutoSwingState, "BmGame.RPawnPlayerCatwomanBase.SetAutoSwingState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAutoSwingState, "BmGame.RPawnPlayerCatwomanBase.SetAutoSwingState", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(State, paramsPtr + 0);
@@ -466,28 +466,28 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_IsValidClimbStartPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidClimbStartPoint;
     /// <summary>
     /// Function: IsValidClimbStartPoint
     /// </summary>
     public unsafe virtual bool IsValidClimbStartPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidClimbStartPoint, "BmGame.RPawnPlayerCatwomanBase.IsValidClimbStartPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidClimbStartPoint, "BmGame.RPawnPlayerCatwomanBase.IsValidClimbStartPoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFirstClimbPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstClimbPoint;
     /// <summary>
     /// Function: GetFirstClimbPoint
     /// </summary>
     public unsafe virtual void GetFirstClimbPoint(out System.Numerics.Vector3 Position, out System.Numerics.Vector3 Normal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstClimbPoint, "BmGame.RPawnPlayerCatwomanBase.GetFirstClimbPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFirstClimbPoint, "BmGame.RPawnPlayerCatwomanBase.GetFirstClimbPoint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Position);
@@ -500,56 +500,56 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_RecalculatePath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecalculatePath;
     /// <summary>
     /// Function: RecalculatePath
     /// </summary>
     public unsafe virtual void RecalculatePath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecalculatePath, "BmGame.RPawnPlayerCatwomanBase.RecalculatePath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecalculatePath, "BmGame.RPawnPlayerCatwomanBase.RecalculatePath", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HasPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasPath;
     /// <summary>
     /// Function: HasPath
     /// </summary>
     public unsafe virtual bool HasPath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasPath, "BmGame.RPawnPlayerCatwomanBase.HasPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasPath, "BmGame.RPawnPlayerCatwomanBase.HasPath", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearPath;
     /// <summary>
     /// Function: ClearPath
     /// </summary>
     public unsafe virtual void ClearPath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearPath, "BmGame.RPawnPlayerCatwomanBase.ClearPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearPath, "BmGame.RPawnPlayerCatwomanBase.ClearPath", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetAllowAerialWhipPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowAerialWhipPounce;
     /// <summary>
     /// Function: SetAllowAerialWhipPounce
     /// </summary>
     public unsafe virtual void SetAllowAerialWhipPounce(bool bAllow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllowAerialWhipPounce, "BmGame.RPawnPlayerCatwomanBase.SetAllowAerialWhipPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllowAerialWhipPounce, "BmGame.RPawnPlayerCatwomanBase.SetAllowAerialWhipPounce", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllow, paramsPtr + 0);
@@ -557,28 +557,28 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerHitAndDropFromCeilingMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerHitAndDropFromCeilingMove;
     /// <summary>
     /// Function: TriggerHitAndDropFromCeilingMove
     /// </summary>
     public unsafe virtual void TriggerHitAndDropFromCeilingMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerHitAndDropFromCeilingMove, "BmGame.RPawnPlayerCatwomanBase.TriggerHitAndDropFromCeilingMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerHitAndDropFromCeilingMove, "BmGame.RPawnPlayerCatwomanBase.TriggerHitAndDropFromCeilingMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetWhipTargetPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWhipTargetPose;
     /// <summary>
     /// Function: SetWhipTargetPose
     /// </summary>
     public unsafe virtual void SetWhipTargetPose(System.Numerics.Vector3 NewPosition, BmSDK.Rotator NewRotation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWhipTargetPose, "BmGame.RPawnPlayerCatwomanBase.SetWhipTargetPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWhipTargetPose, "BmGame.RPawnPlayerCatwomanBase.SetWhipTargetPose", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPosition, paramsPtr + 0);
@@ -594,14 +594,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetWhipTargetPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWhipTargetPose;
     /// <summary>
     /// Function: GetWhipTargetPose
     /// </summary>
     public unsafe virtual void GetWhipTargetPose(out System.Numerics.Vector3 OutPosition, out BmSDK.Rotator OutRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWhipTargetPose, "BmGame.RPawnPlayerCatwomanBase.GetWhipTargetPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWhipTargetPose, "BmGame.RPawnPlayerCatwomanBase.GetWhipTargetPose", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutPosition);
@@ -621,14 +621,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FindNearbyLedgeFromCeiling;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNearbyLedgeFromCeiling;
     /// <summary>
     /// Function: FindNearbyLedgeFromCeiling
     /// </summary>
     public unsafe virtual bool FindNearbyLedgeFromCeiling(System.Numerics.Vector3 PlayerLocation, out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Locator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindNearbyLedgeFromCeiling, "BmGame.RPawnPlayerCatwomanBase.FindNearbyLedgeFromCeiling");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindNearbyLedgeFromCeiling, "BmGame.RPawnPlayerCatwomanBase.FindNearbyLedgeFromCeiling", this);
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerLocation, paramsPtr + 0);
@@ -646,14 +646,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 144);
     }
 
-    private static BmSDK.Function __fn_AddEdgeCollisionNormals;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddEdgeCollisionNormals;
     /// <summary>
     /// Function: AddEdgeCollisionNormals
     /// </summary>
     public unsafe virtual void AddEdgeCollisionNormals(System.Numerics.Vector3 Delta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddEdgeCollisionNormals, "BmGame.RPawnPlayerCatwomanBase.AddEdgeCollisionNormals");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddEdgeCollisionNormals, "BmGame.RPawnPlayerCatwomanBase.AddEdgeCollisionNormals", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Delta, paramsPtr + 0);
@@ -668,14 +668,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SlideOffCeilingVolumeBorders;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SlideOffCeilingVolumeBorders;
     /// <summary>
     /// Function: SlideOffCeilingVolumeBorders
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 SlideOffCeilingVolumeBorders(System.Numerics.Vector3 Delta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SlideOffCeilingVolumeBorders, "BmGame.RPawnPlayerCatwomanBase.SlideOffCeilingVolumeBorders");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SlideOffCeilingVolumeBorders, "BmGame.RPawnPlayerCatwomanBase.SlideOffCeilingVolumeBorders", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Delta, paramsPtr + 0);
@@ -690,14 +690,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_RestrictMoveToCeiling;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestrictMoveToCeiling;
     /// <summary>
     /// Function: RestrictMoveToCeiling
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 RestrictMoveToCeiling(System.Numerics.Vector3 Delta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestrictMoveToCeiling, "BmGame.RPawnPlayerCatwomanBase.RestrictMoveToCeiling");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestrictMoveToCeiling, "BmGame.RPawnPlayerCatwomanBase.RestrictMoveToCeiling", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Delta, paramsPtr + 0);
@@ -712,14 +712,14 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetPlayerThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerThoughts;
     /// <summary>
     /// Function: GetPlayerThoughts
     /// </summary>
     public unsafe override void GetPlayerThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerThoughts, "BmGame.RPawnPlayerCatwomanBase.GetPlayerThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerThoughts, "BmGame.RPawnPlayerCatwomanBase.GetPlayerThoughts", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -734,56 +734,56 @@ public partial class RPawnPlayerCatwomanBase : BmSDK.BmGame.RPawnPlayer, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_DrawSwingSpot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawSwingSpot;
     /// <summary>
     /// Function: DrawSwingSpot
     /// </summary>
     public unsafe virtual void DrawSwingSpot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawSwingSpot, "BmGame.RPawnPlayerCatwomanBase.DrawSwingSpot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawSwingSpot, "BmGame.RPawnPlayerCatwomanBase.DrawSwingSpot", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawSwingLastFrame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawSwingLastFrame;
     /// <summary>
     /// Function: DrawSwingLastFrame
     /// </summary>
     public unsafe virtual void DrawSwingLastFrame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawSwingLastFrame, "BmGame.RPawnPlayerCatwomanBase.DrawSwingLastFrame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawSwingLastFrame, "BmGame.RPawnPlayerCatwomanBase.DrawSwingLastFrame", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopSwingFallSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSwingFallSound;
     /// <summary>
     /// Function: StopSwingFallSound
     /// </summary>
     public unsafe virtual void StopSwingFallSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSwingFallSound, "BmGame.RPawnPlayerCatwomanBase.StopSwingFallSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSwingFallSound, "BmGame.RPawnPlayerCatwomanBase.StopSwingFallSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartSwingFallSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSwingFallSound;
     /// <summary>
     /// Function: StartSwingFallSound
     /// </summary>
     public unsafe virtual void StartSwingFallSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSwingFallSound, "BmGame.RPawnPlayerCatwomanBase.StartSwingFallSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSwingFallSound, "BmGame.RPawnPlayerCatwomanBase.StartSwingFallSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

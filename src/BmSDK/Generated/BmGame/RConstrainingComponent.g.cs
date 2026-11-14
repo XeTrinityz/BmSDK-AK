@@ -78,42 +78,42 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
         where TComponent : class, Framework.IScriptComponent<RConstrainingComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Finalise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Finalise;
     /// <summary>
     /// Function: Finalise
     /// </summary>
     public unsafe virtual void Finalise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Finalise, "BmGame.RConstrainingComponent.Finalise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Finalise, "BmGame.RConstrainingComponent.Finalise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RConstrainingComponent.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RConstrainingComponent.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRBConstraints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRBConstraints;
     /// <summary>
     /// Function: UpdateRBConstraints
     /// </summary>
     public unsafe virtual bool UpdateRBConstraints(bool bNoPhys = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRBConstraints, "BmGame.RConstrainingComponent.UpdateRBConstraints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRBConstraints, "BmGame.RConstrainingComponent.UpdateRBConstraints", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNoPhys, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ClearRBConstraints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearRBConstraints;
     /// <summary>
     /// Function: ClearRBConstraints
     /// </summary>
     public unsafe virtual void ClearRBConstraints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearRBConstraints, "BmGame.RConstrainingComponent.ClearRBConstraints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRBConstraints, "BmGame.RConstrainingComponent.ClearRBConstraints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -149,14 +149,14 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AddRBConstraint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRBConstraint;
     /// <summary>
     /// Function: AddRBConstraint
     /// </summary>
     public unsafe virtual void AddRBConstraint(BmSDK.Engine.RB_ConstraintSetup ConstraintSetup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRBConstraint, "BmGame.RConstrainingComponent.AddRBConstraint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRBConstraint, "BmGame.RConstrainingComponent.AddRBConstraint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConstraintSetup, paramsPtr + 0);
@@ -171,14 +171,14 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetIsSyncronised;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsSyncronised;
     /// <summary>
     /// Function: GetIsSyncronised
     /// </summary>
     public unsafe virtual bool GetIsSyncronised()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsSyncronised, "BmGame.RConstrainingComponent.GetIsSyncronised");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIsSyncronised, "BmGame.RConstrainingComponent.GetIsSyncronised", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -192,14 +192,14 @@ public partial class RConstrainingComponent : BmSDK.Engine.ActorComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetHasRBConstraints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasRBConstraints;
     /// <summary>
     /// Function: GetHasRBConstraints
     /// </summary>
     public unsafe virtual bool GetHasRBConstraints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHasRBConstraints, "BmGame.RConstrainingComponent.GetHasRBConstraints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHasRBConstraints, "BmGame.RConstrainingComponent.GetHasRBConstraints", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

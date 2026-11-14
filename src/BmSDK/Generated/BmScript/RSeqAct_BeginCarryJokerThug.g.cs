@@ -91,14 +91,14 @@ public partial class RSeqAct_BeginCarryJokerThug : BmSDK.BmGame.RSeqAct_BeginCar
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_BeginCarryJokerThug.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_BeginCarryJokerThug.Update", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -106,28 +106,28 @@ public partial class RSeqAct_BeginCarryJokerThug : BmSDK.BmGame.RSeqAct_BeginCar
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TryPlayCustomAdditiveHarley;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryPlayCustomAdditiveHarley;
     /// <summary>
     /// Function: TryPlayCustomAdditiveHarley
     /// </summary>
     public unsafe virtual void TryPlayCustomAdditiveHarley()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryPlayCustomAdditiveHarley, "BmScript.RSeqAct_BeginCarryJokerThug.TryPlayCustomAdditiveHarley");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryPlayCustomAdditiveHarley, "BmScript.RSeqAct_BeginCarryJokerThug.TryPlayCustomAdditiveHarley", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMovePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMovePoint;
     /// <summary>
     /// Function: SetMovePoint
     /// </summary>
     public unsafe virtual void SetMovePoint(int JokerType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMovePoint, "BmScript.RSeqAct_BeginCarryJokerThug.SetMovePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMovePoint, "BmScript.RSeqAct_BeginCarryJokerThug.SetMovePoint", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JokerType, paramsPtr + 0);
@@ -135,42 +135,42 @@ public partial class RSeqAct_BeginCarryJokerThug : BmSDK.BmGame.RSeqAct_BeginCar
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyWeapons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyWeapons;
     /// <summary>
     /// Function: DestroyWeapons
     /// </summary>
     public unsafe virtual void DestroyWeapons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyWeapons, "BmScript.RSeqAct_BeginCarryJokerThug.DestroyWeapons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyWeapons, "BmScript.RSeqAct_BeginCarryJokerThug.DestroyWeapons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_BeginCarryJokerThug.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_BeginCarryJokerThug.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachJoker;
     /// <summary>
     /// Function: AttachJoker
     /// </summary>
     public unsafe virtual void AttachJoker(int JokerType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachJoker, "BmScript.RSeqAct_BeginCarryJokerThug.AttachJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachJoker, "BmScript.RSeqAct_BeginCarryJokerThug.AttachJoker", this);
         byte* paramsPtr = stackalloc byte[476];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JokerType, paramsPtr + 0);
@@ -178,14 +178,14 @@ public partial class RSeqAct_BeginCarryJokerThug : BmSDK.BmGame.RSeqAct_BeginCar
         return;
     }
 
-    private static BmSDK.Function __fn_AddBatWalkIfCan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddBatWalkIfCan;
     /// <summary>
     /// Function: AddBatWalkIfCan
     /// </summary>
     public unsafe virtual void AddBatWalkIfCan(BmSDK.BmScript.RSeqAct_BeginCarryJokerThug.JokerTypes JokerType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddBatWalkIfCan, "BmScript.RSeqAct_BeginCarryJokerThug.AddBatWalkIfCan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddBatWalkIfCan, "BmScript.RSeqAct_BeginCarryJokerThug.AddBatWalkIfCan", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JokerType, paramsPtr + 0);
@@ -193,14 +193,14 @@ public partial class RSeqAct_BeginCarryJokerThug : BmSDK.BmGame.RSeqAct_BeginCar
         return;
     }
 
-    private static BmSDK.Function __fn_PutDownJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PutDownJoker;
     /// <summary>
     /// Function: PutDownJoker
     /// </summary>
     public unsafe virtual void PutDownJoker(BmSDK.BmScript.RSeqAct_BeginCarryJokerThug.JokerTypes JokerType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PutDownJoker, "BmScript.RSeqAct_BeginCarryJokerThug.PutDownJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PutDownJoker, "BmScript.RSeqAct_BeginCarryJokerThug.PutDownJoker", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JokerType, paramsPtr + 0);
@@ -208,14 +208,14 @@ public partial class RSeqAct_BeginCarryJokerThug : BmSDK.BmGame.RSeqAct_BeginCar
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveBatWalk;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveBatWalk;
     /// <summary>
     /// Function: RemoveBatWalk
     /// </summary>
     public unsafe virtual void RemoveBatWalk()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveBatWalk, "BmScript.RSeqAct_BeginCarryJokerThug.RemoveBatWalk");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveBatWalk, "BmScript.RSeqAct_BeginCarryJokerThug.RemoveBatWalk", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

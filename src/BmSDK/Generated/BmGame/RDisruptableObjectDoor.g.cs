@@ -78,42 +78,42 @@ public partial class RDisruptableObjectDoor : BmSDK.Engine.Actor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RDisruptableObjectDoor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetObstacleActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObstacleActor;
     /// <summary>
     /// Function: GetObstacleActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetObstacleActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObstacleActor, "BmGame.RDisruptableObjectDoor.GetObstacleActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObstacleActor, "BmGame.RDisruptableObjectDoor.GetObstacleActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayShockedSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayShockedSound;
     /// <summary>
     /// Function: PlayShockedSound
     /// </summary>
     public unsafe virtual void PlayShockedSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayShockedSound, "BmGame.RDisruptableObjectDoor.PlayShockedSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayShockedSound, "BmGame.RDisruptableObjectDoor.PlayShockedSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetHitNormal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHitNormal;
     /// <summary>
     /// Function: GetHitNormal
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHitNormal(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHitNormal, "BmGame.RDisruptableObjectDoor.GetHitNormal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHitNormal, "BmGame.RDisruptableObjectDoor.GetHitNormal", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -121,56 +121,56 @@ public partial class RDisruptableObjectDoor : BmSDK.Engine.Actor, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetDamageType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDamageType;
     /// <summary>
     /// Function: GetDamageType
     /// </summary>
     public unsafe virtual BmSDK.Class GetDamageType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDamageType, "BmGame.RDisruptableObjectDoor.GetDamageType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDamageType, "BmGame.RDisruptableObjectDoor.GetDamageType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Class>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RDisruptableObjectDoor.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RDisruptableObjectDoor.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RDisruptableObjectDoor.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RDisruptableObjectDoor.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetSplitNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSplitNavMesh;
     /// <summary>
     /// Function: SetSplitNavMesh
     /// </summary>
     public unsafe virtual void SetSplitNavMesh(bool bSplit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSplitNavMesh, "BmGame.RDisruptableObjectDoor.SetSplitNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSplitNavMesh, "BmGame.RDisruptableObjectDoor.SetSplitNavMesh", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSplit, paramsPtr + 0);
@@ -185,14 +185,14 @@ public partial class RDisruptableObjectDoor : BmSDK.Engine.Actor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_CalcCharge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcCharge;
     /// <summary>
     /// Function: CalcCharge
     /// </summary>
     public unsafe virtual float CalcCharge(System.Numerics.Vector3 InLoc, out float Dist)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalcCharge, "BmGame.RDisruptableObjectDoor.CalcCharge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalcCharge, "BmGame.RDisruptableObjectDoor.CalcCharge", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InLoc, paramsPtr + 0);
@@ -210,14 +210,14 @@ public partial class RDisruptableObjectDoor : BmSDK.Engine.Actor, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_StopExtraEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopExtraEffects;
     /// <summary>
     /// Function: StopExtraEffects
     /// </summary>
     public unsafe virtual void StopExtraEffects(bool IsBats = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopExtraEffects, "BmGame.RDisruptableObjectDoor.StopExtraEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopExtraEffects, "BmGame.RDisruptableObjectDoor.StopExtraEffects", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsBats, paramsPtr + 0);
@@ -225,14 +225,14 @@ public partial class RDisruptableObjectDoor : BmSDK.Engine.Actor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_StartExtraEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartExtraEffects;
     /// <summary>
     /// Function: StartExtraEffects
     /// </summary>
     public unsafe virtual void StartExtraEffects(bool IsBats = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartExtraEffects, "BmGame.RDisruptableObjectDoor.StartExtraEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartExtraEffects, "BmGame.RDisruptableObjectDoor.StartExtraEffects", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsBats, paramsPtr + 0);

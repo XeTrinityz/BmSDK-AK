@@ -78,84 +78,84 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<MJackInBoxTrapBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.MJackInBoxTrapBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.MJackInBoxTrapBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.MJackInBoxTrapBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.MJackInBoxTrapBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttractEnemies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttractEnemies;
     /// <summary>
     /// Function: AttractEnemies
     /// </summary>
     public unsafe virtual void AttractEnemies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttractEnemies, "BmGame.MJackInBoxTrapBase.AttractEnemies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttractEnemies, "BmGame.MJackInBoxTrapBase.AttractEnemies", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoExplodeEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoExplodeEvent;
     /// <summary>
     /// Function: DoExplodeEvent
     /// </summary>
     public unsafe virtual void DoExplodeEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoExplodeEvent, "BmGame.MJackInBoxTrapBase.DoExplodeEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoExplodeEvent, "BmGame.MJackInBoxTrapBase.DoExplodeEvent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoExplodeStartle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoExplodeStartle;
     /// <summary>
     /// Function: DoExplodeStartle
     /// </summary>
     public unsafe virtual void DoExplodeStartle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoExplodeStartle, "BmGame.MJackInBoxTrapBase.DoExplodeStartle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoExplodeStartle, "BmGame.MJackInBoxTrapBase.DoExplodeStartle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.MJackInBoxTrapBase.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.MJackInBoxTrapBase.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -163,84 +163,84 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_FireJackBombedInSnareEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireJackBombedInSnareEvent;
     /// <summary>
     /// Function: FireJackBombedInSnareEvent
     /// </summary>
     public unsafe virtual void FireJackBombedInSnareEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireJackBombedInSnareEvent, "BmGame.MJackInBoxTrapBase.FireJackBombedInSnareEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireJackBombedInSnareEvent, "BmGame.MJackInBoxTrapBase.FireJackBombedInSnareEvent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Explode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Explode;
     /// <summary>
     /// Function: Explode
     /// </summary>
     public unsafe virtual void Explode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Explode, "BmGame.MJackInBoxTrapBase.Explode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Explode, "BmGame.MJackInBoxTrapBase.Explode", this);
         byte* paramsPtr = stackalloc byte[452];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_JackGoesBoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JackGoesBoom;
     /// <summary>
     /// Function: JackGoesBoom
     /// </summary>
     public unsafe virtual void JackGoesBoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JackGoesBoom, "BmGame.MJackInBoxTrapBase.JackGoesBoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JackGoesBoom, "BmGame.MJackInBoxTrapBase.JackGoesBoom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_JackLightsUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JackLightsUp;
     /// <summary>
     /// Function: JackLightsUp
     /// </summary>
     public unsafe virtual void JackLightsUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JackLightsUp, "BmGame.MJackInBoxTrapBase.JackLightsUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JackLightsUp, "BmGame.MJackInBoxTrapBase.JackLightsUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwapObjects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapObjects;
     /// <summary>
     /// Function: SwapObjects
     /// </summary>
     public unsafe virtual void SwapObjects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapObjects, "BmGame.MJackInBoxTrapBase.SwapObjects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapObjects, "BmGame.MJackInBoxTrapBase.SwapObjects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Setup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Setup;
     /// <summary>
     /// Function: Setup
     /// </summary>
     public unsafe virtual void Setup(bool IsQuickFire, float aExplosionRadius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Setup, "BmGame.MJackInBoxTrapBase.Setup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Setup, "BmGame.MJackInBoxTrapBase.Setup", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsQuickFire, paramsPtr + 0);
@@ -249,28 +249,28 @@ public partial class MJackInBoxTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.MJackInBoxTrapBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.MJackInBoxTrapBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsValidTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidTarget;
     /// <summary>
     /// Function: IsValidTarget
     /// </summary>
     public unsafe virtual bool IsValidTarget(BmSDK.Engine.Actor TestActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidTarget, "BmGame.MJackInBoxTrapBase.IsValidTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidTarget, "BmGame.MJackInBoxTrapBase.IsValidTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestActor, paramsPtr + 0);

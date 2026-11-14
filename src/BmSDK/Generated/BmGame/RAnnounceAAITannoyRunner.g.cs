@@ -78,42 +78,42 @@ public partial class RAnnounceAAITannoyRunner : BmSDK.GameObject, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RAnnounceAAITannoyRunner>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FlushQueue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushQueue;
     /// <summary>
     /// Function: FlushQueue
     /// </summary>
     public unsafe virtual void FlushQueue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushQueue, "BmGame.RAnnounceAAITannoyRunner.FlushQueue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushQueue, "BmGame.RAnnounceAAITannoyRunner.FlushQueue", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryComboUpWithMines;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryComboUpWithMines;
     /// <summary>
     /// Function: TryComboUpWithMines
     /// </summary>
     public unsafe virtual bool TryComboUpWithMines()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryComboUpWithMines, "BmGame.RAnnounceAAITannoyRunner.TryComboUpWithMines");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryComboUpWithMines, "BmGame.RAnnounceAAITannoyRunner.TryComboUpWithMines", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe virtual void Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RAnnounceAAITannoyRunner.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RAnnounceAAITannoyRunner.Update", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

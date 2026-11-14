@@ -73,46 +73,47 @@ public partial class GameplayEvents : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<GameplayEvents>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetFilename;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFilename;
     /// <summary>
     /// Function: GetFilename
     /// </summary>
     public unsafe virtual BmSDK.FString GetFilename()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFilename, "Engine.GameplayEvents.GetFilename");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFilename, "Engine.GameplayEvents.GetFilename", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CloseStatsFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseStatsFile;
     /// <summary>
     /// Function: CloseStatsFile
     /// </summary>
     public unsafe virtual void CloseStatsFile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseStatsFile, "Engine.GameplayEvents.CloseStatsFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseStatsFile, "Engine.GameplayEvents.CloseStatsFile", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OpenStatsFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenStatsFile;
     /// <summary>
     /// Function: OpenStatsFile
     /// </summary>
-    public unsafe virtual bool OpenStatsFile(BmSDK.FString Filename)
+    public unsafe virtual bool OpenStatsFile(BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenStatsFile, "Engine.GameplayEvents.OpenStatsFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenStatsFile, "Engine.GameplayEvents.OpenStatsFile", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 

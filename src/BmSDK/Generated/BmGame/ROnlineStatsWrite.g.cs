@@ -78,14 +78,14 @@ public partial class ROnlineStatsWrite : BmSDK.Engine.OnlineStatsWrite, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<ROnlineStatsWrite>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CopyAndWriteAllStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyAndWriteAllStats;
     /// <summary>
     /// Function: CopyAndWriteAllStats
     /// </summary>
     public unsafe virtual void CopyAndWriteAllStats(BmSDK.BmGame.RPlayerController PC, BmSDK.Engine.OnlineSubsystem.FUniqueNetId UniqId, BmSDK.Engine.PlayerReplicationInfo PRI, BmSDK.Engine.OnlineStatsInterface StatsInterface)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyAndWriteAllStats, "BmGame.ROnlineStatsWrite.CopyAndWriteAllStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CopyAndWriteAllStats, "BmGame.ROnlineStatsWrite.CopyAndWriteAllStats", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class ROnlineStatsWrite : BmSDK.Engine.OnlineStatsWrite, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_CopyAllStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyAllStats;
     /// <summary>
     /// Function: CopyAllStats
     /// </summary>
     public unsafe virtual bool CopyAllStats(BmSDK.BmGame.RPlayerController PC, BmSDK.Engine.PlayerReplicationInfo PRI)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyAllStats, "BmGame.ROnlineStatsWrite.CopyAllStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CopyAllStats, "BmGame.ROnlineStatsWrite.CopyAllStats", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);

@@ -78,42 +78,42 @@ public partial class RBMBehaviour_BatClawedMultiWeapon : BmSDK.BmGame.RBMBehavio
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_BatClawedMultiWeapon>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateHitThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHitThugs;
     /// <summary>
     /// Function: UpdateHitThugs
     /// </summary>
     public unsafe virtual void UpdateHitThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateHitThugs, "BmGame.RBMBehaviour_BatClawedMultiWeapon.UpdateHitThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateHitThugs, "BmGame.RBMBehaviour_BatClawedMultiWeapon.UpdateHitThugs", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BumpedIntoPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BumpedIntoPlayer;
     /// <summary>
     /// Function: BumpedIntoPlayer
     /// </summary>
     public unsafe override void BumpedIntoPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BumpedIntoPlayer, "BmGame.RBMBehaviour_BatClawedMultiWeapon.BumpedIntoPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BumpedIntoPlayer, "BmGame.RBMBehaviour_BatClawedMultiWeapon.BumpedIntoPlayer", this);
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PushOverWithImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushOverWithImpulse;
     /// <summary>
     /// Function: PushOverWithImpulse
     /// </summary>
     public unsafe override void PushOverWithImpulse(System.Numerics.Vector3 PushImpulse, BmSDK.BmGame.RPawnCombat Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushOverWithImpulse, "BmGame.RBMBehaviour_BatClawedMultiWeapon.PushOverWithImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushOverWithImpulse, "BmGame.RBMBehaviour_BatClawedMultiWeapon.PushOverWithImpulse", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PushImpulse, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<KActorFromStatic>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TakeRadiusDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeRadiusDamage;
     /// <summary>
     /// Function: TakeRadiusDamage
     /// </summary>
     public unsafe override void TakeRadiusDamage(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeRadiusDamage, "Engine.KActorFromStatic.TakeRadiusDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeRadiusDamage, "Engine.KActorFromStatic.TakeRadiusDamage", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "Engine.KActorFromStatic.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "Engine.KActorFromStatic.Touch", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -119,14 +119,14 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Bump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Bump;
     /// <summary>
     /// Function: Bump
     /// </summary>
     public unsafe override void Bump(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Bump, "Engine.KActorFromStatic.Bump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Bump, "Engine.KActorFromStatic.Bump", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReceiveImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReceiveImpulse;
     /// <summary>
     /// Function: ReceiveImpulse
     /// </summary>
     public unsafe virtual void ReceiveImpulse(BmSDK.Engine.Pawn Other, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReceiveImpulse, "Engine.KActorFromStatic.ReceiveImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReceiveImpulse, "Engine.KActorFromStatic.ReceiveImpulse", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -153,14 +153,14 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyImpulse;
     /// <summary>
     /// Function: ApplyImpulse
     /// </summary>
     public unsafe override void ApplyImpulse(System.Numerics.Vector3 ImpulseDir, float ImpulseMag, System.Numerics.Vector3 HitLocation, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Class DamageType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyImpulse, "Engine.KActorFromStatic.ApplyImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyImpulse, "Engine.KActorFromStatic.ApplyImpulse", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ImpulseDir, paramsPtr + 0);
@@ -213,56 +213,56 @@ public partial class KActorFromStatic : BmSDK.Engine.KActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BecomeStatic;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BecomeStatic;
     /// <summary>
     /// Function: BecomeStatic
     /// </summary>
     public unsafe virtual void BecomeStatic()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BecomeStatic, "Engine.KActorFromStatic.BecomeStatic");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BecomeStatic, "Engine.KActorFromStatic.BecomeStatic", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnWakeRBPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnWakeRBPhysics;
     /// <summary>
     /// Function: OnWakeRBPhysics
     /// </summary>
     public unsafe override void OnWakeRBPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnWakeRBPhysics, "Engine.KActorFromStatic.OnWakeRBPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnWakeRBPhysics, "Engine.KActorFromStatic.OnWakeRBPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnSleepRBPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSleepRBPhysics;
     /// <summary>
     /// Function: OnSleepRBPhysics
     /// </summary>
     public unsafe override void OnSleepRBPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSleepRBPhysics, "Engine.KActorFromStatic.OnSleepRBPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSleepRBPhysics, "Engine.KActorFromStatic.OnSleepRBPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisablePrecomputedLighting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisablePrecomputedLighting;
     /// <summary>
     /// Function: DisablePrecomputedLighting
     /// </summary>
     public unsafe virtual void DisablePrecomputedLighting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisablePrecomputedLighting, "Engine.KActorFromStatic.DisablePrecomputedLighting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisablePrecomputedLighting, "Engine.KActorFromStatic.DisablePrecomputedLighting", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

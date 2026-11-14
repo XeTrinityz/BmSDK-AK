@@ -78,14 +78,14 @@ public partial class RBMWeaponRiflePredThug : BmSDK.BmGame.RBMWeaponRiflePredBas
         where TComponent : class, Framework.IScriptComponent<RBMWeaponRiflePredThug>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetCustomEyeLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomEyeLocation;
     /// <summary>
     /// Function: GetCustomEyeLocation
     /// </summary>
     public unsafe virtual void GetCustomEyeLocation(out System.Numerics.Vector3 EyeLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomEyeLocation, "BmGame.RBMWeaponRiflePredThug.GetCustomEyeLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomEyeLocation, "BmGame.RBMWeaponRiflePredThug.GetCustomEyeLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out EyeLocation);
@@ -95,14 +95,14 @@ public partial class RBMWeaponRiflePredThug : BmSDK.BmGame.RBMWeaponRiflePredBas
         return;
     }
 
-    private static BmSDK.Function __fn_WideBeam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WideBeam;
     /// <summary>
     /// Function: WideBeam
     /// </summary>
     public unsafe virtual void WideBeam(float BlendSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WideBeam, "BmGame.RBMWeaponRiflePredThug.WideBeam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WideBeam, "BmGame.RBMWeaponRiflePredThug.WideBeam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BlendSpeed, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RBMWeaponRiflePredThug : BmSDK.BmGame.RBMWeaponRiflePredBas
         return;
     }
 
-    private static BmSDK.Function __fn_NarrowBeam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NarrowBeam;
     /// <summary>
     /// Function: NarrowBeam
     /// </summary>
     public unsafe virtual void NarrowBeam(float BlendSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NarrowBeam, "BmGame.RBMWeaponRiflePredThug.NarrowBeam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NarrowBeam, "BmGame.RBMWeaponRiflePredThug.NarrowBeam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BlendSpeed, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class RBMWeaponRiflePredThug : BmSDK.BmGame.RBMWeaponRiflePredBas
         return;
     }
 
-    private static BmSDK.Function __fn_CreateBasicGunWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateBasicGunWeaponConfig;
     /// <summary>
     /// Function: CreateBasicGunWeaponConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig CreateBasicGunWeaponConfig(BmSDK.GameObject NewOwner, BmSDK.Engine.AnimSet AnimSet1, BmSDK.Engine.AnimSet AnimSet2, BmSDK.Engine.AnimSet AnimSet3 = default, BmSDK.Engine.AnimSet AnimSet4 = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateBasicGunWeaponConfig, "BmGame.RBMWeaponRiflePredThug.CreateBasicGunWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateBasicGunWeaponConfig, "BmGame.RBMWeaponRiflePredThug.CreateBasicGunWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[8224];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);

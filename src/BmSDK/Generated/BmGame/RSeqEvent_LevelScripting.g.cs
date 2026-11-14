@@ -78,14 +78,14 @@ public partial class RSeqEvent_LevelScripting : BmSDK.BmGame.RBMSeqEvent_Behavio
         where TComponent : class, Framework.IScriptComponent<RSeqEvent_LevelScripting>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDbgString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDbgString;
     /// <summary>
     /// Function: GetDbgString
     /// </summary>
     public unsafe virtual BmSDK.FString GetDbgString(out BmSDK.GameObject.FColor Col)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDbgString, "BmGame.RSeqEvent_LevelScripting.GetDbgString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDbgString, "BmGame.RSeqEvent_LevelScripting.GetDbgString", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Col);
@@ -95,28 +95,28 @@ public partial class RSeqEvent_LevelScripting : BmSDK.BmGame.RBMSeqEvent_Behavio
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_BehaviourIsRunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BehaviourIsRunning;
     /// <summary>
     /// Function: BehaviourIsRunning
     /// </summary>
     public unsafe virtual bool BehaviourIsRunning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BehaviourIsRunning, "BmGame.RSeqEvent_LevelScripting.BehaviourIsRunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BehaviourIsRunning, "BmGame.RSeqEvent_LevelScripting.BehaviourIsRunning", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetJoiningLocations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJoiningLocations;
     /// <summary>
     /// Function: GetJoiningLocations
     /// </summary>
     public unsafe virtual bool GetJoiningLocations(out BmSDK.TArray<System.Numerics.Vector3> outLocations, out BmSDK.TArray<BmSDK.GameObject> outObjects)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJoiningLocations, "BmGame.RSeqEvent_LevelScripting.GetJoiningLocations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJoiningLocations, "BmGame.RSeqEvent_LevelScripting.GetJoiningLocations", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -125,14 +125,14 @@ public partial class RSeqEvent_LevelScripting : BmSDK.BmGame.RBMSeqEvent_Behavio
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_RegisterEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterEvent;
     /// <summary>
     /// Function: RegisterEvent
     /// </summary>
     public unsafe override void RegisterEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterEvent, "BmGame.RSeqEvent_LevelScripting.RegisterEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterEvent, "BmGame.RSeqEvent_LevelScripting.RegisterEvent", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

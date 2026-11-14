@@ -78,28 +78,28 @@ public partial class RSeqAct_ShowGadgetReward : BmSDK.Engine.SequenceAction, BmS
         where TComponent : class, Framework.IScriptComponent<RSeqAct_ShowGadgetReward>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RewardMovieClosed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RewardMovieClosed;
     /// <summary>
     /// Function: RewardMovieClosed
     /// </summary>
     public unsafe virtual void RewardMovieClosed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RewardMovieClosed, "BmGame.RSeqAct_ShowGadgetReward.RewardMovieClosed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RewardMovieClosed, "BmGame.RSeqAct_ShowGadgetReward.RewardMovieClosed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_ShowGadgetReward.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_ShowGadgetReward.Activated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

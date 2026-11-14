@@ -73,14 +73,14 @@ public partial class AkAsset : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkAsset>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsAssetBankLoaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAssetBankLoaded;
     /// <summary>
     /// Function: IsAssetBankLoaded
     /// </summary>
     public unsafe virtual bool IsAssetBankLoaded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAssetBankLoaded, "Engine.AkAsset.IsAssetBankLoaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAssetBankLoaded, "Engine.AkAsset.IsAssetBankLoaded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class AkAsset : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RequestAssetBankUnload;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestAssetBankUnload;
     /// <summary>
     /// Function: RequestAssetBankUnload
     /// </summary>
     public unsafe virtual void RequestAssetBankUnload()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestAssetBankUnload, "Engine.AkAsset.RequestAssetBankUnload");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RequestAssetBankUnload, "Engine.AkAsset.RequestAssetBankUnload", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -115,14 +115,14 @@ public partial class AkAsset : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RequestAssetBankLoad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestAssetBankLoad;
     /// <summary>
     /// Function: RequestAssetBankLoad
     /// </summary>
     public unsafe virtual bool RequestAssetBankLoad()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestAssetBankLoad, "Engine.AkAsset.RequestAssetBankLoad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RequestAssetBankLoad, "Engine.AkAsset.RequestAssetBankLoad", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

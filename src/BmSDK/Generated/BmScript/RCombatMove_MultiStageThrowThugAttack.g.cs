@@ -78,70 +78,70 @@ public partial class RCombatMove_MultiStageThrowThugAttack : BmSDK.BmGame.RComba
         where TComponent : class, Framework.IScriptComponent<RCombatMove_MultiStageThrowThugAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ExitMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove
     /// </summary>
     public unsafe override void ExitMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmScript.RCombatMove_MultiStageThrowThugAttack.ExitMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmScript.RCombatMove_MultiStageThrowThugAttack.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPickup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPickup;
     /// <summary>
     /// Function: StartPickup
     /// </summary>
     public unsafe virtual void StartPickup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPickup, "BmScript.RCombatMove_MultiStageThrowThugAttack.StartPickup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPickup, "BmScript.RCombatMove_MultiStageThrowThugAttack.StartPickup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsBatmanInteruptable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatmanInteruptable;
     /// <summary>
     /// Function: IsBatmanInteruptable
     /// </summary>
     public unsafe virtual bool IsBatmanInteruptable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatmanInteruptable, "BmScript.RCombatMove_MultiStageThrowThugAttack.IsBatmanInteruptable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBatmanInteruptable, "BmScript.RCombatMove_MultiStageThrowThugAttack.IsBatmanInteruptable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsBatmanTooClose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatmanTooClose;
     /// <summary>
     /// Function: IsBatmanTooClose
     /// </summary>
     public unsafe virtual bool IsBatmanTooClose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatmanTooClose, "BmScript.RCombatMove_MultiStageThrowThugAttack.IsBatmanTooClose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBatmanTooClose, "BmScript.RCombatMove_MultiStageThrowThugAttack.IsBatmanTooClose", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DamageCollisionWithObject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageCollisionWithObject;
     /// <summary>
     /// Function: DamageCollisionWithObject
     /// </summary>
     public unsafe override void DamageCollisionWithObject(BmSDK.Engine.Actor Object)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCollisionWithObject, "BmScript.RCombatMove_MultiStageThrowThugAttack.DamageCollisionWithObject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageCollisionWithObject, "BmScript.RCombatMove_MultiStageThrowThugAttack.DamageCollisionWithObject", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Object, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class RCombatMove_MultiStageThrowThugAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_DamageOtherThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageOtherThug;
     /// <summary>
     /// Function: DamageOtherThug
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat.DamageResult DamageOtherThug(BmSDK.BmGame.RPawnCombat DamageReceiver)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageOtherThug, "BmScript.RCombatMove_MultiStageThrowThugAttack.DamageOtherThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageOtherThug, "BmScript.RCombatMove_MultiStageThrowThugAttack.DamageOtherThug", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageReceiver, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RCombatMove_MultiStageThrowThugAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_DamagePlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamagePlayer;
     /// <summary>
     /// Function: DamagePlayer
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat.DamageResult DamagePlayer(BmSDK.BmGame.RPawnCombat DamageReceiver)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagePlayer, "BmScript.RCombatMove_MultiStageThrowThugAttack.DamagePlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamagePlayer, "BmScript.RCombatMove_MultiStageThrowThugAttack.DamagePlayer", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageReceiver, paramsPtr + 0);
@@ -179,42 +179,42 @@ public partial class RCombatMove_MultiStageThrowThugAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsAttacking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAttacking;
     /// <summary>
     /// Function: IsAttacking
     /// </summary>
     public unsafe override bool IsAttacking()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAttacking, "BmScript.RCombatMove_MultiStageThrowThugAttack.IsAttacking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAttacking, "BmScript.RCombatMove_MultiStageThrowThugAttack.IsAttacking", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EnableRedirect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableRedirect;
     /// <summary>
     /// Function: EnableRedirect
     /// </summary>
     public unsafe virtual void EnableRedirect()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableRedirect, "BmScript.RCombatMove_MultiStageThrowThugAttack.EnableRedirect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableRedirect, "BmScript.RCombatMove_MultiStageThrowThugAttack.EnableRedirect", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetClampedThrowDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClampedThrowDirection;
     /// <summary>
     /// Function: GetClampedThrowDirection
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetClampedThrowDirection(System.Numerics.Vector3 ThrowPos, System.Numerics.Vector3 Heading, System.Numerics.Vector3 TargetPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClampedThrowDirection, "BmScript.RCombatMove_MultiStageThrowThugAttack.GetClampedThrowDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClampedThrowDirection, "BmScript.RCombatMove_MultiStageThrowThugAttack.GetClampedThrowDirection", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThrowPos, paramsPtr + 0);
@@ -224,112 +224,112 @@ public partial class RCombatMove_MultiStageThrowThugAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_SetAimingOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAimingOff;
     /// <summary>
     /// Function: SetAimingOff
     /// </summary>
     public unsafe virtual void SetAimingOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAimingOff, "BmScript.RCombatMove_MultiStageThrowThugAttack.SetAimingOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAimingOff, "BmScript.RCombatMove_MultiStageThrowThugAttack.SetAimingOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetAimingOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAimingOn;
     /// <summary>
     /// Function: SetAimingOn
     /// </summary>
     public unsafe virtual void SetAimingOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAimingOn, "BmScript.RCombatMove_MultiStageThrowThugAttack.SetAimingOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAimingOn, "BmScript.RCombatMove_MultiStageThrowThugAttack.SetAimingOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckExtendShield;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckExtendShield;
     /// <summary>
     /// Function: CheckExtendShield
     /// </summary>
     public unsafe virtual void CheckExtendShield()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckExtendShield, "BmScript.RCombatMove_MultiStageThrowThugAttack.CheckExtendShield");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckExtendShield, "BmScript.RCombatMove_MultiStageThrowThugAttack.CheckExtendShield", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckChargeUpThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckChargeUpThug;
     /// <summary>
     /// Function: CheckChargeUpThug
     /// </summary>
     public unsafe virtual void CheckChargeUpThug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckChargeUpThug, "BmScript.RCombatMove_MultiStageThrowThugAttack.CheckChargeUpThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckChargeUpThug, "BmScript.RCombatMove_MultiStageThrowThugAttack.CheckChargeUpThug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LetGoThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LetGoThug;
     /// <summary>
     /// Function: LetGoThug
     /// </summary>
     public unsafe virtual void LetGoThug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LetGoThug, "BmScript.RCombatMove_MultiStageThrowThugAttack.LetGoThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LetGoThug, "BmScript.RCombatMove_MultiStageThrowThugAttack.LetGoThug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnAbortRelease;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAbortRelease;
     /// <summary>
     /// Function: OnAbortRelease
     /// </summary>
     public unsafe virtual void OnAbortRelease()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAbortRelease, "BmScript.RCombatMove_MultiStageThrowThugAttack.OnAbortRelease");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAbortRelease, "BmScript.RCombatMove_MultiStageThrowThugAttack.OnAbortRelease", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnThrowRelease;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnThrowRelease;
     /// <summary>
     /// Function: OnThrowRelease
     /// </summary>
     public unsafe virtual void OnThrowRelease()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnThrowRelease, "BmScript.RCombatMove_MultiStageThrowThugAttack.OnThrowRelease");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnThrowRelease, "BmScript.RCombatMove_MultiStageThrowThugAttack.OnThrowRelease", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RCombatMove_MultiStageThrowThugAttack.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmScript.RCombatMove_MultiStageThrowThugAttack.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

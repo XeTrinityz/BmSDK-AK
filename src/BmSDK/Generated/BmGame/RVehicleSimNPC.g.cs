@@ -78,14 +78,14 @@ public partial class RVehicleSimNPC : BmSDK.Engine.SVehicleSimBase, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RVehicleSimNPC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetDisabledByDroneDisruptor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisabledByDroneDisruptor;
     /// <summary>
     /// Function: SetDisabledByDroneDisruptor
     /// </summary>
     public unsafe virtual void SetDisabledByDroneDisruptor(bool Disabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisabledByDroneDisruptor, "BmGame.RVehicleSimNPC.SetDisabledByDroneDisruptor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisabledByDroneDisruptor, "BmGame.RVehicleSimNPC.SetDisabledByDroneDisruptor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Disabled, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RVehicleSimNPC : BmSDK.Engine.SVehicleSimBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisabledByEMP;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisabledByEMP;
     /// <summary>
     /// Function: SetDisabledByEMP
     /// </summary>
     public unsafe virtual void SetDisabledByEMP(bool Disabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisabledByEMP, "BmGame.RVehicleSimNPC.SetDisabledByEMP");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisabledByEMP, "BmGame.RVehicleSimNPC.SetDisabledByEMP", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Disabled, paramsPtr + 0);

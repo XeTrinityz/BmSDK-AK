@@ -73,14 +73,14 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_FormationLeader>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DoPassingGesture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPassingGesture;
     /// <summary>
     /// Function: DoPassingGesture
     /// </summary>
     public unsafe virtual void DoPassingGesture(BmSDK.BmGame.RAEC_Search_Sub_FormationLeader OtherGroupLeadAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPassingGesture, "BmGame.RAEC_Search_Sub_FormationLeader.DoPassingGesture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPassingGesture, "BmGame.RAEC_Search_Sub_FormationLeader.DoPassingGesture", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OtherGroupLeadAEC, paramsPtr + 0);
@@ -88,42 +88,42 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
         return;
     }
 
-    private static BmSDK.Function __fn_CanDoPassingGesture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoPassingGesture;
     /// <summary>
     /// Function: CanDoPassingGesture
     /// </summary>
     public unsafe virtual bool CanDoPassingGesture()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoPassingGesture, "BmGame.RAEC_Search_Sub_FormationLeader.CanDoPassingGesture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoPassingGesture, "BmGame.RAEC_Search_Sub_FormationLeader.CanDoPassingGesture", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreventNextLegStarting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventNextLegStarting;
     /// <summary>
     /// Function: PreventNextLegStarting
     /// </summary>
     public unsafe virtual bool PreventNextLegStarting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreventNextLegStarting, "BmGame.RAEC_Search_Sub_FormationLeader.PreventNextLegStarting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreventNextLegStarting, "BmGame.RAEC_Search_Sub_FormationLeader.PreventNextLegStarting", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetHasBackwardsFollower;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHasBackwardsFollower;
     /// <summary>
     /// Function: SetHasBackwardsFollower
     /// </summary>
     public unsafe virtual void SetHasBackwardsFollower(bool bNewVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHasBackwardsFollower, "BmGame.RAEC_Search_Sub_FormationLeader.SetHasBackwardsFollower");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHasBackwardsFollower, "BmGame.RAEC_Search_Sub_FormationLeader.SetHasBackwardsFollower", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewVal, paramsPtr + 0);
@@ -131,14 +131,14 @@ public partial class RAEC_Search_Sub_FormationLeader : BmSDK.BmGame.RAlertEventC
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrentPathHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentPathHandle;
     /// <summary>
     /// Function: GetCurrentPathHandle
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_FormationLeader.GetCurrentPathHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_FormationLeader.GetCurrentPathHandle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

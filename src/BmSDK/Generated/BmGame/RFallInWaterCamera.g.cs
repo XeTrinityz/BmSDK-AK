@@ -78,42 +78,42 @@ public partial class RFallInWaterCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RFallInWaterCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AudioStopWater;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStopWater;
     /// <summary>
     /// Function: AudioStopWater
     /// </summary>
     public unsafe virtual void AudioStopWater()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioStopWater, "BmGame.RFallInWaterCamera.AudioStopWater");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioStopWater, "BmGame.RFallInWaterCamera.AudioStopWater", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AudioStartWater;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStartWater;
     /// <summary>
     /// Function: AudioStartWater
     /// </summary>
     public unsafe virtual void AudioStartWater()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioStartWater, "BmGame.RFallInWaterCamera.AudioStartWater");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioStartWater, "BmGame.RFallInWaterCamera.AudioStartWater", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTrackingPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrackingPosition;
     /// <summary>
     /// Function: UpdateTrackingPosition
     /// </summary>
     public unsafe virtual void UpdateTrackingPosition(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTrackingPosition, "BmGame.RFallInWaterCamera.UpdateTrackingPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTrackingPosition, "BmGame.RFallInWaterCamera.UpdateTrackingPosition", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RFallInWaterCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RFallInWaterCamera.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RFallInWaterCamera.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -143,14 +143,14 @@ public partial class RFallInWaterCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_FinishWaterCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishWaterCamera;
     /// <summary>
     /// Function: FinishWaterCamera
     /// </summary>
     public unsafe virtual void FinishWaterCamera(bool InstantFinish = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishWaterCamera, "BmGame.RFallInWaterCamera.FinishWaterCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishWaterCamera, "BmGame.RFallInWaterCamera.FinishWaterCamera", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstantFinish, paramsPtr + 0);
@@ -158,14 +158,14 @@ public partial class RFallInWaterCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetupWaterCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupWaterCamera;
     /// <summary>
     /// Function: SetupWaterCamera
     /// </summary>
     public unsafe virtual void SetupWaterCamera(BmSDK.BmGame.RPlayerController PC, bool bTracking = default, bool bDontPlayWaterSound = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupWaterCamera, "BmGame.RFallInWaterCamera.SetupWaterCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupWaterCamera, "BmGame.RFallInWaterCamera.SetupWaterCamera", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);

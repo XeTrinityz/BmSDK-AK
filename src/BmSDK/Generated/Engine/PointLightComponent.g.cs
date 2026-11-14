@@ -78,42 +78,42 @@ public partial class PointLightComponent : BmSDK.Engine.LightComponent, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<PointLightComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnUpdatePropertyBrightness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdatePropertyBrightness;
     /// <summary>
     /// Function: OnUpdatePropertyBrightness
     /// </summary>
     public unsafe override void OnUpdatePropertyBrightness()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyBrightness, "Engine.PointLightComponent.OnUpdatePropertyBrightness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdatePropertyBrightness, "Engine.PointLightComponent.OnUpdatePropertyBrightness", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnUpdatePropertyLightColor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdatePropertyLightColor;
     /// <summary>
     /// Function: OnUpdatePropertyLightColor
     /// </summary>
     public unsafe override void OnUpdatePropertyLightColor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyLightColor, "Engine.PointLightComponent.OnUpdatePropertyLightColor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdatePropertyLightColor, "Engine.PointLightComponent.OnUpdatePropertyLightColor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTranslation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTranslation;
     /// <summary>
     /// Function: SetTranslation
     /// </summary>
     public unsafe virtual void SetTranslation(System.Numerics.Vector3 NewTranslation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTranslation, "Engine.PointLightComponent.SetTranslation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTranslation, "Engine.PointLightComponent.SetTranslation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTranslation, paramsPtr + 0);

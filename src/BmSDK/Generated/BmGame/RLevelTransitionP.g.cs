@@ -73,28 +73,28 @@ public partial class RLevelTransitionP : BmSDK.BmGame.RLevelTransition, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RLevelTransitionP>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_MovePlayerHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovePlayerHere;
     /// <summary>
     /// Function: MovePlayerHere
     /// </summary>
     public unsafe override void MovePlayerHere()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePlayerHere, "BmGame.RLevelTransitionP.MovePlayerHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovePlayerHere, "BmGame.RLevelTransitionP.MovePlayerHere", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnterTransition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnterTransition;
     /// <summary>
     /// Function: EnterTransition
     /// </summary>
     public unsafe override void EnterTransition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterTransition, "BmGame.RLevelTransitionP.EnterTransition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnterTransition, "BmGame.RLevelTransitionP.EnterTransition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

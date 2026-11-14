@@ -78,14 +78,14 @@ public partial class RStealthTakedownStage_ChainTakedown_FearFromAboveOnSpotEndD
         where TComponent : class, Framework.IScriptComponent<RStealthTakedownStage_ChainTakedown_FearFromAboveOnSpotEndDLC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Cancel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cancel;
     /// <summary>
     /// Function: Cancel
     /// </summary>
     public unsafe override void Cancel(bool SetState = default, bool bAbandonVictims = default, bool bResetPlayerPose = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cancel, "BmScript.RStealthTakedownStage_ChainTakedown_FearFromAboveOnSpotEndDLC.Cancel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cancel, "BmScript.RStealthTakedownStage_ChainTakedown_FearFromAboveOnSpotEndDLC.Cancel", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SetState, paramsPtr + 0);

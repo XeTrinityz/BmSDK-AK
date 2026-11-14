@@ -78,14 +78,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Emitter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_InterpolationChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpolationChanged;
     /// <summary>
     /// Function: InterpolationChanged
     /// </summary>
     public unsafe override void InterpolationChanged(BmSDK.Engine.SeqAct_Interp InterpAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterpolationChanged, "Engine.Emitter.InterpolationChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterpolationChanged, "Engine.Emitter.InterpolationChanged", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpAction, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HideSelf;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideSelf;
     /// <summary>
     /// Function: HideSelf
     /// </summary>
     public unsafe virtual void HideSelf()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideSelf, "Engine.Emitter.HideSelf");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideSelf, "Engine.Emitter.HideSelf", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyCheckpointRecord;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCheckpointRecord;
     /// <summary>
     /// Function: ApplyCheckpointRecord
     /// </summary>
     public unsafe virtual void ApplyCheckpointRecord(out BmSDK.Engine.Emitter.FCheckpointRecord Record)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyCheckpointRecord, "Engine.Emitter.ApplyCheckpointRecord");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyCheckpointRecord, "Engine.Emitter.ApplyCheckpointRecord", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Record);
@@ -124,14 +124,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CreateCheckpointRecord;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateCheckpointRecord;
     /// <summary>
     /// Function: CreateCheckpointRecord
     /// </summary>
     public unsafe virtual void CreateCheckpointRecord(out BmSDK.Engine.Emitter.FCheckpointRecord Record)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateCheckpointRecord, "Engine.Emitter.CreateCheckpointRecord");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateCheckpointRecord, "Engine.Emitter.CreateCheckpointRecord", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Record);
@@ -141,28 +141,28 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldSaveForCheckpoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldSaveForCheckpoint;
     /// <summary>
     /// Function: ShouldSaveForCheckpoint
     /// </summary>
     public unsafe virtual bool ShouldSaveForCheckpoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldSaveForCheckpoint, "Engine.Emitter.ShouldSaveForCheckpoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldSaveForCheckpoint, "Engine.Emitter.ShouldSaveForCheckpoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnSetParticleSysParam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetParticleSysParam;
     /// <summary>
     /// Function: OnSetParticleSysParam
     /// </summary>
     public unsafe virtual void OnSetParticleSysParam(BmSDK.Engine.SeqAct_SetParticleSysParam Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetParticleSysParam, "Engine.Emitter.OnSetParticleSysParam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetParticleSysParam, "Engine.Emitter.OnSetParticleSysParam", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetActorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActorParameter;
     /// <summary>
     /// Function: SetActorParameter
     /// </summary>
     public unsafe virtual void SetActorParameter(BmSDK.FName ParameterName, BmSDK.Engine.Actor Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActorParameter, "Engine.Emitter.SetActorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActorParameter, "Engine.Emitter.SetActorParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetExtColorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetExtColorParameter;
     /// <summary>
     /// Function: SetExtColorParameter
     /// </summary>
     public unsafe virtual void SetExtColorParameter(BmSDK.FName ParameterName, byte Red, byte Green, byte Blue, byte Alpha)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetExtColorParameter, "Engine.Emitter.SetExtColorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetExtColorParameter, "Engine.Emitter.SetExtColorParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -205,14 +205,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetColorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetColorParameter;
     /// <summary>
     /// Function: SetColorParameter
     /// </summary>
     public unsafe virtual void SetColorParameter(BmSDK.FName ParameterName, BmSDK.GameObject.FColor Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetColorParameter, "Engine.Emitter.SetColorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetColorParameter, "Engine.Emitter.SetColorParameter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -221,14 +221,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetVectorParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorParameter;
     /// <summary>
     /// Function: SetVectorParameter
     /// </summary>
     public unsafe virtual void SetVectorParameter(BmSDK.FName ParameterName, System.Numerics.Vector3 Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorParameter, "Engine.Emitter.SetVectorParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVectorParameter, "Engine.Emitter.SetVectorParameter", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -237,14 +237,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetFloatParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatParameter;
     /// <summary>
     /// Function: SetFloatParameter
     /// </summary>
     public unsafe virtual void SetFloatParameter(BmSDK.FName ParameterName, float Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFloatParameter, "Engine.Emitter.SetFloatParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFloatParameter, "Engine.Emitter.SetFloatParameter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -253,28 +253,28 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDown;
     /// <summary>
     /// Function: ShutDown
     /// </summary>
     public unsafe override void ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDown, "Engine.Emitter.ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShutDown, "Engine.Emitter.ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndMatineeControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndMatineeControl;
     /// <summary>
     /// Function: EndMatineeControl
     /// </summary>
     public unsafe override void EndMatineeControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndMatineeControl, "Engine.Emitter.EndMatineeControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndMatineeControl, "Engine.Emitter.EndMatineeControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -283,14 +283,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginMatineeControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginMatineeControl;
     /// <summary>
     /// Function: BeginMatineeControl
     /// </summary>
     public unsafe override void BeginMatineeControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginMatineeControl, "Engine.Emitter.BeginMatineeControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginMatineeControl, "Engine.Emitter.BeginMatineeControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -299,14 +299,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnParticleEventGenerator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnParticleEventGenerator;
     /// <summary>
     /// Function: OnParticleEventGenerator
     /// </summary>
     public unsafe virtual void OnParticleEventGenerator(BmSDK.Engine.SeqAct_ParticleEventGenerator Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnParticleEventGenerator, "Engine.Emitter.OnParticleEventGenerator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnParticleEventGenerator, "Engine.Emitter.OnParticleEventGenerator", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -314,14 +314,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "Engine.Emitter.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "Engine.Emitter.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -329,14 +329,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnParticleSystemFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnParticleSystemFinished;
     /// <summary>
     /// Function: OnParticleSystemFinished
     /// </summary>
     public unsafe virtual void OnParticleSystemFinished(BmSDK.Engine.ParticleSystemComponent FinishedComponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnParticleSystemFinished, "Engine.Emitter.OnParticleSystemFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnParticleSystemFinished, "Engine.Emitter.OnParticleSystemFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedComponent, paramsPtr + 0);
@@ -344,14 +344,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReplicatedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplicatedEvent;
     /// <summary>
     /// Function: ReplicatedEvent
     /// </summary>
     public unsafe override void ReplicatedEvent(BmSDK.FName VarName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplicatedEvent, "Engine.Emitter.ReplicatedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReplicatedEvent, "Engine.Emitter.ReplicatedEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VarName, paramsPtr + 0);
@@ -359,28 +359,28 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.Emitter.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.Emitter.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTemplate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTemplate;
     /// <summary>
     /// Function: SetTemplate
     /// </summary>
     public unsafe virtual void SetTemplate(BmSDK.Engine.ParticleSystem NewTemplate, bool bDestroyOnFinish)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTemplate, "Engine.Emitter.SetTemplate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTemplate, "Engine.Emitter.SetTemplate", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTemplate, paramsPtr + 0);
@@ -396,14 +396,14 @@ public partial class Emitter : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAkAudible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
     /// Function: GetAkAudible
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAkAudible, "Engine.Emitter.GetAkAudible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAkAudible, "Engine.Emitter.GetAkAudible", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allowCreate, paramsPtr + 0);

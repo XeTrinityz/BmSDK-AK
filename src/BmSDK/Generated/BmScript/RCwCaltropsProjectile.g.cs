@@ -78,14 +78,14 @@ public partial class RCwCaltropsProjectile : BmSDK.BmGame.RGadgetProjectileBase,
         where TComponent : class, Framework.IScriptComponent<RCwCaltropsProjectile>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmScript.RCwCaltropsProjectile.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmScript.RCwCaltropsProjectile.Touch", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class RCwCaltropsProjectile : BmSDK.BmGame.RGadgetProjectileBase,
         return;
     }
 
-    private static BmSDK.Function __fn_HitWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitWall;
     /// <summary>
     /// Function: HitWall
     /// </summary>
     public unsafe override void HitWall(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor Wall, BmSDK.Engine.PrimitiveComponent WallComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitWall, "BmScript.RCwCaltropsProjectile.HitWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitWall, "BmScript.RCwCaltropsProjectile.HitWall", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 0);
@@ -113,14 +113,14 @@ public partial class RCwCaltropsProjectile : BmSDK.BmGame.RGadgetProjectileBase,
         return;
     }
 
-    private static BmSDK.Function __fn_Deploy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deploy;
     /// <summary>
     /// Function: Deploy
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RCwCaltropsTrap Deploy(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deploy, "BmScript.RCwCaltropsProjectile.Deploy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deploy, "BmScript.RCwCaltropsProjectile.Deploy", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);

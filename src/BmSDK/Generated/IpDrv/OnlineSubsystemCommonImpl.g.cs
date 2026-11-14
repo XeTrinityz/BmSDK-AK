@@ -73,14 +73,14 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         where TComponent : class, Framework.IScriptComponent<OnlineSubsystemCommonImpl>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "IpDrv.OnlineSubsystemCommonImpl.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "IpDrv.OnlineSubsystemCommonImpl.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -95,17 +95,17 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         return;
     }
 
-    private static BmSDK.Function __fn_CancelCustomContentRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCustomContentRequest;
     /// <summary>
     /// Function: CancelCustomContentRequest
     /// </summary>
-    public unsafe virtual void CancelCustomContentRequest(BmSDK.FString sCustomId)
+    public unsafe virtual void CancelCustomContentRequest(BmSDK.FStringArg sCustomId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCustomContentRequest, "IpDrv.OnlineSubsystemCommonImpl.CancelCustomContentRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelCustomContentRequest, "IpDrv.OnlineSubsystemCommonImpl.CancelCustomContentRequest", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 0);
+        sCustomId.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -114,20 +114,21 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCustomContentAsString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContentAsString;
     /// <summary>
     /// Function: GetCustomContentAsString
     /// </summary>
-    public unsafe virtual void GetCustomContentAsString(BmSDK.FString sCustomId, out BmSDK.FString ContentData)
+    public unsafe virtual void GetCustomContentAsString(BmSDK.FStringArg sCustomId, out BmSDK.FString ContentData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContentAsString, "IpDrv.OnlineSubsystemCommonImpl.GetCustomContentAsString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomContentAsString, "IpDrv.OnlineSubsystemCommonImpl.GetCustomContentAsString", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 0);
+        sCustomId.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -136,21 +137,22 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         ContentData = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCustomContent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContent;
     /// <summary>
     /// Function: GetCustomContent
     /// </summary>
-    public unsafe virtual void GetCustomContent(BmSDK.FString sCustomId, out BmSDK.TArray<byte> ContentData)
+    public unsafe virtual void GetCustomContent(BmSDK.FStringArg sCustomId, out BmSDK.TArray<byte> ContentData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContent, "IpDrv.OnlineSubsystemCommonImpl.GetCustomContent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomContent, "IpDrv.OnlineSubsystemCommonImpl.GetCustomContent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 0);
+        sCustomId.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -159,25 +161,26 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         ContentData = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<byte>>(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_StartCustomContentRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartCustomContentRequest;
     /// <summary>
     /// Function: StartCustomContentRequest
     /// </summary>
-    public unsafe virtual void StartCustomContentRequest(BmSDK.FString sContentName, BmSDK.FString sCustomId, System.IntPtr dReadCustomContentComplete, BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM = default, BmSDK.FString Category = default)
+    public unsafe virtual void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, System.IntPtr dReadCustomContentComplete, BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM = default, BmSDK.FStringArg Category = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomContentRequest, "IpDrv.OnlineSubsystemCommonImpl.StartCustomContentRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCustomContentRequest, "IpDrv.OnlineSubsystemCommonImpl.StartCustomContentRequest", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sContentName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 16);
+        sContentName.WriteTo(paramsPtr + 0);
+        sCustomId.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dReadCustomContentComplete, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(eCCAM, paramsPtr + 48);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Category, paramsPtr + 52);
+        Category.WriteTo(paramsPtr + 52);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -186,17 +189,20 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 52);
         return;
     }
 
-    private static BmSDK.Function __fn_IsCustomContentAccessModeAvailable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCustomContentAccessModeAvailable;
     /// <summary>
     /// Function: IsCustomContentAccessModeAvailable
     /// </summary>
     public unsafe virtual bool IsCustomContentAccessModeAvailable(BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCustomContentAccessModeAvailable, "IpDrv.OnlineSubsystemCommonImpl.IsCustomContentAccessModeAvailable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCustomContentAccessModeAvailable, "IpDrv.OnlineSubsystemCommonImpl.IsCustomContentAccessModeAvailable", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(eCCAM, paramsPtr + 0);
@@ -211,14 +217,14 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsCustomContentTypeAvailable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCustomContentTypeAvailable;
     /// <summary>
     /// Function: IsCustomContentTypeAvailable
     /// </summary>
     public unsafe virtual bool IsCustomContentTypeAvailable(BmSDK.Engine.OnlineSubsystem.ECustomContentType CustomContentType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCustomContentTypeAvailable, "IpDrv.OnlineSubsystemCommonImpl.IsCustomContentTypeAvailable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCustomContentTypeAvailable, "IpDrv.OnlineSubsystemCommonImpl.IsCustomContentTypeAvailable", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomContentType, paramsPtr + 0);
@@ -233,14 +239,14 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsCustomContentAvailable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCustomContentAvailable;
     /// <summary>
     /// Function: IsCustomContentAvailable
     /// </summary>
     public unsafe virtual bool IsCustomContentAvailable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCustomContentAvailable, "IpDrv.OnlineSubsystemCommonImpl.IsCustomContentAvailable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCustomContentAvailable, "IpDrv.OnlineSubsystemCommonImpl.IsCustomContentAvailable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -254,14 +260,14 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRegisteredPlayers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRegisteredPlayers;
     /// <summary>
     /// Function: GetRegisteredPlayers
     /// </summary>
     public unsafe virtual void GetRegisteredPlayers(BmSDK.FName SessionName, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> OutRegisteredPlayers)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRegisteredPlayers, "IpDrv.OnlineSubsystemCommonImpl.GetRegisteredPlayers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRegisteredPlayers, "IpDrv.OnlineSubsystemCommonImpl.GetRegisteredPlayers", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -270,14 +276,14 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         return;
     }
 
-    private static BmSDK.Function __fn_IsPlayerInSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerInSession;
     /// <summary>
     /// Function: IsPlayerInSession
     /// </summary>
     public unsafe virtual bool IsPlayerInSession(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayerInSession, "IpDrv.OnlineSubsystemCommonImpl.IsPlayerInSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayerInSession, "IpDrv.OnlineSubsystemCommonImpl.IsPlayerInSession", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -293,14 +299,14 @@ public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetPlayerNicknameFromIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerNicknameFromIndex;
     /// <summary>
     /// Function: GetPlayerNicknameFromIndex
     /// </summary>
     public unsafe virtual BmSDK.FString GetPlayerNicknameFromIndex(int UserIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerNicknameFromIndex, "IpDrv.OnlineSubsystemCommonImpl.GetPlayerNicknameFromIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerNicknameFromIndex, "IpDrv.OnlineSubsystemCommonImpl.GetPlayerNicknameFromIndex", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UserIndex, paramsPtr + 0);

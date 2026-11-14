@@ -91,43 +91,44 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DbgMsg;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DbgMsg;
     /// <summary>
     /// Function: DbgMsg
     /// </summary>
-    public unsafe virtual void DbgMsg(BmSDK.FString msg)
+    public unsafe virtual void DbgMsg(BmSDK.FStringArg msg)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DbgMsg, "BmScript.RSeqAct_PredKismetDialogueCoordinator.DbgMsg");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DbgMsg, "BmScript.RSeqAct_PredKismetDialogueCoordinator.DbgMsg", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(msg, paramsPtr + 0);
+        msg.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandleInputLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInputLinks;
     /// <summary>
     /// Function: HandleInputLinks
     /// </summary>
     public unsafe virtual void HandleInputLinks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInputLinks, "BmScript.RSeqAct_PredKismetDialogueCoordinator.HandleInputLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleInputLinks, "BmScript.RSeqAct_PredKismetDialogueCoordinator.HandleInputLinks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_PredKismetDialogueCoordinator.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_PredKismetDialogueCoordinator.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -135,28 +136,28 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ResetTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetTimer;
     /// <summary>
     /// Function: ResetTimer
     /// </summary>
     public unsafe virtual void ResetTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetTimer, "BmScript.RSeqAct_PredKismetDialogueCoordinator.ResetTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetTimer, "BmScript.RSeqAct_PredKismetDialogueCoordinator.ResetTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryTriggerDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerDialogue;
     /// <summary>
     /// Function: TryTriggerDialogue
     /// </summary>
     public unsafe virtual void TryTriggerDialogue(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerDialogue, "BmScript.RSeqAct_PredKismetDialogueCoordinator.TryTriggerDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerDialogue, "BmScript.RSeqAct_PredKismetDialogueCoordinator.TryTriggerDialogue", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -164,14 +165,14 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
         return;
     }
 
-    private static BmSDK.Function __fn_CanTriggerDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTriggerDialogue;
     /// <summary>
     /// Function: CanTriggerDialogue
     /// </summary>
     public unsafe virtual bool CanTriggerDialogue(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTriggerDialogue, "BmScript.RSeqAct_PredKismetDialogueCoordinator.CanTriggerDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTriggerDialogue, "BmScript.RSeqAct_PredKismetDialogueCoordinator.CanTriggerDialogue", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -179,14 +180,14 @@ public partial class RSeqAct_PredKismetDialogueCoordinator : BmSDK.Engine.SeqAct
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CheekyOverride;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheekyOverride;
     /// <summary>
     /// Function: CheekyOverride
     /// </summary>
     public unsafe virtual void CheekyOverride()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheekyOverride, "BmScript.RSeqAct_PredKismetDialogueCoordinator.CheekyOverride");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheekyOverride, "BmScript.RSeqAct_PredKismetDialogueCoordinator.CheekyOverride", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,28 +78,28 @@ public partial class RBarkConvoAction_FlaggedDialogue : BmSDK.BmGame.RBarkConvoA
         where TComponent : class, Framework.IScriptComponent<RBarkConvoAction_FlaggedDialogue>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetCurrentDialogueType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentDialogueType;
     /// <summary>
     /// Function: GetCurrentDialogueType
     /// </summary>
     public unsafe override BmSDK.Engine.AkDialogueType GetCurrentDialogueType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentDialogueType, "BmGame.RBarkConvoAction_FlaggedDialogue.GetCurrentDialogueType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentDialogueType, "BmGame.RBarkConvoAction_FlaggedDialogue.GetCurrentDialogueType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBestDataAndIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestDataAndIndex;
     /// <summary>
     /// Function: GetBestDataAndIndex
     /// </summary>
     public unsafe virtual void GetBestDataAndIndex(BmSDK.BmGame.RBarkFlagBase ContextFlags, out BmSDK.BmGame.RBarkConvoData_FlagNode OutData, out int BestIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestDataAndIndex, "BmGame.RBarkConvoAction_FlaggedDialogue.GetBestDataAndIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBestDataAndIndex, "BmGame.RBarkConvoAction_FlaggedDialogue.GetBestDataAndIndex", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ContextFlags, paramsPtr + 0);
@@ -113,14 +113,14 @@ public partial class RBarkConvoAction_FlaggedDialogue : BmSDK.BmGame.RBarkConvoA
         return;
     }
 
-    private static BmSDK.Function __fn_AddIndividualFlagsFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddIndividualFlagsFor;
     /// <summary>
     /// Function: AddIndividualFlagsFor
     /// </summary>
     public unsafe virtual void AddIndividualFlagsFor(BmSDK.Engine.Actor Speaker, out BmSDK.BmGame.RBarkFlagBase context)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddIndividualFlagsFor, "BmGame.RBarkConvoAction_FlaggedDialogue.AddIndividualFlagsFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddIndividualFlagsFor, "BmGame.RBarkConvoAction_FlaggedDialogue.AddIndividualFlagsFor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speaker, paramsPtr + 0);
@@ -131,14 +131,14 @@ public partial class RBarkConvoAction_FlaggedDialogue : BmSDK.BmGame.RBarkConvoA
         return;
     }
 
-    private static BmSDK.Function __fn_GBFSSearchHandlePawnRefList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GBFSSearchHandlePawnRefList;
     /// <summary>
     /// Function: GBFSSearchHandlePawnRefList
     /// </summary>
     public unsafe override BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> GBFSSearchHandlePawnRefList(BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> InList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GBFSSearchHandlePawnRefList, "BmGame.RBarkConvoAction_FlaggedDialogue.GBFSSearchHandlePawnRefList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GBFSSearchHandlePawnRefList, "BmGame.RBarkConvoAction_FlaggedDialogue.GBFSSearchHandlePawnRefList", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InList, paramsPtr + 0);
@@ -146,14 +146,14 @@ public partial class RBarkConvoAction_FlaggedDialogue : BmSDK.BmGame.RBarkConvoA
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef>>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetPawnRefList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnRefList;
     /// <summary>
     /// Function: GetPawnRefList
     /// </summary>
     public unsafe override void GetPawnRefList(int SearchID, out BmSDK.TArray<BmSDK.BmGame.RBarkConvo.FVoicePawnRef> PawnRefList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPawnRefList, "BmGame.RBarkConvoAction_FlaggedDialogue.GetPawnRefList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPawnRefList, "BmGame.RBarkConvoAction_FlaggedDialogue.GetPawnRefList", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SearchID, paramsPtr + 0);
@@ -162,42 +162,42 @@ public partial class RBarkConvoAction_FlaggedDialogue : BmSDK.BmGame.RBarkConvoA
         return;
     }
 
-    private static BmSDK.Function __fn_GetLocalPlayedScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalPlayedScore;
     /// <summary>
     /// Function: GetLocalPlayedScore
     /// </summary>
     public unsafe override float GetLocalPlayedScore()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocalPlayedScore, "BmGame.RBarkConvoAction_FlaggedDialogue.GetLocalPlayedScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocalPlayedScore, "BmGame.RBarkConvoAction_FlaggedDialogue.GetLocalPlayedScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFinished;
     /// <summary>
     /// Function: IsFinished
     /// </summary>
     public unsafe override bool IsFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFinished, "BmGame.RBarkConvoAction_FlaggedDialogue.IsFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFinished, "BmGame.RBarkConvoAction_FlaggedDialogue.IsFinished", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe override void Stop(bool bHardStop, bool bOrphan = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "BmGame.RBarkConvoAction_FlaggedDialogue.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "BmGame.RBarkConvoAction_FlaggedDialogue.Stop", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHardStop, paramsPtr + 0);
@@ -206,14 +206,14 @@ public partial class RBarkConvoAction_FlaggedDialogue : BmSDK.BmGame.RBarkConvoA
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBarkConvoAction_FlaggedDialogue.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBarkConvoAction_FlaggedDialogue.OnActivate", this);
         byte* paramsPtr = stackalloc byte[196];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

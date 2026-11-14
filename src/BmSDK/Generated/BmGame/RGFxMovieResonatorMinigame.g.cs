@@ -78,14 +78,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RGFxMovieResonatorMinigame>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RadioScannerAudioCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RadioScannerAudioCallback;
     /// <summary>
     /// Function: RadioScannerAudioCallback
     /// </summary>
     public unsafe virtual void RadioScannerAudioCallback(int CallbackFlags, BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RadioScannerAudioCallback, "BmGame.RGFxMovieResonatorMinigame.RadioScannerAudioCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RadioScannerAudioCallback, "BmGame.RGFxMovieResonatorMinigame.RadioScannerAudioCallback", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CallbackFlags, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_RadioScannerAudioMarker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RadioScannerAudioMarker;
     /// <summary>
     /// Function: RadioScannerAudioMarker
     /// </summary>
     public unsafe virtual void RadioScannerAudioMarker(BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RadioScannerAudioMarker, "BmGame.RGFxMovieResonatorMinigame.RadioScannerAudioMarker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RadioScannerAudioMarker, "BmGame.RGFxMovieResonatorMinigame.RadioScannerAudioMarker", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SoundHandle, paramsPtr + 0);
@@ -119,56 +119,56 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_CloseResonator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_CloseResonator;
     /// <summary>
     /// Function: FE_CloseResonator
     /// </summary>
     public unsafe virtual void FE_CloseResonator()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_CloseResonator, "BmGame.RGFxMovieResonatorMinigame.FE_CloseResonator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_CloseResonator, "BmGame.RGFxMovieResonatorMinigame.FE_CloseResonator", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_StartResonator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_StartResonator;
     /// <summary>
     /// Function: FE_StartResonator
     /// </summary>
     public unsafe virtual void FE_StartResonator()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_StartResonator, "BmGame.RGFxMovieResonatorMinigame.FE_StartResonator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_StartResonator, "BmGame.RGFxMovieResonatorMinigame.FE_StartResonator", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_NotifyPasswordFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_NotifyPasswordFound;
     /// <summary>
     /// Function: FE_NotifyPasswordFound
     /// </summary>
     public unsafe virtual void FE_NotifyPasswordFound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_NotifyPasswordFound, "BmGame.RGFxMovieResonatorMinigame.FE_NotifyPasswordFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_NotifyPasswordFound, "BmGame.RGFxMovieResonatorMinigame.FE_NotifyPasswordFound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_PlayResonatorAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_PlayResonatorAudioEvent;
     /// <summary>
     /// Function: FE_PlayResonatorAudioEvent
     /// </summary>
     public unsafe virtual void FE_PlayResonatorAudioEvent(int event_index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_PlayResonatorAudioEvent, "BmGame.RGFxMovieResonatorMinigame.FE_PlayResonatorAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_PlayResonatorAudioEvent, "BmGame.RGFxMovieResonatorMinigame.FE_PlayResonatorAudioEvent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(event_index, paramsPtr + 0);
@@ -176,14 +176,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_SetRumbleFromFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetRumbleFromFlash;
     /// <summary>
     /// Function: FE_SetRumbleFromFlash
     /// </summary>
     public unsafe virtual void FE_SetRumbleFromFlash(float left_rumble, float right_rumble)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_SetRumbleFromFlash, "BmGame.RGFxMovieResonatorMinigame.FE_SetRumbleFromFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_SetRumbleFromFlash, "BmGame.RGFxMovieResonatorMinigame.FE_SetRumbleFromFlash", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(left_rumble, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_RedoPasswordPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_RedoPasswordPrompts;
     /// <summary>
     /// Function: FE_RedoPasswordPrompts
     /// </summary>
     public unsafe virtual void FE_RedoPasswordPrompts(bool _CanCyclePasswords)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_RedoPasswordPrompts, "BmGame.RGFxMovieResonatorMinigame.FE_RedoPasswordPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_RedoPasswordPrompts, "BmGame.RGFxMovieResonatorMinigame.FE_RedoPasswordPrompts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_CanCyclePasswords, paramsPtr + 0);
@@ -207,14 +207,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_RedoDisruptedPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_RedoDisruptedPrompts;
     /// <summary>
     /// Function: FE_RedoDisruptedPrompts
     /// </summary>
     public unsafe virtual void FE_RedoDisruptedPrompts(bool _CanExit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_RedoDisruptedPrompts, "BmGame.RGFxMovieResonatorMinigame.FE_RedoDisruptedPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_RedoDisruptedPrompts, "BmGame.RGFxMovieResonatorMinigame.FE_RedoDisruptedPrompts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_CanExit, paramsPtr + 0);
@@ -222,14 +222,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_RedoRadioPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_RedoRadioPrompts;
     /// <summary>
     /// Function: FE_RedoRadioPrompts
     /// </summary>
     public unsafe virtual void FE_RedoRadioPrompts(bool _RadioCanScan, bool _RadioCanMove, bool _RadioCanFlick)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_RedoRadioPrompts, "BmGame.RGFxMovieResonatorMinigame.FE_RedoRadioPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_RedoRadioPrompts, "BmGame.RGFxMovieResonatorMinigame.FE_RedoRadioPrompts", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RadioCanScan, paramsPtr + 0);
@@ -239,42 +239,42 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_StopRadio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_StopRadio;
     /// <summary>
     /// Function: FE_StopRadio
     /// </summary>
     public unsafe virtual void FE_StopRadio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_StopRadio, "BmGame.RGFxMovieResonatorMinigame.FE_StopRadio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_StopRadio, "BmGame.RGFxMovieResonatorMinigame.FE_StopRadio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_SetCurrentRadioDecrypted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetCurrentRadioDecrypted;
     /// <summary>
     /// Function: FE_SetCurrentRadioDecrypted
     /// </summary>
     public unsafe virtual void FE_SetCurrentRadioDecrypted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_SetCurrentRadioDecrypted, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioDecrypted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_SetCurrentRadioDecrypted, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioDecrypted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_SetCurrentRadioWarbleXY;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetCurrentRadioWarbleXY;
     /// <summary>
     /// Function: FE_SetCurrentRadioWarbleXY
     /// </summary>
     public unsafe virtual void FE_SetCurrentRadioWarbleXY(float value_x, float value_y)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_SetCurrentRadioWarbleXY, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioWarbleXY");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_SetCurrentRadioWarbleXY, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioWarbleXY", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(value_x, paramsPtr + 0);
@@ -283,14 +283,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_SetCurrentRadioAudioLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetCurrentRadioAudioLevel;
     /// <summary>
     /// Function: FE_SetCurrentRadioAudioLevel
     /// </summary>
     public unsafe virtual void FE_SetCurrentRadioAudioLevel(float zero_to_one)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_SetCurrentRadioAudioLevel, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioAudioLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_SetCurrentRadioAudioLevel, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioAudioLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(zero_to_one, paramsPtr + 0);
@@ -298,31 +298,32 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_SetCurrentRadioStation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetCurrentRadioStation;
     /// <summary>
     /// Function: FE_SetCurrentRadioStation
     /// </summary>
-    public unsafe virtual void FE_SetCurrentRadioStation(BmSDK.FString RadioStationName, int CurrentSequence, bool encrypted)
+    public unsafe virtual void FE_SetCurrentRadioStation(BmSDK.FStringArg RadioStationName, int CurrentSequence, bool encrypted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_SetCurrentRadioStation, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioStation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_SetCurrentRadioStation, "BmGame.RGFxMovieResonatorMinigame.FE_SetCurrentRadioStation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RadioStationName, paramsPtr + 0);
+        RadioStationName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentSequence, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(encrypted, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRadioAudioStates;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRadioAudioStates;
     /// <summary>
     /// Function: SetRadioAudioStates
     /// </summary>
     public unsafe virtual void SetRadioAudioStates(BmSDK.Engine.AkStateName base_state, BmSDK.Engine.AkStateName sequence_state)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRadioAudioStates, "BmGame.RGFxMovieResonatorMinigame.SetRadioAudioStates");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRadioAudioStates, "BmGame.RGFxMovieResonatorMinigame.SetRadioAudioStates", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(base_state, paramsPtr + 0);
@@ -331,72 +332,74 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_FE_SetRadioStationFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_SetRadioStationFound;
     /// <summary>
     /// Function: FE_SetRadioStationFound
     /// </summary>
-    public unsafe virtual void FE_SetRadioStationFound(BmSDK.FString RadioStationNameInternal)
+    public unsafe virtual void FE_SetRadioStationFound(BmSDK.FStringArg RadioStationNameInternal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_SetRadioStationFound, "BmGame.RGFxMovieResonatorMinigame.FE_SetRadioStationFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_SetRadioStationFound, "BmGame.RGFxMovieResonatorMinigame.FE_SetRadioStationFound", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RadioStationNameInternal, paramsPtr + 0);
+        RadioStationNameInternal.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_TriggerOneShotRadioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_TriggerOneShotRadioEvent;
     /// <summary>
     /// Function: FE_TriggerOneShotRadioEvent
     /// </summary>
-    public unsafe virtual void FE_TriggerOneShotRadioEvent(BmSDK.FString RadioStationName)
+    public unsafe virtual void FE_TriggerOneShotRadioEvent(BmSDK.FStringArg RadioStationName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_TriggerOneShotRadioEvent, "BmGame.RGFxMovieResonatorMinigame.FE_TriggerOneShotRadioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_TriggerOneShotRadioEvent, "BmGame.RGFxMovieResonatorMinigame.FE_TriggerOneShotRadioEvent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RadioStationName, paramsPtr + 0);
+        RadioStationName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_PasswordCrackerCrashedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_PasswordCrackerCrashedEvent;
     /// <summary>
     /// Function: FE_PasswordCrackerCrashedEvent
     /// </summary>
     public unsafe virtual void FE_PasswordCrackerCrashedEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_PasswordCrackerCrashedEvent, "BmGame.RGFxMovieResonatorMinigame.FE_PasswordCrackerCrashedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_PasswordCrackerCrashedEvent, "BmGame.RGFxMovieResonatorMinigame.FE_PasswordCrackerCrashedEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FE_TellFlashAboutControllerState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FE_TellFlashAboutControllerState;
     /// <summary>
     /// Function: FE_TellFlashAboutControllerState
     /// </summary>
     public unsafe virtual void FE_TellFlashAboutControllerState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FE_TellFlashAboutControllerState, "BmGame.RGFxMovieResonatorMinigame.FE_TellFlashAboutControllerState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FE_TellFlashAboutControllerState, "BmGame.RGFxMovieResonatorMinigame.FE_TellFlashAboutControllerState", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayResonatorAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayResonatorAudioEvent;
     /// <summary>
     /// Function: PlayResonatorAudioEvent
     /// </summary>
     public unsafe virtual void PlayResonatorAudioEvent(int event_index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayResonatorAudioEvent, "BmGame.RGFxMovieResonatorMinigame.PlayResonatorAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayResonatorAudioEvent, "BmGame.RGFxMovieResonatorMinigame.PlayResonatorAudioEvent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(event_index, paramsPtr + 0);
@@ -404,42 +407,42 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_KillPasswordAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillPasswordAudio;
     /// <summary>
     /// Function: KillPasswordAudio
     /// </summary>
     public unsafe virtual void KillPasswordAudio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillPasswordAudio, "BmGame.RGFxMovieResonatorMinigame.KillPasswordAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillPasswordAudio, "BmGame.RGFxMovieResonatorMinigame.KillPasswordAudio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPasswordAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPasswordAudio;
     /// <summary>
     /// Function: StartPasswordAudio
     /// </summary>
     public unsafe virtual void StartPasswordAudio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPasswordAudio, "BmGame.RGFxMovieResonatorMinigame.StartPasswordAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPasswordAudio, "BmGame.RGFxMovieResonatorMinigame.StartPasswordAudio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisplayMinigamePrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayMinigamePrompts;
     /// <summary>
     /// Function: DisplayMinigamePrompts
     /// </summary>
     public unsafe virtual void DisplayMinigamePrompts(BmSDK.BmGame.RHUDPrompt HelpPrompt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayMinigamePrompts, "BmGame.RGFxMovieResonatorMinigame.DisplayMinigamePrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayMinigamePrompts, "BmGame.RGFxMovieResonatorMinigame.DisplayMinigamePrompts", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -447,14 +450,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetRumbleFromFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRumbleFromFlash;
     /// <summary>
     /// Function: SetRumbleFromFlash
     /// </summary>
     public unsafe virtual void SetRumbleFromFlash(float left_rumble, float right_rumble)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRumbleFromFlash, "BmGame.RGFxMovieResonatorMinigame.SetRumbleFromFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRumbleFromFlash, "BmGame.RGFxMovieResonatorMinigame.SetRumbleFromFlash", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(left_rumble, paramsPtr + 0);
@@ -463,14 +466,14 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_RedoRadioPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RedoRadioPrompts;
     /// <summary>
     /// Function: RedoRadioPrompts
     /// </summary>
     public unsafe virtual void RedoRadioPrompts(bool _RadioCanScan, bool _RadioCanMove, bool _RadioCanFlick)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RedoRadioPrompts, "BmGame.RGFxMovieResonatorMinigame.RedoRadioPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RedoRadioPrompts, "BmGame.RGFxMovieResonatorMinigame.RedoRadioPrompts", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RadioCanScan, paramsPtr + 0);
@@ -480,73 +483,73 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_MakeUnresponsive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeUnresponsive;
     /// <summary>
     /// Function: MakeUnresponsive
     /// </summary>
     public unsafe virtual void MakeUnresponsive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeUnresponsive, "BmGame.RGFxMovieResonatorMinigame.MakeUnresponsive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MakeUnresponsive, "BmGame.RGFxMovieResonatorMinigame.MakeUnresponsive", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RequestQuit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestQuit;
     /// <summary>
     /// Function: RequestQuit
     /// </summary>
     public unsafe virtual void RequestQuit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestQuit, "BmGame.RGFxMovieResonatorMinigame.RequestQuit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RequestQuit, "BmGame.RGFxMovieResonatorMinigame.RequestQuit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BroadcastIsJammed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BroadcastIsJammed;
     /// <summary>
     /// Function: BroadcastIsJammed
     /// </summary>
     public unsafe virtual void BroadcastIsJammed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BroadcastIsJammed, "BmGame.RGFxMovieResonatorMinigame.BroadcastIsJammed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BroadcastIsJammed, "BmGame.RGFxMovieResonatorMinigame.BroadcastIsJammed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableEncryptedChipIntro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableEncryptedChipIntro;
     /// <summary>
     /// Function: EnableEncryptedChipIntro
     /// </summary>
     public unsafe virtual void EnableEncryptedChipIntro()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableEncryptedChipIntro, "BmGame.RGFxMovieResonatorMinigame.EnableEncryptedChipIntro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableEncryptedChipIntro, "BmGame.RGFxMovieResonatorMinigame.EnableEncryptedChipIntro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddStation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddStation;
     /// <summary>
     /// Function: AddStation
     /// </summary>
-    public unsafe virtual void AddStation(BmSDK.FString StationName, float FrequencyX, float FrequencyY, int TransmissionRadius, byte CurrentSequence, bool HasBeenFound, bool HasHadHint, bool IsEncrypted, bool Mandatory, bool EasterEgg, BmSDK.FString StationTransmitterType, BmSDK.FString StationEncryptionType, BmSDK.FString StationEncryptionStrength, bool HasOneShotEvent)
+    public unsafe virtual void AddStation(BmSDK.FStringArg StationName, float FrequencyX, float FrequencyY, int TransmissionRadius, byte CurrentSequence, bool HasBeenFound, bool HasHadHint, bool IsEncrypted, bool Mandatory, bool EasterEgg, BmSDK.FStringArg StationTransmitterType, BmSDK.FStringArg StationEncryptionType, BmSDK.FStringArg StationEncryptionStrength, bool HasOneShotEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddStation, "BmGame.RGFxMovieResonatorMinigame.AddStation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddStation, "BmGame.RGFxMovieResonatorMinigame.AddStation", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StationName, paramsPtr + 0);
+        StationName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FrequencyX, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FrequencyY, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TransmissionRadius, paramsPtr + 24);
@@ -556,38 +559,44 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsEncrypted, paramsPtr + 40);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Mandatory, paramsPtr + 44);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EasterEgg, paramsPtr + 48);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StationTransmitterType, paramsPtr + 52);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StationEncryptionType, paramsPtr + 68);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StationEncryptionStrength, paramsPtr + 84);
+        StationTransmitterType.WriteTo(paramsPtr + 52);
+        StationEncryptionType.WriteTo(paramsPtr + 68);
+        StationEncryptionStrength.WriteTo(paramsPtr + 84);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HasOneShotEvent, paramsPtr + 100);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 52);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 68);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 84);
         return;
     }
 
-    private static BmSDK.Function __fn_SetAudioInterceptDetails;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioInterceptDetails;
     /// <summary>
     /// Function: SetAudioInterceptDetails
     /// </summary>
-    public unsafe virtual void SetAudioInterceptDetails(BmSDK.FString StationName, BmSDK.FString SpeakerName)
+    public unsafe virtual void SetAudioInterceptDetails(BmSDK.FStringArg StationName, BmSDK.FStringArg SpeakerName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAudioInterceptDetails, "BmGame.RGFxMovieResonatorMinigame.SetAudioInterceptDetails");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAudioInterceptDetails, "BmGame.RGFxMovieResonatorMinigame.SetAudioInterceptDetails", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StationName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SpeakerName, paramsPtr + 16);
+        StationName.WriteTo(paramsPtr + 0);
+        SpeakerName.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_RedoDisruptedPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RedoDisruptedPrompts;
     /// <summary>
     /// Function: RedoDisruptedPrompts
     /// </summary>
     public unsafe virtual void RedoDisruptedPrompts(bool _CanExit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RedoDisruptedPrompts, "BmGame.RGFxMovieResonatorMinigame.RedoDisruptedPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RedoDisruptedPrompts, "BmGame.RGFxMovieResonatorMinigame.RedoDisruptedPrompts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_CanExit, paramsPtr + 0);
@@ -595,74 +604,76 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetControlBoxParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetControlBoxParams;
     /// <summary>
     /// Function: SetControlBoxParams
     /// </summary>
-    public unsafe virtual void SetControlBoxParams(int _SecurityLevel, BmSDK.FString _HackingNetworkString, BmSDK.FString _HackingTargetString, int _PasswordDifficultyLevel)
+    public unsafe virtual void SetControlBoxParams(int _SecurityLevel, BmSDK.FStringArg _HackingNetworkString, BmSDK.FStringArg _HackingTargetString, int _PasswordDifficultyLevel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetControlBoxParams, "BmGame.RGFxMovieResonatorMinigame.SetControlBoxParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetControlBoxParams, "BmGame.RGFxMovieResonatorMinigame.SetControlBoxParams", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_SecurityLevel, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_HackingNetworkString, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_HackingTargetString, paramsPtr + 20);
+        _HackingNetworkString.WriteTo(paramsPtr + 4);
+        _HackingTargetString.WriteTo(paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_PasswordDifficultyLevel, paramsPtr + 36);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDistortionEffectActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDistortionEffectActive;
     /// <summary>
     /// Function: SetDistortionEffectActive
     /// </summary>
     public unsafe virtual void SetDistortionEffectActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDistortionEffectActive, "BmGame.RGFxMovieResonatorMinigame.SetDistortionEffectActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDistortionEffectActive, "BmGame.RGFxMovieResonatorMinigame.SetDistortionEffectActive", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetImminentJamming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetImminentJamming;
     /// <summary>
     /// Function: SetImminentJamming
     /// </summary>
     public unsafe virtual void SetImminentJamming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetImminentJamming, "BmGame.RGFxMovieResonatorMinigame.SetImminentJamming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetImminentJamming, "BmGame.RGFxMovieResonatorMinigame.SetImminentJamming", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHighSecurity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighSecurity;
     /// <summary>
     /// Function: SetHighSecurity
     /// </summary>
     public unsafe virtual void SetHighSecurity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHighSecurity, "BmGame.RGFxMovieResonatorMinigame.SetHighSecurity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHighSecurity, "BmGame.RGFxMovieResonatorMinigame.SetHighSecurity", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RedoPasswordPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RedoPasswordPrompts;
     /// <summary>
     /// Function: RedoPasswordPrompts
     /// </summary>
     public unsafe virtual void RedoPasswordPrompts(bool _CanCyclePasswords)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RedoPasswordPrompts, "BmGame.RGFxMovieResonatorMinigame.RedoPasswordPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RedoPasswordPrompts, "BmGame.RGFxMovieResonatorMinigame.RedoPasswordPrompts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_CanCyclePasswords, paramsPtr + 0);
@@ -670,174 +681,179 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_StartResonatorMinigame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartResonatorMinigame;
     /// <summary>
     /// Function: StartResonatorMinigame
     /// </summary>
     public unsafe virtual void StartResonatorMinigame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartResonatorMinigame, "BmGame.RGFxMovieResonatorMinigame.StartResonatorMinigame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartResonatorMinigame, "BmGame.RGFxMovieResonatorMinigame.StartResonatorMinigame", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetResonatorPassword;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetResonatorPassword;
     /// <summary>
     /// Function: SetResonatorPassword
     /// </summary>
-    public unsafe virtual void SetResonatorPassword(int password_index, BmSDK.FString the_password)
+    public unsafe virtual void SetResonatorPassword(int password_index, BmSDK.FStringArg the_password)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetResonatorPassword, "BmGame.RGFxMovieResonatorMinigame.SetResonatorPassword");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetResonatorPassword, "BmGame.RGFxMovieResonatorMinigame.SetResonatorPassword", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(password_index, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(the_password, paramsPtr + 4);
+        the_password.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInstructionText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInstructionText;
     /// <summary>
     /// Function: SetInstructionText
     /// </summary>
-    public unsafe virtual void SetInstructionText(BmSDK.FString new_instructions)
+    public unsafe virtual void SetInstructionText(BmSDK.FStringArg new_instructions)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInstructionText, "BmGame.RGFxMovieResonatorMinigame.SetInstructionText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInstructionText, "BmGame.RGFxMovieResonatorMinigame.SetInstructionText", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(new_instructions, paramsPtr + 0);
+        new_instructions.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableDebugAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableDebugAction;
     /// <summary>
     /// Function: EnableDebugAction
     /// </summary>
     public unsafe virtual void EnableDebugAction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableDebugAction, "BmGame.RGFxMovieResonatorMinigame.EnableDebugAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableDebugAction, "BmGame.RGFxMovieResonatorMinigame.EnableDebugAction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TestThenClearFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TestThenClearFlag;
     /// <summary>
     /// Function: TestThenClearFlag
     /// </summary>
-    public unsafe virtual bool TestThenClearFlag(BmSDK.FString FlagName)
+    public unsafe virtual bool TestThenClearFlag(BmSDK.FStringArg FlagName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TestThenClearFlag, "BmGame.RGFxMovieResonatorMinigame.TestThenClearFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TestThenClearFlag, "BmGame.RGFxMovieResonatorMinigame.TestThenClearFlag", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_OnCloseMinigame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCloseMinigame;
     /// <summary>
     /// Function: OnCloseMinigame
     /// </summary>
     public unsafe virtual void OnCloseMinigame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCloseMinigame, "BmGame.RGFxMovieResonatorMinigame.OnCloseMinigame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCloseMinigame, "BmGame.RGFxMovieResonatorMinigame.OnCloseMinigame", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CloseScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseScreen;
     /// <summary>
     /// Function: CloseScreen
     /// </summary>
     public unsafe virtual void CloseScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseScreen, "BmGame.RGFxMovieResonatorMinigame.CloseScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseScreen, "BmGame.RGFxMovieResonatorMinigame.CloseScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Hide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Hide;
     /// <summary>
     /// Function: Hide
     /// </summary>
     public unsafe virtual void Hide()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Hide, "BmGame.RGFxMovieResonatorMinigame.Hide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Hide, "BmGame.RGFxMovieResonatorMinigame.Hide", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_show;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_show;
     /// <summary>
     /// Function: show
     /// </summary>
     public unsafe virtual void show()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_show, "BmGame.RGFxMovieResonatorMinigame.show");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_show, "BmGame.RGFxMovieResonatorMinigame.show", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HideItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideItem;
     /// <summary>
     /// Function: HideItem
     /// </summary>
-    public unsafe virtual void HideItem(BmSDK.FString ItemName)
+    public unsafe virtual void HideItem(BmSDK.FStringArg ItemName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideItem, "BmGame.RGFxMovieResonatorMinigame.HideItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideItem, "BmGame.RGFxMovieResonatorMinigame.HideItem", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ItemName, paramsPtr + 0);
+        ItemName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowItem;
     /// <summary>
     /// Function: ShowItem
     /// </summary>
-    public unsafe virtual void ShowItem(BmSDK.FString ItemName)
+    public unsafe virtual void ShowItem(BmSDK.FStringArg ItemName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowItem, "BmGame.RGFxMovieResonatorMinigame.ShowItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowItem, "BmGame.RGFxMovieResonatorMinigame.ShowItem", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ItemName, paramsPtr + 0);
+        ItemName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KismetControlsInOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KismetControlsInOut;
     /// <summary>
     /// Function: KismetControlsInOut
     /// </summary>
     public unsafe virtual void KismetControlsInOut(bool bTrue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KismetControlsInOut, "BmGame.RGFxMovieResonatorMinigame.KismetControlsInOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KismetControlsInOut, "BmGame.RGFxMovieResonatorMinigame.KismetControlsInOut", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTrue, paramsPtr + 0);
@@ -845,43 +861,44 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_LoadMiniGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadMiniGame;
     /// <summary>
     /// Function: LoadMiniGame
     /// </summary>
-    public unsafe virtual void LoadMiniGame(BmSDK.FString minigame_path)
+    public unsafe virtual void LoadMiniGame(BmSDK.FStringArg minigame_path)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadMiniGame, "BmGame.RGFxMovieResonatorMinigame.LoadMiniGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadMiniGame, "BmGame.RGFxMovieResonatorMinigame.LoadMiniGame", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(minigame_path, paramsPtr + 0);
+        minigame_path.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SendCachedMousePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendCachedMousePosition;
     /// <summary>
     /// Function: SendCachedMousePosition
     /// </summary>
     public unsafe virtual void SendCachedMousePosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendCachedMousePosition, "BmGame.RGFxMovieResonatorMinigame.SendCachedMousePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendCachedMousePosition, "BmGame.RGFxMovieResonatorMinigame.SendCachedMousePosition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCachedMousePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCachedMousePosition;
     /// <summary>
     /// Function: SetCachedMousePosition
     /// </summary>
     public unsafe virtual void SetCachedMousePosition(float _fCachedMouseX, float _fCachedMouseY)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCachedMousePosition, "BmGame.RGFxMovieResonatorMinigame.SetCachedMousePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCachedMousePosition, "BmGame.RGFxMovieResonatorMinigame.SetCachedMousePosition", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_fCachedMouseX, paramsPtr + 0);
@@ -890,28 +907,28 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_MinigameTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MinigameTick;
     /// <summary>
     /// Function: MinigameTick
     /// </summary>
     public unsafe virtual void MinigameTick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MinigameTick, "BmGame.RGFxMovieResonatorMinigame.MinigameTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MinigameTick, "BmGame.RGFxMovieResonatorMinigame.MinigameTick", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateHudVisibility;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHudVisibility;
     /// <summary>
     /// Function: UpdateHudVisibility
     /// </summary>
     public unsafe override void UpdateHudVisibility(bool bVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateHudVisibility, "BmGame.RGFxMovieResonatorMinigame.UpdateHudVisibility");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateHudVisibility, "BmGame.RGFxMovieResonatorMinigame.UpdateHudVisibility", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bVisible, paramsPtr + 0);
@@ -919,28 +936,28 @@ public partial class RGFxMovieResonatorMinigame : BmSDK.BmGame.RGFxMovie, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SendRandomCharacterString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendRandomCharacterString;
     /// <summary>
     /// Function: SendRandomCharacterString
     /// </summary>
     public unsafe virtual void SendRandomCharacterString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendRandomCharacterString, "BmGame.RGFxMovieResonatorMinigame.SendRandomCharacterString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendRandomCharacterString, "BmGame.RGFxMovieResonatorMinigame.SendRandomCharacterString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieResonatorMinigame.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxMovieResonatorMinigame.Init", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

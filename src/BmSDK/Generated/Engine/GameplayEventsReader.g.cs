@@ -78,14 +78,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<GameplayEventsReader>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetSessionDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionDuration;
     /// <summary>
     /// Function: GetSessionDuration
     /// </summary>
     public unsafe virtual float GetSessionDuration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSessionDuration, "Engine.GameplayEventsReader.GetSessionDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSessionDuration, "Engine.GameplayEventsReader.GetSessionDuration", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSessionEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionEnd;
     /// <summary>
     /// Function: GetSessionEnd
     /// </summary>
     public unsafe virtual float GetSessionEnd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSessionEnd, "Engine.GameplayEventsReader.GetSessionEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSessionEnd, "Engine.GameplayEventsReader.GetSessionEnd", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSessionStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionStart;
     /// <summary>
     /// Function: GetSessionStart
     /// </summary>
     public unsafe virtual float GetSessionStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSessionStart, "Engine.GameplayEventsReader.GetSessionStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSessionStart, "Engine.GameplayEventsReader.GetSessionStart", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -141,14 +141,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSessionTimestamp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionTimestamp;
     /// <summary>
     /// Function: GetSessionTimestamp
     /// </summary>
     public unsafe virtual BmSDK.FString GetSessionTimestamp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSessionTimestamp, "Engine.GameplayEventsReader.GetSessionTimestamp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSessionTimestamp, "Engine.GameplayEventsReader.GetSessionTimestamp", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -162,14 +162,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPlatform;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlatform;
     /// <summary>
     /// Function: GetPlatform
     /// </summary>
     public unsafe virtual int GetPlatform()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlatform, "Engine.GameplayEventsReader.GetPlatform");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlatform, "Engine.GameplayEventsReader.GetPlatform", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -183,14 +183,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTitleID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleID;
     /// <summary>
     /// Function: GetTitleID
     /// </summary>
     public unsafe virtual int GetTitleID()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTitleID, "Engine.GameplayEventsReader.GetTitleID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTitleID, "Engine.GameplayEventsReader.GetTitleID", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -204,14 +204,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSessionID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSessionID;
     /// <summary>
     /// Function: GetSessionID
     /// </summary>
     public unsafe virtual BmSDK.FString GetSessionID()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSessionID, "Engine.GameplayEventsReader.GetSessionID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSessionID, "Engine.GameplayEventsReader.GetSessionID", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -246,14 +246,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessStream;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessStream;
     /// <summary>
     /// Function: ProcessStream
     /// </summary>
     public unsafe virtual void ProcessStream()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessStream, "Engine.GameplayEventsReader.ProcessStream");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessStream, "Engine.GameplayEventsReader.ProcessStream", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -288,14 +288,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UnregisterHandler;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterHandler;
     /// <summary>
     /// Function: UnregisterHandler
     /// </summary>
     public unsafe virtual void UnregisterHandler(BmSDK.Engine.GameplayEventsHandler ExistingHandler)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterHandler, "Engine.GameplayEventsReader.UnregisterHandler");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnregisterHandler, "Engine.GameplayEventsReader.UnregisterHandler", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExistingHandler, paramsPtr + 0);
@@ -303,14 +303,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterHandler;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterHandler;
     /// <summary>
     /// Function: RegisterHandler
     /// </summary>
     public unsafe virtual void RegisterHandler(BmSDK.Engine.GameplayEventsHandler NewHandler)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterHandler, "Engine.GameplayEventsReader.RegisterHandler");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterHandler, "Engine.GameplayEventsReader.RegisterHandler", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewHandler, paramsPtr + 0);
@@ -318,14 +318,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SerializeHeader;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SerializeHeader;
     /// <summary>
     /// Function: SerializeHeader
     /// </summary>
     public unsafe virtual bool SerializeHeader()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SerializeHeader, "Engine.GameplayEventsReader.SerializeHeader");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SerializeHeader, "Engine.GameplayEventsReader.SerializeHeader", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -339,14 +339,14 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CloseStatsFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseStatsFile;
     /// <summary>
     /// Function: CloseStatsFile
     /// </summary>
     public unsafe override void CloseStatsFile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseStatsFile, "Engine.GameplayEventsReader.CloseStatsFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseStatsFile, "Engine.GameplayEventsReader.CloseStatsFile", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -360,17 +360,17 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_OpenStatsFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenStatsFile;
     /// <summary>
     /// Function: OpenStatsFile
     /// </summary>
-    public unsafe override bool OpenStatsFile(BmSDK.FString Filename)
+    public unsafe override bool OpenStatsFile(BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenStatsFile, "Engine.GameplayEventsReader.OpenStatsFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenStatsFile, "Engine.GameplayEventsReader.OpenStatsFile", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -379,6 +379,7 @@ public partial class GameplayEventsReader : BmSDK.Engine.GameplayEvents, BmSDK.I
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 

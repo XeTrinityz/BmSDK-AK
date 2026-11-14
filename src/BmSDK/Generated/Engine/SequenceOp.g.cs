@@ -73,14 +73,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<SequenceOp>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ForceActivateOutput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceActivateOutput;
     /// <summary>
     /// Function: ForceActivateOutput
     /// </summary>
     public unsafe virtual void ForceActivateOutput(int OutputIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceActivateOutput, "Engine.SequenceOp.ForceActivateOutput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceActivateOutput, "Engine.SequenceOp.ForceActivateOutput", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutputIdx, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ForceActivateInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceActivateInput;
     /// <summary>
     /// Function: ForceActivateInput
     /// </summary>
     public unsafe virtual void ForceActivateInput(int InputIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceActivateInput, "Engine.SequenceOp.ForceActivateInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceActivateInput, "Engine.SequenceOp.ForceActivateInput", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InputIdx, paramsPtr + 0);
@@ -117,14 +117,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetController;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetController;
     /// <summary>
     /// Function: GetController
     /// </summary>
     public unsafe virtual BmSDK.Engine.Controller GetController(BmSDK.Engine.Actor TheActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetController, "Engine.SequenceOp.GetController");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetController, "Engine.SequenceOp.GetController", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheActor, paramsPtr + 0);
@@ -132,14 +132,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Controller>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawn;
     /// <summary>
     /// Function: GetPawn
     /// </summary>
     public unsafe virtual BmSDK.Engine.Pawn GetPawn(BmSDK.Engine.Actor TheActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPawn, "Engine.SequenceOp.GetPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPawn, "Engine.SequenceOp.GetPawn", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheActor, paramsPtr + 0);
@@ -147,28 +147,28 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Pawn>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe virtual void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.SequenceOp.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.SequenceOp.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PublishLinkedVariableValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PublishLinkedVariableValue;
     /// <summary>
     /// Function: PublishLinkedVariableValue
     /// </summary>
     public unsafe virtual void PublishLinkedVariableValue(int LinkIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PublishLinkedVariableValue, "Engine.SequenceOp.PublishLinkedVariableValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PublishLinkedVariableValue, "Engine.SequenceOp.PublishLinkedVariableValue", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkIndex, paramsPtr + 0);
@@ -183,14 +183,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PublishLinkedVariableValues;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PublishLinkedVariableValues;
     /// <summary>
     /// Function: PublishLinkedVariableValues
     /// </summary>
     public unsafe virtual void PublishLinkedVariableValues()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PublishLinkedVariableValues, "Engine.SequenceOp.PublishLinkedVariableValues");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PublishLinkedVariableValues, "Engine.SequenceOp.PublishLinkedVariableValues", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -204,14 +204,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PopulateLinkedVariableValues;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PopulateLinkedVariableValues;
     /// <summary>
     /// Function: PopulateLinkedVariableValues
     /// </summary>
     public unsafe virtual void PopulateLinkedVariableValues()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopulateLinkedVariableValues, "Engine.SequenceOp.PopulateLinkedVariableValues");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PopulateLinkedVariableValues, "Engine.SequenceOp.PopulateLinkedVariableValues", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -225,14 +225,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_VersionUpdated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VersionUpdated;
     /// <summary>
     /// Function: VersionUpdated
     /// </summary>
     public unsafe virtual void VersionUpdated(int OldVersion, int NewVersion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VersionUpdated, "Engine.SequenceOp.VersionUpdated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VersionUpdated, "Engine.SequenceOp.VersionUpdated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldVersion, paramsPtr + 0);
@@ -241,45 +241,45 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Deactivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deactivated;
     /// <summary>
     /// Function: Deactivated
     /// </summary>
     public unsafe virtual void Deactivated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivated, "Engine.SequenceOp.Deactivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deactivated, "Engine.SequenceOp.Deactivated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe virtual void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "Engine.SequenceOp.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "Engine.SequenceOp.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateNamedOutputLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateNamedOutputLink;
     /// <summary>
     /// Function: ActivateNamedOutputLink
     /// </summary>
-    public unsafe virtual bool ActivateNamedOutputLink(BmSDK.FString LinkDesc)
+    public unsafe virtual bool ActivateNamedOutputLink(BmSDK.FStringArg LinkDesc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateNamedOutputLink, "Engine.SequenceOp.ActivateNamedOutputLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateNamedOutputLink, "Engine.SequenceOp.ActivateNamedOutputLink", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkDesc, paramsPtr + 0);
+        LinkDesc.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -288,17 +288,18 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ActivateOutputLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateOutputLink;
     /// <summary>
     /// Function: ActivateOutputLink
     /// </summary>
     public unsafe virtual bool ActivateOutputLink(int OutputIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateOutputLink, "Engine.SequenceOp.ActivateOutputLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateOutputLink, "Engine.SequenceOp.ActivateOutputLink", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutputIdx, paramsPtr + 0);
@@ -313,17 +314,17 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetFloatVars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatVars;
     /// <summary>
     /// Function: GetFloatVars
     /// </summary>
-    public unsafe virtual void GetFloatVars(out BmSDK.TArray<float> floatVars, BmSDK.FString inDesc = default)
+    public unsafe virtual void GetFloatVars(out BmSDK.TArray<float> floatVars, BmSDK.FStringArg inDesc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatVars, "Engine.SequenceOp.GetFloatVars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatVars, "Engine.SequenceOp.GetFloatVars", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(inDesc, paramsPtr + 16);
+        inDesc.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -332,21 +333,22 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         floatVars = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<float>>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetBoolVars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoolVars;
     /// <summary>
     /// Function: GetBoolVars
     /// </summary>
-    public unsafe virtual void GetBoolVars(out BmSDK.TArray<byte> boolVars, BmSDK.FString inDesc = default)
+    public unsafe virtual void GetBoolVars(out BmSDK.TArray<byte> boolVars, BmSDK.FStringArg inDesc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoolVars, "Engine.SequenceOp.GetBoolVars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoolVars, "Engine.SequenceOp.GetBoolVars", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(inDesc, paramsPtr + 16);
+        inDesc.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -355,21 +357,22 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         boolVars = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<byte>>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetInterpDataVars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInterpDataVars;
     /// <summary>
     /// Function: GetInterpDataVars
     /// </summary>
-    public unsafe virtual void GetInterpDataVars(out BmSDK.TArray<BmSDK.Engine.InterpData> outIData, BmSDK.FString inDesc = default)
+    public unsafe virtual void GetInterpDataVars(out BmSDK.TArray<BmSDK.Engine.InterpData> outIData, BmSDK.FStringArg inDesc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInterpDataVars, "Engine.SequenceOp.GetInterpDataVars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInterpDataVars, "Engine.SequenceOp.GetInterpDataVars", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(inDesc, paramsPtr + 16);
+        inDesc.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -378,21 +381,22 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         outIData = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.InterpData>>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetObjectVars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectVars;
     /// <summary>
     /// Function: GetObjectVars
     /// </summary>
-    public unsafe virtual void GetObjectVars(out BmSDK.TArray<BmSDK.GameObject> ObjVars, BmSDK.FString inDesc = default)
+    public unsafe virtual void GetObjectVars(out BmSDK.TArray<BmSDK.GameObject> ObjVars, BmSDK.FStringArg inDesc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectVars, "Engine.SequenceOp.GetObjectVars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectVars, "Engine.SequenceOp.GetObjectVars", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(inDesc, paramsPtr + 16);
+        inDesc.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -401,21 +405,22 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         ObjVars = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.GameObject>>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetVectorVars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVectorVars;
     /// <summary>
     /// Function: GetVectorVars
     /// </summary>
-    public unsafe virtual void GetVectorVars(out BmSDK.TArray<System.Numerics.Vector3> vecVars, BmSDK.FString inDesc = default)
+    public unsafe virtual void GetVectorVars(out BmSDK.TArray<System.Numerics.Vector3> vecVars, BmSDK.FStringArg inDesc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVectorVars, "Engine.SequenceOp.GetVectorVars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVectorVars, "Engine.SequenceOp.GetVectorVars", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(inDesc, paramsPtr + 16);
+        inDesc.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -424,18 +429,19 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         vecVars = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<System.Numerics.Vector3>>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetLinkedObjects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkedObjects;
     /// <summary>
     /// Function: GetLinkedObjects
     /// </summary>
     public unsafe virtual void GetLinkedObjects(out BmSDK.TArray<BmSDK.Engine.SequenceObject> out_Objects, BmSDK.Class ObjectType = default, bool bRecurse = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLinkedObjects, "Engine.SequenceOp.GetLinkedObjects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLinkedObjects, "Engine.SequenceOp.GetLinkedObjects", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectType, paramsPtr + 16);
@@ -452,14 +458,14 @@ public partial class SequenceOp : BmSDK.Engine.SequenceObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HasLinkedOps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLinkedOps;
     /// <summary>
     /// Function: HasLinkedOps
     /// </summary>
     public unsafe virtual bool HasLinkedOps(bool bConsiderInputLinks = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasLinkedOps, "Engine.SequenceOp.HasLinkedOps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasLinkedOps, "Engine.SequenceOp.HasLinkedOps", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bConsiderInputLinks, paramsPtr + 0);

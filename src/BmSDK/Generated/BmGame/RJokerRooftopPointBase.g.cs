@@ -78,14 +78,14 @@ public partial class RJokerRooftopPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RJokerRooftopPointBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanBasePawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBasePawn;
     /// <summary>
     /// Function: CanBasePawn
     /// </summary>
     public unsafe override bool CanBasePawn(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBasePawn, "BmGame.RJokerRooftopPointBase.CanBasePawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBasePawn, "BmGame.RJokerRooftopPointBase.CanBasePawn", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RJokerRooftopPointBase : BmSDK.BmGame.RDummyTarget, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InitMeshes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMeshes;
     /// <summary>
     /// Function: InitMeshes
     /// </summary>
     public unsafe virtual void InitMeshes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitMeshes, "BmGame.RJokerRooftopPointBase.InitMeshes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitMeshes, "BmGame.RJokerRooftopPointBase.InitMeshes", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

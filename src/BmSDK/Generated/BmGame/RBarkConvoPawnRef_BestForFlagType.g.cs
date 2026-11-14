@@ -78,14 +78,14 @@ public partial class RBarkConvoPawnRef_BestForFlagType : BmSDK.BmGame.RBarkConvo
         where TComponent : class, Framework.IScriptComponent<RBarkConvoPawnRef_BestForFlagType>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnLockedSpeakerFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnLockedSpeakerFound;
     /// <summary>
     /// Function: OnLockedSpeakerFound
     /// </summary>
     public unsafe override void OnLockedSpeakerFound(BmSDK.BmGame.RBarkConvo Convo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLockedSpeakerFound, "BmGame.RBarkConvoPawnRef_BestForFlagType.OnLockedSpeakerFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnLockedSpeakerFound, "BmGame.RBarkConvoPawnRef_BestForFlagType.OnLockedSpeakerFound", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Convo, paramsPtr + 0);

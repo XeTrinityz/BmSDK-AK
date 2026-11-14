@@ -78,14 +78,14 @@ public partial class MAEC_LaughingGas_Outsider : BmSDK.BmGame.RAEC_Smoke_Outside
         where TComponent : class, Framework.IScriptComponent<MAEC_LaughingGas_Outsider>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayEndBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayEndBark;
     /// <summary>
     /// Function: PlayEndBark
     /// </summary>
     public unsafe override void PlayEndBark()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayEndBark, "BmGame.MAEC_LaughingGas_Outsider.PlayEndBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayEndBark, "BmGame.MAEC_LaughingGas_Outsider.PlayEndBark", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         where TComponent : class, Framework.IScriptComponent<RWaterVolumeBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ApplyDefaultFloatingForcesToComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyDefaultFloatingForcesToComponent;
     /// <summary>
     /// Function: ApplyDefaultFloatingForcesToComponent
     /// </summary>
     public unsafe virtual bool ApplyDefaultFloatingForcesToComponent(BmSDK.Engine.PrimitiveComponent pComponent, float zbias, float DeltaTime, bool DontApplyDragTorque)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyDefaultFloatingForcesToComponent, "BmGame.RWaterVolumeBase.ApplyDefaultFloatingForcesToComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyDefaultFloatingForcesToComponent, "BmGame.RWaterVolumeBase.ApplyDefaultFloatingForcesToComponent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pComponent, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetWaterLinearVelocityAtPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaterLinearVelocityAtPosition;
     /// <summary>
     /// Function: GetWaterLinearVelocityAtPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWaterLinearVelocityAtPosition(System.Numerics.Vector3 Position)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWaterLinearVelocityAtPosition, "BmGame.RWaterVolumeBase.GetWaterLinearVelocityAtPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWaterLinearVelocityAtPosition, "BmGame.RWaterVolumeBase.GetWaterLinearVelocityAtPosition", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_FindRelativeSurfacePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindRelativeSurfacePosition;
     /// <summary>
     /// Function: FindRelativeSurfacePosition
     /// </summary>
     public unsafe virtual bool FindRelativeSurfacePosition(System.Numerics.Vector3 TestPosition, System.Numerics.Vector3 TestDirection, out System.Numerics.Vector3 OutSurfacePosition, out System.Numerics.Vector3 OutSurfaceNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindRelativeSurfacePosition, "BmGame.RWaterVolumeBase.FindRelativeSurfacePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindRelativeSurfacePosition, "BmGame.RWaterVolumeBase.FindRelativeSurfacePosition", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPosition, paramsPtr + 0);
@@ -154,14 +154,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_PlaySplashAtLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySplashAtLocation;
     /// <summary>
     /// Function: PlaySplashAtLocation
     /// </summary>
     public unsafe virtual bool PlaySplashAtLocation(System.Numerics.Vector3 SplashLocation, BmSDK.Rotator SplashRotation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySplashAtLocation, "BmGame.RWaterVolumeBase.PlaySplashAtLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySplashAtLocation, "BmGame.RWaterVolumeBase.PlaySplashAtLocation", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SplashLocation, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_PlayExitSplash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayExitSplash;
     /// <summary>
     /// Function: PlayExitSplash
     /// </summary>
     public unsafe virtual void PlayExitSplash(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayExitSplash, "BmGame.RWaterVolumeBase.PlayExitSplash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayExitSplash, "BmGame.RWaterVolumeBase.PlayExitSplash", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -185,14 +185,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_PlayEntrySplash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayEntrySplash;
     /// <summary>
     /// Function: PlayEntrySplash
     /// </summary>
     public unsafe virtual void PlayEntrySplash(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayEntrySplash, "BmGame.RWaterVolumeBase.PlayEntrySplash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayEntrySplash, "BmGame.RWaterVolumeBase.PlayEntrySplash", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -200,14 +200,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_UnTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnTouch;
     /// <summary>
     /// Function: UnTouch
     /// </summary>
     public unsafe override void UnTouch(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnTouch, "BmGame.RWaterVolumeBase.UnTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnTouch, "BmGame.RWaterVolumeBase.UnTouch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -215,14 +215,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RWaterVolumeBase.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RWaterVolumeBase.Touch", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -233,14 +233,14 @@ public partial class RWaterVolumeBase : BmSDK.BmGame.RWaterRescueVolumeBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_GetWaterDepth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaterDepth;
     /// <summary>
     /// Function: GetWaterDepth
     /// </summary>
     public unsafe virtual float GetWaterDepth()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWaterDepth, "BmGame.RWaterVolumeBase.GetWaterDepth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWaterDepth, "BmGame.RWaterVolumeBase.GetWaterDepth", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

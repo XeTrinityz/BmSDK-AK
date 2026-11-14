@@ -78,14 +78,14 @@ public partial class RAEC_DestroyedSentry_Solo : BmSDK.BmGame.RAlertEventCoordin
         where TComponent : class, Framework.IScriptComponent<RAEC_DestroyedSentry_Solo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_DestroyedSentry_Solo.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_DestroyedSentry_Solo.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_DestroyedSentry_Solo : BmSDK.BmGame.RAlertEventCoordin
         return;
     }
 
-    private static BmSDK.Function __fn_WantsToGlanceAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WantsToGlanceAt;
     /// <summary>
     /// Function: WantsToGlanceAt
     /// </summary>
     public unsafe override bool WantsToGlanceAt(BmSDK.Engine.Actor TestTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WantsToGlanceAt, "BmGame.RAEC_DestroyedSentry_Solo.WantsToGlanceAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WantsToGlanceAt, "BmGame.RAEC_DestroyedSentry_Solo.WantsToGlanceAt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestTarget, paramsPtr + 0);
@@ -108,28 +108,28 @@ public partial class RAEC_DestroyedSentry_Solo : BmSDK.BmGame.RAlertEventCoordin
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnStartChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStartChild;
     /// <summary>
     /// Function: OnStartChild
     /// </summary>
     public unsafe override void OnStartChild()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_DestroyedSentry_Solo.OnStartChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStartChild, "BmGame.RAEC_DestroyedSentry_Solo.OnStartChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDestroyedSentry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDestroyedSentry;
     /// <summary>
     /// Function: SetDestroyedSentry
     /// </summary>
     public unsafe virtual void SetDestroyedSentry(BmSDK.BmGame.RSentryGunBase inDestroyedSentry)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDestroyedSentry, "BmGame.RAEC_DestroyedSentry_Solo.SetDestroyedSentry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDestroyedSentry, "BmGame.RAEC_DestroyedSentry_Solo.SetDestroyedSentry", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inDestroyedSentry, paramsPtr + 0);

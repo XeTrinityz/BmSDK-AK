@@ -78,14 +78,14 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RRainComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DisableRainSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableRainSound;
     /// <summary>
     /// Function: DisableRainSound
     /// </summary>
     public unsafe virtual void DisableRainSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableRainSound, "Engine.RRainComponent.DisableRainSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableRainSound, "Engine.RRainComponent.DisableRainSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RRainComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_EnableRainSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableRainSound;
     /// <summary>
     /// Function: EnableRainSound
     /// </summary>
     public unsafe virtual void EnableRainSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableRainSound, "Engine.RRainComponent.EnableRainSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableRainSound, "Engine.RRainComponent.EnableRainSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

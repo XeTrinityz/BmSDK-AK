@@ -78,75 +78,78 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RHUDPrompt>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetHighPriorityInstructions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHighPriorityInstructions;
     /// <summary>
     /// Function: SetHighPriorityInstructions
     /// </summary>
-    public unsafe virtual void SetHighPriorityInstructions(BmSDK.FString NewInstructions)
+    public unsafe virtual void SetHighPriorityInstructions(BmSDK.FStringArg NewInstructions)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHighPriorityInstructions, "BmGame.RHUDPrompt.SetHighPriorityInstructions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHighPriorityInstructions, "BmGame.RHUDPrompt.SetHighPriorityInstructions", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NewInstructions, paramsPtr + 0);
+        NewInstructions.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInstructions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInstructions;
     /// <summary>
     /// Function: SetInstructions
     /// </summary>
-    public unsafe virtual bool SetInstructions(BmSDK.FString NewInstructions, bool CanOverrideEmptyKismet = default)
+    public unsafe virtual bool SetInstructions(BmSDK.FStringArg NewInstructions, bool CanOverrideEmptyKismet = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInstructions, "BmGame.RHUDPrompt.SetInstructions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInstructions, "BmGame.RHUDPrompt.SetInstructions", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NewInstructions, paramsPtr + 0);
+        NewInstructions.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CanOverrideEmptyKismet, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetLines;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLines;
     /// <summary>
     /// Function: GetLines
     /// </summary>
     public unsafe virtual void GetLines()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLines, "BmGame.RHUDPrompt.GetLines");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLines, "BmGame.RHUDPrompt.GetLines", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetOverridePrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOverridePrompt;
     /// <summary>
     /// Function: SetOverridePrompt
     /// </summary>
-    public unsafe virtual void SetOverridePrompt(BmSDK.FString Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default)
+    public unsafe virtual void SetOverridePrompt(BmSDK.FStringArg Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverridePrompt, "BmGame.RHUDPrompt.SetOverridePrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOverridePrompt, "BmGame.RHUDPrompt.SetOverridePrompt", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Icon, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreRender;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreRender;
     /// <summary>
     /// Function: PreRender
     /// </summary>
     public unsafe virtual void PreRender()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreRender, "BmGame.RHUDPrompt.PreRender");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreRender, "BmGame.RHUDPrompt.PreRender", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -160,14 +163,14 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetLines;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetLines;
     /// <summary>
     /// Function: ResetLines
     /// </summary>
     public unsafe virtual void ResetLines()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetLines, "BmGame.RHUDPrompt.ResetLines");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetLines, "BmGame.RHUDPrompt.ResetLines", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -181,17 +184,17 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddLine;
     /// <summary>
     /// Function: AddLine
     /// </summary>
-    public unsafe virtual void AddLine(BmSDK.FString Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
+    public unsafe virtual void AddLine(BmSDK.FStringArg Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddLine, "BmGame.RHUDPrompt.AddLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLine, "BmGame.RHUDPrompt.AddLine", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Icon, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Main, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHammerButton, paramsPtr + 24);
@@ -205,17 +208,18 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HelpLinesMatch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HelpLinesMatch;
     /// <summary>
     /// Function: HelpLinesMatch
     /// </summary>
     public unsafe virtual bool HelpLinesMatch(out BmSDK.BmGame.RHUDPrompt.FHelpLine HL1, out BmSDK.BmGame.RHUDPrompt.FHelpLine HL2)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HelpLinesMatch, "BmGame.RHUDPrompt.HelpLinesMatch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HelpLinesMatch, "BmGame.RHUDPrompt.HelpLinesMatch", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -231,63 +235,66 @@ public partial class RHUDPrompt : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 56);
     }
 
-    private static BmSDK.Function __fn_AddTutorialLineLoc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTutorialLineLoc;
     /// <summary>
     /// Function: AddTutorialLineLoc
     /// </summary>
-    public unsafe virtual void AddTutorialLineLoc(BmSDK.FString Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
+    public unsafe virtual void AddTutorialLineLoc(BmSDK.FStringArg Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddTutorialLineLoc, "BmGame.RHUDPrompt.AddTutorialLineLoc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddTutorialLineLoc, "BmGame.RHUDPrompt.AddTutorialLineLoc", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Icon, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Main, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHammerButton, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAddHighlight, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAsSecondaryMain, paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddGadgetLineLoc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddGadgetLineLoc;
     /// <summary>
     /// Function: AddGadgetLineLoc
     /// </summary>
-    public unsafe virtual void AddGadgetLineLoc(BmSDK.FString Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
+    public unsafe virtual void AddGadgetLineLoc(BmSDK.FStringArg Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddGadgetLineLoc, "BmGame.RHUDPrompt.AddGadgetLineLoc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddGadgetLineLoc, "BmGame.RHUDPrompt.AddGadgetLineLoc", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Icon, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Main, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHammerButton, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAddHighlight, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAsSecondaryMain, paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddLineLoc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddLineLoc;
     /// <summary>
     /// Function: AddLineLoc
     /// </summary>
-    public unsafe virtual void AddLineLoc(BmSDK.FString Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
+    public unsafe virtual void AddLineLoc(BmSDK.FStringArg Text, BmSDK.BmGame.RHUDPrompt.EControlIcon Icon = default, bool Main = default, bool bHammerButton = default, bool bAddHighlight = default, bool bAsSecondaryMain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddLineLoc, "BmGame.RHUDPrompt.AddLineLoc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLineLoc, "BmGame.RHUDPrompt.AddLineLoc", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Icon, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Main, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHammerButton, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAddHighlight, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAsSecondaryMain, paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 

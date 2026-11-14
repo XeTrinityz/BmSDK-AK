@@ -73,14 +73,14 @@ public partial class RHarpoonDragBase : BmSDK.Engine.InterpActor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RHarpoonDragBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_MoveObject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveObject;
     /// <summary>
     /// Function: MoveObject
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHarpoonDragBase.DragMovingState MoveObject(System.Numerics.Vector3 Direction, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveObject, "BmGame.RHarpoonDragBase.MoveObject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveObject, "BmGame.RHarpoonDragBase.MoveObject", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Direction, paramsPtr + 0);

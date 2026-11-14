@@ -78,14 +78,14 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<OnlineCustomContentRequest>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CancelCustomContentRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCustomContentRequest;
     /// <summary>
     /// Function: CancelCustomContentRequest
     /// </summary>
     public unsafe virtual void CancelCustomContentRequest()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCustomContentRequest, "Engine.OnlineCustomContentRequest.CancelCustomContentRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelCustomContentRequest, "Engine.OnlineCustomContentRequest.CancelCustomContentRequest", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetCustomContentAsString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContentAsString;
     /// <summary>
     /// Function: GetCustomContentAsString
     /// </summary>
     public unsafe virtual void GetCustomContentAsString(out BmSDK.FString ContentData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContentAsString, "Engine.OnlineCustomContentRequest.GetCustomContentAsString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomContentAsString, "Engine.OnlineCustomContentRequest.GetCustomContentAsString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -121,14 +121,14 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetCustomContent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomContent;
     /// <summary>
     /// Function: GetCustomContent
     /// </summary>
     public unsafe virtual void GetCustomContent(out BmSDK.TArray<byte> ContentData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomContent, "Engine.OnlineCustomContentRequest.GetCustomContent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomContent, "Engine.OnlineCustomContentRequest.GetCustomContent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -143,18 +143,18 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_StartCustomContentRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartCustomContentRequest;
     /// <summary>
     /// Function: StartCustomContentRequest
     /// </summary>
-    public unsafe virtual void StartCustomContentRequest(BmSDK.FString sContentName, BmSDK.FString sCustomId, System.IntPtr dRequestCustomContentComplete)
+    public unsafe virtual void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, System.IntPtr dRequestCustomContentComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomContentRequest, "Engine.OnlineCustomContentRequest.StartCustomContentRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCustomContentRequest, "Engine.OnlineCustomContentRequest.StartCustomContentRequest", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sContentName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 16);
+        sContentName.WriteTo(paramsPtr + 0);
+        sCustomId.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dRequestCustomContentComplete, paramsPtr + 32);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -164,22 +164,25 @@ public partial class OnlineCustomContentRequest : BmSDK.GameObject, BmSDK.IGameO
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_OnRequestCustomContentComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRequestCustomContentComplete;
     /// <summary>
     /// Function: OnRequestCustomContentComplete
     /// </summary>
-    public unsafe virtual void OnRequestCustomContentComplete(bool bWasSuccessful, BmSDK.FString sCustomId)
+    public unsafe virtual void OnRequestCustomContentComplete(bool bWasSuccessful, BmSDK.FStringArg sCustomId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRequestCustomContentComplete, "Engine.OnlineCustomContentRequest.OnRequestCustomContentComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRequestCustomContentComplete, "Engine.OnlineCustomContentRequest.OnRequestCustomContentComplete", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 4);
+        sCustomId.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 

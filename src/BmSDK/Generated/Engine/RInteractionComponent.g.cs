@@ -78,14 +78,14 @@ public partial class RInteractionComponent : BmSDK.Engine.ActorComponent, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RInteractionComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RemoveRelevantInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveRelevantInteraction;
     /// <summary>
     /// Function: RemoveRelevantInteraction
     /// </summary>
     public unsafe virtual void RemoveRelevantInteraction(BmSDK.FName InteractionToRemove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveRelevantInteraction, "Engine.RInteractionComponent.RemoveRelevantInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveRelevantInteraction, "Engine.RInteractionComponent.RemoveRelevantInteraction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InteractionToRemove, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RInteractionComponent : BmSDK.Engine.ActorComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_AddRelevantInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRelevantInteraction;
     /// <summary>
     /// Function: AddRelevantInteraction
     /// </summary>
     public unsafe virtual void AddRelevantInteraction(BmSDK.FName NewInteraction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRelevantInteraction, "Engine.RInteractionComponent.AddRelevantInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRelevantInteraction, "Engine.RInteractionComponent.AddRelevantInteraction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewInteraction, paramsPtr + 0);

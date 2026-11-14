@@ -96,14 +96,14 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnHitEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnHitEffect;
     /// <summary>
     /// Function: SpawnHitEffect
     /// </summary>
     public unsafe virtual void SpawnHitEffect(BmSDK.Engine.Actor.FImpactInfo Impact, BmSDK.Engine.RPhysicalMaterialProperty.EPhysMaterialImpactTypes ImpactType, BmSDK.Engine.AkEvent ImpactSound, bool bPlaySound = default, float Wetness = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnHitEffect, "Engine.RPhysicalMaterialProperty.SpawnHitEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnHitEffect, "Engine.RPhysicalMaterialProperty.SpawnHitEffect", this);
         byte* paramsPtr = stackalloc byte[376];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Impact, paramsPtr + 0);
@@ -133,14 +133,14 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         return;
     }
 
-    private static BmSDK.Function __fn_HitEffectParticleSystemFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitEffectParticleSystemFinished;
     /// <summary>
     /// Function: HitEffectParticleSystemFinished
     /// </summary>
     public unsafe virtual void HitEffectParticleSystemFinished(BmSDK.Engine.ParticleSystemComponent PSC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitEffectParticleSystemFinished, "Engine.RPhysicalMaterialProperty.HitEffectParticleSystemFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitEffectParticleSystemFinished, "Engine.RPhysicalMaterialProperty.HitEffectParticleSystemFinished", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PSC, paramsPtr + 0);

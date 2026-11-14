@@ -78,42 +78,42 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RCwGrappleGun>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanAimGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanAimGrapple;
     /// <summary>
     /// Function: CanAimGrapple
     /// </summary>
     public unsafe override bool CanAimGrapple()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanAimGrapple, "BmScript.RCwGrappleGun.CanAimGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanAimGrapple, "BmScript.RCwGrappleGun.CanAimGrapple", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RecalculatePath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecalculatePath;
     /// <summary>
     /// Function: RecalculatePath
     /// </summary>
     public unsafe virtual void RecalculatePath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecalculatePath, "BmScript.RCwGrappleGun.RecalculatePath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecalculatePath, "BmScript.RCwGrappleGun.RecalculatePath", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsWallClimbMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWallClimbMove;
     /// <summary>
     /// Function: IsWallClimbMove
     /// </summary>
     public unsafe override bool IsWallClimbMove(BmSDK.BmGame.RSpecialMoveConfig Config)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWallClimbMove, "BmScript.RCwGrappleGun.IsWallClimbMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWallClimbMove, "BmScript.RCwGrappleGun.IsWallClimbMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Config, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindGrapplePointMultipleCones;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindGrapplePointMultipleCones;
     /// <summary>
     /// Function: FindGrapplePointMultipleCones
     /// </summary>
     public unsafe override void FindGrapplePointMultipleCones(out BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition> Cones, float MinAngle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindGrapplePointMultipleCones, "BmScript.RCwGrappleGun.FindGrapplePointMultipleCones");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindGrapplePointMultipleCones, "BmScript.RCwGrappleGun.FindGrapplePointMultipleCones", this);
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinAngle, paramsPtr + 16);
@@ -137,14 +137,14 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_AddCone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCone;
     /// <summary>
     /// Function: AddCone
     /// </summary>
-    public unsafe virtual void AddCone(out BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition> Cones, float MinAngle, System.Numerics.Vector3 CameraLocation, BmSDK.Rotator CameraRotation, System.Numerics.Vector3 PlayerLocation, bool bZoomed, float OverrideMaxDistance = default, BmSDK.FString Desc = default)
+    public unsafe virtual void AddCone(out BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition> Cones, float MinAngle, System.Numerics.Vector3 CameraLocation, BmSDK.Rotator CameraRotation, System.Numerics.Vector3 PlayerLocation, bool bZoomed, float OverrideMaxDistance = default, BmSDK.FStringArg Desc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCone, "BmScript.RCwGrappleGun.AddCone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCone, "BmScript.RCwGrappleGun.AddCone", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinAngle, paramsPtr + 16);
@@ -153,22 +153,23 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerLocation, paramsPtr + 44);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bZoomed, paramsPtr + 56);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideMaxDistance, paramsPtr + 60);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Desc, paramsPtr + 64);
+        Desc.WriteTo(paramsPtr + 64);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 64);
         Cones = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition>>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ModifyCone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyCone;
     /// <summary>
     /// Function: ModifyCone
     /// </summary>
-    public unsafe virtual void ModifyCone(out BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition> Cones, float MinAngle, System.Numerics.Vector3 CameraLocation, BmSDK.Rotator CameraRotation, System.Numerics.Vector3 PlayerLocation, bool bZoomed, float OverrideMaxDistance = default, BmSDK.FString Desc = default)
+    public unsafe virtual void ModifyCone(out BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition> Cones, float MinAngle, System.Numerics.Vector3 CameraLocation, BmSDK.Rotator CameraRotation, System.Numerics.Vector3 PlayerLocation, bool bZoomed, float OverrideMaxDistance = default, BmSDK.FStringArg Desc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyCone, "BmScript.RCwGrappleGun.ModifyCone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyCone, "BmScript.RCwGrappleGun.ModifyCone", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinAngle, paramsPtr + 16);
@@ -177,36 +178,37 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerLocation, paramsPtr + 44);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bZoomed, paramsPtr + 56);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideMaxDistance, paramsPtr + 60);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Desc, paramsPtr + 64);
+        Desc.WriteTo(paramsPtr + 64);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 64);
         Cones = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RGrappleGun.FGrappleConeDefinition>>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetAutoSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAutoSwing;
     /// <summary>
     /// Function: ResetAutoSwing
     /// </summary>
     public unsafe virtual void ResetAutoSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetAutoSwing, "BmScript.RCwGrappleGun.ResetAutoSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetAutoSwing, "BmScript.RCwGrappleGun.ResetAutoSwing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartAutoSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAutoSwing;
     /// <summary>
     /// Function: StartAutoSwing
     /// </summary>
     public unsafe virtual void StartAutoSwing(bool bTriggeredFromEdge = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAutoSwing, "BmScript.RCwGrappleGun.StartAutoSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAutoSwing, "BmScript.RCwGrappleGun.StartAutoSwing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTriggeredFromEdge, paramsPtr + 0);
@@ -214,28 +216,28 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_CanSwingFromEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSwingFromEdge;
     /// <summary>
     /// Function: CanSwingFromEdge
     /// </summary>
     public unsafe virtual bool CanSwingFromEdge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSwingFromEdge, "BmScript.RCwGrappleGun.CanSwingFromEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSwingFromEdge, "BmScript.RCwGrappleGun.CanSwingFromEdge", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ScriptTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScriptTick;
     /// <summary>
     /// Function: ScriptTick
     /// </summary>
     public unsafe override void ScriptTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScriptTick, "BmScript.RCwGrappleGun.ScriptTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScriptTick, "BmScript.RCwGrappleGun.ScriptTick", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -243,14 +245,14 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_DrawClimbRoute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawClimbRoute;
     /// <summary>
     /// Function: DrawClimbRoute
     /// </summary>
     public unsafe override void DrawClimbRoute(bool bPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawClimbRoute, "BmScript.RCwGrappleGun.DrawClimbRoute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawClimbRoute, "BmScript.RCwGrappleGun.DrawClimbRoute", this);
         byte* paramsPtr = stackalloc byte[364];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPersistent, paramsPtr + 0);
@@ -258,70 +260,70 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForSwingEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForSwingEdge;
     /// <summary>
     /// Function: CheckForSwingEdge
     /// </summary>
     public unsafe virtual void CheckForSwingEdge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForSwingEdge, "BmScript.RCwGrappleGun.CheckForSwingEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForSwingEdge, "BmScript.RCwGrappleGun.CheckForSwingEdge", this);
         byte* paramsPtr = stackalloc byte[220];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawDebugInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebugInfo;
     /// <summary>
     /// Function: DrawDebugInfo
     /// </summary>
     public unsafe virtual void DrawDebugInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebugInfo, "BmScript.RCwGrappleGun.DrawDebugInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawDebugInfo, "BmScript.RCwGrappleGun.DrawDebugInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearDebugInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDebugInfo;
     /// <summary>
     /// Function: ClearDebugInfo
     /// </summary>
     public unsafe virtual void ClearDebugInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDebugInfo, "BmScript.RCwGrappleGun.ClearDebugInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDebugInfo, "BmScript.RCwGrappleGun.ClearDebugInfo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DumpTargetInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpTargetInfo;
     /// <summary>
     /// Function: DumpTargetInfo
     /// </summary>
     public unsafe virtual void DumpTargetInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpTargetInfo, "BmScript.RCwGrappleGun.DumpTargetInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpTargetInfo, "BmScript.RCwGrappleGun.DumpTargetInfo", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetIdealSwingParameters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIdealSwingParameters;
     /// <summary>
     /// Function: GetIdealSwingParameters
     /// </summary>
     public unsafe override void GetIdealSwingParameters(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, System.Numerics.Vector3 WallLocation, out float IdealSwingTime, out float IdealSwingLength)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIdealSwingParameters, "BmScript.RCwGrappleGun.GetIdealSwingParameters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIdealSwingParameters, "BmScript.RCwGrappleGun.GetIdealSwingParameters", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -337,14 +339,14 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetAerialWhipConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAerialWhipConfig;
     /// <summary>
     /// Function: GetAerialWhipConfig
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RSpecialMoveConfig_CwAerialWhipPounce GetAerialWhipConfig(System.Numerics.Vector3 StartLocation, System.Numerics.Vector3 EndLocation, System.Numerics.Vector3 WallLocation, BmSDK.BmGame.RPawnPlayerCatwomanBase.ESwingDirection SwingDirection = default, bool bGetSafeMove = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAerialWhipConfig, "BmScript.RCwGrappleGun.GetAerialWhipConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAerialWhipConfig, "BmScript.RCwGrappleGun.GetAerialWhipConfig", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -356,42 +358,42 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmScript.RSpecialMoveConfig_CwAerialWhipPounce>(paramsPtr + 44);
     }
 
-    private static BmSDK.Function __fn_TriggerAerialWhipPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAerialWhipPounce;
     /// <summary>
     /// Function: TriggerAerialWhipPounce
     /// </summary>
     public unsafe virtual bool TriggerAerialWhipPounce()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAerialWhipPounce, "BmScript.RCwGrappleGun.TriggerAerialWhipPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerAerialWhipPounce, "BmScript.RCwGrappleGun.TriggerAerialWhipPounce", this);
         byte* paramsPtr = stackalloc byte[252];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerAerialAutoWhipPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerAerialAutoWhipPounce;
     /// <summary>
     /// Function: TriggerAerialAutoWhipPounce
     /// </summary>
     public unsafe virtual bool TriggerAerialAutoWhipPounce()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerAerialAutoWhipPounce, "BmScript.RCwGrappleGun.TriggerAerialAutoWhipPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerAerialAutoWhipPounce, "BmScript.RCwGrappleGun.TriggerAerialAutoWhipPounce", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartWallClimbCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartWallClimbCamera;
     /// <summary>
     /// Function: StartWallClimbCamera
     /// </summary>
     public unsafe override void StartWallClimbCamera(System.Numerics.Vector3 CurrentLandLocation, int FirstClimbPointIndex = default, bool bEstimatedLandPoint = default, bool bFromSwing = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartWallClimbCamera, "BmScript.RCwGrappleGun.StartWallClimbCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartWallClimbCamera, "BmScript.RCwGrappleGun.StartWallClimbCamera", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentLandLocation, paramsPtr + 0);
@@ -402,14 +404,14 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerClawClimb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerClawClimb;
     /// <summary>
     /// Function: TriggerClawClimb
     /// </summary>
     public unsafe virtual void TriggerClawClimb(bool bForceClawClimb)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerClawClimb, "BmScript.RCwGrappleGun.TriggerClawClimb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerClawClimb, "BmScript.RCwGrappleGun.TriggerClawClimb", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceClawClimb, paramsPtr + 0);
@@ -417,42 +419,42 @@ public partial class RCwGrappleGun : BmSDK.BmGame.RCwGrappleGunBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPounce;
     /// <summary>
     /// Function: TriggerPounce
     /// </summary>
     public unsafe virtual void TriggerPounce()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPounce, "BmScript.RCwGrappleGun.TriggerPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPounce, "BmScript.RCwGrappleGun.TriggerPounce", this);
         byte* paramsPtr = stackalloc byte[244];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryAerialSwingMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryAerialSwingMove;
     /// <summary>
     /// Function: TryAerialSwingMove
     /// </summary>
     public unsafe virtual bool TryAerialSwingMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryAerialSwingMove, "BmScript.RCwGrappleGun.TryAerialSwingMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryAerialSwingMove, "BmScript.RCwGrappleGun.TryAerialSwingMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Grapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Grapple;
     /// <summary>
     /// Function: Grapple
     /// </summary>
     public unsafe override bool Grapple(BmSDK.BmGame.RSpecialMoveConfig OverrideGrappleMove = default, bool bForceSucced = default, bool bTryQueuedGrapple = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Grapple, "BmScript.RCwGrappleGun.Grapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Grapple, "BmScript.RCwGrappleGun.Grapple", this);
         byte* paramsPtr = stackalloc byte[1428];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideGrappleMove, paramsPtr + 0);

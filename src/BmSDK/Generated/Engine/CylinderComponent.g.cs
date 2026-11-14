@@ -78,28 +78,28 @@ public partial class CylinderComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.
         where TComponent : class, Framework.IScriptComponent<CylinderComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetExtent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetExtent;
     /// <summary>
     /// Function: GetExtent
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetExtent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetExtent, "Engine.CylinderComponent.GetExtent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetExtent, "Engine.CylinderComponent.GetExtent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetCylinderSize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCylinderSize;
     /// <summary>
     /// Function: SetCylinderSize
     /// </summary>
     public unsafe virtual void SetCylinderSize(float NewRadius, float NewHeight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCylinderSize, "Engine.CylinderComponent.SetCylinderSize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCylinderSize, "Engine.CylinderComponent.SetCylinderSize", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRadius, paramsPtr + 0);

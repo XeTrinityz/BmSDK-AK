@@ -78,14 +78,14 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_FollowSearch>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetWalkSlow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWalkSlow;
     /// <summary>
     /// Function: SetWalkSlow
     /// </summary>
     public unsafe virtual void SetWalkSlow(bool bNewWalkSlow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWalkSlow, "BmGame.RBMAIAction_FollowSearch.SetWalkSlow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWalkSlow, "BmGame.RBMAIAction_FollowSearch.SetWalkSlow", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewWalkSlow, paramsPtr + 0);
@@ -93,56 +93,56 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateStance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStance;
     /// <summary>
     /// Function: UpdateStance
     /// </summary>
     public unsafe virtual void UpdateStance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateStance, "BmGame.RBMAIAction_FollowSearch.UpdateStance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateStance, "BmGame.RBMAIAction_FollowSearch.UpdateStance", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WantsLeaderToSlow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WantsLeaderToSlow;
     /// <summary>
     /// Function: WantsLeaderToSlow
     /// </summary>
     public unsafe virtual bool WantsLeaderToSlow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WantsLeaderToSlow, "BmGame.RBMAIAction_FollowSearch.WantsLeaderToSlow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WantsLeaderToSlow, "BmGame.RBMAIAction_FollowSearch.WantsLeaderToSlow", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsInFormation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInFormation;
     /// <summary>
     /// Function: IsInFormation
     /// </summary>
     public unsafe virtual bool IsInFormation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInFormation, "BmGame.RBMAIAction_FollowSearch.IsInFormation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInFormation, "BmGame.RBMAIAction_FollowSearch.IsInFormation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ActionTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionTick;
     /// <summary>
     /// Function: ActionTick
     /// </summary>
     public unsafe override BmSDK.BmGame.RBMAIAction.ActionTickResult ActionTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionTick, "BmGame.RBMAIAction_FollowSearch.ActionTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionTick, "BmGame.RBMAIAction_FollowSearch.ActionTick", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -150,28 +150,28 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIAction.ActionTickResult>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_BuildHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildHandle;
     /// <summary>
     /// Function: BuildHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle BuildHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildHandle, "BmGame.RBMAIAction_FollowSearch.BuildHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildHandle, "BmGame.RBMAIAction_FollowSearch.BuildHandle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetHasBackwardsFollower;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHasBackwardsFollower;
     /// <summary>
     /// Function: SetHasBackwardsFollower
     /// </summary>
     public unsafe virtual void SetHasBackwardsFollower(bool bNewVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHasBackwardsFollower, "BmGame.RBMAIAction_FollowSearch.SetHasBackwardsFollower");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHasBackwardsFollower, "BmGame.RBMAIAction_FollowSearch.SetHasBackwardsFollower", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewVal, paramsPtr + 0);
@@ -179,14 +179,14 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         return;
     }
 
-    private static BmSDK.Function __fn_SetBackwards;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBackwards;
     /// <summary>
     /// Function: SetBackwards
     /// </summary>
     public unsafe virtual void SetBackwards(bool bNewVal, bool bWalkSlowlyIfForward = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBackwards, "BmGame.RBMAIAction_FollowSearch.SetBackwards");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBackwards, "BmGame.RBMAIAction_FollowSearch.SetBackwards", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewVal, paramsPtr + 0);
@@ -195,14 +195,14 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         return;
     }
 
-    private static BmSDK.Function __fn_SetupFollowPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupFollowPosition;
     /// <summary>
     /// Function: SetupFollowPosition
     /// </summary>
     public unsafe virtual void SetupFollowPosition(System.Numerics.Vector3 NewOffset, float newdist)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupFollowPosition, "BmGame.RBMAIAction_FollowSearch.SetupFollowPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupFollowPosition, "BmGame.RBMAIAction_FollowSearch.SetupFollowPosition", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOffset, paramsPtr + 0);
@@ -211,14 +211,14 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         return;
     }
 
-    private static BmSDK.Function __fn_SetupFollowTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupFollowTarget;
     /// <summary>
     /// Function: SetupFollowTarget
     /// </summary>
     public unsafe virtual void SetupFollowTarget(BmSDK.BmGame.RBMPawnAI NewFollowTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupFollowTarget, "BmGame.RBMAIAction_FollowSearch.SetupFollowTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupFollowTarget, "BmGame.RBMAIAction_FollowSearch.SetupFollowTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewFollowTarget, paramsPtr + 0);
@@ -226,14 +226,14 @@ public partial class RBMAIAction_FollowSearch : BmSDK.BmGame.RBMAIAction_BaseMov
         return;
     }
 
-    private static BmSDK.Function __fn_Cleanup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cleanup;
     /// <summary>
     /// Function: Cleanup
     /// </summary>
     public unsafe override void Cleanup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cleanup, "BmGame.RBMAIAction_FollowSearch.Cleanup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cleanup, "BmGame.RBMAIAction_FollowSearch.Cleanup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

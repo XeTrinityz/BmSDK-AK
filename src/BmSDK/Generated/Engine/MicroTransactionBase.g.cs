@@ -78,17 +78,17 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
         where TComponent : class, Framework.IScriptComponent<MicroTransactionBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetProductIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetProductIndex;
     /// <summary>
     /// Function: GetProductIndex
     /// </summary>
-    public unsafe virtual int GetProductIndex(BmSDK.FString Identifier)
+    public unsafe virtual int GetProductIndex(BmSDK.FStringArg Identifier)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetProductIndex, "Engine.MicroTransactionBase.GetProductIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetProductIndex, "Engine.MicroTransactionBase.GetProductIndex", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Identifier, paramsPtr + 0);
+        Identifier.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -97,17 +97,18 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_BeginPurchase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginPurchase;
     /// <summary>
     /// Function: BeginPurchase
     /// </summary>
     public unsafe virtual bool BeginPurchase(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginPurchase, "Engine.MicroTransactionBase.BeginPurchase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginPurchase, "Engine.MicroTransactionBase.BeginPurchase", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -122,14 +123,14 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsAllowedToMakePurchases;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAllowedToMakePurchases;
     /// <summary>
     /// Function: IsAllowedToMakePurchases
     /// </summary>
     public unsafe virtual bool IsAllowedToMakePurchases()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAllowedToMakePurchases, "Engine.MicroTransactionBase.IsAllowedToMakePurchases");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAllowedToMakePurchases, "Engine.MicroTransactionBase.IsAllowedToMakePurchases", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -143,14 +144,14 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_QueryForAvailablePurchases;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryForAvailablePurchases;
     /// <summary>
     /// Function: QueryForAvailablePurchases
     /// </summary>
     public unsafe virtual bool QueryForAvailablePurchases()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueryForAvailablePurchases, "Engine.MicroTransactionBase.QueryForAvailablePurchases");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueryForAvailablePurchases, "Engine.MicroTransactionBase.QueryForAvailablePurchases", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -164,14 +165,14 @@ public partial class MicroTransactionBase : BmSDK.Engine.PlatformInterfaceBase, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.MicroTransactionBase.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.MicroTransactionBase.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,14 +78,14 @@ public partial class RCrossLevelVantageProxy : BmSDK.Engine.Actor, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RCrossLevelVantageProxy>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetNearestHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestHidePoint;
     /// <summary>
     /// Function: GetNearestHidePoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetNearestHidePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestHidePoint, "BmGame.RCrossLevelVantageProxy.GetNearestHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNearestHidePoint, "BmGame.RCrossLevelVantageProxy.GetNearestHidePoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

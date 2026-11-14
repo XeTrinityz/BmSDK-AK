@@ -78,42 +78,42 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RMagneticMatineeObject>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetMagTargetTangent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMagTargetTangent;
     /// <summary>
     /// Function: GetMagTargetTangent
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMagTargetTangent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMagTargetTangent, "BmGame.RMagneticMatineeObject.GetMagTargetTangent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMagTargetTangent, "BmGame.RMagneticMatineeObject.GetMagTargetTangent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsMagActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMagActive;
     /// <summary>
     /// Function: IsMagActive
     /// </summary>
     public unsafe virtual bool IsMagActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMagActive, "BmGame.RMagneticMatineeObject.IsMagActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMagActive, "BmGame.RMagneticMatineeObject.IsMagActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SaveMatineePos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveMatineePos;
     /// <summary>
     /// Function: SaveMatineePos
     /// </summary>
     public unsafe virtual void SaveMatineePos(float MatineePos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveMatineePos, "BmGame.RMagneticMatineeObject.SaveMatineePos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveMatineePos, "BmGame.RMagneticMatineeObject.SaveMatineePos", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MatineePos, paramsPtr + 0);
@@ -121,42 +121,42 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RMagneticMatineeObject.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RMagneticMatineeObject.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RMagneticMatineeObject.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "BmGame.RMagneticMatineeObject.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSequenceEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSequenceEvent;
     /// <summary>
     /// Function: TriggerSequenceEvent
     /// </summary>
     public unsafe virtual void TriggerSequenceEvent(int OutputLinkIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSequenceEvent, "BmGame.RMagneticMatineeObject.TriggerSequenceEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSequenceEvent, "BmGame.RMagneticMatineeObject.TriggerSequenceEvent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutputLinkIndex, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCaches;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCaches;
     /// <summary>
     /// Function: UpdateCaches
     /// </summary>
     public unsafe virtual void UpdateCaches()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCaches, "BmGame.RMagneticMatineeObject.UpdateCaches");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCaches, "BmGame.RMagneticMatineeObject.UpdateCaches", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -185,14 +185,14 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetMatineeToInitialPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMatineeToInitialPosition;
     /// <summary>
     /// Function: SetMatineeToInitialPosition
     /// </summary>
     public unsafe virtual void SetMatineeToInitialPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMatineeToInitialPosition, "BmGame.RMagneticMatineeObject.SetMatineeToInitialPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMatineeToInitialPosition, "BmGame.RMagneticMatineeObject.SetMatineeToInitialPosition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -206,14 +206,14 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_ExtractMatineeEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExtractMatineeEvents;
     /// <summary>
     /// Function: ExtractMatineeEvents
     /// </summary>
     public unsafe virtual bool ExtractMatineeEvents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExtractMatineeEvents, "BmGame.RMagneticMatineeObject.ExtractMatineeEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExtractMatineeEvents, "BmGame.RMagneticMatineeObject.ExtractMatineeEvents", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -227,14 +227,14 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMatineeLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMatineeLength;
     /// <summary>
     /// Function: GetMatineeLength
     /// </summary>
     public unsafe virtual float GetMatineeLength()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMatineeLength, "BmGame.RMagneticMatineeObject.GetMatineeLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMatineeLength, "BmGame.RMagneticMatineeObject.GetMatineeLength", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -248,14 +248,14 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMatineePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMatineePosition;
     /// <summary>
     /// Function: GetMatineePosition
     /// </summary>
     public unsafe virtual float GetMatineePosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMatineePosition, "BmGame.RMagneticMatineeObject.GetMatineePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMatineePosition, "BmGame.RMagneticMatineeObject.GetMatineePosition", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -269,14 +269,14 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StepMatinee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StepMatinee;
     /// <summary>
     /// Function: StepMatinee
     /// </summary>
     public unsafe virtual bool StepMatinee(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StepMatinee, "BmGame.RMagneticMatineeObject.StepMatinee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StepMatinee, "BmGame.RMagneticMatineeObject.StepMatinee", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -291,14 +291,14 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetBrakes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBrakes;
     /// <summary>
     /// Function: SetBrakes
     /// </summary>
     public unsafe virtual void SetBrakes(bool bNewBrakes)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBrakes, "BmGame.RMagneticMatineeObject.SetBrakes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBrakes, "BmGame.RMagneticMatineeObject.SetBrakes", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewBrakes, paramsPtr + 0);
@@ -306,56 +306,56 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_IsSecondaryTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSecondaryTarget;
     /// <summary>
     /// Function: IsSecondaryTarget
     /// </summary>
     public unsafe virtual bool IsSecondaryTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSecondaryTarget, "BmGame.RMagneticMatineeObject.IsSecondaryTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSecondaryTarget, "BmGame.RMagneticMatineeObject.IsSecondaryTarget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActor;
     /// <summary>
     /// Function: GetActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActor, "BmGame.RMagneticMatineeObject.GetActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActor, "BmGame.RMagneticMatineeObject.GetActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMagLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMagLocation;
     /// <summary>
     /// Function: GetMagLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMagLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMagLocation, "BmGame.RMagneticMatineeObject.GetMagLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMagLocation, "BmGame.RMagneticMatineeObject.GetMagLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetMagnetStrength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMagnetStrength;
     /// <summary>
     /// Function: SetMagnetStrength
     /// </summary>
     public unsafe virtual float SetMagnetStrength(BmSDK.BmGame.RMagneticBlastReceiver REC, float MagStr, System.Numerics.Vector3 SourceLocation, float DeltaTime, bool bInitialImpulse, BmSDK.BmGame.RMagneticSurfaceSMBase Surface)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMagnetStrength, "BmGame.RMagneticMatineeObject.SetMagnetStrength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMagnetStrength, "BmGame.RMagneticMatineeObject.SetMagnetStrength", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(REC, paramsPtr + 0);
@@ -368,28 +368,28 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_ClearMatinee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMatinee;
     /// <summary>
     /// Function: ClearMatinee
     /// </summary>
     public unsafe virtual void ClearMatinee()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMatinee, "BmGame.RMagneticMatineeObject.ClearMatinee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearMatinee, "BmGame.RMagneticMatineeObject.ClearMatinee", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMatinee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMatinee;
     /// <summary>
     /// Function: SetMatinee
     /// </summary>
     public unsafe virtual void SetMatinee(BmSDK.Engine.SeqAct_Interp M)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMatinee, "BmGame.RMagneticMatineeObject.SetMatinee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMatinee, "BmGame.RMagneticMatineeObject.SetMatinee", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(M, paramsPtr + 0);
@@ -397,22 +397,23 @@ public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetActorThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorThoughts;
     /// <summary>
     /// Function: GetActorThoughts
     /// </summary>
-    public unsafe override void GetActorThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FString IndentString = default)
+    public unsafe override void GetActorThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FStringArg IndentString = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorThoughts, "BmGame.RMagneticMatineeObject.GetActorThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorThoughts, "BmGame.RMagneticMatineeObject.GetActorThoughts", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ThoughtLocationOverride);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThoughtLocationOverride, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(IndentString, paramsPtr + 28);
+        IndentString.WriteTo(paramsPtr + 28);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 28);
         ThoughtList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.Actor.FThought>>(paramsPtr + 0);
         ThoughtLocationOverride = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 16);
         return;

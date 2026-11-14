@@ -78,14 +78,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<PhysicsAssetInstance>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RestoreDefaultSleepFamily;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreDefaultSleepFamily;
     /// <summary>
     /// Function: RestoreDefaultSleepFamily
     /// </summary>
     public unsafe virtual void RestoreDefaultSleepFamily(BmSDK.Engine.PhysicsAsset InAsset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreDefaultSleepFamily, "Engine.PhysicsAssetInstance.RestoreDefaultSleepFamily");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreDefaultSleepFamily, "Engine.PhysicsAssetInstance.RestoreDefaultSleepFamily", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InAsset, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OverrideSleepFamily;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideSleepFamily;
     /// <summary>
     /// Function: OverrideSleepFamily
     /// </summary>
     public unsafe virtual void OverrideSleepFamily(BmSDK.Engine.RB_BodySetup.ESleepFamily SleepFamily)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideSleepFamily, "Engine.PhysicsAssetInstance.OverrideSleepFamily");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideSleepFamily, "Engine.PhysicsAssetInstance.OverrideSleepFamily", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SleepFamily, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetEnableCollisionWithKActorsWhenCrouched;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableCollisionWithKActorsWhenCrouched;
     /// <summary>
     /// Function: SetEnableCollisionWithKActorsWhenCrouched
     /// </summary>
     public unsafe virtual void SetEnableCollisionWithKActorsWhenCrouched(BmSDK.Engine.PhysicsAsset InPhysicsAsset, bool bEnableHeadCollisionWithKActors)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnableCollisionWithKActorsWhenCrouched, "Engine.PhysicsAssetInstance.SetEnableCollisionWithKActorsWhenCrouched");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnableCollisionWithKActorsWhenCrouched, "Engine.PhysicsAssetInstance.SetEnableCollisionWithKActorsWhenCrouched", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InPhysicsAsset, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDamping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamping;
     /// <summary>
     /// Function: SetDamping
     /// </summary>
     public unsafe virtual void SetDamping(float LinearDamping, float AngularDamping)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamping, "Engine.PhysicsAssetInstance.SetDamping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDamping, "Engine.PhysicsAssetInstance.SetDamping", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinearDamping, paramsPtr + 0);
@@ -168,14 +168,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDampingRampupProportion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDampingRampupProportion;
     /// <summary>
     /// Function: SetDampingRampupProportion
     /// </summary>
     public unsafe virtual void SetDampingRampupProportion(float NewDampingRampupProportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDampingRampupProportion, "Engine.PhysicsAssetInstance.SetDampingRampupProportion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDampingRampupProportion, "Engine.PhysicsAssetInstance.SetDampingRampupProportion", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDampingRampupProportion, paramsPtr + 0);
@@ -190,14 +190,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FindConstraintInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindConstraintInstance;
     /// <summary>
     /// Function: FindConstraintInstance
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_ConstraintInstance FindConstraintInstance(BmSDK.FName ConName, BmSDK.Engine.PhysicsAsset InAsset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindConstraintInstance, "Engine.PhysicsAssetInstance.FindConstraintInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindConstraintInstance, "Engine.PhysicsAssetInstance.FindConstraintInstance", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConName, paramsPtr + 0);
@@ -213,14 +213,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RB_ConstraintInstance>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_FindBodyInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBodyInstance;
     /// <summary>
     /// Function: FindBodyInstance
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodyInstance FindBodyInstance(BmSDK.FName BodyName, BmSDK.Engine.PhysicsAsset InAsset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindBodyInstance, "Engine.PhysicsAssetInstance.FindBodyInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindBodyInstance, "Engine.PhysicsAssetInstance.FindBodyInstance", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyName, paramsPtr + 0);
@@ -236,14 +236,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RB_BodyInstance>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetFullAnimWeightBonesFixed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFullAnimWeightBonesFixed;
     /// <summary>
     /// Function: SetFullAnimWeightBonesFixed
     /// </summary>
     public unsafe virtual void SetFullAnimWeightBonesFixed(bool bNewFixed, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFullAnimWeightBonesFixed, "Engine.PhysicsAssetInstance.SetFullAnimWeightBonesFixed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFullAnimWeightBonesFixed, "Engine.PhysicsAssetInstance.SetFullAnimWeightBonesFixed", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewFixed, paramsPtr + 0);
@@ -259,14 +259,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetFullAnimWeightBlockRigidBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFullAnimWeightBlockRigidBody;
     /// <summary>
     /// Function: SetFullAnimWeightBlockRigidBody
     /// </summary>
     public unsafe virtual void SetFullAnimWeightBlockRigidBody(bool bNewBlockRigidBody, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFullAnimWeightBlockRigidBody, "Engine.PhysicsAssetInstance.SetFullAnimWeightBlockRigidBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFullAnimWeightBlockRigidBody, "Engine.PhysicsAssetInstance.SetFullAnimWeightBlockRigidBody", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewBlockRigidBody, paramsPtr + 0);
@@ -282,14 +282,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetNamedBodiesBlockRigidBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedBodiesBlockRigidBody;
     /// <summary>
     /// Function: SetNamedBodiesBlockRigidBody
     /// </summary>
     public unsafe virtual void SetNamedBodiesBlockRigidBody(bool bNewBlockRigidBody, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedBodiesBlockRigidBody, "Engine.PhysicsAssetInstance.SetNamedBodiesBlockRigidBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNamedBodiesBlockRigidBody, "Engine.PhysicsAssetInstance.SetNamedBodiesBlockRigidBody", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewBlockRigidBody, paramsPtr + 0);
@@ -306,14 +306,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetNamedMotorsAngularVelocityDrive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedMotorsAngularVelocityDrive;
     /// <summary>
     /// Function: SetNamedMotorsAngularVelocityDrive
     /// </summary>
     public unsafe virtual void SetNamedMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSetOtherBodiesToComplement = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedMotorsAngularVelocityDrive, "Engine.PhysicsAssetInstance.SetNamedMotorsAngularVelocityDrive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNamedMotorsAngularVelocityDrive, "Engine.PhysicsAssetInstance.SetNamedMotorsAngularVelocityDrive", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnableSwingDrive, paramsPtr + 0);
@@ -332,14 +332,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetNamedMotorsAngularPositionDrive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedMotorsAngularPositionDrive;
     /// <summary>
     /// Function: SetNamedMotorsAngularPositionDrive
     /// </summary>
     public unsafe virtual void SetNamedMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSetOtherBodiesToComplement = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedMotorsAngularPositionDrive, "Engine.PhysicsAssetInstance.SetNamedMotorsAngularPositionDrive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNamedMotorsAngularPositionDrive, "Engine.PhysicsAssetInstance.SetNamedMotorsAngularPositionDrive", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnableSwingDrive, paramsPtr + 0);
@@ -358,14 +358,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetAllMotorsAngularDriveParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllMotorsAngularDriveParams;
     /// <summary>
     /// Function: SetAllMotorsAngularDriveParams
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularDriveParams(float InSpring, float InDamping, float InForceLimit, BmSDK.Engine.SkeletalMeshComponent SkelMesh = default, bool bSkipFullAnimWeightBodies = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllMotorsAngularDriveParams, "Engine.PhysicsAssetInstance.SetAllMotorsAngularDriveParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllMotorsAngularDriveParams, "Engine.PhysicsAssetInstance.SetAllMotorsAngularDriveParams", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSpring, paramsPtr + 0);
@@ -384,14 +384,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetAllMotorsAngularVelocityDrive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllMotorsAngularVelocityDrive;
     /// <summary>
     /// Function: SetAllMotorsAngularVelocityDrive
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularVelocityDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, bool bSkipFullAnimWeightBodies = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllMotorsAngularVelocityDrive, "Engine.PhysicsAssetInstance.SetAllMotorsAngularVelocityDrive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllMotorsAngularVelocityDrive, "Engine.PhysicsAssetInstance.SetAllMotorsAngularVelocityDrive", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnableSwingDrive, paramsPtr + 0);
@@ -409,14 +409,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetAllMotorsAngularPositionDrive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllMotorsAngularPositionDrive;
     /// <summary>
     /// Function: SetAllMotorsAngularPositionDrive
     /// </summary>
     public unsafe virtual void SetAllMotorsAngularPositionDrive(bool bEnableSwingDrive, bool bEnableTwistDrive, BmSDK.Engine.SkeletalMeshComponent SkelMesh = default, bool bSkipFullAnimWeightBodies = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllMotorsAngularPositionDrive, "Engine.PhysicsAssetInstance.SetAllMotorsAngularPositionDrive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllMotorsAngularPositionDrive, "Engine.PhysicsAssetInstance.SetAllMotorsAngularPositionDrive", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnableSwingDrive, paramsPtr + 0);
@@ -434,14 +434,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ForceAllBodiesBelowUnfixed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceAllBodiesBelowUnfixed;
     /// <summary>
     /// Function: ForceAllBodiesBelowUnfixed
     /// </summary>
     public unsafe virtual void ForceAllBodiesBelowUnfixed(out BmSDK.FName InBoneName, BmSDK.Engine.PhysicsAsset InAsset, BmSDK.Engine.SkeletalMeshComponent InSkelMesh, bool InbInstanceAlwaysFullAnimWeight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceAllBodiesBelowUnfixed, "Engine.PhysicsAssetInstance.ForceAllBodiesBelowUnfixed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceAllBodiesBelowUnfixed, "Engine.PhysicsAssetInstance.ForceAllBodiesBelowUnfixed", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out InBoneName);
@@ -461,14 +461,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetGroupBodiesFixed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGroupBodiesFixed;
     /// <summary>
     /// Function: SetGroupBodiesFixed
     /// </summary>
     public unsafe virtual void SetGroupBodiesFixed(bool bNewFixed, BmSDK.FName GroupName, BmSDK.Engine.SkeletalMeshComponent SkelMesh, bool bSetOtherBodiesToComplement = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGroupBodiesFixed, "Engine.PhysicsAssetInstance.SetGroupBodiesFixed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGroupBodiesFixed, "Engine.PhysicsAssetInstance.SetGroupBodiesFixed", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewFixed, paramsPtr + 0);
@@ -486,14 +486,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetNamedBodiesFixed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNamedBodiesFixed;
     /// <summary>
     /// Function: SetNamedBodiesFixed
     /// </summary>
     public unsafe virtual void SetNamedBodiesFixed(bool bNewFixed, BmSDK.TArray<BmSDK.FName> BoneNames, BmSDK.Engine.SkeletalMeshComponent SkelMesh, bool bSetOtherBodiesToComplement = default, bool bSkipFullAnimWeightBodies = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNamedBodiesFixed, "Engine.PhysicsAssetInstance.SetNamedBodiesFixed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNamedBodiesFixed, "Engine.PhysicsAssetInstance.SetNamedBodiesFixed", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewFixed, paramsPtr + 0);
@@ -512,14 +512,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetAllBodiesFixed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllBodiesFixed;
     /// <summary>
     /// Function: SetAllBodiesFixed
     /// </summary>
     public unsafe virtual void SetAllBodiesFixed(bool bNewFixed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllBodiesFixed, "Engine.PhysicsAssetInstance.SetAllBodiesFixed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllBodiesFixed, "Engine.PhysicsAssetInstance.SetAllBodiesFixed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewFixed, paramsPtr + 0);
@@ -534,14 +534,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetTotalMassBelowBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalMassBelowBone;
     /// <summary>
     /// Function: GetTotalMassBelowBone
     /// </summary>
     public unsafe virtual float GetTotalMassBelowBone(BmSDK.FName InBoneName, BmSDK.Engine.PhysicsAsset InAsset, BmSDK.Engine.SkeletalMesh InSkelMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTotalMassBelowBone, "Engine.PhysicsAssetInstance.GetTotalMassBelowBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTotalMassBelowBone, "Engine.PhysicsAssetInstance.GetTotalMassBelowBone", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InBoneName, paramsPtr + 0);
@@ -558,14 +558,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_SetAngularDriveScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngularDriveScale;
     /// <summary>
     /// Function: SetAngularDriveScale
     /// </summary>
     public unsafe virtual void SetAngularDriveScale(float InAngularSpringScale, float InAngularDampingScale, float InAngularForceLimitScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAngularDriveScale, "Engine.PhysicsAssetInstance.SetAngularDriveScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAngularDriveScale, "Engine.PhysicsAssetInstance.SetAngularDriveScale", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InAngularSpringScale, paramsPtr + 0);
@@ -582,14 +582,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetLinearDriveScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinearDriveScale;
     /// <summary>
     /// Function: SetLinearDriveScale
     /// </summary>
     public unsafe virtual void SetLinearDriveScale(float InLinearSpringScale, float InLinearDampingScale, float InLinearForceLimitScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLinearDriveScale, "Engine.PhysicsAssetInstance.SetLinearDriveScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLinearDriveScale, "Engine.PhysicsAssetInstance.SetLinearDriveScale", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InLinearSpringScale, paramsPtr + 0);
@@ -606,14 +606,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EnableCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableCollision;
     /// <summary>
     /// Function: EnableCollision
     /// </summary>
     public unsafe virtual void EnableCollision(BmSDK.Engine.RB_BodyInstance BodyA, BmSDK.Engine.RB_BodyInstance BodyB)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableCollision, "Engine.PhysicsAssetInstance.EnableCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableCollision, "Engine.PhysicsAssetInstance.EnableCollision", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyA, paramsPtr + 0);
@@ -629,14 +629,14 @@ public partial class PhysicsAssetInstance : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DisableCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableCollision;
     /// <summary>
     /// Function: DisableCollision
     /// </summary>
     public unsafe virtual void DisableCollision(BmSDK.Engine.RB_BodyInstance BodyA, BmSDK.Engine.RB_BodyInstance BodyB)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCollision, "Engine.PhysicsAssetInstance.DisableCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableCollision, "Engine.PhysicsAssetInstance.DisableCollision", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyA, paramsPtr + 0);

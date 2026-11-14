@@ -73,14 +73,14 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<ActorComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DetachFromAny;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachFromAny;
     /// <summary>
     /// Function: DetachFromAny
     /// </summary>
     public unsafe virtual void DetachFromAny()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachFromAny, "Engine.ActorComponent.DetachFromAny");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachFromAny, "Engine.ActorComponent.DetachFromAny", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_QueueReattach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueReattach;
     /// <summary>
     /// Function: QueueReattach
     /// </summary>
     public unsafe virtual void QueueReattach(bool bTransformOnly)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueReattach, "Engine.ActorComponent.QueueReattach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueueReattach, "Engine.ActorComponent.QueueReattach", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTransformOnly, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ForceUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdate;
     /// <summary>
     /// Function: ForceUpdate
     /// </summary>
     public unsafe virtual void ForceUpdate(bool bTransformOnly)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceUpdate, "Engine.ActorComponent.ForceUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceUpdate, "Engine.ActorComponent.ForceUpdate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTransformOnly, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetComponentRBFixed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetComponentRBFixed;
     /// <summary>
     /// Function: SetComponentRBFixed
     /// </summary>
     public unsafe virtual void SetComponentRBFixed(bool bFixed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetComponentRBFixed, "Engine.ActorComponent.SetComponentRBFixed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetComponentRBFixed, "Engine.ActorComponent.SetComponentRBFixed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFixed, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class ActorComponent : BmSDK.Component, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetTickGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickGroup;
     /// <summary>
     /// Function: SetTickGroup
     /// </summary>
     public unsafe virtual void SetTickGroup(BmSDK.GameObject.ETickingGroup NewTickGroup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTickGroup, "Engine.ActorComponent.SetTickGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTickGroup, "Engine.ActorComponent.SetTickGroup", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTickGroup, paramsPtr + 0);

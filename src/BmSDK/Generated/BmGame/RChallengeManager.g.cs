@@ -78,42 +78,42 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RChallengeManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnWorldChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnWorldChange;
     /// <summary>
     /// Function: OnWorldChange
     /// </summary>
     public unsafe virtual void OnWorldChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnWorldChange, "BmGame.RChallengeManager.OnWorldChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnWorldChange, "BmGame.RChallengeManager.OnWorldChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsScarecrowChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsScarecrowChallenge;
     /// <summary>
     /// Function: IsScarecrowChallenge
     /// </summary>
     public unsafe virtual bool IsScarecrowChallenge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsScarecrowChallenge, "BmGame.RChallengeManager.IsScarecrowChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsScarecrowChallenge, "BmGame.RChallengeManager.IsScarecrowChallenge", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ToTimeString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToTimeString;
     /// <summary>
     /// Function: ToTimeString
     /// </summary>
     public unsafe virtual BmSDK.FString ToTimeString(int Value, bool bMilliseconds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToTimeString, "BmGame.RChallengeManager.ToTimeString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToTimeString, "BmGame.RChallengeManager.ToTimeString", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 0);
@@ -129,182 +129,182 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_DumpLBCache;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpLBCache;
     /// <summary>
     /// Function: DumpLBCache
     /// </summary>
     public unsafe virtual void DumpLBCache()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpLBCache, "BmGame.RChallengeManager.DumpLBCache");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpLBCache, "BmGame.RChallengeManager.DumpLBCache", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DumpINISettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpINISettings;
     /// <summary>
     /// Function: DumpINISettings
     /// </summary>
     public unsafe virtual void DumpINISettings()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpINISettings, "BmGame.RChallengeManager.DumpINISettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpINISettings, "BmGame.RChallengeManager.DumpINISettings", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Dump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Dump;
     /// <summary>
     /// Function: Dump
     /// </summary>
     public unsafe virtual void Dump()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Dump, "BmGame.RChallengeManager.Dump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Dump, "BmGame.RChallengeManager.Dump", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRetriesLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRetriesLeft;
     /// <summary>
     /// Function: GetRetriesLeft
     /// </summary>
     public unsafe virtual int GetRetriesLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRetriesLeft, "BmGame.RChallengeManager.GetRetriesLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRetriesLeft, "BmGame.RChallengeManager.GetRetriesLeft", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentURL;
     /// <summary>
     /// Function: GetCurrentURL
     /// </summary>
     public unsafe virtual BmSDK.FString GetCurrentURL()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentURL, "BmGame.RChallengeManager.GetCurrentURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentURL, "BmGame.RChallengeManager.GetCurrentURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentChallengeCharacterName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentChallengeCharacterName;
     /// <summary>
     /// Function: GetCurrentChallengeCharacterName
     /// </summary>
     public unsafe virtual BmSDK.FString GetCurrentChallengeCharacterName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentChallengeCharacterName, "BmGame.RChallengeManager.GetCurrentChallengeCharacterName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentChallengeCharacterName, "BmGame.RChallengeManager.GetCurrentChallengeCharacterName", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentChallengeCharacterId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentChallengeCharacterId;
     /// <summary>
     /// Function: GetCurrentChallengeCharacterId
     /// </summary>
     public unsafe virtual int GetCurrentChallengeCharacterId()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentChallengeCharacterId, "BmGame.RChallengeManager.GetCurrentChallengeCharacterId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentChallengeCharacterId, "BmGame.RChallengeManager.GetCurrentChallengeCharacterId", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentChallengeId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentChallengeId;
     /// <summary>
     /// Function: GetCurrentChallengeId
     /// </summary>
     public unsafe virtual int GetCurrentChallengeId()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentChallengeId, "BmGame.RChallengeManager.GetCurrentChallengeId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentChallengeId, "BmGame.RChallengeManager.GetCurrentChallengeId", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsCampaign;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCampaign;
     /// <summary>
     /// Function: IsCampaign
     /// </summary>
     public unsafe virtual bool IsCampaign()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCampaign, "BmGame.RChallengeManager.IsCampaign");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCampaign, "BmGame.RChallengeManager.IsCampaign", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsLastRound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLastRound;
     /// <summary>
     /// Function: IsLastRound
     /// </summary>
     public unsafe virtual bool IsLastRound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLastRound, "BmGame.RChallengeManager.IsLastRound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLastRound, "BmGame.RChallengeManager.IsLastRound", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentRound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentRound;
     /// <summary>
     /// Function: GetCurrentRound
     /// </summary>
     public unsafe virtual int GetCurrentRound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentRound, "BmGame.RChallengeManager.GetCurrentRound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentRound, "BmGame.RChallengeManager.GetCurrentRound", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetNextRound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNextRound;
     /// <summary>
     /// Function: SetNextRound
     /// </summary>
     public unsafe virtual void SetNextRound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNextRound, "BmGame.RChallengeManager.SetNextRound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNextRound, "BmGame.RChallengeManager.SetNextRound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsModifierActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsModifierActive;
     /// <summary>
     /// Function: IsModifierActive
     /// </summary>
     public unsafe virtual bool IsModifierActive(BmSDK.BmGame.RGameInfo.EChallengeModifiers new_modifier)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsModifierActive, "BmGame.RChallengeManager.IsModifierActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsModifierActive, "BmGame.RChallengeManager.IsModifierActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_modifier, paramsPtr + 0);
@@ -312,28 +312,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PlayerAcceptsCurrentRoundResults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerAcceptsCurrentRoundResults;
     /// <summary>
     /// Function: PlayerAcceptsCurrentRoundResults
     /// </summary>
     public unsafe virtual void PlayerAcceptsCurrentRoundResults()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerAcceptsCurrentRoundResults, "BmGame.RChallengeManager.PlayerAcceptsCurrentRoundResults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerAcceptsCurrentRoundResults, "BmGame.RChallengeManager.PlayerAcceptsCurrentRoundResults", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRoundMedalsEarned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRoundMedalsEarned;
     /// <summary>
     /// Function: SetRoundMedalsEarned
     /// </summary>
     public unsafe virtual void SetRoundMedalsEarned(int Round, byte medals_earned)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRoundMedalsEarned, "BmGame.RChallengeManager.SetRoundMedalsEarned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRoundMedalsEarned, "BmGame.RChallengeManager.SetRoundMedalsEarned", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Round, paramsPtr + 0);
@@ -342,14 +342,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetActiveRound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveRound;
     /// <summary>
     /// Function: SetActiveRound
     /// </summary>
     public unsafe virtual void SetActiveRound(int Round)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActiveRound, "BmGame.RChallengeManager.SetActiveRound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActiveRound, "BmGame.RChallengeManager.SetActiveRound", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Round, paramsPtr + 0);
@@ -357,14 +357,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BuildChallengeList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildChallengeList;
     /// <summary>
     /// Function: BuildChallengeList
     /// </summary>
     public unsafe virtual void BuildChallengeList(int ChallengeID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildChallengeList, "BmGame.RChallengeManager.BuildChallengeList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildChallengeList, "BmGame.RChallengeManager.BuildChallengeList", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChallengeID, paramsPtr + 0);
@@ -372,14 +372,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FilloutChallengeMatch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FilloutChallengeMatch;
     /// <summary>
     /// Function: FilloutChallengeMatch
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RChallengeManager.FChallengeMatch FilloutChallengeMatch(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FilloutChallengeMatch, "BmGame.RChallengeManager.FilloutChallengeMatch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FilloutChallengeMatch, "BmGame.RChallengeManager.FilloutChallengeMatch", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -387,28 +387,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RChallengeManager.FChallengeMatch>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ExitChallengeMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitChallengeMode;
     /// <summary>
     /// Function: ExitChallengeMode
     /// </summary>
     public unsafe virtual void ExitChallengeMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitChallengeMode, "BmGame.RChallengeManager.ExitChallengeMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitChallengeMode, "BmGame.RChallengeManager.ExitChallengeMode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnterChallengeMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnterChallengeMode;
     /// <summary>
     /// Function: EnterChallengeMode
     /// </summary>
     public unsafe virtual void EnterChallengeMode(BmSDK.BmGame.RChallengeModeStartPointBase hStartPoint, bool bInGameStart)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterChallengeMode, "BmGame.RChallengeManager.EnterChallengeMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnterChallengeMode, "BmGame.RChallengeManager.EnterChallengeMode", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(hStartPoint, paramsPtr + 0);
@@ -417,28 +417,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDefaults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDefaults;
     /// <summary>
     /// Function: SetDefaults
     /// </summary>
     public unsafe virtual void SetDefaults()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDefaults, "BmGame.RChallengeManager.SetDefaults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDefaults, "BmGame.RChallengeManager.SetDefaults", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetScoreOrTimeText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScoreOrTimeText;
     /// <summary>
     /// Function: GetScoreOrTimeText
     /// </summary>
     public unsafe virtual BmSDK.FString GetScoreOrTimeText(int nId, int nScore, bool bEmptyIfZero = default, bool bMilliseconds = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScoreOrTimeText, "BmGame.RChallengeManager.GetScoreOrTimeText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScoreOrTimeText, "BmGame.RChallengeManager.GetScoreOrTimeText", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -449,14 +449,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetRankMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRankMode;
     /// <summary>
     /// Function: GetRankMode
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.EChallengeRankMode GetRankMode(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRankMode, "BmGame.RChallengeManager.GetRankMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRankMode, "BmGame.RChallengeManager.GetRankMode", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -464,14 +464,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.EChallengeRankMode>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetRivalPointLimit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRivalPointLimit;
     /// <summary>
     /// Function: GetRivalPointLimit
     /// </summary>
     public unsafe virtual int GetRivalPointLimit(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRivalPointLimit, "BmGame.RChallengeManager.GetRivalPointLimit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRivalPointLimit, "BmGame.RChallengeManager.GetRivalPointLimit", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -479,14 +479,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsTimeBasedMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTimeBasedMap;
     /// <summary>
     /// Function: IsTimeBasedMap
     /// </summary>
     public unsafe virtual bool IsTimeBasedMap(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTimeBasedMap, "BmGame.RChallengeManager.IsTimeBasedMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTimeBasedMap, "BmGame.RChallengeManager.IsTimeBasedMap", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -494,14 +494,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsUniqueGoalMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsUniqueGoalMap;
     /// <summary>
     /// Function: IsUniqueGoalMap
     /// </summary>
     public unsafe virtual bool IsUniqueGoalMap(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsUniqueGoalMap, "BmGame.RChallengeManager.IsUniqueGoalMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsUniqueGoalMap, "BmGame.RChallengeManager.IsUniqueGoalMap", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -509,14 +509,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsStillStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStillStreaming;
     /// <summary>
     /// Function: IsStillStreaming
     /// </summary>
     public unsafe virtual bool IsStillStreaming(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStillStreaming, "BmGame.RChallengeManager.IsStillStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStillStreaming, "BmGame.RChallengeManager.IsStillStreaming", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -524,14 +524,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ShouldIgnoreGameState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldIgnoreGameState;
     /// <summary>
     /// Function: ShouldIgnoreGameState
     /// </summary>
     public unsafe virtual bool ShouldIgnoreGameState(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldIgnoreGameState, "BmGame.RChallengeManager.ShouldIgnoreGameState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldIgnoreGameState, "BmGame.RChallengeManager.ShouldIgnoreGameState", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -539,14 +539,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsBattleModeMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBattleModeMap;
     /// <summary>
     /// Function: IsBattleModeMap
     /// </summary>
     public unsafe virtual bool IsBattleModeMap(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBattleModeMap, "BmGame.RChallengeManager.IsBattleModeMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBattleModeMap, "BmGame.RChallengeManager.IsBattleModeMap", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -554,14 +554,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsDrivingMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDrivingMap;
     /// <summary>
     /// Function: IsDrivingMap
     /// </summary>
     public unsafe virtual bool IsDrivingMap(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDrivingMap, "BmGame.RChallengeManager.IsDrivingMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDrivingMap, "BmGame.RChallengeManager.IsDrivingMap", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -569,14 +569,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsTrainingMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTrainingMap;
     /// <summary>
     /// Function: IsTrainingMap
     /// </summary>
     public unsafe virtual bool IsTrainingMap(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTrainingMap, "BmGame.RChallengeManager.IsTrainingMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTrainingMap, "BmGame.RChallengeManager.IsTrainingMap", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -584,14 +584,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetStartRef;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStartRef;
     /// <summary>
     /// Function: GetStartRef
     /// </summary>
     public unsafe virtual BmSDK.FString GetStartRef(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStartRef, "BmGame.RChallengeManager.GetStartRef");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStartRef, "BmGame.RChallengeManager.GetStartRef", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -599,14 +599,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetPlayableBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayableBatmobile;
     /// <summary>
     /// Function: GetPlayableBatmobile
     /// </summary>
     public unsafe virtual BmSDK.FString GetPlayableBatmobile(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayableBatmobile, "BmGame.RChallengeManager.GetPlayableBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayableBatmobile, "BmGame.RChallengeManager.GetPlayableBatmobile", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -614,14 +614,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetPlayableCharacter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayableCharacter;
     /// <summary>
     /// Function: GetPlayableCharacter
     /// </summary>
     public unsafe virtual BmSDK.FString GetPlayableCharacter(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayableCharacter, "BmGame.RChallengeManager.GetPlayableCharacter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayableCharacter, "BmGame.RChallengeManager.GetPlayableCharacter", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -629,14 +629,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNavigationLocationByID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavigationLocationByID;
     /// <summary>
     /// Function: GetNavigationLocationByID
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNavigationLocationByID(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavigationLocationByID, "BmGame.RChallengeManager.GetNavigationLocationByID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavigationLocationByID, "BmGame.RChallengeManager.GetNavigationLocationByID", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -644,28 +644,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ValidateSorting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ValidateSorting;
     /// <summary>
     /// Function: ValidateSorting
     /// </summary>
     public unsafe virtual void ValidateSorting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ValidateSorting, "BmGame.RChallengeManager.ValidateSorting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ValidateSorting, "BmGame.RChallengeManager.ValidateSorting", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn__ChallengeDataSort;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn__ChallengeDataSort;
     /// <summary>
     /// Function: _ChallengeDataSort
     /// </summary>
     public unsafe virtual int _ChallengeDataSort(BmSDK.BmGame.RGameInfo.FChallengeDesc A, BmSDK.BmGame.RGameInfo.FChallengeDesc B)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn__ChallengeDataSort, "BmGame.RChallengeManager._ChallengeDataSort");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn__ChallengeDataSort, "BmGame.RChallengeManager._ChallengeDataSort", this);
         byte* paramsPtr = stackalloc byte[252];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);
@@ -674,14 +674,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 232);
     }
 
-    private static BmSDK.Function __fn_UpdateWaypointArrowMarker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWaypointArrowMarker;
     /// <summary>
     /// Function: UpdateWaypointArrowMarker
     /// </summary>
     public unsafe virtual void UpdateWaypointArrowMarker(System.Numerics.Vector3 vLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateWaypointArrowMarker, "BmGame.RChallengeManager.UpdateWaypointArrowMarker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateWaypointArrowMarker, "BmGame.RChallengeManager.UpdateWaypointArrowMarker", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vLocation, paramsPtr + 0);
@@ -689,14 +689,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InitializeWaypointArrowMarker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitializeWaypointArrowMarker;
     /// <summary>
     /// Function: InitializeWaypointArrowMarker
     /// </summary>
     public unsafe virtual void InitializeWaypointArrowMarker(BmSDK.Engine.ParticleSystem iParticles)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitializeWaypointArrowMarker, "BmGame.RChallengeManager.InitializeWaypointArrowMarker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitializeWaypointArrowMarker, "BmGame.RChallengeManager.InitializeWaypointArrowMarker", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iParticles, paramsPtr + 0);
@@ -704,14 +704,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AwardChallengeUpgradePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AwardChallengeUpgradePoint;
     /// <summary>
     /// Function: AwardChallengeUpgradePoint
     /// </summary>
     public unsafe virtual void AwardChallengeUpgradePoint(int nChallengeId, int nPointsToAward = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwardChallengeUpgradePoint, "BmGame.RChallengeManager.AwardChallengeUpgradePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AwardChallengeUpgradePoint, "BmGame.RChallengeManager.AwardChallengeUpgradePoint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -720,28 +720,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetLastChallengeUnlockedFresh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLastChallengeUnlockedFresh;
     /// <summary>
     /// Function: GetLastChallengeUnlockedFresh
     /// </summary>
     public unsafe virtual BmSDK.FString GetLastChallengeUnlockedFresh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLastChallengeUnlockedFresh, "BmGame.RChallengeManager.GetLastChallengeUnlockedFresh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLastChallengeUnlockedFresh, "BmGame.RChallengeManager.GetLastChallengeUnlockedFresh", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetChallengeCategoryStringWheel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeCategoryStringWheel;
     /// <summary>
     /// Function: GetChallengeCategoryStringWheel
     /// </summary>
     public unsafe virtual BmSDK.FString GetChallengeCategoryStringWheel(int nId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChallengeCategoryStringWheel, "BmGame.RChallengeManager.GetChallengeCategoryStringWheel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetChallengeCategoryStringWheel, "BmGame.RChallengeManager.GetChallengeCategoryStringWheel", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 0);
@@ -749,14 +749,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TriggerChallengeUnlockRequirement;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerChallengeUnlockRequirement;
     /// <summary>
     /// Function: TriggerChallengeUnlockRequirement
     /// </summary>
     public unsafe virtual bool TriggerChallengeUnlockRequirement(int nChallengeId, int nLock = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerChallengeUnlockRequirement, "BmGame.RChallengeManager.TriggerChallengeUnlockRequirement");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerChallengeUnlockRequirement, "BmGame.RChallengeManager.TriggerChallengeUnlockRequirement", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -765,14 +765,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetDifficulty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDifficulty;
     /// <summary>
     /// Function: GetDifficulty
     /// </summary>
     public unsafe virtual int GetDifficulty(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDifficulty, "BmGame.RChallengeManager.GetDifficulty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDifficulty, "BmGame.RChallengeManager.GetDifficulty", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -780,14 +780,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetLeaderboardId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLeaderboardId;
     /// <summary>
     /// Function: GetLeaderboardId
     /// </summary>
     public unsafe virtual int GetLeaderboardId(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLeaderboardId, "BmGame.RChallengeManager.GetLeaderboardId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLeaderboardId, "BmGame.RChallengeManager.GetLeaderboardId", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -795,14 +795,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_EnablePrerequisite;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnablePrerequisite;
     /// <summary>
     /// Function: EnablePrerequisite
     /// </summary>
     public unsafe virtual void EnablePrerequisite(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnablePrerequisite, "BmGame.RChallengeManager.EnablePrerequisite");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnablePrerequisite, "BmGame.RChallengeManager.EnablePrerequisite", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -810,14 +810,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsChallengeFrontendOnly;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeFrontendOnly;
     /// <summary>
     /// Function: IsChallengeFrontendOnly
     /// </summary>
     public unsafe virtual bool IsChallengeFrontendOnly(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsChallengeFrontendOnly, "BmGame.RChallengeManager.IsChallengeFrontendOnly");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsChallengeFrontendOnly, "BmGame.RChallengeManager.IsChallengeFrontendOnly", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -825,14 +825,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsPrerequisiteMet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPrerequisiteMet;
     /// <summary>
     /// Function: IsPrerequisiteMet
     /// </summary>
     public unsafe virtual bool IsPrerequisiteMet(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPrerequisiteMet, "BmGame.RChallengeManager.IsPrerequisiteMet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPrerequisiteMet, "BmGame.RChallengeManager.IsPrerequisiteMet", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -840,28 +840,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ShouldShowCompass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldShowCompass;
     /// <summary>
     /// Function: ShouldShowCompass
     /// </summary>
     public unsafe virtual bool ShouldShowCompass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldShowCompass, "BmGame.RChallengeManager.ShouldShowCompass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldShowCompass, "BmGame.RChallengeManager.ShouldShowCompass", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFrontendGroupByID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFrontendGroupByID;
     /// <summary>
     /// Function: GetFrontendGroupByID
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.EChallengeFrontendGroup GetFrontendGroupByID(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFrontendGroupByID, "BmGame.RChallengeManager.GetFrontendGroupByID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFrontendGroupByID, "BmGame.RChallengeManager.GetFrontendGroupByID", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -876,14 +876,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.EChallengeFrontendGroup>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetDescriptionByID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDescriptionByID;
     /// <summary>
     /// Function: GetDescriptionByID
     /// </summary>
     public unsafe virtual BmSDK.FString GetDescriptionByID(int Id, bool bDebrief = default, bool bCompleted = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDescriptionByID, "BmGame.RChallengeManager.GetDescriptionByID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDescriptionByID, "BmGame.RChallengeManager.GetDescriptionByID", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -893,14 +893,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetTitleByIDLocalised;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleByIDLocalised;
     /// <summary>
     /// Function: GetTitleByIDLocalised
     /// </summary>
     public unsafe virtual BmSDK.FString GetTitleByIDLocalised(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTitleByIDLocalised, "BmGame.RChallengeManager.GetTitleByIDLocalised");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTitleByIDLocalised, "BmGame.RChallengeManager.GetTitleByIDLocalised", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -908,14 +908,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetTitleByID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTitleByID;
     /// <summary>
     /// Function: GetTitleByID
     /// </summary>
     public unsafe virtual BmSDK.FString GetTitleByID(int Id, bool bMixedCase = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTitleByID, "BmGame.RChallengeManager.GetTitleByID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTitleByID, "BmGame.RChallengeManager.GetTitleByID", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -924,14 +924,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetChallengeMapIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeMapIndex;
     /// <summary>
     /// Function: GetChallengeMapIndex
     /// </summary>
     public unsafe virtual int GetChallengeMapIndex(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChallengeMapIndex, "BmGame.RChallengeManager.GetChallengeMapIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetChallengeMapIndex, "BmGame.RChallengeManager.GetChallengeMapIndex", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -946,14 +946,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetRGI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRGI;
     /// <summary>
     /// Function: GetRGI
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo GetRGI()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRGI, "BmGame.RChallengeManager.GetRGI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRGI, "BmGame.RChallengeManager.GetRGI", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -967,14 +967,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetNextToPoll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNextToPoll;
     /// <summary>
     /// Function: SetNextToPoll
     /// </summary>
     public unsafe virtual void SetNextToPoll(BmSDK.BmGame.RPlayerController RPC, int LeaderboardId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNextToPoll, "BmGame.RChallengeManager.SetNextToPoll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNextToPoll, "BmGame.RChallengeManager.SetNextToPoll", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
@@ -983,14 +983,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsChallengeDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsChallengeDLC;
     /// <summary>
     /// Function: IsChallengeDLC
     /// </summary>
     public unsafe virtual bool IsChallengeDLC(int nChallengeId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsChallengeDLC, "BmGame.RChallengeManager.IsChallengeDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsChallengeDLC, "BmGame.RChallengeManager.IsChallengeDLC", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -998,28 +998,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsLeaderboardFetchInProgress;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLeaderboardFetchInProgress;
     /// <summary>
     /// Function: IsLeaderboardFetchInProgress
     /// </summary>
     public unsafe virtual bool IsLeaderboardFetchInProgress()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLeaderboardFetchInProgress, "BmGame.RChallengeManager.IsLeaderboardFetchInProgress");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLeaderboardFetchInProgress, "BmGame.RChallengeManager.IsLeaderboardFetchInProgress", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetChallengeCountByFrontendGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChallengeCountByFrontendGroup;
     /// <summary>
     /// Function: GetChallengeCountByFrontendGroup
     /// </summary>
     public unsafe virtual int GetChallengeCountByFrontendGroup(BmSDK.BmGame.RGameInfo.EChallengeFrontendGroup eMin, BmSDK.BmGame.RGameInfo.EChallengeFrontendGroup eMax, bool bInclusive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChallengeCountByFrontendGroup, "BmGame.RChallengeManager.GetChallengeCountByFrontendGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetChallengeCountByFrontendGroup, "BmGame.RChallengeManager.GetChallengeCountByFrontendGroup", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(eMin, paramsPtr + 0);
@@ -1029,14 +1029,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetFriendBeatYouMsg;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFriendBeatYouMsg;
     /// <summary>
     /// Function: GetFriendBeatYouMsg
     /// </summary>
     public unsafe virtual bool GetFriendBeatYouMsg(out BmSDK.BmGame.RChallengeManager.FBeatenMsg msg)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFriendBeatYouMsg, "BmGame.RChallengeManager.GetFriendBeatYouMsg");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFriendBeatYouMsg, "BmGame.RChallengeManager.GetFriendBeatYouMsg", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -1044,14 +1044,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_GetCachedLeaderboardData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCachedLeaderboardData;
     /// <summary>
     /// Function: GetCachedLeaderboardData
     /// </summary>
     public unsafe virtual bool GetCachedLeaderboardData(int nChallengeId, int nFriendIndex, out BmSDK.FString sName, out int nScore, out int nMedals)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCachedLeaderboardData, "BmGame.RChallengeManager.GetCachedLeaderboardData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCachedLeaderboardData, "BmGame.RChallengeManager.GetCachedLeaderboardData", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -1067,14 +1067,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetCachedLeaderboardErrorCode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCachedLeaderboardErrorCode;
     /// <summary>
     /// Function: GetCachedLeaderboardErrorCode
     /// </summary>
     public unsafe virtual int GetCachedLeaderboardErrorCode(int nChallengeId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCachedLeaderboardErrorCode, "BmGame.RChallengeManager.GetCachedLeaderboardErrorCode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCachedLeaderboardErrorCode, "BmGame.RChallengeManager.GetCachedLeaderboardErrorCode", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -1082,14 +1082,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetCachedLeaderboardCycle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCachedLeaderboardCycle;
     /// <summary>
     /// Function: GetCachedLeaderboardCycle
     /// </summary>
     public unsafe virtual int GetCachedLeaderboardCycle(int nChallengeId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCachedLeaderboardCycle, "BmGame.RChallengeManager.GetCachedLeaderboardCycle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCachedLeaderboardCycle, "BmGame.RChallengeManager.GetCachedLeaderboardCycle", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -1097,14 +1097,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetLastCachedLeaderboardIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLastCachedLeaderboardIndex;
     /// <summary>
     /// Function: GetLastCachedLeaderboardIndex
     /// </summary>
     public unsafe virtual int GetLastCachedLeaderboardIndex(int nChallengeId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLastCachedLeaderboardIndex, "BmGame.RChallengeManager.GetLastCachedLeaderboardIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLastCachedLeaderboardIndex, "BmGame.RChallengeManager.GetLastCachedLeaderboardIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -1112,14 +1112,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetMyCachedLeaderboardIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMyCachedLeaderboardIndex;
     /// <summary>
     /// Function: GetMyCachedLeaderboardIndex
     /// </summary>
     public unsafe virtual int GetMyCachedLeaderboardIndex(int nChallengeId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMyCachedLeaderboardIndex, "BmGame.RChallengeManager.GetMyCachedLeaderboardIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMyCachedLeaderboardIndex, "BmGame.RChallengeManager.GetMyCachedLeaderboardIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nChallengeId, paramsPtr + 0);
@@ -1127,47 +1127,48 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CheckQueuedLeaderboardBeatenByMessages;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckQueuedLeaderboardBeatenByMessages;
     /// <summary>
     /// Function: CheckQueuedLeaderboardBeatenByMessages
     /// </summary>
     public unsafe virtual void CheckQueuedLeaderboardBeatenByMessages()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckQueuedLeaderboardBeatenByMessages, "BmGame.RChallengeManager.CheckQueuedLeaderboardBeatenByMessages");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckQueuedLeaderboardBeatenByMessages, "BmGame.RChallengeManager.CheckQueuedLeaderboardBeatenByMessages", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_QueueLeaderboardBeatenByMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueLeaderboardBeatenByMessage;
     /// <summary>
     /// Function: QueueLeaderboardBeatenByMessage
     /// </summary>
-    public unsafe virtual void QueueLeaderboardBeatenByMessage(int ChallengeID, int LeaderboardId, BmSDK.FString NickName, int Score, int Medals)
+    public unsafe virtual void QueueLeaderboardBeatenByMessage(int ChallengeID, int LeaderboardId, BmSDK.FStringArg NickName, int Score, int Medals)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueLeaderboardBeatenByMessage, "BmGame.RChallengeManager.QueueLeaderboardBeatenByMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueueLeaderboardBeatenByMessage, "BmGame.RChallengeManager.QueueLeaderboardBeatenByMessage", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChallengeID, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LeaderboardId, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NickName, paramsPtr + 8);
+        NickName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Score, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Medals, paramsPtr + 28);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
-    private static BmSDK.Function __fn_LoadLBCache;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadLBCache;
     /// <summary>
     /// Function: LoadLBCache
     /// </summary>
     public unsafe virtual void LoadLBCache()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadLBCache, "BmGame.RChallengeManager.LoadLBCache");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadLBCache, "BmGame.RChallengeManager.LoadLBCache", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1181,14 +1182,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SaveLBCache;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveLBCache;
     /// <summary>
     /// Function: SaveLBCache
     /// </summary>
     public unsafe virtual void SaveLBCache()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveLBCache, "BmGame.RChallengeManager.SaveLBCache");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveLBCache, "BmGame.RChallengeManager.SaveLBCache", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1202,14 +1203,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_MarkChallengeLeaderboardAsPlayed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MarkChallengeLeaderboardAsPlayed;
     /// <summary>
     /// Function: MarkChallengeLeaderboardAsPlayed
     /// </summary>
     public unsafe virtual void MarkChallengeLeaderboardAsPlayed(int ChallengeID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MarkChallengeLeaderboardAsPlayed, "BmGame.RChallengeManager.MarkChallengeLeaderboardAsPlayed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MarkChallengeLeaderboardAsPlayed, "BmGame.RChallengeManager.MarkChallengeLeaderboardAsPlayed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChallengeID, paramsPtr + 0);
@@ -1217,14 +1218,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckLeaderboards;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLeaderboards;
     /// <summary>
     /// Function: CheckLeaderboards
     /// </summary>
     public unsafe virtual void CheckLeaderboards(BmSDK.BmGame.RPlayerController RPC, float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLeaderboards, "BmGame.RChallengeManager.CheckLeaderboards");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLeaderboards, "BmGame.RChallengeManager.CheckLeaderboards", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
@@ -1233,14 +1234,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetFriendsPollEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFriendsPollEnabled;
     /// <summary>
     /// Function: SetFriendsPollEnabled
     /// </summary>
     public unsafe virtual void SetFriendsPollEnabled(bool bEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFriendsPollEnabled, "BmGame.RChallengeManager.SetFriendsPollEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFriendsPollEnabled, "BmGame.RChallengeManager.SetFriendsPollEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnabled, paramsPtr + 0);
@@ -1248,14 +1249,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnStatsReadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStatsReadComplete;
     /// <summary>
     /// Function: OnStatsReadComplete
     /// </summary>
     public unsafe virtual void OnStatsReadComplete(bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStatsReadComplete, "BmGame.RChallengeManager.OnStatsReadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStatsReadComplete, "BmGame.RChallengeManager.OnStatsReadComplete", this);
         byte* paramsPtr = stackalloc byte[152];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
@@ -1263,14 +1264,14 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReadLeaderboard;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadLeaderboard;
     /// <summary>
     /// Function: ReadLeaderboard
     /// </summary>
     public unsafe virtual void ReadLeaderboard(int ControllerId, int LeaderboardId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadLeaderboard, "BmGame.RChallengeManager.ReadLeaderboard");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadLeaderboard, "BmGame.RChallengeManager.ReadLeaderboard", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerId, paramsPtr + 0);
@@ -1279,28 +1280,28 @@ public partial class RChallengeManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearChallengeSymbols;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearChallengeSymbols;
     /// <summary>
     /// Function: ClearChallengeSymbols
     /// </summary>
     public unsafe virtual void ClearChallengeSymbols()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearChallengeSymbols, "BmGame.RChallengeManager.ClearChallengeSymbols");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearChallengeSymbols, "BmGame.RChallengeManager.ClearChallengeSymbols", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChallengeSymbolsShouldHideHud;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChallengeSymbolsShouldHideHud;
     /// <summary>
     /// Function: ChallengeSymbolsShouldHideHud
     /// </summary>
     public unsafe virtual bool ChallengeSymbolsShouldHideHud()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChallengeSymbolsShouldHideHud, "BmGame.RChallengeManager.ChallengeSymbolsShouldHideHud");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChallengeSymbolsShouldHideHud, "BmGame.RChallengeManager.ChallengeSymbolsShouldHideHud", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

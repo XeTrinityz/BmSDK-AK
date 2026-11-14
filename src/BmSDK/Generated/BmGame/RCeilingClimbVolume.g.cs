@@ -78,14 +78,14 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<RCeilingClimbVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RCeilingClimbVolume.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RCeilingClimbVolume.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RCeilingClimbVolume.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RCeilingClimbVolume.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RCeilingClimbVolume.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.RCeilingClimbVolume.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsWallClimbVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWallClimbVolume;
     /// <summary>
     /// Function: IsWallClimbVolume
     /// </summary>
     public unsafe virtual bool IsWallClimbVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWallClimbVolume, "BmGame.RCeilingClimbVolume.IsWallClimbVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWallClimbVolume, "BmGame.RCeilingClimbVolume.IsWallClimbVolume", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -143,14 +143,14 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsCeilingClimbVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCeilingClimbVolume;
     /// <summary>
     /// Function: IsCeilingClimbVolume
     /// </summary>
     public unsafe virtual bool IsCeilingClimbVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCeilingClimbVolume, "BmGame.RCeilingClimbVolume.IsCeilingClimbVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCeilingClimbVolume, "BmGame.RCeilingClimbVolume.IsCeilingClimbVolume", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -164,14 +164,14 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DebugDrawVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDrawVolume;
     /// <summary>
     /// Function: DebugDrawVolume
     /// </summary>
     public unsafe virtual void DebugDrawVolume(bool bDrawPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugDrawVolume, "BmGame.RCeilingClimbVolume.DebugDrawVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugDrawVolume, "BmGame.RCeilingClimbVolume.DebugDrawVolume", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDrawPersistent, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class RCeilingClimbVolume : BmSDK.Engine.Volume, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_FlagGrapplePoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlagGrapplePoints;
     /// <summary>
     /// Function: FlagGrapplePoints
     /// </summary>
     public unsafe virtual void FlagGrapplePoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlagGrapplePoints, "BmGame.RCeilingClimbVolume.FlagGrapplePoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlagGrapplePoints, "BmGame.RCeilingClimbVolume.FlagGrapplePoints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,14 +78,14 @@ public partial class RLevelVolumeOW : BmSDK.BmGame.RLevelVolume, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RLevelVolumeOW>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DeactivateStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateStreaming;
     /// <summary>
     /// Function: DeactivateStreaming
     /// </summary>
     public unsafe override void DeactivateStreaming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateStreaming, "BmGame.RLevelVolumeOW.DeactivateStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateStreaming, "BmGame.RLevelVolumeOW.DeactivateStreaming", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RLevelVolumeOW : BmSDK.BmGame.RLevelVolume, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateStreaming;
     /// <summary>
     /// Function: ActivateStreaming
     /// </summary>
     public unsafe override void ActivateStreaming(bool LevelStart)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateStreaming, "BmGame.RLevelVolumeOW.ActivateStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateStreaming, "BmGame.RLevelVolumeOW.ActivateStreaming", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LevelStart, paramsPtr + 0);

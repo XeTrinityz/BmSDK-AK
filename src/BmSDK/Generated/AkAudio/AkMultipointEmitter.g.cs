@@ -78,14 +78,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<AkMultipointEmitter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HandleUnlinkAll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleUnlinkAll;
     /// <summary>
     /// Function: HandleUnlinkAll
     /// </summary>
     public unsafe virtual void HandleUnlinkAll()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleUnlinkAll, "AkAudio.AkMultipointEmitter.HandleUnlinkAll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleUnlinkAll, "AkAudio.AkMultipointEmitter.HandleUnlinkAll", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_HandleUnlink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleUnlink;
     /// <summary>
     /// Function: HandleUnlink
     /// </summary>
     public unsafe virtual bool HandleUnlink(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleUnlink, "AkAudio.AkMultipointEmitter.HandleUnlink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleUnlink, "AkAudio.AkMultipointEmitter.HandleUnlink", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_HandleLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleLink;
     /// <summary>
     /// Function: HandleLink
     /// </summary>
     public unsafe virtual bool HandleLink(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleLink, "AkAudio.AkMultipointEmitter.HandleLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleLink, "AkAudio.AkMultipointEmitter.HandleLink", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -143,14 +143,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ApplyEmitterSpatial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyEmitterSpatial;
     /// <summary>
     /// Function: ApplyEmitterSpatial
     /// </summary>
     public unsafe override void ApplyEmitterSpatial()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyEmitterSpatial, "AkAudio.AkMultipointEmitter.ApplyEmitterSpatial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyEmitterSpatial, "AkAudio.AkMultipointEmitter.ApplyEmitterSpatial", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -164,14 +164,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_DisableEmitter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableEmitter;
     /// <summary>
     /// Function: DisableEmitter
     /// </summary>
     public unsafe override void DisableEmitter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableEmitter, "AkAudio.AkMultipointEmitter.DisableEmitter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableEmitter, "AkAudio.AkMultipointEmitter.DisableEmitter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -185,14 +185,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_EnableEmitter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableEmitter;
     /// <summary>
     /// Function: EnableEmitter
     /// </summary>
     public unsafe override void EnableEmitter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableEmitter, "AkAudio.AkMultipointEmitter.EnableEmitter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableEmitter, "AkAudio.AkMultipointEmitter.EnableEmitter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -206,14 +206,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetAudioSpatial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
     /// Function: GetAudioSpatial
     /// </summary>
     public unsafe override void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAudioSpatial, "AkAudio.AkMultipointEmitter.GetAudioSpatial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAudioSpatial, "AkAudio.AkMultipointEmitter.GetAudioSpatial", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out sndPosition);
@@ -234,14 +234,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetAkAudible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
     /// Function: GetAkAudible
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAkAudible, "AkAudio.AkMultipointEmitter.GetAkAudible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAkAudible, "AkAudio.AkMultipointEmitter.GetAkAudible", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allowCreate, paramsPtr + 0);
@@ -256,14 +256,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAkAudible>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AudibleUpdateSourceCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudibleUpdateSourceCallback;
     /// <summary>
     /// Function: AudibleUpdateSourceCallback
     /// </summary>
     public unsafe override void AudibleUpdateSourceCallback(BmSDK.Engine.RAkAudible akAud, bool hasSource)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudibleUpdateSourceCallback, "AkAudio.AkMultipointEmitter.AudibleUpdateSourceCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudibleUpdateSourceCallback, "AkAudio.AkMultipointEmitter.AudibleUpdateSourceCallback", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(akAud, paramsPtr + 0);
@@ -279,14 +279,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "AkAudio.AkMultipointEmitter.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "AkAudio.AkMultipointEmitter.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -294,14 +294,14 @@ public partial class AkMultipointEmitter : BmSDK.AkAudio.AkEmitter, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToActor;
     /// <summary>
     /// Function: LinkToActor
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "AkAudio.AkMultipointEmitter.LinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToActor, "AkAudio.AkMultipointEmitter.LinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);

@@ -91,42 +91,42 @@ public partial class RSeqAct_AnyButtonSkips : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckButtonsOld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckButtonsOld;
     /// <summary>
     /// Function: CheckButtonsOld
     /// </summary>
     public unsafe virtual bool CheckButtonsOld()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckButtonsOld, "BmScript.RSeqAct_AnyButtonSkips.CheckButtonsOld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckButtonsOld, "BmScript.RSeqAct_AnyButtonSkips.CheckButtonsOld", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckButtonsNew;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckButtonsNew;
     /// <summary>
     /// Function: CheckButtonsNew
     /// </summary>
     public unsafe virtual bool CheckButtonsNew()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckButtonsNew, "BmScript.RSeqAct_AnyButtonSkips.CheckButtonsNew");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckButtonsNew, "BmScript.RSeqAct_AnyButtonSkips.CheckButtonsNew", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_AnyButtonSkips.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_AnyButtonSkips.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RAEC_Attack_Sub_LobGrenade : BmSDK.BmGame.RAlertEventCoordi
         where TComponent : class, Framework.IScriptComponent<RAEC_Attack_Sub_LobGrenade>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_Attack_Sub_LobGrenade.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RAEC_Attack_Sub_LobGrenade.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_Attack_Sub_LobGrenade : BmSDK.BmGame.RAlertEventCoordi
         return;
     }
 
-    private static BmSDK.Function __fn_InitThrow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitThrow;
     /// <summary>
     /// Function: InitThrow
     /// </summary>
     public unsafe virtual void InitThrow(System.Numerics.Vector3 BestThrowVel, System.Numerics.Vector3 ThrowTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitThrow, "BmGame.RAEC_Attack_Sub_LobGrenade.InitThrow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitThrow, "BmGame.RAEC_Attack_Sub_LobGrenade.InitThrow", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BestThrowVel, paramsPtr + 0);

@@ -78,112 +78,112 @@ public partial class RSpecialMoveInstance_CustomDoorMove : BmSDK.BmGame.RSpecial
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CustomDoorMove>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CustomDoorMove.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CustomDoorMove.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetStaggNormal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStaggNormal;
     /// <summary>
     /// Function: SetStaggNormal
     /// </summary>
     public unsafe virtual void SetStaggNormal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStaggNormal, "BmScript.RSpecialMoveInstance_CustomDoorMove.SetStaggNormal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStaggNormal, "BmScript.RSpecialMoveInstance_CustomDoorMove.SetStaggNormal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetStaggScanning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStaggScanning;
     /// <summary>
     /// Function: SetStaggScanning
     /// </summary>
     public unsafe virtual void SetStaggScanning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStaggScanning, "BmScript.RSpecialMoveInstance_CustomDoorMove.SetStaggScanning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStaggScanning, "BmScript.RSpecialMoveInstance_CustomDoorMove.SetStaggScanning", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetStaggOpen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStaggOpen;
     /// <summary>
     /// Function: SetStaggOpen
     /// </summary>
     public unsafe virtual void SetStaggOpen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStaggOpen, "BmScript.RSpecialMoveInstance_CustomDoorMove.SetStaggOpen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStaggOpen, "BmScript.RSpecialMoveInstance_CustomDoorMove.SetStaggOpen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DetachStaggLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachStaggLight;
     /// <summary>
     /// Function: DetachStaggLight
     /// </summary>
     public unsafe virtual void DetachStaggLight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachStaggLight, "BmScript.RSpecialMoveInstance_CustomDoorMove.DetachStaggLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachStaggLight, "BmScript.RSpecialMoveInstance_CustomDoorMove.DetachStaggLight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachStaggLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachStaggLight;
     /// <summary>
     /// Function: AttachStaggLight
     /// </summary>
     public unsafe virtual void AttachStaggLight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachStaggLight, "BmScript.RSpecialMoveInstance_CustomDoorMove.AttachStaggLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachStaggLight, "BmScript.RSpecialMoveInstance_CustomDoorMove.AttachStaggLight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TeleportToOtherSide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TeleportToOtherSide;
     /// <summary>
     /// Function: TeleportToOtherSide
     /// </summary>
     public unsafe virtual void TeleportToOtherSide()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TeleportToOtherSide, "BmScript.RSpecialMoveInstance_CustomDoorMove.TeleportToOtherSide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TeleportToOtherSide, "BmScript.RSpecialMoveInstance_CustomDoorMove.TeleportToOtherSide", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSpecialMove;
     /// <summary>
     /// Function: UpdateSpecialMove
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CustomDoorMove.UpdateSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CustomDoorMove.UpdateSpecialMove", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class RSpecialMoveInstance_CustomDoorMove : BmSDK.BmGame.RSpecial
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CustomDoorMove.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CustomDoorMove.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         where TComponent : class, Framework.IScriptComponent<RDestructibleProp>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Attach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Attach;
     /// <summary>
     /// Function: Attach
     /// </summary>
     public unsafe override void Attach(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Attach, "BmGame.RDestructibleProp.Attach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Attach, "BmGame.RDestructibleProp.Attach", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_IsStaticForFloorCorrection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
     /// Function: IsStaticForFloorCorrection
     /// </summary>
     public unsafe override bool IsStaticForFloorCorrection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStaticForFloorCorrection, "BmGame.RDestructibleProp.IsStaticForFloorCorrection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStaticForFloorCorrection, "BmGame.RDestructibleProp.IsStaticForFloorCorrection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -114,14 +114,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanBasePawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBasePawn;
     /// <summary>
     /// Function: CanBasePawn
     /// </summary>
     public unsafe override bool CanBasePawn(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBasePawn, "BmGame.RDestructibleProp.CanBasePawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBasePawn, "BmGame.RDestructibleProp.CanBasePawn", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -129,14 +129,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroy;
     /// <summary>
     /// Function: OnDestroy
     /// </summary>
     public unsafe override void OnDestroy(BmSDK.Engine.SeqAct_Destroy Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDestroy, "BmGame.RDestructibleProp.OnDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDestroy, "BmGame.RDestructibleProp.OnDestroy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -144,70 +144,70 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDown;
     /// <summary>
     /// Function: ShutDown
     /// </summary>
     public unsafe override void ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDown, "BmGame.RDestructibleProp.ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShutDown, "BmGame.RDestructibleProp.ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginBreakOffDecorationMeshCountdownTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginBreakOffDecorationMeshCountdownTimer;
     /// <summary>
     /// Function: BeginBreakOffDecorationMeshCountdownTimer
     /// </summary>
     public unsafe virtual void BeginBreakOffDecorationMeshCountdownTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginBreakOffDecorationMeshCountdownTimer, "BmGame.RDestructibleProp.BeginBreakOffDecorationMeshCountdownTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginBreakOffDecorationMeshCountdownTimer, "BmGame.RDestructibleProp.BeginBreakOffDecorationMeshCountdownTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPathObjectActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathObjectActor;
     /// <summary>
     /// Function: GetPathObjectActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetPathObjectActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPathObjectActor, "BmGame.RDestructibleProp.GetPathObjectActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPathObjectActor, "BmGame.RDestructibleProp.GetPathObjectActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetObstacleActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObstacleActor;
     /// <summary>
     /// Function: GetObstacleActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetObstacleActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObstacleActor, "BmGame.RDestructibleProp.GetObstacleActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObstacleActor, "BmGame.RDestructibleProp.GetObstacleActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ScriptReformToInitialState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScriptReformToInitialState;
     /// <summary>
     /// Function: ScriptReformToInitialState
     /// </summary>
     public unsafe virtual void ScriptReformToInitialState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScriptReformToInitialState, "BmGame.RDestructibleProp.ScriptReformToInitialState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScriptReformToInitialState, "BmGame.RDestructibleProp.ScriptReformToInitialState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -221,14 +221,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_OverrideDamageParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDamageParams;
     /// <summary>
     /// Function: OverrideDamageParams
     /// </summary>
     public unsafe virtual void OverrideDamageParams(out float BaseDamage, out float DamageRadius, out float Momentum, BmSDK.Class DamageType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDamageParams, "BmGame.RDestructibleProp.OverrideDamageParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDamageParams, "BmGame.RDestructibleProp.OverrideDamageParams", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out BaseDamage);
@@ -245,14 +245,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveWhoosh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveWhoosh;
     /// <summary>
     /// Function: RemoveWhoosh
     /// </summary>
     public unsafe virtual void RemoveWhoosh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveWhoosh, "BmGame.RDestructibleProp.RemoveWhoosh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveWhoosh, "BmGame.RDestructibleProp.RemoveWhoosh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -266,14 +266,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_AddWhoosh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddWhoosh;
     /// <summary>
     /// Function: AddWhoosh
     /// </summary>
     public unsafe virtual void AddWhoosh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddWhoosh, "BmGame.RDestructibleProp.AddWhoosh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddWhoosh, "BmGame.RDestructibleProp.AddWhoosh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -287,14 +287,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_RebuildSpecialNavEdges;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RebuildSpecialNavEdges;
     /// <summary>
     /// Function: RebuildSpecialNavEdges
     /// </summary>
     public unsafe virtual void RebuildSpecialNavEdges()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RebuildSpecialNavEdges, "BmGame.RDestructibleProp.RebuildSpecialNavEdges");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RebuildSpecialNavEdges, "BmGame.RDestructibleProp.RebuildSpecialNavEdges", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -308,28 +308,28 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_DetachedFromActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachedFromActor;
     /// <summary>
     /// Function: DetachedFromActor
     /// </summary>
     public unsafe override void DetachedFromActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachedFromActor, "BmGame.RDestructibleProp.DetachedFromActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachedFromActor, "BmGame.RDestructibleProp.DetachedFromActor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnModifyHealth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnModifyHealth;
     /// <summary>
     /// Function: OnModifyHealth
     /// </summary>
     public unsafe override void OnModifyHealth(BmSDK.Engine.SeqAct_ModifyHealth Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnModifyHealth, "BmGame.RDestructibleProp.OnModifyHealth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnModifyHealth, "BmGame.RDestructibleProp.OnModifyHealth", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -337,14 +337,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RDestructibleProp.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RDestructibleProp.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -352,14 +352,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_EdgeTraversalFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EdgeTraversalFinished;
     /// <summary>
     /// Function: EdgeTraversalFinished
     /// </summary>
     public unsafe virtual void EdgeTraversalFinished(BmSDK.BmGame.RBMPawnAI User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EdgeTraversalFinished, "BmGame.RDestructibleProp.EdgeTraversalFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EdgeTraversalFinished, "BmGame.RDestructibleProp.EdgeTraversalFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -367,14 +367,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_UseNavEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UseNavEdge;
     /// <summary>
     /// Function: UseNavEdge
     /// </summary>
     public unsafe virtual void UseNavEdge(BmSDK.Engine.NavigationHandle Handle, BmSDK.BmGame.RBMPawnAI User, int EdgeType, System.Numerics.Vector3 JumpDirection, System.Numerics.Vector3 JumpLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseNavEdge, "BmGame.RDestructibleProp.UseNavEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UseNavEdge, "BmGame.RDestructibleProp.UseNavEdge", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Handle, paramsPtr + 0);
@@ -386,14 +386,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerDamagedSuppressedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerDamagedSuppressedEvent;
     /// <summary>
     /// Function: TriggerDamagedSuppressedEvent
     /// </summary>
     public unsafe virtual void TriggerDamagedSuppressedEvent(BmSDK.Engine.Actor DamageCauser)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerDamagedSuppressedEvent, "BmGame.RDestructibleProp.TriggerDamagedSuppressedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerDamagedSuppressedEvent, "BmGame.RDestructibleProp.TriggerDamagedSuppressedEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageCauser, paramsPtr + 0);
@@ -401,14 +401,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerDamagedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerDamagedEvent;
     /// <summary>
     /// Function: TriggerDamagedEvent
     /// </summary>
     public unsafe virtual void TriggerDamagedEvent(int NewDamageStage = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerDamagedEvent, "BmGame.RDestructibleProp.TriggerDamagedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerDamagedEvent, "BmGame.RDestructibleProp.TriggerDamagedEvent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDamageStage, paramsPtr + 0);
@@ -416,42 +416,42 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveOtherBasedActors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveOtherBasedActors;
     /// <summary>
     /// Function: RemoveOtherBasedActors
     /// </summary>
     public unsafe virtual void RemoveOtherBasedActors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveOtherBasedActors, "BmGame.RDestructibleProp.RemoveOtherBasedActors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveOtherBasedActors, "BmGame.RDestructibleProp.RemoveOtherBasedActors", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsGlassFractureMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGlassFractureMesh;
     /// <summary>
     /// Function: IsGlassFractureMesh
     /// </summary>
     public unsafe virtual bool IsGlassFractureMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGlassFractureMesh, "BmGame.RDestructibleProp.IsGlassFractureMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsGlassFractureMesh, "BmGame.RDestructibleProp.IsGlassFractureMesh", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TakeRadiusDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeRadiusDamage;
     /// <summary>
     /// Function: TakeRadiusDamage
     /// </summary>
     public unsafe override void TakeRadiusDamage(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeRadiusDamage, "BmGame.RDestructibleProp.TakeRadiusDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeRadiusDamage, "BmGame.RDestructibleProp.TakeRadiusDamage", this);
         byte* paramsPtr = stackalloc byte[85];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 0);
@@ -467,14 +467,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamageFromWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamageFromWeapon;
     /// <summary>
     /// Function: TakeDamageFromWeapon
     /// </summary>
     public unsafe override BmSDK.Engine.Actor.EWeaponDamageResult TakeDamageFromWeapon(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default, bool bHeadShot = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamageFromWeapon, "BmGame.RDestructibleProp.TakeDamageFromWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamageFromWeapon, "BmGame.RDestructibleProp.TakeDamageFromWeapon", this);
         byte* paramsPtr = stackalloc byte[125];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -490,14 +490,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EWeaponDamageResult>(paramsPtr + 108);
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmGame.RDestructibleProp.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "BmGame.RDestructibleProp.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[121];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Damage, paramsPtr + 0);
@@ -511,14 +511,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_CanTakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTakeDamage;
     /// <summary>
     /// Function: CanTakeDamage
     /// </summary>
     public unsafe virtual bool CanTakeDamage(BmSDK.Class DamageType, float DamageAmount, out BmSDK.BmGame.RDestructibleProp.EDamageSuppressed OutDamageSuppressed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTakeDamage, "BmGame.RDestructibleProp.CanTakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTakeDamage, "BmGame.RDestructibleProp.CanTakeDamage", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageType, paramsPtr + 0);
@@ -530,56 +530,56 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_BatarangHitCausesNormalAIAlert;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BatarangHitCausesNormalAIAlert;
     /// <summary>
     /// Function: BatarangHitCausesNormalAIAlert
     /// </summary>
     public unsafe virtual bool BatarangHitCausesNormalAIAlert()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BatarangHitCausesNormalAIAlert, "BmGame.RDestructibleProp.BatarangHitCausesNormalAIAlert");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BatarangHitCausesNormalAIAlert, "BmGame.RDestructibleProp.BatarangHitCausesNormalAIAlert", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RDestructibleProp.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RDestructibleProp.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RDestructibleProp.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RDestructibleProp.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnOutTidy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnOutTidy;
     /// <summary>
     /// Function: OnOutTidy
     /// </summary>
     public unsafe virtual void OnOutTidy(bool bStreamingOut = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnOutTidy, "BmGame.RDestructibleProp.OnOutTidy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnOutTidy, "BmGame.RDestructibleProp.OnOutTidy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bStreamingOut, paramsPtr + 0);
@@ -587,28 +587,28 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RDestructibleProp.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RDestructibleProp.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetMaterialInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetMaterialInstance;
     /// <summary>
     /// Function: OnSetMaterialInstance
     /// </summary>
     public unsafe virtual void OnSetMaterialInstance(BmSDK.Engine.RSeqAct_SetMaterialInstance Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterialInstance, "BmGame.RDestructibleProp.OnSetMaterialInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetMaterialInstance, "BmGame.RDestructibleProp.OnSetMaterialInstance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -616,14 +616,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetMaterial;
     /// <summary>
     /// Function: OnSetMaterial
     /// </summary>
     public unsafe override void OnSetMaterial(BmSDK.Engine.SeqAct_SetMaterial Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterial, "BmGame.RDestructibleProp.OnSetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetMaterial, "BmGame.RDestructibleProp.OnSetMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -631,14 +631,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_AllowBreakOnAnything;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowBreakOnAnything;
     /// <summary>
     /// Function: AllowBreakOnAnything
     /// </summary>
     public unsafe virtual void AllowBreakOnAnything()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowBreakOnAnything, "BmGame.RDestructibleProp.AllowBreakOnAnything");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowBreakOnAnything, "BmGame.RDestructibleProp.AllowBreakOnAnything", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -652,14 +652,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_SetTickIsDisabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
     /// Function: SetTickIsDisabled
     /// </summary>
     public unsafe override void SetTickIsDisabled(bool bInDisabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTickIsDisabled, "BmGame.RDestructibleProp.SetTickIsDisabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTickIsDisabled, "BmGame.RDestructibleProp.SetTickIsDisabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInDisabled, paramsPtr + 0);
@@ -674,14 +674,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_OnDamagedForTheFirstTimeInCurrentStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDamagedForTheFirstTimeInCurrentStage;
     /// <summary>
     /// Function: OnDamagedForTheFirstTimeInCurrentStage
     /// </summary>
     public unsafe virtual void OnDamagedForTheFirstTimeInCurrentStage(System.Numerics.Vector3 DamageDirection, System.Numerics.Vector3 DamageCauserPointVelocity, BmSDK.Engine.Actor DamageCauser)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDamagedForTheFirstTimeInCurrentStage, "BmGame.RDestructibleProp.OnDamagedForTheFirstTimeInCurrentStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDamagedForTheFirstTimeInCurrentStage, "BmGame.RDestructibleProp.OnDamagedForTheFirstTimeInCurrentStage", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageDirection, paramsPtr + 0);
@@ -698,14 +698,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_RenderNavMeshDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RenderNavMeshDebug;
     /// <summary>
     /// Function: RenderNavMeshDebug
     /// </summary>
     public unsafe virtual void RenderNavMeshDebug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RenderNavMeshDebug, "BmGame.RDestructibleProp.RenderNavMeshDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RenderNavMeshDebug, "BmGame.RDestructibleProp.RenderNavMeshDebug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -719,14 +719,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_EndGangInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndGangInteraction;
     /// <summary>
     /// Function: EndGangInteraction
     /// </summary>
     public unsafe virtual void EndGangInteraction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndGangInteraction, "BmGame.RDestructibleProp.EndGangInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndGangInteraction, "BmGame.RDestructibleProp.EndGangInteraction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -740,14 +740,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_BeginGangInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginGangInteraction;
     /// <summary>
     /// Function: BeginGangInteraction
     /// </summary>
     public unsafe virtual void BeginGangInteraction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginGangInteraction, "BmGame.RDestructibleProp.BeginGangInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginGangInteraction, "BmGame.RDestructibleProp.BeginGangInteraction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -761,14 +761,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_BreakOffDecorationMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffDecorationMesh;
     /// <summary>
     /// Function: BreakOffDecorationMesh
     /// </summary>
     public unsafe virtual void BreakOffDecorationMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakOffDecorationMesh, "BmGame.RDestructibleProp.BreakOffDecorationMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakOffDecorationMesh, "BmGame.RDestructibleProp.BreakOffDecorationMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -782,14 +782,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_CacheFractureEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheFractureEffects;
     /// <summary>
     /// Function: CacheFractureEffects
     /// </summary>
     public unsafe override void CacheFractureEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CacheFractureEffects, "BmGame.RDestructibleProp.CacheFractureEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CacheFractureEffects, "BmGame.RDestructibleProp.CacheFractureEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -803,14 +803,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyRadiusDamageToNearbyRigidBodies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyRadiusDamageToNearbyRigidBodies;
     /// <summary>
     /// Function: ApplyRadiusDamageToNearbyRigidBodies
     /// </summary>
     public unsafe virtual void ApplyRadiusDamageToNearbyRigidBodies(System.Numerics.Vector3 Position, float Radius, float Momentum, BmSDK.Engine.Actor DamageCauser, bool bFullDamage, float FalloffExponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyRadiusDamageToNearbyRigidBodies, "BmGame.RDestructibleProp.ApplyRadiusDamageToNearbyRigidBodies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyRadiusDamageToNearbyRigidBodies, "BmGame.RDestructibleProp.ApplyRadiusDamageToNearbyRigidBodies", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -830,14 +830,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_GetBoundingBoxForNavMeshObstacleInWorldSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingBoxForNavMeshObstacleInWorldSpace;
     /// <summary>
     /// Function: GetBoundingBoxForNavMeshObstacleInWorldSpace
     /// </summary>
     public unsafe virtual void GetBoundingBoxForNavMeshObstacleInWorldSpace(out BmSDK.GameObject.FMatrix OutObstacleBoxWorldTransform, out System.Numerics.Vector3 OutObstacleBoxExtents)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoundingBoxForNavMeshObstacleInWorldSpace, "BmGame.RDestructibleProp.GetBoundingBoxForNavMeshObstacleInWorldSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoundingBoxForNavMeshObstacleInWorldSpace, "BmGame.RDestructibleProp.GetBoundingBoxForNavMeshObstacleInWorldSpace", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutObstacleBoxExtents);
@@ -855,14 +855,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_GetHighestPointOnBoundsInWorldSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHighestPointOnBoundsInWorldSpace;
     /// <summary>
     /// Function: GetHighestPointOnBoundsInWorldSpace
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHighestPointOnBoundsInWorldSpace()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHighestPointOnBoundsInWorldSpace, "BmGame.RDestructibleProp.GetHighestPointOnBoundsInWorldSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHighestPointOnBoundsInWorldSpace, "BmGame.RDestructibleProp.GetHighestPointOnBoundsInWorldSpace", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -876,14 +876,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLowestPointOnBoundsInWorldSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLowestPointOnBoundsInWorldSpace;
     /// <summary>
     /// Function: GetLowestPointOnBoundsInWorldSpace
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLowestPointOnBoundsInWorldSpace()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLowestPointOnBoundsInWorldSpace, "BmGame.RDestructibleProp.GetLowestPointOnBoundsInWorldSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLowestPointOnBoundsInWorldSpace, "BmGame.RDestructibleProp.GetLowestPointOnBoundsInWorldSpace", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -897,14 +897,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetCanTakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCanTakeDamage;
     /// <summary>
     /// Function: SetCanTakeDamage
     /// </summary>
     public unsafe virtual void SetCanTakeDamage(bool bCanTakeImpactDamage, bool bCanTakeWeaponDamage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCanTakeDamage, "BmGame.RDestructibleProp.SetCanTakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCanTakeDamage, "BmGame.RDestructibleProp.SetCanTakeDamage", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCanTakeImpactDamage, paramsPtr + 0);
@@ -920,14 +920,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseNavMeshObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseNavMeshObstacle;
     /// <summary>
     /// Function: InitialiseNavMeshObstacle
     /// </summary>
     public unsafe virtual void InitialiseNavMeshObstacle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseNavMeshObstacle, "BmGame.RDestructibleProp.InitialiseNavMeshObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseNavMeshObstacle, "BmGame.RDestructibleProp.InitialiseNavMeshObstacle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -941,14 +941,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_TerminatePhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TerminatePhysics;
     /// <summary>
     /// Function: TerminatePhysics
     /// </summary>
     public unsafe virtual void TerminatePhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TerminatePhysics, "BmGame.RDestructibleProp.TerminatePhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TerminatePhysics, "BmGame.RDestructibleProp.TerminatePhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -962,14 +962,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_SetHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
     /// Function: SetHidden
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidden, "BmGame.RDestructibleProp.SetHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidden, "BmGame.RDestructibleProp.SetHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewHidden, paramsPtr + 0);
@@ -984,14 +984,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOff;
     /// <summary>
     /// Function: ForceObstaclePolysOff
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOff, "BmGame.RDestructibleProp.ForceObstaclePolysOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOff, "BmGame.RDestructibleProp.ForceObstaclePolysOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1005,14 +1005,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOn;
     /// <summary>
     /// Function: ForceObstaclePolysOn
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOn, "BmGame.RDestructibleProp.ForceObstaclePolysOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOn, "BmGame.RDestructibleProp.ForceObstaclePolysOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1026,14 +1026,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ClearNavMeshEdgeCosts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavMeshEdgeCosts;
     /// <summary>
     /// Function: ClearNavMeshEdgeCosts
     /// </summary>
     public unsafe virtual void ClearNavMeshEdgeCosts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RDestructibleProp.ClearNavMeshEdgeCosts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RDestructibleProp.ClearNavMeshEdgeCosts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1047,14 +1047,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ClearActorRefs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearActorRefs;
     /// <summary>
     /// Function: ClearActorRefs
     /// </summary>
     public unsafe virtual void ClearActorRefs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearActorRefs, "BmGame.RDestructibleProp.ClearActorRefs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearActorRefs, "BmGame.RDestructibleProp.ClearActorRefs", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1068,14 +1068,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_UnRegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
     /// Function: UnRegisterObstacle
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bForceInstat = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnRegisterObstacle, "BmGame.RDestructibleProp.UnRegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnRegisterObstacle, "BmGame.RDestructibleProp.UnRegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceInstat, paramsPtr + 0);
@@ -1090,14 +1090,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
     /// Function: RegisterObstacle
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterObstacle, "BmGame.RDestructibleProp.RegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterObstacle, "BmGame.RDestructibleProp.RegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1111,14 +1111,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_SetHealth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHealth;
     /// <summary>
     /// Function: SetHealth
     /// </summary>
     public unsafe virtual float SetHealth(float NewHealth, bool Deferred = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHealth, "BmGame.RDestructibleProp.SetHealth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHealth, "BmGame.RDestructibleProp.SetHealth", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewHealth, paramsPtr + 0);
@@ -1134,14 +1134,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetDamageStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDamageStage;
     /// <summary>
     /// Function: SetDamageStage
     /// </summary>
     public unsafe virtual void SetDamageStage(int Stage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDamageStage, "BmGame.RDestructibleProp.SetDamageStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDamageStage, "BmGame.RDestructibleProp.SetDamageStage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Stage, paramsPtr + 0);
@@ -1156,14 +1156,14 @@ public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterWithNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
     /// Function: RegisterWithNavMesh
     /// </summary>
     public unsafe virtual bool RegisterWithNavMesh(bool bRegister)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWithNavMesh, "BmGame.RDestructibleProp.RegisterWithNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterWithNavMesh, "BmGame.RDestructibleProp.RegisterWithNavMesh", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bRegister, paramsPtr + 0);

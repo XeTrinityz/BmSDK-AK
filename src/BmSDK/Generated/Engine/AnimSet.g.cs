@@ -78,14 +78,14 @@ public partial class AnimSet : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AnimSet>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FindAnimSequence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimSequence;
     /// <summary>
     /// Function: FindAnimSequence
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSequence FindAnimSequence(BmSDK.FName SequenceName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindAnimSequence, "Engine.AnimSet.FindAnimSequence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindAnimSequence, "Engine.AnimSet.FindAnimSequence", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SequenceName, paramsPtr + 0);

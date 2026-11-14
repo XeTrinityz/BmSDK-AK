@@ -23,12 +23,12 @@ public partial interface SharedCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: WriteSharedFile
     /// </summary>
-    public unsafe bool WriteSharedFile(BmSDK.FString UserId, BmSDK.FString Filename, out BmSDK.TArray<byte> Contents);
+    public unsafe bool WriteSharedFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> Contents);
 
     /// <summary>
     /// Function: OnWriteSharedFileComplete
     /// </summary>
-    public unsafe void OnWriteSharedFileComplete(bool bWasSuccessful, BmSDK.FString UserId, BmSDK.FString Filename, BmSDK.FString SharedHandle);
+    public unsafe void OnWriteSharedFileComplete(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, BmSDK.FStringArg SharedHandle);
 
     /// <summary>
     /// Function: ClearReadSharedFileCompleteDelegate
@@ -43,17 +43,17 @@ public partial interface SharedCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ReadSharedFile
     /// </summary>
-    public unsafe bool ReadSharedFile(BmSDK.FString SharedHandle);
+    public unsafe bool ReadSharedFile(BmSDK.FStringArg SharedHandle);
 
     /// <summary>
     /// Function: OnReadSharedFileComplete
     /// </summary>
-    public unsafe void OnReadSharedFileComplete(bool bWasSuccessful, BmSDK.FString SharedHandle);
+    public unsafe void OnReadSharedFileComplete(bool bWasSuccessful, BmSDK.FStringArg SharedHandle);
 
     /// <summary>
     /// Function: ClearSharedFile
     /// </summary>
-    public unsafe bool ClearSharedFile(BmSDK.FString SharedHandle);
+    public unsafe bool ClearSharedFile(BmSDK.FStringArg SharedHandle);
 
     /// <summary>
     /// Function: ClearSharedFiles
@@ -63,5 +63,5 @@ public partial interface SharedCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: GetSharedFileContents
     /// </summary>
-    public unsafe bool GetSharedFileContents(BmSDK.FString SharedHandle, out BmSDK.TArray<byte> FileContents);
+    public unsafe bool GetSharedFileContents(BmSDK.FStringArg SharedHandle, out BmSDK.TArray<byte> FileContents);
 }

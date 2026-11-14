@@ -78,14 +78,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RFlapsAsset>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RemoveCollisionConstraint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCollisionConstraint;
     /// <summary>
     /// Function: RemoveCollisionConstraint
     /// </summary>
     public unsafe virtual void RemoveCollisionConstraint(BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference particleRef, BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCollisionConstraint, "Engine.RFlapsAsset.RemoveCollisionConstraint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveCollisionConstraint, "Engine.RFlapsAsset.RemoveCollisionConstraint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(particleRef, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddCollisionConstraint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCollisionConstraint;
     /// <summary>
     /// Function: AddCollisionConstraint
     /// </summary>
     public unsafe virtual BmSDK.Engine.RFlaps_ConstraintSetup AddCollisionConstraint(BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference particleRef, BmSDK.FName BoneName, BmSDK.Engine.SkeletalMesh RefSkelMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCollisionConstraint, "Engine.RFlapsAsset.AddCollisionConstraint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCollisionConstraint, "Engine.RFlapsAsset.AddCollisionConstraint", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(particleRef, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RFlaps_ConstraintSetup>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_FindFlapsBodyIndexFromBodyIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindFlapsBodyIndexFromBodyIndex;
     /// <summary>
     /// Function: FindFlapsBodyIndexFromBodyIndex
     /// </summary>
     public unsafe virtual int FindFlapsBodyIndexFromBodyIndex(int BodyIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindFlapsBodyIndexFromBodyIndex, "Engine.RFlapsAsset.FindFlapsBodyIndexFromBodyIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindFlapsBodyIndexFromBodyIndex, "Engine.RFlapsAsset.FindFlapsBodyIndexFromBodyIndex", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyIndex, paramsPtr + 0);
@@ -147,14 +147,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateConstraintReferences;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateConstraintReferences;
     /// <summary>
     /// Function: UpdateConstraintReferences
     /// </summary>
     public unsafe virtual void UpdateConstraintReferences()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateConstraintReferences, "Engine.RFlapsAsset.UpdateConstraintReferences");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateConstraintReferences, "Engine.RFlapsAsset.UpdateConstraintReferences", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -168,14 +168,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddConstraint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddConstraint;
     /// <summary>
     /// Function: AddConstraint
     /// </summary>
     public unsafe virtual BmSDK.Engine.RFlaps_ConstraintSetup AddConstraint(BmSDK.Engine.RFlaps_ConstraintSetup.FRFlapsParticleReference ConstrainedParticleRef, BmSDK.Engine.RFlaps_ConstraintSetup.ERFlapsConstraintType ConstraintType, BmSDK.Engine.SkeletalMesh RefSkelMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddConstraint, "Engine.RFlapsAsset.AddConstraint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddConstraint, "Engine.RFlapsAsset.AddConstraint", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConstrainedParticleRef, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RFlaps_ConstraintSetup>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_RemoveBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveBody;
     /// <summary>
     /// Function: RemoveBody
     /// </summary>
     public unsafe virtual bool RemoveBody(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveBody, "Engine.RFlapsAsset.RemoveBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveBody, "Engine.RFlapsAsset.RemoveBody", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -214,14 +214,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddBody;
     /// <summary>
     /// Function: AddBody
     /// </summary>
     public unsafe virtual int AddBody(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddBody, "Engine.RFlapsAsset.AddBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddBody, "Engine.RFlapsAsset.AddBody", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -236,14 +236,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindBodyIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBodyIndex;
     /// <summary>
     /// Function: FindBodyIndex
     /// </summary>
     public unsafe virtual int FindBodyIndex(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindBodyIndex, "Engine.RFlapsAsset.FindBodyIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindBodyIndex, "Engine.RFlapsAsset.FindBodyIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -258,14 +258,14 @@ public partial class RFlapsAsset : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetNumBodies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumBodies;
     /// <summary>
     /// Function: GetNumBodies
     /// </summary>
     public unsafe virtual int GetNumBodies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumBodies, "Engine.RFlapsAsset.GetNumBodies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumBodies, "Engine.RFlapsAsset.GetNumBodies", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

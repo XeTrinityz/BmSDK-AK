@@ -78,59 +78,59 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkDialogueEvent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsOncePerSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOncePerSession;
     /// <summary>
     /// Function: IsOncePerSession
     /// </summary>
     public unsafe virtual bool IsOncePerSession()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOncePerSession, "Engine.AkDialogueEvent.IsOncePerSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOncePerSession, "Engine.AkDialogueEvent.IsOncePerSession", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsOnceEver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOnceEver;
     /// <summary>
     /// Function: IsOnceEver
     /// </summary>
     public unsafe virtual bool IsOnceEver()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOnceEver, "Engine.AkDialogueEvent.IsOnceEver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOnceEver, "Engine.AkDialogueEvent.IsOnceEver", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsOnceOnly;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOnceOnly;
     /// <summary>
     /// Function: IsOnceOnly
     /// </summary>
     public unsafe virtual bool IsOnceOnly()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOnceOnly, "Engine.AkDialogueEvent.IsOnceOnly");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOnceOnly, "Engine.AkDialogueEvent.IsOnceOnly", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCustomVoiceSubtitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomVoiceSubtitle;
     /// <summary>
     /// Function: GetCustomVoiceSubtitle
     /// </summary>
-    public unsafe virtual BmSDK.FString GetCustomVoiceSubtitle(BmSDK.FString langExt = default)
+    public unsafe virtual BmSDK.FString GetCustomVoiceSubtitle(BmSDK.FStringArg langExt = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomVoiceSubtitle, "Engine.AkDialogueEvent.GetCustomVoiceSubtitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomVoiceSubtitle, "Engine.AkDialogueEvent.GetCustomVoiceSubtitle", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(langExt, paramsPtr + 0);
+        langExt.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -139,17 +139,18 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetSubtitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubtitle;
     /// <summary>
     /// Function: GetSubtitle
     /// </summary>
     public unsafe virtual BmSDK.FString GetSubtitle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSubtitle, "Engine.AkDialogueEvent.GetSubtitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSubtitle, "Engine.AkDialogueEvent.GetSubtitle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -163,28 +164,28 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetId;
     /// <summary>
     /// Function: GetId
     /// </summary>
     public unsafe virtual int GetId()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetId, "Engine.AkDialogueEvent.GetId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetId, "Engine.AkDialogueEvent.GetId", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSoundDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSoundDuration;
     /// <summary>
     /// Function: GetSoundDuration
     /// </summary>
     public unsafe virtual float GetSoundDuration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSoundDuration, "Engine.AkDialogueEvent.GetSoundDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSoundDuration, "Engine.AkDialogueEvent.GetSoundDuration", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -198,14 +199,14 @@ public partial class AkDialogueEvent : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSoundEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSoundEvent;
     /// <summary>
     /// Function: GetSoundEvent
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetSoundEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSoundEvent, "Engine.AkDialogueEvent.GetSoundEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSoundEvent, "Engine.AkDialogueEvent.GetSoundEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,56 +78,56 @@ public partial class RBMBehaviour_CombatRifleRobot : BmSDK.BmGame.RBMBehaviour_C
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_CombatRifleRobot>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsCurrentCombatantWhileTaunting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCurrentCombatantWhileTaunting;
     /// <summary>
     /// Function: IsCurrentCombatantWhileTaunting
     /// </summary>
     public unsafe override bool IsCurrentCombatantWhileTaunting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCurrentCombatantWhileTaunting, "BmGame.RBMBehaviour_CombatRifleRobot.IsCurrentCombatantWhileTaunting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCurrentCombatantWhileTaunting, "BmGame.RBMBehaviour_CombatRifleRobot.IsCurrentCombatantWhileTaunting", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GotoMoveToCombatState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoMoveToCombatState;
     /// <summary>
     /// Function: GotoMoveToCombatState
     /// </summary>
     public unsafe override void GotoMoveToCombatState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoMoveToCombatState, "BmGame.RBMBehaviour_CombatRifleRobot.GotoMoveToCombatState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotoMoveToCombatState, "BmGame.RBMBehaviour_CombatRifleRobot.GotoMoveToCombatState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetWaitForCombatMovementForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaitForCombatMovementForce;
     /// <summary>
     /// Function: GetWaitForCombatMovementForce
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetWaitForCombatMovementForce()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWaitForCombatMovementForce, "BmGame.RBMBehaviour_CombatRifleRobot.GetWaitForCombatMovementForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWaitForCombatMovementForce, "BmGame.RBMBehaviour_CombatRifleRobot.GetWaitForCombatMovementForce", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMovementForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMovementForce;
     /// <summary>
     /// Function: GetMovementForce
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetMovementForce(System.Numerics.Vector3 DesiredPosition = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMovementForce, "BmGame.RBMBehaviour_CombatRifleRobot.GetMovementForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMovementForce, "BmGame.RBMBehaviour_CombatRifleRobot.GetMovementForce", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredPosition, paramsPtr + 0);
@@ -135,14 +135,14 @@ public partial class RBMBehaviour_CombatRifleRobot : BmSDK.BmGame.RBMBehaviour_C
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetAttackPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttackPriority;
     /// <summary>
     /// Function: GetAttackPriority
     /// </summary>
     public unsafe override int GetAttackPriority(bool bForceAttack)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttackPriority, "BmGame.RBMBehaviour_CombatRifleRobot.GetAttackPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAttackPriority, "BmGame.RBMBehaviour_CombatRifleRobot.GetAttackPriority", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceAttack, paramsPtr + 0);

@@ -78,56 +78,56 @@ public partial class GFxMovieHudMenu : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<GFxMovieHudMenu>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Quit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Quit;
     /// <summary>
     /// Function: Quit
     /// </summary>
     public unsafe virtual void Quit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Quit, "BmGame.GFxMovieHudMenu.Quit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Quit, "BmGame.GFxMovieHudMenu.Quit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MenuClose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MenuClose;
     /// <summary>
     /// Function: MenuClose
     /// </summary>
     public unsafe virtual void MenuClose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MenuClose, "BmGame.GFxMovieHudMenu.MenuClose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MenuClose, "BmGame.GFxMovieHudMenu.MenuClose", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MenuOpen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MenuOpen;
     /// <summary>
     /// Function: MenuOpen
     /// </summary>
     public unsafe virtual void MenuOpen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MenuOpen, "BmGame.GFxMovieHudMenu.MenuOpen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MenuOpen, "BmGame.GFxMovieHudMenu.MenuOpen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupResolution;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupResolution;
     /// <summary>
     /// Function: SetupResolution
     /// </summary>
     public unsafe virtual void SetupResolution(int X, int Y)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupResolution, "BmGame.GFxMovieHudMenu.SetupResolution");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupResolution, "BmGame.GFxMovieHudMenu.SetupResolution", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class GFxMovieHudMenu : BmSDK.GFxUI.GFxMoviePlayer, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_Start;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Start;
     /// <summary>
     /// Function: Start
     /// </summary>
     public unsafe override bool Start(bool StartPaused = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Start, "BmGame.GFxMovieHudMenu.Start");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Start, "BmGame.GFxMovieHudMenu.Start", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPaused, paramsPtr + 0);

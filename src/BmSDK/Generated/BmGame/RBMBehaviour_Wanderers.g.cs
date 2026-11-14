@@ -78,42 +78,42 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_Wanderers>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginInterrupt;
     /// <summary>
     /// Function: OnBeginInterrupt
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_Wanderers.OnBeginInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_Wanderers.OnBeginInterrupt", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawRunAwayPathDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRunAwayPathDebug;
     /// <summary>
     /// Function: DrawRunAwayPathDebug
     /// </summary>
     public unsafe virtual void DrawRunAwayPathDebug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawRunAwayPathDebug, "BmGame.RBMBehaviour_Wanderers.DrawRunAwayPathDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawRunAwayPathDebug, "BmGame.RBMBehaviour_Wanderers.DrawRunAwayPathDebug", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetSideOfRoadPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSideOfRoadPos;
     /// <summary>
     /// Function: GetSideOfRoadPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSideOfRoadPos(bool bRightSide)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSideOfRoadPos, "BmGame.RBMBehaviour_Wanderers.GetSideOfRoadPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSideOfRoadPos, "BmGame.RBMBehaviour_Wanderers.GetSideOfRoadPos", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bRightSide, paramsPtr + 0);
@@ -121,42 +121,42 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CheckForOncomingCar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForOncomingCar;
     /// <summary>
     /// Function: CheckForOncomingCar
     /// </summary>
     public unsafe virtual bool CheckForOncomingCar()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForOncomingCar, "BmGame.RBMBehaviour_Wanderers.CheckForOncomingCar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForOncomingCar, "BmGame.RBMBehaviour_Wanderers.CheckForOncomingCar", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetWanderMoveSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWanderMoveSpeed;
     /// <summary>
     /// Function: GetWanderMoveSpeed
     /// </summary>
     public unsafe virtual BmSDK.Engine.RAutomaticTransitions.EMovementSpeed GetWanderMoveSpeed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWanderMoveSpeed, "BmGame.RBMBehaviour_Wanderers.GetWanderMoveSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWanderMoveSpeed, "BmGame.RBMBehaviour_Wanderers.GetWanderMoveSpeed", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAutomaticTransitions.EMovementSpeed>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartNextMoveToAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNextMoveToAction;
     /// <summary>
     /// Function: StartNextMoveToAction
     /// </summary>
     public unsafe virtual bool StartNextMoveToAction(bool bDirectMove = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNextMoveToAction, "BmGame.RBMBehaviour_Wanderers.StartNextMoveToAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartNextMoveToAction, "BmGame.RBMBehaviour_Wanderers.StartNextMoveToAction", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDirectMove, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SnapPointToNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SnapPointToNavMesh;
     /// <summary>
     /// Function: SnapPointToNavMesh
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 SnapPointToNavMesh(System.Numerics.Vector3 SnapPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SnapPointToNavMesh, "BmGame.RBMBehaviour_Wanderers.SnapPointToNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SnapPointToNavMesh, "BmGame.RBMBehaviour_Wanderers.SnapPointToNavMesh", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SnapPoint, paramsPtr + 0);
@@ -179,14 +179,14 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetRioterFormationPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRioterFormationPos;
     /// <summary>
     /// Function: GetRioterFormationPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRioterFormationPos(int FormationIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRioterFormationPos, "BmGame.RBMBehaviour_Wanderers.GetRioterFormationPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRioterFormationPos, "BmGame.RBMBehaviour_Wanderers.GetRioterFormationPos", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FormationIndex, paramsPtr + 0);
@@ -194,14 +194,14 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetMilitiaFormationPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMilitiaFormationPos;
     /// <summary>
     /// Function: GetMilitiaFormationPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMilitiaFormationPos(int FormationIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMilitiaFormationPos, "BmGame.RBMBehaviour_Wanderers.GetMilitiaFormationPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMilitiaFormationPos, "BmGame.RBMBehaviour_Wanderers.GetMilitiaFormationPos", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FormationIndex, paramsPtr + 0);
@@ -209,28 +209,28 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CalculateGoalPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateGoalPos;
     /// <summary>
     /// Function: CalculateGoalPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 CalculateGoalPos()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateGoalPos, "BmGame.RBMBehaviour_Wanderers.CalculateGoalPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateGoalPos, "BmGame.RBMBehaviour_Wanderers.CalculateGoalPos", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNextWanderPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextWanderPoint;
     /// <summary>
     /// Function: GetNextWanderPoint
     /// </summary>
     public unsafe virtual bool GetNextWanderPoint(bool bForceReevaluate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextWanderPoint, "BmGame.RBMBehaviour_Wanderers.GetNextWanderPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNextWanderPoint, "BmGame.RBMBehaviour_Wanderers.GetNextWanderPoint", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceReevaluate, paramsPtr + 0);
@@ -238,42 +238,42 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ChooseNextRoadLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseNextRoadLink;
     /// <summary>
     /// Function: ChooseNextRoadLink
     /// </summary>
     public unsafe virtual void ChooseNextRoadLink()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseNextRoadLink, "BmGame.RBMBehaviour_Wanderers.ChooseNextRoadLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseNextRoadLink, "BmGame.RBMBehaviour_Wanderers.ChooseNextRoadLink", this);
         byte* paramsPtr = stackalloc byte[196];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FellowWandererIsInCombat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FellowWandererIsInCombat;
     /// <summary>
     /// Function: FellowWandererIsInCombat
     /// </summary>
     public unsafe virtual void FellowWandererIsInCombat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FellowWandererIsInCombat, "BmGame.RBMBehaviour_Wanderers.FellowWandererIsInCombat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FellowWandererIsInCombat, "BmGame.RBMBehaviour_Wanderers.FellowWandererIsInCombat", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WandererHandleSpookedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WandererHandleSpookedBy;
     /// <summary>
     /// Function: WandererHandleSpookedBy
     /// </summary>
     public unsafe virtual void WandererHandleSpookedBy(BmSDK.Engine.Actor Threat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WandererHandleSpookedBy, "BmGame.RBMBehaviour_Wanderers.WandererHandleSpookedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WandererHandleSpookedBy, "BmGame.RBMBehaviour_Wanderers.WandererHandleSpookedBy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Threat, paramsPtr + 0);
@@ -281,28 +281,28 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return;
     }
 
-    private static BmSDK.Function __fn_GetMoveLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMoveLocation;
     /// <summary>
     /// Function: GetMoveLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMoveLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMoveLocation, "BmGame.RBMBehaviour_Wanderers.GetMoveLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMoveLocation, "BmGame.RBMBehaviour_Wanderers.GetMoveLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetEvadeVehicleType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEvadeVehicleType;
     /// <summary>
     /// Function: GetEvadeVehicleType
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameInfo.EEvadeVehicleType GetEvadeVehicleType(BmSDK.Engine.Actor V, float CarSpeed, bool bZap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEvadeVehicleType, "BmGame.RBMBehaviour_Wanderers.GetEvadeVehicleType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEvadeVehicleType, "BmGame.RBMBehaviour_Wanderers.GetEvadeVehicleType", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -312,28 +312,28 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.EEvadeVehicleType>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetStasisLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStasisLink;
     /// <summary>
     /// Function: SetStasisLink
     /// </summary>
     public unsafe virtual void SetStasisLink()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStasisLink, "BmGame.RBMBehaviour_Wanderers.SetStasisLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStasisLink, "BmGame.RBMBehaviour_Wanderers.SetStasisLink", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RBMBehaviour_Wanderers.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RBMBehaviour_Wanderers.Tick", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -341,84 +341,84 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_Wanderers.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_Wanderers.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnEndInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnEndInterrupt;
     /// <summary>
     /// Function: OnEndInterrupt
     /// </summary>
     public unsafe override void OnEndInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_Wanderers.OnEndInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_Wanderers.OnEndInterrupt", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetAnimData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimData;
     /// <summary>
     /// Function: SetAnimData
     /// </summary>
     public unsafe virtual void SetAnimData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAnimData, "BmGame.RBMBehaviour_Wanderers.SetAnimData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAnimData, "BmGame.RBMBehaviour_Wanderers.SetAnimData", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInitialState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInitialState;
     /// <summary>
     /// Function: SetInitialState
     /// </summary>
     public unsafe override void SetInitialState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInitialState, "BmGame.RBMBehaviour_Wanderers.SetInitialState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInitialState, "BmGame.RBMBehaviour_Wanderers.SetInitialState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldCreateCustomWeapConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldCreateCustomWeapConfig;
     /// <summary>
     /// Function: ShouldCreateCustomWeapConfig
     /// </summary>
     public unsafe override bool ShouldCreateCustomWeapConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldCreateCustomWeapConfig, "BmGame.RBMBehaviour_Wanderers.ShouldCreateCustomWeapConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldCreateCustomWeapConfig, "BmGame.RBMBehaviour_Wanderers.ShouldCreateCustomWeapConfig", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitialiseWandering;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseWandering;
     /// <summary>
     /// Function: InitialiseWandering
     /// </summary>
     public unsafe virtual void InitialiseWandering(int WandererIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseWandering, "BmGame.RBMBehaviour_Wanderers.InitialiseWandering");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseWandering, "BmGame.RBMBehaviour_Wanderers.InitialiseWandering", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WandererIndex, paramsPtr + 0);
@@ -426,14 +426,14 @@ public partial class RBMBehaviour_Wanderers : BmSDK.BmGame.RBMBehaviour_GangMove
         return;
     }
 
-    private static BmSDK.Function __fn_GetWeaponName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWeaponName;
     /// <summary>
     /// Function: GetWeaponName
     /// </summary>
     public unsafe virtual BmSDK.FName GetWeaponName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWeaponName, "BmGame.RBMBehaviour_Wanderers.GetWeaponName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWeaponName, "BmGame.RBMBehaviour_Wanderers.GetWeaponName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

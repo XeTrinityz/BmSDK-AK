@@ -78,28 +78,28 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RShowcaseCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateLightRigs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLightRigs;
     /// <summary>
     /// Function: UpdateLightRigs
     /// </summary>
     public unsafe virtual void UpdateLightRigs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLightRigs, "BmGame.RShowcaseCamera.UpdateLightRigs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLightRigs, "BmGame.RShowcaseCamera.UpdateLightRigs", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInput;
     /// <summary>
     /// Function: UpdateInput
     /// </summary>
     public unsafe virtual void UpdateInput(float fFrameTime, float fr, float fU, float FF)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateInput, "BmGame.RShowcaseCamera.UpdateInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateInput, "BmGame.RShowcaseCamera.UpdateInput", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fFrameTime, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateFrame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFrame;
     /// <summary>
     /// Function: UpdateFrame
     /// </summary>
     public unsafe virtual bool UpdateFrame(float fFrameTime, BmSDK.BmGame.RPlayerInput iInput)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFrame, "BmGame.RShowcaseCamera.UpdateFrame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFrame, "BmGame.RShowcaseCamera.UpdateFrame", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fFrameTime, paramsPtr + 0);
@@ -126,42 +126,42 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_LightRigsRelease;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LightRigsRelease;
     /// <summary>
     /// Function: LightRigsRelease
     /// </summary>
     public unsafe virtual void LightRigsRelease()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LightRigsRelease, "BmGame.RShowcaseCamera.LightRigsRelease");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LightRigsRelease, "BmGame.RShowcaseCamera.LightRigsRelease", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LightRigsInitialize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LightRigsInitialize;
     /// <summary>
     /// Function: LightRigsInitialize
     /// </summary>
     public unsafe virtual void LightRigsInitialize()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LightRigsInitialize, "BmGame.RShowcaseCamera.LightRigsInitialize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LightRigsInitialize, "BmGame.RShowcaseCamera.LightRigsInitialize", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMode;
     /// <summary>
     /// Function: SetMode
     /// </summary>
     public unsafe virtual void SetMode(BmSDK.BmGame.RShowcaseCamera.ShowcaseCameraMode eMode, BmSDK.BmGame.RShowcaseCamera.ShowcaseCameraVantageRequirement eRequirement)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMode, "BmGame.RShowcaseCamera.SetMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMode, "BmGame.RShowcaseCamera.SetMode", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(eMode, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_SetInspectParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInspectParams;
     /// <summary>
     /// Function: SetInspectParams
     /// </summary>
     public unsafe virtual void SetInspectParams(System.Numerics.Vector4 vHeights, System.Numerics.Vector4 vAngles, System.Numerics.Vector3 vFOVs, float fDistance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInspectParams, "BmGame.RShowcaseCamera.SetInspectParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInspectParams, "BmGame.RShowcaseCamera.SetInspectParams", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vHeights, paramsPtr + 0);
@@ -188,14 +188,14 @@ public partial class RShowcaseCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_SetVantageParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVantageParams;
     /// <summary>
     /// Function: SetVantageParams
     /// </summary>
     public unsafe virtual void SetVantageParams(System.Numerics.Vector3 vPosition, System.Numerics.Vector3 vLookAt, float fFOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVantageParams, "BmGame.RShowcaseCamera.SetVantageParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVantageParams, "BmGame.RShowcaseCamera.SetVantageParams", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vPosition, paramsPtr + 0);

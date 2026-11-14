@@ -78,67 +78,78 @@ public partial class RHudObjectivesContainer : BmSDK.GameObject, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RHudObjectivesContainer>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FlushPendingObjectiveMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushPendingObjectiveMessage;
     /// <summary>
     /// Function: FlushPendingObjectiveMessage
     /// </summary>
-    public unsafe virtual void FlushPendingObjectiveMessage(BmSDK.FString Title)
+    public unsafe virtual void FlushPendingObjectiveMessage(BmSDK.FStringArg Title)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushPendingObjectiveMessage, "BmGame.RHudObjectivesContainer.FlushPendingObjectiveMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushPendingObjectiveMessage, "BmGame.RHudObjectivesContainer.FlushPendingObjectiveMessage", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 0);
+        Title.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_QueueObjectiveMessageCustomIcon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueObjectiveMessageCustomIcon;
     /// <summary>
     /// Function: QueueObjectiveMessageCustomIcon
     /// </summary>
-    public unsafe virtual void QueueObjectiveMessageCustomIcon(float Time, BmSDK.FString Title, BmSDK.FString Desc, BmSDK.FString OrgDesc, BmSDK.FString CustomIconName, bool bForceShowMap, BmSDK.FString BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicator, BmSDK.FString MostWantedPipeSeparatedArray = default)
+    public unsafe virtual void QueueObjectiveMessageCustomIcon(float Time, BmSDK.FStringArg Title, BmSDK.FStringArg Desc, BmSDK.FStringArg OrgDesc, BmSDK.FStringArg CustomIconName, bool bForceShowMap, BmSDK.FStringArg BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicator, BmSDK.FStringArg MostWantedPipeSeparatedArray = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueObjectiveMessageCustomIcon, "BmGame.RHudObjectivesContainer.QueueObjectiveMessageCustomIcon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueueObjectiveMessageCustomIcon, "BmGame.RHudObjectivesContainer.QueueObjectiveMessageCustomIcon", this);
         byte* paramsPtr = stackalloc byte[224];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Desc, paramsPtr + 20);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(OrgDesc, paramsPtr + 36);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomIconName, paramsPtr + 52);
+        Title.WriteTo(paramsPtr + 4);
+        Desc.WriteTo(paramsPtr + 20);
+        OrgDesc.WriteTo(paramsPtr + 36);
+        CustomIconName.WriteTo(paramsPtr + 52);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceShowMap, paramsPtr + 68);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(BackPrompt, paramsPtr + 72);
+        BackPrompt.WriteTo(paramsPtr + 72);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNoDuplicates, paramsPtr + 88);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPulseCompassIndicator, paramsPtr + 92);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MostWantedPipeSeparatedArray, paramsPtr + 96);
+        MostWantedPipeSeparatedArray.WriteTo(paramsPtr + 96);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 36);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 52);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 72);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 96);
         return;
     }
 
-    private static BmSDK.Function __fn_QueueObjectiveMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueObjectiveMessage;
     /// <summary>
     /// Function: QueueObjectiveMessage
     /// </summary>
-    public unsafe virtual void QueueObjectiveMessage(float Time, BmSDK.FString Title, BmSDK.FString Desc, BmSDK.FString OrgDesc, int ArrowType, bool bForceShowMap, BmSDK.FString BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicator)
+    public unsafe virtual void QueueObjectiveMessage(float Time, BmSDK.FStringArg Title, BmSDK.FStringArg Desc, BmSDK.FStringArg OrgDesc, int ArrowType, bool bForceShowMap, BmSDK.FStringArg BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueObjectiveMessage, "BmGame.RHudObjectivesContainer.QueueObjectiveMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueueObjectiveMessage, "BmGame.RHudObjectivesContainer.QueueObjectiveMessage", this);
         byte* paramsPtr = stackalloc byte[196];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Desc, paramsPtr + 20);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(OrgDesc, paramsPtr + 36);
+        Title.WriteTo(paramsPtr + 4);
+        Desc.WriteTo(paramsPtr + 20);
+        OrgDesc.WriteTo(paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ArrowType, paramsPtr + 52);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceShowMap, paramsPtr + 56);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(BackPrompt, paramsPtr + 60);
+        BackPrompt.WriteTo(paramsPtr + 60);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNoDuplicates, paramsPtr + 76);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPulseCompassIndicator, paramsPtr + 80);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 36);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 60);
         return;
     }
 

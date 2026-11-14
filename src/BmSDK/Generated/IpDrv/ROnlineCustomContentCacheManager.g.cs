@@ -99,14 +99,14 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "IpDrv.ROnlineCustomContentCacheManager.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "IpDrv.ROnlineCustomContentCacheManager.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_GetActivityLogAsList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActivityLogAsList;
     /// <summary>
     /// Function: GetActivityLogAsList
     /// </summary>
     public unsafe virtual void GetActivityLogAsList(out BmSDK.TArray<BmSDK.FString> OutList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActivityLogAsList, "IpDrv.ROnlineCustomContentCacheManager.GetActivityLogAsList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActivityLogAsList, "IpDrv.ROnlineCustomContentCacheManager.GetActivityLogAsList", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -136,65 +136,68 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateActivity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateActivity;
     /// <summary>
     /// Function: UpdateActivity
     /// </summary>
-    public unsafe virtual void UpdateActivity(BmSDK.FString Filename, BmSDK.IpDrv.ROnlineCustomContentCacheManager.CacheActivityType Type, BmSDK.IpDrv.ROnlineCustomContentCacheManager.CacheActivityStatus Status, int bytesTransferred, float timeTaken)
+    public unsafe virtual void UpdateActivity(BmSDK.FStringArg Filename, BmSDK.IpDrv.ROnlineCustomContentCacheManager.CacheActivityType Type, BmSDK.IpDrv.ROnlineCustomContentCacheManager.CacheActivityStatus Status, int bytesTransferred, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateActivity, "IpDrv.ROnlineCustomContentCacheManager.UpdateActivity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateActivity, "IpDrv.ROnlineCustomContentCacheManager.UpdateActivity", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Status, paramsPtr + 17);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bytesTransferred, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCleanupObsoleteInternal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCleanupObsoleteInternal;
     /// <summary>
     /// Function: OnCleanupObsoleteInternal
     /// </summary>
-    public unsafe virtual void OnCleanupObsoleteInternal(bool bWasSuccessful, BmSDK.FString sCustomId)
+    public unsafe virtual void OnCleanupObsoleteInternal(bool bWasSuccessful, BmSDK.FStringArg sCustomId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCleanupObsoleteInternal, "IpDrv.ROnlineCustomContentCacheManager.OnCleanupObsoleteInternal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCleanupObsoleteInternal, "IpDrv.ROnlineCustomContentCacheManager.OnCleanupObsoleteInternal", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 4);
+        sCustomId.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCrcDownloadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCrcDownloadComplete;
     /// <summary>
     /// Function: OnCrcDownloadComplete
     /// </summary>
-    public unsafe virtual void OnCrcDownloadComplete(BmSDK.Engine.OnlineCustomContentRequestHydra SubRequest, BmSDK.FString Category)
+    public unsafe virtual void OnCrcDownloadComplete(BmSDK.Engine.OnlineCustomContentRequestHydra SubRequest, BmSDK.FStringArg Category)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCrcDownloadComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCrcDownloadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCrcDownloadComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCrcDownloadComplete", this);
         byte* paramsPtr = stackalloc byte[152];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubRequest, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Category, paramsPtr + 8);
+        Category.WriteTo(paramsPtr + 8);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRegistryAsFileNames;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRegistryAsFileNames;
     /// <summary>
     /// Function: GetRegistryAsFileNames
     /// </summary>
     public unsafe virtual void GetRegistryAsFileNames(out BmSDK.TArray<BmSDK.FString> OutList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRegistryAsFileNames, "IpDrv.ROnlineCustomContentCacheManager.GetRegistryAsFileNames");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRegistryAsFileNames, "IpDrv.ROnlineCustomContentCacheManager.GetRegistryAsFileNames", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -202,14 +205,14 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_GetRegistryAsList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRegistryAsList;
     /// <summary>
     /// Function: GetRegistryAsList
     /// </summary>
     public unsafe virtual int GetRegistryAsList(out BmSDK.TArray<BmSDK.FString> OutList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRegistryAsList, "IpDrv.ROnlineCustomContentCacheManager.GetRegistryAsList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRegistryAsList, "IpDrv.ROnlineCustomContentCacheManager.GetRegistryAsList", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -217,257 +220,274 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetIndexOfFolderInRegistry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIndexOfFolderInRegistry;
     /// <summary>
     /// Function: GetIndexOfFolderInRegistry
     /// </summary>
-    public unsafe virtual int GetIndexOfFolderInRegistry(out BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryFolder folderCopy, BmSDK.FString Subfolder)
+    public unsafe virtual int GetIndexOfFolderInRegistry(out BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryFolder folderCopy, BmSDK.FStringArg Subfolder)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIndexOfFolderInRegistry, "IpDrv.ROnlineCustomContentCacheManager.GetIndexOfFolderInRegistry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIndexOfFolderInRegistry, "IpDrv.ROnlineCustomContentCacheManager.GetIndexOfFolderInRegistry", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Subfolder, paramsPtr + 36);
+        Subfolder.WriteTo(paramsPtr + 36);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 36);
         folderCopy = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryFolder>(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 52);
     }
 
-    private static BmSDK.Function __fn_GetIndexOfEntryInFolder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIndexOfEntryInFolder;
     /// <summary>
     /// Function: GetIndexOfEntryInFolder
     /// </summary>
-    public unsafe virtual int GetIndexOfEntryInFolder(out BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryEntry entryCopy, BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryFolder folderCopy, BmSDK.FString Filename)
+    public unsafe virtual int GetIndexOfEntryInFolder(out BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryEntry entryCopy, BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryFolder folderCopy, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIndexOfEntryInFolder, "IpDrv.ROnlineCustomContentCacheManager.GetIndexOfEntryInFolder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIndexOfEntryInFolder, "IpDrv.ROnlineCustomContentCacheManager.GetIndexOfEntryInFolder", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(folderCopy, paramsPtr + 28);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 64);
+        Filename.WriteTo(paramsPtr + 64);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 64);
         entryCopy = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryEntry>(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 80);
     }
 
-    private static BmSDK.Function __fn_GetCopyOfEntryInRegistry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCopyOfEntryInRegistry;
     /// <summary>
     /// Function: GetCopyOfEntryInRegistry
     /// </summary>
-    public unsafe virtual bool GetCopyOfEntryInRegistry(out BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryEntry entryCopy, BmSDK.FString Filename, BmSDK.FString Subfolder)
+    public unsafe virtual bool GetCopyOfEntryInRegistry(out BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryEntry entryCopy, BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCopyOfEntryInRegistry, "IpDrv.ROnlineCustomContentCacheManager.GetCopyOfEntryInRegistry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCopyOfEntryInRegistry, "IpDrv.ROnlineCustomContentCacheManager.GetCopyOfEntryInRegistry", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 28);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Subfolder, paramsPtr + 44);
+        Filename.WriteTo(paramsPtr + 28);
+        Subfolder.WriteTo(paramsPtr + 44);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 28);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 44);
         entryCopy = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.IpDrv.ROnlineCustomContentCacheManager.FRegistryEntry>(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 60);
     }
 
-    private static BmSDK.Function __fn_FlagObsoleteInRegistry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlagObsoleteInRegistry;
     /// <summary>
     /// Function: FlagObsoleteInRegistry
     /// </summary>
-    public unsafe virtual bool FlagObsoleteInRegistry(BmSDK.FString Filename, BmSDK.FString Subfolder)
+    public unsafe virtual bool FlagObsoleteInRegistry(BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlagObsoleteInRegistry, "IpDrv.ROnlineCustomContentCacheManager.FlagObsoleteInRegistry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlagObsoleteInRegistry, "IpDrv.ROnlineCustomContentCacheManager.FlagObsoleteInRegistry", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Subfolder, paramsPtr + 16);
+        Filename.WriteTo(paramsPtr + 0);
+        Subfolder.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_RemoveFromRegistry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFromRegistry;
     /// <summary>
     /// Function: RemoveFromRegistry
     /// </summary>
-    public unsafe virtual bool RemoveFromRegistry(BmSDK.FString Filename, BmSDK.FString Subfolder)
+    public unsafe virtual bool RemoveFromRegistry(BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFromRegistry, "IpDrv.ROnlineCustomContentCacheManager.RemoveFromRegistry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveFromRegistry, "IpDrv.ROnlineCustomContentCacheManager.RemoveFromRegistry", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Subfolder, paramsPtr + 16);
+        Filename.WriteTo(paramsPtr + 0);
+        Subfolder.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_UpdateRegistry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRegistry;
     /// <summary>
     /// Function: UpdateRegistry
     /// </summary>
-    public unsafe virtual void UpdateRegistry(BmSDK.FString Filename, BmSDK.FString Subfolder, int Crc32, int Size, bool bObsolete)
+    public unsafe virtual void UpdateRegistry(BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder, int Crc32, int Size, bool bObsolete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRegistry, "IpDrv.ROnlineCustomContentCacheManager.UpdateRegistry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRegistry, "IpDrv.ROnlineCustomContentCacheManager.UpdateRegistry", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Subfolder, paramsPtr + 16);
+        Filename.WriteTo(paramsPtr + 0);
+        Subfolder.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Crc32, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Size, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bObsolete, paramsPtr + 40);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_GetFileCacheSize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFileCacheSize;
     /// <summary>
     /// Function: GetFileCacheSize
     /// </summary>
-    public unsafe virtual int GetFileCacheSize(BmSDK.FString Filename, BmSDK.FString Subfolder)
+    public unsafe virtual int GetFileCacheSize(BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFileCacheSize, "IpDrv.ROnlineCustomContentCacheManager.GetFileCacheSize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFileCacheSize, "IpDrv.ROnlineCustomContentCacheManager.GetFileCacheSize", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Subfolder, paramsPtr + 16);
+        Filename.WriteTo(paramsPtr + 0);
+        Subfolder.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetFileCacheStatus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFileCacheStatus;
     /// <summary>
     /// Function: GetFileCacheStatus
     /// </summary>
-    public unsafe virtual BmSDK.IpDrv.ROnlineCustomContentCacheManager.CacheFileStatus GetFileCacheStatus(BmSDK.FString Filename, BmSDK.FString Subfolder, int ExpectedCrc32)
+    public unsafe virtual BmSDK.IpDrv.ROnlineCustomContentCacheManager.CacheFileStatus GetFileCacheStatus(BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder, int ExpectedCrc32)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFileCacheStatus, "IpDrv.ROnlineCustomContentCacheManager.GetFileCacheStatus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFileCacheStatus, "IpDrv.ROnlineCustomContentCacheManager.GetFileCacheStatus", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Subfolder, paramsPtr + 16);
+        Filename.WriteTo(paramsPtr + 0);
+        Subfolder.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExpectedCrc32, paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.IpDrv.ROnlineCustomContentCacheManager.CacheFileStatus>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_InitializeCacheRegistry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitializeCacheRegistry;
     /// <summary>
     /// Function: InitializeCacheRegistry
     /// </summary>
     public unsafe virtual void InitializeCacheRegistry()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitializeCacheRegistry, "IpDrv.ROnlineCustomContentCacheManager.InitializeCacheRegistry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitializeCacheRegistry, "IpDrv.ROnlineCustomContentCacheManager.InitializeCacheRegistry", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCacheDeleteComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCacheDeleteComplete;
     /// <summary>
     /// Function: OnCacheDeleteComplete
     /// </summary>
-    public unsafe virtual void OnCacheDeleteComplete(bool bWasSuccessful, BmSDK.FString Filename, float timeTaken)
+    public unsafe virtual void OnCacheDeleteComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCacheDeleteComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCacheDeleteComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCacheDeleteComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCacheDeleteComplete", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCacheDeleteBegin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCacheDeleteBegin;
     /// <summary>
     /// Function: OnCacheDeleteBegin
     /// </summary>
     public unsafe virtual void OnCacheDeleteBegin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCacheDeleteBegin, "IpDrv.ROnlineCustomContentCacheManager.OnCacheDeleteBegin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCacheDeleteBegin, "IpDrv.ROnlineCustomContentCacheManager.OnCacheDeleteBegin", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCacheSaveComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCacheSaveComplete;
     /// <summary>
     /// Function: OnCacheSaveComplete
     /// </summary>
-    public unsafe virtual void OnCacheSaveComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken)
+    public unsafe virtual void OnCacheSaveComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCacheSaveComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCacheSaveComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCacheSaveComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCacheSaveComplete", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bytesTransferred, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCacheSaveBegin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCacheSaveBegin;
     /// <summary>
     /// Function: OnCacheSaveBegin
     /// </summary>
     public unsafe virtual void OnCacheSaveBegin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCacheSaveBegin, "IpDrv.ROnlineCustomContentCacheManager.OnCacheSaveBegin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCacheSaveBegin, "IpDrv.ROnlineCustomContentCacheManager.OnCacheSaveBegin", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCacheLoadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCacheLoadComplete;
     /// <summary>
     /// Function: OnCacheLoadComplete
     /// </summary>
-    public unsafe virtual void OnCacheLoadComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken)
+    public unsafe virtual void OnCacheLoadComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCacheLoadComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCacheLoadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCacheLoadComplete, "IpDrv.ROnlineCustomContentCacheManager.OnCacheLoadComplete", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bytesTransferred, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCacheLoadBegin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCacheLoadBegin;
     /// <summary>
     /// Function: OnCacheLoadBegin
     /// </summary>
     public unsafe virtual void OnCacheLoadBegin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCacheLoadBegin, "IpDrv.ROnlineCustomContentCacheManager.OnCacheLoadBegin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCacheLoadBegin, "IpDrv.ROnlineCustomContentCacheManager.OnCacheLoadBegin", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddToDeleteQueue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToDeleteQueue;
     /// <summary>
     /// Function: AddToDeleteQueue
     /// </summary>
     public unsafe virtual void AddToDeleteQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToDeleteQueue, "IpDrv.ROnlineCustomContentCacheManager.AddToDeleteQueue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToDeleteQueue, "IpDrv.ROnlineCustomContentCacheManager.AddToDeleteQueue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Request, paramsPtr + 0);
@@ -482,14 +502,14 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_AddToWriteQueue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToWriteQueue;
     /// <summary>
     /// Function: AddToWriteQueue
     /// </summary>
     public unsafe virtual void AddToWriteQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToWriteQueue, "IpDrv.ROnlineCustomContentCacheManager.AddToWriteQueue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToWriteQueue, "IpDrv.ROnlineCustomContentCacheManager.AddToWriteQueue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Request, paramsPtr + 0);
@@ -504,14 +524,14 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveFromReadQueue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFromReadQueue;
     /// <summary>
     /// Function: RemoveFromReadQueue
     /// </summary>
     public unsafe virtual void RemoveFromReadQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFromReadQueue, "IpDrv.ROnlineCustomContentCacheManager.RemoveFromReadQueue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveFromReadQueue, "IpDrv.ROnlineCustomContentCacheManager.RemoveFromReadQueue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Request, paramsPtr + 0);
@@ -526,14 +546,14 @@ public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_AddToReadQueue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToReadQueue;
     /// <summary>
     /// Function: AddToReadQueue
     /// </summary>
     public unsafe virtual void AddToReadQueue(BmSDK.Engine.OnlineCustomContentRequestCacheableHydra Request)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToReadQueue, "IpDrv.ROnlineCustomContentCacheManager.AddToReadQueue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToReadQueue, "IpDrv.ROnlineCustomContentCacheManager.AddToReadQueue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Request, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class OnlineMatchmakingStats : BmSDK.GameObject, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<OnlineMatchmakingStats>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_StopTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopTimer;
     /// <summary>
     /// Function: StopTimer
     /// </summary>
     public unsafe virtual void StopTimer(out BmSDK.Engine.OnlineMatchmakingStats.FMMStats_Timer Timer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTimer, "Engine.OnlineMatchmakingStats.StopTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopTimer, "Engine.OnlineMatchmakingStats.StopTimer", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Timer);
@@ -102,14 +102,14 @@ public partial class OnlineMatchmakingStats : BmSDK.GameObject, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_StartTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTimer;
     /// <summary>
     /// Function: StartTimer
     /// </summary>
     public unsafe virtual void StartTimer(out BmSDK.Engine.OnlineMatchmakingStats.FMMStats_Timer Timer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTimer, "Engine.OnlineMatchmakingStats.StartTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTimer, "Engine.OnlineMatchmakingStats.StartTimer", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Timer);

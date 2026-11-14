@@ -78,14 +78,14 @@ public partial class SeqVar_Object : BmSDK.Engine.SequenceVariable, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<SeqVar_Object>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetObjectValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectValue;
     /// <summary>
     /// Function: SetObjectValue
     /// </summary>
     public unsafe virtual void SetObjectValue(BmSDK.GameObject NewValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetObjectValue, "Engine.SeqVar_Object.SetObjectValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetObjectValue, "Engine.SeqVar_Object.SetObjectValue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewValue, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class SeqVar_Object : BmSDK.Engine.SequenceVariable, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetObjectValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectValue;
     /// <summary>
     /// Function: GetObjectValue
     /// </summary>
     public unsafe virtual BmSDK.GameObject GetObjectValue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectValue, "Engine.SeqVar_Object.GetObjectValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectValue, "Engine.SeqVar_Object.GetObjectValue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

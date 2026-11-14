@@ -78,28 +78,28 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         where TComponent : class, Framework.IScriptComponent<RSeqAct_MultipleMobileObjectives>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistance;
     /// <summary>
     /// Function: GetDistance
     /// </summary>
     public unsafe virtual float GetDistance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDistance, "BmGame.RSeqAct_MultipleMobileObjectives.GetDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDistance, "BmGame.RSeqAct_MultipleMobileObjectives.GetDistance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRecordTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRecordTargetLocation;
     /// <summary>
     /// Function: GetRecordTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRecordTargetLocation(int nIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRecordTargetLocation, "BmGame.RSeqAct_MultipleMobileObjectives.GetRecordTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRecordTargetLocation, "BmGame.RSeqAct_MultipleMobileObjectives.GetRecordTargetLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nIndex, paramsPtr + 0);
@@ -107,28 +107,28 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetRecordCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRecordCount;
     /// <summary>
     /// Function: GetRecordCount
     /// </summary>
     public unsafe virtual int GetRecordCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRecordCount, "BmGame.RSeqAct_MultipleMobileObjectives.GetRecordCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRecordCount, "BmGame.RSeqAct_MultipleMobileObjectives.GetRecordCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetArrayIndexForWave;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetArrayIndexForWave;
     /// <summary>
     /// Function: GetArrayIndexForWave
     /// </summary>
     public unsafe virtual int GetArrayIndexForWave(BmSDK.BmGame.RSeqAct_VehicleEnemySpawner ObjectiveWave)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetArrayIndexForWave, "BmGame.RSeqAct_MultipleMobileObjectives.GetArrayIndexForWave");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetArrayIndexForWave, "BmGame.RSeqAct_MultipleMobileObjectives.GetArrayIndexForWave", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectiveWave, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetArrayIndexForActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetArrayIndexForActor;
     /// <summary>
     /// Function: GetArrayIndexForActor
     /// </summary>
     public unsafe virtual int GetArrayIndexForActor(BmSDK.Engine.Actor ObjectiveActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetArrayIndexForActor, "BmGame.RSeqAct_MultipleMobileObjectives.GetArrayIndexForActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetArrayIndexForActor, "BmGame.RSeqAct_MultipleMobileObjectives.GetArrayIndexForActor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectiveActor, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_RemoveObjectiveCommon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObjectiveCommon;
     /// <summary>
     /// Function: RemoveObjectiveCommon
     /// </summary>
     public unsafe virtual void RemoveObjectiveCommon(int arr_index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveObjectiveCommon, "BmGame.RSeqAct_MultipleMobileObjectives.RemoveObjectiveCommon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveObjectiveCommon, "BmGame.RSeqAct_MultipleMobileObjectives.RemoveObjectiveCommon", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(arr_index, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveObjectiveWave;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObjectiveWave;
     /// <summary>
     /// Function: RemoveObjectiveWave
     /// </summary>
     public unsafe virtual void RemoveObjectiveWave(BmSDK.BmGame.RSeqAct_VehicleEnemySpawner ObjectiveWave)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveObjectiveWave, "BmGame.RSeqAct_MultipleMobileObjectives.RemoveObjectiveWave");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveObjectiveWave, "BmGame.RSeqAct_MultipleMobileObjectives.RemoveObjectiveWave", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectiveWave, paramsPtr + 0);
@@ -181,31 +181,32 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return;
     }
 
-    private static BmSDK.Function __fn_AddObjectiveWave;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddObjectiveWave;
     /// <summary>
     /// Function: AddObjectiveWave
     /// </summary>
-    public unsafe virtual void AddObjectiveWave(BmSDK.BmGame.RSeqAct_VehicleEnemySpawner ObjectiveWave, BmSDK.FString FocusDetailText, BmSDK.TArray<BmSDK.FString> AssociatedObjectives)
+    public unsafe virtual void AddObjectiveWave(BmSDK.BmGame.RSeqAct_VehicleEnemySpawner ObjectiveWave, BmSDK.FStringArg FocusDetailText, BmSDK.TArray<BmSDK.FString> AssociatedObjectives)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddObjectiveWave, "BmGame.RSeqAct_MultipleMobileObjectives.AddObjectiveWave");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddObjectiveWave, "BmGame.RSeqAct_MultipleMobileObjectives.AddObjectiveWave", this);
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectiveWave, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FocusDetailText, paramsPtr + 8);
+        FocusDetailText.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AssociatedObjectives, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObjective;
     /// <summary>
     /// Function: RemoveObjective
     /// </summary>
     public unsafe virtual void RemoveObjective(BmSDK.Engine.Actor ObjectiveActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveObjective, "BmGame.RSeqAct_MultipleMobileObjectives.RemoveObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveObjective, "BmGame.RSeqAct_MultipleMobileObjectives.RemoveObjective", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectiveActor, paramsPtr + 0);
@@ -213,60 +214,62 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return;
     }
 
-    private static BmSDK.Function __fn_AddObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddObjective;
     /// <summary>
     /// Function: AddObjective
     /// </summary>
-    public unsafe virtual void AddObjective(BmSDK.Engine.Actor ObjectiveActor, BmSDK.FString FlagToSetWhenFound, BmSDK.FString FocusDetailText, BmSDK.TArray<BmSDK.FString> AssociatedObjectives)
+    public unsafe virtual void AddObjective(BmSDK.Engine.Actor ObjectiveActor, BmSDK.FStringArg FlagToSetWhenFound, BmSDK.FStringArg FocusDetailText, BmSDK.TArray<BmSDK.FString> AssociatedObjectives)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddObjective, "BmGame.RSeqAct_MultipleMobileObjectives.AddObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddObjective, "BmGame.RSeqAct_MultipleMobileObjectives.AddObjective", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectiveActor, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagToSetWhenFound, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FocusDetailText, paramsPtr + 24);
+        FlagToSetWhenFound.WriteTo(paramsPtr + 8);
+        FocusDetailText.WriteTo(paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AssociatedObjectives, paramsPtr + 40);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return;
     }
 
-    private static BmSDK.Function __fn_AbortAndCleanUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AbortAndCleanUp;
     /// <summary>
     /// Function: AbortAndCleanUp
     /// </summary>
     public unsafe virtual void AbortAndCleanUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AbortAndCleanUp, "BmGame.RSeqAct_MultipleMobileObjectives.AbortAndCleanUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AbortAndCleanUp, "BmGame.RSeqAct_MultipleMobileObjectives.AbortAndCleanUp", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitObjectives;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitObjectives;
     /// <summary>
     /// Function: InitObjectives
     /// </summary>
     public unsafe virtual void InitObjectives()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitObjectives, "BmGame.RSeqAct_MultipleMobileObjectives.InitObjectives");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitObjectives, "BmGame.RSeqAct_MultipleMobileObjectives.InitObjectives", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHudMarkersActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHudMarkersActive;
     /// <summary>
     /// Function: SetHudMarkersActive
     /// </summary>
     public unsafe virtual void SetHudMarkersActive(bool are_active)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHudMarkersActive, "BmGame.RSeqAct_MultipleMobileObjectives.SetHudMarkersActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHudMarkersActive, "BmGame.RSeqAct_MultipleMobileObjectives.SetHudMarkersActive", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(are_active, paramsPtr + 0);
@@ -274,14 +277,14 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return;
     }
 
-    private static BmSDK.Function __fn_IsRecordOnscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRecordOnscreen;
     /// <summary>
     /// Function: IsRecordOnscreen
     /// </summary>
     public unsafe virtual bool IsRecordOnscreen(int record_index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRecordOnscreen, "BmGame.RSeqAct_MultipleMobileObjectives.IsRecordOnscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRecordOnscreen, "BmGame.RSeqAct_MultipleMobileObjectives.IsRecordOnscreen", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(record_index, paramsPtr + 0);
@@ -289,14 +292,14 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TickLogic;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickLogic;
     /// <summary>
     /// Function: TickLogic
     /// </summary>
     public unsafe virtual void TickLogic(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickLogic, "BmGame.RSeqAct_MultipleMobileObjectives.TickLogic");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickLogic, "BmGame.RSeqAct_MultipleMobileObjectives.TickLogic", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -304,14 +307,14 @@ public partial class RSeqAct_MultipleMobileObjectives : BmSDK.Engine.SeqAct_Late
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_MultipleMobileObjectives.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_MultipleMobileObjectives.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

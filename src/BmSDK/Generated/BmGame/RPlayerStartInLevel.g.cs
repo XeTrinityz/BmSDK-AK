@@ -78,56 +78,56 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RPlayerStartInLevel>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPlayerStartInLevel.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RPlayerStartInLevel.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableCheckpoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableCheckpoints;
     /// <summary>
     /// Function: EnableCheckpoints
     /// </summary>
     public unsafe virtual void EnableCheckpoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableCheckpoints, "BmGame.RPlayerStartInLevel.EnableCheckpoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableCheckpoints, "BmGame.RPlayerStartInLevel.EnableCheckpoints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateCheckpoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateCheckpoint;
     /// <summary>
     /// Function: ActivateCheckpoint
     /// </summary>
     public unsafe virtual void ActivateCheckpoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateCheckpoint, "BmGame.RPlayerStartInLevel.ActivateCheckpoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateCheckpoint, "BmGame.RPlayerStartInLevel.ActivateCheckpoint", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnModifyDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnModifyDoor;
     /// <summary>
     /// Function: OnModifyDoor
     /// </summary>
     public unsafe virtual void OnModifyDoor(BmSDK.BmGame.RSeqAct_ModifyDoor Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnModifyDoor, "BmGame.RPlayerStartInLevel.OnModifyDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnModifyDoor, "BmGame.RPlayerStartInLevel.OnModifyDoor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -135,14 +135,14 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_HandleKismetAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleKismetAction;
     /// <summary>
     /// Function: HandleKismetAction
     /// </summary>
     public unsafe virtual void HandleKismetAction(int Index, BmSDK.BmGame.RSeqAct_ModifyDoor Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleKismetAction, "BmGame.RPlayerStartInLevel.HandleKismetAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleKismetAction, "BmGame.RPlayerStartInLevel.HandleKismetAction", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_StartLevelFromHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLevelFromHere;
     /// <summary>
     /// Function: StartLevelFromHere
     /// </summary>
     public unsafe virtual void StartLevelFromHere(bool LevelStart = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLevelFromHere, "BmGame.RPlayerStartInLevel.StartLevelFromHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartLevelFromHere, "BmGame.RPlayerStartInLevel.StartLevelFromHere", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LevelStart, paramsPtr + 0);
@@ -166,34 +166,35 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SaveGameHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveGameHere;
     /// <summary>
     /// Function: SaveGameHere
     /// </summary>
-    public unsafe virtual void SaveGameHere(BmSDK.FString Filename = default, BmSDK.BmGame.RGameRI.FDebugSaveDescription DebugSaveGameDescription = default, bool bMemoryOnly = default, bool bAllowSaveDuringChase = default)
+    public unsafe virtual void SaveGameHere(BmSDK.FStringArg Filename = default, BmSDK.BmGame.RGameRI.FDebugSaveDescription DebugSaveGameDescription = default, bool bMemoryOnly = default, bool bAllowSaveDuringChase = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveGameHere, "BmGame.RPlayerStartInLevel.SaveGameHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveGameHere, "BmGame.RPlayerStartInLevel.SaveGameHere", this);
         byte* paramsPtr = stackalloc byte[196];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DebugSaveGameDescription, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bMemoryOnly, paramsPtr + 52);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllowSaveDuringChase, paramsPtr + 56);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetOuterMost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOuterMost;
     /// <summary>
     /// Function: GetOuterMost
     /// </summary>
     public unsafe virtual BmSDK.GameObject GetOuterMost(BmSDK.GameObject A)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOuterMost, "BmGame.RPlayerStartInLevel.GetOuterMost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOuterMost, "BmGame.RPlayerStartInLevel.GetOuterMost", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);
@@ -201,14 +202,14 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ExitTransition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitTransition;
     /// <summary>
     /// Function: ExitTransition
     /// </summary>
     public unsafe virtual void ExitTransition(bool LevelStart = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitTransition, "BmGame.RPlayerStartInLevel.ExitTransition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitTransition, "BmGame.RPlayerStartInLevel.ExitTransition", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LevelStart, paramsPtr + 0);
@@ -216,28 +217,28 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_CheckPlayerStartFromHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPlayerStartFromHere;
     /// <summary>
     /// Function: CheckPlayerStartFromHere
     /// </summary>
     public unsafe virtual void CheckPlayerStartFromHere()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckPlayerStartFromHere, "BmGame.RPlayerStartInLevel.CheckPlayerStartFromHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckPlayerStartFromHere, "BmGame.RPlayerStartInLevel.CheckPlayerStartFromHere", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckPlayerStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPlayerStart;
     /// <summary>
     /// Function: CheckPlayerStart
     /// </summary>
     public unsafe virtual void CheckPlayerStart(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckPlayerStart, "BmGame.RPlayerStartInLevel.CheckPlayerStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckPlayerStart, "BmGame.RPlayerStartInLevel.CheckPlayerStart", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -245,84 +246,84 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnBatmobileForThisStartPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnBatmobileForThisStartPoint;
     /// <summary>
     /// Function: SpawnBatmobileForThisStartPoint
     /// </summary>
     public unsafe virtual void SpawnBatmobileForThisStartPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnBatmobileForThisStartPoint, "BmGame.RPlayerStartInLevel.SpawnBatmobileForThisStartPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnBatmobileForThisStartPoint, "BmGame.RPlayerStartInLevel.SpawnBatmobileForThisStartPoint", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MovePlayerHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovePlayerHere;
     /// <summary>
     /// Function: MovePlayerHere
     /// </summary>
     public unsafe virtual void MovePlayerHere()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePlayerHere, "BmGame.RPlayerStartInLevel.MovePlayerHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovePlayerHere, "BmGame.RPlayerStartInLevel.MovePlayerHere", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TeleportPlayerToHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TeleportPlayerToHere;
     /// <summary>
     /// Function: TeleportPlayerToHere
     /// </summary>
     public unsafe virtual void TeleportPlayerToHere()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TeleportPlayerToHere, "BmGame.RPlayerStartInLevel.TeleportPlayerToHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TeleportPlayerToHere, "BmGame.RPlayerStartInLevel.TeleportPlayerToHere", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishPreloadingLevelsForEntering;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishPreloadingLevelsForEntering;
     /// <summary>
     /// Function: FinishPreloadingLevelsForEntering
     /// </summary>
     public unsafe virtual void FinishPreloadingLevelsForEntering()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishPreloadingLevelsForEntering, "BmGame.RPlayerStartInLevel.FinishPreloadingLevelsForEntering");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishPreloadingLevelsForEntering, "BmGame.RPlayerStartInLevel.FinishPreloadingLevelsForEntering", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreloadLevelsForEntering;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreloadLevelsForEntering;
     /// <summary>
     /// Function: PreloadLevelsForEntering
     /// </summary>
     public unsafe virtual void PreloadLevelsForEntering()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreloadLevelsForEntering, "BmGame.RPlayerStartInLevel.PreloadLevelsForEntering");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreloadLevelsForEntering, "BmGame.RPlayerStartInLevel.PreloadLevelsForEntering", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FacingSameDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FacingSameDirection;
     /// <summary>
     /// Function: FacingSameDirection
     /// </summary>
     public unsafe virtual bool FacingSameDirection(BmSDK.Rotator PlayerRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FacingSameDirection, "BmGame.RPlayerStartInLevel.FacingSameDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FacingSameDirection, "BmGame.RPlayerStartInLevel.FacingSameDirection", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerRot, paramsPtr + 0);
@@ -330,14 +331,14 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_StopLoadingSymbol;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopLoadingSymbol;
     /// <summary>
     /// Function: StopLoadingSymbol
     /// </summary>
     public unsafe virtual void StopLoadingSymbol()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopLoadingSymbol, "BmGame.RPlayerStartInLevel.StopLoadingSymbol");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopLoadingSymbol, "BmGame.RPlayerStartInLevel.StopLoadingSymbol", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -351,14 +352,14 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_FlushTexturesStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushTexturesStreaming;
     /// <summary>
     /// Function: FlushTexturesStreaming
     /// </summary>
     public unsafe virtual void FlushTexturesStreaming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushTexturesStreaming, "BmGame.RPlayerStartInLevel.FlushTexturesStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushTexturesStreaming, "BmGame.RPlayerStartInLevel.FlushTexturesStreaming", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -372,14 +373,14 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetMyLevelVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMyLevelVolume;
     /// <summary>
     /// Function: GetMyLevelVolume
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RLevelVolume GetMyLevelVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMyLevelVolume, "BmGame.RPlayerStartInLevel.GetMyLevelVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMyLevelVolume, "BmGame.RPlayerStartInLevel.GetMyLevelVolume", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -393,14 +394,14 @@ public partial class RPlayerStartInLevel : BmSDK.Engine.PlayerStart, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RLevelVolume>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetGRI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGRI;
     /// <summary>
     /// Function: GetGRI
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameRI GetGRI()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGRI, "BmGame.RPlayerStartInLevel.GetGRI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGRI, "BmGame.RPlayerStartInLevel.GetGRI", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

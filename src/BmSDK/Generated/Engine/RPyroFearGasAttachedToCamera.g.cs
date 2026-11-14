@@ -78,28 +78,28 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RPyroFearGasAttachedToCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_StopPyroFearGasFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopPyroFearGasFX;
     /// <summary>
     /// Function: StopPyroFearGasFX
     /// </summary>
     public unsafe virtual void StopPyroFearGasFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopPyroFearGasFX, "Engine.RPyroFearGasAttachedToCamera.StopPyroFearGasFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopPyroFearGasFX, "Engine.RPyroFearGasAttachedToCamera.StopPyroFearGasFX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPyroFearGasFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPyroFearGasFX;
     /// <summary>
     /// Function: StartPyroFearGasFX
     /// </summary>
     public unsafe virtual void StartPyroFearGasFX(BmSDK.Engine.RPyroFearGasComponent.FRockPyroFearGasSettings PyroFearGasSettings, BmSDK.Engine.Texture2D OverrideDataMap, BmSDK.Engine.Texture2D OverrideLightMap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPyroFearGasFX, "Engine.RPyroFearGasAttachedToCamera.StartPyroFearGasFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPyroFearGasFX, "Engine.RPyroFearGasAttachedToCamera.StartPyroFearGasFX", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PyroFearGasSettings, paramsPtr + 0);
@@ -109,56 +109,56 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.RPyroFearGasAttachedToCamera.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "Engine.RPyroFearGasAttachedToCamera.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CacheReferences;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheReferences;
     /// <summary>
     /// Function: CacheReferences
     /// </summary>
     public unsafe virtual void CacheReferences()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CacheReferences, "Engine.RPyroFearGasAttachedToCamera.CacheReferences");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CacheReferences, "Engine.RPyroFearGasAttachedToCamera.CacheReferences", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.RPyroFearGasAttachedToCamera.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.RPyroFearGasAttachedToCamera.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetLocalMaxWorldHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalMaxWorldHeight;
     /// <summary>
     /// Function: GetLocalMaxWorldHeight
     /// </summary>
     public unsafe virtual float GetLocalMaxWorldHeight(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocalMaxWorldHeight, "Engine.RPyroFearGasAttachedToCamera.GetLocalMaxWorldHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocalMaxWorldHeight, "Engine.RPyroFearGasAttachedToCamera.GetLocalMaxWorldHeight", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -175,14 +175,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetGlobalMinWorldHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalMinWorldHeight;
     /// <summary>
     /// Function: GetGlobalMinWorldHeight
     /// </summary>
     public unsafe virtual float GetGlobalMinWorldHeight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlobalMinWorldHeight, "Engine.RPyroFearGasAttachedToCamera.GetGlobalMinWorldHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlobalMinWorldHeight, "Engine.RPyroFearGasAttachedToCamera.GetGlobalMinWorldHeight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -196,14 +196,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetGlobalMaxWorldHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalMaxWorldHeight;
     /// <summary>
     /// Function: GetGlobalMaxWorldHeight
     /// </summary>
     public unsafe virtual float GetGlobalMaxWorldHeight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlobalMaxWorldHeight, "Engine.RPyroFearGasAttachedToCamera.GetGlobalMaxWorldHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlobalMaxWorldHeight, "Engine.RPyroFearGasAttachedToCamera.GetGlobalMaxWorldHeight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -217,14 +217,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDataMapAtPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDataMapAtPos;
     /// <summary>
     /// Function: GetDataMapAtPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector4 GetDataMapAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDataMapAtPos, "Engine.RPyroFearGasAttachedToCamera.GetDataMapAtPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDataMapAtPos, "Engine.RPyroFearGasAttachedToCamera.GetDataMapAtPos", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -241,14 +241,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector4>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetMagnitudeAtPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMagnitudeAtPos;
     /// <summary>
     /// Function: GetMagnitudeAtPos
     /// </summary>
     public unsafe virtual float GetMagnitudeAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMagnitudeAtPos, "Engine.RPyroFearGasAttachedToCamera.GetMagnitudeAtPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMagnitudeAtPos, "Engine.RPyroFearGasAttachedToCamera.GetMagnitudeAtPos", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -265,14 +265,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_IsPyroFearGasPosFastCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPyroFearGasPosFastCheck;
     /// <summary>
     /// Function: IsPyroFearGasPosFastCheck
     /// </summary>
     public unsafe virtual bool IsPyroFearGasPosFastCheck(System.Numerics.Vector2 UV, int SizeX, int SizeY)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPyroFearGasPosFastCheck, "Engine.RPyroFearGasAttachedToCamera.IsPyroFearGasPosFastCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPyroFearGasPosFastCheck, "Engine.RPyroFearGasAttachedToCamera.IsPyroFearGasPosFastCheck", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UV, paramsPtr + 0);
@@ -289,14 +289,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_IsPyroFearGasAtUV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPyroFearGasAtUV;
     /// <summary>
     /// Function: IsPyroFearGasAtUV
     /// </summary>
     public unsafe virtual bool IsPyroFearGasAtUV(System.Numerics.Vector2 UV, int xOffset, int yOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPyroFearGasAtUV, "Engine.RPyroFearGasAttachedToCamera.IsPyroFearGasAtUV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPyroFearGasAtUV, "Engine.RPyroFearGasAttachedToCamera.IsPyroFearGasAtUV", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UV, paramsPtr + 0);
@@ -313,14 +313,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetPyroFearGasShoreDistAtPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPyroFearGasShoreDistAtPos;
     /// <summary>
     /// Function: GetPyroFearGasShoreDistAtPos
     /// </summary>
     public unsafe virtual float GetPyroFearGasShoreDistAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPyroFearGasShoreDistAtPos, "Engine.RPyroFearGasAttachedToCamera.GetPyroFearGasShoreDistAtPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPyroFearGasShoreDistAtPos, "Engine.RPyroFearGasAttachedToCamera.GetPyroFearGasShoreDistAtPos", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -337,14 +337,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_IsPyroFearGasAtPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPyroFearGasAtPos;
     /// <summary>
     /// Function: IsPyroFearGasAtPos
     /// </summary>
     public unsafe virtual bool IsPyroFearGasAtPos(System.Numerics.Vector3 Position, int xOffset, int yOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPyroFearGasAtPos, "Engine.RPyroFearGasAttachedToCamera.IsPyroFearGasAtPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPyroFearGasAtPos, "Engine.RPyroFearGasAttachedToCamera.IsPyroFearGasAtPos", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -361,14 +361,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetWaveSample;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWaveSample;
     /// <summary>
     /// Function: GetWaveSample
     /// </summary>
     public unsafe virtual float GetWaveSample(float U, float V)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWaveSample, "Engine.RPyroFearGasAttachedToCamera.GetWaveSample");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWaveSample, "Engine.RPyroFearGasAttachedToCamera.GetWaveSample", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(U, paramsPtr + 0);
@@ -384,14 +384,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPyroFearGasHeightAtPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPyroFearGasHeightAtPosition;
     /// <summary>
     /// Function: GetPyroFearGasHeightAtPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector2 GetPyroFearGasHeightAtPosition(System.Numerics.Vector3 Position)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPyroFearGasHeightAtPosition, "Engine.RPyroFearGasAttachedToCamera.GetPyroFearGasHeightAtPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPyroFearGasHeightAtPosition, "Engine.RPyroFearGasAttachedToCamera.GetPyroFearGasHeightAtPosition", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -406,14 +406,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector2>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_StopPlayerPyroFearGasEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopPlayerPyroFearGasEffect;
     /// <summary>
     /// Function: StopPlayerPyroFearGasEffect
     /// </summary>
     public unsafe virtual void StopPlayerPyroFearGasEffect()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopPlayerPyroFearGasEffect, "Engine.RPyroFearGasAttachedToCamera.StopPlayerPyroFearGasEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopPlayerPyroFearGasEffect, "Engine.RPyroFearGasAttachedToCamera.StopPlayerPyroFearGasEffect", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -427,14 +427,14 @@ public partial class RPyroFearGasAttachedToCamera : BmSDK.Engine.Volume, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePlayerPyroFearGasEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerPyroFearGasEffect;
     /// <summary>
     /// Function: UpdatePlayerPyroFearGasEffect
     /// </summary>
     public unsafe virtual void UpdatePlayerPyroFearGasEffect(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePlayerPyroFearGasEffect, "Engine.RPyroFearGasAttachedToCamera.UpdatePlayerPyroFearGasEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePlayerPyroFearGasEffect, "Engine.RPyroFearGasAttachedToCamera.UpdatePlayerPyroFearGasEffect", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

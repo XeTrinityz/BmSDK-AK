@@ -73,28 +73,28 @@ public partial class RBMWeaponRocketLauncherBase : BmSDK.BmGame.RBMWeapon, BmSDK
         where TComponent : class, Framework.IScriptComponent<RBMWeaponRocketLauncherBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetLaunchLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLaunchLocation;
     /// <summary>
     /// Function: GetLaunchLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLaunchLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLaunchLocation, "BmGame.RBMWeaponRocketLauncherBase.GetLaunchLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLaunchLocation, "BmGame.RBMWeaponRocketLauncherBase.GetLaunchLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FireHomingRocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireHomingRocket;
     /// <summary>
     /// Function: FireHomingRocket
     /// </summary>
     public unsafe virtual void FireHomingRocket(BmSDK.Engine.Actor TargetActor, System.Numerics.Vector3 FireDirection = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireHomingRocket, "BmGame.RBMWeaponRocketLauncherBase.FireHomingRocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireHomingRocket, "BmGame.RBMWeaponRocketLauncherBase.FireHomingRocket", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetActor, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class RBMWeaponRocketLauncherBase : BmSDK.BmGame.RBMWeapon, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_FireFastRocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireFastRocket;
     /// <summary>
     /// Function: FireFastRocket
     /// </summary>
     public unsafe virtual void FireFastRocket(System.Numerics.Vector3 FireDirection = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireFastRocket, "BmGame.RBMWeaponRocketLauncherBase.FireFastRocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireFastRocket, "BmGame.RBMWeaponRocketLauncherBase.FireFastRocket", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FireDirection, paramsPtr + 0);
@@ -118,14 +118,14 @@ public partial class RBMWeaponRocketLauncherBase : BmSDK.BmGame.RBMWeapon, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_FireRocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireRocket;
     /// <summary>
     /// Function: FireRocket
     /// </summary>
     public unsafe virtual void FireRocket(System.Numerics.Vector3 FireDirection = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireRocket, "BmGame.RBMWeaponRocketLauncherBase.FireRocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireRocket, "BmGame.RBMWeaponRocketLauncherBase.FireRocket", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FireDirection, paramsPtr + 0);
@@ -133,42 +133,42 @@ public partial class RBMWeaponRocketLauncherBase : BmSDK.BmGame.RBMWeapon, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOffLaserSight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOffLaserSight;
     /// <summary>
     /// Function: TurnOffLaserSight
     /// </summary>
     public unsafe virtual void TurnOffLaserSight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffLaserSight, "BmGame.RBMWeaponRocketLauncherBase.TurnOffLaserSight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOffLaserSight, "BmGame.RBMWeaponRocketLauncherBase.TurnOffLaserSight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOnLaserSight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOnLaserSight;
     /// <summary>
     /// Function: TurnOnLaserSight
     /// </summary>
     public unsafe virtual void TurnOnLaserSight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnLaserSight, "BmGame.RBMWeaponRocketLauncherBase.TurnOnLaserSight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOnLaserSight, "BmGame.RBMWeaponRocketLauncherBase.TurnOnLaserSight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRECHitReactionAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRECHitReactionAnimName;
     /// <summary>
     /// Function: GetRECHitReactionAnimName
     /// </summary>
     public unsafe override BmSDK.FName GetRECHitReactionAnimName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRECHitReactionAnimName, "BmGame.RBMWeaponRocketLauncherBase.GetRECHitReactionAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRECHitReactionAnimName, "BmGame.RBMWeaponRocketLauncherBase.GetRECHitReactionAnimName", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -188,14 +188,14 @@ public partial class RBMWeaponRocketLauncherBase : BmSDK.BmGame.RBMWeapon, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAimingConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLookFromLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLookFromLocation;
     /// <summary>
     /// Function: GetLookFromLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLookFromLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLookFromLocation, "BmGame.RBMWeaponRocketLauncherBase.GetLookFromLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLookFromLocation, "BmGame.RBMWeaponRocketLauncherBase.GetLookFromLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

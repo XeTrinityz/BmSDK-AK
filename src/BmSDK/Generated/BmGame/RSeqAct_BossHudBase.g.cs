@@ -91,28 +91,28 @@ public partial class RSeqAct_BossHudBase : BmSDK.Engine.SequenceAction, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CreateScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateScreen;
     /// <summary>
     /// Function: CreateScreen
     /// </summary>
     public unsafe virtual void CreateScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateScreen, "BmGame.RSeqAct_BossHudBase.CreateScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateScreen, "BmGame.RSeqAct_BossHudBase.CreateScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SuppressSurveillanceIfNecessary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuppressSurveillanceIfNecessary;
     /// <summary>
     /// Function: SuppressSurveillanceIfNecessary
     /// </summary>
     public unsafe virtual void SuppressSurveillanceIfNecessary(bool bSuppress)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuppressSurveillanceIfNecessary, "BmGame.RSeqAct_BossHudBase.SuppressSurveillanceIfNecessary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuppressSurveillanceIfNecessary, "BmGame.RSeqAct_BossHudBase.SuppressSurveillanceIfNecessary", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuppress, paramsPtr + 0);
@@ -120,14 +120,14 @@ public partial class RSeqAct_BossHudBase : BmSDK.Engine.SequenceAction, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_BossHudBase.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_BossHudBase.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

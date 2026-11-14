@@ -78,28 +78,28 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         where TComponent : class, Framework.IScriptComponent<RFractureWallBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetObstacleActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObstacleActor;
     /// <summary>
     /// Function: GetObstacleActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetObstacleActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObstacleActor, "BmGame.RFractureWallBase.GetObstacleActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObstacleActor, "BmGame.RFractureWallBase.GetObstacleActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmGame.RFractureWallBase.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "BmGame.RFractureWallBase.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Damage, paramsPtr + 0);
@@ -113,14 +113,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RFractureWallBase.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.RFractureWallBase.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToActor;
     /// <summary>
     /// Function: LinkToActor
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.RFractureWallBase.LinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToActor, "BmGame.RFractureWallBase.LinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -143,14 +143,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToGrapplePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToGrapplePoint;
     /// <summary>
     /// Function: LinkToGrapplePoint
     /// </summary>
     public unsafe virtual bool LinkToGrapplePoint(BmSDK.Engine.Actor LinkActor, bool LinkOrUnlink)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToGrapplePoint, "BmGame.RFractureWallBase.LinkToGrapplePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToGrapplePoint, "BmGame.RFractureWallBase.LinkToGrapplePoint", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkActor, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_LoadFragmentRemovedState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadFragmentRemovedState;
     /// <summary>
     /// Function: LoadFragmentRemovedState
     /// </summary>
     public unsafe virtual bool LoadFragmentRemovedState(int FragmentIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadFragmentRemovedState, "BmGame.RFractureWallBase.LoadFragmentRemovedState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadFragmentRemovedState, "BmGame.RFractureWallBase.LoadFragmentRemovedState", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FragmentIndex, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_DoFractureWallExplodeAlert;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFractureWallExplodeAlert;
     /// <summary>
     /// Function: DoFractureWallExplodeAlert
     /// </summary>
     public unsafe virtual void DoFractureWallExplodeAlert(System.Numerics.Vector3 ExplosionCentre, System.Numerics.Vector3 WallNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoFractureWallExplodeAlert, "BmGame.RFractureWallBase.DoFractureWallExplodeAlert");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoFractureWallExplodeAlert, "BmGame.RFractureWallBase.DoFractureWallExplodeAlert", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExplosionCentre, paramsPtr + 0);
@@ -197,42 +197,42 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_LoadHasExplodedToSideState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadHasExplodedToSideState;
     /// <summary>
     /// Function: LoadHasExplodedToSideState
     /// </summary>
     public unsafe virtual void LoadHasExplodedToSideState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadHasExplodedToSideState, "BmGame.RFractureWallBase.LoadHasExplodedToSideState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadHasExplodedToSideState, "BmGame.RFractureWallBase.LoadHasExplodedToSideState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SaveHasExplodedToSideState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveHasExplodedToSideState;
     /// <summary>
     /// Function: SaveHasExplodedToSideState
     /// </summary>
     public unsafe virtual void SaveHasExplodedToSideState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveHasExplodedToSideState, "BmGame.RFractureWallBase.SaveHasExplodedToSideState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveHasExplodedToSideState, "BmGame.RFractureWallBase.SaveHasExplodedToSideState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SaveFragmentRemovedState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveFragmentRemovedState;
     /// <summary>
     /// Function: SaveFragmentRemovedState
     /// </summary>
     public unsafe virtual void SaveFragmentRemovedState(int FragmentIndex, bool IsRemoved)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveFragmentRemovedState, "BmGame.RFractureWallBase.SaveFragmentRemovedState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveFragmentRemovedState, "BmGame.RFractureWallBase.SaveFragmentRemovedState", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FragmentIndex, paramsPtr + 0);
@@ -241,28 +241,28 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_TemporarilySuppressAIEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TemporarilySuppressAIEvent;
     /// <summary>
     /// Function: TemporarilySuppressAIEvent
     /// </summary>
     public unsafe virtual void TemporarilySuppressAIEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TemporarilySuppressAIEvent, "BmGame.RFractureWallBase.TemporarilySuppressAIEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TemporarilySuppressAIEvent, "BmGame.RFractureWallBase.TemporarilySuppressAIEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FallOverOnWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FallOverOnWall;
     /// <summary>
     /// Function: FallOverOnWall
     /// </summary>
     public unsafe virtual void FallOverOnWall(BmSDK.BmGame.RPawnCharacter PawnIter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FallOverOnWall, "BmGame.RFractureWallBase.FallOverOnWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FallOverOnWall, "BmGame.RFractureWallBase.FallOverOnWall", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnIter, paramsPtr + 0);
@@ -270,14 +270,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerWallCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerWallCamera;
     /// <summary>
     /// Function: TriggerWallCamera
     /// </summary>
     public unsafe virtual void TriggerWallCamera(BmSDK.BmGame.RPlayerController PC, float TimeDelay, bool bForceCamera = default, bool bForLineLauncher = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerWallCamera, "BmGame.RFractureWallBase.TriggerWallCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerWallCamera, "BmGame.RFractureWallBase.TriggerWallCamera", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -288,14 +288,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_DisableNearbyTempGuardPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableNearbyTempGuardPoints;
     /// <summary>
     /// Function: DisableNearbyTempGuardPoints
     /// </summary>
     public unsafe virtual void DisableNearbyTempGuardPoints(System.Numerics.Vector3 ExplosionCentre)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableNearbyTempGuardPoints, "BmGame.RFractureWallBase.DisableNearbyTempGuardPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableNearbyTempGuardPoints, "BmGame.RFractureWallBase.DisableNearbyTempGuardPoints", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExplosionCentre, paramsPtr + 0);
@@ -303,14 +303,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_OnWallSmashed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnWallSmashed;
     /// <summary>
     /// Function: OnWallSmashed
     /// </summary>
     public unsafe virtual void OnWallSmashed(System.Numerics.Vector3 ExplosionCentre, int NumPiecesRemoved)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnWallSmashed, "BmGame.RFractureWallBase.OnWallSmashed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnWallSmashed, "BmGame.RFractureWallBase.OnWallSmashed", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExplosionCentre, paramsPtr + 0);
@@ -319,14 +319,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetAIPointOfInterestExtent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestExtent;
     /// <summary>
     /// Function: GetAIPointOfInterestExtent
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAIPointOfInterestExtent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIPointOfInterestExtent, "BmGame.RFractureWallBase.GetAIPointOfInterestExtent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAIPointOfInterestExtent, "BmGame.RFractureWallBase.GetAIPointOfInterestExtent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -340,42 +340,42 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RFractureWallBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RFractureWallBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RFractureWallBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RFractureWallBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostFractureStateLoaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostFractureStateLoaded;
     /// <summary>
     /// Function: PostFractureStateLoaded
     /// </summary>
     public unsafe virtual void PostFractureStateLoaded(bool bFragmentsRemoved)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostFractureStateLoaded, "BmGame.RFractureWallBase.PostFractureStateLoaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostFractureStateLoaded, "BmGame.RFractureWallBase.PostFractureStateLoaded", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFragmentsRemoved, paramsPtr + 0);
@@ -383,28 +383,28 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RFractureWallBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RFractureWallBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterWithNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMesh;
     /// <summary>
     /// Function: RegisterWithNavMesh
     /// </summary>
     public unsafe virtual bool RegisterWithNavMesh(bool bRegister)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWithNavMesh, "BmGame.RFractureWallBase.RegisterWithNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterWithNavMesh, "BmGame.RFractureWallBase.RegisterWithNavMesh", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bRegister, paramsPtr + 0);
@@ -419,14 +419,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsHorizontal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHorizontal;
     /// <summary>
     /// Function: IsHorizontal
     /// </summary>
     public unsafe virtual bool IsHorizontal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHorizontal, "BmGame.RFractureWallBase.IsHorizontal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHorizontal, "BmGame.RFractureWallBase.IsHorizontal", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -440,14 +440,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNumVisibleFragments;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumVisibleFragments;
     /// <summary>
     /// Function: GetNumVisibleFragments
     /// </summary>
     public unsafe virtual int GetNumVisibleFragments()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumVisibleFragments, "BmGame.RFractureWallBase.GetNumVisibleFragments");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumVisibleFragments, "BmGame.RFractureWallBase.GetNumVisibleFragments", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -461,14 +461,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNumFragments;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumFragments;
     /// <summary>
     /// Function: GetNumFragments
     /// </summary>
     public unsafe virtual int GetNumFragments()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumFragments, "BmGame.RFractureWallBase.GetNumFragments");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumFragments, "BmGame.RFractureWallBase.GetNumFragments", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -482,14 +482,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SpawnPartMulti;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPartMulti;
     /// <summary>
     /// Function: SpawnPartMulti
     /// </summary>
     public unsafe override BmSDK.Engine.FracturedStaticMeshPart SpawnPartMulti(BmSDK.TArray<int> ChunkIndices, System.Numerics.Vector3 InitialVel, System.Numerics.Vector3 InitialAngVel, float RelativeScale, bool bExplosion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnPartMulti, "BmGame.RFractureWallBase.SpawnPartMulti");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnPartMulti, "BmGame.RFractureWallBase.SpawnPartMulti", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChunkIndices, paramsPtr + 0);
@@ -508,14 +508,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.FracturedStaticMeshPart>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_UpdateWallState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateWallState;
     /// <summary>
     /// Function: UpdateWallState
     /// </summary>
     public unsafe virtual void UpdateWallState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateWallState, "BmGame.RFractureWallBase.UpdateWallState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateWallState, "BmGame.RFractureWallBase.UpdateWallState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -529,14 +529,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_FindNearestPointOnEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNearestPointOnEdge;
     /// <summary>
     /// Function: FindNearestPointOnEdge
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 FindNearestPointOnEdge(System.Numerics.Vector3 TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindNearestPointOnEdge, "BmGame.RFractureWallBase.FindNearestPointOnEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindNearestPointOnEdge, "BmGame.RFractureWallBase.FindNearestPointOnEdge", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPoint, paramsPtr + 0);
@@ -551,14 +551,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_HandleExplode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleExplode;
     /// <summary>
     /// Function: HandleExplode
     /// </summary>
     public unsafe virtual void HandleExplode(BmSDK.BmGame.RFractureWallBase.FRFractureWallExplosionTriggerData Explosion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleExplode, "BmGame.RFractureWallBase.HandleExplode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleExplode, "BmGame.RFractureWallBase.HandleExplode", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Explosion, paramsPtr + 0);
@@ -573,14 +573,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetWallSideForPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallSideForPoint;
     /// <summary>
     /// Function: GetWallSideForPoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RFractureWallBase.EFractureWallSide GetWallSideForPoint(System.Numerics.Vector3 TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallSideForPoint, "BmGame.RFractureWallBase.GetWallSideForPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWallSideForPoint, "BmGame.RFractureWallBase.GetWallSideForPoint", this);
         byte* paramsPtr = stackalloc byte[29];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPoint, paramsPtr + 0);
@@ -595,14 +595,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RFractureWallBase.EFractureWallSide>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetWallNormalForSide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallNormalForSide;
     /// <summary>
     /// Function: GetWallNormalForSide
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallNormalForSide(BmSDK.BmGame.RFractureWallBase.EFractureWallSide FractureWallSide)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallNormalForSide, "BmGame.RFractureWallBase.GetWallNormalForSide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWallNormalForSide, "BmGame.RFractureWallBase.GetWallNormalForSide", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FractureWallSide, paramsPtr + 0);
@@ -617,28 +617,28 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetGlanceScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlanceScore;
     /// <summary>
     /// Function: GetGlanceScore
     /// </summary>
     public unsafe virtual int GetGlanceScore()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlanceScore, "BmGame.RFractureWallBase.GetGlanceScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlanceScore, "BmGame.RFractureWallBase.GetGlanceScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCollisionBoundsExtents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCollisionBoundsExtents;
     /// <summary>
     /// Function: GetCollisionBoundsExtents
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCollisionBoundsExtents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCollisionBoundsExtents, "BmGame.RFractureWallBase.GetCollisionBoundsExtents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCollisionBoundsExtents, "BmGame.RFractureWallBase.GetCollisionBoundsExtents", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -652,14 +652,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCollisionBoundsCentreInWorldSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCollisionBoundsCentreInWorldSpace;
     /// <summary>
     /// Function: GetCollisionBoundsCentreInWorldSpace
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCollisionBoundsCentreInWorldSpace()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCollisionBoundsCentreInWorldSpace, "BmGame.RFractureWallBase.GetCollisionBoundsCentreInWorldSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCollisionBoundsCentreInWorldSpace, "BmGame.RFractureWallBase.GetCollisionBoundsCentreInWorldSpace", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -673,14 +673,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetPathObstacleActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPathObstacleActive;
     /// <summary>
     /// Function: SetPathObstacleActive
     /// </summary>
     public unsafe virtual void SetPathObstacleActive(bool bNewActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPathObstacleActive, "BmGame.RFractureWallBase.SetPathObstacleActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPathObstacleActive, "BmGame.RFractureWallBase.SetPathObstacleActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewActive, paramsPtr + 0);
@@ -737,14 +737,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_KnockOverBasedPawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KnockOverBasedPawns;
     /// <summary>
     /// Function: KnockOverBasedPawns
     /// </summary>
     public unsafe virtual int KnockOverBasedPawns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KnockOverBasedPawns, "BmGame.RFractureWallBase.KnockOverBasedPawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KnockOverBasedPawns, "BmGame.RFractureWallBase.KnockOverBasedPawns", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -758,14 +758,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RegisterExplodeSide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterExplodeSide;
     /// <summary>
     /// Function: RegisterExplodeSide
     /// </summary>
     public unsafe virtual void RegisterExplodeSide(BmSDK.Engine.FracturedStaticMeshActor.FBreakOffPartsData BreakData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterExplodeSide, "BmGame.RFractureWallBase.RegisterExplodeSide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterExplodeSide, "BmGame.RFractureWallBase.RegisterExplodeSide", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BreakData, paramsPtr + 0);
@@ -780,14 +780,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_CheckLastSloMoTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLastSloMoTime;
     /// <summary>
     /// Function: CheckLastSloMoTime
     /// </summary>
     public unsafe virtual bool CheckLastSloMoTime()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLastSloMoTime, "BmGame.RFractureWallBase.CheckLastSloMoTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLastSloMoTime, "BmGame.RFractureWallBase.CheckLastSloMoTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -801,14 +801,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetHarpoonTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonTargetLocation;
     /// <summary>
     /// Function: GetHarpoonTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHarpoonTargetLocation(int ChunkIndex, System.Numerics.Vector3 PlayerLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHarpoonTargetLocation, "BmGame.RFractureWallBase.GetHarpoonTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHarpoonTargetLocation, "BmGame.RFractureWallBase.GetHarpoonTargetLocation", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChunkIndex, paramsPtr + 0);
@@ -824,14 +824,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetChunkLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChunkLocation;
     /// <summary>
     /// Function: GetChunkLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetChunkLocation(int ChunkIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChunkLocation, "BmGame.RFractureWallBase.GetChunkLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetChunkLocation, "BmGame.RFractureWallBase.GetChunkLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChunkIndex, paramsPtr + 0);
@@ -846,14 +846,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetHarpoonChunkIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonChunkIndex;
     /// <summary>
     /// Function: GetHarpoonChunkIndex
     /// </summary>
     public unsafe virtual int GetHarpoonChunkIndex(int HarpoonChunk)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHarpoonChunkIndex, "BmGame.RFractureWallBase.GetHarpoonChunkIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHarpoonChunkIndex, "BmGame.RFractureWallBase.GetHarpoonChunkIndex", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HarpoonChunk, paramsPtr + 0);
@@ -868,14 +868,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetWallBasePos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallBasePos;
     /// <summary>
     /// Function: GetWallBasePos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallBasePos()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallBasePos, "BmGame.RFractureWallBase.GetWallBasePos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWallBasePos, "BmGame.RFractureWallBase.GetWallBasePos", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -889,14 +889,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetWallBoundsRadius;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallBoundsRadius;
     /// <summary>
     /// Function: GetWallBoundsRadius
     /// </summary>
     public unsafe virtual float GetWallBoundsRadius()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallBoundsRadius, "BmGame.RFractureWallBase.GetWallBoundsRadius");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWallBoundsRadius, "BmGame.RFractureWallBase.GetWallBoundsRadius", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -910,14 +910,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetWallBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallBounds;
     /// <summary>
     /// Function: GetWallBounds
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallBounds()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallBounds, "BmGame.RFractureWallBase.GetWallBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWallBounds, "BmGame.RFractureWallBase.GetWallBounds", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -931,14 +931,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPosOnWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPosOnWall;
     /// <summary>
     /// Function: GetPosOnWall
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPosOnWall(System.Numerics.Vector3 LocalPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPosOnWall, "BmGame.RFractureWallBase.GetPosOnWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPosOnWall, "BmGame.RFractureWallBase.GetPosOnWall", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocalPos, paramsPtr + 0);
@@ -953,14 +953,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetWallCentreInLocalSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallCentreInLocalSpace;
     /// <summary>
     /// Function: GetWallCentreInLocalSpace
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallCentreInLocalSpace()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallCentreInLocalSpace, "BmGame.RFractureWallBase.GetWallCentreInLocalSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWallCentreInLocalSpace, "BmGame.RFractureWallBase.GetWallCentreInLocalSpace", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -974,14 +974,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetWallCentre;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWallCentre;
     /// <summary>
     /// Function: GetWallCentre
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWallCentre()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWallCentre, "BmGame.RFractureWallBase.GetWallCentre");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWallCentre, "BmGame.RFractureWallBase.GetWallCentre", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -995,14 +995,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFOVCheckLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
     /// Function: GetFOVCheckLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetFOVCheckLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVCheckLocation, "BmGame.RFractureWallBase.GetFOVCheckLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVCheckLocation, "BmGame.RFractureWallBase.GetFOVCheckLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1016,14 +1016,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
     /// Function: GetTargetLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetLocation, "BmGame.RFractureWallBase.GetTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetLocation, "BmGame.RFractureWallBase.GetTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RequestedBy, paramsPtr + 0);
@@ -1039,14 +1039,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetFragmentSaveName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFragmentSaveName;
     /// <summary>
     /// Function: GetFragmentSaveName
     /// </summary>
     public unsafe virtual BmSDK.FString GetFragmentSaveName(int FragmentIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFragmentSaveName, "BmGame.RFractureWallBase.GetFragmentSaveName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFragmentSaveName, "BmGame.RFractureWallBase.GetFragmentSaveName", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FragmentIndex, paramsPtr + 0);
@@ -1061,14 +1061,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetHasExplodedToSide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasExplodedToSide;
     /// <summary>
     /// Function: GetHasExplodedToSide
     /// </summary>
     public unsafe virtual bool GetHasExplodedToSide(BmSDK.BmGame.RFractureWallBase.EFractureWallSide TestSide)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHasExplodedToSide, "BmGame.RFractureWallBase.GetHasExplodedToSide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHasExplodedToSide, "BmGame.RFractureWallBase.GetHasExplodedToSide", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestSide, paramsPtr + 0);
@@ -1083,14 +1083,14 @@ public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetHasInvisibleWallParts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasInvisibleWallParts;
     /// <summary>
     /// Function: GetHasInvisibleWallParts
     /// </summary>
     public unsafe virtual bool GetHasInvisibleWallParts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHasInvisibleWallParts, "BmGame.RFractureWallBase.GetHasInvisibleWallParts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHasInvisibleWallParts, "BmGame.RFractureWallBase.GetHasInvisibleWallParts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

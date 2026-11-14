@@ -78,14 +78,14 @@ public partial class AkDialogueVoiceSet : BmSDK.Engine.AkDialogueVoice, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<AkDialogueVoiceSet>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAllVoiceNamesFromSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllVoiceNamesFromSet;
     /// <summary>
     /// Function: GetAllVoiceNamesFromSet
     /// </summary>
     public unsafe virtual void GetAllVoiceNamesFromSet(out BmSDK.TArray<BmSDK.FName> OutList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllVoiceNamesFromSet, "Engine.AkDialogueVoiceSet.GetAllVoiceNamesFromSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllVoiceNamesFromSet, "Engine.AkDialogueVoiceSet.GetAllVoiceNamesFromSet", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

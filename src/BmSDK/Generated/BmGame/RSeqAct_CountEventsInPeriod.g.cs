@@ -91,42 +91,42 @@ public partial class RSeqAct_CountEventsInPeriod : BmSDK.Engine.SequenceAction, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryTriggerSuccess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerSuccess;
     /// <summary>
     /// Function: TryTriggerSuccess
     /// </summary>
     public unsafe virtual void TryTriggerSuccess()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerSuccess, "BmGame.RSeqAct_CountEventsInPeriod.TryTriggerSuccess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerSuccess, "BmGame.RSeqAct_CountEventsInPeriod.TryTriggerSuccess", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveExpiredEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveExpiredEvents;
     /// <summary>
     /// Function: RemoveExpiredEvents
     /// </summary>
     public unsafe virtual void RemoveExpiredEvents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveExpiredEvents, "BmGame.RSeqAct_CountEventsInPeriod.RemoveExpiredEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveExpiredEvents, "BmGame.RSeqAct_CountEventsInPeriod.RemoveExpiredEvents", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_CountEventsInPeriod.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_CountEventsInPeriod.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

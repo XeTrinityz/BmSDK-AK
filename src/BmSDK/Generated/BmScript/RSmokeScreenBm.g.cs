@@ -78,14 +78,14 @@ public partial class RSmokeScreenBM : BmSDK.BmGame.RSmokeScreen, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RSmokeScreenBM>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_InitSmoke;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitSmoke;
     /// <summary>
     /// Function: InitSmoke
     /// </summary>
     public unsafe override void InitSmoke(bool bHitWall, bool bSmokePellet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitSmoke, "BmScript.RSmokeScreenBM.InitSmoke");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitSmoke, "BmScript.RSmokeScreenBM.InitSmoke", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHitWall, paramsPtr + 0);

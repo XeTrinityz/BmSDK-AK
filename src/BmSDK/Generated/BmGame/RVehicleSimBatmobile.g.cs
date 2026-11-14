@@ -78,28 +78,28 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RVehicleSimBatmobile>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RestoreStopThreshold;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreStopThreshold;
     /// <summary>
     /// Function: RestoreStopThreshold
     /// </summary>
     public unsafe virtual void RestoreStopThreshold()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreStopThreshold, "BmGame.RVehicleSimBatmobile.RestoreStopThreshold");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreStopThreshold, "BmGame.RVehicleSimBatmobile.RestoreStopThreshold", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SkidToStop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkidToStop;
     /// <summary>
     /// Function: SkidToStop
     /// </summary>
     public unsafe virtual void SkidToStop(bool OverrideYaw, int YawAngle, bool OverrideEndLocation, System.Numerics.Vector3 EndLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkidToStop, "BmGame.RVehicleSimBatmobile.SkidToStop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkidToStop, "BmGame.RVehicleSimBatmobile.SkidToStop", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideYaw, paramsPtr + 0);
@@ -117,14 +117,14 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ForceUpdateTyreFriction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdateTyreFriction;
     /// <summary>
     /// Function: ForceUpdateTyreFriction
     /// </summary>
     public unsafe virtual void ForceUpdateTyreFriction(BmSDK.Engine.SVehicle Vehicle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceUpdateTyreFriction, "BmGame.RVehicleSimBatmobile.ForceUpdateTyreFriction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceUpdateTyreFriction, "BmGame.RVehicleSimBatmobile.ForceUpdateTyreFriction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vehicle, paramsPtr + 0);
@@ -139,14 +139,14 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetSuspensionForDriveMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSuspensionForDriveMode;
     /// <summary>
     /// Function: SetSuspensionForDriveMode
     /// </summary>
     public unsafe virtual void SetSuspensionForDriveMode(float BattleModeFactor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSuspensionForDriveMode, "BmGame.RVehicleSimBatmobile.SetSuspensionForDriveMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSuspensionForDriveMode, "BmGame.RVehicleSimBatmobile.SetSuspensionForDriveMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BattleModeFactor, paramsPtr + 0);
@@ -161,14 +161,14 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetDriveMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDriveMode;
     /// <summary>
     /// Function: SetDriveMode
     /// </summary>
     public unsafe virtual void SetDriveMode(BmSDK.BmGame.RVehicleSimBatmobile.EBatmobileDriveMode NewDriveMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDriveMode, "BmGame.RVehicleSimBatmobile.SetDriveMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDriveMode, "BmGame.RVehicleSimBatmobile.SetDriveMode", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDriveMode, paramsPtr + 0);
@@ -183,14 +183,14 @@ public partial class RVehicleSimBatmobile : BmSDK.BmGame.RVehicleSimCar, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_Boost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Boost;
     /// <summary>
     /// Function: Boost
     /// </summary>
     public unsafe virtual bool Boost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Boost, "BmGame.RVehicleSimBatmobile.Boost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Boost, "BmGame.RVehicleSimBatmobile.Boost", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

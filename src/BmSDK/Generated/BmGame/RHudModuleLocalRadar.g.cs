@@ -78,14 +78,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RHudModuleLocalRadar>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetMaskEnormous;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaskEnormous;
     /// <summary>
     /// Function: SetMaskEnormous
     /// </summary>
     public unsafe virtual void SetMaskEnormous(bool enormous)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaskEnormous, "BmGame.RHudModuleLocalRadar.SetMaskEnormous");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaskEnormous, "BmGame.RHudModuleLocalRadar.SetMaskEnormous", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(enormous, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetRootsPermanentlyVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootsPermanentlyVisible;
     /// <summary>
     /// Function: SetRootsPermanentlyVisible
     /// </summary>
     public unsafe virtual void SetRootsPermanentlyVisible(bool make_visible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRootsPermanentlyVisible, "BmGame.RHudModuleLocalRadar.SetRootsPermanentlyVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRootsPermanentlyVisible, "BmGame.RHudModuleLocalRadar.SetRootsPermanentlyVisible", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(make_visible, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_DoPulsePrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPulsePrivate;
     /// <summary>
     /// Function: DoPulsePrivate
     /// </summary>
     public unsafe virtual void DoPulsePrivate(float time_extra)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPulsePrivate, "BmGame.RHudModuleLocalRadar.DoPulsePrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPulsePrivate, "BmGame.RHudModuleLocalRadar.DoPulsePrivate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(time_extra, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_DoPulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPulse;
     /// <summary>
     /// Function: DoPulse
     /// </summary>
     public unsafe virtual void DoPulse(float proportion_extra)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPulse, "BmGame.RHudModuleLocalRadar.DoPulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPulse, "BmGame.RHudModuleLocalRadar.DoPulse", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(proportion_extra, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetRootNetworkOpacity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootNetworkOpacity;
     /// <summary>
     /// Function: SetRootNetworkOpacity
     /// </summary>
     public unsafe virtual void SetRootNetworkOpacity(float _NetworkOpacity)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRootNetworkOpacity, "BmGame.RHudModuleLocalRadar.SetRootNetworkOpacity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRootNetworkOpacity, "BmGame.RHudModuleLocalRadar.SetRootNetworkOpacity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_NetworkOpacity, paramsPtr + 0);
@@ -153,14 +153,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetPlayerPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlayerPosition;
     /// <summary>
     /// Function: SetPlayerPosition
     /// </summary>
     public unsafe virtual void SetPlayerPosition(float PlayerRotationRadians, float LocationX, float LocationY)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlayerPosition, "BmGame.RHudModuleLocalRadar.SetPlayerPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPlayerPosition, "BmGame.RHudModuleLocalRadar.SetPlayerPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerRotationRadians, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetVisualModePrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVisualModePrivate;
     /// <summary>
     /// Function: SetVisualModePrivate
     /// </summary>
     public unsafe virtual void SetVisualModePrivate(bool RadarVisible, bool HeavyTanksVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVisualModePrivate, "BmGame.RHudModuleLocalRadar.SetVisualModePrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVisualModePrivate, "BmGame.RHudModuleLocalRadar.SetVisualModePrivate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RadarVisible, paramsPtr + 0);
@@ -186,58 +186,60 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetVisualModeAuto;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVisualModeAuto;
     /// <summary>
     /// Function: SetVisualModeAuto
     /// </summary>
     public unsafe virtual void SetVisualModeAuto()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVisualModeAuto, "BmGame.RHudModuleLocalRadar.SetVisualModeAuto");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVisualModeAuto, "BmGame.RHudModuleLocalRadar.SetVisualModeAuto", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRootNetworkPrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootNetworkPrivate;
     /// <summary>
     /// Function: SetRootNetworkPrivate
     /// </summary>
-    public unsafe virtual void SetRootNetworkPrivate(BmSDK.FString RootNetworkString)
+    public unsafe virtual void SetRootNetworkPrivate(BmSDK.FStringArg RootNetworkString)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRootNetworkPrivate, "BmGame.RHudModuleLocalRadar.SetRootNetworkPrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRootNetworkPrivate, "BmGame.RHudModuleLocalRadar.SetRootNetworkPrivate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RootNetworkString, paramsPtr + 0);
+        RootNetworkString.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRootNetwork;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootNetwork;
     /// <summary>
     /// Function: SetRootNetwork
     /// </summary>
-    public unsafe virtual void SetRootNetwork(BmSDK.FString RootNetworkString)
+    public unsafe virtual void SetRootNetwork(BmSDK.FStringArg RootNetworkString)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRootNetwork, "BmGame.RHudModuleLocalRadar.SetRootNetwork");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRootNetwork, "BmGame.RHudModuleLocalRadar.SetRootNetwork", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RootNetworkString, paramsPtr + 0);
+        RootNetworkString.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PushTrackedActorsToFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushTrackedActorsToFlash;
     /// <summary>
     /// Function: PushTrackedActorsToFlash
     /// </summary>
     public unsafe virtual void PushTrackedActorsToFlash(int Num_Array_Actors, bool DisplayNonVehicleActors = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushTrackedActorsToFlash, "BmGame.RHudModuleLocalRadar.PushTrackedActorsToFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushTrackedActorsToFlash, "BmGame.RHudModuleLocalRadar.PushTrackedActorsToFlash", this);
         byte* paramsPtr = stackalloc byte[141];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num_Array_Actors, paramsPtr + 0);
@@ -246,14 +248,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetHeavyTankRadiusPrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHeavyTankRadiusPrivate;
     /// <summary>
     /// Function: SetHeavyTankRadiusPrivate
     /// </summary>
     public unsafe virtual void SetHeavyTankRadiusPrivate(float pos_angle, float pos_distance, float radius_scale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHeavyTankRadiusPrivate, "BmGame.RHudModuleLocalRadar.SetHeavyTankRadiusPrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHeavyTankRadiusPrivate, "BmGame.RHudModuleLocalRadar.SetHeavyTankRadiusPrivate", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pos_angle, paramsPtr + 0);
@@ -263,14 +265,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetDetailObjectPrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDetailObjectPrivate;
     /// <summary>
     /// Function: SetDetailObjectPrivate
     /// </summary>
     public unsafe virtual void SetDetailObjectPrivate(int obj_index, float pos_angle, float pos_distance, float bearing_rad, int movie_frame)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDetailObjectPrivate, "BmGame.RHudModuleLocalRadar.SetDetailObjectPrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDetailObjectPrivate, "BmGame.RHudModuleLocalRadar.SetDetailObjectPrivate", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(obj_index, paramsPtr + 0);
@@ -282,42 +284,42 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_ExtendObjectArray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExtendObjectArray;
     /// <summary>
     /// Function: ExtendObjectArray
     /// </summary>
     public unsafe virtual void ExtendObjectArray()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExtendObjectArray, "BmGame.RHudModuleLocalRadar.ExtendObjectArray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExtendObjectArray, "BmGame.RHudModuleLocalRadar.ExtendObjectArray", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PushConsolidatedArrayToFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushConsolidatedArrayToFlash;
     /// <summary>
     /// Function: PushConsolidatedArrayToFlash
     /// </summary>
     public unsafe virtual void PushConsolidatedArrayToFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushConsolidatedArrayToFlash, "BmGame.RHudModuleLocalRadar.PushConsolidatedArrayToFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushConsolidatedArrayToFlash, "BmGame.RHudModuleLocalRadar.PushConsolidatedArrayToFlash", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PushActorsToFlashPrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushActorsToFlashPrivate;
     /// <summary>
     /// Function: PushActorsToFlashPrivate
     /// </summary>
     public unsafe virtual void PushActorsToFlashPrivate(int Num_Actors, bool RadarJammed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushActorsToFlashPrivate, "BmGame.RHudModuleLocalRadar.PushActorsToFlashPrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushActorsToFlashPrivate, "BmGame.RHudModuleLocalRadar.PushActorsToFlashPrivate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num_Actors, paramsPtr + 0);
@@ -326,28 +328,28 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_PushFakeActorsToFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushFakeActorsToFlash;
     /// <summary>
     /// Function: PushFakeActorsToFlash
     /// </summary>
     public unsafe virtual void PushFakeActorsToFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushFakeActorsToFlash, "BmGame.RHudModuleLocalRadar.PushFakeActorsToFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushFakeActorsToFlash, "BmGame.RHudModuleLocalRadar.PushFakeActorsToFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetBatmobileRevDisplayActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmobileRevDisplayActive;
     /// <summary>
     /// Function: SetBatmobileRevDisplayActive
     /// </summary>
     public unsafe virtual void SetBatmobileRevDisplayActive(bool _BatmobileRevDisplayActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatmobileRevDisplayActive, "BmGame.RHudModuleLocalRadar.SetBatmobileRevDisplayActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatmobileRevDisplayActive, "BmGame.RHudModuleLocalRadar.SetBatmobileRevDisplayActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_BatmobileRevDisplayActive, paramsPtr + 0);
@@ -355,14 +357,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetHeavyTankTrackingActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHeavyTankTrackingActive;
     /// <summary>
     /// Function: SetHeavyTankTrackingActive
     /// </summary>
     public unsafe virtual void SetHeavyTankTrackingActive(bool _HeavyTankTrackingIsActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHeavyTankTrackingActive, "BmGame.RHudModuleLocalRadar.SetHeavyTankTrackingActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHeavyTankTrackingActive, "BmGame.RHudModuleLocalRadar.SetHeavyTankTrackingActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_HeavyTankTrackingIsActive, paramsPtr + 0);
@@ -370,14 +372,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetVehicleTrackingActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVehicleTrackingActive;
     /// <summary>
     /// Function: SetVehicleTrackingActive
     /// </summary>
     public unsafe virtual void SetVehicleTrackingActive(bool _VehicleTrackingIsActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVehicleTrackingActive, "BmGame.RHudModuleLocalRadar.SetVehicleTrackingActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVehicleTrackingActive, "BmGame.RHudModuleLocalRadar.SetVehicleTrackingActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_VehicleTrackingIsActive, paramsPtr + 0);
@@ -385,14 +387,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetInBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInBatmobile;
     /// <summary>
     /// Function: SetInBatmobile
     /// </summary>
     public unsafe virtual void SetInBatmobile(bool _InBatmobile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInBatmobile, "BmGame.RHudModuleLocalRadar.SetInBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInBatmobile, "BmGame.RHudModuleLocalRadar.SetInBatmobile", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_InBatmobile, paramsPtr + 0);
@@ -400,14 +402,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetHealthValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHealthValue;
     /// <summary>
     /// Function: SetHealthValue
     /// </summary>
     public unsafe virtual void SetHealthValue(float current_value, bool is_critical = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHealthValue, "BmGame.RHudModuleLocalRadar.SetHealthValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHealthValue, "BmGame.RHudModuleLocalRadar.SetHealthValue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(current_value, paramsPtr + 0);
@@ -416,29 +418,30 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetHealthTitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHealthTitle;
     /// <summary>
     /// Function: SetHealthTitle
     /// </summary>
-    public unsafe virtual void SetHealthTitle(BmSDK.FString health_title)
+    public unsafe virtual void SetHealthTitle(BmSDK.FStringArg health_title)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHealthTitle, "BmGame.RHudModuleLocalRadar.SetHealthTitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHealthTitle, "BmGame.RHudModuleLocalRadar.SetHealthTitle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(health_title, paramsPtr + 0);
+        health_title.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetLockonValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLockonValue;
     /// <summary>
     /// Function: SetLockonValue
     /// </summary>
     public unsafe virtual void SetLockonValue(float current_value, float warning_threshold)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLockonValue, "BmGame.RHudModuleLocalRadar.SetLockonValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLockonValue, "BmGame.RHudModuleLocalRadar.SetLockonValue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(current_value, paramsPtr + 0);
@@ -447,14 +450,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetStationaryLockonValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStationaryLockonValue;
     /// <summary>
     /// Function: SetStationaryLockonValue
     /// </summary>
     public unsafe virtual void SetStationaryLockonValue(float current_value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStationaryLockonValue, "BmGame.RHudModuleLocalRadar.SetStationaryLockonValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStationaryLockonValue, "BmGame.RHudModuleLocalRadar.SetStationaryLockonValue", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(current_value, paramsPtr + 0);
@@ -462,14 +465,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTargetPositionPrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTargetPositionPrivate;
     /// <summary>
     /// Function: UpdateTargetPositionPrivate
     /// </summary>
     public unsafe virtual void UpdateTargetPositionPrivate(float target_location_angle, float target_location_distance, float target_bearing, int num_tagged_vehicle_points)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTargetPositionPrivate, "BmGame.RHudModuleLocalRadar.UpdateTargetPositionPrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTargetPositionPrivate, "BmGame.RHudModuleLocalRadar.UpdateTargetPositionPrivate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(target_location_angle, paramsPtr + 0);
@@ -480,14 +483,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_PushTaggedPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushTaggedPoints;
     /// <summary>
     /// Function: PushTaggedPoints
     /// </summary>
     public unsafe virtual void PushTaggedPoints(BmSDK.Engine.Actor TheTarget, float CameraFacingAngle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushTaggedPoints, "BmGame.RHudModuleLocalRadar.PushTaggedPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushTaggedPoints, "BmGame.RHudModuleLocalRadar.PushTaggedPoints", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheTarget, paramsPtr + 0);
@@ -496,14 +499,14 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetLocation;
     /// <summary>
     /// Function: SetTargetLocation
     /// </summary>
     public unsafe virtual void SetTargetLocation(BmSDK.Engine.Actor the_target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTargetLocation, "BmGame.RHudModuleLocalRadar.SetTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTargetLocation, "BmGame.RHudModuleLocalRadar.SetTargetLocation", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(the_target, paramsPtr + 0);
@@ -511,104 +514,106 @@ public partial class RHudModuleLocalRadar : BmSDK.BmGame.RHudModule, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_XI_LocalRadarOffscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_LocalRadarOffscreen;
     /// <summary>
     /// Function: XI_LocalRadarOffscreen
     /// </summary>
     public unsafe virtual void XI_LocalRadarOffscreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_LocalRadarOffscreen, "BmGame.RHudModuleLocalRadar.XI_LocalRadarOffscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_LocalRadarOffscreen, "BmGame.RHudModuleLocalRadar.XI_LocalRadarOffscreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoOutro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoOutro;
     /// <summary>
     /// Function: DoOutro
     /// </summary>
     public unsafe virtual void DoOutro()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoOutro, "BmGame.RHudModuleLocalRadar.DoOutro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoOutro, "BmGame.RHudModuleLocalRadar.DoOutro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoIntro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoIntro;
     /// <summary>
     /// Function: DoIntro
     /// </summary>
     public unsafe virtual void DoIntro()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoIntro, "BmGame.RHudModuleLocalRadar.DoIntro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoIntro, "BmGame.RHudModuleLocalRadar.DoIntro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Close;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Close;
     /// <summary>
     /// Function: Close
     /// </summary>
     public unsafe override void Close()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleLocalRadar.Close");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Close, "BmGame.RHudModuleLocalRadar.Close", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseFlash;
     /// <summary>
     /// Function: InitialiseFlash
     /// </summary>
     public unsafe override void InitialiseFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseFlash, "BmGame.RHudModuleLocalRadar.InitialiseFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseFlash, "BmGame.RHudModuleLocalRadar.InitialiseFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RadarRangeUpdated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RadarRangeUpdated;
     /// <summary>
     /// Function: RadarRangeUpdated
     /// </summary>
     public unsafe virtual void RadarRangeUpdated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RadarRangeUpdated, "BmGame.RHudModuleLocalRadar.RadarRangeUpdated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RadarRangeUpdated, "BmGame.RHudModuleLocalRadar.RadarRangeUpdated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
+    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FStringArg _ExtensionName, BmSDK.FStringArg _ExtensionPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleLocalRadar.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RHudModuleLocalRadar.Init", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RPC, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionPath, paramsPtr + 24);
+        _ExtensionName.WriteTo(paramsPtr + 8);
+        _ExtensionPath.WriteTo(paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 

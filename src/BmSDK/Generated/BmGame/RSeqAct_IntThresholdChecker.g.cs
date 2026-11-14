@@ -78,14 +78,14 @@ public partial class RSeqAct_IntThresholdChecker : BmSDK.Engine.SequenceAction, 
         where TComponent : class, Framework.IScriptComponent<RSeqAct_IntThresholdChecker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsValueInThreshold;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValueInThreshold;
     /// <summary>
     /// Function: IsValueInThreshold
     /// </summary>
     public unsafe virtual bool IsValueInThreshold(int Value, int ThresholdIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValueInThreshold, "BmGame.RSeqAct_IntThresholdChecker.IsValueInThreshold");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValueInThreshold, "BmGame.RSeqAct_IntThresholdChecker.IsValueInThreshold", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RSeqAct_IntThresholdChecker : BmSDK.Engine.SequenceAction, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_IntThresholdChecker.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_IntThresholdChecker.Activated", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

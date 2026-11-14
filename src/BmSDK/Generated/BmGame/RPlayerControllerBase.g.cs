@@ -92,98 +92,98 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_LoadingNearlyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadingNearlyFinished;
     /// <summary>
     /// Function: LoadingNearlyFinished
     /// </summary>
     public unsafe virtual void LoadingNearlyFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadingNearlyFinished, "BmGame.RPlayerControllerBase.LoadingNearlyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadingNearlyFinished, "BmGame.RPlayerControllerBase.LoadingNearlyFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheatDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheatDown;
     /// <summary>
     /// Function: CheatDown
     /// </summary>
     public unsafe virtual void CheatDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheatDown, "BmGame.RPlayerControllerBase.CheatDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatDown, "BmGame.RPlayerControllerBase.CheatDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheatUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheatUp;
     /// <summary>
     /// Function: CheatUp
     /// </summary>
     public unsafe virtual void CheatUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheatUp, "BmGame.RPlayerControllerBase.CheatUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatUp, "BmGame.RPlayerControllerBase.CheatUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheatRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheatRight;
     /// <summary>
     /// Function: CheatRight
     /// </summary>
     public unsafe virtual void CheatRight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheatRight, "BmGame.RPlayerControllerBase.CheatRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatRight, "BmGame.RPlayerControllerBase.CheatRight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheatLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheatLeft;
     /// <summary>
     /// Function: CheatLeft
     /// </summary>
     public unsafe virtual void CheatLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheatLeft, "BmGame.RPlayerControllerBase.CheatLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatLeft, "BmGame.RPlayerControllerBase.CheatLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPlayerControllerBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RPlayerControllerBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDynamicPostProcess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDynamicPostProcess;
     /// <summary>
     /// Function: OnDynamicPostProcess
     /// </summary>
     public unsafe virtual void OnDynamicPostProcess(BmSDK.BmGame.RSeqAct_DynamicPostProcess inAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDynamicPostProcess, "BmGame.RPlayerControllerBase.OnDynamicPostProcess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDynamicPostProcess, "BmGame.RPlayerControllerBase.OnDynamicPostProcess", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inAction, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe override void DrawHUD(BmSDK.Engine.HUD H)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RPlayerControllerBase.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmGame.RPlayerControllerBase.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -206,14 +206,14 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_PlayerTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerTick;
     /// <summary>
     /// Function: PlayerTick
     /// </summary>
     public unsafe override void PlayerTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmGame.RPlayerControllerBase.PlayerTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerTick, "BmGame.RPlayerControllerBase.PlayerTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -221,42 +221,42 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_DisableCinematicMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableCinematicMode;
     /// <summary>
     /// Function: DisableCinematicMode
     /// </summary>
     public unsafe virtual void DisableCinematicMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCinematicMode, "BmGame.RPlayerControllerBase.DisableCinematicMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableCinematicMode, "BmGame.RPlayerControllerBase.DisableCinematicMode", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnSkippedCutscene;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSkippedCutscene;
     /// <summary>
     /// Function: OnSkippedCutscene
     /// </summary>
     public unsafe virtual void OnSkippedCutscene()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSkippedCutscene, "BmGame.RPlayerControllerBase.OnSkippedCutscene");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSkippedCutscene, "BmGame.RPlayerControllerBase.OnSkippedCutscene", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SkipCutscene;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipCutscene;
     /// <summary>
     /// Function: SkipCutscene
     /// </summary>
     public unsafe virtual void SkipCutscene(bool bForce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipCutscene, "BmGame.RPlayerControllerBase.SkipCutscene");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipCutscene, "BmGame.RPlayerControllerBase.SkipCutscene", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForce, paramsPtr + 0);
@@ -264,14 +264,14 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_InCinematicMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InCinematicMode;
     /// <summary>
     /// Function: InCinematicMode
     /// </summary>
     public unsafe virtual bool InCinematicMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InCinematicMode, "BmGame.RPlayerControllerBase.InCinematicMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InCinematicMode, "BmGame.RPlayerControllerBase.InCinematicMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -285,14 +285,14 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ServerCauseEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ServerCauseEvent;
     /// <summary>
     /// Function: ServerCauseEvent
     /// </summary>
     public unsafe override void ServerCauseEvent(BmSDK.FName EventName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerCauseEvent, "BmGame.RPlayerControllerBase.ServerCauseEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ServerCauseEvent, "BmGame.RPlayerControllerBase.ServerCauseEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
@@ -300,70 +300,70 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleLookInvertControls;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleLookInvertControls;
     /// <summary>
     /// Function: ToggleLookInvertControls
     /// </summary>
     public unsafe virtual void ToggleLookInvertControls()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleLookInvertControls, "BmGame.RPlayerControllerBase.ToggleLookInvertControls");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleLookInvertControls, "BmGame.RPlayerControllerBase.ToggleLookInvertControls", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCamNormalSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCamNormalSpeed;
     /// <summary>
     /// Function: DebugCamNormalSpeed
     /// </summary>
     public unsafe virtual void DebugCamNormalSpeed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCamNormalSpeed, "BmGame.RPlayerControllerBase.DebugCamNormalSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCamNormalSpeed, "BmGame.RPlayerControllerBase.DebugCamNormalSpeed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCamMoreSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCamMoreSpeed;
     /// <summary>
     /// Function: DebugCamMoreSpeed
     /// </summary>
     public unsafe virtual void DebugCamMoreSpeed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCamMoreSpeed, "BmGame.RPlayerControllerBase.DebugCamMoreSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCamMoreSpeed, "BmGame.RPlayerControllerBase.DebugCamMoreSpeed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCamSingleFrameStep;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCamSingleFrameStep;
     /// <summary>
     /// Function: DebugCamSingleFrameStep
     /// </summary>
     public unsafe virtual void DebugCamSingleFrameStep()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCamSingleFrameStep, "BmGame.RPlayerControllerBase.DebugCamSingleFrameStep");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCamSingleFrameStep, "BmGame.RPlayerControllerBase.DebugCamSingleFrameStep", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleSpeed;
     /// <summary>
     /// Function: ToggleSpeed
     /// </summary>
     public unsafe virtual void ToggleSpeed(float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleSpeed, "BmGame.RPlayerControllerBase.ToggleSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleSpeed, "BmGame.RPlayerControllerBase.ToggleSpeed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 0);
@@ -371,28 +371,28 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_QuickLoad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QuickLoad;
     /// <summary>
     /// Function: QuickLoad
     /// </summary>
     public unsafe virtual void QuickLoad()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QuickLoad, "BmGame.RPlayerControllerBase.QuickLoad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QuickLoad, "BmGame.RPlayerControllerBase.QuickLoad", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TTOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TTOffset;
     /// <summary>
     /// Function: TTOffset
     /// </summary>
     public unsafe virtual void TTOffset(float O)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TTOffset, "BmGame.RPlayerControllerBase.TTOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TTOffset, "BmGame.RPlayerControllerBase.TTOffset", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(O, paramsPtr + 0);
@@ -407,14 +407,14 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleGfx;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleGfx;
     /// <summary>
     /// Function: ToggleGfx
     /// </summary>
     public unsafe virtual void ToggleGfx()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleGfx, "BmGame.RPlayerControllerBase.ToggleGfx");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleGfx, "BmGame.RPlayerControllerBase.ToggleGfx", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -428,14 +428,14 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_GPU;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GPU;
     /// <summary>
     /// Function: GPU
     /// </summary>
     public unsafe virtual void GPU()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GPU, "BmGame.RPlayerControllerBase.GPU");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GPU, "BmGame.RPlayerControllerBase.GPU", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -449,14 +449,14 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_FlushPressedKeys;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushPressedKeys;
     /// <summary>
     /// Function: FlushPressedKeys
     /// </summary>
     public unsafe virtual void FlushPressedKeys()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushPressedKeys, "BmGame.RPlayerControllerBase.FlushPressedKeys");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushPressedKeys, "BmGame.RPlayerControllerBase.FlushPressedKeys", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -470,43 +470,44 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ResetPlayerMovementInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetPlayerMovementInput;
     /// <summary>
     /// Function: ResetPlayerMovementInput
     /// </summary>
     public unsafe override void ResetPlayerMovementInput()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetPlayerMovementInput, "BmGame.RPlayerControllerBase.ResetPlayerMovementInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetPlayerMovementInput, "BmGame.RPlayerControllerBase.ResetPlayerMovementInput", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugLevelLoad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugLevelLoad;
     /// <summary>
     /// Function: DebugLevelLoad
     /// </summary>
-    public unsafe virtual void DebugLevelLoad(BmSDK.FString LevelName)
+    public unsafe virtual void DebugLevelLoad(BmSDK.FStringArg LevelName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugLevelLoad, "BmGame.RPlayerControllerBase.DebugLevelLoad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugLevelLoad, "BmGame.RPlayerControllerBase.DebugLevelLoad", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(LevelName, paramsPtr + 0);
+        LevelName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuNumber;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuNumber;
     /// <summary>
     /// Function: DebugMenuNumber
     /// </summary>
     public unsafe virtual void DebugMenuNumber(int Num)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuNumber, "BmGame.RPlayerControllerBase.DebugMenuNumber");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuNumber, "BmGame.RPlayerControllerBase.DebugMenuNumber", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num, paramsPtr + 0);
@@ -514,336 +515,336 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuStepDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuStepDown;
     /// <summary>
     /// Function: DebugMenuStepDown
     /// </summary>
     public unsafe virtual void DebugMenuStepDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuStepDown, "BmGame.RPlayerControllerBase.DebugMenuStepDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuStepDown, "BmGame.RPlayerControllerBase.DebugMenuStepDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuStepUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuStepUp;
     /// <summary>
     /// Function: DebugMenuStepUp
     /// </summary>
     public unsafe virtual void DebugMenuStepUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuStepUp, "BmGame.RPlayerControllerBase.DebugMenuStepUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuStepUp, "BmGame.RPlayerControllerBase.DebugMenuStepUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuDownReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuDownReleased;
     /// <summary>
     /// Function: DebugMenuDownReleased
     /// </summary>
     public unsafe virtual void DebugMenuDownReleased()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuDownReleased, "BmGame.RPlayerControllerBase.DebugMenuDownReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuDownReleased, "BmGame.RPlayerControllerBase.DebugMenuDownReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuDownPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuDownPressed;
     /// <summary>
     /// Function: DebugMenuDownPressed
     /// </summary>
     public unsafe virtual void DebugMenuDownPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuDownPressed, "BmGame.RPlayerControllerBase.DebugMenuDownPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuDownPressed, "BmGame.RPlayerControllerBase.DebugMenuDownPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuUpReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuUpReleased;
     /// <summary>
     /// Function: DebugMenuUpReleased
     /// </summary>
     public unsafe virtual void DebugMenuUpReleased()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuUpReleased, "BmGame.RPlayerControllerBase.DebugMenuUpReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuUpReleased, "BmGame.RPlayerControllerBase.DebugMenuUpReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuUpPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuUpPressed;
     /// <summary>
     /// Function: DebugMenuUpPressed
     /// </summary>
     public unsafe virtual void DebugMenuUpPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuUpPressed, "BmGame.RPlayerControllerBase.DebugMenuUpPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuUpPressed, "BmGame.RPlayerControllerBase.DebugMenuUpPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuRightReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuRightReleased;
     /// <summary>
     /// Function: DebugMenuRightReleased
     /// </summary>
     public unsafe virtual void DebugMenuRightReleased()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuRightReleased, "BmGame.RPlayerControllerBase.DebugMenuRightReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuRightReleased, "BmGame.RPlayerControllerBase.DebugMenuRightReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuRightPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuRightPressed;
     /// <summary>
     /// Function: DebugMenuRightPressed
     /// </summary>
     public unsafe virtual void DebugMenuRightPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuRightPressed, "BmGame.RPlayerControllerBase.DebugMenuRightPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuRightPressed, "BmGame.RPlayerControllerBase.DebugMenuRightPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuLeftReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuLeftReleased;
     /// <summary>
     /// Function: DebugMenuLeftReleased
     /// </summary>
     public unsafe virtual void DebugMenuLeftReleased()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuLeftReleased, "BmGame.RPlayerControllerBase.DebugMenuLeftReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuLeftReleased, "BmGame.RPlayerControllerBase.DebugMenuLeftReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuLeftPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuLeftPressed;
     /// <summary>
     /// Function: DebugMenuLeftPressed
     /// </summary>
     public unsafe virtual void DebugMenuLeftPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuLeftPressed, "BmGame.RPlayerControllerBase.DebugMenuLeftPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuLeftPressed, "BmGame.RPlayerControllerBase.DebugMenuLeftPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuSelectY;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuSelectY;
     /// <summary>
     /// Function: DebugMenuSelectY
     /// </summary>
     public unsafe virtual void DebugMenuSelectY()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuSelectY, "BmGame.RPlayerControllerBase.DebugMenuSelectY");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectY, "BmGame.RPlayerControllerBase.DebugMenuSelectY", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuSelectX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuSelectX;
     /// <summary>
     /// Function: DebugMenuSelectX
     /// </summary>
     public unsafe virtual void DebugMenuSelectX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuSelectX, "BmGame.RPlayerControllerBase.DebugMenuSelectX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectX, "BmGame.RPlayerControllerBase.DebugMenuSelectX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuSelectB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuSelectB;
     /// <summary>
     /// Function: DebugMenuSelectB
     /// </summary>
     public unsafe virtual void DebugMenuSelectB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuSelectB, "BmGame.RPlayerControllerBase.DebugMenuSelectB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectB, "BmGame.RPlayerControllerBase.DebugMenuSelectB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuSelectA;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuSelectA;
     /// <summary>
     /// Function: DebugMenuSelectA
     /// </summary>
     public unsafe virtual void DebugMenuSelectA()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuSelectA, "BmGame.RPlayerControllerBase.DebugMenuSelectA");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectA, "BmGame.RPlayerControllerBase.DebugMenuSelectA", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuNextPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuNextPage;
     /// <summary>
     /// Function: DebugMenuNextPage
     /// </summary>
     public unsafe virtual void DebugMenuNextPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuNextPage, "BmGame.RPlayerControllerBase.DebugMenuNextPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuNextPage, "BmGame.RPlayerControllerBase.DebugMenuNextPage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuPrevPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuPrevPage;
     /// <summary>
     /// Function: DebugMenuPrevPage
     /// </summary>
     public unsafe virtual void DebugMenuPrevPage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuPrevPage, "BmGame.RPlayerControllerBase.DebugMenuPrevPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuPrevPage, "BmGame.RPlayerControllerBase.DebugMenuPrevPage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleDebugMenu;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleDebugMenu;
     /// <summary>
     /// Function: ToggleDebugMenu
     /// </summary>
     public unsafe virtual void ToggleDebugMenu()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleDebugMenu, "BmGame.RPlayerControllerBase.ToggleDebugMenu");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleDebugMenu, "BmGame.RPlayerControllerBase.ToggleDebugMenu", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuOff;
     /// <summary>
     /// Function: DebugMenuOff
     /// </summary>
     public unsafe virtual void DebugMenuOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuOff, "BmGame.RPlayerControllerBase.DebugMenuOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuOff, "BmGame.RPlayerControllerBase.DebugMenuOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuOn;
     /// <summary>
     /// Function: DebugMenuOn
     /// </summary>
     public unsafe virtual void DebugMenuOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuOn, "BmGame.RPlayerControllerBase.DebugMenuOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuOn, "BmGame.RPlayerControllerBase.DebugMenuOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuQualifyOffB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuQualifyOffB;
     /// <summary>
     /// Function: DebugMenuQualifyOffB
     /// </summary>
     public unsafe virtual void DebugMenuQualifyOffB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuQualifyOffB, "BmGame.RPlayerControllerBase.DebugMenuQualifyOffB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOffB, "BmGame.RPlayerControllerBase.DebugMenuQualifyOffB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuQualifyOnB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuQualifyOnB;
     /// <summary>
     /// Function: DebugMenuQualifyOnB
     /// </summary>
     public unsafe virtual void DebugMenuQualifyOnB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuQualifyOnB, "BmGame.RPlayerControllerBase.DebugMenuQualifyOnB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOnB, "BmGame.RPlayerControllerBase.DebugMenuQualifyOnB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuQualifyOffT;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuQualifyOffT;
     /// <summary>
     /// Function: DebugMenuQualifyOffT
     /// </summary>
     public unsafe virtual void DebugMenuQualifyOffT()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuQualifyOffT, "BmGame.RPlayerControllerBase.DebugMenuQualifyOffT");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOffT, "BmGame.RPlayerControllerBase.DebugMenuQualifyOffT", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugMenuQualifyOnT;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMenuQualifyOnT;
     /// <summary>
     /// Function: DebugMenuQualifyOnT
     /// </summary>
     public unsafe virtual void DebugMenuQualifyOnT()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMenuQualifyOnT, "BmGame.RPlayerControllerBase.DebugMenuQualifyOnT");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOnT, "BmGame.RPlayerControllerBase.DebugMenuQualifyOnT", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsDebugQualifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDebugQualifier;
     /// <summary>
     /// Function: IsDebugQualifier
     /// </summary>
     public unsafe virtual bool IsDebugQualifier()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDebugQualifier, "BmGame.RPlayerControllerBase.IsDebugQualifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDebugQualifier, "BmGame.RPlayerControllerBase.IsDebugQualifier", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

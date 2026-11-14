@@ -91,28 +91,28 @@ public partial class RSeqAct_MakeBatmanLookAtItems : BmSDK.Engine.SequenceAction
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Clear;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Clear;
     /// <summary>
     /// Function: Clear
     /// </summary>
     public unsafe virtual void Clear()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Clear, "BmGame.RSeqAct_MakeBatmanLookAtItems.Clear");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Clear, "BmGame.RSeqAct_MakeBatmanLookAtItems.Clear", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Set;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Set;
     /// <summary>
     /// Function: Set
     /// </summary>
     public unsafe virtual void Set()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Set, "BmGame.RSeqAct_MakeBatmanLookAtItems.Set");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Set, "BmGame.RSeqAct_MakeBatmanLookAtItems.Set", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

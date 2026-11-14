@@ -78,14 +78,14 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RFlagManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetChapterSideStory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChapterSideStory;
     /// <summary>
     /// Function: SetChapterSideStory
     /// </summary>
     public unsafe virtual void SetChapterSideStory(BmSDK.Engine.Actor.ESideStory SideStory, int Chapter, byte SubChapter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetChapterSideStory, "BmGame.RFlagManager.SetChapterSideStory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetChapterSideStory, "BmGame.RFlagManager.SetChapterSideStory", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SideStory, paramsPtr + 0);
@@ -102,17 +102,17 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DumpFlagList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpFlagList;
     /// <summary>
     /// Function: DumpFlagList
     /// </summary>
-    public unsafe virtual void DumpFlagList(BmSDK.FString Description = default)
+    public unsafe virtual void DumpFlagList(BmSDK.FStringArg Description = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpFlagList, "BmGame.RFlagManager.DumpFlagList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpFlagList, "BmGame.RFlagManager.DumpFlagList", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Description, paramsPtr + 0);
+        Description.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -121,17 +121,18 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetFlagListForChallengeMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFlagListForChallengeMode;
     /// <summary>
     /// Function: SetFlagListForChallengeMode
     /// </summary>
     public unsafe virtual void SetFlagListForChallengeMode(out BmSDK.TArray<BmSDK.FString> flagsList, out BmSDK.TArray<int> flagsValues)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFlagListForChallengeMode, "BmGame.RFlagManager.SetFlagListForChallengeMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFlagListForChallengeMode, "BmGame.RFlagManager.SetFlagListForChallengeMode", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -147,14 +148,14 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetFlagList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFlagList;
     /// <summary>
     /// Function: SetFlagList
     /// </summary>
     public unsafe virtual void SetFlagList(out BmSDK.TArray<BmSDK.FString> flagsList, out BmSDK.TArray<int> flagsValues)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFlagList, "BmGame.RFlagManager.SetFlagList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFlagList, "BmGame.RFlagManager.SetFlagList", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -170,14 +171,14 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetFlagListPIE;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFlagListPIE;
     /// <summary>
     /// Function: SetFlagListPIE
     /// </summary>
     public unsafe virtual void SetFlagListPIE()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFlagListPIE, "BmGame.RFlagManager.SetFlagListPIE");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFlagListPIE, "BmGame.RFlagManager.SetFlagListPIE", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -191,17 +192,17 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FindSetFlagsLike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSetFlagsLike;
     /// <summary>
     /// Function: FindSetFlagsLike
     /// </summary>
-    public unsafe virtual void FindSetFlagsLike(BmSDK.FString MatchName, out BmSDK.TArray<BmSDK.FString> MatchingFlags)
+    public unsafe virtual void FindSetFlagsLike(BmSDK.FStringArg MatchName, out BmSDK.TArray<BmSDK.FString> MatchingFlags)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSetFlagsLike, "BmGame.RFlagManager.FindSetFlagsLike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSetFlagsLike, "BmGame.RFlagManager.FindSetFlagsLike", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MatchName, paramsPtr + 0);
+        MatchName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -210,18 +211,19 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         MatchingFlags = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.FString>>(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearNonSavedFlags;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNonSavedFlags;
     /// <summary>
     /// Function: ClearNonSavedFlags
     /// </summary>
     public unsafe virtual void ClearNonSavedFlags()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNonSavedFlags, "BmGame.RFlagManager.ClearNonSavedFlags");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNonSavedFlags, "BmGame.RFlagManager.ClearNonSavedFlags", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -235,17 +237,17 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetGlobalFlags;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlags;
     /// <summary>
     /// Function: SetGlobalFlags
     /// </summary>
-    public unsafe virtual int SetGlobalFlags(BmSDK.FString FlagList)
+    public unsafe virtual int SetGlobalFlags(BmSDK.FStringArg FlagList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGlobalFlags, "BmGame.RFlagManager.SetGlobalFlags");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGlobalFlags, "BmGame.RFlagManager.SetGlobalFlags", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagList, paramsPtr + 0);
+        FlagList.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -254,20 +256,21 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetGlobalInt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalInt;
     /// <summary>
     /// Function: SetGlobalInt
     /// </summary>
-    public unsafe virtual int SetGlobalInt(BmSDK.FString FlagName, int Value)
+    public unsafe virtual int SetGlobalInt(BmSDK.FStringArg FlagName, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGlobalInt, "BmGame.RFlagManager.SetGlobalInt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGlobalInt, "BmGame.RFlagManager.SetGlobalInt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -277,20 +280,21 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetGlobalInt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalInt;
     /// <summary>
     /// Function: GetGlobalInt
     /// </summary>
-    public unsafe virtual int GetGlobalInt(BmSDK.FString FlagName)
+    public unsafe virtual int GetGlobalInt(BmSDK.FStringArg FlagName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlobalInt, "BmGame.RFlagManager.GetGlobalInt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlobalInt, "BmGame.RFlagManager.GetGlobalInt", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -299,20 +303,21 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetGlobalFlagFromWBPlayRewardFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlagFromWBPlayRewardFlag;
     /// <summary>
     /// Function: SetGlobalFlagFromWBPlayRewardFlag
     /// </summary>
-    public unsafe virtual void SetGlobalFlagFromWBPlayRewardFlag(BmSDK.FString FlagName, bool Value, bool ForChallengeMode = default)
+    public unsafe virtual void SetGlobalFlagFromWBPlayRewardFlag(BmSDK.FStringArg FlagName, bool Value, bool ForChallengeMode = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGlobalFlagFromWBPlayRewardFlag, "BmGame.RFlagManager.SetGlobalFlagFromWBPlayRewardFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGlobalFlagFromWBPlayRewardFlag, "BmGame.RFlagManager.SetGlobalFlagFromWBPlayRewardFlag", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForChallengeMode, paramsPtr + 20);
         var oldFlags = funcManaged.FunctionFlags;
@@ -323,20 +328,21 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetGlobalFlagForChallengeMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlagForChallengeMode;
     /// <summary>
     /// Function: SetGlobalFlagForChallengeMode
     /// </summary>
-    public unsafe virtual bool SetGlobalFlagForChallengeMode(BmSDK.FString FlagName, bool Value)
+    public unsafe virtual bool SetGlobalFlagForChallengeMode(BmSDK.FStringArg FlagName, bool Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGlobalFlagForChallengeMode, "BmGame.RFlagManager.SetGlobalFlagForChallengeMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGlobalFlagForChallengeMode, "BmGame.RFlagManager.SetGlobalFlagForChallengeMode", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -346,20 +352,21 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SetGlobalFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGlobalFlag;
     /// <summary>
     /// Function: SetGlobalFlag
     /// </summary>
-    public unsafe virtual bool SetGlobalFlag(BmSDK.FString FlagName, bool Value)
+    public unsafe virtual bool SetGlobalFlag(BmSDK.FStringArg FlagName, bool Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGlobalFlag, "BmGame.RFlagManager.SetGlobalFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGlobalFlag, "BmGame.RFlagManager.SetGlobalFlag", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -369,20 +376,21 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetGlobalFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlobalFlag;
     /// <summary>
     /// Function: GetGlobalFlag
     /// </summary>
-    public unsafe virtual bool GetGlobalFlag(BmSDK.FString FlagName)
+    public unsafe virtual bool GetGlobalFlag(BmSDK.FStringArg FlagName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlobalFlag, "BmGame.RFlagManager.GetGlobalFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlobalFlag, "BmGame.RFlagManager.GetGlobalFlag", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 0);
+        FlagName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -391,17 +399,18 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetObjectBit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectBit;
     /// <summary>
     /// Function: SetObjectBit
     /// </summary>
     public unsafe virtual bool SetObjectBit(BmSDK.GameObject Obj, int BitIndex, bool Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetObjectBit, "BmGame.RFlagManager.SetObjectBit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetObjectBit, "BmGame.RFlagManager.SetObjectBit", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
@@ -418,14 +427,14 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetObjectBit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectBit;
     /// <summary>
     /// Function: GetObjectBit
     /// </summary>
     public unsafe virtual bool GetObjectBit(BmSDK.GameObject Obj, int BitIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectBit, "BmGame.RFlagManager.GetObjectBit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectBit, "BmGame.RFlagManager.GetObjectBit", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
@@ -441,18 +450,18 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetObjectInt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectInt;
     /// <summary>
     /// Function: SetObjectInt
     /// </summary>
-    public unsafe virtual int SetObjectInt(BmSDK.GameObject Obj, BmSDK.FString FlagName, int Value)
+    public unsafe virtual int SetObjectInt(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetObjectInt, "BmGame.RFlagManager.SetObjectInt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetObjectInt, "BmGame.RFlagManager.SetObjectInt", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 8);
+        FlagName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 24);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -462,21 +471,22 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_GetObjectInt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectInt;
     /// <summary>
     /// Function: GetObjectInt
     /// </summary>
-    public unsafe virtual int GetObjectInt(BmSDK.GameObject Obj, BmSDK.FString FlagName, out int Found)
+    public unsafe virtual int GetObjectInt(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName, out int Found)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectInt, "BmGame.RFlagManager.GetObjectInt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectInt, "BmGame.RFlagManager.GetObjectInt", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 8);
+        FlagName.WriteTo(paramsPtr + 8);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Found);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Found, paramsPtr + 24);
         var oldFlags = funcManaged.FunctionFlags;
@@ -487,22 +497,23 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         Found = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_SetObjectFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectFlag;
     /// <summary>
     /// Function: SetObjectFlag
     /// </summary>
-    public unsafe virtual bool SetObjectFlag(BmSDK.GameObject Obj, BmSDK.FString FlagName, bool Value)
+    public unsafe virtual bool SetObjectFlag(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName, bool Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetObjectFlag, "BmGame.RFlagManager.SetObjectFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetObjectFlag, "BmGame.RFlagManager.SetObjectFlag", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 8);
+        FlagName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 24);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -512,21 +523,22 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_GetObjectFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectFlag;
     /// <summary>
     /// Function: GetObjectFlag
     /// </summary>
-    public unsafe virtual bool GetObjectFlag(BmSDK.GameObject Obj, BmSDK.FString FlagName)
+    public unsafe virtual bool GetObjectFlag(BmSDK.GameObject Obj, BmSDK.FStringArg FlagName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectFlag, "BmGame.RFlagManager.GetObjectFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectFlag, "BmGame.RFlagManager.GetObjectFlag", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FlagName, paramsPtr + 8);
+        FlagName.WriteTo(paramsPtr + 8);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -535,17 +547,18 @@ public partial class RFlagManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RFlagManager.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RFlagManager.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

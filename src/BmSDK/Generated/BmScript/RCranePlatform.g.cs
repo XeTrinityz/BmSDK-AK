@@ -78,14 +78,14 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RCranePlatform>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RigidBodyCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyCollision;
     /// <summary>
     /// Function: RigidBodyCollision
     /// </summary>
     public unsafe override void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "BmScript.RCranePlatform.RigidBodyCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RigidBodyCollision, "BmScript.RCranePlatform.RigidBodyCollision", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitComponent, paramsPtr + 0);
@@ -99,14 +99,14 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_GetCableLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCableLength;
     /// <summary>
     /// Function: GetCableLength
     /// </summary>
     public unsafe virtual float GetCableLength(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCableLength, "BmScript.RCranePlatform.GetCableLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCableLength, "BmScript.RCranePlatform.GetCableLength", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -114,28 +114,28 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsTouchingFloor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTouchingFloor;
     /// <summary>
     /// Function: IsTouchingFloor
     /// </summary>
     public unsafe virtual bool IsTouchingFloor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTouchingFloor, "BmScript.RCranePlatform.IsTouchingFloor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTouchingFloor, "BmScript.RCranePlatform.IsTouchingFloor", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAttachPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttachPoint;
     /// <summary>
     /// Function: GetAttachPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAttachPoint(int Index, bool bWorldPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttachPoint, "BmScript.RCranePlatform.GetAttachPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAttachPoint, "BmScript.RCranePlatform.GetAttachPoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -144,14 +144,14 @@ public partial class RCranePlatform : BmSDK.BmGame.RCranePlatformBase, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetLaunchPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLaunchPoint;
     /// <summary>
     /// Function: GetLaunchPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLaunchPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLaunchPoint, "BmScript.RCranePlatform.GetLaunchPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLaunchPoint, "BmScript.RCranePlatform.GetLaunchPoint", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

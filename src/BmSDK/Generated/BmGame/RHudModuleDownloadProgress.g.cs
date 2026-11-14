@@ -78,44 +78,46 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
         where TComponent : class, Framework.IScriptComponent<RHudModuleDownloadProgress>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ShowOutro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowOutro;
     /// <summary>
     /// Function: ShowOutro
     /// </summary>
     public unsafe virtual void ShowOutro()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowOutro, "BmGame.RHudModuleDownloadProgress.ShowOutro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowOutro, "BmGame.RHudModuleDownloadProgress.ShowOutro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisplayMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayMessage;
     /// <summary>
     /// Function: SetDisplayMessage
     /// </summary>
-    public unsafe virtual void SetDisplayMessage(BmSDK.FString message_text, BmSDK.FString message_animation)
+    public unsafe virtual void SetDisplayMessage(BmSDK.FStringArg message_text, BmSDK.FStringArg message_animation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayMessage, "BmGame.RHudModuleDownloadProgress.SetDisplayMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisplayMessage, "BmGame.RHudModuleDownloadProgress.SetDisplayMessage", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(message_text, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(message_animation, paramsPtr + 16);
+        message_text.WriteTo(paramsPtr + 0);
+        message_animation.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_SetProgressLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProgressLevel;
     /// <summary>
     /// Function: SetProgressLevel
     /// </summary>
     public unsafe virtual void SetProgressLevel(float Proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetProgressLevel, "BmGame.RHudModuleDownloadProgress.SetProgressLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetProgressLevel, "BmGame.RHudModuleDownloadProgress.SetProgressLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Proportion, paramsPtr + 0);
@@ -123,42 +125,42 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_XI_DownloadProgress_NotifyOutroComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_DownloadProgress_NotifyOutroComplete;
     /// <summary>
     /// Function: XI_DownloadProgress_NotifyOutroComplete
     /// </summary>
     public unsafe virtual void XI_DownloadProgress_NotifyOutroComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_DownloadProgress_NotifyOutroComplete, "BmGame.RHudModuleDownloadProgress.XI_DownloadProgress_NotifyOutroComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_DownloadProgress_NotifyOutroComplete, "BmGame.RHudModuleDownloadProgress.XI_DownloadProgress_NotifyOutroComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_DownloadProgress_NotifyIntroComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_DownloadProgress_NotifyIntroComplete;
     /// <summary>
     /// Function: XI_DownloadProgress_NotifyIntroComplete
     /// </summary>
     public unsafe virtual void XI_DownloadProgress_NotifyIntroComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_DownloadProgress_NotifyIntroComplete, "BmGame.RHudModuleDownloadProgress.XI_DownloadProgress_NotifyIntroComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_DownloadProgress_NotifyIntroComplete, "BmGame.RHudModuleDownloadProgress.XI_DownloadProgress_NotifyIntroComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowIntro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowIntro;
     /// <summary>
     /// Function: ShowIntro
     /// </summary>
     public unsafe virtual void ShowIntro(float initial_proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowIntro, "BmGame.RHudModuleDownloadProgress.ShowIntro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowIntro, "BmGame.RHudModuleDownloadProgress.ShowIntro", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(initial_proportion, paramsPtr + 0);
@@ -166,50 +168,54 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeToFailureMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeToFailureMessage;
     /// <summary>
     /// Function: ChangeToFailureMessage
     /// </summary>
-    public unsafe virtual void ChangeToFailureMessage(BmSDK.FString FailureMessageText, BmSDK.FString FailureMessageAnimation = default)
+    public unsafe virtual void ChangeToFailureMessage(BmSDK.FStringArg FailureMessageText, BmSDK.FStringArg FailureMessageAnimation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeToFailureMessage, "BmGame.RHudModuleDownloadProgress.ChangeToFailureMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeToFailureMessage, "BmGame.RHudModuleDownloadProgress.ChangeToFailureMessage", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FailureMessageText, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FailureMessageAnimation, paramsPtr + 16);
+        FailureMessageText.WriteTo(paramsPtr + 0);
+        FailureMessageAnimation.WriteTo(paramsPtr + 16);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeToCompleteMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeToCompleteMessage;
     /// <summary>
     /// Function: ChangeToCompleteMessage
     /// </summary>
-    public unsafe virtual void ChangeToCompleteMessage(BmSDK.FString MessageText = default, BmSDK.FString MessageAnimation = default)
+    public unsafe virtual void ChangeToCompleteMessage(BmSDK.FStringArg MessageText = default, BmSDK.FStringArg MessageAnimation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeToCompleteMessage, "BmGame.RHudModuleDownloadProgress.ChangeToCompleteMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeToCompleteMessage, "BmGame.RHudModuleDownloadProgress.ChangeToCompleteMessage", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MessageText, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MessageAnimation, paramsPtr + 16);
+        MessageText.WriteTo(paramsPtr + 0);
+        MessageAnimation.WriteTo(paramsPtr + 16);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_TickDownloadProgress;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickDownloadProgress;
     /// <summary>
     /// Function: TickDownloadProgress
     /// </summary>
     public unsafe virtual void TickDownloadProgress(float delta_t)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickDownloadProgress, "BmGame.RHudModuleDownloadProgress.TickDownloadProgress");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickDownloadProgress, "BmGame.RHudModuleDownloadProgress.TickDownloadProgress", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(delta_t, paramsPtr + 0);
@@ -217,14 +223,14 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_DownloadSoundPlaying;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DownloadSoundPlaying;
     /// <summary>
     /// Function: DownloadSoundPlaying
     /// </summary>
     public unsafe virtual void DownloadSoundPlaying(bool Playing)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DownloadSoundPlaying, "BmGame.RHudModuleDownloadProgress.DownloadSoundPlaying");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DownloadSoundPlaying, "BmGame.RHudModuleDownloadProgress.DownloadSoundPlaying", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Playing, paramsPtr + 0);
@@ -232,48 +238,50 @@ public partial class RHudModuleDownloadProgress : BmSDK.BmGame.RHudModule, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseFlash;
     /// <summary>
     /// Function: InitialiseFlash
     /// </summary>
     public unsafe override void InitialiseFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseFlash, "BmGame.RHudModuleDownloadProgress.InitialiseFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseFlash, "BmGame.RHudModuleDownloadProgress.InitialiseFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Close;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Close;
     /// <summary>
     /// Function: Close
     /// </summary>
     public unsafe override void Close()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleDownloadProgress.Close");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Close, "BmGame.RHudModuleDownloadProgress.Close", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
+    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FStringArg _ExtensionName, BmSDK.FStringArg _ExtensionPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleDownloadProgress.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RHudModuleDownloadProgress.Init", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RPC, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionPath, paramsPtr + 24);
+        _ExtensionName.WriteTo(paramsPtr + 8);
+        _ExtensionPath.WriteTo(paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 

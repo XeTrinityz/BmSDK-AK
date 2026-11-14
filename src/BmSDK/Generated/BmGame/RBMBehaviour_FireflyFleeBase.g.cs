@@ -73,42 +73,42 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_FireflyFleeBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TriggerSecondChaseOutroGauntlet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSecondChaseOutroGauntlet;
     /// <summary>
     /// Function: TriggerSecondChaseOutroGauntlet
     /// </summary>
     public unsafe virtual bool TriggerSecondChaseOutroGauntlet()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSecondChaseOutroGauntlet, "BmGame.RBMBehaviour_FireflyFleeBase.TriggerSecondChaseOutroGauntlet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSecondChaseOutroGauntlet, "BmGame.RBMBehaviour_FireflyFleeBase.TriggerSecondChaseOutroGauntlet", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerFirstChaseOutroGauntlet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFirstChaseOutroGauntlet;
     /// <summary>
     /// Function: TriggerFirstChaseOutroGauntlet
     /// </summary>
     public unsafe virtual bool TriggerFirstChaseOutroGauntlet()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFirstChaseOutroGauntlet, "BmGame.RBMBehaviour_FireflyFleeBase.TriggerFirstChaseOutroGauntlet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerFirstChaseOutroGauntlet, "BmGame.RBMBehaviour_FireflyFleeBase.TriggerFirstChaseOutroGauntlet", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerFFBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFFBark;
     /// <summary>
     /// Function: TriggerFFBark
     /// </summary>
     public unsafe virtual bool TriggerFFBark(BmSDK.FName eventFlagName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFFBark, "BmGame.RBMBehaviour_FireflyFleeBase.TriggerFFBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerFFBark, "BmGame.RBMBehaviour_FireflyFleeBase.TriggerFFBark", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(eventFlagName, paramsPtr + 0);
@@ -116,140 +116,140 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TryTriggerNextBombInSequence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerNextBombInSequence;
     /// <summary>
     /// Function: TryTriggerNextBombInSequence
     /// </summary>
     public unsafe virtual void TryTriggerNextBombInSequence()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerNextBombInSequence, "BmGame.RBMBehaviour_FireflyFleeBase.TryTriggerNextBombInSequence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerNextBombInSequence, "BmGame.RBMBehaviour_FireflyFleeBase.TryTriggerNextBombInSequence", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WarnAboutRiotSurpressorShot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WarnAboutRiotSurpressorShot;
     /// <summary>
     /// Function: WarnAboutRiotSurpressorShot
     /// </summary>
     public unsafe virtual void WarnAboutRiotSurpressorShot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WarnAboutRiotSurpressorShot, "BmGame.RBMBehaviour_FireflyFleeBase.WarnAboutRiotSurpressorShot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WarnAboutRiotSurpressorShot, "BmGame.RBMBehaviour_FireflyFleeBase.WarnAboutRiotSurpressorShot", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFFFliesAwayAfterBeatdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFFFliesAwayAfterBeatdown;
     /// <summary>
     /// Function: NotifyFFFliesAwayAfterBeatdown
     /// </summary>
     public unsafe virtual void NotifyFFFliesAwayAfterBeatdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFFFliesAwayAfterBeatdown, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyFFFliesAwayAfterBeatdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFFFliesAwayAfterBeatdown, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyFFFliesAwayAfterBeatdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyGrenadeDidDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyGrenadeDidDamage;
     /// <summary>
     /// Function: NotifyGrenadeDidDamage
     /// </summary>
     public unsafe virtual void NotifyGrenadeDidDamage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGrenadeDidDamage, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyGrenadeDidDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyGrenadeDidDamage, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyGrenadeDidDamage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyCityOutOfView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyCityOutOfView;
     /// <summary>
     /// Function: NotifyCityOutOfView
     /// </summary>
     public unsafe virtual void NotifyCityOutOfView()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCityOutOfView, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyCityOutOfView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyCityOutOfView, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyCityOutOfView", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyBeatdownFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyBeatdownFailed;
     /// <summary>
     /// Function: NotifyBeatdownFailed
     /// </summary>
     public unsafe virtual void NotifyBeatdownFailed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBeatdownFailed, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyBeatdownFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyBeatdownFailed, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyBeatdownFailed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyBeatdownComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyBeatdownComplete;
     /// <summary>
     /// Function: NotifyBeatdownComplete
     /// </summary>
     public unsafe virtual void NotifyBeatdownComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBeatdownComplete, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyBeatdownComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyBeatdownComplete, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyBeatdownComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyTakedownStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyTakedownStarted;
     /// <summary>
     /// Function: NotifyTakedownStarted
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 NotifyTakedownStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyTakedownStarted, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyTakedownStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyTakedownStarted, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyTakedownStarted", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyBMMadeContactWithFirefly;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyBMMadeContactWithFirefly;
     /// <summary>
     /// Function: NotifyBMMadeContactWithFirefly
     /// </summary>
     public unsafe virtual void NotifyBMMadeContactWithFirefly()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBMMadeContactWithFirefly, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyBMMadeContactWithFirefly");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyBMMadeContactWithFirefly, "BmGame.RBMBehaviour_FireflyFleeBase.NotifyBMMadeContactWithFirefly", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForWorldCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForWorldCollision;
     /// <summary>
     /// Function: CheckForWorldCollision
     /// </summary>
     public unsafe virtual bool CheckForWorldCollision(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, out System.Numerics.Vector3 HitLoc, out System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForWorldCollision, "BmGame.RBMBehaviour_FireflyFleeBase.CheckForWorldCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForWorldCollision, "BmGame.RBMBehaviour_FireflyFleeBase.CheckForWorldCollision", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -264,28 +264,28 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_NeedsFallbackTakedownInstructions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedsFallbackTakedownInstructions;
     /// <summary>
     /// Function: NeedsFallbackTakedownInstructions
     /// </summary>
     public unsafe virtual bool NeedsFallbackTakedownInstructions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NeedsFallbackTakedownInstructions, "BmGame.RBMBehaviour_FireflyFleeBase.NeedsFallbackTakedownInstructions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NeedsFallbackTakedownInstructions, "BmGame.RBMBehaviour_FireflyFleeBase.NeedsFallbackTakedownInstructions", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InRangeForActualTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InRangeForActualTakedown;
     /// <summary>
     /// Function: InRangeForActualTakedown
     /// </summary>
     public unsafe virtual bool InRangeForActualTakedown(System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InRangeForActualTakedown, "BmGame.RBMBehaviour_FireflyFleeBase.InRangeForActualTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InRangeForActualTakedown, "BmGame.RBMBehaviour_FireflyFleeBase.InRangeForActualTakedown", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -293,14 +293,14 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_InRangeForTakedownPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InRangeForTakedownPrompt;
     /// <summary>
     /// Function: InRangeForTakedownPrompt
     /// </summary>
     public unsafe virtual bool InRangeForTakedownPrompt(System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InRangeForTakedownPrompt, "BmGame.RBMBehaviour_FireflyFleeBase.InRangeForTakedownPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InRangeForTakedownPrompt, "BmGame.RBMBehaviour_FireflyFleeBase.InRangeForTakedownPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -308,14 +308,14 @@ public partial class RBMBehaviour_FireflyFleeBase : BmSDK.BmGame.RBMBehaviour_Mo
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ReadyForInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadyForInteraction;
     /// <summary>
     /// Function: ReadyForInteraction
     /// </summary>
     public unsafe virtual bool ReadyForInteraction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyForInteraction, "BmGame.RBMBehaviour_FireflyFleeBase.ReadyForInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadyForInteraction, "BmGame.RBMBehaviour_FireflyFleeBase.ReadyForInteraction", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

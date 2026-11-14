@@ -73,14 +73,14 @@ public partial class OnlineStats : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<OnlineStats>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetViewName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewName;
     /// <summary>
     /// Function: GetViewName
     /// </summary>
     public unsafe virtual BmSDK.FName GetViewName(int ViewId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetViewName, "Engine.OnlineStats.GetViewName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetViewName, "Engine.OnlineStats.GetViewName", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ViewId, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class OnlineStats : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetViewId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetViewId;
     /// <summary>
     /// Function: GetViewId
     /// </summary>
     public unsafe virtual bool GetViewId(BmSDK.FName ViewName, out int ViewId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetViewId, "Engine.OnlineStats.GetViewId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetViewId, "Engine.OnlineStats.GetViewId", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ViewName, paramsPtr + 0);

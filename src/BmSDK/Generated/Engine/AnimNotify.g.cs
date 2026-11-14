@@ -73,14 +73,14 @@ public partial class AnimNotify : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AnimNotify>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FindNextNotifyOfClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNextNotifyOfClass;
     /// <summary>
     /// Function: FindNextNotifyOfClass
     /// </summary>
     public unsafe virtual bool FindNextNotifyOfClass(BmSDK.Engine.AnimNodeSequence AnimSeqInstigator, BmSDK.Class NotifyClass, out BmSDK.Engine.AnimSequence.FAnimNotifyEvent OutEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindNextNotifyOfClass, "Engine.AnimNotify.FindNextNotifyOfClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindNextNotifyOfClass, "Engine.AnimNotify.FindNextNotifyOfClass", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSeqInstigator, paramsPtr + 0);

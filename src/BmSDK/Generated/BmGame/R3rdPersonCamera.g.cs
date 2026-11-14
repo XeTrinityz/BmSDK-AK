@@ -78,14 +78,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<R3rdPersonCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateBonnetCameraLookSpring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBonnetCameraLookSpring;
     /// <summary>
     /// Function: UpdateBonnetCameraLookSpring
     /// </summary>
     public unsafe virtual void UpdateBonnetCameraLookSpring(float DeltaTime, System.Numerics.Vector3 Input)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBonnetCameraLookSpring, "BmGame.R3rdPersonCamera.UpdateBonnetCameraLookSpring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateBonnetCameraLookSpring, "BmGame.R3rdPersonCamera.UpdateBonnetCameraLookSpring", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCameraPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraPosition;
     /// <summary>
     /// Function: UpdateCameraPosition
     /// </summary>
     public unsafe virtual void UpdateCameraPosition(float DeltaTime, bool ProperReset = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCameraPosition, "BmGame.R3rdPersonCamera.UpdateCameraPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCameraPosition, "BmGame.R3rdPersonCamera.UpdateCameraPosition", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -124,70 +124,70 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DisableClippingPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableClippingPlayer;
     /// <summary>
     /// Function: DisableClippingPlayer
     /// </summary>
     public unsafe virtual void DisableClippingPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableClippingPlayer, "BmGame.R3rdPersonCamera.DisableClippingPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableClippingPlayer, "BmGame.R3rdPersonCamera.DisableClippingPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResumeClippingPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResumeClippingPlayer;
     /// <summary>
     /// Function: ResumeClippingPlayer
     /// </summary>
     public unsafe virtual void ResumeClippingPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResumeClippingPlayer, "BmGame.R3rdPersonCamera.ResumeClippingPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResumeClippingPlayer, "BmGame.R3rdPersonCamera.ResumeClippingPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrivingCameraControlTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrivingCameraControlTimer;
     /// <summary>
     /// Function: DrivingCameraControlTimer
     /// </summary>
     public unsafe virtual void DrivingCameraControlTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrivingCameraControlTimer, "BmGame.R3rdPersonCamera.DrivingCameraControlTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrivingCameraControlTimer, "BmGame.R3rdPersonCamera.DrivingCameraControlTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetDrivingLookRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDrivingLookRotation;
     /// <summary>
     /// Function: GetDrivingLookRotation
     /// </summary>
     public unsafe virtual float GetDrivingLookRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDrivingLookRotation, "BmGame.R3rdPersonCamera.GetDrivingLookRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDrivingLookRotation, "BmGame.R3rdPersonCamera.GetDrivingLookRotation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddDrivingHeadImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDrivingHeadImpulse;
     /// <summary>
     /// Function: AddDrivingHeadImpulse
     /// </summary>
     public unsafe virtual void AddDrivingHeadImpulse(System.Numerics.Vector3 Impulse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDrivingHeadImpulse, "BmGame.R3rdPersonCamera.AddDrivingHeadImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDrivingHeadImpulse, "BmGame.R3rdPersonCamera.AddDrivingHeadImpulse", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Impulse, paramsPtr + 0);
@@ -195,14 +195,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ConvertCameraWanderToWorldSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConvertCameraWanderToWorldSpace;
     /// <summary>
     /// Function: ConvertCameraWanderToWorldSpace
     /// </summary>
     public unsafe virtual BmSDK.Rotator ConvertCameraWanderToWorldSpace()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConvertCameraWanderToWorldSpace, "BmGame.R3rdPersonCamera.ConvertCameraWanderToWorldSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConvertCameraWanderToWorldSpace, "BmGame.R3rdPersonCamera.ConvertCameraWanderToWorldSpace", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -216,14 +216,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetRailingCameraOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRailingCameraOffset;
     /// <summary>
     /// Function: SetRailingCameraOffset
     /// </summary>
     public unsafe virtual void SetRailingCameraOffset(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRailingCameraOffset, "BmGame.R3rdPersonCamera.SetRailingCameraOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRailingCameraOffset, "BmGame.R3rdPersonCamera.SetRailingCameraOffset", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -231,70 +231,70 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetRailingYawAnchorRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRailingYawAnchorRotation;
     /// <summary>
     /// Function: GetRailingYawAnchorRotation
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRailingYawAnchorRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRailingYawAnchorRotation, "BmGame.R3rdPersonCamera.GetRailingYawAnchorRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRailingYawAnchorRotation, "BmGame.R3rdPersonCamera.GetRailingYawAnchorRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetUpVoiceSynthCornerCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUpVoiceSynthCornerCamera;
     /// <summary>
     /// Function: SetUpVoiceSynthCornerCamera
     /// </summary>
     public unsafe virtual void SetUpVoiceSynthCornerCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUpVoiceSynthCornerCamera, "BmGame.R3rdPersonCamera.SetUpVoiceSynthCornerCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUpVoiceSynthCornerCamera, "BmGame.R3rdPersonCamera.SetUpVoiceSynthCornerCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CarReversingTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CarReversingTimer;
     /// <summary>
     /// Function: CarReversingTimer
     /// </summary>
     public unsafe virtual void CarReversingTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CarReversingTimer, "BmGame.R3rdPersonCamera.CarReversingTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarReversingTimer, "BmGame.R3rdPersonCamera.CarReversingTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetDrivingCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetDrivingCamera;
     /// <summary>
     /// Function: ResetDrivingCamera
     /// </summary>
     public unsafe virtual void ResetDrivingCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetDrivingCamera, "BmGame.R3rdPersonCamera.ResetDrivingCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetDrivingCamera, "BmGame.R3rdPersonCamera.ResetDrivingCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldBatmobileJumpCameraGoLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBatmobileJumpCameraGoLeft;
     /// <summary>
     /// Function: ShouldBatmobileJumpCameraGoLeft
     /// </summary>
     public unsafe virtual bool ShouldBatmobileJumpCameraGoLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldBatmobileJumpCameraGoLeft, "BmGame.R3rdPersonCamera.ShouldBatmobileJumpCameraGoLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldBatmobileJumpCameraGoLeft, "BmGame.R3rdPersonCamera.ShouldBatmobileJumpCameraGoLeft", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -308,14 +308,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DrivingCameraTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrivingCameraTick;
     /// <summary>
     /// Function: DrivingCameraTick
     /// </summary>
     public unsafe virtual void DrivingCameraTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrivingCameraTick, "BmGame.R3rdPersonCamera.DrivingCameraTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrivingCameraTick, "BmGame.R3rdPersonCamera.DrivingCameraTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -330,28 +330,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetYawAnchorRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetYawAnchorRotation;
     /// <summary>
     /// Function: GetYawAnchorRotation
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetYawAnchorRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetYawAnchorRotation, "BmGame.R3rdPersonCamera.GetYawAnchorRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetYawAnchorRotation, "BmGame.R3rdPersonCamera.GetYawAnchorRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTunnelCameraDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTunnelCameraDirection;
     /// <summary>
     /// Function: GetTunnelCameraDirection
     /// </summary>
     public unsafe virtual void GetTunnelCameraDirection(out System.Numerics.Vector3 InDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTunnelCameraDirection, "BmGame.R3rdPersonCamera.GetTunnelCameraDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTunnelCameraDirection, "BmGame.R3rdPersonCamera.GetTunnelCameraDirection", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out InDirection);
@@ -368,14 +368,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetOverrideMotionBlur;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOverrideMotionBlur;
     /// <summary>
     /// Function: SetOverrideMotionBlur
     /// </summary>
     public unsafe virtual void SetOverrideMotionBlur(float NewMBAmount, float MBTransitionTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverrideMotionBlur, "BmGame.R3rdPersonCamera.SetOverrideMotionBlur");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOverrideMotionBlur, "BmGame.R3rdPersonCamera.SetOverrideMotionBlur", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMBAmount, paramsPtr + 0);
@@ -384,14 +384,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetOverrideFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetOverrideFOV;
     /// <summary>
     /// Function: ResetOverrideFOV
     /// </summary>
     public unsafe virtual void ResetOverrideFOV(float FOVTransitionTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetOverrideFOV, "BmGame.R3rdPersonCamera.ResetOverrideFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetOverrideFOV, "BmGame.R3rdPersonCamera.ResetOverrideFOV", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FOVTransitionTime, paramsPtr + 0);
@@ -399,14 +399,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetOverrideFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOverrideFOV;
     /// <summary>
     /// Function: SetOverrideFOV
     /// </summary>
     public unsafe virtual void SetOverrideFOV(float NewFOV, float FOVTransitionTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverrideFOV, "BmGame.R3rdPersonCamera.SetOverrideFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOverrideFOV, "BmGame.R3rdPersonCamera.SetOverrideFOV", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewFOV, paramsPtr + 0);
@@ -415,42 +415,42 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetTargetActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetActor;
     /// <summary>
     /// Function: GetTargetActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetTargetActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetActor, "BmGame.R3rdPersonCamera.GetTargetActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetActor, "BmGame.R3rdPersonCamera.GetTargetActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UnlockCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlockCamera;
     /// <summary>
     /// Function: UnlockCamera
     /// </summary>
     public unsafe virtual void UnlockCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockCamera, "BmGame.R3rdPersonCamera.UnlockCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlockCamera, "BmGame.R3rdPersonCamera.UnlockCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LockCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LockCamera;
     /// <summary>
     /// Function: LockCamera
     /// </summary>
     public unsafe virtual void LockCamera(float LockedTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LockCamera, "BmGame.R3rdPersonCamera.LockCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LockCamera, "BmGame.R3rdPersonCamera.LockCamera", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LockedTime, paramsPtr + 0);
@@ -458,28 +458,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOffMotionBlur;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOffMotionBlur;
     /// <summary>
     /// Function: TurnOffMotionBlur
     /// </summary>
     public unsafe virtual void TurnOffMotionBlur()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffMotionBlur, "BmGame.R3rdPersonCamera.TurnOffMotionBlur");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOffMotionBlur, "BmGame.R3rdPersonCamera.TurnOffMotionBlur", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FillCameraCache;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FillCameraCache;
     /// <summary>
     /// Function: FillCameraCache
     /// </summary>
     public unsafe override void FillCameraCache(out BmSDK.GameObject.FTPOV NewPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FillCameraCache, "BmGame.R3rdPersonCamera.FillCameraCache");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FillCameraCache, "BmGame.R3rdPersonCamera.FillCameraCache", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out NewPOV);
@@ -496,14 +496,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HideClippingObjects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideClippingObjects;
     /// <summary>
     /// Function: HideClippingObjects
     /// </summary>
     public unsafe virtual void HideClippingObjects(out BmSDK.GameObject.FTPOV NewPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideClippingObjects, "BmGame.R3rdPersonCamera.HideClippingObjects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideClippingObjects, "BmGame.R3rdPersonCamera.HideClippingObjects", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out NewPOV);
@@ -520,14 +520,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateZoomFocus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateZoomFocus;
     /// <summary>
     /// Function: UpdateZoomFocus
     /// </summary>
     public unsafe virtual void UpdateZoomFocus(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateZoomFocus, "BmGame.R3rdPersonCamera.UpdateZoomFocus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateZoomFocus, "BmGame.R3rdPersonCamera.UpdateZoomFocus", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -542,14 +542,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetViewTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewTarget;
     /// <summary>
     /// Function: SetViewTarget
     /// </summary>
     public unsafe override void SetViewTarget(BmSDK.Engine.Actor NewViewTarget, BmSDK.Engine.Camera.FViewTargetTransitionParams TransitionParams = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetViewTarget, "BmGame.R3rdPersonCamera.SetViewTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetViewTarget, "BmGame.R3rdPersonCamera.SetViewTarget", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewViewTarget, paramsPtr + 0);
@@ -565,14 +565,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BlendViewTargets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendViewTargets;
     /// <summary>
     /// Function: BlendViewTargets
     /// </summary>
     public unsafe override BmSDK.GameObject.FTPOV BlendViewTargets(out BmSDK.Engine.Camera.FTViewTarget A, out BmSDK.Engine.Camera.FTViewTarget B, float Alpha)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlendViewTargets, "BmGame.R3rdPersonCamera.BlendViewTargets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlendViewTargets, "BmGame.R3rdPersonCamera.BlendViewTargets", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out A);
@@ -593,14 +593,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FTPOV>(paramsPtr + 116);
     }
 
-    private static BmSDK.Function __fn_RecordCameraMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecordCameraMove;
     /// <summary>
     /// Function: RecordCameraMove
     /// </summary>
     public unsafe virtual void RecordCameraMove(BmSDK.Rotator DeltaRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecordCameraMove, "BmGame.R3rdPersonCamera.RecordCameraMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecordCameraMove, "BmGame.R3rdPersonCamera.RecordCameraMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaRotation, paramsPtr + 0);
@@ -608,14 +608,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.R3rdPersonCamera.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.R3rdPersonCamera.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -623,28 +623,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CancelBlockedZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelBlockedZoom;
     /// <summary>
     /// Function: CancelBlockedZoom
     /// </summary>
     public unsafe virtual void CancelBlockedZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelBlockedZoom, "BmGame.R3rdPersonCamera.CancelBlockedZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelBlockedZoom, "BmGame.R3rdPersonCamera.CancelBlockedZoom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelAndBlockZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAndBlockZoom;
     /// <summary>
     /// Function: CancelAndBlockZoom
     /// </summary>
     public unsafe virtual void CancelAndBlockZoom(float T = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelAndBlockZoom, "BmGame.R3rdPersonCamera.CancelAndBlockZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelAndBlockZoom, "BmGame.R3rdPersonCamera.CancelAndBlockZoom", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(T, paramsPtr + 0);
@@ -652,28 +652,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CancelZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelZoom;
     /// <summary>
     /// Function: CancelZoom
     /// </summary>
     public unsafe virtual void CancelZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelZoom, "BmGame.R3rdPersonCamera.CancelZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelZoom, "BmGame.R3rdPersonCamera.CancelZoom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ForceZoomCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceZoomCamera;
     /// <summary>
     /// Function: ForceZoomCamera
     /// </summary>
     public unsafe virtual void ForceZoomCamera(float OverrideZoomFOV = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceZoomCamera, "BmGame.R3rdPersonCamera.ForceZoomCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceZoomCamera, "BmGame.R3rdPersonCamera.ForceZoomCamera", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideZoomFOV, paramsPtr + 0);
@@ -681,182 +681,182 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleCameraZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleCameraZoom;
     /// <summary>
     /// Function: ToggleCameraZoom
     /// </summary>
     public unsafe virtual void ToggleCameraZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleCameraZoom, "BmGame.R3rdPersonCamera.ToggleCameraZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleCameraZoom, "BmGame.R3rdPersonCamera.ToggleCameraZoom", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetZoomValueForZoomDof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetZoomValueForZoomDof;
     /// <summary>
     /// Function: GetZoomValueForZoomDof
     /// </summary>
     public unsafe virtual float GetZoomValueForZoomDof()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetZoomValueForZoomDof, "BmGame.R3rdPersonCamera.GetZoomValueForZoomDof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetZoomValueForZoomDof, "BmGame.R3rdPersonCamera.GetZoomValueForZoomDof", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ToggleAlternativeWalkCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleAlternativeWalkCamera;
     /// <summary>
     /// Function: ToggleAlternativeWalkCamera
     /// </summary>
     public unsafe virtual void ToggleAlternativeWalkCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleAlternativeWalkCamera, "BmGame.R3rdPersonCamera.ToggleAlternativeWalkCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleAlternativeWalkCamera, "BmGame.R3rdPersonCamera.ToggleAlternativeWalkCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SettingsChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SettingsChanged;
     /// <summary>
     /// Function: SettingsChanged
     /// </summary>
     public unsafe virtual void SettingsChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SettingsChanged, "BmGame.R3rdPersonCamera.SettingsChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SettingsChanged, "BmGame.R3rdPersonCamera.SettingsChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraZoomOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraZoomOut;
     /// <summary>
     /// Function: DebugCameraZoomOut
     /// </summary>
     public unsafe virtual void DebugCameraZoomOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraZoomOut, "BmGame.R3rdPersonCamera.DebugCameraZoomOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraZoomOut, "BmGame.R3rdPersonCamera.DebugCameraZoomOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraZoomIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraZoomIn;
     /// <summary>
     /// Function: DebugCameraZoomIn
     /// </summary>
     public unsafe virtual void DebugCameraZoomIn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraZoomIn, "BmGame.R3rdPersonCamera.DebugCameraZoomIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraZoomIn, "BmGame.R3rdPersonCamera.DebugCameraZoomIn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraBack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraBack;
     /// <summary>
     /// Function: DebugCameraBack
     /// </summary>
     public unsafe virtual void DebugCameraBack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraBack, "BmGame.R3rdPersonCamera.DebugCameraBack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraBack, "BmGame.R3rdPersonCamera.DebugCameraBack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraForward;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraForward;
     /// <summary>
     /// Function: DebugCameraForward
     /// </summary>
     public unsafe virtual void DebugCameraForward()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraForward, "BmGame.R3rdPersonCamera.DebugCameraForward");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraForward, "BmGame.R3rdPersonCamera.DebugCameraForward", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraRight;
     /// <summary>
     /// Function: DebugCameraRight
     /// </summary>
     public unsafe virtual void DebugCameraRight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraRight, "BmGame.R3rdPersonCamera.DebugCameraRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraRight, "BmGame.R3rdPersonCamera.DebugCameraRight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraLeft;
     /// <summary>
     /// Function: DebugCameraLeft
     /// </summary>
     public unsafe virtual void DebugCameraLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraLeft, "BmGame.R3rdPersonCamera.DebugCameraLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraLeft, "BmGame.R3rdPersonCamera.DebugCameraLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraUp;
     /// <summary>
     /// Function: DebugCameraUp
     /// </summary>
     public unsafe virtual void DebugCameraUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraUp, "BmGame.R3rdPersonCamera.DebugCameraUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraUp, "BmGame.R3rdPersonCamera.DebugCameraUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugCameraDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugCameraDown;
     /// <summary>
     /// Function: DebugCameraDown
     /// </summary>
     public unsafe virtual void DebugCameraDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugCameraDown, "BmGame.R3rdPersonCamera.DebugCameraDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCameraDown, "BmGame.R3rdPersonCamera.DebugCameraDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetToPlayerCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetToPlayerCam;
     /// <summary>
     /// Function: ResetToPlayerCam
     /// </summary>
     public unsafe virtual void ResetToPlayerCam(float ResetToGameCamTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetToPlayerCam, "BmGame.R3rdPersonCamera.ResetToPlayerCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetToPlayerCam, "BmGame.R3rdPersonCamera.ResetToPlayerCam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ResetToGameCamTime, paramsPtr + 0);
@@ -864,28 +864,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CombatEnableCameraDrag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CombatEnableCameraDrag;
     /// <summary>
     /// Function: CombatEnableCameraDrag
     /// </summary>
     public unsafe virtual void CombatEnableCameraDrag()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatEnableCameraDrag, "BmGame.R3rdPersonCamera.CombatEnableCameraDrag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatEnableCameraDrag, "BmGame.R3rdPersonCamera.CombatEnableCameraDrag", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CombatDisableCameraDrag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CombatDisableCameraDrag;
     /// <summary>
     /// Function: CombatDisableCameraDrag
     /// </summary>
     public unsafe virtual void CombatDisableCameraDrag(float Time = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatDisableCameraDrag, "BmGame.R3rdPersonCamera.CombatDisableCameraDrag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatDisableCameraDrag, "BmGame.R3rdPersonCamera.CombatDisableCameraDrag", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
@@ -893,28 +893,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EnableCameraDragHardReset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableCameraDragHardReset;
     /// <summary>
     /// Function: EnableCameraDragHardReset
     /// </summary>
     public unsafe virtual void EnableCameraDragHardReset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableCameraDragHardReset, "BmGame.R3rdPersonCamera.EnableCameraDragHardReset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableCameraDragHardReset, "BmGame.R3rdPersonCamera.EnableCameraDragHardReset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableCameraDragHardReset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableCameraDragHardReset;
     /// <summary>
     /// Function: DisableCameraDragHardReset
     /// </summary>
     public unsafe virtual void DisableCameraDragHardReset(float Time = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCameraDragHardReset, "BmGame.R3rdPersonCamera.DisableCameraDragHardReset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableCameraDragHardReset, "BmGame.R3rdPersonCamera.DisableCameraDragHardReset", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
@@ -922,28 +922,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EnableCameraDrag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableCameraDrag;
     /// <summary>
     /// Function: EnableCameraDrag
     /// </summary>
     public unsafe virtual void EnableCameraDrag()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableCameraDrag, "BmGame.R3rdPersonCamera.EnableCameraDrag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableCameraDrag, "BmGame.R3rdPersonCamera.EnableCameraDrag", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableCameraDrag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableCameraDrag;
     /// <summary>
     /// Function: DisableCameraDrag
     /// </summary>
     public unsafe virtual void DisableCameraDrag(float Time = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCameraDrag, "BmGame.R3rdPersonCamera.DisableCameraDrag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableCameraDrag, "BmGame.R3rdPersonCamera.DisableCameraDrag", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
@@ -958,28 +958,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EnableCameraCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableCameraCollision;
     /// <summary>
     /// Function: EnableCameraCollision
     /// </summary>
     public unsafe virtual void EnableCameraCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableCameraCollision, "BmGame.R3rdPersonCamera.EnableCameraCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableCameraCollision, "BmGame.R3rdPersonCamera.EnableCameraCollision", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableCameraCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableCameraCollision;
     /// <summary>
     /// Function: DisableCameraCollision
     /// </summary>
     public unsafe virtual void DisableCameraCollision(float DisableTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableCameraCollision, "BmGame.R3rdPersonCamera.DisableCameraCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableCameraCollision, "BmGame.R3rdPersonCamera.DisableCameraCollision", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DisableTime, paramsPtr + 0);
@@ -987,14 +987,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateFancyHide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFancyHide;
     /// <summary>
     /// Function: UpdateFancyHide
     /// </summary>
     public unsafe virtual void UpdateFancyHide(bool HideHeadExceptCowl, bool HideBody, bool HideCape)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFancyHide, "BmGame.R3rdPersonCamera.UpdateFancyHide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFancyHide, "BmGame.R3rdPersonCamera.UpdateFancyHide", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HideHeadExceptCowl, paramsPtr + 0);
@@ -1004,14 +1004,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HideMeshes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideMeshes;
     /// <summary>
     /// Function: HideMeshes
     /// </summary>
     public unsafe virtual void HideMeshes(BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> Meshes, bool Hide)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideMeshes, "BmGame.R3rdPersonCamera.HideMeshes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideMeshes, "BmGame.R3rdPersonCamera.HideMeshes", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Meshes, paramsPtr + 0);
@@ -1020,28 +1020,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HideCamRefresh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideCamRefresh;
     /// <summary>
     /// Function: HideCamRefresh
     /// </summary>
     public unsafe virtual void HideCamRefresh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideCamRefresh, "BmGame.R3rdPersonCamera.HideCamRefresh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideCamRefresh, "BmGame.R3rdPersonCamera.HideCamRefresh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeDof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeDof;
     /// <summary>
     /// Function: ChangeDof
     /// </summary>
     public unsafe virtual void ChangeDof(BmSDK.BmGame.RGameInfo.FDofStruct newDof)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeDof, "BmGame.R3rdPersonCamera.ChangeDof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeDof, "BmGame.R3rdPersonCamera.ChangeDof", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(newDof, paramsPtr + 0);
@@ -1049,28 +1049,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetDof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetDof;
     /// <summary>
     /// Function: ResetDof
     /// </summary>
     public unsafe virtual void ResetDof()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetDof, "BmGame.R3rdPersonCamera.ResetDof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetDof, "BmGame.R3rdPersonCamera.ResetDof", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyCameraModifiers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCameraModifiers;
     /// <summary>
     /// Function: ApplyCameraModifiers
     /// </summary>
     public unsafe override void ApplyCameraModifiers(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyCameraModifiers, "BmGame.R3rdPersonCamera.ApplyCameraModifiers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyCameraModifiers, "BmGame.R3rdPersonCamera.ApplyCameraModifiers", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1088,28 +1088,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RestartDOF;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestartDOF;
     /// <summary>
     /// Function: RestartDOF
     /// </summary>
     public unsafe virtual void RestartDOF()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestartDOF, "BmGame.R3rdPersonCamera.RestartDOF");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestartDOF, "BmGame.R3rdPersonCamera.RestartDOF", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyModifiers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyModifiers;
     /// <summary>
     /// Function: ApplyModifiers
     /// </summary>
     public unsafe virtual void ApplyModifiers(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyModifiers, "BmGame.R3rdPersonCamera.ApplyModifiers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyModifiers, "BmGame.R3rdPersonCamera.ApplyModifiers", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1120,28 +1120,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "BmGame.R3rdPersonCamera.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "BmGame.R3rdPersonCamera.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRotationFromPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotationFromPawn;
     /// <summary>
     /// Function: GetRotationFromPawn
     /// </summary>
     public unsafe virtual void GetRotationFromPawn(out BmSDK.Engine.Camera.FTViewTarget OutVT, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRotationFromPawn, "BmGame.R3rdPersonCamera.GetRotationFromPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRotationFromPawn, "BmGame.R3rdPersonCamera.GetRotationFromPawn", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutVT);
@@ -1152,42 +1152,42 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetGameViewportClient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameViewportClient;
     /// <summary>
     /// Function: GetGameViewportClient
     /// </summary>
     public unsafe virtual BmSDK.Engine.GameViewportClient GetGameViewportClient()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGameViewportClient, "BmGame.R3rdPersonCamera.GetGameViewportClient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGameViewportClient, "BmGame.R3rdPersonCamera.GetGameViewportClient", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.GameViewportClient>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EndJumpCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndJumpCam;
     /// <summary>
     /// Function: EndJumpCam
     /// </summary>
     public unsafe virtual void EndJumpCam()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndJumpCam, "BmGame.R3rdPersonCamera.EndJumpCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndJumpCam, "BmGame.R3rdPersonCamera.EndJumpCam", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartJumpCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartJumpCam;
     /// <summary>
     /// Function: StartJumpCam
     /// </summary>
     public unsafe virtual void StartJumpCam(float Time = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartJumpCam, "BmGame.R3rdPersonCamera.StartJumpCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartJumpCam, "BmGame.R3rdPersonCamera.StartJumpCam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
@@ -1195,14 +1195,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetGlidingCameraSmoothingStrength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlidingCameraSmoothingStrength;
     /// <summary>
     /// Function: GetGlidingCameraSmoothingStrength
     /// </summary>
     public unsafe virtual float GetGlidingCameraSmoothingStrength(BmSDK.FName StateName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlidingCameraSmoothingStrength, "BmGame.R3rdPersonCamera.GetGlidingCameraSmoothingStrength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlidingCameraSmoothingStrength, "BmGame.R3rdPersonCamera.GetGlidingCameraSmoothingStrength", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StateName, paramsPtr + 0);
@@ -1217,56 +1217,56 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LeaveTunnel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LeaveTunnel;
     /// <summary>
     /// Function: LeaveTunnel
     /// </summary>
     public unsafe virtual void LeaveTunnel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LeaveTunnel, "BmGame.R3rdPersonCamera.LeaveTunnel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LeaveTunnel, "BmGame.R3rdPersonCamera.LeaveTunnel", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnterTunnel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnterTunnel;
     /// <summary>
     /// Function: EnterTunnel
     /// </summary>
     public unsafe virtual void EnterTunnel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterTunnel, "BmGame.R3rdPersonCamera.EnterTunnel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnterTunnel, "BmGame.R3rdPersonCamera.EnterTunnel", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessOverLook;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessOverLook;
     /// <summary>
     /// Function: ProcessOverLook
     /// </summary>
     public unsafe virtual void ProcessOverLook()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessOverLook, "BmGame.R3rdPersonCamera.ProcessOverLook");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessOverLook, "BmGame.R3rdPersonCamera.ProcessOverLook", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCombatDistModifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCombatDistModifier;
     /// <summary>
     /// Function: SetCombatDistModifier
     /// </summary>
     public unsafe virtual void SetCombatDistModifier(float NewDistModifier)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCombatDistModifier, "BmGame.R3rdPersonCamera.SetCombatDistModifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCombatDistModifier, "BmGame.R3rdPersonCamera.SetCombatDistModifier", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDistModifier, paramsPtr + 0);
@@ -1274,14 +1274,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCombatFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCombatFOV;
     /// <summary>
     /// Function: SetCombatFOV
     /// </summary>
     public unsafe virtual void SetCombatFOV(float NewFOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCombatFOV, "BmGame.R3rdPersonCamera.SetCombatFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCombatFOV, "BmGame.R3rdPersonCamera.SetCombatFOV", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewFOV, paramsPtr + 0);
@@ -1289,14 +1289,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCombatCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCombatCamera;
     /// <summary>
     /// Function: SetCombatCamera
     /// </summary>
     public unsafe virtual void SetCombatCamera(bool setFlag)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCombatCamera, "BmGame.R3rdPersonCamera.SetCombatCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCombatCamera, "BmGame.R3rdPersonCamera.SetCombatCamera", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(setFlag, paramsPtr + 0);
@@ -1304,14 +1304,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RevertCameraTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RevertCameraTarget;
     /// <summary>
     /// Function: RevertCameraTarget
     /// </summary>
     public unsafe virtual void RevertCameraTarget(float BlendTime = default, bool bResetCam = default, bool BlendBatmanRelativePosition = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RevertCameraTarget, "BmGame.R3rdPersonCamera.RevertCameraTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RevertCameraTarget, "BmGame.R3rdPersonCamera.RevertCameraTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BlendTime, paramsPtr + 0);
@@ -1321,14 +1321,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCameraTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCameraTarget;
     /// <summary>
     /// Function: SetCameraTarget
     /// </summary>
     public unsafe virtual void SetCameraTarget(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCameraTarget, "BmGame.R3rdPersonCamera.SetCameraTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCameraTarget, "BmGame.R3rdPersonCamera.SetCameraTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -1336,14 +1336,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BlendToCameraTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendToCameraTarget;
     /// <summary>
     /// Function: BlendToCameraTarget
     /// </summary>
     public unsafe virtual void BlendToCameraTarget(BmSDK.Engine.Actor Target, float BlendTime, bool bResetCam = default, BmSDK.Rotator ResetRotation = default, bool BlendBatmanRelativePosition = default, bool bDontAffectRotation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlendToCameraTarget, "BmGame.R3rdPersonCamera.BlendToCameraTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlendToCameraTarget, "BmGame.R3rdPersonCamera.BlendToCameraTarget", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -1363,14 +1363,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginWalkCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginWalkCamera;
     /// <summary>
     /// Function: BeginWalkCamera
     /// </summary>
     public unsafe virtual void BeginWalkCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginWalkCamera, "BmGame.R3rdPersonCamera.BeginWalkCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginWalkCamera, "BmGame.R3rdPersonCamera.BeginWalkCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1384,14 +1384,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginBrawlCombatCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginBrawlCombatCamera;
     /// <summary>
     /// Function: BeginBrawlCombatCamera
     /// </summary>
     public unsafe virtual void BeginBrawlCombatCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginBrawlCombatCamera, "BmGame.R3rdPersonCamera.BeginBrawlCombatCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginBrawlCombatCamera, "BmGame.R3rdPersonCamera.BeginBrawlCombatCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1405,14 +1405,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginFree3rdPersonCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginFree3rdPersonCam;
     /// <summary>
     /// Function: BeginFree3rdPersonCam
     /// </summary>
     public unsafe virtual void BeginFree3rdPersonCam()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginFree3rdPersonCam, "BmGame.R3rdPersonCamera.BeginFree3rdPersonCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginFree3rdPersonCam, "BmGame.R3rdPersonCamera.BeginFree3rdPersonCam", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1426,14 +1426,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateFreeCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFreeCam;
     /// <summary>
     /// Function: UpdateFreeCam
     /// </summary>
     public unsafe virtual void UpdateFreeCam(System.Numerics.Vector3 DesiredCameraPosition, BmSDK.Rotator DesiredCameraRotation, float DesiredCameraFOV, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFreeCam, "BmGame.R3rdPersonCamera.UpdateFreeCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFreeCam, "BmGame.R3rdPersonCamera.UpdateFreeCam", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredCameraPosition, paramsPtr + 0);
@@ -1451,14 +1451,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TransitionInterpolate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TransitionInterpolate;
     /// <summary>
     /// Function: TransitionInterpolate
     /// </summary>
     public unsafe virtual void TransitionInterpolate(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransitionInterpolate, "BmGame.R3rdPersonCamera.TransitionInterpolate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TransitionInterpolate, "BmGame.R3rdPersonCamera.TransitionInterpolate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1473,28 +1473,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CameraBlendFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CameraBlendFinished;
     /// <summary>
     /// Function: CameraBlendFinished
     /// </summary>
     public unsafe override void CameraBlendFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CameraBlendFinished, "BmGame.R3rdPersonCamera.CameraBlendFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CameraBlendFinished, "BmGame.R3rdPersonCamera.CameraBlendFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetCamera;
     /// <summary>
     /// Function: ResetCamera
     /// </summary>
     public unsafe virtual void ResetCamera(BmSDK.Rotator ResetRotation = default, bool bResetForBlend = default, bool bResetSmoother = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetCamera, "BmGame.R3rdPersonCamera.ResetCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetCamera, "BmGame.R3rdPersonCamera.ResetCamera", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ResetRotation, paramsPtr + 0);
@@ -1504,28 +1504,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleDrivingCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleDrivingCam;
     /// <summary>
     /// Function: ToggleDrivingCam
     /// </summary>
     public unsafe virtual void ToggleDrivingCam()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleDrivingCam, "BmGame.R3rdPersonCamera.ToggleDrivingCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleDrivingCam, "BmGame.R3rdPersonCamera.ToggleDrivingCam", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateDrivingCamSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDrivingCamSettings;
     /// <summary>
     /// Function: UpdateDrivingCamSettings
     /// </summary>
     public unsafe virtual void UpdateDrivingCamSettings()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDrivingCamSettings, "BmGame.R3rdPersonCamera.UpdateDrivingCamSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDrivingCamSettings, "BmGame.R3rdPersonCamera.UpdateDrivingCamSettings", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1539,14 +1539,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_nativeResetCameraFree3rdPersonCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_nativeResetCameraFree3rdPersonCam;
     /// <summary>
     /// Function: nativeResetCameraFree3rdPersonCam
     /// </summary>
     public unsafe virtual void nativeResetCameraFree3rdPersonCam(BmSDK.Rotator ResetRotation = default, bool bResetForBlend = default, bool bResetSmoother = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_nativeResetCameraFree3rdPersonCam, "BmGame.R3rdPersonCamera.nativeResetCameraFree3rdPersonCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_nativeResetCameraFree3rdPersonCam, "BmGame.R3rdPersonCamera.nativeResetCameraFree3rdPersonCam", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ResetRotation, paramsPtr + 0);
@@ -1563,14 +1563,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_nativeResetCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_nativeResetCamera;
     /// <summary>
     /// Function: nativeResetCamera
     /// </summary>
     public unsafe virtual void nativeResetCamera(BmSDK.Rotator ResetRotation = default, bool bResetForBlend = default, bool bResetSmoother = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_nativeResetCamera, "BmGame.R3rdPersonCamera.nativeResetCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_nativeResetCamera, "BmGame.R3rdPersonCamera.nativeResetCamera", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ResetRotation, paramsPtr + 0);
@@ -1587,14 +1587,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateViewTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateViewTarget;
     /// <summary>
     /// Function: UpdateViewTarget
     /// </summary>
     public unsafe override void UpdateViewTarget(out BmSDK.Engine.Camera.FTViewTarget OutVT, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateViewTarget, "BmGame.R3rdPersonCamera.UpdateViewTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateViewTarget, "BmGame.R3rdPersonCamera.UpdateViewTarget", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutVT);
@@ -1612,14 +1612,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateViewTargetCameraActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateViewTargetCameraActor;
     /// <summary>
     /// Function: UpdateViewTargetCameraActor
     /// </summary>
     public unsafe virtual void UpdateViewTargetCameraActor(out BmSDK.Engine.Camera.FTViewTarget OutVT, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateViewTargetCameraActor, "BmGame.R3rdPersonCamera.UpdateViewTargetCameraActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateViewTargetCameraActor, "BmGame.R3rdPersonCamera.UpdateViewTargetCameraActor", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutVT);
@@ -1630,14 +1630,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCurrentCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCurrentCamera;
     /// <summary>
     /// Function: UpdateCurrentCamera
     /// </summary>
     public unsafe virtual void UpdateCurrentCamera(System.Numerics.Vector3 DesiredCameraPosition, BmSDK.Rotator DesiredCameraRotation, float DesiredCameraFOV, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCurrentCamera, "BmGame.R3rdPersonCamera.UpdateCurrentCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCurrentCamera, "BmGame.R3rdPersonCamera.UpdateCurrentCamera", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredCameraPosition, paramsPtr + 0);
@@ -1648,14 +1648,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DoUpdateCameraNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoUpdateCameraNative;
     /// <summary>
     /// Function: DoUpdateCameraNative
     /// </summary>
     public unsafe virtual void DoUpdateCameraNative(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoUpdateCameraNative, "BmGame.R3rdPersonCamera.DoUpdateCameraNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoUpdateCameraNative, "BmGame.R3rdPersonCamera.DoUpdateCameraNative", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1670,14 +1670,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessViewRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessViewRotation;
     /// <summary>
     /// Function: ProcessViewRotation
     /// </summary>
     public unsafe override void ProcessViewRotation(float DeltaTime, out BmSDK.Rotator out_ViewRotation, out BmSDK.Rotator out_DeltaRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessViewRotation, "BmGame.R3rdPersonCamera.ProcessViewRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessViewRotation, "BmGame.R3rdPersonCamera.ProcessViewRotation", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1698,14 +1698,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCamera;
     /// <summary>
     /// Function: UpdateCamera
     /// </summary>
     public unsafe override void UpdateCamera(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCamera, "BmGame.R3rdPersonCamera.UpdateCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCamera, "BmGame.R3rdPersonCamera.UpdateCamera", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1713,14 +1713,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FollowCameraRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FollowCameraRotation;
     /// <summary>
     /// Function: FollowCameraRotation
     /// </summary>
     public unsafe virtual bool FollowCameraRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FollowCameraRotation, "BmGame.R3rdPersonCamera.FollowCameraRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FollowCameraRotation, "BmGame.R3rdPersonCamera.FollowCameraRotation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1734,14 +1734,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LookAround;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookAround;
     /// <summary>
     /// Function: LookAround
     /// </summary>
     public unsafe virtual void LookAround(float DeltaTime, BmSDK.Rotator LookInput)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookAround, "BmGame.R3rdPersonCamera.LookAround");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookAround, "BmGame.R3rdPersonCamera.LookAround", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1750,14 +1750,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InitializeFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitializeFor;
     /// <summary>
     /// Function: InitializeFor
     /// </summary>
     public unsafe override void InitializeFor(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitializeFor, "BmGame.R3rdPersonCamera.InitializeFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitializeFor, "BmGame.R3rdPersonCamera.InitializeFor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1765,28 +1765,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.R3rdPersonCamera.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.R3rdPersonCamera.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SaveFreeCameraConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveFreeCameraConfig;
     /// <summary>
     /// Function: SaveFreeCameraConfig
     /// </summary>
     public unsafe virtual void SaveFreeCameraConfig(out BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig ConfigToSave)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveFreeCameraConfig, "BmGame.R3rdPersonCamera.SaveFreeCameraConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveFreeCameraConfig, "BmGame.R3rdPersonCamera.SaveFreeCameraConfig", this);
         byte* paramsPtr = stackalloc byte[184];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ConfigToSave);
@@ -1803,14 +1803,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetFreeCameraConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFreeCameraConfig;
     /// <summary>
     /// Function: SetFreeCameraConfig
     /// </summary>
     public unsafe virtual void SetFreeCameraConfig(BmSDK.BmGame.R3rdPersonCamera.FFreeCameraConfig NewConfig)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFreeCameraConfig, "BmGame.R3rdPersonCamera.SetFreeCameraConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFreeCameraConfig, "BmGame.R3rdPersonCamera.SetFreeCameraConfig", this);
         byte* paramsPtr = stackalloc byte[184];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewConfig, paramsPtr + 0);
@@ -1825,28 +1825,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopCameraWander;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCameraWander;
     /// <summary>
     /// Function: StopCameraWander
     /// </summary>
     public unsafe virtual void StopCameraWander()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopCameraWander, "BmGame.R3rdPersonCamera.StopCameraWander");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopCameraWander, "BmGame.R3rdPersonCamera.StopCameraWander", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartCameraWander;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartCameraWander;
     /// <summary>
     /// Function: StartCameraWander
     /// </summary>
     public unsafe virtual void StartCameraWander(BmSDK.BmGame.R3rdPersonCamera.FCameraWanderSettings NewSettings)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCameraWander, "BmGame.R3rdPersonCamera.StartCameraWander");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCameraWander, "BmGame.R3rdPersonCamera.StartCameraWander", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSettings, paramsPtr + 0);
@@ -1854,28 +1854,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveAllCameraEmitters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAllCameraEmitters;
     /// <summary>
     /// Function: RemoveAllCameraEmitters
     /// </summary>
     public unsafe virtual void RemoveAllCameraEmitters()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAllCameraEmitters, "BmGame.R3rdPersonCamera.RemoveAllCameraEmitters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveAllCameraEmitters, "BmGame.R3rdPersonCamera.RemoveAllCameraEmitters", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveCameraEmitter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCameraEmitter;
     /// <summary>
     /// Function: RemoveCameraEmitter
     /// </summary>
     public unsafe virtual void RemoveCameraEmitter(BmSDK.BmGame.RBMCameraEmitter Emitter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCameraEmitter, "BmGame.R3rdPersonCamera.RemoveCameraEmitter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveCameraEmitter, "BmGame.R3rdPersonCamera.RemoveCameraEmitter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Emitter, paramsPtr + 0);
@@ -1883,14 +1883,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddCameraEmitter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCameraEmitter;
     /// <summary>
     /// Function: AddCameraEmitter
     /// </summary>
     public unsafe virtual void AddCameraEmitter(BmSDK.BmGame.RBMCameraEmitter Emitter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCameraEmitter, "BmGame.R3rdPersonCamera.AddCameraEmitter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCameraEmitter, "BmGame.R3rdPersonCamera.AddCameraEmitter", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Emitter, paramsPtr + 0);
@@ -1898,28 +1898,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopLookAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopLookAt;
     /// <summary>
     /// Function: StopLookAt
     /// </summary>
     public unsafe virtual void StopLookAt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopLookAt, "BmGame.R3rdPersonCamera.StopLookAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopLookAt, "BmGame.R3rdPersonCamera.StopLookAt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LookAtCommon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookAtCommon;
     /// <summary>
     /// Function: LookAtCommon
     /// </summary>
     public unsafe virtual bool LookAtCommon(BmSDK.BmGame.RGameInfo.CameraLookAtStrength Strength, bool FollowPitch, bool FollowYaw, float Duration, BmSDK.BmGame.RGameInfo.CameraLookAtSpeed Speed, bool bUseOffset, bool bAllowZoom = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookAtCommon, "BmGame.R3rdPersonCamera.LookAtCommon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookAtCommon, "BmGame.R3rdPersonCamera.LookAtCommon", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Strength, paramsPtr + 0);
@@ -1933,14 +1933,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_LookAtPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookAtPosition;
     /// <summary>
     /// Function: LookAtPosition
     /// </summary>
     public unsafe virtual void LookAtPosition(System.Numerics.Vector3 LookLocation, BmSDK.BmGame.RGameInfo.CameraLookAtStrength Strength = default, bool FollowPitch = default, bool FollowYaw = default, float Duration = default, BmSDK.BmGame.RGameInfo.CameraLookAtSpeed Speed = default, bool bUseOffset = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookAtPosition, "BmGame.R3rdPersonCamera.LookAtPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookAtPosition, "BmGame.R3rdPersonCamera.LookAtPosition", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LookLocation, paramsPtr + 0);
@@ -1954,14 +1954,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LookAtActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookAtActor;
     /// <summary>
     /// Function: LookAtActor
     /// </summary>
     public unsafe virtual void LookAtActor(BmSDK.Engine.Actor LookActor, System.Numerics.Vector3 Offset = default, BmSDK.BmGame.RGameInfo.CameraLookAtStrength Strength = default, bool FollowPitch = default, bool FollowYaw = default, float Duration = default, BmSDK.BmGame.RGameInfo.CameraLookAtSpeed Speed = default, bool bUseOffset = default, bool bAllowZoom = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookAtActor, "BmGame.R3rdPersonCamera.LookAtActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookAtActor, "BmGame.R3rdPersonCamera.LookAtActor", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LookActor, paramsPtr + 0);
@@ -1977,14 +1977,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LookInDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookInDirection;
     /// <summary>
     /// Function: LookInDirection
     /// </summary>
     public unsafe virtual void LookInDirection(BmSDK.Rotator Direction, BmSDK.BmGame.RGameInfo.CameraLookAtStrength Strength = default, bool FollowPitch = default, bool FollowYaw = default, float Duration = default, BmSDK.BmGame.RGameInfo.CameraLookAtSpeed Speed = default, bool bUseOffset = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookInDirection, "BmGame.R3rdPersonCamera.LookInDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookInDirection, "BmGame.R3rdPersonCamera.LookInDirection", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Direction, paramsPtr + 0);
@@ -1998,28 +1998,28 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AllowZoomCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowZoomCamera;
     /// <summary>
     /// Function: AllowZoomCamera
     /// </summary>
     public unsafe virtual bool AllowZoomCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowZoomCamera, "BmGame.R3rdPersonCamera.AllowZoomCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowZoomCamera, "BmGame.R3rdPersonCamera.AllowZoomCamera", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateCameraPostProcesses;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraPostProcesses;
     /// <summary>
     /// Function: UpdateCameraPostProcesses
     /// </summary>
     public unsafe virtual void UpdateCameraPostProcesses(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCameraPostProcesses, "BmGame.R3rdPersonCamera.UpdateCameraPostProcesses");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCameraPostProcesses, "BmGame.R3rdPersonCamera.UpdateCameraPostProcesses", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -2027,14 +2027,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisruptorZoomPPStrength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisruptorZoomPPStrength;
     /// <summary>
     /// Function: SetDisruptorZoomPPStrength
     /// </summary>
     public unsafe virtual void SetDisruptorZoomPPStrength(float Strength)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisruptorZoomPPStrength, "BmGame.R3rdPersonCamera.SetDisruptorZoomPPStrength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisruptorZoomPPStrength, "BmGame.R3rdPersonCamera.SetDisruptorZoomPPStrength", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Strength, paramsPtr + 0);
@@ -2042,14 +2042,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetRCBatmobileEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRCBatmobileEffect;
     /// <summary>
     /// Function: SetRCBatmobileEffect
     /// </summary>
     public unsafe virtual void SetRCBatmobileEffect(float Strength)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRCBatmobileEffect, "BmGame.R3rdPersonCamera.SetRCBatmobileEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRCBatmobileEffect, "BmGame.R3rdPersonCamera.SetRCBatmobileEffect", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Strength, paramsPtr + 0);
@@ -2057,14 +2057,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetBatarangOutOfRangeFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatarangOutOfRangeFX;
     /// <summary>
     /// Function: SetBatarangOutOfRangeFX
     /// </summary>
     public unsafe virtual void SetBatarangOutOfRangeFX(float Strength)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatarangOutOfRangeFX, "BmGame.R3rdPersonCamera.SetBatarangOutOfRangeFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatarangOutOfRangeFX, "BmGame.R3rdPersonCamera.SetBatarangOutOfRangeFX", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Strength, paramsPtr + 0);
@@ -2072,14 +2072,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsWideScreenDisplay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWideScreenDisplay;
     /// <summary>
     /// Function: IsWideScreenDisplay
     /// </summary>
     public unsafe virtual bool IsWideScreenDisplay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWideScreenDisplay, "BmGame.R3rdPersonCamera.IsWideScreenDisplay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWideScreenDisplay, "BmGame.R3rdPersonCamera.IsWideScreenDisplay", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2093,14 +2093,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckGrateCameraPivot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckGrateCameraPivot;
     /// <summary>
     /// Function: CheckGrateCameraPivot
     /// </summary>
     public unsafe virtual bool CheckGrateCameraPivot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckGrateCameraPivot, "BmGame.R3rdPersonCamera.CheckGrateCameraPivot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckGrateCameraPivot, "BmGame.R3rdPersonCamera.CheckGrateCameraPivot", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2114,14 +2114,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLocation;
     /// <summary>
     /// Function: CheckLocation
     /// </summary>
     public unsafe virtual void CheckLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLocation, "BmGame.R3rdPersonCamera.CheckLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLocation, "BmGame.R3rdPersonCamera.CheckLocation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2135,14 +2135,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetSmoother;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetSmoother;
     /// <summary>
     /// Function: ResetSmoother
     /// </summary>
     public unsafe virtual void ResetSmoother()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetSmoother, "BmGame.R3rdPersonCamera.ResetSmoother");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetSmoother, "BmGame.R3rdPersonCamera.ResetSmoother", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2156,14 +2156,14 @@ public partial class R3rdPersonCamera : BmSDK.Engine.Camera, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCameraWander;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraWander;
     /// <summary>
     /// Function: UpdateCameraWander
     /// </summary>
     public unsafe virtual void UpdateCameraWander(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCameraWander, "BmGame.R3rdPersonCamera.UpdateCameraWander");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCameraWander, "BmGame.R3rdPersonCamera.UpdateCameraWander", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

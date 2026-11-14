@@ -36,6 +36,26 @@ public unsafe struct FString : IDisposable
         return Marshal.PtrToStringUni(AllocatorInstance, Num - 1);
     }
 
+    /// <summary>
+    /// Writes a copy of this string, in its own newly allocated game memory, to the given slot.
+    /// </summary>
+    internal readonly void CopyTo(void* slot)
+    {
+        var target = (FString*)slot;
+        if (AllocatorInstance == IntPtr.Zero || Num <= 0)
+        {
+            *target = default;
+            return;
+        }
+
+        var bytes = Num * sizeof(char);
+        var buffer = GameFunctions.AppRealloc(IntPtr.Zero, bytes, 8);
+        Buffer.MemoryCopy(AllocatorInstance.ToPointer(), buffer.ToPointer(), bytes, bytes);
+        target->AllocatorInstance = buffer;
+        target->Num = Num;
+        target->Max = Num;
+    }
+
     public void Dispose()
     {
         if (AllocatorInstance != IntPtr.Zero)

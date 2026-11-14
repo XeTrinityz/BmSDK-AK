@@ -91,28 +91,28 @@ public partial class RBMBehaviour_DebugGrenadeTrial : BmSDK.BmGame.RBMBehaviour,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DebugKickPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugKickPoint;
     /// <summary>
     /// Function: DebugKickPoint
     /// </summary>
     public unsafe virtual void DebugKickPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugKickPoint, "BmGame.RBMBehaviour_DebugGrenadeTrial.DebugKickPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugKickPoint, "BmGame.RBMBehaviour_DebugGrenadeTrial.DebugKickPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnGrenade;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnGrenade;
     /// <summary>
     /// Function: SpawnGrenade
     /// </summary>
     public unsafe virtual void SpawnGrenade()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnGrenade, "BmGame.RBMBehaviour_DebugGrenadeTrial.SpawnGrenade");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnGrenade, "BmGame.RBMBehaviour_DebugGrenadeTrial.SpawnGrenade", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

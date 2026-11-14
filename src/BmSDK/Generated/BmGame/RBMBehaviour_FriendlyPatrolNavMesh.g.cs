@@ -91,28 +91,28 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayRandomAnimation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayRandomAnimation;
     /// <summary>
     /// Function: PlayRandomAnimation
     /// </summary>
     public unsafe virtual void PlayRandomAnimation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayRandomAnimation, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.PlayRandomAnimation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayRandomAnimation, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.PlayRandomAnimation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetLookAtTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLookAtTime;
     /// <summary>
     /// Function: SetLookAtTime
     /// </summary>
     public unsafe virtual void SetLookAtTime(float MinTime = default, float Range = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLookAtTime, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.SetLookAtTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLookAtTime, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.SetLookAtTime", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinTime, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
         return;
     }
 
-    private static BmSDK.Function __fn_SetWaitTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWaitTime;
     /// <summary>
     /// Function: SetWaitTime
     /// </summary>
     public unsafe virtual void SetWaitTime(float MinTime = default, float Range = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWaitTime, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.SetWaitTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWaitTime, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.SetWaitTime", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MinTime, paramsPtr + 0);
@@ -137,224 +137,224 @@ public partial class RBMBehaviour_FriendlyPatrolNavMesh : BmSDK.BmGame.RBMBehavi
         return;
     }
 
-    private static BmSDK.Function __fn_AtGoalFinalise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AtGoalFinalise;
     /// <summary>
     /// Function: AtGoalFinalise
     /// </summary>
     public unsafe virtual void AtGoalFinalise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AtGoalFinalise, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.AtGoalFinalise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AtGoalFinalise, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.AtGoalFinalise", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNextPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextPoint;
     /// <summary>
     /// Function: GetNextPoint
     /// </summary>
     public unsafe virtual void GetNextPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextPoint, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetNextPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNextPoint, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetNextPoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPathFinding;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPathFinding;
     /// <summary>
     /// Function: StartPathFinding
     /// </summary>
     public unsafe virtual void StartPathFinding()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPathFinding, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.StartPathFinding");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPathFinding, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.StartPathFinding", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandlePathNotFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandlePathNotFound;
     /// <summary>
     /// Function: HandlePathNotFound
     /// </summary>
     public unsafe virtual void HandlePathNotFound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlePathNotFound, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.HandlePathNotFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandlePathNotFound, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.HandlePathNotFound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetDirectionOfFocus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDirectionOfFocus;
     /// <summary>
     /// Function: GetDirectionOfFocus
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetDirectionOfFocus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDirectionOfFocus, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetDirectionOfFocus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDirectionOfFocus, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetDirectionOfFocus", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopForBatman;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopForBatman;
     /// <summary>
     /// Function: StopForBatman
     /// </summary>
     public unsafe virtual void StopForBatman()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopForBatman, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.StopForBatman");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopForBatman, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.StopForBatman", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForBatmanClose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForBatmanClose;
     /// <summary>
     /// Function: CheckForBatmanClose
     /// </summary>
     public unsafe virtual bool CheckForBatmanClose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForBatmanClose, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.CheckForBatmanClose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForBatmanClose, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.CheckForBatmanClose", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TalkingToBats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TalkingToBats;
     /// <summary>
     /// Function: TalkingToBats
     /// </summary>
     public unsafe virtual void TalkingToBats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TalkingToBats, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.TalkingToBats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TalkingToBats, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.TalkingToBats", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetSpecialWalk;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSpecialWalk;
     /// <summary>
     /// Function: GetSpecialWalk
     /// </summary>
     public unsafe virtual BmSDK.FName GetSpecialWalk()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSpecialWalk, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetSpecialWalk");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSpecialWalk, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetSpecialWalk", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateNPCLookAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateNPCLookAt;
     /// <summary>
     /// Function: UpdateNPCLookAt
     /// </summary>
     public unsafe virtual void UpdateNPCLookAt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateNPCLookAt, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.UpdateNPCLookAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateNPCLookAt, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.UpdateNPCLookAt", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnEndInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnEndInterrupt;
     /// <summary>
     /// Function: OnEndInterrupt
     /// </summary>
     public unsafe override void OnEndInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.OnEndInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.OnEndInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.OnActivate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FindStartNode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindStartNode;
     /// <summary>
     /// Function: FindStartNode
     /// </summary>
     public unsafe virtual void FindStartNode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindStartNode, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.FindStartNode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindStartNode, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.FindStartNode", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetMoveLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMoveLocation;
     /// <summary>
     /// Function: GetMoveLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMoveLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMoveLocation, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetMoveLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMoveLocation, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetMoveLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNumNodes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumNodes;
     /// <summary>
     /// Function: GetNumNodes
     /// </summary>
     public unsafe virtual int GetNumNodes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumNodes, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetNumNodes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumNodes, "BmGame.RBMBehaviour_FriendlyPatrolNavMesh.GetNumNodes", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

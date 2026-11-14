@@ -78,14 +78,14 @@ public partial class AnimNodeBlendList : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<AnimNodeBlendList>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetActiveChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveChild;
     /// <summary>
     /// Function: SetActiveChild
     /// </summary>
     public unsafe virtual void SetActiveChild(int ChildIndex, float BlendTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActiveChild, "Engine.AnimNodeBlendList.SetActiveChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActiveChild, "Engine.AnimNodeBlendList.SetActiveChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChildIndex, paramsPtr + 0);

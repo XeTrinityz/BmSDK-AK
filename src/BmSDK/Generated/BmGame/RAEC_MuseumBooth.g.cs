@@ -78,14 +78,14 @@ public partial class RAEC_MuseumBooth : BmSDK.BmGame.RAlertEventCoordinatorBase,
         where TComponent : class, Framework.IScriptComponent<RAEC_MuseumBooth>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DismissBoothEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DismissBoothEvent;
     /// <summary>
     /// Function: DismissBoothEvent
     /// </summary>
     public unsafe virtual void DismissBoothEvent(BmSDK.BmGame.RPred_MuseumBoothReactionPointBase BoothPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DismissBoothEvent, "BmGame.RAEC_MuseumBooth.DismissBoothEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DismissBoothEvent, "BmGame.RAEC_MuseumBooth.DismissBoothEvent", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoothPoint, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_MuseumBooth : BmSDK.BmGame.RAlertEventCoordinatorBase,
         return;
     }
 
-    private static BmSDK.Function __fn_PointActivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PointActivated;
     /// <summary>
     /// Function: PointActivated
     /// </summary>
     public unsafe virtual void PointActivated(BmSDK.BmGame.RPred_MuseumBoothReactionPointBase TriggeredPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointActivated, "BmGame.RAEC_MuseumBooth.PointActivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PointActivated, "BmGame.RAEC_MuseumBooth.PointActivated", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TriggeredPoint, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RAEC_MuseumBooth : BmSDK.BmGame.RAlertEventCoordinatorBase,
         return;
     }
 
-    private static BmSDK.Function __fn_FinishTopLevelAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishTopLevelAEC;
     /// <summary>
     /// Function: FinishTopLevelAEC
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_MuseumBooth.FinishTopLevelAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_MuseumBooth.FinishTopLevelAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StolenCon, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RAEC_MuseumBooth : BmSDK.BmGame.RAlertEventCoordinatorBase,
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveGroupChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveGroupChild;
     /// <summary>
     /// Function: OnRemoveGroupChild
     /// </summary>
     public unsafe override void OnRemoveGroupChild(BmSDK.BmGame.RAlertEventCoordinatorBase RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_MuseumBooth.OnRemoveGroupChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_MuseumBooth.OnRemoveGroupChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);

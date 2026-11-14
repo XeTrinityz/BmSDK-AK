@@ -73,14 +73,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<MHackableObjectBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.MHackableObjectBase.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.MHackableObjectBase.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.MHackableObjectBase.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.MHackableObjectBase.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -103,28 +103,28 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.MHackableObjectBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.MHackableObjectBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerCompleteEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerCompleteEvent;
     /// <summary>
     /// Function: TriggerCompleteEvent
     /// </summary>
     public unsafe virtual bool TriggerCompleteEvent(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerCompleteEvent, "BmGame.MHackableObjectBase.TriggerCompleteEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerCompleteEvent, "BmGame.MHackableObjectBase.TriggerCompleteEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
@@ -132,28 +132,28 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CreateHackMaskMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateHackMaskMesh;
     /// <summary>
     /// Function: CreateHackMaskMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.StaticMeshComponent CreateHackMaskMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateHackMaskMesh, "BmGame.MHackableObjectBase.CreateHackMaskMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateHackMaskMesh, "BmGame.MHackableObjectBase.CreateHackMaskMesh", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.StaticMeshComponent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ChangeHighlightType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeHighlightType;
     /// <summary>
     /// Function: ChangeHighlightType
     /// </summary>
     public unsafe virtual void ChangeHighlightType(BmSDK.BmGame.MHackableInterface.EHackableObjectState newHighlightType, bool bForce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeHighlightType, "BmGame.MHackableObjectBase.ChangeHighlightType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeHighlightType, "BmGame.MHackableObjectBase.ChangeHighlightType", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(newHighlightType, paramsPtr + 0);
@@ -162,14 +162,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetSubroutineDescription;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubroutineDescription;
     /// <summary>
     /// Function: GetSubroutineDescription
     /// </summary>
     public unsafe virtual BmSDK.FString GetSubroutineDescription(BmSDK.BmGame.MHackableInterface.FSubroutineDefinition Definition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSubroutineDescription, "BmGame.MHackableObjectBase.GetSubroutineDescription");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSubroutineDescription, "BmGame.MHackableObjectBase.GetSubroutineDescription", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Definition, paramsPtr + 0);
@@ -177,14 +177,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_GetSubroutineName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubroutineName;
     /// <summary>
     /// Function: GetSubroutineName
     /// </summary>
     public unsafe virtual BmSDK.FString GetSubroutineName(BmSDK.BmGame.MHackableInterface.FSubroutineDefinition Definition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSubroutineName, "BmGame.MHackableObjectBase.GetSubroutineName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSubroutineName, "BmGame.MHackableObjectBase.GetSubroutineName", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Definition, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_IsSubroutineTypeDisable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSubroutineTypeDisable;
     /// <summary>
     /// Function: IsSubroutineTypeDisable
     /// </summary>
     public unsafe virtual bool IsSubroutineTypeDisable(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSubroutineTypeDisable, "BmGame.MHackableObjectBase.IsSubroutineTypeDisable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSubroutineTypeDisable, "BmGame.MHackableObjectBase.IsSubroutineTypeDisable", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
@@ -207,31 +207,33 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetSubroutineNameAndDescriptionModifiedByKismet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSubroutineNameAndDescriptionModifiedByKismet;
     /// <summary>
     /// Function: SetSubroutineNameAndDescriptionModifiedByKismet
     /// </summary>
-    public unsafe virtual void SetSubroutineNameAndDescriptionModifiedByKismet(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType, BmSDK.FString NewSubroutineName, BmSDK.FString NewSubroutineDescription)
+    public unsafe virtual void SetSubroutineNameAndDescriptionModifiedByKismet(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType, BmSDK.FStringArg NewSubroutineName, BmSDK.FStringArg NewSubroutineDescription)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSubroutineNameAndDescriptionModifiedByKismet, "BmGame.MHackableObjectBase.SetSubroutineNameAndDescriptionModifiedByKismet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSubroutineNameAndDescriptionModifiedByKismet, "BmGame.MHackableObjectBase.SetSubroutineNameAndDescriptionModifiedByKismet", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSubroutineName, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSubroutineDescription, paramsPtr + 20);
+        NewSubroutineName.WriteTo(paramsPtr + 4);
+        NewSubroutineDescription.WriteTo(paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableSubroutineType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableSubroutineType;
     /// <summary>
     /// Function: DisableSubroutineType
     /// </summary>
     public unsafe virtual void DisableSubroutineType(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType, bool NewIsDisable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableSubroutineType, "BmGame.MHackableObjectBase.DisableSubroutineType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableSubroutineType, "BmGame.MHackableObjectBase.DisableSubroutineType", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
@@ -240,28 +242,28 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsObjectEnable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsObjectEnable;
     /// <summary>
     /// Function: IsObjectEnable
     /// </summary>
     public unsafe virtual bool IsObjectEnable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsObjectEnable, "BmGame.MHackableObjectBase.IsObjectEnable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsObjectEnable, "BmGame.MHackableObjectBase.IsObjectEnable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetInHackableMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInHackableMode;
     /// <summary>
     /// Function: SetInHackableMode
     /// </summary>
     public unsafe virtual void SetInHackableMode(bool On, bool bForce)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInHackableMode, "BmGame.MHackableObjectBase.SetInHackableMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInHackableMode, "BmGame.MHackableObjectBase.SetInHackableMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -270,42 +272,42 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetHackableState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHackableState;
     /// <summary>
     /// Function: GetHackableState
     /// </summary>
     public unsafe virtual BmSDK.BmGame.MHackableInterface.EHackableObjectState GetHackableState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHackableState, "BmGame.MHackableObjectBase.GetHackableState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHackableState, "BmGame.MHackableObjectBase.GetHackableState", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.MHackableInterface.EHackableObjectState>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDisplayTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayTargetLocation;
     /// <summary>
     /// Function: GetDisplayTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDisplayTargetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayTargetLocation, "BmGame.MHackableObjectBase.GetDisplayTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayTargetLocation, "BmGame.MHackableObjectBase.GetDisplayTargetLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSubroutineDefinitionForType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubroutineDefinitionForType;
     /// <summary>
     /// Function: GetSubroutineDefinitionForType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.MHackableInterface.FSubroutineDefinition GetSubroutineDefinitionForType(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSubroutineDefinitionForType, "BmGame.MHackableObjectBase.GetSubroutineDefinitionForType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSubroutineDefinitionForType, "BmGame.MHackableObjectBase.GetSubroutineDefinitionForType", this);
         byte* paramsPtr = stackalloc byte[168];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
@@ -313,28 +315,28 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.MHackableInterface.FSubroutineDefinition>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNumberOfSubroutineTypes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumberOfSubroutineTypes;
     /// <summary>
     /// Function: GetNumberOfSubroutineTypes
     /// </summary>
     public unsafe virtual int GetNumberOfSubroutineTypes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumberOfSubroutineTypes, "BmGame.MHackableObjectBase.GetNumberOfSubroutineTypes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumberOfSubroutineTypes, "BmGame.MHackableObjectBase.GetNumberOfSubroutineTypes", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyOnHack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyOnHack;
     /// <summary>
     /// Function: NotifyOnHack
     /// </summary>
     public unsafe virtual void NotifyOnHack(BmSDK.Engine.Actor HackedObject, BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyOnHack, "BmGame.MHackableObjectBase.NotifyOnHack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyOnHack, "BmGame.MHackableObjectBase.NotifyOnHack", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HackedObject, paramsPtr + 0);
@@ -343,14 +345,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerCancelEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerCancelEvent;
     /// <summary>
     /// Function: TriggerCancelEvent
     /// </summary>
     public unsafe virtual bool TriggerCancelEvent(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerCancelEvent, "BmGame.MHackableObjectBase.TriggerCancelEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerCancelEvent, "BmGame.MHackableObjectBase.TriggerCancelEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
@@ -358,14 +360,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TriggerEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEvent;
     /// <summary>
     /// Function: TriggerEvent
     /// </summary>
     public unsafe virtual bool TriggerEvent(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEvent, "BmGame.MHackableObjectBase.TriggerEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEvent, "BmGame.MHackableObjectBase.TriggerEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
@@ -373,14 +375,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetOutputIndexForEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOutputIndexForEvent;
     /// <summary>
     /// Function: GetOutputIndexForEvent
     /// </summary>
     public unsafe virtual int GetOutputIndexForEvent(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOutputIndexForEvent, "BmGame.MHackableObjectBase.GetOutputIndexForEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOutputIndexForEvent, "BmGame.MHackableObjectBase.GetOutputIndexForEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubroutineType, paramsPtr + 0);
@@ -388,42 +390,42 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_NeedToDisplayNumberOfTargets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedToDisplayNumberOfTargets;
     /// <summary>
     /// Function: NeedToDisplayNumberOfTargets
     /// </summary>
     public unsafe virtual bool NeedToDisplayNumberOfTargets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NeedToDisplayNumberOfTargets, "BmGame.MHackableObjectBase.NeedToDisplayNumberOfTargets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NeedToDisplayNumberOfTargets, "BmGame.MHackableObjectBase.NeedToDisplayNumberOfTargets", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanBeExecuted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeExecuted;
     /// <summary>
     /// Function: CanBeExecuted
     /// </summary>
     public unsafe virtual bool CanBeExecuted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeExecuted, "BmGame.MHackableObjectBase.CanBeExecuted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeExecuted, "BmGame.MHackableObjectBase.CanBeExecuted", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanInterrupt;
     /// <summary>
     /// Function: CanInterrupt
     /// </summary>
     public unsafe virtual bool CanInterrupt(BmSDK.BmGame.MHackableInterface.EHackSubroutineType HackType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanInterrupt, "BmGame.MHackableObjectBase.CanInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanInterrupt, "BmGame.MHackableObjectBase.CanInterrupt", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HackType, paramsPtr + 0);
@@ -431,14 +433,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ExecuteSubroutine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExecuteSubroutine;
     /// <summary>
     /// Function: ExecuteSubroutine
     /// </summary>
     public unsafe virtual bool ExecuteSubroutine(BmSDK.BmGame.MHackableInterface.EHackSubroutineType HackType, BmSDK.Class SubroutineClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExecuteSubroutine, "BmGame.MHackableObjectBase.ExecuteSubroutine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExecuteSubroutine, "BmGame.MHackableObjectBase.ExecuteSubroutine", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HackType, paramsPtr + 0);
@@ -447,14 +449,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SpawnSubroutine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnSubroutine;
     /// <summary>
     /// Function: SpawnSubroutine
     /// </summary>
     public unsafe virtual void SpawnSubroutine(BmSDK.BmGame.MHackableInterface.EHackSubroutineType HackType, BmSDK.Class SubroutineClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnSubroutine, "BmGame.MHackableObjectBase.SpawnSubroutine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnSubroutine, "BmGame.MHackableObjectBase.SpawnSubroutine", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HackType, paramsPtr + 0);
@@ -463,14 +465,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnPreviewSubroutine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPreviewSubroutine;
     /// <summary>
     /// Function: SpawnPreviewSubroutine
     /// </summary>
     public unsafe virtual void SpawnPreviewSubroutine(BmSDK.BmGame.MHackableInterface.EHackSubroutineType HackType, BmSDK.Class SubroutineClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnPreviewSubroutine, "BmGame.MHackableObjectBase.SpawnPreviewSubroutine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnPreviewSubroutine, "BmGame.MHackableObjectBase.SpawnPreviewSubroutine", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HackType, paramsPtr + 0);
@@ -479,14 +481,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAffectedActors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAffectedActors;
     /// <summary>
     /// Function: GetAffectedActors
     /// </summary>
     public unsafe virtual void GetAffectedActors(BmSDK.BmGame.MHackableInterface.EHackSubroutineType HackType, BmSDK.Class SubroutineClass, out BmSDK.TArray<BmSDK.Engine.Actor> AffectedActors)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAffectedActors, "BmGame.MHackableObjectBase.GetAffectedActors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAffectedActors, "BmGame.MHackableObjectBase.GetAffectedActors", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HackType, paramsPtr + 0);
@@ -496,14 +498,14 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetPossibleSubroutineTypes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPossibleSubroutineTypes;
     /// <summary>
     /// Function: GetPossibleSubroutineTypes
     /// </summary>
     public unsafe virtual void GetPossibleSubroutineTypes(out BmSDK.TArray<BmSDK.BmGame.MHackableInterface.EHackSubroutineType> PossibleTypes)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPossibleSubroutineTypes, "BmGame.MHackableObjectBase.GetPossibleSubroutineTypes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPossibleSubroutineTypes, "BmGame.MHackableObjectBase.GetPossibleSubroutineTypes", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -511,56 +513,56 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrentSubroutineType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentSubroutineType;
     /// <summary>
     /// Function: GetCurrentSubroutineType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.MHackableInterface.EHackSubroutineType GetCurrentSubroutineType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentSubroutineType, "BmGame.MHackableObjectBase.GetCurrentSubroutineType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentSubroutineType, "BmGame.MHackableObjectBase.GetCurrentSubroutineType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.MHackableInterface.EHackSubroutineType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPreviewSubroutine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPreviewSubroutine;
     /// <summary>
     /// Function: GetPreviewSubroutine
     /// </summary>
     public unsafe virtual BmSDK.BmGame.MHackSubroutine GetPreviewSubroutine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPreviewSubroutine, "BmGame.MHackableObjectBase.GetPreviewSubroutine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPreviewSubroutine, "BmGame.MHackableObjectBase.GetPreviewSubroutine", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.MHackSubroutine>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentSubroutine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentSubroutine;
     /// <summary>
     /// Function: GetCurrentSubroutine
     /// </summary>
     public unsafe virtual BmSDK.BmGame.MHackSubroutine GetCurrentSubroutine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentSubroutine, "BmGame.MHackableObjectBase.GetCurrentSubroutine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentSubroutine, "BmGame.MHackableObjectBase.GetCurrentSubroutine", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.MHackSubroutine>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetInXrayMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInXrayMode;
     /// <summary>
     /// Function: SetInXrayMode
     /// </summary>
     public unsafe virtual void SetInXrayMode(bool On, bool bForceOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInXrayMode, "BmGame.MHackableObjectBase.SetInXrayMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInXrayMode, "BmGame.MHackableObjectBase.SetInXrayMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -569,56 +571,56 @@ public partial class MHackableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CreateXrayMaskMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateXrayMaskMesh;
     /// <summary>
     /// Function: CreateXrayMaskMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.StaticMeshComponent CreateXrayMaskMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateXrayMaskMesh, "BmGame.MHackableObjectBase.CreateXrayMaskMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateXrayMaskMesh, "BmGame.MHackableObjectBase.CreateXrayMaskMesh", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.StaticMeshComponent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateStateMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStateMesh;
     /// <summary>
     /// Function: UpdateStateMesh
     /// </summary>
     public unsafe virtual void UpdateStateMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateStateMesh, "BmGame.MHackableObjectBase.UpdateStateMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateStateMesh, "BmGame.MHackableObjectBase.UpdateStateMesh", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CreateHighlightMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateHighlightMesh;
     /// <summary>
     /// Function: CreateHighlightMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.StaticMeshComponent CreateHighlightMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateHighlightMesh, "BmGame.MHackableObjectBase.CreateHighlightMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateHighlightMesh, "BmGame.MHackableObjectBase.CreateHighlightMesh", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.StaticMeshComponent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetupHighlightMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupHighlightMaterial;
     /// <summary>
     /// Function: SetupHighlightMaterial
     /// </summary>
     public unsafe virtual void SetupHighlightMaterial()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupHighlightMaterial, "BmGame.MHackableObjectBase.SetupHighlightMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupHighlightMaterial, "BmGame.MHackableObjectBase.SetupHighlightMaterial", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

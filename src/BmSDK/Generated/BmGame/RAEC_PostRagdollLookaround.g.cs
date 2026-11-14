@@ -78,14 +78,14 @@ public partial class RAEC_PostRagdollLookaround : BmSDK.BmGame.RAlertEventCoordi
         where TComponent : class, Framework.IScriptComponent<RAEC_PostRagdollLookaround>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FinishTopLevelAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishTopLevelAEC;
     /// <summary>
     /// Function: FinishTopLevelAEC
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_PostRagdollLookaround.FinishTopLevelAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_PostRagdollLookaround.FinishTopLevelAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StolenCon, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_PostRagdollLookaround : BmSDK.BmGame.RAlertEventCoordi
         return;
     }
 
-    private static BmSDK.Function __fn_OnAssign;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAssign;
     /// <summary>
     /// Function: OnAssign
     /// </summary>
     public unsafe override void OnAssign(BmSDK.BmGame.RBMAIController NewMember)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAssign, "BmGame.RAEC_PostRagdollLookaround.OnAssign");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAssign, "BmGame.RAEC_PostRagdollLookaround.OnAssign", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMember, paramsPtr + 0);

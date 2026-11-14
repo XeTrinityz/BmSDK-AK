@@ -78,14 +78,14 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Interaction>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyPlayerRemoved;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyPlayerRemoved;
     /// <summary>
     /// Function: NotifyPlayerRemoved
     /// </summary>
     public unsafe virtual void NotifyPlayerRemoved(int PlayerIndex, BmSDK.Engine.LocalPlayer RemovedPlayer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPlayerRemoved, "Engine.Interaction.NotifyPlayerRemoved");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyPlayerRemoved, "Engine.Interaction.NotifyPlayerRemoved", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerIndex, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyPlayerAdded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyPlayerAdded;
     /// <summary>
     /// Function: NotifyPlayerAdded
     /// </summary>
     public unsafe virtual void NotifyPlayerAdded(int PlayerIndex, BmSDK.Engine.LocalPlayer AddedPlayer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPlayerAdded, "Engine.Interaction.NotifyPlayerAdded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyPlayerAdded, "Engine.Interaction.NotifyPlayerAdded", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerIndex, paramsPtr + 0);
@@ -110,56 +110,56 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyGameSessionEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyGameSessionEnded;
     /// <summary>
     /// Function: NotifyGameSessionEnded
     /// </summary>
     public unsafe virtual void NotifyGameSessionEnded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGameSessionEnded, "Engine.Interaction.NotifyGameSessionEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyGameSessionEnded, "Engine.Interaction.NotifyGameSessionEnded", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialized;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialized;
     /// <summary>
     /// Function: Initialized
     /// </summary>
     public unsafe virtual void Initialized()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialized, "Engine.Interaction.Initialized");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialized, "Engine.Interaction.Initialized", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnInitialize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnInitialize;
     /// <summary>
     /// Function: OnInitialize
     /// </summary>
     public unsafe virtual void OnInitialize()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnInitialize, "Engine.Interaction.OnInitialize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnInitialize, "Engine.Interaction.OnInitialize", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.Interaction.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.Interaction.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -173,14 +173,14 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostRender;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostRender;
     /// <summary>
     /// Function: PostRender
     /// </summary>
     public unsafe virtual void PostRender(BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostRender, "Engine.Interaction.PostRender");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostRender, "Engine.Interaction.PostRender", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -188,14 +188,14 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "Engine.Interaction.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "Engine.Interaction.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -203,30 +203,31 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnReceivedNativeInputChar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnReceivedNativeInputChar;
     /// <summary>
     /// Function: OnReceivedNativeInputChar
     /// </summary>
-    public unsafe virtual bool OnReceivedNativeInputChar(int ControllerId, BmSDK.FString Unicode)
+    public unsafe virtual bool OnReceivedNativeInputChar(int ControllerId, BmSDK.FStringArg Unicode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedNativeInputChar, "Engine.Interaction.OnReceivedNativeInputChar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnReceivedNativeInputChar, "Engine.Interaction.OnReceivedNativeInputChar", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerId, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Unicode, paramsPtr + 4);
+        Unicode.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_OnReceivedNativeInputAxis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnReceivedNativeInputAxis;
     /// <summary>
     /// Function: OnReceivedNativeInputAxis
     /// </summary>
     public unsafe virtual bool OnReceivedNativeInputAxis(int ControllerId, BmSDK.FName Key, float Delta, float DeltaTime, bool bGamepad = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedNativeInputAxis, "Engine.Interaction.OnReceivedNativeInputAxis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnReceivedNativeInputAxis, "Engine.Interaction.OnReceivedNativeInputAxis", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerId, paramsPtr + 0);
@@ -274,14 +275,14 @@ public partial class Interaction : BmSDK.Engine.UIRoot, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 156); }
     }
 
-    private static BmSDK.Function __fn_OnReceivedNativeInputKey;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnReceivedNativeInputKey;
     /// <summary>
     /// Function: OnReceivedNativeInputKey
     /// </summary>
     public unsafe virtual bool OnReceivedNativeInputKey(int ControllerId, BmSDK.FName Key, BmSDK.GameObject.EInputEvent EventType, float AmountDepressed = default, bool bGamepad = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReceivedNativeInputKey, "Engine.Interaction.OnReceivedNativeInputKey");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnReceivedNativeInputKey, "Engine.Interaction.OnReceivedNativeInputKey", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerId, paramsPtr + 0);

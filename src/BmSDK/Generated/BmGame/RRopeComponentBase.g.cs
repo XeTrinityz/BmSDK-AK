@@ -78,28 +78,28 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         where TComponent : class, Framework.IScriptComponent<RRopeComponentBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CallQueueReattach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CallQueueReattach;
     /// <summary>
     /// Function: CallQueueReattach
     /// </summary>
     public unsafe virtual void CallQueueReattach()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CallQueueReattach, "BmGame.RRopeComponentBase.CallQueueReattach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CallQueueReattach, "BmGame.RRopeComponentBase.CallQueueReattach", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetNoCollisions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNoCollisions;
     /// <summary>
     /// Function: SetNoCollisions
     /// </summary>
     public unsafe virtual void SetNoCollisions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNoCollisions, "BmGame.RRopeComponentBase.SetNoCollisions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNoCollisions, "BmGame.RRopeComponentBase.SetNoCollisions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -113,14 +113,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_CalculateDistanceBetweenRopeEnds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateDistanceBetweenRopeEnds;
     /// <summary>
     /// Function: CalculateDistanceBetweenRopeEnds
     /// </summary>
     public unsafe virtual float CalculateDistanceBetweenRopeEnds()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateDistanceBetweenRopeEnds, "BmGame.RRopeComponentBase.CalculateDistanceBetweenRopeEnds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateDistanceBetweenRopeEnds, "BmGame.RRopeComponentBase.CalculateDistanceBetweenRopeEnds", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -134,14 +134,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetCollidesWithChannel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollidesWithChannel;
     /// <summary>
     /// Function: SetCollidesWithChannel
     /// </summary>
     public unsafe virtual void SetCollidesWithChannel(BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel CollisionChannel, bool Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCollidesWithChannel, "BmGame.RRopeComponentBase.SetCollidesWithChannel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCollidesWithChannel, "BmGame.RRopeComponentBase.SetCollidesWithChannel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CollisionChannel, paramsPtr + 0);
@@ -157,14 +157,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_FinaliseRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinaliseRope;
     /// <summary>
     /// Function: FinaliseRope
     /// </summary>
     public unsafe virtual void FinaliseRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinaliseRope, "BmGame.RRopeComponentBase.FinaliseRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinaliseRope, "BmGame.RRopeComponentBase.FinaliseRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -178,14 +178,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseRope;
     /// <summary>
     /// Function: InitialiseRope
     /// </summary>
     public unsafe virtual void InitialiseRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseRope, "BmGame.RRopeComponentBase.InitialiseRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseRope, "BmGame.RRopeComponentBase.InitialiseRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -199,14 +199,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetIsRopeInitialised;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsRopeInitialised;
     /// <summary>
     /// Function: GetIsRopeInitialised
     /// </summary>
     public unsafe virtual bool GetIsRopeInitialised()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsRopeInitialised, "BmGame.RRopeComponentBase.GetIsRopeInitialised");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIsRopeInitialised, "BmGame.RRopeComponentBase.GetIsRopeInitialised", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -220,14 +220,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMinRopeLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinRopeLength;
     /// <summary>
     /// Function: GetMinRopeLength
     /// </summary>
     public unsafe virtual float GetMinRopeLength()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMinRopeLength, "BmGame.RRopeComponentBase.GetMinRopeLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMinRopeLength, "BmGame.RRopeComponentBase.GetMinRopeLength", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -241,14 +241,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopCurrentRopeLengthChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCurrentRopeLengthChange;
     /// <summary>
     /// Function: StopCurrentRopeLengthChange
     /// </summary>
     public unsafe virtual void StopCurrentRopeLengthChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopCurrentRopeLengthChange, "BmGame.RRopeComponentBase.StopCurrentRopeLengthChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopCurrentRopeLengthChange, "BmGame.RRopeComponentBase.StopCurrentRopeLengthChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -262,14 +262,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetGradualRopeLengthChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGradualRopeLengthChange;
     /// <summary>
     /// Function: SetGradualRopeLengthChange
     /// </summary>
     public unsafe virtual void SetGradualRopeLengthChange(float NewRopeLength, BmSDK.BmGame.RRopeComponentBase.ERopeLengthChangeType LengthChangeType, float ChangeDuration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGradualRopeLengthChange, "BmGame.RRopeComponentBase.SetGradualRopeLengthChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGradualRopeLengthChange, "BmGame.RRopeComponentBase.SetGradualRopeLengthChange", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRopeLength, paramsPtr + 0);
@@ -286,14 +286,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetContinuousAutoLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContinuousAutoLength;
     /// <summary>
     /// Function: SetContinuousAutoLength
     /// </summary>
     public unsafe virtual void SetContinuousAutoLength(BmSDK.BmGame.RRopeComponentBase.ERopeLengthChangeType LengthChangeType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetContinuousAutoLength, "BmGame.RRopeComponentBase.SetContinuousAutoLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetContinuousAutoLength, "BmGame.RRopeComponentBase.SetContinuousAutoLength", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LengthChangeType, paramsPtr + 0);
@@ -308,14 +308,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetAutoLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoLength;
     /// <summary>
     /// Function: SetAutoLength
     /// </summary>
     public unsafe virtual void SetAutoLength(BmSDK.BmGame.RRopeComponentBase.ERopeLengthChangeType LengthChangeType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAutoLength, "BmGame.RRopeComponentBase.SetAutoLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAutoLength, "BmGame.RRopeComponentBase.SetAutoLength", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LengthChangeType, paramsPtr + 0);
@@ -330,14 +330,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetRopeLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRopeLength;
     /// <summary>
     /// Function: SetRopeLength
     /// </summary>
     public unsafe virtual void SetRopeLength(float NewRopeLength, BmSDK.BmGame.RRopeComponentBase.ERopeLengthChangeType LengthChangeType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRopeLength, "BmGame.RRopeComponentBase.SetRopeLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRopeLength, "BmGame.RRopeComponentBase.SetRopeLength", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRopeLength, paramsPtr + 0);
@@ -353,14 +353,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_DetachRopeEnd2;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachRopeEnd2;
     /// <summary>
     /// Function: DetachRopeEnd2
     /// </summary>
     public unsafe virtual void DetachRopeEnd2()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachRopeEnd2, "BmGame.RRopeComponentBase.DetachRopeEnd2");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachRopeEnd2, "BmGame.RRopeComponentBase.DetachRopeEnd2", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -374,14 +374,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_DetachRopeEnd1;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachRopeEnd1;
     /// <summary>
     /// Function: DetachRopeEnd1
     /// </summary>
     public unsafe virtual void DetachRopeEnd1()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachRopeEnd1, "BmGame.RRopeComponentBase.DetachRopeEnd1");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachRopeEnd1, "BmGame.RRopeComponentBase.DetachRopeEnd1", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -395,14 +395,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachRopeEnd2ToSocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachRopeEnd2ToSocket;
     /// <summary>
     /// Function: AttachRopeEnd2ToSocket
     /// </summary>
     public unsafe virtual void AttachRopeEnd2ToSocket(BmSDK.Engine.Actor AttachActor, BmSDK.FName SocketName, BmSDK.Engine.SkeletalMeshComponent AttachComponent = default, float AttachMaxDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachRopeEnd2ToSocket, "BmGame.RRopeComponentBase.AttachRopeEnd2ToSocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachRopeEnd2ToSocket, "BmGame.RRopeComponentBase.AttachRopeEnd2ToSocket", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttachActor, paramsPtr + 0);
@@ -420,14 +420,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachRopeEnd1ToSocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachRopeEnd1ToSocket;
     /// <summary>
     /// Function: AttachRopeEnd1ToSocket
     /// </summary>
     public unsafe virtual void AttachRopeEnd1ToSocket(BmSDK.Engine.Actor AttachActor, BmSDK.FName SocketName, BmSDK.Engine.SkeletalMeshComponent AttachComponent = default, float AttachMaxDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachRopeEnd1ToSocket, "BmGame.RRopeComponentBase.AttachRopeEnd1ToSocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachRopeEnd1ToSocket, "BmGame.RRopeComponentBase.AttachRopeEnd1ToSocket", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttachActor, paramsPtr + 0);
@@ -445,14 +445,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachRopeEnd2WorldSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachRopeEnd2WorldSpace;
     /// <summary>
     /// Function: AttachRopeEnd2WorldSpace
     /// </summary>
     public unsafe virtual void AttachRopeEnd2WorldSpace(BmSDK.Engine.Actor AttachActor, System.Numerics.Vector3 AttachPosWorld, BmSDK.FName AttachBone = default, BmSDK.Engine.PrimitiveComponent AttachComponent = default, float AttachMaxDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachRopeEnd2WorldSpace, "BmGame.RRopeComponentBase.AttachRopeEnd2WorldSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachRopeEnd2WorldSpace, "BmGame.RRopeComponentBase.AttachRopeEnd2WorldSpace", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttachActor, paramsPtr + 0);
@@ -471,14 +471,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachRopeEnd1WorldSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachRopeEnd1WorldSpace;
     /// <summary>
     /// Function: AttachRopeEnd1WorldSpace
     /// </summary>
     public unsafe virtual void AttachRopeEnd1WorldSpace(BmSDK.Engine.Actor AttachActor, System.Numerics.Vector3 AttachPosWorld, BmSDK.FName AttachBone = default, BmSDK.Engine.PrimitiveComponent AttachComponent = default, float AttachMaxDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachRopeEnd1WorldSpace, "BmGame.RRopeComponentBase.AttachRopeEnd1WorldSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachRopeEnd1WorldSpace, "BmGame.RRopeComponentBase.AttachRopeEnd1WorldSpace", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttachActor, paramsPtr + 0);
@@ -497,14 +497,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachRopeEnd2;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachRopeEnd2;
     /// <summary>
     /// Function: AttachRopeEnd2
     /// </summary>
     public unsafe virtual void AttachRopeEnd2(BmSDK.Engine.Actor AttachActor, System.Numerics.Vector3 AttachPos, BmSDK.FName AttachBone = default, BmSDK.Engine.PrimitiveComponent AttachComponent = default, float AttachMaxDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachRopeEnd2, "BmGame.RRopeComponentBase.AttachRopeEnd2");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachRopeEnd2, "BmGame.RRopeComponentBase.AttachRopeEnd2", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttachActor, paramsPtr + 0);
@@ -523,14 +523,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AttachRopeEnd1;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachRopeEnd1;
     /// <summary>
     /// Function: AttachRopeEnd1
     /// </summary>
     public unsafe virtual void AttachRopeEnd1(BmSDK.Engine.Actor AttachActor, System.Numerics.Vector3 AttachPos, BmSDK.FName AttachBone = default, BmSDK.Engine.PrimitiveComponent AttachComponent = default, float AttachMaxDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachRopeEnd1, "BmGame.RRopeComponentBase.AttachRopeEnd1");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachRopeEnd1, "BmGame.RRopeComponentBase.AttachRopeEnd1", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttachActor, paramsPtr + 0);
@@ -549,14 +549,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetWorldSpaceEnd2AttachPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWorldSpaceEnd2AttachPos;
     /// <summary>
     /// Function: GetWorldSpaceEnd2AttachPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWorldSpaceEnd2AttachPos()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWorldSpaceEnd2AttachPos, "BmGame.RRopeComponentBase.GetWorldSpaceEnd2AttachPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWorldSpaceEnd2AttachPos, "BmGame.RRopeComponentBase.GetWorldSpaceEnd2AttachPos", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -570,14 +570,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetWorldSpaceEnd1AttachPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWorldSpaceEnd1AttachPos;
     /// <summary>
     /// Function: GetWorldSpaceEnd1AttachPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWorldSpaceEnd1AttachPos()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWorldSpaceEnd1AttachPos, "BmGame.RRopeComponentBase.GetWorldSpaceEnd1AttachPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWorldSpaceEnd1AttachPos, "BmGame.RRopeComponentBase.GetWorldSpaceEnd1AttachPos", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -591,14 +591,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPositionOfRopePos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPositionOfRopePos;
     /// <summary>
     /// Function: GetPositionOfRopePos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPositionOfRopePos(float RopePos, BmSDK.BmGame.RRopeComponentBase.ERopeEndType MeasurementRopeEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPositionOfRopePos, "BmGame.RRopeComponentBase.GetPositionOfRopePos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPositionOfRopePos, "BmGame.RRopeComponentBase.GetPositionOfRopePos", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RopePos, paramsPtr + 0);
@@ -614,14 +614,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetNearestPointOnRopeToPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnRopeToPoint;
     /// <summary>
     /// Function: GetNearestPointOnRopeToPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnRopeToPoint(System.Numerics.Vector3 WorldSpacePos, BmSDK.BmGame.RRopeComponentBase.ERopeEndType MeasurementRopeEnd, out float RopePos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestPointOnRopeToPoint, "BmGame.RRopeComponentBase.GetNearestPointOnRopeToPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNearestPointOnRopeToPoint, "BmGame.RRopeComponentBase.GetNearestPointOnRopeToPoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WorldSpacePos, paramsPtr + 0);
@@ -640,14 +640,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetNearestPointOnRopeToRay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnRopeToRay;
     /// <summary>
     /// Function: GetNearestPointOnRopeToRay
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnRopeToRay(System.Numerics.Vector3 RayStartPos, System.Numerics.Vector3 RayDirection, BmSDK.BmGame.RRopeComponentBase.ERopeEndType MeasurementRopeEnd, out float RopePos, out float RayPos, float BufferLength = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestPointOnRopeToRay, "BmGame.RRopeComponentBase.GetNearestPointOnRopeToRay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNearestPointOnRopeToRay, "BmGame.RRopeComponentBase.GetNearestPointOnRopeToRay", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RayStartPos, paramsPtr + 0);
@@ -671,14 +671,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_GetNearestPointOnRopeToLineSegment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnRopeToLineSegment;
     /// <summary>
     /// Function: GetNearestPointOnRopeToLineSegment
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnRopeToLineSegment(System.Numerics.Vector3 LineSegmentStartPos, System.Numerics.Vector3 LineSegmentEndPos, BmSDK.BmGame.RRopeComponentBase.ERopeEndType MeasurementRopeEnd, out float RopePos, out float LineSegmentPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestPointOnRopeToLineSegment, "BmGame.RRopeComponentBase.GetNearestPointOnRopeToLineSegment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNearestPointOnRopeToLineSegment, "BmGame.RRopeComponentBase.GetNearestPointOnRopeToLineSegment", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LineSegmentStartPos, paramsPtr + 0);
@@ -701,14 +701,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_UpdateRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRope;
     /// <summary>
     /// Function: UpdateRope
     /// </summary>
     public unsafe virtual void UpdateRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRope, "BmGame.RRopeComponentBase.UpdateRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRope, "BmGame.RRopeComponentBase.UpdateRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -722,14 +722,14 @@ public partial class RRopeComponentBase : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_RequestUpdateRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestUpdateRope;
     /// <summary>
     /// Function: RequestUpdateRope
     /// </summary>
     public unsafe virtual void RequestUpdateRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestUpdateRope, "BmGame.RRopeComponentBase.RequestUpdateRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RequestUpdateRope, "BmGame.RRopeComponentBase.RequestUpdateRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

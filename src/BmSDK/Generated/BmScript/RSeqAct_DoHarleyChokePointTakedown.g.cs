@@ -91,42 +91,42 @@ public partial class RSeqAct_DoHarleyChokePointTakedown : BmSDK.Engine.SeqAct_La
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ActivateHarleyDead;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateHarleyDead;
     /// <summary>
     /// Function: ActivateHarleyDead
     /// </summary>
     public unsafe virtual void ActivateHarleyDead()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateHarleyDead, "BmScript.RSeqAct_DoHarleyChokePointTakedown.ActivateHarleyDead");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateHarleyDead, "BmScript.RSeqAct_DoHarleyChokePointTakedown.ActivateHarleyDead", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnMove;
     /// <summary>
     /// Function: SpawnMove
     /// </summary>
     public unsafe virtual void SpawnMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnMove, "BmScript.RSeqAct_DoHarleyChokePointTakedown.SpawnMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnMove, "BmScript.RSeqAct_DoHarleyChokePointTakedown.SpawnMove", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_DoHarleyChokePointTakedown.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_DoHarleyChokePointTakedown.Update", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

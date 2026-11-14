@@ -73,14 +73,14 @@ public partial class HttpResponseInterface : BmSDK.Engine.HttpBaseInterface, BmS
         where TComponent : class, Framework.IScriptComponent<HttpResponseInterface>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetContentAsString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetContentAsString;
     /// <summary>
     /// Function: GetContentAsString
     /// </summary>
     public unsafe virtual BmSDK.FString GetContentAsString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetContentAsString, "Engine.HttpResponseInterface.GetContentAsString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetContentAsString, "Engine.HttpResponseInterface.GetContentAsString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class HttpResponseInterface : BmSDK.Engine.HttpBaseInterface, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetResponseCode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResponseCode;
     /// <summary>
     /// Function: GetResponseCode
     /// </summary>
     public unsafe virtual int GetResponseCode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetResponseCode, "Engine.HttpResponseInterface.GetResponseCode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetResponseCode, "Engine.HttpResponseInterface.GetResponseCode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

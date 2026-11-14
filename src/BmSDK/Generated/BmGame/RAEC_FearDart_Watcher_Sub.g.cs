@@ -78,14 +78,14 @@ public partial class RAEC_FearDart_Watcher_Sub : BmSDK.BmGame.RAlertEventCoordin
         where TComponent : class, Framework.IScriptComponent<RAEC_FearDart_Watcher_Sub>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetRunLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRunLocation;
     /// <summary>
     /// Function: SetRunLocation
     /// </summary>
     public unsafe virtual void SetRunLocation(System.Numerics.Vector3 NewPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRunLocation, "BmGame.RAEC_FearDart_Watcher_Sub.SetRunLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRunLocation, "BmGame.RAEC_FearDart_Watcher_Sub.SetRunLocation", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPos, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_FearDart_Watcher_Sub : BmSDK.BmGame.RAlertEventCoordin
         return;
     }
 
-    private static BmSDK.Function __fn_OnStartChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStartChild;
     /// <summary>
     /// Function: OnStartChild
     /// </summary>
     public unsafe override void OnStartChild()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_FearDart_Watcher_Sub.OnStartChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStartChild, "BmGame.RAEC_FearDart_Watcher_Sub.OnStartChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

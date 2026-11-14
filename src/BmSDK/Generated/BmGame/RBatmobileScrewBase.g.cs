@@ -78,14 +78,14 @@ public partial class RBatmobileScrewBase : BmSDK.Engine.InterpActor, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RBatmobileScrewBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TickWheelAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickWheelAnim;
     /// <summary>
     /// Function: TickWheelAnim
     /// </summary>
     public unsafe virtual void TickWheelAnim(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickWheelAnim, "BmGame.RBatmobileScrewBase.TickWheelAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickWheelAnim, "BmGame.RBatmobileScrewBase.TickWheelAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RBatmobileScrewBase : BmSDK.Engine.InterpActor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSuccessfullyInteracted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSuccessfullyInteracted;
     /// <summary>
     /// Function: TriggerSuccessfullyInteracted
     /// </summary>
     public unsafe virtual void TriggerSuccessfullyInteracted(BmSDK.Engine.Actor _Instigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSuccessfullyInteracted, "BmGame.RBatmobileScrewBase.TriggerSuccessfullyInteracted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSuccessfullyInteracted, "BmGame.RBatmobileScrewBase.TriggerSuccessfullyInteracted", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_Instigator, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RBatmobileScrewBase : BmSDK.Engine.InterpActor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerFailedToInteract;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFailedToInteract;
     /// <summary>
     /// Function: TriggerFailedToInteract
     /// </summary>
     public unsafe virtual void TriggerFailedToInteract(BmSDK.Engine.Actor _Instigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFailedToInteract, "BmGame.RBatmobileScrewBase.TriggerFailedToInteract");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerFailedToInteract, "BmGame.RBatmobileScrewBase.TriggerFailedToInteract", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_Instigator, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RBatmobileScrewBase : BmSDK.Engine.InterpActor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerUsed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerUsed;
     /// <summary>
     /// Function: TriggerUsed
     /// </summary>
     public unsafe virtual void TriggerUsed(BmSDK.Engine.Actor _Instigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerUsed, "BmGame.RBatmobileScrewBase.TriggerUsed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerUsed, "BmGame.RBatmobileScrewBase.TriggerUsed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_Instigator, paramsPtr + 0);
@@ -138,70 +138,70 @@ public partial class RBatmobileScrewBase : BmSDK.Engine.InterpActor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_StopRingSpin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopRingSpin;
     /// <summary>
     /// Function: StopRingSpin
     /// </summary>
     public unsafe virtual void StopRingSpin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopRingSpin, "BmGame.RBatmobileScrewBase.StopRingSpin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopRingSpin, "BmGame.RBatmobileScrewBase.StopRingSpin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnStopped;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStopped;
     /// <summary>
     /// Function: OnStopped
     /// </summary>
     public unsafe virtual void OnStopped()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStopped, "BmGame.RBatmobileScrewBase.OnStopped");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStopped, "BmGame.RBatmobileScrewBase.OnStopped", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRingSpinSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRingSpinSpeed;
     /// <summary>
     /// Function: GetRingSpinSpeed
     /// </summary>
     public unsafe virtual float GetRingSpinSpeed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRingSpinSpeed, "BmGame.RBatmobileScrewBase.GetRingSpinSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRingSpinSpeed, "BmGame.RBatmobileScrewBase.GetRingSpinSpeed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRingSurfaceSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRingSurfaceSpeed;
     /// <summary>
     /// Function: GetRingSurfaceSpeed
     /// </summary>
     public unsafe virtual float GetRingSurfaceSpeed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRingSurfaceSpeed, "BmGame.RBatmobileScrewBase.GetRingSurfaceSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRingSurfaceSpeed, "BmGame.RBatmobileScrewBase.GetRingSurfaceSpeed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRingSurfaceVelocityAtPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRingSurfaceVelocityAtPos;
     /// <summary>
     /// Function: GetRingSurfaceVelocityAtPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRingSurfaceVelocityAtPos(System.Numerics.Vector3 pos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRingSurfaceVelocityAtPos, "BmGame.RBatmobileScrewBase.GetRingSurfaceVelocityAtPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRingSurfaceVelocityAtPos, "BmGame.RBatmobileScrewBase.GetRingSurfaceVelocityAtPos", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pos, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class RBatmobileScrewBase : BmSDK.Engine.InterpActor, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_RestoreSavedYaw;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreSavedYaw;
     /// <summary>
     /// Function: RestoreSavedYaw
     /// </summary>
     public unsafe virtual void RestoreSavedYaw()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreSavedYaw, "BmGame.RBatmobileScrewBase.RestoreSavedYaw");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreSavedYaw, "BmGame.RBatmobileScrewBase.RestoreSavedYaw", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

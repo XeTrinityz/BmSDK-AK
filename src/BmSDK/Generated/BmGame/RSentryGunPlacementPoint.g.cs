@@ -78,14 +78,14 @@ public partial class RSentryGunPlacementPoint : BmSDK.BmGame.RLootDestinationBas
         where TComponent : class, Framework.IScriptComponent<RSentryGunPlacementPoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsNearAnAssignedSentryGun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNearAnAssignedSentryGun;
     /// <summary>
     /// Function: IsNearAnAssignedSentryGun
     /// </summary>
     public unsafe virtual bool IsNearAnAssignedSentryGun(BmSDK.BmGame.RBMRoomAIState RoomState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsNearAnAssignedSentryGun, "BmGame.RSentryGunPlacementPoint.IsNearAnAssignedSentryGun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsNearAnAssignedSentryGun, "BmGame.RSentryGunPlacementPoint.IsNearAnAssignedSentryGun", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RoomState, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSentryGunPlacementPoint : BmSDK.BmGame.RLootDestinationBas
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TrySpawnGun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrySpawnGun;
     /// <summary>
     /// Function: TrySpawnGun
     /// </summary>
     public unsafe virtual void TrySpawnGun(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnGun, "BmGame.RSentryGunPlacementPoint.TrySpawnGun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrySpawnGun, "BmGame.RSentryGunPlacementPoint.TrySpawnGun", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pawnDroppingOff, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RSentryGunPlacementPoint : BmSDK.BmGame.RLootDestinationBas
         return;
     }
 
-    private static BmSDK.Function __fn_OnDropOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDropOff;
     /// <summary>
     /// Function: OnDropOff
     /// </summary>
     public unsafe override bool OnDropOff(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDropOff, "BmGame.RSentryGunPlacementPoint.OnDropOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDropOff, "BmGame.RSentryGunPlacementPoint.OnDropOff", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pawnDroppingOff, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RSentryGunPlacementPoint : BmSDK.BmGame.RLootDestinationBas
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TryStateChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStateChange;
     /// <summary>
     /// Function: TryStateChange
     /// </summary>
     public unsafe override void TryStateChange(BmSDK.BmGame.RPawnVillain pawnDroppingOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStateChange, "BmGame.RSentryGunPlacementPoint.TryStateChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryStateChange, "BmGame.RSentryGunPlacementPoint.TryStateChange", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pawnDroppingOff, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RSentryGunPlacementPoint : BmSDK.BmGame.RLootDestinationBas
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RSentryGunPlacementPoint.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RSentryGunPlacementPoint.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

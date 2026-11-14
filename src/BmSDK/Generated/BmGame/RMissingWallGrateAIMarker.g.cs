@@ -78,56 +78,56 @@ public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RMissingWallGrateAIMarker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetGlanceScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlanceScore;
     /// <summary>
     /// Function: GetGlanceScore
     /// </summary>
     public unsafe virtual int GetGlanceScore()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlanceScore, "BmGame.RMissingWallGrateAIMarker.GetGlanceScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlanceScore, "BmGame.RMissingWallGrateAIMarker.GetGlanceScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RMissingWallGrateAIMarker.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RMissingWallGrateAIMarker.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EventFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EventFinished;
     /// <summary>
     /// Function: EventFinished
     /// </summary>
     public unsafe virtual void EventFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EventFinished, "BmGame.RMissingWallGrateAIMarker.EventFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EventFinished, "BmGame.RMissingWallGrateAIMarker.EventFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MissingGrateNoticedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MissingGrateNoticedBy;
     /// <summary>
     /// Function: MissingGrateNoticedBy
     /// </summary>
     public unsafe virtual void MissingGrateNoticedBy(BmSDK.BmGame.RBMAIController Spotter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MissingGrateNoticedBy, "BmGame.RMissingWallGrateAIMarker.MissingGrateNoticedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MissingGrateNoticedBy, "BmGame.RMissingWallGrateAIMarker.MissingGrateNoticedBy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spotter, paramsPtr + 0);
@@ -135,14 +135,14 @@ public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_SetAIRoomState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAIRoomState;
     /// <summary>
     /// Function: SetAIRoomState
     /// </summary>
     public unsafe virtual void SetAIRoomState(BmSDK.BmGame.RBMRoomAIState NewRoomState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAIRoomState, "BmGame.RMissingWallGrateAIMarker.SetAIRoomState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAIRoomState, "BmGame.RMissingWallGrateAIMarker.SetAIRoomState", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRoomState, paramsPtr + 0);

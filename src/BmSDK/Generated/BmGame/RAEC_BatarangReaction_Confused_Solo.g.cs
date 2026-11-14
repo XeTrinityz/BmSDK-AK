@@ -78,14 +78,14 @@ public partial class RAEC_BatarangReaction_Confused_Solo : BmSDK.BmGame.RAlertEv
         where TComponent : class, Framework.IScriptComponent<RAEC_BatarangReaction_Confused_Solo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PointIsValidForSearchingTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PointIsValidForSearchingTo;
     /// <summary>
     /// Function: PointIsValidForSearchingTo
     /// </summary>
     public unsafe virtual bool PointIsValidForSearchingTo(System.Numerics.Vector3 SearchMovePoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointIsValidForSearchingTo, "BmGame.RAEC_BatarangReaction_Confused_Solo.PointIsValidForSearchingTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PointIsValidForSearchingTo, "BmGame.RAEC_BatarangReaction_Confused_Solo.PointIsValidForSearchingTo", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SearchMovePoint, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_BatarangReaction_Confused_Solo : BmSDK.BmGame.RAlertEv
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_AdjustWatchPointForSearchMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustWatchPointForSearchMove;
     /// <summary>
     /// Function: AdjustWatchPointForSearchMove
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AdjustWatchPointForSearchMove(System.Numerics.Vector3 CurrentPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustWatchPointForSearchMove, "BmGame.RAEC_BatarangReaction_Confused_Solo.AdjustWatchPointForSearchMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdjustWatchPointForSearchMove, "BmGame.RAEC_BatarangReaction_Confused_Solo.AdjustWatchPointForSearchMove", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentPoint, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RAEC_BatarangReaction_Confused_Solo : BmSDK.BmGame.RAlertEv
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_AdjustWatchPointForFloor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustWatchPointForFloor;
     /// <summary>
     /// Function: AdjustWatchPointForFloor
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AdjustWatchPointForFloor(System.Numerics.Vector3 CurrentPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustWatchPointForFloor, "BmGame.RAEC_BatarangReaction_Confused_Solo.AdjustWatchPointForFloor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdjustWatchPointForFloor, "BmGame.RAEC_BatarangReaction_Confused_Solo.AdjustWatchPointForFloor", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentPoint, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RAEC_BatarangReaction_Confused_Solo : BmSDK.BmGame.RAlertEv
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetWatchPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWatchPoint;
     /// <summary>
     /// Function: SetWatchPoint
     /// </summary>
     public unsafe virtual void SetWatchPoint(System.Numerics.Vector3 NewWatchPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWatchPoint, "BmGame.RAEC_BatarangReaction_Confused_Solo.SetWatchPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWatchPoint, "BmGame.RAEC_BatarangReaction_Confused_Solo.SetWatchPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewWatchPoint, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RAEC_BatarangReaction_Confused_Solo : BmSDK.BmGame.RAlertEv
         return;
     }
 
-    private static BmSDK.Function __fn_StartleForImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartleForImpact;
     /// <summary>
     /// Function: StartleForImpact
     /// </summary>
     public unsafe virtual void StartleForImpact(System.Numerics.Vector3 NewPos, bool bTerrorShootStartle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleForImpact, "BmGame.RAEC_BatarangReaction_Confused_Solo.StartleForImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartleForImpact, "BmGame.RAEC_BatarangReaction_Confused_Solo.StartleForImpact", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPos, paramsPtr + 0);
@@ -154,14 +154,14 @@ public partial class RAEC_BatarangReaction_Confused_Solo : BmSDK.BmGame.RAlertEv
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_BatarangReaction_Confused_Solo.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RAEC_BatarangReaction_Confused_Solo.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);

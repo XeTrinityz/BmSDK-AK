@@ -18,17 +18,17 @@ public partial interface OnlineAccountInterface : BmSDK.Interface
     /// <summary>
     /// Function: DeleteLocalAccount
     /// </summary>
-    public unsafe bool DeleteLocalAccount(BmSDK.FString UserName, BmSDK.FString Password = default);
+    public unsafe bool DeleteLocalAccount(BmSDK.FStringArg UserName, BmSDK.FStringArg Password = default);
 
     /// <summary>
     /// Function: RenameLocalAccount
     /// </summary>
-    public unsafe bool RenameLocalAccount(BmSDK.FString NewUserName, BmSDK.FString OldUserName, BmSDK.FString Password = default);
+    public unsafe bool RenameLocalAccount(BmSDK.FStringArg NewUserName, BmSDK.FStringArg OldUserName, BmSDK.FStringArg Password = default);
 
     /// <summary>
     /// Function: CreateLocalAccount
     /// </summary>
-    public unsafe bool CreateLocalAccount(BmSDK.FString UserName, BmSDK.FString Password = default);
+    public unsafe bool CreateLocalAccount(BmSDK.FStringArg UserName, BmSDK.FStringArg Password = default);
 
     /// <summary>
     /// Function: ClearCreateOnlineAccountCompletedDelegate
@@ -48,5 +48,5 @@ public partial interface OnlineAccountInterface : BmSDK.Interface
     /// <summary>
     /// Function: CreateOnlineAccount
     /// </summary>
-    public unsafe bool CreateOnlineAccount(BmSDK.FString UserName, BmSDK.FString Password, BmSDK.FString EmailAddress, BmSDK.FString ProductKey = default);
+    public unsafe bool CreateOnlineAccount(BmSDK.FStringArg UserName, BmSDK.FStringArg Password, BmSDK.FStringArg EmailAddress, BmSDK.FStringArg ProductKey = default);
 }

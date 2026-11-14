@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_HangOnHelicopter : BmSDK.BmGame.RSpeci
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_HangOnHelicopter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanDoCombat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoCombat;
     /// <summary>
     /// Function: CanDoCombat
     /// </summary>
     public unsafe override bool CanDoCombat(bool CheckForEvade = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoCombat, "BmScript.RSpecialMoveInstance_HangOnHelicopter.CanDoCombat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoCombat, "BmScript.RSpecialMoveInstance_HangOnHelicopter.CanDoCombat", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckForEvade, paramsPtr + 0);
@@ -93,112 +93,112 @@ public partial class RSpecialMoveInstance_HangOnHelicopter : BmSDK.BmGame.RSpeci
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_StopAnimFollowingHeli;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAnimFollowingHeli;
     /// <summary>
     /// Function: StopAnimFollowingHeli
     /// </summary>
     public unsafe virtual void StopAnimFollowingHeli()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAnimFollowingHeli, "BmScript.RSpecialMoveInstance_HangOnHelicopter.StopAnimFollowingHeli");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAnimFollowingHeli, "BmScript.RSpecialMoveInstance_HangOnHelicopter.StopAnimFollowingHeli", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GelSprayOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GelSprayOff;
     /// <summary>
     /// Function: GelSprayOff
     /// </summary>
     public unsafe virtual void GelSprayOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GelSprayOff, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GelSprayOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GelSprayOff, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GelSprayOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GelSprayOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GelSprayOn;
     /// <summary>
     /// Function: GelSprayOn
     /// </summary>
     public unsafe virtual void GelSprayOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GelSprayOn, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GelSprayOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GelSprayOn, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GelSprayOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateGForceAnims;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGForceAnims;
     /// <summary>
     /// Function: UpdateGForceAnims
     /// </summary>
     public unsafe virtual void UpdateGForceAnims()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateGForceAnims, "BmScript.RSpecialMoveInstance_HangOnHelicopter.UpdateGForceAnims");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateGForceAnims, "BmScript.RSpecialMoveInstance_HangOnHelicopter.UpdateGForceAnims", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGlideOutAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGlideOutAnim;
     /// <summary>
     /// Function: GetGlideOutAnim
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RSpecialMoveConfig_HangOnHelicopter.FGlideOutAnim GetGlideOutAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGlideOutAnim, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GetGlideOutAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGlideOutAnim, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GetGlideOutAnim", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmScript.RSpecialMoveConfig_HangOnHelicopter.FGlideOutAnim>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartScan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartScan;
     /// <summary>
     /// Function: StartScan
     /// </summary>
     public unsafe virtual void StartScan()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartScan, "BmScript.RSpecialMoveInstance_HangOnHelicopter.StartScan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartScan, "BmScript.RSpecialMoveInstance_HangOnHelicopter.StartScan", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetHelicopter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelicopter;
     /// <summary>
     /// Function: GetHelicopter
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHelicopterBase GetHelicopter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelicopter, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GetHelicopter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelicopter, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GetHelicopter", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RHelicopterBase>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CancelSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
     /// <summary>
     /// Function: CancelSpecialMove
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_HangOnHelicopter.CancelSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_HangOnHelicopter.CancelSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextSpecialMove, paramsPtr + 0);
@@ -206,42 +206,42 @@ public partial class RSpecialMoveInstance_HangOnHelicopter : BmSDK.BmGame.RSpeci
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_HangOnHelicopter.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_HangOnHelicopter.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGelDummyAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGelDummyAnim;
     /// <summary>
     /// Function: GetGelDummyAnim
     /// </summary>
     public unsafe override BmSDK.FName GetGelDummyAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGelDummyAnim, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GetGelDummyAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGelDummyAnim, "BmScript.RSpecialMoveInstance_HangOnHelicopter.GetGelDummyAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_HangOnHelicopter.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_HangOnHelicopter.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);

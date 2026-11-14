@@ -78,14 +78,14 @@ public partial class RSkelControlTankTrack : BmSDK.Engine.SkelControlBase, BmSDK
         where TComponent : class, Framework.IScriptComponent<RSkelControlTankTrack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetSuspensionPositions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSuspensionPositions;
     /// <summary>
     /// Function: SetSuspensionPositions
     /// </summary>
     public unsafe virtual void SetSuspensionPositions(float Stride, float Front, float Rear)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSuspensionPositions, "BmGame.RSkelControlTankTrack.SetSuspensionPositions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSuspensionPositions, "BmGame.RSkelControlTankTrack.SetSuspensionPositions", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Stride, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RBMBehaviour_ZipKicked : BmSDK.BmGame.RBMBehaviour_BatClawe
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_ZipKicked>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BumpedIntoPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BumpedIntoPlayer;
     /// <summary>
     /// Function: BumpedIntoPlayer
     /// </summary>
     public unsafe override void BumpedIntoPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BumpedIntoPlayer, "BmScript.RBMBehaviour_ZipKicked.BumpedIntoPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BumpedIntoPlayer, "BmScript.RBMBehaviour_ZipKicked.BumpedIntoPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

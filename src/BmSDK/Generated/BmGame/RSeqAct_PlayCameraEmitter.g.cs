@@ -91,14 +91,14 @@ public partial class RSeqAct_PlayCameraEmitter : BmSDK.Engine.SequenceAction, Bm
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayEmitter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayEmitter;
     /// <summary>
     /// Function: PlayEmitter
     /// </summary>
     public unsafe virtual void PlayEmitter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayEmitter, "BmGame.RSeqAct_PlayCameraEmitter.PlayEmitter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayEmitter, "BmGame.RSeqAct_PlayCameraEmitter.PlayEmitter", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

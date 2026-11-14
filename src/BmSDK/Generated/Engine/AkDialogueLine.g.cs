@@ -73,14 +73,14 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<AkDialogueLine>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetDialogueType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDialogueType;
     /// <summary>
     /// Function: SetDialogueType
     /// </summary>
     public unsafe virtual void SetDialogueType(BmSDK.Engine.AkDialogueType dlgType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDialogueType, "Engine.AkDialogueLine.SetDialogueType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDialogueType, "Engine.AkDialogueLine.SetDialogueType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgType, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_IsBarkFallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBarkFallback;
     /// <summary>
     /// Function: IsBarkFallback
     /// </summary>
     public unsafe virtual bool IsBarkFallback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBarkFallback, "Engine.AkDialogueLine.IsBarkFallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBarkFallback, "Engine.AkDialogueLine.IsBarkFallback", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -116,14 +116,14 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLineVoice;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineVoice;
     /// <summary>
     /// Function: GetLineVoice
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueVoice GetLineVoice()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLineVoice, "Engine.AkDialogueLine.GetLineVoice");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLineVoice, "Engine.AkDialogueLine.GetLineVoice", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -137,14 +137,14 @@ public partial class AkDialogueLine : BmSDK.Engine.AkDialogueSpeech, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueVoice>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPlayCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayCount;
     /// <summary>
     /// Function: GetPlayCount
     /// </summary>
     public unsafe virtual float GetPlayCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayCount, "Engine.AkDialogueLine.GetPlayCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayCount, "Engine.AkDialogueLine.GetPlayCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

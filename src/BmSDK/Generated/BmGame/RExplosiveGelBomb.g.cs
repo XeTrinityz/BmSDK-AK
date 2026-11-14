@@ -78,56 +78,56 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
         where TComponent : class, Framework.IScriptComponent<RExplosiveGelBomb>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TimeoutInFlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimeoutInFlight;
     /// <summary>
     /// Function: TimeoutInFlight
     /// </summary>
     public unsafe virtual void TimeoutInFlight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimeoutInFlight, "BmGame.RExplosiveGelBomb.TimeoutInFlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimeoutInFlight, "BmGame.RExplosiveGelBomb.TimeoutInFlight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForRedhood;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForRedhood;
     /// <summary>
     /// Function: CheckForRedhood
     /// </summary>
     public unsafe virtual void CheckForRedhood()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForRedhood, "BmGame.RExplosiveGelBomb.CheckForRedhood");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForRedhood, "BmGame.RExplosiveGelBomb.CheckForRedhood", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpgradeToSuperCombo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradeToSuperCombo;
     /// <summary>
     /// Function: UpgradeToSuperCombo
     /// </summary>
     public unsafe virtual void UpgradeToSuperCombo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradeToSuperCombo, "BmGame.RExplosiveGelBomb.UpgradeToSuperCombo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpgradeToSuperCombo, "BmGame.RExplosiveGelBomb.UpgradeToSuperCombo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetVillainExplosionVisuals;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVillainExplosionVisuals;
     /// <summary>
     /// Function: SetVillainExplosionVisuals
     /// </summary>
     public unsafe virtual void SetVillainExplosionVisuals(BmSDK.BmGame.RPawnVillain Victim, float VictimDistance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVillainExplosionVisuals, "BmGame.RExplosiveGelBomb.SetVillainExplosionVisuals");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVillainExplosionVisuals, "BmGame.RExplosiveGelBomb.SetVillainExplosionVisuals", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldDoDamageToThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldDoDamageToThug;
     /// <summary>
     /// Function: ShouldDoDamageToThug
     /// </summary>
     public unsafe virtual bool ShouldDoDamageToThug(BmSDK.BmGame.RPawnVillain TestThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldDoDamageToThug, "BmGame.RExplosiveGelBomb.ShouldDoDamageToThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldDoDamageToThug, "BmGame.RExplosiveGelBomb.ShouldDoDamageToThug", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestThug, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_KnockDownMainTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KnockDownMainTarget;
     /// <summary>
     /// Function: KnockDownMainTarget
     /// </summary>
     public unsafe virtual void KnockDownMainTarget(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KnockDownMainTarget, "BmGame.RExplosiveGelBomb.KnockDownMainTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KnockDownMainTarget, "BmGame.RExplosiveGelBomb.KnockDownMainTarget", this);
         byte* paramsPtr = stackalloc byte[296];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_DamageVictim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageVictim;
     /// <summary>
     /// Function: DamageVictim
     /// </summary>
     public unsafe virtual void DamageVictim(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageVictim, "BmGame.RExplosiveGelBomb.DamageVictim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageVictim, "BmGame.RExplosiveGelBomb.DamageVictim", this);
         byte* paramsPtr = stackalloc byte[340];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -181,84 +181,84 @@ public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_DoExplodeStartle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoExplodeStartle;
     /// <summary>
     /// Function: DoExplodeStartle
     /// </summary>
     public unsafe virtual void DoExplodeStartle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoExplodeStartle, "BmGame.RExplosiveGelBomb.DoExplodeStartle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoExplodeStartle, "BmGame.RExplosiveGelBomb.DoExplodeStartle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DetonateBomb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetonateBomb;
     /// <summary>
     /// Function: DetonateBomb
     /// </summary>
     public unsafe virtual void DetonateBomb()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetonateBomb, "BmGame.RExplosiveGelBomb.DetonateBomb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetonateBomb, "BmGame.RExplosiveGelBomb.DetonateBomb", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Detonate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Detonate;
     /// <summary>
     /// Function: Detonate
     /// </summary>
     public unsafe virtual void Detonate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detonate, "BmGame.RExplosiveGelBomb.Detonate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Detonate, "BmGame.RExplosiveGelBomb.Detonate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetDetonatePrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDetonatePrompt;
     /// <summary>
     /// Function: GetDetonatePrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetDetonatePrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDetonatePrompt, "BmGame.RExplosiveGelBomb.GetDetonatePrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDetonatePrompt, "BmGame.RExplosiveGelBomb.GetDetonatePrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayDetonateAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayDetonateAnim;
     /// <summary>
     /// Function: PlayDetonateAnim
     /// </summary>
     public unsafe virtual bool PlayDetonateAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDetonateAnim, "BmGame.RExplosiveGelBomb.PlayDetonateAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayDetonateAnim, "BmGame.RExplosiveGelBomb.PlayDetonateAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ReadyToDetonate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadyToDetonate;
     /// <summary>
     /// Function: ReadyToDetonate
     /// </summary>
     public unsafe virtual bool ReadyToDetonate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadyToDetonate, "BmGame.RExplosiveGelBomb.ReadyToDetonate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadyToDetonate, "BmGame.RExplosiveGelBomb.ReadyToDetonate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

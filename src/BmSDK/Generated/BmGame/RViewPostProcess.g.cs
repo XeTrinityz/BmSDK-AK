@@ -78,28 +78,28 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RViewPostProcess>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Deactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deactivate;
     /// <summary>
     /// Function: Deactivate
     /// </summary>
     public unsafe virtual void Deactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RViewPostProcess.Deactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deactivate, "BmGame.RViewPostProcess.Deactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetValForVectorOne;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetValForVectorOne;
     /// <summary>
     /// Function: SetValForVectorOne
     /// </summary>
     public unsafe virtual void SetValForVectorOne(BmSDK.GameObject.FLinearColor val)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetValForVectorOne, "BmGame.RViewPostProcess.SetValForVectorOne");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetValForVectorOne, "BmGame.RViewPostProcess.SetValForVectorOne", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(val, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetValForScalarThree;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetValForScalarThree;
     /// <summary>
     /// Function: SetValForScalarThree
     /// </summary>
     public unsafe virtual void SetValForScalarThree(float val)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetValForScalarThree, "BmGame.RViewPostProcess.SetValForScalarThree");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetValForScalarThree, "BmGame.RViewPostProcess.SetValForScalarThree", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(val, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetValForScalarTwo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetValForScalarTwo;
     /// <summary>
     /// Function: SetValForScalarTwo
     /// </summary>
     public unsafe virtual void SetValForScalarTwo(float val)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetValForScalarTwo, "BmGame.RViewPostProcess.SetValForScalarTwo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetValForScalarTwo, "BmGame.RViewPostProcess.SetValForScalarTwo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(val, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetValForScalarOne;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetValForScalarOne;
     /// <summary>
     /// Function: SetValForScalarOne
     /// </summary>
     public unsafe virtual void SetValForScalarOne(float val)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetValForScalarOne, "BmGame.RViewPostProcess.SetValForScalarOne");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetValForScalarOne, "BmGame.RViewPostProcess.SetValForScalarOne", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(val, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Activate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activate;
     /// <summary>
     /// Function: Activate
     /// </summary>
     public unsafe virtual void Activate(BmSDK.BmGame.RPlayerController Controller)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activate, "BmGame.RViewPostProcess.Activate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activate, "BmGame.RViewPostProcess.Activate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Controller, paramsPtr + 0);
@@ -167,14 +167,14 @@ public partial class RViewPostProcess : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe virtual void Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RViewPostProcess.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RViewPostProcess.Update", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

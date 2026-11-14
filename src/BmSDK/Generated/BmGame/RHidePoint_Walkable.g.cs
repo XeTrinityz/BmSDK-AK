@@ -73,14 +73,14 @@ public partial class RHidePoint_Walkable : BmSDK.BmGame.RHidePoint, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RHidePoint_Walkable>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayerWalkedOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerWalkedOn;
     /// <summary>
     /// Function: PlayerWalkedOn
     /// </summary>
     public unsafe virtual void PlayerWalkedOn(BmSDK.BmGame.RPawnPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerWalkedOn, "BmGame.RHidePoint_Walkable.PlayerWalkedOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerWalkedOn, "BmGame.RHidePoint_Walkable.PlayerWalkedOn", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RHidePoint_Walkable : BmSDK.BmGame.RHidePoint, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_CanAISeePlayerForGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanAISeePlayerForGrapple;
     /// <summary>
     /// Function: CanAISeePlayerForGrapple
     /// </summary>
     public unsafe virtual void CanAISeePlayerForGrapple(BmSDK.Engine.Pawn GrapplePlayer, System.Numerics.Vector3 TargetHidePointLocation, bool bForcingBatmanHidden, out int bVillainHasSeen, out int bAllowPlayerToHide)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanAISeePlayerForGrapple, "BmGame.RHidePoint_Walkable.CanAISeePlayerForGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanAISeePlayerForGrapple, "BmGame.RHidePoint_Walkable.CanAISeePlayerForGrapple", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GrapplePlayer, paramsPtr + 0);

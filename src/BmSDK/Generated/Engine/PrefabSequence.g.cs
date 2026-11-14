@@ -78,14 +78,14 @@ public partial class PrefabSequence : BmSDK.Engine.Sequence, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<PrefabSequence>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetOwnerPrefab;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOwnerPrefab;
     /// <summary>
     /// Function: GetOwnerPrefab
     /// </summary>
     public unsafe virtual BmSDK.Engine.PrefabInstance GetOwnerPrefab()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOwnerPrefab, "Engine.PrefabSequence.GetOwnerPrefab");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOwnerPrefab, "Engine.PrefabSequence.GetOwnerPrefab", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class PrefabSequence : BmSDK.Engine.Sequence, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.PrefabInstance>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetOwnerPrefab;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOwnerPrefab;
     /// <summary>
     /// Function: SetOwnerPrefab
     /// </summary>
     public unsafe virtual void SetOwnerPrefab(BmSDK.Engine.PrefabInstance InOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOwnerPrefab, "Engine.PrefabSequence.SetOwnerPrefab");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOwnerPrefab, "Engine.PrefabSequence.SetOwnerPrefab", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InOwner, paramsPtr + 0);

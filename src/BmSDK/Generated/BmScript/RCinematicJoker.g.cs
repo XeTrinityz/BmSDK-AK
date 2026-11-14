@@ -78,14 +78,14 @@ public partial class RCinematicJoker : BmSDK.BmGame.RCinematicCharacter, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RCinematicJoker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BeginAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginAnimControl;
     /// <summary>
     /// Function: BeginAnimControl
     /// </summary>
     public unsafe override void BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginAnimControl, "BmScript.RCinematicJoker.BeginAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginAnimControl, "BmScript.RCinematicJoker.BeginAnimControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -94,28 +94,28 @@ public partial class RCinematicJoker : BmSDK.BmGame.RCinematicCharacter, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetJokerSickState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetJokerSickState;
     /// <summary>
     /// Function: SetJokerSickState
     /// </summary>
     public unsafe virtual void SetJokerSickState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetJokerSickState, "BmScript.RCinematicJoker.SetJokerSickState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetJokerSickState, "BmScript.RCinematicJoker.SetJokerSickState", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RCinematicJoker.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RCinematicJoker.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

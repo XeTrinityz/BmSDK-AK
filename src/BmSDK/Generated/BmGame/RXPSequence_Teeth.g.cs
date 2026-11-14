@@ -78,14 +78,14 @@ public partial class RXPSequence_Teeth : BmSDK.BmGame.RXPSequence, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RXPSequence_Teeth>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetIsTeeth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsTeeth;
     /// <summary>
     /// Function: GetIsTeeth
     /// </summary>
     public unsafe override bool GetIsTeeth()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsTeeth, "BmGame.RXPSequence_Teeth.GetIsTeeth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIsTeeth, "BmGame.RXPSequence_Teeth.GetIsTeeth", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

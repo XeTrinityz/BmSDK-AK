@@ -78,14 +78,14 @@ public partial class RSeqAct_ActiveCombatantChecker : BmSDK.Engine.SeqAct_Latent
         where TComponent : class, Framework.IScriptComponent<RSeqAct_ActiveCombatantChecker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_ActiveCombatantChecker.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_ActiveCombatantChecker.Update", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSeqAct_ActiveCombatantChecker : BmSDK.Engine.SeqAct_Latent
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsValueInThreshold;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValueInThreshold;
     /// <summary>
     /// Function: IsValueInThreshold
     /// </summary>
     public unsafe virtual bool IsValueInThreshold(int Value, int ThresholdIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValueInThreshold, "BmGame.RSeqAct_ActiveCombatantChecker.IsValueInThreshold");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValueInThreshold, "BmGame.RSeqAct_ActiveCombatantChecker.IsValueInThreshold", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RSeqAct_ActiveCombatantChecker : BmSDK.Engine.SeqAct_Latent
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_ActiveCombatantChecker.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_ActiveCombatantChecker.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

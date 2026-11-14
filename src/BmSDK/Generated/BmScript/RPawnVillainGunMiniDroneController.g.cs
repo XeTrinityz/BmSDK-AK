@@ -78,224 +78,224 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
         where TComponent : class, Framework.IScriptComponent<RPawnVillainGunMiniDroneController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetEquipmentPropSkeletalsIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEquipmentPropSkeletalsIndex;
     /// <summary>
     /// Function: GetEquipmentPropSkeletalsIndex
     /// </summary>
     public unsafe override int GetEquipmentPropSkeletalsIndex()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEquipmentPropSkeletalsIndex, "BmScript.RPawnVillainGunMiniDroneController.GetEquipmentPropSkeletalsIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEquipmentPropSkeletalsIndex, "BmScript.RPawnVillainGunMiniDroneController.GetEquipmentPropSkeletalsIndex", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InformOfDroneExploding;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InformOfDroneExploding;
     /// <summary>
     /// Function: InformOfDroneExploding
     /// </summary>
     public unsafe virtual void InformOfDroneExploding()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InformOfDroneExploding, "BmScript.RPawnVillainGunMiniDroneController.InformOfDroneExploding");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InformOfDroneExploding, "BmScript.RPawnVillainGunMiniDroneController.InformOfDroneExploding", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CodesHaveFinishedDownloading;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CodesHaveFinishedDownloading;
     /// <summary>
     /// Function: CodesHaveFinishedDownloading
     /// </summary>
     public unsafe virtual void CodesHaveFinishedDownloading()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CodesHaveFinishedDownloading, "BmScript.RPawnVillainGunMiniDroneController.CodesHaveFinishedDownloading");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CodesHaveFinishedDownloading, "BmScript.RPawnVillainGunMiniDroneController.CodesHaveFinishedDownloading", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FindMiniDrone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMiniDrone;
     /// <summary>
     /// Function: FindMiniDrone
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHelicopterBase FindMiniDrone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindMiniDrone, "BmScript.RPawnVillainGunMiniDroneController.FindMiniDrone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindMiniDrone, "BmScript.RPawnVillainGunMiniDroneController.FindMiniDrone", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RHelicopterBase>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetControllerToMiniDroneLineStartLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetControllerToMiniDroneLineStartLocation;
     /// <summary>
     /// Function: GetControllerToMiniDroneLineStartLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetControllerToMiniDroneLineStartLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetControllerToMiniDroneLineStartLocation, "BmScript.RPawnVillainGunMiniDroneController.GetControllerToMiniDroneLineStartLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetControllerToMiniDroneLineStartLocation, "BmScript.RPawnVillainGunMiniDroneController.GetControllerToMiniDroneLineStartLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HasDroneRemoteInHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasDroneRemoteInHand;
     /// <summary>
     /// Function: HasDroneRemoteInHand
     /// </summary>
     public unsafe override bool HasDroneRemoteInHand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasDroneRemoteInHand, "BmScript.RPawnVillainGunMiniDroneController.HasDroneRemoteInHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasDroneRemoteInHand, "BmScript.RPawnVillainGunMiniDroneController.HasDroneRemoteInHand", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMyMiniDrone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMyMiniDrone;
     /// <summary>
     /// Function: GetMyMiniDrone
     /// </summary>
     public unsafe override BmSDK.BmGame.RHelicopterBase GetMyMiniDrone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMyMiniDrone, "BmScript.RPawnVillainGunMiniDroneController.GetMyMiniDrone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMyMiniDrone, "BmScript.RPawnVillainGunMiniDroneController.GetMyMiniDrone", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RHelicopterBase>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsMinidroneController;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMinidroneController;
     /// <summary>
     /// Function: IsMinidroneController
     /// </summary>
     public unsafe override bool IsMinidroneController()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMinidroneController, "BmScript.RPawnVillainGunMiniDroneController.IsMinidroneController");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMinidroneController, "BmScript.RPawnVillainGunMiniDroneController.IsMinidroneController", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ThrowRemoteAway;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThrowRemoteAway;
     /// <summary>
     /// Function: ThrowRemoteAway
     /// </summary>
     public unsafe override void ThrowRemoteAway()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowRemoteAway, "BmScript.RPawnVillainGunMiniDroneController.ThrowRemoteAway");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThrowRemoteAway, "BmScript.RPawnVillainGunMiniDroneController.ThrowRemoteAway", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HasRemoteBeenThrownAway;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasRemoteBeenThrownAway;
     /// <summary>
     /// Function: HasRemoteBeenThrownAway
     /// </summary>
     public unsafe override bool HasRemoteBeenThrownAway()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasRemoteBeenThrownAway, "BmScript.RPawnVillainGunMiniDroneController.HasRemoteBeenThrownAway");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasRemoteBeenThrownAway, "BmScript.RPawnVillainGunMiniDroneController.HasRemoteBeenThrownAway", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsMiniDroneDisabledByREC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMiniDroneDisabledByREC;
     /// <summary>
     /// Function: IsMiniDroneDisabledByREC
     /// </summary>
     public unsafe override bool IsMiniDroneDisabledByREC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMiniDroneDisabledByREC, "BmScript.RPawnVillainGunMiniDroneController.IsMiniDroneDisabledByREC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMiniDroneDisabledByREC, "BmScript.RPawnVillainGunMiniDroneController.IsMiniDroneDisabledByREC", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MiniDroneRecoveredFromDisruptor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MiniDroneRecoveredFromDisruptor;
     /// <summary>
     /// Function: MiniDroneRecoveredFromDisruptor
     /// </summary>
     public unsafe virtual void MiniDroneRecoveredFromDisruptor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneRecoveredFromDisruptor, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneRecoveredFromDisruptor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MiniDroneRecoveredFromDisruptor, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneRecoveredFromDisruptor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MiniDroneHitByDisruptor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MiniDroneHitByDisruptor;
     /// <summary>
     /// Function: MiniDroneHitByDisruptor
     /// </summary>
     public unsafe virtual void MiniDroneHitByDisruptor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneHitByDisruptor, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneHitByDisruptor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MiniDroneHitByDisruptor, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneHitByDisruptor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnJammedExplosion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnJammedExplosion;
     /// <summary>
     /// Function: SpawnJammedExplosion
     /// </summary>
     public unsafe virtual void SpawnJammedExplosion()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnJammedExplosion, "BmScript.RPawnVillainGunMiniDroneController.SpawnJammedExplosion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnJammedExplosion, "BmScript.RPawnVillainGunMiniDroneController.SpawnJammedExplosion", this);
         byte* paramsPtr = stackalloc byte[288];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MiniDroneAttackingTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MiniDroneAttackingTarget;
     /// <summary>
     /// Function: MiniDroneAttackingTarget
     /// </summary>
     public unsafe virtual void MiniDroneAttackingTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneAttackingTarget, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneAttackingTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MiniDroneAttackingTarget, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneAttackingTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MiniDroneFoundCasualty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MiniDroneFoundCasualty;
     /// <summary>
     /// Function: MiniDroneFoundCasualty
     /// </summary>
     public unsafe virtual void MiniDroneFoundCasualty(BmSDK.BmGame.RPawnVillain Casualty)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MiniDroneFoundCasualty, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneFoundCasualty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MiniDroneFoundCasualty, "BmScript.RPawnVillainGunMiniDroneController.MiniDroneFoundCasualty", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Casualty, paramsPtr + 0);
@@ -303,14 +303,14 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
         return;
     }
 
-    private static BmSDK.Function __fn_GetDisruptedEquipmentLocationAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisruptedEquipmentLocationAndRotation;
     /// <summary>
     /// Function: GetDisruptedEquipmentLocationAndRotation
     /// </summary>
     public unsafe override void GetDisruptedEquipmentLocationAndRotation(out System.Numerics.Vector3 vLocation, out BmSDK.Rotator rRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisruptedEquipmentLocationAndRotation, "BmScript.RPawnVillainGunMiniDroneController.GetDisruptedEquipmentLocationAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisruptedEquipmentLocationAndRotation, "BmScript.RPawnVillainGunMiniDroneController.GetDisruptedEquipmentLocationAndRotation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out vLocation);
@@ -323,112 +323,112 @@ public partial class RPawnVillainGunMiniDroneController : BmSDK.BmScript.RPawnVi
         return;
     }
 
-    private static BmSDK.Function __fn_DisruptorDisableEquipment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisruptorDisableEquipment;
     /// <summary>
     /// Function: DisruptorDisableEquipment
     /// </summary>
     public unsafe override void DisruptorDisableEquipment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisruptorDisableEquipment, "BmScript.RPawnVillainGunMiniDroneController.DisruptorDisableEquipment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisruptorDisableEquipment, "BmScript.RPawnVillainGunMiniDroneController.DisruptorDisableEquipment", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnequipMiniDroneController;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnequipMiniDroneController;
     /// <summary>
     /// Function: UnequipMiniDroneController
     /// </summary>
     public unsafe override void UnequipMiniDroneController()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnequipMiniDroneController, "BmScript.RPawnVillainGunMiniDroneController.UnequipMiniDroneController");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnequipMiniDroneController, "BmScript.RPawnVillainGunMiniDroneController.UnequipMiniDroneController", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EquipMiniDroneController;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EquipMiniDroneController;
     /// <summary>
     /// Function: EquipMiniDroneController
     /// </summary>
     public unsafe override void EquipMiniDroneController()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EquipMiniDroneController, "BmScript.RPawnVillainGunMiniDroneController.EquipMiniDroneController");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EquipMiniDroneController, "BmScript.RPawnVillainGunMiniDroneController.EquipMiniDroneController", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RestoreDisruptorDisabledEquipment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreDisruptorDisabledEquipment;
     /// <summary>
     /// Function: RestoreDisruptorDisabledEquipment
     /// </summary>
     public unsafe override void RestoreDisruptorDisabledEquipment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreDisruptorDisabledEquipment, "BmScript.RPawnVillainGunMiniDroneController.RestoreDisruptorDisabledEquipment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreDisruptorDisabledEquipment, "BmScript.RPawnVillainGunMiniDroneController.RestoreDisruptorDisabledEquipment", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetDroneControllerAnimset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDroneControllerAnimset;
     /// <summary>
     /// Function: GetDroneControllerAnimset
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetDroneControllerAnimset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDroneControllerAnimset, "BmScript.RPawnVillainGunMiniDroneController.GetDroneControllerAnimset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDroneControllerAnimset, "BmScript.RPawnVillainGunMiniDroneController.GetDroneControllerAnimset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddPawnProps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPawnProps;
     /// <summary>
     /// Function: AddPawnProps
     /// </summary>
     public unsafe override void AddPawnProps()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPawnProps, "BmScript.RPawnVillainGunMiniDroneController.AddPawnProps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPawnProps, "BmScript.RPawnVillainGunMiniDroneController.AddPawnProps", this);
         byte* paramsPtr = stackalloc byte[200];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachProps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachProps;
     /// <summary>
     /// Function: AttachProps
     /// </summary>
     public unsafe override void AttachProps()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachProps, "BmScript.RPawnVillainGunMiniDroneController.AttachProps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachProps, "BmScript.RPawnVillainGunMiniDroneController.AttachProps", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnVillainGunMiniDroneController.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RPawnVillainGunMiniDroneController.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

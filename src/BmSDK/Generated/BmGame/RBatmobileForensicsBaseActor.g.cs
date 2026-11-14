@@ -78,14 +78,14 @@ public partial class RBatmobileForensicsBaseActor : BmSDK.Engine.Actor, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RBatmobileForensicsBaseActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetRevealed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRevealed;
     /// <summary>
     /// Function: SetRevealed
     /// </summary>
     public unsafe virtual void SetRevealed(bool is_revealed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRevealed, "BmGame.RBatmobileForensicsBaseActor.SetRevealed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRevealed, "BmGame.RBatmobileForensicsBaseActor.SetRevealed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_revealed, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RBatmobileForensicsBaseActor : BmSDK.Engine.Actor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetRevealProportion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRevealProportion;
     /// <summary>
     /// Function: SetRevealProportion
     /// </summary>
     public unsafe virtual void SetRevealProportion(float reveal_proportion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRevealProportion, "BmGame.RBatmobileForensicsBaseActor.SetRevealProportion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRevealProportion, "BmGame.RBatmobileForensicsBaseActor.SetRevealProportion", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(reveal_proportion, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RBatmobileForensicsBaseActor : BmSDK.Engine.Actor, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBatmobileForensicsBaseActor.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RBatmobileForensicsBaseActor.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

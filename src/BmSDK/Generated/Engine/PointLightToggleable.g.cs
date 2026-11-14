@@ -78,14 +78,14 @@ public partial class PointLightToggleable : BmSDK.Engine.PointLight, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<PointLightToggleable>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ApplyCheckpointRecord;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCheckpointRecord;
     /// <summary>
     /// Function: ApplyCheckpointRecord
     /// </summary>
     public unsafe virtual void ApplyCheckpointRecord(out BmSDK.Engine.PointLightToggleable.FCheckpointRecord Record)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyCheckpointRecord, "Engine.PointLightToggleable.ApplyCheckpointRecord");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyCheckpointRecord, "Engine.PointLightToggleable.ApplyCheckpointRecord", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Record);
@@ -95,14 +95,14 @@ public partial class PointLightToggleable : BmSDK.Engine.PointLight, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_CreateCheckpointRecord;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateCheckpointRecord;
     /// <summary>
     /// Function: CreateCheckpointRecord
     /// </summary>
     public unsafe virtual void CreateCheckpointRecord(out BmSDK.Engine.PointLightToggleable.FCheckpointRecord Record)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateCheckpointRecord, "Engine.PointLightToggleable.CreateCheckpointRecord");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateCheckpointRecord, "Engine.PointLightToggleable.CreateCheckpointRecord", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Record);
@@ -112,14 +112,14 @@ public partial class PointLightToggleable : BmSDK.Engine.PointLight, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldSaveForCheckpoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldSaveForCheckpoint;
     /// <summary>
     /// Function: ShouldSaveForCheckpoint
     /// </summary>
     public unsafe virtual bool ShouldSaveForCheckpoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldSaveForCheckpoint, "Engine.PointLightToggleable.ShouldSaveForCheckpoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldSaveForCheckpoint, "Engine.PointLightToggleable.ShouldSaveForCheckpoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

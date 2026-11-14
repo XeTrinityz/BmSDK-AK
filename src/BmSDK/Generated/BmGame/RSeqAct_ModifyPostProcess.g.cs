@@ -78,14 +78,14 @@ public partial class RSeqAct_ModifyPostProcess : BmSDK.Engine.SeqAct_Latent, BmS
         where TComponent : class, Framework.IScriptComponent<RSeqAct_ModifyPostProcess>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DeactivatePP;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivatePP;
     /// <summary>
     /// Function: DeactivatePP
     /// </summary>
     public unsafe virtual void DeactivatePP(BmSDK.Engine.LocalPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivatePP, "BmGame.RSeqAct_ModifyPostProcess.DeactivatePP");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivatePP, "BmGame.RSeqAct_ModifyPostProcess.DeactivatePP", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSeqAct_ModifyPostProcess : BmSDK.Engine.SeqAct_Latent, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePP;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePP;
     /// <summary>
     /// Function: UpdatePP
     /// </summary>
     public unsafe virtual void UpdatePP(BmSDK.Engine.LocalPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePP, "BmGame.RSeqAct_ModifyPostProcess.UpdatePP");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePP, "BmGame.RSeqAct_ModifyPostProcess.UpdatePP", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RSeqAct_ModifyPostProcess : BmSDK.Engine.SeqAct_Latent, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ActivatePP;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivatePP;
     /// <summary>
     /// Function: ActivatePP
     /// </summary>
     public unsafe virtual void ActivatePP(BmSDK.Engine.LocalPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivatePP, "BmGame.RSeqAct_ModifyPostProcess.ActivatePP");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivatePP, "BmGame.RSeqAct_ModifyPostProcess.ActivatePP", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);

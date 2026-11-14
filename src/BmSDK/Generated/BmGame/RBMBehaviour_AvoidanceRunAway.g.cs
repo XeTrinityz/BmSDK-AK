@@ -78,14 +78,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_AvoidanceRunAway>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnAwareOfPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnAwareOfPlayer;
     /// <summary>
     /// Function: UnAwareOfPlayer
     /// </summary>
     public unsafe override bool UnAwareOfPlayer(BmSDK.Class dmgType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnAwareOfPlayer, "BmGame.RBMBehaviour_AvoidanceRunAway.UnAwareOfPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnAwareOfPlayer, "BmGame.RBMBehaviour_AvoidanceRunAway.UnAwareOfPlayer", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AwareOfPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AwareOfPlayer;
     /// <summary>
     /// Function: AwareOfPlayer
     /// </summary>
     public unsafe override bool AwareOfPlayer(BmSDK.Engine.Actor Player, BmSDK.Class dmgType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwareOfPlayer, "BmGame.RBMBehaviour_AvoidanceRunAway.AwareOfPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AwareOfPlayer, "BmGame.RBMBehaviour_AvoidanceRunAway.AwareOfPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThoughts;
     /// <summary>
     /// Function: GetThoughts
     /// </summary>
     public unsafe override void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThoughts, "BmGame.RBMBehaviour_AvoidanceRunAway.GetThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThoughts, "BmGame.RBMBehaviour_AvoidanceRunAway.GetThoughts", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -124,28 +124,28 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_AvoidanceRunAway.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_AvoidanceRunAway.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickIsDisabledStateChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickIsDisabledStateChanged;
     /// <summary>
     /// Function: TickIsDisabledStateChanged
     /// </summary>
     public unsafe override void TickIsDisabledStateChanged(bool bTickIsDisabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickIsDisabledStateChanged, "BmGame.RBMBehaviour_AvoidanceRunAway.TickIsDisabledStateChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickIsDisabledStateChanged, "BmGame.RBMBehaviour_AvoidanceRunAway.TickIsDisabledStateChanged", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTickIsDisabled, paramsPtr + 0);
@@ -153,28 +153,28 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_DisableAutomaticTransitions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableAutomaticTransitions;
     /// <summary>
     /// Function: DisableAutomaticTransitions
     /// </summary>
     public unsafe virtual void DisableAutomaticTransitions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableAutomaticTransitions, "BmGame.RBMBehaviour_AvoidanceRunAway.DisableAutomaticTransitions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableAutomaticTransitions, "BmGame.RBMBehaviour_AvoidanceRunAway.DisableAutomaticTransitions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickCower;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickCower;
     /// <summary>
     /// Function: TickCower
     /// </summary>
     public unsafe virtual void TickCower(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickCower, "BmGame.RBMBehaviour_AvoidanceRunAway.TickCower");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickCower, "BmGame.RBMBehaviour_AvoidanceRunAway.TickCower", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -182,56 +182,56 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_GiveUpAndCower;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GiveUpAndCower;
     /// <summary>
     /// Function: GiveUpAndCower
     /// </summary>
     public unsafe virtual void GiveUpAndCower()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GiveUpAndCower, "BmGame.RBMBehaviour_AvoidanceRunAway.GiveUpAndCower");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GiveUpAndCower, "BmGame.RBMBehaviour_AvoidanceRunAway.GiveUpAndCower", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetClosestThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClosestThug;
     /// <summary>
     /// Function: SetClosestThug
     /// </summary>
     public unsafe virtual void SetClosestThug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClosestThug, "BmGame.RBMBehaviour_AvoidanceRunAway.SetClosestThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClosestThug, "BmGame.RBMBehaviour_AvoidanceRunAway.SetClosestThug", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetTimeOffscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeOffscreen;
     /// <summary>
     /// Function: GetTimeOffscreen
     /// </summary>
     public unsafe virtual float GetTimeOffscreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeOffscreen, "BmGame.RBMBehaviour_AvoidanceRunAway.GetTimeOffscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimeOffscreen, "BmGame.RBMBehaviour_AvoidanceRunAway.GetTimeOffscreen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateThreatAndDestroyCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateThreatAndDestroyCheck;
     /// <summary>
     /// Function: UpdateThreatAndDestroyCheck
     /// </summary>
     public unsafe virtual bool UpdateThreatAndDestroyCheck(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateThreatAndDestroyCheck, "BmGame.RBMBehaviour_AvoidanceRunAway.UpdateThreatAndDestroyCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateThreatAndDestroyCheck, "BmGame.RBMBehaviour_AvoidanceRunAway.UpdateThreatAndDestroyCheck", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -239,56 +239,56 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_StopRunningAtPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopRunningAtPlayer;
     /// <summary>
     /// Function: StopRunningAtPlayer
     /// </summary>
     public unsafe virtual void StopRunningAtPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopRunningAtPlayer, "BmGame.RBMBehaviour_AvoidanceRunAway.StopRunningAtPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopRunningAtPlayer, "BmGame.RBMBehaviour_AvoidanceRunAway.StopRunningAtPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnEndInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnEndInterrupt;
     /// <summary>
     /// Function: OnEndInterrupt
     /// </summary>
     public unsafe override void OnEndInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_AvoidanceRunAway.OnEndInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnEndInterrupt, "BmGame.RBMBehaviour_AvoidanceRunAway.OnEndInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginInterrupt;
     /// <summary>
     /// Function: OnBeginInterrupt
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_AvoidanceRunAway.OnBeginInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_AvoidanceRunAway.OnBeginInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_JumpOverVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpOverVehicle;
     /// <summary>
     /// Function: JumpOverVehicle
     /// </summary>
     public unsafe virtual bool JumpOverVehicle(BmSDK.BmGame.RVehicle Vehicle, System.Numerics.Vector3 MoveInDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JumpOverVehicle, "BmGame.RBMBehaviour_AvoidanceRunAway.JumpOverVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JumpOverVehicle, "BmGame.RBMBehaviour_AvoidanceRunAway.JumpOverVehicle", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vehicle, paramsPtr + 0);
@@ -304,14 +304,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_JumpOverProp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpOverProp;
     /// <summary>
     /// Function: JumpOverProp
     /// </summary>
     public unsafe virtual bool JumpOverProp(BmSDK.BmGame.RDestructibleProp Prop, System.Numerics.Vector3 MoveInDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JumpOverProp, "BmGame.RBMBehaviour_AvoidanceRunAway.JumpOverProp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JumpOverProp, "BmGame.RBMBehaviour_AvoidanceRunAway.JumpOverProp", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Prop, paramsPtr + 0);
@@ -327,14 +327,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetRunToPointForLinkFromPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRunToPointForLinkFromPosition;
     /// <summary>
     /// Function: GetRunToPointForLinkFromPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRunToPointForLinkFromPosition(int LinkStartID, int LinkEndID, int RoadLink, System.Numerics.Vector3 CurrentPosition, bool bDebug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRunToPointForLinkFromPosition, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRunToPointForLinkFromPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRunToPointForLinkFromPosition, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRunToPointForLinkFromPosition", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkStartID, paramsPtr + 0);
@@ -353,14 +353,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_ShouldStopRunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldStopRunning;
     /// <summary>
     /// Function: ShouldStopRunning
     /// </summary>
     public unsafe virtual bool ShouldStopRunning(System.Numerics.Vector3 MoveDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStopRunning, "BmGame.RBMBehaviour_AvoidanceRunAway.ShouldStopRunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldStopRunning, "BmGame.RBMBehaviour_AvoidanceRunAway.ShouldStopRunning", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveDirection, paramsPtr + 0);
@@ -375,14 +375,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_TickRunAway;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickRunAway;
     /// <summary>
     /// Function: TickRunAway
     /// </summary>
     public unsafe virtual void TickRunAway(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickRunAway, "BmGame.RBMBehaviour_AvoidanceRunAway.TickRunAway");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickRunAway, "BmGame.RBMBehaviour_AvoidanceRunAway.TickRunAway", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -397,14 +397,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_GetRunAwayForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRunAwayForce;
     /// <summary>
     /// Function: GetRunAwayForce
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRunAwayForce(float DeltaTime, bool bDebug = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRunAwayForce, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRunAwayForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRunAwayForce, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRunAwayForce", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -420,14 +420,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetRoadDirectionForceForActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadDirectionForceForActor;
     /// <summary>
     /// Function: GetRoadDirectionForceForActor
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRoadDirectionForceForActor(int AvoidIdx, bool bDebug = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRoadDirectionForceForActor, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRoadDirectionForceForActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRoadDirectionForceForActor, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRoadDirectionForceForActor", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AvoidIdx, paramsPtr + 0);
@@ -443,14 +443,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsValidAnchorVert;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidAnchorVert;
     /// <summary>
     /// Function: IsValidAnchorVert
     /// </summary>
     public unsafe virtual bool IsValidAnchorVert(int VertID, bool bAllowNonFleeLinksFallback = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidAnchorVert, "BmGame.RBMBehaviour_AvoidanceRunAway.IsValidAnchorVert");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidAnchorVert, "BmGame.RBMBehaviour_AvoidanceRunAway.IsValidAnchorVert", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VertID, paramsPtr + 0);
@@ -466,14 +466,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetRoadOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadOffset;
     /// <summary>
     /// Function: GetRoadOffset
     /// </summary>
     public unsafe virtual float GetRoadOffset(int CurrPoint, int NextPoint, int Link, bool bLeft)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRoadOffset, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRoadOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRoadOffset, "BmGame.RBMBehaviour_AvoidanceRunAway.GetRoadOffset", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrPoint, paramsPtr + 0);
@@ -491,14 +491,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetAllLinksFromPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllLinksFromPoint;
     /// <summary>
     /// Function: GetAllLinksFromPoint
     /// </summary>
     public unsafe virtual void GetAllLinksFromPoint(int PointId, out BmSDK.TArray<int> Links, bool bAllowNonFleeLinksFallback)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllLinksFromPoint, "BmGame.RBMBehaviour_AvoidanceRunAway.GetAllLinksFromPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllLinksFromPoint, "BmGame.RBMBehaviour_AvoidanceRunAway.GetAllLinksFromPoint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PointId, paramsPtr + 0);
@@ -515,14 +515,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_GetForceForActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForceForActor;
     /// <summary>
     /// Function: GetForceForActor
     /// </summary>
     public unsafe virtual bool GetForceForActor(int Idx, out System.Numerics.Vector3 TotalForce, out int TotalInfluencers)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForceForActor, "BmGame.RBMBehaviour_AvoidanceRunAway.GetForceForActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetForceForActor, "BmGame.RBMBehaviour_AvoidanceRunAway.GetForceForActor", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Idx, paramsPtr + 0);
@@ -543,14 +543,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_OverrideGetupStances;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideGetupStances;
     /// <summary>
     /// Function: OverrideGetupStances
     /// </summary>
     public unsafe override bool OverrideGetupStances(out BmSDK.FName MovementStance, out BmSDK.FName WeaponStance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideGetupStances, "BmGame.RBMBehaviour_AvoidanceRunAway.OverrideGetupStances");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideGetupStances, "BmGame.RBMBehaviour_AvoidanceRunAway.OverrideGetupStances", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out MovementStance);
@@ -563,42 +563,42 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_IsVillainInPositionToPlayFleeBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsVillainInPositionToPlayFleeBark;
     /// <summary>
     /// Function: IsVillainInPositionToPlayFleeBark
     /// </summary>
     public unsafe virtual bool IsVillainInPositionToPlayFleeBark()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsVillainInPositionToPlayFleeBark, "BmGame.RBMBehaviour_AvoidanceRunAway.IsVillainInPositionToPlayFleeBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsVillainInPositionToPlayFleeBark, "BmGame.RBMBehaviour_AvoidanceRunAway.IsVillainInPositionToPlayFleeBark", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayFleeReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFleeReaction;
     /// <summary>
     /// Function: PlayFleeReaction
     /// </summary>
     public unsafe virtual void PlayFleeReaction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFleeReaction, "BmGame.RBMBehaviour_AvoidanceRunAway.PlayFleeReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayFleeReaction, "BmGame.RBMBehaviour_AvoidanceRunAway.PlayFleeReaction", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddUnpathableLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddUnpathableLink;
     /// <summary>
     /// Function: AddUnpathableLink
     /// </summary>
     public unsafe virtual void AddUnpathableLink(int StartVertID, int EndVertID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddUnpathableLink, "BmGame.RBMBehaviour_AvoidanceRunAway.AddUnpathableLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddUnpathableLink, "BmGame.RBMBehaviour_AvoidanceRunAway.AddUnpathableLink", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartVertID, paramsPtr + 0);
@@ -614,14 +614,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_NativePathNotFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NativePathNotFound;
     /// <summary>
     /// Function: NativePathNotFound
     /// </summary>
     public unsafe virtual void NativePathNotFound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativePathNotFound, "BmGame.RBMBehaviour_AvoidanceRunAway.NativePathNotFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NativePathNotFound, "BmGame.RBMBehaviour_AvoidanceRunAway.NativePathNotFound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -635,14 +635,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_PathNotFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PathNotFound;
     /// <summary>
     /// Function: PathNotFound
     /// </summary>
     public unsafe virtual void PathNotFound(BmSDK.BmGame.RNavigationHandle Handle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PathNotFound, "BmGame.RBMBehaviour_AvoidanceRunAway.PathNotFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PathNotFound, "BmGame.RBMBehaviour_AvoidanceRunAway.PathNotFound", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Handle, paramsPtr + 0);
@@ -650,14 +650,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_PathFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PathFound;
     /// <summary>
     /// Function: PathFound
     /// </summary>
     public unsafe virtual void PathFound(BmSDK.BmGame.RNavigationHandle Handle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PathFound, "BmGame.RBMBehaviour_AvoidanceRunAway.PathFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PathFound, "BmGame.RBMBehaviour_AvoidanceRunAway.PathFound", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Handle, paramsPtr + 0);
@@ -665,14 +665,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_StartSearchingPathFind;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSearchingPathFind;
     /// <summary>
     /// Function: StartSearchingPathFind
     /// </summary>
     public unsafe virtual void StartSearchingPathFind(System.Numerics.Vector3 RoadPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSearchingPathFind, "BmGame.RBMBehaviour_AvoidanceRunAway.StartSearchingPathFind");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSearchingPathFind, "BmGame.RBMBehaviour_AvoidanceRunAway.StartSearchingPathFind", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RoadPos, paramsPtr + 0);
@@ -680,14 +680,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_AdvanceLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceLinks;
     /// <summary>
     /// Function: AdvanceLinks
     /// </summary>
     public unsafe virtual void AdvanceLinks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdvanceLinks, "BmGame.RBMBehaviour_AvoidanceRunAway.AdvanceLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdvanceLinks, "BmGame.RBMBehaviour_AvoidanceRunAway.AdvanceLinks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -701,14 +701,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_SetCurrentLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentLink;
     /// <summary>
     /// Function: SetCurrentLink
     /// </summary>
     public unsafe virtual void SetCurrentLink(BmSDK.BmGame.RBMBehaviour_AvoidanceRunAway.FStoredLink NewLink)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentLink, "BmGame.RBMBehaviour_AvoidanceRunAway.SetCurrentLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCurrentLink, "BmGame.RBMBehaviour_AvoidanceRunAway.SetCurrentLink", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLink, paramsPtr + 0);
@@ -723,14 +723,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_GetAvoidLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvoidLocation;
     /// <summary>
     /// Function: GetAvoidLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAvoidLocation(int AvoidIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAvoidLocation, "BmGame.RBMBehaviour_AvoidanceRunAway.GetAvoidLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAvoidLocation, "BmGame.RBMBehaviour_AvoidanceRunAway.GetAvoidLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AvoidIdx, paramsPtr + 0);
@@ -745,14 +745,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_NativeInit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeInit;
     /// <summary>
     /// Function: NativeInit
     /// </summary>
     public unsafe virtual void NativeInit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativeInit, "BmGame.RBMBehaviour_AvoidanceRunAway.NativeInit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NativeInit, "BmGame.RBMBehaviour_AvoidanceRunAway.NativeInit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -766,14 +766,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_HasValidStoredLink;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasValidStoredLink;
     /// <summary>
     /// Function: HasValidStoredLink
     /// </summary>
     public unsafe virtual bool HasValidStoredLink(int TestLinkID = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasValidStoredLink, "BmGame.RBMBehaviour_AvoidanceRunAway.HasValidStoredLink");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasValidStoredLink, "BmGame.RBMBehaviour_AvoidanceRunAway.HasValidStoredLink", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLinkID, paramsPtr + 0);
@@ -788,14 +788,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ClearStoredLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearStoredLinks;
     /// <summary>
     /// Function: ClearStoredLinks
     /// </summary>
     public unsafe virtual void ClearStoredLinks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearStoredLinks, "BmGame.RBMBehaviour_AvoidanceRunAway.ClearStoredLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearStoredLinks, "BmGame.RBMBehaviour_AvoidanceRunAway.ClearStoredLinks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -809,14 +809,14 @@ public partial class RBMBehaviour_AvoidanceRunAway : BmSDK.BmGame.RBMBehaviour_G
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_AvoidanceRunAway.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMBehaviour_AvoidanceRunAway.OnActivate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

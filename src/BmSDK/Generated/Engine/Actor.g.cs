@@ -73,14 +73,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Actor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsStaticForFloorCorrection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
     /// Function: IsStaticForFloorCorrection
     /// </summary>
     public unsafe virtual bool IsStaticForFloorCorrection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStaticForFloorCorrection, "Engine.Actor.IsStaticForFloorCorrection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStaticForFloorCorrection, "Engine.Actor.IsStaticForFloorCorrection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OverrideHighResTextureStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideHighResTextureStreaming;
     /// <summary>
     /// Function: OverrideHighResTextureStreaming
     /// </summary>
     public unsafe virtual void OverrideHighResTextureStreaming(float SecondsToOverride)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideHighResTextureStreaming, "Engine.Actor.OverrideHighResTextureStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideHighResTextureStreaming, "Engine.Actor.OverrideHighResTextureStreaming", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SecondsToOverride, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetTimeSince;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSince;
     /// <summary>
     /// Function: GetTimeSince
     /// </summary>
     public unsafe virtual float GetTimeSince(double StartTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeSince, "Engine.Actor.GetTimeSince");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimeSince, "Engine.Actor.GetTimeSince", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartTime, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetTimerStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimerStart;
     /// <summary>
     /// Function: GetTimerStart
     /// </summary>
     public unsafe virtual double GetTimerStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimerStart, "Engine.Actor.GetTimerStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimerStart, "Engine.Actor.GetTimerStart", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -159,14 +159,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<double>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetBatmanCanClimb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmanCanClimb;
     /// <summary>
     /// Function: SetBatmanCanClimb
     /// </summary>
     public unsafe virtual void SetBatmanCanClimb(bool bCanClimb)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatmanCanClimb, "Engine.Actor.SetBatmanCanClimb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatmanCanClimb, "Engine.Actor.SetBatmanCanClimb", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCanClimb, paramsPtr + 0);
@@ -205,7 +205,7 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     /// <summary>
     /// Function: LogThoughtInternal
     /// </summary>
-    public unsafe static void LogThoughtInternal(BmSDK.Engine.Actor Actor, BmSDK.FName SubGroup, int Flags, BmSDK.FString Text, BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> DetailThoughts = default)
+    public unsafe static void LogThoughtInternal(BmSDK.Engine.Actor Actor, BmSDK.FName SubGroup, int Flags, BmSDK.FStringArg Text, BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> DetailThoughts = default)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogThoughtInternal, "Engine.Actor.LogThoughtInternal");
         byte* paramsPtr = stackalloc byte[68];
@@ -213,7 +213,7 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Actor, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubGroup, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Flags, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 20);
+        Text.WriteTo(paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DetailThoughts, paramsPtr + 36);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -223,17 +223,18 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_GetThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThoughts;
     /// <summary>
     /// Function: GetThoughts
     /// </summary>
     public unsafe virtual void GetThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, BmSDK.FName SubGroup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThoughts, "Engine.Actor.GetThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThoughts, "Engine.Actor.GetThoughts", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubGroup, paramsPtr + 16);
@@ -242,14 +243,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetActorSpriteComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorSpriteComponent;
     /// <summary>
     /// Function: GetActorSpriteComponent
     /// </summary>
     public unsafe virtual BmSDK.Engine.SpriteComponent GetActorSpriteComponent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorSpriteComponent, "Engine.Actor.GetActorSpriteComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorSpriteComponent, "Engine.Actor.GetActorSpriteComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -263,14 +264,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.SpriteComponent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetActorMetrics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorMetrics;
     /// <summary>
     /// Function: GetActorMetrics
     /// </summary>
     public unsafe virtual int GetActorMetrics(BmSDK.Engine.Actor.EActorMetricsType MetricsType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorMetrics, "Engine.Actor.GetActorMetrics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorMetrics, "Engine.Actor.GetActorMetrics", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MetricsType, paramsPtr + 0);
@@ -285,28 +286,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsMobileTouchEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMobileTouchEnabled;
     /// <summary>
     /// Function: IsMobileTouchEnabled
     /// </summary>
     public unsafe virtual bool IsMobileTouchEnabled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMobileTouchEnabled, "Engine.Actor.IsMobileTouchEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMobileTouchEnabled, "Engine.Actor.IsMobileTouchEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ParticleCollisionEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ParticleCollisionEvent;
     /// <summary>
     /// Function: ParticleCollisionEvent
     /// </summary>
     public unsafe virtual void ParticleCollisionEvent(BmSDK.GameObject ParticleSystemComponent, BmSDK.Engine.Actor HitActor, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ParticleCollisionEvent, "Engine.Actor.ParticleCollisionEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ParticleCollisionEvent, "Engine.Actor.ParticleCollisionEvent", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParticleSystemComponent, paramsPtr + 0);
@@ -316,14 +317,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAIPointOfInterestExtent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestExtent;
     /// <summary>
     /// Function: GetAIPointOfInterestExtent
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAIPointOfInterestExtent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIPointOfInterestExtent, "Engine.Actor.GetAIPointOfInterestExtent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAIPointOfInterestExtent, "Engine.Actor.GetAIPointOfInterestExtent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -337,14 +338,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAIPointOfInterestPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestPosition;
     /// <summary>
     /// Function: GetAIPointOfInterestPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAIPointOfInterestPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIPointOfInterestPosition, "Engine.Actor.GetAIPointOfInterestPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAIPointOfInterestPosition, "Engine.Actor.GetAIPointOfInterestPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -358,14 +359,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DeregisterAsAIPointOfInterestWithNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeregisterAsAIPointOfInterestWithNavMesh;
     /// <summary>
     /// Function: DeregisterAsAIPointOfInterestWithNavMesh
     /// </summary>
     public unsafe virtual void DeregisterAsAIPointOfInterestWithNavMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeregisterAsAIPointOfInterestWithNavMesh, "Engine.Actor.DeregisterAsAIPointOfInterestWithNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeregisterAsAIPointOfInterestWithNavMesh, "Engine.Actor.DeregisterAsAIPointOfInterestWithNavMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -379,14 +380,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterAsAIPointOfInterestWithNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterAsAIPointOfInterestWithNavMesh;
     /// <summary>
     /// Function: RegisterAsAIPointOfInterestWithNavMesh
     /// </summary>
     public unsafe virtual void RegisterAsAIPointOfInterestWithNavMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterAsAIPointOfInterestWithNavMesh, "Engine.Actor.RegisterAsAIPointOfInterestWithNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterAsAIPointOfInterestWithNavMesh, "Engine.Actor.RegisterAsAIPointOfInterestWithNavMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -400,14 +401,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CanBasePawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBasePawn;
     /// <summary>
     /// Function: CanBasePawn
     /// </summary>
     public unsafe virtual bool CanBasePawn(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBasePawn, "Engine.Actor.CanBasePawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBasePawn, "Engine.Actor.CanBasePawn", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -415,14 +416,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsLevelHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLevelHidden;
     /// <summary>
     /// Function: IsLevelHidden
     /// </summary>
     public unsafe virtual bool IsLevelHidden()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLevelHidden, "Engine.Actor.IsLevelHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLevelHidden, "Engine.Actor.IsLevelHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -436,14 +437,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyPhysicsAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyPhysicsAudioEvent;
     /// <summary>
     /// Function: NotifyPhysicsAudioEvent
     /// </summary>
     public unsafe virtual void NotifyPhysicsAudioEvent(BmSDK.Engine.AkWwise.EAkPhysicsNotifyType colType, System.Numerics.Vector3 colPos, float colVel, float colMag, float colWet, BmSDK.Engine.AkEvent colEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyPhysicsAudioEvent, "Engine.Actor.NotifyPhysicsAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyPhysicsAudioEvent, "Engine.Actor.NotifyPhysicsAudioEvent", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(colType, paramsPtr + 0);
@@ -530,14 +531,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkWwise.FAkSoundHandle>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetAudioThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioThoughts;
     /// <summary>
     /// Function: GetAudioThoughts
     /// </summary>
     public unsafe virtual bool GetAudioThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 thoughtLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAudioThoughts, "Engine.Actor.GetAudioThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAudioThoughts, "Engine.Actor.GetAudioThoughts", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out thoughtLocation);
@@ -555,14 +556,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_GetSocketSpatial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketSpatial;
     /// <summary>
     /// Function: GetSocketSpatial
     /// </summary>
     public unsafe virtual bool GetSocketSpatial(BmSDK.FName socketOrBone, out System.Numerics.Vector3 sckPosition, out BmSDK.Rotator sckOrientation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSocketSpatial, "Engine.Actor.GetSocketSpatial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSocketSpatial, "Engine.Actor.GetSocketSpatial", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(socketOrBone, paramsPtr + 0);
@@ -583,14 +584,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetDialogueSpatial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDialogueSpatial;
     /// <summary>
     /// Function: GetDialogueSpatial
     /// </summary>
     public unsafe virtual void GetDialogueSpatial(out System.Numerics.Vector3 dlgPosition, out BmSDK.Rotator dlgOrientation, BmSDK.GameObject caller = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDialogueSpatial, "Engine.Actor.GetDialogueSpatial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDialogueSpatial, "Engine.Actor.GetDialogueSpatial", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out dlgPosition);
@@ -611,14 +612,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAudioSpatial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioSpatial;
     /// <summary>
     /// Function: GetAudioSpatial
     /// </summary>
     public unsafe virtual void GetAudioSpatial(out System.Numerics.Vector3 sndPosition, out BmSDK.Rotator sndOrientation, BmSDK.GameObject caller = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAudioSpatial, "Engine.Actor.GetAudioSpatial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAudioSpatial, "Engine.Actor.GetAudioSpatial", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out sndPosition);
@@ -639,14 +640,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AudibleUpdateSourceCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudibleUpdateSourceCallback;
     /// <summary>
     /// Function: AudibleUpdateSourceCallback
     /// </summary>
     public unsafe virtual void AudibleUpdateSourceCallback(BmSDK.Engine.RAkAudible akAud, bool hasSource)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudibleUpdateSourceCallback, "Engine.Actor.AudibleUpdateSourceCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudibleUpdateSourceCallback, "Engine.Actor.AudibleUpdateSourceCallback", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(akAud, paramsPtr + 0);
@@ -662,14 +663,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CancelAudioCallbacks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAudioCallbacks;
     /// <summary>
     /// Function: CancelAudioCallbacks
     /// </summary>
     public unsafe virtual void CancelAudioCallbacks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelAudioCallbacks, "Engine.Actor.CancelAudioCallbacks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelAudioCallbacks, "Engine.Actor.CancelAudioCallbacks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -683,14 +684,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetAudioSwitch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioSwitch;
     /// <summary>
     /// Function: SetAudioSwitch
     /// </summary>
     public unsafe virtual void SetAudioSwitch(BmSDK.Engine.AkSwitchName SwitchName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAudioSwitch, "Engine.Actor.SetAudioSwitch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAudioSwitch, "Engine.Actor.SetAudioSwitch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SwitchName, paramsPtr + 0);
@@ -705,14 +706,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetAudioParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAudioParameter;
     /// <summary>
     /// Function: SetAudioParameter
     /// </summary>
     public unsafe virtual void SetAudioParameter(BmSDK.Engine.AkParameterName ParamName, float ParamValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAudioParameter, "Engine.Actor.SetAudioParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAudioParameter, "Engine.Actor.SetAudioParameter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamName, paramsPtr + 0);
@@ -728,14 +729,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetPortraitName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPortraitName;
     /// <summary>
     /// Function: GetPortraitName
     /// </summary>
     public unsafe virtual BmSDK.FString GetPortraitName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPortraitName, "Engine.Actor.GetPortraitName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPortraitName, "Engine.Actor.GetPortraitName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -749,14 +750,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetVoiceName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoiceName;
     /// <summary>
     /// Function: GetVoiceName
     /// </summary>
     public unsafe virtual BmSDK.FString GetVoiceName(bool forSubtitle = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVoiceName, "Engine.Actor.GetVoiceName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVoiceName, "Engine.Actor.GetVoiceName", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(forSubtitle, paramsPtr + 0);
@@ -771,14 +772,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetDialogueVoice;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDialogueVoice;
     /// <summary>
     /// Function: SetDialogueVoice
     /// </summary>
     public unsafe virtual void SetDialogueVoice(BmSDK.Engine.AkDialogueVoice dlgVoice)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDialogueVoice, "Engine.Actor.SetDialogueVoice");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDialogueVoice, "Engine.Actor.SetDialogueVoice", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgVoice, paramsPtr + 0);
@@ -793,14 +794,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetDialogueVoice;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDialogueVoice;
     /// <summary>
     /// Function: GetDialogueVoice
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueVoice GetDialogueVoice()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDialogueVoice, "Engine.Actor.GetDialogueVoice");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDialogueVoice, "Engine.Actor.GetDialogueVoice", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -814,28 +815,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueVoice>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanEmote;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanEmote;
     /// <summary>
     /// Function: CanEmote
     /// </summary>
     public unsafe virtual bool CanEmote()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanEmote, "Engine.Actor.CanEmote");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanEmote, "Engine.Actor.CanEmote", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CantSpeakReason;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CantSpeakReason;
     /// <summary>
     /// Function: CantSpeakReason
     /// </summary>
     public unsafe virtual BmSDK.FString CantSpeakReason(BmSDK.Engine.AkDialogueSpeech Speech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, bool dlgContinuation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantSpeakReason, "Engine.Actor.CantSpeakReason");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CantSpeakReason, "Engine.Actor.CantSpeakReason", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speech, paramsPtr + 0);
@@ -847,14 +848,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 128);
     }
 
-    private static BmSDK.Function __fn_CanSpeak;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSpeak;
     /// <summary>
     /// Function: CanSpeak
     /// </summary>
     public unsafe virtual bool CanSpeak(BmSDK.Engine.AkDialogueSpeech Speech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, bool dlgContinuation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpeak, "Engine.Actor.CanSpeak");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSpeak, "Engine.Actor.CanSpeak", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speech, paramsPtr + 0);
@@ -866,14 +867,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 128);
     }
 
-    private static BmSDK.Function __fn_IsSpeaking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSpeaking;
     /// <summary>
     /// Function: IsSpeaking
     /// </summary>
     public unsafe virtual bool IsSpeaking(bool rightNow = default, bool withPlayer = default, bool checkVoiceAlso = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSpeaking, "Engine.Actor.IsSpeaking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSpeaking, "Engine.Actor.IsSpeaking", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(rightNow, paramsPtr + 0);
@@ -890,18 +891,18 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_TriggerEmote;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEmote;
     /// <summary>
     /// Function: TriggerEmote
     /// </summary>
-    public unsafe virtual bool TriggerEmote(BmSDK.Engine.AkEmoteType em, BmSDK.FString dlgTag = default)
+    public unsafe virtual bool TriggerEmote(BmSDK.Engine.AkEmoteType em, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEmote, "Engine.Actor.TriggerEmote");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEmote, "Engine.Actor.TriggerEmote", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(em, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 8);
+        dlgTag.WriteTo(paramsPtr + 8);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -910,21 +911,22 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_InterruptSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterruptSpeech;
     /// <summary>
     /// Function: InterruptSpeech
     /// </summary>
-    public unsafe virtual void InterruptSpeech(float fadeTime = default, BmSDK.FString dlgTag = default)
+    public unsafe virtual void InterruptSpeech(float fadeTime = default, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterruptSpeech, "Engine.Actor.InterruptSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterruptSpeech, "Engine.Actor.InterruptSpeech", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fadeTime, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 4);
+        dlgTag.WriteTo(paramsPtr + 4);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -933,21 +935,22 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_StopSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeech;
     /// <summary>
     /// Function: StopSpeech
     /// </summary>
-    public unsafe virtual void StopSpeech(bool exceptEmotes = default, BmSDK.FString dlgTag = default)
+    public unsafe virtual void StopSpeech(bool exceptEmotes = default, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpeech, "Engine.Actor.StopSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSpeech, "Engine.Actor.StopSpeech", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(exceptEmotes, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 4);
+        dlgTag.WriteTo(paramsPtr + 4);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -956,22 +959,23 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_StartSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeech;
     /// <summary>
     /// Function: StartSpeech
     /// </summary>
-    public unsafe virtual bool StartSpeech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, BmSDK.FString dlgTag = default)
+    public unsafe virtual bool StartSpeech(BmSDK.Engine.AkDialogueSpeech dlgSpeech, BmSDK.Engine.AkDialogue.FAkSpeechOptions dlgOpts = default, BmSDK.FStringArg dlgTag = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSpeech, "Engine.Actor.StartSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSpeech, "Engine.Actor.StartSpeech", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgSpeech, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgOpts, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgTag, paramsPtr + 124);
+        dlgTag.WriteTo(paramsPtr + 124);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -980,17 +984,18 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 124);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 140);
     }
 
-    private static BmSDK.Function __fn_HasLoopingAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasLoopingAudioEvent;
     /// <summary>
     /// Function: HasLoopingAudioEvent
     /// </summary>
     public unsafe virtual bool HasLoopingAudioEvent(BmSDK.Engine.AkEvent loopingEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasLoopingAudioEvent, "Engine.Actor.HasLoopingAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasLoopingAudioEvent, "Engine.Actor.HasLoopingAudioEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(loopingEvent, paramsPtr + 0);
@@ -1005,14 +1010,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_RemoveLoopingAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveLoopingAudioEvent;
     /// <summary>
     /// Function: RemoveLoopingAudioEvent
     /// </summary>
     public unsafe virtual void RemoveLoopingAudioEvent(BmSDK.Engine.AkEvent loopingEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveLoopingAudioEvent, "Engine.Actor.RemoveLoopingAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveLoopingAudioEvent, "Engine.Actor.RemoveLoopingAudioEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(loopingEvent, paramsPtr + 0);
@@ -1027,14 +1032,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddLoopingAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddLoopingAudioEvent;
     /// <summary>
     /// Function: AddLoopingAudioEvent
     /// </summary>
     public unsafe virtual void AddLoopingAudioEvent(BmSDK.Engine.AkEvent loopingEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddLoopingAudioEvent, "Engine.Actor.AddLoopingAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddLoopingAudioEvent, "Engine.Actor.AddLoopingAudioEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(loopingEvent, paramsPtr + 0);
@@ -1049,14 +1054,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SeekAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SeekAudioEvent;
     /// <summary>
     /// Function: SeekAudioEvent
     /// </summary>
     public unsafe virtual void SeekAudioEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, float timeinMS)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SeekAudioEvent, "Engine.Actor.SeekAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SeekAudioEvent, "Engine.Actor.SeekAudioEvent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SoundHandle);
@@ -1074,14 +1079,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartDeathAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartDeathAudioEvent;
     /// <summary>
     /// Function: StartDeathAudioEvent
     /// </summary>
     public unsafe virtual void StartDeathAudioEvent(BmSDK.Engine.AkEvent DeathEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartDeathAudioEvent, "Engine.Actor.StartDeathAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartDeathAudioEvent, "Engine.Actor.StartDeathAudioEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeathEvent, paramsPtr + 0);
@@ -1089,14 +1094,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAudioEvent;
     /// <summary>
     /// Function: StopAudioEvent
     /// </summary>
     public unsafe virtual void StopAudioEvent(out BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAudioEvent, "Engine.Actor.StopAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAudioEvent, "Engine.Actor.StopAudioEvent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SoundHandle);
@@ -1113,14 +1118,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartAudioEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAudioEvent;
     /// <summary>
     /// Function: StartAudioEvent
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkWwise.FAkSoundHandle StartAudioEvent(BmSDK.Engine.AkEvent AudioEvent, System.IntPtr SoundCallbackDelegate = default, int SoundCallbackFlags = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAudioEvent, "Engine.Actor.StartAudioEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAudioEvent, "Engine.Actor.StartAudioEvent", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AudioEvent, paramsPtr + 0);
@@ -1137,14 +1142,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkWwise.FAkSoundHandle>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_OverrideAkDialogueComponentDefaults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideAkDialogueComponentDefaults;
     /// <summary>
     /// Function: OverrideAkDialogueComponentDefaults
     /// </summary>
     public unsafe virtual void OverrideAkDialogueComponentDefaults(BmSDK.Engine.AkDialogueComponent akDlgComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideAkDialogueComponentDefaults, "Engine.Actor.OverrideAkDialogueComponentDefaults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideAkDialogueComponentDefaults, "Engine.Actor.OverrideAkDialogueComponentDefaults", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(akDlgComp, paramsPtr + 0);
@@ -1152,14 +1157,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAkDialogueComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkDialogueComponent;
     /// <summary>
     /// Function: GetAkDialogueComponent
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueComponent GetAkDialogueComponent(bool allowCreate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAkDialogueComponent, "Engine.Actor.GetAkDialogueComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAkDialogueComponent, "Engine.Actor.GetAkDialogueComponent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allowCreate, paramsPtr + 0);
@@ -1174,14 +1179,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueComponent>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_OverrideDefaultAkAudible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDefaultAkAudible;
     /// <summary>
     /// Function: OverrideDefaultAkAudible
     /// </summary>
     public unsafe virtual BmSDK.Engine.RAkAudible OverrideDefaultAkAudible(bool allowCreate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDefaultAkAudible, "Engine.Actor.OverrideDefaultAkAudible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDefaultAkAudible, "Engine.Actor.OverrideDefaultAkAudible", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allowCreate, paramsPtr + 0);
@@ -1189,14 +1194,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAkAudible>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_OverrideDefaultAkAudibleSetup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDefaultAkAudibleSetup;
     /// <summary>
     /// Function: OverrideDefaultAkAudibleSetup
     /// </summary>
     public unsafe virtual void OverrideDefaultAkAudibleSetup(BmSDK.Engine.RAkAudible akAud)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDefaultAkAudibleSetup, "Engine.Actor.OverrideDefaultAkAudibleSetup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDefaultAkAudibleSetup, "Engine.Actor.OverrideDefaultAkAudibleSetup", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(akAud, paramsPtr + 0);
@@ -1204,14 +1209,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAkAudible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAkAudible;
     /// <summary>
     /// Function: GetAkAudible
     /// </summary>
     public unsafe virtual BmSDK.Engine.RAkAudible GetAkAudible(bool allowCreate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAkAudible, "Engine.Actor.GetAkAudible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAkAudible, "Engine.Actor.GetAkAudible", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allowCreate, paramsPtr + 0);
@@ -1226,14 +1231,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAkAudible>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ShouldContinueSurveillance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldContinueSurveillance;
     /// <summary>
     /// Function: ShouldContinueSurveillance
     /// </summary>
     public unsafe virtual bool ShouldContinueSurveillance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldContinueSurveillance, "Engine.Actor.ShouldContinueSurveillance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldContinueSurveillance, "Engine.Actor.ShouldContinueSurveillance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1247,14 +1252,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldBeHiddenBySHOW_NavigationNodes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBeHiddenBySHOW_NavigationNodes;
     /// <summary>
     /// Function: ShouldBeHiddenBySHOW_NavigationNodes
     /// </summary>
     public unsafe virtual bool ShouldBeHiddenBySHOW_NavigationNodes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldBeHiddenBySHOW_NavigationNodes, "Engine.Actor.ShouldBeHiddenBySHOW_NavigationNodes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldBeHiddenBySHOW_NavigationNodes, "Engine.Actor.ShouldBeHiddenBySHOW_NavigationNodes", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1268,14 +1273,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_WillOverlap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WillOverlap;
     /// <summary>
     /// Function: WillOverlap
     /// </summary>
     public unsafe virtual bool WillOverlap(System.Numerics.Vector3 PosA, System.Numerics.Vector3 VelA, System.Numerics.Vector3 PosB, System.Numerics.Vector3 VelB, float StepSize, float Radius, out float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WillOverlap, "Engine.Actor.WillOverlap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WillOverlap, "Engine.Actor.WillOverlap", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PosA, paramsPtr + 0);
@@ -1298,14 +1303,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 60);
     }
 
-    private static BmSDK.Function __fn_GetAvoidanceVector;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvoidanceVector;
     /// <summary>
     /// Function: GetAvoidanceVector
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAvoidanceVector(out BmSDK.TArray<BmSDK.Engine.Actor> Obstacles, System.Numerics.Vector3 GoalLocation, float CollisionRadius, float MaxSpeed, int NumSamples = default, float VelocityStepRate = default, float MaxTimeTilOverlap = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAvoidanceVector, "Engine.Actor.GetAvoidanceVector");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAvoidanceVector, "Engine.Actor.GetAvoidanceVector", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GoalLocation, paramsPtr + 16);
@@ -1326,70 +1331,70 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_IsClient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsClient;
     /// <summary>
     /// Function: IsClient
     /// </summary>
     public unsafe virtual bool IsClient()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsClient, "Engine.Actor.IsClient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsClient, "Engine.Actor.IsClient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsServer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsServer;
     /// <summary>
     /// Function: IsServer
     /// </summary>
     public unsafe virtual bool IsServer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsServer, "Engine.Actor.IsServer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsServer, "Engine.Actor.IsServer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsOwningClient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwningClient;
     /// <summary>
     /// Function: IsOwningClient
     /// </summary>
     public unsafe virtual bool IsOwningClient()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOwningClient, "Engine.Actor.IsOwningClient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOwningClient, "Engine.Actor.IsOwningClient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ReplicationEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplicationEnded;
     /// <summary>
     /// Function: ReplicationEnded
     /// </summary>
     public unsafe virtual void ReplicationEnded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplicationEnded, "Engine.Actor.ReplicationEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReplicationEnded, "Engine.Actor.ReplicationEnded", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInvestigateHighlighted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInvestigateHighlighted;
     /// <summary>
     /// Function: SetInvestigateHighlighted
     /// </summary>
     public unsafe virtual void SetInvestigateHighlighted(BmSDK.Engine.MaterialInstanceConstant highMat, bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInvestigateHighlighted, "Engine.Actor.SetInvestigateHighlighted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInvestigateHighlighted, "Engine.Actor.SetInvestigateHighlighted", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(highMat, paramsPtr + 0);
@@ -1398,14 +1403,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetInvestigationArray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInvestigationArray;
     /// <summary>
     /// Function: SetInvestigationArray
     /// </summary>
     public unsafe virtual void SetInvestigationArray(BmSDK.TArray<BmSDK.Engine.Actor.FInvestigationData> NewInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInvestigationArray, "Engine.Actor.SetInvestigationArray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInvestigationArray, "Engine.Actor.SetInvestigationArray", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewInfo, paramsPtr + 0);
@@ -1413,28 +1418,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostDemoRewind;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostDemoRewind;
     /// <summary>
     /// Function: PostDemoRewind
     /// </summary>
     public unsafe virtual void PostDemoRewind()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostDemoRewind, "Engine.Actor.PostDemoRewind");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostDemoRewind, "Engine.Actor.PostDemoRewind", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AnimTreeUpdated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AnimTreeUpdated;
     /// <summary>
     /// Function: AnimTreeUpdated
     /// </summary>
     public unsafe virtual void AnimTreeUpdated(BmSDK.Engine.SkeletalMeshComponent SkelMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnimTreeUpdated, "Engine.Actor.AnimTreeUpdated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AnimTreeUpdated, "Engine.Actor.AnimTreeUpdated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelMesh, paramsPtr + 0);
@@ -1442,14 +1447,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SupportsKismetModification;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SupportsKismetModification;
     /// <summary>
     /// Function: SupportsKismetModification
     /// </summary>
     public unsafe virtual bool SupportsKismetModification(BmSDK.Engine.SequenceOp AskingOp, out BmSDK.FString Reason)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SupportsKismetModification, "Engine.Actor.SupportsKismetModification");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SupportsKismetModification, "Engine.Actor.SupportsKismetModification", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AskingOp, paramsPtr + 0);
@@ -1465,14 +1470,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_GetAnimTrailParticleSystem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimTrailParticleSystem;
     /// <summary>
     /// Function: GetAnimTrailParticleSystem
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem GetAnimTrailParticleSystem(BmSDK.Engine.AnimNotify_Trails AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimTrailParticleSystem, "Engine.Actor.GetAnimTrailParticleSystem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimTrailParticleSystem, "Engine.Actor.GetAnimTrailParticleSystem", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -1487,14 +1492,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.ParticleSystem>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TrailsNotifyEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrailsNotifyEnd;
     /// <summary>
     /// Function: TrailsNotifyEnd
     /// </summary>
     public unsafe virtual void TrailsNotifyEnd(BmSDK.Engine.AnimNotify_Trails AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrailsNotifyEnd, "Engine.Actor.TrailsNotifyEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrailsNotifyEnd, "Engine.Actor.TrailsNotifyEnd", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -1502,14 +1507,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TrailsNotifyTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrailsNotifyTick;
     /// <summary>
     /// Function: TrailsNotifyTick
     /// </summary>
     public unsafe virtual void TrailsNotifyTick(BmSDK.Engine.AnimNotify_Trails AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrailsNotifyTick, "Engine.Actor.TrailsNotifyTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrailsNotifyTick, "Engine.Actor.TrailsNotifyTick", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -1517,14 +1522,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TrailsNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrailsNotify;
     /// <summary>
     /// Function: TrailsNotify
     /// </summary>
     public unsafe virtual void TrailsNotify(BmSDK.Engine.AnimNotify_Trails AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrailsNotify, "Engine.Actor.TrailsNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrailsNotify, "Engine.Actor.TrailsNotify", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -1532,14 +1537,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CreateForceField;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateForceField;
     /// <summary>
     /// Function: CreateForceField
     /// </summary>
     public unsafe virtual bool CreateForceField(BmSDK.Engine.AnimNotify_ForceField AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateForceField, "Engine.Actor.CreateForceField");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateForceField, "Engine.Actor.CreateForceField", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -1547,14 +1552,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PlayParticleEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayParticleEffect;
     /// <summary>
     /// Function: PlayParticleEffect
     /// </summary>
     public unsafe virtual bool PlayParticleEffect(BmSDK.Engine.AnimNotify_PlayParticleEffect AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayParticleEffect, "Engine.Actor.PlayParticleEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayParticleEffect, "Engine.Actor.PlayParticleEffect", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -1562,14 +1567,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetAimAdhesionExtent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAimAdhesionExtent;
     /// <summary>
     /// Function: GetAimAdhesionExtent
     /// </summary>
     public unsafe virtual void GetAimAdhesionExtent(out float Width, out float Height, out System.Numerics.Vector3 Center)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAimAdhesionExtent, "Engine.Actor.GetAimAdhesionExtent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAimAdhesionExtent, "Engine.Actor.GetAimAdhesionExtent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Width);
@@ -1585,14 +1590,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAimFrictionExtent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAimFrictionExtent;
     /// <summary>
     /// Function: GetAimFrictionExtent
     /// </summary>
     public unsafe virtual void GetAimFrictionExtent(out float Width, out float Height, out System.Numerics.Vector3 Center)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAimFrictionExtent, "Engine.Actor.GetAimFrictionExtent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAimFrictionExtent, "Engine.Actor.GetAimFrictionExtent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Width);
@@ -1608,14 +1613,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsInPersistentLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInPersistentLevel;
     /// <summary>
     /// Function: IsInPersistentLevel
     /// </summary>
     public unsafe virtual bool IsInPersistentLevel(bool bIncludeLevelStreamingPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInPersistentLevel, "Engine.Actor.IsInPersistentLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInPersistentLevel, "Engine.Actor.IsInPersistentLevel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIncludeLevelStreamingPersistent, paramsPtr + 0);
@@ -1630,14 +1635,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_OnRigidBodySpringOverextension;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRigidBodySpringOverextension;
     /// <summary>
     /// Function: OnRigidBodySpringOverextension
     /// </summary>
     public unsafe virtual void OnRigidBodySpringOverextension(BmSDK.Engine.RB_BodyInstance BodyInstance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRigidBodySpringOverextension, "Engine.Actor.OnRigidBodySpringOverextension");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRigidBodySpringOverextension, "Engine.Actor.OnRigidBodySpringOverextension", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyInstance, paramsPtr + 0);
@@ -1666,28 +1671,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FGuid>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PostEditChangeScript;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostEditChangeScript;
     /// <summary>
     /// Function: PostEditChangeScript
     /// </summary>
     public unsafe virtual void PostEditChangeScript()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostEditChangeScript, "Engine.Actor.PostEditChangeScript");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostEditChangeScript, "Engine.Actor.PostEditChangeScript", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe virtual bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "Engine.Actor.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "Engine.Actor.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -1695,14 +1700,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToActor;
     /// <summary>
     /// Function: LinkToActor
     /// </summary>
     public unsafe virtual bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "Engine.Actor.LinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToActor, "Engine.Actor.LinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -1710,28 +1715,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe virtual void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "Engine.Actor.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "Engine.Actor.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RootMotionExtracted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RootMotionExtracted;
     /// <summary>
     /// Function: RootMotionExtracted
     /// </summary>
     public unsafe virtual void RootMotionExtracted(BmSDK.Engine.SkeletalMeshComponent SkelComp, out BmSDK.GameObject.FBoneAtom ExtractedRootMotionDelta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RootMotionExtracted, "Engine.Actor.RootMotionExtracted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RootMotionExtracted, "Engine.Actor.RootMotionExtracted", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -1742,14 +1747,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RootMotionProcessed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RootMotionProcessed;
     /// <summary>
     /// Function: RootMotionProcessed
     /// </summary>
     public unsafe virtual void RootMotionProcessed(BmSDK.Engine.SkeletalMeshComponent SkelComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RootMotionProcessed, "Engine.Actor.RootMotionProcessed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RootMotionProcessed, "Engine.Actor.RootMotionProcessed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -1757,14 +1762,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RootMotionModeChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RootMotionModeChanged;
     /// <summary>
     /// Function: RootMotionModeChanged
     /// </summary>
     public unsafe virtual void RootMotionModeChanged(BmSDK.Engine.SkeletalMeshComponent SkelComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RootMotionModeChanged, "Engine.Actor.RootMotionModeChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RootMotionModeChanged, "Engine.Actor.RootMotionModeChanged", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -1772,14 +1777,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostRenderFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostRenderFor;
     /// <summary>
     /// Function: PostRenderFor
     /// </summary>
     public unsafe virtual void PostRenderFor(BmSDK.Engine.PlayerController PC, BmSDK.Engine.Canvas Canvas, System.Numerics.Vector3 CameraPosition, System.Numerics.Vector3 CameraDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostRenderFor, "Engine.Actor.PostRenderFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostRenderFor, "Engine.Actor.PostRenderFor", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1790,14 +1795,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NativePostRenderFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NativePostRenderFor;
     /// <summary>
     /// Function: NativePostRenderFor
     /// </summary>
     public unsafe virtual void NativePostRenderFor(BmSDK.Engine.PlayerController PC, BmSDK.Engine.Canvas Canvas, System.Numerics.Vector3 CameraPosition, System.Numerics.Vector3 CameraDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativePostRenderFor, "Engine.Actor.NativePostRenderFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NativePostRenderFor, "Engine.Actor.NativePostRenderFor", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1815,14 +1820,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetHUDLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHUDLocation;
     /// <summary>
     /// Function: SetHUDLocation
     /// </summary>
     public unsafe virtual void SetHUDLocation(System.Numerics.Vector3 NewHUDLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHUDLocation, "Engine.Actor.SetHUDLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHUDLocation, "Engine.Actor.SetHUDLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewHUDLocation, paramsPtr + 0);
@@ -1837,14 +1842,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnRanOver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRanOver;
     /// <summary>
     /// Function: OnRanOver
     /// </summary>
     public unsafe virtual void OnRanOver(BmSDK.Engine.SVehicle Vehicle, BmSDK.Engine.PrimitiveComponent RunOverComponent, int WheelIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRanOver, "Engine.Actor.OnRanOver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRanOver, "Engine.Actor.OnRanOver", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vehicle, paramsPtr + 0);
@@ -1854,14 +1859,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RigidBodyCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyCollision;
     /// <summary>
     /// Function: RigidBodyCollision
     /// </summary>
     public unsafe virtual void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "Engine.Actor.RigidBodyCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RigidBodyCollision, "Engine.Actor.RigidBodyCollision", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitComponent, paramsPtr + 0);
@@ -1875,14 +1880,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InterpolationChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpolationChanged;
     /// <summary>
     /// Function: InterpolationChanged
     /// </summary>
     public unsafe virtual void InterpolationChanged(BmSDK.Engine.SeqAct_Interp InterpAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterpolationChanged, "Engine.Actor.InterpolationChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterpolationChanged, "Engine.Actor.InterpolationChanged", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpAction, paramsPtr + 0);
@@ -1890,14 +1895,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InterpolationFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpolationFinished;
     /// <summary>
     /// Function: InterpolationFinished
     /// </summary>
     public unsafe virtual void InterpolationFinished(BmSDK.Engine.SeqAct_Interp InterpAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterpolationFinished, "Engine.Actor.InterpolationFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterpolationFinished, "Engine.Actor.InterpolationFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpAction, paramsPtr + 0);
@@ -1905,14 +1910,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InterpolationStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpolationStarted;
     /// <summary>
     /// Function: InterpolationStarted
     /// </summary>
     public unsafe virtual void InterpolationStarted(BmSDK.Engine.SeqAct_Interp InterpAction, BmSDK.Engine.InterpGroupInst GroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterpolationStarted, "Engine.Actor.InterpolationStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterpolationStarted, "Engine.Actor.InterpolationStarted", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpAction, paramsPtr + 0);
@@ -1921,28 +1926,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnedByKismet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnedByKismet;
     /// <summary>
     /// Function: SpawnedByKismet
     /// </summary>
     public unsafe virtual void SpawnedByKismet()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnedByKismet, "Engine.Actor.SpawnedByKismet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnedByKismet, "Engine.Actor.SpawnedByKismet", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetFOVCheckLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
     /// Function: GetFOVCheckLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFOVCheckLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVCheckLocation, "Engine.Actor.GetFOVCheckLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVCheckLocation, "Engine.Actor.GetFOVCheckLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1956,14 +1961,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTargetLocation;
     /// <summary>
     /// Function: GetTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTargetLocation(BmSDK.Engine.Actor RequestedBy = default, bool bRequestAlternateLoc = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTargetLocation, "Engine.Actor.GetTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetLocation, "Engine.Actor.GetTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RequestedBy, paramsPtr + 0);
@@ -1979,14 +1984,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_FindGoodEndView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindGoodEndView;
     /// <summary>
     /// Function: FindGoodEndView
     /// </summary>
     public unsafe virtual void FindGoodEndView(BmSDK.Engine.PlayerController PC, out BmSDK.Rotator GoodRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindGoodEndView, "Engine.Actor.FindGoodEndView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindGoodEndView, "Engine.Actor.FindGoodEndView", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1997,42 +2002,42 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyLocalPlayerTeamReceived;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyLocalPlayerTeamReceived;
     /// <summary>
     /// Function: NotifyLocalPlayerTeamReceived
     /// </summary>
     public unsafe virtual void NotifyLocalPlayerTeamReceived()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyLocalPlayerTeamReceived, "Engine.Actor.NotifyLocalPlayerTeamReceived");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyLocalPlayerTeamReceived, "Engine.Actor.NotifyLocalPlayerTeamReceived", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ScriptGetTeamNum;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScriptGetTeamNum;
     /// <summary>
     /// Function: ScriptGetTeamNum
     /// </summary>
     public unsafe virtual byte ScriptGetTeamNum()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScriptGetTeamNum, "Engine.Actor.ScriptGetTeamNum");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScriptGetTeamNum, "Engine.Actor.ScriptGetTeamNum", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTeamNum;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
     /// Function: GetTeamNum
     /// </summary>
     public unsafe virtual byte GetTeamNum()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTeamNum, "Engine.Actor.GetTeamNum");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTeamNum, "Engine.Actor.GetTeamNum", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2046,28 +2051,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PawnBaseDied;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnBaseDied;
     /// <summary>
     /// Function: PawnBaseDied
     /// </summary>
     public unsafe virtual void PawnBaseDied()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnBaseDied, "Engine.Actor.PawnBaseDied");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PawnBaseDied, "Engine.Actor.PawnBaseDied", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsPlayerOwned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerOwned;
     /// <summary>
     /// Function: IsPlayerOwned
     /// </summary>
     public unsafe virtual bool IsPlayerOwned()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayerOwned, "Engine.Actor.IsPlayerOwned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayerOwned, "Engine.Actor.IsPlayerOwned", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2081,14 +2086,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetActorEyesViewPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorEyesViewPoint;
     /// <summary>
     /// Function: GetActorEyesViewPoint
     /// </summary>
     public unsafe virtual void GetActorEyesViewPoint(out System.Numerics.Vector3 out_Location, out BmSDK.Rotator out_Rotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorEyesViewPoint, "Engine.Actor.GetActorEyesViewPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorEyesViewPoint, "Engine.Actor.GetActorEyesViewPoint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out out_Location);
@@ -2101,70 +2106,70 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsStationary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStationary;
     /// <summary>
     /// Function: IsStationary
     /// </summary>
     public unsafe virtual bool IsStationary()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStationary, "Engine.Actor.IsStationary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStationary, "Engine.Actor.IsStationary", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetActorFaceFXAsset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorFaceFXAsset;
     /// <summary>
     /// Function: GetActorFaceFXAsset
     /// </summary>
     public unsafe virtual BmSDK.Engine.FaceFXAsset GetActorFaceFXAsset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorFaceFXAsset, "Engine.Actor.GetActorFaceFXAsset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorFaceFXAsset, "Engine.Actor.GetActorFaceFXAsset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.FaceFXAsset>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanActorPlayFaceFXAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanActorPlayFaceFXAnim;
     /// <summary>
     /// Function: CanActorPlayFaceFXAnim
     /// </summary>
     public unsafe virtual bool CanActorPlayFaceFXAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanActorPlayFaceFXAnim, "Engine.Actor.CanActorPlayFaceFXAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanActorPlayFaceFXAnim, "Engine.Actor.CanActorPlayFaceFXAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsActorPlayingFaceFXAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActorPlayingFaceFXAnim;
     /// <summary>
     /// Function: IsActorPlayingFaceFXAnim
     /// </summary>
     public unsafe virtual bool IsActorPlayingFaceFXAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActorPlayingFaceFXAnim, "Engine.Actor.IsActorPlayingFaceFXAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActorPlayingFaceFXAnim, "Engine.Actor.IsActorPlayingFaceFXAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TickSkelControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickSkelControl;
     /// <summary>
     /// Function: TickSkelControl
     /// </summary>
     public unsafe virtual void TickSkelControl(float DeltaTime, BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.Engine.SkelControlBase SkelCtrl)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickSkelControl, "Engine.Actor.TickSkelControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickSkelControl, "Engine.Actor.TickSkelControl", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -2174,14 +2179,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetSkelControlScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkelControlScale;
     /// <summary>
     /// Function: SetSkelControlScale
     /// </summary>
     public unsafe virtual void SetSkelControlScale(BmSDK.FName SkelControlName, float Scale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSkelControlScale, "Engine.Actor.SetSkelControlScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSkelControlScale, "Engine.Actor.SetSkelControlScale", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelControlName, paramsPtr + 0);
@@ -2190,14 +2195,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetMorphWeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMorphWeight;
     /// <summary>
     /// Function: SetMorphWeight
     /// </summary>
     public unsafe virtual void SetMorphWeight(BmSDK.FName MorphNodeName, float MorphWeight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMorphWeight, "Engine.Actor.SetMorphWeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMorphWeight, "Engine.Actor.SetMorphWeight", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MorphNodeName, paramsPtr + 0);
@@ -2206,63 +2211,66 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_MatineeSetFaceFXRegister;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeSetFaceFXRegister;
     /// <summary>
     /// Function: MatineeSetFaceFXRegister
     /// </summary>
-    public unsafe virtual void MatineeSetFaceFXRegister(BmSDK.FString RegisterName, float Value, BmSDK.Engine.RSkeletalMeshComponent_Export.EFaceFXRegisterOwner RegisterOwner)
+    public unsafe virtual void MatineeSetFaceFXRegister(BmSDK.FStringArg RegisterName, float Value, BmSDK.Engine.RSkeletalMeshComponent_Export.EFaceFXRegisterOwner RegisterOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatineeSetFaceFXRegister, "Engine.Actor.MatineeSetFaceFXRegister");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MatineeSetFaceFXRegister, "Engine.Actor.MatineeSetFaceFXRegister", this);
         byte* paramsPtr = stackalloc byte[37];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RegisterName, paramsPtr + 0);
+        RegisterName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegisterOwner, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopActorFaceFXAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopActorFaceFXAnim;
     /// <summary>
     /// Function: StopActorFaceFXAnim
     /// </summary>
     public unsafe virtual void StopActorFaceFXAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopActorFaceFXAnim, "Engine.Actor.StopActorFaceFXAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopActorFaceFXAnim, "Engine.Actor.StopActorFaceFXAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayActorFaceFXAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayActorFaceFXAnim;
     /// <summary>
     /// Function: PlayActorFaceFXAnim
     /// </summary>
-    public unsafe virtual bool PlayActorFaceFXAnim(BmSDK.Engine.FaceFXAnimSet AnimSet, BmSDK.FString GroupName, BmSDK.FString SeqName, BmSDK.Engine.SoundCue SoundCueToPlay)
+    public unsafe virtual bool PlayActorFaceFXAnim(BmSDK.Engine.FaceFXAnimSet AnimSet, BmSDK.FStringArg GroupName, BmSDK.FStringArg SeqName, BmSDK.Engine.SoundCue SoundCueToPlay)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayActorFaceFXAnim, "Engine.Actor.PlayActorFaceFXAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayActorFaceFXAnim, "Engine.Actor.PlayActorFaceFXAnim", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSet, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(GroupName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SeqName, paramsPtr + 24);
+        GroupName.WriteTo(paramsPtr + 8);
+        SeqName.WriteTo(paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SoundCueToPlay, paramsPtr + 40);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_EndMatineeControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndMatineeControl;
     /// <summary>
     /// Function: EndMatineeControl
     /// </summary>
     public unsafe virtual void EndMatineeControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndMatineeControl, "Engine.Actor.EndMatineeControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndMatineeControl, "Engine.Actor.EndMatineeControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -2271,14 +2279,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginMatineeControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginMatineeControl;
     /// <summary>
     /// Function: BeginMatineeControl
     /// </summary>
     public unsafe virtual void BeginMatineeControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginMatineeControl, "Engine.Actor.BeginMatineeControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginMatineeControl, "Engine.Actor.BeginMatineeControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -2287,14 +2295,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FinishAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishAnimControl;
     /// <summary>
     /// Function: FinishAnimControl
     /// </summary>
     public unsafe virtual void FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAnimControl, "Engine.Actor.FinishAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishAnimControl, "Engine.Actor.FinishAnimControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -2303,14 +2311,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BlendOutAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlendOutAnimControl;
     /// <summary>
     /// Function: BlendOutAnimControl
     /// </summary>
     public unsafe virtual void BlendOutAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst, float BlendOutDuration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlendOutAnimControl, "Engine.Actor.BlendOutAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlendOutAnimControl, "Engine.Actor.BlendOutAnimControl", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -2320,14 +2328,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_MatineeTeleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeTeleport;
     /// <summary>
     /// Function: MatineeTeleport
     /// </summary>
     public unsafe virtual void MatineeTeleport(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName DebugSource)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatineeTeleport, "Engine.Actor.MatineeTeleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MatineeTeleport, "Engine.Actor.MatineeTeleport", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpGroupInst, paramsPtr + 0);
@@ -2343,14 +2351,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetAnimPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimPosition;
     /// <summary>
     /// Function: SetAnimPosition
     /// </summary>
     public unsafe virtual void SetAnimPosition(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName SlotName, int ChannelIndex, BmSDK.FName InAnimSeqName, float InPosition, bool bFireNotifies, bool bLooping, bool bEnableRootMotion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAnimPosition, "Engine.Actor.SetAnimPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAnimPosition, "Engine.Actor.SetAnimPosition", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpGroupInst, paramsPtr + 0);
@@ -2365,14 +2373,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginAnimControl;
     /// <summary>
     /// Function: BeginAnimControl
     /// </summary>
     public unsafe virtual void BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginAnimControl, "Engine.Actor.BeginAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginAnimControl, "Engine.Actor.BeginAnimControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -2381,14 +2389,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnAnimPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAnimPlay;
     /// <summary>
     /// Function: OnAnimPlay
     /// </summary>
     public unsafe virtual void OnAnimPlay(BmSDK.Engine.AnimNodeSequence SeqNode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAnimPlay, "Engine.Actor.OnAnimPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAnimPlay, "Engine.Actor.OnAnimPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SeqNode, paramsPtr + 0);
@@ -2396,14 +2404,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnAnimEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAnimEnd;
     /// <summary>
     /// Function: OnAnimEnd
     /// </summary>
     public unsafe virtual void OnAnimEnd(BmSDK.Engine.AnimNodeSequence SeqNode, float PlayedTime, float ExcessTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAnimEnd, "Engine.Actor.OnAnimEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAnimEnd, "Engine.Actor.OnAnimEnd", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SeqNode, paramsPtr + 0);
@@ -2413,14 +2421,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DoKismetAttachment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoKismetAttachment;
     /// <summary>
     /// Function: DoKismetAttachment
     /// </summary>
     public unsafe virtual void DoKismetAttachment(BmSDK.Engine.Actor Attachment, BmSDK.Engine.SeqAct_AttachToActor Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoKismetAttachment, "Engine.Actor.DoKismetAttachment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoKismetAttachment, "Engine.Actor.DoKismetAttachment", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attachment, paramsPtr + 0);
@@ -2429,14 +2437,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnAttachToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAttachToActor;
     /// <summary>
     /// Function: OnAttachToActor
     /// </summary>
     public unsafe virtual void OnAttachToActor(BmSDK.Engine.SeqAct_AttachToActor Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAttachToActor, "Engine.Actor.OnAttachToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAttachToActor, "Engine.Actor.OnAttachToActor", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2444,28 +2452,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DetachedFromActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachedFromActor;
     /// <summary>
     /// Function: DetachedFromActor
     /// </summary>
     public unsafe virtual void DetachedFromActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachedFromActor, "Engine.Actor.DetachedFromActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachedFromActor, "Engine.Actor.DetachedFromActor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggleHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggleHidden;
     /// <summary>
     /// Function: OnToggleHidden
     /// </summary>
     public unsafe virtual void OnToggleHidden(BmSDK.Engine.SeqAct_ToggleHidden Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggleHidden, "Engine.Actor.OnToggleHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggleHidden, "Engine.Actor.OnToggleHidden", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2473,14 +2481,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnChangeCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnChangeCollision;
     /// <summary>
     /// Function: OnChangeCollision
     /// </summary>
     public unsafe virtual void OnChangeCollision(BmSDK.Engine.SeqAct_ChangeCollision Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnChangeCollision, "Engine.Actor.OnChangeCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnChangeCollision, "Engine.Actor.OnChangeCollision", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2488,14 +2496,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetPhysics;
     /// <summary>
     /// Function: OnSetPhysics
     /// </summary>
     public unsafe virtual void OnSetPhysics(BmSDK.Engine.SeqAct_SetPhysics Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetPhysics, "Engine.Actor.OnSetPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetPhysics, "Engine.Actor.OnSetPhysics", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2503,14 +2511,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetBlockRigidBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetBlockRigidBody;
     /// <summary>
     /// Function: OnSetBlockRigidBody
     /// </summary>
     public unsafe virtual void OnSetBlockRigidBody(BmSDK.Engine.SeqAct_SetBlockRigidBody Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetBlockRigidBody, "Engine.Actor.OnSetBlockRigidBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetBlockRigidBody, "Engine.Actor.OnSetBlockRigidBody", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2518,14 +2526,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetVelocity;
     /// <summary>
     /// Function: OnSetVelocity
     /// </summary>
     public unsafe virtual void OnSetVelocity(BmSDK.Engine.SeqAct_SetVelocity Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetVelocity, "Engine.Actor.OnSetVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetVelocity, "Engine.Actor.OnSetVelocity", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2533,14 +2541,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnTeleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnTeleport;
     /// <summary>
     /// Function: OnTeleport
     /// </summary>
     public unsafe virtual void OnTeleport(BmSDK.Engine.SeqAct_Teleport Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnTeleport, "Engine.Actor.OnTeleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnTeleport, "Engine.Actor.OnTeleport", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2548,14 +2556,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnModifyHealth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnModifyHealth;
     /// <summary>
     /// Function: OnModifyHealth
     /// </summary>
     public unsafe virtual void OnModifyHealth(BmSDK.Engine.SeqAct_ModifyHealth Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnModifyHealth, "Engine.Actor.OnModifyHealth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnModifyHealth, "Engine.Actor.OnModifyHealth", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2563,14 +2571,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PrestreamTextures2;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures2;
     /// <summary>
     /// Function: PrestreamTextures2
     /// </summary>
     public unsafe virtual void PrestreamTextures2(float Seconds, bool FullMips, bool HighPriority, bool GentleLastRenderTimeHint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrestreamTextures2, "Engine.Actor.PrestreamTextures2");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrestreamTextures2, "Engine.Actor.PrestreamTextures2", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Seconds, paramsPtr + 0);
@@ -2588,14 +2596,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PrestreamTextures;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures;
     /// <summary>
     /// Function: PrestreamTextures
     /// </summary>
     public unsafe virtual void PrestreamTextures(float Seconds, bool bEnableStreaming, int CinematicTextureGroups = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrestreamTextures, "Engine.Actor.PrestreamTextures");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrestreamTextures, "Engine.Actor.PrestreamTextures", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Seconds, paramsPtr + 0);
@@ -2612,28 +2620,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDown;
     /// <summary>
     /// Function: ShutDown
     /// </summary>
     public unsafe virtual void ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDown, "Engine.Actor.ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShutDown, "Engine.Actor.ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetNetUpdateTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNetUpdateTime;
     /// <summary>
     /// Function: SetNetUpdateTime
     /// </summary>
     public unsafe virtual void SetNetUpdateTime(float NewUpdateTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNetUpdateTime, "Engine.Actor.SetNetUpdateTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNetUpdateTime, "Engine.Actor.SetNetUpdateTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUpdateTime, paramsPtr + 0);
@@ -2648,28 +2656,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ForceNetRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceNetRelevant;
     /// <summary>
     /// Function: ForceNetRelevant
     /// </summary>
     public unsafe virtual void ForceNetRelevant()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceNetRelevant, "Engine.Actor.ForceNetRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceNetRelevant, "Engine.Actor.ForceNetRelevant", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroy;
     /// <summary>
     /// Function: OnDestroy
     /// </summary>
     public unsafe virtual void OnDestroy(BmSDK.Engine.SeqAct_Destroy Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDestroy, "Engine.Actor.OnDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDestroy, "Engine.Actor.OnDestroy", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -2677,14 +2685,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearLatentAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearLatentAction;
     /// <summary>
     /// Function: ClearLatentAction
     /// </summary>
     public unsafe virtual void ClearLatentAction(BmSDK.Class actionClass, bool bAborted = default, BmSDK.Engine.SeqAct_Latent exceptionAction = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearLatentAction, "Engine.Actor.ClearLatentAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLatentAction, "Engine.Actor.ClearLatentAction", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(actionClass, paramsPtr + 0);
@@ -2694,14 +2702,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FindEventsOfClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindEventsOfClass;
     /// <summary>
     /// Function: FindEventsOfClass
     /// </summary>
     public unsafe virtual bool FindEventsOfClass(BmSDK.Class EventClass, out BmSDK.TArray<BmSDK.Engine.SequenceEvent> out_EventList, bool bIncludeDisabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindEventsOfClass, "Engine.Actor.FindEventsOfClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindEventsOfClass, "Engine.Actor.FindEventsOfClass", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventClass, paramsPtr + 0);
@@ -2711,14 +2719,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_ActivateEventClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateEventClass;
     /// <summary>
     /// Function: ActivateEventClass
     /// </summary>
     public unsafe virtual bool ActivateEventClass(BmSDK.Class InClass, BmSDK.Engine.Actor InInstigator, out BmSDK.TArray<BmSDK.Engine.SequenceEvent> EventList, out BmSDK.TArray<int> ActivateIndices, bool bTest, out BmSDK.TArray<BmSDK.Engine.SequenceEvent> ActivatedEvents)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateEventClass, "Engine.Actor.ActivateEventClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateEventClass, "Engine.Actor.ActivateEventClass", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InClass, paramsPtr + 0);
@@ -2731,14 +2739,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 68);
     }
 
-    private static BmSDK.Function __fn_TriggerGlobalEventClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerGlobalEventClass;
     /// <summary>
     /// Function: TriggerGlobalEventClass
     /// </summary>
     public unsafe virtual bool TriggerGlobalEventClass(BmSDK.Class InEventClass, BmSDK.Engine.Actor InInstigator, int ActivateIndex = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGlobalEventClass, "Engine.Actor.TriggerGlobalEventClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerGlobalEventClass, "Engine.Actor.TriggerGlobalEventClass", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InEventClass, paramsPtr + 0);
@@ -2748,14 +2756,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_ReceivedNewEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReceivedNewEvent;
     /// <summary>
     /// Function: ReceivedNewEvent
     /// </summary>
     public unsafe virtual void ReceivedNewEvent(BmSDK.Engine.SequenceEvent Evt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReceivedNewEvent, "Engine.Actor.ReceivedNewEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReceivedNewEvent, "Engine.Actor.ReceivedNewEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Evt, paramsPtr + 0);
@@ -2763,14 +2771,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerEventClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEventClass;
     /// <summary>
     /// Function: TriggerEventClass
     /// </summary>
     public unsafe virtual bool TriggerEventClass(BmSDK.Class InEventClass, BmSDK.Engine.Actor InInstigator, int ActivateIndex, bool bTest, out BmSDK.TArray<BmSDK.Engine.SequenceEvent> ActivatedEvents)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEventClass, "Engine.Actor.TriggerEventClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEventClass, "Engine.Actor.TriggerEventClass", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InEventClass, paramsPtr + 0);
@@ -2782,29 +2790,30 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_DebugMessagePlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugMessagePlayer;
     /// <summary>
     /// Function: DebugMessagePlayer
     /// </summary>
-    public unsafe virtual void DebugMessagePlayer(BmSDK.FString msg)
+    public unsafe virtual void DebugMessagePlayer(BmSDK.FStringArg msg)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugMessagePlayer, "Engine.Actor.DebugMessagePlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMessagePlayer, "Engine.Actor.DebugMessagePlayer", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(msg, paramsPtr + 0);
+        msg.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ImpactEffectIsRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ImpactEffectIsRelevant;
     /// <summary>
     /// Function: ImpactEffectIsRelevant
     /// </summary>
     public unsafe virtual bool ImpactEffectIsRelevant(BmSDK.Engine.Pawn EffectInstigator, System.Numerics.Vector3 SpawnLocation, bool bForceDedicated, float VisibleCullDistance = default, float HiddenCullDistance = default, bool bSkipLOSCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ImpactEffectIsRelevant, "Engine.Actor.ImpactEffectIsRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ImpactEffectIsRelevant, "Engine.Actor.ImpactEffectIsRelevant", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EffectInstigator, paramsPtr + 0);
@@ -2817,14 +2826,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_ActorEffectIsRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActorEffectIsRelevant;
     /// <summary>
     /// Function: ActorEffectIsRelevant
     /// </summary>
     public unsafe virtual bool ActorEffectIsRelevant(BmSDK.Engine.Pawn EffectInstigator, bool bForceDedicated, float VisibleCullDistance = default, float HiddenCullDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActorEffectIsRelevant, "Engine.Actor.ActorEffectIsRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActorEffectIsRelevant, "Engine.Actor.ActorEffectIsRelevant", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EffectInstigator, paramsPtr + 0);
@@ -2835,14 +2844,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_EffectIsRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EffectIsRelevant;
     /// <summary>
     /// Function: EffectIsRelevant
     /// </summary>
     public unsafe virtual bool EffectIsRelevant(System.Numerics.Vector3 SpawnLocation, bool bForceDedicated, float VisibleCullDistance = default, float HiddenCullDistance = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EffectIsRelevant, "Engine.Actor.EffectIsRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EffectIsRelevant, "Engine.Actor.EffectIsRelevant", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnLocation, paramsPtr + 0);
@@ -2853,14 +2862,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_ApplyFluidSurfaceImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyFluidSurfaceImpact;
     /// <summary>
     /// Function: ApplyFluidSurfaceImpact
     /// </summary>
     public unsafe virtual void ApplyFluidSurfaceImpact(BmSDK.Engine.FluidSurfaceActor Fluid, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyFluidSurfaceImpact, "Engine.Actor.ApplyFluidSurfaceImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyFluidSurfaceImpact, "Engine.Actor.ApplyFluidSurfaceImpact", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Fluid, paramsPtr + 0);
@@ -2869,28 +2878,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CanSplash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSplash;
     /// <summary>
     /// Function: CanSplash
     /// </summary>
     public unsafe virtual bool CanSplash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSplash, "Engine.Actor.CanSplash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSplash, "Engine.Actor.CanSplash", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayTeleportEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayTeleportEffect;
     /// <summary>
     /// Function: PlayTeleportEffect
     /// </summary>
     public unsafe virtual void PlayTeleportEffect(bool bOut, bool bSound)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayTeleportEffect, "Engine.Actor.PlayTeleportEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayTeleportEffect, "Engine.Actor.PlayTeleportEffect", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOut, paramsPtr + 0);
@@ -2899,28 +2908,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsInPain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInPain;
     /// <summary>
     /// Function: IsInPain
     /// </summary>
     public unsafe virtual bool IsInPain()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInPain, "Engine.Actor.IsInPain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInPain, "Engine.Actor.IsInPain", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsInVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInVolume;
     /// <summary>
     /// Function: IsInVolume
     /// </summary>
     public unsafe virtual bool IsInVolume(BmSDK.Engine.Volume aVolume)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInVolume, "Engine.Actor.IsInVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInVolume, "Engine.Actor.IsInVolume", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(aVolume, paramsPtr + 0);
@@ -2928,28 +2937,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe virtual void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.Actor.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.Actor.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ModifyHearSoundComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyHearSoundComponent;
     /// <summary>
     /// Function: ModifyHearSoundComponent
     /// </summary>
     public unsafe virtual void ModifyHearSoundComponent(BmSDK.Engine.AudioComponent AC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyHearSoundComponent, "Engine.Actor.ModifyHearSoundComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyHearSoundComponent, "Engine.Actor.ModifyHearSoundComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AC, paramsPtr + 0);
@@ -2957,49 +2966,50 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetPhysicsName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicsName;
     /// <summary>
     /// Function: GetPhysicsName
     /// </summary>
     public unsafe virtual BmSDK.FString GetPhysicsName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPhysicsName, "Engine.Actor.GetPhysicsName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPhysicsName, "Engine.Actor.GetPhysicsName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetActorThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorThoughts;
     /// <summary>
     /// Function: GetActorThoughts
     /// </summary>
-    public unsafe virtual void GetActorThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FString IndentString = default)
+    public unsafe virtual void GetActorThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList, out System.Numerics.Vector3 ThoughtLocationOverride, BmSDK.FStringArg IndentString = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorThoughts, "Engine.Actor.GetActorThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorThoughts, "Engine.Actor.GetActorThoughts", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ThoughtLocationOverride);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThoughtLocationOverride, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(IndentString, paramsPtr + 28);
+        IndentString.WriteTo(paramsPtr + 28);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 28);
         ThoughtList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.Actor.FThought>>(paramsPtr + 0);
         ThoughtLocationOverride = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_DisplayDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayDebug;
     /// <summary>
     /// Function: DisplayDebug
     /// </summary>
     public unsafe virtual void DisplayDebug(BmSDK.Engine.HUD HUD, out float out_YL, out float out_YPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.Actor.DisplayDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayDebug, "Engine.Actor.DisplayDebug", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -3013,28 +3023,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetDebugName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugName;
     /// <summary>
     /// Function: GetDebugName
     /// </summary>
     public unsafe virtual BmSDK.FString GetDebugName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDebugName, "Engine.Actor.GetDebugName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDebugName, "Engine.Actor.GetDebugName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MatchStarting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MatchStarting;
     /// <summary>
     /// Function: MatchStarting
     /// </summary>
     public unsafe virtual void MatchStarting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatchStarting, "Engine.Actor.MatchStarting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MatchStarting, "Engine.Actor.MatchStarting", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -3061,55 +3071,58 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     /// <summary>
     /// Function: ReplaceText
     /// </summary>
-    public unsafe static void ReplaceText(out BmSDK.FString Text, BmSDK.FString Replace, BmSDK.FString With)
+    public unsafe static void ReplaceText(out BmSDK.FString Text, BmSDK.FStringArg Replace, BmSDK.FStringArg With)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplaceText, "Engine.Actor.ReplaceText");
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Replace, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(With, paramsPtr + 32);
+        Replace.WriteTo(paramsPtr + 16);
+        With.WriteTo(paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         Text = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetHumanReadableName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHumanReadableName;
     /// <summary>
     /// Function: GetHumanReadableName
     /// </summary>
     public unsafe virtual BmSDK.FString GetHumanReadableName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHumanReadableName, "Engine.Actor.GetHumanReadableName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHumanReadableName, "Engine.Actor.GetHumanReadableName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetItemName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetItemName;
     /// <summary>
     /// Function: GetItemName
     /// </summary>
-    public unsafe virtual BmSDK.FString GetItemName(BmSDK.FString FullName)
+    public unsafe virtual BmSDK.FString GetItemName(BmSDK.FStringArg FullName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetItemName, "Engine.Actor.GetItemName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetItemName, "Engine.Actor.GetItemName", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FullName, paramsPtr + 0);
+        FullName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_CalcCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcCamera;
     /// <summary>
     /// Function: CalcCamera
     /// </summary>
     public unsafe virtual bool CalcCamera(float fDeltaTime, out System.Numerics.Vector3 out_CamLoc, out BmSDK.Rotator out_CamRot, out float out_FOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalcCamera, "Engine.Actor.CalcCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalcCamera, "Engine.Actor.CalcCamera", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fDeltaTime, paramsPtr + 0);
@@ -3126,14 +3139,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_EndViewTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndViewTarget;
     /// <summary>
     /// Function: EndViewTarget
     /// </summary>
     public unsafe virtual void EndViewTarget(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndViewTarget, "Engine.Actor.EndViewTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndViewTarget, "Engine.Actor.EndViewTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -3141,14 +3154,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BecomeViewTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BecomeViewTarget;
     /// <summary>
     /// Function: BecomeViewTarget
     /// </summary>
     public unsafe virtual void BecomeViewTarget(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BecomeViewTarget, "Engine.Actor.BecomeViewTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BecomeViewTarget, "Engine.Actor.BecomeViewTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -3156,28 +3169,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForErrors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForErrors;
     /// <summary>
     /// Function: CheckForErrors
     /// </summary>
     public unsafe virtual bool CheckForErrors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForErrors, "Engine.Actor.CheckForErrors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForErrors, "Engine.Actor.CheckForErrors", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DebugFreezeGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugFreezeGame;
     /// <summary>
     /// Function: DebugFreezeGame
     /// </summary>
     public unsafe virtual void DebugFreezeGame(BmSDK.Engine.Actor ActorToLookAt = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugFreezeGame, "Engine.Actor.DebugFreezeGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugFreezeGame, "Engine.Actor.DebugFreezeGame", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ActorToLookAt, paramsPtr + 0);
@@ -3185,14 +3198,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetGravityZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGravityZ;
     /// <summary>
     /// Function: GetGravityZ
     /// </summary>
     public unsafe virtual float GetGravityZ()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGravityZ, "Engine.Actor.GetGravityZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGravityZ, "Engine.Actor.GetGravityZ", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -3206,14 +3219,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckHitInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckHitInfo;
     /// <summary>
     /// Function: CheckHitInfo
     /// </summary>
     public unsafe virtual void CheckHitInfo(out BmSDK.Engine.Actor.FTraceHitInfo HitInfo, BmSDK.Engine.PrimitiveComponent FallBackComponent, System.Numerics.Vector3 Dir, out System.Numerics.Vector3 out_HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckHitInfo, "Engine.Actor.CheckHitInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckHitInfo, "Engine.Actor.CheckHitInfo", this);
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitInfo);
@@ -3228,14 +3241,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TakeRadiusDamageFromWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeRadiusDamageFromWeapon;
     /// <summary>
     /// Function: TakeRadiusDamageFromWeapon
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.EWeaponDamageResult TakeRadiusDamageFromWeapon(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeRadiusDamageFromWeapon, "Engine.Actor.TakeRadiusDamageFromWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeRadiusDamageFromWeapon, "Engine.Actor.TakeRadiusDamageFromWeapon", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 0);
@@ -3251,14 +3264,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EWeaponDamageResult>(paramsPtr + 56);
     }
 
-    private static BmSDK.Function __fn_TakeDamageFromWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamageFromWeapon;
     /// <summary>
     /// Function: TakeDamageFromWeapon
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.EWeaponDamageResult TakeDamageFromWeapon(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default, bool bHeadShot = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamageFromWeapon, "Engine.Actor.TakeDamageFromWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamageFromWeapon, "Engine.Actor.TakeDamageFromWeapon", this);
         byte* paramsPtr = stackalloc byte[125];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -3274,14 +3287,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EWeaponDamageResult>(paramsPtr + 108);
     }
 
-    private static BmSDK.Function __fn_TakeRadiusDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeRadiusDamage;
     /// <summary>
     /// Function: TakeRadiusDamage
     /// </summary>
     public unsafe virtual void TakeRadiusDamage(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeRadiusDamage, "Engine.Actor.TakeRadiusDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeRadiusDamage, "Engine.Actor.TakeRadiusDamage", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 0);
@@ -3297,14 +3310,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HealDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HealDamage;
     /// <summary>
     /// Function: HealDamage
     /// </summary>
     public unsafe virtual bool HealDamage(int Amount, BmSDK.Engine.Controller Healer, BmSDK.Class DamageType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HealDamage, "Engine.Actor.HealDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HealDamage, "Engine.Actor.HealDamage", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Amount, paramsPtr + 0);
@@ -3314,14 +3327,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe virtual void TakeDamage(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "Engine.Actor.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "Engine.Actor.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -3335,14 +3348,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_KilledBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KilledBy;
     /// <summary>
     /// Function: KilledBy
     /// </summary>
     public unsafe virtual void KilledBy(BmSDK.Engine.Pawn EventInstigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KilledBy, "Engine.Actor.KilledBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KilledBy, "Engine.Actor.KilledBy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventInstigator, paramsPtr + 0);
@@ -3350,14 +3363,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HurtRadius;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HurtRadius;
     /// <summary>
     /// Function: HurtRadius
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.EWeaponDamageResult HurtRadius(float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, BmSDK.Engine.Actor IgnoredActor = default, BmSDK.Engine.Controller InstigatedByController = default, bool bDoFullDamage = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HurtRadius, "Engine.Actor.HurtRadius");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HurtRadius, "Engine.Actor.HurtRadius", this);
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BaseDamage, paramsPtr + 0);
@@ -3372,14 +3385,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EWeaponDamageResult>(paramsPtr + 52);
     }
 
-    private static BmSDK.Function __fn_StopsProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopsProjectile;
     /// <summary>
     /// Function: StopsProjectile
     /// </summary>
     public unsafe virtual bool StopsProjectile(BmSDK.Engine.Projectile P, BmSDK.Engine.PrimitiveComponent HitComponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopsProjectile, "Engine.Actor.StopsProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopsProjectile, "Engine.Actor.StopsProjectile", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -3388,14 +3401,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_NotifySkelControlBeyondLimit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifySkelControlBeyondLimit;
     /// <summary>
     /// Function: NotifySkelControlBeyondLimit
     /// </summary>
     public unsafe virtual void NotifySkelControlBeyondLimit(BmSDK.Engine.SkelControlLookAt LookAt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifySkelControlBeyondLimit, "Engine.Actor.NotifySkelControlBeyondLimit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifySkelControlBeyondLimit, "Engine.Actor.NotifySkelControlBeyondLimit", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LookAt, paramsPtr + 0);
@@ -3403,14 +3416,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ConstraintBrokenNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstraintBrokenNotify;
     /// <summary>
     /// Function: ConstraintBrokenNotify
     /// </summary>
     public unsafe virtual void ConstraintBrokenNotify(BmSDK.Engine.Actor ConOwner, BmSDK.Engine.RB_ConstraintSetup ConSetup, BmSDK.Engine.RB_ConstraintInstance ConInstance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstraintBrokenNotify, "Engine.Actor.ConstraintBrokenNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConstraintBrokenNotify, "Engine.Actor.ConstraintBrokenNotify", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConOwner, paramsPtr + 0);
@@ -3420,42 +3433,42 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe virtual void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.Actor.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.Actor.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe virtual void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "Engine.Actor.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "Engine.Actor.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetALocalPlayerController;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetALocalPlayerController;
     /// <summary>
     /// Function: GetALocalPlayerController
     /// </summary>
     public unsafe virtual BmSDK.Engine.PlayerController GetALocalPlayerController()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetALocalPlayerController, "Engine.Actor.GetALocalPlayerController");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetALocalPlayerController, "Engine.Actor.GetALocalPlayerController", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -3469,14 +3482,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.PlayerController>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetURLMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetURLMap;
     /// <summary>
     /// Function: GetURLMap
     /// </summary>
     public unsafe virtual BmSDK.FString GetURLMap()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetURLMap, "Engine.Actor.GetURLMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetURLMap, "Engine.Actor.GetURLMap", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -3490,14 +3503,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PostTeleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostTeleport;
     /// <summary>
     /// Function: PostTeleport
     /// </summary>
     public unsafe virtual void PostTeleport(BmSDK.Engine.Teleporter OutTeleporter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostTeleport, "Engine.Actor.PostTeleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostTeleport, "Engine.Actor.PostTeleport", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutTeleporter, paramsPtr + 0);
@@ -3505,14 +3518,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PreTeleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreTeleport;
     /// <summary>
     /// Function: PreTeleport
     /// </summary>
     public unsafe virtual bool PreTeleport(BmSDK.Engine.Teleporter InTeleporter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreTeleport, "Engine.Actor.PreTeleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreTeleport, "Engine.Actor.PreTeleport", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InTeleporter, paramsPtr + 0);
@@ -3520,14 +3533,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetDestination;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDestination;
     /// <summary>
     /// Function: GetDestination
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetDestination(BmSDK.Engine.Controller C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDestination, "Engine.Actor.GetDestination");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDestination, "Engine.Actor.GetDestination", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -3542,14 +3555,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CalculateMinSpeedTrajectory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalculateMinSpeedTrajectory;
     /// <summary>
     /// Function: CalculateMinSpeedTrajectory
     /// </summary>
     public unsafe virtual bool CalculateMinSpeedTrajectory(out System.Numerics.Vector3 out_Velocity, System.Numerics.Vector3 End, System.Numerics.Vector3 Start, float MaxTossSpeed, float MinTossSpeed, System.Numerics.Vector3 CollisionSize = default, float TerminalVelocity = default, float GravityZ = default, bool bOnlyTraceUp = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalculateMinSpeedTrajectory, "Engine.Actor.CalculateMinSpeedTrajectory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateMinSpeedTrajectory, "Engine.Actor.CalculateMinSpeedTrajectory", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out out_Velocity);
@@ -3574,14 +3587,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 68);
     }
 
-    private static BmSDK.Function __fn_SuggestTossVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuggestTossVelocity;
     /// <summary>
     /// Function: SuggestTossVelocity
     /// </summary>
     public unsafe virtual bool SuggestTossVelocity(out System.Numerics.Vector3 TossVelocity, System.Numerics.Vector3 Destination, System.Numerics.Vector3 Start, float TossSpeed, float BaseTossZ = default, float DesiredZPct = default, System.Numerics.Vector3 CollisionSize = default, float TerminalVelocity = default, float OverrideGravityZ = default, bool bOnlyTraceUp = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuggestTossVelocity, "Engine.Actor.SuggestTossVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuggestTossVelocity, "Engine.Actor.SuggestTossVelocity", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out TossVelocity);
@@ -3607,14 +3620,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_PlayerCanSeeMe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerCanSeeMe;
     /// <summary>
     /// Function: PlayerCanSeeMe
     /// </summary>
     public unsafe virtual bool PlayerCanSeeMe(bool bForceLOSCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerCanSeeMe, "Engine.Actor.PlayerCanSeeMe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerCanSeeMe, "Engine.Actor.PlayerCanSeeMe", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceLOSCheck, paramsPtr + 0);
@@ -3629,14 +3642,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_MakeNoise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeNoise;
     /// <summary>
     /// Function: MakeNoise
     /// </summary>
     public unsafe virtual void MakeNoise(float Loudness, BmSDK.FName NoiseType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeNoise, "Engine.Actor.MakeNoise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MakeNoise, "Engine.Actor.MakeNoise", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loudness, paramsPtr + 0);
@@ -3652,14 +3665,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PlaySound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySound;
     /// <summary>
     /// Function: PlaySound
     /// </summary>
     public unsafe virtual void PlaySound(BmSDK.Engine.SoundCue InSoundCue, bool bNotReplicated = default, bool bNoRepToOwner = default, bool bStopWhenOwnerDestroyed = default, System.Numerics.Vector3 SoundLocation = default, bool bNoRepToRelevant = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySound, "Engine.Actor.PlaySound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySound, "Engine.Actor.PlaySound", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSoundCue, paramsPtr + 0);
@@ -3679,14 +3692,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CreateAudioComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateAudioComponent;
     /// <summary>
     /// Function: CreateAudioComponent
     /// </summary>
     public unsafe virtual BmSDK.Engine.AudioComponent CreateAudioComponent(BmSDK.Engine.SoundCue InSoundCue, bool bPlay = default, bool bStopWhenOwnerDestroyed = default, bool bUseLocation = default, System.Numerics.Vector3 SourceLocation = default, bool bAttachToSelf = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateAudioComponent, "Engine.Actor.CreateAudioComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateAudioComponent, "Engine.Actor.CreateAudioComponent", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSoundCue, paramsPtr + 0);
@@ -3706,14 +3719,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AudioComponent>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_ResetTimerTimeDilation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetTimerTimeDilation;
     /// <summary>
     /// Function: ResetTimerTimeDilation
     /// </summary>
     public unsafe virtual void ResetTimerTimeDilation(BmSDK.FName TimerName, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetTimerTimeDilation, "Engine.Actor.ResetTimerTimeDilation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetTimerTimeDilation, "Engine.Actor.ResetTimerTimeDilation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimerName, paramsPtr + 0);
@@ -3729,14 +3742,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ModifyTimerTimeDilation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyTimerTimeDilation;
     /// <summary>
     /// Function: ModifyTimerTimeDilation
     /// </summary>
     public unsafe virtual void ModifyTimerTimeDilation(BmSDK.FName TimerName, float InTimerTimeDilation, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyTimerTimeDilation, "Engine.Actor.ModifyTimerTimeDilation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyTimerTimeDilation, "Engine.Actor.ModifyTimerTimeDilation", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimerName, paramsPtr + 0);
@@ -3753,14 +3766,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetRemainingTimeForTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRemainingTimeForTimer;
     /// <summary>
     /// Function: GetRemainingTimeForTimer
     /// </summary>
     public unsafe virtual float GetRemainingTimeForTimer(BmSDK.FName TimerFuncName = default, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRemainingTimeForTimer, "Engine.Actor.GetRemainingTimeForTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRemainingTimeForTimer, "Engine.Actor.GetRemainingTimeForTimer", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimerFuncName, paramsPtr + 0);
@@ -3769,14 +3782,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetTimerRate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimerRate;
     /// <summary>
     /// Function: GetTimerRate
     /// </summary>
     public unsafe virtual float GetTimerRate(BmSDK.FName TimerFuncName = default, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimerRate, "Engine.Actor.GetTimerRate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimerRate, "Engine.Actor.GetTimerRate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimerFuncName, paramsPtr + 0);
@@ -3792,14 +3805,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetTimerCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimerCount;
     /// <summary>
     /// Function: GetTimerCount
     /// </summary>
     public unsafe virtual float GetTimerCount(BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimerCount, "Engine.Actor.GetTimerCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimerCount, "Engine.Actor.GetTimerCount", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inTimerFunc, paramsPtr + 0);
@@ -3815,14 +3828,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_IsTimerActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTimerActive;
     /// <summary>
     /// Function: IsTimerActive
     /// </summary>
     public unsafe virtual bool IsTimerActive(BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTimerActive, "Engine.Actor.IsTimerActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTimerActive, "Engine.Actor.IsTimerActive", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inTimerFunc, paramsPtr + 0);
@@ -3838,14 +3851,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_PauseTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseTimer;
     /// <summary>
     /// Function: PauseTimer
     /// </summary>
     public unsafe virtual void PauseTimer(bool bPause, BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PauseTimer, "Engine.Actor.PauseTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PauseTimer, "Engine.Actor.PauseTimer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPause, paramsPtr + 0);
@@ -3862,14 +3875,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearAllTimers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllTimers;
     /// <summary>
     /// Function: ClearAllTimers
     /// </summary>
     public unsafe virtual void ClearAllTimers(BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAllTimers, "Engine.Actor.ClearAllTimers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAllTimers, "Engine.Actor.ClearAllTimers", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inObj, paramsPtr + 0);
@@ -3884,14 +3897,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearTimer;
     /// <summary>
     /// Function: ClearTimer
     /// </summary>
     public unsafe virtual void ClearTimer(BmSDK.FName inTimerFunc = default, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearTimer, "Engine.Actor.ClearTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearTimer, "Engine.Actor.ClearTimer", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inTimerFunc, paramsPtr + 0);
@@ -3907,14 +3920,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTimer;
     /// <summary>
     /// Function: SetTimer
     /// </summary>
     public unsafe virtual void SetTimer(float InRate, bool inbLoop = default, BmSDK.FName inTimerFunc = default, bool bRealTimeTimer = default, BmSDK.GameObject inObj = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTimer, "Engine.Actor.SetTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTimer, "Engine.Actor.SetTimer", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InRate, paramsPtr + 0);
@@ -3933,28 +3946,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TornOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TornOff;
     /// <summary>
     /// Function: TornOff
     /// </summary>
     public unsafe virtual void TornOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TornOff, "Engine.Actor.TornOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TornOff, "Engine.Actor.TornOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroy;
     /// <summary>
     /// Function: Destroy
     /// </summary>
     public unsafe virtual bool Destroy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroy, "Engine.Actor.Destroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroy, "Engine.Actor.Destroy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -3968,14 +3981,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Spawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Spawn;
     /// <summary>
     /// Function: Spawn
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor Spawn(BmSDK.Class SpawnClass, BmSDK.Engine.Actor SpawnOwner = default, BmSDK.FName SpawnTag = default, System.Numerics.Vector3 SpawnLocation = default, BmSDK.Rotator SpawnRotation = default, BmSDK.Engine.Actor ActorTemplate = default, bool bNoCollisionFail = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Spawn, "Engine.Actor.Spawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Spawn, "Engine.Actor.Spawn", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnClass, paramsPtr + 0);
@@ -3996,14 +4009,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 60);
     }
 
-    private static BmSDK.Function __fn_IsBlockedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlockedBy;
     /// <summary>
     /// Function: IsBlockedBy
     /// </summary>
     public unsafe virtual bool IsBlockedBy(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBlockedBy, "Engine.Actor.IsBlockedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBlockedBy, "Engine.Actor.IsBlockedBy", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4018,14 +4031,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetBoundingCylinder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoundingCylinder;
     /// <summary>
     /// Function: GetBoundingCylinder
     /// </summary>
     public unsafe virtual void GetBoundingCylinder(out float CollisionRadius, out float CollisionHeight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoundingCylinder, "Engine.Actor.GetBoundingCylinder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoundingCylinder, "Engine.Actor.GetBoundingCylinder", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out CollisionRadius);
@@ -4045,14 +4058,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetComponentsBoundingBox;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetComponentsBoundingBox;
     /// <summary>
     /// Function: GetComponentsBoundingBox
     /// </summary>
     public unsafe virtual void GetComponentsBoundingBox(out BmSDK.GameObject.FBox ActorBox)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetComponentsBoundingBox, "Engine.Actor.GetComponentsBoundingBox");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetComponentsBoundingBox, "Engine.Actor.GetComponentsBoundingBox", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ActorBox);
@@ -4069,14 +4082,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsOverlapping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOverlapping;
     /// <summary>
     /// Function: IsOverlapping
     /// </summary>
     public unsafe virtual bool IsOverlapping(BmSDK.Engine.Actor A)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOverlapping, "Engine.Actor.IsOverlapping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOverlapping, "Engine.Actor.IsOverlapping", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);
@@ -4091,14 +4104,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ContainsPointNoFilter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsPointNoFilter;
     /// <summary>
     /// Function: ContainsPointNoFilter
     /// </summary>
     public unsafe virtual bool ContainsPointNoFilter(System.Numerics.Vector3 Spot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContainsPointNoFilter, "Engine.Actor.ContainsPointNoFilter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ContainsPointNoFilter, "Engine.Actor.ContainsPointNoFilter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spot, paramsPtr + 0);
@@ -4113,14 +4126,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ContainsPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ContainsPoint;
     /// <summary>
     /// Function: ContainsPoint
     /// </summary>
     public unsafe virtual bool ContainsPoint(System.Numerics.Vector3 Spot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ContainsPoint, "Engine.Actor.ContainsPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ContainsPoint, "Engine.Actor.ContainsPoint", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spot, paramsPtr + 0);
@@ -4135,14 +4148,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_FindSpot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSpot;
     /// <summary>
     /// Function: FindSpot
     /// </summary>
     public unsafe virtual bool FindSpot(System.Numerics.Vector3 BoxExtent, out System.Numerics.Vector3 SpotLocation, bool DontEaryOut = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSpot, "Engine.Actor.FindSpot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSpot, "Engine.Actor.FindSpot", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoxExtent, paramsPtr + 0);
@@ -4161,14 +4174,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_TraceAllPhysicsAssetInteractions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceAllPhysicsAssetInteractions;
     /// <summary>
     /// Function: TraceAllPhysicsAssetInteractions
     /// </summary>
     public unsafe virtual bool TraceAllPhysicsAssetInteractions(BmSDK.Engine.SkeletalMeshComponent SkelMeshComp, System.Numerics.Vector3 EndTrace, System.Numerics.Vector3 StartTrace, out BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo> out_Hits, System.Numerics.Vector3 Extent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceAllPhysicsAssetInteractions, "Engine.Actor.TraceAllPhysicsAssetInteractions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceAllPhysicsAssetInteractions, "Engine.Actor.TraceAllPhysicsAssetInteractions", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelMeshComp, paramsPtr + 0);
@@ -4187,14 +4200,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 60);
     }
 
-    private static BmSDK.Function __fn_FastTrace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FastTrace;
     /// <summary>
     /// Function: FastTrace
     /// </summary>
     public unsafe virtual bool FastTrace(System.Numerics.Vector3 TraceEnd, System.Numerics.Vector3 TraceStart = default, System.Numerics.Vector3 BoxExtent = default, bool bTraceBullet = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FastTrace, "Engine.Actor.FastTrace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FastTrace, "Engine.Actor.FastTrace", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TraceEnd, paramsPtr + 0);
@@ -4212,14 +4225,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_PointCheckComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PointCheckComponent;
     /// <summary>
     /// Function: PointCheckComponent
     /// </summary>
     public unsafe virtual bool PointCheckComponent(BmSDK.Engine.PrimitiveComponent InComponent, System.Numerics.Vector3 PointLocation, System.Numerics.Vector3 PointExtent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointCheckComponent, "Engine.Actor.PointCheckComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PointCheckComponent, "Engine.Actor.PointCheckComponent", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InComponent, paramsPtr + 0);
@@ -4236,14 +4249,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_TraceComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceComponent;
     /// <summary>
     /// Function: TraceComponent
     /// </summary>
     public unsafe virtual bool TraceComponent(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, BmSDK.Engine.PrimitiveComponent InComponent, System.Numerics.Vector3 TraceEnd, System.Numerics.Vector3 TraceStart, System.Numerics.Vector3 Extent, out BmSDK.Engine.Actor.FTraceHitInfo HitInfo, bool bComplexCollision)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceComponent, "Engine.Actor.TraceComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceComponent, "Engine.Actor.TraceComponent", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitLocation);
@@ -4271,14 +4284,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 112);
     }
 
-    private static BmSDK.Function __fn_Trace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Trace;
     /// <summary>
     /// Function: Trace
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor Trace(out System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 HitNormal, System.Numerics.Vector3 TraceEnd, System.Numerics.Vector3 TraceStart, BmSDK.Component.ECollisionFilter TraceFilter, System.Numerics.Vector3 Extent, out BmSDK.Engine.Actor.FTraceHitInfo HitInfo, int ExtraTraceFlags)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Trace, "Engine.Actor.Trace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Trace, "Engine.Actor.Trace", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitLocation);
@@ -4306,14 +4319,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 108);
     }
 
-    private static BmSDK.Function __fn_VolumeBasedDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VolumeBasedDestroy;
     /// <summary>
     /// Function: VolumeBasedDestroy
     /// </summary>
     public unsafe virtual void VolumeBasedDestroy(BmSDK.Engine.PhysicsVolume PV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VolumeBasedDestroy, "Engine.Actor.VolumeBasedDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VolumeBasedDestroy, "Engine.Actor.VolumeBasedDestroy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PV, paramsPtr + 0);
@@ -4321,28 +4334,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OutsideWorldBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OutsideWorldBounds;
     /// <summary>
     /// Function: OutsideWorldBounds
     /// </summary>
     public unsafe virtual void OutsideWorldBounds()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutsideWorldBounds, "Engine.Actor.OutsideWorldBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OutsideWorldBounds, "Engine.Actor.OutsideWorldBounds", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FellOutOfWorld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FellOutOfWorld;
     /// <summary>
     /// Function: FellOutOfWorld
     /// </summary>
     public unsafe virtual void FellOutOfWorld(BmSDK.Class dmgType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FellOutOfWorld, "Engine.Actor.FellOutOfWorld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FellOutOfWorld, "Engine.Actor.FellOutOfWorld", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 0);
@@ -4350,14 +4363,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UsedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UsedBy;
     /// <summary>
     /// Function: UsedBy
     /// </summary>
     public unsafe virtual bool UsedBy(BmSDK.Engine.Pawn User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedBy, "Engine.Actor.UsedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UsedBy, "Engine.Actor.UsedBy", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -4365,29 +4378,30 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AsyncLoadDone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AsyncLoadDone;
     /// <summary>
     /// Function: AsyncLoadDone
     /// </summary>
-    public unsafe virtual void AsyncLoadDone(BmSDK.FString ObjectFinished)
+    public unsafe virtual void AsyncLoadDone(BmSDK.FStringArg ObjectFinished)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AsyncLoadDone, "Engine.Actor.AsyncLoadDone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AsyncLoadDone, "Engine.Actor.AsyncLoadDone", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectFinished, paramsPtr + 0);
+        ObjectFinished.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OverRotated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverRotated;
     /// <summary>
     /// Function: OverRotated
     /// </summary>
     public unsafe virtual bool OverRotated(out BmSDK.Rotator out_Desired, out BmSDK.Rotator out_Actual)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverRotated, "Engine.Actor.OverRotated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverRotated, "Engine.Actor.OverRotated", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out out_Desired);
@@ -4400,14 +4414,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_ClampRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClampRotation;
     /// <summary>
     /// Function: ClampRotation
     /// </summary>
     public unsafe virtual bool ClampRotation(out BmSDK.Rotator out_Rot, BmSDK.Rotator rBase, BmSDK.Rotator rUpperLimits, BmSDK.Rotator rLowerLimits)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClampRotation, "Engine.Actor.ClampRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClampRotation, "Engine.Actor.ClampRotation", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out out_Rot);
@@ -4427,42 +4441,42 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_OnSleepRBPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSleepRBPhysics;
     /// <summary>
     /// Function: OnSleepRBPhysics
     /// </summary>
     public unsafe virtual void OnSleepRBPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSleepRBPhysics, "Engine.Actor.OnSleepRBPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSleepRBPhysics, "Engine.Actor.OnSleepRBPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnWakeRBPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnWakeRBPhysics;
     /// <summary>
     /// Function: OnWakeRBPhysics
     /// </summary>
     public unsafe virtual void OnWakeRBPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnWakeRBPhysics, "Engine.Actor.OnWakeRBPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnWakeRBPhysics, "Engine.Actor.OnWakeRBPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AnimationTriggerCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AnimationTriggerCallback;
     /// <summary>
     /// Function: AnimationTriggerCallback
     /// </summary>
     public unsafe virtual void AnimationTriggerCallback(BmSDK.FName TagName, BmSDK.TArray<BmSDK.FString> Params, BmSDK.Engine.AnimSet TagAnimSet, float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnimationTriggerCallback, "Engine.Actor.AnimationTriggerCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AnimationTriggerCallback, "Engine.Actor.AnimationTriggerCallback", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TagName, paramsPtr + 0);
@@ -4473,14 +4487,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RanInto;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RanInto;
     /// <summary>
     /// Function: RanInto
     /// </summary>
     public unsafe virtual void RanInto(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RanInto, "Engine.Actor.RanInto");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RanInto, "Engine.Actor.RanInto", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4488,14 +4502,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EncroachedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EncroachedBy;
     /// <summary>
     /// Function: EncroachedBy
     /// </summary>
     public unsafe virtual void EncroachedBy(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EncroachedBy, "Engine.Actor.EncroachedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EncroachedBy, "Engine.Actor.EncroachedBy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4503,28 +4517,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CollisionChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CollisionChanged;
     /// <summary>
     /// Function: CollisionChanged
     /// </summary>
     public unsafe virtual void CollisionChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CollisionChanged, "Engine.Actor.CollisionChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CollisionChanged, "Engine.Actor.CollisionChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpecialHandling;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpecialHandling;
     /// <summary>
     /// Function: SpecialHandling
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor SpecialHandling(BmSDK.Engine.Pawn Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpecialHandling, "Engine.Actor.SpecialHandling");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpecialHandling, "Engine.Actor.SpecialHandling", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4532,14 +4546,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Detach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Detach;
     /// <summary>
     /// Function: Detach
     /// </summary>
     public unsafe virtual void Detach(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detach, "Engine.Actor.Detach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Detach, "Engine.Actor.Detach", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4547,14 +4561,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Attach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Attach;
     /// <summary>
     /// Function: Attach
     /// </summary>
     public unsafe virtual void Attach(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Attach, "Engine.Actor.Attach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Attach, "Engine.Actor.Attach", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4562,28 +4576,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BaseChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BaseChange;
     /// <summary>
     /// Function: BaseChange
     /// </summary>
     public unsafe virtual void BaseChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BaseChange, "Engine.Actor.BaseChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BaseChange, "Engine.Actor.BaseChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Bump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Bump;
     /// <summary>
     /// Function: Bump
     /// </summary>
     public unsafe virtual void Bump(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Bump, "Engine.Actor.Bump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Bump, "Engine.Actor.Bump", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4593,14 +4607,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UnTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnTouch;
     /// <summary>
     /// Function: UnTouch
     /// </summary>
     public unsafe virtual void UnTouch(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnTouch, "Engine.Actor.UnTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnTouch, "Engine.Actor.UnTouch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4608,14 +4622,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostTouch;
     /// <summary>
     /// Function: PostTouch
     /// </summary>
     public unsafe virtual void PostTouch(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostTouch, "Engine.Actor.PostTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostTouch, "Engine.Actor.PostTouch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4623,14 +4637,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe virtual void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "Engine.Actor.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "Engine.Actor.Touch", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4641,14 +4655,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Landed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Landed;
     /// <summary>
     /// Function: Landed
     /// </summary>
     public unsafe virtual void Landed(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor FloorActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Landed, "Engine.Actor.Landed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Landed, "Engine.Actor.Landed", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 0);
@@ -4657,28 +4671,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Falling;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Falling;
     /// <summary>
     /// Function: Falling
     /// </summary>
     public unsafe virtual void Falling()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Falling, "Engine.Actor.Falling");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Falling, "Engine.Actor.Falling", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HitWall;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitWall;
     /// <summary>
     /// Function: HitWall
     /// </summary>
     public unsafe virtual void HitWall(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor Wall, BmSDK.Engine.PrimitiveComponent WallComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitWall, "Engine.Actor.HitWall");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitWall, "Engine.Actor.HitWall", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 0);
@@ -4688,28 +4702,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Timer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Timer;
     /// <summary>
     /// Function: Timer
     /// </summary>
     public unsafe virtual void Timer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Timer, "Engine.Actor.Timer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Timer, "Engine.Actor.Timer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "Engine.Actor.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "Engine.Actor.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -4717,14 +4731,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LostChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LostChild;
     /// <summary>
     /// Function: LostChild
     /// </summary>
     public unsafe virtual void LostChild(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LostChild, "Engine.Actor.LostChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LostChild, "Engine.Actor.LostChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4732,14 +4746,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GainedChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GainedChild;
     /// <summary>
     /// Function: GainedChild
     /// </summary>
     public unsafe virtual void GainedChild(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GainedChild, "Engine.Actor.GainedChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GainedChild, "Engine.Actor.GainedChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -4747,28 +4761,28 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe virtual void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.Actor.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "Engine.Actor.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndOverrideApexClothSimulationEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndOverrideApexClothSimulationEnabled;
     /// <summary>
     /// Function: EndOverrideApexClothSimulationEnabled
     /// </summary>
     public unsafe virtual void EndOverrideApexClothSimulationEnabled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndOverrideApexClothSimulationEnabled, "Engine.Actor.EndOverrideApexClothSimulationEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndOverrideApexClothSimulationEnabled, "Engine.Actor.EndOverrideApexClothSimulationEnabled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -4782,14 +4796,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginOverrideApexClothSimulationEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginOverrideApexClothSimulationEnabled;
     /// <summary>
     /// Function: BeginOverrideApexClothSimulationEnabled
     /// </summary>
     public unsafe virtual void BeginOverrideApexClothSimulationEnabled(bool bSimulationEnabled, bool bClothVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginOverrideApexClothSimulationEnabled, "Engine.Actor.BeginOverrideApexClothSimulationEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginOverrideApexClothSimulationEnabled, "Engine.Actor.BeginOverrideApexClothSimulationEnabled", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSimulationEnabled, paramsPtr + 0);
@@ -4805,14 +4819,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EndOverrideApexClothTeleportMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndOverrideApexClothTeleportMode;
     /// <summary>
     /// Function: EndOverrideApexClothTeleportMode
     /// </summary>
     public unsafe virtual void EndOverrideApexClothTeleportMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndOverrideApexClothTeleportMode, "Engine.Actor.EndOverrideApexClothTeleportMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndOverrideApexClothTeleportMode, "Engine.Actor.EndOverrideApexClothTeleportMode", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -4826,14 +4840,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginOverrideApexClothTeleportMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginOverrideApexClothTeleportMode;
     /// <summary>
     /// Function: BeginOverrideApexClothTeleportMode
     /// </summary>
     public unsafe virtual void BeginOverrideApexClothTeleportMode(BmSDK.Engine.Actor.EApexClothTeleportMode TeleportMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginOverrideApexClothTeleportMode, "Engine.Actor.BeginOverrideApexClothTeleportMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginOverrideApexClothTeleportMode, "Engine.Actor.BeginOverrideApexClothTeleportMode", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TeleportMode, paramsPtr + 0);
@@ -4848,14 +4862,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetApexClothSimulationEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetApexClothSimulationEnabled;
     /// <summary>
     /// Function: SetApexClothSimulationEnabled
     /// </summary>
     public unsafe virtual void SetApexClothSimulationEnabled(bool bSimulationEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetApexClothSimulationEnabled, "Engine.Actor.SetApexClothSimulationEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetApexClothSimulationEnabled, "Engine.Actor.SetApexClothSimulationEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSimulationEnabled, paramsPtr + 0);
@@ -4870,17 +4884,17 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartASyncLoad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartASyncLoad;
     /// <summary>
     /// Function: StartASyncLoad
     /// </summary>
-    public unsafe virtual bool StartASyncLoad(BmSDK.FString FullPath, bool bIgnoreMissingPackage = default)
+    public unsafe virtual bool StartASyncLoad(BmSDK.FStringArg FullPath, bool bIgnoreMissingPackage = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartASyncLoad, "Engine.Actor.StartASyncLoad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartASyncLoad, "Engine.Actor.StartASyncLoad", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FullPath, paramsPtr + 0);
+        FullPath.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIgnoreMissingPackage, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -4890,17 +4904,18 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SetStasis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStasis;
     /// <summary>
     /// Function: SetStasis
     /// </summary>
     public unsafe virtual void SetStasis(bool bInStasis)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStasis, "Engine.Actor.SetStasis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStasis, "Engine.Actor.SetStasis", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInStasis, paramsPtr + 0);
@@ -4915,14 +4930,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetTickIsDisabledNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetTickIsDisabledNative;
     /// <summary>
     /// Function: OnSetTickIsDisabledNative
     /// </summary>
     public unsafe virtual void OnSetTickIsDisabledNative(bool bDisabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetTickIsDisabledNative, "Engine.Actor.OnSetTickIsDisabledNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetTickIsDisabledNative, "Engine.Actor.OnSetTickIsDisabledNative", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDisabled, paramsPtr + 0);
@@ -4937,14 +4952,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetTickIsDisabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetTickIsDisabled;
     /// <summary>
     /// Function: OnSetTickIsDisabled
     /// </summary>
     public unsafe virtual void OnSetTickIsDisabled(bool bDisabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetTickIsDisabled, "Engine.Actor.OnSetTickIsDisabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetTickIsDisabled, "Engine.Actor.OnSetTickIsDisabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDisabled, paramsPtr + 0);
@@ -4952,14 +4967,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetTickIsDisabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickIsDisabled;
     /// <summary>
     /// Function: SetTickIsDisabled
     /// </summary>
     public unsafe virtual void SetTickIsDisabled(bool bInDisabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTickIsDisabled, "Engine.Actor.SetTickIsDisabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTickIsDisabled, "Engine.Actor.SetTickIsDisabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInDisabled, paramsPtr + 0);
@@ -4974,14 +4989,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetTickGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTickGroup;
     /// <summary>
     /// Function: SetTickGroup
     /// </summary>
     public unsafe virtual void SetTickGroup(BmSDK.GameObject.ETickingGroup NewTickGroup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTickGroup, "Engine.Actor.SetTickGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTickGroup, "Engine.Actor.SetTickGroup", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTickGroup, paramsPtr + 0);
@@ -4996,14 +5011,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReattachComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReattachComponent;
     /// <summary>
     /// Function: ReattachComponent
     /// </summary>
     public unsafe virtual void ReattachComponent(BmSDK.Engine.ActorComponent ComponentToReattach)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReattachComponent, "Engine.Actor.ReattachComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReattachComponent, "Engine.Actor.ReattachComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ComponentToReattach, paramsPtr + 0);
@@ -5018,14 +5033,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DetachComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachComponent;
     /// <summary>
     /// Function: DetachComponent
     /// </summary>
     public unsafe virtual void DetachComponent(BmSDK.Engine.ActorComponent ExComponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachComponent, "Engine.Actor.DetachComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachComponent, "Engine.Actor.DetachComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExComponent, paramsPtr + 0);
@@ -5040,14 +5055,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AttachComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponent;
     /// <summary>
     /// Function: AttachComponent
     /// </summary>
     public unsafe virtual void AttachComponent(BmSDK.Engine.ActorComponent NewComponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachComponent, "Engine.Actor.AttachComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachComponent, "Engine.Actor.AttachComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewComponent, paramsPtr + 0);
@@ -5062,14 +5077,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UnClock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnClock;
     /// <summary>
     /// Function: UnClock
     /// </summary>
     public unsafe virtual void UnClock(out float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnClock, "Engine.Actor.UnClock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnClock, "Engine.Actor.UnClock", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Time);
@@ -5086,14 +5101,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Clock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Clock;
     /// <summary>
     /// Function: Clock
     /// </summary>
     public unsafe virtual void Clock(out float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Clock, "Engine.Actor.Clock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Clock, "Engine.Actor.Clock", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Time);
@@ -5110,14 +5125,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPhysics;
     /// <summary>
     /// Function: SetPhysics
     /// </summary>
     public unsafe virtual void SetPhysics(BmSDK.Engine.Actor.EPhysics newPhysics, bool WakePhysics = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPhysics, "Engine.Actor.SetPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPhysics, "Engine.Actor.SetPhysics", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(newPhysics, paramsPtr + 0);
@@ -5133,14 +5148,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetOnlyOwnerSee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlyOwnerSee;
     /// <summary>
     /// Function: SetOnlyOwnerSee
     /// </summary>
     public unsafe virtual void SetOnlyOwnerSee(bool bNewOnlyOwnerSee)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOnlyOwnerSee, "Engine.Actor.SetOnlyOwnerSee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOnlyOwnerSee, "Engine.Actor.SetOnlyOwnerSee", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewOnlyOwnerSee, paramsPtr + 0);
@@ -5155,14 +5170,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
     /// Function: SetHidden
     /// </summary>
     public unsafe virtual void SetHidden(bool bNewHidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidden, "Engine.Actor.SetHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidden, "Engine.Actor.SetHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewHidden, paramsPtr + 0);
@@ -5177,17 +5192,17 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ChartData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChartData;
     /// <summary>
     /// Function: ChartData
     /// </summary>
-    public unsafe virtual void ChartData(BmSDK.FString DataName, float DataValue)
+    public unsafe virtual void ChartData(BmSDK.FStringArg DataName, float DataValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChartData, "Engine.Actor.ChartData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChartData, "Engine.Actor.ChartData", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(DataName, paramsPtr + 0);
+        DataName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DataValue, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -5197,6 +5212,7 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -5275,13 +5291,13 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
     /// <summary>
     /// Function: DrawDebugString
     /// </summary>
-    public unsafe static void DrawDebugString(System.Numerics.Vector3 TextLocation, BmSDK.FString Text, BmSDK.Engine.Actor TestBaseActor = default, BmSDK.GameObject.FColor TextColor = default, float Duration = default)
+    public unsafe static void DrawDebugString(System.Numerics.Vector3 TextLocation, BmSDK.FStringArg Text, BmSDK.Engine.Actor TestBaseActor = default, BmSDK.GameObject.FColor TextColor = default, float Duration = default)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebugString, "Engine.Actor.DrawDebugString");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TextLocation, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 12);
+        Text.WriteTo(paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestBaseActor, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TextColor, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Duration, paramsPtr + 40);
@@ -5293,6 +5309,7 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 12);
         return;
     }
 
@@ -5696,14 +5713,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetForcedInitialReplicatedProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForcedInitialReplicatedProperty;
     /// <summary>
     /// Function: SetForcedInitialReplicatedProperty
     /// </summary>
     public unsafe virtual void SetForcedInitialReplicatedProperty(BmSDK.Property PropToReplicate, bool bAdd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForcedInitialReplicatedProperty, "Engine.Actor.SetForcedInitialReplicatedProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetForcedInitialReplicatedProperty, "Engine.Actor.SetForcedInitialReplicatedProperty", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropToReplicate, paramsPtr + 0);
@@ -5719,14 +5736,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReplicatedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplicatedEvent;
     /// <summary>
     /// Function: ReplicatedEvent
     /// </summary>
     public unsafe virtual void ReplicatedEvent(BmSDK.FName VarName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplicatedEvent, "Engine.Actor.ReplicatedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReplicatedEvent, "Engine.Actor.ReplicatedEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VarName, paramsPtr + 0);
@@ -5734,14 +5751,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAggregateBaseVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAggregateBaseVelocity;
     /// <summary>
     /// Function: GetAggregateBaseVelocity
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAggregateBaseVelocity(BmSDK.Engine.Actor TestBase = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAggregateBaseVelocity, "Engine.Actor.GetAggregateBaseVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAggregateBaseVelocity, "Engine.Actor.GetAggregateBaseVelocity", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestBase, paramsPtr + 0);
@@ -5756,14 +5773,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsOwnedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOwnedBy;
     /// <summary>
     /// Function: IsOwnedBy
     /// </summary>
     public unsafe virtual bool IsOwnedBy(BmSDK.Engine.Actor TestActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOwnedBy, "Engine.Actor.IsOwnedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOwnedBy, "Engine.Actor.IsOwnedBy", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestActor, paramsPtr + 0);
@@ -5778,14 +5795,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetBaseMost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBaseMost;
     /// <summary>
     /// Function: GetBaseMost
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetBaseMost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBaseMost, "Engine.Actor.GetBaseMost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBaseMost, "Engine.Actor.GetBaseMost", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -5799,14 +5816,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsBasedOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBasedOn;
     /// <summary>
     /// Function: IsBasedOn
     /// </summary>
     public unsafe virtual bool IsBasedOn(BmSDK.Engine.Actor TestActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBasedOn, "Engine.Actor.IsBasedOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBasedOn, "Engine.Actor.IsBasedOn", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestActor, paramsPtr + 0);
@@ -5821,14 +5838,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SearchForBaseBelow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchForBaseBelow;
     /// <summary>
     /// Function: SearchForBaseBelow
     /// </summary>
     public unsafe virtual void SearchForBaseBelow(float HeightBelow, out BmSDK.Engine.Actor NewBase, out System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SearchForBaseBelow, "Engine.Actor.SearchForBaseBelow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SearchForBaseBelow, "Engine.Actor.SearchForBaseBelow", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HeightBelow, paramsPtr + 0);
@@ -5849,14 +5866,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FindBase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBase;
     /// <summary>
     /// Function: FindBase
     /// </summary>
     public unsafe virtual void FindBase()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindBase, "Engine.Actor.FindBase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindBase, "Engine.Actor.FindBase", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -5870,14 +5887,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetOwner;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOwner;
     /// <summary>
     /// Function: SetOwner
     /// </summary>
     public unsafe virtual void SetOwner(BmSDK.Engine.Actor NewOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOwner, "Engine.Actor.SetOwner");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOwner, "Engine.Actor.SetOwner", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);
@@ -5892,14 +5909,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetBase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBase;
     /// <summary>
     /// Function: SetBase
     /// </summary>
     public unsafe virtual void SetBase(BmSDK.Engine.Actor NewBase, System.Numerics.Vector3 NewFloor = default, BmSDK.Engine.SkeletalMeshComponent SkelComp = default, BmSDK.FName AttachName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBase, "Engine.Actor.SetBase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBase, "Engine.Actor.SetBase", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBase, paramsPtr + 0);
@@ -5917,14 +5934,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetTerminalVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTerminalVelocity;
     /// <summary>
     /// Function: GetTerminalVelocity
     /// </summary>
     public unsafe virtual float GetTerminalVelocity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTerminalVelocity, "Engine.Actor.GetTerminalVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTerminalVelocity, "Engine.Actor.GetTerminalVelocity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -5938,14 +5955,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AutonomousPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AutonomousPhysics;
     /// <summary>
     /// Function: AutonomousPhysics
     /// </summary>
     public unsafe virtual void AutonomousPhysics(float DeltaSeconds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutonomousPhysics, "Engine.Actor.AutonomousPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AutonomousPhysics, "Engine.Actor.AutonomousPhysics", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaSeconds, paramsPtr + 0);
@@ -5960,14 +5977,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_MoveSmooth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveSmooth;
     /// <summary>
     /// Function: MoveSmooth
     /// </summary>
     public unsafe virtual bool MoveSmooth(System.Numerics.Vector3 Delta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveSmooth, "Engine.Actor.MoveSmooth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveSmooth, "Engine.Actor.MoveSmooth", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Delta, paramsPtr + 0);
@@ -5982,14 +5999,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_fixedTurn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_fixedTurn;
     /// <summary>
     /// Function: fixedTurn
     /// </summary>
     public unsafe virtual int fixedTurn(int Current, int Desired, int DeltaRate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_fixedTurn, "Engine.Actor.fixedTurn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_fixedTurn, "Engine.Actor.fixedTurn", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Current, paramsPtr + 0);
@@ -6006,14 +6023,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetHardAttach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHardAttach;
     /// <summary>
     /// Function: SetHardAttach
     /// </summary>
     public unsafe virtual void SetHardAttach(bool bNewHardAttach = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHardAttach, "Engine.Actor.SetHardAttach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHardAttach, "Engine.Actor.SetHardAttach", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewHardAttach, paramsPtr + 0);
@@ -6028,14 +6045,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetRelativeLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRelativeLocation;
     /// <summary>
     /// Function: SetRelativeLocation
     /// </summary>
     public unsafe virtual bool SetRelativeLocation(System.Numerics.Vector3 NewLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRelativeLocation, "Engine.Actor.SetRelativeLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRelativeLocation, "Engine.Actor.SetRelativeLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLocation, paramsPtr + 0);
@@ -6050,14 +6067,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetRelativeRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRelativeRotation;
     /// <summary>
     /// Function: SetRelativeRotation
     /// </summary>
     public unsafe virtual bool SetRelativeRotation(BmSDK.Rotator NewRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRelativeRotation, "Engine.Actor.SetRelativeRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRelativeRotation, "Engine.Actor.SetRelativeRotation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRotation, paramsPtr + 0);
@@ -6072,14 +6089,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetZone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetZone;
     /// <summary>
     /// Function: SetZone
     /// </summary>
     public unsafe virtual void SetZone(bool bForceRefresh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetZone, "Engine.Actor.SetZone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetZone, "Engine.Actor.SetZone", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceRefresh, paramsPtr + 0);
@@ -6094,14 +6111,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FarMoveActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FarMoveActor;
     /// <summary>
     /// Function: FarMoveActor
     /// </summary>
     public unsafe virtual bool FarMoveActor(System.Numerics.Vector3 NewLocation, bool Test = default, bool NoCheck = default, bool AttachedMove = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FarMoveActor, "Engine.Actor.FarMoveActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FarMoveActor, "Engine.Actor.FarMoveActor", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLocation, paramsPtr + 0);
@@ -6119,14 +6136,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_MovingWhichWay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovingWhichWay;
     /// <summary>
     /// Function: MovingWhichWay
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.EMoveDir MovingWhichWay(out float Amount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovingWhichWay, "Engine.Actor.MovingWhichWay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovingWhichWay, "Engine.Actor.MovingWhichWay", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Amount);
@@ -6143,14 +6160,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EMoveDir>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRotation;
     /// <summary>
     /// Function: SetRotation
     /// </summary>
     public unsafe virtual bool SetRotation(BmSDK.Rotator NewRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRotation, "Engine.Actor.SetRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRotation, "Engine.Actor.SetRotation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRotation, paramsPtr + 0);
@@ -6165,14 +6182,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLocation;
     /// <summary>
     /// Function: SetLocation
     /// </summary>
     public unsafe virtual bool SetLocation(System.Numerics.Vector3 NewLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLocation, "Engine.Actor.SetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLocation, "Engine.Actor.SetLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLocation, paramsPtr + 0);
@@ -6187,14 +6204,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_Move;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Move;
     /// <summary>
     /// Function: Move
     /// </summary>
     public unsafe virtual bool Move(System.Numerics.Vector3 Delta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Move, "Engine.Actor.Move");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Move, "Engine.Actor.Move", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Delta, paramsPtr + 0);
@@ -6209,14 +6226,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetCollisionFilter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionFilter;
     /// <summary>
     /// Function: SetCollisionFilter
     /// </summary>
     public unsafe virtual void SetCollisionFilter(BmSDK.Component.ECollisionFilter Filter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCollisionFilter, "Engine.Actor.SetCollisionFilter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCollisionFilter, "Engine.Actor.SetCollisionFilter", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Filter, paramsPtr + 0);
@@ -6231,14 +6248,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDrawScale3D;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawScale3D;
     /// <summary>
     /// Function: SetDrawScale3D
     /// </summary>
     public unsafe virtual void SetDrawScale3D(System.Numerics.Vector3 NewScale3D)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDrawScale3D, "Engine.Actor.SetDrawScale3D");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDrawScale3D, "Engine.Actor.SetDrawScale3D", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewScale3D, paramsPtr + 0);
@@ -6253,14 +6270,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDrawScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawScale;
     /// <summary>
     /// Function: SetDrawScale
     /// </summary>
     public unsafe virtual void SetDrawScale(float NewScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDrawScale, "Engine.Actor.SetDrawScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDrawScale, "Engine.Actor.SetDrawScale", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewScale, paramsPtr + 0);
@@ -6275,14 +6292,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCollisionType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionType;
     /// <summary>
     /// Function: SetCollisionType
     /// </summary>
     public unsafe virtual void SetCollisionType(BmSDK.Engine.Actor.ECollisionType NewCollisionType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCollisionType, "Engine.Actor.SetCollisionType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCollisionType, "Engine.Actor.SetCollisionType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCollisionType, paramsPtr + 0);
@@ -6297,14 +6314,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCollisionSize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollisionSize;
     /// <summary>
     /// Function: SetCollisionSize
     /// </summary>
     public unsafe virtual void SetCollisionSize(float NewRadius, float NewHeight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCollisionSize, "Engine.Actor.SetCollisionSize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCollisionSize, "Engine.Actor.SetCollisionSize", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRadius, paramsPtr + 0);
@@ -6320,14 +6337,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCollision;
     /// <summary>
     /// Function: SetCollision
     /// </summary>
     public unsafe virtual void SetCollision(bool bNewColActors = default, bool bNewBlockActors = default, bool bNewIgnoreEncroachers = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCollision, "Engine.Actor.SetCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCollision, "Engine.Actor.SetCollision", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewColActors, paramsPtr + 0);
@@ -6344,14 +6361,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FinishAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishAnim;
     /// <summary>
     /// Function: FinishAnim
     /// </summary>
     public unsafe virtual void FinishAnim(BmSDK.Engine.AnimNodeSequence SeqNode, bool bFinishOnBlendOut = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAnim, "Engine.Actor.FinishAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishAnim, "Engine.Actor.FinishAnim", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SeqNode, paramsPtr + 0);
@@ -6367,14 +6384,14 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Sleep;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Sleep;
     /// <summary>
     /// Function: Sleep
     /// </summary>
     public unsafe virtual void Sleep(float Seconds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Sleep, "Engine.Actor.Sleep");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Sleep, "Engine.Actor.Sleep", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Seconds, paramsPtr + 0);
@@ -6389,17 +6406,17 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ConsoleCommand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConsoleCommand;
     /// <summary>
     /// Function: ConsoleCommand
     /// </summary>
-    public unsafe virtual BmSDK.FString ConsoleCommand(BmSDK.FString Command, bool bWriteToLog = default)
+    public unsafe virtual BmSDK.FString ConsoleCommand(BmSDK.FStringArg Command, bool bWriteToLog = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConsoleCommand, "Engine.Actor.ConsoleCommand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConsoleCommand, "Engine.Actor.ConsoleCommand", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Command, paramsPtr + 0);
+        Command.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWriteToLog, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -6409,17 +6426,18 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_ForceUpdateComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceUpdateComponents;
     /// <summary>
     /// Function: ForceUpdateComponents
     /// </summary>
     public unsafe virtual void ForceUpdateComponents(bool bCollisionUpdate = default, bool bTransformOnly = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceUpdateComponents, "Engine.Actor.ForceUpdateComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceUpdateComponents, "Engine.Actor.ForceUpdateComponents", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCollisionUpdate, paramsPtr + 0);
@@ -9623,7 +9641,7 @@ public static class ActorStatics
     /// <summary>
     /// Function: LogThoughtInternal, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void LogThoughtInternal(this BmSDK.Engine.Actor self, BmSDK.Engine.Actor Actor, BmSDK.FName SubGroup, int Flags, BmSDK.FString Text, BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> DetailThoughts = default)
+    public unsafe static void LogThoughtInternal(this BmSDK.Engine.Actor self, BmSDK.Engine.Actor Actor, BmSDK.FName SubGroup, int Flags, BmSDK.FStringArg Text, BmSDK.TArray<BmSDK.Engine.Actor.FDetailThought> DetailThoughts = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogThoughtInternal, "Engine.Actor.LogThoughtInternal");
@@ -9632,7 +9650,7 @@ public static class ActorStatics
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Actor, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SubGroup, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Flags, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 20);
+        Text.WriteTo(paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DetailThoughts, paramsPtr + 36);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -9642,6 +9660,7 @@ public static class ActorStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
@@ -9745,14 +9764,14 @@ public static class ActorStatics
     /// <summary>
     /// Function: DrawDebugString, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void DrawDebugString(this BmSDK.Engine.Actor self, System.Numerics.Vector3 TextLocation, BmSDK.FString Text, BmSDK.Engine.Actor TestBaseActor = default, BmSDK.GameObject.FColor TextColor = default, float Duration = default)
+    public unsafe static void DrawDebugString(this BmSDK.Engine.Actor self, System.Numerics.Vector3 TextLocation, BmSDK.FStringArg Text, BmSDK.Engine.Actor TestBaseActor = default, BmSDK.GameObject.FColor TextColor = default, float Duration = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebugString, "Engine.Actor.DrawDebugString");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TextLocation, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 12);
+        Text.WriteTo(paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestBaseActor, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TextColor, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Duration, paramsPtr + 40);
@@ -9764,6 +9783,7 @@ public static class ActorStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 12);
         return;
     }
 

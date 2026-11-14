@@ -78,14 +78,14 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RLightningActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RLightningActor.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RLightningActor.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ManualTriggerLightningTargetActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ManualTriggerLightningTargetActor;
     /// <summary>
     /// Function: ManualTriggerLightningTargetActor
     /// </summary>
     public unsafe virtual void ManualTriggerLightningTargetActor(BmSDK.Engine.Actor TargetActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManualTriggerLightningTargetActor, "BmGame.RLightningActor.ManualTriggerLightningTargetActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ManualTriggerLightningTargetActor, "BmGame.RLightningActor.ManualTriggerLightningTargetActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetActor, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ManualTriggerLightning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ManualTriggerLightning;
     /// <summary>
     /// Function: ManualTriggerLightning
     /// </summary>
     public unsafe virtual void ManualTriggerLightning(float LightningIntensity, BmSDK.Rotator LightningDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManualTriggerLightning, "BmGame.RLightningActor.ManualTriggerLightning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ManualTriggerLightning, "BmGame.RLightningActor.ManualTriggerLightning", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LightningIntensity, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ManualTriggerLightingInFrontOfCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ManualTriggerLightingInFrontOfCamera;
     /// <summary>
     /// Function: ManualTriggerLightingInFrontOfCamera
     /// </summary>
     public unsafe virtual void ManualTriggerLightingInFrontOfCamera(float Dist)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManualTriggerLightingInFrontOfCamera, "BmGame.RLightningActor.ManualTriggerLightingInFrontOfCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ManualTriggerLightingInFrontOfCamera, "BmGame.RLightningActor.ManualTriggerLightingInFrontOfCamera", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Dist, paramsPtr + 0);
@@ -139,14 +139,14 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterGameAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterGameAction;
     /// <summary>
     /// Function: RegisterGameAction
     /// </summary>
     public unsafe virtual void RegisterGameAction(BmSDK.Engine.Controller Player, BmSDK.BmGame.RGameInfo.EGameAction TheGameAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterGameAction, "BmGame.RLightningActor.RegisterGameAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterGameAction, "BmGame.RLightningActor.RegisterGameAction", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -162,14 +162,14 @@ public partial class RLightningActor : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RLightningActor.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RLightningActor.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

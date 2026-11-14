@@ -78,14 +78,14 @@ public partial class AkDialogueLineSingle : BmSDK.Engine.AkDialogueLine, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<AkDialogueLineSingle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetSingleDialogueEventDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSingleDialogueEventDuration;
     /// <summary>
     /// Function: GetSingleDialogueEventDuration
     /// </summary>
     public unsafe virtual float GetSingleDialogueEventDuration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSingleDialogueEventDuration, "Engine.AkDialogueLineSingle.GetSingleDialogueEventDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSingleDialogueEventDuration, "Engine.AkDialogueLineSingle.GetSingleDialogueEventDuration", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class AkDialogueLineSingle : BmSDK.Engine.AkDialogueLine, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSingleDialogueEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSingleDialogueEvent;
     /// <summary>
     /// Function: GetSingleDialogueEvent
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetSingleDialogueEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSingleDialogueEvent, "Engine.AkDialogueLineSingle.GetSingleDialogueEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSingleDialogueEvent, "Engine.AkDialogueLineSingle.GetSingleDialogueEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

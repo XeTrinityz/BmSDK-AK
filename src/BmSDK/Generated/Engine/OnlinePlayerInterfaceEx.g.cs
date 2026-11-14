@@ -18,7 +18,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: OpenWebBrowser
     /// </summary>
-    public unsafe void OpenWebBrowser(BmSDK.FString sURL);
+    public unsafe void OpenWebBrowser(BmSDK.FStringArg sURL);
 
     /// <summary>
     /// Function: GetNpAvailabilityForUser
@@ -88,7 +88,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: VideoRecordStop
     /// </summary>
-    public unsafe bool VideoRecordStop(byte LocalUserNum, byte VideoId, BmSDK.FString TitleStr);
+    public unsafe bool VideoRecordStop(byte LocalUserNum, byte VideoId, BmSDK.FStringArg TitleStr);
 
     /// <summary>
     /// Function: VideoRecordStart
@@ -98,7 +98,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: VideoRecord
     /// </summary>
-    public unsafe void VideoRecord(byte LocalUserNum, byte VideoId, BmSDK.FString TitleStr, float TimeStart, float TimeStop);
+    public unsafe void VideoRecord(byte LocalUserNum, byte VideoId, BmSDK.FStringArg TitleStr, float TimeStart, float TimeStop);
 
     /// <summary>
     /// Function: VideoRecordSetGameSectionId
@@ -158,7 +158,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ShowCustomMessageUI
     /// </summary>
-    public unsafe bool ShowCustomMessageUI(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Recipients, BmSDK.FString MessageTitle, BmSDK.FString NonEditableMessage, BmSDK.FString EditableMessage = default);
+    public unsafe bool ShowCustomMessageUI(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Recipients, BmSDK.FStringArg MessageTitle, BmSDK.FStringArg NonEditableMessage, BmSDK.FStringArg EditableMessage = default);
 
     /// <summary>
     /// Function: ClearCrossTitleProfileSettings
@@ -218,12 +218,12 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: OnNewInfocast
     /// </summary>
-    public unsafe void OnNewInfocast(BmSDK.FString Infocast);
+    public unsafe void OnNewInfocast(BmSDK.FStringArg Infocast);
 
     /// <summary>
     /// Function: ShowCustomPlayersUI
     /// </summary>
-    public unsafe bool ShowCustomPlayersUI(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Players, BmSDK.FString Title, BmSDK.FString Description);
+    public unsafe bool ShowCustomPlayersUI(byte LocalUserNum, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Players, BmSDK.FStringArg Title, BmSDK.FStringArg Description);
 
     /// <summary>
     /// Function: ShowPlayersUI
@@ -303,7 +303,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ShowInviteUI
     /// </summary>
-    public unsafe bool ShowInviteUI(byte LocalUserNum, BmSDK.FString InviteText = default);
+    public unsafe bool ShowInviteUI(byte LocalUserNum, BmSDK.FStringArg InviteText = default);
 
     /// <summary>
     /// Function: ShowAchievementsUI
@@ -318,7 +318,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ShowTokenRedemptionUI
     /// </summary>
-    public unsafe bool ShowTokenRedemptionUI(byte LocalUserNum, BmSDK.FString OfferId = default);
+    public unsafe bool ShowTokenRedemptionUI(byte LocalUserNum, BmSDK.FStringArg OfferId = default);
 
     /// <summary>
     /// Function: ShowAccountPickerUI
@@ -328,7 +328,7 @@ public partial interface OnlinePlayerInterfaceEx : BmSDK.Interface
     /// <summary>
     /// Function: ShowGamerCardUI
     /// </summary>
-    public unsafe bool ShowGamerCardUI(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, BmSDK.FString NickName = default);
+    public unsafe bool ShowGamerCardUI(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, BmSDK.FStringArg NickName = default);
 
     /// <summary>
     /// Function: ShowFeedbackUI

@@ -73,14 +73,14 @@ public partial class MHarleyGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<MHarleyGrappleGunBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TriggerPounce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPounce;
     /// <summary>
     /// Function: TriggerPounce
     /// </summary>
     public unsafe virtual bool TriggerPounce(bool bTryQueuedGrapple = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPounce, "BmGame.MHarleyGrappleGunBase.TriggerPounce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPounce, "BmGame.MHarleyGrappleGunBase.TriggerPounce", this);
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTryQueuedGrapple, paramsPtr + 0);
@@ -88,28 +88,28 @@ public partial class MHarleyGrappleGunBase : BmSDK.BmGame.RGrappleGun, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TriggerGrateThrough;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerGrateThrough;
     /// <summary>
     /// Function: TriggerGrateThrough
     /// </summary>
     public unsafe virtual void TriggerGrateThrough()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGrateThrough, "BmGame.MHarleyGrappleGunBase.TriggerGrateThrough");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerGrateThrough, "BmGame.MHarleyGrappleGunBase.TriggerGrateThrough", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Grapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Grapple;
     /// <summary>
     /// Function: Grapple
     /// </summary>
     public unsafe override bool Grapple(BmSDK.BmGame.RSpecialMoveConfig OverrideGrappleMove = default, bool bForceSucced = default, bool bTryQueuedGrapple = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Grapple, "BmGame.MHarleyGrappleGunBase.Grapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Grapple, "BmGame.MHarleyGrappleGunBase.Grapple", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideGrappleMove, paramsPtr + 0);

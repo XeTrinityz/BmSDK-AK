@@ -91,14 +91,14 @@ public partial class SeqEvent_Touch : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyTouchingPawnDied;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyTouchingPawnDied;
     /// <summary>
     /// Function: NotifyTouchingPawnDied
     /// </summary>
     public unsafe virtual void NotifyTouchingPawnDied(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyTouchingPawnDied, "Engine.SeqEvent_Touch.NotifyTouchingPawnDied");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyTouchingPawnDied, "Engine.SeqEvent_Touch.NotifyTouchingPawnDied", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -106,28 +106,28 @@ public partial class SeqEvent_Touch : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_Toggled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Toggled;
     /// <summary>
     /// Function: Toggled
     /// </summary>
     public unsafe override void Toggled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Toggled, "Engine.SeqEvent_Touch.Toggled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Toggled, "Engine.SeqEvent_Touch.Toggled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckUnTouchActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckUnTouchActivate;
     /// <summary>
     /// Function: CheckUnTouchActivate
     /// </summary>
     public unsafe virtual bool CheckUnTouchActivate(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, bool bTest = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckUnTouchActivate, "Engine.SeqEvent_Touch.CheckUnTouchActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckUnTouchActivate, "Engine.SeqEvent_Touch.CheckUnTouchActivate", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InOriginator, paramsPtr + 0);
@@ -144,14 +144,14 @@ public partial class SeqEvent_Touch : BmSDK.Engine.SequenceEvent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_CheckTouchActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckTouchActivate;
     /// <summary>
     /// Function: CheckTouchActivate
     /// </summary>
     public unsafe virtual bool CheckTouchActivate(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, bool bTest = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckTouchActivate, "Engine.SeqEvent_Touch.CheckTouchActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckTouchActivate, "Engine.SeqEvent_Touch.CheckTouchActivate", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InOriginator, paramsPtr + 0);

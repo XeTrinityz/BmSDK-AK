@@ -78,133 +78,144 @@ public partial class RHudModuleObjectives : BmSDK.BmGame.RHudModule, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RHudModuleObjectives>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_XI_ObjectiveBarFilled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_ObjectiveBarFilled;
     /// <summary>
     /// Function: XI_ObjectiveBarFilled
     /// </summary>
     public unsafe virtual void XI_ObjectiveBarFilled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ObjectiveBarFilled, "BmGame.RHudModuleObjectives.XI_ObjectiveBarFilled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_ObjectiveBarFilled, "BmGame.RHudModuleObjectives.XI_ObjectiveBarFilled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_ObjectiveItemShown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_ObjectiveItemShown;
     /// <summary>
     /// Function: XI_ObjectiveItemShown
     /// </summary>
-    public unsafe virtual void XI_ObjectiveItemShown(int arrow_type, BmSDK.FString CustomIconString)
+    public unsafe virtual void XI_ObjectiveItemShown(int arrow_type, BmSDK.FStringArg CustomIconString)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_ObjectiveItemShown, "BmGame.RHudModuleObjectives.XI_ObjectiveItemShown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_ObjectiveItemShown, "BmGame.RHudModuleObjectives.XI_ObjectiveItemShown", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(arrow_type, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomIconString, paramsPtr + 4);
+        CustomIconString.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_FlushObjectivePrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushObjectivePrivate;
     /// <summary>
     /// Function: FlushObjectivePrivate
     /// </summary>
-    public unsafe virtual void FlushObjectivePrivate(BmSDK.FString Title)
+    public unsafe virtual void FlushObjectivePrivate(BmSDK.FStringArg Title)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushObjectivePrivate, "BmGame.RHudModuleObjectives.FlushObjectivePrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushObjectivePrivate, "BmGame.RHudModuleObjectives.FlushObjectivePrivate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 0);
+        Title.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddObjectivePrivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddObjectivePrivate;
     /// <summary>
     /// Function: AddObjectivePrivate
     /// </summary>
-    public unsafe virtual void AddObjectivePrivate(float Time, BmSDK.FString Title, BmSDK.FString Desc, BmSDK.FString OrgDesc, int ArrowType, bool bForceShowMap, BmSDK.FString BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicatorm, BmSDK.FString mostWantedUnlocksString)
+    public unsafe virtual void AddObjectivePrivate(float Time, BmSDK.FStringArg Title, BmSDK.FStringArg Desc, BmSDK.FStringArg OrgDesc, int ArrowType, bool bForceShowMap, BmSDK.FStringArg BackPrompt, bool bNoDuplicates, bool bPulseCompassIndicatorm, BmSDK.FStringArg mostWantedUnlocksString)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddObjectivePrivate, "BmGame.RHudModuleObjectives.AddObjectivePrivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddObjectivePrivate, "BmGame.RHudModuleObjectives.AddObjectivePrivate", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Desc, paramsPtr + 20);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(OrgDesc, paramsPtr + 36);
+        Title.WriteTo(paramsPtr + 4);
+        Desc.WriteTo(paramsPtr + 20);
+        OrgDesc.WriteTo(paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ArrowType, paramsPtr + 52);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceShowMap, paramsPtr + 56);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(BackPrompt, paramsPtr + 60);
+        BackPrompt.WriteTo(paramsPtr + 60);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNoDuplicates, paramsPtr + 76);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPulseCompassIndicatorm, paramsPtr + 80);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(mostWantedUnlocksString, paramsPtr + 84);
+        mostWantedUnlocksString.WriteTo(paramsPtr + 84);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 36);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 60);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 84);
         return;
     }
 
-    private static BmSDK.Function __fn_ObjectivesPromptCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ObjectivesPromptCallback;
     /// <summary>
     /// Function: ObjectivesPromptCallback
     /// </summary>
-    public unsafe virtual void ObjectivesPromptCallback(BmSDK.FString PadStr, BmSDK.FString KeyStr)
+    public unsafe virtual void ObjectivesPromptCallback(BmSDK.FStringArg PadStr, BmSDK.FStringArg KeyStr)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ObjectivesPromptCallback, "BmGame.RHudModuleObjectives.ObjectivesPromptCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ObjectivesPromptCallback, "BmGame.RHudModuleObjectives.ObjectivesPromptCallback", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PadStr, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(KeyStr, paramsPtr + 16);
+        PadStr.WriteTo(paramsPtr + 0);
+        KeyStr.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_SendQueuedInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendQueuedInfo;
     /// <summary>
     /// Function: SendQueuedInfo
     /// </summary>
     public unsafe virtual void SendQueuedInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendQueuedInfo, "BmGame.RHudModuleObjectives.SendQueuedInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendQueuedInfo, "BmGame.RHudModuleObjectives.SendQueuedInfo", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Close;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Close;
     /// <summary>
     /// Function: Close
     /// </summary>
     public unsafe override void Close()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleObjectives.Close");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Close, "BmGame.RHudModuleObjectives.Close", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
+    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FStringArg _ExtensionName, BmSDK.FStringArg _ExtensionPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleObjectives.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RHudModuleObjectives.Init", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RPC, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionPath, paramsPtr + 24);
+        _ExtensionName.WriteTo(paramsPtr + 8);
+        _ExtensionPath.WriteTo(paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 

@@ -78,14 +78,14 @@ public partial class RFreezeTankDestroyerBase : BmSDK.Engine.Actor, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RFreezeTankDestroyerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DestroyTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyTarget;
     /// <summary>
     /// Function: DestroyTarget
     /// </summary>
     public unsafe virtual void DestroyTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyTarget, "BmGame.RFreezeTankDestroyerBase.DestroyTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyTarget, "BmGame.RFreezeTankDestroyerBase.DestroyTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

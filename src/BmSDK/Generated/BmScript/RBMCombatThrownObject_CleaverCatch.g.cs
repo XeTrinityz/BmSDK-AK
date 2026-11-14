@@ -78,14 +78,14 @@ public partial class RBMCombatThrownObject_CleaverCatch : BmSDK.BmScript.RBMComb
         where TComponent : class, Framework.IScriptComponent<RBMCombatThrownObject_CleaverCatch>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DamagePawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamagePawn;
     /// <summary>
     /// Function: DamagePawn
     /// </summary>
     public unsafe override void DamagePawn(BmSDK.BmGame.RPawnCombat HitPawn, float Speed, float DamageGiven)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagePawn, "BmScript.RBMCombatThrownObject_CleaverCatch.DamagePawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamagePawn, "BmScript.RBMCombatThrownObject_CleaverCatch.DamagePawn", this);
         byte* paramsPtr = stackalloc byte[300];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class RBMCombatThrownObject_CleaverCatch : BmSDK.BmScript.RBMComb
         return;
     }
 
-    private static BmSDK.Function __fn_GetCatchStartTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCatchStartTime;
     /// <summary>
     /// Function: GetCatchStartTime
     /// </summary>
     public unsafe override float GetCatchStartTime(BmSDK.BmGame.RPawnPlayerCombat Batman)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCatchStartTime, "BmScript.RBMCombatThrownObject_CleaverCatch.GetCatchStartTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCatchStartTime, "BmScript.RBMCombatThrownObject_CleaverCatch.GetCatchStartTime", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Batman, paramsPtr + 0);

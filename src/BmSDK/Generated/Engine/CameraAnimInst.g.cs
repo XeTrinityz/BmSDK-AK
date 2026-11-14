@@ -78,14 +78,14 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<CameraAnimInst>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetPlaySpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlaySpace;
     /// <summary>
     /// Function: SetPlaySpace
     /// </summary>
     public unsafe virtual void SetPlaySpace(BmSDK.Engine.Camera.ECameraAnimPlaySpace NewSpace, BmSDK.Rotator UserPlaySpace = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlaySpace, "Engine.CameraAnimInst.SetPlaySpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPlaySpace, "Engine.CameraAnimInst.SetPlaySpace", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSpace, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyTransientScaling;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyTransientScaling;
     /// <summary>
     /// Function: ApplyTransientScaling
     /// </summary>
     public unsafe virtual void ApplyTransientScaling(float Scalar)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyTransientScaling, "Engine.CameraAnimInst.ApplyTransientScaling");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyTransientScaling, "Engine.CameraAnimInst.ApplyTransientScaling", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Scalar, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe virtual void Stop(bool bImmediate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "Engine.CameraAnimInst.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "Engine.CameraAnimInst.Stop", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bImmediate, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AdvanceAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceAnim;
     /// <summary>
     /// Function: AdvanceAnim
     /// </summary>
     public unsafe virtual void AdvanceAnim(float DeltaTime, bool bJump)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdvanceAnim, "Engine.CameraAnimInst.AdvanceAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdvanceAnim, "Engine.CameraAnimInst.AdvanceAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -168,14 +168,14 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe virtual void Update(float NewRate, float NewScale, float NewBlendInTime, float NewBlendOutTime, float NewDuration = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "Engine.CameraAnimInst.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "Engine.CameraAnimInst.Update", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRate, paramsPtr + 0);
@@ -194,14 +194,14 @@ public partial class CameraAnimInst : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Play;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Play;
     /// <summary>
     /// Function: Play
     /// </summary>
     public unsafe virtual void Play(BmSDK.Engine.CameraAnim Anim, BmSDK.Engine.Actor CamActor, float InRate, float InScale, float InBlendInTime, float InBlendOutTime, bool bInLoop, bool bRandomStartTime, float Duration = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Play, "Engine.CameraAnimInst.Play");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Play, "Engine.CameraAnimInst.Play", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Anim, paramsPtr + 0);

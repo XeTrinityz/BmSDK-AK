@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_TakedownFakeScarecrow : BmSDK.BmGame.R
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_TakedownFakeScarecrow>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RSpecialMoveInstance_TakedownFakeScarecrow : BmSDK.BmGame.R
         return;
     }
 
-    private static BmSDK.Function __fn_HandleAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleAction;
     /// <summary>
     /// Function: HandleAction
     /// </summary>
     public unsafe override void HandleAction(BmSDK.FName actionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleAction, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.HandleAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleAction, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.HandleAction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(actionName, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RSpecialMoveInstance_TakedownFakeScarecrow : BmSDK.BmGame.R
         return;
     }
 
-    private static BmSDK.Function __fn_PlayAnims;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnims;
     /// <summary>
     /// Function: PlayAnims
     /// </summary>
     public unsafe virtual void PlayAnims(BmSDK.FName AnimName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAnims, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.PlayAnims");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAnims, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.PlayAnims", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RSpecialMoveInstance_TakedownFakeScarecrow : BmSDK.BmGame.R
         return;
     }
 
-    private static BmSDK.Function __fn_AdjustCameraRot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustCameraRot;
     /// <summary>
     /// Function: AdjustCameraRot
     /// </summary>
     public unsafe virtual void AdjustCameraRot(float DeltaTime, bool bBlendOut)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustCameraRot, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.AdjustCameraRot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdjustCameraRot, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.AdjustCameraRot", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -140,14 +140,14 @@ public partial class RSpecialMoveInstance_TakedownFakeScarecrow : BmSDK.BmGame.R
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSpecialMove;
     /// <summary>
     /// Function: UpdateSpecialMove
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.UpdateSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.UpdateSpecialMove", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -155,70 +155,70 @@ public partial class RSpecialMoveInstance_TakedownFakeScarecrow : BmSDK.BmGame.R
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AllowCameraLook;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowCameraLook;
     /// <summary>
     /// Function: AllowCameraLook
     /// </summary>
     public unsafe virtual void AllowCameraLook()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowCameraLook, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.AllowCameraLook");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowCameraLook, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.AllowCameraLook", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisallowCameraLook;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisallowCameraLook;
     /// <summary>
     /// Function: DisallowCameraLook
     /// </summary>
     public unsafe virtual void DisallowCameraLook()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisallowCameraLook, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.DisallowCameraLook");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisallowCameraLook, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.DisallowCameraLook", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EyesOpen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EyesOpen;
     /// <summary>
     /// Function: EyesOpen
     /// </summary>
     public unsafe virtual void EyesOpen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EyesOpen, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.EyesOpen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EyesOpen, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.EyesOpen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeScarecrow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeScarecrow;
     /// <summary>
     /// Function: ChangeScarecrow
     /// </summary>
     public unsafe virtual void ChangeScarecrow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeScarecrow, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.ChangeScarecrow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeScarecrow, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.ChangeScarecrow", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
     /// <summary>
     /// Function: CancelSpecialMove
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.CancelSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.CancelSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextSpecialMove, paramsPtr + 0);
@@ -226,28 +226,28 @@ public partial class RSpecialMoveInstance_TakedownFakeScarecrow : BmSDK.BmGame.R
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_TakedownFakeScarecrow.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);

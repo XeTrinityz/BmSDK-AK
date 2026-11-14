@@ -73,14 +73,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<MeshComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CreateAndSetMaterialInstanceTimeVarying;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateAndSetMaterialInstanceTimeVarying;
     /// <summary>
     /// Function: CreateAndSetMaterialInstanceTimeVarying
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInstanceTimeVarying CreateAndSetMaterialInstanceTimeVarying(int ElementIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateAndSetMaterialInstanceTimeVarying, "Engine.MeshComponent.CreateAndSetMaterialInstanceTimeVarying");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateAndSetMaterialInstanceTimeVarying, "Engine.MeshComponent.CreateAndSetMaterialInstanceTimeVarying", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInstanceTimeVarying>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CreateAndSetMaterialInstanceConstant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateAndSetMaterialInstanceConstant;
     /// <summary>
     /// Function: CreateAndSetMaterialInstanceConstant
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInstanceConstant CreateAndSetMaterialInstanceConstant(int ElementIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateAndSetMaterialInstanceConstant, "Engine.MeshComponent.CreateAndSetMaterialInstanceConstant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateAndSetMaterialInstanceConstant, "Engine.MeshComponent.CreateAndSetMaterialInstanceConstant", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInstanceConstant>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CastTemporaryMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CastTemporaryMaterial;
     /// <summary>
     /// Function: CastTemporaryMaterial
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInstanceConstant CastTemporaryMaterial(BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CastTemporaryMaterial, "Engine.MeshComponent.CastTemporaryMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CastTemporaryMaterial, "Engine.MeshComponent.CastTemporaryMaterial", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Material, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInstanceConstant>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PrestreamTextures2;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures2;
     /// <summary>
     /// Function: PrestreamTextures2
     /// </summary>
     public unsafe virtual void PrestreamTextures2(float Seconds, bool FullMips, bool HighPriority, bool GentleLastRenderTimeHint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrestreamTextures2, "Engine.MeshComponent.PrestreamTextures2");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrestreamTextures2, "Engine.MeshComponent.PrestreamTextures2", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Seconds, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_PrestreamTextures;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrestreamTextures;
     /// <summary>
     /// Function: PrestreamTextures
     /// </summary>
     public unsafe virtual void PrestreamTextures(float Seconds, bool bPrioritizeCharacterTextures, int CinematicTextureGroups = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrestreamTextures, "Engine.MeshComponent.PrestreamTextures");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrestreamTextures, "Engine.MeshComponent.PrestreamTextures", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Seconds, paramsPtr + 0);
@@ -174,14 +174,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetNumElements;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumElements;
     /// <summary>
     /// Function: GetNumElements
     /// </summary>
     public unsafe virtual int GetNumElements()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumElements, "Engine.MeshComponent.GetNumElements");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumElements, "Engine.MeshComponent.GetNumElements", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -195,14 +195,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetAllowMaterialSwap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowMaterialSwap;
     /// <summary>
     /// Function: SetAllowMaterialSwap
     /// </summary>
     public unsafe virtual void SetAllowMaterialSwap(bool bAllow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllowMaterialSwap, "Engine.MeshComponent.SetAllowMaterialSwap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllowMaterialSwap, "Engine.MeshComponent.SetAllowMaterialSwap", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllow, paramsPtr + 0);
@@ -217,14 +217,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetDLCExtraViewMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDLCExtraViewMaterial;
     /// <summary>
     /// Function: SetDLCExtraViewMaterial
     /// </summary>
     public unsafe virtual void SetDLCExtraViewMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDLCExtraViewMaterial, "Engine.MeshComponent.SetDLCExtraViewMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDLCExtraViewMaterial, "Engine.MeshComponent.SetDLCExtraViewMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -240,14 +240,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetBatmobileViewMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmobileViewMaterial;
     /// <summary>
     /// Function: SetBatmobileViewMaterial
     /// </summary>
     public unsafe virtual void SetBatmobileViewMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatmobileViewMaterial, "Engine.MeshComponent.SetBatmobileViewMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatmobileViewMaterial, "Engine.MeshComponent.SetBatmobileViewMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -263,14 +263,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetThermalMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThermalMaterial;
     /// <summary>
     /// Function: SetThermalMaterial
     /// </summary>
     public unsafe virtual void SetThermalMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThermalMaterial, "Engine.MeshComponent.SetThermalMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetThermalMaterial, "Engine.MeshComponent.SetThermalMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -286,14 +286,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetScanMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScanMaterial;
     /// <summary>
     /// Function: SetScanMaterial
     /// </summary>
     public unsafe virtual void SetScanMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScanMaterial, "Engine.MeshComponent.SetScanMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetScanMaterial, "Engine.MeshComponent.SetScanMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -309,14 +309,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_ClearXRayMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearXRayMaterials;
     /// <summary>
     /// Function: ClearXRayMaterials
     /// </summary>
     public unsafe virtual void ClearXRayMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearXRayMaterials, "Engine.MeshComponent.ClearXRayMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearXRayMaterials, "Engine.MeshComponent.ClearXRayMaterials", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -330,14 +330,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetXRayMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetXRayMaterial;
     /// <summary>
     /// Function: SetXRayMaterial
     /// </summary>
     public unsafe virtual void SetXRayMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material, bool bAllowCallingConditionalUpdateComponents = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetXRayMaterial, "Engine.MeshComponent.SetXRayMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetXRayMaterial, "Engine.MeshComponent.SetXRayMaterial", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -354,14 +354,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_ClearMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMaterials;
     /// <summary>
     /// Function: ClearMaterials
     /// </summary>
     public unsafe virtual void ClearMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMaterials, "Engine.MeshComponent.ClearMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearMaterials, "Engine.MeshComponent.ClearMaterials", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -375,14 +375,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
     /// Function: SetMaterial
     /// </summary>
     public unsafe virtual void SetMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaterial, "Engine.MeshComponent.SetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaterial, "Engine.MeshComponent.SetMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -398,14 +398,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterial;
     /// <summary>
     /// Function: GetMaterial
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetMaterial(int ElementIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaterial, "Engine.MeshComponent.GetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMaterial, "Engine.MeshComponent.GetMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -420,14 +420,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInterface>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetUseSimpleLineCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleLineCollision;
     /// <summary>
     /// Function: GetUseSimpleLineCollision
     /// </summary>
     public unsafe virtual bool GetUseSimpleLineCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUseSimpleLineCollision, "Engine.MeshComponent.GetUseSimpleLineCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUseSimpleLineCollision, "Engine.MeshComponent.GetUseSimpleLineCollision", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -441,14 +441,14 @@ public partial class MeshComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetUseSimpleBoxCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleBoxCollision;
     /// <summary>
     /// Function: GetUseSimpleBoxCollision
     /// </summary>
     public unsafe virtual bool GetUseSimpleBoxCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUseSimpleBoxCollision, "Engine.MeshComponent.GetUseSimpleBoxCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUseSimpleBoxCollision, "Engine.MeshComponent.GetUseSimpleBoxCollision", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,14 +78,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         where TComponent : class, Framework.IScriptComponent<RFreezeBlastEffectComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CheckAllBodyPartStatus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAllBodyPartStatus;
     /// <summary>
     /// Function: CheckAllBodyPartStatus
     /// </summary>
     public unsafe virtual void CheckAllBodyPartStatus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAllBodyPartStatus, "BmGame.RFreezeBlastEffectComponent.CheckAllBodyPartStatus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckAllBodyPartStatus, "BmGame.RFreezeBlastEffectComponent.CheckAllBodyPartStatus", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,56 +99,56 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTorsoEffectPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTorsoEffectPosition;
     /// <summary>
     /// Function: UpdateTorsoEffectPosition
     /// </summary>
     public unsafe virtual void UpdateTorsoEffectPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTorsoEffectPosition, "BmGame.RFreezeBlastEffectComponent.UpdateTorsoEffectPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTorsoEffectPosition, "BmGame.RFreezeBlastEffectComponent.UpdateTorsoEffectPosition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRightLegEffectPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRightLegEffectPosition;
     /// <summary>
     /// Function: UpdateRightLegEffectPosition
     /// </summary>
     public unsafe virtual void UpdateRightLegEffectPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRightLegEffectPosition, "BmGame.RFreezeBlastEffectComponent.UpdateRightLegEffectPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRightLegEffectPosition, "BmGame.RFreezeBlastEffectComponent.UpdateRightLegEffectPosition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateLeftLegEffectPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLeftLegEffectPosition;
     /// <summary>
     /// Function: UpdateLeftLegEffectPosition
     /// </summary>
     public unsafe virtual void UpdateLeftLegEffectPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLeftLegEffectPosition, "BmGame.RFreezeBlastEffectComponent.UpdateLeftLegEffectPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLeftLegEffectPosition, "BmGame.RFreezeBlastEffectComponent.UpdateLeftLegEffectPosition", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopBodyPart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopBodyPart;
     /// <summary>
     /// Function: StopBodyPart
     /// </summary>
     public unsafe virtual void StopBodyPart(BmSDK.BmGame.RParticleEffectComponent BodyPart, bool bPlayBreakEffect, float Delay, bool bPlayIceExplodeEffect = default, float fDrawScale = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopBodyPart, "BmGame.RFreezeBlastEffectComponent.StopBodyPart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopBodyPart, "BmGame.RFreezeBlastEffectComponent.StopBodyPart", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyPart, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_StopTorso;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopTorso;
     /// <summary>
     /// Function: StopTorso
     /// </summary>
     public unsafe override void StopTorso(bool bPlayBreakEffect = default, float Delay = default, bool bPlayIceExplodeEffect = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTorso, "BmGame.RFreezeBlastEffectComponent.StopTorso");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopTorso, "BmGame.RFreezeBlastEffectComponent.StopTorso", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlayBreakEffect, paramsPtr + 0);
@@ -177,14 +177,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_StopRightLeg;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopRightLeg;
     /// <summary>
     /// Function: StopRightLeg
     /// </summary>
     public unsafe override void StopRightLeg(bool bPlayBreakEffect = default, float Delay = default, bool bPlayIceExplodeEffect = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopRightLeg, "BmGame.RFreezeBlastEffectComponent.StopRightLeg");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopRightLeg, "BmGame.RFreezeBlastEffectComponent.StopRightLeg", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlayBreakEffect, paramsPtr + 0);
@@ -194,14 +194,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_StopLeftLeg;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopLeftLeg;
     /// <summary>
     /// Function: StopLeftLeg
     /// </summary>
     public unsafe override void StopLeftLeg(bool bPlayBreakEffect = default, float Delay = default, bool bPlayIceExplodeEffect = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopLeftLeg, "BmGame.RFreezeBlastEffectComponent.StopLeftLeg");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopLeftLeg, "BmGame.RFreezeBlastEffectComponent.StopLeftLeg", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlayBreakEffect, paramsPtr + 0);
@@ -211,14 +211,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe override void Stop(bool bPlayBreakEffect = default, float Delay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "BmGame.RFreezeBlastEffectComponent.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "BmGame.RFreezeBlastEffectComponent.Stop", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlayBreakEffect, paramsPtr + 0);
@@ -227,14 +227,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_Start;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Start;
     /// <summary>
     /// Function: Start
     /// </summary>
     public unsafe override void Start(float fDrawScale = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Start, "BmGame.RFreezeBlastEffectComponent.Start");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Start, "BmGame.RFreezeBlastEffectComponent.Start", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fDrawScale, paramsPtr + 0);
@@ -242,42 +242,42 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_GetFreezeTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFreezeTime;
     /// <summary>
     /// Function: GetFreezeTime
     /// </summary>
     public unsafe override float GetFreezeTime()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFreezeTime, "BmGame.RFreezeBlastEffectComponent.GetFreezeTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFreezeTime, "BmGame.RFreezeBlastEffectComponent.GetFreezeTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFloorFreezeTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloorFreezeTime;
     /// <summary>
     /// Function: GetFloorFreezeTime
     /// </summary>
     public unsafe override float GetFloorFreezeTime()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloorFreezeTime, "BmGame.RFreezeBlastEffectComponent.GetFloorFreezeTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloorFreezeTime, "BmGame.RFreezeBlastEffectComponent.GetFloorFreezeTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RFreezeBlastEffectComponent.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RFreezeBlastEffectComponent.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -285,14 +285,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_NativeTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeTick;
     /// <summary>
     /// Function: NativeTick
     /// </summary>
     public unsafe override void NativeTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativeTick, "BmGame.RFreezeBlastEffectComponent.NativeTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NativeTick, "BmGame.RFreezeBlastEffectComponent.NativeTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -307,14 +307,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_Deactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deactivate;
     /// <summary>
     /// Function: Deactivate
     /// </summary>
     public unsafe override void Deactivate(bool bIsEarlyInterrupt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RFreezeBlastEffectComponent.Deactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deactivate, "BmGame.RFreezeBlastEffectComponent.Deactivate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsEarlyInterrupt, paramsPtr + 0);
@@ -322,14 +322,14 @@ public partial class RFreezeBlastEffectComponent : BmSDK.BmGame.RPawnEffectCompo
         return;
     }
 
-    private static BmSDK.Function __fn_Initialize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialize;
     /// <summary>
     /// Function: Initialize
     /// </summary>
     public unsafe override void Initialize(BmSDK.BmGame.RPawnVillain Owner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialize, "BmGame.RFreezeBlastEffectComponent.Initialize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialize, "BmGame.RFreezeBlastEffectComponent.Initialize", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Owner, paramsPtr + 0);

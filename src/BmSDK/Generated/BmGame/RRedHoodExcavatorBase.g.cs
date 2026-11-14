@@ -78,14 +78,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RRedHoodExcavatorBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateAnimSetList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAnimSetList;
     /// <summary>
     /// Function: UpdateAnimSetList
     /// </summary>
     public unsafe virtual void UpdateAnimSetList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAnimSetList, "BmGame.RRedHoodExcavatorBase.UpdateAnimSetList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateAnimSetList, "BmGame.RRedHoodExcavatorBase.UpdateAnimSetList", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_MAT_FinishAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_FinishAnimControl;
     /// <summary>
     /// Function: MAT_FinishAnimControl
     /// </summary>
     public unsafe virtual void MAT_FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MAT_FinishAnimControl, "BmGame.RRedHoodExcavatorBase.MAT_FinishAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MAT_FinishAnimControl, "BmGame.RRedHoodExcavatorBase.MAT_FinishAnimControl", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_FinishAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishAnimControl;
     /// <summary>
     /// Function: FinishAnimControl
     /// </summary>
     public unsafe override void FinishAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAnimControl, "BmGame.RRedHoodExcavatorBase.FinishAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishAnimControl, "BmGame.RRedHoodExcavatorBase.FinishAnimControl", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetAnimPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimPosition;
     /// <summary>
     /// Function: SetAnimPosition
     /// </summary>
     public unsafe override void SetAnimPosition(BmSDK.Engine.InterpGroupInst InterpGroupInst, BmSDK.FName SlotName, int ChannelIndex, BmSDK.FName InAnimSeqName, float InPosition, bool bFireNotifies, bool bLooping, bool bEnableRootMotion)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAnimPosition, "BmGame.RRedHoodExcavatorBase.SetAnimPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAnimPosition, "BmGame.RRedHoodExcavatorBase.SetAnimPosition", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpGroupInst, paramsPtr + 0);
@@ -159,14 +159,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_MAT_BeginAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MAT_BeginAnimControl;
     /// <summary>
     /// Function: MAT_BeginAnimControl
     /// </summary>
     public unsafe virtual void MAT_BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MAT_BeginAnimControl, "BmGame.RRedHoodExcavatorBase.MAT_BeginAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MAT_BeginAnimControl, "BmGame.RRedHoodExcavatorBase.MAT_BeginAnimControl", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_BeginAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginAnimControl;
     /// <summary>
     /// Function: BeginAnimControl
     /// </summary>
     public unsafe override void BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginAnimControl, "BmGame.RRedHoodExcavatorBase.BeginAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginAnimControl, "BmGame.RRedHoodExcavatorBase.BeginAnimControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -197,28 +197,28 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ShowExcavatorHull;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowExcavatorHull;
     /// <summary>
     /// Function: ShowExcavatorHull
     /// </summary>
     public unsafe virtual void ShowExcavatorHull()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowExcavatorHull, "BmGame.RRedHoodExcavatorBase.ShowExcavatorHull");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowExcavatorHull, "BmGame.RRedHoodExcavatorBase.ShowExcavatorHull", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetClosestNodeToLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestNodeToLocation;
     /// <summary>
     /// Function: GetClosestNodeToLocation
     /// </summary>
     public unsafe virtual int GetClosestNodeToLocation(System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestNodeToLocation, "BmGame.RRedHoodExcavatorBase.GetClosestNodeToLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestNodeToLocation, "BmGame.RRedHoodExcavatorBase.GetClosestNodeToLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -233,28 +233,28 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetSeismicLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSeismicLevel;
     /// <summary>
     /// Function: GetSeismicLevel
     /// </summary>
     public unsafe virtual float GetSeismicLevel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSeismicLevel, "BmGame.RRedHoodExcavatorBase.GetSeismicLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSeismicLevel, "BmGame.RRedHoodExcavatorBase.GetSeismicLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsVisibleOnRadar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsVisibleOnRadar;
     /// <summary>
     /// Function: IsVisibleOnRadar
     /// </summary>
     public unsafe virtual bool IsVisibleOnRadar(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsVisibleOnRadar, "BmGame.RRedHoodExcavatorBase.IsVisibleOnRadar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsVisibleOnRadar, "BmGame.RRedHoodExcavatorBase.IsVisibleOnRadar", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -262,14 +262,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetAutoDebugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAutoDebugs;
     /// <summary>
     /// Function: SetAutoDebugs
     /// </summary>
     public unsafe virtual void SetAutoDebugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAutoDebugs, "BmGame.RRedHoodExcavatorBase.SetAutoDebugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAutoDebugs, "BmGame.RRedHoodExcavatorBase.SetAutoDebugs", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -283,14 +283,14 @@ public partial class RRedHoodExcavatorBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_CreateThroughWallsViewMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateThroughWallsViewMesh;
     /// <summary>
     /// Function: CreateThroughWallsViewMesh
     /// </summary>
     public unsafe virtual void CreateThroughWallsViewMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateThroughWallsViewMesh, "BmGame.RRedHoodExcavatorBase.CreateThroughWallsViewMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateThroughWallsViewMesh, "BmGame.RRedHoodExcavatorBase.CreateThroughWallsViewMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

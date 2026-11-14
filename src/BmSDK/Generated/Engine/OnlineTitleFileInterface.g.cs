@@ -23,7 +23,7 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnRequestTitleFileListComplete
     /// </summary>
-    public unsafe void OnRequestTitleFileListComplete(bool bWasSuccessful, BmSDK.FString ResultStr);
+    public unsafe void OnRequestTitleFileListComplete(bool bWasSuccessful, BmSDK.FStringArg ResultStr);
 
     /// <summary>
     /// Function: RequestTitleFileList
@@ -33,7 +33,7 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearDownloadedFile
     /// </summary>
-    public unsafe bool ClearDownloadedFile(BmSDK.FString Filename);
+    public unsafe bool ClearDownloadedFile(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: ClearDownloadedFiles
@@ -43,12 +43,12 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: GetTitleFileState
     /// </summary>
-    public unsafe BmSDK.Engine.OnlineSubsystem.EOnlineEnumerationReadState GetTitleFileState(BmSDK.FString Filename);
+    public unsafe BmSDK.Engine.OnlineSubsystem.EOnlineEnumerationReadState GetTitleFileState(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: GetTitleFileContents
     /// </summary>
-    public unsafe bool GetTitleFileContents(BmSDK.FString Filename, out BmSDK.TArray<byte> FileContents);
+    public unsafe bool GetTitleFileContents(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents);
 
     /// <summary>
     /// Function: ClearReadTitleFileCompleteDelegate
@@ -63,10 +63,10 @@ public partial interface OnlineTitleFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ReadTitleFile
     /// </summary>
-    public unsafe bool ReadTitleFile(BmSDK.FString FileToRead);
+    public unsafe bool ReadTitleFile(BmSDK.FStringArg FileToRead);
 
     /// <summary>
     /// Function: OnReadTitleFileComplete
     /// </summary>
-    public unsafe void OnReadTitleFileComplete(bool bWasSuccessful, BmSDK.FString Filename);
+    public unsafe void OnReadTitleFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename);
 }

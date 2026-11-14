@@ -78,42 +78,42 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerFPS_Cop>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPawnPlayerFPS_Cop.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RPawnPlayerFPS_Cop.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CauseMuzzleFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CauseMuzzleFlash;
     /// <summary>
     /// Function: CauseMuzzleFlash
     /// </summary>
     public unsafe virtual void CauseMuzzleFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CauseMuzzleFlash, "BmScript.RPawnPlayerFPS_Cop.CauseMuzzleFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CauseMuzzleFlash, "BmScript.RPawnPlayerFPS_Cop.CauseMuzzleFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoShotFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoShotFX;
     /// <summary>
     /// Function: DoShotFX
     /// </summary>
     public unsafe virtual void DoShotFX(System.Numerics.Vector3 HitTarget, BmSDK.Engine.Actor HitActor, System.Numerics.Vector3 OriginalShotOrig, System.Numerics.Vector3 OriginalShotDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoShotFX, "BmScript.RPawnPlayerFPS_Cop.DoShotFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoShotFX, "BmScript.RPawnPlayerFPS_Cop.DoShotFX", this);
         byte* paramsPtr = stackalloc byte[192];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitTarget, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_CalcImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcImpact;
     /// <summary>
     /// Function: CalcImpact
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.FImpactInfo CalcImpact(System.Numerics.Vector3 StartTrace, System.Numerics.Vector3 EndTrace, BmSDK.Engine.Actor HitTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalcImpact, "BmScript.RPawnPlayerFPS_Cop.CalcImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalcImpact, "BmScript.RPawnPlayerFPS_Cop.CalcImpact", this);
         byte* paramsPtr = stackalloc byte[320];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartTrace, paramsPtr + 0);
@@ -141,14 +141,14 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.FImpactInfo>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_DoHitDecal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoHitDecal;
     /// <summary>
     /// Function: DoHitDecal
     /// </summary>
     public unsafe virtual bool DoHitDecal(BmSDK.Engine.Actor.FImpactInfo HitImpactInfo, System.Numerics.Vector3 HitTarget, BmSDK.Engine.Actor HitActor, System.Numerics.Vector3 GunMuzzle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoHitDecal, "BmScript.RPawnPlayerFPS_Cop.DoHitDecal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoHitDecal, "BmScript.RPawnPlayerFPS_Cop.DoHitDecal", this);
         byte* paramsPtr = stackalloc byte[204];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitImpactInfo, paramsPtr + 0);
@@ -159,14 +159,14 @@ public partial class RPawnPlayerFPS_Cop : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 128);
     }
 
-    private static BmSDK.Function __fn_FireGunNow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireGunNow;
     /// <summary>
     /// Function: FireGunNow
     /// </summary>
     public unsafe override bool FireGunNow(bool bGunAnimOnly = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireGunNow, "BmScript.RPawnPlayerFPS_Cop.FireGunNow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireGunNow, "BmScript.RPawnPlayerFPS_Cop.FireGunNow", this);
         byte* paramsPtr = stackalloc byte[404];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bGunAnimOnly, paramsPtr + 0);

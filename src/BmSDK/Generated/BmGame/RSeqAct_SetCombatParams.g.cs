@@ -91,42 +91,42 @@ public partial class RSeqAct_SetCombatParams : BmSDK.Engine.SequenceAction, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ResetParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetParams;
     /// <summary>
     /// Function: ResetParams
     /// </summary>
     public unsafe virtual void ResetParams()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetParams, "BmGame.RSeqAct_SetCombatParams.ResetParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetParams, "BmGame.RSeqAct_SetCombatParams.ResetParams", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyParams;
     /// <summary>
     /// Function: ApplyParams
     /// </summary>
     public unsafe virtual void ApplyParams()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyParams, "BmGame.RSeqAct_SetCombatParams.ApplyParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyParams, "BmGame.RSeqAct_SetCombatParams.ApplyParams", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SetCombatParams.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_SetCombatParams.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

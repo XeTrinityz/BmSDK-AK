@@ -78,14 +78,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         where TComponent : class, Framework.IScriptComponent<RVisualDamageComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ConstraintBrokenNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstraintBrokenNotify;
     /// <summary>
     /// Function: ConstraintBrokenNotify
     /// </summary>
     public unsafe virtual void ConstraintBrokenNotify(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.Engine.Actor ConOwner, BmSDK.Engine.RB_ConstraintSetup ConSetup, BmSDK.Engine.RB_ConstraintInstance ConInstance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstraintBrokenNotify, "BmGame.RVisualDamageComponent.ConstraintBrokenNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConstraintBrokenNotify, "BmGame.RVisualDamageComponent.ConstraintBrokenNotify", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnImpactEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnImpactEffects;
     /// <summary>
     /// Function: SpawnImpactEffects
     /// </summary>
     public unsafe virtual void SpawnImpactEffects(BmSDK.Engine.SkeletalMeshComponent OwnerMeshComp, int BodyIndex, BmSDK.Engine.Actor Other, System.Numerics.Vector3 WorldPos, float Speed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnImpactEffects, "BmGame.RVisualDamageComponent.SpawnImpactEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnImpactEffects, "BmGame.RVisualDamageComponent.SpawnImpactEffects", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OwnerMeshComp, paramsPtr + 0);
@@ -115,14 +115,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_Inititalise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Inititalise;
     /// <summary>
     /// Function: Inititalise
     /// </summary>
     public unsafe virtual void Inititalise(BmSDK.Engine.SkeletalMeshComponent OwnerMeshComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Inititalise, "BmGame.RVisualDamageComponent.Inititalise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Inititalise, "BmGame.RVisualDamageComponent.Inititalise", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OwnerMeshComp, paramsPtr + 0);
@@ -130,14 +130,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe virtual void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RVisualDamageComponent.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RVisualDamageComponent.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_IsPartBrokenOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPartBrokenOff;
     /// <summary>
     /// Function: IsPartBrokenOff
     /// </summary>
     public unsafe virtual bool IsPartBrokenOff(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPartBrokenOff, "BmGame.RVisualDamageComponent.IsPartBrokenOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPartBrokenOff, "BmGame.RVisualDamageComponent.IsPartBrokenOff", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -175,14 +175,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_HideBonesOnSmashed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBonesOnSmashed;
     /// <summary>
     /// Function: HideBonesOnSmashed
     /// </summary>
     public unsafe virtual void HideBonesOnSmashed(BmSDK.Engine.SkeletalMeshComponent SkelComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideBonesOnSmashed, "BmGame.RVisualDamageComponent.HideBonesOnSmashed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideBonesOnSmashed, "BmGame.RVisualDamageComponent.HideBonesOnSmashed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -197,14 +197,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_HidePart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HidePart;
     /// <summary>
     /// Function: HidePart
     /// </summary>
     public unsafe virtual void HidePart(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HidePart, "BmGame.RVisualDamageComponent.HidePart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HidePart, "BmGame.RVisualDamageComponent.HidePart", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -220,14 +220,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_BreakOffPart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakOffPart;
     /// <summary>
     /// Function: BreakOffPart
     /// </summary>
     public unsafe virtual void BreakOffPart(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName, bool KeepConstraint = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakOffPart, "BmGame.RVisualDamageComponent.BreakOffPart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakOffPart, "BmGame.RVisualDamageComponent.BreakOffPart", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -244,14 +244,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_VehicleExploded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VehicleExploded;
     /// <summary>
     /// Function: VehicleExploded
     /// </summary>
     public unsafe virtual void VehicleExploded(BmSDK.Engine.SkeletalMeshComponent SkelComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VehicleExploded, "BmGame.RVisualDamageComponent.VehicleExploded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VehicleExploded, "BmGame.RVisualDamageComponent.VehicleExploded", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -266,14 +266,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnEffects;
     /// <summary>
     /// Function: SpawnEffects
     /// </summary>
     public unsafe virtual void SpawnEffects(BmSDK.Engine.SkeletalMeshComponent SkelComp, BmSDK.FName BoneName, BmSDK.BmGame.RVisualDamageComponent.EVehicleDamageEffectCond Condition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnEffects, "BmGame.RVisualDamageComponent.SpawnEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnEffects, "BmGame.RVisualDamageComponent.SpawnEffects", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);
@@ -290,14 +290,14 @@ public partial class RVisualDamageComponent : BmSDK.Engine.ActorComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyVisualDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyVisualDamage;
     /// <summary>
     /// Function: ApplyVisualDamage
     /// </summary>
     public unsafe virtual void ApplyVisualDamage(BmSDK.Engine.SkeletalMeshComponent SkelComp, System.Numerics.Vector3 WorldPos, float Radius, float Amount, bool bDeformAllowed, bool bSmashGlass, float PartBreakOffImpulse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyVisualDamage, "BmGame.RVisualDamageComponent.ApplyVisualDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyVisualDamage, "BmGame.RVisualDamageComponent.ApplyVisualDamage", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkelComp, paramsPtr + 0);

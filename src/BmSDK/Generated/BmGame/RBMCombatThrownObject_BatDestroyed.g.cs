@@ -78,112 +78,112 @@ public partial class RBMCombatThrownObject_BatDestroyed : BmSDK.BmGame.RBMCombat
         where TComponent : class, Framework.IScriptComponent<RBMCombatThrownObject_BatDestroyed>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Drop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Drop;
     /// <summary>
     /// Function: Drop
     /// </summary>
     public unsafe override void Drop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Drop, "BmGame.RBMCombatThrownObject_BatDestroyed.Drop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Drop, "BmGame.RBMCombatThrownObject_BatDestroyed.Drop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMaxTimesCanBeUsed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaxTimesCanBeUsed;
     /// <summary>
     /// Function: SetMaxTimesCanBeUsed
     /// </summary>
     public unsafe virtual void SetMaxTimesCanBeUsed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaxTimesCanBeUsed, "BmGame.RBMCombatThrownObject_BatDestroyed.SetMaxTimesCanBeUsed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaxTimesCanBeUsed, "BmGame.RBMCombatThrownObject_BatDestroyed.SetMaxTimesCanBeUsed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CaughtByPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CaughtByPlayer;
     /// <summary>
     /// Function: CaughtByPlayer
     /// </summary>
     public unsafe override void CaughtByPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CaughtByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.CaughtByPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CaughtByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.CaughtByPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetBreakOnNextHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBreakOnNextHit;
     /// <summary>
     /// Function: SetBreakOnNextHit
     /// </summary>
     public unsafe override void SetBreakOnNextHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBreakOnNextHit, "BmGame.RBMCombatThrownObject_BatDestroyed.SetBreakOnNextHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBreakOnNextHit, "BmGame.RBMCombatThrownObject_BatDestroyed.SetBreakOnNextHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UsedByPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UsedByPlayer;
     /// <summary>
     /// Function: UsedByPlayer
     /// </summary>
     public unsafe override void UsedByPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.UsedByPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UsedByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.UsedByPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NumTimesCanBeUsed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NumTimesCanBeUsed;
     /// <summary>
     /// Function: NumTimesCanBeUsed
     /// </summary>
     public unsafe override int NumTimesCanBeUsed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NumTimesCanBeUsed, "BmGame.RBMCombatThrownObject_BatDestroyed.NumTimesCanBeUsed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NumTimesCanBeUsed, "BmGame.RBMCombatThrownObject_BatDestroyed.NumTimesCanBeUsed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanStillBeUsedByPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanStillBeUsedByPlayer;
     /// <summary>
     /// Function: CanStillBeUsedByPlayer
     /// </summary>
     public unsafe override bool CanStillBeUsedByPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanStillBeUsedByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.CanStillBeUsedByPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanStillBeUsedByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.CanStillBeUsedByPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetCanStillBeUsedByPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCanStillBeUsedByPlayer;
     /// <summary>
     /// Function: SetCanStillBeUsedByPlayer
     /// </summary>
     public unsafe override void SetCanStillBeUsedByPlayer(bool bStillUsable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCanStillBeUsedByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.SetCanStillBeUsedByPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCanStillBeUsedByPlayer, "BmGame.RBMCombatThrownObject_BatDestroyed.SetCanStillBeUsedByPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bStillUsable, paramsPtr + 0);
@@ -191,56 +191,56 @@ public partial class RBMCombatThrownObject_BatDestroyed : BmSDK.BmGame.RBMCombat
         return;
     }
 
-    private static BmSDK.Function __fn_DetachAllAttachments;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachAllAttachments;
     /// <summary>
     /// Function: DetachAllAttachments
     /// </summary>
     public unsafe override void DetachAllAttachments()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachAllAttachments, "BmGame.RBMCombatThrownObject_BatDestroyed.DetachAllAttachments");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachAllAttachments, "BmGame.RBMCombatThrownObject_BatDestroyed.DetachAllAttachments", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoEvent;
     /// <summary>
     /// Function: DoEvent
     /// </summary>
     public unsafe override void DoEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoEvent, "BmGame.RBMCombatThrownObject_BatDestroyed.DoEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoEvent, "BmGame.RBMCombatThrownObject_BatDestroyed.DoEvent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnAttachment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnAttachment;
     /// <summary>
     /// Function: SpawnAttachment
     /// </summary>
     public unsafe virtual void SpawnAttachment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnAttachment, "BmGame.RBMCombatThrownObject_BatDestroyed.SpawnAttachment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnAttachment, "BmGame.RBMCombatThrownObject_BatDestroyed.SpawnAttachment", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBMCombatThrownObject_BatDestroyed.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RBMCombatThrownObject_BatDestroyed.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

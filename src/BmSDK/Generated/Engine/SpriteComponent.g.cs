@@ -78,14 +78,14 @@ public partial class SpriteComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<SpriteComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetSpriteAndUV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpriteAndUV;
     /// <summary>
     /// Function: SetSpriteAndUV
     /// </summary>
     public unsafe virtual void SetSpriteAndUV(BmSDK.Engine.Texture2D NewSprite, int NewU, int NewUL, int NewV, int NewVL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpriteAndUV, "Engine.SpriteComponent.SetSpriteAndUV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSpriteAndUV, "Engine.SpriteComponent.SetSpriteAndUV", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSprite, paramsPtr + 0);
@@ -104,14 +104,14 @@ public partial class SpriteComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetUV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUV;
     /// <summary>
     /// Function: SetUV
     /// </summary>
     public unsafe virtual void SetUV(int NewU, int NewUL, int NewV, int NewVL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUV, "Engine.SpriteComponent.SetUV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUV, "Engine.SpriteComponent.SetUV", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewU, paramsPtr + 0);
@@ -129,14 +129,14 @@ public partial class SpriteComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetSprite;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSprite;
     /// <summary>
     /// Function: SetSprite
     /// </summary>
     public unsafe virtual void SetSprite(BmSDK.Engine.Texture2D NewSprite)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSprite, "Engine.SpriteComponent.SetSprite");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSprite, "Engine.SpriteComponent.SetSprite", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSprite, paramsPtr + 0);

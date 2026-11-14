@@ -78,14 +78,14 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RGauntletProjector>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayerTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerTick;
     /// <summary>
     /// Function: PlayerTick
     /// </summary>
     public unsafe virtual void PlayerTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmGame.RGauntletProjector.PlayerTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerTick, "BmGame.RGauntletProjector.PlayerTick", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,18 +93,19 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FlashMovieFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlashMovieFinished;
     /// <summary>
     /// Function: FlashMovieFinished
     /// </summary>
-    public unsafe virtual void FlashMovieFinished(BmSDK.FString VideoResource)
+    public unsafe virtual void FlashMovieFinished(BmSDK.FStringArg VideoResource)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlashMovieFinished, "BmGame.RGauntletProjector.FlashMovieFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlashMovieFinished, "BmGame.RGauntletProjector.FlashMovieFinished", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(VideoResource, paramsPtr + 0);
+        VideoResource.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -122,33 +123,34 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopProjection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopProjection;
     /// <summary>
     /// Function: StopProjection
     /// </summary>
-    public unsafe virtual void StopProjection(BmSDK.BmGame.RSeqAct_PlayRadioOrThoughtDialogue caller = default, BmSDK.FString VideoResource = default, float fTransitionOutDurationOverride = default)
+    public unsafe virtual void StopProjection(BmSDK.BmGame.RSeqAct_PlayRadioOrThoughtDialogue caller = default, BmSDK.FStringArg VideoResource = default, float fTransitionOutDurationOverride = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopProjection, "BmGame.RGauntletProjector.StopProjection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopProjection, "BmGame.RGauntletProjector.StopProjection", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(caller, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(VideoResource, paramsPtr + 8);
+        VideoResource.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fTransitionOutDurationOverride, paramsPtr + 24);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
-    private static BmSDK.Function __fn_SetOpaque;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOpaque;
     /// <summary>
     /// Function: SetOpaque
     /// </summary>
     public unsafe virtual void SetOpaque(bool is_opaque)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOpaque, "BmGame.RGauntletProjector.SetOpaque");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOpaque, "BmGame.RGauntletProjector.SetOpaque", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_opaque, paramsPtr + 0);
@@ -156,14 +158,14 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn__InitializeHologram;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn__InitializeHologram;
     /// <summary>
     /// Function: _InitializeHologram
     /// </summary>
     public unsafe virtual void _InitializeHologram(BmSDK.BmGame.RGFxMovie iMovie, BmSDK.Engine.SkeletalMeshComponent iAttachToSkeleton = default, BmSDK.FName sAttachToBone = default, BmSDK.FName sAttachToSocket = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn__InitializeHologram, "BmGame.RGauntletProjector._InitializeHologram");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn__InitializeHologram, "BmGame.RGauntletProjector._InitializeHologram", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iMovie, paramsPtr + 0);
@@ -174,14 +176,14 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartHackingProjection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartHackingProjection;
     /// <summary>
     /// Function: StartHackingProjection
     /// </summary>
     public unsafe virtual void StartHackingProjection(BmSDK.Engine.SkeletalMeshComponent iAttachToSkeleton = default, BmSDK.FName sAttachToBone = default, BmSDK.FName sAttachToSocket = default, bool bBrainHacking = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartHackingProjection, "BmGame.RGauntletProjector.StartHackingProjection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartHackingProjection, "BmGame.RGauntletProjector.StartHackingProjection", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iAttachToSkeleton, paramsPtr + 0);
@@ -192,47 +194,48 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetGauntletConnectionLost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGauntletConnectionLost;
     /// <summary>
     /// Function: SetGauntletConnectionLost
     /// </summary>
     public unsafe virtual void SetGauntletConnectionLost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGauntletConnectionLost, "BmGame.RGauntletProjector.SetGauntletConnectionLost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGauntletConnectionLost, "BmGame.RGauntletProjector.SetGauntletConnectionLost", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetVideoPortrait;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVideoPortrait;
     /// <summary>
     /// Function: SetVideoPortrait
     /// </summary>
-    public unsafe virtual void SetVideoPortrait(BmSDK.FString PortraitName)
+    public unsafe virtual void SetVideoPortrait(BmSDK.FStringArg PortraitName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVideoPortrait, "BmGame.RGauntletProjector.SetVideoPortrait");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVideoPortrait, "BmGame.RGauntletProjector.SetVideoPortrait", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PortraitName, paramsPtr + 0);
+        PortraitName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartVideoProjection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartVideoProjection;
     /// <summary>
     /// Function: StartVideoProjection
     /// </summary>
-    public unsafe virtual void StartVideoProjection(BmSDK.FString sVideoResource, BmSDK.FString sHeaderText, bool bForceOpaque = default, bool bWithOverlay = default, bool bConnectionFailedOn = default, bool bSkipIntro = default, BmSDK.Engine.SkeletalMeshComponent meshToAttachTo = default, bool bNoMovie = default, bool bAutoPause = default)
+    public unsafe virtual void StartVideoProjection(BmSDK.FStringArg sVideoResource, BmSDK.FStringArg sHeaderText, bool bForceOpaque = default, bool bWithOverlay = default, bool bConnectionFailedOn = default, bool bSkipIntro = default, BmSDK.Engine.SkeletalMeshComponent meshToAttachTo = default, bool bNoMovie = default, bool bAutoPause = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartVideoProjection, "BmGame.RGauntletProjector.StartVideoProjection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartVideoProjection, "BmGame.RGauntletProjector.StartVideoProjection", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sVideoResource, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sHeaderText, paramsPtr + 16);
+        sVideoResource.WriteTo(paramsPtr + 0);
+        sHeaderText.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceOpaque, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWithOverlay, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bConnectionFailedOn, paramsPtr + 40);
@@ -241,40 +244,45 @@ public partial class RGauntletProjector : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNoMovie, paramsPtr + 56);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAutoPause, paramsPtr + 60);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_QueueVideoProjection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueVideoProjection;
     /// <summary>
     /// Function: QueueVideoProjection
     /// </summary>
-    public unsafe virtual void QueueVideoProjection(BmSDK.FString sVideoResource, BmSDK.FString sHeaderText, bool bForceOpaque = default, bool bWithOverlay = default, bool bConnectionFailedOn = default, bool bSkipIntro = default, BmSDK.FString PortraitName = default)
+    public unsafe virtual void QueueVideoProjection(BmSDK.FStringArg sVideoResource, BmSDK.FStringArg sHeaderText, bool bForceOpaque = default, bool bWithOverlay = default, bool bConnectionFailedOn = default, bool bSkipIntro = default, BmSDK.FStringArg PortraitName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueVideoProjection, "BmGame.RGauntletProjector.QueueVideoProjection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueueVideoProjection, "BmGame.RGauntletProjector.QueueVideoProjection", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sVideoResource, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sHeaderText, paramsPtr + 16);
+        sVideoResource.WriteTo(paramsPtr + 0);
+        sHeaderText.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceOpaque, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWithOverlay, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bConnectionFailedOn, paramsPtr + 40);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSkipIntro, paramsPtr + 44);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PortraitName, paramsPtr + 48);
+        PortraitName.WriteTo(paramsPtr + 48);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 48);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise(BmSDK.BmGame.RPlayerController _RPC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RGauntletProjector.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RGauntletProjector.Initialise", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RPC, paramsPtr + 0);

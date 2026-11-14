@@ -91,14 +91,14 @@ public partial class RSeqAct_SetNeedsRescue : BmSDK.Engine.SequenceAction, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetNR;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNR;
     /// <summary>
     /// Function: SetNR
     /// </summary>
     public unsafe virtual void SetNR()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNR, "BmGame.RSeqAct_SetNeedsRescue.SetNR");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNR, "BmGame.RSeqAct_SetNeedsRescue.SetNR", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

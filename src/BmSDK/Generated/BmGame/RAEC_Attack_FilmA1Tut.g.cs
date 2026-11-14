@@ -78,14 +78,14 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
         where TComponent : class, Framework.IScriptComponent<RAEC_Attack_FilmA1Tut>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ThugEscapedTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugEscapedTakedown;
     /// <summary>
     /// Function: ThugEscapedTakedown
     /// </summary>
     public unsafe override void ThugEscapedTakedown(BmSDK.BmGame.RBMAIController NewMember)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugEscapedTakedown, "BmGame.RAEC_Attack_FilmA1Tut.ThugEscapedTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugEscapedTakedown, "BmGame.RAEC_Attack_FilmA1Tut.ThugEscapedTakedown", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMember, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_HandleGadgetImpactNoise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleGadgetImpactNoise;
     /// <summary>
     /// Function: HandleGadgetImpactNoise
     /// </summary>
     public unsafe override bool HandleGadgetImpactNoise(System.Numerics.Vector3 HitLoc, System.Numerics.Vector3 ThrownFromPos, float ReactRange)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleGadgetImpactNoise, "BmGame.RAEC_Attack_FilmA1Tut.HandleGadgetImpactNoise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleGadgetImpactNoise, "BmGame.RAEC_Attack_FilmA1Tut.HandleGadgetImpactNoise", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitLoc, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_AddAttacker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAttacker;
     /// <summary>
     /// Function: AddAttacker
     /// </summary>
     public unsafe override void AddAttacker(BmSDK.BmGame.RBMAIController NewMember, bool bPlaySpottedLine = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAttacker, "BmGame.RAEC_Attack_FilmA1Tut.AddAttacker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAttacker, "BmGame.RAEC_Attack_FilmA1Tut.AddAttacker", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMember, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_AlertAndAddAttacker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlertAndAddAttacker;
     /// <summary>
     /// Function: AlertAndAddAttacker
     /// </summary>
     public unsafe override void AlertAndAddAttacker(BmSDK.BmGame.RBMAIController NewMember, bool bPlaySpottedLine = default, BmSDK.BmGame.RAEC_Attack_Base.PredAttackEscalationType EscType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlertAndAddAttacker, "BmGame.RAEC_Attack_FilmA1Tut.AlertAndAddAttacker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlertAndAddAttacker, "BmGame.RAEC_Attack_FilmA1Tut.AlertAndAddAttacker", this);
         byte* paramsPtr = stackalloc byte[29];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMember, paramsPtr + 0);
@@ -143,14 +143,14 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ThugSawPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugSawPlayer;
     /// <summary>
     /// Function: ThugSawPlayer
     /// </summary>
     public unsafe override void ThugSawPlayer(BmSDK.BmGame.RBMAIController NewMember)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugSawPlayer, "BmGame.RAEC_Attack_FilmA1Tut.ThugSawPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugSawPlayer, "BmGame.RAEC_Attack_FilmA1Tut.ThugSawPlayer", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMember, paramsPtr + 0);
@@ -158,14 +158,14 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_InternalStartAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InternalStartAttack;
     /// <summary>
     /// Function: InternalStartAttack
     /// </summary>
     public unsafe override void InternalStartAttack(bool bForceRestart = default, BmSDK.BmGame.RAEC_Attack_Base.AttackStartTrigger StartCause = default, BmSDK.BmGame.RPawnVillain TriggeringVillain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InternalStartAttack, "BmGame.RAEC_Attack_FilmA1Tut.InternalStartAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InternalStartAttack, "BmGame.RAEC_Attack_FilmA1Tut.InternalStartAttack", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceRestart, paramsPtr + 0);
@@ -175,28 +175,28 @@ public partial class RAEC_Attack_FilmA1Tut : BmSDK.BmGame.RAEC_Attack_Base, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_AreAttackersActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AreAttackersActive;
     /// <summary>
     /// Function: AreAttackersActive
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameRI.EPredAttackState AreAttackersActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreAttackersActive, "BmGame.RAEC_Attack_FilmA1Tut.AreAttackersActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AreAttackersActive, "BmGame.RAEC_Attack_FilmA1Tut.AreAttackersActive", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameRI.EPredAttackState>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Attack_FilmA1Tut.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Attack_FilmA1Tut.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);

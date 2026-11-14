@@ -78,28 +78,28 @@ public partial class RAEC_GroupPauseAndLook : BmSDK.BmGame.RAlertEventCoordinato
         where TComponent : class, Framework.IScriptComponent<RAEC_GroupPauseAndLook>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TryDisperse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryDisperse;
     /// <summary>
     /// Function: TryDisperse
     /// </summary>
     public unsafe virtual void TryDisperse()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryDisperse, "BmGame.RAEC_GroupPauseAndLook.TryDisperse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryDisperse, "BmGame.RAEC_GroupPauseAndLook.TryDisperse", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddToGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToGroup;
     /// <summary>
     /// Function: AddToGroup
     /// </summary>
     public unsafe virtual void AddToGroup(BmSDK.BmGame.RBMAIController NewCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToGroup, "BmGame.RAEC_GroupPauseAndLook.AddToGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToGroup, "BmGame.RAEC_GroupPauseAndLook.AddToGroup", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RAEC_GroupPauseAndLook : BmSDK.BmGame.RAlertEventCoordinato
         return;
     }
 
-    private static BmSDK.Function __fn_SetLookPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLookPoint;
     /// <summary>
     /// Function: SetLookPoint
     /// </summary>
     public unsafe virtual void SetLookPoint(System.Numerics.Vector3 NewLookPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLookPoint, "BmGame.RAEC_GroupPauseAndLook.SetLookPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLookPoint, "BmGame.RAEC_GroupPauseAndLook.SetLookPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLookPoint, paramsPtr + 0);

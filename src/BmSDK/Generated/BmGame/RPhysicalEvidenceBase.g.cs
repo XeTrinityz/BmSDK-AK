@@ -78,28 +78,28 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RPhysicalEvidenceBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RPhysicalEvidenceBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RPhysicalEvidenceBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RPhysicalEvidenceBase.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RPhysicalEvidenceBase.OnToggle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetParticlesActiveInternal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParticlesActiveInternal;
     /// <summary>
     /// Function: SetParticlesActiveInternal
     /// </summary>
     public unsafe virtual void SetParticlesActiveInternal(bool _ParticlesActiveAlwaysOn, bool _ParticlesActiveEvidenceMarker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParticlesActiveInternal, "BmGame.RPhysicalEvidenceBase.SetParticlesActiveInternal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetParticlesActiveInternal, "BmGame.RPhysicalEvidenceBase.SetParticlesActiveInternal", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_ParticlesActiveAlwaysOn, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetParticlesActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParticlesActive;
     /// <summary>
     /// Function: SetParticlesActive
     /// </summary>
     public unsafe virtual void SetParticlesActive(bool ParticlesActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParticlesActive, "BmGame.RPhysicalEvidenceBase.SetParticlesActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetParticlesActive, "BmGame.RPhysicalEvidenceBase.SetParticlesActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParticlesActive, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_show;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_show;
     /// <summary>
     /// Function: show
     /// </summary>
     public unsafe virtual void show(float _show, int ShowMode = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_show, "BmGame.RPhysicalEvidenceBase.show");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_show, "BmGame.RPhysicalEvidenceBase.show", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_show, paramsPtr + 0);
@@ -154,70 +154,70 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseDna;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseDna;
     /// <summary>
     /// Function: InitialiseDna
     /// </summary>
     public unsafe virtual void InitialiseDna()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseDna, "BmGame.RPhysicalEvidenceBase.InitialiseDna");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseDna, "BmGame.RPhysicalEvidenceBase.InitialiseDna", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotation;
     /// <summary>
     /// Function: GetRotation
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRotation, "BmGame.RPhysicalEvidenceBase.GetRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRotation, "BmGame.RPhysicalEvidenceBase.GetRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSize;
     /// <summary>
     /// Function: GetSize
     /// </summary>
     public unsafe virtual float GetSize()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSize, "BmGame.RPhysicalEvidenceBase.GetSize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSize, "BmGame.RPhysicalEvidenceBase.GetSize", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocation;
     /// <summary>
     /// Function: GetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocation, "BmGame.RPhysicalEvidenceBase.GetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocation, "BmGame.RPhysicalEvidenceBase.GetLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetInXrayMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInXrayMode;
     /// <summary>
     /// Function: SetInXrayMode
     /// </summary>
     public unsafe virtual void SetInXrayMode(bool On, bool bForceOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInXrayMode, "BmGame.RPhysicalEvidenceBase.SetInXrayMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInXrayMode, "BmGame.RPhysicalEvidenceBase.SetInXrayMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -226,70 +226,70 @@ public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_CanBeScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeScanned;
     /// <summary>
     /// Function: CanBeScanned
     /// </summary>
     public unsafe virtual bool CanBeScanned()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeScanned, "BmGame.RPhysicalEvidenceBase.CanBeScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeScanned, "BmGame.RPhysicalEvidenceBase.CanBeScanned", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetEvidenceInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEvidenceInfo;
     /// <summary>
     /// Function: GetEvidenceInfo
     /// </summary>
     public unsafe virtual BmSDK.BmGame.REvidence GetEvidenceInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEvidenceInfo, "BmGame.RPhysicalEvidenceBase.GetEvidenceInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEvidenceInfo, "BmGame.RPhysicalEvidenceBase.GetEvidenceInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.REvidence>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetUnscanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUnscanned;
     /// <summary>
     /// Function: SetUnscanned
     /// </summary>
     public unsafe virtual void SetUnscanned()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUnscanned, "BmGame.RPhysicalEvidenceBase.SetUnscanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUnscanned, "BmGame.RPhysicalEvidenceBase.SetUnscanned", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMovieScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMovieScanned;
     /// <summary>
     /// Function: SetMovieScanned
     /// </summary>
     public unsafe virtual void SetMovieScanned()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMovieScanned, "BmGame.RPhysicalEvidenceBase.SetMovieScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMovieScanned, "BmGame.RPhysicalEvidenceBase.SetMovieScanned", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AutomaticallySetVisibility;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AutomaticallySetVisibility;
     /// <summary>
     /// Function: AutomaticallySetVisibility
     /// </summary>
     public unsafe virtual void AutomaticallySetVisibility()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutomaticallySetVisibility, "BmGame.RPhysicalEvidenceBase.AutomaticallySetVisibility");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AutomaticallySetVisibility, "BmGame.RPhysicalEvidenceBase.AutomaticallySetVisibility", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

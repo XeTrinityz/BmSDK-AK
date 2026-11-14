@@ -78,14 +78,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         where TComponent : class, Framework.IScriptComponent<RNavMeshObstacle_Queue>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe override void SetEnabled(bool bInEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "BmGame.RNavMeshObstacle_Queue.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "BmGame.RNavMeshObstacle_Queue.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInEnabled, paramsPtr + 0);
@@ -93,56 +93,56 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RNavMeshObstacle_Queue.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RNavMeshObstacle_Queue.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RNavMeshObstacle_Queue.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RNavMeshObstacle_Queue.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RNavMeshObstacle_Queue.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RNavMeshObstacle_Queue.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOff;
     /// <summary>
     /// Function: ForceObstaclePolysOff
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOff, "BmGame.RNavMeshObstacle_Queue.ForceObstaclePolysOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOff, "BmGame.RNavMeshObstacle_Queue.ForceObstaclePolysOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -156,14 +156,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOn;
     /// <summary>
     /// Function: ForceObstaclePolysOn
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOn, "BmGame.RNavMeshObstacle_Queue.ForceObstaclePolysOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOn, "BmGame.RNavMeshObstacle_Queue.ForceObstaclePolysOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -177,14 +177,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ClearNavMeshEdgeCosts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavMeshEdgeCosts;
     /// <summary>
     /// Function: ClearNavMeshEdgeCosts
     /// </summary>
     public unsafe virtual void ClearNavMeshEdgeCosts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RNavMeshObstacle_Queue.ClearNavMeshEdgeCosts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RNavMeshObstacle_Queue.ClearNavMeshEdgeCosts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -198,14 +198,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetNavMeshEdgeCosts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNavMeshEdgeCosts;
     /// <summary>
     /// Function: SetNavMeshEdgeCosts
     /// </summary>
     public unsafe virtual void SetNavMeshEdgeCosts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNavMeshEdgeCosts, "BmGame.RNavMeshObstacle_Queue.SetNavMeshEdgeCosts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNavMeshEdgeCosts, "BmGame.RNavMeshObstacle_Queue.SetNavMeshEdgeCosts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -219,14 +219,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_EnableObstaclePolysFromLoadedPylons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableObstaclePolysFromLoadedPylons;
     /// <summary>
     /// Function: EnableObstaclePolysFromLoadedPylons
     /// </summary>
     public unsafe virtual void EnableObstaclePolysFromLoadedPylons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableObstaclePolysFromLoadedPylons, "BmGame.RNavMeshObstacle_Queue.EnableObstaclePolysFromLoadedPylons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableObstaclePolysFromLoadedPylons, "BmGame.RNavMeshObstacle_Queue.EnableObstaclePolysFromLoadedPylons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -240,14 +240,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveObstaclePolysFromLoadedPylons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObstaclePolysFromLoadedPylons;
     /// <summary>
     /// Function: RemoveObstaclePolysFromLoadedPylons
     /// </summary>
     public unsafe virtual void RemoveObstaclePolysFromLoadedPylons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveObstaclePolysFromLoadedPylons, "BmGame.RNavMeshObstacle_Queue.RemoveObstaclePolysFromLoadedPylons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveObstaclePolysFromLoadedPylons, "BmGame.RNavMeshObstacle_Queue.RemoveObstaclePolysFromLoadedPylons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -261,14 +261,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_UnRegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
     /// Function: UnRegisterObstacle
     /// </summary>
     public unsafe override void UnRegisterObstacle(bool bInstant = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnRegisterObstacle, "BmGame.RNavMeshObstacle_Queue.UnRegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnRegisterObstacle, "BmGame.RNavMeshObstacle_Queue.UnRegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInstant, paramsPtr + 0);
@@ -283,14 +283,14 @@ public partial class RNavMeshObstacle_Queue : BmSDK.Engine.NavMeshObstacle, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
     /// Function: RegisterObstacle
     /// </summary>
     public unsafe override void RegisterObstacle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterObstacle, "BmGame.RNavMeshObstacle_Queue.RegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterObstacle, "BmGame.RNavMeshObstacle_Queue.RegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

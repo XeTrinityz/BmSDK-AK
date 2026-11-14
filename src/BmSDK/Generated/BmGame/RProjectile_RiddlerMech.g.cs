@@ -78,28 +78,28 @@ public partial class RProjectile_RiddlerMech : BmSDK.BmGame.RProjectile, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RProjectile_RiddlerMech>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HitTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitTarget;
     /// <summary>
     /// Function: HitTarget
     /// </summary>
     public unsafe virtual void HitTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitTarget, "BmGame.RProjectile_RiddlerMech.HitTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitTarget, "BmGame.RProjectile_RiddlerMech.HitTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LaunchProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LaunchProjectile;
     /// <summary>
     /// Function: LaunchProjectile
     /// </summary>
     public unsafe virtual void LaunchProjectile(BmSDK.BmGame.RPawnVillain NewTarget, float TravelTime, BmSDK.Engine.ParticleSystem NewFxTemplate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LaunchProjectile, "BmGame.RProjectile_RiddlerMech.LaunchProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LaunchProjectile, "BmGame.RProjectile_RiddlerMech.LaunchProjectile", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTarget, paramsPtr + 0);

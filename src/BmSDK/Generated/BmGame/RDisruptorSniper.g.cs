@@ -73,14 +73,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RDisruptorSniper>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanPlayerForgetTrackedTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayerForgetTrackedTarget;
     /// <summary>
     /// Function: CanPlayerForgetTrackedTarget
     /// </summary>
     public unsafe virtual bool CanPlayerForgetTrackedTarget(BmSDK.BmGame.RPlayerController RPC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPlayerForgetTrackedTarget, "BmGame.RDisruptorSniper.CanPlayerForgetTrackedTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPlayerForgetTrackedTarget, "BmGame.RDisruptorSniper.CanPlayerForgetTrackedTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
@@ -88,28 +88,28 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CallFiredAtWrongTargetOnRestrictTargetSequenceActions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CallFiredAtWrongTargetOnRestrictTargetSequenceActions;
     /// <summary>
     /// Function: CallFiredAtWrongTargetOnRestrictTargetSequenceActions
     /// </summary>
     public unsafe virtual void CallFiredAtWrongTargetOnRestrictTargetSequenceActions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CallFiredAtWrongTargetOnRestrictTargetSequenceActions, "BmGame.RDisruptorSniper.CallFiredAtWrongTargetOnRestrictTargetSequenceActions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CallFiredAtWrongTargetOnRestrictTargetSequenceActions, "BmGame.RDisruptorSniper.CallFiredAtWrongTargetOnRestrictTargetSequenceActions", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsTargetAllowedByRestrictTargetSequenceAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTargetAllowedByRestrictTargetSequenceAction;
     /// <summary>
     /// Function: IsTargetAllowedByRestrictTargetSequenceAction
     /// </summary>
     public unsafe virtual bool IsTargetAllowedByRestrictTargetSequenceAction(BmSDK.Engine.Actor CheckTarget, bool bTrackerTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTargetAllowedByRestrictTargetSequenceAction, "BmGame.RDisruptorSniper.IsTargetAllowedByRestrictTargetSequenceAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTargetAllowedByRestrictTargetSequenceAction, "BmGame.RDisruptorSniper.IsTargetAllowedByRestrictTargetSequenceAction", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckTarget, paramsPtr + 0);
@@ -118,14 +118,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_RemoveRestrictTargetSequenceAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveRestrictTargetSequenceAction;
     /// <summary>
     /// Function: RemoveRestrictTargetSequenceAction
     /// </summary>
     public unsafe virtual void RemoveRestrictTargetSequenceAction(BmSDK.BmGame.RSeqAct_RestrictDisruptorTargets OldSequenceAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveRestrictTargetSequenceAction, "BmGame.RDisruptorSniper.RemoveRestrictTargetSequenceAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveRestrictTargetSequenceAction, "BmGame.RDisruptorSniper.RemoveRestrictTargetSequenceAction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldSequenceAction, paramsPtr + 0);
@@ -133,14 +133,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_AddRestrictTargetSequenceAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRestrictTargetSequenceAction;
     /// <summary>
     /// Function: AddRestrictTargetSequenceAction
     /// </summary>
     public unsafe virtual void AddRestrictTargetSequenceAction(BmSDK.BmGame.RSeqAct_RestrictDisruptorTargets NewSequenceAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRestrictTargetSequenceAction, "BmGame.RDisruptorSniper.AddRestrictTargetSequenceAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRestrictTargetSequenceAction, "BmGame.RDisruptorSniper.AddRestrictTargetSequenceAction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSequenceAction, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_ResetForChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetForChallenge;
     /// <summary>
     /// Function: ResetForChallenge
     /// </summary>
     public unsafe override void ResetForChallenge(bool bChallengeStarted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetForChallenge, "BmGame.RDisruptorSniper.ResetForChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetForChallenge, "BmGame.RDisruptorSniper.ResetForChallenge", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bChallengeStarted, paramsPtr + 0);
@@ -163,56 +163,56 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_KillDisruptorViewMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillDisruptorViewMode;
     /// <summary>
     /// Function: KillDisruptorViewMode
     /// </summary>
     public unsafe virtual void KillDisruptorViewMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillDisruptorViewMode, "BmGame.RDisruptorSniper.KillDisruptorViewMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillDisruptorViewMode, "BmGame.RDisruptorSniper.KillDisruptorViewMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartDisruptorViewMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartDisruptorViewMode;
     /// <summary>
     /// Function: StartDisruptorViewMode
     /// </summary>
     public unsafe virtual void StartDisruptorViewMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartDisruptorViewMode, "BmGame.RDisruptorSniper.StartDisruptorViewMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartDisruptorViewMode, "BmGame.RDisruptorSniper.StartDisruptorViewMode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartGadgetCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartGadgetCamera;
     /// <summary>
     /// Function: StartGadgetCamera
     /// </summary>
     public unsafe virtual void StartGadgetCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartGadgetCamera, "BmGame.RDisruptorSniper.StartGadgetCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartGadgetCamera, "BmGame.RDisruptorSniper.StartGadgetCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateMuzzleAim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMuzzleAim;
     /// <summary>
     /// Function: UpdateMuzzleAim
     /// </summary>
     public unsafe virtual void UpdateMuzzleAim(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMuzzleAim, "BmGame.RDisruptorSniper.UpdateMuzzleAim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMuzzleAim, "BmGame.RDisruptorSniper.UpdateMuzzleAim", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -220,28 +220,28 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_StartMuzzleAim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartMuzzleAim;
     /// <summary>
     /// Function: StartMuzzleAim
     /// </summary>
     public unsafe virtual void StartMuzzleAim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartMuzzleAim, "BmGame.RDisruptorSniper.StartMuzzleAim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartMuzzleAim, "BmGame.RDisruptorSniper.StartMuzzleAim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateScreen;
     /// <summary>
     /// Function: UpdateScreen
     /// </summary>
     public unsafe virtual void UpdateScreen(float fNewScreenOnPercentage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateScreen, "BmGame.RDisruptorSniper.UpdateScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateScreen, "BmGame.RDisruptorSniper.UpdateScreen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fNewScreenOnPercentage, paramsPtr + 0);
@@ -249,112 +249,112 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_DisruptorFinishedEquipping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisruptorFinishedEquipping;
     /// <summary>
     /// Function: DisruptorFinishedEquipping
     /// </summary>
     public unsafe virtual void DisruptorFinishedEquipping()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisruptorFinishedEquipping, "BmGame.RDisruptorSniper.DisruptorFinishedEquipping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisruptorFinishedEquipping, "BmGame.RDisruptorSniper.DisruptorFinishedEquipping", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnLevelChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnLevelChange;
     /// <summary>
     /// Function: OnLevelChange
     /// </summary>
     public unsafe override void OnLevelChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLevelChange, "BmGame.RDisruptorSniper.OnLevelChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnLevelChange, "BmGame.RDisruptorSniper.OnLevelChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnRoomChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRoomChange;
     /// <summary>
     /// Function: OnRoomChange
     /// </summary>
     public unsafe override void OnRoomChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRoomChange, "BmGame.RDisruptorSniper.OnRoomChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRoomChange, "BmGame.RDisruptorSniper.OnRoomChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FullyRestoreAmmo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FullyRestoreAmmo;
     /// <summary>
     /// Function: FullyRestoreAmmo
     /// </summary>
     public unsafe virtual void FullyRestoreAmmo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FullyRestoreAmmo, "BmGame.RDisruptorSniper.FullyRestoreAmmo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FullyRestoreAmmo, "BmGame.RDisruptorSniper.FullyRestoreAmmo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugRestoreAmmo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugRestoreAmmo;
     /// <summary>
     /// Function: DebugRestoreAmmo
     /// </summary>
     public unsafe override void DebugRestoreAmmo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugRestoreAmmo, "BmGame.RDisruptorSniper.DebugRestoreAmmo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugRestoreAmmo, "BmGame.RDisruptorSniper.DebugRestoreAmmo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ReplenishAmmo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplenishAmmo;
     /// <summary>
     /// Function: ReplenishAmmo
     /// </summary>
     public unsafe virtual void ReplenishAmmo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplenishAmmo, "BmGame.RDisruptorSniper.ReplenishAmmo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReplenishAmmo, "BmGame.RDisruptorSniper.ReplenishAmmo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ReduceAmmo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReduceAmmo;
     /// <summary>
     /// Function: ReduceAmmo
     /// </summary>
     public unsafe virtual void ReduceAmmo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReduceAmmo, "BmGame.RDisruptorSniper.ReduceAmmo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReduceAmmo, "BmGame.RDisruptorSniper.ReduceAmmo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsActorTagged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActorTagged;
     /// <summary>
     /// Function: IsActorTagged
     /// </summary>
     public unsafe virtual bool IsActorTagged(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActorTagged, "BmGame.RDisruptorSniper.IsActorTagged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActorTagged, "BmGame.RDisruptorSniper.IsActorTagged", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -362,14 +362,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsVehicleBeingTracked;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsVehicleBeingTracked;
     /// <summary>
     /// Function: IsVehicleBeingTracked
     /// </summary>
     public unsafe virtual bool IsVehicleBeingTracked(BmSDK.BmGame.RVehicleNPC CheckVehicle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsVehicleBeingTracked, "BmGame.RDisruptorSniper.IsVehicleBeingTracked");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsVehicleBeingTracked, "BmGame.RDisruptorSniper.IsVehicleBeingTracked", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckVehicle, paramsPtr + 0);
@@ -377,14 +377,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CheckAutoTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAutoTarget;
     /// <summary>
     /// Function: CheckAutoTarget
     /// </summary>
     public unsafe override bool CheckAutoTarget(BmSDK.Engine.Actor Target, out System.Numerics.Vector3 TargetPosition, out float OverridePriority, out float OverrideMaxRange, out byte DoLOSCheck)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAutoTarget, "BmGame.RDisruptorSniper.CheckAutoTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckAutoTarget, "BmGame.RDisruptorSniper.CheckAutoTarget", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -404,14 +404,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetGadgetCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetCamera;
     /// <summary>
     /// Function: GetGadgetCamera
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmGame.RDisruptorSniper.GetGadgetCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGadgetCamera, "BmGame.RDisruptorSniper.GetGadgetCamera", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSoftCover, paramsPtr + 0);
@@ -420,14 +420,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_StartBulletTrailVFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartBulletTrailVFX;
     /// <summary>
     /// Function: StartBulletTrailVFX
     /// </summary>
     public unsafe virtual void StartBulletTrailVFX(System.Numerics.Vector3 vHitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartBulletTrailVFX, "BmGame.RDisruptorSniper.StartBulletTrailVFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartBulletTrailVFX, "BmGame.RDisruptorSniper.StartBulletTrailVFX", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vHitLocation, paramsPtr + 0);
@@ -435,14 +435,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RDisruptorSniper.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RDisruptorSniper.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -451,14 +451,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetGadgetLookSensitivity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetLookSensitivity;
     /// <summary>
     /// Function: GetGadgetLookSensitivity
     /// </summary>
     public unsafe override float GetGadgetLookSensitivity(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetLookSensitivity, "BmGame.RDisruptorSniper.GetGadgetLookSensitivity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGadgetLookSensitivity, "BmGame.RDisruptorSniper.GetGadgetLookSensitivity", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -466,14 +466,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AimedFireDD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AimedFireDD;
     /// <summary>
     /// Function: AimedFireDD
     /// </summary>
     public unsafe virtual int AimedFireDD(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh SniperTarget, System.Numerics.Vector3 vHitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AimedFireDD, "BmGame.RDisruptorSniper.AimedFireDD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AimedFireDD, "BmGame.RDisruptorSniper.AimedFireDD", this);
         byte* paramsPtr = stackalloc byte[200];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SniperTarget, paramsPtr + 0);
@@ -482,14 +482,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 100);
     }
 
-    private static BmSDK.Function __fn_SetSurveillanceSuppressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSurveillanceSuppressed;
     /// <summary>
     /// Function: SetSurveillanceSuppressed
     /// </summary>
     public unsafe virtual void SetSurveillanceSuppressed(bool do_suppress)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSurveillanceSuppressed, "BmGame.RDisruptorSniper.SetSurveillanceSuppressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSurveillanceSuppressed, "BmGame.RDisruptorSniper.SetSurveillanceSuppressed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(do_suppress, paramsPtr + 0);
@@ -497,28 +497,28 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_DrawAimingHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawAimingHUD;
     /// <summary>
     /// Function: DrawAimingHUD
     /// </summary>
     public unsafe virtual void DrawAimingHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawAimingHUD, "BmGame.RDisruptorSniper.DrawAimingHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawAimingHUD, "BmGame.RDisruptorSniper.DrawAimingHUD", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn__GetDetailString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn__GetDetailString;
     /// <summary>
     /// Function: _GetDetailString
     /// </summary>
     public unsafe virtual BmSDK.FString _GetDetailString(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh hHighlightTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn__GetDetailString, "BmGame.RDisruptorSniper._GetDetailString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn__GetDetailString, "BmGame.RDisruptorSniper._GetDetailString", this);
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(hHighlightTarget, paramsPtr + 0);
@@ -526,28 +526,28 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 88);
     }
 
-    private static BmSDK.Function __fn_GetFiringAnimationOverlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFiringAnimationOverlay;
     /// <summary>
     /// Function: GetFiringAnimationOverlay
     /// </summary>
     public unsafe virtual BmSDK.FName GetFiringAnimationOverlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFiringAnimationOverlay, "BmGame.RDisruptorSniper.GetFiringAnimationOverlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFiringAnimationOverlay, "BmGame.RDisruptorSniper.GetFiringAnimationOverlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayMagazineRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayMagazineRotation;
     /// <summary>
     /// Function: PlayMagazineRotation
     /// </summary>
     public unsafe virtual void PlayMagazineRotation(BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType DesiredMagazineType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayMagazineRotation, "BmGame.RDisruptorSniper.PlayMagazineRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayMagazineRotation, "BmGame.RDisruptorSniper.PlayMagazineRotation", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredMagazineType, paramsPtr + 0);
@@ -555,14 +555,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_IsAmmoTypeTheSame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAmmoTypeTheSame;
     /// <summary>
     /// Function: IsAmmoTypeTheSame
     /// </summary>
     public unsafe virtual bool IsAmmoTypeTheSame(BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType OldTargetType, BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType NewTargetType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAmmoTypeTheSame, "BmGame.RDisruptorSniper.IsAmmoTypeTheSame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAmmoTypeTheSame, "BmGame.RDisruptorSniper.IsAmmoTypeTheSame", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldTargetType, paramsPtr + 0);
@@ -571,28 +571,28 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateDisruptorUpgrades;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDisruptorUpgrades;
     /// <summary>
     /// Function: UpdateDisruptorUpgrades
     /// </summary>
     public unsafe virtual void UpdateDisruptorUpgrades()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDisruptorUpgrades, "BmGame.RDisruptorSniper.UpdateDisruptorUpgrades");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDisruptorUpgrades, "BmGame.RDisruptorSniper.UpdateDisruptorUpgrades", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPrimedPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrimedPose;
     /// <summary>
     /// Function: GetPrimedPose
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmGame.RDisruptorSniper.GetPrimedPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrimedPose, "BmGame.RDisruptorSniper.GetPrimedPose", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StanceIsCrouched);
@@ -613,14 +613,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_GetAutoTargetRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAutoTargetRotation;
     /// <summary>
     /// Function: GetAutoTargetRotation
     /// </summary>
     public unsafe override BmSDK.Rotator GetAutoTargetRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAutoTargetRotation, "BmGame.RDisruptorSniper.GetAutoTargetRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAutoTargetRotation, "BmGame.RDisruptorSniper.GetAutoTargetRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -634,14 +634,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNearestPointOnGeometryToHitLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNearestPointOnGeometryToHitLocation;
     /// <summary>
     /// Function: GetNearestPointOnGeometryToHitLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetNearestPointOnGeometryToHitLocation(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh Target, System.Numerics.Vector3 vHitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNearestPointOnGeometryToHitLocation, "BmGame.RDisruptorSniper.GetNearestPointOnGeometryToHitLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNearestPointOnGeometryToHitLocation, "BmGame.RDisruptorSniper.GetNearestPointOnGeometryToHitLocation", this);
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -657,14 +657,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 100);
     }
 
-    private static BmSDK.Function __fn_GetSniperTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSniperTarget;
     /// <summary>
     /// Function: GetSniperTarget
     /// </summary>
     public unsafe virtual bool GetSniperTarget(out BmSDK.BmGame.RInventoryGadget.FHighlightedMesh OutTarget, out System.Numerics.Vector3 vHitLocation, out BmSDK.BmGame.RInventoryGadget.FHighlightedMesh NearestTarget, float NearestAngleInDegrees)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSniperTarget, "BmGame.RDisruptorSniper.GetSniperTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSniperTarget, "BmGame.RDisruptorSniper.GetSniperTarget", this);
         byte* paramsPtr = stackalloc byte[212];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out vHitLocation);
@@ -684,14 +684,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 192);
     }
 
-    private static BmSDK.Function __fn_IsHighlightedMeshCurrentTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHighlightedMeshCurrentTarget;
     /// <summary>
     /// Function: IsHighlightedMeshCurrentTarget
     /// </summary>
     public unsafe override bool IsHighlightedMeshCurrentTarget(BmSDK.Engine.MeshComponent CheckHighlightedMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHighlightedMeshCurrentTarget, "BmGame.RDisruptorSniper.IsHighlightedMeshCurrentTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHighlightedMeshCurrentTarget, "BmGame.RDisruptorSniper.IsHighlightedMeshCurrentTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckHighlightedMesh, paramsPtr + 0);
@@ -706,14 +706,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AllowHighlightToBeHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowHighlightToBeHidden;
     /// <summary>
     /// Function: AllowHighlightToBeHidden
     /// </summary>
     public unsafe override bool AllowHighlightToBeHidden(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowHighlightToBeHidden, "BmGame.RDisruptorSniper.AllowHighlightToBeHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowHighlightToBeHidden, "BmGame.RDisruptorSniper.AllowHighlightToBeHidden", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckHighlightedMesh, paramsPtr + 0);
@@ -728,14 +728,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 88);
     }
 
-    private static BmSDK.Function __fn_SetViewInDisruptorModeOnPrimitiveComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetViewInDisruptorModeOnPrimitiveComponent;
     /// <summary>
     /// Function: SetViewInDisruptorModeOnPrimitiveComponent
     /// </summary>
     public unsafe virtual void SetViewInDisruptorModeOnPrimitiveComponent(BmSDK.Engine.PrimitiveComponent TheComponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetViewInDisruptorModeOnPrimitiveComponent, "BmGame.RDisruptorSniper.SetViewInDisruptorModeOnPrimitiveComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetViewInDisruptorModeOnPrimitiveComponent, "BmGame.RDisruptorSniper.SetViewInDisruptorModeOnPrimitiveComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheComponent, paramsPtr + 0);
@@ -750,14 +750,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_IsDisruptorAimingAtValidDisruptableLocationOnTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDisruptorAimingAtValidDisruptableLocationOnTarget;
     /// <summary>
     /// Function: IsDisruptorAimingAtValidDisruptableLocationOnTarget
     /// </summary>
     public unsafe virtual bool IsDisruptorAimingAtValidDisruptableLocationOnTarget(BmSDK.Engine.Actor TargetActor, System.Numerics.Vector3 vTargetLocation, BmSDK.FName nHitBoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDisruptorAimingAtValidDisruptableLocationOnTarget, "BmGame.RDisruptorSniper.IsDisruptorAimingAtValidDisruptableLocationOnTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDisruptorAimingAtValidDisruptableLocationOnTarget, "BmGame.RDisruptorSniper.IsDisruptorAimingAtValidDisruptableLocationOnTarget", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetActor, paramsPtr + 0);
@@ -774,14 +774,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_UpdateCornerCoverLean;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCornerCoverLean;
     /// <summary>
     /// Function: UpdateCornerCoverLean
     /// </summary>
     public unsafe virtual void UpdateCornerCoverLean()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCornerCoverLean, "BmGame.RDisruptorSniper.UpdateCornerCoverLean");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCornerCoverLean, "BmGame.RDisruptorSniper.UpdateCornerCoverLean", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -795,14 +795,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateDisruptorHighlightMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDisruptorHighlightMaterials;
     /// <summary>
     /// Function: UpdateDisruptorHighlightMaterials
     /// </summary>
     public unsafe virtual void UpdateDisruptorHighlightMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDisruptorHighlightMaterials, "BmGame.RDisruptorSniper.UpdateDisruptorHighlightMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDisruptorHighlightMaterials, "BmGame.RDisruptorSniper.UpdateDisruptorHighlightMaterials", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -816,14 +816,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_GetCorrectMIC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCorrectMIC;
     /// <summary>
     /// Function: GetCorrectMIC
     /// </summary>
     public unsafe override BmSDK.Engine.MaterialInterface GetCorrectMIC(BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool bShotByDisruptor, bool bSniperHasAmmoLeft, bool bWeaponReadyToExplode, bool bUpgradeNeeded, bool bNormalViewMode, bool bForCamouflageThug, bool bSpecialTrackerTarget, bool bCurrentTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCorrectMIC, "BmGame.RDisruptorSniper.GetCorrectMIC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCorrectMIC, "BmGame.RDisruptorSniper.GetCorrectMIC", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetType, paramsPtr + 0);
@@ -846,14 +846,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInterface>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_SetCorrectMICOnMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCorrectMICOnMesh;
     /// <summary>
     /// Function: SetCorrectMICOnMesh
     /// </summary>
     public unsafe override void SetCorrectMICOnMesh(BmSDK.Engine.Actor NewActor, BmSDK.Engine.MeshComponent HighlightMesh, BmSDK.BmGame.RInventoryGadget.EHighlightedTargetType TargetType, bool bShotByDisruptor, bool bSniperHasAmmoLeft, bool bWeaponReadyToExplode, bool bUpgradeNeeded, bool bNormalViewMode, bool bForCamouflageThug, bool bSpecialTrackerTarget, bool bCurrentTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCorrectMICOnMesh, "BmGame.RDisruptorSniper.SetCorrectMICOnMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCorrectMICOnMesh, "BmGame.RDisruptorSniper.SetCorrectMICOnMesh", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewActor, paramsPtr + 0);
@@ -878,14 +878,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_PrimedUpdateIndividualTargetHighlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateIndividualTargetHighlight;
     /// <summary>
     /// Function: PrimedUpdateIndividualTargetHighlight
     /// </summary>
     public unsafe override void PrimedUpdateIndividualTargetHighlight(BmSDK.Engine.Actor CheckTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrimedUpdateIndividualTargetHighlight, "BmGame.RDisruptorSniper.PrimedUpdateIndividualTargetHighlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrimedUpdateIndividualTargetHighlight, "BmGame.RDisruptorSniper.PrimedUpdateIndividualTargetHighlight", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckTarget, paramsPtr + 0);
@@ -900,14 +900,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_HolsteredShouldHighlightBeMaintained;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HolsteredShouldHighlightBeMaintained;
     /// <summary>
     /// Function: HolsteredShouldHighlightBeMaintained
     /// </summary>
     public unsafe override bool HolsteredShouldHighlightBeMaintained(BmSDK.BmGame.RInventoryGadget.FHighlightedMesh CheckHighlightedMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HolsteredShouldHighlightBeMaintained, "BmGame.RDisruptorSniper.HolsteredShouldHighlightBeMaintained");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HolsteredShouldHighlightBeMaintained, "BmGame.RDisruptorSniper.HolsteredShouldHighlightBeMaintained", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckHighlightedMesh, paramsPtr + 0);
@@ -922,14 +922,14 @@ public partial class RDisruptorSniper : BmSDK.BmGame.RInventoryGadget, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 88);
     }
 
-    private static BmSDK.Function __fn_PrimedUpdateHighlights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrimedUpdateHighlights;
     /// <summary>
     /// Function: PrimedUpdateHighlights
     /// </summary>
     public unsafe override void PrimedUpdateHighlights()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrimedUpdateHighlights, "BmGame.RDisruptorSniper.PrimedUpdateHighlights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrimedUpdateHighlights, "BmGame.RDisruptorSniper.PrimedUpdateHighlights", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

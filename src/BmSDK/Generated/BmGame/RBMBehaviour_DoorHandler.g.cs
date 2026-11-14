@@ -78,28 +78,28 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_DoorHandler>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HandlePathFail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandlePathFail;
     /// <summary>
     /// Function: HandlePathFail
     /// </summary>
     public unsafe virtual void HandlePathFail()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandlePathFail, "BmGame.RBMBehaviour_DoorHandler.HandlePathFail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandlePathFail, "BmGame.RBMBehaviour_DoorHandler.HandlePathFail", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FollowPath_DoorAware;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FollowPath_DoorAware;
     /// <summary>
     /// Function: FollowPath_DoorAware
     /// </summary>
     public unsafe virtual void FollowPath_DoorAware(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FollowPath_DoorAware, "BmGame.RBMBehaviour_DoorHandler.FollowPath_DoorAware");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FollowPath_DoorAware, "BmGame.RBMBehaviour_DoorHandler.FollowPath_DoorAware", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -107,42 +107,42 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
         return;
     }
 
-    private static BmSDK.Function __fn_GotLOSToFirstDoorOnPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GotLOSToFirstDoorOnPath;
     /// <summary>
     /// Function: GotLOSToFirstDoorOnPath
     /// </summary>
     public unsafe virtual bool GotLOSToFirstDoorOnPath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotLOSToFirstDoorOnPath, "BmGame.RBMBehaviour_DoorHandler.GotLOSToFirstDoorOnPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotLOSToFirstDoorOnPath, "BmGame.RBMBehaviour_DoorHandler.GotLOSToFirstDoorOnPath", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckNavHandleForDoors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckNavHandleForDoors;
     /// <summary>
     /// Function: CheckNavHandleForDoors
     /// </summary>
     public unsafe virtual void CheckNavHandleForDoors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckNavHandleForDoors, "BmGame.RBMBehaviour_DoorHandler.CheckNavHandleForDoors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckNavHandleForDoors, "BmGame.RBMBehaviour_DoorHandler.CheckNavHandleForDoors", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandleBankDoorDiscovery;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleBankDoorDiscovery;
     /// <summary>
     /// Function: HandleBankDoorDiscovery
     /// </summary>
     public unsafe override void HandleBankDoorDiscovery(BmSDK.BmGame.RBankDoorBase DiscoveredDoor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleBankDoorDiscovery, "BmGame.RBMBehaviour_DoorHandler.HandleBankDoorDiscovery");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleBankDoorDiscovery, "BmGame.RBMBehaviour_DoorHandler.HandleBankDoorDiscovery", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DiscoveredDoor, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerGrateResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerGrateResponse;
     /// <summary>
     /// Function: TriggerGrateResponse
     /// </summary>
     public unsafe virtual void TriggerGrateResponse(BmSDK.BmGame.RTunnelGrateBase Grate, bool canDestroy = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGrateResponse, "BmGame.RBMBehaviour_DoorHandler.TriggerGrateResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerGrateResponse, "BmGame.RBMBehaviour_DoorHandler.TriggerGrateResponse", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Grate, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
         return;
     }
 
-    private static BmSDK.Function __fn_StartNavMeshSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNavMeshSearch;
     /// <summary>
     /// Function: StartNavMeshSearch
     /// </summary>
     public unsafe virtual void StartNavMeshSearch(System.Numerics.Vector3 Destination, bool IgnoreKnownPathObstacles = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNavMeshSearch, "BmGame.RBMBehaviour_DoorHandler.StartNavMeshSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartNavMeshSearch, "BmGame.RBMBehaviour_DoorHandler.StartNavMeshSearch", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Destination, paramsPtr + 0);
@@ -182,14 +182,14 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
         return;
     }
 
-    private static BmSDK.Function __fn_DoBankEventBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoBankEventBark;
     /// <summary>
     /// Function: DoBankEventBark
     /// </summary>
     public unsafe virtual void DoBankEventBark(BmSDK.FName bark, bool bLowPriority = default, bool bNeedToOpenGate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoBankEventBark, "BmGame.RBMBehaviour_DoorHandler.DoBankEventBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoBankEventBark, "BmGame.RBMBehaviour_DoorHandler.DoBankEventBark", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bark, paramsPtr + 0);
@@ -199,56 +199,56 @@ public partial class RBMBehaviour_DoorHandler : BmSDK.BmGame.RBMBehaviour_Action
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginInterrupt;
     /// <summary>
     /// Function: OnBeginInterrupt
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_DoorHandler.OnBeginInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_DoorHandler.OnBeginInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnExitBehaviourCalled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnExitBehaviourCalled;
     /// <summary>
     /// Function: OnExitBehaviourCalled
     /// </summary>
     public unsafe override void OnExitBehaviourCalled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnExitBehaviourCalled, "BmGame.RBMBehaviour_DoorHandler.OnExitBehaviourCalled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnExitBehaviourCalled, "BmGame.RBMBehaviour_DoorHandler.OnExitBehaviourCalled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnExitConditionTriggered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnExitConditionTriggered;
     /// <summary>
     /// Function: OnExitConditionTriggered
     /// </summary>
     public unsafe override void OnExitConditionTriggered()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnExitConditionTriggered, "BmGame.RBMBehaviour_DoorHandler.OnExitConditionTriggered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnExitConditionTriggered, "BmGame.RBMBehaviour_DoorHandler.OnExitConditionTriggered", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_DoorHandler.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_DoorHandler.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

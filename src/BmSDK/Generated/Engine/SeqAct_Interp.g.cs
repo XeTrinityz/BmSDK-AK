@@ -91,14 +91,14 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SkipToNextDialogueLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipToNextDialogueLine;
     /// <summary>
     /// Function: SkipToNextDialogueLine
     /// </summary>
     public unsafe virtual bool SkipToNextDialogueLine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipToNextDialogueLine, "Engine.SeqAct_Interp.SkipToNextDialogueLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipToNextDialogueLine, "Engine.SeqAct_Interp.SkipToNextDialogueLine", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -112,28 +112,28 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.SeqAct_Interp.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.SeqAct_Interp.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddPlayerToDirectorTracks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPlayerToDirectorTracks;
     /// <summary>
     /// Function: AddPlayerToDirectorTracks
     /// </summary>
     public unsafe virtual void AddPlayerToDirectorTracks(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPlayerToDirectorTracks, "Engine.SeqAct_Interp.AddPlayerToDirectorTracks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPlayerToDirectorTracks, "Engine.SeqAct_Interp.AddPlayerToDirectorTracks", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe virtual void Stop(bool AlwaysTriggerStoppedOutput)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "Engine.SeqAct_Interp.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "Engine.SeqAct_Interp.Stop", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AlwaysTriggerStoppedOutput, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPosition;
     /// <summary>
     /// Function: SetPosition
     /// </summary>
     public unsafe virtual void SetPosition(float NewPosition, bool bJump = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPosition, "Engine.SeqAct_Interp.SetPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPosition, "Engine.SeqAct_Interp.SetPosition", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPosition, paramsPtr + 0);
@@ -193,14 +193,14 @@ public partial class SeqAct_Interp : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyActorsOfChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyActorsOfChange;
     /// <summary>
     /// Function: NotifyActorsOfChange
     /// </summary>
     public unsafe virtual void NotifyActorsOfChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyActorsOfChange, "Engine.SeqAct_Interp.NotifyActorsOfChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyActorsOfChange, "Engine.SeqAct_Interp.NotifyActorsOfChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

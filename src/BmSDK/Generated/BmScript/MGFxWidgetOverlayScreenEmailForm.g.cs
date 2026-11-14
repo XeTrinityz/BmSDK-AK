@@ -78,28 +78,28 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         where TComponent : class, Framework.IScriptComponent<MGFxWidgetOverlayScreenEmailForm>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ThreadSafeInvalidate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThreadSafeInvalidate;
     /// <summary>
     /// Function: ThreadSafeInvalidate
     /// </summary>
     public unsafe override void ThreadSafeInvalidate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThreadSafeInvalidate, "BmScript.MGFxWidgetOverlayScreenEmailForm.ThreadSafeInvalidate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThreadSafeInvalidate, "BmScript.MGFxWidgetOverlayScreenEmailForm.ThreadSafeInvalidate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBladeKeyboardFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBladeKeyboardFinished;
     /// <summary>
     /// Function: OnBladeKeyboardFinished
     /// </summary>
     public unsafe virtual void OnBladeKeyboardFinished(bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBladeKeyboardFinished, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnBladeKeyboardFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBladeKeyboardFinished, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnBladeKeyboardFinished", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
@@ -107,56 +107,56 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_ShowSystemBlade;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowSystemBlade;
     /// <summary>
     /// Function: ShowSystemBlade
     /// </summary>
     public unsafe virtual void ShowSystemBlade()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowSystemBlade, "BmScript.MGFxWidgetOverlayScreenEmailForm.ShowSystemBlade");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowSystemBlade, "BmScript.MGFxWidgetOverlayScreenEmailForm.ShowSystemBlade", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CloseAgeDropDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseAgeDropDown;
     /// <summary>
     /// Function: CloseAgeDropDown
     /// </summary>
     public unsafe virtual void CloseAgeDropDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseAgeDropDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.CloseAgeDropDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseAgeDropDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.CloseAgeDropDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OpenAgeDropDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenAgeDropDown;
     /// <summary>
     /// Function: OpenAgeDropDown
     /// </summary>
     public unsafe virtual void OpenAgeDropDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenAgeDropDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.OpenAgeDropDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenAgeDropDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.OpenAgeDropDown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PushAgeDropDownData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushAgeDropDownData;
     /// <summary>
     /// Function: PushAgeDropDownData
     /// </summary>
     public unsafe virtual void PushAgeDropDownData(BmSDK.TArray<int> ages)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushAgeDropDownData, "BmScript.MGFxWidgetOverlayScreenEmailForm.PushAgeDropDownData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushAgeDropDownData, "BmScript.MGFxWidgetOverlayScreenEmailForm.PushAgeDropDownData", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ages, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_SetHidePassword;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidePassword;
     /// <summary>
     /// Function: SetHidePassword
     /// </summary>
     public unsafe virtual void SetHidePassword(bool checkVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidePassword, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetHidePassword");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidePassword, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetHidePassword", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(checkVal, paramsPtr + 0);
@@ -179,14 +179,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_SetReceiveEmails;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetReceiveEmails;
     /// <summary>
     /// Function: SetReceiveEmails
     /// </summary>
     public unsafe virtual void SetReceiveEmails(bool checkVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetReceiveEmails, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetReceiveEmails");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetReceiveEmails, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetReceiveEmails", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(checkVal, paramsPtr + 0);
@@ -194,56 +194,56 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_GetFormData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFormData;
     /// <summary>
     /// Function: GetFormData
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.FString> GetFormData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFormData, "BmScript.MGFxWidgetOverlayScreenEmailForm.GetFormData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFormData, "BmScript.MGFxWidgetOverlayScreenEmailForm.GetFormData", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.FString>>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SendData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendData;
     /// <summary>
     /// Function: SendData
     /// </summary>
     public unsafe override void SendData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendData, "BmScript.MGFxWidgetOverlayScreenEmailForm.SendData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendData, "BmScript.MGFxWidgetOverlayScreenEmailForm.SendData", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearFormErrors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearFormErrors;
     /// <summary>
     /// Function: ClearFormErrors
     /// </summary>
     public unsafe virtual void ClearFormErrors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearFormErrors, "BmScript.MGFxWidgetOverlayScreenEmailForm.ClearFormErrors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFormErrors, "BmScript.MGFxWidgetOverlayScreenEmailForm.ClearFormErrors", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PushFormErrors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushFormErrors;
     /// <summary>
     /// Function: PushFormErrors
     /// </summary>
     public unsafe virtual void PushFormErrors(BmSDK.TArray<BmSDK.FString> Errors)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushFormErrors, "BmScript.MGFxWidgetOverlayScreenEmailForm.PushFormErrors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushFormErrors, "BmScript.MGFxWidgetOverlayScreenEmailForm.PushFormErrors", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Errors, paramsPtr + 0);
@@ -251,14 +251,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_QuickVerify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QuickVerify;
     /// <summary>
     /// Function: QuickVerify
     /// </summary>
     public unsafe virtual bool QuickVerify(BmSDK.TArray<BmSDK.FString> Data, out BmSDK.BmGame.MWBIDEmailFormScreenMessage Message, bool bOnlyEmail = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QuickVerify, "BmScript.MGFxWidgetOverlayScreenEmailForm.QuickVerify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QuickVerify, "BmScript.MGFxWidgetOverlayScreenEmailForm.QuickVerify", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Data, paramsPtr + 0);
@@ -270,14 +270,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_ScrollList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScrollList;
     /// <summary>
     /// Function: ScrollList
     /// </summary>
     public unsafe virtual void ScrollList(bool bIsDown)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScrollList, "BmScript.MGFxWidgetOverlayScreenEmailForm.ScrollList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScrollList, "BmScript.MGFxWidgetOverlayScreenEmailForm.ScrollList", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsDown, paramsPtr + 0);
@@ -285,70 +285,70 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_NavDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavDown;
     /// <summary>
     /// Function: NavDown
     /// </summary>
     public unsafe override void NavDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavDown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NavUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavUp;
     /// <summary>
     /// Function: NavUp
     /// </summary>
     public unsafe override void NavUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavUp, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavUp, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavUp", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NavRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavRight;
     /// <summary>
     /// Function: NavRight
     /// </summary>
     public unsafe override void NavRight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavRight, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavRight, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavRight", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NavLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavLeft;
     /// <summary>
     /// Function: NavLeft
     /// </summary>
     public unsafe override void NavLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavLeft, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavLeft, "BmScript.MGFxWidgetOverlayScreenEmailForm.NavLeft", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnMouseWheel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnMouseWheel;
     /// <summary>
     /// Function: OnMouseWheel
     /// </summary>
     public unsafe override void OnMouseWheel(int btnIdx, bool directionUp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMouseWheel, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnMouseWheel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnMouseWheel, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnMouseWheel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(btnIdx, paramsPtr + 0);
@@ -357,14 +357,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_OnMouseDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnMouseDown;
     /// <summary>
     /// Function: OnMouseDown
     /// </summary>
     public unsafe override void OnMouseDown(int btnIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMouseDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnMouseDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnMouseDown, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnMouseDown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(btnIdx, paramsPtr + 0);
@@ -372,56 +372,56 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_OnPressTab;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPressTab;
     /// <summary>
     /// Function: OnPressTab
     /// </summary>
     public unsafe override void OnPressTab()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPressTab, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnPressTab");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPressTab, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnPressTab", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnPressB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPressB;
     /// <summary>
     /// Function: OnPressB
     /// </summary>
     public unsafe override void OnPressB()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPressB, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnPressB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPressB, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnPressB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnPressA;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPressA;
     /// <summary>
     /// Function: OnPressA
     /// </summary>
     public unsafe override void OnPressA()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPressA, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnPressA");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPressA, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnPressA", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnKeyUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnKeyUp;
     /// <summary>
     /// Function: OnKeyUp
     /// </summary>
     public unsafe override void OnKeyUp(int Key)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnKeyUp, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnKeyUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnKeyUp, "BmScript.MGFxWidgetOverlayScreenEmailForm.OnKeyUp", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Key, paramsPtr + 0);
@@ -429,14 +429,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_SetFocussed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFocussed;
     /// <summary>
     /// Function: SetFocussed
     /// </summary>
     public unsafe virtual void SetFocussed(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFocussed, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetFocussed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFocussed, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetFocussed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -444,14 +444,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_SetButtonID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetButtonID;
     /// <summary>
     /// Function: SetButtonID
     /// </summary>
     public unsafe virtual void SetButtonID(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetButtonID, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetButtonID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetButtonID, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetButtonID", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -459,62 +459,65 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return;
     }
 
-    private static BmSDK.Function __fn_SetButtonLabel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetButtonLabel;
     /// <summary>
     /// Function: SetButtonLabel
     /// </summary>
-    public unsafe virtual void SetButtonLabel(int Id, BmSDK.FString Label)
+    public unsafe virtual void SetButtonLabel(int Id, BmSDK.FStringArg Label)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetButtonLabel, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetButtonLabel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetButtonLabel, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetButtonLabel", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Label, paramsPtr + 4);
+        Label.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupTextBox;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupTextBox;
     /// <summary>
     /// Function: SetupTextBox
     /// </summary>
-    public unsafe virtual void SetupTextBox(int Id, BmSDK.FString Text, bool isPassword)
+    public unsafe virtual void SetupTextBox(int Id, BmSDK.FStringArg Text, bool isPassword)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupTextBox, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetupTextBox");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupTextBox, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetupTextBox", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 4);
+        Text.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(isPassword, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTitle;
     /// <summary>
     /// Function: SetTitle
     /// </summary>
-    public unsafe virtual void SetTitle(BmSDK.FString Title)
+    public unsafe virtual void SetTitle(BmSDK.FStringArg Title)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTitle, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetTitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTitle, "BmScript.MGFxWidgetOverlayScreenEmailForm.SetTitle", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 0);
+        Title.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WidgetInitialized;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WidgetInitialized;
     /// <summary>
     /// Function: WidgetInitialized
     /// </summary>
     public unsafe override bool WidgetInitialized(BmSDK.FName WidgetName, BmSDK.FName WidgetPath, BmSDK.GFxUI.GFxObject Widget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WidgetInitialized, "BmScript.MGFxWidgetOverlayScreenEmailForm.WidgetInitialized");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WidgetInitialized, "BmScript.MGFxWidgetOverlayScreenEmailForm.WidgetInitialized", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WidgetName, paramsPtr + 0);
@@ -524,14 +527,14 @@ public partial class MGFxWidgetOverlayScreenEmailForm : BmSDK.BmScript.MGFxWidge
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmScript.MGFxWidgetOverlayScreenEmailForm.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmScript.MGFxWidgetOverlayScreenEmailForm.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

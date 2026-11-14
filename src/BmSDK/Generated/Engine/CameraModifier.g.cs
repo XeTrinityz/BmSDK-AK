@@ -78,14 +78,14 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<CameraModifier>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateAlpha;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAlpha;
     /// <summary>
     /// Function: UpdateAlpha
     /// </summary>
     public unsafe virtual void UpdateAlpha(BmSDK.Engine.Camera Camera, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAlpha, "Engine.CameraModifier.UpdateAlpha");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateAlpha, "Engine.CameraModifier.UpdateAlpha", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Camera, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessViewRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessViewRotation;
     /// <summary>
     /// Function: ProcessViewRotation
     /// </summary>
     public unsafe virtual bool ProcessViewRotation(BmSDK.Engine.Actor ViewTarget, float DeltaTime, out BmSDK.Rotator out_ViewRotation, out BmSDK.Rotator out_DeltaRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessViewRotation, "Engine.CameraModifier.ProcessViewRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessViewRotation, "Engine.CameraModifier.ProcessViewRotation", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ViewTarget, paramsPtr + 0);
@@ -123,42 +123,42 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_ToggleModifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleModifier;
     /// <summary>
     /// Function: ToggleModifier
     /// </summary>
     public unsafe virtual void ToggleModifier()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleModifier, "Engine.CameraModifier.ToggleModifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleModifier, "Engine.CameraModifier.ToggleModifier", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableModifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableModifier;
     /// <summary>
     /// Function: EnableModifier
     /// </summary>
     public unsafe virtual void EnableModifier()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableModifier, "Engine.CameraModifier.EnableModifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableModifier, "Engine.CameraModifier.EnableModifier", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableModifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableModifier;
     /// <summary>
     /// Function: DisableModifier
     /// </summary>
     public unsafe virtual void DisableModifier(bool bImmediate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableModifier, "Engine.CameraModifier.DisableModifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableModifier, "Engine.CameraModifier.DisableModifier", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bImmediate, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveCameraModifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCameraModifier;
     /// <summary>
     /// Function: RemoveCameraModifier
     /// </summary>
     public unsafe virtual bool RemoveCameraModifier(BmSDK.Engine.Camera Camera)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCameraModifier, "Engine.CameraModifier.RemoveCameraModifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveCameraModifier, "Engine.CameraModifier.RemoveCameraModifier", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Camera, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddCameraModifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCameraModifier;
     /// <summary>
     /// Function: AddCameraModifier
     /// </summary>
     public unsafe virtual bool AddCameraModifier(BmSDK.Engine.Camera Camera)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCameraModifier, "Engine.CameraModifier.AddCameraModifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCameraModifier, "Engine.CameraModifier.AddCameraModifier", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Camera, paramsPtr + 0);
@@ -196,14 +196,14 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsDisabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDisabled;
     /// <summary>
     /// Function: IsDisabled
     /// </summary>
     public unsafe virtual bool IsDisabled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDisabled, "Engine.CameraModifier.IsDisabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDisabled, "Engine.CameraModifier.IsDisabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -217,14 +217,14 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ModifyCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyCamera;
     /// <summary>
     /// Function: ModifyCamera
     /// </summary>
     public unsafe virtual bool ModifyCamera(BmSDK.Engine.Camera Camera, float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyCamera, "Engine.CameraModifier.ModifyCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyCamera, "Engine.CameraModifier.ModifyCamera", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Camera, paramsPtr + 0);
@@ -243,14 +243,14 @@ public partial class CameraModifier : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.CameraModifier.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.CameraModifier.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

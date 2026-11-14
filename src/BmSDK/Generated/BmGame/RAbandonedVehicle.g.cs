@@ -78,14 +78,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RAbandonedVehicle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CleanupRainSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanupRainSound;
     /// <summary>
     /// Function: CleanupRainSound
     /// </summary>
     public unsafe virtual void CleanupRainSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CleanupRainSound, "BmGame.RAbandonedVehicle.CleanupRainSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CleanupRainSound, "BmGame.RAbandonedVehicle.CleanupRainSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRainSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRainSound;
     /// <summary>
     /// Function: UpdateRainSound
     /// </summary>
     public unsafe virtual void UpdateRainSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRainSound, "BmGame.RAbandonedVehicle.UpdateRainSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRainSound, "BmGame.RAbandonedVehicle.UpdateRainSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_OverrideDefaultAkAudibleSetup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDefaultAkAudibleSetup;
     /// <summary>
     /// Function: OverrideDefaultAkAudibleSetup
     /// </summary>
     public unsafe override void OverrideDefaultAkAudibleSetup(BmSDK.Engine.RAkAudible akAud)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDefaultAkAudibleSetup, "BmGame.RAbandonedVehicle.OverrideDefaultAkAudibleSetup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDefaultAkAudibleSetup, "BmGame.RAbandonedVehicle.OverrideDefaultAkAudibleSetup", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(akAud, paramsPtr + 0);
@@ -135,14 +135,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_NearlyCrushedBatman;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NearlyCrushedBatman;
     /// <summary>
     /// Function: NearlyCrushedBatman
     /// </summary>
     public unsafe virtual void NearlyCrushedBatman(BmSDK.BmGame.RPlayerControllerCombat PC, BmSDK.BmGame.RPawnPlayer Batman, BmSDK.BmGame.RVehicleBatmobileBase Batmobile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NearlyCrushedBatman, "BmGame.RAbandonedVehicle.NearlyCrushedBatman");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NearlyCrushedBatman, "BmGame.RAbandonedVehicle.NearlyCrushedBatman", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -152,28 +152,28 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_DetachFromWinch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachFromWinch;
     /// <summary>
     /// Function: DetachFromWinch
     /// </summary>
     public unsafe virtual void DetachFromWinch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachFromWinch, "BmGame.RAbandonedVehicle.DetachFromWinch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachFromWinch, "BmGame.RAbandonedVehicle.DetachFromWinch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WinchAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WinchAttached;
     /// <summary>
     /// Function: WinchAttached
     /// </summary>
     public unsafe virtual void WinchAttached(BmSDK.BmGame.RBatmobileWinch Winch, System.Numerics.Vector3 pos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchAttached, "BmGame.RAbandonedVehicle.WinchAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinchAttached, "BmGame.RAbandonedVehicle.WinchAttached", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Winch, paramsPtr + 0);
@@ -182,14 +182,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_PlayAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnim;
     /// <summary>
     /// Function: PlayAnim
     /// </summary>
     public unsafe virtual void PlayAnim(BmSDK.FName AnimName, float Duration = default, bool bLoop = default, bool bRestartIfAlreadyPlaying = default, float StartTime = default, bool bPlayBackwards = default, float PlayRate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAnim, "BmGame.RAbandonedVehicle.PlayAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAnim, "BmGame.RAbandonedVehicle.PlayAnim", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -203,28 +203,28 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_StopAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAnim;
     /// <summary>
     /// Function: StopAnim
     /// </summary>
     public unsafe virtual void StopAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAnim, "BmGame.RAbandonedVehicle.StopAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAnim, "BmGame.RAbandonedVehicle.StopAnim", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnChangeCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnChangeCollision;
     /// <summary>
     /// Function: OnChangeCollision
     /// </summary>
     public unsafe override void OnChangeCollision(BmSDK.Engine.SeqAct_ChangeCollision Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnChangeCollision, "BmGame.RAbandonedVehicle.OnChangeCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnChangeCollision, "BmGame.RAbandonedVehicle.OnChangeCollision", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -232,28 +232,28 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_GetObstacleActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObstacleActor;
     /// <summary>
     /// Function: GetObstacleActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetObstacleActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObstacleActor, "BmGame.RAbandonedVehicle.GetObstacleActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObstacleActor, "BmGame.RAbandonedVehicle.GetObstacleActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateXrayMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateXrayMaterial;
     /// <summary>
     /// Function: UpdateXrayMaterial
     /// </summary>
     public unsafe virtual void UpdateXrayMaterial(System.Numerics.Vector3 CameraLocation, bool bAllowCallingConditionalUpdateComponents = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateXrayMaterial, "BmGame.RAbandonedVehicle.UpdateXrayMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateXrayMaterial, "BmGame.RAbandonedVehicle.UpdateXrayMaterial", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CameraLocation, paramsPtr + 0);
@@ -269,14 +269,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateFromVehicleArchetype;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFromVehicleArchetype;
     /// <summary>
     /// Function: UpdateFromVehicleArchetype
     /// </summary>
     public unsafe virtual void UpdateFromVehicleArchetype()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFromVehicleArchetype, "BmGame.RAbandonedVehicle.UpdateFromVehicleArchetype");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFromVehicleArchetype, "BmGame.RAbandonedVehicle.UpdateFromVehicleArchetype", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -290,14 +290,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForVehicleIntersection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForVehicleIntersection;
     /// <summary>
     /// Function: CheckForVehicleIntersection
     /// </summary>
     public unsafe virtual bool CheckForVehicleIntersection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForVehicleIntersection, "BmGame.RAbandonedVehicle.CheckForVehicleIntersection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForVehicleIntersection, "BmGame.RAbandonedVehicle.CheckForVehicleIntersection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -311,98 +311,98 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RAbandonedVehicle.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "BmGame.RAbandonedVehicle.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickRegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickRegisterObstacle;
     /// <summary>
     /// Function: TickRegisterObstacle
     /// </summary>
     public unsafe virtual void TickRegisterObstacle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickRegisterObstacle, "BmGame.RAbandonedVehicle.TickRegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickRegisterObstacle, "BmGame.RAbandonedVehicle.TickRegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstacleRegister;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstacleRegister;
     /// <summary>
     /// Function: ForceObstacleRegister
     /// </summary>
     public unsafe virtual void ForceObstacleRegister()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstacleRegister, "BmGame.RAbandonedVehicle.ForceObstacleRegister");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstacleRegister, "BmGame.RAbandonedVehicle.ForceObstacleRegister", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyMe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyMe;
     /// <summary>
     /// Function: DestroyMe
     /// </summary>
     public unsafe virtual void DestroyMe()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyMe, "BmGame.RAbandonedVehicle.DestroyMe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyMe, "BmGame.RAbandonedVehicle.DestroyMe", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnSleepRBPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSleepRBPhysics;
     /// <summary>
     /// Function: OnSleepRBPhysics
     /// </summary>
     public unsafe override void OnSleepRBPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSleepRBPhysics, "BmGame.RAbandonedVehicle.OnSleepRBPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSleepRBPhysics, "BmGame.RAbandonedVehicle.OnSleepRBPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnWakeRBPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnWakeRBPhysics;
     /// <summary>
     /// Function: OnWakeRBPhysics
     /// </summary>
     public unsafe override void OnWakeRBPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnWakeRBPhysics, "BmGame.RAbandonedVehicle.OnWakeRBPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnWakeRBPhysics, "BmGame.RAbandonedVehicle.OnWakeRBPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCrushed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCrushed;
     /// <summary>
     /// Function: UpdateCrushed
     /// </summary>
     public unsafe virtual void UpdateCrushed(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCrushed, "BmGame.RAbandonedVehicle.UpdateCrushed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCrushed, "BmGame.RAbandonedVehicle.UpdateCrushed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -410,14 +410,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAbandonedVehicle.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAbandonedVehicle.Tick", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -425,70 +425,70 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_PreventFallingIfOutsideStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventFallingIfOutsideStreaming;
     /// <summary>
     /// Function: PreventFallingIfOutsideStreaming
     /// </summary>
     public unsafe virtual void PreventFallingIfOutsideStreaming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreventFallingIfOutsideStreaming, "BmGame.RAbandonedVehicle.PreventFallingIfOutsideStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreventFallingIfOutsideStreaming, "BmGame.RAbandonedVehicle.PreventFallingIfOutsideStreaming", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RAbandonedVehicle.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RAbandonedVehicle.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RAbandonedVehicle.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RAbandonedVehicle.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitHitMask;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitHitMask;
     /// <summary>
     /// Function: InitHitMask
     /// </summary>
     public unsafe virtual void InitHitMask()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitHitMask, "BmGame.RAbandonedVehicle.InitHitMask");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitHitMask, "BmGame.RAbandonedVehicle.InitHitMask", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Bump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Bump;
     /// <summary>
     /// Function: Bump
     /// </summary>
     public unsafe override void Bump(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Bump, "BmGame.RAbandonedVehicle.Bump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Bump, "BmGame.RAbandonedVehicle.Bump", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -498,14 +498,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_StagedInit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StagedInit;
     /// <summary>
     /// Function: StagedInit
     /// </summary>
     public unsafe virtual bool StagedInit(int Stage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StagedInit, "BmGame.RAbandonedVehicle.StagedInit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StagedInit, "BmGame.RAbandonedVehicle.StagedInit", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Stage, paramsPtr + 0);
@@ -513,42 +513,42 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetupVehicleXrayMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupVehicleXrayMaterials;
     /// <summary>
     /// Function: SetupVehicleXrayMaterials
     /// </summary>
     public unsafe virtual void SetupVehicleXrayMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupVehicleXrayMaterials, "BmGame.RAbandonedVehicle.SetupVehicleXrayMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupVehicleXrayMaterials, "BmGame.RAbandonedVehicle.SetupVehicleXrayMaterials", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RAbandonedVehicle.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RAbandonedVehicle.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNameNumber;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNameNumber;
     /// <summary>
     /// Function: GetNameNumber
     /// </summary>
     public unsafe virtual int GetNameNumber()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNameNumber, "BmGame.RAbandonedVehicle.GetNameNumber");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNameNumber, "BmGame.RAbandonedVehicle.GetNameNumber", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -562,14 +562,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRoadNetwork;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadNetwork;
     /// <summary>
     /// Function: GetRoadNetwork
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRoadNetwork GetRoadNetwork()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRoadNetwork, "BmGame.RAbandonedVehicle.GetRoadNetwork");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRoadNetwork, "BmGame.RAbandonedVehicle.GetRoadNetwork", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -583,14 +583,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RRoadNetwork>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateLights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLights;
     /// <summary>
     /// Function: UpdateLights
     /// </summary>
     public unsafe virtual void UpdateLights(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLights, "BmGame.RAbandonedVehicle.UpdateLights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLights, "BmGame.RAbandonedVehicle.UpdateLights", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -605,14 +605,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_InitLights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitLights;
     /// <summary>
     /// Function: InitLights
     /// </summary>
     public unsafe virtual void InitLights()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitLights, "BmGame.RAbandonedVehicle.InitLights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitLights, "BmGame.RAbandonedVehicle.InitLights", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -626,70 +626,70 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRainMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRainMaterials;
     /// <summary>
     /// Function: UpdateRainMaterials
     /// </summary>
     public unsafe virtual void UpdateRainMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRainMaterials, "BmGame.RAbandonedVehicle.UpdateRainMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRainMaterials, "BmGame.RAbandonedVehicle.UpdateRainMaterials", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupRainMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupRainMaterials;
     /// <summary>
     /// Function: SetupRainMaterials
     /// </summary>
     public unsafe virtual void SetupRainMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupRainMaterials, "BmGame.RAbandonedVehicle.SetupRainMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupRainMaterials, "BmGame.RAbandonedVehicle.SetupRainMaterials", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowObstaclesToRegister;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowObstaclesToRegister;
     /// <summary>
     /// Function: AllowObstaclesToRegister
     /// </summary>
     public unsafe virtual void AllowObstaclesToRegister()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowObstaclesToRegister, "BmGame.RAbandonedVehicle.AllowObstaclesToRegister");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowObstaclesToRegister, "BmGame.RAbandonedVehicle.AllowObstaclesToRegister", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ReregisterNavMeshObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReregisterNavMeshObstacle;
     /// <summary>
     /// Function: ReregisterNavMeshObstacle
     /// </summary>
     public unsafe virtual void ReregisterNavMeshObstacle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReregisterNavMeshObstacle, "BmGame.RAbandonedVehicle.ReregisterNavMeshObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReregisterNavMeshObstacle, "BmGame.RAbandonedVehicle.ReregisterNavMeshObstacle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveCapeCollisionPhysXActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCapeCollisionPhysXActor;
     /// <summary>
     /// Function: RemoveCapeCollisionPhysXActor
     /// </summary>
     public unsafe virtual void RemoveCapeCollisionPhysXActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCapeCollisionPhysXActor, "BmGame.RAbandonedVehicle.RemoveCapeCollisionPhysXActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveCapeCollisionPhysXActor, "BmGame.RAbandonedVehicle.RemoveCapeCollisionPhysXActor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -703,14 +703,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_AddCapeCollisionPhysXActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCapeCollisionPhysXActor;
     /// <summary>
     /// Function: AddCapeCollisionPhysXActor
     /// </summary>
     public unsafe virtual void AddCapeCollisionPhysXActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCapeCollisionPhysXActor, "BmGame.RAbandonedVehicle.AddCapeCollisionPhysXActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCapeCollisionPhysXActor, "BmGame.RAbandonedVehicle.AddCapeCollisionPhysXActor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -724,14 +724,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOff;
     /// <summary>
     /// Function: ForceObstaclePolysOff
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOff, "BmGame.RAbandonedVehicle.ForceObstaclePolysOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOff, "BmGame.RAbandonedVehicle.ForceObstaclePolysOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -745,14 +745,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOn;
     /// <summary>
     /// Function: ForceObstaclePolysOn
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOn, "BmGame.RAbandonedVehicle.ForceObstaclePolysOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOn, "BmGame.RAbandonedVehicle.ForceObstaclePolysOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -766,14 +766,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ClearNavMeshEdgeCosts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavMeshEdgeCosts;
     /// <summary>
     /// Function: ClearNavMeshEdgeCosts
     /// </summary>
     public unsafe virtual void ClearNavMeshEdgeCosts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RAbandonedVehicle.ClearNavMeshEdgeCosts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RAbandonedVehicle.ClearNavMeshEdgeCosts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -787,14 +787,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetNavMeshEdgeCosts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNavMeshEdgeCosts;
     /// <summary>
     /// Function: SetNavMeshEdgeCosts
     /// </summary>
     public unsafe virtual void SetNavMeshEdgeCosts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNavMeshEdgeCosts, "BmGame.RAbandonedVehicle.SetNavMeshEdgeCosts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNavMeshEdgeCosts, "BmGame.RAbandonedVehicle.SetNavMeshEdgeCosts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -808,14 +808,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_EnableObstaclePolysFromLoadedPylons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableObstaclePolysFromLoadedPylons;
     /// <summary>
     /// Function: EnableObstaclePolysFromLoadedPylons
     /// </summary>
     public unsafe virtual void EnableObstaclePolysFromLoadedPylons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableObstaclePolysFromLoadedPylons, "BmGame.RAbandonedVehicle.EnableObstaclePolysFromLoadedPylons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableObstaclePolysFromLoadedPylons, "BmGame.RAbandonedVehicle.EnableObstaclePolysFromLoadedPylons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -829,14 +829,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveObstaclePolysFromLoadedPylons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObstaclePolysFromLoadedPylons;
     /// <summary>
     /// Function: RemoveObstaclePolysFromLoadedPylons
     /// </summary>
     public unsafe virtual void RemoveObstaclePolysFromLoadedPylons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveObstaclePolysFromLoadedPylons, "BmGame.RAbandonedVehicle.RemoveObstaclePolysFromLoadedPylons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveObstaclePolysFromLoadedPylons, "BmGame.RAbandonedVehicle.RemoveObstaclePolysFromLoadedPylons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -850,14 +850,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UnRegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterObstacle;
     /// <summary>
     /// Function: UnRegisterObstacle
     /// </summary>
     public unsafe virtual void UnRegisterObstacle(bool bForceInstant = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnRegisterObstacle, "BmGame.RAbandonedVehicle.UnRegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnRegisterObstacle, "BmGame.RAbandonedVehicle.UnRegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceInstant, paramsPtr + 0);
@@ -872,14 +872,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterObstacle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterObstacle;
     /// <summary>
     /// Function: RegisterObstacle
     /// </summary>
     public unsafe virtual void RegisterObstacle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterObstacle, "BmGame.RAbandonedVehicle.RegisterObstacle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterObstacle, "BmGame.RAbandonedVehicle.RegisterObstacle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -893,14 +893,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_IsBodyPartWheel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBodyPartWheel;
     /// <summary>
     /// Function: IsBodyPartWheel
     /// </summary>
     public unsafe virtual bool IsBodyPartWheel(int BodyIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBodyPartWheel, "BmGame.RAbandonedVehicle.IsBodyPartWheel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBodyPartWheel, "BmGame.RAbandonedVehicle.IsBodyPartWheel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyIndex, paramsPtr + 0);
@@ -915,14 +915,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsBodyPartBrokenOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBodyPartBrokenOff;
     /// <summary>
     /// Function: IsBodyPartBrokenOff
     /// </summary>
     public unsafe virtual bool IsBodyPartBrokenOff(int BodyIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBodyPartBrokenOff, "BmGame.RAbandonedVehicle.IsBodyPartBrokenOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBodyPartBrokenOff, "BmGame.RAbandonedVehicle.IsBodyPartBrokenOff", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyIndex, paramsPtr + 0);
@@ -937,14 +937,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_Died;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Died;
     /// <summary>
     /// Function: Died
     /// </summary>
     public unsafe virtual void Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "BmGame.RAbandonedVehicle.Died");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Died, "BmGame.RAbandonedVehicle.Died", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -954,42 +954,42 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ExplodeMe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExplodeMe;
     /// <summary>
     /// Function: ExplodeMe
     /// </summary>
     public unsafe virtual void ExplodeMe()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeMe, "BmGame.RAbandonedVehicle.ExplodeMe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExplodeMe, "BmGame.RAbandonedVehicle.ExplodeMe", this);
         byte* paramsPtr = stackalloc byte[316];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanExplode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanExplode;
     /// <summary>
     /// Function: CanExplode
     /// </summary>
     public unsafe virtual bool CanExplode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanExplode, "BmGame.RAbandonedVehicle.CanExplode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanExplode, "BmGame.RAbandonedVehicle.CanExplode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SpawnDeadVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDeadVehicle;
     /// <summary>
     /// Function: SpawnDeadVehicle
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RDeadVehicle SpawnDeadVehicle(BmSDK.BmGame.RDeadVehicle Archetype)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDeadVehicle, "BmGame.RAbandonedVehicle.SpawnDeadVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnDeadVehicle, "BmGame.RAbandonedVehicle.SpawnDeadVehicle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Archetype, paramsPtr + 0);
@@ -1004,14 +1004,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RDeadVehicle>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AccumulateCrushed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AccumulateCrushed;
     /// <summary>
     /// Function: AccumulateCrushed
     /// </summary>
     public unsafe virtual void AccumulateCrushed(System.Numerics.Vector3 Force, bool IsWheel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AccumulateCrushed, "BmGame.RAbandonedVehicle.AccumulateCrushed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AccumulateCrushed, "BmGame.RAbandonedVehicle.AccumulateCrushed", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Force, paramsPtr + 0);
@@ -1027,14 +1027,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_RigidBodyCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyCollision;
     /// <summary>
     /// Function: RigidBodyCollision
     /// </summary>
     public unsafe override void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "BmGame.RAbandonedVehicle.RigidBodyCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RigidBodyCollision, "BmGame.RAbandonedVehicle.RigidBodyCollision", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitComponent, paramsPtr + 0);
@@ -1048,14 +1048,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ConstraintBrokenNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstraintBrokenNotify;
     /// <summary>
     /// Function: ConstraintBrokenNotify
     /// </summary>
     public unsafe override void ConstraintBrokenNotify(BmSDK.Engine.Actor ConOwner, BmSDK.Engine.RB_ConstraintSetup ConSetup, BmSDK.Engine.RB_ConstraintInstance ConInstance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstraintBrokenNotify, "BmGame.RAbandonedVehicle.ConstraintBrokenNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConstraintBrokenNotify, "BmGame.RAbandonedVehicle.ConstraintBrokenNotify", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConOwner, paramsPtr + 0);
@@ -1065,28 +1065,28 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetOffAlarm;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOffAlarm;
     /// <summary>
     /// Function: SetOffAlarm
     /// </summary>
     public unsafe virtual void SetOffAlarm()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOffAlarm, "BmGame.RAbandonedVehicle.SetOffAlarm");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOffAlarm, "BmGame.RAbandonedVehicle.SetOffAlarm", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyVisualDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyVisualDamage;
     /// <summary>
     /// Function: ApplyVisualDamage
     /// </summary>
     public unsafe virtual void ApplyVisualDamage(System.Numerics.Vector3 WorldPos, float Radius, float Amount, System.Numerics.Vector3 ChannelMask, bool bDeform, bool bSmashGlass, float PartBreakOffImpulse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyVisualDamage, "BmGame.RAbandonedVehicle.ApplyVisualDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyVisualDamage, "BmGame.RAbandonedVehicle.ApplyVisualDamage", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WorldPos, paramsPtr + 0);
@@ -1100,14 +1100,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int DamageAmount, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmGame.RAbandonedVehicle.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "BmGame.RAbandonedVehicle.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -1121,14 +1121,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamageFromEMP;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamageFromEMP;
     /// <summary>
     /// Function: TakeDamageFromEMP
     /// </summary>
     public unsafe virtual void TakeDamageFromEMP(BmSDK.Engine.Controller DamageInstigator, float DamageDuration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamageFromEMP, "BmGame.RAbandonedVehicle.TakeDamageFromEMP");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamageFromEMP, "BmGame.RAbandonedVehicle.TakeDamageFromEMP", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageInstigator, paramsPtr + 0);
@@ -1137,14 +1137,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SmashDriversPassengerWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashDriversPassengerWindow;
     /// <summary>
     /// Function: SmashDriversPassengerWindow
     /// </summary>
     public unsafe virtual void SmashDriversPassengerWindow(System.Numerics.Vector3 SmashLocation, System.Numerics.Vector3 SmashNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashDriversPassengerWindow, "BmGame.RAbandonedVehicle.SmashDriversPassengerWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashDriversPassengerWindow, "BmGame.RAbandonedVehicle.SmashDriversPassengerWindow", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SmashLocation, paramsPtr + 0);
@@ -1153,14 +1153,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SmashDriversWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashDriversWindow;
     /// <summary>
     /// Function: SmashDriversWindow
     /// </summary>
     public unsafe virtual void SmashDriversWindow(System.Numerics.Vector3 SmashLocation, System.Numerics.Vector3 SmashNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashDriversWindow, "BmGame.RAbandonedVehicle.SmashDriversWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashDriversWindow, "BmGame.RAbandonedVehicle.SmashDriversWindow", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SmashLocation, paramsPtr + 0);
@@ -1169,14 +1169,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SmashWindscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashWindscreen;
     /// <summary>
     /// Function: SmashWindscreen
     /// </summary>
     public unsafe virtual void SmashWindscreen(System.Numerics.Vector3 SmashLocation, System.Numerics.Vector3 SmashNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashWindscreen, "BmGame.RAbandonedVehicle.SmashWindscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashWindscreen, "BmGame.RAbandonedVehicle.SmashWindscreen", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SmashLocation, paramsPtr + 0);
@@ -1185,14 +1185,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_CrackWindscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrackWindscreen;
     /// <summary>
     /// Function: CrackWindscreen
     /// </summary>
     public unsafe virtual void CrackWindscreen(System.Numerics.Vector3 SmashLocation, System.Numerics.Vector3 SmashNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackWindscreen, "BmGame.RAbandonedVehicle.CrackWindscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackWindscreen, "BmGame.RAbandonedVehicle.CrackWindscreen", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SmashLocation, paramsPtr + 0);
@@ -1201,14 +1201,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateMolotovFire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMolotovFire;
     /// <summary>
     /// Function: UpdateMolotovFire
     /// </summary>
     public unsafe virtual void UpdateMolotovFire(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMolotovFire, "BmGame.RAbandonedVehicle.UpdateMolotovFire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMolotovFire, "BmGame.RAbandonedVehicle.UpdateMolotovFire", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1216,84 +1216,84 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_MolotovExplode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MolotovExplode;
     /// <summary>
     /// Function: MolotovExplode
     /// </summary>
     public unsafe virtual void MolotovExplode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MolotovExplode, "BmGame.RAbandonedVehicle.MolotovExplode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MolotovExplode, "BmGame.RAbandonedVehicle.MolotovExplode", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetWindDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWindDirection;
     /// <summary>
     /// Function: GetWindDirection
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetWindDirection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWindDirection, "BmGame.RAbandonedVehicle.GetWindDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWindDirection, "BmGame.RAbandonedVehicle.GetWindDirection", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RoofLightsOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RoofLightsOff;
     /// <summary>
     /// Function: RoofLightsOff
     /// </summary>
     public unsafe virtual void RoofLightsOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RoofLightsOff, "BmGame.RAbandonedVehicle.RoofLightsOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RoofLightsOff, "BmGame.RAbandonedVehicle.RoofLightsOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RoofLightsOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RoofLightsOn;
     /// <summary>
     /// Function: RoofLightsOn
     /// </summary>
     public unsafe virtual void RoofLightsOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RoofLightsOn, "BmGame.RAbandonedVehicle.RoofLightsOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RoofLightsOn, "BmGame.RAbandonedVehicle.RoofLightsOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetMissileTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMissileTargetLocation;
     /// <summary>
     /// Function: GetMissileTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMissileTargetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMissileTargetLocation, "BmGame.RAbandonedVehicle.GetMissileTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMissileTargetLocation, "BmGame.RAbandonedVehicle.GetMissileTargetLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
     /// Function: SetHidden
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidden, "BmGame.RAbandonedVehicle.SetHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidden, "BmGame.RAbandonedVehicle.SetHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewHidden, paramsPtr + 0);
@@ -1308,14 +1308,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetRigidBodyCollisionEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRigidBodyCollisionEnabled;
     /// <summary>
     /// Function: SetRigidBodyCollisionEnabled
     /// </summary>
     public unsafe virtual void SetRigidBodyCollisionEnabled(bool Enabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRigidBodyCollisionEnabled, "BmGame.RAbandonedVehicle.SetRigidBodyCollisionEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRigidBodyCollisionEnabled, "BmGame.RAbandonedVehicle.SetRigidBodyCollisionEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Enabled, paramsPtr + 0);
@@ -1330,14 +1330,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForNPCCollisionWarning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForNPCCollisionWarning;
     /// <summary>
     /// Function: CheckForNPCCollisionWarning
     /// </summary>
     public unsafe virtual void CheckForNPCCollisionWarning(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForNPCCollisionWarning, "BmGame.RAbandonedVehicle.CheckForNPCCollisionWarning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForNPCCollisionWarning, "BmGame.RAbandonedVehicle.CheckForNPCCollisionWarning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1352,14 +1352,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_IsLocationInDangerOfCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationInDangerOfCollision;
     /// <summary>
     /// Function: IsLocationInDangerOfCollision
     /// </summary>
     public unsafe virtual bool IsLocationInDangerOfCollision(System.Numerics.Vector3 TestLocation, float Speed, System.Numerics.Vector3 Direction, System.Numerics.Vector3 LeftVec, float CheckWidth, float MinCos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationInDangerOfCollision, "BmGame.RAbandonedVehicle.IsLocationInDangerOfCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLocationInDangerOfCollision, "BmGame.RAbandonedVehicle.IsLocationInDangerOfCollision", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -1379,14 +1379,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_GetRoadObstacleBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRoadObstacleBounds;
     /// <summary>
     /// Function: GetRoadObstacleBounds
     /// </summary>
     public unsafe virtual bool GetRoadObstacleBounds(out BmSDK.GameObject.FBox Bounds, bool NoExtrude = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRoadObstacleBounds, "BmGame.RAbandonedVehicle.GetRoadObstacleBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRoadObstacleBounds, "BmGame.RAbandonedVehicle.GetRoadObstacleBounds", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Bounds);
@@ -1404,14 +1404,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_SetupInitialAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupInitialAnim;
     /// <summary>
     /// Function: SetupInitialAnim
     /// </summary>
     public unsafe virtual void SetupInitialAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupInitialAnim, "BmGame.RAbandonedVehicle.SetupInitialAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupInitialAnim, "BmGame.RAbandonedVehicle.SetupInitialAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1425,14 +1425,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_PreventCrushBatman;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventCrushBatman;
     /// <summary>
     /// Function: PreventCrushBatman
     /// </summary>
     public unsafe virtual void PreventCrushBatman()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreventCrushBatman, "BmGame.RAbandonedVehicle.PreventCrushBatman");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreventCrushBatman, "BmGame.RAbandonedVehicle.PreventCrushBatman", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1446,14 +1446,14 @@ public partial class RAbandonedVehicle : BmSDK.BmGame.RSkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_PreventChunksFallingOutOfWorld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventChunksFallingOutOfWorld;
     /// <summary>
     /// Function: PreventChunksFallingOutOfWorld
     /// </summary>
     public unsafe virtual void PreventChunksFallingOutOfWorld()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreventChunksFallingOutOfWorld, "BmGame.RAbandonedVehicle.PreventChunksFallingOutOfWorld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreventChunksFallingOutOfWorld, "BmGame.RAbandonedVehicle.PreventChunksFallingOutOfWorld", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

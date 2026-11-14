@@ -78,14 +78,14 @@ public partial class RRepeatAnimManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RRepeatAnimManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnim;
     /// <summary>
     /// Function: GetAnim
     /// </summary>
     public unsafe virtual BmSDK.FName GetAnim(float CurrentTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnim, "BmGame.RRepeatAnimManager.GetAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnim, "BmGame.RRepeatAnimManager.GetAnim", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RRepeatAnimManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AddAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAnim;
     /// <summary>
     /// Function: AddAnim
     /// </summary>
     public unsafe virtual void AddAnim(BmSDK.FName NewAnim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAnim, "BmGame.RRepeatAnimManager.AddAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAnim, "BmGame.RRepeatAnimManager.AddAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewAnim, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RRepeatAnimManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetLockoutTimes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLockoutTimes;
     /// <summary>
     /// Function: SetLockoutTimes
     /// </summary>
     public unsafe virtual void SetLockoutTimes(float NewHard, float NewSoft)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLockoutTimes, "BmGame.RRepeatAnimManager.SetLockoutTimes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLockoutTimes, "BmGame.RRepeatAnimManager.SetLockoutTimes", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewHard, paramsPtr + 0);

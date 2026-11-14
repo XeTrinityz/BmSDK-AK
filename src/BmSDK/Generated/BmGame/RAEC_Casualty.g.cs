@@ -78,42 +78,42 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RAEC_Casualty>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Casualty.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Casualty.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelGameplayEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelGameplayEvents;
     /// <summary>
     /// Function: CancelGameplayEvents
     /// </summary>
     public unsafe override void CancelGameplayEvents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelGameplayEvents, "BmGame.RAEC_Casualty.CancelGameplayEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelGameplayEvents, "BmGame.RAEC_Casualty.CancelGameplayEvents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MissingCheckinFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MissingCheckinFinished;
     /// <summary>
     /// Function: MissingCheckinFinished
     /// </summary>
     public unsafe virtual void MissingCheckinFinished(bool bInterrupted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MissingCheckinFinished, "BmGame.RAEC_Casualty.MissingCheckinFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MissingCheckinFinished, "BmGame.RAEC_Casualty.MissingCheckinFinished", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInterrupted, paramsPtr + 0);
@@ -121,56 +121,56 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_DiscoverOtherUndiscoveredManDowns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DiscoverOtherUndiscoveredManDowns;
     /// <summary>
     /// Function: DiscoverOtherUndiscoveredManDowns
     /// </summary>
     public unsafe virtual void DiscoverOtherUndiscoveredManDowns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DiscoverOtherUndiscoveredManDowns, "BmGame.RAEC_Casualty.DiscoverOtherUndiscoveredManDowns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DiscoverOtherUndiscoveredManDowns, "BmGame.RAEC_Casualty.DiscoverOtherUndiscoveredManDowns", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanUseGrenadeGrate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseGrenadeGrate;
     /// <summary>
     /// Function: CanUseGrenadeGrate
     /// </summary>
     public unsafe virtual bool CanUseGrenadeGrate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseGrenadeGrate, "BmGame.RAEC_Casualty.CanUseGrenadeGrate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUseGrenadeGrate, "BmGame.RAEC_Casualty.CanUseGrenadeGrate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CancelNearbyManDowns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelNearbyManDowns;
     /// <summary>
     /// Function: CancelNearbyManDowns
     /// </summary>
     public unsafe virtual void CancelNearbyManDowns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelNearbyManDowns, "BmGame.RAEC_Casualty.CancelNearbyManDowns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelNearbyManDowns, "BmGame.RAEC_Casualty.CancelNearbyManDowns", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetClosestPointOnLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnLine;
     /// <summary>
     /// Function: GetClosestPointOnLine
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetClosestPointOnLine(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestPointOnLine, "BmGame.RAEC_Casualty.GetClosestPointOnLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestPointOnLine, "BmGame.RAEC_Casualty.GetClosestPointOnLine", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -180,14 +180,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_GetCasInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCasInfo;
     /// <summary>
     /// Function: GetCasInfo
     /// </summary>
     public unsafe virtual void GetCasInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCasInfo, "BmGame.RAEC_Casualty.GetCasInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCasInfo, "BmGame.RAEC_Casualty.GetCasInfo", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -209,14 +209,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetCrouchPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCrouchPosition;
     /// <summary>
     /// Function: GetCrouchPosition
     /// </summary>
     public unsafe virtual bool GetCrouchPosition(System.Numerics.Vector3 queryLoc, out System.Numerics.Vector3 crouchPos, out BmSDK.Rotator crouchRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCrouchPosition, "BmGame.RAEC_Casualty.GetCrouchPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCrouchPosition, "BmGame.RAEC_Casualty.GetCrouchPosition", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(queryLoc, paramsPtr + 0);
@@ -230,14 +230,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_ManDownCleanUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ManDownCleanUp;
     /// <summary>
     /// Function: ManDownCleanUp
     /// </summary>
     public unsafe virtual void ManDownCleanUp(bool triggerRedHoodResponse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManDownCleanUp, "BmGame.RAEC_Casualty.ManDownCleanUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ManDownCleanUp, "BmGame.RAEC_Casualty.ManDownCleanUp", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(triggerRedHoodResponse, paramsPtr + 0);
@@ -245,14 +245,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_RejectEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RejectEvent;
     /// <summary>
     /// Function: RejectEvent
     /// </summary>
     public unsafe virtual void RejectEvent(bool triggerRedHoodResponse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RejectEvent, "BmGame.RAEC_Casualty.RejectEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RejectEvent, "BmGame.RAEC_Casualty.RejectEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(triggerRedHoodResponse, paramsPtr + 0);
@@ -260,28 +260,28 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_DiscoveredByCheckin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DiscoveredByCheckin;
     /// <summary>
     /// Function: DiscoveredByCheckin
     /// </summary>
     public unsafe virtual void DiscoveredByCheckin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DiscoveredByCheckin, "BmGame.RAEC_Casualty.DiscoveredByCheckin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DiscoveredByCheckin, "BmGame.RAEC_Casualty.DiscoveredByCheckin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostCutNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostCutNotify;
     /// <summary>
     /// Function: PostCutNotify
     /// </summary>
     public unsafe override void PostCutNotify(System.Numerics.Vector3 ImpactLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostCutNotify, "BmGame.RAEC_Casualty.PostCutNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostCutNotify, "BmGame.RAEC_Casualty.PostCutNotify", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ImpactLoc, paramsPtr + 0);
@@ -289,14 +289,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyRopeCut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyRopeCut;
     /// <summary>
     /// Function: NotifyRopeCut
     /// </summary>
     public unsafe override void NotifyRopeCut(BmSDK.BmGame.RBatarangProjectile Brang)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyRopeCut, "BmGame.RAEC_Casualty.NotifyRopeCut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyRopeCut, "BmGame.RAEC_Casualty.NotifyRopeCut", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Brang, paramsPtr + 0);
@@ -304,56 +304,56 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TryStopKicking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStopKicking;
     /// <summary>
     /// Function: TryStopKicking
     /// </summary>
     public unsafe virtual void TryStopKicking()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStopKicking, "BmGame.RAEC_Casualty.TryStopKicking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryStopKicking, "BmGame.RAEC_Casualty.TryStopKicking", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ManDownEventPending;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ManDownEventPending;
     /// <summary>
     /// Function: ManDownEventPending
     /// </summary>
     public unsafe override bool ManDownEventPending()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManDownEventPending, "BmGame.RAEC_Casualty.ManDownEventPending");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ManDownEventPending, "BmGame.RAEC_Casualty.ManDownEventPending", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ManDownIsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ManDownIsActive;
     /// <summary>
     /// Function: ManDownIsActive
     /// </summary>
     public unsafe override bool ManDownIsActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ManDownIsActive, "BmGame.RAEC_Casualty.ManDownIsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ManDownIsActive, "BmGame.RAEC_Casualty.ManDownIsActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartTerrifiedSetPiece;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTerrifiedSetPiece;
     /// <summary>
     /// Function: StartTerrifiedSetPiece
     /// </summary>
     public unsafe virtual void StartTerrifiedSetPiece(BmSDK.BmGame.RBMAIController Spotter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTerrifiedSetPiece, "BmGame.RAEC_Casualty.StartTerrifiedSetPiece");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTerrifiedSetPiece, "BmGame.RAEC_Casualty.StartTerrifiedSetPiece", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spotter, paramsPtr + 0);
@@ -361,42 +361,42 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_StartNervousSetPiece;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNervousSetPiece;
     /// <summary>
     /// Function: StartNervousSetPiece
     /// </summary>
     public unsafe virtual void StartNervousSetPiece()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNervousSetPiece, "BmGame.RAEC_Casualty.StartNervousSetPiece");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartNervousSetPiece, "BmGame.RAEC_Casualty.StartNervousSetPiece", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FindNearestMedic;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNearestMedic;
     /// <summary>
     /// Function: FindNearestMedic
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMAIController FindNearestMedic()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindNearestMedic, "BmGame.RAEC_Casualty.FindNearestMedic");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindNearestMedic, "BmGame.RAEC_Casualty.FindNearestMedic", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIController>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldStealFrom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldStealFrom;
     /// <summary>
     /// Function: ShouldStealFrom
     /// </summary>
     public unsafe virtual bool ShouldStealFrom(BmSDK.BmGame.RBMAIController Spotter, BmSDK.BmGame.RBMAIController StealingCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStealFrom, "BmGame.RAEC_Casualty.ShouldStealFrom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldStealFrom, "BmGame.RAEC_Casualty.ShouldStealFrom", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spotter, paramsPtr + 0);
@@ -419,14 +419,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_StartTygerSetPiece;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTygerSetPiece;
     /// <summary>
     /// Function: StartTygerSetPiece
     /// </summary>
     public unsafe virtual void StartTygerSetPiece(BmSDK.BmGame.RBMAIController Spotter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTygerSetPiece, "BmGame.RAEC_Casualty.StartTygerSetPiece");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTygerSetPiece, "BmGame.RAEC_Casualty.StartTygerSetPiece", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spotter, paramsPtr + 0);
@@ -434,14 +434,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_StartMedicBusyQuickDismiss;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartMedicBusyQuickDismiss;
     /// <summary>
     /// Function: StartMedicBusyQuickDismiss
     /// </summary>
     public unsafe virtual void StartMedicBusyQuickDismiss(BmSDK.BmGame.RBMAIController Spotter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartMedicBusyQuickDismiss, "BmGame.RAEC_Casualty.StartMedicBusyQuickDismiss");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartMedicBusyQuickDismiss, "BmGame.RAEC_Casualty.StartMedicBusyQuickDismiss", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spotter, paramsPtr + 0);
@@ -449,14 +449,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_StartMiniManDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartMiniManDown;
     /// <summary>
     /// Function: StartMiniManDown
     /// </summary>
     public unsafe virtual void StartMiniManDown(BmSDK.BmGame.RBMAIController Spotter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartMiniManDown, "BmGame.RAEC_Casualty.StartMiniManDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartMiniManDown, "BmGame.RAEC_Casualty.StartMiniManDown", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spotter, paramsPtr + 0);
@@ -464,14 +464,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_CasFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CasFound;
     /// <summary>
     /// Function: CasFound
     /// </summary>
     public unsafe override void CasFound(BmSDK.BmGame.RBMAIController Spotter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CasFound, "BmGame.RAEC_Casualty.CasFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CasFound, "BmGame.RAEC_Casualty.CasFound", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Spotter, paramsPtr + 0);
@@ -479,42 +479,42 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_HasActiveMedicButCannotClaimOne;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasActiveMedicButCannotClaimOne;
     /// <summary>
     /// Function: HasActiveMedicButCannotClaimOne
     /// </summary>
     public unsafe virtual bool HasActiveMedicButCannotClaimOne()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasActiveMedicButCannotClaimOne, "BmGame.RAEC_Casualty.HasActiveMedicButCannotClaimOne");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasActiveMedicButCannotClaimOne, "BmGame.RAEC_Casualty.HasActiveMedicButCannotClaimOne", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerTunnelTakedownAAIResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerTunnelTakedownAAIResponse;
     /// <summary>
     /// Function: TriggerTunnelTakedownAAIResponse
     /// </summary>
     public unsafe virtual void TriggerTunnelTakedownAAIResponse()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerTunnelTakedownAAIResponse, "BmGame.RAEC_Casualty.TriggerTunnelTakedownAAIResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerTunnelTakedownAAIResponse, "BmGame.RAEC_Casualty.TriggerTunnelTakedownAAIResponse", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerInvertedTakedownAAIResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerInvertedTakedownAAIResponse;
     /// <summary>
     /// Function: TriggerInvertedTakedownAAIResponse
     /// </summary>
     public unsafe virtual void TriggerInvertedTakedownAAIResponse(bool bExploitCounter = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerInvertedTakedownAAIResponse, "BmGame.RAEC_Casualty.TriggerInvertedTakedownAAIResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerInvertedTakedownAAIResponse, "BmGame.RAEC_Casualty.TriggerInvertedTakedownAAIResponse", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bExploitCounter, paramsPtr + 0);
@@ -522,14 +522,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerGlideKickOrDropAttackTakedownAAIResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerGlideKickOrDropAttackTakedownAAIResponse;
     /// <summary>
     /// Function: TriggerGlideKickOrDropAttackTakedownAAIResponse
     /// </summary>
     public unsafe virtual void TriggerGlideKickOrDropAttackTakedownAAIResponse(BmSDK.BmGame.RHidePoint attackOriginHidePoint, System.Numerics.Vector3 attackOriginPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGlideKickOrDropAttackTakedownAAIResponse, "BmGame.RAEC_Casualty.TriggerGlideKickOrDropAttackTakedownAAIResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerGlideKickOrDropAttackTakedownAAIResponse, "BmGame.RAEC_Casualty.TriggerGlideKickOrDropAttackTakedownAAIResponse", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(attackOriginHidePoint, paramsPtr + 0);
@@ -538,84 +538,84 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_TannoyAnnouncementsEnded_Mine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TannoyAnnouncementsEnded_Mine;
     /// <summary>
     /// Function: TannoyAnnouncementsEnded_Mine
     /// </summary>
     public unsafe virtual void TannoyAnnouncementsEnded_Mine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TannoyAnnouncementsEnded_Mine, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Mine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TannoyAnnouncementsEnded_Mine, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Mine", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TannoyAnnouncementsEnded_Ledge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TannoyAnnouncementsEnded_Ledge;
     /// <summary>
     /// Function: TannoyAnnouncementsEnded_Ledge
     /// </summary>
     public unsafe virtual void TannoyAnnouncementsEnded_Ledge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TannoyAnnouncementsEnded_Ledge, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Ledge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TannoyAnnouncementsEnded_Ledge, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Ledge", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TannoyAnnouncementsEnded_Grate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TannoyAnnouncementsEnded_Grate;
     /// <summary>
     /// Function: TannoyAnnouncementsEnded_Grate
     /// </summary>
     public unsafe virtual void TannoyAnnouncementsEnded_Grate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TannoyAnnouncementsEnded_Grate, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Grate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TannoyAnnouncementsEnded_Grate, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Grate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TannoyAnnouncementsEnded_Silent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TannoyAnnouncementsEnded_Silent;
     /// <summary>
     /// Function: TannoyAnnouncementsEnded_Silent
     /// </summary>
     public unsafe virtual void TannoyAnnouncementsEnded_Silent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TannoyAnnouncementsEnded_Silent, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Silent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TannoyAnnouncementsEnded_Silent, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Silent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TannoyAnnouncementsEnded_Vantage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TannoyAnnouncementsEnded_Vantage;
     /// <summary>
     /// Function: TannoyAnnouncementsEnded_Vantage
     /// </summary>
     public unsafe virtual void TannoyAnnouncementsEnded_Vantage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TannoyAnnouncementsEnded_Vantage, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Vantage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TannoyAnnouncementsEnded_Vantage, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded_Vantage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TannoyAnnouncementsEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TannoyAnnouncementsEnded;
     /// <summary>
     /// Function: TannoyAnnouncementsEnded
     /// </summary>
     public unsafe virtual void TannoyAnnouncementsEnded(BmSDK.TArray<BmSDK.BmGame.RAnnounceAAITannoyRunner.FAnnouncementInfo> RespondToList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TannoyAnnouncementsEnded, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TannoyAnnouncementsEnded, "BmGame.RAEC_Casualty.TannoyAnnouncementsEnded", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RespondToList, paramsPtr + 0);
@@ -623,28 +623,28 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetMainAnnouncementType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMainAnnouncementType;
     /// <summary>
     /// Function: GetMainAnnouncementType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAnnounceAAITannoyRunner.AAIResponseType GetMainAnnouncementType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMainAnnouncementType, "BmGame.RAEC_Casualty.GetMainAnnouncementType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMainAnnouncementType, "BmGame.RAEC_Casualty.GetMainAnnouncementType", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAnnounceAAITannoyRunner.AAIResponseType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryTriggerAAIAnnouncement;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerAAIAnnouncement;
     /// <summary>
     /// Function: TryTriggerAAIAnnouncement
     /// </summary>
     public unsafe override void TryTriggerAAIAnnouncement(bool bSkipStraightToResponse = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerAAIAnnouncement, "BmGame.RAEC_Casualty.TryTriggerAAIAnnouncement");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerAAIAnnouncement, "BmGame.RAEC_Casualty.TryTriggerAAIAnnouncement", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSkipStraightToResponse, paramsPtr + 0);
@@ -652,28 +652,28 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetSourceHidePointForTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSourceHidePointForTakedown;
     /// <summary>
     /// Function: GetSourceHidePointForTakedown
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetSourceHidePointForTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSourceHidePointForTakedown, "BmGame.RAEC_Casualty.GetSourceHidePointForTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSourceHidePointForTakedown, "BmGame.RAEC_Casualty.GetSourceHidePointForTakedown", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RHidePoint>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetVantageTakedownResponseFlagVal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVantageTakedownResponseFlagVal;
     /// <summary>
     /// Function: GetVantageTakedownResponseFlagVal
     /// </summary>
     public unsafe virtual BmSDK.FName GetVantageTakedownResponseFlagVal(BmSDK.BmGame.RHidePoint attackOriginHidePoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVantageTakedownResponseFlagVal, "BmGame.RAEC_Casualty.GetVantageTakedownResponseFlagVal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVantageTakedownResponseFlagVal, "BmGame.RAEC_Casualty.GetVantageTakedownResponseFlagVal", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(attackOriginHidePoint, paramsPtr + 0);
@@ -681,14 +681,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetTakedownResponseFlagVal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTakedownResponseFlagVal;
     /// <summary>
     /// Function: GetTakedownResponseFlagVal
     /// </summary>
     public unsafe virtual BmSDK.FName GetTakedownResponseFlagVal(BmSDK.BmGame.RGameInfo.AAITakedownType responseType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTakedownResponseFlagVal, "BmGame.RAEC_Casualty.GetTakedownResponseFlagVal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTakedownResponseFlagVal, "BmGame.RAEC_Casualty.GetTakedownResponseFlagVal", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(responseType, paramsPtr + 0);
@@ -696,98 +696,98 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_OtherManDownActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OtherManDownActive;
     /// <summary>
     /// Function: OtherManDownActive
     /// </summary>
     public unsafe virtual bool OtherManDownActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OtherManDownActive, "BmGame.RAEC_Casualty.OtherManDownActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OtherManDownActive, "BmGame.RAEC_Casualty.OtherManDownActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StartInvestigateNavRequests;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartInvestigateNavRequests;
     /// <summary>
     /// Function: StartInvestigateNavRequests
     /// </summary>
     public unsafe virtual void StartInvestigateNavRequests()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartInvestigateNavRequests, "BmGame.RAEC_Casualty.StartInvestigateNavRequests");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartInvestigateNavRequests, "BmGame.RAEC_Casualty.StartInvestigateNavRequests", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoMissingThugCheckinBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMissingThugCheckinBark;
     /// <summary>
     /// Function: DoMissingThugCheckinBark
     /// </summary>
     public unsafe virtual void DoMissingThugCheckinBark()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoMissingThugCheckinBark, "BmGame.RAEC_Casualty.DoMissingThugCheckinBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoMissingThugCheckinBark, "BmGame.RAEC_Casualty.DoMissingThugCheckinBark", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RespondToMissingCheckin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RespondToMissingCheckin;
     /// <summary>
     /// Function: RespondToMissingCheckin
     /// </summary>
     public unsafe virtual void RespondToMissingCheckin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RespondToMissingCheckin, "BmGame.RAEC_Casualty.RespondToMissingCheckin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RespondToMissingCheckin, "BmGame.RAEC_Casualty.RespondToMissingCheckin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VillainScreamed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainScreamed;
     /// <summary>
     /// Function: VillainScreamed
     /// </summary>
     public unsafe override void VillainScreamed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainScreamed, "BmGame.RAEC_Casualty.VillainScreamed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainScreamed, "BmGame.RAEC_Casualty.VillainScreamed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearInvestigateNavReqs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearInvestigateNavReqs;
     /// <summary>
     /// Function: ClearInvestigateNavReqs
     /// </summary>
     public unsafe virtual void ClearInvestigateNavReqs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearInvestigateNavReqs, "BmGame.RAEC_Casualty.ClearInvestigateNavReqs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearInvestigateNavReqs, "BmGame.RAEC_Casualty.ClearInvestigateNavReqs", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PawnTakenDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnTakenDown;
     /// <summary>
     /// Function: PawnTakenDown
     /// </summary>
     public unsafe override void PawnTakenDown(bool bGlideKicked, bool bDropAttacked, BmSDK.BmGame.RHidePoint takeDownOriginHidePoint, System.Numerics.Vector3 GlideKickHidePointPerchPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnTakenDown, "BmGame.RAEC_Casualty.PawnTakenDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PawnTakenDown, "BmGame.RAEC_Casualty.PawnTakenDown", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bGlideKicked, paramsPtr + 0);
@@ -798,14 +798,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetAIThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIThoughts;
     /// <summary>
     /// Function: GetAIThoughts
     /// </summary>
     public unsafe override void GetAIThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIThoughts, "BmGame.RAEC_Casualty.GetAIThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAIThoughts, "BmGame.RAEC_Casualty.GetAIThoughts", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -813,14 +813,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Casualty.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Casualty.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -828,14 +828,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveGroupChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveGroupChild;
     /// <summary>
     /// Function: OnRemoveGroupChild
     /// </summary>
     public unsafe override void OnRemoveGroupChild(BmSDK.BmGame.RAlertEventCoordinatorBase RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_Casualty.OnRemoveGroupChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_Casualty.OnRemoveGroupChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -843,14 +843,14 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Casualty.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_Casualty.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -858,28 +858,28 @@ public partial class RAEC_Casualty : BmSDK.BmGame.RAEC_CasualtyBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RAEC_Casualty.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RAEC_Casualty.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RAEC_Casualty.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RAEC_Casualty.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

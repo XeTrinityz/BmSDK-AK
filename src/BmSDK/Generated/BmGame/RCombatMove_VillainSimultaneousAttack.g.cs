@@ -78,14 +78,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSimultaneousAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanShovePawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShovePawns;
     /// <summary>
     /// Function: CanShovePawns
     /// </summary>
     public unsafe override bool CanShovePawns(BmSDK.BmGame.RBMPawnAI TestThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanShovePawns, "BmGame.RCombatMove_VillainSimultaneousAttack.CanShovePawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanShovePawns, "BmGame.RCombatMove_VillainSimultaneousAttack.CanShovePawns", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestThug, paramsPtr + 0);
@@ -93,98 +93,98 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetFirstTransitionLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstTransitionLocation;
     /// <summary>
     /// Function: GetFirstTransitionLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFirstTransitionLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstTransitionLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.GetFirstTransitionLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFirstTransitionLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.GetFirstTransitionLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetFirstTransitionLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFirstTransitionLocation;
     /// <summary>
     /// Function: SetFirstTransitionLocation
     /// </summary>
     public unsafe virtual void SetFirstTransitionLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFirstTransitionLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.SetFirstTransitionLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFirstTransitionLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.SetFirstTransitionLocation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCounterLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCounterLocation;
     /// <summary>
     /// Function: GetCounterLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCounterLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCounterLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCounterLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCounterLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCounterLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetCounterLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCounterLocation;
     /// <summary>
     /// Function: SetCounterLocation
     /// </summary>
     public unsafe virtual void SetCounterLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCounterLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.SetCounterLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCounterLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.SetCounterLocation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldCombatMoveForceCombatCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldCombatMoveForceCombatCamera;
     /// <summary>
     /// Function: ShouldCombatMoveForceCombatCamera
     /// </summary>
     public unsafe override bool ShouldCombatMoveForceCombatCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldCombatMoveForceCombatCamera, "BmGame.RCombatMove_VillainSimultaneousAttack.ShouldCombatMoveForceCombatCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldCombatMoveForceCombatCamera, "BmGame.RCombatMove_VillainSimultaneousAttack.ShouldCombatMoveForceCombatCamera", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanSpawnSuperStrike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSpawnSuperStrike;
     /// <summary>
     /// Function: CanSpawnSuperStrike
     /// </summary>
     public unsafe override bool CanSpawnSuperStrike()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSpawnSuperStrike, "BmGame.RCombatMove_VillainSimultaneousAttack.CanSpawnSuperStrike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSpawnSuperStrike, "BmGame.RCombatMove_VillainSimultaneousAttack.CanSpawnSuperStrike", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerStrikeAttempted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerStrikeAttempted;
     /// <summary>
     /// Function: TriggerStrikeAttempted
     /// </summary>
     public unsafe override void TriggerStrikeAttempted(bool bStun = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerStrikeAttempted, "BmGame.RCombatMove_VillainSimultaneousAttack.TriggerStrikeAttempted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerStrikeAttempted, "BmGame.RCombatMove_VillainSimultaneousAttack.TriggerStrikeAttempted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bStun, paramsPtr + 0);
@@ -192,42 +192,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_ShowCriticalStatus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowCriticalStatus;
     /// <summary>
     /// Function: ShowCriticalStatus
     /// </summary>
     public unsafe virtual void ShowCriticalStatus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowCriticalStatus, "BmGame.RCombatMove_VillainSimultaneousAttack.ShowCriticalStatus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowCriticalStatus, "BmGame.RCombatMove_VillainSimultaneousAttack.ShowCriticalStatus", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ExitMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove
     /// </summary>
     public unsafe override void ExitMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_VillainSimultaneousAttack.ExitMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.RCombatMove_VillainSimultaneousAttack.ExitMove", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateFormation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFormation;
     /// <summary>
     /// Function: UpdateFormation
     /// </summary>
     public unsafe virtual bool UpdateFormation(bool bTrackUsage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFormation, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateFormation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFormation, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateFormation", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTrackUsage, paramsPtr + 0);
@@ -235,14 +235,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateJokerHallucination;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateJokerHallucination;
     /// <summary>
     /// Function: UpdateJokerHallucination
     /// </summary>
     public unsafe virtual bool UpdateJokerHallucination(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateJokerHallucination, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateJokerHallucination");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateJokerHallucination, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateJokerHallucination", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -250,28 +250,28 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetFOVModifier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVModifier;
     /// <summary>
     /// Function: GetFOVModifier
     /// </summary>
     public unsafe override float GetFOVModifier()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVModifier, "BmGame.RCombatMove_VillainSimultaneousAttack.GetFOVModifier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVModifier, "BmGame.RCombatMove_VillainSimultaneousAttack.GetFOVModifier", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateSlowMo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSlowMo;
     /// <summary>
     /// Function: UpdateSlowMo
     /// </summary>
     public unsafe virtual bool UpdateSlowMo(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSlowMo, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateSlowMo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSlowMo, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateSlowMo", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -279,28 +279,28 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ShouldSlowMo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldSlowMo;
     /// <summary>
     /// Function: ShouldSlowMo
     /// </summary>
     public unsafe virtual bool ShouldSlowMo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldSlowMo, "BmGame.RCombatMove_VillainSimultaneousAttack.ShouldSlowMo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldSlowMo, "BmGame.RCombatMove_VillainSimultaneousAttack.ShouldSlowMo", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBoneName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneName;
     /// <summary>
     /// Function: GetBoneName
     /// </summary>
     public unsafe virtual BmSDK.FName GetBoneName(BmSDK.BmGame.RGameInfo.BoneNameList BoneID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneName, "BmGame.RCombatMove_VillainSimultaneousAttack.GetBoneName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoneName, "BmGame.RCombatMove_VillainSimultaneousAttack.GetBoneName", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneID, paramsPtr + 0);
@@ -308,14 +308,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetTransitionDurationScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTransitionDurationScale;
     /// <summary>
     /// Function: GetTransitionDurationScale
     /// </summary>
     public unsafe virtual float GetTransitionDurationScale(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTransitionDurationScale, "BmGame.RCombatMove_VillainSimultaneousAttack.GetTransitionDurationScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTransitionDurationScale, "BmGame.RCombatMove_VillainSimultaneousAttack.GetTransitionDurationScale", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -323,14 +323,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ExitMoveForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMoveForPawn;
     /// <summary>
     /// Function: ExitMoveForPawn
     /// </summary>
     public unsafe override void ExitMoveForPawn(BmSDK.BmGame.RPawnCombat PawnToExit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMoveForPawn, "BmGame.RCombatMove_VillainSimultaneousAttack.ExitMoveForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMoveForPawn, "BmGame.RCombatMove_VillainSimultaneousAttack.ExitMoveForPawn", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToExit, paramsPtr + 0);
@@ -338,14 +338,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_MoveOverridenForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveOverridenForPawn;
     /// <summary>
     /// Function: MoveOverridenForPawn
     /// </summary>
     public unsafe override void MoveOverridenForPawn(BmSDK.BmGame.RPawnCombat OverridenPawn, BmSDK.BmGame.RCombatMove NewMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveOverridenForPawn, "BmGame.RCombatMove_VillainSimultaneousAttack.MoveOverridenForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveOverridenForPawn, "BmGame.RCombatMove_VillainSimultaneousAttack.MoveOverridenForPawn", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverridenPawn, paramsPtr + 0);
@@ -354,28 +354,28 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_InterruptsBeatdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterruptsBeatdown;
     /// <summary>
     /// Function: InterruptsBeatdown
     /// </summary>
     public unsafe override bool InterruptsBeatdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterruptsBeatdown, "BmGame.RCombatMove_VillainSimultaneousAttack.InterruptsBeatdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterruptsBeatdown, "BmGame.RCombatMove_VillainSimultaneousAttack.InterruptsBeatdown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFormationTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFormationTargetLocation;
     /// <summary>
     /// Function: GetFormationTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFormationTargetLocation(int Idx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFormationTargetLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.GetFormationTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFormationTargetLocation, "BmGame.RCombatMove_VillainSimultaneousAttack.GetFormationTargetLocation", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Idx, paramsPtr + 0);
@@ -383,14 +383,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetCounterLimb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCounterLimb;
     /// <summary>
     /// Function: GetCounterLimb
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameInfo.CounterLimb GetCounterLimb(BmSDK.BmGame.RPawnCombat TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCounterLimb, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCounterLimb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCounterLimb, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCounterLimb", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -398,14 +398,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.CounterLimb>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsValidGroupFloorTakedownTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidGroupFloorTakedownTarget;
     /// <summary>
     /// Function: IsValidGroupFloorTakedownTarget
     /// </summary>
     public unsafe virtual bool IsValidGroupFloorTakedownTarget(BmSDK.BmGame.RPawnCombat IsStunnedPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidGroupFloorTakedownTarget, "BmGame.RCombatMove_VillainSimultaneousAttack.IsValidGroupFloorTakedownTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidGroupFloorTakedownTarget, "BmGame.RCombatMove_VillainSimultaneousAttack.IsValidGroupFloorTakedownTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsStunnedPawn, paramsPtr + 0);
@@ -413,14 +413,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CanPerformNextComboMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPerformNextComboMove;
     /// <summary>
     /// Function: CanPerformNextComboMove
     /// </summary>
     public unsafe override bool CanPerformNextComboMove(bool bSpecialMove = default, bool bStrike = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPerformNextComboMove, "BmGame.RCombatMove_VillainSimultaneousAttack.CanPerformNextComboMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPerformNextComboMove, "BmGame.RCombatMove_VillainSimultaneousAttack.CanPerformNextComboMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSpecialMove, paramsPtr + 0);
@@ -429,14 +429,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OverridenBySpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridenBySpecialMove;
     /// <summary>
     /// Function: OverridenBySpecialMove
     /// </summary>
     public unsafe virtual void OverridenBySpecialMove(BmSDK.BmGame.RPawnVillain SpecialMoveTarget = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridenBySpecialMove, "BmGame.RCombatMove_VillainSimultaneousAttack.OverridenBySpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridenBySpecialMove, "BmGame.RCombatMove_VillainSimultaneousAttack.OverridenBySpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpecialMoveTarget, paramsPtr + 0);
@@ -444,42 +444,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_CanPerformWeaponDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPerformWeaponDestroy;
     /// <summary>
     /// Function: CanPerformWeaponDestroy
     /// </summary>
     public unsafe virtual bool CanPerformWeaponDestroy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPerformWeaponDestroy, "BmGame.RCombatMove_VillainSimultaneousAttack.CanPerformWeaponDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPerformWeaponDestroy, "BmGame.RCombatMove_VillainSimultaneousAttack.CanPerformWeaponDestroy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanPerformTakedownWithStun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPerformTakedownWithStun;
     /// <summary>
     /// Function: CanPerformTakedownWithStun
     /// </summary>
     public unsafe virtual bool CanPerformTakedownWithStun()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPerformTakedownWithStun, "BmGame.RCombatMove_VillainSimultaneousAttack.CanPerformTakedownWithStun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPerformTakedownWithStun, "BmGame.RCombatMove_VillainSimultaneousAttack.CanPerformTakedownWithStun", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DamageCollisionBetween;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageCollisionBetween;
     /// <summary>
     /// Function: DamageCollisionBetween
     /// </summary>
     public unsafe override void DamageCollisionBetween(BmSDK.BmGame.RPawnCombat Pawn1, BmSDK.BmGame.RPawnCombat Pawn2, System.Numerics.Vector3 DamageDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCollisionBetween, "BmGame.RCombatMove_VillainSimultaneousAttack.DamageCollisionBetween");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageCollisionBetween, "BmGame.RCombatMove_VillainSimultaneousAttack.DamageCollisionBetween", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn1, paramsPtr + 0);
@@ -489,14 +489,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_PlayThugCounter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayThugCounter;
     /// <summary>
     /// Function: PlayThugCounter
     /// </summary>
     public unsafe virtual void PlayThugCounter(int Idx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayThugCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.PlayThugCounter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayThugCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.PlayThugCounter", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Idx, paramsPtr + 0);
@@ -504,14 +504,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_PlaySettle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySettle;
     /// <summary>
     /// Function: PlaySettle
     /// </summary>
     public unsafe virtual void PlaySettle(BmSDK.BmGame.RPawnVillain Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySettle, "BmGame.RCombatMove_VillainSimultaneousAttack.PlaySettle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySettle, "BmGame.RCombatMove_VillainSimultaneousAttack.PlaySettle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attacker, paramsPtr + 0);
@@ -519,28 +519,28 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_GetBmAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBmAnimName;
     /// <summary>
     /// Function: GetBmAnimName
     /// </summary>
     public unsafe virtual BmSDK.FName GetBmAnimName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBmAnimName, "BmGame.RCombatMove_VillainSimultaneousAttack.GetBmAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBmAnimName, "BmGame.RCombatMove_VillainSimultaneousAttack.GetBmAnimName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetVillainAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVillainAnimName;
     /// <summary>
     /// Function: GetVillainAnimName
     /// </summary>
     public unsafe virtual BmSDK.FName GetVillainAnimName(int V)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainAnimName, "BmGame.RCombatMove_VillainSimultaneousAttack.GetVillainAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVillainAnimName, "BmGame.RCombatMove_VillainSimultaneousAttack.GetVillainAnimName", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -548,28 +548,28 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AllowAnotherAttacker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowAnotherAttacker;
     /// <summary>
     /// Function: AllowAnotherAttacker
     /// </summary>
     public unsafe override bool AllowAnotherAttacker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowAnotherAttacker, "BmGame.RCombatMove_VillainSimultaneousAttack.AllowAnotherAttacker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowAnotherAttacker, "BmGame.RCombatMove_VillainSimultaneousAttack.AllowAnotherAttacker", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayHitFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayHitFX;
     /// <summary>
     /// Function: PlayHitFX
     /// </summary>
     public unsafe virtual void PlayHitFX(BmSDK.BmGame.RPawnCombat Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHitFX, "BmGame.RCombatMove_VillainSimultaneousAttack.PlayHitFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayHitFX, "BmGame.RCombatMove_VillainSimultaneousAttack.PlayHitFX", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attacker, paramsPtr + 0);
@@ -577,14 +577,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_DamageCurrentPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageCurrentPlayer;
     /// <summary>
     /// Function: DamageCurrentPlayer
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnCombat.DamageResult DamageCurrentPlayer(BmSDK.BmGame.RPawnCombat Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCurrentPlayer, "BmGame.RCombatMove_VillainSimultaneousAttack.DamageCurrentPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageCurrentPlayer, "BmGame.RCombatMove_VillainSimultaneousAttack.DamageCurrentPlayer", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attacker, paramsPtr + 0);
@@ -592,14 +592,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_WeaponGrabbedByTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WeaponGrabbedByTarget;
     /// <summary>
     /// Function: WeaponGrabbedByTarget
     /// </summary>
     public unsafe virtual void WeaponGrabbedByTarget(BmSDK.BmGame.RBMWeapon WeaponToGrab, bool bLeftHand)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WeaponGrabbedByTarget, "BmGame.RCombatMove_VillainSimultaneousAttack.WeaponGrabbedByTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WeaponGrabbedByTarget, "BmGame.RCombatMove_VillainSimultaneousAttack.WeaponGrabbedByTarget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WeaponToGrab, paramsPtr + 0);
@@ -608,14 +608,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_SetGrabbed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGrabbed;
     /// <summary>
     /// Function: SetGrabbed
     /// </summary>
     public unsafe virtual void SetGrabbed(BmSDK.BmGame.RPawnVillain GrabbedVillain, bool bPawnGrabbed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGrabbed, "BmGame.RCombatMove_VillainSimultaneousAttack.SetGrabbed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGrabbed, "BmGame.RCombatMove_VillainSimultaneousAttack.SetGrabbed", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GrabbedVillain, paramsPtr + 0);
@@ -624,84 +624,84 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_AllowMovementExit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowMovementExit;
     /// <summary>
     /// Function: AllowMovementExit
     /// </summary>
     public unsafe virtual void AllowMovementExit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowMovementExit, "BmGame.RCombatMove_VillainSimultaneousAttack.AllowMovementExit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowMovementExit, "BmGame.RCombatMove_VillainSimultaneousAttack.AllowMovementExit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BotTryNextStrike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BotTryNextStrike;
     /// <summary>
     /// Function: BotTryNextStrike
     /// </summary>
     public unsafe virtual void BotTryNextStrike()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BotTryNextStrike, "BmGame.RCombatMove_VillainSimultaneousAttack.BotTryNextStrike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BotTryNextStrike, "BmGame.RCombatMove_VillainSimultaneousAttack.BotTryNextStrike", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowNextStrike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowNextStrike;
     /// <summary>
     /// Function: AllowNextStrike
     /// </summary>
     public unsafe virtual void AllowNextStrike()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowNextStrike, "BmGame.RCombatMove_VillainSimultaneousAttack.AllowNextStrike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowNextStrike, "BmGame.RCombatMove_VillainSimultaneousAttack.AllowNextStrike", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerDualTakedownAttempted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerDualTakedownAttempted;
     /// <summary>
     /// Function: TriggerDualTakedownAttempted
     /// </summary>
     public unsafe override void TriggerDualTakedownAttempted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerDualTakedownAttempted, "BmGame.RCombatMove_VillainSimultaneousAttack.TriggerDualTakedownAttempted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerDualTakedownAttempted, "BmGame.RCombatMove_VillainSimultaneousAttack.TriggerDualTakedownAttempted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MoveSuccessfullyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveSuccessfullyFinished;
     /// <summary>
     /// Function: MoveSuccessfullyFinished
     /// </summary>
     public unsafe virtual void MoveSuccessfullyFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveSuccessfullyFinished, "BmGame.RCombatMove_VillainSimultaneousAttack.MoveSuccessfullyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveSuccessfullyFinished, "BmGame.RCombatMove_VillainSimultaneousAttack.MoveSuccessfullyFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VillainGoRagdoll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainGoRagdoll;
     /// <summary>
     /// Function: VillainGoRagdoll
     /// </summary>
     public unsafe virtual void VillainGoRagdoll(BmSDK.BmGame.RPawnVillain RagdollVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainGoRagdoll, "BmGame.RCombatMove_VillainSimultaneousAttack.VillainGoRagdoll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainGoRagdoll, "BmGame.RCombatMove_VillainSimultaneousAttack.VillainGoRagdoll", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RagdollVillain, paramsPtr + 0);
@@ -709,14 +709,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_OnRagdollNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRagdollNotify;
     /// <summary>
     /// Function: OnRagdollNotify
     /// </summary>
     public unsafe virtual void OnRagdollNotify(BmSDK.BmGame.RPawnVillain RagdollVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRagdollNotify, "BmGame.RCombatMove_VillainSimultaneousAttack.OnRagdollNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRagdollNotify, "BmGame.RCombatMove_VillainSimultaneousAttack.OnRagdollNotify", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RagdollVillain, paramsPtr + 0);
@@ -724,42 +724,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_GetDamageAmount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDamageAmount;
     /// <summary>
     /// Function: GetDamageAmount
     /// </summary>
     public unsafe virtual float GetDamageAmount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDamageAmount, "BmGame.RCombatMove_VillainSimultaneousAttack.GetDamageAmount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDamageAmount, "BmGame.RCombatMove_VillainSimultaneousAttack.GetDamageAmount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DamageCollisionDeactivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamageCollisionDeactivated;
     /// <summary>
     /// Function: DamageCollisionDeactivated
     /// </summary>
     public unsafe virtual void DamageCollisionDeactivated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamageCollisionDeactivated, "BmGame.RCombatMove_VillainSimultaneousAttack.DamageCollisionDeactivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageCollisionDeactivated, "BmGame.RCombatMove_VillainSimultaneousAttack.DamageCollisionDeactivated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AnimHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AnimHit;
     /// <summary>
     /// Function: AnimHit
     /// </summary>
     public unsafe virtual void AnimHit(BmSDK.BmGame.RPawnVillain VillainPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnimHit, "BmGame.RCombatMove_VillainSimultaneousAttack.AnimHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AnimHit, "BmGame.RCombatMove_VillainSimultaneousAttack.AnimHit", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainPawn, paramsPtr + 0);
@@ -767,14 +767,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_VillainPreAttackNotifyTriggered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainPreAttackNotifyTriggered;
     /// <summary>
     /// Function: VillainPreAttackNotifyTriggered
     /// </summary>
     public unsafe virtual void VillainPreAttackNotifyTriggered(BmSDK.BmGame.RPawnVillain VillainPawn, BmSDK.BmGame.RGameInfo.FVillainAttackInfo AttackInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainPreAttackNotifyTriggered, "BmGame.RCombatMove_VillainSimultaneousAttack.VillainPreAttackNotifyTriggered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainPreAttackNotifyTriggered, "BmGame.RCombatMove_VillainSimultaneousAttack.VillainPreAttackNotifyTriggered", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainPawn, paramsPtr + 0);
@@ -783,14 +783,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_VillainAttackNotifyTriggered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainAttackNotifyTriggered;
     /// <summary>
     /// Function: VillainAttackNotifyTriggered
     /// </summary>
     public unsafe virtual void VillainAttackNotifyTriggered(BmSDK.BmGame.RPawnVillain VillainPawn, BmSDK.BmGame.RGameInfo.FVillainAttackInfo AttackInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainAttackNotifyTriggered, "BmGame.RCombatMove_VillainSimultaneousAttack.VillainAttackNotifyTriggered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainAttackNotifyTriggered, "BmGame.RCombatMove_VillainSimultaneousAttack.VillainAttackNotifyTriggered", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainPawn, paramsPtr + 0);
@@ -799,42 +799,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_CanCounterStop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCounterStop;
     /// <summary>
     /// Function: CanCounterStop
     /// </summary>
     public unsafe virtual void CanCounterStop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCounterStop, "BmGame.RCombatMove_VillainSimultaneousAttack.CanCounterStop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanCounterStop, "BmGame.RCombatMove_VillainSimultaneousAttack.CanCounterStop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanCounterStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCounterStart;
     /// <summary>
     /// Function: CanCounterStart
     /// </summary>
     public unsafe virtual void CanCounterStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCounterStart, "BmGame.RCombatMove_VillainSimultaneousAttack.CanCounterStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanCounterStart, "BmGame.RCombatMove_VillainSimultaneousAttack.CanCounterStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanBeTargettedByPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeTargettedByPlayer;
     /// <summary>
     /// Function: CanBeTargettedByPlayer
     /// </summary>
     public unsafe override bool CanBeTargettedByPlayer(BmSDK.BmGame.RPawnCombat TestPawn, BmSDK.Class DamageType, BmSDK.BmGame.RPawnPlayerCombat NewPlayer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeTargettedByPlayer, "BmGame.RCombatMove_VillainSimultaneousAttack.CanBeTargettedByPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeTargettedByPlayer, "BmGame.RCombatMove_VillainSimultaneousAttack.CanBeTargettedByPlayer", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -844,14 +844,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_SetCounterable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCounterable;
     /// <summary>
     /// Function: SetCounterable
     /// </summary>
     public unsafe virtual void SetCounterable(BmSDK.BmGame.RPawnVillain VillainPawn, bool bCounterable, bool bSuccess)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCounterable, "BmGame.RCombatMove_VillainSimultaneousAttack.SetCounterable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCounterable, "BmGame.RCombatMove_VillainSimultaneousAttack.SetCounterable", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainPawn, paramsPtr + 0);
@@ -861,42 +861,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_CanSimultaneousCounterStop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSimultaneousCounterStop;
     /// <summary>
     /// Function: CanSimultaneousCounterStop
     /// </summary>
     public unsafe virtual void CanSimultaneousCounterStop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSimultaneousCounterStop, "BmGame.RCombatMove_VillainSimultaneousAttack.CanSimultaneousCounterStop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSimultaneousCounterStop, "BmGame.RCombatMove_VillainSimultaneousAttack.CanSimultaneousCounterStop", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanSimultaneousCounterStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSimultaneousCounterStart;
     /// <summary>
     /// Function: CanSimultaneousCounterStart
     /// </summary>
     public unsafe virtual void CanSimultaneousCounterStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSimultaneousCounterStart, "BmGame.RCombatMove_VillainSimultaneousAttack.CanSimultaneousCounterStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSimultaneousCounterStart, "BmGame.RCombatMove_VillainSimultaneousAttack.CanSimultaneousCounterStart", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SimultaneousCriticalStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SimultaneousCriticalStart;
     /// <summary>
     /// Function: SimultaneousCriticalStart
     /// </summary>
     public unsafe virtual void SimultaneousCriticalStart(BmSDK.BmGame.RPawnVillain VillainPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SimultaneousCriticalStart, "BmGame.RCombatMove_VillainSimultaneousAttack.SimultaneousCriticalStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SimultaneousCriticalStart, "BmGame.RCombatMove_VillainSimultaneousAttack.SimultaneousCriticalStart", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainPawn, paramsPtr + 0);
@@ -904,84 +904,84 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_CounterFXPunchFinal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CounterFXPunchFinal;
     /// <summary>
     /// Function: CounterFXPunchFinal
     /// </summary>
     public unsafe virtual void CounterFXPunchFinal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CounterFXPunchFinal, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXPunchFinal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CounterFXPunchFinal, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXPunchFinal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CounterFxHitFinal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CounterFxHitFinal;
     /// <summary>
     /// Function: CounterFxHitFinal
     /// </summary>
     public unsafe virtual void CounterFxHitFinal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CounterFxHitFinal, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFxHitFinal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CounterFxHitFinal, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFxHitFinal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CounterFXPunch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CounterFXPunch;
     /// <summary>
     /// Function: CounterFXPunch
     /// </summary>
     public unsafe virtual void CounterFXPunch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CounterFXPunch, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXPunch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CounterFXPunch, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXPunch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CounterFXHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CounterFXHit;
     /// <summary>
     /// Function: CounterFXHit
     /// </summary>
     public unsafe virtual void CounterFXHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CounterFXHit, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CounterFXHit, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CounterFXBlock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CounterFXBlock;
     /// <summary>
     /// Function: CounterFXBlock
     /// </summary>
     public unsafe virtual void CounterFXBlock()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CounterFXBlock, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXBlock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CounterFXBlock, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterFXBlock", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopTargetting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopTargetting;
     /// <summary>
     /// Function: StopTargetting
     /// </summary>
     public unsafe virtual void StopTargetting(BmSDK.BmGame.RPawnVillain VillainPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTargetting, "BmGame.RCombatMove_VillainSimultaneousAttack.StopTargetting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopTargetting, "BmGame.RCombatMove_VillainSimultaneousAttack.StopTargetting", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainPawn, paramsPtr + 0);
@@ -989,42 +989,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_AllStopTargetting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllStopTargetting;
     /// <summary>
     /// Function: AllStopTargetting
     /// </summary>
     public unsafe virtual void AllStopTargetting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllStopTargetting, "BmGame.RCombatMove_VillainSimultaneousAttack.AllStopTargetting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllStopTargetting, "BmGame.RCombatMove_VillainSimultaneousAttack.AllStopTargetting", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllStartTargetting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllStartTargetting;
     /// <summary>
     /// Function: AllStartTargetting
     /// </summary>
     public unsafe virtual void AllStartTargetting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllStartTargetting, "BmGame.RCombatMove_VillainSimultaneousAttack.AllStartTargetting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllStartTargetting, "BmGame.RCombatMove_VillainSimultaneousAttack.AllStartTargetting", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetVillainWithCounterOrder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVillainWithCounterOrder;
     /// <summary>
     /// Function: GetVillainWithCounterOrder
     /// </summary>
     public unsafe virtual int GetVillainWithCounterOrder(int OrderIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainWithCounterOrder, "BmGame.RCombatMove_VillainSimultaneousAttack.GetVillainWithCounterOrder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVillainWithCounterOrder, "BmGame.RCombatMove_VillainSimultaneousAttack.GetVillainWithCounterOrder", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OrderIdx, paramsPtr + 0);
@@ -1032,14 +1032,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ReSortCounterOrder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReSortCounterOrder;
     /// <summary>
     /// Function: ReSortCounterOrder
     /// </summary>
     public unsafe virtual void ReSortCounterOrder(int VillainListIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReSortCounterOrder, "BmGame.RCombatMove_VillainSimultaneousAttack.ReSortCounterOrder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReSortCounterOrder, "BmGame.RCombatMove_VillainSimultaneousAttack.ReSortCounterOrder", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainListIdx, paramsPtr + 0);
@@ -1047,70 +1047,70 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_CounterPressedSimulated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CounterPressedSimulated;
     /// <summary>
     /// Function: CounterPressedSimulated
     /// </summary>
     public unsafe virtual void CounterPressedSimulated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CounterPressedSimulated, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterPressedSimulated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CounterPressedSimulated, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterPressedSimulated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CounterPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CounterPressed;
     /// <summary>
     /// Function: CounterPressed
     /// </summary>
     public unsafe virtual void CounterPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CounterPressed, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CounterPressed, "BmGame.RCombatMove_VillainSimultaneousAttack.CounterPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RevertToNormalCounter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RevertToNormalCounter;
     /// <summary>
     /// Function: RevertToNormalCounter
     /// </summary>
     public unsafe virtual void RevertToNormalCounter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RevertToNormalCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.RevertToNormalCounter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RevertToNormalCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.RevertToNormalCounter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayBatmanCounter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayBatmanCounter;
     /// <summary>
     /// Function: PlayBatmanCounter
     /// </summary>
     public unsafe virtual void PlayBatmanCounter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayBatmanCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.PlayBatmanCounter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayBatmanCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.PlayBatmanCounter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoThrowCounterDir;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoThrowCounterDir;
     /// <summary>
     /// Function: DoThrowCounterDir
     /// </summary>
     public unsafe virtual int DoThrowCounterDir(System.Numerics.Vector3 TestDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoThrowCounterDir, "BmGame.RCombatMove_VillainSimultaneousAttack.DoThrowCounterDir");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoThrowCounterDir, "BmGame.RCombatMove_VillainSimultaneousAttack.DoThrowCounterDir", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestDir, paramsPtr + 0);
@@ -1118,42 +1118,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_StartFinalBlowCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFinalBlowCam;
     /// <summary>
     /// Function: StartFinalBlowCam
     /// </summary>
     public unsafe virtual void StartFinalBlowCam()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFinalBlowCam, "BmGame.RCombatMove_VillainSimultaneousAttack.StartFinalBlowCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFinalBlowCam, "BmGame.RCombatMove_VillainSimultaneousAttack.StartFinalBlowCam", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IncCountered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncCountered;
     /// <summary>
     /// Function: IncCountered
     /// </summary>
     public unsafe virtual void IncCountered()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncCountered, "BmGame.RCombatMove_VillainSimultaneousAttack.IncCountered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncCountered, "BmGame.RCombatMove_VillainSimultaneousAttack.IncCountered", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartCounter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartCounter;
     /// <summary>
     /// Function: StartCounter
     /// </summary>
     public unsafe virtual void StartCounter(float TimeInitiatedByPlayer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.StartCounter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.StartCounter", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimeInitiatedByPlayer, paramsPtr + 0);
@@ -1161,28 +1161,28 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_CanCounter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCounter;
     /// <summary>
     /// Function: CanCounter
     /// </summary>
     public unsafe virtual bool CanCounter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.CanCounter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanCounter, "BmGame.RCombatMove_VillainSimultaneousAttack.CanCounter", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OverrideDamagedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDamagedBy;
     /// <summary>
     /// Function: OverrideDamagedBy
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult OverrideDamagedBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDamagedBy, "BmGame.RCombatMove_VillainSimultaneousAttack.OverrideDamagedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDamagedBy, "BmGame.RCombatMove_VillainSimultaneousAttack.OverrideDamagedBy", this);
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgInfo, paramsPtr + 0);
@@ -1190,14 +1190,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 248);
     }
 
-    private static BmSDK.Function __fn_CanReceiveAttackFromPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReceiveAttackFromPawn;
     /// <summary>
     /// Function: CanReceiveAttackFromPawn
     /// </summary>
     public unsafe override bool CanReceiveAttackFromPawn(BmSDK.BmGame.RPawnCombat TestPawn, BmSDK.BmGame.RPawnCombat NewAttacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReceiveAttackFromPawn, "BmGame.RCombatMove_VillainSimultaneousAttack.CanReceiveAttackFromPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanReceiveAttackFromPawn, "BmGame.RCombatMove_VillainSimultaneousAttack.CanReceiveAttackFromPawn", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -1206,42 +1206,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_CanNewAttackBeStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanNewAttackBeStarted;
     /// <summary>
     /// Function: CanNewAttackBeStarted
     /// </summary>
     public unsafe override bool CanNewAttackBeStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanNewAttackBeStarted, "BmGame.RCombatMove_VillainSimultaneousAttack.CanNewAttackBeStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanNewAttackBeStarted, "BmGame.RCombatMove_VillainSimultaneousAttack.CanNewAttackBeStarted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAttacking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAttacking;
     /// <summary>
     /// Function: IsAttacking
     /// </summary>
     public unsafe override bool IsAttacking()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAttacking, "BmGame.RCombatMove_VillainSimultaneousAttack.IsAttacking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAttacking, "BmGame.RCombatMove_VillainSimultaneousAttack.IsAttacking", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TurnOffRelativeTransition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOffRelativeTransition;
     /// <summary>
     /// Function: TurnOffRelativeTransition
     /// </summary>
     public unsafe override void TurnOffRelativeTransition(BmSDK.BmGame.RPawnCombat TransitionPawn, BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId TestID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffRelativeTransition, "BmGame.RCombatMove_VillainSimultaneousAttack.TurnOffRelativeTransition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOffRelativeTransition, "BmGame.RCombatMove_VillainSimultaneousAttack.TurnOffRelativeTransition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TransitionPawn, paramsPtr + 0);
@@ -1250,42 +1250,42 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_CanFinalBlowOnPawnType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanFinalBlowOnPawnType;
     /// <summary>
     /// Function: CanFinalBlowOnPawnType
     /// </summary>
     public unsafe virtual bool CanFinalBlowOnPawnType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanFinalBlowOnPawnType, "BmGame.RCombatMove_VillainSimultaneousAttack.CanFinalBlowOnPawnType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanFinalBlowOnPawnType, "BmGame.RCombatMove_VillainSimultaneousAttack.CanFinalBlowOnPawnType", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdatePotentialFinalBlow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePotentialFinalBlow;
     /// <summary>
     /// Function: UpdatePotentialFinalBlow
     /// </summary>
     public unsafe virtual void UpdatePotentialFinalBlow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePotentialFinalBlow, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdatePotentialFinalBlow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePotentialFinalBlow, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdatePotentialFinalBlow", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddVillain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVillain;
     /// <summary>
     /// Function: AddVillain
     /// </summary>
     public unsafe virtual void AddVillain(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddVillain, "BmGame.RCombatMove_VillainSimultaneousAttack.AddVillain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddVillain, "BmGame.RCombatMove_VillainSimultaneousAttack.AddVillain", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -1293,14 +1293,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_DrawVecs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawVecs;
     /// <summary>
     /// Function: DrawVecs
     /// </summary>
     public unsafe virtual void DrawVecs(bool bPersistent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawVecs, "BmGame.RCombatMove_VillainSimultaneousAttack.DrawVecs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawVecs, "BmGame.RCombatMove_VillainSimultaneousAttack.DrawVecs", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPersistent, paramsPtr + 0);
@@ -1308,70 +1308,70 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_VillainSimultaneousAttack.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCombatMove_VillainSimultaneousAttack.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetMirrored;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMirrored;
     /// <summary>
     /// Function: GetMirrored
     /// </summary>
     public unsafe override bool GetMirrored()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMirrored, "BmGame.RCombatMove_VillainSimultaneousAttack.GetMirrored");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMirrored, "BmGame.RCombatMove_VillainSimultaneousAttack.GetMirrored", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCombatMoveVictim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCombatMoveVictim;
     /// <summary>
     /// Function: GetCombatMoveVictim
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawn GetCombatMoveVictim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCombatMoveVictim, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCombatMoveVictim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCombatMoveVictim, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCombatMoveVictim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawn>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyCombatMoveOfJokerSpawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyCombatMoveOfJokerSpawn;
     /// <summary>
     /// Function: NotifyCombatMoveOfJokerSpawn
     /// </summary>
     public unsafe virtual void NotifyCombatMoveOfJokerSpawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCombatMoveOfJokerSpawn, "BmGame.RCombatMove_VillainSimultaneousAttack.NotifyCombatMoveOfJokerSpawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyCombatMoveOfJokerSpawn, "BmGame.RCombatMove_VillainSimultaneousAttack.NotifyCombatMoveOfJokerSpawn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateFormationRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFormationRotation;
     /// <summary>
     /// Function: UpdateFormationRotation
     /// </summary>
     public unsafe virtual void UpdateFormationRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFormationRotation, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateFormationRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFormationRotation, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateFormationRotation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1385,14 +1385,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateVecSpots;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVecSpots;
     /// <summary>
     /// Function: UpdateVecSpots
     /// </summary>
     public unsafe virtual void UpdateVecSpots()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVecSpots, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateVecSpots");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateVecSpots, "BmGame.RCombatMove_VillainSimultaneousAttack.UpdateVecSpots", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1406,14 +1406,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_SetCounterInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCounterInfo;
     /// <summary>
     /// Function: SetCounterInfo
     /// </summary>
     public unsafe virtual void SetCounterInfo(int CounterInfoIndex, bool bTrackUsage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCounterInfo, "BmGame.RCombatMove_VillainSimultaneousAttack.SetCounterInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCounterInfo, "BmGame.RCombatMove_VillainSimultaneousAttack.SetCounterInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CounterInfoIndex, paramsPtr + 0);
@@ -1429,14 +1429,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return;
     }
 
-    private static BmSDK.Function __fn_GetSimultaneousCounterInfoScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSimultaneousCounterInfoScore;
     /// <summary>
     /// Function: GetSimultaneousCounterInfoScore
     /// </summary>
     public unsafe virtual int GetSimultaneousCounterInfoScore(BmSDK.BmGame.RPawnPlayerCombat.FSimultaneousCounterInfo TestCounter, bool bHasWeaponIH)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSimultaneousCounterInfoScore, "BmGame.RCombatMove_VillainSimultaneousAttack.GetSimultaneousCounterInfoScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSimultaneousCounterInfoScore, "BmGame.RCombatMove_VillainSimultaneousAttack.GetSimultaneousCounterInfoScore", this);
         byte* paramsPtr = stackalloc byte[192];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestCounter, paramsPtr + 0);
@@ -1452,14 +1452,14 @@ public partial class RCombatMove_VillainSimultaneousAttack : BmSDK.BmGame.RComba
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 172);
     }
 
-    private static BmSDK.Function __fn_GetCounterInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCounterInfo;
     /// <summary>
     /// Function: GetCounterInfo
     /// </summary>
     public unsafe virtual int GetCounterInfo(BmSDK.BmGame.RPawnCombat.SimultaneousCounterAnimType FormationType, BmSDK.BmGame.RPawnCombat.SimultaneousCounterBehaviourType BehaviourType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCounterInfo, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCounterInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCounterInfo, "BmGame.RCombatMove_VillainSimultaneousAttack.GetCounterInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FormationType, paramsPtr + 0);

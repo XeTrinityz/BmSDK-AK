@@ -73,14 +73,14 @@ public partial class LevelStreaming : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<LevelStreaming>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RequestUnloadAndRemoval;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestUnloadAndRemoval;
     /// <summary>
     /// Function: RequestUnloadAndRemoval
     /// </summary>
     public unsafe virtual void RequestUnloadAndRemoval()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestUnloadAndRemoval, "Engine.LevelStreaming.RequestUnloadAndRemoval");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RequestUnloadAndRemoval, "Engine.LevelStreaming.RequestUnloadAndRemoval", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

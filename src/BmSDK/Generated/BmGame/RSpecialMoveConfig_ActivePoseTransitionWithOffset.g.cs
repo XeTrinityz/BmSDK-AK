@@ -78,14 +78,14 @@ public partial class RSpecialMoveConfig_ActivePoseTransitionWithOffset : BmSDK.B
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveConfig_ActivePoseTransitionWithOffset>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetEndPositionAndYaw;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEndPositionAndYaw;
     /// <summary>
     /// Function: GetEndPositionAndYaw
     /// </summary>
     public unsafe override void GetEndPositionAndYaw(BmSDK.Engine.Pawn Player, BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation, out System.Numerics.Vector3 EndPosition, out int EndYaw)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEndPositionAndYaw, "BmGame.RSpecialMoveConfig_ActivePoseTransitionWithOffset.GetEndPositionAndYaw");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEndPositionAndYaw, "BmGame.RSpecialMoveConfig_ActivePoseTransitionWithOffset.GetEndPositionAndYaw", this);
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);

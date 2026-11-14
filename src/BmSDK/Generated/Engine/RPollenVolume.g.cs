@@ -78,14 +78,14 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
         where TComponent : class, Framework.IScriptComponent<RPollenVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "Engine.RPollenVolume.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "Engine.RPollenVolume.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -93,42 +93,42 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_CreateResources;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateResources;
     /// <summary>
     /// Function: CreateResources
     /// </summary>
     public unsafe virtual void CreateResources()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateResources, "Engine.RPollenVolume.CreateResources");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateResources, "Engine.RPollenVolume.CreateResources", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.RPollenVolume.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.RPollenVolume.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPollenDensity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPollenDensity;
     /// <summary>
     /// Function: GetPollenDensity
     /// </summary>
     public unsafe override float GetPollenDensity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPollenDensity, "Engine.RPollenVolume.GetPollenDensity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPollenDensity, "Engine.RPollenVolume.GetPollenDensity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -142,14 +142,14 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsInsidePollenVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsidePollenVolume;
     /// <summary>
     /// Function: IsInsidePollenVolume
     /// </summary>
     public unsafe override bool IsInsidePollenVolume(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInsidePollenVolume, "Engine.RPollenVolume.IsInsidePollenVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInsidePollenVolume, "Engine.RPollenVolume.IsInsidePollenVolume", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetLocationPollenDepth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPollenDepth;
     /// <summary>
     /// Function: GetLocationPollenDepth
     /// </summary>
     public unsafe override float GetLocationPollenDepth(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationPollenDepth, "Engine.RPollenVolume.GetLocationPollenDepth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationPollenDepth, "Engine.RPollenVolume.GetLocationPollenDepth", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SignedDistanceToPollenZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedDistanceToPollenZ;
     /// <summary>
     /// Function: SignedDistanceToPollenZ
     /// </summary>
     public unsafe override float SignedDistanceToPollenZ(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SignedDistanceToPollenZ, "Engine.RPollenVolume.SignedDistanceToPollenZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SignedDistanceToPollenZ, "Engine.RPollenVolume.SignedDistanceToPollenZ", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -208,14 +208,14 @@ public partial class RPollenVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsLocationPollen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationPollen;
     /// <summary>
     /// Function: IsLocationPollen
     /// </summary>
     public unsafe override bool IsLocationPollen(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationPollen, "Engine.RPollenVolume.IsLocationPollen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLocationPollen, "Engine.RPollenVolume.IsLocationPollen", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);

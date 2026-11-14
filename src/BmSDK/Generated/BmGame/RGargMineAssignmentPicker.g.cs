@@ -78,14 +78,14 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
         where TComponent : class, Framework.IScriptComponent<RGargMineAssignmentPicker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetBestDestroyVantagePointsFromAPS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestDestroyVantagePointsFromAPS;
     /// <summary>
     /// Function: GetBestDestroyVantagePointsFromAPS
     /// </summary>
     public unsafe virtual void GetBestDestroyVantagePointsFromAPS(System.Numerics.Vector3 VantageRefPoint, BmSDK.BmGame.RAttackPointSearch APS, out BmSDK.TArray<System.Numerics.Vector3> BestPoints)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestDestroyVantagePointsFromAPS, "BmGame.RGargMineAssignmentPicker.GetBestDestroyVantagePointsFromAPS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBestDestroyVantagePointsFromAPS, "BmGame.RGargMineAssignmentPicker.GetBestDestroyVantagePointsFromAPS", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VantageRefPoint, paramsPtr + 0);
@@ -95,84 +95,84 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
         return;
     }
 
-    private static BmSDK.Function __fn_BuildGargSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildGargSearch;
     /// <summary>
     /// Function: BuildGargSearch
     /// </summary>
     public unsafe virtual void BuildGargSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildGargSearch, "BmGame.RGargMineAssignmentPicker.BuildGargSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildGargSearch, "BmGame.RGargMineAssignmentPicker.BuildGargSearch", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartAPS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAPS;
     /// <summary>
     /// Function: StartAPS
     /// </summary>
     public unsafe virtual void StartAPS()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAPS, "BmGame.RGargMineAssignmentPicker.StartAPS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAPS, "BmGame.RGargMineAssignmentPicker.StartAPS", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RGargMineAssignmentPicker.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RGargMineAssignmentPicker.Update", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearAllSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllSearch;
     /// <summary>
     /// Function: ClearAllSearch
     /// </summary>
     public unsafe virtual void ClearAllSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAllSearch, "BmGame.RGargMineAssignmentPicker.ClearAllSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAllSearch, "BmGame.RGargMineAssignmentPicker.ClearAllSearch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Abort;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Abort;
     /// <summary>
     /// Function: Abort
     /// </summary>
     public unsafe virtual void Abort()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Abort, "BmGame.RGargMineAssignmentPicker.Abort");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Abort, "BmGame.RGargMineAssignmentPicker.Abort", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init(BmSDK.BmGame.RBMRoomAIState NewRoomState, System.IntPtr NewMineAssignmentFound, System.IntPtr NewMineAssignmentFailed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGargMineAssignmentPicker.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGargMineAssignmentPicker.Init", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRoomState, paramsPtr + 0);
@@ -182,14 +182,14 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
         return;
     }
 
-    private static BmSDK.Function __fn_MineAssignmentFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MineAssignmentFailed;
     /// <summary>
     /// Function: MineAssignmentFailed
     /// </summary>
     public unsafe virtual void MineAssignmentFailed(BmSDK.BmGame.RGargMineAssignmentPicker GMAP)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MineAssignmentFailed, "BmGame.RGargMineAssignmentPicker.MineAssignmentFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MineAssignmentFailed, "BmGame.RGargMineAssignmentPicker.MineAssignmentFailed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GMAP, paramsPtr + 0);
@@ -197,14 +197,14 @@ public partial class RGargMineAssignmentPicker : BmSDK.BmGame.RGroupAssignmentPi
         return;
     }
 
-    private static BmSDK.Function __fn_MineAssignmentFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MineAssignmentFound;
     /// <summary>
     /// Function: MineAssignmentFound
     /// </summary>
     public unsafe virtual void MineAssignmentFound(BmSDK.BmGame.RGargMineAssignmentPicker GMAP, BmSDK.TArray<BmSDK.BmGame.RBMRoomAIState.FGargToPoints> NewSmashList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MineAssignmentFound, "BmGame.RGargMineAssignmentPicker.MineAssignmentFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MineAssignmentFound, "BmGame.RGargMineAssignmentPicker.MineAssignmentFound", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GMAP, paramsPtr + 0);

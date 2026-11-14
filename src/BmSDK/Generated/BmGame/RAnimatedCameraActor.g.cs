@@ -78,14 +78,14 @@ public partial class RAnimatedCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RAnimatedCameraActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetCameraView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraView;
     /// <summary>
     /// Function: GetCameraView
     /// </summary>
     public unsafe override void GetCameraView(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraView, "BmGame.RAnimatedCameraActor.GetCameraView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCameraView, "BmGame.RAnimatedCameraActor.GetCameraView", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class RAnimatedCameraActor : BmSDK.BmGame.RCameraActor, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_NativeGetCameraView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NativeGetCameraView;
     /// <summary>
     /// Function: NativeGetCameraView
     /// </summary>
     public unsafe virtual void NativeGetCameraView(out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NativeGetCameraView, "BmGame.RAnimatedCameraActor.NativeGetCameraView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NativeGetCameraView, "BmGame.RAnimatedCameraActor.NativeGetCameraView", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutPOV);

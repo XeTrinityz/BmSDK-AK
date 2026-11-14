@@ -78,70 +78,70 @@ public partial class RSeqAct_PauseRestartRandomPopulation : BmSDK.Engine.Sequenc
         where TComponent : class, Framework.IScriptComponent<RSeqAct_PauseRestartRandomPopulation>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ShouldPauseThugCars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPauseThugCars;
     /// <summary>
     /// Function: ShouldPauseThugCars
     /// </summary>
     public unsafe virtual bool ShouldPauseThugCars()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseThugCars, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseThugCars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPauseThugCars, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseThugCars", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldPauseHumvees;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPauseHumvees;
     /// <summary>
     /// Function: ShouldPauseHumvees
     /// </summary>
     public unsafe virtual bool ShouldPauseHumvees()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseHumvees, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseHumvees");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPauseHumvees, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseHumvees", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldPauseDrones;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPauseDrones;
     /// <summary>
     /// Function: ShouldPauseDrones
     /// </summary>
     public unsafe virtual bool ShouldPauseDrones()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseDrones, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseDrones");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPauseDrones, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseDrones", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldPauseRiots;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPauseRiots;
     /// <summary>
     /// Function: ShouldPauseRiots
     /// </summary>
     public unsafe virtual bool ShouldPauseRiots()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPauseRiots, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseRiots");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPauseRiots, "BmGame.RSeqAct_PauseRestartRandomPopulation.ShouldPauseRiots", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_PauseRestartRandomPopulation.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_PauseRestartRandomPopulation.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

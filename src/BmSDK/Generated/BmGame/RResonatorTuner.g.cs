@@ -73,14 +73,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RResonatorTuner>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RResonatorTuner.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RResonatorTuner.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -89,70 +89,70 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_PlayCodesNeededDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCodesNeededDialogue;
     /// <summary>
     /// Function: PlayCodesNeededDialogue
     /// </summary>
     public unsafe virtual void PlayCodesNeededDialogue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCodesNeededDialogue, "BmGame.RResonatorTuner.PlayCodesNeededDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCodesNeededDialogue, "BmGame.RResonatorTuner.PlayCodesNeededDialogue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EquipResSwapLHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EquipResSwapLHand;
     /// <summary>
     /// Function: EquipResSwapLHand
     /// </summary>
     public unsafe virtual void EquipResSwapLHand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EquipResSwapLHand, "BmGame.RResonatorTuner.EquipResSwapLHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EquipResSwapLHand, "BmGame.RResonatorTuner.EquipResSwapLHand", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOffLights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOffLights;
     /// <summary>
     /// Function: TurnOffLights
     /// </summary>
     public unsafe virtual void TurnOffLights()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffLights, "BmGame.RResonatorTuner.TurnOffLights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOffLights, "BmGame.RResonatorTuner.TurnOffLights", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToBelt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToBelt;
     /// <summary>
     /// Function: AttachToBelt
     /// </summary>
     public unsafe override void AttachToBelt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToBelt, "BmGame.RResonatorTuner.AttachToBelt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToBelt, "BmGame.RResonatorTuner.AttachToBelt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToHand;
     /// <summary>
     /// Function: AttachToHand
     /// </summary>
     public unsafe override void AttachToHand(BmSDK.FName CustomBone = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToHand, "BmGame.RResonatorTuner.AttachToHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToHand, "BmGame.RResonatorTuner.AttachToHand", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomBone, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetProgressDisplay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProgressDisplay;
     /// <summary>
     /// Function: SetProgressDisplay
     /// </summary>
     public unsafe virtual void SetProgressDisplay(float Progress)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetProgressDisplay, "BmGame.RResonatorTuner.SetProgressDisplay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetProgressDisplay, "BmGame.RResonatorTuner.SetProgressDisplay", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Progress, paramsPtr + 0);
@@ -175,14 +175,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetThumbStickPositions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThumbStickPositions;
     /// <summary>
     /// Function: SetThumbStickPositions
     /// </summary>
     public unsafe virtual void SetThumbStickPositions(float LeftPos, float RightPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThumbStickPositions, "BmGame.RResonatorTuner.SetThumbStickPositions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetThumbStickPositions, "BmGame.RResonatorTuner.SetThumbStickPositions", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LeftPos, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetThumbStickPositionRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThumbStickPositionRight;
     /// <summary>
     /// Function: SetThumbStickPositionRight
     /// </summary>
     public unsafe virtual void SetThumbStickPositionRight(float RightPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThumbStickPositionRight, "BmGame.RResonatorTuner.SetThumbStickPositionRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetThumbStickPositionRight, "BmGame.RResonatorTuner.SetThumbStickPositionRight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RightPos, paramsPtr + 0);
@@ -206,14 +206,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetThumbStickPositionLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThumbStickPositionLeft;
     /// <summary>
     /// Function: SetThumbStickPositionLeft
     /// </summary>
     public unsafe virtual void SetThumbStickPositionLeft(float LeftPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThumbStickPositionLeft, "BmGame.RResonatorTuner.SetThumbStickPositionLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetThumbStickPositionLeft, "BmGame.RResonatorTuner.SetThumbStickPositionLeft", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LeftPos, paramsPtr + 0);
@@ -221,14 +221,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateLightAndScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLightAndScreen;
     /// <summary>
     /// Function: UpdateLightAndScreen
     /// </summary>
     public unsafe virtual void UpdateLightAndScreen(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLightAndScreen, "BmGame.RResonatorTuner.UpdateLightAndScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLightAndScreen, "BmGame.RResonatorTuner.UpdateLightAndScreen", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -236,63 +236,66 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_SetWinscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWinscreen;
     /// <summary>
     /// Function: SetWinscreen
     /// </summary>
-    public unsafe virtual void SetWinscreen(BmSDK.FString winscreen_string)
+    public unsafe virtual void SetWinscreen(BmSDK.FStringArg winscreen_string)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWinscreen, "BmGame.RResonatorTuner.SetWinscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWinscreen, "BmGame.RResonatorTuner.SetWinscreen", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(winscreen_string, paramsPtr + 0);
+        winscreen_string.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginMinigame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginMinigame;
     /// <summary>
     /// Function: BeginMinigame
     /// </summary>
-    public unsafe virtual void BeginMinigame(BmSDK.GFxUI.SwfMovie mg_movie_info, BmSDK.Engine.TextureRenderTarget2D mg_texture, BmSDK.Engine.Material mg_material, BmSDK.FString mg_loadstring)
+    public unsafe virtual void BeginMinigame(BmSDK.GFxUI.SwfMovie mg_movie_info, BmSDK.Engine.TextureRenderTarget2D mg_texture, BmSDK.Engine.Material mg_material, BmSDK.FStringArg mg_loadstring)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginMinigame, "BmGame.RResonatorTuner.BeginMinigame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginMinigame, "BmGame.RResonatorTuner.BeginMinigame", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(mg_movie_info, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(mg_texture, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(mg_material, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(mg_loadstring, paramsPtr + 24);
+        mg_loadstring.WriteTo(paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return;
     }
 
-    private static BmSDK.Function __fn_AddPassword;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPassword;
     /// <summary>
     /// Function: AddPassword
     /// </summary>
-    public unsafe virtual void AddPassword(int pw_index, BmSDK.FString the_password)
+    public unsafe virtual void AddPassword(int pw_index, BmSDK.FStringArg the_password)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPassword, "BmGame.RResonatorTuner.AddPassword");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPassword, "BmGame.RResonatorTuner.AddPassword", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pw_index, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(the_password, paramsPtr + 4);
+        the_password.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_PushPasswords;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushPasswords;
     /// <summary>
     /// Function: PushPasswords
     /// </summary>
     public unsafe virtual void PushPasswords(BmSDK.BmGame.RRemoteControlHighSecurityInterface disruptable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushPasswords, "BmGame.RResonatorTuner.PushPasswords");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushPasswords, "BmGame.RResonatorTuner.PushPasswords", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(disruptable, paramsPtr + 0);
@@ -300,28 +303,28 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_StartFlashMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFlashMovie;
     /// <summary>
     /// Function: StartFlashMovie
     /// </summary>
     public unsafe virtual void StartFlashMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFlashMovie, "BmGame.RResonatorTuner.StartFlashMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFlashMovie, "BmGame.RResonatorTuner.StartFlashMovie", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginResonate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginResonate;
     /// <summary>
     /// Function: BeginResonate
     /// </summary>
     public unsafe virtual void BeginResonate(BmSDK.Engine.Actor ResonateTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginResonate, "BmGame.RResonatorTuner.BeginResonate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginResonate, "BmGame.RResonatorTuner.BeginResonate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ResonateTarget, paramsPtr + 0);
@@ -329,14 +332,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetCommsDisruptedMovieString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCommsDisruptedMovieString;
     /// <summary>
     /// Function: GetCommsDisruptedMovieString
     /// </summary>
     public unsafe virtual BmSDK.FString GetCommsDisruptedMovieString(bool FirstTimeDisrupted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCommsDisruptedMovieString, "BmGame.RResonatorTuner.GetCommsDisruptedMovieString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCommsDisruptedMovieString, "BmGame.RResonatorTuner.GetCommsDisruptedMovieString", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FirstTimeDisrupted, paramsPtr + 0);
@@ -344,28 +347,28 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AreCommsDisrupted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AreCommsDisrupted;
     /// <summary>
     /// Function: AreCommsDisrupted
     /// </summary>
     public unsafe virtual bool AreCommsDisrupted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreCommsDisrupted, "BmGame.RResonatorTuner.AreCommsDisrupted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AreCommsDisrupted, "BmGame.RResonatorTuner.AreCommsDisrupted", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStage;
     /// <summary>
     /// Function: SetStage
     /// </summary>
     public unsafe virtual void SetStage(int Stage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStage, "BmGame.RResonatorTuner.SetStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStage, "BmGame.RResonatorTuner.SetStage", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Stage, paramsPtr + 0);
@@ -373,14 +376,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_StartMiniGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartMiniGame;
     /// <summary>
     /// Function: StartMiniGame
     /// </summary>
     public unsafe virtual void StartMiniGame(bool MultiStage = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartMiniGame, "BmGame.RResonatorTuner.StartMiniGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartMiniGame, "BmGame.RResonatorTuner.StartMiniGame", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MultiStage, paramsPtr + 0);
@@ -388,28 +391,28 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_PowerOffScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PowerOffScreen;
     /// <summary>
     /// Function: PowerOffScreen
     /// </summary>
     public unsafe virtual void PowerOffScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PowerOffScreen, "BmGame.RResonatorTuner.PowerOffScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PowerOffScreen, "BmGame.RResonatorTuner.PowerOffScreen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckFlag;
     /// <summary>
     /// Function: CheckFlag
     /// </summary>
     public unsafe virtual bool CheckFlag(byte bitfield, byte flag)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckFlag, "BmGame.RResonatorTuner.CheckFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckFlag, "BmGame.RResonatorTuner.CheckFlag", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bitfield, paramsPtr + 0);
@@ -418,28 +421,28 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PowerOnScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PowerOnScreen;
     /// <summary>
     /// Function: PowerOnScreen
     /// </summary>
     public unsafe virtual void PowerOnScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PowerOnScreen, "BmGame.RResonatorTuner.PowerOnScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PowerOnScreen, "BmGame.RResonatorTuner.PowerOnScreen", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckAutoTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckAutoTarget;
     /// <summary>
     /// Function: CheckAutoTarget
     /// </summary>
     public unsafe override bool CheckAutoTarget(BmSDK.Engine.Actor Target, out System.Numerics.Vector3 TargetPosition, out float OverridePriority, out float OverrideMaxRange, out byte DoLOSCheck)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckAutoTarget, "BmGame.RResonatorTuner.CheckAutoTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckAutoTarget, "BmGame.RResonatorTuner.CheckAutoTarget", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -459,14 +462,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_UpgradeGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradeGadget;
     /// <summary>
     /// Function: UpgradeGadget
     /// </summary>
     public unsafe override void UpgradeGadget(int NewUpgradeLevel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradeGadget, "BmGame.RResonatorTuner.UpgradeGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpgradeGadget, "BmGame.RResonatorTuner.UpgradeGadget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUpgradeLevel, paramsPtr + 0);
@@ -474,28 +477,28 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_AcquireTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AcquireTarget;
     /// <summary>
     /// Function: AcquireTarget
     /// </summary>
     public unsafe virtual void AcquireTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AcquireTarget, "BmGame.RResonatorTuner.AcquireTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AcquireTarget, "BmGame.RResonatorTuner.AcquireTarget", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SecureAreaToContinue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SecureAreaToContinue;
     /// <summary>
     /// Function: SecureAreaToContinue
     /// </summary>
     public unsafe virtual bool SecureAreaToContinue(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SecureAreaToContinue, "BmGame.RResonatorTuner.SecureAreaToContinue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SecureAreaToContinue, "BmGame.RResonatorTuner.SecureAreaToContinue", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -503,14 +506,14 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CanResonateTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanResonateTarget;
     /// <summary>
     /// Function: CanResonateTarget
     /// </summary>
     public unsafe virtual bool CanResonateTarget(BmSDK.Engine.Actor Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanResonateTarget, "BmGame.RResonatorTuner.CanResonateTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanResonateTarget, "BmGame.RResonatorTuner.CanResonateTarget", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -518,28 +521,28 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AllowedToUseGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowedToUseGadget;
     /// <summary>
     /// Function: AllowedToUseGadget
     /// </summary>
     public unsafe virtual bool AllowedToUseGadget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowedToUseGadget, "BmGame.RResonatorTuner.AllowedToUseGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowedToUseGadget, "BmGame.RResonatorTuner.AllowedToUseGadget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPrimedPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrimedPose;
     /// <summary>
     /// Function: GetPrimedPose
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmGame.RResonatorTuner.GetPrimedPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrimedPose, "BmGame.RResonatorTuner.GetPrimedPose", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StanceIsCrouched);
@@ -560,42 +563,42 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_RestoreCachedHelpText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreCachedHelpText;
     /// <summary>
     /// Function: RestoreCachedHelpText
     /// </summary>
     public unsafe virtual void RestoreCachedHelpText()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreCachedHelpText, "BmGame.RResonatorTuner.RestoreCachedHelpText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreCachedHelpText, "BmGame.RResonatorTuner.RestoreCachedHelpText", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CacheAndClearHelpText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheAndClearHelpText;
     /// <summary>
     /// Function: CacheAndClearHelpText
     /// </summary>
     public unsafe virtual void CacheAndClearHelpText()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CacheAndClearHelpText, "BmGame.RResonatorTuner.CacheAndClearHelpText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CacheAndClearHelpText, "BmGame.RResonatorTuner.CacheAndClearHelpText", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupCustomLocator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupCustomLocator;
     /// <summary>
     /// Function: SetupCustomLocator
     /// </summary>
     public unsafe virtual void SetupCustomLocator(out BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupCustomLocator, "BmGame.RResonatorTuner.SetupCustomLocator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupCustomLocator, "BmGame.RResonatorTuner.SetupCustomLocator", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Loc);
@@ -605,28 +608,28 @@ public partial class RResonatorTuner : BmSDK.BmGame.RInventoryGadget, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetResonateMoveConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResonateMoveConfig;
     /// <summary>
     /// Function: GetResonateMoveConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSpecialMoveConfig GetResonateMoveConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetResonateMoveConfig, "BmGame.RResonatorTuner.GetResonateMoveConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetResonateMoveConfig, "BmGame.RResonatorTuner.GetResonateMoveConfig", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSpecialMoveConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RResonatorTuner.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RResonatorTuner.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

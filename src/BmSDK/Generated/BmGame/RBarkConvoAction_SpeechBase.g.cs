@@ -78,28 +78,28 @@ public partial class RBarkConvoAction_SpeechBase : BmSDK.BmGame.RBarkConvoAction
         where TComponent : class, Framework.IScriptComponent<RBarkConvoAction_SpeechBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetCurrentDialogueType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentDialogueType;
     /// <summary>
     /// Function: GetCurrentDialogueType
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueType GetCurrentDialogueType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentDialogueType, "BmGame.RBarkConvoAction_SpeechBase.GetCurrentDialogueType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentDialogueType, "BmGame.RBarkConvoAction_SpeechBase.GetCurrentDialogueType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopSpeechCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeechCallback;
     /// <summary>
     /// Function: StopSpeechCallback
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult StopSpeechCallback(int speechId, bool interrupted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpeechCallback, "BmGame.RBarkConvoAction_SpeechBase.StopSpeechCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSpeechCallback, "BmGame.RBarkConvoAction_SpeechBase.StopSpeechCallback", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(speechId, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RBarkConvoAction_SpeechBase : BmSDK.BmGame.RBarkConvoAction
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogue.AkDialogueCallbackResult>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_StartLineCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLineCallback;
     /// <summary>
     /// Function: StartLineCallback
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult StartLineCallback(BmSDK.Engine.AkDialogueLine dlgLine, BmSDK.Engine.AkDialogueEvent dlgEvent, BmSDK.GameObject Speaker, bool bBarkSquelch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLineCallback, "BmGame.RBarkConvoAction_SpeechBase.StartLineCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartLineCallback, "BmGame.RBarkConvoAction_SpeechBase.StartLineCallback", this);
         byte* paramsPtr = stackalloc byte[45];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgLine, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class RBarkConvoAction_SpeechBase : BmSDK.BmGame.RBarkConvoAction
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogue.AkDialogueCallbackResult>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_SetCoreSpeechOptions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCoreSpeechOptions;
     /// <summary>
     /// Function: SetCoreSpeechOptions
     /// </summary>
     public unsafe virtual void SetCoreSpeechOptions(out BmSDK.Engine.AkDialogue.FAkSpeechOptions Opt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCoreSpeechOptions, "BmGame.RBarkConvoAction_SpeechBase.SetCoreSpeechOptions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCoreSpeechOptions, "BmGame.RBarkConvoAction_SpeechBase.SetCoreSpeechOptions", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

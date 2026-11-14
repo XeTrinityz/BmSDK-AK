@@ -78,70 +78,70 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         where TComponent : class, Framework.IScriptComponent<PlayerReplicationInfo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsPrimaryPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPrimaryPlayer;
     /// <summary>
     /// Function: IsPrimaryPlayer
     /// </summary>
     public unsafe virtual bool IsPrimaryPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPrimaryPlayer, "Engine.PlayerReplicationInfo.IsPrimaryPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPrimaryPlayer, "Engine.PlayerReplicationInfo.IsPrimaryPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UnregisterPlayerFromSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterPlayerFromSession;
     /// <summary>
     /// Function: UnregisterPlayerFromSession
     /// </summary>
     public unsafe virtual void UnregisterPlayerFromSession()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterPlayerFromSession, "Engine.PlayerReplicationInfo.UnregisterPlayerFromSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnregisterPlayerFromSession, "Engine.PlayerReplicationInfo.UnregisterPlayerFromSession", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterPlayerWithSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterPlayerWithSession;
     /// <summary>
     /// Function: RegisterPlayerWithSession
     /// </summary>
     public unsafe virtual void RegisterPlayerWithSession()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterPlayerWithSession, "Engine.PlayerReplicationInfo.RegisterPlayerWithSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterPlayerWithSession, "Engine.PlayerReplicationInfo.RegisterPlayerWithSession", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsInvalidName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInvalidName;
     /// <summary>
     /// Function: IsInvalidName
     /// </summary>
     public unsafe virtual bool IsInvalidName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInvalidName, "Engine.PlayerReplicationInfo.IsInvalidName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInvalidName, "Engine.PlayerReplicationInfo.IsInvalidName", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTeamNum;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTeamNum;
     /// <summary>
     /// Function: GetTeamNum
     /// </summary>
     public unsafe override byte GetTeamNum()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTeamNum, "Engine.PlayerReplicationInfo.GetTeamNum");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTeamNum, "Engine.PlayerReplicationInfo.GetTeamNum", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -155,14 +155,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetUniqueId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUniqueId;
     /// <summary>
     /// Function: SetUniqueId
     /// </summary>
     public unsafe virtual void SetUniqueId(BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerUniqueId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUniqueId, "Engine.PlayerReplicationInfo.SetUniqueId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUniqueId, "Engine.PlayerReplicationInfo.SetUniqueId", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerUniqueId, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SeamlessTravelTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SeamlessTravelTo;
     /// <summary>
     /// Function: SeamlessTravelTo
     /// </summary>
     public unsafe virtual void SeamlessTravelTo(BmSDK.Engine.PlayerReplicationInfo NewPRI)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SeamlessTravelTo, "Engine.PlayerReplicationInfo.SeamlessTravelTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SeamlessTravelTo, "Engine.PlayerReplicationInfo.SeamlessTravelTo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPRI, paramsPtr + 0);
@@ -185,14 +185,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_IncrementDeaths;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementDeaths;
     /// <summary>
     /// Function: IncrementDeaths
     /// </summary>
     public unsafe virtual void IncrementDeaths(int Amt = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncrementDeaths, "Engine.PlayerReplicationInfo.IncrementDeaths");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncrementDeaths, "Engine.PlayerReplicationInfo.IncrementDeaths", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Amt, paramsPtr + 0);
@@ -200,14 +200,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_CopyProperties;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyProperties;
     /// <summary>
     /// Function: CopyProperties
     /// </summary>
     public unsafe virtual void CopyProperties(BmSDK.Engine.PlayerReplicationInfo PRI)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyProperties, "Engine.PlayerReplicationInfo.CopyProperties");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CopyProperties, "Engine.PlayerReplicationInfo.CopyProperties", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PRI, paramsPtr + 0);
@@ -215,14 +215,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_OverrideWith;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideWith;
     /// <summary>
     /// Function: OverrideWith
     /// </summary>
     public unsafe virtual void OverrideWith(BmSDK.Engine.PlayerReplicationInfo PRI)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideWith, "Engine.PlayerReplicationInfo.OverrideWith");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideWith, "Engine.PlayerReplicationInfo.OverrideWith", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PRI, paramsPtr + 0);
@@ -230,28 +230,28 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_Duplicate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Duplicate;
     /// <summary>
     /// Function: Duplicate
     /// </summary>
     public unsafe virtual BmSDK.Engine.PlayerReplicationInfo Duplicate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Duplicate, "Engine.PlayerReplicationInfo.Duplicate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Duplicate, "Engine.PlayerReplicationInfo.Duplicate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.PlayerReplicationInfo>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetWaitingPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWaitingPlayer;
     /// <summary>
     /// Function: SetWaitingPlayer
     /// </summary>
     public unsafe virtual void SetWaitingPlayer(bool B)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWaitingPlayer, "Engine.PlayerReplicationInfo.SetWaitingPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWaitingPlayer, "Engine.PlayerReplicationInfo.SetWaitingPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(B, paramsPtr + 0);
@@ -259,29 +259,30 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetPlayerName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlayerName;
     /// <summary>
     /// Function: SetPlayerName
     /// </summary>
-    public unsafe virtual void SetPlayerName(BmSDK.FString S)
+    public unsafe virtual void SetPlayerName(BmSDK.FStringArg S)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlayerName, "Engine.PlayerReplicationInfo.SetPlayerName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPlayerName, "Engine.PlayerReplicationInfo.SetPlayerName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(S, paramsPtr + 0);
+        S.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisplayDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayDebug;
     /// <summary>
     /// Function: DisplayDebug
     /// </summary>
     public unsafe override void DisplayDebug(BmSDK.Engine.HUD HUD, out float YL, out float YPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.PlayerReplicationInfo.DisplayDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayDebug, "Engine.PlayerReplicationInfo.DisplayDebug", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -295,56 +296,56 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetHumanReadableName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHumanReadableName;
     /// <summary>
     /// Function: GetHumanReadableName
     /// </summary>
     public unsafe override BmSDK.FString GetHumanReadableName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHumanReadableName, "Engine.PlayerReplicationInfo.GetHumanReadableName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHumanReadableName, "Engine.PlayerReplicationInfo.GetHumanReadableName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.PlayerReplicationInfo.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.PlayerReplicationInfo.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.PlayerReplicationInfo.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "Engine.PlayerReplicationInfo.Destroyed", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldBroadCastWelcomeMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBroadCastWelcomeMessage;
     /// <summary>
     /// Function: ShouldBroadCastWelcomeMessage
     /// </summary>
     public unsafe virtual bool ShouldBroadCastWelcomeMessage(bool bExiting = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldBroadCastWelcomeMessage, "Engine.PlayerReplicationInfo.ShouldBroadCastWelcomeMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldBroadCastWelcomeMessage, "Engine.PlayerReplicationInfo.ShouldBroadCastWelcomeMessage", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bExiting, paramsPtr + 0);
@@ -352,14 +353,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdatePing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePing;
     /// <summary>
     /// Function: UpdatePing
     /// </summary>
     public unsafe virtual void UpdatePing(float TimeStamp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePing, "Engine.PlayerReplicationInfo.UpdatePing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePing, "Engine.PlayerReplicationInfo.UpdatePing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimeStamp, paramsPtr + 0);
@@ -374,14 +375,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetPlayerTeam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlayerTeam;
     /// <summary>
     /// Function: SetPlayerTeam
     /// </summary>
     public unsafe virtual void SetPlayerTeam(BmSDK.Engine.TeamInfo NewTeam)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlayerTeam, "Engine.PlayerReplicationInfo.SetPlayerTeam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPlayerTeam, "Engine.PlayerReplicationInfo.SetPlayerTeam", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTeam, paramsPtr + 0);
@@ -389,14 +390,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_ClientInitialize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClientInitialize;
     /// <summary>
     /// Function: ClientInitialize
     /// </summary>
     public unsafe virtual void ClientInitialize(BmSDK.Engine.Controller C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClientInitialize, "Engine.PlayerReplicationInfo.ClientInitialize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClientInitialize, "Engine.PlayerReplicationInfo.ClientInitialize", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -404,14 +405,14 @@ public partial class PlayerReplicationInfo : BmSDK.Engine.ReplicationInfo, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.PlayerReplicationInfo.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.PlayerReplicationInfo.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

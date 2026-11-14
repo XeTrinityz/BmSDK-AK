@@ -78,14 +78,14 @@ public partial class RSeqAct_ToggleRobinLieutenantAssist : BmSDK.Engine.Sequence
         where TComponent : class, Framework.IScriptComponent<RSeqAct_ToggleRobinLieutenantAssist>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Grapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Grapple;
     /// <summary>
     /// Function: Grapple
     /// </summary>
     public unsafe virtual void Grapple(bool bUseSpecialMove = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Grapple, "BmGame.RSeqAct_ToggleRobinLieutenantAssist.Grapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Grapple, "BmGame.RSeqAct_ToggleRobinLieutenantAssist.Grapple", this);
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bUseSpecialMove, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSeqAct_ToggleRobinLieutenantAssist : BmSDK.Engine.Sequence
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_ToggleRobinLieutenantAssist.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_ToggleRobinLieutenantAssist.Activated", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

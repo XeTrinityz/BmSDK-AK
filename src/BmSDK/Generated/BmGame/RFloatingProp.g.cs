@@ -78,14 +78,14 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RFloatingProp>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetFloatingAdjustedPropCentreOfMass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatingAdjustedPropCentreOfMass;
     /// <summary>
     /// Function: GetFloatingAdjustedPropCentreOfMass
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFloatingAdjustedPropCentreOfMass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatingAdjustedPropCentreOfMass, "BmGame.RFloatingProp.GetFloatingAdjustedPropCentreOfMass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatingAdjustedPropCentreOfMass, "BmGame.RFloatingProp.GetFloatingAdjustedPropCentreOfMass", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFloatingAdjustedPropDensity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatingAdjustedPropDensity;
     /// <summary>
     /// Function: GetFloatingAdjustedPropDensity
     /// </summary>
     public unsafe virtual float GetFloatingAdjustedPropDensity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatingAdjustedPropDensity, "BmGame.RFloatingProp.GetFloatingAdjustedPropDensity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatingAdjustedPropDensity, "BmGame.RFloatingProp.GetFloatingAdjustedPropDensity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFloatingAdjustedPropMass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatingAdjustedPropMass;
     /// <summary>
     /// Function: GetFloatingAdjustedPropMass
     /// </summary>
     public unsafe virtual float GetFloatingAdjustedPropMass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatingAdjustedPropMass, "BmGame.RFloatingProp.GetFloatingAdjustedPropMass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatingAdjustedPropMass, "BmGame.RFloatingProp.GetFloatingAdjustedPropMass", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -141,14 +141,14 @@ public partial class RFloatingProp : BmSDK.BmGame.RKActorSpawnable, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPropMass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropMass;
     /// <summary>
     /// Function: GetPropMass
     /// </summary>
     public unsafe virtual float GetPropMass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropMass, "BmGame.RFloatingProp.GetPropMass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropMass, "BmGame.RFloatingProp.GetPropMass", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

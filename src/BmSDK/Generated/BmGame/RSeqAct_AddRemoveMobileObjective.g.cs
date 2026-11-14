@@ -78,14 +78,14 @@ public partial class RSeqAct_AddRemoveMobileObjective : BmSDK.Engine.SequenceAct
         where TComponent : class, Framework.IScriptComponent<RSeqAct_AddRemoveMobileObjective>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CollectLinkedWaveSpawners;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CollectLinkedWaveSpawners;
     /// <summary>
     /// Function: CollectLinkedWaveSpawners
     /// </summary>
     public unsafe virtual void CollectLinkedWaveSpawners()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CollectLinkedWaveSpawners, "BmGame.RSeqAct_AddRemoveMobileObjective.CollectLinkedWaveSpawners");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CollectLinkedWaveSpawners, "BmGame.RSeqAct_AddRemoveMobileObjective.CollectLinkedWaveSpawners", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -112,28 +112,28 @@ public partial class RSeqAct_AddRemoveMobileObjective : BmSDK.Engine.SequenceAct
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindSeqAct;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSeqAct;
     /// <summary>
     /// Function: FindSeqAct
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSeqAct_MultipleMobileObjectives FindSeqAct()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSeqAct, "BmGame.RSeqAct_AddRemoveMobileObjective.FindSeqAct");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSeqAct, "BmGame.RSeqAct_AddRemoveMobileObjective.FindSeqAct", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSeqAct_MultipleMobileObjectives>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PassActors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PassActors;
     /// <summary>
     /// Function: PassActors
     /// </summary>
     public unsafe virtual void PassActors(BmSDK.BmGame.RSeqAct_MultipleMobileObjectives MainSeqAct, bool dooAdd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PassActors, "BmGame.RSeqAct_AddRemoveMobileObjective.PassActors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PassActors, "BmGame.RSeqAct_AddRemoveMobileObjective.PassActors", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MainSeqAct, paramsPtr + 0);
@@ -142,14 +142,14 @@ public partial class RSeqAct_AddRemoveMobileObjective : BmSDK.Engine.SequenceAct
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_AddRemoveMobileObjective.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_AddRemoveMobileObjective.Activated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

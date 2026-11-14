@@ -78,17 +78,17 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<PlatformInterfaceWebResponse>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetHeaderValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeaderValue;
     /// <summary>
     /// Function: GetHeaderValue
     /// </summary>
-    public unsafe virtual BmSDK.FString GetHeaderValue(BmSDK.FString HeaderName)
+    public unsafe virtual BmSDK.FString GetHeaderValue(BmSDK.FStringArg HeaderName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeaderValue, "Engine.PlatformInterfaceWebResponse.GetHeaderValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeaderValue, "Engine.PlatformInterfaceWebResponse.GetHeaderValue", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(HeaderName, paramsPtr + 0);
+        HeaderName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -97,17 +97,18 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetHeader;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeader;
     /// <summary>
     /// Function: GetHeader
     /// </summary>
     public unsafe virtual void GetHeader(int HeaderIndex, out BmSDK.FString Header, out BmSDK.FString Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeader, "Engine.PlatformInterfaceWebResponse.GetHeader");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeader, "Engine.PlatformInterfaceWebResponse.GetHeader", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HeaderIndex, paramsPtr + 0);
@@ -124,14 +125,14 @@ public partial class PlatformInterfaceWebResponse : BmSDK.GameObject, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetNumHeaders;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumHeaders;
     /// <summary>
     /// Function: GetNumHeaders
     /// </summary>
     public unsafe virtual int GetNumHeaders()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumHeaders, "Engine.PlatformInterfaceWebResponse.GetNumHeaders");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumHeaders, "Engine.PlatformInterfaceWebResponse.GetNumHeaders", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

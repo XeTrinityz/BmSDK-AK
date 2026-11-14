@@ -78,14 +78,14 @@ public partial class PathTargetPoint : BmSDK.Engine.Keypoint, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<PathTargetPoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ShouldBeHiddenBySHOW_NavigationNodes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBeHiddenBySHOW_NavigationNodes;
     /// <summary>
     /// Function: ShouldBeHiddenBySHOW_NavigationNodes
     /// </summary>
     public unsafe override bool ShouldBeHiddenBySHOW_NavigationNodes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldBeHiddenBySHOW_NavigationNodes, "Engine.PathTargetPoint.ShouldBeHiddenBySHOW_NavigationNodes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldBeHiddenBySHOW_NavigationNodes, "Engine.PathTargetPoint.ShouldBeHiddenBySHOW_NavigationNodes", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

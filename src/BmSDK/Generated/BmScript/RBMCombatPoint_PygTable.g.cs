@@ -78,14 +78,14 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         where TComponent : class, Framework.IScriptComponent<RBMCombatPoint_PygTable>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RBMCombatPoint_PygTable.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RBMCombatPoint_PygTable.Tick", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         return;
     }
 
-    private static BmSDK.Function __fn_PlayDestroyAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayDestroyAnim;
     /// <summary>
     /// Function: PlayDestroyAnim
     /// </summary>
     public unsafe override bool PlayDestroyAnim(BmSDK.FName AnimName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDestroyAnim, "BmScript.RBMCombatPoint_PygTable.PlayDestroyAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayDestroyAnim, "BmScript.RBMCombatPoint_PygTable.PlayDestroyAnim", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetAnimName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimName;
     /// <summary>
     /// Function: GetAnimName
     /// </summary>
     public unsafe override BmSDK.FName GetAnimName(BmSDK.BmGame.RPawnVillain TargetPawn, BmSDK.BmGame.RPawnPlayerCombat PlayerPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimName, "BmScript.RBMCombatPoint_PygTable.GetAnimName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimName, "BmScript.RBMCombatPoint_PygTable.GetAnimName", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPawn, paramsPtr + 0);
@@ -124,42 +124,42 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetAnimYaw;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimYaw;
     /// <summary>
     /// Function: GetAnimYaw
     /// </summary>
     public unsafe override float GetAnimYaw()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimYaw, "BmScript.RBMCombatPoint_PygTable.GetAnimYaw");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimYaw, "BmScript.RBMCombatPoint_PygTable.GetAnimYaw", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsValidInCombat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidInCombat;
     /// <summary>
     /// Function: IsValidInCombat
     /// </summary>
     public unsafe override bool IsValidInCombat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidInCombat, "BmScript.RBMCombatPoint_PygTable.IsValidInCombat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidInCombat, "BmScript.RBMCombatPoint_PygTable.IsValidInCombat", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UsedByPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UsedByPawn;
     /// <summary>
     /// Function: UsedByPawn
     /// </summary>
     public unsafe override void UsedByPawn(BmSDK.BmGame.RPawnCombat NewUser, BmSDK.Engine.Actor NewTarget = default, bool bUsedDuringTaunt = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UsedByPawn, "BmScript.RBMCombatPoint_PygTable.UsedByPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UsedByPawn, "BmScript.RBMCombatPoint_PygTable.UsedByPawn", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUser, paramsPtr + 0);
@@ -169,14 +169,14 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnSmashChunk;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnSmashChunk;
     /// <summary>
     /// Function: SpawnSmashChunk
     /// </summary>
     public unsafe virtual void SpawnSmashChunk(BmSDK.Engine.StaticMesh ChunkMesh, System.Numerics.Vector3 NewVel, System.Numerics.Vector3 NewAngVel, System.Numerics.Vector3 NewLoc, BmSDK.Rotator NewRot, float SmashSpread, float SmashMinBounce, float SmashMaxBounce)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnSmashChunk, "BmScript.RBMCombatPoint_PygTable.SpawnSmashChunk");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnSmashChunk, "BmScript.RBMCombatPoint_PygTable.SpawnSmashChunk", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChunkMesh, paramsPtr + 0);
@@ -191,56 +191,56 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         return;
     }
 
-    private static BmSDK.Function __fn_OnFxEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFxEvent;
     /// <summary>
     /// Function: OnFxEvent
     /// </summary>
     public unsafe override void OnFxEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFxEvent, "BmScript.RBMCombatPoint_PygTable.OnFxEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFxEvent, "BmScript.RBMCombatPoint_PygTable.OnFxEvent", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayerInRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerInRange;
     /// <summary>
     /// Function: GetPlayerInRange
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnPlayerCombat GetPlayerInRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerInRange, "BmScript.RBMCombatPoint_PygTable.GetPlayerInRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerInRange, "BmScript.RBMCombatPoint_PygTable.GetPlayerInRange", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnPlayerCombat>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetVillainInRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVillainInRange;
     /// <summary>
     /// Function: GetVillainInRange
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnVillain GetVillainInRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVillainInRange, "BmScript.RBMCombatPoint_PygTable.GetVillainInRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVillainInRange, "BmScript.RBMCombatPoint_PygTable.GetVillainInRange", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnVillain>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DebugReset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugReset;
     /// <summary>
     /// Function: DebugReset
     /// </summary>
     public unsafe override void DebugReset(BmSDK.BmGame.RBMCombatManager CM)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugReset, "BmScript.RBMCombatPoint_PygTable.DebugReset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugReset, "BmScript.RBMCombatPoint_PygTable.DebugReset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CM, paramsPtr + 0);
@@ -248,42 +248,42 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         return;
     }
 
-    private static BmSDK.Function __fn_SetupHighlightMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupHighlightMesh;
     /// <summary>
     /// Function: SetupHighlightMesh
     /// </summary>
     public unsafe override void SetupHighlightMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupHighlightMesh, "BmScript.RBMCombatPoint_PygTable.SetupHighlightMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupHighlightMesh, "BmScript.RBMCombatPoint_PygTable.SetupHighlightMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterStasisCheckMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterStasisCheckMesh;
     /// <summary>
     /// Function: RegisterStasisCheckMesh
     /// </summary>
     public unsafe override void RegisterStasisCheckMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterStasisCheckMesh, "BmScript.RBMCombatPoint_PygTable.RegisterStasisCheckMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterStasisCheckMesh, "BmScript.RBMCombatPoint_PygTable.RegisterStasisCheckMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetFollowingTablePointIdx;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFollowingTablePointIdx;
     /// <summary>
     /// Function: GetFollowingTablePointIdx
     /// </summary>
     public unsafe virtual int GetFollowingTablePointIdx(int TestPointIdx, BmSDK.BmScript.RBMCombatPoint_PygTable.EPygTableMoveState TestMoveState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFollowingTablePointIdx, "BmScript.RBMCombatPoint_PygTable.GetFollowingTablePointIdx");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFollowingTablePointIdx, "BmScript.RBMCombatPoint_PygTable.GetFollowingTablePointIdx", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPointIdx, paramsPtr + 0);
@@ -292,14 +292,14 @@ public partial class RBMCombatPoint_PygTable : BmSDK.BmGame.RBMCombatPoint_Envir
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InitialiseHidePoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseHidePoints;
     /// <summary>
     /// Function: InitialiseHidePoints
     /// </summary>
     public unsafe virtual void InitialiseHidePoints(BmSDK.BmGame.RPawnVillain VillainPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseHidePoints, "BmScript.RBMCombatPoint_PygTable.InitialiseHidePoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseHidePoints, "BmScript.RBMCombatPoint_PygTable.InitialiseHidePoints", this);
         byte* paramsPtr = stackalloc byte[144];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainPawn, paramsPtr + 0);

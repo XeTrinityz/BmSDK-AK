@@ -78,70 +78,70 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RBmPawnSpawner>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetCurrentPlayerPawnDeadFlagName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentPlayerPawnDeadFlagName;
     /// <summary>
     /// Function: GetCurrentPlayerPawnDeadFlagName
     /// </summary>
     public unsafe virtual BmSDK.FString GetCurrentPlayerPawnDeadFlagName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPlayerPawnDeadFlagName, "BmGame.RBmPawnSpawner.GetCurrentPlayerPawnDeadFlagName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentPlayerPawnDeadFlagName, "BmGame.RBmPawnSpawner.GetCurrentPlayerPawnDeadFlagName", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RegisterDeadGuyWithRoomInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterDeadGuyWithRoomInfo;
     /// <summary>
     /// Function: RegisterDeadGuyWithRoomInfo
     /// </summary>
     public unsafe virtual void RegisterDeadGuyWithRoomInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterDeadGuyWithRoomInfo, "BmGame.RBmPawnSpawner.RegisterDeadGuyWithRoomInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterDeadGuyWithRoomInfo, "BmGame.RBmPawnSpawner.RegisterDeadGuyWithRoomInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemovePawnWithoutKillingIt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemovePawnWithoutKillingIt;
     /// <summary>
     /// Function: RemovePawnWithoutKillingIt
     /// </summary>
     public unsafe virtual void RemovePawnWithoutKillingIt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemovePawnWithoutKillingIt, "BmGame.RBmPawnSpawner.RemovePawnWithoutKillingIt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemovePawnWithoutKillingIt, "BmGame.RBmPawnSpawner.RemovePawnWithoutKillingIt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyKOPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyKOPawn;
     /// <summary>
     /// Function: DestroyKOPawn
     /// </summary>
     public unsafe virtual void DestroyKOPawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyKOPawn, "BmGame.RBmPawnSpawner.DestroyKOPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyKOPawn, "BmGame.RBmPawnSpawner.DestroyKOPawn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyPawn;
     /// <summary>
     /// Function: DestroyPawn
     /// </summary>
     public unsafe virtual void DestroyPawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyPawn, "BmGame.RBmPawnSpawner.DestroyPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyPawn, "BmGame.RBmPawnSpawner.DestroyPawn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -161,14 +161,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnPawnRevived;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPawnRevived;
     /// <summary>
     /// Function: OnPawnRevived
     /// </summary>
     public unsafe virtual void OnPawnRevived()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPawnRevived, "BmGame.RBmPawnSpawner.OnPawnRevived");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPawnRevived, "BmGame.RBmPawnSpawner.OnPawnRevived", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -182,14 +182,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_OnPawnDied;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnPawnDied;
     /// <summary>
     /// Function: OnPawnDied
     /// </summary>
     public unsafe virtual bool OnPawnDied()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnPawnDied, "BmGame.RBmPawnSpawner.OnPawnDied");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnPawnDied, "BmGame.RBmPawnSpawner.OnPawnDied", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -203,14 +203,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ForceTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceTick;
     /// <summary>
     /// Function: ForceTick
     /// </summary>
     public unsafe virtual void ForceTick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceTick, "BmGame.RBmPawnSpawner.ForceTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceTick, "BmGame.RBmPawnSpawner.ForceTick", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -224,14 +224,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
     /// Function: SpawnPawn
     /// </summary>
     public unsafe virtual bool SpawnPawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnPawn, "BmGame.RBmPawnSpawner.SpawnPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnPawn, "BmGame.RBmPawnSpawner.SpawnPawn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -245,14 +245,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetStreamedCombatWeaponType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStreamedCombatWeaponType;
     /// <summary>
     /// Function: GetStreamedCombatWeaponType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.StreamedCombatWeaponTypes GetStreamedCombatWeaponType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStreamedCombatWeaponType, "BmGame.RBmPawnSpawner.GetStreamedCombatWeaponType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStreamedCombatWeaponType, "BmGame.RBmPawnSpawner.GetStreamedCombatWeaponType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -266,14 +266,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.StreamedCombatWeaponTypes>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetStreamedPredWeaponType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStreamedPredWeaponType;
     /// <summary>
     /// Function: GetStreamedPredWeaponType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.StreamedPredWeaponTypes GetStreamedPredWeaponType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStreamedPredWeaponType, "BmGame.RBmPawnSpawner.GetStreamedPredWeaponType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStreamedPredWeaponType, "BmGame.RBmPawnSpawner.GetStreamedPredWeaponType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -287,14 +287,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.StreamedPredWeaponTypes>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetWeaponType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWeaponType;
     /// <summary>
     /// Function: GetWeaponType
     /// </summary>
     public unsafe virtual BmSDK.Class GetWeaponType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWeaponType, "BmGame.RBmPawnSpawner.GetWeaponType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWeaponType, "BmGame.RBmPawnSpawner.GetWeaponType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -308,14 +308,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Class>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCharacterDefine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCharacterDefine;
     /// <summary>
     /// Function: GetCharacterDefine
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RCharacterDefine GetCharacterDefine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCharacterDefine, "BmGame.RBmPawnSpawner.GetCharacterDefine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCharacterDefine, "BmGame.RBmPawnSpawner.GetCharacterDefine", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -329,14 +329,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RCharacterDefine>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCharactersType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCharactersType;
     /// <summary>
     /// Function: GetCharactersType
     /// </summary>
     public unsafe virtual BmSDK.Class GetCharactersType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCharactersType, "BmGame.RBmPawnSpawner.GetCharactersType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCharactersType, "BmGame.RBmPawnSpawner.GetCharactersType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -350,14 +350,14 @@ public partial class RBmPawnSpawner : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Class>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPawnClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnClass;
     /// <summary>
     /// Function: GetPawnClass
     /// </summary>
     public unsafe virtual BmSDK.Class GetPawnClass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPawnClass, "BmGame.RBmPawnSpawner.GetPawnClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPawnClass, "BmGame.RBmPawnSpawner.GetPawnClass", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

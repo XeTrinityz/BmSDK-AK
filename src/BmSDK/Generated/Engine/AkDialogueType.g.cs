@@ -78,14 +78,14 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkDialogueType>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsPersistent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPersistent;
     /// <summary>
     /// Function: IsPersistent
     /// </summary>
     public unsafe virtual bool IsPersistent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPersistent, "Engine.AkDialogueType.IsPersistent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPersistent, "Engine.AkDialogueType.IsPersistent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShowSubtitles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowSubtitles;
     /// <summary>
     /// Function: ShowSubtitles
     /// </summary>
     public unsafe virtual bool ShowSubtitles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowSubtitles, "Engine.AkDialogueType.ShowSubtitles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowSubtitles, "Engine.AkDialogueType.ShowSubtitles", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsEmote;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEmote;
     /// <summary>
     /// Function: IsEmote
     /// </summary>
     public unsafe virtual bool IsEmote()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEmote, "Engine.AkDialogueType.IsEmote");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEmote, "Engine.AkDialogueType.IsEmote", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -141,14 +141,14 @@ public partial class AkDialogueType : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BasePriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BasePriority;
     /// <summary>
     /// Function: BasePriority
     /// </summary>
     public unsafe virtual int BasePriority()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BasePriority, "Engine.AkDialogueType.BasePriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BasePriority, "Engine.AkDialogueType.BasePriority", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

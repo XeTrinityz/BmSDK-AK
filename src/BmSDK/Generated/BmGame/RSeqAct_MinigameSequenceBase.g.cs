@@ -86,14 +86,14 @@ public partial class RSeqAct_MinigameSequenceBase : BmSDK.Engine.SeqAct_Latent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetGadgetsEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGadgetsEnabled;
     /// <summary>
     /// Function: SetGadgetsEnabled
     /// </summary>
     public unsafe virtual void SetGadgetsEnabled(bool are_enabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGadgetsEnabled, "BmGame.RSeqAct_MinigameSequenceBase.SetGadgetsEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGadgetsEnabled, "BmGame.RSeqAct_MinigameSequenceBase.SetGadgetsEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(are_enabled, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class RSeqAct_MinigameSequenceBase : BmSDK.Engine.SeqAct_Latent, 
         return;
     }
 
-    private static BmSDK.Function __fn_TickMinigame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickMinigame;
     /// <summary>
     /// Function: TickMinigame
     /// </summary>
     public unsafe virtual void TickMinigame(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickMinigame, "BmGame.RSeqAct_MinigameSequenceBase.TickMinigame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickMinigame, "BmGame.RSeqAct_MinigameSequenceBase.TickMinigame", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

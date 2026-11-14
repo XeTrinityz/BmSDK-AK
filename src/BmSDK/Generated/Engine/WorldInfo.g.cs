@@ -78,14 +78,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<WorldInfo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DebugDrawDestructibleArchetypesHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDrawDestructibleArchetypesHUD;
     /// <summary>
     /// Function: DebugDrawDestructibleArchetypesHUD
     /// </summary>
     public unsafe virtual void DebugDrawDestructibleArchetypesHUD(BmSDK.Engine.HUD HUD)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugDrawDestructibleArchetypesHUD, "Engine.WorldInfo.DebugDrawDestructibleArchetypesHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugDrawDestructibleArchetypesHUD, "Engine.WorldInfo.DebugDrawDestructibleArchetypesHUD", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawApexClothProfileHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawApexClothProfileHUD;
     /// <summary>
     /// Function: DrawApexClothProfileHUD
     /// </summary>
     public unsafe virtual void DrawApexClothProfileHUD(BmSDK.Engine.HUD HUD)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawApexClothProfileHUD, "Engine.WorldInfo.DrawApexClothProfileHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawApexClothProfileHUD, "Engine.WorldInfo.DrawApexClothProfileHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -115,14 +115,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearObjectPools;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearObjectPools;
     /// <summary>
     /// Function: ClearObjectPools
     /// </summary>
     public unsafe virtual void ClearObjectPools()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearObjectPools, "Engine.WorldInfo.ClearObjectPools");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearObjectPools, "Engine.WorldInfo.ClearObjectPools", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -136,14 +136,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleHostMigration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleHostMigration;
     /// <summary>
     /// Function: ToggleHostMigration
     /// </summary>
     public unsafe virtual void ToggleHostMigration(bool bEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleHostMigration, "Engine.WorldInfo.ToggleHostMigration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleHostMigration, "Engine.WorldInfo.ToggleHostMigration", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnabled, paramsPtr + 0);
@@ -158,14 +158,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyHostMigrationStateChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyHostMigrationStateChanged;
     /// <summary>
     /// Function: NotifyHostMigrationStateChanged
     /// </summary>
     public unsafe virtual void NotifyHostMigrationStateChanged(BmSDK.Engine.WorldInfo.EHostMigrationProgress NewState, BmSDK.Engine.WorldInfo.EHostMigrationProgress OldState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyHostMigrationStateChanged, "Engine.WorldInfo.NotifyHostMigrationStateChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyHostMigrationStateChanged, "Engine.WorldInfo.NotifyHostMigrationStateChanged", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewState, paramsPtr + 0);
@@ -174,14 +174,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BeginHostMigration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginHostMigration;
     /// <summary>
     /// Function: BeginHostMigration
     /// </summary>
     public unsafe virtual bool BeginHostMigration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginHostMigration, "Engine.WorldInfo.BeginHostMigration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginHostMigration, "Engine.WorldInfo.BeginHostMigration", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -195,28 +195,28 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanBeginHostMigration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeginHostMigration;
     /// <summary>
     /// Function: CanBeginHostMigration
     /// </summary>
     public unsafe virtual bool CanBeginHostMigration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeginHostMigration, "Engine.WorldInfo.CanBeginHostMigration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeginHostMigration, "Engine.WorldInfo.CanBeginHostMigration", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindEnvironmentVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindEnvironmentVolume;
     /// <summary>
     /// Function: FindEnvironmentVolume
     /// </summary>
     public unsafe virtual BmSDK.Engine.EnvironmentVolume FindEnvironmentVolume(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindEnvironmentVolume, "Engine.WorldInfo.FindEnvironmentVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindEnvironmentVolume, "Engine.WorldInfo.FindEnvironmentVolume", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -251,14 +251,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.WorldInfo>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetWorldFractureSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWorldFractureSettings;
     /// <summary>
     /// Function: GetWorldFractureSettings
     /// </summary>
     public unsafe virtual BmSDK.Engine.WorldInfo.FWorldFractureSettings GetWorldFractureSettings()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWorldFractureSettings, "Engine.WorldInfo.GetWorldFractureSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWorldFractureSettings, "Engine.WorldInfo.GetWorldFractureSettings", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -272,14 +272,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.WorldInfo.FWorldFractureSettings>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoMemoryTracking;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMemoryTracking;
     /// <summary>
     /// Function: DoMemoryTracking
     /// </summary>
     public unsafe virtual void DoMemoryTracking()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoMemoryTracking, "Engine.WorldInfo.DoMemoryTracking");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoMemoryTracking, "Engine.WorldInfo.DoMemoryTracking", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -293,14 +293,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetDemoRewindPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDemoRewindPoints;
     /// <summary>
     /// Function: GetDemoRewindPoints
     /// </summary>
     public unsafe virtual bool GetDemoRewindPoints(out BmSDK.TArray<int> OutRewindPoints)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDemoRewindPoints, "Engine.WorldInfo.GetDemoRewindPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDemoRewindPoints, "Engine.WorldInfo.GetDemoRewindPoints", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -315,14 +315,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetDemoFrameInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDemoFrameInfo;
     /// <summary>
     /// Function: GetDemoFrameInfo
     /// </summary>
     public unsafe virtual void GetDemoFrameInfo(out int CurrentFrame, out int TotalFrames)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDemoFrameInfo, "Engine.WorldInfo.GetDemoFrameInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDemoFrameInfo, "Engine.WorldInfo.GetDemoFrameInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out CurrentFrame);
@@ -342,14 +342,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsPlayingDemo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayingDemo;
     /// <summary>
     /// Function: IsPlayingDemo
     /// </summary>
     public unsafe virtual bool IsPlayingDemo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayingDemo, "Engine.WorldInfo.IsPlayingDemo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayingDemo, "Engine.WorldInfo.IsPlayingDemo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -363,14 +363,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsRecordingDemo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRecordingDemo;
     /// <summary>
     /// Function: IsRecordingDemo
     /// </summary>
     public unsafe virtual bool IsRecordingDemo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRecordingDemo, "Engine.WorldInfo.IsRecordingDemo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRecordingDemo, "Engine.WorldInfo.IsRecordingDemo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -384,14 +384,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDetailMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDetailMode;
     /// <summary>
     /// Function: GetDetailMode
     /// </summary>
     public unsafe virtual BmSDK.Engine.Scene.EDetailMode GetDetailMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDetailMode, "Engine.WorldInfo.GetDetailMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDetailMode, "Engine.WorldInfo.GetDetailMode", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -405,14 +405,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Scene.EDetailMode>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMapName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMapName;
     /// <summary>
     /// Function: GetMapName
     /// </summary>
     public unsafe virtual BmSDK.FString GetMapName(bool bIncludePrefix = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMapName, "Engine.WorldInfo.GetMapName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMapName, "Engine.WorldInfo.GetMapName", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIncludePrefix, paramsPtr + 0);
@@ -427,14 +427,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ResetActorChannel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetActorChannel;
     /// <summary>
     /// Function: ResetActorChannel
     /// </summary>
     public unsafe virtual void ResetActorChannel(BmSDK.Engine.Actor ChannelOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetActorChannel, "Engine.WorldInfo.ResetActorChannel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetActorChannel, "Engine.WorldInfo.ResetActorChannel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChannelOwner, paramsPtr + 0);
@@ -449,14 +449,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetMapInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMapInfo;
     /// <summary>
     /// Function: SetMapInfo
     /// </summary>
     public unsafe virtual void SetMapInfo(BmSDK.Engine.MapInfo NewMapInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMapInfo, "Engine.WorldInfo.SetMapInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMapInfo, "Engine.WorldInfo.SetMapInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMapInfo, paramsPtr + 0);
@@ -471,14 +471,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetMapInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMapInfo;
     /// <summary>
     /// Function: GetMapInfo
     /// </summary>
     public unsafe virtual BmSDK.Engine.MapInfo GetMapInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMapInfo, "Engine.WorldInfo.GetMapInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMapInfo, "Engine.WorldInfo.GetMapInfo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -492,14 +492,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MapInfo>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetSeamlessTravelMidpointPause;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSeamlessTravelMidpointPause;
     /// <summary>
     /// Function: SetSeamlessTravelMidpointPause
     /// </summary>
     public unsafe virtual void SetSeamlessTravelMidpointPause(bool bNowPaused)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSeamlessTravelMidpointPause, "Engine.WorldInfo.SetSeamlessTravelMidpointPause");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSeamlessTravelMidpointPause, "Engine.WorldInfo.SetSeamlessTravelMidpointPause", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNowPaused, paramsPtr + 0);
@@ -514,14 +514,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsInSeamlessTravel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInSeamlessTravel;
     /// <summary>
     /// Function: IsInSeamlessTravel
     /// </summary>
     public unsafe virtual bool IsInSeamlessTravel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInSeamlessTravel, "Engine.WorldInfo.IsInSeamlessTravel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInSeamlessTravel, "Engine.WorldInfo.IsInSeamlessTravel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -535,17 +535,17 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SeamlessTravel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SeamlessTravel;
     /// <summary>
     /// Function: SeamlessTravel
     /// </summary>
-    public unsafe virtual void SeamlessTravel(BmSDK.FString URL, bool bAbsolute = default, BmSDK.GameObject.FGuid MapPackageGuid = default)
+    public unsafe virtual void SeamlessTravel(BmSDK.FStringArg URL, bool bAbsolute = default, BmSDK.GameObject.FGuid MapPackageGuid = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SeamlessTravel, "Engine.WorldInfo.SeamlessTravel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SeamlessTravel, "Engine.WorldInfo.SeamlessTravel", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(URL, paramsPtr + 0);
+        URL.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAbsolute, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MapPackageGuid, paramsPtr + 20);
         var oldFlags = funcManaged.FunctionFlags;
@@ -556,17 +556,18 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CommitMapChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CommitMapChange;
     /// <summary>
     /// Function: CommitMapChange
     /// </summary>
     public unsafe virtual void CommitMapChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CommitMapChange, "Engine.WorldInfo.CommitMapChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CommitMapChange, "Engine.WorldInfo.CommitMapChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -580,14 +581,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CancelPendingMapChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelPendingMapChange;
     /// <summary>
     /// Function: CancelPendingMapChange
     /// </summary>
     public unsafe virtual void CancelPendingMapChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelPendingMapChange, "Engine.WorldInfo.CancelPendingMapChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelPendingMapChange, "Engine.WorldInfo.CancelPendingMapChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -601,14 +602,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsMapChangeReady;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMapChangeReady;
     /// <summary>
     /// Function: IsMapChangeReady
     /// </summary>
     public unsafe virtual bool IsMapChangeReady()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMapChangeReady, "Engine.WorldInfo.IsMapChangeReady");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMapChangeReady, "Engine.WorldInfo.IsMapChangeReady", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -622,14 +623,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPreparingMapChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPreparingMapChange;
     /// <summary>
     /// Function: IsPreparingMapChange
     /// </summary>
     public unsafe virtual bool IsPreparingMapChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPreparingMapChange, "Engine.WorldInfo.IsPreparingMapChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPreparingMapChange, "Engine.WorldInfo.IsPreparingMapChange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -643,14 +644,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PrepareMapChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrepareMapChange;
     /// <summary>
     /// Function: PrepareMapChange
     /// </summary>
     public unsafe virtual void PrepareMapChange(out BmSDK.TArray<BmSDK.FName> LevelNames)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepareMapChange, "Engine.WorldInfo.PrepareMapChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrepareMapChange, "Engine.WorldInfo.PrepareMapChange", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -665,14 +666,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyMatchStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyMatchStarted;
     /// <summary>
     /// Function: NotifyMatchStarted
     /// </summary>
     public unsafe virtual void NotifyMatchStarted(bool bShouldActivateLevelStartupEvents = default, bool bShouldActivateLevelBeginningEvents = default, bool bShouldActivateLevelLoadedEvents = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyMatchStarted, "Engine.WorldInfo.NotifyMatchStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyMatchStarted, "Engine.WorldInfo.NotifyMatchStarted", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldActivateLevelStartupEvents, paramsPtr + 0);
@@ -689,14 +690,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NavigationPointCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavigationPointCheck;
     /// <summary>
     /// Function: NavigationPointCheck
     /// </summary>
     public unsafe virtual void NavigationPointCheck(System.Numerics.Vector3 Point, System.Numerics.Vector3 Extent, out BmSDK.TArray<BmSDK.Engine.NavigationPoint> Navs, out BmSDK.TArray<BmSDK.Engine.ReachSpec> Specs)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavigationPointCheck, "Engine.WorldInfo.NavigationPointCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavigationPointCheck, "Engine.WorldInfo.NavigationPointCheck", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Point, paramsPtr + 0);
@@ -714,56 +715,56 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.WorldInfo.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.WorldInfo.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.WorldInfo.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.WorldInfo.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "Engine.WorldInfo.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "Engine.WorldInfo.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ThisIsNeverExecuted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThisIsNeverExecuted;
     /// <summary>
     /// Function: ThisIsNeverExecuted
     /// </summary>
     public unsafe virtual void ThisIsNeverExecuted(BmSDK.Engine.DefaultPhysicsVolume P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThisIsNeverExecuted, "Engine.WorldInfo.ThisIsNeverExecuted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThisIsNeverExecuted, "Engine.WorldInfo.ThisIsNeverExecuted", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -771,45 +772,46 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ServerTravel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ServerTravel;
     /// <summary>
     /// Function: ServerTravel
     /// </summary>
-    public unsafe virtual void ServerTravel(BmSDK.FString URL, bool bAbsolute = default, bool bShouldSkipGameNotify = default)
+    public unsafe virtual void ServerTravel(BmSDK.FStringArg URL, bool bAbsolute = default, bool bShouldSkipGameNotify = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ServerTravel, "Engine.WorldInfo.ServerTravel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ServerTravel, "Engine.WorldInfo.ServerTravel", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(URL, paramsPtr + 0);
+        URL.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAbsolute, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldSkipGameNotify, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGameClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameClass;
     /// <summary>
     /// Function: GetGameClass
     /// </summary>
     public unsafe virtual BmSDK.Class GetGameClass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGameClass, "Engine.WorldInfo.GetGameClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGameClass, "Engine.WorldInfo.GetGameClass", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Class>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAddressURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAddressURL;
     /// <summary>
     /// Function: GetAddressURL
     /// </summary>
     public unsafe virtual BmSDK.FString GetAddressURL()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAddressURL, "Engine.WorldInfo.GetAddressURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAddressURL, "Engine.WorldInfo.GetAddressURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -823,14 +825,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsDebugDrawDestructiblesEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDebugDrawDestructiblesEnabled;
     /// <summary>
     /// Function: IsDebugDrawDestructiblesEnabled
     /// </summary>
     public unsafe virtual bool IsDebugDrawDestructiblesEnabled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDebugDrawDestructiblesEnabled, "Engine.WorldInfo.IsDebugDrawDestructiblesEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDebugDrawDestructiblesEnabled, "Engine.WorldInfo.IsDebugDrawDestructiblesEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -844,14 +846,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_VerifyNavList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyNavList;
     /// <summary>
     /// Function: VerifyNavList
     /// </summary>
     public unsafe virtual void VerifyNavList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VerifyNavList, "Engine.WorldInfo.VerifyNavList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VerifyNavList, "Engine.WorldInfo.VerifyNavList", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -865,14 +867,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ForceGarbageCollection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceGarbageCollection;
     /// <summary>
     /// Function: ForceGarbageCollection
     /// </summary>
     public unsafe virtual void ForceGarbageCollection(bool bFullPurge = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceGarbageCollection, "Engine.WorldInfo.ForceGarbageCollection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceGarbageCollection, "Engine.WorldInfo.ForceGarbageCollection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFullPurge, paramsPtr + 0);
@@ -1048,14 +1050,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLocalURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocalURL;
     /// <summary>
     /// Function: GetLocalURL
     /// </summary>
     public unsafe virtual BmSDK.FString GetLocalURL()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocalURL, "Engine.WorldInfo.GetLocalURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocalURL, "Engine.WorldInfo.GetLocalURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1069,14 +1071,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetLevelRBGravity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelRBGravity;
     /// <summary>
     /// Function: SetLevelRBGravity
     /// </summary>
     public unsafe virtual void SetLevelRBGravity(System.Numerics.Vector3 NewGrav)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLevelRBGravity, "Engine.WorldInfo.SetLevelRBGravity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLevelRBGravity, "Engine.WorldInfo.SetLevelRBGravity", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGrav, paramsPtr + 0);
@@ -1091,14 +1093,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAllRootSequences;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllRootSequences;
     /// <summary>
     /// Function: GetAllRootSequences
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.Sequence> GetAllRootSequences()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllRootSequences, "Engine.WorldInfo.GetAllRootSequences");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllRootSequences, "Engine.WorldInfo.GetAllRootSequences", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1112,14 +1114,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.Sequence>>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetGameSequence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameSequence;
     /// <summary>
     /// Function: GetGameSequence
     /// </summary>
     public unsafe virtual BmSDK.Engine.Sequence GetGameSequence()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGameSequence, "Engine.WorldInfo.GetGameSequence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGameSequence, "Engine.WorldInfo.GetGameSequence", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1133,14 +1135,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Sequence>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetGravityZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGravityZ;
     /// <summary>
     /// Function: GetGravityZ
     /// </summary>
     public unsafe override float GetGravityZ()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGravityZ, "Engine.WorldInfo.GetGravityZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGravityZ, "Engine.WorldInfo.GetGravityZ", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1158,12 +1160,12 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
     /// <summary>
     /// Function: IsMenuLevel
     /// </summary>
-    public unsafe static bool IsMenuLevel(BmSDK.FString MapName = default)
+    public unsafe static bool IsMenuLevel(BmSDK.FStringArg MapName = default)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMenuLevel, "Engine.WorldInfo.IsMenuLevel");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MapName, paramsPtr + 0);
+        MapName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -1172,23 +1174,24 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_AddOnScreenDebugMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddOnScreenDebugMessage;
     /// <summary>
     /// Function: AddOnScreenDebugMessage
     /// </summary>
-    public unsafe virtual void AddOnScreenDebugMessage(int Key, float TimeToDisplay, BmSDK.GameObject.FColor DisplayColor, BmSDK.FString DebugMessage)
+    public unsafe virtual void AddOnScreenDebugMessage(int Key, float TimeToDisplay, BmSDK.GameObject.FColor DisplayColor, BmSDK.FStringArg DebugMessage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddOnScreenDebugMessage, "Engine.WorldInfo.AddOnScreenDebugMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddOnScreenDebugMessage, "Engine.WorldInfo.AddOnScreenDebugMessage", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Key, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimeToDisplay, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DisplayColor, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(DebugMessage, paramsPtr + 12);
+        DebugMessage.WriteTo(paramsPtr + 12);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -1197,17 +1200,18 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 12);
         return;
     }
 
-    private static BmSDK.Function __fn_ReplicatedEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReplicatedEvent;
     /// <summary>
     /// Function: ReplicatedEvent
     /// </summary>
     public unsafe override void ReplicatedEvent(BmSDK.FName VarName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReplicatedEvent, "Engine.WorldInfo.ReplicatedEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReplicatedEvent, "Engine.WorldInfo.ReplicatedEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VarName, paramsPtr + 0);
@@ -1215,14 +1219,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetNavMeshPathGoalEvaluatorFromCache;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathGoalEvaluatorFromCache;
     /// <summary>
     /// Function: GetNavMeshPathGoalEvaluatorFromCache
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathGoalEvaluator GetNavMeshPathGoalEvaluatorFromCache(BmSDK.Class GoalEvalClass, BmSDK.Engine.NavigationHandle Requestor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavMeshPathGoalEvaluatorFromCache, "Engine.WorldInfo.GetNavMeshPathGoalEvaluatorFromCache");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavMeshPathGoalEvaluatorFromCache, "Engine.WorldInfo.GetNavMeshPathGoalEvaluatorFromCache", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GoalEvalClass, paramsPtr + 0);
@@ -1238,14 +1242,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.NavMeshPathGoalEvaluator>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetNavMeshPathConstraintFromCache;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathConstraintFromCache;
     /// <summary>
     /// Function: GetNavMeshPathConstraintFromCache
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathConstraint GetNavMeshPathConstraintFromCache(BmSDK.Class ConstraintClass, BmSDK.Engine.NavigationHandle Requestor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavMeshPathConstraintFromCache, "Engine.WorldInfo.GetNavMeshPathConstraintFromCache");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavMeshPathConstraintFromCache, "Engine.WorldInfo.GetNavMeshPathConstraintFromCache", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConstraintClass, paramsPtr + 0);
@@ -1261,14 +1265,14 @@ public partial class WorldInfo : BmSDK.Engine.ZoneInfo, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.NavMeshPathConstraint>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ReleaseCachedConstraintsAndEvaluators;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReleaseCachedConstraintsAndEvaluators;
     /// <summary>
     /// Function: ReleaseCachedConstraintsAndEvaluators
     /// </summary>
     public unsafe virtual void ReleaseCachedConstraintsAndEvaluators()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReleaseCachedConstraintsAndEvaluators, "Engine.WorldInfo.ReleaseCachedConstraintsAndEvaluators");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReleaseCachedConstraintsAndEvaluators, "Engine.WorldInfo.ReleaseCachedConstraintsAndEvaluators", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -4234,13 +4238,13 @@ public static class WorldInfoStatics
     /// <summary>
     /// Function: IsMenuLevel, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static bool IsMenuLevel(this BmSDK.Engine.WorldInfo self, BmSDK.FString MapName = default)
+    public unsafe static bool IsMenuLevel(this BmSDK.Engine.WorldInfo self, BmSDK.FStringArg MapName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMenuLevel, "Engine.WorldInfo.IsMenuLevel");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MapName, paramsPtr + 0);
+        MapName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -4249,6 +4253,7 @@ public static class WorldInfoStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 }

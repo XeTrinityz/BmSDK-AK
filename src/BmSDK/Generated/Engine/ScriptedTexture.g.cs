@@ -78,14 +78,14 @@ public partial class ScriptedTexture : BmSDK.Engine.TextureRenderTarget2D, BmSDK
         where TComponent : class, Framework.IScriptComponent<ScriptedTexture>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Render;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Render;
     /// <summary>
     /// Function: Render
     /// </summary>
     public unsafe virtual void Render(BmSDK.Engine.Canvas C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Render, "Engine.ScriptedTexture.Render");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Render, "Engine.ScriptedTexture.Render", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);

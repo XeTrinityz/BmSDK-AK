@@ -78,28 +78,28 @@ public partial class RHudModuleDetectiveModeJamming : BmSDK.BmGame.RHudModule, B
         where TComponent : class, Framework.IScriptComponent<RHudModuleDetectiveModeJamming>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_XI_DetectiveJammer_NotifyOutroComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_DetectiveJammer_NotifyOutroComplete;
     /// <summary>
     /// Function: XI_DetectiveJammer_NotifyOutroComplete
     /// </summary>
     public unsafe virtual void XI_DetectiveJammer_NotifyOutroComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_DetectiveJammer_NotifyOutroComplete, "BmGame.RHudModuleDetectiveModeJamming.XI_DetectiveJammer_NotifyOutroComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_DetectiveJammer_NotifyOutroComplete, "BmGame.RHudModuleDetectiveModeJamming.XI_DetectiveJammer_NotifyOutroComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDetectiveModeJammed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDetectiveModeJammed;
     /// <summary>
     /// Function: SetDetectiveModeJammed
     /// </summary>
     public unsafe virtual void SetDetectiveModeJammed(bool is_jammed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDetectiveModeJammed, "BmGame.RHudModuleDetectiveModeJamming.SetDetectiveModeJammed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDetectiveModeJammed, "BmGame.RHudModuleDetectiveModeJamming.SetDetectiveModeJammed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_jammed, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RHudModuleDetectiveModeJamming : BmSDK.BmGame.RHudModule, B
         return;
     }
 
-    private static BmSDK.Function __fn_SetDetectiveModeCompromisedLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDetectiveModeCompromisedLevel;
     /// <summary>
     /// Function: SetDetectiveModeCompromisedLevel
     /// </summary>
     public unsafe virtual void SetDetectiveModeCompromisedLevel(float JammingProportion, BmSDK.BmGame.RGFxMovieModularHud.EDetectiveModeDetectorStates StateEnum)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDetectiveModeCompromisedLevel, "BmGame.RHudModuleDetectiveModeJamming.SetDetectiveModeCompromisedLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDetectiveModeCompromisedLevel, "BmGame.RHudModuleDetectiveModeJamming.SetDetectiveModeCompromisedLevel", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JammingProportion, paramsPtr + 0);
@@ -123,48 +123,50 @@ public partial class RHudModuleDetectiveModeJamming : BmSDK.BmGame.RHudModule, B
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseFlash;
     /// <summary>
     /// Function: InitialiseFlash
     /// </summary>
     public unsafe override void InitialiseFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseFlash, "BmGame.RHudModuleDetectiveModeJamming.InitialiseFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseFlash, "BmGame.RHudModuleDetectiveModeJamming.InitialiseFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Close;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Close;
     /// <summary>
     /// Function: Close
     /// </summary>
     public unsafe override void Close()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleDetectiveModeJamming.Close");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Close, "BmGame.RHudModuleDetectiveModeJamming.Close", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
+    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FStringArg _ExtensionName, BmSDK.FStringArg _ExtensionPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleDetectiveModeJamming.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RHudModuleDetectiveModeJamming.Init", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RPC, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionPath, paramsPtr + 24);
+        _ExtensionName.WriteTo(paramsPtr + 8);
+        _ExtensionPath.WriteTo(paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 

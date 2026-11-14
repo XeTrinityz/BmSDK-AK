@@ -78,28 +78,28 @@ public partial class ForceFieldShapeBox : BmSDK.Engine.ForceFieldShape, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<ForceFieldShapeBox>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDrawComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDrawComponent;
     /// <summary>
     /// Function: GetDrawComponent
     /// </summary>
     public unsafe override BmSDK.Engine.PrimitiveComponent GetDrawComponent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDrawComponent, "Engine.ForceFieldShapeBox.GetDrawComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDrawComponent, "Engine.ForceFieldShapeBox.GetDrawComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.PrimitiveComponent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FillByCylinder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FillByCylinder;
     /// <summary>
     /// Function: FillByCylinder
     /// </summary>
     public unsafe override void FillByCylinder(float BottomRadius, float TopRadius, float Height, float HeightOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FillByCylinder, "Engine.ForceFieldShapeBox.FillByCylinder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FillByCylinder, "Engine.ForceFieldShapeBox.FillByCylinder", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BottomRadius, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class ForceFieldShapeBox : BmSDK.Engine.ForceFieldShape, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_FillByCapsule;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FillByCapsule;
     /// <summary>
     /// Function: FillByCapsule
     /// </summary>
     public unsafe override void FillByCapsule(float Height, float Radius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FillByCapsule, "Engine.ForceFieldShapeBox.FillByCapsule");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FillByCapsule, "Engine.ForceFieldShapeBox.FillByCapsule", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Height, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class ForceFieldShapeBox : BmSDK.Engine.ForceFieldShape, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_FillByBox;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FillByBox;
     /// <summary>
     /// Function: FillByBox
     /// </summary>
     public unsafe override void FillByBox(System.Numerics.Vector3 Extent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FillByBox, "Engine.ForceFieldShapeBox.FillByBox");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FillByBox, "Engine.ForceFieldShapeBox.FillByBox", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Extent, paramsPtr + 0);
@@ -141,14 +141,14 @@ public partial class ForceFieldShapeBox : BmSDK.Engine.ForceFieldShape, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_FillBySphere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FillBySphere;
     /// <summary>
     /// Function: FillBySphere
     /// </summary>
     public unsafe override void FillBySphere(float Radius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FillBySphere, "Engine.ForceFieldShapeBox.FillBySphere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FillBySphere, "Engine.ForceFieldShapeBox.FillBySphere", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Radius, paramsPtr + 0);
@@ -156,14 +156,14 @@ public partial class ForceFieldShapeBox : BmSDK.Engine.ForceFieldShape, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetRadii;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRadii;
     /// <summary>
     /// Function: GetRadii
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRadii()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRadii, "Engine.ForceFieldShapeBox.GetRadii");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRadii, "Engine.ForceFieldShapeBox.GetRadii", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -73,70 +73,70 @@ public partial class RJokerSwappableBase : BmSDK.Engine.StaticMeshActor, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RJokerSwappableBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RJokerSwappableBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RJokerSwappableBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RJokerSwappableBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RJokerSwappableBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RJokerSwappableBase.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "BmGame.RJokerSwappableBase.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnForce;
     /// <summary>
     /// Function: UnForce
     /// </summary>
     public unsafe virtual void UnForce()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnForce, "BmGame.RJokerSwappableBase.UnForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnForce, "BmGame.RJokerSwappableBase.UnForce", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwapToOriginalVersion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapToOriginalVersion;
     /// <summary>
     /// Function: SwapToOriginalVersion
     /// </summary>
     public unsafe virtual void SwapToOriginalVersion(bool bForce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapToOriginalVersion, "BmGame.RJokerSwappableBase.SwapToOriginalVersion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapToOriginalVersion, "BmGame.RJokerSwappableBase.SwapToOriginalVersion", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForce, paramsPtr + 0);
@@ -144,14 +144,14 @@ public partial class RJokerSwappableBase : BmSDK.Engine.StaticMeshActor, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SwapToJokerVersion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapToJokerVersion;
     /// <summary>
     /// Function: SwapToJokerVersion
     /// </summary>
     public unsafe virtual void SwapToJokerVersion(bool bForce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapToJokerVersion, "BmGame.RJokerSwappableBase.SwapToJokerVersion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapToJokerVersion, "BmGame.RJokerSwappableBase.SwapToJokerVersion", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForce, paramsPtr + 0);
@@ -159,42 +159,42 @@ public partial class RJokerSwappableBase : BmSDK.Engine.StaticMeshActor, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_Swap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Swap;
     /// <summary>
     /// Function: Swap
     /// </summary>
     public unsafe virtual void Swap()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Swap, "BmGame.RJokerSwappableBase.Swap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Swap, "BmGame.RJokerSwappableBase.Swap", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnswapsAutomatically;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnswapsAutomatically;
     /// <summary>
     /// Function: UnswapsAutomatically
     /// </summary>
     public unsafe virtual bool UnswapsAutomatically()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnswapsAutomatically, "BmGame.RJokerSwappableBase.UnswapsAutomatically");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnswapsAutomatically, "BmGame.RJokerSwappableBase.UnswapsAutomatically", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanSwapOffscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSwapOffscreen;
     /// <summary>
     /// Function: CanSwapOffscreen
     /// </summary>
     public unsafe virtual bool CanSwapOffscreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSwapOffscreen, "BmGame.RJokerSwappableBase.CanSwapOffscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSwapOffscreen, "BmGame.RJokerSwappableBase.CanSwapOffscreen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

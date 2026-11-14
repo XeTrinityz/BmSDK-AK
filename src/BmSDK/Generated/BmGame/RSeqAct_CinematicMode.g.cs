@@ -78,84 +78,84 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RSeqAct_CinematicMode>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DualPlayPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DualPlayPressed;
     /// <summary>
     /// Function: DualPlayPressed
     /// </summary>
     public unsafe virtual void DualPlayPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DualPlayPressed, "BmGame.RSeqAct_CinematicMode.DualPlayPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DualPlayPressed, "BmGame.RSeqAct_CinematicMode.DualPlayPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BattleModeMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BattleModeMove;
     /// <summary>
     /// Function: BattleModeMove
     /// </summary>
     public unsafe virtual void BattleModeMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BattleModeMove, "BmGame.RSeqAct_CinematicMode.BattleModeMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BattleModeMove, "BmGame.RSeqAct_CinematicMode.BattleModeMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BattleModePressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BattleModePressed;
     /// <summary>
     /// Function: BattleModePressed
     /// </summary>
     public unsafe virtual void BattleModePressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BattleModePressed, "BmGame.RSeqAct_CinematicMode.BattleModePressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BattleModePressed, "BmGame.RSeqAct_CinematicMode.BattleModePressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_YButtonPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_YButtonPressed;
     /// <summary>
     /// Function: YButtonPressed
     /// </summary>
     public unsafe virtual void YButtonPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_YButtonPressed, "BmGame.RSeqAct_CinematicMode.YButtonPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_YButtonPressed, "BmGame.RSeqAct_CinematicMode.YButtonPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AButtonPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AButtonPressed;
     /// <summary>
     /// Function: AButtonPressed
     /// </summary>
     public unsafe virtual void AButtonPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AButtonPressed, "BmGame.RSeqAct_CinematicMode.AButtonPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AButtonPressed, "BmGame.RSeqAct_CinematicMode.AButtonPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriedToUseGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriedToUseGadget;
     /// <summary>
     /// Function: TriedToUseGadget
     /// </summary>
     public unsafe virtual void TriedToUseGadget(BmSDK.BmGame.RInventoryGadget Gadget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriedToUseGadget, "BmGame.RSeqAct_CinematicMode.TriedToUseGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriedToUseGadget, "BmGame.RSeqAct_CinematicMode.TriedToUseGadget", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Gadget, paramsPtr + 0);
@@ -176,98 +176,98 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Skip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Skip;
     /// <summary>
     /// Function: Skip
     /// </summary>
     public unsafe virtual bool Skip()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Skip, "BmGame.RSeqAct_CinematicMode.Skip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Skip, "BmGame.RSeqAct_CinematicMode.Skip", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsSkippable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSkippable;
     /// <summary>
     /// Function: IsSkippable
     /// </summary>
     public unsafe virtual bool IsSkippable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSkippable, "BmGame.RSeqAct_CinematicMode.IsSkippable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSkippable, "BmGame.RSeqAct_CinematicMode.IsSkippable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPotentiallySkippable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPotentiallySkippable;
     /// <summary>
     /// Function: IsPotentiallySkippable
     /// </summary>
     public unsafe virtual bool IsPotentiallySkippable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPotentiallySkippable, "BmGame.RSeqAct_CinematicMode.IsPotentiallySkippable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPotentiallySkippable, "BmGame.RSeqAct_CinematicMode.IsPotentiallySkippable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CutsceneJustStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CutsceneJustStarted;
     /// <summary>
     /// Function: CutsceneJustStarted
     /// </summary>
     public unsafe virtual bool CutsceneJustStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CutsceneJustStarted, "BmGame.RSeqAct_CinematicMode.CutsceneJustStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CutsceneJustStarted, "BmGame.RSeqAct_CinematicMode.CutsceneJustStarted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsStreamingInstallStillRunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStreamingInstallStillRunning;
     /// <summary>
     /// Function: IsStreamingInstallStillRunning
     /// </summary>
     public unsafe virtual bool IsStreamingInstallStillRunning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStreamingInstallStillRunning, "BmGame.RSeqAct_CinematicMode.IsStreamingInstallStillRunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStreamingInstallStillRunning, "BmGame.RSeqAct_CinematicMode.IsStreamingInstallStillRunning", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsLoadingLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLoadingLevel;
     /// <summary>
     /// Function: IsLoadingLevel
     /// </summary>
     public unsafe virtual bool IsLoadingLevel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLoadingLevel, "BmGame.RSeqAct_CinematicMode.IsLoadingLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLoadingLevel, "BmGame.RSeqAct_CinematicMode.IsLoadingLevel", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetButtonPromptsAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetButtonPromptsAllowed;
     /// <summary>
     /// Function: SetButtonPromptsAllowed
     /// </summary>
     public unsafe virtual void SetButtonPromptsAllowed(bool is_allowed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetButtonPromptsAllowed, "BmGame.RSeqAct_CinematicMode.SetButtonPromptsAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetButtonPromptsAllowed, "BmGame.RSeqAct_CinematicMode.SetButtonPromptsAllowed", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_allowed, paramsPtr + 0);
@@ -275,14 +275,14 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetTargetsHudAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetsHudAllowed;
     /// <summary>
     /// Function: SetTargetsHudAllowed
     /// </summary>
     public unsafe virtual void SetTargetsHudAllowed(bool is_allowed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTargetsHudAllowed, "BmGame.RSeqAct_CinematicMode.SetTargetsHudAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTargetsHudAllowed, "BmGame.RSeqAct_CinematicMode.SetTargetsHudAllowed", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_allowed, paramsPtr + 0);
@@ -290,14 +290,14 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_SetObjectiveHudAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjectiveHudAllowed;
     /// <summary>
     /// Function: SetObjectiveHudAllowed
     /// </summary>
     public unsafe virtual void SetObjectiveHudAllowed(bool is_allowed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetObjectiveHudAllowed, "BmGame.RSeqAct_CinematicMode.SetObjectiveHudAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetObjectiveHudAllowed, "BmGame.RSeqAct_CinematicMode.SetObjectiveHudAllowed", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_allowed, paramsPtr + 0);
@@ -305,14 +305,14 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyHudRestrictions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyHudRestrictions;
     /// <summary>
     /// Function: ApplyHudRestrictions
     /// </summary>
     public unsafe virtual void ApplyHudRestrictions(bool do_apply)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyHudRestrictions, "BmGame.RSeqAct_CinematicMode.ApplyHudRestrictions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyHudRestrictions, "BmGame.RSeqAct_CinematicMode.ApplyHudRestrictions", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(do_apply, paramsPtr + 0);
@@ -320,28 +320,28 @@ public partial class RSeqAct_CinematicMode : BmSDK.Engine.SequenceAction, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_CinematicMode.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_CinematicMode.Activated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowGadget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowGadget;
     /// <summary>
     /// Function: AllowGadget
     /// </summary>
     public unsafe virtual bool AllowGadget(BmSDK.Class TestClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowGadget, "BmGame.RSeqAct_CinematicMode.AllowGadget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowGadget, "BmGame.RSeqAct_CinematicMode.AllowGadget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestClass, paramsPtr + 0);

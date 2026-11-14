@@ -91,14 +91,14 @@ public partial class RAnimationCapture : BmSDK.Engine.SeqAct_Latent, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetupOurPawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupOurPawns;
     /// <summary>
     /// Function: SetupOurPawns
     /// </summary>
     public unsafe virtual void SetupOurPawns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupOurPawns, "BmGame.RAnimationCapture.SetupOurPawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupOurPawns, "BmGame.RAnimationCapture.SetupOurPawns", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

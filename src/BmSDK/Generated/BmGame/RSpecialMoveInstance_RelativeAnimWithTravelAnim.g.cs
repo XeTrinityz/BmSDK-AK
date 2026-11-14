@@ -78,28 +78,28 @@ public partial class RSpecialMoveInstance_RelativeAnimWithTravelAnim : BmSDK.BmG
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_RelativeAnimWithTravelAnim>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FinalAnimStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinalAnimStarted;
     /// <summary>
     /// Function: FinalAnimStarted
     /// </summary>
     public unsafe override void FinalAnimStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinalAnimStarted, "BmGame.RSpecialMoveInstance_RelativeAnimWithTravelAnim.FinalAnimStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinalAnimStarted, "BmGame.RSpecialMoveInstance_RelativeAnimWithTravelAnim.FinalAnimStarted", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PickRandomAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickRandomAnim;
     /// <summary>
     /// Function: PickRandomAnim
     /// </summary>
     public unsafe override void PickRandomAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickRandomAnim, "BmGame.RSpecialMoveInstance_RelativeAnimWithTravelAnim.PickRandomAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickRandomAnim, "BmGame.RSpecialMoveInstance_RelativeAnimWithTravelAnim.PickRandomAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

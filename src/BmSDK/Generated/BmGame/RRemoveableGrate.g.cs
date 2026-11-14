@@ -78,42 +78,42 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         where TComponent : class, Framework.IScriptComponent<RRemoveableGrate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SuperEasy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuperEasy;
     /// <summary>
     /// Function: SuperEasy
     /// </summary>
     public unsafe virtual bool SuperEasy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuperEasy, "BmGame.RRemoveableGrate.SuperEasy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuperEasy, "BmGame.RRemoveableGrate.SuperEasy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetHarpoonTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonTargetLocation;
     /// <summary>
     /// Function: GetHarpoonTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHarpoonTargetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHarpoonTargetLocation, "BmGame.RRemoveableGrate.GetHarpoonTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHarpoonTargetLocation, "BmGame.RRemoveableGrate.GetHarpoonTargetLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnSetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetMaterial;
     /// <summary>
     /// Function: OnSetMaterial
     /// </summary>
     public unsafe virtual void OnSetMaterial(BmSDK.Engine.SeqAct_SetMaterial Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterial, "BmGame.RRemoveableGrate.OnSetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetMaterial, "BmGame.RRemoveableGrate.OnSetMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_PlayGrateAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayGrateAnim;
     /// <summary>
     /// Function: PlayGrateAnim
     /// </summary>
     public unsafe virtual void PlayGrateAnim(BmSDK.FName AnimName, bool bAnimMirrored = default, bool bReset = default, float Rate = default, float StartTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayGrateAnim, "BmGame.RRemoveableGrate.PlayGrateAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayGrateAnim, "BmGame.RRemoveableGrate.PlayGrateAnim", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -140,14 +140,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_OverridesRun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridesRun;
     /// <summary>
     /// Function: OverridesRun
     /// </summary>
     public unsafe override float OverridesRun(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridesRun, "BmGame.RRemoveableGrate.OverridesRun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridesRun, "BmGame.RRemoveableGrate.OverridesRun", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -155,14 +155,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SpawnTunnelFunnel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnTunnelFunnel;
     /// <summary>
     /// Function: SpawnTunnelFunnel
     /// </summary>
     public unsafe virtual void SpawnTunnelFunnel(bool bSpawnMissingGrateMarker = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnTunnelFunnel, "BmGame.RRemoveableGrate.SpawnTunnelFunnel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnTunnelFunnel, "BmGame.RRemoveableGrate.SpawnTunnelFunnel", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSpawnMissingGrateMarker, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_CanReachItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReachItem;
     /// <summary>
     /// Function: CanReachItem
     /// </summary>
     public unsafe override bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmGame.RRemoveableGrate.CanReachItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanReachItem, "BmGame.RRemoveableGrate.CanReachItem", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckingPawn, paramsPtr + 0);
@@ -185,14 +185,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RRemoveableGrate.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RRemoveableGrate.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -200,14 +200,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerGrateDust;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerGrateDust;
     /// <summary>
     /// Function: TriggerGrateDust
     /// </summary>
     public unsafe virtual void TriggerGrateDust(int NumBoltsToTrigger = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGrateDust, "BmGame.RRemoveableGrate.TriggerGrateDust");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerGrateDust, "BmGame.RRemoveableGrate.TriggerGrateDust", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NumBoltsToTrigger, paramsPtr + 0);
@@ -215,28 +215,28 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_IsButtonPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsButtonPrompt;
     /// <summary>
     /// Function: IsButtonPrompt
     /// </summary>
     public unsafe override bool IsButtonPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsButtonPrompt, "BmGame.RRemoveableGrate.IsButtonPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsButtonPrompt, "BmGame.RRemoveableGrate.IsButtonPrompt", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrompt;
     /// <summary>
     /// Function: GetPrompt
     /// </summary>
     public unsafe override BmSDK.FString GetPrompt(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrompt, "BmGame.RRemoveableGrate.GetPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrompt, "BmGame.RRemoveableGrate.GetPrompt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -244,14 +244,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TermGrateConstraint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TermGrateConstraint;
     /// <summary>
     /// Function: TermGrateConstraint
     /// </summary>
     public unsafe virtual void TermGrateConstraint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TermGrateConstraint, "BmGame.RRemoveableGrate.TermGrateConstraint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TermGrateConstraint, "BmGame.RRemoveableGrate.TermGrateConstraint", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -265,14 +265,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_InitGrateConstraint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitGrateConstraint;
     /// <summary>
     /// Function: InitGrateConstraint
     /// </summary>
     public unsafe virtual void InitGrateConstraint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitGrateConstraint, "BmGame.RRemoveableGrate.InitGrateConstraint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitGrateConstraint, "BmGame.RRemoveableGrate.InitGrateConstraint", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -286,70 +286,70 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_BottomRightDust;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BottomRightDust;
     /// <summary>
     /// Function: BottomRightDust
     /// </summary>
     public unsafe virtual void BottomRightDust()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BottomRightDust, "BmGame.RRemoveableGrate.BottomRightDust");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BottomRightDust, "BmGame.RRemoveableGrate.BottomRightDust", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BottomLeftDust;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BottomLeftDust;
     /// <summary>
     /// Function: BottomLeftDust
     /// </summary>
     public unsafe virtual void BottomLeftDust()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BottomLeftDust, "BmGame.RRemoveableGrate.BottomLeftDust");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BottomLeftDust, "BmGame.RRemoveableGrate.BottomLeftDust", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TopRightDust;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TopRightDust;
     /// <summary>
     /// Function: TopRightDust
     /// </summary>
     public unsafe virtual void TopRightDust()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TopRightDust, "BmGame.RRemoveableGrate.TopRightDust");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TopRightDust, "BmGame.RRemoveableGrate.TopRightDust", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TopLeftDust;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TopLeftDust;
     /// <summary>
     /// Function: TopLeftDust
     /// </summary>
     public unsafe virtual void TopLeftDust()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TopLeftDust, "BmGame.RRemoveableGrate.TopLeftDust");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TopLeftDust, "BmGame.RRemoveableGrate.TopLeftDust", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BoltDust;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BoltDust;
     /// <summary>
     /// Function: BoltDust
     /// </summary>
     public unsafe virtual void BoltDust(BmSDK.BmGame.RRemoveableGrate.EGrateBoltPosition BoltToBreak)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BoltDust, "BmGame.RRemoveableGrate.BoltDust");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BoltDust, "BmGame.RRemoveableGrate.BoltDust", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoltToBreak, paramsPtr + 0);
@@ -357,70 +357,70 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_BreakBottomRightBolt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakBottomRightBolt;
     /// <summary>
     /// Function: BreakBottomRightBolt
     /// </summary>
     public unsafe virtual void BreakBottomRightBolt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakBottomRightBolt, "BmGame.RRemoveableGrate.BreakBottomRightBolt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakBottomRightBolt, "BmGame.RRemoveableGrate.BreakBottomRightBolt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BreakBottomLeftBolt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakBottomLeftBolt;
     /// <summary>
     /// Function: BreakBottomLeftBolt
     /// </summary>
     public unsafe virtual void BreakBottomLeftBolt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakBottomLeftBolt, "BmGame.RRemoveableGrate.BreakBottomLeftBolt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakBottomLeftBolt, "BmGame.RRemoveableGrate.BreakBottomLeftBolt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BreakTopRightBolt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakTopRightBolt;
     /// <summary>
     /// Function: BreakTopRightBolt
     /// </summary>
     public unsafe virtual void BreakTopRightBolt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakTopRightBolt, "BmGame.RRemoveableGrate.BreakTopRightBolt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakTopRightBolt, "BmGame.RRemoveableGrate.BreakTopRightBolt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BreakTopLeftBolt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakTopLeftBolt;
     /// <summary>
     /// Function: BreakTopLeftBolt
     /// </summary>
     public unsafe virtual void BreakTopLeftBolt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakTopLeftBolt, "BmGame.RRemoveableGrate.BreakTopLeftBolt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakTopLeftBolt, "BmGame.RRemoveableGrate.BreakTopLeftBolt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BreakBolt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakBolt;
     /// <summary>
     /// Function: BreakBolt
     /// </summary>
     public unsafe virtual void BreakBolt(BmSDK.BmGame.RRemoveableGrate.EGrateBoltPosition BoltToBreak)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakBolt, "BmGame.RRemoveableGrate.BreakBolt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakBolt, "BmGame.RRemoveableGrate.BreakBolt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoltToBreak, paramsPtr + 0);
@@ -428,14 +428,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RRemoveableGrate.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.RRemoveableGrate.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -443,14 +443,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_LinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LinkToActor;
     /// <summary>
     /// Function: LinkToActor
     /// </summary>
     public unsafe override bool LinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LinkToActor, "BmGame.RRemoveableGrate.LinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LinkToActor, "BmGame.RRemoveableGrate.LinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -458,14 +458,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmGame.RRemoveableGrate.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmGame.RRemoveableGrate.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -473,14 +473,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_IsHarpoonable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHarpoonable;
     /// <summary>
     /// Function: IsHarpoonable
     /// </summary>
     public unsafe virtual bool IsHarpoonable(BmSDK.BmGame.RHarpoonGun HarpoonGun)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHarpoonable, "BmGame.RRemoveableGrate.IsHarpoonable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHarpoonable, "BmGame.RRemoveableGrate.IsHarpoonable", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HarpoonGun, paramsPtr + 0);
@@ -488,14 +488,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetTension;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTension;
     /// <summary>
     /// Function: SetTension
     /// </summary>
     public unsafe virtual void SetTension(BmSDK.Engine.Pawn AttemptingPawn, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTension, "BmGame.RRemoveableGrate.SetTension");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTension, "BmGame.RRemoveableGrate.SetTension", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttemptingPawn, paramsPtr + 0);
@@ -504,14 +504,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_StartRemoveAttempt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartRemoveAttempt;
     /// <summary>
     /// Function: StartRemoveAttempt
     /// </summary>
     public unsafe virtual void StartRemoveAttempt(BmSDK.Engine.Pawn AttemptingPawn, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartRemoveAttempt, "BmGame.RRemoveableGrate.StartRemoveAttempt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartRemoveAttempt, "BmGame.RRemoveableGrate.StartRemoveAttempt", this);
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttemptingPawn, paramsPtr + 0);
@@ -520,14 +520,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_FailedToRemove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FailedToRemove;
     /// <summary>
     /// Function: FailedToRemove
     /// </summary>
     public unsafe virtual void FailedToRemove(BmSDK.Engine.Pawn AttemptingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FailedToRemove, "BmGame.RRemoveableGrate.FailedToRemove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FailedToRemove, "BmGame.RRemoveableGrate.FailedToRemove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttemptingPawn, paramsPtr + 0);
@@ -535,14 +535,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_Remove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Remove;
     /// <summary>
     /// Function: Remove
     /// </summary>
     public unsafe virtual void Remove(BmSDK.Engine.Pawn AttemptingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Remove, "BmGame.RRemoveableGrate.Remove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Remove, "BmGame.RRemoveableGrate.Remove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttemptingPawn, paramsPtr + 0);
@@ -550,14 +550,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyGoPhysicsImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyGoPhysicsImpulse;
     /// <summary>
     /// Function: ApplyGoPhysicsImpulse
     /// </summary>
     public unsafe virtual void ApplyGoPhysicsImpulse(bool Reset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyGoPhysicsImpulse, "BmGame.RRemoveableGrate.ApplyGoPhysicsImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyGoPhysicsImpulse, "BmGame.RRemoveableGrate.ApplyGoPhysicsImpulse", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Reset, paramsPtr + 0);
@@ -565,14 +565,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_HandleGrateImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleGrateImpulse;
     /// <summary>
     /// Function: HandleGrateImpulse
     /// </summary>
     public unsafe virtual void HandleGrateImpulse(System.Numerics.Vector3 Impulse, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleGrateImpulse, "BmGame.RRemoveableGrate.HandleGrateImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleGrateImpulse, "BmGame.RRemoveableGrate.HandleGrateImpulse", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Impulse, paramsPtr + 0);
@@ -581,28 +581,28 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_GoPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoPhysics;
     /// <summary>
     /// Function: GoPhysics
     /// </summary>
     public unsafe virtual void GoPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoPhysics, "BmGame.RRemoveableGrate.GoPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoPhysics, "BmGame.RRemoveableGrate.GoPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActive;
     /// <summary>
     /// Function: IsActive
     /// </summary>
     public unsafe override bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmGame.RRemoveableGrate.IsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActive, "BmGame.RRemoveableGrate.IsActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -610,28 +610,28 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRange;
     /// <summary>
     /// Function: GetRange
     /// </summary>
     public unsafe override float GetRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRange, "BmGame.RRemoveableGrate.GetRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRange, "BmGame.RRemoveableGrate.GetRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroy;
     /// <summary>
     /// Function: OnDestroy
     /// </summary>
     public unsafe override void OnDestroy(BmSDK.Engine.SeqAct_Destroy Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDestroy, "BmGame.RRemoveableGrate.OnDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDestroy, "BmGame.RRemoveableGrate.OnDestroy", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -639,28 +639,28 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RRemoveableGrate.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RRemoveableGrate.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetGrateRBCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetGrateRBCollision;
     /// <summary>
     /// Function: ResetGrateRBCollision
     /// </summary>
     public unsafe virtual void ResetGrateRBCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetGrateRBCollision, "BmGame.RRemoveableGrate.ResetGrateRBCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetGrateRBCollision, "BmGame.RRemoveableGrate.ResetGrateRBCollision", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -674,14 +674,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_Interact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Interact;
     /// <summary>
     /// Function: Interact
     /// </summary>
     public unsafe override void Interact(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmGame.RRemoveableGrate.Interact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Interact, "BmGame.RRemoveableGrate.Interact", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -689,42 +689,42 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetSecondStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSecondStage;
     /// <summary>
     /// Function: SetSecondStage
     /// </summary>
     public unsafe virtual void SetSecondStage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSecondStage, "BmGame.RRemoveableGrate.SetSecondStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSecondStage, "BmGame.RRemoveableGrate.SetSecondStage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetHarpoonOpenGrateMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHarpoonOpenGrateMove;
     /// <summary>
     /// Function: GetHarpoonOpenGrateMove
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSpecialMoveConfig GetHarpoonOpenGrateMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHarpoonOpenGrateMove, "BmGame.RRemoveableGrate.GetHarpoonOpenGrateMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHarpoonOpenGrateMove, "BmGame.RRemoveableGrate.GetHarpoonOpenGrateMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSpecialMoveConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DestroyImpactEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyImpactEffects;
     /// <summary>
     /// Function: DestroyImpactEffects
     /// </summary>
     public unsafe virtual void DestroyImpactEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyImpactEffects, "BmGame.RRemoveableGrate.DestroyImpactEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyImpactEffects, "BmGame.RRemoveableGrate.DestroyImpactEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -738,14 +738,14 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateImpactEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateImpactEffects;
     /// <summary>
     /// Function: UpdateImpactEffects
     /// </summary>
     public unsafe virtual void UpdateImpactEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateImpactEffects, "BmGame.RRemoveableGrate.UpdateImpactEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateImpactEffects, "BmGame.RRemoveableGrate.UpdateImpactEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -759,42 +759,42 @@ public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObje
         return;
     }
 
-    private static BmSDK.Function __fn_GetBatClawImpactSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatClawImpactSound;
     /// <summary>
     /// Function: GetBatClawImpactSound
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetBatClawImpactSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatClawImpactSound, "BmGame.RRemoveableGrate.GetBatClawImpactSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatClawImpactSound, "BmGame.RRemoveableGrate.GetBatClawImpactSound", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkEvent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ARChallengeEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ARChallengeEnded;
     /// <summary>
     /// Function: ARChallengeEnded
     /// </summary>
     public unsafe virtual void ARChallengeEnded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ARChallengeEnded, "BmGame.RRemoveableGrate.ARChallengeEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ARChallengeEnded, "BmGame.RRemoveableGrate.ARChallengeEnded", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ARChallengeStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ARChallengeStarted;
     /// <summary>
     /// Function: ARChallengeStarted
     /// </summary>
     public unsafe virtual void ARChallengeStarted(bool bGratesStartOpen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ARChallengeStarted, "BmGame.RRemoveableGrate.ARChallengeStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ARChallengeStarted, "BmGame.RRemoveableGrate.ARChallengeStarted", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bGratesStartOpen, paramsPtr + 0);

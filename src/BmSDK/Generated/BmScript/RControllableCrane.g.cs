@@ -78,28 +78,28 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RControllableCrane>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsCraneMoving;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCraneMoving;
     /// <summary>
     /// Function: IsCraneMoving
     /// </summary>
     public unsafe virtual bool IsCraneMoving()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCraneMoving, "BmScript.RControllableCrane.IsCraneMoving");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCraneMoving, "BmScript.RControllableCrane.IsCraneMoving", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TurnCraneLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnCraneLeft;
     /// <summary>
     /// Function: TurnCraneLeft
     /// </summary>
     public unsafe virtual void TurnCraneLeft(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnCraneLeft, "BmScript.RControllableCrane.TurnCraneLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnCraneLeft, "BmScript.RControllableCrane.TurnCraneLeft", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_TurnCraneRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnCraneRight;
     /// <summary>
     /// Function: TurnCraneRight
     /// </summary>
     public unsafe virtual void TurnCraneRight(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnCraneRight, "BmScript.RControllableCrane.TurnCraneRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnCraneRight, "BmScript.RControllableCrane.TurnCraneRight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_MoveCraneLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveCraneLeft;
     /// <summary>
     /// Function: MoveCraneLeft
     /// </summary>
     public unsafe virtual void MoveCraneLeft(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveCraneLeft, "BmScript.RControllableCrane.MoveCraneLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveCraneLeft, "BmScript.RControllableCrane.MoveCraneLeft", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_MoveCraneRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveCraneRight;
     /// <summary>
     /// Function: MoveCraneRight
     /// </summary>
     public unsafe virtual void MoveCraneRight(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveCraneRight, "BmScript.RControllableCrane.MoveCraneRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveCraneRight, "BmScript.RControllableCrane.MoveCraneRight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_LowerCrane;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LowerCrane;
     /// <summary>
     /// Function: LowerCrane
     /// </summary>
     public unsafe virtual void LowerCrane(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LowerCrane, "BmScript.RControllableCrane.LowerCrane");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LowerCrane, "BmScript.RControllableCrane.LowerCrane", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -167,14 +167,14 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_RaiseCrane;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RaiseCrane;
     /// <summary>
     /// Function: RaiseCrane
     /// </summary>
     public unsafe virtual void RaiseCrane(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RaiseCrane, "BmScript.RControllableCrane.RaiseCrane");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RaiseCrane, "BmScript.RControllableCrane.RaiseCrane", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -182,42 +182,42 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrentFloorHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentFloorHeight;
     /// <summary>
     /// Function: GetCurrentFloorHeight
     /// </summary>
     public unsafe virtual void GetCurrentFloorHeight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentFloorHeight, "BmScript.RControllableCrane.GetCurrentFloorHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentFloorHeight, "BmScript.RControllableCrane.GetCurrentFloorHeight", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearMatinee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMatinee;
     /// <summary>
     /// Function: ClearMatinee
     /// </summary>
     public unsafe virtual void ClearMatinee()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMatinee, "BmScript.RControllableCrane.ClearMatinee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearMatinee, "BmScript.RControllableCrane.ClearMatinee", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetMatinee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMatinee;
     /// <summary>
     /// Function: SetMatinee
     /// </summary>
     public unsafe virtual void SetMatinee(BmSDK.Engine.SeqAct_Interp M)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMatinee, "BmScript.RControllableCrane.SetMatinee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMatinee, "BmScript.RControllableCrane.SetMatinee", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(M, paramsPtr + 0);
@@ -225,14 +225,14 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RControllableCrane.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RControllableCrane.Tick", this);
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -240,14 +240,14 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggleHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggleHidden;
     /// <summary>
     /// Function: OnToggleHidden
     /// </summary>
     public unsafe override void OnToggleHidden(BmSDK.Engine.SeqAct_ToggleHidden Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggleHidden, "BmScript.RControllableCrane.OnToggleHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggleHidden, "BmScript.RControllableCrane.OnToggleHidden", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -255,28 +255,28 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAudio;
     /// <summary>
     /// Function: UpdateAudio
     /// </summary>
     public unsafe virtual void UpdateAudio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAudio, "BmScript.RControllableCrane.UpdateAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateAudio, "BmScript.RControllableCrane.UpdateAudio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetAttachPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttachPoint;
     /// <summary>
     /// Function: GetAttachPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetAttachPoint(int Index, bool bWorldPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttachPoint, "BmScript.RControllableCrane.GetAttachPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAttachPoint, "BmScript.RControllableCrane.GetAttachPoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -285,42 +285,42 @@ public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmScript.RControllableCrane.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmScript.RControllableCrane.Initialise", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SaveGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveGame;
     /// <summary>
     /// Function: SaveGame
     /// </summary>
     public unsafe virtual void SaveGame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveGame, "BmScript.RControllableCrane.SaveGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveGame, "BmScript.RControllableCrane.SaveGame", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryLoadSaveGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryLoadSaveGame;
     /// <summary>
     /// Function: TryLoadSaveGame
     /// </summary>
     public unsafe virtual void TryLoadSaveGame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryLoadSaveGame, "BmScript.RControllableCrane.TryLoadSaveGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryLoadSaveGame, "BmScript.RControllableCrane.TryLoadSaveGame", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class RBmBatmanCutscene : BmSDK.BmGame.RBMCutsceneBase, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RBmBatmanCutscene>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_InitialiseBatmanCutscene;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseBatmanCutscene;
     /// <summary>
     /// Function: InitialiseBatmanCutscene
     /// </summary>
     public unsafe virtual void InitialiseBatmanCutscene(BmSDK.BmGame.RPlayerController NewCutsceneOwner, BmSDK.BmGame.RPawn NewCutsceneTarget, BmSDK.BmGame.RBmBatmanCutscene.BatmanCutsceneType Type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseBatmanCutscene, "BmGame.RBmBatmanCutscene.InitialiseBatmanCutscene");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseBatmanCutscene, "BmGame.RBmBatmanCutscene.InitialiseBatmanCutscene", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCutsceneOwner, paramsPtr + 0);

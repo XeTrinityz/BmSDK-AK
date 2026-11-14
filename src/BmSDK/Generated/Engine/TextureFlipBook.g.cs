@@ -78,14 +78,14 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<TextureFlipBook>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetCurrentFrame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentFrame;
     /// <summary>
     /// Function: SetCurrentFrame
     /// </summary>
     public unsafe virtual void SetCurrentFrame(int Row, int Col)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentFrame, "Engine.TextureFlipBook.SetCurrentFrame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCurrentFrame, "Engine.TextureFlipBook.SetCurrentFrame", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Row, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe virtual void Stop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "Engine.TextureFlipBook.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "Engine.TextureFlipBook.Stop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -122,14 +122,14 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Pause;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Pause;
     /// <summary>
     /// Function: Pause
     /// </summary>
     public unsafe virtual void Pause()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Pause, "Engine.TextureFlipBook.Pause");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Pause, "Engine.TextureFlipBook.Pause", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -143,14 +143,14 @@ public partial class TextureFlipBook : BmSDK.Engine.Texture2D, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Play;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Play;
     /// <summary>
     /// Function: Play
     /// </summary>
     public unsafe virtual void Play()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Play, "Engine.TextureFlipBook.Play");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Play, "Engine.TextureFlipBook.Play", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

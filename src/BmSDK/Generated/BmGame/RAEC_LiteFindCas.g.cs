@@ -78,28 +78,28 @@ public partial class RAEC_LiteFindCas : BmSDK.BmGame.RAlertEventCoordinatorSolo,
         where TComponent : class, Framework.IScriptComponent<RAEC_LiteFindCas>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayDiscoverBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayDiscoverBark;
     /// <summary>
     /// Function: PlayDiscoverBark
     /// </summary>
     public unsafe virtual void PlayDiscoverBark()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayDiscoverBark, "BmGame.RAEC_LiteFindCas.PlayDiscoverBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayDiscoverBark, "BmGame.RAEC_LiteFindCas.PlayDiscoverBark", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCas;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCas;
     /// <summary>
     /// Function: SetCas
     /// </summary>
     public unsafe virtual void SetCas(BmSDK.BmGame.RPawnVillain NewCas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCas, "BmGame.RAEC_LiteFindCas.SetCas");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCas, "BmGame.RAEC_LiteFindCas.SetCas", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCas, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RAEC_LiteFindCas : BmSDK.BmGame.RAlertEventCoordinatorSolo,
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.RAEC_LiteFindCas.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.RAEC_LiteFindCas.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RAEC_LiteFindCas : BmSDK.BmGame.RAlertEventCoordinatorSolo,
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_LiteFindCas.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_LiteFindCas.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

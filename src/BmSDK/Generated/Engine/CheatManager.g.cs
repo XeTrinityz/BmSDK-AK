@@ -78,14 +78,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<CheatManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnRequestComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRequestComplete;
     /// <summary>
     /// Function: OnRequestComplete
     /// </summary>
     public unsafe virtual void OnRequestComplete(BmSDK.Engine.HttpRequestInterface OriginalRequest, BmSDK.Engine.HttpResponseInterface Response, bool bDidSucceed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRequestComplete, "Engine.CheatManager.OnRequestComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRequestComplete, "Engine.CheatManager.OnRequestComplete", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OriginalRequest, paramsPtr + 0);
@@ -95,21 +95,24 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TestHttp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TestHttp;
     /// <summary>
     /// Function: TestHttp
     /// </summary>
-    public unsafe virtual void TestHttp(BmSDK.FString Verb, BmSDK.FString Payload, BmSDK.FString URL, bool bSendParallelRequest = default)
+    public unsafe virtual void TestHttp(BmSDK.FStringArg Verb, BmSDK.FStringArg Payload, BmSDK.FStringArg URL, bool bSendParallelRequest = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TestHttp, "Engine.CheatManager.TestHttp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TestHttp, "Engine.CheatManager.TestHttp", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Verb, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Payload, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(URL, paramsPtr + 32);
+        Verb.WriteTo(paramsPtr + 0);
+        Payload.WriteTo(paramsPtr + 16);
+        URL.WriteTo(paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSendParallelRequest, paramsPtr + 48);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return;
     }
 
@@ -117,32 +120,36 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: OnDeleteUserFileComplete
     /// </summary>
-    public unsafe void OnDeleteUserFileComplete(bool bWasSuccessful, BmSDK.FString UserId, BmSDK.FString Filename)
+    public unsafe void OnDeleteUserFileComplete(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeleteUserFileComplete, "Engine.CheatManager.OnDeleteUserFileComplete");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 20);
+        UserId.WriteTo(paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugDeleteUserFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDeleteUserFile;
     /// <summary>
     /// Function: DebugDeleteUserFile
     /// </summary>
-    public unsafe virtual void DebugDeleteUserFile(BmSDK.FString UserId, BmSDK.FString Filename)
+    public unsafe virtual void DebugDeleteUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugDeleteUserFile, "Engine.CheatManager.DebugDeleteUserFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugDeleteUserFile, "Engine.CheatManager.DebugDeleteUserFile", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 16);
+        UserId.WriteTo(paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
@@ -150,32 +157,36 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: OnReadUserFileComplete
     /// </summary>
-    public unsafe void OnReadUserFileComplete(bool bWasSuccessful, BmSDK.FString UserId, BmSDK.FString Filename)
+    public unsafe void OnReadUserFileComplete(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReadUserFileComplete, "Engine.CheatManager.OnReadUserFileComplete");
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 20);
+        UserId.WriteTo(paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugReadUserFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugReadUserFile;
     /// <summary>
     /// Function: DebugReadUserFile
     /// </summary>
-    public unsafe virtual void DebugReadUserFile(BmSDK.FString UserId, BmSDK.FString Filename)
+    public unsafe virtual void DebugReadUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugReadUserFile, "Engine.CheatManager.DebugReadUserFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugReadUserFile, "Engine.CheatManager.DebugReadUserFile", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 16);
+        UserId.WriteTo(paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
@@ -183,32 +194,36 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: OnWriteUserFileComplete
     /// </summary>
-    public unsafe void OnWriteUserFileComplete(bool bWasSuccessful, BmSDK.FString UserId, BmSDK.FString Filename)
+    public unsafe void OnWriteUserFileComplete(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnWriteUserFileComplete, "Engine.CheatManager.OnWriteUserFileComplete");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 20);
+        UserId.WriteTo(paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugWriteUserFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugWriteUserFile;
     /// <summary>
     /// Function: DebugWriteUserFile
     /// </summary>
-    public unsafe virtual void DebugWriteUserFile(BmSDK.FString UserId, BmSDK.FString Filename)
+    public unsafe virtual void DebugWriteUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugWriteUserFile, "Engine.CheatManager.DebugWriteUserFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugWriteUserFile, "Engine.CheatManager.DebugWriteUserFile", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 16);
+        UserId.WriteTo(paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
@@ -216,30 +231,32 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: OnEnumerateUserFilesComplete
     /// </summary>
-    public unsafe void OnEnumerateUserFilesComplete(bool bWasSuccessful, BmSDK.FString UserId)
+    public unsafe void OnEnumerateUserFilesComplete(bool bWasSuccessful, BmSDK.FStringArg UserId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEnumerateUserFilesComplete, "Engine.CheatManager.OnEnumerateUserFilesComplete");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 4);
+        UserId.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugQueryUserFiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugQueryUserFiles;
     /// <summary>
     /// Function: DebugQueryUserFiles
     /// </summary>
-    public unsafe virtual void DebugQueryUserFiles(BmSDK.FString UserId)
+    public unsafe virtual void DebugQueryUserFiles(BmSDK.FStringArg UserId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugQueryUserFiles, "Engine.CheatManager.DebugQueryUserFiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugQueryUserFiles, "Engine.CheatManager.DebugQueryUserFiles", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(UserId, paramsPtr + 0);
+        UserId.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -259,30 +276,31 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DebugNotification;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugNotification;
     /// <summary>
     /// Function: DebugNotification
     /// </summary>
-    public unsafe virtual void DebugNotification(BmSDK.FString MessageBody, int SecondsFromNow)
+    public unsafe virtual void DebugNotification(BmSDK.FStringArg MessageBody, int SecondsFromNow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugNotification, "Engine.CheatManager.DebugNotification");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugNotification, "Engine.CheatManager.DebugNotification", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MessageBody, paramsPtr + 0);
+        MessageBody.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SecondsFromNow, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawLocationXYZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawLocationXYZ;
     /// <summary>
     /// Function: DrawLocationXYZ
     /// </summary>
     public unsafe virtual void DrawLocationXYZ(float X, float Y, float Z)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawLocationXYZ, "Engine.CheatManager.DrawLocationXYZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawLocationXYZ, "Engine.CheatManager.DrawLocationXYZ", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 0);
@@ -292,14 +310,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawLocation;
     /// <summary>
     /// Function: DrawLocation
     /// </summary>
     public unsafe virtual void DrawLocation(System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawLocation, "Engine.CheatManager.DrawLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawLocation, "Engine.CheatManager.DrawLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -307,14 +325,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TelemetryTogglePause;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TelemetryTogglePause;
     /// <summary>
     /// Function: TelemetryTogglePause
     /// </summary>
     public unsafe virtual void TelemetryTogglePause()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TelemetryTogglePause, "Engine.CheatManager.TelemetryTogglePause");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TelemetryTogglePause, "Engine.CheatManager.TelemetryTogglePause", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -328,14 +346,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DumpCoverStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpCoverStats;
     /// <summary>
     /// Function: DumpCoverStats
     /// </summary>
     public unsafe virtual void DumpCoverStats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpCoverStats, "Engine.CheatManager.DumpCoverStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpCoverStats, "Engine.CheatManager.DumpCoverStats", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -349,153 +367,158 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DebugEmsDownload;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugEmsDownload;
     /// <summary>
     /// Function: DebugEmsDownload
     /// </summary>
     public unsafe virtual void DebugEmsDownload()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugEmsDownload, "Engine.CheatManager.DebugEmsDownload");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugEmsDownload, "Engine.CheatManager.DebugEmsDownload", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugDeleteTitleFiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDeleteTitleFiles;
     /// <summary>
     /// Function: DebugDeleteTitleFiles
     /// </summary>
     public unsafe virtual void DebugDeleteTitleFiles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugDeleteTitleFiles, "Engine.CheatManager.DebugDeleteTitleFiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugDeleteTitleFiles, "Engine.CheatManager.DebugDeleteTitleFiles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnSaveComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSaveComplete;
     /// <summary>
     /// Function: OnSaveComplete
     /// </summary>
-    public unsafe virtual void OnSaveComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken)
+    public unsafe virtual void OnSaveComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSaveComplete, "Engine.CheatManager.OnSaveComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSaveComplete, "Engine.CheatManager.OnSaveComplete", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bytesTransferred, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugSaveTitleFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugSaveTitleFile;
     /// <summary>
     /// Function: DebugSaveTitleFile
     /// </summary>
-    public unsafe virtual void DebugSaveTitleFile(BmSDK.FString Filename)
+    public unsafe virtual void DebugSaveTitleFile(BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugSaveTitleFile, "Engine.CheatManager.DebugSaveTitleFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugSaveTitleFile, "Engine.CheatManager.DebugSaveTitleFile", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnLoadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnLoadComplete;
     /// <summary>
     /// Function: OnLoadComplete
     /// </summary>
-    public unsafe virtual void OnLoadComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken)
+    public unsafe virtual void OnLoadComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLoadComplete, "Engine.CheatManager.OnLoadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnLoadComplete, "Engine.CheatManager.OnLoadComplete", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bytesTransferred, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(timeTaken, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_OnDownloadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDownloadComplete;
     /// <summary>
     /// Function: OnDownloadComplete
     /// </summary>
-    public unsafe virtual void OnDownloadComplete(bool bWasSuccessful, BmSDK.FString Filename)
+    public unsafe virtual void OnDownloadComplete(bool bWasSuccessful, BmSDK.FStringArg Filename)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDownloadComplete, "Engine.CheatManager.OnDownloadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDownloadComplete, "Engine.CheatManager.OnDownloadComplete", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 4);
+        Filename.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugDownloadTitleFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugDownloadTitleFile;
     /// <summary>
     /// Function: DebugDownloadTitleFile
     /// </summary>
-    public unsafe virtual void DebugDownloadTitleFile(BmSDK.FString Filename, bool bFromCache = default)
+    public unsafe virtual void DebugDownloadTitleFile(BmSDK.FStringArg Filename, bool bFromCache = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugDownloadTitleFile, "Engine.CheatManager.DebugDownloadTitleFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugDownloadTitleFile, "Engine.CheatManager.DebugDownloadTitleFile", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Filename, paramsPtr + 0);
+        Filename.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFromCache, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugIniLocPatcher;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugIniLocPatcher;
     /// <summary>
     /// Function: DebugIniLocPatcher
     /// </summary>
     public unsafe virtual void DebugIniLocPatcher()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugIniLocPatcher, "Engine.CheatManager.DebugIniLocPatcher");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugIniLocPatcher, "Engine.CheatManager.DebugIniLocPatcher", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleAILogging;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleAILogging;
     /// <summary>
     /// Function: ToggleAILogging
     /// </summary>
     public unsafe virtual void ToggleAILogging()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleAILogging, "Engine.CheatManager.ToggleAILogging");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleAILogging, "Engine.CheatManager.ToggleAILogging", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VerifyNavMeshCoverRefs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyNavMeshCoverRefs;
     /// <summary>
     /// Function: VerifyNavMeshCoverRefs
     /// </summary>
     public unsafe virtual void VerifyNavMeshCoverRefs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VerifyNavMeshCoverRefs, "Engine.CheatManager.VerifyNavMeshCoverRefs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VerifyNavMeshCoverRefs, "Engine.CheatManager.VerifyNavMeshCoverRefs", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -509,14 +532,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PrintNavMeshObstacles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrintNavMeshObstacles;
     /// <summary>
     /// Function: PrintNavMeshObstacles
     /// </summary>
     public unsafe virtual void PrintNavMeshObstacles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrintNavMeshObstacles, "Engine.CheatManager.PrintNavMeshObstacles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrintNavMeshObstacles, "Engine.CheatManager.PrintNavMeshObstacles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -530,14 +553,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PrintAllPathObjectEdges;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrintAllPathObjectEdges;
     /// <summary>
     /// Function: PrintAllPathObjectEdges
     /// </summary>
     public unsafe virtual void PrintAllPathObjectEdges()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrintAllPathObjectEdges, "Engine.CheatManager.PrintAllPathObjectEdges");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrintAllPathObjectEdges, "Engine.CheatManager.PrintAllPathObjectEdges", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -551,14 +574,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NavMeshVerification;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavMeshVerification;
     /// <summary>
     /// Function: NavMeshVerification
     /// </summary>
     public unsafe virtual void NavMeshVerification(float interval = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavMeshVerification, "Engine.CheatManager.NavMeshVerification");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavMeshVerification, "Engine.CheatManager.NavMeshVerification", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(interval, paramsPtr + 0);
@@ -566,17 +589,17 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawUnsupportingEdges;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawUnsupportingEdges;
     /// <summary>
     /// Function: DrawUnsupportingEdges
     /// </summary>
-    public unsafe virtual void DrawUnsupportingEdges(BmSDK.FString PawnClassName)
+    public unsafe virtual void DrawUnsupportingEdges(BmSDK.FStringArg PawnClassName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawUnsupportingEdges, "Engine.CheatManager.DrawUnsupportingEdges");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawUnsupportingEdges, "Engine.CheatManager.DrawUnsupportingEdges", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnClassName, paramsPtr + 0);
+        PawnClassName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -585,17 +608,18 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VerifyNavMeshObjects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyNavMeshObjects;
     /// <summary>
     /// Function: VerifyNavMeshObjects
     /// </summary>
     public unsafe virtual void VerifyNavMeshObjects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VerifyNavMeshObjects, "Engine.CheatManager.VerifyNavMeshObjects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VerifyNavMeshObjects, "Engine.CheatManager.VerifyNavMeshObjects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -609,14 +633,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LogParticleActivateSystemCalls;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogParticleActivateSystemCalls;
     /// <summary>
     /// Function: LogParticleActivateSystemCalls
     /// </summary>
     public unsafe virtual void LogParticleActivateSystemCalls(bool bShouldLog)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogParticleActivateSystemCalls, "Engine.CheatManager.LogParticleActivateSystemCalls");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogParticleActivateSystemCalls, "Engine.CheatManager.LogParticleActivateSystemCalls", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldLog, paramsPtr + 0);
@@ -631,14 +655,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlaySoundCalls;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlaySoundCalls;
     /// <summary>
     /// Function: LogPlaySoundCalls
     /// </summary>
     public unsafe virtual void LogPlaySoundCalls(bool bShouldLog)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlaySoundCalls, "Engine.CheatManager.LogPlaySoundCalls");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlaySoundCalls, "Engine.CheatManager.LogPlaySoundCalls", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldLog, paramsPtr + 0);
@@ -653,42 +677,42 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InitCheatManager;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitCheatManager;
     /// <summary>
     /// Function: InitCheatManager
     /// </summary>
     public unsafe virtual void InitCheatManager()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitCheatManager, "Engine.CheatManager.InitCheatManager");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitCheatManager, "Engine.CheatManager.InitCheatManager", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TestPylonConnectivity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TestPylonConnectivity;
     /// <summary>
     /// Function: TestPylonConnectivity
     /// </summary>
     public unsafe virtual void TestPylonConnectivity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TestPylonConnectivity, "Engine.CheatManager.TestPylonConnectivity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TestPylonConnectivity, "Engine.CheatManager.TestPylonConnectivity", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CE;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CE;
     /// <summary>
     /// Function: CE
     /// </summary>
     public unsafe virtual void CE(BmSDK.FName EventName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CE, "Engine.CheatManager.CE");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CE, "Engine.CheatManager.CE", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
@@ -696,14 +720,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CauseEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CauseEvent;
     /// <summary>
     /// Function: CauseEvent
     /// </summary>
     public unsafe virtual void CauseEvent(BmSDK.FName EventName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CauseEvent, "Engine.CheatManager.CauseEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CauseEvent, "Engine.CheatManager.CauseEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
@@ -711,14 +735,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Online;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Online;
     /// <summary>
     /// Function: Online
     /// </summary>
     public unsafe virtual void Online(int Command, int Parameter = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Online, "Engine.CheatManager.Online");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Online, "Engine.CheatManager.Online", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Command, paramsPtr + 0);
@@ -727,14 +751,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetOnlineDebugLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOnlineDebugLevel;
     /// <summary>
     /// Function: SetOnlineDebugLevel
     /// </summary>
     public unsafe virtual void SetOnlineDebugLevel(int DebugLevel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOnlineDebugLevel, "Engine.CheatManager.SetOnlineDebugLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOnlineDebugLevel, "Engine.CheatManager.SetOnlineDebugLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DebugLevel, paramsPtr + 0);
@@ -742,42 +766,42 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TestLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TestLevel;
     /// <summary>
     /// Function: TestLevel
     /// </summary>
     public unsafe virtual void TestLevel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TestLevel, "Engine.CheatManager.TestLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TestLevel, "Engine.CheatManager.TestLevel", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableDebugCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableDebugCamera;
     /// <summary>
     /// Function: EnableDebugCamera
     /// </summary>
     public unsafe virtual void EnableDebugCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableDebugCamera, "Engine.CheatManager.EnableDebugCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableDebugCamera, "Engine.CheatManager.EnableDebugCamera", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleDebugCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleDebugCamera;
     /// <summary>
     /// Function: ToggleDebugCamera
     /// </summary>
     public unsafe virtual void ToggleDebugCamera(bool bDestroy = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleDebugCamera, "Engine.CheatManager.ToggleDebugCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleDebugCamera, "Engine.CheatManager.ToggleDebugCamera", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDestroy, paramsPtr + 0);
@@ -785,14 +809,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StreamLevelOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StreamLevelOut;
     /// <summary>
     /// Function: StreamLevelOut
     /// </summary>
     public unsafe virtual void StreamLevelOut(BmSDK.FName PackageName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StreamLevelOut, "Engine.CheatManager.StreamLevelOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StreamLevelOut, "Engine.CheatManager.StreamLevelOut", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PackageName, paramsPtr + 0);
@@ -800,14 +824,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnlyLoadLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnlyLoadLevel;
     /// <summary>
     /// Function: OnlyLoadLevel
     /// </summary>
     public unsafe virtual void OnlyLoadLevel(BmSDK.FName PackageName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnlyLoadLevel, "Engine.CheatManager.OnlyLoadLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnlyLoadLevel, "Engine.CheatManager.OnlyLoadLevel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PackageName, paramsPtr + 0);
@@ -815,14 +839,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StreamLevelIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StreamLevelIn;
     /// <summary>
     /// Function: StreamLevelIn
     /// </summary>
     public unsafe virtual void StreamLevelIn(BmSDK.FName PackageName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StreamLevelIn, "Engine.CheatManager.StreamLevelIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StreamLevelIn, "Engine.CheatManager.StreamLevelIn", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PackageName, paramsPtr + 0);
@@ -830,14 +854,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetLevelStreamingStatus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLevelStreamingStatus;
     /// <summary>
     /// Function: SetLevelStreamingStatus
     /// </summary>
     public unsafe virtual void SetLevelStreamingStatus(BmSDK.FName PackageName, bool bShouldBeLoaded, bool bShouldBeVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLevelStreamingStatus, "Engine.CheatManager.SetLevelStreamingStatus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLevelStreamingStatus, "Engine.CheatManager.SetLevelStreamingStatus", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PackageName, paramsPtr + 0);
@@ -847,28 +871,28 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AllWeapons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllWeapons;
     /// <summary>
     /// Function: AllWeapons
     /// </summary>
     public unsafe virtual void AllWeapons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllWeapons, "Engine.CheatManager.AllWeapons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllWeapons, "Engine.CheatManager.AllWeapons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ViewActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ViewActor;
     /// <summary>
     /// Function: ViewActor
     /// </summary>
     public unsafe virtual void ViewActor(BmSDK.FName ActorName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ViewActor, "Engine.CheatManager.ViewActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ViewActor, "Engine.CheatManager.ViewActor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ActorName, paramsPtr + 0);
@@ -876,29 +900,30 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ViewPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ViewPlayer;
     /// <summary>
     /// Function: ViewPlayer
     /// </summary>
-    public unsafe virtual void ViewPlayer(BmSDK.FString S)
+    public unsafe virtual void ViewPlayer(BmSDK.FStringArg S)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ViewPlayer, "Engine.CheatManager.ViewPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ViewPlayer, "Engine.CheatManager.ViewPlayer", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(S, paramsPtr + 0);
+        S.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ViewSelf;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ViewSelf;
     /// <summary>
     /// Function: ViewSelf
     /// </summary>
     public unsafe virtual void ViewSelf(bool bQuiet = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ViewSelf, "Engine.CheatManager.ViewSelf");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ViewSelf, "Engine.CheatManager.ViewSelf", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bQuiet, paramsPtr + 0);
@@ -906,56 +931,56 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RememberSpot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RememberSpot;
     /// <summary>
     /// Function: RememberSpot
     /// </summary>
     public unsafe virtual void RememberSpot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RememberSpot, "Engine.CheatManager.RememberSpot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RememberSpot, "Engine.CheatManager.RememberSpot", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FractureAllMeshesToMaximizeMemoryUsage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FractureAllMeshesToMaximizeMemoryUsage;
     /// <summary>
     /// Function: FractureAllMeshesToMaximizeMemoryUsage
     /// </summary>
     public unsafe virtual void FractureAllMeshesToMaximizeMemoryUsage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FractureAllMeshesToMaximizeMemoryUsage, "Engine.CheatManager.FractureAllMeshesToMaximizeMemoryUsage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FractureAllMeshesToMaximizeMemoryUsage, "Engine.CheatManager.FractureAllMeshesToMaximizeMemoryUsage", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FractureAllMeshes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FractureAllMeshes;
     /// <summary>
     /// Function: FractureAllMeshes
     /// </summary>
     public unsafe virtual void FractureAllMeshes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FractureAllMeshes, "Engine.CheatManager.FractureAllMeshes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FractureAllMeshes, "Engine.CheatManager.FractureAllMeshes", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyFractures;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyFractures;
     /// <summary>
     /// Function: DestroyFractures
     /// </summary>
     public unsafe virtual void DestroyFractures(float Radius = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyFractures, "Engine.CheatManager.DestroyFractures");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyFractures, "Engine.CheatManager.DestroyFractures", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Radius, paramsPtr + 0);
@@ -963,86 +988,88 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SuspendAI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuspendAI;
     /// <summary>
     /// Function: SuspendAI
     /// </summary>
     public unsafe virtual void SuspendAI()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuspendAI, "Engine.CheatManager.SuspendAI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuspendAI, "Engine.CheatManager.SuspendAI", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayersOnly;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayersOnly;
     /// <summary>
     /// Function: PlayersOnly
     /// </summary>
     public unsafe virtual void PlayersOnly()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayersOnly, "Engine.CheatManager.PlayersOnly");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayersOnly, "Engine.CheatManager.PlayersOnly", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GiveWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GiveWeapon;
     /// <summary>
     /// Function: GiveWeapon
     /// </summary>
-    public unsafe virtual BmSDK.Engine.Weapon GiveWeapon(BmSDK.FString WeaponClassStr)
+    public unsafe virtual BmSDK.Engine.Weapon GiveWeapon(BmSDK.FStringArg WeaponClassStr)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GiveWeapon, "Engine.CheatManager.GiveWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GiveWeapon, "Engine.CheatManager.GiveWeapon", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(WeaponClassStr, paramsPtr + 0);
+        WeaponClassStr.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Weapon>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_Summon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Summon;
     /// <summary>
     /// Function: Summon
     /// </summary>
-    public unsafe virtual void Summon(BmSDK.FString ClassName)
+    public unsafe virtual void Summon(BmSDK.FStringArg ClassName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Summon, "Engine.CheatManager.Summon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Summon, "Engine.CheatManager.Summon", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ClassName, paramsPtr + 0);
+        ClassName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KillPawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillPawns;
     /// <summary>
     /// Function: KillPawns
     /// </summary>
     public unsafe virtual void KillPawns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillPawns, "Engine.CheatManager.KillPawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillPawns, "Engine.CheatManager.KillPawns", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KillAllPawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillAllPawns;
     /// <summary>
     /// Function: KillAllPawns
     /// </summary>
     public unsafe virtual void KillAllPawns(BmSDK.Class aClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillAllPawns, "Engine.CheatManager.KillAllPawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillAllPawns, "Engine.CheatManager.KillAllPawns", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(aClass, paramsPtr + 0);
@@ -1050,14 +1077,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_KillAll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillAll;
     /// <summary>
     /// Function: KillAll
     /// </summary>
     public unsafe virtual void KillAll(BmSDK.Class aClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillAll, "Engine.CheatManager.KillAll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillAll, "Engine.CheatManager.KillAll", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(aClass, paramsPtr + 0);
@@ -1065,14 +1092,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpeed;
     /// <summary>
     /// Function: SetSpeed
     /// </summary>
     public unsafe virtual void SetSpeed(float F)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpeed, "Engine.CheatManager.SetSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSpeed, "Engine.CheatManager.SetSpeed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(F, paramsPtr + 0);
@@ -1080,14 +1107,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetGravity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGravity;
     /// <summary>
     /// Function: SetGravity
     /// </summary>
     public unsafe virtual void SetGravity(float F)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGravity, "Engine.CheatManager.SetGravity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGravity, "Engine.CheatManager.SetGravity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(F, paramsPtr + 0);
@@ -1095,14 +1122,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetJumpZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetJumpZ;
     /// <summary>
     /// Function: SetJumpZ
     /// </summary>
     public unsafe virtual void SetJumpZ(float F)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetJumpZ, "Engine.CheatManager.SetJumpZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetJumpZ, "Engine.CheatManager.SetJumpZ", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(F, paramsPtr + 0);
@@ -1110,14 +1137,14 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Slomo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Slomo;
     /// <summary>
     /// Function: Slomo
     /// </summary>
     public unsafe virtual void Slomo(float T)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Slomo, "Engine.CheatManager.Slomo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Slomo, "Engine.CheatManager.Slomo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(T, paramsPtr + 0);
@@ -1125,112 +1152,112 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_God;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_God;
     /// <summary>
     /// Function: God
     /// </summary>
     public unsafe virtual void God()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_God, "Engine.CheatManager.God");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_God, "Engine.CheatManager.God", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllAmmo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllAmmo;
     /// <summary>
     /// Function: AllAmmo
     /// </summary>
     public unsafe virtual void AllAmmo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllAmmo, "Engine.CheatManager.AllAmmo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllAmmo, "Engine.CheatManager.AllAmmo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Ghost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Ghost;
     /// <summary>
     /// Function: Ghost
     /// </summary>
     public unsafe virtual void Ghost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Ghost, "Engine.CheatManager.Ghost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Ghost, "Engine.CheatManager.Ghost", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Walk;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Walk;
     /// <summary>
     /// Function: Walk
     /// </summary>
     public unsafe virtual void Walk()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Walk, "Engine.CheatManager.Walk");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Walk, "Engine.CheatManager.Walk", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Fly;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Fly;
     /// <summary>
     /// Function: Fly
     /// </summary>
     public unsafe virtual void Fly()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Fly, "Engine.CheatManager.Fly");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Fly, "Engine.CheatManager.Fly", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Amphibious;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Amphibious;
     /// <summary>
     /// Function: Amphibious
     /// </summary>
     public unsafe virtual void Amphibious()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Amphibious, "Engine.CheatManager.Amphibious");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Amphibious, "Engine.CheatManager.Amphibious", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndPath;
     /// <summary>
     /// Function: EndPath
     /// </summary>
     public unsafe virtual void EndPath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndPath, "Engine.CheatManager.EndPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndPath, "Engine.CheatManager.EndPath", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeSize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeSize;
     /// <summary>
     /// Function: ChangeSize
     /// </summary>
     public unsafe virtual void ChangeSize(float F)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeSize, "Engine.CheatManager.ChangeSize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeSize, "Engine.CheatManager.ChangeSize", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(F, paramsPtr + 0);
@@ -1238,57 +1265,58 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Teleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Teleport;
     /// <summary>
     /// Function: Teleport
     /// </summary>
     public unsafe virtual void Teleport()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Teleport, "Engine.CheatManager.Teleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Teleport, "Engine.CheatManager.Teleport", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KillViewedActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillViewedActor;
     /// <summary>
     /// Function: KillViewedActor
     /// </summary>
     public unsafe virtual void KillViewedActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillViewedActor, "Engine.CheatManager.KillViewedActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillViewedActor, "Engine.CheatManager.KillViewedActor", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WriteToLog;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteToLog;
     /// <summary>
     /// Function: WriteToLog
     /// </summary>
-    public unsafe virtual void WriteToLog(BmSDK.FString Param)
+    public unsafe virtual void WriteToLog(BmSDK.FStringArg Param)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WriteToLog, "Engine.CheatManager.WriteToLog");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WriteToLog, "Engine.CheatManager.WriteToLog", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Param, paramsPtr + 0);
+        Param.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FreezeFrame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreezeFrame;
     /// <summary>
     /// Function: FreezeFrame
     /// </summary>
     public unsafe virtual void FreezeFrame(float Delay)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreezeFrame, "Engine.CheatManager.FreezeFrame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreezeFrame, "Engine.CheatManager.FreezeFrame", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Delay, paramsPtr + 0);
@@ -1296,42 +1324,42 @@ public partial class CheatManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ListDynamicActors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ListDynamicActors;
     /// <summary>
     /// Function: ListDynamicActors
     /// </summary>
     public unsafe virtual void ListDynamicActors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ListDynamicActors, "Engine.CheatManager.ListDynamicActors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ListDynamicActors, "Engine.CheatManager.ListDynamicActors", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugPause;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugPause;
     /// <summary>
     /// Function: DebugPause
     /// </summary>
     public unsafe virtual void DebugPause()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugPause, "Engine.CheatManager.DebugPause");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugPause, "Engine.CheatManager.DebugPause", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DebugAI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugAI;
     /// <summary>
     /// Function: DebugAI
     /// </summary>
     public unsafe virtual void DebugAI(BmSDK.FName Category = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugAI, "Engine.CheatManager.DebugAI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugAI, "Engine.CheatManager.DebugAI", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Category, paramsPtr + 0);

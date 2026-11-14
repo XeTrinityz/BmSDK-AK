@@ -78,14 +78,14 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         where TComponent : class, Framework.IScriptComponent<RStealthTakedownStage_ChainTakedown_Base>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetTunnelGrateNextStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTunnelGrateNextStage;
     /// <summary>
     /// Function: SetTunnelGrateNextStage
     /// </summary>
     public unsafe override void SetTunnelGrateNextStage(BmSDK.BmGame.RStealthTakeDownStage NextStageObject)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTunnelGrateNextStage, "BmGame.RStealthTakedownStage_ChainTakedown_Base.SetTunnelGrateNextStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTunnelGrateNextStage, "BmGame.RStealthTakedownStage_ChainTakedown_Base.SetTunnelGrateNextStage", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextStageObject, paramsPtr + 0);
@@ -93,56 +93,56 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_DropOrBreakThugWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DropOrBreakThugWeapon;
     /// <summary>
     /// Function: DropOrBreakThugWeapon
     /// </summary>
     public unsafe override void DropOrBreakThugWeapon()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropOrBreakThugWeapon, "BmGame.RStealthTakedownStage_ChainTakedown_Base.DropOrBreakThugWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DropOrBreakThugWeapon, "BmGame.RStealthTakedownStage_ChainTakedown_Base.DropOrBreakThugWeapon", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopOverlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopOverlay;
     /// <summary>
     /// Function: StopOverlay
     /// </summary>
     public unsafe virtual void StopOverlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopOverlay, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StopOverlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopOverlay, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StopOverlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartFearTakedownFinaleCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFearTakedownFinaleCamera;
     /// <summary>
     /// Function: StartFearTakedownFinaleCamera
     /// </summary>
     public unsafe virtual void StartFearTakedownFinaleCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFearTakedownFinaleCamera, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StartFearTakedownFinaleCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFearTakedownFinaleCamera, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StartFearTakedownFinaleCamera", this);
         byte* paramsPtr = stackalloc byte[196];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_End;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_End;
     /// <summary>
     /// Function: End
     /// </summary>
     public unsafe override void End(bool bLastStage = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_End, "BmGame.RStealthTakedownStage_ChainTakedown_Base.End");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_End, "BmGame.RStealthTakedownStage_ChainTakedown_Base.End", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bLastStage, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RStealthTakedownStage_ChainTakedown_Base.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RStealthTakedownStage_ChainTakedown_Base.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -166,28 +166,28 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_GetAimingConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAimingConfig;
     /// <summary>
     /// Function: GetAimingConfig
     /// </summary>
     public unsafe override BmSDK.Engine.RAimingConfig GetAimingConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAimingConfig, "BmGame.RStealthTakedownStage_ChainTakedown_Base.GetAimingConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAimingConfig, "BmGame.RStealthTakedownStage_ChainTakedown_Base.GetAimingConfig", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAimingConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RStealthTakedownStage_ChainTakedown_Base.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RStealthTakedownStage_ChainTakedown_Base.Tick", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -195,28 +195,28 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_DisableLinearDampingOnRagdoll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableLinearDampingOnRagdoll;
     /// <summary>
     /// Function: DisableLinearDampingOnRagdoll
     /// </summary>
     public unsafe virtual void DisableLinearDampingOnRagdoll()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableLinearDampingOnRagdoll, "BmGame.RStealthTakedownStage_ChainTakedown_Base.DisableLinearDampingOnRagdoll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableLinearDampingOnRagdoll, "BmGame.RStealthTakedownStage_ChainTakedown_Base.DisableLinearDampingOnRagdoll", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldUseRagdollDamping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldUseRagdollDamping;
     /// <summary>
     /// Function: ShouldUseRagdollDamping
     /// </summary>
     public unsafe override bool ShouldUseRagdollDamping(BmSDK.BmGame.RPawnVillain TheVictim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldUseRagdollDamping, "BmGame.RStealthTakedownStage_ChainTakedown_Base.ShouldUseRagdollDamping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldUseRagdollDamping, "BmGame.RStealthTakedownStage_ChainTakedown_Base.ShouldUseRagdollDamping", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheVictim, paramsPtr + 0);
@@ -224,28 +224,28 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CheckVoiceSynthToTripleFearTakedownChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckVoiceSynthToTripleFearTakedownChallenge;
     /// <summary>
     /// Function: CheckVoiceSynthToTripleFearTakedownChallenge
     /// </summary>
     public unsafe virtual void CheckVoiceSynthToTripleFearTakedownChallenge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckVoiceSynthToTripleFearTakedownChallenge, "BmGame.RStealthTakedownStage_ChainTakedown_Base.CheckVoiceSynthToTripleFearTakedownChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckVoiceSynthToTripleFearTakedownChallenge, "BmGame.RStealthTakedownStage_ChainTakedown_Base.CheckVoiceSynthToTripleFearTakedownChallenge", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterTakedownVictim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterTakedownVictim;
     /// <summary>
     /// Function: RegisterTakedownVictim
     /// </summary>
     public unsafe virtual void RegisterTakedownVictim(BmSDK.BmGame.RPawnVillain inVictim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterTakedownVictim, "BmGame.RStealthTakedownStage_ChainTakedown_Base.RegisterTakedownVictim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterTakedownVictim, "BmGame.RStealthTakedownStage_ChainTakedown_Base.RegisterTakedownVictim", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inVictim, paramsPtr + 0);
@@ -253,14 +253,14 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_FinishAttackVictim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishAttackVictim;
     /// <summary>
     /// Function: FinishAttackVictim
     /// </summary>
     public unsafe override bool FinishAttackVictim(int iVictimNumber)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishAttackVictim, "BmGame.RStealthTakedownStage_ChainTakedown_Base.FinishAttackVictim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishAttackVictim, "BmGame.RStealthTakedownStage_ChainTakedown_Base.FinishAttackVictim", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iVictimNumber, paramsPtr + 0);
@@ -268,98 +268,98 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ChainTakedownPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChainTakedownPressed;
     /// <summary>
     /// Function: ChainTakedownPressed
     /// </summary>
     public unsafe virtual bool ChainTakedownPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChainTakedownPressed, "BmGame.RStealthTakedownStage_ChainTakedown_Base.ChainTakedownPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChainTakedownPressed, "BmGame.RStealthTakedownStage_ChainTakedown_Base.ChainTakedownPressed", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_KillLastHitSlomo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillLastHitSlomo;
     /// <summary>
     /// Function: KillLastHitSlomo
     /// </summary>
     public unsafe virtual void KillLastHitSlomo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillLastHitSlomo, "BmGame.RStealthTakedownStage_ChainTakedown_Base.KillLastHitSlomo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillLastHitSlomo, "BmGame.RStealthTakedownStage_ChainTakedown_Base.KillLastHitSlomo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartLastHitSlomo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLastHitSlomo;
     /// <summary>
     /// Function: StartLastHitSlomo
     /// </summary>
     public unsafe virtual void StartLastHitSlomo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLastHitSlomo, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StartLastHitSlomo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartLastHitSlomo, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StartLastHitSlomo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreSloMoSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreSloMoSound;
     /// <summary>
     /// Function: PreSloMoSound
     /// </summary>
     public unsafe virtual void PreSloMoSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreSloMoSound, "BmGame.RStealthTakedownStage_ChainTakedown_Base.PreSloMoSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreSloMoSound, "BmGame.RStealthTakedownStage_ChainTakedown_Base.PreSloMoSound", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSloMo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSloMo;
     /// <summary>
     /// Function: FinishSloMo
     /// </summary>
     public unsafe virtual void FinishSloMo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSloMo, "BmGame.RStealthTakedownStage_ChainTakedown_Base.FinishSloMo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSloMo, "BmGame.RStealthTakedownStage_ChainTakedown_Base.FinishSloMo", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartSlomoForNextTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSlomoForNextTakedown;
     /// <summary>
     /// Function: StartSlomoForNextTakedown
     /// </summary>
     public unsafe virtual void StartSlomoForNextTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSlomoForNextTakedown, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StartSlomoForNextTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSlomoForNextTakedown, "BmGame.RStealthTakedownStage_ChainTakedown_Base.StartSlomoForNextTakedown", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetReferencePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferencePosition;
     /// <summary>
     /// Function: GetReferencePosition
     /// </summary>
     public unsafe override void GetReferencePosition(out System.Numerics.Vector3 ReferencePosition, out BmSDK.Rotator ReferenceRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePosition, "BmGame.RStealthTakedownStage_ChainTakedown_Base.GetReferencePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReferencePosition, "BmGame.RStealthTakedownStage_ChainTakedown_Base.GetReferencePosition", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ReferencePosition);
@@ -372,56 +372,56 @@ public partial class RStealthTakedownStage_ChainTakedown_Base : BmSDK.BmGame.RSt
         return;
     }
 
-    private static BmSDK.Function __fn_PrepareForFinaleCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrepareForFinaleCamera;
     /// <summary>
     /// Function: PrepareForFinaleCamera
     /// </summary>
     public unsafe virtual void PrepareForFinaleCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepareForFinaleCamera, "BmGame.RStealthTakedownStage_ChainTakedown_Base.PrepareForFinaleCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrepareForFinaleCamera, "BmGame.RStealthTakedownStage_ChainTakedown_Base.PrepareForFinaleCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanTakedownBeCancelledByDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTakedownBeCancelledByDamage;
     /// <summary>
     /// Function: CanTakedownBeCancelledByDamage
     /// </summary>
     public unsafe override bool CanTakedownBeCancelledByDamage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTakedownBeCancelledByDamage, "BmGame.RStealthTakedownStage_ChainTakedown_Base.CanTakedownBeCancelledByDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTakedownBeCancelledByDamage, "BmGame.RStealthTakedownStage_ChainTakedown_Base.CanTakedownBeCancelledByDamage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AttackerDamaged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttackerDamaged;
     /// <summary>
     /// Function: AttackerDamaged
     /// </summary>
     public unsafe override void AttackerDamaged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttackerDamaged, "BmGame.RStealthTakedownStage_ChainTakedown_Base.AttackerDamaged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttackerDamaged, "BmGame.RStealthTakedownStage_ChainTakedown_Base.AttackerDamaged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Begin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Begin;
     /// <summary>
     /// Function: Begin
     /// </summary>
     public unsafe override void Begin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmGame.RStealthTakedownStage_ChainTakedown_Base.Begin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Begin, "BmGame.RStealthTakedownStage_ChainTakedown_Base.Begin", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -91,28 +91,28 @@ public partial class RSeqAct_PlayAnimOnTranitionDoor : BmSDK.Engine.SequenceActi
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_PlayAnimOnTranitionDoor.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_PlayAnimOnTranitionDoor.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayAnimOnDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnimOnDoor;
     /// <summary>
     /// Function: PlayAnimOnDoor
     /// </summary>
     public unsafe virtual void PlayAnimOnDoor(BmSDK.BmGame.RLevelTransitionDoorBase D)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAnimOnDoor, "BmScript.RSeqAct_PlayAnimOnTranitionDoor.PlayAnimOnDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAnimOnDoor, "BmScript.RSeqAct_PlayAnimOnTranitionDoor.PlayAnimOnDoor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(D, paramsPtr + 0);

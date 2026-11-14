@@ -91,28 +91,28 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMovieTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMovieTime;
     /// <summary>
     /// Function: GetMovieTime
     /// </summary>
     public unsafe virtual float GetMovieTime()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMovieTime, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetMovieTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMovieTime, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetMovieTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetMovieTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMovieTime;
     /// <summary>
     /// Function: SetMovieTime
     /// </summary>
     public unsafe virtual bool SetMovieTime(float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMovieTime, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SetMovieTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMovieTime, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SetMovieTime", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
@@ -120,56 +120,56 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SkipMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipMovie;
     /// <summary>
     /// Function: SkipMovie
     /// </summary>
     public unsafe override void SkipMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SkipMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SkipMovie", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsDialogueSkippable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDialogueSkippable;
     /// <summary>
     /// Function: IsDialogueSkippable
     /// </summary>
     public unsafe override bool IsDialogueSkippable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDialogueSkippable, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsDialogueSkippable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDialogueSkippable, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsDialogueSkippable", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DialogueOverCUEFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueOverCUEFromMovie;
     /// <summary>
     /// Function: DialogueOverCUEFromMovie
     /// </summary>
     public unsafe override void DialogueOverCUEFromMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueOverCUEFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DialogueOverCUEFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DialogueOverCUEFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DialogueOverCUEFromMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerLineFromMovieNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLineFromMovieNotify;
     /// <summary>
     /// Function: TriggerLineFromMovieNotify
     /// </summary>
     public unsafe virtual void TriggerLineFromMovieNotify()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLineFromMovieNotify, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TriggerLineFromMovieNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLineFromMovieNotify, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TriggerLineFromMovieNotify", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -183,114 +183,116 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return;
     }
 
-    private static BmSDK.Function __fn_DialogueTapGauntletCUEFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueTapGauntletCUEFromMovie;
     /// <summary>
     /// Function: DialogueTapGauntletCUEFromMovie
     /// </summary>
     public unsafe override void DialogueTapGauntletCUEFromMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueTapGauntletCUEFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DialogueTapGauntletCUEFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DialogueTapGauntletCUEFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DialogueTapGauntletCUEFromMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LineCUEFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LineCUEFromMovie;
     /// <summary>
     /// Function: LineCUEFromMovie
     /// </summary>
     public unsafe override void LineCUEFromMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LineCUEFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.LineCUEFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LineCUEFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.LineCUEFromMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DialogueTOCFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueTOCFromMovie;
     /// <summary>
     /// Function: DialogueTOCFromMovie
     /// </summary>
-    public unsafe override void DialogueTOCFromMovie(BmSDK.FString TOC)
+    public unsafe override void DialogueTOCFromMovie(BmSDK.FStringArg TOC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueTOCFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DialogueTOCFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DialogueTOCFromMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DialogueTOCFromMovie", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TOC, paramsPtr + 0);
+        TOC.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SkipMovie_FromCue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipMovie_FromCue;
     /// <summary>
     /// Function: SkipMovie_FromCue
     /// </summary>
     public unsafe override void SkipMovie_FromCue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipMovie_FromCue, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SkipMovie_FromCue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipMovie_FromCue, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SkipMovie_FromCue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyMovieAboutToEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyMovieAboutToEnd;
     /// <summary>
     /// Function: NotifyMovieAboutToEnd
     /// </summary>
     public unsafe override void NotifyMovieAboutToEnd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyMovieAboutToEnd, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.NotifyMovieAboutToEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyMovieAboutToEnd, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.NotifyMovieAboutToEnd", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpeechAndMovieEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeechAndMovieEnded;
     /// <summary>
     /// Function: SpeechAndMovieEnded
     /// </summary>
     public unsafe virtual void SpeechAndMovieEnded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeechAndMovieEnded, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SpeechAndMovieEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeechAndMovieEnded, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SpeechAndMovieEnded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyMovieFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyMovieFinished;
     /// <summary>
     /// Function: NotifyMovieFinished
     /// </summary>
-    public unsafe override void NotifyMovieFinished(BmSDK.FString VideoResource)
+    public unsafe override void NotifyMovieFinished(BmSDK.FStringArg VideoResource)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyMovieFinished, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.NotifyMovieFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyMovieFinished, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.NotifyMovieFinished", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(VideoResource, paramsPtr + 0);
+        VideoResource.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FetchTVAudioSources;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FetchTVAudioSources;
     /// <summary>
     /// Function: FetchTVAudioSources
     /// </summary>
     public unsafe virtual void FetchTVAudioSources(out BmSDK.TArray<float> pos, out BmSDK.TArray<float> Rot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FetchTVAudioSources, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.FetchTVAudioSources");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FetchTVAudioSources, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.FetchTVAudioSources", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -299,98 +301,98 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return;
     }
 
-    private static BmSDK.Function __fn_TryStartMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStartMovie;
     /// <summary>
     /// Function: TryStartMovie
     /// </summary>
     public unsafe virtual void TryStartMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStartMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TryStartMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryStartMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TryStartMovie", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MovieStopTriggeredByAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovieStopTriggeredByAnim;
     /// <summary>
     /// Function: MovieStopTriggeredByAnim
     /// </summary>
     public unsafe virtual void MovieStopTriggeredByAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovieStopTriggeredByAnim, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.MovieStopTriggeredByAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovieStopTriggeredByAnim, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.MovieStopTriggeredByAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MovieStopTriggeredBySpeechInterruption;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovieStopTriggeredBySpeechInterruption;
     /// <summary>
     /// Function: MovieStopTriggeredBySpeechInterruption
     /// </summary>
     public unsafe virtual void MovieStopTriggeredBySpeechInterruption()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovieStopTriggeredBySpeechInterruption, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.MovieStopTriggeredBySpeechInterruption");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovieStopTriggeredBySpeechInterruption, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.MovieStopTriggeredBySpeechInterruption", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RadioConvStartAllowedByAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RadioConvStartAllowedByAnim;
     /// <summary>
     /// Function: RadioConvStartAllowedByAnim
     /// </summary>
     public unsafe virtual void RadioConvStartAllowedByAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RadioConvStartAllowedByAnim, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.RadioConvStartAllowedByAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RadioConvStartAllowedByAnim, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.RadioConvStartAllowedByAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartNextQueuedMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNextQueuedMovie;
     /// <summary>
     /// Function: StartNextQueuedMovie
     /// </summary>
     public unsafe virtual void StartNextQueuedMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNextQueuedMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.StartNextQueuedMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartNextQueuedMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.StartNextQueuedMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartNextQueuedSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNextQueuedSpeech;
     /// <summary>
     /// Function: StartNextQueuedSpeech
     /// </summary>
     public unsafe virtual void StartNextQueuedSpeech()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNextQueuedSpeech, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.StartNextQueuedSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartNextQueuedSpeech, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.StartNextQueuedSpeech", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TrySetRadioState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrySetRadioState;
     /// <summary>
     /// Function: TrySetRadioState
     /// </summary>
     public unsafe virtual void TrySetRadioState(bool bOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySetRadioState, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TrySetRadioState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrySetRadioState, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TrySetRadioState", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOn, paramsPtr + 0);
@@ -398,70 +400,70 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return;
     }
 
-    private static BmSDK.Function __fn_IsInOrCanSetRadioMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInOrCanSetRadioMode;
     /// <summary>
     /// Function: IsInOrCanSetRadioMode
     /// </summary>
     public unsafe virtual bool IsInOrCanSetRadioMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInOrCanSetRadioMode, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsInOrCanSetRadioMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInOrCanSetRadioMode, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsInOrCanSetRadioMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NeedsRadioMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedsRadioMode;
     /// <summary>
     /// Function: NeedsRadioMode
     /// </summary>
     public unsafe override bool NeedsRadioMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NeedsRadioMode, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.NeedsRadioMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NeedsRadioMode, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.NeedsRadioMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldPlayMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPlayMovie;
     /// <summary>
     /// Function: ShouldPlayMovie
     /// </summary>
     public unsafe override bool ShouldPlayMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPlayMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.ShouldPlayMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPlayMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.ShouldPlayMovie", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFirstPortraitName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstPortraitName;
     /// <summary>
     /// Function: GetFirstPortraitName
     /// </summary>
     public unsafe virtual BmSDK.FString GetFirstPortraitName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstPortraitName, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetFirstPortraitName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFirstPortraitName, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetFirstPortraitName", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LineStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LineStarted;
     /// <summary>
     /// Function: LineStarted
     /// </summary>
     public unsafe override bool LineStarted(BmSDK.GameObject Speaker, BmSDK.Engine.AkDialogueLine Line)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LineStarted, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.LineStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LineStarted, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.LineStarted", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speaker, paramsPtr + 0);
@@ -470,14 +472,14 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SpeechStopped;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeechStopped;
     /// <summary>
     /// Function: SpeechStopped
     /// </summary>
     public unsafe override void SpeechStopped(bool bInterrupted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeechStopped, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SpeechStopped");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeechStopped, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SpeechStopped", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInterrupted, paramsPtr + 0);
@@ -485,70 +487,70 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return;
     }
 
-    private static BmSDK.Function __fn_SpeechStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeechStarted;
     /// <summary>
     /// Function: SpeechStarted
     /// </summary>
     public unsafe override void SpeechStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeechStarted, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SpeechStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeechStarted, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SpeechStarted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WaitingForAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WaitingForAnim;
     /// <summary>
     /// Function: WaitingForAnim
     /// </summary>
     public unsafe virtual bool WaitingForAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WaitingForAnim, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.WaitingForAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WaitingForAnim, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.WaitingForAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoPlayerSpeechCleanup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPlayerSpeechCleanup;
     /// <summary>
     /// Function: DoPlayerSpeechCleanup
     /// </summary>
     public unsafe override void DoPlayerSpeechCleanup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPlayerSpeechCleanup, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DoPlayerSpeechCleanup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPlayerSpeechCleanup, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.DoPlayerSpeechCleanup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnStopSpeechTriggered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStopSpeechTriggered;
     /// <summary>
     /// Function: OnStopSpeechTriggered
     /// </summary>
     public unsafe override void OnStopSpeechTriggered()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStopSpeechTriggered, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.OnStopSpeechTriggered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStopSpeechTriggered, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.OnStopSpeechTriggered", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetLineStartTimeFromMovieTOC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineStartTimeFromMovieTOC;
     /// <summary>
     /// Function: GetLineStartTimeFromMovieTOC
     /// </summary>
     public unsafe virtual float GetLineStartTimeFromMovieTOC(int lineNumber)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLineStartTimeFromMovieTOC, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetLineStartTimeFromMovieTOC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLineStartTimeFromMovieTOC, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetLineStartTimeFromMovieTOC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(lineNumber, paramsPtr + 0);
@@ -556,28 +558,28 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetLineNumberFromMovieTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineNumberFromMovieTime;
     /// <summary>
     /// Function: GetLineNumberFromMovieTime
     /// </summary>
     public unsafe virtual int GetLineNumberFromMovieTime()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLineNumberFromMovieTime, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetLineNumberFromMovieTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLineNumberFromMovieTime, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.GetLineNumberFromMovieTime", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UndoAutoWaitForNotifies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UndoAutoWaitForNotifies;
     /// <summary>
     /// Function: UndoAutoWaitForNotifies
     /// </summary>
     public unsafe virtual void UndoAutoWaitForNotifies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UndoAutoWaitForNotifies, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.UndoAutoWaitForNotifies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UndoAutoWaitForNotifies, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.UndoAutoWaitForNotifies", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -591,14 +593,14 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.Update", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -606,28 +608,28 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_InitialiseVariables;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseVariables;
     /// <summary>
     /// Function: InitialiseVariables
     /// </summary>
     public unsafe override void InitialiseVariables()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseVariables, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.InitialiseVariables");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseVariables, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.InitialiseVariables", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsMovieTypeConvo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMovieTypeConvo;
     /// <summary>
     /// Function: IsMovieTypeConvo
     /// </summary>
     public unsafe override bool IsMovieTypeConvo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMovieTypeConvo, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsMovieTypeConvo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMovieTypeConvo, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsMovieTypeConvo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -641,14 +643,14 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsMoviePlaying;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsMoviePlaying;
     /// <summary>
     /// Function: IsMoviePlaying
     /// </summary>
     public unsafe override bool IsMoviePlaying()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsMoviePlaying, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsMoviePlaying");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsMoviePlaying, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.IsMoviePlaying", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -666,12 +668,12 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
     /// <summary>
     /// Function: SearchForMovie_Static
     /// </summary>
-    public unsafe static bool SearchForMovie_Static(BmSDK.FString MovieName)
+    public unsafe static bool SearchForMovie_Static(BmSDK.FStringArg MovieName)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SearchForMovie_Static, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SearchForMovie_Static");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MovieName, paramsPtr + 0);
+        MovieName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -680,20 +682,21 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SearchForMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SearchForMovie;
     /// <summary>
     /// Function: SearchForMovie
     /// </summary>
-    public unsafe override bool SearchForMovie(BmSDK.FString MovieName)
+    public unsafe override bool SearchForMovie(BmSDK.FStringArg MovieName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SearchForMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SearchForMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SearchForMovie, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SearchForMovie", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MovieName, paramsPtr + 0);
+        MovieName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -702,17 +705,18 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_StartSpeechNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpeechNative;
     /// <summary>
     /// Function: StartSpeechNative
     /// </summary>
     public unsafe override bool StartSpeechNative()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSpeechNative, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.StartSpeechNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSpeechNative, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.StartSpeechNative", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -726,14 +730,14 @@ public partial class RSeqAct_PlayRadioOrThoughtDialogue : BmSDK.BmGame.RSeqAct_P
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryStartSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStartSpeech;
     /// <summary>
     /// Function: TryStartSpeech
     /// </summary>
     public unsafe override bool TryStartSpeech()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStartSpeech, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TryStartSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryStartSpeech, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.TryStartSpeech", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1239,13 +1243,13 @@ public static class RSeqAct_PlayRadioOrThoughtDialogueStatics
     /// <summary>
     /// Function: SearchForMovie_Static, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static bool SearchForMovie_Static(this BmSDK.BmGame.RSeqAct_PlayRadioOrThoughtDialogue self, BmSDK.FString MovieName)
+    public unsafe static bool SearchForMovie_Static(this BmSDK.BmGame.RSeqAct_PlayRadioOrThoughtDialogue self, BmSDK.FStringArg MovieName)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SearchForMovie_Static, "BmGame.RSeqAct_PlayRadioOrThoughtDialogue.SearchForMovie_Static");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MovieName, paramsPtr + 0);
+        MovieName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -1254,6 +1258,7 @@ public static class RSeqAct_PlayRadioOrThoughtDialogueStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 }

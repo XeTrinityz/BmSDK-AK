@@ -78,98 +78,98 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_PauseOptionsGraphics>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CloseScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseScreen;
     /// <summary>
     /// Function: CloseScreen
     /// </summary>
     public unsafe override void CloseScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseScreen, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CloseScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseScreen, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CloseScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetResolution;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetResolution;
     /// <summary>
     /// Function: ResetResolution
     /// </summary>
     public unsafe virtual void ResetResolution()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetResolution, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ResetResolution");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetResolution, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ResetResolution", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnX;
     /// <summary>
     /// Function: XI_OnX
     /// </summary>
     public unsafe override void XI_OnX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnX, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_OnX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnX, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_OnX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Tick;
     /// <summary>
     /// Function: XI_Tick
     /// </summary>
     public unsafe override void XI_Tick()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Tick, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Tick, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_Tick", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckRestartChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckRestartChange;
     /// <summary>
     /// Function: CheckRestartChange
     /// </summary>
     public unsafe virtual void CheckRestartChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckRestartChange, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CheckRestartChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckRestartChange, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CheckRestartChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckResolution;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckResolution;
     /// <summary>
     /// Function: CheckResolution
     /// </summary>
     public unsafe virtual void CheckResolution()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckResolution, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CheckResolution");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckResolution, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CheckResolution", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoExit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoExit;
     /// <summary>
     /// Function: DoExit
     /// </summary>
     public unsafe override void DoExit(bool ApplyChanges)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoExit, "BmGame.RGFxMovieUI_PauseOptionsGraphics.DoExit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoExit, "BmGame.RGFxMovieUI_PauseOptionsGraphics.DoExit", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ApplyChanges, paramsPtr + 0);
@@ -177,42 +177,42 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return;
     }
 
-    private static BmSDK.Function __fn_OnApply;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnApply;
     /// <summary>
     /// Function: OnApply
     /// </summary>
     public unsafe virtual void OnApply()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnApply, "BmGame.RGFxMovieUI_PauseOptionsGraphics.OnApply");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnApply, "BmGame.RGFxMovieUI_PauseOptionsGraphics.OnApply", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnBack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnBack;
     /// <summary>
     /// Function: XI_OnBack
     /// </summary>
     public unsafe override void XI_OnBack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnBack, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_OnBack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnBack, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_OnBack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PopupRequester_Callback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PopupRequester_Callback;
     /// <summary>
     /// Function: PopupRequester_Callback
     /// </summary>
     public unsafe override void PopupRequester_Callback(BmSDK.BmGame.RGFxMoviePopupRequester ThePopUpMsg, int ButtonId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopupRequester_Callback, "BmGame.RGFxMovieUI_PauseOptionsGraphics.PopupRequester_Callback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PopupRequester_Callback, "BmGame.RGFxMovieUI_PauseOptionsGraphics.PopupRequester_Callback", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThePopUpMsg, paramsPtr + 0);
@@ -221,63 +221,66 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Set;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Set;
     /// <summary>
     /// Function: XI_Set
     /// </summary>
-    public unsafe virtual void XI_Set(int Id, BmSDK.FString Type, int Value)
+    public unsafe virtual void XI_Set(int Id, BmSDK.FStringArg Type, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Set, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_Set");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Set, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_Set", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 4);
+        Type.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Get;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Get;
     /// <summary>
     /// Function: XI_Get
     /// </summary>
-    public unsafe virtual int XI_Get(int Id, BmSDK.FString Type)
+    public unsafe virtual int XI_Get(int Id, BmSDK.FStringArg Type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Get, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_Get");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Get, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_Get", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 4);
+        Type.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_XI_GetDefault;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetDefault;
     /// <summary>
     /// Function: XI_GetDefault
     /// </summary>
-    public unsafe virtual int XI_GetDefault(int Id, BmSDK.FString Type)
+    public unsafe virtual int XI_GetDefault(int Id, BmSDK.FStringArg Type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetDefault, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_GetDefault");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetDefault, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_GetDefault", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 4);
+        Type.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_ConvertOptionIndexToAdaptiveVsync;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConvertOptionIndexToAdaptiveVsync;
     /// <summary>
     /// Function: ConvertOptionIndexToAdaptiveVsync
     /// </summary>
     public unsafe virtual int ConvertOptionIndexToAdaptiveVsync(int OptionIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConvertOptionIndexToAdaptiveVsync, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ConvertOptionIndexToAdaptiveVsync");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConvertOptionIndexToAdaptiveVsync, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ConvertOptionIndexToAdaptiveVsync", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OptionIndex, paramsPtr + 0);
@@ -285,14 +288,14 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ConvertOptionIndexToVsync;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConvertOptionIndexToVsync;
     /// <summary>
     /// Function: ConvertOptionIndexToVsync
     /// </summary>
     public unsafe virtual int ConvertOptionIndexToVsync(int OptionIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConvertOptionIndexToVsync, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ConvertOptionIndexToVsync");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConvertOptionIndexToVsync, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ConvertOptionIndexToVsync", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OptionIndex, paramsPtr + 0);
@@ -300,14 +303,14 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ConvertToVsyncOptionIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConvertToVsyncOptionIndex;
     /// <summary>
     /// Function: ConvertToVsyncOptionIndex
     /// </summary>
     public unsafe virtual int ConvertToVsyncOptionIndex(int Vsync, int AdaptiveVsync)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConvertToVsyncOptionIndex, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ConvertToVsyncOptionIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConvertToVsyncOptionIndex, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ConvertToVsyncOptionIndex", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vsync, paramsPtr + 0);
@@ -316,28 +319,28 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_BuildVsyncList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildVsyncList;
     /// <summary>
     /// Function: BuildVsyncList
     /// </summary>
     public unsafe virtual BmSDK.FString BuildVsyncList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildVsyncList, "BmGame.RGFxMovieUI_PauseOptionsGraphics.BuildVsyncList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildVsyncList, "BmGame.RGFxMovieUI_PauseOptionsGraphics.BuildVsyncList", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFPSIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFPSIndex;
     /// <summary>
     /// Function: GetFPSIndex
     /// </summary>
     public unsafe virtual int GetFPSIndex(int FPS)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFPSIndex, "BmGame.RGFxMovieUI_PauseOptionsGraphics.GetFPSIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFPSIndex, "BmGame.RGFxMovieUI_PauseOptionsGraphics.GetFPSIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FPS, paramsPtr + 0);
@@ -345,14 +348,14 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SortByFPS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SortByFPS;
     /// <summary>
     /// Function: SortByFPS
     /// </summary>
     public unsafe virtual int SortByFPS(int A, int B)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SortByFPS, "BmGame.RGFxMovieUI_PauseOptionsGraphics.SortByFPS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SortByFPS, "BmGame.RGFxMovieUI_PauseOptionsGraphics.SortByFPS", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);
@@ -361,71 +364,72 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_BuildFPSList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildFPSList;
     /// <summary>
     /// Function: BuildFPSList
     /// </summary>
     public unsafe virtual BmSDK.FString BuildFPSList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildFPSList, "BmGame.RGFxMovieUI_PauseOptionsGraphics.BuildFPSList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildFPSList, "BmGame.RGFxMovieUI_PauseOptionsGraphics.BuildFPSList", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_SetupMenu;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_SetupMenu;
     /// <summary>
     /// Function: XI_SetupMenu
     /// </summary>
-    public unsafe override void XI_SetupMenu(BmSDK.FString TargetPath)
+    public unsafe override void XI_SetupMenu(BmSDK.FStringArg TargetPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetupMenu, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_SetupMenu");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_SetupMenu, "BmGame.RGFxMovieUI_PauseOptionsGraphics.XI_SetupMenu", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPath, paramsPtr + 0);
+        TargetPath.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableResolutionMenuItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableResolutionMenuItem;
     /// <summary>
     /// Function: EnableResolutionMenuItem
     /// </summary>
     public unsafe virtual void EnableResolutionMenuItem()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableResolutionMenuItem, "BmGame.RGFxMovieUI_PauseOptionsGraphics.EnableResolutionMenuItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableResolutionMenuItem, "BmGame.RGFxMovieUI_PauseOptionsGraphics.EnableResolutionMenuItem", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableResolutionMenuItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableResolutionMenuItem;
     /// <summary>
     /// Function: DisableResolutionMenuItem
     /// </summary>
     public unsafe virtual void DisableResolutionMenuItem()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableResolutionMenuItem, "BmGame.RGFxMovieUI_PauseOptionsGraphics.DisableResolutionMenuItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableResolutionMenuItem, "BmGame.RGFxMovieUI_PauseOptionsGraphics.DisableResolutionMenuItem", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableResolutionMenuItem_ASHelper;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableResolutionMenuItem_ASHelper;
     /// <summary>
     /// Function: EnableResolutionMenuItem_ASHelper
     /// </summary>
     public unsafe virtual void EnableResolutionMenuItem_ASHelper(int AllMenuIndex, int MenuItemsIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableResolutionMenuItem_ASHelper, "BmGame.RGFxMovieUI_PauseOptionsGraphics.EnableResolutionMenuItem_ASHelper");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableResolutionMenuItem_ASHelper, "BmGame.RGFxMovieUI_PauseOptionsGraphics.EnableResolutionMenuItem_ASHelper", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AllMenuIndex, paramsPtr + 0);
@@ -434,14 +438,14 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return;
     }
 
-    private static BmSDK.Function __fn_DisableResolutionMenuItem_ASHelper;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableResolutionMenuItem_ASHelper;
     /// <summary>
     /// Function: DisableResolutionMenuItem_ASHelper
     /// </summary>
     public unsafe virtual void DisableResolutionMenuItem_ASHelper(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableResolutionMenuItem_ASHelper, "BmGame.RGFxMovieUI_PauseOptionsGraphics.DisableResolutionMenuItem_ASHelper");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableResolutionMenuItem_ASHelper, "BmGame.RGFxMovieUI_PauseOptionsGraphics.DisableResolutionMenuItem_ASHelper", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -449,14 +453,14 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return;
     }
 
-    private static BmSDK.Function __fn_SetAlphaOfMenuItem_ASHelper;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAlphaOfMenuItem_ASHelper;
     /// <summary>
     /// Function: SetAlphaOfMenuItem_ASHelper
     /// </summary>
     public unsafe virtual void SetAlphaOfMenuItem_ASHelper(int indexIntoAllItems, float newAlpha)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAlphaOfMenuItem_ASHelper, "BmGame.RGFxMovieUI_PauseOptionsGraphics.SetAlphaOfMenuItem_ASHelper");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAlphaOfMenuItem_ASHelper, "BmGame.RGFxMovieUI_PauseOptionsGraphics.SetAlphaOfMenuItem_ASHelper", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(indexIntoAllItems, paramsPtr + 0);
@@ -465,42 +469,42 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return;
     }
 
-    private static BmSDK.Function __fn_CopyOptions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CopyOptions;
     /// <summary>
     /// Function: CopyOptions
     /// </summary>
     public unsafe virtual void CopyOptions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CopyOptions, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CopyOptions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CopyOptions, "BmGame.RGFxMovieUI_PauseOptionsGraphics.CopyOptions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddResolutionLabel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddResolutionLabel;
     /// <summary>
     /// Function: AddResolutionLabel
     /// </summary>
     public unsafe virtual void AddResolutionLabel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddResolutionLabel, "BmGame.RGFxMovieUI_PauseOptionsGraphics.AddResolutionLabel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddResolutionLabel, "BmGame.RGFxMovieUI_PauseOptionsGraphics.AddResolutionLabel", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieUI_PauseOptionsGraphics.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxMovieUI_PauseOptionsGraphics.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);
@@ -508,14 +512,14 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return;
     }
 
-    private static BmSDK.Function __fn_GetResolutionLabelNames;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolutionLabelNames;
     /// <summary>
     /// Function: GetResolutionLabelNames
     /// </summary>
     public unsafe virtual bool GetResolutionLabelNames()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetResolutionLabelNames, "BmGame.RGFxMovieUI_PauseOptionsGraphics.GetResolutionLabelNames");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetResolutionLabelNames, "BmGame.RGFxMovieUI_PauseOptionsGraphics.GetResolutionLabelNames", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -529,14 +533,14 @@ public partial class RGFxMovieUI_PauseOptionsGraphics : BmSDK.BmGame.RGFxMovieUI
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ApplySelectedOptions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplySelectedOptions;
     /// <summary>
     /// Function: ApplySelectedOptions
     /// </summary>
     public unsafe virtual void ApplySelectedOptions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplySelectedOptions, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ApplySelectedOptions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplySelectedOptions, "BmGame.RGFxMovieUI_PauseOptionsGraphics.ApplySelectedOptions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

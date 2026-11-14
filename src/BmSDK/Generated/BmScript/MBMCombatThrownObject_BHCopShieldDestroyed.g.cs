@@ -78,14 +78,14 @@ public partial class MBMCombatThrownObject_BHCopShieldDestroyed : BmSDK.BmGame.R
         where TComponent : class, Framework.IScriptComponent<MBMCombatThrownObject_BHCopShieldDestroyed>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DoEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoEvent;
     /// <summary>
     /// Function: DoEvent
     /// </summary>
     public unsafe override void DoEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoEvent, "BmScript.MBMCombatThrownObject_BHCopShieldDestroyed.DoEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoEvent, "BmScript.MBMCombatThrownObject_BHCopShieldDestroyed.DoEvent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

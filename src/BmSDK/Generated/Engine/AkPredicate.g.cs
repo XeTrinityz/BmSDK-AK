@@ -73,14 +73,14 @@ public partial class AkPredicate : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkPredicate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsTrue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTrue;
     /// <summary>
     /// Function: IsTrue
     /// </summary>
     public unsafe virtual bool IsTrue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTrue, "Engine.AkPredicate.IsTrue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTrue, "Engine.AkPredicate.IsTrue", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

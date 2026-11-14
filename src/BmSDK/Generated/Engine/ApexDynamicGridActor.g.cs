@@ -78,14 +78,14 @@ public partial class ApexDynamicGridActor : BmSDK.Engine.ApexFieldSamplerActor, 
         where TComponent : class, Framework.IScriptComponent<ApexDynamicGridActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PostRenderFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostRenderFor;
     /// <summary>
     /// Function: PostRenderFor
     /// </summary>
     public unsafe override void PostRenderFor(BmSDK.Engine.PlayerController PC, BmSDK.Engine.Canvas Canvas, System.Numerics.Vector3 CameraPosition, System.Numerics.Vector3 CameraDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostRenderFor, "Engine.ApexDynamicGridActor.PostRenderFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostRenderFor, "Engine.ApexDynamicGridActor.PostRenderFor", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class ApexDynamicGridActor : BmSDK.Engine.ApexFieldSamplerActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "Engine.ApexDynamicGridActor.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "Engine.ApexDynamicGridActor.Tick", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -111,14 +111,14 @@ public partial class ApexDynamicGridActor : BmSDK.Engine.ApexFieldSamplerActor, 
         return;
     }
 
-    private static BmSDK.Function __fn_FetchStats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FetchStats;
     /// <summary>
     /// Function: FetchStats
     /// </summary>
     public unsafe virtual void FetchStats(out int DGfirstLine, out int DGnumLines, out BmSDK.FString DGstr)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FetchStats, "Engine.ApexDynamicGridActor.FetchStats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FetchStats, "Engine.ApexDynamicGridActor.FetchStats", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out DGfirstLine);

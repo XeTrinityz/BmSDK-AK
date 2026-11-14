@@ -91,14 +91,14 @@ public partial class RSeqAct_TwoFaceLairController : BmSDK.BmGame.RSeqAct_Combat
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_TwoFaceLairController.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_TwoFaceLairController.Update", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -106,70 +106,70 @@ public partial class RSeqAct_TwoFaceLairController : BmSDK.BmGame.RSeqAct_Combat
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_StartTwoface;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTwoface;
     /// <summary>
     /// Function: StartTwoface
     /// </summary>
     public unsafe virtual void StartTwoface()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTwoface, "BmScript.RSeqAct_TwoFaceLairController.StartTwoface");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTwoface, "BmScript.RSeqAct_TwoFaceLairController.StartTwoface", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnTwoface;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnTwoface;
     /// <summary>
     /// Function: SpawnTwoface
     /// </summary>
     public unsafe virtual void SpawnTwoface()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnTwoface, "BmScript.RSeqAct_TwoFaceLairController.SpawnTwoface");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnTwoface, "BmScript.RSeqAct_TwoFaceLairController.SpawnTwoface", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnPenguin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPenguin;
     /// <summary>
     /// Function: SpawnPenguin
     /// </summary>
     public unsafe virtual void SpawnPenguin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnPenguin, "BmScript.RSeqAct_TwoFaceLairController.SpawnPenguin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnPenguin, "BmScript.RSeqAct_TwoFaceLairController.SpawnPenguin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnRiddler;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnRiddler;
     /// <summary>
     /// Function: SpawnRiddler
     /// </summary>
     public unsafe virtual void SpawnRiddler()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnRiddler, "BmScript.RSeqAct_TwoFaceLairController.SpawnRiddler");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnRiddler, "BmScript.RSeqAct_TwoFaceLairController.SpawnRiddler", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_TwoFaceLairController.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_TwoFaceLairController.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

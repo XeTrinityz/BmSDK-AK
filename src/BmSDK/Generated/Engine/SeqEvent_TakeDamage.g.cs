@@ -78,14 +78,14 @@ public partial class SeqEvent_TakeDamage : BmSDK.Engine.SequenceEvent, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<SeqEvent_TakeDamage>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Toggled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Toggled;
     /// <summary>
     /// Function: Toggled
     /// </summary>
     public unsafe override void Toggled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Toggled, "Engine.SeqEvent_TakeDamage.Toggled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Toggled, "Engine.SeqEvent_TakeDamage.Toggled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -105,28 +105,28 @@ public partial class SeqEvent_TakeDamage : BmSDK.Engine.SequenceEvent, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.SeqEvent_TakeDamage.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.SeqEvent_TakeDamage.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandleDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleDamage;
     /// <summary>
     /// Function: HandleDamage
     /// </summary>
     public unsafe virtual void HandleDamage(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, BmSDK.Class inDamageType, int inAmount, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleDamage, "Engine.SeqEvent_TakeDamage.HandleDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleDamage, "Engine.SeqEvent_TakeDamage.HandleDamage", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InOriginator, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class SeqEvent_TakeDamage : BmSDK.Engine.SequenceEvent, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_IsValidDamageType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidDamageType;
     /// <summary>
     /// Function: IsValidDamageType
     /// </summary>
     public unsafe virtual bool IsValidDamageType(BmSDK.Class inDamageType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidDamageType, "Engine.SeqEvent_TakeDamage.IsValidDamageType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidDamageType, "Engine.SeqEvent_TakeDamage.IsValidDamageType", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inDamageType, paramsPtr + 0);

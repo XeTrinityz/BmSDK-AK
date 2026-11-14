@@ -78,14 +78,14 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         where TComponent : class, Framework.IScriptComponent<RPawnVillainDollotronTutorial>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPawnVillainDollotronTutorial.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RPawnVillainDollotronTutorial.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,56 +93,56 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         return;
     }
 
-    private static BmSDK.Function __fn_CanDoFinalBlow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoFinalBlow;
     /// <summary>
     /// Function: CanDoFinalBlow
     /// </summary>
     public unsafe override bool CanDoFinalBlow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoFinalBlow, "BmScript.RPawnVillainDollotronTutorial.CanDoFinalBlow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoFinalBlow, "BmScript.RPawnVillainDollotronTutorial.CanDoFinalBlow", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopRiseCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopRiseCamera;
     /// <summary>
     /// Function: StopRiseCamera
     /// </summary>
     public unsafe virtual void StopRiseCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopRiseCamera, "BmScript.RPawnVillainDollotronTutorial.StopRiseCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopRiseCamera, "BmScript.RPawnVillainDollotronTutorial.StopRiseCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnFinishGettingUpFromRagdoll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFinishGettingUpFromRagdoll;
     /// <summary>
     /// Function: OnFinishGettingUpFromRagdoll
     /// </summary>
     public unsafe override void OnFinishGettingUpFromRagdoll()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFinishGettingUpFromRagdoll, "BmScript.RPawnVillainDollotronTutorial.OnFinishGettingUpFromRagdoll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFinishGettingUpFromRagdoll, "BmScript.RPawnVillainDollotronTutorial.OnFinishGettingUpFromRagdoll", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCameraLook;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCameraLook;
     /// <summary>
     /// Function: UpdateCameraLook
     /// </summary>
     public unsafe virtual void UpdateCameraLook(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCameraLook, "BmScript.RPawnVillainDollotronTutorial.UpdateCameraLook");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCameraLook, "BmScript.RPawnVillainDollotronTutorial.UpdateCameraLook", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -150,140 +150,140 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         return;
     }
 
-    private static BmSDK.Function __fn_StartZoomOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartZoomOut;
     /// <summary>
     /// Function: StartZoomOut
     /// </summary>
     public unsafe virtual void StartZoomOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartZoomOut, "BmScript.RPawnVillainDollotronTutorial.StartZoomOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartZoomOut, "BmScript.RPawnVillainDollotronTutorial.StartZoomOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartBMLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartBMLine;
     /// <summary>
     /// Function: StartBMLine
     /// </summary>
     public unsafe virtual void StartBMLine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartBMLine, "BmScript.RPawnVillainDollotronTutorial.StartBMLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartBMLine, "BmScript.RPawnVillainDollotronTutorial.StartBMLine", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayRiseCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayRiseCamera;
     /// <summary>
     /// Function: PlayRiseCamera
     /// </summary>
     public unsafe virtual void PlayRiseCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayRiseCamera, "BmScript.RPawnVillainDollotronTutorial.PlayRiseCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayRiseCamera, "BmScript.RPawnVillainDollotronTutorial.PlayRiseCamera", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RiseMyPretty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RiseMyPretty;
     /// <summary>
     /// Function: RiseMyPretty
     /// </summary>
     public unsafe virtual void RiseMyPretty()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiseMyPretty, "BmScript.RPawnVillainDollotronTutorial.RiseMyPretty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiseMyPretty, "BmScript.RPawnVillainDollotronTutorial.RiseMyPretty", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickLOS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickLOS;
     /// <summary>
     /// Function: TickLOS
     /// </summary>
     public unsafe virtual void TickLOS()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickLOS, "BmScript.RPawnVillainDollotronTutorial.TickLOS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickLOS, "BmScript.RPawnVillainDollotronTutorial.TickLOS", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TickDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickDialogue;
     /// <summary>
     /// Function: TickDialogue
     /// </summary>
     public unsafe virtual void TickDialogue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickDialogue, "BmScript.RPawnVillainDollotronTutorial.TickDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickDialogue, "BmScript.RPawnVillainDollotronTutorial.TickDialogue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckDialogueStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckDialogueStart;
     /// <summary>
     /// Function: CheckDialogueStart
     /// </summary>
     public unsafe virtual void CheckDialogueStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckDialogueStart, "BmScript.RPawnVillainDollotronTutorial.CheckDialogueStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckDialogueStart, "BmScript.RPawnVillainDollotronTutorial.CheckDialogueStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckLOSStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLOSStart;
     /// <summary>
     /// Function: CheckLOSStart
     /// </summary>
     public unsafe virtual void CheckLOSStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLOSStart, "BmScript.RPawnVillainDollotronTutorial.CheckLOSStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLOSStart, "BmScript.RPawnVillainDollotronTutorial.CheckLOSStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TutorialDone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TutorialDone;
     /// <summary>
     /// Function: TutorialDone
     /// </summary>
     public unsafe virtual void TutorialDone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TutorialDone, "BmScript.RPawnVillainDollotronTutorial.TutorialDone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TutorialDone, "BmScript.RPawnVillainDollotronTutorial.TutorialDone", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Died;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Died;
     /// <summary>
     /// Function: Died
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "BmScript.RPawnVillainDollotronTutorial.Died");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Died, "BmScript.RPawnVillainDollotronTutorial.Died", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -293,14 +293,14 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_PostInitCharacter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostInitCharacter;
     /// <summary>
     /// Function: PostInitCharacter
     /// </summary>
     public unsafe override void PostInitCharacter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostInitCharacter, "BmScript.RPawnVillainDollotronTutorial.PostInitCharacter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostInitCharacter, "BmScript.RPawnVillainDollotronTutorial.PostInitCharacter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

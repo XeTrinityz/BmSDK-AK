@@ -91,70 +91,70 @@ public partial class RSeqAct_MovePlayer : BmSDK.Engine.SeqAct_Latent, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HasReachedDestination;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasReachedDestination;
     /// <summary>
     /// Function: HasReachedDestination
     /// </summary>
     public unsafe virtual void HasReachedDestination()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasReachedDestination, "BmGame.RSeqAct_MovePlayer.HasReachedDestination");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasReachedDestination, "BmGame.RSeqAct_MovePlayer.HasReachedDestination", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe virtual void Stop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "BmGame.RSeqAct_MovePlayer.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "BmGame.RSeqAct_MovePlayer.Stop", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateMoveSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMoveSpeed;
     /// <summary>
     /// Function: UpdateMoveSpeed
     /// </summary>
     public unsafe virtual void UpdateMoveSpeed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMoveSpeed, "BmGame.RSeqAct_MovePlayer.UpdateMoveSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMoveSpeed, "BmGame.RSeqAct_MovePlayer.UpdateMoveSpeed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Move;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Move;
     /// <summary>
     /// Function: Move
     /// </summary>
     public unsafe virtual void Move()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Move, "BmGame.RSeqAct_MovePlayer.Move");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Move, "BmGame.RSeqAct_MovePlayer.Move", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SelectForensicModePressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SelectForensicModePressed;
     /// <summary>
     /// Function: SelectForensicModePressed
     /// </summary>
     public unsafe virtual void SelectForensicModePressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SelectForensicModePressed, "BmGame.RSeqAct_MovePlayer.SelectForensicModePressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SelectForensicModePressed, "BmGame.RSeqAct_MovePlayer.SelectForensicModePressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

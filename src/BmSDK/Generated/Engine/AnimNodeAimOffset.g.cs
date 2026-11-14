@@ -78,14 +78,14 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<AnimNodeAimOffset>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetActiveProfileByIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveProfileByIndex;
     /// <summary>
     /// Function: SetActiveProfileByIndex
     /// </summary>
     public unsafe virtual void SetActiveProfileByIndex(int ProfileIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActiveProfileByIndex, "Engine.AnimNodeAimOffset.SetActiveProfileByIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActiveProfileByIndex, "Engine.AnimNodeAimOffset.SetActiveProfileByIndex", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ProfileIndex, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class AnimNodeAimOffset : BmSDK.Engine.AnimNodeBlendBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetActiveProfileByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActiveProfileByName;
     /// <summary>
     /// Function: SetActiveProfileByName
     /// </summary>
     public unsafe virtual void SetActiveProfileByName(BmSDK.FName ProfileName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActiveProfileByName, "Engine.AnimNodeAimOffset.SetActiveProfileByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActiveProfileByName, "Engine.AnimNodeAimOffset.SetActiveProfileByName", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ProfileName, paramsPtr + 0);

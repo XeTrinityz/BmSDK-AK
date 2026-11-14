@@ -78,14 +78,14 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         where TComponent : class, Framework.IScriptComponent<RAlternateAnimationAndWeaponConfig>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CreateBasicWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateBasicWeaponConfig;
     /// <summary>
     /// Function: CreateBasicWeaponConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig CreateBasicWeaponConfig(BmSDK.GameObject NewOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateBasicWeaponConfig, "BmGame.RAlternateAnimationAndWeaponConfig.CreateBasicWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateBasicWeaponConfig, "BmGame.RAlternateAnimationAndWeaponConfig.CreateBasicWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[1312];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetWeaponUpAimingConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWeaponUpAimingConfig;
     /// <summary>
     /// Function: GetWeaponUpAimingConfig
     /// </summary>
     public unsafe virtual BmSDK.Engine.RAimingConfig GetWeaponUpAimingConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWeaponUpAimingConfig, "BmGame.RAlternateAnimationAndWeaponConfig.GetWeaponUpAimingConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWeaponUpAimingConfig, "BmGame.RAlternateAnimationAndWeaponConfig.GetWeaponUpAimingConfig", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAimingConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Change;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Change;
     /// <summary>
     /// Function: Change
     /// </summary>
     public unsafe virtual void Change(BmSDK.BmGame.RBMWeapon ParentWeapon, BmSDK.BmGame.RBMPawnAI NPC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Change, "BmGame.RAlternateAnimationAndWeaponConfig.Change");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Change, "BmGame.RAlternateAnimationAndWeaponConfig.Change", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParentWeapon, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         return;
     }
 
-    private static BmSDK.Function __fn_Setup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Setup;
     /// <summary>
     /// Function: Setup
     /// </summary>
     public unsafe virtual void Setup(BmSDK.BmGame.RBMWeapon ParentWeapon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Setup, "BmGame.RAlternateAnimationAndWeaponConfig.Setup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Setup, "BmGame.RAlternateAnimationAndWeaponConfig.Setup", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParentWeapon, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RAlternateAnimationAndWeaponConfig : BmSDK.BmGame.RConfig, 
         return;
     }
 
-    private static BmSDK.Function __fn_FixBrokenDefault;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FixBrokenDefault;
     /// <summary>
     /// Function: FixBrokenDefault
     /// </summary>
     public unsafe virtual void FixBrokenDefault()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FixBrokenDefault, "BmGame.RAlternateAnimationAndWeaponConfig.FixBrokenDefault");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FixBrokenDefault, "BmGame.RAlternateAnimationAndWeaponConfig.FixBrokenDefault", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

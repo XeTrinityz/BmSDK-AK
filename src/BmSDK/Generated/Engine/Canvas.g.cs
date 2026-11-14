@@ -78,17 +78,17 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Canvas>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DrawDebugGraph;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebugGraph;
     /// <summary>
     /// Function: DrawDebugGraph
     /// </summary>
-    public unsafe virtual void DrawDebugGraph(BmSDK.FString Title, float ValueX, float ValueY, float UL_X, float UL_Y, float W, float H, System.Numerics.Vector2 RangeX, System.Numerics.Vector2 RangeY)
+    public unsafe virtual void DrawDebugGraph(BmSDK.FStringArg Title, float ValueX, float ValueY, float UL_X, float UL_Y, float W, float H, System.Numerics.Vector2 RangeX, System.Numerics.Vector2 RangeY)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebugGraph, "Engine.Canvas.DrawDebugGraph");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawDebugGraph, "Engine.Canvas.DrawDebugGraph", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 0);
+        Title.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ValueX, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ValueY, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UL_X, paramsPtr + 24);
@@ -98,17 +98,18 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RangeX, paramsPtr + 40);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RangeY, paramsPtr + 48);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTextureDoubleLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTextureDoubleLine;
     /// <summary>
     /// Function: DrawTextureDoubleLine
     /// </summary>
     public unsafe virtual void DrawTextureDoubleLine(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, float Perc, float Spacing, float Width, BmSDK.GameObject.FColor LineColor, BmSDK.GameObject.FColor AltLineColor, BmSDK.Engine.Texture Tex, float U, float V, float UL, float VL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTextureDoubleLine, "Engine.Canvas.DrawTextureDoubleLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTextureDoubleLine, "Engine.Canvas.DrawTextureDoubleLine", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPoint, paramsPtr + 0);
@@ -134,14 +135,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTextureLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTextureLine;
     /// <summary>
     /// Function: DrawTextureLine
     /// </summary>
     public unsafe virtual void DrawTextureLine(System.Numerics.Vector3 StartPoint, System.Numerics.Vector3 EndPoint, float Perc, float Width, BmSDK.GameObject.FColor LineColor, BmSDK.Engine.Texture LineTexture, float U, float V, float UL, float VL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTextureLine, "Engine.Canvas.DrawTextureLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTextureLine, "Engine.Canvas.DrawTextureLine", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPoint, paramsPtr + 0);
@@ -165,14 +166,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Draw2DLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Draw2DLine;
     /// <summary>
     /// Function: Draw2DLine
     /// </summary>
     public unsafe virtual void Draw2DLine(float X1, float Y1, float X2, float Y2, BmSDK.GameObject.FColor LineColor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Draw2DLine, "Engine.Canvas.Draw2DLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Draw2DLine, "Engine.Canvas.Draw2DLine", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X1, paramsPtr + 0);
@@ -191,14 +192,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDrawColorStruct;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawColorStruct;
     /// <summary>
     /// Function: SetDrawColorStruct
     /// </summary>
     public unsafe virtual void SetDrawColorStruct(BmSDK.GameObject.FColor C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDrawColorStruct, "Engine.Canvas.SetDrawColorStruct");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDrawColorStruct, "Engine.Canvas.SetDrawColorStruct", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -206,14 +207,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDrawColor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDrawColor;
     /// <summary>
     /// Function: SetDrawColor
     /// </summary>
     public unsafe virtual void SetDrawColor(byte R, byte G, byte B, byte A = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDrawColor, "Engine.Canvas.SetDrawColor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDrawColor, "Engine.Canvas.SetDrawColor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(R, paramsPtr + 0);
@@ -231,14 +232,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawBox;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawBox;
     /// <summary>
     /// Function: DrawBox
     /// </summary>
     public unsafe virtual void DrawBox(float Width, float Height)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawBox, "Engine.Canvas.DrawBox");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawBox, "Engine.Canvas.DrawBox", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Width, paramsPtr + 0);
@@ -247,14 +248,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawRect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRect;
     /// <summary>
     /// Function: DrawRect
     /// </summary>
     public unsafe virtual void DrawRect(float RectX, float RectY, BmSDK.Engine.Texture Tex = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawRect, "Engine.Canvas.DrawRect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawRect, "Engine.Canvas.DrawRect", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RectX, paramsPtr + 0);
@@ -264,14 +265,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawIcon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawIcon;
     /// <summary>
     /// Function: DrawIcon
     /// </summary>
     public unsafe virtual void DrawIcon(BmSDK.Engine.Canvas.FCanvasIcon Icon, float X, float Y, float Scale = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawIcon, "Engine.Canvas.DrawIcon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawIcon, "Engine.Canvas.DrawIcon", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Icon, paramsPtr + 0);
@@ -282,14 +283,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawScaledIcon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawScaledIcon;
     /// <summary>
     /// Function: DrawScaledIcon
     /// </summary>
     public unsafe virtual void DrawScaledIcon(BmSDK.Engine.Canvas.FCanvasIcon Icon, float X, float Y, System.Numerics.Vector3 Scale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawScaledIcon, "Engine.Canvas.DrawScaledIcon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawScaledIcon, "Engine.Canvas.DrawScaledIcon", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Icon, paramsPtr + 0);
@@ -300,14 +301,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_MakeIcon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MakeIcon;
     /// <summary>
     /// Function: MakeIcon
     /// </summary>
     public unsafe virtual BmSDK.Engine.Canvas.FCanvasIcon MakeIcon(BmSDK.Engine.Texture Texture, float U = default, float V = default, float UL = default, float VL = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MakeIcon, "Engine.Canvas.MakeIcon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MakeIcon, "Engine.Canvas.MakeIcon", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Texture, paramsPtr + 0);
@@ -319,14 +320,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Canvas.FCanvasIcon>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_DrawBlendedTile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawBlendedTile;
     /// <summary>
     /// Function: DrawBlendedTile
     /// </summary>
     public unsafe virtual void DrawBlendedTile(BmSDK.Engine.Texture Tex, float XL, float YL, float U, float V, float UL, float VL, BmSDK.Engine.Canvas.ECanvasBlendMode Blend)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawBlendedTile, "Engine.Canvas.DrawBlendedTile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawBlendedTile, "Engine.Canvas.DrawBlendedTile", this);
         byte* paramsPtr = stackalloc byte[49];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tex, paramsPtr + 0);
@@ -348,14 +349,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTexture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTexture;
     /// <summary>
     /// Function: DrawTexture
     /// </summary>
     public unsafe virtual void DrawTexture(BmSDK.Engine.Texture Tex, float Scale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTexture, "Engine.Canvas.DrawTexture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTexture, "Engine.Canvas.DrawTexture", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tex, paramsPtr + 0);
@@ -364,14 +365,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PopMaskRegion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PopMaskRegion;
     /// <summary>
     /// Function: PopMaskRegion
     /// </summary>
     public unsafe virtual void PopMaskRegion()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopMaskRegion, "Engine.Canvas.PopMaskRegion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PopMaskRegion, "Engine.Canvas.PopMaskRegion", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -385,14 +386,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PushMaskRegion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushMaskRegion;
     /// <summary>
     /// Function: PushMaskRegion
     /// </summary>
     public unsafe virtual void PushMaskRegion(float X, float Y, float XL, float YL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushMaskRegion, "Engine.Canvas.PushMaskRegion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushMaskRegion, "Engine.Canvas.PushMaskRegion", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 0);
@@ -410,14 +411,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetClip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClip;
     /// <summary>
     /// Function: SetClip
     /// </summary>
     public unsafe virtual void SetClip(float X, float Y)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClip, "Engine.Canvas.SetClip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClip, "Engine.Canvas.SetClip", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 0);
@@ -426,14 +427,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetOrigin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOrigin;
     /// <summary>
     /// Function: SetOrigin
     /// </summary>
     public unsafe virtual void SetOrigin(float X, float Y)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOrigin, "Engine.Canvas.SetOrigin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOrigin, "Engine.Canvas.SetOrigin", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 0);
@@ -442,14 +443,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPos;
     /// <summary>
     /// Function: SetPos
     /// </summary>
     public unsafe virtual void SetPos(float PosX, float PosY, float PosZ = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPos, "Engine.Canvas.SetPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPos, "Engine.Canvas.SetPos", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PosX, paramsPtr + 0);
@@ -466,28 +467,28 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetDefaultCanvasFont;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultCanvasFont;
     /// <summary>
     /// Function: GetDefaultCanvasFont
     /// </summary>
     public unsafe virtual BmSDK.Engine.Font GetDefaultCanvasFont()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDefaultCanvasFont, "Engine.Canvas.GetDefaultCanvasFont");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDefaultCanvasFont, "Engine.Canvas.GetDefaultCanvasFont", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Font>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe virtual void Reset(bool bKeepOrigin = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.Canvas.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.Canvas.Reset", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bKeepOrigin, paramsPtr + 0);
@@ -502,14 +503,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PopTransform;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PopTransform;
     /// <summary>
     /// Function: PopTransform
     /// </summary>
     public unsafe virtual void PopTransform()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PopTransform, "Engine.Canvas.PopTransform");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PopTransform, "Engine.Canvas.PopTransform", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -523,14 +524,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PushTranslationMatrix;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushTranslationMatrix;
     /// <summary>
     /// Function: PushTranslationMatrix
     /// </summary>
     public unsafe virtual void PushTranslationMatrix(System.Numerics.Vector3 TranslationVector)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushTranslationMatrix, "Engine.Canvas.PushTranslationMatrix");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushTranslationMatrix, "Engine.Canvas.PushTranslationMatrix", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TranslationVector, paramsPtr + 0);
@@ -545,14 +546,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ProjectSphereBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectSphereBounds;
     /// <summary>
     /// Function: ProjectSphereBounds
     /// </summary>
     public unsafe virtual void ProjectSphereBounds(System.Numerics.Vector3 Center, float Radius, out System.Numerics.Vector2 Min, out System.Numerics.Vector2 Max)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProjectSphereBounds, "Engine.Canvas.ProjectSphereBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProjectSphereBounds, "Engine.Canvas.ProjectSphereBounds", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Center, paramsPtr + 0);
@@ -574,14 +575,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ProjectStaticMeshBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectStaticMeshBounds;
     /// <summary>
     /// Function: ProjectStaticMeshBounds
     /// </summary>
     public unsafe virtual bool ProjectStaticMeshBounds(BmSDK.Engine.StaticMeshComponent MeshComponent, out System.Numerics.Vector2 Min, out System.Numerics.Vector2 Max)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProjectStaticMeshBounds, "Engine.Canvas.ProjectStaticMeshBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProjectStaticMeshBounds, "Engine.Canvas.ProjectStaticMeshBounds", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MeshComponent, paramsPtr + 0);
@@ -602,14 +603,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_WorldToPixel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WorldToPixel;
     /// <summary>
     /// Function: WorldToPixel
     /// </summary>
     public unsafe virtual bool WorldToPixel(System.Numerics.Vector3 InPosition, out System.Numerics.Vector3 OutPosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WorldToPixel, "Engine.Canvas.WorldToPixel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WorldToPixel, "Engine.Canvas.WorldToPixel", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InPosition, paramsPtr + 0);
@@ -627,14 +628,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_DeProject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeProject;
     /// <summary>
     /// Function: DeProject
     /// </summary>
     public unsafe virtual void DeProject(System.Numerics.Vector2 ScreenPos, out System.Numerics.Vector3 WorldOrigin, out System.Numerics.Vector3 WorldDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeProject, "Engine.Canvas.DeProject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeProject, "Engine.Canvas.DeProject", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScreenPos, paramsPtr + 0);
@@ -655,14 +656,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Project;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Project;
     /// <summary>
     /// Function: Project
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 Project(System.Numerics.Vector3 Location)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Project, "Engine.Canvas.Project");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Project, "Engine.Canvas.Project", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Location, paramsPtr + 0);
@@ -677,49 +678,51 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_DrawTextCentred;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTextCentred;
     /// <summary>
     /// Function: DrawTextCentred
     /// </summary>
-    public unsafe virtual void DrawTextCentred(BmSDK.FString Text, bool CR = default)
+    public unsafe virtual void DrawTextCentred(BmSDK.FStringArg Text, bool CR = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTextCentred, "Engine.Canvas.DrawTextCentred");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTextCentred, "Engine.Canvas.DrawTextCentred", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CR, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTextRA;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTextRA;
     /// <summary>
     /// Function: DrawTextRA
     /// </summary>
-    public unsafe virtual void DrawTextRA(BmSDK.FString Text, bool CR = default)
+    public unsafe virtual void DrawTextRA(BmSDK.FStringArg Text, bool CR = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTextRA, "Engine.Canvas.DrawTextRA");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTextRA, "Engine.Canvas.DrawTextRA", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CR, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Flash_GetTextExtents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Flash_GetTextExtents;
     /// <summary>
     /// Function: Flash_GetTextExtents
     /// </summary>
-    public unsafe virtual void Flash_GetTextExtents(BmSDK.FString TheText, out float outWidth, out float outHeight, float atPointSize = default, float FixedWidth = default)
+    public unsafe virtual void Flash_GetTextExtents(BmSDK.FStringArg TheText, out float outWidth, out float outHeight, float atPointSize = default, float FixedWidth = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Flash_GetTextExtents, "Engine.Canvas.Flash_GetTextExtents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Flash_GetTextExtents, "Engine.Canvas.Flash_GetTextExtents", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TheText, paramsPtr + 0);
+        TheText.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out outWidth);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(outWidth, paramsPtr + 16);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out outHeight);
@@ -734,24 +737,25 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         outWidth = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
         outHeight = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_Flash_DrawText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Flash_DrawText;
     /// <summary>
     /// Function: Flash_DrawText
     /// </summary>
-    public unsafe virtual float Flash_DrawText(float atX, float atY, BmSDK.FString TheText, BmSDK.GameObject.FColor Colour, float atPointSize = default, BmSDK.Engine.Canvas.FlashText_Align Align = default, float FixedWidth = default)
+    public unsafe virtual float Flash_DrawText(float atX, float atY, BmSDK.FStringArg TheText, BmSDK.GameObject.FColor Colour, float atPointSize = default, BmSDK.Engine.Canvas.FlashText_Align Align = default, float FixedWidth = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Flash_DrawText, "Engine.Canvas.Flash_DrawText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Flash_DrawText, "Engine.Canvas.Flash_DrawText", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(atX, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(atY, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TheText, paramsPtr + 8);
+        TheText.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Colour, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(atPointSize, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Align, paramsPtr + 32);
@@ -764,20 +768,21 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_DrawText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawText;
     /// <summary>
     /// Function: DrawText
     /// </summary>
-    public unsafe virtual void DrawText(BmSDK.FString Text, bool CR, float XScale, float YScale, out BmSDK.Engine.Canvas.FFontRenderInfo RenderInfo)
+    public unsafe virtual void DrawText(BmSDK.FStringArg Text, bool CR, float XScale, float YScale, out BmSDK.Engine.Canvas.FFontRenderInfo RenderInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawText, "Engine.Canvas.DrawText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawText, "Engine.Canvas.DrawText", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 0);
+        Text.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CR, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(XScale, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(YScale, paramsPtr + 24);
@@ -791,21 +796,22 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         RenderInfo = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Canvas.FFontRenderInfo>(paramsPtr + 28);
         return;
     }
 
-    private static BmSDK.Function __fn_TextSize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TextSize;
     /// <summary>
     /// Function: TextSize
     /// </summary>
-    public unsafe virtual void TextSize(BmSDK.FString String, out float XL, out float YL, float XScale = default, float YScale = default)
+    public unsafe virtual void TextSize(BmSDK.FStringArg String, out float XL, out float YL, float XScale = default, float YScale = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TextSize, "Engine.Canvas.TextSize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TextSize, "Engine.Canvas.TextSize", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(String, paramsPtr + 0);
+        String.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out XL);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(XL, paramsPtr + 16);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out YL);
@@ -820,22 +826,23 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         XL = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
         YL = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_StrLen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StrLen;
     /// <summary>
     /// Function: StrLen
     /// </summary>
-    public unsafe virtual void StrLen(BmSDK.FString String, out float XL, out float YL)
+    public unsafe virtual void StrLen(BmSDK.FStringArg String, out float XL, out float YL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrLen, "Engine.Canvas.StrLen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StrLen, "Engine.Canvas.StrLen", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(String, paramsPtr + 0);
+        String.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out XL);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(XL, paramsPtr + 16);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out YL);
@@ -848,6 +855,7 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         XL = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
         YL = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
         return;
@@ -871,14 +879,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Canvas.FFontRenderInfo>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_DrawTris;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTris;
     /// <summary>
     /// Function: DrawTris
     /// </summary>
     public unsafe virtual void DrawTris(BmSDK.Engine.Texture Tex, BmSDK.TArray<BmSDK.Engine.Canvas.FCanvasUVTri> Triangles, BmSDK.GameObject.FColor InColor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTris, "Engine.Canvas.DrawTris");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTris, "Engine.Canvas.DrawTris", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tex, paramsPtr + 0);
@@ -895,14 +903,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTileStretched;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTileStretched;
     /// <summary>
     /// Function: DrawTileStretched
     /// </summary>
     public unsafe virtual void DrawTileStretched(BmSDK.Engine.Texture Tex, float XL, float YL, float U, float V, float UL, float VL, BmSDK.GameObject.FLinearColor LColor = default, bool bStretchHorizontally = default, bool bStretchVertically = default, float ScalingFactor = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTileStretched, "Engine.Canvas.DrawTileStretched");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTileStretched, "Engine.Canvas.DrawTileStretched", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tex, paramsPtr + 0);
@@ -927,14 +935,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTimer;
     /// <summary>
     /// Function: DrawTimer
     /// </summary>
     public unsafe virtual void DrawTimer(BmSDK.Engine.Texture Tex, float StartTime, float TotalTime, float XL, float YL, float U, float V, float UL, float VL, BmSDK.GameObject.FLinearColor LColor = default, BmSDK.Engine.EngineTypes.EBlendMode Blend = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTimer, "Engine.Canvas.DrawTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTimer, "Engine.Canvas.DrawTimer", this);
         byte* paramsPtr = stackalloc byte[73];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tex, paramsPtr + 0);
@@ -959,14 +967,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawRotatedMaterialTile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRotatedMaterialTile;
     /// <summary>
     /// Function: DrawRotatedMaterialTile
     /// </summary>
     public unsafe virtual void DrawRotatedMaterialTile(BmSDK.Engine.MaterialInterface Mat, BmSDK.Rotator Rotation, float XL, float YL, float U = default, float V = default, float UL = default, float VL = default, float AnchorX = default, float AnchorY = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawRotatedMaterialTile, "Engine.Canvas.DrawRotatedMaterialTile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawRotatedMaterialTile, "Engine.Canvas.DrawRotatedMaterialTile", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Mat, paramsPtr + 0);
@@ -990,14 +998,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawRotatedTile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRotatedTile;
     /// <summary>
     /// Function: DrawRotatedTile
     /// </summary>
     public unsafe virtual void DrawRotatedTile(BmSDK.Engine.Texture Tex, BmSDK.Rotator Rotation, float XL, float YL, float U, float V, float UL, float VL, float AnchorX = default, float AnchorY = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawRotatedTile, "Engine.Canvas.DrawRotatedTile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawRotatedTile, "Engine.Canvas.DrawRotatedTile", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tex, paramsPtr + 0);
@@ -1021,14 +1029,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawMaterialTile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawMaterialTile;
     /// <summary>
     /// Function: DrawMaterialTile
     /// </summary>
     public unsafe virtual void DrawMaterialTile(BmSDK.Engine.MaterialInterface Mat, float XL, float YL, float U = default, float V = default, float UL = default, float VL = default, bool bClipTile = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawMaterialTile, "Engine.Canvas.DrawMaterialTile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawMaterialTile, "Engine.Canvas.DrawMaterialTile", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Mat, paramsPtr + 0);
@@ -1050,14 +1058,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PreOptimizeDrawTiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreOptimizeDrawTiles;
     /// <summary>
     /// Function: PreOptimizeDrawTiles
     /// </summary>
     public unsafe virtual void PreOptimizeDrawTiles(int Num, BmSDK.Engine.Texture Tex, BmSDK.Engine.EngineTypes.EBlendMode Blend = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreOptimizeDrawTiles, "Engine.Canvas.PreOptimizeDrawTiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreOptimizeDrawTiles, "Engine.Canvas.PreOptimizeDrawTiles", this);
         byte* paramsPtr = stackalloc byte[29];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num, paramsPtr + 0);
@@ -1074,14 +1082,14 @@ public partial class Canvas : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawTile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTile;
     /// <summary>
     /// Function: DrawTile
     /// </summary>
     public unsafe virtual void DrawTile(BmSDK.Engine.Texture Tex, float XL, float YL, float U, float V, float UL, float VL, BmSDK.GameObject.FLinearColor LColor = default, bool ClipTile = default, BmSDK.Engine.EngineTypes.EBlendMode Blend = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTile, "Engine.Canvas.DrawTile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTile, "Engine.Canvas.DrawTile", this);
         byte* paramsPtr = stackalloc byte[69];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tex, paramsPtr + 0);

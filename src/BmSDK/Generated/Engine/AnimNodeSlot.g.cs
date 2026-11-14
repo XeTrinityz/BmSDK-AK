@@ -78,14 +78,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<AnimNodeSlot>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TickChildWeights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickChildWeights;
     /// <summary>
     /// Function: TickChildWeights
     /// </summary>
     public unsafe virtual void TickChildWeights(float DeltaSeconds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickChildWeights, "Engine.AnimNodeSlot.TickChildWeights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickChildWeights, "Engine.AnimNodeSlot.TickChildWeights", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaSeconds, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_SetRootBoneRotationOption;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootBoneRotationOption;
     /// <summary>
     /// Function: SetRootBoneRotationOption
     /// </summary>
     public unsafe virtual void SetRootBoneRotationOption(BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisX = default, BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisY = default, BmSDK.Engine.AnimNodeSequence.ERootRotationOption AxisZ = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRootBoneRotationOption, "Engine.AnimNodeSlot.SetRootBoneRotationOption");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRootBoneRotationOption, "Engine.AnimNodeSlot.SetRootBoneRotationOption", this);
         byte* paramsPtr = stackalloc byte[19];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AxisX, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_SetRootBoneAxisOption;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootBoneAxisOption;
     /// <summary>
     /// Function: SetRootBoneAxisOption
     /// </summary>
     public unsafe virtual void SetRootBoneAxisOption(BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisX = default, BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisY = default, BmSDK.Engine.AnimNodeSequence.ERootBoneAxis AxisZ = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRootBoneAxisOption, "Engine.AnimNodeSlot.SetRootBoneAxisOption");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRootBoneAxisOption, "Engine.AnimNodeSlot.SetRootBoneAxisOption", this);
         byte* paramsPtr = stackalloc byte[19];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AxisX, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetCustomAnimNodeSeq;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCustomAnimNodeSeq;
     /// <summary>
     /// Function: GetCustomAnimNodeSeq
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetCustomAnimNodeSeq()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCustomAnimNodeSeq, "Engine.AnimNodeSlot.GetCustomAnimNodeSeq");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomAnimNodeSeq, "Engine.AnimNodeSlot.GetCustomAnimNodeSeq", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -169,14 +169,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimNodeSequence>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetActorAnimEndNotification;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActorAnimEndNotification;
     /// <summary>
     /// Function: SetActorAnimEndNotification
     /// </summary>
     public unsafe virtual void SetActorAnimEndNotification(bool bNewStatus)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActorAnimEndNotification, "Engine.AnimNodeSlot.SetActorAnimEndNotification");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActorAnimEndNotification, "Engine.AnimNodeSlot.SetActorAnimEndNotification", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewStatus, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_SetCustomAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCustomAnim;
     /// <summary>
     /// Function: SetCustomAnim
     /// </summary>
     public unsafe virtual void SetCustomAnim(BmSDK.FName AnimName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomAnim, "Engine.AnimNodeSlot.SetCustomAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCustomAnim, "Engine.AnimNodeSlot.SetCustomAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -213,14 +213,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_SetAllowPauseAnims;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowPauseAnims;
     /// <summary>
     /// Function: SetAllowPauseAnims
     /// </summary>
     public unsafe virtual void SetAllowPauseAnims(bool bSet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllowPauseAnims, "Engine.AnimNodeSlot.SetAllowPauseAnims");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllowPauseAnims, "Engine.AnimNodeSlot.SetAllowPauseAnims", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSet, paramsPtr + 0);
@@ -235,14 +235,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_StopCustomAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopCustomAnim;
     /// <summary>
     /// Function: StopCustomAnim
     /// </summary>
     public unsafe virtual void StopCustomAnim(float BlendOutTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopCustomAnim, "Engine.AnimNodeSlot.StopCustomAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopCustomAnim, "Engine.AnimNodeSlot.StopCustomAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BlendOutTime, paramsPtr + 0);
@@ -257,14 +257,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayedAnimation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayedAnimation;
     /// <summary>
     /// Function: GetPlayedAnimation
     /// </summary>
     public unsafe virtual BmSDK.FName GetPlayedAnimation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayedAnimation, "Engine.AnimNodeSlot.GetPlayedAnimation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayedAnimation, "Engine.AnimNodeSlot.GetPlayedAnimation", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -278,14 +278,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayCustomAnimByDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCustomAnimByDuration;
     /// <summary>
     /// Function: PlayCustomAnimByDuration
     /// </summary>
     public unsafe virtual bool PlayCustomAnimByDuration(BmSDK.FName AnimName, float Duration, float BlendInTime = default, float BlendOutTime = default, bool bLooping = default, bool bOverride = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCustomAnimByDuration, "Engine.AnimNodeSlot.PlayCustomAnimByDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCustomAnimByDuration, "Engine.AnimNodeSlot.PlayCustomAnimByDuration", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -305,14 +305,14 @@ public partial class AnimNodeSlot : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_PlayCustomAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCustomAnim;
     /// <summary>
     /// Function: PlayCustomAnim
     /// </summary>
     public unsafe virtual float PlayCustomAnim(BmSDK.FName AnimName, float Rate, float BlendInTime = default, float BlendOutTime = default, bool bLooping = default, bool bOverride = default, float StartTime = default, float EndTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCustomAnim, "Engine.AnimNodeSlot.PlayCustomAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCustomAnim, "Engine.AnimNodeSlot.PlayCustomAnim", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);

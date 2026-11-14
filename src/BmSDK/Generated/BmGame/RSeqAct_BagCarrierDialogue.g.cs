@@ -86,28 +86,28 @@ public partial class RSeqAct_BagCarrierDialogue : BmSDK.Engine.SeqAct_Latent, Bm
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_BagCarrierDialogue.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_BagCarrierDialogue.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryTriggerIncidentalDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerIncidentalDialogue;
     /// <summary>
     /// Function: TryTriggerIncidentalDialogue
     /// </summary>
     public unsafe virtual void TryTriggerIncidentalDialogue(BmSDK.FName bark, BmSDK.BmGame.RPawnVillain Speaker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerIncidentalDialogue, "BmGame.RSeqAct_BagCarrierDialogue.TryTriggerIncidentalDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerIncidentalDialogue, "BmGame.RSeqAct_BagCarrierDialogue.TryTriggerIncidentalDialogue", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bark, paramsPtr + 0);
@@ -116,28 +116,28 @@ public partial class RSeqAct_BagCarrierDialogue : BmSDK.Engine.SeqAct_Latent, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_CanTriggerIncidentalDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTriggerIncidentalDialogue;
     /// <summary>
     /// Function: CanTriggerIncidentalDialogue
     /// </summary>
     public unsafe virtual bool CanTriggerIncidentalDialogue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTriggerIncidentalDialogue, "BmGame.RSeqAct_BagCarrierDialogue.CanTriggerIncidentalDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTriggerIncidentalDialogue, "BmGame.RSeqAct_BagCarrierDialogue.CanTriggerIncidentalDialogue", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BagDroppedOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BagDroppedOff;
     /// <summary>
     /// Function: BagDroppedOff
     /// </summary>
     public unsafe virtual void BagDroppedOff(BmSDK.BmGame.RPawnVillain bagCarrier, BmSDK.BmGame.RLootDestinationBase dropoffPoint, BmSDK.BmGame.RLootSourceBase nextPickupPoint, bool bagCarryingFinished)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BagDroppedOff, "BmGame.RSeqAct_BagCarrierDialogue.BagDroppedOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BagDroppedOff, "BmGame.RSeqAct_BagCarrierDialogue.BagDroppedOff", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bagCarrier, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class RSeqAct_BagCarrierDialogue : BmSDK.Engine.SeqAct_Latent, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_BagPickedUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BagPickedUp;
     /// <summary>
     /// Function: BagPickedUp
     /// </summary>
     public unsafe virtual void BagPickedUp(BmSDK.BmGame.RPawnVillain bagCarrier, BmSDK.BmGame.RLootSourceBase PickupPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BagPickedUp, "BmGame.RSeqAct_BagCarrierDialogue.BagPickedUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BagPickedUp, "BmGame.RSeqAct_BagCarrierDialogue.BagPickedUp", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bagCarrier, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RSeqAct_BagCarrierDialogue : BmSDK.Engine.SeqAct_Latent, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterWithRoomState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithRoomState;
     /// <summary>
     /// Function: RegisterWithRoomState
     /// </summary>
     public unsafe virtual void RegisterWithRoomState(bool bWarnIfFailed = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWithRoomState, "BmGame.RSeqAct_BagCarrierDialogue.RegisterWithRoomState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterWithRoomState, "BmGame.RSeqAct_BagCarrierDialogue.RegisterWithRoomState", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWarnIfFailed, paramsPtr + 0);

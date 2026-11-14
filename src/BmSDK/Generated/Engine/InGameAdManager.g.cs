@@ -78,14 +78,14 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
         where TComponent : class, Framework.IScriptComponent<InGameAdManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetPauseWhileAdOpen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPauseWhileAdOpen;
     /// <summary>
     /// Function: SetPauseWhileAdOpen
     /// </summary>
     public unsafe virtual void SetPauseWhileAdOpen(bool bShouldPause)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPauseWhileAdOpen, "Engine.InGameAdManager.SetPauseWhileAdOpen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPauseWhileAdOpen, "Engine.InGameAdManager.SetPauseWhileAdOpen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldPause, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_ForceCloseAd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceCloseAd;
     /// <summary>
     /// Function: ForceCloseAd
     /// </summary>
     public unsafe virtual void ForceCloseAd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceCloseAd, "Engine.InGameAdManager.ForceCloseAd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceCloseAd, "Engine.InGameAdManager.ForceCloseAd", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -114,14 +114,14 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_HideBanner;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBanner;
     /// <summary>
     /// Function: HideBanner
     /// </summary>
     public unsafe virtual void HideBanner()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideBanner, "Engine.InGameAdManager.HideBanner");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideBanner, "Engine.InGameAdManager.HideBanner", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -135,14 +135,14 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_ShowBanner;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowBanner;
     /// <summary>
     /// Function: ShowBanner
     /// </summary>
     public unsafe virtual void ShowBanner(bool bShowBottomOfScreen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowBanner, "Engine.InGameAdManager.ShowBanner");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowBanner, "Engine.InGameAdManager.ShowBanner", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShowBottomOfScreen, paramsPtr + 0);
@@ -157,14 +157,14 @@ public partial class InGameAdManager : BmSDK.Engine.PlatformInterfaceBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.InGameAdManager.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.InGameAdManager.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

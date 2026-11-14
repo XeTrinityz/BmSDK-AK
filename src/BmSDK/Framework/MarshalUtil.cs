@@ -506,6 +506,7 @@ public static unsafe class MarshalUtil
                 if (obj is Class)
                 {
                     s_wrapperTypes.Remove(objPtr);
+                    FunctionCache.ClassDestroyed();
                 }
             }
         }

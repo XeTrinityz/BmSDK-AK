@@ -78,14 +78,14 @@ public partial class RVehicleBehaviour_ChasingCop : BmSDK.BmGame.RVehicleBehavio
         where TComponent : class, Framework.IScriptComponent<RVehicleBehaviour_ChasingCop>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyBumpedVehicleNPC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyBumpedVehicleNPC;
     /// <summary>
     /// Function: NotifyBumpedVehicleNPC
     /// </summary>
     public unsafe override void NotifyBumpedVehicleNPC(BmSDK.BmGame.RVehicleNPC Other, System.Numerics.Vector3 ContactPos, float Speed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyBumpedVehicleNPC, "BmGame.RVehicleBehaviour_ChasingCop.NotifyBumpedVehicleNPC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyBumpedVehicleNPC, "BmGame.RVehicleBehaviour_ChasingCop.NotifyBumpedVehicleNPC", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class RVehicleBehaviour_ChasingCop : BmSDK.BmGame.RVehicleBehavio
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RVehicleBehaviour_ChasingCop.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RVehicleBehaviour_ChasingCop.Tick", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -110,42 +110,42 @@ public partial class RVehicleBehaviour_ChasingCop : BmSDK.BmGame.RVehicleBehavio
         return;
     }
 
-    private static BmSDK.Function __fn_OnFollowGiveUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFollowGiveUp;
     /// <summary>
     /// Function: OnFollowGiveUp
     /// </summary>
     public unsafe override void OnFollowGiveUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFollowGiveUp, "BmGame.RVehicleBehaviour_ChasingCop.OnFollowGiveUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFollowGiveUp, "BmGame.RVehicleBehaviour_ChasingCop.OnFollowGiveUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnFollowVehicleDied;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFollowVehicleDied;
     /// <summary>
     /// Function: OnFollowVehicleDied
     /// </summary>
     public unsafe override void OnFollowVehicleDied()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFollowVehicleDied, "BmGame.RVehicleBehaviour_ChasingCop.OnFollowVehicleDied");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFollowVehicleDied, "BmGame.RVehicleBehaviour_ChasingCop.OnFollowVehicleDied", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetDesiredFollowOffsetBehind;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDesiredFollowOffsetBehind;
     /// <summary>
     /// Function: GetDesiredFollowOffsetBehind
     /// </summary>
     public unsafe override float GetDesiredFollowOffsetBehind(int FollowerIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDesiredFollowOffsetBehind, "BmGame.RVehicleBehaviour_ChasingCop.GetDesiredFollowOffsetBehind");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDesiredFollowOffsetBehind, "BmGame.RVehicleBehaviour_ChasingCop.GetDesiredFollowOffsetBehind", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FollowerIndex, paramsPtr + 0);

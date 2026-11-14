@@ -18,5 +18,5 @@ public partial interface OnlineWebInterface : BmSDK.Interface
     /// <summary>
     /// Function: WebRequest
     /// </summary>
-    public unsafe void WebRequest(BmSDK.FString HttpMethod, BmSDK.FString URL, BmSDK.FString Params = default);
+    public unsafe void WebRequest(BmSDK.FStringArg HttpMethod, BmSDK.FStringArg URL, BmSDK.FStringArg Params = default);
 }

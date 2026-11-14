@@ -78,14 +78,14 @@ public partial class RBreakableVentLight : BmSDK.BmGame.RBreakableVentLightBase,
         where TComponent : class, Framework.IScriptComponent<RBreakableVentLight>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HitByGrenade;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitByGrenade;
     /// <summary>
     /// Function: HitByGrenade
     /// </summary>
     public unsafe override void HitByGrenade()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByGrenade, "BmScript.RBreakableVentLight.HitByGrenade");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitByGrenade, "BmScript.RBreakableVentLight.HitByGrenade", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,28 +78,28 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<CoverLink>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDebugAbbrev;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugAbbrev;
     /// <summary>
     /// Function: GetDebugAbbrev
     /// </summary>
     public unsafe override BmSDK.FString GetDebugAbbrev()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDebugAbbrev, "Engine.CoverLink.GetDebugAbbrev");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDebugAbbrev, "Engine.CoverLink.GetDebugAbbrev", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLocationDescription;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationDescription;
     /// <summary>
     /// Function: GetLocationDescription
     /// </summary>
     public unsafe virtual BmSDK.Engine.CoverLink.ECoverLocationDescription GetLocationDescription(int SlotIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationDescription, "Engine.CoverLink.GetLocationDescription");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationDescription, "Engine.CoverLink.GetLocationDescription", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -114,14 +114,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.CoverLink.ECoverLocationDescription>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetDebugString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugString;
     /// <summary>
     /// Function: GetDebugString
     /// </summary>
     public unsafe virtual BmSDK.FString GetDebugString(int SlotIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDebugString, "Engine.CoverLink.GetDebugString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDebugString, "Engine.CoverLink.GetDebugString", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -129,14 +129,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AddCoverSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCoverSlot;
     /// <summary>
     /// Function: AddCoverSlot
     /// </summary>
     public unsafe virtual int AddCoverSlot(System.Numerics.Vector3 SlotLocation, BmSDK.Rotator SlotRotation, int SlotIdx = default, bool bForceSlotUpdate = default, BmSDK.Engine.Scout Scout = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCoverSlot, "Engine.CoverLink.AddCoverSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCoverSlot, "Engine.CoverLink.AddCoverSlot", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotLocation, paramsPtr + 0);
@@ -155,14 +155,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_BreakFracturedMeshes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakFracturedMeshes;
     /// <summary>
     /// Function: BreakFracturedMeshes
     /// </summary>
     public unsafe virtual void BreakFracturedMeshes(System.Numerics.Vector3 Origin, float Radius, float RBStrength, BmSDK.Class DamageType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakFracturedMeshes, "Engine.CoverLink.BreakFracturedMeshes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakFracturedMeshes, "Engine.CoverLink.BreakFracturedMeshes", this);
         byte* paramsPtr = stackalloc byte[53];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Origin, paramsPtr + 0);
@@ -173,14 +173,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetSwatTurnTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSwatTurnTarget;
     /// <summary>
     /// Function: GetSwatTurnTarget
     /// </summary>
     public unsafe virtual bool GetSwatTurnTarget(int SlotIdx, int Direction, out BmSDK.Engine.CoverLink.FCoverInfo out_Info)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSwatTurnTarget, "Engine.CoverLink.GetSwatTurnTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSwatTurnTarget, "Engine.CoverLink.GetSwatTurnTarget", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -199,28 +199,28 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDown;
     /// <summary>
     /// Function: ShutDown
     /// </summary>
     public unsafe override void ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDown, "Engine.CoverLink.ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShutDown, "Engine.CoverLink.ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEnabled;
     /// <summary>
     /// Function: IsEnabled
     /// </summary>
     public unsafe virtual bool IsEnabled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEnabled, "Engine.CoverLink.IsEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEnabled, "Engine.CoverLink.IsEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -234,14 +234,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AutoAdjustSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoAdjustSlot;
     /// <summary>
     /// Function: AutoAdjustSlot
     /// </summary>
     public unsafe virtual bool AutoAdjustSlot(int SlotIdx, bool bOnlyCheckLeans)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutoAdjustSlot, "Engine.CoverLink.AutoAdjustSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AutoAdjustSlot, "Engine.CoverLink.AutoAdjustSlot", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -257,14 +257,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsRightEdgeSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRightEdgeSlot;
     /// <summary>
     /// Function: IsRightEdgeSlot
     /// </summary>
     public unsafe virtual bool IsRightEdgeSlot(int SlotIdx, bool bIgnoreLeans)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRightEdgeSlot, "Engine.CoverLink.IsRightEdgeSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRightEdgeSlot, "Engine.CoverLink.IsRightEdgeSlot", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -280,14 +280,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsLeftEdgeSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLeftEdgeSlot;
     /// <summary>
     /// Function: IsLeftEdgeSlot
     /// </summary>
     public unsafe virtual bool IsLeftEdgeSlot(int SlotIdx, bool bIgnoreLeans)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLeftEdgeSlot, "Engine.CoverLink.IsLeftEdgeSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLeftEdgeSlot, "Engine.CoverLink.IsLeftEdgeSlot", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -303,14 +303,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsEdgeSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEdgeSlot;
     /// <summary>
     /// Function: IsEdgeSlot
     /// </summary>
     public unsafe virtual bool IsEdgeSlot(int SlotIdx, bool bIgnoreLeans = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEdgeSlot, "Engine.CoverLink.IsEdgeSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEdgeSlot, "Engine.CoverLink.IsEdgeSlot", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -326,14 +326,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindSlots;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSlots;
     /// <summary>
     /// Function: FindSlots
     /// </summary>
     public unsafe virtual bool FindSlots(System.Numerics.Vector3 CheckLocation, float MaxDistance, out int LeftSlotIdx, out int RightSlotIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSlots, "Engine.CoverLink.FindSlots");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSlots, "Engine.CoverLink.FindSlots", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckLocation, paramsPtr + 0);
@@ -355,14 +355,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_IsStationarySlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStationarySlot;
     /// <summary>
     /// Function: IsStationarySlot
     /// </summary>
     public unsafe virtual bool IsStationarySlot(int SlotIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStationarySlot, "Engine.CoverLink.IsStationarySlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStationarySlot, "Engine.CoverLink.IsStationarySlot", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -370,14 +370,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsValidClaimBetween;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidClaimBetween;
     /// <summary>
     /// Function: IsValidClaimBetween
     /// </summary>
     public unsafe virtual bool IsValidClaimBetween(BmSDK.Engine.Pawn ChkClaim, int StartSlotIdx, int EndSlotIdx, bool bSkipTeamCheck = default, bool bSkipOverlapCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidClaimBetween, "Engine.CoverLink.IsValidClaimBetween");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidClaimBetween, "Engine.CoverLink.IsValidClaimBetween", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChkClaim, paramsPtr + 0);
@@ -396,14 +396,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_IsValidClaim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidClaim;
     /// <summary>
     /// Function: IsValidClaim
     /// </summary>
     public unsafe virtual bool IsValidClaim(BmSDK.Engine.Pawn ChkClaim, int SlotIdx, bool bSkipTeamCheck = default, bool bSkipOverlapCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidClaim, "Engine.CoverLink.IsValidClaim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidClaim, "Engine.CoverLink.IsValidClaim", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChkClaim, paramsPtr + 0);
@@ -421,14 +421,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetSlotViewPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSlotViewPoint;
     /// <summary>
     /// Function: GetSlotViewPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSlotViewPoint(int SlotIdx, BmSDK.Engine.CoverLink.ECoverType Type = default, BmSDK.Engine.CoverLink.ECoverAction Action = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSlotViewPoint, "Engine.CoverLink.GetSlotViewPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSlotViewPoint, "Engine.CoverLink.GetSlotViewPoint", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -445,14 +445,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetSlotRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSlotRotation;
     /// <summary>
     /// Function: GetSlotRotation
     /// </summary>
     public unsafe virtual BmSDK.Rotator GetSlotRotation(int SlotIdx, bool bForceUseOffset = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSlotRotation, "Engine.CoverLink.GetSlotRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSlotRotation, "Engine.CoverLink.GetSlotRotation", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -468,14 +468,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetSlotLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSlotLocation;
     /// <summary>
     /// Function: GetSlotLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSlotLocation(int SlotIdx, bool bForceUseOffset = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSlotLocation, "Engine.CoverLink.GetSlotLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSlotLocation, "Engine.CoverLink.GetSlotLocation", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);
@@ -548,14 +548,14 @@ public partial class CoverLink : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetFireLinkTargetCoverInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFireLinkTargetCoverInfo;
     /// <summary>
     /// Function: GetFireLinkTargetCoverInfo
     /// </summary>
     public unsafe virtual bool GetFireLinkTargetCoverInfo(int SlotIdx, int FireLinkIdx, out BmSDK.Engine.CoverLink.FCoverInfo out_Info, BmSDK.Engine.CoverLink.EFireLinkID ArrayID = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFireLinkTargetCoverInfo, "Engine.CoverLink.GetFireLinkTargetCoverInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFireLinkTargetCoverInfo, "Engine.CoverLink.GetFireLinkTargetCoverInfo", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SlotIdx, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class Ladder : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Ladder>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SuggestMovePreparation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuggestMovePreparation;
     /// <summary>
     /// Function: SuggestMovePreparation
     /// </summary>
     public unsafe override bool SuggestMovePreparation(BmSDK.Engine.Pawn Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuggestMovePreparation, "Engine.Ladder.SuggestMovePreparation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuggestMovePreparation, "Engine.Ladder.SuggestMovePreparation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);

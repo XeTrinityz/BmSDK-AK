@@ -73,28 +73,28 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RSeqAct_ChatterBoxBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsAVideoBillboardOnScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAVideoBillboardOnScreen;
     /// <summary>
     /// Function: IsAVideoBillboardOnScreen
     /// </summary>
     public unsafe virtual bool IsAVideoBillboardOnScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAVideoBillboardOnScreen, "BmGame.RSeqAct_ChatterBoxBase.IsAVideoBillboardOnScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAVideoBillboardOnScreen, "BmGame.RSeqAct_ChatterBoxBase.IsAVideoBillboardOnScreen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetEventBarkForActivityType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEventBarkForActivityType;
     /// <summary>
     /// Function: GetEventBarkForActivityType
     /// </summary>
     public unsafe virtual BmSDK.FName GetEventBarkForActivityType(BmSDK.BmGame.RSeqAct_ChatterBoxBase.PawnChatterActivityType activity, bool bForceWanderersToPlayOneShots = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEventBarkForActivityType, "BmGame.RSeqAct_ChatterBoxBase.GetEventBarkForActivityType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEventBarkForActivityType, "BmGame.RSeqAct_ChatterBoxBase.GetEventBarkForActivityType", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(activity, paramsPtr + 0);
@@ -103,28 +103,28 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetScarecrowBillboardChatterSpeech;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScarecrowBillboardChatterSpeech;
     /// <summary>
     /// Function: GetScarecrowBillboardChatterSpeech
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogueSpeech GetScarecrowBillboardChatterSpeech()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScarecrowBillboardChatterSpeech, "BmGame.RSeqAct_ChatterBoxBase.GetScarecrowBillboardChatterSpeech");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScarecrowBillboardChatterSpeech, "BmGame.RSeqAct_ChatterBoxBase.GetScarecrowBillboardChatterSpeech", this);
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueSpeech>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerHelicopterChatterBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerHelicopterChatterBark;
     /// <summary>
     /// Function: TriggerHelicopterChatterBark
     /// </summary>
     public unsafe virtual bool TriggerHelicopterChatterBark(BmSDK.BmGame.RHelicopterBase heliSpeaker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerHelicopterChatterBark, "BmGame.RSeqAct_ChatterBoxBase.TriggerHelicopterChatterBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerHelicopterChatterBark, "BmGame.RSeqAct_ChatterBoxBase.TriggerHelicopterChatterBark", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(heliSpeaker, paramsPtr + 0);
@@ -132,14 +132,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AreOtherTanksInRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AreOtherTanksInRange;
     /// <summary>
     /// Function: AreOtherTanksInRange
     /// </summary>
     public unsafe virtual bool AreOtherTanksInRange(BmSDK.BmGame.RVehicleTank inTank)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AreOtherTanksInRange, "BmGame.RSeqAct_ChatterBoxBase.AreOtherTanksInRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AreOtherTanksInRange, "BmGame.RSeqAct_ChatterBoxBase.AreOtherTanksInRange", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inTank, paramsPtr + 0);
@@ -147,84 +147,84 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ShuffleChosenPawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShuffleChosenPawns;
     /// <summary>
     /// Function: ShuffleChosenPawns
     /// </summary>
     public unsafe virtual void ShuffleChosenPawns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShuffleChosenPawns, "BmGame.RSeqAct_ChatterBoxBase.ShuffleChosenPawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShuffleChosenPawns, "BmGame.RSeqAct_ChatterBoxBase.ShuffleChosenPawns", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryTriggerThugChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerThugChatter;
     /// <summary>
     /// Function: TryTriggerThugChatter
     /// </summary>
     public unsafe virtual bool TryTriggerThugChatter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerThugChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerThugChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerThugChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerThugChatter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryTriggerChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerChatter;
     /// <summary>
     /// Function: TryTriggerChatter
     /// </summary>
     public unsafe virtual bool TryTriggerChatter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerChatter", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryTriggerChopperBMChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerChopperBMChatter;
     /// <summary>
     /// Function: TryTriggerChopperBMChatter
     /// </summary>
     public unsafe virtual bool TryTriggerChopperBMChatter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerChopperBMChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerChopperBMChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerChopperBMChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerChopperBMChatter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateCachedGameStateVars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCachedGameStateVars;
     /// <summary>
     /// Function: UpdateCachedGameStateVars
     /// </summary>
     public unsafe virtual void UpdateCachedGameStateVars()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCachedGameStateVars, "BmGame.RSeqAct_ChatterBoxBase.UpdateCachedGameStateVars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCachedGameStateVars, "BmGame.RSeqAct_ChatterBoxBase.UpdateCachedGameStateVars", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetOuterMost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOuterMost;
     /// <summary>
     /// Function: GetOuterMost
     /// </summary>
     public unsafe virtual BmSDK.GameObject GetOuterMost(BmSDK.GameObject A)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOuterMost, "BmGame.RSeqAct_ChatterBoxBase.GetOuterMost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOuterMost, "BmGame.RSeqAct_ChatterBoxBase.GetOuterMost", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);
@@ -232,14 +232,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TriggerThugChatterBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerThugChatterBark;
     /// <summary>
     /// Function: TriggerThugChatterBark
     /// </summary>
     public unsafe virtual bool TriggerThugChatterBark(bool bForceWanderersToPlayOneShots = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerThugChatterBark, "BmGame.RSeqAct_ChatterBoxBase.TriggerThugChatterBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerThugChatterBark, "BmGame.RSeqAct_ChatterBoxBase.TriggerThugChatterBark", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceWanderersToPlayOneShots, paramsPtr + 0);
@@ -247,28 +247,28 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_DrawDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawDebug;
     /// <summary>
     /// Function: DrawDebug
     /// </summary>
     public unsafe virtual void DrawDebug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawDebug, "BmGame.RSeqAct_ChatterBoxBase.DrawDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawDebug, "BmGame.RSeqAct_ChatterBoxBase.DrawDebug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnKismetDialogueSuccess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnKismetDialogueSuccess;
     /// <summary>
     /// Function: OnKismetDialogueSuccess
     /// </summary>
     public unsafe virtual void OnKismetDialogueSuccess()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnKismetDialogueSuccess, "BmGame.RSeqAct_ChatterBoxBase.OnKismetDialogueSuccess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnKismetDialogueSuccess, "BmGame.RSeqAct_ChatterBoxBase.OnKismetDialogueSuccess", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -282,14 +282,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_OnKismetDialogueFail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnKismetDialogueFail;
     /// <summary>
     /// Function: OnKismetDialogueFail
     /// </summary>
     public unsafe virtual void OnKismetDialogueFail()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnKismetDialogueFail, "BmGame.RSeqAct_ChatterBoxBase.OnKismetDialogueFail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnKismetDialogueFail, "BmGame.RSeqAct_ChatterBoxBase.OnKismetDialogueFail", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -303,14 +303,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_GetRiddlerChatterInterval;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerChatterInterval;
     /// <summary>
     /// Function: GetRiddlerChatterInterval
     /// </summary>
     public unsafe virtual float GetRiddlerChatterInterval()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerChatterInterval, "BmGame.RSeqAct_ChatterBoxBase.GetRiddlerChatterInterval");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerChatterInterval, "BmGame.RSeqAct_ChatterBoxBase.GetRiddlerChatterInterval", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -324,14 +324,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetScarecrowChatterInterval;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScarecrowChatterInterval;
     /// <summary>
     /// Function: GetScarecrowChatterInterval
     /// </summary>
     public unsafe virtual float GetScarecrowChatterInterval()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScarecrowChatterInterval, "BmGame.RSeqAct_ChatterBoxBase.GetScarecrowChatterInterval");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScarecrowChatterInterval, "BmGame.RSeqAct_ChatterBoxBase.GetScarecrowChatterInterval", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -345,14 +345,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsLowUrgencyObjectiveActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLowUrgencyObjectiveActive;
     /// <summary>
     /// Function: IsLowUrgencyObjectiveActive
     /// </summary>
     public unsafe virtual bool IsLowUrgencyObjectiveActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLowUrgencyObjectiveActive, "BmGame.RSeqAct_ChatterBoxBase.IsLowUrgencyObjectiveActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLowUrgencyObjectiveActive, "BmGame.RSeqAct_ChatterBoxBase.IsLowUrgencyObjectiveActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -366,14 +366,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LogNoChatterFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogNoChatterFound;
     /// <summary>
     /// Function: LogNoChatterFound
     /// </summary>
     public unsafe virtual void LogNoChatterFound(BmSDK.BmGame.RBarkFlagBase BarkFlags, BmSDK.Engine.Actor subjectActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogNoChatterFound, "BmGame.RSeqAct_ChatterBoxBase.LogNoChatterFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogNoChatterFound, "BmGame.RSeqAct_ChatterBoxBase.LogNoChatterFound", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BarkFlags, paramsPtr + 0);
@@ -389,14 +389,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_TryTriggerHelicopterChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerHelicopterChatter;
     /// <summary>
     /// Function: TryTriggerHelicopterChatter
     /// </summary>
     public unsafe virtual bool TryTriggerHelicopterChatter(bool bBMChatterOnly)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerHelicopterChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerHelicopterChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerHelicopterChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerHelicopterChatter", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bBMChatterOnly, paramsPtr + 0);
@@ -411,14 +411,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TryTriggerRiddlerBillboardChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerRiddlerBillboardChatter;
     /// <summary>
     /// Function: TryTriggerRiddlerBillboardChatter
     /// </summary>
     public unsafe virtual bool TryTriggerRiddlerBillboardChatter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerRiddlerBillboardChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerRiddlerBillboardChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerRiddlerBillboardChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerRiddlerBillboardChatter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -432,14 +432,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryTriggerScarecrowBillboardChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryTriggerScarecrowBillboardChatter;
     /// <summary>
     /// Function: TryTriggerScarecrowBillboardChatter
     /// </summary>
     public unsafe virtual bool TryTriggerScarecrowBillboardChatter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryTriggerScarecrowBillboardChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerScarecrowBillboardChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryTriggerScarecrowBillboardChatter, "BmGame.RSeqAct_ChatterBoxBase.TryTriggerScarecrowBillboardChatter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -453,14 +453,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanPawnChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPawnChatter;
     /// <summary>
     /// Function: CanPawnChatter
     /// </summary>
     public unsafe virtual bool CanPawnChatter(BmSDK.BmGame.RBMPawnAI TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPawnChatter, "BmGame.RSeqAct_ChatterBoxBase.CanPawnChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPawnChatter, "BmGame.RSeqAct_ChatterBoxBase.CanPawnChatter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -475,14 +475,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ArePawnsInSameGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ArePawnsInSameGroup;
     /// <summary>
     /// Function: ArePawnsInSameGroup
     /// </summary>
     public unsafe virtual bool ArePawnsInSameGroup(BmSDK.BmGame.RSeqAct_ChatterBoxBase.FPawnChatterInfo PawnInfoA, BmSDK.BmGame.RSeqAct_ChatterBoxBase.FPawnChatterInfo PawnInfoB)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ArePawnsInSameGroup, "BmGame.RSeqAct_ChatterBoxBase.ArePawnsInSameGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ArePawnsInSameGroup, "BmGame.RSeqAct_ChatterBoxBase.ArePawnsInSameGroup", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnInfoA, paramsPtr + 0);
@@ -498,14 +498,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 64);
     }
 
-    private static BmSDK.Function __fn_GroupPawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GroupPawns;
     /// <summary>
     /// Function: GroupPawns
     /// </summary>
     public unsafe virtual int GroupPawns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GroupPawns, "BmGame.RSeqAct_ChatterBoxBase.GroupPawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GroupPawns, "BmGame.RSeqAct_ChatterBoxBase.GroupPawns", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -540,14 +540,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSeqAct_ChatterBoxBase.GlobalChatterAvailability>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GroupAndScorePawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GroupAndScorePawns;
     /// <summary>
     /// Function: GroupAndScorePawns
     /// </summary>
     public unsafe virtual bool GroupAndScorePawns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GroupAndScorePawns, "BmGame.RSeqAct_ChatterBoxBase.GroupAndScorePawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GroupAndScorePawns, "BmGame.RSeqAct_ChatterBoxBase.GroupAndScorePawns", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -561,14 +561,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAllValidPawnsInRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllValidPawnsInRange;
     /// <summary>
     /// Function: GetAllValidPawnsInRange
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RSeqAct_ChatterBoxBase.FPawnChatterInfo> GetAllValidPawnsInRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllValidPawnsInRange, "BmGame.RSeqAct_ChatterBoxBase.GetAllValidPawnsInRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllValidPawnsInRange, "BmGame.RSeqAct_ChatterBoxBase.GetAllValidPawnsInRange", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -582,14 +582,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RSeqAct_ChatterBoxBase.FPawnChatterInfo>>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateTimers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTimers;
     /// <summary>
     /// Function: UpdateTimers
     /// </summary>
     public unsafe virtual void UpdateTimers(float DeltaTime, bool bGlobalLock, bool bAnyoneSpeaking, bool bThugTimerPaused, bool bThugTimerPausedByManbatOnly, bool bInActivePredVol)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTimers, "BmGame.RSeqAct_ChatterBoxBase.UpdateTimers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTimers, "BmGame.RSeqAct_ChatterBoxBase.UpdateTimers", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -609,14 +609,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_Update_Native;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update_Native;
     /// <summary>
     /// Function: Update_Native
     /// </summary>
     public unsafe virtual bool Update_Native(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update_Native, "BmGame.RSeqAct_ChatterBoxBase.Update_Native");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update_Native, "BmGame.RSeqAct_ChatterBoxBase.Update_Native", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -631,14 +631,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetHighestPlayingSpeechPriority_IgnoreManbat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHighestPlayingSpeechPriority_IgnoreManbat;
     /// <summary>
     /// Function: GetHighestPlayingSpeechPriority_IgnoreManbat
     /// </summary>
     public unsafe virtual int GetHighestPlayingSpeechPriority_IgnoreManbat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHighestPlayingSpeechPriority_IgnoreManbat, "BmGame.RSeqAct_ChatterBoxBase.GetHighestPlayingSpeechPriority_IgnoreManbat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHighestPlayingSpeechPriority_IgnoreManbat, "BmGame.RSeqAct_ChatterBoxBase.GetHighestPlayingSpeechPriority_IgnoreManbat", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -652,14 +652,14 @@ public partial class RSeqAct_ChatterBoxBase : BmSDK.Engine.SeqAct_Latent, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ResetThugChatterTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetThugChatterTimer;
     /// <summary>
     /// Function: ResetThugChatterTimer
     /// </summary>
     public unsafe virtual void ResetThugChatterTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetThugChatterTimer, "BmGame.RSeqAct_ChatterBoxBase.ResetThugChatterTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetThugChatterTimer, "BmGame.RSeqAct_ChatterBoxBase.ResetThugChatterTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

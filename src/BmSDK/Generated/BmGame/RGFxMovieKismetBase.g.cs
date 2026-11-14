@@ -78,14 +78,14 @@ public partial class RGFxMovieKismetBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RGFxMovieKismetBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CloseWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseWindow;
     /// <summary>
     /// Function: CloseWindow
     /// </summary>
     public unsafe virtual void CloseWindow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseWindow, "BmGame.RGFxMovieKismetBase.CloseWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseWindow, "BmGame.RGFxMovieKismetBase.CloseWindow", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,28 +99,28 @@ public partial class RGFxMovieKismetBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_XI_SetAspect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_SetAspect;
     /// <summary>
     /// Function: XI_SetAspect
     /// </summary>
     public unsafe virtual void XI_SetAspect()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetAspect, "BmGame.RGFxMovieKismetBase.XI_SetAspect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_SetAspect, "BmGame.RGFxMovieKismetBase.XI_SetAspect", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnAspectRatioChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAspectRatioChanged;
     /// <summary>
     /// Function: OnAspectRatioChanged
     /// </summary>
     public unsafe override void OnAspectRatioChanged(float aspect_ratio)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAspectRatioChanged, "BmGame.RGFxMovieKismetBase.OnAspectRatioChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAspectRatioChanged, "BmGame.RGFxMovieKismetBase.OnAspectRatioChanged", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(aspect_ratio, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RGFxMovieKismetBase : BmSDK.BmGame.RGFxMovie, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_Start;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Start;
     /// <summary>
     /// Function: Start
     /// </summary>
     public unsafe override bool Start(bool StartPaused = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Start, "BmGame.RGFxMovieKismetBase.Start");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Start, "BmGame.RGFxMovieKismetBase.Start", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPaused, paramsPtr + 0);

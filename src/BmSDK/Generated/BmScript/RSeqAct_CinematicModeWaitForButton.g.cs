@@ -91,70 +91,70 @@ public partial class RSeqAct_CinematicModeWaitForButton : BmSDK.BmGame.RSeqAct_C
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DualPlayPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DualPlayPressed;
     /// <summary>
     /// Function: DualPlayPressed
     /// </summary>
     public unsafe override void DualPlayPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DualPlayPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.DualPlayPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DualPlayPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.DualPlayPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BattleModeMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BattleModeMove;
     /// <summary>
     /// Function: BattleModeMove
     /// </summary>
     public unsafe override void BattleModeMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BattleModeMove, "BmScript.RSeqAct_CinematicModeWaitForButton.BattleModeMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BattleModeMove, "BmScript.RSeqAct_CinematicModeWaitForButton.BattleModeMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BattleModePressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BattleModePressed;
     /// <summary>
     /// Function: BattleModePressed
     /// </summary>
     public unsafe override void BattleModePressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BattleModePressed, "BmScript.RSeqAct_CinematicModeWaitForButton.BattleModePressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BattleModePressed, "BmScript.RSeqAct_CinematicModeWaitForButton.BattleModePressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_YButtonPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_YButtonPressed;
     /// <summary>
     /// Function: YButtonPressed
     /// </summary>
     public unsafe override void YButtonPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_YButtonPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.YButtonPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_YButtonPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.YButtonPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AButtonPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AButtonPressed;
     /// <summary>
     /// Function: AButtonPressed
     /// </summary>
     public unsafe override void AButtonPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AButtonPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.AButtonPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AButtonPressed, "BmScript.RSeqAct_CinematicModeWaitForButton.AButtonPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

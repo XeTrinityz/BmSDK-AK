@@ -91,28 +91,28 @@ public partial class RSeqAct_IsThugAbleToAct : BmSDK.Engine.SequenceAction, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_IsThugAbleToAct.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_IsThugAbleToAct.Activated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AbleToAct;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AbleToAct;
     /// <summary>
     /// Function: AbleToAct
     /// </summary>
     public unsafe virtual bool AbleToAct(BmSDK.BmGame.RPawnVillain Thug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AbleToAct, "BmGame.RSeqAct_IsThugAbleToAct.AbleToAct");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AbleToAct, "BmGame.RSeqAct_IsThugAbleToAct.AbleToAct", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Thug, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RHidePoint_Grate : BmSDK.BmGame.RHidePoint_GrateBase, BmSDK
         where TComponent : class, Framework.IScriptComponent<RHidePoint_Grate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_MovePawnTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovePawnTo;
     /// <summary>
     /// Function: MovePawnTo
     /// </summary>
     public unsafe override void MovePawnTo(BmSDK.Engine.Pawn PawnToMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePawnTo, "BmScript.RHidePoint_Grate.MovePawnTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovePawnTo, "BmScript.RHidePoint_Grate.MovePawnTo", this);
         byte* paramsPtr = stackalloc byte[208];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToMove, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RHidePoint_Grate : BmSDK.BmGame.RHidePoint_GrateBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_FindTargetAboveGrate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindTargetAboveGrate;
     /// <summary>
     /// Function: FindTargetAboveGrate
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnVillain FindTargetAboveGrate(BmSDK.BmGame.RPlayerController CheckingController)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindTargetAboveGrate, "BmScript.RHidePoint_Grate.FindTargetAboveGrate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindTargetAboveGrate, "BmScript.RHidePoint_Grate.FindTargetAboveGrate", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckingController, paramsPtr + 0);

@@ -78,56 +78,56 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RWinchableJunctionBoxBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RestorePoweredUpState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestorePoweredUpState;
     /// <summary>
     /// Function: RestorePoweredUpState
     /// </summary>
     public unsafe virtual bool RestorePoweredUpState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestorePoweredUpState, "BmGame.RWinchableJunctionBoxBase.RestorePoweredUpState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestorePoweredUpState, "BmGame.RWinchableJunctionBoxBase.RestorePoweredUpState", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AllowLongRangeTargeting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowLongRangeTargeting;
     /// <summary>
     /// Function: AllowLongRangeTargeting
     /// </summary>
     public unsafe virtual bool AllowLongRangeTargeting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowLongRangeTargeting, "BmGame.RWinchableJunctionBoxBase.AllowLongRangeTargeting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowLongRangeTargeting, "BmGame.RWinchableJunctionBoxBase.AllowLongRangeTargeting", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsGenerator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGenerator;
     /// <summary>
     /// Function: IsGenerator
     /// </summary>
     public unsafe virtual bool IsGenerator()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGenerator, "BmGame.RWinchableJunctionBoxBase.IsGenerator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsGenerator, "BmGame.RWinchableJunctionBoxBase.IsGenerator", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAudioLoad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAudioLoad;
     /// <summary>
     /// Function: GetAudioLoad
     /// </summary>
     public unsafe virtual float GetAudioLoad()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAudioLoad, "BmGame.RWinchableJunctionBoxBase.GetAudioLoad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAudioLoad, "BmGame.RWinchableJunctionBoxBase.GetAudioLoad", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -141,14 +141,14 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ApplyRevs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyRevs;
     /// <summary>
     /// Function: ApplyRevs
     /// </summary>
     public unsafe virtual void ApplyRevs(float Revs, BmSDK.BmGame.RPlayerController Controller)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyRevs, "BmGame.RWinchableJunctionBoxBase.ApplyRevs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyRevs, "BmGame.RWinchableJunctionBoxBase.ApplyRevs", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Revs, paramsPtr + 0);
@@ -157,168 +157,168 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetRevsMaxDelta;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRevsMaxDelta;
     /// <summary>
     /// Function: GetRevsMaxDelta
     /// </summary>
     public unsafe virtual float GetRevsMaxDelta()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRevsMaxDelta, "BmGame.RWinchableJunctionBoxBase.GetRevsMaxDelta");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRevsMaxDelta, "BmGame.RWinchableJunctionBoxBase.GetRevsMaxDelta", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRevs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRevs;
     /// <summary>
     /// Function: GetRevs
     /// </summary>
     public unsafe virtual float GetRevs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRevs, "BmGame.RWinchableJunctionBoxBase.GetRevs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRevs, "BmGame.RWinchableJunctionBoxBase.GetRevs", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShowRevPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowRevPrompt;
     /// <summary>
     /// Function: ShowRevPrompt
     /// </summary>
     public unsafe virtual bool ShowRevPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowRevPrompt, "BmGame.RWinchableJunctionBoxBase.ShowRevPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowRevPrompt, "BmGame.RWinchableJunctionBoxBase.ShowRevPrompt", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CustomPromptButtonPressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CustomPromptButtonPressed;
     /// <summary>
     /// Function: CustomPromptButtonPressed
     /// </summary>
     public unsafe virtual void CustomPromptButtonPressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CustomPromptButtonPressed, "BmGame.RWinchableJunctionBoxBase.CustomPromptButtonPressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CustomPromptButtonPressed, "BmGame.RWinchableJunctionBoxBase.CustomPromptButtonPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowCustomPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowCustomPrompt;
     /// <summary>
     /// Function: ShowCustomPrompt
     /// </summary>
     public unsafe virtual bool ShowCustomPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowCustomPrompt, "BmGame.RWinchableJunctionBoxBase.ShowCustomPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowCustomPrompt, "BmGame.RWinchableJunctionBoxBase.ShowCustomPrompt", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AlwaysShowElectricEffectsOnCable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlwaysShowElectricEffectsOnCable;
     /// <summary>
     /// Function: AlwaysShowElectricEffectsOnCable
     /// </summary>
     public unsafe virtual bool AlwaysShowElectricEffectsOnCable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlwaysShowElectricEffectsOnCable, "BmGame.RWinchableJunctionBoxBase.AlwaysShowElectricEffectsOnCable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlwaysShowElectricEffectsOnCable, "BmGame.RWinchableJunctionBoxBase.AlwaysShowElectricEffectsOnCable", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AllowElectrifyHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowElectrifyHUD;
     /// <summary>
     /// Function: AllowElectrifyHUD
     /// </summary>
     public unsafe virtual bool AllowElectrifyHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowElectrifyHUD, "BmGame.RWinchableJunctionBoxBase.AllowElectrifyHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowElectrifyHUD, "BmGame.RWinchableJunctionBoxBase.AllowElectrifyHUD", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPoweredUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPoweredUp;
     /// <summary>
     /// Function: IsPoweredUp
     /// </summary>
     public unsafe virtual bool IsPoweredUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPoweredUp, "BmGame.RWinchableJunctionBoxBase.IsPoweredUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPoweredUp, "BmGame.RWinchableJunctionBoxBase.IsPoweredUp", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BlocksInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlocksInteraction;
     /// <summary>
     /// Function: BlocksInteraction
     /// </summary>
     public unsafe virtual bool BlocksInteraction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlocksInteraction, "BmGame.RWinchableJunctionBoxBase.BlocksInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlocksInteraction, "BmGame.RWinchableJunctionBoxBase.BlocksInteraction", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopElectricityEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopElectricityEffects;
     /// <summary>
     /// Function: StopElectricityEffects
     /// </summary>
     public unsafe virtual void StopElectricityEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopElectricityEffects, "BmGame.RWinchableJunctionBoxBase.StopElectricityEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopElectricityEffects, "BmGame.RWinchableJunctionBoxBase.StopElectricityEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartElectricityEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartElectricityEffects;
     /// <summary>
     /// Function: StartElectricityEffects
     /// </summary>
     public unsafe virtual void StartElectricityEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartElectricityEffects, "BmGame.RWinchableJunctionBoxBase.StartElectricityEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartElectricityEffects, "BmGame.RWinchableJunctionBoxBase.StartElectricityEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WinchAborted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WinchAborted;
     /// <summary>
     /// Function: WinchAborted
     /// </summary>
     public unsafe virtual void WinchAborted(int Reason)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchAborted, "BmGame.RWinchableJunctionBoxBase.WinchAborted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinchAborted, "BmGame.RWinchableJunctionBoxBase.WinchAborted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Reason, paramsPtr + 0);
@@ -326,14 +326,14 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_WinchReleased;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WinchReleased;
     /// <summary>
     /// Function: WinchReleased
     /// </summary>
     public unsafe virtual void WinchReleased(BmSDK.BmGame.RBatmobileWinch Winch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchReleased, "BmGame.RWinchableJunctionBoxBase.WinchReleased");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinchReleased, "BmGame.RWinchableJunctionBoxBase.WinchReleased", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Winch, paramsPtr + 0);
@@ -341,14 +341,14 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_WinchAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WinchAttached;
     /// <summary>
     /// Function: WinchAttached
     /// </summary>
     public unsafe virtual void WinchAttached(BmSDK.BmGame.RBatmobileWinch Winch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinchAttached, "BmGame.RWinchableJunctionBoxBase.WinchAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinchAttached, "BmGame.RWinchableJunctionBoxBase.WinchAttached", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Winch, paramsPtr + 0);
@@ -356,42 +356,42 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetWinchTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetWinchTargetLocation;
     /// <summary>
     /// Function: GetWinchTargetLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetWinchTargetLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetWinchTargetLocation, "BmGame.RWinchableJunctionBoxBase.GetWinchTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetWinchTargetLocation, "BmGame.RWinchableJunctionBoxBase.GetWinchTargetLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsSideStory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSideStory;
     /// <summary>
     /// Function: IsSideStory
     /// </summary>
     public unsafe virtual bool IsSideStory()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSideStory, "BmGame.RWinchableJunctionBoxBase.IsSideStory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSideStory, "BmGame.RWinchableJunctionBoxBase.IsSideStory", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsBatmobileInAngleLimits;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBatmobileInAngleLimits;
     /// <summary>
     /// Function: IsBatmobileInAngleLimits
     /// </summary>
     public unsafe virtual bool IsBatmobileInAngleLimits(BmSDK.Engine.Actor Batmobile, BmSDK.BmGame.RBatmobileWinch Winch, out System.Numerics.Vector3 LimitVec)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBatmobileInAngleLimits, "BmGame.RWinchableJunctionBoxBase.IsBatmobileInAngleLimits");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBatmobileInAngleLimits, "BmGame.RWinchableJunctionBoxBase.IsBatmobileInAngleLimits", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Batmobile, paramsPtr + 0);
@@ -403,14 +403,14 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RWinchableJunctionBoxBase.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RWinchableJunctionBoxBase.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -418,42 +418,42 @@ public partial class RWinchableJunctionBoxBase : BmSDK.Engine.Actor, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldPreventManualWinchRelease;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPreventManualWinchRelease;
     /// <summary>
     /// Function: ShouldPreventManualWinchRelease
     /// </summary>
     public unsafe virtual bool ShouldPreventManualWinchRelease()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPreventManualWinchRelease, "BmGame.RWinchableJunctionBoxBase.ShouldPreventManualWinchRelease");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPreventManualWinchRelease, "BmGame.RWinchableJunctionBoxBase.ShouldPreventManualWinchRelease", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RWinchableJunctionBoxBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RWinchableJunctionBoxBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RWinchableJunctionBoxBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RWinchableJunctionBoxBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

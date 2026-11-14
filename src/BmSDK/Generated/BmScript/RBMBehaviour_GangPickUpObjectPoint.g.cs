@@ -78,70 +78,70 @@ public partial class RBMBehaviour_GangPickUpObjectPoint : BmSDK.BmScript.RBMBeha
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_GangPickUpObjectPoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CreateRunVariantWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateRunVariantWeaponConfig;
     /// <summary>
     /// Function: CreateRunVariantWeaponConfig
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateRunVariantWeaponConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateRunVariantWeaponConfig, "BmScript.RBMBehaviour_GangPickUpObjectPoint.CreateRunVariantWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateRunVariantWeaponConfig, "BmScript.RBMBehaviour_GangPickUpObjectPoint.CreateRunVariantWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[884];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SmashWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashWindow;
     /// <summary>
     /// Function: SmashWindow
     /// </summary>
     public unsafe override void SmashWindow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashWindow, "BmScript.RBMBehaviour_GangPickUpObjectPoint.SmashWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashWindow, "BmScript.RBMBehaviour_GangPickUpObjectPoint.SmashWindow", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CrackOrSmashWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrackOrSmashWindow;
     /// <summary>
     /// Function: CrackOrSmashWindow
     /// </summary>
     public unsafe override void CrackOrSmashWindow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackOrSmashWindow, "BmScript.RBMBehaviour_GangPickUpObjectPoint.CrackOrSmashWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackOrSmashWindow, "BmScript.RBMBehaviour_GangPickUpObjectPoint.CrackOrSmashWindow", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CrackWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrackWindow;
     /// <summary>
     /// Function: CrackWindow
     /// </summary>
     public unsafe override void CrackWindow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackWindow, "BmScript.RBMBehaviour_GangPickUpObjectPoint.CrackWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackWindow, "BmScript.RBMBehaviour_GangPickUpObjectPoint.CrackWindow", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetBreakVars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBreakVars;
     /// <summary>
     /// Function: GetBreakVars
     /// </summary>
     public unsafe override void GetBreakVars(out System.Numerics.Vector3 HitLoc, out System.Numerics.Vector3 HitNorm, out System.Numerics.Vector3 HitSpeed, out BmSDK.Engine.Actor ThrownActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBreakVars, "BmScript.RBMBehaviour_GangPickUpObjectPoint.GetBreakVars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBreakVars, "BmScript.RBMBehaviour_GangPickUpObjectPoint.GetBreakVars", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out HitLoc);
@@ -160,126 +160,126 @@ public partial class RBMBehaviour_GangPickUpObjectPoint : BmSDK.BmScript.RBMBeha
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginInterrupt;
     /// <summary>
     /// Function: OnBeginInterrupt
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnBeginInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginInterrupt, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnBeginInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ThrowObject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThrowObject;
     /// <summary>
     /// Function: ThrowObject
     /// </summary>
     public unsafe virtual void ThrowObject()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThrowObject, "BmScript.RBMBehaviour_GangPickUpObjectPoint.ThrowObject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThrowObject, "BmScript.RBMBehaviour_GangPickUpObjectPoint.ThrowObject", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DropPickupObjectNoPhys;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DropPickupObjectNoPhys;
     /// <summary>
     /// Function: DropPickupObjectNoPhys
     /// </summary>
     public unsafe virtual void DropPickupObjectNoPhys()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropPickupObjectNoPhys, "BmScript.RBMBehaviour_GangPickUpObjectPoint.DropPickupObjectNoPhys");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DropPickupObjectNoPhys, "BmScript.RBMBehaviour_GangPickUpObjectPoint.DropPickupObjectNoPhys", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DropPickupObject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DropPickupObject;
     /// <summary>
     /// Function: DropPickupObject
     /// </summary>
     public unsafe virtual void DropPickupObject()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropPickupObject, "BmScript.RBMBehaviour_GangPickUpObjectPoint.DropPickupObject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DropPickupObject, "BmScript.RBMBehaviour_GangPickUpObjectPoint.DropPickupObject", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PickupObjectLeftHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickupObjectLeftHand;
     /// <summary>
     /// Function: PickupObjectLeftHand
     /// </summary>
     public unsafe virtual void PickupObjectLeftHand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickupObjectLeftHand, "BmScript.RBMBehaviour_GangPickUpObjectPoint.PickupObjectLeftHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickupObjectLeftHand, "BmScript.RBMBehaviour_GangPickUpObjectPoint.PickupObjectLeftHand", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PickupObject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickupObject;
     /// <summary>
     /// Function: PickupObject
     /// </summary>
     public unsafe virtual void PickupObject()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickupObject, "BmScript.RBMBehaviour_GangPickUpObjectPoint.PickupObject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickupObject, "BmScript.RBMBehaviour_GangPickUpObjectPoint.PickupObject", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnEndInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnEndInterrupt;
     /// <summary>
     /// Function: OnEndInterrupt
     /// </summary>
     public unsafe override void OnEndInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndInterrupt, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnEndInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnEndInterrupt, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnEndInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRunVariants;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRunVariants;
     /// <summary>
     /// Function: SetRunVariants
     /// </summary>
     public unsafe override void SetRunVariants(BmSDK.BmGame.RBMAIAction_RiotRunBase MoveAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRunVariants, "BmScript.RBMBehaviour_GangPickUpObjectPoint.SetRunVariants");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRunVariants, "BmScript.RBMBehaviour_GangPickUpObjectPoint.SetRunVariants", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveAction, paramsPtr + 0);
@@ -287,28 +287,28 @@ public partial class RBMBehaviour_GangPickUpObjectPoint : BmSDK.BmScript.RBMBeha
         return;
     }
 
-    private static BmSDK.Function __fn_GenerateMoveToPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateMoveToPoint;
     /// <summary>
     /// Function: GenerateMoveToPoint
     /// </summary>
     public unsafe override void GenerateMoveToPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateMoveToPoint, "BmScript.RBMBehaviour_GangPickUpObjectPoint.GenerateMoveToPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GenerateMoveToPoint, "BmScript.RBMBehaviour_GangPickUpObjectPoint.GenerateMoveToPoint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmScript.RBMBehaviour_GangPickUpObjectPoint.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,42 +78,42 @@ public partial class RAEC_Smoke : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSDK
         where TComponent : class, Framework.IScriptComponent<RAEC_Smoke>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SmokeCleared;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmokeCleared;
     /// <summary>
     /// Function: SmokeCleared
     /// </summary>
     public unsafe virtual void SmokeCleared()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmokeCleared, "BmGame.RAEC_Smoke.SmokeCleared");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmokeCleared, "BmGame.RAEC_Smoke.SmokeCleared", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NeedToWaitForSmokedThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NeedToWaitForSmokedThugs;
     /// <summary>
     /// Function: NeedToWaitForSmokedThugs
     /// </summary>
     public unsafe virtual bool NeedToWaitForSmokedThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NeedToWaitForSmokedThugs, "BmGame.RAEC_Smoke.NeedToWaitForSmokedThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NeedToWaitForSmokedThugs, "BmGame.RAEC_Smoke.NeedToWaitForSmokedThugs", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddThug_PathCutBySmoke;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddThug_PathCutBySmoke;
     /// <summary>
     /// Function: AddThug_PathCutBySmoke
     /// </summary>
     public unsafe virtual bool AddThug_PathCutBySmoke(BmSDK.BmGame.RBMAIController C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddThug_PathCutBySmoke, "BmGame.RAEC_Smoke.AddThug_PathCutBySmoke");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddThug_PathCutBySmoke, "BmGame.RAEC_Smoke.AddThug_PathCutBySmoke", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RAEC_Smoke : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddSmokeSpotter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSmokeSpotter;
     /// <summary>
     /// Function: AddSmokeSpotter
     /// </summary>
     public unsafe virtual bool AddSmokeSpotter(BmSDK.BmGame.RBMAIController C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSmokeSpotter, "BmGame.RAEC_Smoke.AddSmokeSpotter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSmokeSpotter, "BmGame.RAEC_Smoke.AddSmokeSpotter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RAEC_Smoke : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InitOutsideThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitOutsideThugs;
     /// <summary>
     /// Function: InitOutsideThugs
     /// </summary>
     public unsafe virtual void InitOutsideThugs(bool bIsExtinguisher)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitOutsideThugs, "BmGame.RAEC_Smoke.InitOutsideThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitOutsideThugs, "BmGame.RAEC_Smoke.InitOutsideThugs", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsExtinguisher, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RAEC_Smoke : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_AddThugCaughtInSmoke;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddThugCaughtInSmoke;
     /// <summary>
     /// Function: AddThugCaughtInSmoke
     /// </summary>
     public unsafe virtual void AddThugCaughtInSmoke(BmSDK.BmGame.RBMAIController CaughtCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddThugCaughtInSmoke, "BmGame.RAEC_Smoke.AddThugCaughtInSmoke");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddThugCaughtInSmoke, "BmGame.RAEC_Smoke.AddThugCaughtInSmoke", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CaughtCon, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RAEC_Smoke : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Smoke.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_Smoke.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class RAEC_Smoke : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveGroupChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveGroupChild;
     /// <summary>
     /// Function: OnRemoveGroupChild
     /// </summary>
     public unsafe override void OnRemoveGroupChild(BmSDK.BmGame.RAlertEventCoordinatorBase RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_Smoke.OnRemoveGroupChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_Smoke.OnRemoveGroupChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -196,14 +196,14 @@ public partial class RAEC_Smoke : BmSDK.BmGame.RAlertEventCoordinatorBase, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetSmokeScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSmokeScreen;
     /// <summary>
     /// Function: SetSmokeScreen
     /// </summary>
     public unsafe virtual void SetSmokeScreen(BmSDK.BmGame.RSmokeScreen NewSmokeScreen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSmokeScreen, "BmGame.RAEC_Smoke.SetSmokeScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSmokeScreen, "BmGame.RAEC_Smoke.SetSmokeScreen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSmokeScreen, paramsPtr + 0);

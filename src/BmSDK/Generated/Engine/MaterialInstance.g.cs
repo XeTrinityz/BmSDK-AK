@@ -73,14 +73,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<MaterialInstance>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsInMapOrTransientPackage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInMapOrTransientPackage;
     /// <summary>
     /// Function: IsInMapOrTransientPackage
     /// </summary>
     public unsafe virtual bool IsInMapOrTransientPackage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInMapOrTransientPackage, "Engine.MaterialInstance.IsInMapOrTransientPackage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInMapOrTransientPackage, "Engine.MaterialInstance.IsInMapOrTransientPackage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearParameterValues;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearParameterValues;
     /// <summary>
     /// Function: ClearParameterValues
     /// </summary>
     public unsafe virtual void ClearParameterValues()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearParameterValues, "Engine.MaterialInstance.ClearParameterValues");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearParameterValues, "Engine.MaterialInstance.ClearParameterValues", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -115,14 +115,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetFontParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFontParameterValue;
     /// <summary>
     /// Function: SetFontParameterValue
     /// </summary>
     public unsafe virtual void SetFontParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Font FontValue, int FontPage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFontParameterValue, "Engine.MaterialInstance.SetFontParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFontParameterValue, "Engine.MaterialInstance.SetFontParameterValue", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -139,14 +139,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetTextureParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTextureParameterValue;
     /// <summary>
     /// Function: GetTextureParameterValue
     /// </summary>
     public unsafe override bool GetTextureParameterValue(BmSDK.FName ParameterName, out BmSDK.Engine.Texture Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTextureParameterValue, "Engine.MaterialInstance.GetTextureParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTextureParameterValue, "Engine.MaterialInstance.GetTextureParameterValue", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetTextureParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTextureParameterValue;
     /// <summary>
     /// Function: SetTextureParameterValue
     /// </summary>
     public unsafe virtual void SetTextureParameterValue(BmSDK.FName ParameterName, BmSDK.Engine.Texture Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTextureParameterValue, "Engine.MaterialInstance.SetTextureParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTextureParameterValue, "Engine.MaterialInstance.SetTextureParameterValue", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -187,14 +187,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetScalarCurveParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarCurveParameterValue;
     /// <summary>
     /// Function: SetScalarCurveParameterValue
     /// </summary>
     public unsafe virtual void SetScalarCurveParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FInterpCurveFloat Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScalarCurveParameterValue, "Engine.MaterialInstance.SetScalarCurveParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetScalarCurveParameterValue, "Engine.MaterialInstance.SetScalarCurveParameterValue", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -210,14 +210,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetScalarParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScalarParameterValue;
     /// <summary>
     /// Function: SetScalarParameterValue
     /// </summary>
     public unsafe virtual void SetScalarParameterValue(BmSDK.FName ParameterName, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScalarParameterValue, "Engine.MaterialInstance.SetScalarParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetScalarParameterValue, "Engine.MaterialInstance.SetScalarParameterValue", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -233,14 +233,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetVectorParameterValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVectorParameterValue;
     /// <summary>
     /// Function: SetVectorParameterValue
     /// </summary>
     public unsafe virtual void SetVectorParameterValue(BmSDK.FName ParameterName, out BmSDK.GameObject.FLinearColor Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVectorParameterValue, "Engine.MaterialInstance.SetVectorParameterValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVectorParameterValue, "Engine.MaterialInstance.SetVectorParameterValue", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParameterName, paramsPtr + 0);
@@ -258,14 +258,14 @@ public partial class MaterialInstance : BmSDK.Engine.MaterialInterface, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetParent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParent;
     /// <summary>
     /// Function: SetParent
     /// </summary>
     public unsafe virtual void SetParent(BmSDK.Engine.MaterialInterface NewParent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParent, "Engine.MaterialInstance.SetParent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetParent, "Engine.MaterialInstance.SetParent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewParent, paramsPtr + 0);

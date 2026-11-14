@@ -78,14 +78,14 @@ public partial class RNavMeshGoal_SafeCombat : BmSDK.Engine.NavMeshPathGoalEvalu
         where TComponent : class, Framework.IScriptComponent<RNavMeshGoal_SafeCombat>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Recycle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Recycle;
     /// <summary>
     /// Function: Recycle
     /// </summary>
     public unsafe override void Recycle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "BmGame.RNavMeshGoal_SafeCombat.Recycle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Recycle, "BmGame.RNavMeshGoal_SafeCombat.Recycle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -106,14 +106,14 @@ public partial class RNavMeshGoal_SafeCombat : BmSDK.Engine.NavMeshPathGoalEvalu
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_RecycleNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecycleNative;
     /// <summary>
     /// Function: RecycleNative
     /// </summary>
     public unsafe virtual void RecycleNative()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecycleNative, "BmGame.RNavMeshGoal_SafeCombat.RecycleNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecycleNative, "BmGame.RNavMeshGoal_SafeCombat.RecycleNative", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

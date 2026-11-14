@@ -78,42 +78,42 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerCatwomanDLC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetJumpToChuteToCrawlSpaceMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJumpToChuteToCrawlSpaceMove;
     /// <summary>
     /// Function: GetJumpToChuteToCrawlSpaceMove
     /// </summary>
     public unsafe override BmSDK.BmGame.RSpecialMoveConfig GetJumpToChuteToCrawlSpaceMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJumpToChuteToCrawlSpaceMove, "BmScript.RPawnPlayerCatwomanDLC.GetJumpToChuteToCrawlSpaceMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJumpToChuteToCrawlSpaceMove, "BmScript.RPawnPlayerCatwomanDLC.GetJumpToChuteToCrawlSpaceMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSpecialMoveConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCrawlSpaceToChuteMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCrawlSpaceToChuteMove;
     /// <summary>
     /// Function: GetCrawlSpaceToChuteMove
     /// </summary>
     public unsafe override BmSDK.BmGame.RSpecialMoveConfig GetCrawlSpaceToChuteMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCrawlSpaceToChuteMove, "BmScript.RPawnPlayerCatwomanDLC.GetCrawlSpaceToChuteMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCrawlSpaceToChuteMove, "BmScript.RPawnPlayerCatwomanDLC.GetCrawlSpaceToChuteMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSpecialMoveConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InvestigateModeEyes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InvestigateModeEyes;
     /// <summary>
     /// Function: InvestigateModeEyes
     /// </summary>
     public unsafe override void InvestigateModeEyes(bool bOnOrOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InvestigateModeEyes, "BmScript.RPawnPlayerCatwomanDLC.InvestigateModeEyes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InvestigateModeEyes, "BmScript.RPawnPlayerCatwomanDLC.InvestigateModeEyes", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOnOrOff, paramsPtr + 0);
@@ -121,28 +121,28 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
         return;
     }
 
-    private static BmSDK.Function __fn_GetCornerCoverIdleOverlayAnimset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCornerCoverIdleOverlayAnimset;
     /// <summary>
     /// Function: GetCornerCoverIdleOverlayAnimset
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetCornerCoverIdleOverlayAnimset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCornerCoverIdleOverlayAnimset, "BmScript.RPawnPlayerCatwomanDLC.GetCornerCoverIdleOverlayAnimset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCornerCoverIdleOverlayAnimset, "BmScript.RPawnPlayerCatwomanDLC.GetCornerCoverIdleOverlayAnimset", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerPounceToCeilingMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPounceToCeilingMove;
     /// <summary>
     /// Function: TriggerPounceToCeilingMove
     /// </summary>
     public unsafe override void TriggerPounceToCeilingMove(System.Numerics.Vector3 Position)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPounceToCeilingMove, "BmScript.RPawnPlayerCatwomanDLC.TriggerPounceToCeilingMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPounceToCeilingMove, "BmScript.RPawnPlayerCatwomanDLC.TriggerPounceToCeilingMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
         return;
     }
 
-    private static BmSDK.Function __fn_CanReceiveAttackFromPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReceiveAttackFromPawn;
     /// <summary>
     /// Function: CanReceiveAttackFromPawn
     /// </summary>
     public unsafe override bool CanReceiveAttackFromPawn(BmSDK.BmGame.RPawnCombat NewAttacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReceiveAttackFromPawn, "BmScript.RPawnPlayerCatwomanDLC.CanReceiveAttackFromPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanReceiveAttackFromPawn, "BmScript.RPawnPlayerCatwomanDLC.CanReceiveAttackFromPawn", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewAttacker, paramsPtr + 0);
@@ -165,84 +165,84 @@ public partial class RPawnPlayerCatwomanDLC : BmSDK.BmScript.RPawnPlayerCatwoman
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetupPlayerSpecificCombatAnimsets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupPlayerSpecificCombatAnimsets;
     /// <summary>
     /// Function: SetupPlayerSpecificCombatAnimsets
     /// </summary>
     public unsafe override void SetupPlayerSpecificCombatAnimsets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupPlayerSpecificCombatAnimsets, "BmScript.RPawnPlayerCatwomanDLC.SetupPlayerSpecificCombatAnimsets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupPlayerSpecificCombatAnimsets, "BmScript.RPawnPlayerCatwomanDLC.SetupPlayerSpecificCombatAnimsets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanGlideKickWindows;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanGlideKickWindows;
     /// <summary>
     /// Function: CanGlideKickWindows
     /// </summary>
     public unsafe override bool CanGlideKickWindows()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanGlideKickWindows, "BmScript.RPawnPlayerCatwomanDLC.CanGlideKickWindows");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanGlideKickWindows, "BmScript.RPawnPlayerCatwomanDLC.CanGlideKickWindows", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OpenGrateFromBelow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenGrateFromBelow;
     /// <summary>
     /// Function: OpenGrateFromBelow
     /// </summary>
     public unsafe override void OpenGrateFromBelow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenGrateFromBelow, "BmScript.RPawnPlayerCatwomanDLC.OpenGrateFromBelow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenGrateFromBelow, "BmScript.RPawnPlayerCatwomanDLC.OpenGrateFromBelow", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OpenGrateFromAbove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenGrateFromAbove;
     /// <summary>
     /// Function: OpenGrateFromAbove
     /// </summary>
     public unsafe override void OpenGrateFromAbove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenGrateFromAbove, "BmScript.RPawnPlayerCatwomanDLC.OpenGrateFromAbove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenGrateFromAbove, "BmScript.RPawnPlayerCatwomanDLC.OpenGrateFromAbove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnPossessed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnPossessed;
     /// <summary>
     /// Function: UnPossessed
     /// </summary>
     public unsafe override void UnPossessed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnPossessed, "BmScript.RPawnPlayerCatwomanDLC.UnPossessed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnPossessed, "BmScript.RPawnPlayerCatwomanDLC.UnPossessed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddDefaultInventory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDefaultInventory;
     /// <summary>
     /// Function: AddDefaultInventory
     /// </summary>
     public unsafe override void AddDefaultInventory()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDefaultInventory, "BmScript.RPawnPlayerCatwomanDLC.AddDefaultInventory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDefaultInventory, "BmScript.RPawnPlayerCatwomanDLC.AddDefaultInventory", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

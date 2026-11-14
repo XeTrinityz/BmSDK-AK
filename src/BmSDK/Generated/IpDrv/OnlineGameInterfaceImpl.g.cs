@@ -78,14 +78,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<OnlineGameInterfaceImpl>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ClearQosStatusChangedDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearQosStatusChangedDelegate;
     /// <summary>
     /// Function: ClearQosStatusChangedDelegate
     /// </summary>
     public unsafe virtual void ClearQosStatusChangedDelegate(System.IntPtr QosStatusChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearQosStatusChangedDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearQosStatusChangedDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearQosStatusChangedDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearQosStatusChangedDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(QosStatusChangedDelegate, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddQosStatusChangedDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddQosStatusChangedDelegate;
     /// <summary>
     /// Function: AddQosStatusChangedDelegate
     /// </summary>
     public unsafe virtual void AddQosStatusChangedDelegate(System.IntPtr QosStatusChangedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddQosStatusChangedDelegate, "IpDrv.OnlineGameInterfaceImpl.AddQosStatusChangedDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddQosStatusChangedDelegate, "IpDrv.OnlineGameInterfaceImpl.AddQosStatusChangedDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(QosStatusChangedDelegate, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnQosStatusChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnQosStatusChanged;
     /// <summary>
     /// Function: OnQosStatusChanged
     /// </summary>
     public unsafe virtual void OnQosStatusChanged(int NumComplete, int NumTotal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnQosStatusChanged, "IpDrv.OnlineGameInterfaceImpl.OnQosStatusChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnQosStatusChanged, "IpDrv.OnlineGameInterfaceImpl.OnQosStatusChanged", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NumComplete, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_BindPlatformSpecificSessionToSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BindPlatformSpecificSessionToSearch;
     /// <summary>
     /// Function: BindPlatformSpecificSessionToSearch
     /// </summary>
     public unsafe virtual bool BindPlatformSpecificSessionToSearch(byte SearchingPlayerNum, BmSDK.Engine.OnlineGameSearch SearchSettings, byte PlatformSpecificInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BindPlatformSpecificSessionToSearch, "IpDrv.OnlineGameInterfaceImpl.BindPlatformSpecificSessionToSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BindPlatformSpecificSessionToSearch, "IpDrv.OnlineGameInterfaceImpl.BindPlatformSpecificSessionToSearch", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SearchingPlayerNum, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 92);
     }
 
-    private static BmSDK.Function __fn_ReadPlatformSpecificSessionInfoBySessionName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadPlatformSpecificSessionInfoBySessionName;
     /// <summary>
     /// Function: ReadPlatformSpecificSessionInfoBySessionName
     /// </summary>
     public unsafe virtual bool ReadPlatformSpecificSessionInfoBySessionName(BmSDK.FName SessionName, out byte PlatformSpecificInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadPlatformSpecificSessionInfoBySessionName, "IpDrv.OnlineGameInterfaceImpl.ReadPlatformSpecificSessionInfoBySessionName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadPlatformSpecificSessionInfoBySessionName, "IpDrv.OnlineGameInterfaceImpl.ReadPlatformSpecificSessionInfoBySessionName", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 88);
     }
 
-    private static BmSDK.Function __fn_ReadPlatformSpecificSessionInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadPlatformSpecificSessionInfo;
     /// <summary>
     /// Function: ReadPlatformSpecificSessionInfo
     /// </summary>
     public unsafe virtual bool ReadPlatformSpecificSessionInfo(out BmSDK.Engine.OnlineGameSearch.FOnlineGameSearchResult DesiredGame, out byte PlatformSpecificInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadPlatformSpecificSessionInfo, "IpDrv.OnlineGameInterfaceImpl.ReadPlatformSpecificSessionInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadPlatformSpecificSessionInfo, "IpDrv.OnlineGameInterfaceImpl.ReadPlatformSpecificSessionInfo", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out DesiredGame);
@@ -193,14 +193,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 96);
     }
 
-    private static BmSDK.Function __fn_QueryNonAdvertisedData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryNonAdvertisedData;
     /// <summary>
     /// Function: QueryNonAdvertisedData
     /// </summary>
     public unsafe virtual bool QueryNonAdvertisedData(int StartAt, int NumberToQuery)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueryNonAdvertisedData, "IpDrv.OnlineGameInterfaceImpl.QueryNonAdvertisedData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueryNonAdvertisedData, "IpDrv.OnlineGameInterfaceImpl.QueryNonAdvertisedData", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartAt, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearJoinMigratedOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearJoinMigratedOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearJoinMigratedOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearJoinMigratedOnlineGameCompleteDelegate(System.IntPtr JoinMigratedOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearJoinMigratedOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearJoinMigratedOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearJoinMigratedOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearJoinMigratedOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JoinMigratedOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -224,14 +224,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddJoinMigratedOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddJoinMigratedOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddJoinMigratedOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddJoinMigratedOnlineGameCompleteDelegate(System.IntPtr JoinMigratedOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddJoinMigratedOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddJoinMigratedOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddJoinMigratedOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddJoinMigratedOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JoinMigratedOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -239,14 +239,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnJoinMigratedOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnJoinMigratedOnlineGameComplete;
     /// <summary>
     /// Function: OnJoinMigratedOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnJoinMigratedOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnJoinMigratedOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnJoinMigratedOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnJoinMigratedOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnJoinMigratedOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -255,14 +255,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_JoinMigratedOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinMigratedOnlineGame;
     /// <summary>
     /// Function: JoinMigratedOnlineGame
     /// </summary>
     public unsafe virtual bool JoinMigratedOnlineGame(byte PlayerNum, BmSDK.FName SessionName, out BmSDK.Engine.OnlineGameSearch.FOnlineGameSearchResult DesiredGame)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JoinMigratedOnlineGame, "IpDrv.OnlineGameInterfaceImpl.JoinMigratedOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JoinMigratedOnlineGame, "IpDrv.OnlineGameInterfaceImpl.JoinMigratedOnlineGame", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerNum, paramsPtr + 0);
@@ -274,14 +274,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_ClearMigrateOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMigrateOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearMigrateOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearMigrateOnlineGameCompleteDelegate(System.IntPtr MigrateOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMigrateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearMigrateOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearMigrateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearMigrateOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MigrateOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -289,14 +289,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddMigrateOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddMigrateOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddMigrateOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddMigrateOnlineGameCompleteDelegate(System.IntPtr MigrateOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMigrateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddMigrateOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddMigrateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddMigrateOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MigrateOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -304,14 +304,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnMigrateOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnMigrateOnlineGameComplete;
     /// <summary>
     /// Function: OnMigrateOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnMigrateOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnMigrateOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnMigrateOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnMigrateOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnMigrateOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -320,14 +320,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_MigrateOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MigrateOnlineGame;
     /// <summary>
     /// Function: MigrateOnlineGame
     /// </summary>
     public unsafe virtual bool MigrateOnlineGame(byte HostingPlayerNum, BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MigrateOnlineGame, "IpDrv.OnlineGameInterfaceImpl.MigrateOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MigrateOnlineGame, "IpDrv.OnlineGameInterfaceImpl.MigrateOnlineGame", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HostingPlayerNum, paramsPtr + 0);
@@ -336,14 +336,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ClearRecalculateSkillRatingCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearRecalculateSkillRatingCompleteDelegate;
     /// <summary>
     /// Function: ClearRecalculateSkillRatingCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearRecalculateSkillRatingCompleteDelegate(System.IntPtr RecalculateSkillRatingGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearRecalculateSkillRatingCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearRecalculateSkillRatingCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRecalculateSkillRatingCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearRecalculateSkillRatingCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RecalculateSkillRatingGameCompleteDelegate, paramsPtr + 0);
@@ -351,14 +351,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddRecalculateSkillRatingCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRecalculateSkillRatingCompleteDelegate;
     /// <summary>
     /// Function: AddRecalculateSkillRatingCompleteDelegate
     /// </summary>
     public unsafe virtual void AddRecalculateSkillRatingCompleteDelegate(System.IntPtr RecalculateSkillRatingCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRecalculateSkillRatingCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddRecalculateSkillRatingCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRecalculateSkillRatingCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddRecalculateSkillRatingCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RecalculateSkillRatingCompleteDelegate, paramsPtr + 0);
@@ -366,14 +366,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnRecalculateSkillRatingComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRecalculateSkillRatingComplete;
     /// <summary>
     /// Function: OnRecalculateSkillRatingComplete
     /// </summary>
     public unsafe virtual void OnRecalculateSkillRatingComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRecalculateSkillRatingComplete, "IpDrv.OnlineGameInterfaceImpl.OnRecalculateSkillRatingComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRecalculateSkillRatingComplete, "IpDrv.OnlineGameInterfaceImpl.OnRecalculateSkillRatingComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -382,14 +382,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_RecalculateSkillRating;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecalculateSkillRating;
     /// <summary>
     /// Function: RecalculateSkillRating
     /// </summary>
     public unsafe virtual bool RecalculateSkillRating(BmSDK.FName SessionName, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Players)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecalculateSkillRating, "IpDrv.OnlineGameInterfaceImpl.RecalculateSkillRating");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecalculateSkillRating, "IpDrv.OnlineGameInterfaceImpl.RecalculateSkillRating", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -398,14 +398,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_AcceptGameInvite;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AcceptGameInvite;
     /// <summary>
     /// Function: AcceptGameInvite
     /// </summary>
     public unsafe virtual bool AcceptGameInvite(byte LocalUserNum, BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AcceptGameInvite, "IpDrv.OnlineGameInterfaceImpl.AcceptGameInvite");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AcceptGameInvite, "IpDrv.OnlineGameInterfaceImpl.AcceptGameInvite", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocalUserNum, paramsPtr + 0);
@@ -414,14 +414,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ClearGameInviteAcceptedDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearGameInviteAcceptedDelegate;
     /// <summary>
     /// Function: ClearGameInviteAcceptedDelegate
     /// </summary>
     public unsafe virtual void ClearGameInviteAcceptedDelegate(byte LocalUserNum, System.IntPtr GameInviteAcceptedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearGameInviteAcceptedDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearGameInviteAcceptedDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearGameInviteAcceptedDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearGameInviteAcceptedDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocalUserNum, paramsPtr + 0);
@@ -430,14 +430,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddGameInviteAcceptedDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddGameInviteAcceptedDelegate;
     /// <summary>
     /// Function: AddGameInviteAcceptedDelegate
     /// </summary>
     public unsafe virtual void AddGameInviteAcceptedDelegate(byte LocalUserNum, System.IntPtr GameInviteAcceptedDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddGameInviteAcceptedDelegate, "IpDrv.OnlineGameInterfaceImpl.AddGameInviteAcceptedDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddGameInviteAcceptedDelegate, "IpDrv.OnlineGameInterfaceImpl.AddGameInviteAcceptedDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocalUserNum, paramsPtr + 0);
@@ -446,14 +446,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnGameInviteAccepted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnGameInviteAccepted;
     /// <summary>
     /// Function: OnGameInviteAccepted
     /// </summary>
     public unsafe virtual void OnGameInviteAccepted(out BmSDK.Engine.OnlineGameSearch.FOnlineGameSearchResult InviteResult)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnGameInviteAccepted, "IpDrv.OnlineGameInterfaceImpl.OnGameInviteAccepted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnGameInviteAccepted, "IpDrv.OnlineGameInterfaceImpl.OnGameInviteAccepted", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out InviteResult);
@@ -463,14 +463,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_GetArbitratedPlayers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetArbitratedPlayers;
     /// <summary>
     /// Function: GetArbitratedPlayers
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineArbitrationRegistrant> GetArbitratedPlayers(BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetArbitratedPlayers, "IpDrv.OnlineGameInterfaceImpl.GetArbitratedPlayers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetArbitratedPlayers, "IpDrv.OnlineGameInterfaceImpl.GetArbitratedPlayers", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -478,14 +478,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineArbitrationRegistrant>>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearArbitrationRegistrationCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearArbitrationRegistrationCompleteDelegate;
     /// <summary>
     /// Function: ClearArbitrationRegistrationCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearArbitrationRegistrationCompleteDelegate(System.IntPtr ArbitrationRegistrationCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearArbitrationRegistrationCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearArbitrationRegistrationCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearArbitrationRegistrationCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearArbitrationRegistrationCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ArbitrationRegistrationCompleteDelegate, paramsPtr + 0);
@@ -493,14 +493,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddArbitrationRegistrationCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddArbitrationRegistrationCompleteDelegate;
     /// <summary>
     /// Function: AddArbitrationRegistrationCompleteDelegate
     /// </summary>
     public unsafe virtual void AddArbitrationRegistrationCompleteDelegate(System.IntPtr ArbitrationRegistrationCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddArbitrationRegistrationCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddArbitrationRegistrationCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddArbitrationRegistrationCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddArbitrationRegistrationCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ArbitrationRegistrationCompleteDelegate, paramsPtr + 0);
@@ -508,14 +508,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnArbitrationRegistrationComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnArbitrationRegistrationComplete;
     /// <summary>
     /// Function: OnArbitrationRegistrationComplete
     /// </summary>
     public unsafe virtual void OnArbitrationRegistrationComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnArbitrationRegistrationComplete, "IpDrv.OnlineGameInterfaceImpl.OnArbitrationRegistrationComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnArbitrationRegistrationComplete, "IpDrv.OnlineGameInterfaceImpl.OnArbitrationRegistrationComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -524,14 +524,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterForArbitration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterForArbitration;
     /// <summary>
     /// Function: RegisterForArbitration
     /// </summary>
     public unsafe virtual bool RegisterForArbitration(BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterForArbitration, "IpDrv.OnlineGameInterfaceImpl.RegisterForArbitration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterForArbitration, "IpDrv.OnlineGameInterfaceImpl.RegisterForArbitration", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -539,14 +539,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearEndOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearEndOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearEndOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearEndOnlineGameCompleteDelegate(System.IntPtr EndOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearEndOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearEndOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearEndOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearEndOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -554,14 +554,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddEndOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddEndOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddEndOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddEndOnlineGameCompleteDelegate(System.IntPtr EndOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddEndOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddEndOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddEndOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddEndOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -569,14 +569,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnEndOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnEndOnlineGameComplete;
     /// <summary>
     /// Function: OnEndOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnEndOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnEndOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnEndOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnEndOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnEndOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -585,14 +585,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EndOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndOnlineGame;
     /// <summary>
     /// Function: EndOnlineGame
     /// </summary>
     public unsafe virtual bool EndOnlineGame(BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndOnlineGame, "IpDrv.OnlineGameInterfaceImpl.EndOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndOnlineGame, "IpDrv.OnlineGameInterfaceImpl.EndOnlineGame", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -607,14 +607,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearStartOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearStartOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearStartOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearStartOnlineGameCompleteDelegate(System.IntPtr StartOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearStartOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearStartOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearStartOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearStartOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -622,14 +622,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddStartOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddStartOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddStartOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddStartOnlineGameCompleteDelegate(System.IntPtr StartOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddStartOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddStartOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddStartOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddStartOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -637,14 +637,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnStartOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStartOnlineGameComplete;
     /// <summary>
     /// Function: OnStartOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnStartOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnStartOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStartOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnStartOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -653,14 +653,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_StartOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartOnlineGame;
     /// <summary>
     /// Function: StartOnlineGame
     /// </summary>
     public unsafe virtual bool StartOnlineGame(BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartOnlineGame, "IpDrv.OnlineGameInterfaceImpl.StartOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartOnlineGame, "IpDrv.OnlineGameInterfaceImpl.StartOnlineGame", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -675,14 +675,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearUnregisterPlayerCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearUnregisterPlayerCompleteDelegate;
     /// <summary>
     /// Function: ClearUnregisterPlayerCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearUnregisterPlayerCompleteDelegate(System.IntPtr UnregisterPlayerCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearUnregisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearUnregisterPlayerCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearUnregisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearUnregisterPlayerCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UnregisterPlayerCompleteDelegate, paramsPtr + 0);
@@ -690,14 +690,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddUnregisterPlayerCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddUnregisterPlayerCompleteDelegate;
     /// <summary>
     /// Function: AddUnregisterPlayerCompleteDelegate
     /// </summary>
     public unsafe virtual void AddUnregisterPlayerCompleteDelegate(System.IntPtr UnregisterPlayerCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddUnregisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddUnregisterPlayerCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddUnregisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddUnregisterPlayerCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UnregisterPlayerCompleteDelegate, paramsPtr + 0);
@@ -705,14 +705,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnUnregisterPlayerComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUnregisterPlayerComplete;
     /// <summary>
     /// Function: OnUnregisterPlayerComplete
     /// </summary>
     public unsafe virtual void OnUnregisterPlayerComplete(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUnregisterPlayerComplete, "IpDrv.OnlineGameInterfaceImpl.OnUnregisterPlayerComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUnregisterPlayerComplete, "IpDrv.OnlineGameInterfaceImpl.OnUnregisterPlayerComplete", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -722,14 +722,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_UnregisterPlayers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterPlayers;
     /// <summary>
     /// Function: UnregisterPlayers
     /// </summary>
     public unsafe virtual bool UnregisterPlayers(BmSDK.FName SessionName, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Players)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterPlayers, "IpDrv.OnlineGameInterfaceImpl.UnregisterPlayers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnregisterPlayers, "IpDrv.OnlineGameInterfaceImpl.UnregisterPlayers", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -738,14 +738,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_UnregisterPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterPlayer;
     /// <summary>
     /// Function: UnregisterPlayer
     /// </summary>
     public unsafe virtual bool UnregisterPlayer(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterPlayer, "IpDrv.OnlineGameInterfaceImpl.UnregisterPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnregisterPlayer, "IpDrv.OnlineGameInterfaceImpl.UnregisterPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -754,14 +754,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ClearRegisterPlayerCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearRegisterPlayerCompleteDelegate;
     /// <summary>
     /// Function: ClearRegisterPlayerCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearRegisterPlayerCompleteDelegate(System.IntPtr RegisterPlayerCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearRegisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearRegisterPlayerCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearRegisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearRegisterPlayerCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegisterPlayerCompleteDelegate, paramsPtr + 0);
@@ -769,14 +769,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddRegisterPlayerCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRegisterPlayerCompleteDelegate;
     /// <summary>
     /// Function: AddRegisterPlayerCompleteDelegate
     /// </summary>
     public unsafe virtual void AddRegisterPlayerCompleteDelegate(System.IntPtr RegisterPlayerCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRegisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddRegisterPlayerCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRegisterPlayerCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddRegisterPlayerCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegisterPlayerCompleteDelegate, paramsPtr + 0);
@@ -784,14 +784,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnRegisterPlayerComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRegisterPlayerComplete;
     /// <summary>
     /// Function: OnRegisterPlayerComplete
     /// </summary>
     public unsafe virtual void OnRegisterPlayerComplete(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRegisterPlayerComplete, "IpDrv.OnlineGameInterfaceImpl.OnRegisterPlayerComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRegisterPlayerComplete, "IpDrv.OnlineGameInterfaceImpl.OnRegisterPlayerComplete", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -801,14 +801,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterPlayers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterPlayers;
     /// <summary>
     /// Function: RegisterPlayers
     /// </summary>
     public unsafe virtual bool RegisterPlayers(BmSDK.FName SessionName, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Players)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterPlayers, "IpDrv.OnlineGameInterfaceImpl.RegisterPlayers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterPlayers, "IpDrv.OnlineGameInterfaceImpl.RegisterPlayers", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -817,14 +817,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_RegisterPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterPlayer;
     /// <summary>
     /// Function: RegisterPlayer
     /// </summary>
     public unsafe virtual bool RegisterPlayer(BmSDK.FName SessionName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bWasInvited)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterPlayer, "IpDrv.OnlineGameInterfaceImpl.RegisterPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterPlayer, "IpDrv.OnlineGameInterfaceImpl.RegisterPlayer", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -834,14 +834,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetResolvedConnectString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolvedConnectString;
     /// <summary>
     /// Function: GetResolvedConnectString
     /// </summary>
     public unsafe virtual bool GetResolvedConnectString(BmSDK.FName SessionName, out BmSDK.FString ConnectInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetResolvedConnectString, "IpDrv.OnlineGameInterfaceImpl.GetResolvedConnectString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetResolvedConnectString, "IpDrv.OnlineGameInterfaceImpl.GetResolvedConnectString", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -857,14 +857,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_ClearJoinOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearJoinOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearJoinOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearJoinOnlineGameCompleteDelegate(System.IntPtr JoinOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearJoinOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearJoinOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearJoinOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearJoinOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JoinOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -872,14 +872,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddJoinOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddJoinOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddJoinOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddJoinOnlineGameCompleteDelegate(System.IntPtr JoinOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddJoinOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddJoinOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddJoinOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddJoinOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(JoinOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -887,14 +887,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnJoinOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnJoinOnlineGameComplete;
     /// <summary>
     /// Function: OnJoinOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnJoinOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnJoinOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnJoinOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnJoinOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnJoinOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -903,14 +903,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_JoinOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JoinOnlineGame;
     /// <summary>
     /// Function: JoinOnlineGame
     /// </summary>
     public unsafe virtual bool JoinOnlineGame(byte PlayerNum, BmSDK.FName SessionName, out BmSDK.Engine.OnlineGameSearch.FOnlineGameSearchResult DesiredGame)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JoinOnlineGame, "IpDrv.OnlineGameInterfaceImpl.JoinOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JoinOnlineGame, "IpDrv.OnlineGameInterfaceImpl.JoinOnlineGame", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerNum, paramsPtr + 0);
@@ -929,14 +929,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_FreeSearchResults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeSearchResults;
     /// <summary>
     /// Function: FreeSearchResults
     /// </summary>
     public unsafe virtual bool FreeSearchResults(BmSDK.Engine.OnlineGameSearch Search)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeSearchResults, "IpDrv.OnlineGameInterfaceImpl.FreeSearchResults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreeSearchResults, "IpDrv.OnlineGameInterfaceImpl.FreeSearchResults", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Search, paramsPtr + 0);
@@ -951,14 +951,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearCancelFindOnlineGamesCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCancelFindOnlineGamesCompleteDelegate;
     /// <summary>
     /// Function: ClearCancelFindOnlineGamesCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearCancelFindOnlineGamesCompleteDelegate(System.IntPtr CancelFindOnlineGamesCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearCancelFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearCancelFindOnlineGamesCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearCancelFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearCancelFindOnlineGamesCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CancelFindOnlineGamesCompleteDelegate, paramsPtr + 0);
@@ -966,14 +966,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddCancelFindOnlineGamesCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCancelFindOnlineGamesCompleteDelegate;
     /// <summary>
     /// Function: AddCancelFindOnlineGamesCompleteDelegate
     /// </summary>
     public unsafe virtual void AddCancelFindOnlineGamesCompleteDelegate(System.IntPtr CancelFindOnlineGamesCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCancelFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddCancelFindOnlineGamesCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCancelFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddCancelFindOnlineGamesCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CancelFindOnlineGamesCompleteDelegate, paramsPtr + 0);
@@ -981,14 +981,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnCancelFindOnlineGamesComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCancelFindOnlineGamesComplete;
     /// <summary>
     /// Function: OnCancelFindOnlineGamesComplete
     /// </summary>
     public unsafe virtual void OnCancelFindOnlineGamesComplete(bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCancelFindOnlineGamesComplete, "IpDrv.OnlineGameInterfaceImpl.OnCancelFindOnlineGamesComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCancelFindOnlineGamesComplete, "IpDrv.OnlineGameInterfaceImpl.OnCancelFindOnlineGamesComplete", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
@@ -996,14 +996,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_CancelFindOnlineGames;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelFindOnlineGames;
     /// <summary>
     /// Function: CancelFindOnlineGames
     /// </summary>
     public unsafe virtual bool CancelFindOnlineGames()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelFindOnlineGames, "IpDrv.OnlineGameInterfaceImpl.CancelFindOnlineGames");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelFindOnlineGames, "IpDrv.OnlineGameInterfaceImpl.CancelFindOnlineGames", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1017,14 +1017,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearFindOnlineGamesCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearFindOnlineGamesCompleteDelegate;
     /// <summary>
     /// Function: ClearFindOnlineGamesCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearFindOnlineGamesCompleteDelegate(System.IntPtr FindOnlineGamesCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearFindOnlineGamesCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearFindOnlineGamesCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FindOnlineGamesCompleteDelegate, paramsPtr + 0);
@@ -1032,14 +1032,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddFindOnlineGamesCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFindOnlineGamesCompleteDelegate;
     /// <summary>
     /// Function: AddFindOnlineGamesCompleteDelegate
     /// </summary>
     public unsafe virtual void AddFindOnlineGamesCompleteDelegate(System.IntPtr FindOnlineGamesCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddFindOnlineGamesCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFindOnlineGamesCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddFindOnlineGamesCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FindOnlineGamesCompleteDelegate, paramsPtr + 0);
@@ -1047,14 +1047,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_FindOnlineGames;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindOnlineGames;
     /// <summary>
     /// Function: FindOnlineGames
     /// </summary>
     public unsafe virtual bool FindOnlineGames(byte SearchingPlayerNum, BmSDK.Engine.OnlineGameSearch SearchSettings)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindOnlineGames, "IpDrv.OnlineGameInterfaceImpl.FindOnlineGames");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindOnlineGames, "IpDrv.OnlineGameInterfaceImpl.FindOnlineGames", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SearchingPlayerNum, paramsPtr + 0);
@@ -1070,14 +1070,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ClearDestroyOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDestroyOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearDestroyOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearDestroyOnlineGameCompleteDelegate(System.IntPtr DestroyOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDestroyOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearDestroyOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDestroyOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearDestroyOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DestroyOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -1085,14 +1085,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddDestroyOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDestroyOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddDestroyOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddDestroyOnlineGameCompleteDelegate(System.IntPtr DestroyOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDestroyOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddDestroyOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDestroyOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddDestroyOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DestroyOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -1100,14 +1100,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnDestroyOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroyOnlineGameComplete;
     /// <summary>
     /// Function: OnDestroyOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnDestroyOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDestroyOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnDestroyOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDestroyOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnDestroyOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -1116,14 +1116,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyOnlineGame;
     /// <summary>
     /// Function: DestroyOnlineGame
     /// </summary>
     public unsafe virtual bool DestroyOnlineGame(BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyOnlineGame, "IpDrv.OnlineGameInterfaceImpl.DestroyOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyOnlineGame, "IpDrv.OnlineGameInterfaceImpl.DestroyOnlineGame", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -1138,14 +1138,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearUpdateOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearUpdateOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearUpdateOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearUpdateOnlineGameCompleteDelegate(System.IntPtr UpdateOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearUpdateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearUpdateOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearUpdateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearUpdateOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UpdateOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -1153,14 +1153,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddUpdateOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddUpdateOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddUpdateOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddUpdateOnlineGameCompleteDelegate(System.IntPtr UpdateOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddUpdateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddUpdateOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddUpdateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddUpdateOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UpdateOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -1168,14 +1168,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnUpdateOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdateOnlineGameComplete;
     /// <summary>
     /// Function: OnUpdateOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnUpdateOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdateOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnUpdateOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdateOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnUpdateOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -1184,14 +1184,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOnlineGame;
     /// <summary>
     /// Function: UpdateOnlineGame
     /// </summary>
     public unsafe virtual bool UpdateOnlineGame(BmSDK.FName SessionName, BmSDK.Engine.OnlineGameSettings UpdatedGameSettings, bool bShouldRefreshOnlineData = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateOnlineGame, "IpDrv.OnlineGameInterfaceImpl.UpdateOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateOnlineGame, "IpDrv.OnlineGameInterfaceImpl.UpdateOnlineGame", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -1201,14 +1201,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_ClearCreateOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCreateOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: ClearCreateOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearCreateOnlineGameCompleteDelegate(System.IntPtr CreateOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearCreateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearCreateOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearCreateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.ClearCreateOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CreateOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -1216,14 +1216,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddCreateOnlineGameCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCreateOnlineGameCompleteDelegate;
     /// <summary>
     /// Function: AddCreateOnlineGameCompleteDelegate
     /// </summary>
     public unsafe virtual void AddCreateOnlineGameCompleteDelegate(System.IntPtr CreateOnlineGameCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCreateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddCreateOnlineGameCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCreateOnlineGameCompleteDelegate, "IpDrv.OnlineGameInterfaceImpl.AddCreateOnlineGameCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CreateOnlineGameCompleteDelegate, paramsPtr + 0);
@@ -1231,14 +1231,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnCreateOnlineGameComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCreateOnlineGameComplete;
     /// <summary>
     /// Function: OnCreateOnlineGameComplete
     /// </summary>
     public unsafe virtual void OnCreateOnlineGameComplete(BmSDK.FName SessionName, bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCreateOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnCreateOnlineGameComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCreateOnlineGameComplete, "IpDrv.OnlineGameInterfaceImpl.OnCreateOnlineGameComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -1247,14 +1247,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_CreateOnlineGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateOnlineGame;
     /// <summary>
     /// Function: CreateOnlineGame
     /// </summary>
     public unsafe virtual bool CreateOnlineGame(byte HostingPlayerNum, BmSDK.FName SessionName, BmSDK.Engine.OnlineGameSettings NewGameSettings)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateOnlineGame, "IpDrv.OnlineGameInterfaceImpl.CreateOnlineGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateOnlineGame, "IpDrv.OnlineGameInterfaceImpl.CreateOnlineGame", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HostingPlayerNum, paramsPtr + 0);
@@ -1271,28 +1271,28 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetGameSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameSearch;
     /// <summary>
     /// Function: GetGameSearch
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineGameSearch GetGameSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGameSearch, "IpDrv.OnlineGameInterfaceImpl.GetGameSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGameSearch, "IpDrv.OnlineGameInterfaceImpl.GetGameSearch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.OnlineGameSearch>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetGameSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGameSettings;
     /// <summary>
     /// Function: GetGameSettings
     /// </summary>
     public unsafe virtual BmSDK.Engine.OnlineGameSettings GetGameSettings(BmSDK.FName SessionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGameSettings, "IpDrv.OnlineGameInterfaceImpl.GetGameSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGameSettings, "IpDrv.OnlineGameInterfaceImpl.GetGameSettings", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SessionName, paramsPtr + 0);
@@ -1300,14 +1300,14 @@ public partial class OnlineGameInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.OnlineGameSettings>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnFindOnlineGamesComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFindOnlineGamesComplete;
     /// <summary>
     /// Function: OnFindOnlineGamesComplete
     /// </summary>
     public unsafe virtual void OnFindOnlineGamesComplete(bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFindOnlineGamesComplete, "IpDrv.OnlineGameInterfaceImpl.OnFindOnlineGamesComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFindOnlineGamesComplete, "IpDrv.OnlineGameInterfaceImpl.OnFindOnlineGamesComplete", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);

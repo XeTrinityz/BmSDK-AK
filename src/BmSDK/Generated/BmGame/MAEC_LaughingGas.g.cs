@@ -78,14 +78,14 @@ public partial class MAEC_LaughingGas : BmSDK.BmGame.RAEC_Smoke, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<MAEC_LaughingGas>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AddSmokeSpotter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSmokeSpotter;
     /// <summary>
     /// Function: AddSmokeSpotter
     /// </summary>
     public unsafe override bool AddSmokeSpotter(BmSDK.BmGame.RBMAIController C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSmokeSpotter, "BmGame.MAEC_LaughingGas.AddSmokeSpotter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSmokeSpotter, "BmGame.MAEC_LaughingGas.AddSmokeSpotter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class MAEC_LaughingGas : BmSDK.BmGame.RAEC_Smoke, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InitOutsideThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitOutsideThugs;
     /// <summary>
     /// Function: InitOutsideThugs
     /// </summary>
     public unsafe override void InitOutsideThugs(bool bIsExtinguisher)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitOutsideThugs, "BmGame.MAEC_LaughingGas.InitOutsideThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitOutsideThugs, "BmGame.MAEC_LaughingGas.InitOutsideThugs", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsExtinguisher, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class MAEC_LaughingGas : BmSDK.BmGame.RAEC_Smoke, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetSmokeScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSmokeScreen;
     /// <summary>
     /// Function: SetSmokeScreen
     /// </summary>
     public unsafe override void SetSmokeScreen(BmSDK.BmGame.RSmokeScreen NewSmokeScreen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSmokeScreen, "BmGame.MAEC_LaughingGas.SetSmokeScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSmokeScreen, "BmGame.MAEC_LaughingGas.SetSmokeScreen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSmokeScreen, paramsPtr + 0);

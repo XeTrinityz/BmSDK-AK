@@ -78,42 +78,42 @@ public partial class UIDataProvider_OnlineProfileSettings : BmSDK.Engine.UIDataP
         where TComponent : class, Framework.IScriptComponent<UIDataProvider_OnlineProfileSettings>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnStorageDeviceChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStorageDeviceChange;
     /// <summary>
     /// Function: OnStorageDeviceChange
     /// </summary>
     public unsafe override void OnStorageDeviceChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStorageDeviceChange, "Engine.UIDataProvider_OnlineProfileSettings.OnStorageDeviceChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStorageDeviceChange, "Engine.UIDataProvider_OnlineProfileSettings.OnStorageDeviceChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshStorageData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshStorageData;
     /// <summary>
     /// Function: RefreshStorageData
     /// </summary>
     public unsafe override void RefreshStorageData()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshStorageData, "Engine.UIDataProvider_OnlineProfileSettings.RefreshStorageData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshStorageData, "Engine.UIDataProvider_OnlineProfileSettings.RefreshStorageData", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearReadCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearReadCompleteDelegate;
     /// <summary>
     /// Function: ClearReadCompleteDelegate
     /// </summary>
     public unsafe override void ClearReadCompleteDelegate(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearReadCompleteDelegate, "Engine.UIDataProvider_OnlineProfileSettings.ClearReadCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearReadCompleteDelegate, "Engine.UIDataProvider_OnlineProfileSettings.ClearReadCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerInterface, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class UIDataProvider_OnlineProfileSettings : BmSDK.Engine.UIDataP
         return;
     }
 
-    private static BmSDK.Function __fn_AddReadCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddReadCompleteDelegate;
     /// <summary>
     /// Function: AddReadCompleteDelegate
     /// </summary>
     public unsafe override void AddReadCompleteDelegate(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddReadCompleteDelegate, "Engine.UIDataProvider_OnlineProfileSettings.AddReadCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddReadCompleteDelegate, "Engine.UIDataProvider_OnlineProfileSettings.AddReadCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerInterface, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class UIDataProvider_OnlineProfileSettings : BmSDK.Engine.UIDataP
         return;
     }
 
-    private static BmSDK.Function __fn_GetData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetData;
     /// <summary>
     /// Function: GetData
     /// </summary>
     public unsafe override bool GetData(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetData, "Engine.UIDataProvider_OnlineProfileSettings.GetData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetData, "Engine.UIDataProvider_OnlineProfileSettings.GetData", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerInterface, paramsPtr + 0);
@@ -154,14 +154,14 @@ public partial class UIDataProvider_OnlineProfileSettings : BmSDK.Engine.UIDataP
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_WriteData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WriteData;
     /// <summary>
     /// Function: WriteData
     /// </summary>
     public unsafe override bool WriteData(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum, int DeviceID, BmSDK.Engine.OnlinePlayerStorage PlayerStorage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WriteData, "Engine.UIDataProvider_OnlineProfileSettings.WriteData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WriteData, "Engine.UIDataProvider_OnlineProfileSettings.WriteData", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerInterface, paramsPtr + 0);
@@ -172,14 +172,14 @@ public partial class UIDataProvider_OnlineProfileSettings : BmSDK.Engine.UIDataP
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_ReadData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReadData;
     /// <summary>
     /// Function: ReadData
     /// </summary>
     public unsafe override bool ReadData(BmSDK.Engine.OnlinePlayerInterface PlayerInterface, byte LocalUserNum, int DeviceID, BmSDK.Engine.OnlinePlayerStorage PlayerStorage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReadData, "Engine.UIDataProvider_OnlineProfileSettings.ReadData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReadData, "Engine.UIDataProvider_OnlineProfileSettings.ReadData", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerInterface, paramsPtr + 0);

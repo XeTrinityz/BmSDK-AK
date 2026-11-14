@@ -78,14 +78,14 @@ public partial class RBarkCharacterDefInstance : BmSDK.GameObject, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RBarkCharacterDefInstance>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetFilenameFromBarkSetName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFilenameFromBarkSetName;
     /// <summary>
     /// Function: GetFilenameFromBarkSetName
     /// </summary>
     public unsafe virtual void GetFilenameFromBarkSetName(out BmSDK.BmGame.RBarkCharacterDefInstance.FBarkSetName ThisName, out BmSDK.FString OutString)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFilenameFromBarkSetName, "BmGame.RBarkCharacterDefInstance.GetFilenameFromBarkSetName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFilenameFromBarkSetName, "BmGame.RBarkCharacterDefInstance.GetFilenameFromBarkSetName", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -101,14 +101,14 @@ public partial class RBarkCharacterDefInstance : BmSDK.GameObject, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateDynamicSetList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDynamicSetList;
     /// <summary>
     /// Function: UpdateDynamicSetList
     /// </summary>
     public unsafe virtual void UpdateDynamicSetList(BmSDK.TArray<BmSDK.FString> SuffixList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDynamicSetList, "BmGame.RBarkCharacterDefInstance.UpdateDynamicSetList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDynamicSetList, "BmGame.RBarkCharacterDefInstance.UpdateDynamicSetList", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SuffixList, paramsPtr + 0);

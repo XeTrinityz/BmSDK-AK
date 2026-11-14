@@ -203,7 +203,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnServerAuthComplete
     /// </summary>
-    public unsafe void OnServerAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, BmSDK.Engine.Player ServerConnection, BmSDK.FString ExtraInfo);
+    public unsafe void OnServerAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, BmSDK.Engine.Player ServerConnection, BmSDK.FStringArg ExtraInfo);
 
     /// <summary>
     /// Function: ClearClientAuthCompleteDelegate
@@ -218,7 +218,7 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnClientAuthComplete
     /// </summary>
-    public unsafe void OnClientAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, BmSDK.Engine.Player ClientConnection, BmSDK.FString ExtraInfo);
+    public unsafe void OnClientAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, BmSDK.Engine.Player ClientConnection, BmSDK.FStringArg ExtraInfo);
 
     /// <summary>
     /// Function: ClearServerAuthResponseDelegate

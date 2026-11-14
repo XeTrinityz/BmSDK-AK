@@ -78,14 +78,14 @@ public partial class KActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<KActorSpawnable>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ResetComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetComponents;
     /// <summary>
     /// Function: ResetComponents
     /// </summary>
     public unsafe virtual void ResetComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetComponents, "Engine.KActorSpawnable.ResetComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetComponents, "Engine.KActorSpawnable.ResetComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,42 +99,42 @@ public partial class KActorSpawnable : BmSDK.Engine.KActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RecycleInternal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecycleInternal;
     /// <summary>
     /// Function: RecycleInternal
     /// </summary>
     public unsafe virtual void RecycleInternal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecycleInternal, "Engine.KActorSpawnable.RecycleInternal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecycleInternal, "Engine.KActorSpawnable.RecycleInternal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Recycle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Recycle;
     /// <summary>
     /// Function: Recycle
     /// </summary>
     public unsafe virtual void Recycle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "Engine.KActorSpawnable.Recycle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Recycle, "Engine.KActorSpawnable.Recycle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialize;
     /// <summary>
     /// Function: Initialize
     /// </summary>
     public unsafe virtual void Initialize()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialize, "Engine.KActorSpawnable.Initialize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialize, "Engine.KActorSpawnable.Initialize", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

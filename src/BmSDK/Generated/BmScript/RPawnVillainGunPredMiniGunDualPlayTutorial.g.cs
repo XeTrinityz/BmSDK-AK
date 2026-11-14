@@ -78,14 +78,14 @@ public partial class RPawnVillainGunPredMiniGunDualPlayTutorial : BmSDK.BmScript
         where TComponent : class, Framework.IScriptComponent<RPawnVillainGunPredMiniGunDualPlayTutorial>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanBeHitInCombat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeHitInCombat;
     /// <summary>
     /// Function: CanBeHitInCombat
     /// </summary>
     public unsafe override bool CanBeHitInCombat(BmSDK.BmGame.RDamageType DamageType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeHitInCombat, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.CanBeHitInCombat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeHitInCombat, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.CanBeHitInCombat", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageType, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RPawnVillainGunPredMiniGunDualPlayTutorial : BmSDK.BmScript
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ShouldMiss;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldMiss;
     /// <summary>
     /// Function: ShouldMiss
     /// </summary>
     public unsafe override bool ShouldMiss(float TestDistSq, BmSDK.Engine.Actor TrackedTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldMiss, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.ShouldMiss");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldMiss, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.ShouldMiss", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestDistSq, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RPawnVillainGunPredMiniGunDualPlayTutorial : BmSDK.BmScript
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_ActionStanceUpdated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActionStanceUpdated;
     /// <summary>
     /// Function: ActionStanceUpdated
     /// </summary>
     public unsafe override void ActionStanceUpdated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActionStanceUpdated, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.ActionStanceUpdated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActionStanceUpdated, "BmScript.RPawnVillainGunPredMiniGunDualPlayTutorial.ActionStanceUpdated", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

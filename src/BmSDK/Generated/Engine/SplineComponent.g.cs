@@ -78,14 +78,14 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<SplineComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetTangentAtDistanceAlongSpline;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTangentAtDistanceAlongSpline;
     /// <summary>
     /// Function: GetTangentAtDistanceAlongSpline
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetTangentAtDistanceAlongSpline(float Distance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTangentAtDistanceAlongSpline, "Engine.SplineComponent.GetTangentAtDistanceAlongSpline");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTangentAtDistanceAlongSpline, "Engine.SplineComponent.GetTangentAtDistanceAlongSpline", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Distance, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetLocationAtDistanceAlongSpline;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationAtDistanceAlongSpline;
     /// <summary>
     /// Function: GetLocationAtDistanceAlongSpline
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationAtDistanceAlongSpline(float Distance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationAtDistanceAlongSpline, "Engine.SplineComponent.GetLocationAtDistanceAlongSpline");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationAtDistanceAlongSpline, "Engine.SplineComponent.GetLocationAtDistanceAlongSpline", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Distance, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetSplineLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSplineLength;
     /// <summary>
     /// Function: GetSplineLength
     /// </summary>
     public unsafe virtual float GetSplineLength()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSplineLength, "Engine.SplineComponent.GetSplineLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSplineLength, "Engine.SplineComponent.GetSplineLength", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -143,14 +143,14 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateSplineReparamTable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplineReparamTable;
     /// <summary>
     /// Function: UpdateSplineReparamTable
     /// </summary>
     public unsafe virtual void UpdateSplineReparamTable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSplineReparamTable, "Engine.SplineComponent.UpdateSplineReparamTable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSplineReparamTable, "Engine.SplineComponent.UpdateSplineReparamTable", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -164,14 +164,14 @@ public partial class SplineComponent : BmSDK.Engine.PrimitiveComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSplineCurviness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplineCurviness;
     /// <summary>
     /// Function: UpdateSplineCurviness
     /// </summary>
     public unsafe virtual void UpdateSplineCurviness()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSplineCurviness, "Engine.SplineComponent.UpdateSplineCurviness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSplineCurviness, "Engine.SplineComponent.UpdateSplineCurviness", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

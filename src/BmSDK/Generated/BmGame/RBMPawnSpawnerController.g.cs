@@ -91,14 +91,14 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetMaintainCurrent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaintainCurrent;
     /// <summary>
     /// Function: SetMaintainCurrent
     /// </summary>
     public unsafe virtual void SetMaintainCurrent(bool bNewValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaintainCurrent, "BmGame.RBMPawnSpawnerController.SetMaintainCurrent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaintainCurrent, "BmGame.RBMPawnSpawnerController.SetMaintainCurrent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewValue, paramsPtr + 0);
@@ -106,42 +106,42 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_Deactivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deactivated;
     /// <summary>
     /// Function: Deactivated
     /// </summary>
     public unsafe override void Deactivated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivated, "BmGame.RBMPawnSpawnerController.Deactivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deactivated, "BmGame.RBMPawnSpawnerController.Deactivated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RBMPawnSpawnerController.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RBMPawnSpawnerController.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPawnSpawner;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPawnSpawner;
     /// <summary>
     /// Function: GetPawnSpawner
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBmPawnSpawner GetPawnSpawner(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPawnSpawner, "BmGame.RBMPawnSpawnerController.GetPawnSpawner");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPawnSpawner, "BmGame.RBMPawnSpawnerController.GetPawnSpawner", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -156,14 +156,14 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBmPawnSpawner>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNumberActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumberActive;
     /// <summary>
     /// Function: GetNumberActive
     /// </summary>
     public unsafe virtual int GetNumberActive(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumberActive, "BmGame.RBMPawnSpawnerController.GetNumberActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumberActive, "BmGame.RBMPawnSpawnerController.GetNumberActive", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -178,14 +178,14 @@ public partial class RBMPawnSpawnerController : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ActiveNumberAltered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActiveNumberAltered;
     /// <summary>
     /// Function: ActiveNumberAltered
     /// </summary>
     public unsafe virtual void ActiveNumberAltered(int Index, int NewNumber)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActiveNumberAltered, "BmGame.RBMPawnSpawnerController.ActiveNumberAltered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActiveNumberAltered, "BmGame.RBMPawnSpawnerController.ActiveNumberAltered", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);

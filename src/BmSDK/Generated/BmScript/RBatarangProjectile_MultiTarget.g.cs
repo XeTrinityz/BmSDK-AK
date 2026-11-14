@@ -78,14 +78,14 @@ public partial class RBatarangProjectile_MultiTarget : BmSDK.BmScript.RBatarangP
         where TComponent : class, Framework.IScriptComponent<RBatarangProjectile_MultiTarget>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_VillainHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainHit;
     /// <summary>
     /// Function: VillainHit
     /// </summary>
     public unsafe override void VillainHit(BmSDK.BmGame.RPawnVillain Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainHit, "BmScript.RBatarangProjectile_MultiTarget.VillainHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainHit, "BmScript.RBatarangProjectile_MultiTarget.VillainHit", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RBatarangProjectile_MultiTarget : BmSDK.BmScript.RBatarangP
         return;
     }
 
-    private static BmSDK.Function __fn_StopSpinSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpinSound;
     /// <summary>
     /// Function: StopSpinSound
     /// </summary>
     public unsafe override void StopSpinSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpinSound, "BmScript.RBatarangProjectile_MultiTarget.StopSpinSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSpinSound, "BmScript.RBatarangProjectile_MultiTarget.StopSpinSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartSpinSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSpinSound;
     /// <summary>
     /// Function: StartSpinSound
     /// </summary>
     public unsafe override void StartSpinSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSpinSound, "BmScript.RBatarangProjectile_MultiTarget.StartSpinSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSpinSound, "BmScript.RBatarangProjectile_MultiTarget.StartSpinSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -102,14 +102,14 @@ public partial class Texture2DDynamic : BmSDK.Engine.Texture, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Texture2DDynamic>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_UpdateMipFromJPEG;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMipFromJPEG;
     /// <summary>
     /// Function: UpdateMipFromJPEG
     /// </summary>
     public unsafe virtual void UpdateMipFromJPEG(int MipIdx, out BmSDK.TArray<byte> MipData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMipFromJPEG, "Engine.Texture2DDynamic.UpdateMipFromJPEG");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMipFromJPEG, "Engine.Texture2DDynamic.UpdateMipFromJPEG", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MipIdx, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class Texture2DDynamic : BmSDK.Engine.Texture, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateMip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMip;
     /// <summary>
     /// Function: UpdateMip
     /// </summary>
     public unsafe virtual void UpdateMip(int MipIdx, out BmSDK.TArray<byte> MipData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMip, "Engine.Texture2DDynamic.UpdateMip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMip, "Engine.Texture2DDynamic.UpdateMip", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MipIdx, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class Texture2DDynamic : BmSDK.Engine.Texture, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init(int InSizeX, int InSizeY, BmSDK.Engine.Texture.EPixelFormat InFormat = default, bool InIsResolveTarget = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.Texture2DDynamic.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.Texture2DDynamic.Init", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSizeX, paramsPtr + 0);

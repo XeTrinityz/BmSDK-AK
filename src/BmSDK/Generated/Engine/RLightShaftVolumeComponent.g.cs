@@ -78,14 +78,14 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
         where TComponent : class, Framework.IScriptComponent<RLightShaftVolumeComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe virtual void SetEnabled(bool NewEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.RLightShaftVolumeComponent.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "Engine.RLightShaftVolumeComponent.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewEnabled, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateBrightness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBrightness;
     /// <summary>
     /// Function: UpdateBrightness
     /// </summary>
     public unsafe virtual bool UpdateBrightness(float NewBrightness)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBrightness, "Engine.RLightShaftVolumeComponent.UpdateBrightness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateBrightness, "Engine.RLightShaftVolumeComponent.UpdateBrightness", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBrightness, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RLightShaftVolumeComponent : BmSDK.Engine.PrimitiveComponen
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetConeAngleAndRadius;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetConeAngleAndRadius;
     /// <summary>
     /// Function: SetConeAngleAndRadius
     /// </summary>
     public unsafe virtual bool SetConeAngleAndRadius(float NewConeAngle, float NewRadius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetConeAngleAndRadius, "Engine.RLightShaftVolumeComponent.SetConeAngleAndRadius");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetConeAngleAndRadius, "Engine.RLightShaftVolumeComponent.SetConeAngleAndRadius", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewConeAngle, paramsPtr + 0);

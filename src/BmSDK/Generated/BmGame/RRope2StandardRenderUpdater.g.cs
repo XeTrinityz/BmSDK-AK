@@ -78,14 +78,14 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
         where TComponent : class, Framework.IScriptComponent<RRope2StandardRenderUpdater>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetRopeRenderInterpolationScaleTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRopeRenderInterpolationScaleTarget;
     /// <summary>
     /// Function: SetRopeRenderInterpolationScaleTarget
     /// </summary>
     public unsafe virtual void SetRopeRenderInterpolationScaleTarget(float NewInterpolationScaleTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRopeRenderInterpolationScaleTarget, "BmGame.RRope2StandardRenderUpdater.SetRopeRenderInterpolationScaleTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRopeRenderInterpolationScaleTarget, "BmGame.RRope2StandardRenderUpdater.SetRopeRenderInterpolationScaleTarget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewInterpolationScaleTarget, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
         return;
     }
 
-    private static BmSDK.Function __fn_SetRopeRenderInterpolationScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRopeRenderInterpolationScale;
     /// <summary>
     /// Function: SetRopeRenderInterpolationScale
     /// </summary>
     public unsafe virtual void SetRopeRenderInterpolationScale(float NewInterpolationScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRopeRenderInterpolationScale, "BmGame.RRope2StandardRenderUpdater.SetRopeRenderInterpolationScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRopeRenderInterpolationScale, "BmGame.RRope2StandardRenderUpdater.SetRopeRenderInterpolationScale", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewInterpolationScale, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RRope2StandardRenderUpdater : BmSDK.BmGame.RRope2RenderUpda
         return;
     }
 
-    private static BmSDK.Function __fn_SetMaterialOverride;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterialOverride;
     /// <summary>
     /// Function: SetMaterialOverride
     /// </summary>
     public unsafe override void SetMaterialOverride(BmSDK.Engine.MaterialInstanceConstant OverrideMat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaterialOverride, "BmGame.RRope2StandardRenderUpdater.SetMaterialOverride");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaterialOverride, "BmGame.RRope2StandardRenderUpdater.SetMaterialOverride", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideMat, paramsPtr + 0);

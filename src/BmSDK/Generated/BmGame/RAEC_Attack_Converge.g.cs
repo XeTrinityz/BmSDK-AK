@@ -78,42 +78,42 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         where TComponent : class, Framework.IScriptComponent<RAEC_Attack_Converge>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Attack_Converge.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Attack_Converge.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HasThugTryingToFire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasThugTryingToFire;
     /// <summary>
     /// Function: HasThugTryingToFire
     /// </summary>
     public unsafe virtual bool HasThugTryingToFire()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasThugTryingToFire, "BmGame.RAEC_Attack_Converge.HasThugTryingToFire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasThugTryingToFire, "BmGame.RAEC_Attack_Converge.HasThugTryingToFire", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitRail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitRail;
     /// <summary>
     /// Function: InitRail
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAEC_Attack_Sub_Rail InitRail(BmSDK.BmGame.RBMAIController NewCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitRail, "BmGame.RAEC_Attack_Converge.InitRail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitRail, "BmGame.RAEC_Attack_Converge.InitRail", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAEC_Attack_Sub_Rail>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InitHoldPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitHoldPos;
     /// <summary>
     /// Function: InitHoldPos
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAEC_Attack_Sub_HoldPos InitHoldPos(BmSDK.BmGame.RBMAIController NewCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitHoldPos, "BmGame.RAEC_Attack_Converge.InitHoldPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitHoldPos, "BmGame.RAEC_Attack_Converge.InitHoldPos", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAEC_Attack_Sub_HoldPos>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InterruptPlayerDoingFearTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterruptPlayerDoingFearTakedown;
     /// <summary>
     /// Function: InterruptPlayerDoingFearTakedown
     /// </summary>
     public unsafe virtual void InterruptPlayerDoingFearTakedown(BmSDK.BmGame.RBMAIController NewCon, float PoseChangeDeadline)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterruptPlayerDoingFearTakedown, "BmGame.RAEC_Attack_Converge.InterruptPlayerDoingFearTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterruptPlayerDoingFearTakedown, "BmGame.RAEC_Attack_Converge.InterruptPlayerDoingFearTakedown", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldStartOnRail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldStartOnRail;
     /// <summary>
     /// Function: ShouldStartOnRail
     /// </summary>
     public unsafe virtual bool ShouldStartOnRail(BmSDK.BmGame.RBMAIController TestCon, out BmSDK.BmGame.RBMPathNode_FenceJumpProxy CurrentFenceProxy)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStartOnRail, "BmGame.RAEC_Attack_Converge.ShouldStartOnRail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldStartOnRail, "BmGame.RAEC_Attack_Converge.ShouldStartOnRail", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestCon, paramsPtr + 0);
@@ -170,14 +170,14 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_AddToGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToGroup;
     /// <summary>
     /// Function: AddToGroup
     /// </summary>
     public unsafe virtual void AddToGroup(BmSDK.BmGame.RBMAIController NewCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToGroup, "BmGame.RAEC_Attack_Converge.AddToGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToGroup, "BmGame.RAEC_Attack_Converge.AddToGroup", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -185,14 +185,14 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldStartle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldStartle;
     /// <summary>
     /// Function: ShouldStartle
     /// </summary>
     public unsafe virtual bool ShouldStartle(BmSDK.BmGame.RPawnVillain TestVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldStartle, "BmGame.RAEC_Attack_Converge.ShouldStartle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldStartle, "BmGame.RAEC_Attack_Converge.ShouldStartle", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestVillain, paramsPtr + 0);
@@ -200,70 +200,70 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ClearConvergeSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearConvergeSearch;
     /// <summary>
     /// Function: ClearConvergeSearch
     /// </summary>
     public unsafe virtual void ClearConvergeSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearConvergeSearch, "BmGame.RAEC_Attack_Converge.ClearConvergeSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearConvergeSearch, "BmGame.RAEC_Attack_Converge.ClearConvergeSearch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitGoalDataInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitGoalDataInstance;
     /// <summary>
     /// Function: InitGoalDataInstance
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RMultiDestGoalData InitGoalDataInstance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitGoalDataInstance, "BmGame.RAEC_Attack_Converge.InitGoalDataInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitGoalDataInstance, "BmGame.RAEC_Attack_Converge.InitGoalDataInstance", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RMultiDestGoalData>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitMultiGoalSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMultiGoalSearch;
     /// <summary>
     /// Function: InitMultiGoalSearch
     /// </summary>
     public unsafe virtual void InitMultiGoalSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitMultiGoalSearch, "BmGame.RAEC_Attack_Converge.InitMultiGoalSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitMultiGoalSearch, "BmGame.RAEC_Attack_Converge.InitMultiGoalSearch", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePlayerSeenInGuardVolumes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerSeenInGuardVolumes;
     /// <summary>
     /// Function: UpdatePlayerSeenInGuardVolumes
     /// </summary>
     public unsafe virtual void UpdatePlayerSeenInGuardVolumes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePlayerSeenInGuardVolumes, "BmGame.RAEC_Attack_Converge.UpdatePlayerSeenInGuardVolumes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePlayerSeenInGuardVolumes, "BmGame.RAEC_Attack_Converge.UpdatePlayerSeenInGuardVolumes", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetAIThoughts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIThoughts;
     /// <summary>
     /// Function: GetAIThoughts
     /// </summary>
     public unsafe override void GetAIThoughts(out BmSDK.TArray<BmSDK.Engine.Actor.FThought> ThoughtList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIThoughts, "BmGame.RAEC_Attack_Converge.GetAIThoughts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAIThoughts, "BmGame.RAEC_Attack_Converge.GetAIThoughts", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -271,28 +271,28 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_SetStable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStable;
     /// <summary>
     /// Function: SetStable
     /// </summary>
     public unsafe virtual void SetStable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStable, "BmGame.RAEC_Attack_Converge.SetStable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStable, "BmGame.RAEC_Attack_Converge.SetStable", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Attack_Converge.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_Attack_Converge.Tick", this);
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -300,28 +300,28 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_GetNumActivelyResponding;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumActivelyResponding;
     /// <summary>
     /// Function: GetNumActivelyResponding
     /// </summary>
     public unsafe virtual int GetNumActivelyResponding()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumActivelyResponding, "BmGame.RAEC_Attack_Converge.GetNumActivelyResponding");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumActivelyResponding, "BmGame.RAEC_Attack_Converge.GetNumActivelyResponding", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanCurrentlyRespond;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCurrentlyRespond;
     /// <summary>
     /// Function: CanCurrentlyRespond
     /// </summary>
     public unsafe virtual bool CanCurrentlyRespond(BmSDK.BmGame.RBMAIController TestCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCurrentlyRespond, "BmGame.RAEC_Attack_Converge.CanCurrentlyRespond");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanCurrentlyRespond, "BmGame.RAEC_Attack_Converge.CanCurrentlyRespond", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestCon, paramsPtr + 0);
@@ -329,28 +329,28 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetDangerLadder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDangerLadder;
     /// <summary>
     /// Function: GetDangerLadder
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RLadder GetDangerLadder()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDangerLadder, "BmGame.RAEC_Attack_Converge.GetDangerLadder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDangerLadder, "BmGame.RAEC_Attack_Converge.GetDangerLadder", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RLadder>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ForceStartAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceStartAttack;
     /// <summary>
     /// Function: ForceStartAttack
     /// </summary>
     public unsafe virtual void ForceStartAttack(bool bForceRestart = default, BmSDK.BmGame.RPawnVillain TriggeringVillain = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceStartAttack, "BmGame.RAEC_Attack_Converge.ForceStartAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceStartAttack, "BmGame.RAEC_Attack_Converge.ForceStartAttack", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceRestart, paramsPtr + 0);
@@ -359,14 +359,14 @@ public partial class RAEC_Attack_Converge : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RAEC_Attack_Converge.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RAEC_Attack_Converge.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

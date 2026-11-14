@@ -78,14 +78,14 @@ public partial class RJobAssignment_MiniManDown : BmSDK.BmGame.RJobAssignment, B
         where TComponent : class, Framework.IScriptComponent<RJobAssignment_MiniManDown>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsAMiniManDownActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAMiniManDownActive;
     /// <summary>
     /// Function: IsAMiniManDownActive
     /// </summary>
     public unsafe virtual bool IsAMiniManDownActive(BmSDK.BmGame.RBMRoomAIState RoomState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAMiniManDownActive, "BmGame.RJobAssignment_MiniManDown.IsAMiniManDownActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAMiniManDownActive, "BmGame.RJobAssignment_MiniManDown.IsAMiniManDownActive", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RoomState, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RJobAssignment_MiniManDown : BmSDK.BmGame.RJobAssignment, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsAManDownActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAManDownActive;
     /// <summary>
     /// Function: IsAManDownActive
     /// </summary>
     public unsafe virtual bool IsAManDownActive(BmSDK.BmGame.RBMRoomAIState RoomState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAManDownActive, "BmGame.RJobAssignment_MiniManDown.IsAManDownActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAManDownActive, "BmGame.RJobAssignment_MiniManDown.IsAManDownActive", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RoomState, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RJobAssignment_MiniManDown : BmSDK.BmGame.RJobAssignment, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_DoAssignment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoAssignment;
     /// <summary>
     /// Function: DoAssignment
     /// </summary>
     public unsafe override void DoAssignment(BmSDK.BmGame.RBMRoomAIState RoomState, BmSDK.BmGame.RBMAIController ThugCon, BmSDK.GameObject AssignTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoAssignment, "BmGame.RJobAssignment_MiniManDown.DoAssignment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoAssignment, "BmGame.RJobAssignment_MiniManDown.DoAssignment", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RoomState, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class RJobAssignment_MiniManDown : BmSDK.BmGame.RJobAssignment, B
         return;
     }
 
-    private static BmSDK.Function __fn_CanBeAssigned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeAssigned;
     /// <summary>
     /// Function: CanBeAssigned
     /// </summary>
     public unsafe override bool CanBeAssigned(BmSDK.BmGame.RBMRoomAIState RoomState, BmSDK.BmGame.RBMAIController ThugCon, BmSDK.GameObject AssignTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeAssigned, "BmGame.RJobAssignment_MiniManDown.CanBeAssigned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeAssigned, "BmGame.RJobAssignment_MiniManDown.CanBeAssigned", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RoomState, paramsPtr + 0);
@@ -142,14 +142,14 @@ public partial class RJobAssignment_MiniManDown : BmSDK.BmGame.RJobAssignment, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_IsAlreadyDoingJob;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAlreadyDoingJob;
     /// <summary>
     /// Function: IsAlreadyDoingJob
     /// </summary>
     public unsafe override bool IsAlreadyDoingJob(BmSDK.BmGame.RBMAIController TestCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAlreadyDoingJob, "BmGame.RJobAssignment_MiniManDown.IsAlreadyDoingJob");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAlreadyDoingJob, "BmGame.RJobAssignment_MiniManDown.IsAlreadyDoingJob", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestCon, paramsPtr + 0);
@@ -157,14 +157,14 @@ public partial class RJobAssignment_MiniManDown : BmSDK.BmGame.RJobAssignment, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddToDestList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToDestList;
     /// <summary>
     /// Function: AddToDestList
     /// </summary>
     public unsafe override void AddToDestList(BmSDK.BmGame.RBMRoomAIState RoomState, out BmSDK.TArray<BmSDK.BmGame.RAEC_LevelScripting.FSearchTarget> OutList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToDestList, "BmGame.RJobAssignment_MiniManDown.AddToDestList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToDestList, "BmGame.RJobAssignment_MiniManDown.AddToDestList", this);
         byte* paramsPtr = stackalloc byte[69];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RoomState, paramsPtr + 0);

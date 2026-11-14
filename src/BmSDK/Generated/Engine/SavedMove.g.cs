@@ -78,14 +78,14 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<SavedMove>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDebugString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDebugString;
     /// <summary>
     /// Function: GetDebugString
     /// </summary>
     public unsafe virtual BmSDK.FString GetDebugString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDebugString, "Engine.SavedMove.GetDebugString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDebugString, "Engine.SavedMove.GetDebugString", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -107,28 +107,28 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EDoubleClickDir>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_CompressedFlags;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CompressedFlags;
     /// <summary>
     /// Function: CompressedFlags
     /// </summary>
     public unsafe virtual byte CompressedFlags()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CompressedFlags, "Engine.SavedMove.CompressedFlags");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CompressedFlags, "Engine.SavedMove.CompressedFlags", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ResetMoveFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetMoveFor;
     /// <summary>
     /// Function: ResetMoveFor
     /// </summary>
     public unsafe virtual void ResetMoveFor(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetMoveFor, "Engine.SavedMove.ResetMoveFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetMoveFor, "Engine.SavedMove.ResetMoveFor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PrepMoveFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PrepMoveFor;
     /// <summary>
     /// Function: PrepMoveFor
     /// </summary>
     public unsafe virtual void PrepMoveFor(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PrepMoveFor, "Engine.SavedMove.PrepMoveFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PrepMoveFor, "Engine.SavedMove.PrepMoveFor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetMoveFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMoveFor;
     /// <summary>
     /// Function: SetMoveFor
     /// </summary>
     public unsafe virtual void SetMoveFor(BmSDK.Engine.PlayerController P, float DeltaTime, System.Numerics.Vector3 newAccel, BmSDK.Engine.Actor.EDoubleClickDir InDoubleClick)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMoveFor, "Engine.SavedMove.SetMoveFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMoveFor, "Engine.SavedMove.SetMoveFor", this);
         byte* paramsPtr = stackalloc byte[41];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -169,14 +169,14 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CanCombineWith;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanCombineWith;
     /// <summary>
     /// Function: CanCombineWith
     /// </summary>
     public unsafe virtual bool CanCombineWith(BmSDK.Engine.SavedMove NewMove, BmSDK.Engine.Pawn inPawn, float MaxDelta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanCombineWith, "Engine.SavedMove.CanCombineWith");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanCombineWith, "Engine.SavedMove.CanCombineWith", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMove, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SetInitialPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInitialPosition;
     /// <summary>
     /// Function: SetInitialPosition
     /// </summary>
     public unsafe virtual void SetInitialPosition(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInitialPosition, "Engine.SavedMove.SetInitialPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInitialPosition, "Engine.SavedMove.SetInitialPosition", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -201,28 +201,28 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetStartLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStartLocation;
     /// <summary>
     /// Function: GetStartLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetStartLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStartLocation, "Engine.SavedMove.GetStartLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStartLocation, "Engine.SavedMove.GetStartLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsImportantMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsImportantMove;
     /// <summary>
     /// Function: IsImportantMove
     /// </summary>
     public unsafe virtual bool IsImportantMove(System.Numerics.Vector3 CompareAccel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsImportantMove, "Engine.SavedMove.IsImportantMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsImportantMove, "Engine.SavedMove.IsImportantMove", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CompareAccel, paramsPtr + 0);
@@ -230,14 +230,14 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_PostUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostUpdate;
     /// <summary>
     /// Function: PostUpdate
     /// </summary>
     public unsafe virtual void PostUpdate(BmSDK.Engine.PlayerController P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostUpdate, "Engine.SavedMove.PostUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostUpdate, "Engine.SavedMove.PostUpdate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -245,14 +245,14 @@ public partial class SavedMove : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Clear;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Clear;
     /// <summary>
     /// Function: Clear
     /// </summary>
     public unsafe virtual void Clear()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Clear, "Engine.SavedMove.Clear");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Clear, "Engine.SavedMove.Clear", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,42 +78,42 @@ public partial class RSeqAct_SetScannableDrone : BmSDK.Engine.SequenceAction, Bm
         where TComponent : class, Framework.IScriptComponent<RSeqAct_SetScannableDrone>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TargetKilled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TargetKilled;
     /// <summary>
     /// Function: TargetKilled
     /// </summary>
     public unsafe virtual void TargetKilled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TargetKilled, "BmGame.RSeqAct_SetScannableDrone.TargetKilled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TargetKilled, "BmGame.RSeqAct_SetScannableDrone.TargetKilled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TargetScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TargetScanned;
     /// <summary>
     /// Function: TargetScanned
     /// </summary>
     public unsafe virtual void TargetScanned()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TargetScanned, "BmGame.RSeqAct_SetScannableDrone.TargetScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TargetScanned, "BmGame.RSeqAct_SetScannableDrone.TargetScanned", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_SetScannableDrone.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_SetScannableDrone.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

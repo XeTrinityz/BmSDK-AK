@@ -13,22 +13,22 @@ public partial interface OnlineCustomContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: CancelCustomContentRequest
     /// </summary>
-    public unsafe void CancelCustomContentRequest(BmSDK.FString sCustomId);
+    public unsafe void CancelCustomContentRequest(BmSDK.FStringArg sCustomId);
 
     /// <summary>
     /// Function: GetCustomContentAsString
     /// </summary>
-    public unsafe void GetCustomContentAsString(BmSDK.FString sCustomId, out BmSDK.FString ContentData);
+    public unsafe void GetCustomContentAsString(BmSDK.FStringArg sCustomId, out BmSDK.FString ContentData);
 
     /// <summary>
     /// Function: GetCustomContent
     /// </summary>
-    public unsafe void GetCustomContent(BmSDK.FString sCustomId, out BmSDK.TArray<byte> ContentData);
+    public unsafe void GetCustomContent(BmSDK.FStringArg sCustomId, out BmSDK.TArray<byte> ContentData);
 
     /// <summary>
     /// Function: StartCustomContentRequest
     /// </summary>
-    public unsafe void StartCustomContentRequest(BmSDK.FString sContentName, BmSDK.FString sCustomId, System.IntPtr dReadCustomContentComplete, BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM = default, BmSDK.FString Category = default);
+    public unsafe void StartCustomContentRequest(BmSDK.FStringArg sContentName, BmSDK.FStringArg sCustomId, System.IntPtr dReadCustomContentComplete, BmSDK.Engine.OnlineSubsystem.ECustomContentAccessMode eCCAM = default, BmSDK.FStringArg Category = default);
 
     /// <summary>
     /// Function: IsCustomContentAccessModeAvailable

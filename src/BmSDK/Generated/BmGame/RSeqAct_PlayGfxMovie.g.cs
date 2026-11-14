@@ -78,14 +78,14 @@ public partial class RSeqAct_PlayGfxMovie : BmSDK.GFxUI.GFxAction_OpenMovie, BmS
         where TComponent : class, Framework.IScriptComponent<RSeqAct_PlayGfxMovie>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PauseGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseGame;
     /// <summary>
     /// Function: PauseGame
     /// </summary>
     public unsafe virtual void PauseGame(bool Pause)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PauseGame, "BmGame.RSeqAct_PlayGfxMovie.PauseGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PauseGame, "BmGame.RSeqAct_PlayGfxMovie.PauseGame", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pause, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RSeqAct_PlayGfxMovie : BmSDK.GFxUI.GFxAction_OpenMovie, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_MovieFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovieFinished;
     /// <summary>
     /// Function: MovieFinished
     /// </summary>
     public unsafe virtual void MovieFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovieFinished, "BmGame.RSeqAct_PlayGfxMovie.MovieFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovieFinished, "BmGame.RSeqAct_PlayGfxMovie.MovieFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

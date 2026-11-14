@@ -78,28 +78,28 @@ public partial class SeqVar_Player : BmSDK.Engine.SeqVar_Object, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<SeqVar_Player>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetObjectValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectValue;
     /// <summary>
     /// Function: GetObjectValue
     /// </summary>
     public unsafe override BmSDK.GameObject GetObjectValue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectValue, "Engine.SeqVar_Player.GetObjectValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectValue, "Engine.SeqVar_Player.GetObjectValue", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdatePlayersList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayersList;
     /// <summary>
     /// Function: UpdatePlayersList
     /// </summary>
     public unsafe virtual void UpdatePlayersList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePlayersList, "Engine.SeqVar_Player.UpdatePlayersList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePlayersList, "Engine.SeqVar_Player.UpdatePlayersList", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

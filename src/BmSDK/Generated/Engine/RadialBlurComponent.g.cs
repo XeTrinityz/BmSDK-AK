@@ -78,56 +78,56 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RadialBlurComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnUpdatePropertyBlurOpacity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdatePropertyBlurOpacity;
     /// <summary>
     /// Function: OnUpdatePropertyBlurOpacity
     /// </summary>
     public unsafe virtual void OnUpdatePropertyBlurOpacity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyBlurOpacity, "Engine.RadialBlurComponent.OnUpdatePropertyBlurOpacity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdatePropertyBlurOpacity, "Engine.RadialBlurComponent.OnUpdatePropertyBlurOpacity", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnUpdatePropertyBlurFalloffExponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdatePropertyBlurFalloffExponent;
     /// <summary>
     /// Function: OnUpdatePropertyBlurFalloffExponent
     /// </summary>
     public unsafe virtual void OnUpdatePropertyBlurFalloffExponent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyBlurFalloffExponent, "Engine.RadialBlurComponent.OnUpdatePropertyBlurFalloffExponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdatePropertyBlurFalloffExponent, "Engine.RadialBlurComponent.OnUpdatePropertyBlurFalloffExponent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnUpdatePropertyBlurScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnUpdatePropertyBlurScale;
     /// <summary>
     /// Function: OnUpdatePropertyBlurScale
     /// </summary>
     public unsafe virtual void OnUpdatePropertyBlurScale()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnUpdatePropertyBlurScale, "Engine.RadialBlurComponent.OnUpdatePropertyBlurScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnUpdatePropertyBlurScale, "Engine.RadialBlurComponent.OnUpdatePropertyBlurScale", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe virtual void SetEnabled(bool bInEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.RadialBlurComponent.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "Engine.RadialBlurComponent.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInEnabled, paramsPtr + 0);
@@ -142,14 +142,14 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetBlurOpacity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlurOpacity;
     /// <summary>
     /// Function: SetBlurOpacity
     /// </summary>
     public unsafe virtual void SetBlurOpacity(float InBlurOpacity)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlurOpacity, "Engine.RadialBlurComponent.SetBlurOpacity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBlurOpacity, "Engine.RadialBlurComponent.SetBlurOpacity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InBlurOpacity, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetBlurFalloffExponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlurFalloffExponent;
     /// <summary>
     /// Function: SetBlurFalloffExponent
     /// </summary>
     public unsafe virtual void SetBlurFalloffExponent(float InBlurFalloffExponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlurFalloffExponent, "Engine.RadialBlurComponent.SetBlurFalloffExponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBlurFalloffExponent, "Engine.RadialBlurComponent.SetBlurFalloffExponent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InBlurFalloffExponent, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetBlurScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlurScale;
     /// <summary>
     /// Function: SetBlurScale
     /// </summary>
     public unsafe virtual void SetBlurScale(float InBlurScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlurScale, "Engine.RadialBlurComponent.SetBlurScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBlurScale, "Engine.RadialBlurComponent.SetBlurScale", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InBlurScale, paramsPtr + 0);
@@ -208,14 +208,14 @@ public partial class RadialBlurComponent : BmSDK.Engine.ActorComponent, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
     /// Function: SetMaterial
     /// </summary>
     public unsafe virtual void SetMaterial(BmSDK.Engine.MaterialInterface InMaterial)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaterial, "Engine.RadialBlurComponent.SetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaterial, "Engine.RadialBlurComponent.SetMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InMaterial, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
         where TComponent : class, Framework.IScriptComponent<RNightwingSticksBounceThrowDLC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SpawnProjectile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnProjectile;
     /// <summary>
     /// Function: SpawnProjectile
     /// </summary>
     public unsafe override BmSDK.BmGame.RBatarangProjectile SpawnProjectile(BmSDK.Class SpawnProjectileClass, System.Numerics.Vector3 LaunchLoc, bool Managed = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnProjectile, "BmScript.RNightwingSticksBounceThrowDLC.SpawnProjectile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnProjectile, "BmScript.RNightwingSticksBounceThrowDLC.SpawnProjectile", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnProjectileClass, paramsPtr + 0);
@@ -95,42 +95,42 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBatarangProjectile>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_AddAutoTargetsToBouncePoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAutoTargetsToBouncePoints;
     /// <summary>
     /// Function: AddAutoTargetsToBouncePoints
     /// </summary>
     public unsafe override void AddAutoTargetsToBouncePoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAutoTargetsToBouncePoints, "BmScript.RNightwingSticksBounceThrowDLC.AddAutoTargetsToBouncePoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAutoTargetsToBouncePoints, "BmScript.RNightwingSticksBounceThrowDLC.AddAutoTargetsToBouncePoints", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddInFrontBouncePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddInFrontBouncePoint;
     /// <summary>
     /// Function: AddInFrontBouncePoint
     /// </summary>
     public unsafe override void AddInFrontBouncePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddInFrontBouncePoint, "BmScript.RNightwingSticksBounceThrowDLC.AddInFrontBouncePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddInFrontBouncePoint, "BmScript.RNightwingSticksBounceThrowDLC.AddInFrontBouncePoint", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGadgetClassNameForHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetClassNameForHUD;
     /// <summary>
     /// Function: GetGadgetClassNameForHUD
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetClassNameForHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetClassNameForHUD, "BmScript.RNightwingSticksBounceThrowDLC.GetGadgetClassNameForHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGadgetClassNameForHUD, "BmScript.RNightwingSticksBounceThrowDLC.GetGadgetClassNameForHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

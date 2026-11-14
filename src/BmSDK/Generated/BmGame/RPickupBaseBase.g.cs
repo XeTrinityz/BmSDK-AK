@@ -73,14 +73,14 @@ public partial class RPickupBaseBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPickupBaseBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetScannedStringDesc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScannedStringDesc;
     /// <summary>
     /// Function: GetScannedStringDesc
     /// </summary>
     public unsafe virtual BmSDK.FString GetScannedStringDesc(bool bAlreadyTagged)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScannedStringDesc, "BmGame.RPickupBaseBase.GetScannedStringDesc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScannedStringDesc, "BmGame.RPickupBaseBase.GetScannedStringDesc", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAlreadyTagged, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RPickupBaseBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetScannedStringTitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScannedStringTitle;
     /// <summary>
     /// Function: GetScannedStringTitle
     /// </summary>
     public unsafe virtual BmSDK.FString GetScannedStringTitle(bool bAlreadyTagged)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScannedStringTitle, "BmGame.RPickupBaseBase.GetScannedStringTitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScannedStringTitle, "BmGame.RPickupBaseBase.GetScannedStringTitle", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAlreadyTagged, paramsPtr + 0);
@@ -103,84 +103,84 @@ public partial class RPickupBaseBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetScanDistMax;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScanDistMax;
     /// <summary>
     /// Function: GetScanDistMax
     /// </summary>
     public unsafe virtual float GetScanDistMax()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScanDistMax, "BmGame.RPickupBaseBase.GetScanDistMax");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScanDistMax, "BmGame.RPickupBaseBase.GetScanDistMax", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRiddlerPieceType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiddlerPieceType;
     /// <summary>
     /// Function: GetRiddlerPieceType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGameInfo.ERiddlerPiece GetRiddlerPieceType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiddlerPieceType, "BmGame.RPickupBaseBase.GetRiddlerPieceType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiddlerPieceType, "BmGame.RPickupBaseBase.GetRiddlerPieceType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.ERiddlerPiece>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetIgnoreRayTrace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIgnoreRayTrace;
     /// <summary>
     /// Function: GetIgnoreRayTrace
     /// </summary>
     public unsafe virtual bool GetIgnoreRayTrace()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIgnoreRayTrace, "BmGame.RPickupBaseBase.GetIgnoreRayTrace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIgnoreRayTrace, "BmGame.RPickupBaseBase.GetIgnoreRayTrace", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetScanLocationOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetScanLocationOffset;
     /// <summary>
     /// Function: GetScanLocationOffset
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetScanLocationOffset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetScanLocationOffset, "BmGame.RPickupBaseBase.GetScanLocationOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetScanLocationOffset, "BmGame.RPickupBaseBase.GetScanLocationOffset", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLocationOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationOffset;
     /// <summary>
     /// Function: GetLocationOffset
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationOffset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationOffset, "BmGame.RPickupBaseBase.GetLocationOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationOffset, "BmGame.RPickupBaseBase.GetLocationOffset", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GenerateScanEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateScanEvent;
     /// <summary>
     /// Function: GenerateScanEvent
     /// </summary>
     public unsafe virtual void GenerateScanEvent(BmSDK.BmGame.RPlayerController RPC, bool Rescanned)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateScanEvent, "BmGame.RPickupBaseBase.GenerateScanEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GenerateScanEvent, "BmGame.RPickupBaseBase.GenerateScanEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
@@ -189,56 +189,56 @@ public partial class RPickupBaseBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CanScanAndAddToMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanScanAndAddToMap;
     /// <summary>
     /// Function: CanScanAndAddToMap
     /// </summary>
     public unsafe virtual bool CanScanAndAddToMap()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanScanAndAddToMap, "BmGame.RPickupBaseBase.CanScanAndAddToMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanScanAndAddToMap, "BmGame.RPickupBaseBase.CanScanAndAddToMap", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HasBeenPickedUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasBeenPickedUp;
     /// <summary>
     /// Function: HasBeenPickedUp
     /// </summary>
     public unsafe virtual bool HasBeenPickedUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBeenPickedUp, "BmGame.RPickupBaseBase.HasBeenPickedUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasBeenPickedUp, "BmGame.RPickupBaseBase.HasBeenPickedUp", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPickedUpName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPickedUpName;
     /// <summary>
     /// Function: GetPickedUpName
     /// </summary>
     public unsafe virtual BmSDK.FString GetPickedUpName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPickedUpName, "BmGame.RPickupBaseBase.GetPickedUpName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPickedUpName, "BmGame.RPickupBaseBase.GetPickedUpName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMapVisibleName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMapVisibleName;
     /// <summary>
     /// Function: GetMapVisibleName
     /// </summary>
     public unsafe virtual BmSDK.FString GetMapVisibleName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMapVisibleName, "BmGame.RPickupBaseBase.GetMapVisibleName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMapVisibleName, "BmGame.RPickupBaseBase.GetMapVisibleName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

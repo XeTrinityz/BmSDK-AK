@@ -91,42 +91,42 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DebugLineTest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DebugLineTest;
     /// <summary>
     /// Function: DebugLineTest
     /// </summary>
     public unsafe virtual void DebugLineTest()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DebugLineTest, "BmGame.RSeqAct_BatmobileForensicsSideStory.DebugLineTest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugLineTest, "BmGame.RSeqAct_BatmobileForensicsSideStory.DebugLineTest", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoPulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPulse;
     /// <summary>
     /// Function: DoPulse
     /// </summary>
     public unsafe virtual bool DoPulse()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPulse, "BmGame.RSeqAct_BatmobileForensicsSideStory.DoPulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPulse, "BmGame.RSeqAct_BatmobileForensicsSideStory.DoPulse", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsActorInCone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActorInCone;
     /// <summary>
     /// Function: IsActorInCone
     /// </summary>
     public unsafe virtual bool IsActorInCone(int actor_index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActorInCone, "BmGame.RSeqAct_BatmobileForensicsSideStory.IsActorInCone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActorInCone, "BmGame.RSeqAct_BatmobileForensicsSideStory.IsActorInCone", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(actor_index, paramsPtr + 0);
@@ -134,42 +134,42 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetUpPulseParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUpPulseParams;
     /// <summary>
     /// Function: SetUpPulseParams
     /// </summary>
     public unsafe virtual void SetUpPulseParams()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUpPulseParams, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetUpPulseParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUpPulseParams, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetUpPulseParams", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryToActivateTrail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryToActivateTrail;
     /// <summary>
     /// Function: TryToActivateTrail
     /// </summary>
     public unsafe virtual bool TryToActivateTrail()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToActivateTrail, "BmGame.RSeqAct_BatmobileForensicsSideStory.TryToActivateTrail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryToActivateTrail, "BmGame.RSeqAct_BatmobileForensicsSideStory.TryToActivateTrail", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ForensicsTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForensicsTick;
     /// <summary>
     /// Function: ForensicsTick
     /// </summary>
     public unsafe virtual void ForensicsTick(float DeltaT)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForensicsTick, "BmGame.RSeqAct_BatmobileForensicsSideStory.ForensicsTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForensicsTick, "BmGame.RSeqAct_BatmobileForensicsSideStory.ForensicsTick", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaT, paramsPtr + 0);
@@ -177,14 +177,14 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisplayIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisplayIndex;
     /// <summary>
     /// Function: SetDisplayIndex
     /// </summary>
     public unsafe virtual void SetDisplayIndex(float new_disp_index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisplayIndex, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetDisplayIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisplayIndex, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetDisplayIndex", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_disp_index, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         return;
     }
 
-    private static BmSDK.Function __fn_GetActorByPlusTwoIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActorByPlusTwoIndex;
     /// <summary>
     /// Function: GetActorByPlusTwoIndex
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBatmobileForensicsBaseActor GetActorByPlusTwoIndex(int actor_index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActorByPlusTwoIndex, "BmGame.RSeqAct_BatmobileForensicsSideStory.GetActorByPlusTwoIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActorByPlusTwoIndex, "BmGame.RSeqAct_BatmobileForensicsSideStory.GetActorByPlusTwoIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(actor_index, paramsPtr + 0);
@@ -207,28 +207,28 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBatmobileForensicsBaseActor>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SortNodes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SortNodes;
     /// <summary>
     /// Function: SortNodes
     /// </summary>
     public unsafe virtual void SortNodes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SortNodes, "BmGame.RSeqAct_BatmobileForensicsSideStory.SortNodes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SortNodes, "BmGame.RSeqAct_BatmobileForensicsSideStory.SortNodes", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTrailEngaged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTrailEngaged;
     /// <summary>
     /// Function: SetTrailEngaged
     /// </summary>
     public unsafe virtual void SetTrailEngaged(bool is_engaged)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTrailEngaged, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetTrailEngaged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTrailEngaged, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetTrailEngaged", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_engaged, paramsPtr + 0);
@@ -236,28 +236,28 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         return;
     }
 
-    private static BmSDK.Function __fn_SetTrailComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTrailComplete;
     /// <summary>
     /// Function: SetTrailComplete
     /// </summary>
     public unsafe virtual void SetTrailComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTrailComplete, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetTrailComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTrailComplete, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetTrailComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInBatmobile;
     /// <summary>
     /// Function: SetInBatmobile
     /// </summary>
     public unsafe virtual void SetInBatmobile(bool in_batmobile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInBatmobile, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetInBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInBatmobile, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetInBatmobile", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(in_batmobile, paramsPtr + 0);
@@ -265,28 +265,28 @@ public partial class RSeqAct_BatmobileForensicsSideStory : BmSDK.Engine.Sequence
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_BatmobileForensicsSideStory.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_BatmobileForensicsSideStory.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetRegistered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRegistered;
     /// <summary>
     /// Function: SetRegistered
     /// </summary>
     public unsafe virtual void SetRegistered(bool do_register)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRegistered, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetRegistered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRegistered, "BmGame.RSeqAct_BatmobileForensicsSideStory.SetRegistered", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(do_register, paramsPtr + 0);

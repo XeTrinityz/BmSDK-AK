@@ -78,14 +78,14 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPoseConfig>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ToString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToString;
     /// <summary>
     /// Function: ToString
     /// </summary>
     public unsafe virtual BmSDK.FString ToString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToString, "BmGame.RPoseConfig.ToString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToString, "BmGame.RPoseConfig.ToString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddTransitionRelaxed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTransitionRelaxed;
     /// <summary>
     /// Function: AddTransitionRelaxed
     /// </summary>
     public unsafe virtual void AddTransitionRelaxed(BmSDK.FName MovementStanceA, BmSDK.FName MovementStanceB, BmSDK.FName FullBodyAnim, BmSDK.FName TransitionName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddTransitionRelaxed, "BmGame.RPoseConfig.AddTransitionRelaxed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddTransitionRelaxed, "BmGame.RPoseConfig.AddTransitionRelaxed", this);
         byte* paramsPtr = stackalloc byte[208];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MovementStanceA, paramsPtr + 0);
@@ -117,14 +117,14 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddPoseRelaxed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPoseRelaxed;
     /// <summary>
     /// Function: AddPoseRelaxed
     /// </summary>
     public unsafe virtual void AddPoseRelaxed(BmSDK.FName MovementStance, BmSDK.FName IdleFullBodyAnim, BmSDK.Engine.RAimingConfig AimingConfig = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPoseRelaxed, "BmGame.RPoseConfig.AddPoseRelaxed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPoseRelaxed, "BmGame.RPoseConfig.AddPoseRelaxed", this);
         byte* paramsPtr = stackalloc byte[460];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MovementStance, paramsPtr + 0);
@@ -134,14 +134,14 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPose;
     /// <summary>
     /// Function: AddPose
     /// </summary>
     public unsafe virtual void AddPose(BmSDK.FName MovementStance, BmSDK.FName WeaponStance, BmSDK.FName IdleFullBodyAnim, BmSDK.Engine.RAimingConfig AimingConfig = default, bool AllowTurningToAim = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPose, "BmGame.RPoseConfig.AddPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPose, "BmGame.RPoseConfig.AddPose", this);
         byte* paramsPtr = stackalloc byte[472];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MovementStance, paramsPtr + 0);

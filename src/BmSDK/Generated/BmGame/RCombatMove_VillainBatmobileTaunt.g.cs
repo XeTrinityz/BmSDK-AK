@@ -78,28 +78,28 @@ public partial class RCombatMove_VillainBatmobileTaunt : BmSDK.BmGame.RCombatMov
         where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainBatmobileTaunt>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ExitMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
     /// <summary>
     /// Function: ExitMove
     /// </summary>
     public unsafe override void ExitMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitMove, "BmGame.RCombatMove_VillainBatmobileTaunt.ExitMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.RCombatMove_VillainBatmobileTaunt.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InterruptedByBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterruptedByBatmobile;
     /// <summary>
     /// Function: InterruptedByBatmobile
     /// </summary>
     public unsafe override bool InterruptedByBatmobile(BmSDK.BmGame.RPawnVillain V, BmSDK.BmGame.RVehicleBatmobileBase NewBatmobile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterruptedByBatmobile, "BmGame.RCombatMove_VillainBatmobileTaunt.InterruptedByBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterruptedByBatmobile, "BmGame.RCombatMove_VillainBatmobileTaunt.InterruptedByBatmobile", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RCombatMove_VillainBatmobileTaunt : BmSDK.BmGame.RCombatMov
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_VillainTargetActorChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainTargetActorChanged;
     /// <summary>
     /// Function: VillainTargetActorChanged
     /// </summary>
     public unsafe override void VillainTargetActorChanged(BmSDK.BmGame.RPawnCombat Villain, BmSDK.Engine.Actor NewTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainTargetActorChanged, "BmGame.RCombatMove_VillainBatmobileTaunt.VillainTargetActorChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainTargetActorChanged, "BmGame.RCombatMove_VillainBatmobileTaunt.VillainTargetActorChanged", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -124,42 +124,42 @@ public partial class RCombatMove_VillainBatmobileTaunt : BmSDK.BmGame.RCombatMov
         return;
     }
 
-    private static BmSDK.Function __fn_PlayTauntAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayTauntAnim;
     /// <summary>
     /// Function: PlayTauntAnim
     /// </summary>
     public unsafe virtual void PlayTauntAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayTauntAnim, "BmGame.RCombatMove_VillainBatmobileTaunt.PlayTauntAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayTauntAnim, "BmGame.RCombatMove_VillainBatmobileTaunt.PlayTauntAnim", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTauntPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTauntPosition;
     /// <summary>
     /// Function: SetTauntPosition
     /// </summary>
     public unsafe virtual void SetTauntPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTauntPosition, "BmGame.RCombatMove_VillainBatmobileTaunt.SetTauntPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTauntPosition, "BmGame.RCombatMove_VillainBatmobileTaunt.SetTauntPosition", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCombatMove_VillainBatmobileTaunt.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCombatMove_VillainBatmobileTaunt.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

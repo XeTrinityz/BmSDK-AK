@@ -73,14 +73,14 @@ public partial class RGrappleProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
         where TComponent : class, Framework.IScriptComponent<RGrappleProjectile>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Hide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Hide;
     /// <summary>
     /// Function: Hide
     /// </summary>
     public unsafe override void Hide(bool NewHidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Hide, "BmGame.RGrappleProjectile.Hide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Hide, "BmGame.RGrappleProjectile.Hide", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewHidden, paramsPtr + 0);
@@ -88,28 +88,28 @@ public partial class RGrappleProjectile : BmSDK.BmGame.RProjectileWithRope, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_ReachedDest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReachedDest;
     /// <summary>
     /// Function: ReachedDest
     /// </summary>
     public unsafe override void ReachedDest()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReachedDest, "BmGame.RGrappleProjectile.ReachedDest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReachedDest, "BmGame.RGrappleProjectile.ReachedDest", this);
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Fire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Fire;
     /// <summary>
     /// Function: Fire
     /// </summary>
     public unsafe override void Fire(System.Numerics.Vector3 To)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Fire, "BmGame.RGrappleProjectile.Fire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Fire, "BmGame.RGrappleProjectile.Fire", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(To, paramsPtr + 0);

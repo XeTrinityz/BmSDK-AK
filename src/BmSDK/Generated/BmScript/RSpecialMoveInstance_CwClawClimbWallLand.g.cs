@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CwClawClimbWallLand>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe override void DrawHUD(BmSDK.Engine.HUD H)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -109,28 +109,28 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[444];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CancelSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
     /// <summary>
     /// Function: CancelSpecialMove
     /// </summary>
     public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig CancellingMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CancelSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CancelSpecialMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CancellingMove, paramsPtr + 0);
@@ -138,28 +138,28 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_CancelMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelMove;
     /// <summary>
     /// Function: CancelMove
     /// </summary>
     public unsafe virtual void CancelMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CancelMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CancelMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSpecialMove;
     /// <summary>
     /// Function: UpdateSpecialMove
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.UpdateSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.UpdateSpecialMove", this);
         byte* paramsPtr = stackalloc byte[464];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -167,141 +167,142 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsGrapplePressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsGrapplePressed;
     /// <summary>
     /// Function: IsGrapplePressed
     /// </summary>
     public unsafe virtual bool IsGrapplePressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsGrapplePressed, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.IsGrapplePressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsGrapplePressed, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.IsGrapplePressed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanPounceAgain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPounceAgain;
     /// <summary>
     /// Function: CanPounceAgain
     /// </summary>
     public unsafe virtual bool CanPounceAgain()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPounceAgain, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CanPounceAgain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPounceAgain, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CanPounceAgain", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NextPounceTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NextPounceTimer;
     /// <summary>
     /// Function: NextPounceTimer
     /// </summary>
     public unsafe virtual void NextPounceTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NextPounceTimer, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.NextPounceTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NextPounceTimer, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.NextPounceTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetPounceTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPounceTimer;
     /// <summary>
     /// Function: SetPounceTimer
     /// </summary>
     public unsafe virtual void SetPounceTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPounceTimer, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.SetPounceTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPounceTimer, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.SetPounceTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PerfectTiming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PerfectTiming;
     /// <summary>
     /// Function: PerfectTiming
     /// </summary>
     public unsafe virtual void PerfectTiming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PerfectTiming, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.PerfectTiming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PerfectTiming, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.PerfectTiming", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanLaunchFromHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanLaunchFromHere;
     /// <summary>
     /// Function: CanLaunchFromHere
     /// </summary>
     public unsafe virtual void CanLaunchFromHere()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanLaunchFromHere, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CanLaunchFromHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanLaunchFromHere, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CanLaunchFromHere", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartAutoClimb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAutoClimb;
     /// <summary>
     /// Function: StartAutoClimb
     /// </summary>
     public unsafe virtual void StartAutoClimb()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAutoClimb, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.StartAutoClimb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAutoClimb, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.StartAutoClimb", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ButtonMashPenalty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ButtonMashPenalty;
     /// <summary>
     /// Function: ButtonMashPenalty
     /// </summary>
     public unsafe virtual void ButtonMashPenalty()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ButtonMashPenalty, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.ButtonMashPenalty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ButtonMashPenalty, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.ButtonMashPenalty", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowFeedbackMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowFeedbackMessage;
     /// <summary>
     /// Function: ShowFeedbackMessage
     /// </summary>
-    public unsafe virtual void ShowFeedbackMessage(BmSDK.FString Feedback)
+    public unsafe virtual void ShowFeedbackMessage(BmSDK.FStringArg Feedback)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowFeedbackMessage, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.ShowFeedbackMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowFeedbackMessage, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.ShowFeedbackMessage", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Feedback, paramsPtr + 0);
+        Feedback.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandleAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleAction;
     /// <summary>
     /// Function: HandleAction
     /// </summary>
     public unsafe override void HandleAction(BmSDK.FName actionName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleAction, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.HandleAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleAction, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.HandleAction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(actionName, paramsPtr + 0);
@@ -309,112 +310,112 @@ public partial class RSpecialMoveInstance_CwClawClimbWallLand : BmSDK.BmGame.RSp
         return;
     }
 
-    private static BmSDK.Function __fn_WallIdleTimeout;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WallIdleTimeout;
     /// <summary>
     /// Function: WallIdleTimeout
     /// </summary>
     public unsafe virtual void WallIdleTimeout()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WallIdleTimeout, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.WallIdleTimeout");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WallIdleTimeout, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.WallIdleTimeout", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LookAtNextPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookAtNextPoint;
     /// <summary>
     /// Function: LookAtNextPoint
     /// </summary>
     public unsafe virtual void LookAtNextPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookAtNextPoint, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.LookAtNextPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookAtNextPoint, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.LookAtNextPoint", this);
         byte* paramsPtr = stackalloc byte[624];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerLandCamUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLandCamUp;
     /// <summary>
     /// Function: TriggerLandCamUp
     /// </summary>
     public unsafe virtual void TriggerLandCamUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLandCamUp, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCamUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLandCamUp, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCamUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerLandCamRight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLandCamRight;
     /// <summary>
     /// Function: TriggerLandCamRight
     /// </summary>
     public unsafe virtual void TriggerLandCamRight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLandCamRight, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCamRight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLandCamRight, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCamRight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerLandCamLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLandCamLeft;
     /// <summary>
     /// Function: TriggerLandCamLeft
     /// </summary>
     public unsafe virtual void TriggerLandCamLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLandCamLeft, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCamLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLandCamLeft, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCamLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerLandCam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLandCam;
     /// <summary>
     /// Function: TriggerLandCam
     /// </summary>
     public unsafe virtual void TriggerLandCam()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLandCam, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLandCam, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerLandCam", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CantHoldOnToWallAnymore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CantHoldOnToWallAnymore;
     /// <summary>
     /// Function: CantHoldOnToWallAnymore
     /// </summary>
     public unsafe virtual void CantHoldOnToWallAnymore()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantHoldOnToWallAnymore, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CantHoldOnToWallAnymore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CantHoldOnToWallAnymore, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.CantHoldOnToWallAnymore", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CwClawClimbWallLand.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[548];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);

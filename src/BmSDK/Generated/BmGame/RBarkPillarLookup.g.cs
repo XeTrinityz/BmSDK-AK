@@ -78,14 +78,14 @@ public partial class RBarkPillarLookup : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RBarkPillarLookup>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HasChapterChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasChapterChanged;
     /// <summary>
     /// Function: HasChapterChanged
     /// </summary>
     public unsafe virtual bool HasChapterChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasChapterChanged, "BmGame.RBarkPillarLookup.HasChapterChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasChapterChanged, "BmGame.RBarkPillarLookup.HasChapterChanged", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

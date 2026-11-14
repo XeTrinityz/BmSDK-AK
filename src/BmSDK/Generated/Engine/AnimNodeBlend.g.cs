@@ -78,14 +78,14 @@ public partial class AnimNodeBlend : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<AnimNodeBlend>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetBlendTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlendTarget;
     /// <summary>
     /// Function: SetBlendTarget
     /// </summary>
     public unsafe virtual void SetBlendTarget(float BlendTarget, float BlendTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlendTarget, "Engine.AnimNodeBlend.SetBlendTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBlendTarget, "Engine.AnimNodeBlend.SetBlendTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BlendTarget, paramsPtr + 0);

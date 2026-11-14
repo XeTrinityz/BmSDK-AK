@@ -73,14 +73,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         where TComponent : class, Framework.IScriptComponent<RCinematicPlayerCharacter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetMeshComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMeshComponents;
     /// <summary>
     /// Function: GetMeshComponents
     /// </summary>
     public unsafe override void GetMeshComponents(int Flags, out BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> Out)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMeshComponents, "BmGame.RCinematicPlayerCharacter.GetMeshComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMeshComponents, "BmGame.RCinematicPlayerCharacter.GetMeshComponents", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Flags, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshDamageLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDamageLevel;
     /// <summary>
     /// Function: RefreshDamageLevel
     /// </summary>
     public unsafe virtual void RefreshDamageLevel(BmSDK.FName PlayerCharacterName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDamageLevel, "BmGame.RCinematicPlayerCharacter.RefreshDamageLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshDamageLevel, "BmGame.RCinematicPlayerCharacter.RefreshDamageLevel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerCharacterName, paramsPtr + 0);
@@ -118,14 +118,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_SetCharacterMeshData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCharacterMeshData;
     /// <summary>
     /// Function: SetCharacterMeshData
     /// </summary>
     public unsafe virtual void SetCharacterMeshData(BmSDK.BmGame.RAddContentPlayerCharacterMesh MeshData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCharacterMeshData, "BmGame.RCinematicPlayerCharacter.SetCharacterMeshData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCharacterMeshData, "BmGame.RCinematicPlayerCharacter.SetCharacterMeshData", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MeshData, paramsPtr + 0);
@@ -140,14 +140,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_DetachPlayerMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachPlayerMesh;
     /// <summary>
     /// Function: DetachPlayerMesh
     /// </summary>
     public unsafe virtual void DetachPlayerMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachPlayerMesh, "BmGame.RCinematicPlayerCharacter.DetachPlayerMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachPlayerMesh, "BmGame.RCinematicPlayerCharacter.DetachPlayerMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -161,14 +161,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_BlockOnPlayerMeshAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockOnPlayerMeshAttached;
     /// <summary>
     /// Function: BlockOnPlayerMeshAttached
     /// </summary>
     public unsafe virtual void BlockOnPlayerMeshAttached()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockOnPlayerMeshAttached, "BmGame.RCinematicPlayerCharacter.BlockOnPlayerMeshAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlockOnPlayerMeshAttached, "BmGame.RCinematicPlayerCharacter.BlockOnPlayerMeshAttached", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -182,14 +182,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_CancelAttachPlayerMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAttachPlayerMesh;
     /// <summary>
     /// Function: CancelAttachPlayerMesh
     /// </summary>
     public unsafe virtual void CancelAttachPlayerMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelAttachPlayerMesh, "BmGame.RCinematicPlayerCharacter.CancelAttachPlayerMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelAttachPlayerMesh, "BmGame.RCinematicPlayerCharacter.CancelAttachPlayerMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -203,14 +203,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_AttachPlayerMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachPlayerMesh;
     /// <summary>
     /// Function: AttachPlayerMesh
     /// </summary>
     public unsafe virtual void AttachPlayerMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachPlayerMesh, "BmGame.RCinematicPlayerCharacter.AttachPlayerMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachPlayerMesh, "BmGame.RCinematicPlayerCharacter.AttachPlayerMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -224,14 +224,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_GetSkinName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkinName;
     /// <summary>
     /// Function: GetSkinName
     /// </summary>
     public unsafe virtual BmSDK.FString GetSkinName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSkinName, "BmGame.RCinematicPlayerCharacter.GetSkinName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSkinName, "BmGame.RCinematicPlayerCharacter.GetSkinName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -245,14 +245,14 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BeginAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginAnimControl;
     /// <summary>
     /// Function: BeginAnimControl
     /// </summary>
     public unsafe override void BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginAnimControl, "BmGame.RCinematicPlayerCharacter.BeginAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginAnimControl, "BmGame.RCinematicPlayerCharacter.BeginAnimControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -261,42 +261,42 @@ public partial class RCinematicPlayerCharacter : BmSDK.BmGame.RCinematicActor, B
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RCinematicPlayerCharacter.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RCinematicPlayerCharacter.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RCinematicPlayerCharacter.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RCinematicPlayerCharacter.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RCinematicPlayerCharacter.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "BmGame.RCinematicPlayerCharacter.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_Grate>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetStance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStance;
     /// <summary>
     /// Function: SetStance
     /// </summary>
     public unsafe virtual void SetStance(bool bLookingInGrates)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStance, "BmGame.RAEC_Search_Sub_Grate.SetStance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStance, "BmGame.RAEC_Search_Sub_Grate.SetStance", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bLookingInGrates, paramsPtr + 0);
@@ -93,98 +93,98 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_DisableGrateVis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableGrateVis;
     /// <summary>
     /// Function: DisableGrateVis
     /// </summary>
     public unsafe virtual void DisableGrateVis()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableGrateVis, "BmGame.RAEC_Search_Sub_Grate.DisableGrateVis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableGrateVis, "BmGame.RAEC_Search_Sub_Grate.DisableGrateVis", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableGrateVis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableGrateVis;
     /// <summary>
     /// Function: EnableGrateVis
     /// </summary>
     public unsafe virtual void EnableGrateVis()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableGrateVis, "BmGame.RAEC_Search_Sub_Grate.EnableGrateVis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableGrateVis, "BmGame.RAEC_Search_Sub_Grate.EnableGrateVis", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnVillainStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnVillainStolen;
     /// <summary>
     /// Function: OnVillainStolen
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_Grate.OnVillainStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_Grate.OnVillainStolen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Search_Sub_Grate.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Search_Sub_Grate.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Cleanup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cleanup;
     /// <summary>
     /// Function: Cleanup
     /// </summary>
     public unsafe virtual void Cleanup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cleanup, "BmGame.RAEC_Search_Sub_Grate.Cleanup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cleanup, "BmGame.RAEC_Search_Sub_Grate.Cleanup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrentPathHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentPathHandle;
     /// <summary>
     /// Function: GetCurrentPathHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_Grate.GetCurrentPathHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_Grate.GetCurrentPathHandle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetHasBackwardsFollower;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHasBackwardsFollower;
     /// <summary>
     /// Function: SetHasBackwardsFollower
     /// </summary>
     public unsafe override void SetHasBackwardsFollower(bool bNewVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHasBackwardsFollower, "BmGame.RAEC_Search_Sub_Grate.SetHasBackwardsFollower");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHasBackwardsFollower, "BmGame.RAEC_Search_Sub_Grate.SetHasBackwardsFollower", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewVal, paramsPtr + 0);
@@ -192,42 +192,42 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_GetGrateLookRefPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrateLookRefPoint;
     /// <summary>
     /// Function: GetGrateLookRefPoint
     /// </summary>
     public unsafe virtual bool GetGrateLookRefPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGrateLookRefPoint, "BmGame.RAEC_Search_Sub_Grate.GetGrateLookRefPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGrateLookRefPoint, "BmGame.RAEC_Search_Sub_Grate.GetGrateLookRefPoint", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindSlave;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSlave;
     /// <summary>
     /// Function: FindSlave
     /// </summary>
     public unsafe virtual void FindSlave()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSlave, "BmGame.RAEC_Search_Sub_Grate.FindSlave");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSlave, "BmGame.RAEC_Search_Sub_Grate.FindSlave", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HasGrateBeenSearchedRecently;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasGrateBeenSearchedRecently;
     /// <summary>
     /// Function: HasGrateBeenSearchedRecently
     /// </summary>
     public unsafe virtual bool HasGrateBeenSearchedRecently(BmSDK.BmGame.RTunnelGrateBase Grate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasGrateBeenSearchedRecently, "BmGame.RAEC_Search_Sub_Grate.HasGrateBeenSearchedRecently");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasGrateBeenSearchedRecently, "BmGame.RAEC_Search_Sub_Grate.HasGrateBeenSearchedRecently", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Grate, paramsPtr + 0);
@@ -235,14 +235,14 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddNeighboursRecursive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddNeighboursRecursive;
     /// <summary>
     /// Function: AddNeighboursRecursive
     /// </summary>
     public unsafe virtual void AddNeighboursRecursive(BmSDK.BmGame.RTunnelGrateBase Grate, int numRecursions, out BmSDK.TArray<BmSDK.BmGame.RTunnelGrateBase> OutList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddNeighboursRecursive, "BmGame.RAEC_Search_Sub_Grate.AddNeighboursRecursive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddNeighboursRecursive, "BmGame.RAEC_Search_Sub_Grate.AddNeighboursRecursive", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Grate, paramsPtr + 0);
@@ -252,56 +252,56 @@ public partial class RAEC_Search_Sub_Grate : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_CurrentGrateOpenable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CurrentGrateOpenable;
     /// <summary>
     /// Function: CurrentGrateOpenable
     /// </summary>
     public unsafe virtual bool CurrentGrateOpenable()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CurrentGrateOpenable, "BmGame.RAEC_Search_Sub_Grate.CurrentGrateOpenable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CurrentGrateOpenable, "BmGame.RAEC_Search_Sub_Grate.CurrentGrateOpenable", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DbgDrawInitialState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DbgDrawInitialState;
     /// <summary>
     /// Function: DbgDrawInitialState
     /// </summary>
     public unsafe virtual void DbgDrawInitialState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DbgDrawInitialState, "BmGame.RAEC_Search_Sub_Grate.DbgDrawInitialState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DbgDrawInitialState, "BmGame.RAEC_Search_Sub_Grate.DbgDrawInitialState", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShortenPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShortenPath;
     /// <summary>
     /// Function: ShortenPath
     /// </summary>
     public unsafe virtual void ShortenPath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShortenPath, "BmGame.RAEC_Search_Sub_Grate.ShortenPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShortenPath, "BmGame.RAEC_Search_Sub_Grate.ShortenPath", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartFromSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFromSearch;
     /// <summary>
     /// Function: StartFromSearch
     /// </summary>
     public unsafe virtual void StartFromSearch(BmSDK.BmGame.RBMAIController NewCon, BmSDK.BmGame.RTunnelGrateBase FirstGrateOnPath, BmSDK.BmGame.RTunnelGrateBase LastGrateOnPath, System.Numerics.Vector3 StandAtEndPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_Grate.StartFromSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_Grate.StartFromSearch", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);

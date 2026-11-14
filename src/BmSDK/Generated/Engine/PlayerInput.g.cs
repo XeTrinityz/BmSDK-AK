@@ -78,45 +78,46 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<PlayerInput>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PreClientTravel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreClientTravel;
     /// <summary>
     /// Function: PreClientTravel
     /// </summary>
-    public unsafe virtual void PreClientTravel(BmSDK.FString PendingURL, BmSDK.Engine.Actor.ETravelType TravelType, bool bIsSeamlessTravel)
+    public unsafe virtual void PreClientTravel(BmSDK.FStringArg PendingURL, BmSDK.Engine.Actor.ETravelType TravelType, bool bIsSeamlessTravel)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreClientTravel, "Engine.PlayerInput.PreClientTravel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreClientTravel, "Engine.PlayerInput.PreClientTravel", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PendingURL, paramsPtr + 0);
+        PendingURL.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TravelType, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsSeamlessTravel, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClientInitInputSystem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClientInitInputSystem;
     /// <summary>
     /// Function: ClientInitInputSystem
     /// </summary>
     public unsafe virtual void ClientInitInputSystem()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClientInitInputSystem, "Engine.PlayerInput.ClientInitInputSystem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClientInitInputSystem, "Engine.PlayerInput.ClientInitInputSystem", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitInputSystem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitInputSystem;
     /// <summary>
     /// Function: InitInputSystem
     /// </summary>
     public unsafe virtual void InitInputSystem()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitInputSystem, "Engine.PlayerInput.InitInputSystem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitInputSystem, "Engine.PlayerInput.InitInputSystem", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -130,14 +131,14 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SmoothMouse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmoothMouse;
     /// <summary>
     /// Function: SmoothMouse
     /// </summary>
     public unsafe virtual float SmoothMouse(float aMouse, float DeltaTime, out byte SampleCount, int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmoothMouse, "Engine.PlayerInput.SmoothMouse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmoothMouse, "Engine.PlayerInput.SmoothMouse", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(aMouse, paramsPtr + 0);
@@ -150,56 +151,56 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ClearSmoothing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearSmoothing;
     /// <summary>
     /// Function: ClearSmoothing
     /// </summary>
     public unsafe virtual void ClearSmoothing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearSmoothing, "Engine.PlayerInput.ClearSmoothing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearSmoothing, "Engine.PlayerInput.ClearSmoothing", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SmartJump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmartJump;
     /// <summary>
     /// Function: SmartJump
     /// </summary>
     public unsafe virtual void SmartJump()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmartJump, "Engine.PlayerInput.SmartJump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmartJump, "Engine.PlayerInput.SmartJump", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Jump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Jump;
     /// <summary>
     /// Function: Jump
     /// </summary>
     public unsafe virtual void Jump()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Jump, "Engine.PlayerInput.Jump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Jump, "Engine.PlayerInput.Jump", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessInputMatching;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessInputMatching;
     /// <summary>
     /// Function: ProcessInputMatching
     /// </summary>
     public unsafe virtual void ProcessInputMatching(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessInputMatching, "Engine.PlayerInput.ProcessInputMatching");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessInputMatching, "Engine.PlayerInput.ProcessInputMatching", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -207,14 +208,14 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForDoubleClickMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForDoubleClickMove;
     /// <summary>
     /// Function: CheckForDoubleClickMove
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor.EDoubleClickDir CheckForDoubleClickMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForDoubleClickMove, "Engine.PlayerInput.CheckForDoubleClickMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForDoubleClickMove, "Engine.PlayerInput.CheckForDoubleClickMove", this);
         byte* paramsPtr = stackalloc byte[23];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -222,28 +223,28 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.EDoubleClickDir>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_CatchDoubleClickInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CatchDoubleClickInput;
     /// <summary>
     /// Function: CatchDoubleClickInput
     /// </summary>
     public unsafe virtual void CatchDoubleClickInput()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CatchDoubleClickInput, "Engine.PlayerInput.CatchDoubleClickInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CatchDoubleClickInput, "Engine.PlayerInput.CatchDoubleClickInput", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn__PlayerInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn__PlayerInput;
     /// <summary>
     /// Function: PlayerInput
     /// </summary>
     public unsafe virtual void _PlayerInput(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn__PlayerInput, "Engine.PlayerInput.PlayerInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn__PlayerInput, "Engine.PlayerInput.PlayerInput", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -251,14 +252,14 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AdjustMouseSensitivity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdjustMouseSensitivity;
     /// <summary>
     /// Function: AdjustMouseSensitivity
     /// </summary>
     public unsafe virtual void AdjustMouseSensitivity(float FOVScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdjustMouseSensitivity, "Engine.PlayerInput.AdjustMouseSensitivity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdjustMouseSensitivity, "Engine.PlayerInput.AdjustMouseSensitivity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FOVScale, paramsPtr + 0);
@@ -266,14 +267,14 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostProcessInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostProcessInput;
     /// <summary>
     /// Function: PostProcessInput
     /// </summary>
     public unsafe virtual void PostProcessInput(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostProcessInput, "Engine.PlayerInput.PostProcessInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostProcessInput, "Engine.PlayerInput.PostProcessInput", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -281,14 +282,14 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PreProcessInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcessInput;
     /// <summary>
     /// Function: PreProcessInput
     /// </summary>
     public unsafe virtual void PreProcessInput(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreProcessInput, "Engine.PlayerInput.PreProcessInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreProcessInput, "Engine.PlayerInput.PreProcessInput", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -296,14 +297,14 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe virtual void DrawHUD(BmSDK.Engine.HUD H)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "Engine.PlayerInput.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "Engine.PlayerInput.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -311,14 +312,14 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetSensitivity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSensitivity;
     /// <summary>
     /// Function: SetSensitivity
     /// </summary>
     public unsafe virtual void SetSensitivity(float F)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSensitivity, "Engine.PlayerInput.SetSensitivity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSensitivity, "Engine.PlayerInput.SetSensitivity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(F, paramsPtr + 0);
@@ -326,42 +327,42 @@ public partial class PlayerInput : BmSDK.Engine.Input, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InvertTurn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InvertTurn;
     /// <summary>
     /// Function: InvertTurn
     /// </summary>
     public unsafe virtual bool InvertTurn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InvertTurn, "Engine.PlayerInput.InvertTurn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InvertTurn, "Engine.PlayerInput.InvertTurn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InvertMouse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InvertMouse;
     /// <summary>
     /// Function: InvertMouse
     /// </summary>
     public unsafe virtual bool InvertMouse()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InvertMouse, "Engine.PlayerInput.InvertMouse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InvertMouse, "Engine.PlayerInput.InvertMouse", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CancelMobileInput;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelMobileInput;
     /// <summary>
     /// Function: CancelMobileInput
     /// </summary>
     public unsafe virtual void CancelMobileInput()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelMobileInput, "Engine.PlayerInput.CancelMobileInput");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelMobileInput, "Engine.PlayerInput.CancelMobileInput", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,126 +78,126 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_JokerBossTwoface>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_EndCameraZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndCameraZoom;
     /// <summary>
     /// Function: EndCameraZoom
     /// </summary>
     public unsafe virtual void EndCameraZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.EndCameraZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.EndCameraZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowShootInZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowShootInZoom;
     /// <summary>
     /// Function: AllowShootInZoom
     /// </summary>
     public unsafe virtual void AllowShootInZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowShootInZoom, "BmScript.RBMBehaviour_JokerBossTwoface.AllowShootInZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowShootInZoom, "BmScript.RBMBehaviour_JokerBossTwoface.AllowShootInZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartCameraZoom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartCameraZoom;
     /// <summary>
     /// Function: StartCameraZoom
     /// </summary>
     public unsafe virtual void StartCameraZoom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.StartCameraZoom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.StartCameraZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShotJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShotJoker;
     /// <summary>
     /// Function: ShotJoker
     /// </summary>
     public unsafe virtual void ShotJoker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShotJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotJoker", this);
         byte* paramsPtr = stackalloc byte[212];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShotByJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShotByJoker;
     /// <summary>
     /// Function: ShotByJoker
     /// </summary>
     public unsafe virtual void ShotByJoker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotByJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotByJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShotByJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotByJoker", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_JokerGunFired;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JokerGunFired;
     /// <summary>
     /// Function: JokerGunFired
     /// </summary>
     public unsafe virtual void JokerGunFired()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JokerGunFired, "BmScript.RBMBehaviour_JokerBossTwoface.JokerGunFired");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JokerGunFired, "BmScript.RBMBehaviour_JokerBossTwoface.JokerGunFired", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanSeeJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanSeeJoker;
     /// <summary>
     /// Function: CanSeeJoker
     /// </summary>
     public unsafe virtual bool CanSeeJoker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanSeeJoker, "BmScript.RBMBehaviour_JokerBossTwoface.CanSeeJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSeeJoker, "BmScript.RBMBehaviour_JokerBossTwoface.CanSeeJoker", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TwoFaceTalkingOver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TwoFaceTalkingOver;
     /// <summary>
     /// Function: TwoFaceTalkingOver
     /// </summary>
     public unsafe virtual void TwoFaceTalkingOver()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TwoFaceTalkingOver, "BmScript.RBMBehaviour_JokerBossTwoface.TwoFaceTalkingOver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TwoFaceTalkingOver, "BmScript.RBMBehaviour_JokerBossTwoface.TwoFaceTalkingOver", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetJokerDist;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetJokerDist;
     /// <summary>
     /// Function: GetJokerDist
     /// </summary>
     public unsafe virtual float GetJokerDist()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetJokerDist, "BmScript.RBMBehaviour_JokerBossTwoface.GetJokerDist");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJokerDist, "BmScript.RBMBehaviour_JokerBossTwoface.GetJokerDist", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

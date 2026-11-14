@@ -78,14 +78,14 @@ public partial class RHelicopterControlVolume : BmSDK.Engine.Volume, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RHelicopterControlVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnTouch;
     /// <summary>
     /// Function: UnTouch
     /// </summary>
     public unsafe override void UnTouch(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnTouch, "BmGame.RHelicopterControlVolume.UnTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnTouch, "BmGame.RHelicopterControlVolume.UnTouch", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RHelicopterControlVolume : BmSDK.Engine.Volume, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RHelicopterControlVolume.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RHelicopterControlVolume.Touch", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -111,14 +111,14 @@ public partial class RHelicopterControlVolume : BmSDK.Engine.Volume, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetForcedAltitude;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForcedAltitude;
     /// <summary>
     /// Function: GetForcedAltitude
     /// </summary>
     public unsafe virtual float GetForcedAltitude()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForcedAltitude, "BmGame.RHelicopterControlVolume.GetForcedAltitude");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetForcedAltitude, "BmGame.RHelicopterControlVolume.GetForcedAltitude", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

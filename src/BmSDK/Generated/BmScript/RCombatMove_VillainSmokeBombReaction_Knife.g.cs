@@ -78,14 +78,14 @@ public partial class RCombatMove_VillainSmokeBombReaction_Knife : BmSDK.BmGame.R
         where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Knife>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetCounterInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCounterInfo;
     /// <summary>
     /// Function: SetCounterInfo
     /// </summary>
     public unsafe override void SetCounterInfo(bool bMirrored)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCounterInfo, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.SetCounterInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCounterInfo, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.SetCounterInfo", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bMirrored, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RCombatMove_VillainSmokeBombReaction_Knife : BmSDK.BmGame.R
         return;
     }
 
-    private static BmSDK.Function __fn_CombatAnimHitStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CombatAnimHitStart;
     /// <summary>
     /// Function: CombatAnimHitStart
     /// </summary>
     public unsafe override void CombatAnimHitStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatAnimHitStart, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.CombatAnimHitStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatAnimHitStart, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.CombatAnimHitStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldMirror;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldMirror;
     /// <summary>
     /// Function: ShouldMirror
     /// </summary>
     public unsafe override bool ShouldMirror()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldMirror, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.ShouldMirror");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldMirror, "BmScript.RCombatMove_VillainSmokeBombReaction_Knife.ShouldMirror", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

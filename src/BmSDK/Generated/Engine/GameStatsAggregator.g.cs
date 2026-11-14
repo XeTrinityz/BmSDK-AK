@@ -78,14 +78,14 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
         where TComponent : class, Framework.IScriptComponent<GameStatsAggregator>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAggregateMappingIDs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAggregateMappingIDs;
     /// <summary>
     /// Function: GetAggregateMappingIDs
     /// </summary>
     public unsafe virtual bool GetAggregateMappingIDs(int EventID, out int AggregateID, out int TargetAggregateID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAggregateMappingIDs, "Engine.GameStatsAggregator.GetAggregateMappingIDs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAggregateMappingIDs, "Engine.GameStatsAggregator.GetAggregateMappingIDs", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -106,14 +106,14 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe virtual void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.GameStatsAggregator.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.GameStatsAggregator.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -127,14 +127,14 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
         return;
     }
 
-    private static BmSDK.Function __fn_PostProcessStream;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostProcessStream;
     /// <summary>
     /// Function: PostProcessStream
     /// </summary>
     public unsafe override void PostProcessStream()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostProcessStream, "Engine.GameStatsAggregator.PostProcessStream");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostProcessStream, "Engine.GameStatsAggregator.PostProcessStream", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -148,14 +148,14 @@ public partial class GameStatsAggregator : BmSDK.Engine.GameplayEventsHandler, B
         return;
     }
 
-    private static BmSDK.Function __fn_PreProcessStream;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcessStream;
     /// <summary>
     /// Function: PreProcessStream
     /// </summary>
     public unsafe override void PreProcessStream()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreProcessStream, "Engine.GameStatsAggregator.PreProcessStream");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreProcessStream, "Engine.GameStatsAggregator.PreProcessStream", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

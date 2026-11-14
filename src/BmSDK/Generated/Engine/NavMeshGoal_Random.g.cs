@@ -78,28 +78,28 @@ public partial class NavMeshGoal_Random : BmSDK.Engine.NavMeshPathGoalEvaluator,
         where TComponent : class, Framework.IScriptComponent<NavMeshGoal_Random>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Recycle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Recycle;
     /// <summary>
     /// Function: Recycle
     /// </summary>
     public unsafe override void Recycle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Recycle, "Engine.NavMeshGoal_Random.Recycle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Recycle, "Engine.NavMeshGoal_Random.Recycle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RecycleNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecycleNative;
     /// <summary>
     /// Function: RecycleNative
     /// </summary>
     public unsafe virtual void RecycleNative()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecycleNative, "Engine.NavMeshGoal_Random.RecycleNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecycleNative, "Engine.NavMeshGoal_Random.RecycleNative", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

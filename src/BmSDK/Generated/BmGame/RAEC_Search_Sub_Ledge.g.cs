@@ -78,42 +78,42 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Sub_Ledge>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetChosenPathLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetChosenPathLength;
     /// <summary>
     /// Function: GetChosenPathLength
     /// </summary>
     public unsafe virtual float GetChosenPathLength()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetChosenPathLength, "BmGame.RAEC_Search_Sub_Ledge.GetChosenPathLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetChosenPathLength, "BmGame.RAEC_Search_Sub_Ledge.GetChosenPathLength", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNumPathPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumPathPoints;
     /// <summary>
     /// Function: GetNumPathPoints
     /// </summary>
     public unsafe virtual int GetNumPathPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumPathPoints, "BmGame.RAEC_Search_Sub_Ledge.GetNumPathPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumPathPoints, "BmGame.RAEC_Search_Sub_Ledge.GetNumPathPoints", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPathPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathPoint;
     /// <summary>
     /// Function: GetPathPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPathPoint(int I)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPathPoint, "BmGame.RAEC_Search_Sub_Ledge.GetPathPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPathPoint, "BmGame.RAEC_Search_Sub_Ledge.GetPathPoint", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(I, paramsPtr + 0);
@@ -121,42 +121,42 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetLastPathPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLastPathPoint;
     /// <summary>
     /// Function: GetLastPathPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLastPathPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLastPathPoint, "BmGame.RAEC_Search_Sub_Ledge.GetLastPathPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLastPathPoint, "BmGame.RAEC_Search_Sub_Ledge.GetLastPathPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFirstPathPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstPathPoint;
     /// <summary>
     /// Function: GetFirstPathPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetFirstPathPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstPathPoint, "BmGame.RAEC_Search_Sub_Ledge.GetFirstPathPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFirstPathPoint, "BmGame.RAEC_Search_Sub_Ledge.GetFirstPathPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ReturnToPrevMovementStance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReturnToPrevMovementStance;
     /// <summary>
     /// Function: ReturnToPrevMovementStance
     /// </summary>
     public unsafe virtual void ReturnToPrevMovementStance(float AnimStartTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReturnToPrevMovementStance, "BmGame.RAEC_Search_Sub_Ledge.ReturnToPrevMovementStance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReturnToPrevMovementStance, "BmGame.RAEC_Search_Sub_Ledge.ReturnToPrevMovementStance", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimStartTime, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchToLedgeMovementStance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchToLedgeMovementStance;
     /// <summary>
     /// Function: SwitchToLedgeMovementStance
     /// </summary>
     public unsafe virtual void SwitchToLedgeMovementStance(float AnimStartTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchToLedgeMovementStance, "BmGame.RAEC_Search_Sub_Ledge.SwitchToLedgeMovementStance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchToLedgeMovementStance, "BmGame.RAEC_Search_Sub_Ledge.SwitchToLedgeMovementStance", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimStartTime, paramsPtr + 0);
@@ -179,28 +179,28 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_DrawChosenPathDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawChosenPathDebug;
     /// <summary>
     /// Function: DrawChosenPathDebug
     /// </summary>
     public unsafe virtual void DrawChosenPathDebug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawChosenPathDebug, "BmGame.RAEC_Search_Sub_Ledge.DrawChosenPathDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawChosenPathDebug, "BmGame.RAEC_Search_Sub_Ledge.DrawChosenPathDebug", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawInitialStateDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawInitialStateDebug;
     /// <summary>
     /// Function: DrawInitialStateDebug
     /// </summary>
     public unsafe virtual void DrawInitialStateDebug(BmSDK.BmGame.RLedgeLookDangerAreaInfo LedgeDangerInfo, System.Numerics.Vector3 LedgeLookStart, System.Numerics.Vector3 LedgeLookEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawInitialStateDebug, "BmGame.RAEC_Search_Sub_Ledge.DrawInitialStateDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawInitialStateDebug, "BmGame.RAEC_Search_Sub_Ledge.DrawInitialStateDebug", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LedgeDangerInfo, paramsPtr + 0);
@@ -210,14 +210,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_Search_Sub_Ledge.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_Search_Sub_Ledge.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -225,14 +225,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_ClosestPointOnLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosestPointOnLine;
     /// <summary>
     /// Function: ClosestPointOnLine
     /// </summary>
     public unsafe virtual float ClosestPointOnLine(System.Numerics.Vector3 PointOnLine, System.Numerics.Vector3 LineDirection, System.Numerics.Vector3 TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosestPointOnLine, "BmGame.RAEC_Search_Sub_Ledge.ClosestPointOnLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosestPointOnLine, "BmGame.RAEC_Search_Sub_Ledge.ClosestPointOnLine", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PointOnLine, paramsPtr + 0);
@@ -242,14 +242,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_ProjectPointOntoLedgePath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProjectPointOntoLedgePath;
     /// <summary>
     /// Function: ProjectPointOntoLedgePath
     /// </summary>
     public unsafe virtual bool ProjectPointOntoLedgePath(System.Numerics.Vector3 inPoint, out System.Numerics.Vector3 outLoc, out BmSDK.Rotator outNormal, out int outPathIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProjectPointOntoLedgePath, "BmGame.RAEC_Search_Sub_Ledge.ProjectPointOntoLedgePath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProjectPointOntoLedgePath, "BmGame.RAEC_Search_Sub_Ledge.ProjectPointOntoLedgePath", this);
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inPoint, paramsPtr + 0);
@@ -266,14 +266,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_CloseEnoughToTargetFootSyncPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseEnoughToTargetFootSyncPoint;
     /// <summary>
     /// Function: CloseEnoughToTargetFootSyncPoint
     /// </summary>
     public unsafe virtual bool CloseEnoughToTargetFootSyncPoint(BmSDK.Engine.RAutomaticTransitions.EFootSyncPoint CurrentPoint, float CurrentTime, BmSDK.Engine.RAutomaticTransitions.EFootSyncPoint TargetPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseEnoughToTargetFootSyncPoint, "BmGame.RAEC_Search_Sub_Ledge.CloseEnoughToTargetFootSyncPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseEnoughToTargetFootSyncPoint, "BmGame.RAEC_Search_Sub_Ledge.CloseEnoughToTargetFootSyncPoint", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentPoint, paramsPtr + 0);
@@ -283,14 +283,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_LimitFullPathSegmentToNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LimitFullPathSegmentToNavMesh;
     /// <summary>
     /// Function: LimitFullPathSegmentToNavMesh
     /// </summary>
     public unsafe virtual void LimitFullPathSegmentToNavMesh(int segmentIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LimitFullPathSegmentToNavMesh, "BmGame.RAEC_Search_Sub_Ledge.LimitFullPathSegmentToNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LimitFullPathSegmentToNavMesh, "BmGame.RAEC_Search_Sub_Ledge.LimitFullPathSegmentToNavMesh", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(segmentIndex, paramsPtr + 0);
@@ -298,42 +298,42 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_LimitFullPathToNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LimitFullPathToNavMesh;
     /// <summary>
     /// Function: LimitFullPathToNavMesh
     /// </summary>
     public unsafe virtual void LimitFullPathToNavMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LimitFullPathToNavMesh, "BmGame.RAEC_Search_Sub_Ledge.LimitFullPathToNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LimitFullPathToNavMesh, "BmGame.RAEC_Search_Sub_Ledge.LimitFullPathToNavMesh", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PushStartForward;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushStartForward;
     /// <summary>
     /// Function: PushStartForward
     /// </summary>
     public unsafe virtual bool PushStartForward()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushStartForward, "BmGame.RAEC_Search_Sub_Ledge.PushStartForward");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushStartForward, "BmGame.RAEC_Search_Sub_Ledge.PushStartForward", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClosestPointOnFullPathToPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnFullPathToPoint;
     /// <summary>
     /// Function: GetClosestPointOnFullPathToPoint
     /// </summary>
     public unsafe virtual void GetClosestPointOnFullPathToPoint(System.Numerics.Vector3 TestPoint, out int segIndex, out System.Numerics.Vector3 ClosestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestPointOnFullPathToPoint, "BmGame.RAEC_Search_Sub_Ledge.GetClosestPointOnFullPathToPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestPointOnFullPathToPoint, "BmGame.RAEC_Search_Sub_Ledge.GetClosestPointOnFullPathToPoint", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPoint, paramsPtr + 0);
@@ -347,56 +347,56 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_ClipLedgeRoute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClipLedgeRoute;
     /// <summary>
     /// Function: ClipLedgeRoute
     /// </summary>
     public unsafe virtual void ClipLedgeRoute()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClipLedgeRoute, "BmGame.RAEC_Search_Sub_Ledge.ClipLedgeRoute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClipLedgeRoute, "BmGame.RAEC_Search_Sub_Ledge.ClipLedgeRoute", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetFullLedgeRoute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFullLedgeRoute;
     /// <summary>
     /// Function: GetFullLedgeRoute
     /// </summary>
     public unsafe virtual bool GetFullLedgeRoute()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFullLedgeRoute, "BmGame.RAEC_Search_Sub_Ledge.GetFullLedgeRoute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFullLedgeRoute, "BmGame.RAEC_Search_Sub_Ledge.GetFullLedgeRoute", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreProcess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcess;
     /// <summary>
     /// Function: PreProcess
     /// </summary>
     public unsafe virtual bool PreProcess()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreProcess, "BmGame.RAEC_Search_Sub_Ledge.PreProcess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreProcess, "BmGame.RAEC_Search_Sub_Ledge.PreProcess", this);
         byte* paramsPtr = stackalloc byte[136];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPointOnSegAtTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPointOnSegAtTime;
     /// <summary>
     /// Function: GetPointOnSegAtTime
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPointOnSegAtTime(System.Numerics.Vector3 segEnd1, System.Numerics.Vector3 segEnd2, float T)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPointOnSegAtTime, "BmGame.RAEC_Search_Sub_Ledge.GetPointOnSegAtTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPointOnSegAtTime, "BmGame.RAEC_Search_Sub_Ledge.GetPointOnSegAtTime", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(segEnd1, paramsPtr + 0);
@@ -406,14 +406,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_DrawLedgeRangeBox;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawLedgeRangeBox;
     /// <summary>
     /// Function: DrawLedgeRangeBox
     /// </summary>
     public unsafe virtual void DrawLedgeRangeBox(System.Numerics.Vector3 ledgeEnd1, System.Numerics.Vector3 ledgeEnd2, System.Numerics.Vector3 dbgDrawOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawLedgeRangeBox, "BmGame.RAEC_Search_Sub_Ledge.DrawLedgeRangeBox");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawLedgeRangeBox, "BmGame.RAEC_Search_Sub_Ledge.DrawLedgeRangeBox", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ledgeEnd1, paramsPtr + 0);
@@ -423,14 +423,14 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_GetFirstAndLastPointsOnSegInLedgeRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFirstAndLastPointsOnSegInLedgeRange;
     /// <summary>
     /// Function: GetFirstAndLastPointsOnSegInLedgeRange
     /// </summary>
     public unsafe virtual bool GetFirstAndLastPointsOnSegInLedgeRange(System.Numerics.Vector3 ledgeEnd1, System.Numerics.Vector3 ledgeEnd2, System.Numerics.Vector3 segEnd1, System.Numerics.Vector3 segEnd2, out System.Numerics.Vector3 outFirstPointInRange, out System.Numerics.Vector3 outLastPointInRange)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFirstAndLastPointsOnSegInLedgeRange, "BmGame.RAEC_Search_Sub_Ledge.GetFirstAndLastPointsOnSegInLedgeRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFirstAndLastPointsOnSegInLedgeRange, "BmGame.RAEC_Search_Sub_Ledge.GetFirstAndLastPointsOnSegInLedgeRange", this);
         byte* paramsPtr = stackalloc byte[256];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ledgeEnd1, paramsPtr + 0);
@@ -447,42 +447,42 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_FallBackToRailPeek;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FallBackToRailPeek;
     /// <summary>
     /// Function: FallBackToRailPeek
     /// </summary>
     public unsafe virtual void FallBackToRailPeek()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FallBackToRailPeek, "BmGame.RAEC_Search_Sub_Ledge.FallBackToRailPeek");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FallBackToRailPeek, "BmGame.RAEC_Search_Sub_Ledge.FallBackToRailPeek", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerPreLedgeWalkRailPeek;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPreLedgeWalkRailPeek;
     /// <summary>
     /// Function: TriggerPreLedgeWalkRailPeek
     /// </summary>
     public unsafe virtual void TriggerPreLedgeWalkRailPeek()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPreLedgeWalkRailPeek, "BmGame.RAEC_Search_Sub_Ledge.TriggerPreLedgeWalkRailPeek");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPreLedgeWalkRailPeek, "BmGame.RAEC_Search_Sub_Ledge.TriggerPreLedgeWalkRailPeek", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartFromSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartFromSearch;
     /// <summary>
     /// Function: StartFromSearch
     /// </summary>
     public unsafe virtual void StartFromSearch(BmSDK.BmGame.RBMAIController NewCon, BmSDK.BmGame.RLedgeLookDangerAreaInfo LedgeDangerInfo, System.Numerics.Vector3 LedgeLookStart, System.Numerics.Vector3 LedgeLookEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_Ledge.StartFromSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartFromSearch, "BmGame.RAEC_Search_Sub_Ledge.StartFromSearch", this);
         byte* paramsPtr = stackalloc byte[164];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -493,84 +493,84 @@ public partial class RAEC_Search_Sub_Ledge : BmSDK.BmGame.RAEC_Search_Sub_Format
         return;
     }
 
-    private static BmSDK.Function __fn_Abort;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Abort;
     /// <summary>
     /// Function: Abort
     /// </summary>
     public unsafe virtual void Abort()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Abort, "BmGame.RAEC_Search_Sub_Ledge.Abort");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Abort, "BmGame.RAEC_Search_Sub_Ledge.Abort", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ImmuneToTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ImmuneToTakedown;
     /// <summary>
     /// Function: ImmuneToTakedown
     /// </summary>
     public unsafe virtual bool ImmuneToTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ImmuneToTakedown, "BmGame.RAEC_Search_Sub_Ledge.ImmuneToTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ImmuneToTakedown, "BmGame.RAEC_Search_Sub_Ledge.ImmuneToTakedown", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentPathHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentPathHandle;
     /// <summary>
     /// Function: GetCurrentPathHandle
     /// </summary>
     public unsafe override BmSDK.BmGame.RNavigationHandle GetCurrentPathHandle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_Ledge.GetCurrentPathHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentPathHandle, "BmGame.RAEC_Search_Sub_Ledge.GetCurrentPathHandle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Cleanup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cleanup;
     /// <summary>
     /// Function: Cleanup
     /// </summary>
     public unsafe virtual void Cleanup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cleanup, "BmGame.RAEC_Search_Sub_Ledge.Cleanup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cleanup, "BmGame.RAEC_Search_Sub_Ledge.Cleanup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Search_Sub_Ledge.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Search_Sub_Ledge.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnVillainStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnVillainStolen;
     /// <summary>
     /// Function: OnVillainStolen
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_Ledge.OnVillainStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnVillainStolen, "BmGame.RAEC_Search_Sub_Ledge.OnVillainStolen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

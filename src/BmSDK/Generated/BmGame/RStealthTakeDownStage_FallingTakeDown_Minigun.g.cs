@@ -78,14 +78,14 @@ public partial class RStealthTakeDownStage_FallingTakeDown_Minigun : BmSDK.BmGam
         where TComponent : class, Framework.IScriptComponent<RStealthTakeDownStage_FallingTakeDown_Minigun>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayVictimAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayVictimAnim;
     /// <summary>
     /// Function: PlayVictimAnim
     /// </summary>
     public unsafe override void PlayVictimAnim(int iVictimNumber, float OverrideStartTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayVictimAnim, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.PlayVictimAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayVictimAnim, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.PlayVictimAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iVictimNumber, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RStealthTakeDownStage_FallingTakeDown_Minigun : BmSDK.BmGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayerAnimset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerAnimset;
     /// <summary>
     /// Function: GetPlayerAnimset
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet GetPlayerAnimset(BmSDK.BmGame.RPawnPlayer Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerAnimset, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.GetPlayerAnimset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerAnimset, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.GetPlayerAnimset", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attacker, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RStealthTakeDownStage_FallingTakeDown_Minigun : BmSDK.BmGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ChooseVictimAnimSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseVictimAnimSet;
     /// <summary>
     /// Function: ChooseVictimAnimSet
     /// </summary>
     public unsafe override BmSDK.Engine.AnimSet ChooseVictimAnimSet(BmSDK.BmGame.RPawnPlayer Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseVictimAnimSet, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.ChooseVictimAnimSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseVictimAnimSet, "BmGame.RStealthTakeDownStage_FallingTakeDown_Minigun.ChooseVictimAnimSet", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attacker, paramsPtr + 0);

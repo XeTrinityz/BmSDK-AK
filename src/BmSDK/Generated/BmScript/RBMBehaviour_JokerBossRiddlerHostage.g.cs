@@ -78,14 +78,14 @@ public partial class RBMBehaviour_JokerBossRiddlerHostage : BmSDK.BmGame.RBMBeha
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_JokerBossRiddlerHostage>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ShotByJokerGun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShotByJokerGun;
     /// <summary>
     /// Function: ShotByJokerGun
     /// </summary>
     public unsafe virtual void ShotByJokerGun()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShotByJokerGun, "BmScript.RBMBehaviour_JokerBossRiddlerHostage.ShotByJokerGun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShotByJokerGun, "BmScript.RBMBehaviour_JokerBossRiddlerHostage.ShotByJokerGun", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

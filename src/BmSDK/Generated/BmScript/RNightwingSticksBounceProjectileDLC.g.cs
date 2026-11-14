@@ -78,14 +78,14 @@ public partial class RNightwingSticksBounceProjectileDLC : BmSDK.BmScript.RNight
         where TComponent : class, Framework.IScriptComponent<RNightwingSticksBounceProjectileDLC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_VillainHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainHit;
     /// <summary>
     /// Function: VillainHit
     /// </summary>
     public unsafe override void VillainHit(BmSDK.BmGame.RPawnVillain Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainHit, "BmScript.RNightwingSticksBounceProjectileDLC.VillainHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainHit, "BmScript.RNightwingSticksBounceProjectileDLC.VillainHit", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RNightwingSticksBounceProjectileDLC : BmSDK.BmScript.RNight
         return;
     }
 
-    private static BmSDK.Function __fn_CollideRicochetStick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CollideRicochetStick;
     /// <summary>
     /// Function: CollideRicochetStick
     /// </summary>
     public unsafe override void CollideRicochetStick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CollideRicochetStick, "BmScript.RNightwingSticksBounceProjectileDLC.CollideRicochetStick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CollideRicochetStick, "BmScript.RNightwingSticksBounceProjectileDLC.CollideRicochetStick", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RNightwingSticksBounceProjectileDLC : BmSDK.BmScript.RNight
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnWallRicochetFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnWallRicochetFX;
     /// <summary>
     /// Function: SpawnWallRicochetFX
     /// </summary>
     public unsafe override void SpawnWallRicochetFX(BmSDK.Engine.Pawn HitPawn, System.Numerics.Vector3 NewLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnWallRicochetFX, "BmScript.RNightwingSticksBounceProjectileDLC.SpawnWallRicochetFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnWallRicochetFX, "BmScript.RNightwingSticksBounceProjectileDLC.SpawnWallRicochetFX", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);

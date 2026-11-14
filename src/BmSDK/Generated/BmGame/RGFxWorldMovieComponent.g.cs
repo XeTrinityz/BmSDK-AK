@@ -78,14 +78,14 @@ public partial class RGFxWorldMovieComponent : BmSDK.Engine.PrimitiveComponent, 
         where TComponent : class, Framework.IScriptComponent<RGFxWorldMovieComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetTransformedToWorld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTransformedToWorld;
     /// <summary>
     /// Function: SetTransformedToWorld
     /// </summary>
     public unsafe virtual void SetTransformedToWorld()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTransformedToWorld, "BmGame.RGFxWorldMovieComponent.SetTransformedToWorld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTransformedToWorld, "BmGame.RGFxWorldMovieComponent.SetTransformedToWorld", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,14 +78,14 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
         where TComponent : class, Framework.IScriptComponent<RAnimNode_BlendBonesFromPoses>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetTargetBlendWeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetBlendWeight;
     /// <summary>
     /// Function: SetTargetBlendWeight
     /// </summary>
     public unsafe virtual void SetTargetBlendWeight(float NewTargetWeight, float NewTargetBlendDuration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTargetBlendWeight, "BmGame.RAnimNode_BlendBonesFromPoses.SetTargetBlendWeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTargetBlendWeight, "BmGame.RAnimNode_BlendBonesFromPoses.SetTargetBlendWeight", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTargetWeight, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class RAnimNode_BlendBonesFromPoses : BmSDK.Engine.AnimNodeBlendB
         return;
     }
 
-    private static BmSDK.Function __fn_SetBlendPosesFromSkeletalMeshComp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBlendPosesFromSkeletalMeshComp;
     /// <summary>
     /// Function: SetBlendPosesFromSkeletalMeshComp
     /// </summary>
     public unsafe virtual void SetBlendPosesFromSkeletalMeshComp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBlendPosesFromSkeletalMeshComp, "BmGame.RAnimNode_BlendBonesFromPoses.SetBlendPosesFromSkeletalMeshComp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBlendPosesFromSkeletalMeshComp, "BmGame.RAnimNode_BlendBonesFromPoses.SetBlendPosesFromSkeletalMeshComp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

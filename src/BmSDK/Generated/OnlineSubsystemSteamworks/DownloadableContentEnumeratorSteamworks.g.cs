@@ -78,29 +78,30 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
         where TComponent : class, Framework.IScriptComponent<DownloadableContentEnumeratorSteamworks>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DeleteDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeleteDLC;
     /// <summary>
     /// Function: DeleteDLC
     /// </summary>
-    public unsafe override void DeleteDLC(BmSDK.FString DLCName)
+    public unsafe override void DeleteDLC(BmSDK.FStringArg DLCName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeleteDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.DeleteDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeleteDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.DeleteDLC", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(DLCName, paramsPtr + 0);
+        DLCName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AppendDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendDLC;
     /// <summary>
     /// Function: AppendDLC
     /// </summary>
     public unsafe virtual void AppendDLC(out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FOnlineContent> Bundles)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.AppendDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AppendDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.AppendDLC", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -115,14 +116,14 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
         return;
     }
 
-    private static BmSDK.Function __fn_OnReadContentComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnReadContentComplete;
     /// <summary>
     /// Function: OnReadContentComplete
     /// </summary>
     public unsafe virtual void OnReadContentComplete(bool bWasSuccessful)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnReadContentComplete, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.OnReadContentComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnReadContentComplete, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.OnReadContentComplete", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
@@ -130,28 +131,28 @@ public partial class DownloadableContentEnumeratorSteamworks : BmSDK.Engine.Down
         return;
     }
 
-    private static BmSDK.Function __fn_ClearAllContent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllContent;
     /// <summary>
     /// Function: ClearAllContent
     /// </summary>
     public unsafe override void ClearAllContent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAllContent, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.ClearAllContent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAllContent, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.ClearAllContent", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FindDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindDLC;
     /// <summary>
     /// Function: FindDLC
     /// </summary>
     public unsafe override void FindDLC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.FindDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindDLC, "OnlineSubsystemSteamworks.DownloadableContentEnumeratorSteamworks.FindDLC", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

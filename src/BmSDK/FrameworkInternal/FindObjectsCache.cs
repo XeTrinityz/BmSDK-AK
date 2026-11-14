@@ -21,8 +21,8 @@ internal static class FindObjectsCache
     private static int s_queryVersion = -1;
 
     /// <summary>
-    /// Enumerates the live objects of type T. Objects created or destroyed while enumerating may be
-    /// missed, as before.
+    /// Enumerates the live objects of type T, leaving out actors that are being destroyed. Objects
+    /// created or destroyed while enumerating may be missed, as before.
     /// </summary>
     public static IEnumerable<T> FindObjects<T>()
         where T : GameObject
@@ -48,6 +48,14 @@ internal static class FindObjectsCache
                     }
 
                     obj = bucket[i];
+
+                    // An actor the game has destroyed or queued for destruction lingers in the index
+                    // until the engine frees it, and is nothing a script wants to act on. Read under
+                    // the lock: a wrapper still in the index can't have had its object freed yet.
+                    if (obj is Engine.Actor { IsAlive: false })
+                    {
+                        continue;
+                    }
                 }
 
                 yield return (T)obj;

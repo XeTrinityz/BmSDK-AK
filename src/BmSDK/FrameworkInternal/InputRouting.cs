@@ -16,7 +16,10 @@ namespace BmSDK.Framework;
 /// </remarks>
 internal static class InputRouting
 {
-    /// <summary>Name indices of the swallowed inputs.</summary>
+    /// <summary>Name indices of the swallowed inputs, held per mod.</summary>
+    private static readonly HoldSet<int> s_holds = new();
+
+    /// <summary>Whether any mod holds the name: a plain set, because the redirects read it for every input event.</summary>
     private static readonly HashSet<int> s_swallowed = [];
 
     /// <summary>Keys whose press was dropped, so their release is dropped too (see <see cref="InputManager"/>).</summary>
@@ -31,24 +34,36 @@ internal static class InputRouting
 
     public static bool IsSwallowed(FName name) => s_swallowed.Contains(name.Index);
 
-    public static void SetSwallowed(FName name, bool swallow)
+    /// <summary>Whether the viewport's input delegates are bound to BmSDK right now.</summary>
+    public static bool IsBound => s_bound;
+
+    public static void SetSwallowed(FName name, bool swallow, object owner)
     {
         if (name.Index == 0)
         {
             return;
         }
 
-        if (swallow)
+        if (swallow ? s_holds.Hold(owner, name.Index) : s_holds.Release(owner, name.Index))
         {
-            s_swallowed.Add(name.Index);
-        }
-        else
-        {
-            s_swallowed.Remove(name.Index);
+            if (swallow)
+            {
+                s_swallowed.Add(name.Index);
+            }
+            else
+            {
+                s_swallowed.Remove(name.Index);
+            }
         }
     }
 
-    public static void UnswallowAll() => s_swallowed.Clear();
+    public static void ReleaseOwner(object owner)
+    {
+        foreach (var index in s_holds.ReleaseOwner(owner))
+        {
+            s_swallowed.Remove(index);
+        }
+    }
 
     /// <summary>The window lost focus: no release will come for a press that was dropped.</summary>
     public static void OnFocusLost() => s_pressSwallowed.Clear();

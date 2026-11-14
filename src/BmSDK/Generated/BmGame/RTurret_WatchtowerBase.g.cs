@@ -73,14 +73,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RTurret_WatchtowerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnToggleHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggleHidden;
     /// <summary>
     /// Function: OnToggleHidden
     /// </summary>
     public unsafe override void OnToggleHidden(BmSDK.Engine.SeqAct_ToggleHidden Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggleHidden, "BmGame.RTurret_WatchtowerBase.OnToggleHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggleHidden, "BmGame.RTurret_WatchtowerBase.OnToggleHidden", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -88,70 +88,70 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_ShootTooCloseTargets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShootTooCloseTargets;
     /// <summary>
     /// Function: ShootTooCloseTargets
     /// </summary>
     public unsafe override void ShootTooCloseTargets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShootTooCloseTargets, "BmGame.RTurret_WatchtowerBase.ShootTooCloseTargets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShootTooCloseTargets, "BmGame.RTurret_WatchtowerBase.ShootTooCloseTargets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DettachFiringComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DettachFiringComponents;
     /// <summary>
     /// Function: DettachFiringComponents
     /// </summary>
     public unsafe virtual void DettachFiringComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DettachFiringComponents, "BmGame.RTurret_WatchtowerBase.DettachFiringComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DettachFiringComponents, "BmGame.RTurret_WatchtowerBase.DettachFiringComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachFiringComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachFiringComponents;
     /// <summary>
     /// Function: AttachFiringComponents
     /// </summary>
     public unsafe virtual void AttachFiringComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachFiringComponents, "BmGame.RTurret_WatchtowerBase.AttachFiringComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachFiringComponents, "BmGame.RTurret_WatchtowerBase.AttachFiringComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetXrayMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetXrayMaterials;
     /// <summary>
     /// Function: SetXrayMaterials
     /// </summary>
     public unsafe virtual void SetXrayMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetXrayMaterials, "BmGame.RTurret_WatchtowerBase.SetXrayMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetXrayMaterials, "BmGame.RTurret_WatchtowerBase.SetXrayMaterials", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetAngleDistToBM;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAngleDistToBM;
     /// <summary>
     /// Function: GetAngleDistToBM
     /// </summary>
     public unsafe virtual void GetAngleDistToBM(System.Numerics.Vector3 BMLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAngleDistToBM, "BmGame.RTurret_WatchtowerBase.GetAngleDistToBM");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAngleDistToBM, "BmGame.RTurret_WatchtowerBase.GetAngleDistToBM", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BMLoc, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_CanShootAtCurrentTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShootAtCurrentTarget;
     /// <summary>
     /// Function: CanShootAtCurrentTarget
     /// </summary>
     public unsafe override bool CanShootAtCurrentTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanShootAtCurrentTarget, "BmGame.RTurret_WatchtowerBase.CanShootAtCurrentTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanShootAtCurrentTarget, "BmGame.RTurret_WatchtowerBase.CanShootAtCurrentTarget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -187,14 +187,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AttachLights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachLights;
     /// <summary>
     /// Function: AttachLights
     /// </summary>
     public unsafe virtual void AttachLights()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachLights, "BmGame.RTurret_WatchtowerBase.AttachLights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachLights, "BmGame.RTurret_WatchtowerBase.AttachLights", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -208,14 +208,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForBMInVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForBMInVolume;
     /// <summary>
     /// Function: CheckForBMInVolume
     /// </summary>
     public unsafe override void CheckForBMInVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForBMInVolume, "BmGame.RTurret_WatchtowerBase.CheckForBMInVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForBMInVolume, "BmGame.RTurret_WatchtowerBase.CheckForBMInVolume", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -229,14 +229,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_CheckLOSToPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLOSToPlayer;
     /// <summary>
     /// Function: CheckLOSToPlayer
     /// </summary>
     public unsafe virtual bool CheckLOSToPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLOSToPlayer, "BmGame.RTurret_WatchtowerBase.CheckLOSToPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLOSToPlayer, "BmGame.RTurret_WatchtowerBase.CheckLOSToPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -250,14 +250,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateMuzzleLoc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMuzzleLoc;
     /// <summary>
     /// Function: UpdateMuzzleLoc
     /// </summary>
     public unsafe virtual void UpdateMuzzleLoc()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMuzzleLoc, "BmGame.RTurret_WatchtowerBase.UpdateMuzzleLoc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMuzzleLoc, "BmGame.RTurret_WatchtowerBase.UpdateMuzzleLoc", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -271,14 +271,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetTrackingOrigin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTrackingOrigin;
     /// <summary>
     /// Function: GetTrackingOrigin
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetTrackingOrigin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTrackingOrigin, "BmGame.RTurret_WatchtowerBase.GetTrackingOrigin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTrackingOrigin, "BmGame.RTurret_WatchtowerBase.GetTrackingOrigin", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -292,14 +292,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLightConeAngleForPlayerSpotlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLightConeAngleForPlayerSpotlight;
     /// <summary>
     /// Function: GetLightConeAngleForPlayerSpotlight
     /// </summary>
     public unsafe virtual float GetLightConeAngleForPlayerSpotlight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLightConeAngleForPlayerSpotlight, "BmGame.RTurret_WatchtowerBase.GetLightConeAngleForPlayerSpotlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLightConeAngleForPlayerSpotlight, "BmGame.RTurret_WatchtowerBase.GetLightConeAngleForPlayerSpotlight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -313,14 +313,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RaycastForLightRadius;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RaycastForLightRadius;
     /// <summary>
     /// Function: RaycastForLightRadius
     /// </summary>
     public unsafe virtual float RaycastForLightRadius()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RaycastForLightRadius, "BmGame.RTurret_WatchtowerBase.RaycastForLightRadius");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RaycastForLightRadius, "BmGame.RTurret_WatchtowerBase.RaycastForLightRadius", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -334,14 +334,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLight;
     /// <summary>
     /// Function: UpdateLight
     /// </summary>
     public unsafe virtual void UpdateLight(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLight, "BmGame.RTurret_WatchtowerBase.UpdateLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLight, "BmGame.RTurret_WatchtowerBase.UpdateLight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -356,14 +356,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SetDesiredRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDesiredRotation;
     /// <summary>
     /// Function: SetDesiredRotation
     /// </summary>
     public unsafe override void SetDesiredRotation(BmSDK.Rotator DesiredRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDesiredRotation, "BmGame.RTurret_WatchtowerBase.SetDesiredRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDesiredRotation, "BmGame.RTurret_WatchtowerBase.SetDesiredRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredRot, paramsPtr + 0);
@@ -378,14 +378,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_TickJammed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickJammed;
     /// <summary>
     /// Function: TickJammed
     /// </summary>
     public unsafe virtual void TickJammed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickJammed, "BmGame.RTurret_WatchtowerBase.TickJammed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickJammed, "BmGame.RTurret_WatchtowerBase.TickJammed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -399,14 +399,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetBlindedTimeRemaining;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBlindedTimeRemaining;
     /// <summary>
     /// Function: GetBlindedTimeRemaining
     /// </summary>
     public unsafe override float GetBlindedTimeRemaining()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBlindedTimeRemaining, "BmGame.RTurret_WatchtowerBase.GetBlindedTimeRemaining");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBlindedTimeRemaining, "BmGame.RTurret_WatchtowerBase.GetBlindedTimeRemaining", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -420,14 +420,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UnBlind;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnBlind;
     /// <summary>
     /// Function: UnBlind
     /// </summary>
     public unsafe override void UnBlind()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnBlind, "BmGame.RTurret_WatchtowerBase.UnBlind");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnBlind, "BmGame.RTurret_WatchtowerBase.UnBlind", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -441,14 +441,14 @@ public partial class RTurret_WatchtowerBase : BmSDK.BmGame.RTurretBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_IsBlinded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBlinded;
     /// <summary>
     /// Function: IsBlinded
     /// </summary>
     public unsafe override bool IsBlinded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBlinded, "BmGame.RTurret_WatchtowerBase.IsBlinded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBlinded, "BmGame.RTurret_WatchtowerBase.IsBlinded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

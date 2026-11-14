@@ -91,322 +91,322 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MovingCarOver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovingCarOver;
     /// <summary>
     /// Function: MovingCarOver
     /// </summary>
     public unsafe virtual void MovingCarOver()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovingCarOver, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.MovingCarOver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovingCarOver, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.MovingCarOver", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WarnMovingCar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WarnMovingCar;
     /// <summary>
     /// Function: WarnMovingCar
     /// </summary>
     public unsafe virtual void WarnMovingCar()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WarnMovingCar, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.WarnMovingCar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WarnMovingCar, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.WarnMovingCar", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartSiren;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartSiren;
     /// <summary>
     /// Function: StartSiren
     /// </summary>
     public unsafe virtual void StartSiren()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartSiren, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.StartSiren");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSiren, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.StartSiren", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CrackObjectRightHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrackObjectRightHand;
     /// <summary>
     /// Function: CrackObjectRightHand
     /// </summary>
     public unsafe virtual void CrackObjectRightHand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackObjectRightHand, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackObjectRightHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackObjectRightHand, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackObjectRightHand", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CrackObject;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrackObject;
     /// <summary>
     /// Function: CrackObject
     /// </summary>
     public unsafe override void CrackObject()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackObject, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackObject");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackObject, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackObject", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ExplodeMolotov;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExplodeMolotov;
     /// <summary>
     /// Function: ExplodeMolotov
     /// </summary>
     public unsafe override void ExplodeMolotov()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExplodeMolotov, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.ExplodeMolotov");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExplodeMolotov, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.ExplodeMolotov", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SmashDriversPassengerWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashDriversPassengerWindow;
     /// <summary>
     /// Function: SmashDriversPassengerWindow
     /// </summary>
     public unsafe virtual void SmashDriversPassengerWindow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashDriversPassengerWindow, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SmashDriversPassengerWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashDriversPassengerWindow, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SmashDriversPassengerWindow", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SmashDriversWindow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashDriversWindow;
     /// <summary>
     /// Function: SmashDriversWindow
     /// </summary>
     public unsafe virtual void SmashDriversWindow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SmashDriversWindow, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SmashDriversWindow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashDriversWindow, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SmashDriversWindow", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CrackWindscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrackWindscreen;
     /// <summary>
     /// Function: CrackWindscreen
     /// </summary>
     public unsafe virtual void CrackWindscreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrackWindscreen, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackWindscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackWindscreen, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackWindscreen", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CarOnRoof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CarOnRoof;
     /// <summary>
     /// Function: CarOnRoof
     /// </summary>
     public unsafe virtual void CarOnRoof()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CarOnRoof, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarOnRoof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarOnRoof, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarOnRoof", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CarOnSide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CarOnSide;
     /// <summary>
     /// Function: CarOnSide
     /// </summary>
     public unsafe virtual void CarOnSide()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CarOnSide, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarOnSide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarOnSide, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarOnSide", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CarToLoopAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CarToLoopAnim;
     /// <summary>
     /// Function: CarToLoopAnim
     /// </summary>
     public unsafe virtual void CarToLoopAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CarToLoopAnim, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToLoopAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarToLoopAnim, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToLoopAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CarToAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CarToAnim;
     /// <summary>
     /// Function: CarToAnim
     /// </summary>
     public unsafe virtual void CarToAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CarToAnim, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarToAnim, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CarToPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CarToPhysics;
     /// <summary>
     /// Function: CarToPhysics
     /// </summary>
     public unsafe virtual void CarToPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CarToPhysics, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarToPhysics, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToPhysics", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Cheer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Cheer;
     /// <summary>
     /// Function: Cheer
     /// </summary>
     public unsafe virtual void Cheer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Cheer, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.Cheer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cheer, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.Cheer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpectatorCheer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpectatorCheer;
     /// <summary>
     /// Function: SpectatorCheer
     /// </summary>
     public unsafe virtual void SpectatorCheer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpectatorCheer, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SpectatorCheer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpectatorCheer, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SpectatorCheer", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DettachFromCar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DettachFromCar;
     /// <summary>
     /// Function: DettachFromCar
     /// </summary>
     public unsafe override void DettachFromCar()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DettachFromCar, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.DettachFromCar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DettachFromCar, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.DettachFromCar", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToCarSeat1;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToCarSeat1;
     /// <summary>
     /// Function: AttachToCarSeat1
     /// </summary>
     public unsafe override void AttachToCarSeat1()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToCarSeat1, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.AttachToCarSeat1");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToCarSeat1, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.AttachToCarSeat1", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerOutputEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerOutputEvent;
     /// <summary>
     /// Function: TriggerOutputEvent
     /// </summary>
     public unsafe override void TriggerOutputEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerOutputEvent, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.TriggerOutputEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerOutputEvent, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.TriggerOutputEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanPlayWaitingAnimation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayWaitingAnimation;
     /// <summary>
     /// Function: CanPlayWaitingAnimation
     /// </summary>
     public unsafe virtual bool CanPlayWaitingAnimation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPlayWaitingAnimation, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CanPlayWaitingAnimation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPlayWaitingAnimation, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CanPlayWaitingAnimation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FastExitBuddies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FastExitBuddies;
     /// <summary>
     /// Function: FastExitBuddies
     /// </summary>
     public unsafe virtual void FastExitBuddies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FastExitBuddies, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.FastExitBuddies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FastExitBuddies, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.FastExitBuddies", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RiotExitBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RiotExitBehaviour;
     /// <summary>
     /// Function: RiotExitBehaviour
     /// </summary>
     public unsafe override void RiotExitBehaviour()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiotExitBehaviour, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.RiotExitBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiotExitBehaviour, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.RiotExitBehaviour", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RiotHandleSpookedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RiotHandleSpookedBy;
     /// <summary>
     /// Function: RiotHandleSpookedBy
     /// </summary>
     public unsafe override bool RiotHandleSpookedBy(BmSDK.Engine.Actor Threat, bool bAlertNeighbours = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiotHandleSpookedBy, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.RiotHandleSpookedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiotHandleSpookedBy, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.RiotHandleSpookedBy", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Threat, paramsPtr + 0);
@@ -415,14 +415,14 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetEvadeVehicleType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEvadeVehicleType;
     /// <summary>
     /// Function: GetEvadeVehicleType
     /// </summary>
     public unsafe override BmSDK.BmGame.RGameInfo.EEvadeVehicleType GetEvadeVehicleType(BmSDK.Engine.Actor V, float CarSpeed, bool bZap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEvadeVehicleType, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.GetEvadeVehicleType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEvadeVehicleType, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.GetEvadeVehicleType", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -432,28 +432,28 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.EEvadeVehicleType>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.OnActivate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

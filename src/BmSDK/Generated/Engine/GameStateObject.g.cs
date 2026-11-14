@@ -78,14 +78,14 @@ public partial class GameStateObject : BmSDK.Engine.GameplayEventsHandler, BmSDK
         where TComponent : class, Framework.IScriptComponent<GameStateObject>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe virtual void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.GameStateObject.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.GameStateObject.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class GameStateObject : BmSDK.Engine.GameplayEventsHandler, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_PreProcessStream;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreProcessStream;
     /// <summary>
     /// Function: PreProcessStream
     /// </summary>
     public unsafe override void PreProcessStream()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreProcessStream, "Engine.GameStateObject.PreProcessStream");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreProcessStream, "Engine.GameStateObject.PreProcessStream", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

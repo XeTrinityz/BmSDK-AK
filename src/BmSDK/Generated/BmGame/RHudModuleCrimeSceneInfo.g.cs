@@ -78,96 +78,104 @@ public partial class RHudModuleCrimeSceneInfo : BmSDK.BmGame.RHudModule, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RHudModuleCrimeSceneInfo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateCompletionText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCompletionText;
     /// <summary>
     /// Function: UpdateCompletionText
     /// </summary>
-    public unsafe virtual void UpdateCompletionText(BmSDK.FString CompletionText)
+    public unsafe virtual void UpdateCompletionText(BmSDK.FStringArg CompletionText)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCompletionText, "BmGame.RHudModuleCrimeSceneInfo.UpdateCompletionText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCompletionText, "BmGame.RHudModuleCrimeSceneInfo.UpdateCompletionText", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CompletionText, paramsPtr + 0);
+        CompletionText.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitCrimeSceneInfoCaseFile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitCrimeSceneInfoCaseFile;
     /// <summary>
     /// Function: InitCrimeSceneInfoCaseFile
     /// </summary>
-    public unsafe virtual void InitCrimeSceneInfoCaseFile(BmSDK.FString CaseFileName, BmSDK.FString CrimeSceneScreenName, BmSDK.FString CompletionText)
+    public unsafe virtual void InitCrimeSceneInfoCaseFile(BmSDK.FStringArg CaseFileName, BmSDK.FStringArg CrimeSceneScreenName, BmSDK.FStringArg CompletionText)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitCrimeSceneInfoCaseFile, "BmGame.RHudModuleCrimeSceneInfo.InitCrimeSceneInfoCaseFile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitCrimeSceneInfoCaseFile, "BmGame.RHudModuleCrimeSceneInfo.InitCrimeSceneInfoCaseFile", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CaseFileName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CrimeSceneScreenName, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CompletionText, paramsPtr + 32);
+        CaseFileName.WriteTo(paramsPtr + 0);
+        CrimeSceneScreenName.WriteTo(paramsPtr + 16);
+        CompletionText.WriteTo(paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return;
     }
 
-    private static BmSDK.Function __fn_InitCrimeSceneInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitCrimeSceneInfo;
     /// <summary>
     /// Function: InitCrimeSceneInfo
     /// </summary>
-    public unsafe virtual void InitCrimeSceneInfo(BmSDK.FString CrimeSceneScreenName, BmSDK.FString CompletionText)
+    public unsafe virtual void InitCrimeSceneInfo(BmSDK.FStringArg CrimeSceneScreenName, BmSDK.FStringArg CompletionText)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitCrimeSceneInfo, "BmGame.RHudModuleCrimeSceneInfo.InitCrimeSceneInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitCrimeSceneInfo, "BmGame.RHudModuleCrimeSceneInfo.InitCrimeSceneInfo", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CrimeSceneScreenName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CompletionText, paramsPtr + 16);
+        CrimeSceneScreenName.WriteTo(paramsPtr + 0);
+        CompletionText.WriteTo(paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseFlash;
     /// <summary>
     /// Function: InitialiseFlash
     /// </summary>
     public unsafe override void InitialiseFlash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseFlash, "BmGame.RHudModuleCrimeSceneInfo.InitialiseFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseFlash, "BmGame.RHudModuleCrimeSceneInfo.InitialiseFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Close;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Close;
     /// <summary>
     /// Function: Close
     /// </summary>
     public unsafe override void Close()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Close, "BmGame.RHudModuleCrimeSceneInfo.Close");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Close, "BmGame.RHudModuleCrimeSceneInfo.Close", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
-    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FString _ExtensionName, BmSDK.FString _ExtensionPath)
+    public unsafe override bool Init(BmSDK.BmGame.RPlayerController _RPC, BmSDK.FStringArg _ExtensionName, BmSDK.FStringArg _ExtensionPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RHudModuleCrimeSceneInfo.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RHudModuleCrimeSceneInfo.Init", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RPC, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(_ExtensionPath, paramsPtr + 24);
+        _ExtensionName.WriteTo(paramsPtr + 8);
+        _ExtensionPath.WriteTo(paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 }

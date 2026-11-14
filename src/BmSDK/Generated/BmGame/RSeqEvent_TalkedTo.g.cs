@@ -78,14 +78,14 @@ public partial class RSeqEvent_TalkedTo : BmSDK.Engine.SequenceEvent, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RSeqEvent_TalkedTo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Toggled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Toggled;
     /// <summary>
     /// Function: Toggled
     /// </summary>
     public unsafe override void Toggled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Toggled, "BmGame.RSeqEvent_TalkedTo.Toggled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Toggled, "BmGame.RSeqEvent_TalkedTo.Toggled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,28 +78,28 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RNavigationManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NavManWTF;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavManWTF;
     /// <summary>
     /// Function: NavManWTF
     /// </summary>
     public unsafe virtual void NavManWTF()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavManWTF, "BmGame.RNavigationManager.NavManWTF");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavManWTF, "BmGame.RNavigationManager.NavManWTF", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe virtual void DrawHUD(BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RNavigationManager.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmGame.RNavigationManager.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetSearchDestination;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSearchDestination;
     /// <summary>
     /// Function: GetSearchDestination
     /// </summary>
     public unsafe virtual bool GetSearchDestination(System.Numerics.Vector3 StartPos, BmSDK.Engine.Volume RestrictToVol, out System.Numerics.Vector3 SearchPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSearchDestination, "BmGame.RNavigationManager.GetSearchDestination");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSearchDestination, "BmGame.RNavigationManager.GetSearchDestination", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPos, paramsPtr + 0);
@@ -133,14 +133,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetNavMeshLocationFromRailingPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshLocationFromRailingPoints;
     /// <summary>
     /// Function: GetNavMeshLocationFromRailingPoints
     /// </summary>
     public unsafe virtual bool GetNavMeshLocationFromRailingPoints(System.Numerics.Vector3 CurrLocation, System.Numerics.Vector3 PointA, System.Numerics.Vector3 PointB, out System.Numerics.Vector3 NavMeshLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavMeshLocationFromRailingPoints, "BmGame.RNavigationManager.GetNavMeshLocationFromRailingPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavMeshLocationFromRailingPoints, "BmGame.RNavigationManager.GetNavMeshLocationFromRailingPoints", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrLocation, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_NavHandleTrace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavHandleTrace;
     /// <summary>
     /// Function: NavHandleTrace
     /// </summary>
     public unsafe virtual bool NavHandleTrace(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 Extent, out System.Numerics.Vector3 HitLoc, out System.Numerics.Vector3 HitNorm)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavHandleTrace, "BmGame.RNavigationManager.NavHandleTrace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavHandleTrace, "BmGame.RNavigationManager.NavHandleTrace", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -190,14 +190,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 60);
     }
 
-    private static BmSDK.Function __fn_NavHandlePointReachable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavHandlePointReachable;
     /// <summary>
     /// Function: NavHandlePointReachable
     /// </summary>
     public unsafe virtual bool NavHandlePointReachable(System.Numerics.Vector3 EndLoc, System.Numerics.Vector3 StartLoc, System.Numerics.Vector3 Extent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavHandlePointReachable, "BmGame.RNavigationManager.NavHandlePointReachable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavHandlePointReachable, "BmGame.RNavigationManager.NavHandlePointReachable", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndLoc, paramsPtr + 0);
@@ -214,28 +214,28 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_UpdatePendingGroupAssignmentPickerList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePendingGroupAssignmentPickerList;
     /// <summary>
     /// Function: UpdatePendingGroupAssignmentPickerList
     /// </summary>
     public unsafe virtual void UpdatePendingGroupAssignmentPickerList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePendingGroupAssignmentPickerList, "BmGame.RNavigationManager.UpdatePendingGroupAssignmentPickerList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePendingGroupAssignmentPickerList, "BmGame.RNavigationManager.UpdatePendingGroupAssignmentPickerList", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddPendingGroupAssignmentPicker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddPendingGroupAssignmentPicker;
     /// <summary>
     /// Function: AddPendingGroupAssignmentPicker
     /// </summary>
     public unsafe virtual void AddPendingGroupAssignmentPicker(BmSDK.BmGame.RGroupAssignmentPicker NewGMAP)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddPendingGroupAssignmentPicker, "BmGame.RNavigationManager.AddPendingGroupAssignmentPicker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddPendingGroupAssignmentPicker, "BmGame.RNavigationManager.AddPendingGroupAssignmentPicker", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGMAP, paramsPtr + 0);
@@ -243,28 +243,28 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessTraceCheckVertsQueries;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessTraceCheckVertsQueries;
     /// <summary>
     /// Function: ProcessTraceCheckVertsQueries
     /// </summary>
     public unsafe virtual void ProcessTraceCheckVertsQueries()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessTraceCheckVertsQueries, "BmGame.RNavigationManager.ProcessTraceCheckVertsQueries");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessTraceCheckVertsQueries, "BmGame.RNavigationManager.ProcessTraceCheckVertsQueries", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveProcessTraceCheckVertsQuery;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveProcessTraceCheckVertsQuery;
     /// <summary>
     /// Function: RemoveProcessTraceCheckVertsQuery
     /// </summary>
     public unsafe virtual void RemoveProcessTraceCheckVertsQuery(BmSDK.BmGame.RBMAIAction_PauseCheckVerts OldQuery)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveProcessTraceCheckVertsQuery, "BmGame.RNavigationManager.RemoveProcessTraceCheckVertsQuery");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveProcessTraceCheckVertsQuery, "BmGame.RNavigationManager.RemoveProcessTraceCheckVertsQuery", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldQuery, paramsPtr + 0);
@@ -272,14 +272,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddProcessTraceCheckVertsQuery;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddProcessTraceCheckVertsQuery;
     /// <summary>
     /// Function: AddProcessTraceCheckVertsQuery
     /// </summary>
     public unsafe virtual void AddProcessTraceCheckVertsQuery(BmSDK.BmGame.RBMAIAction_PauseCheckVerts NewQuery)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddProcessTraceCheckVertsQuery, "BmGame.RNavigationManager.AddProcessTraceCheckVertsQuery");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddProcessTraceCheckVertsQuery, "BmGame.RNavigationManager.AddProcessTraceCheckVertsQuery", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewQuery, paramsPtr + 0);
@@ -287,14 +287,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveAttackEdgeSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAttackEdgeSearch;
     /// <summary>
     /// Function: RemoveAttackEdgeSearch
     /// </summary>
     public unsafe virtual void RemoveAttackEdgeSearch(BmSDK.BmGame.RAttackEdgeSearch OldSearch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAttackEdgeSearch, "BmGame.RNavigationManager.RemoveAttackEdgeSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveAttackEdgeSearch, "BmGame.RNavigationManager.RemoveAttackEdgeSearch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldSearch, paramsPtr + 0);
@@ -302,14 +302,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddAttackEdgeSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAttackEdgeSearch;
     /// <summary>
     /// Function: AddAttackEdgeSearch
     /// </summary>
     public unsafe virtual void AddAttackEdgeSearch(BmSDK.BmGame.RAttackEdgeSearch NewSearch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAttackEdgeSearch, "BmGame.RNavigationManager.AddAttackEdgeSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAttackEdgeSearch, "BmGame.RNavigationManager.AddAttackEdgeSearch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSearch, paramsPtr + 0);
@@ -317,14 +317,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartAttackEdgeSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAttackEdgeSearch;
     /// <summary>
     /// Function: StartAttackEdgeSearch
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAttackEdgeSearch StartAttackEdgeSearch(System.Numerics.Vector3 TargetLocation, float AttackRadius, BmSDK.FName ClaimName, BmSDK.TArray<BmSDK.Engine.Pylon> NewPylonList = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAttackEdgeSearch, "BmGame.RNavigationManager.StartAttackEdgeSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAttackEdgeSearch, "BmGame.RNavigationManager.StartAttackEdgeSearch", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetLocation, paramsPtr + 0);
@@ -337,14 +337,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAttackEdgeSearch>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_RemoveChaseLocationSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveChaseLocationSearch;
     /// <summary>
     /// Function: RemoveChaseLocationSearch
     /// </summary>
     public unsafe virtual void RemoveChaseLocationSearch(BmSDK.BmGame.RChaseLocationSearch OldSearch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveChaseLocationSearch, "BmGame.RNavigationManager.RemoveChaseLocationSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveChaseLocationSearch, "BmGame.RNavigationManager.RemoveChaseLocationSearch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldSearch, paramsPtr + 0);
@@ -359,14 +359,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddChaseLocationSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddChaseLocationSearch;
     /// <summary>
     /// Function: AddChaseLocationSearch
     /// </summary>
     public unsafe virtual void AddChaseLocationSearch(BmSDK.BmGame.RChaseLocationSearch NewSearch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddChaseLocationSearch, "BmGame.RNavigationManager.AddChaseLocationSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddChaseLocationSearch, "BmGame.RNavigationManager.AddChaseLocationSearch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSearch, paramsPtr + 0);
@@ -374,14 +374,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveAttackPointSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAttackPointSearch;
     /// <summary>
     /// Function: RemoveAttackPointSearch
     /// </summary>
     public unsafe virtual void RemoveAttackPointSearch(BmSDK.BmGame.RAttackPointSearch OldSearch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAttackPointSearch, "BmGame.RNavigationManager.RemoveAttackPointSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveAttackPointSearch, "BmGame.RNavigationManager.RemoveAttackPointSearch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldSearch, paramsPtr + 0);
@@ -389,14 +389,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddAttackPointSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAttackPointSearch;
     /// <summary>
     /// Function: AddAttackPointSearch
     /// </summary>
     public unsafe virtual void AddAttackPointSearch(BmSDK.BmGame.RAttackPointSearch NewSearch)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAttackPointSearch, "BmGame.RNavigationManager.AddAttackPointSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAttackPointSearch, "BmGame.RNavigationManager.AddAttackPointSearch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewSearch, paramsPtr + 0);
@@ -404,14 +404,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartAttackPointSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartAttackPointSearch;
     /// <summary>
     /// Function: StartAttackPointSearch
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAttackPointSearch StartAttackPointSearch(System.Numerics.Vector3 TargetLocation, float AttackRadius, BmSDK.FName ClaimName, BmSDK.BmGame.RAttackPointSearch.StanceVisType StanceToCheck = default, BmSDK.TArray<BmSDK.Engine.Pylon> NewPylonList = default, float NewSubDivideSizeTarget = default, bool bAutoAdjustToFloor = default, bool bAdjustHeightForHumanTargetSize = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartAttackPointSearch, "BmGame.RNavigationManager.StartAttackPointSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAttackPointSearch, "BmGame.RNavigationManager.StartAttackPointSearch", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetLocation, paramsPtr + 0);
@@ -428,14 +428,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAttackPointSearch>(paramsPtr + 56);
     }
 
-    private static BmSDK.Function __fn_GetPathFindActorHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathFindActorHandle;
     /// <summary>
     /// Function: GetPathFindActorHandle
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RNavigationHandle GetPathFindActorHandle(System.Numerics.Vector3 StartLocation, BmSDK.FName ClaimName, BmSDK.Engine.Pawn ParamProxy = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPathFindActorHandle, "BmGame.RNavigationManager.GetPathFindActorHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPathFindActorHandle, "BmGame.RNavigationManager.GetPathFindActorHandle", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartLocation, paramsPtr + 0);
@@ -445,14 +445,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RNavigationHandle>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_RemoveSearchRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveSearchRequest;
     /// <summary>
     /// Function: RemoveSearchRequest
     /// </summary>
     public unsafe virtual void RemoveSearchRequest(BmSDK.BmGame.RNavigationHandle OldNavHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveSearchRequest, "BmGame.RNavigationManager.RemoveSearchRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveSearchRequest, "BmGame.RNavigationManager.RemoveSearchRequest", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldNavHandle, paramsPtr + 0);
@@ -467,14 +467,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddSearchRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSearchRequest;
     /// <summary>
     /// Function: AddSearchRequest
     /// </summary>
     public unsafe virtual void AddSearchRequest(BmSDK.BmGame.RNavigationHandle NewNavHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSearchRequest, "BmGame.RNavigationManager.AddSearchRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSearchRequest, "BmGame.RNavigationManager.AddSearchRequest", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewNavHandle, paramsPtr + 0);
@@ -489,14 +489,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveNavHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveNavHandle;
     /// <summary>
     /// Function: RemoveNavHandle
     /// </summary>
     public unsafe virtual void RemoveNavHandle(BmSDK.BmGame.RNavigationHandle OldNavHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveNavHandle, "BmGame.RNavigationManager.RemoveNavHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveNavHandle, "BmGame.RNavigationManager.RemoveNavHandle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldNavHandle, paramsPtr + 0);
@@ -504,14 +504,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddNavHandle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddNavHandle;
     /// <summary>
     /// Function: AddNavHandle
     /// </summary>
     public unsafe virtual void AddNavHandle(BmSDK.BmGame.RNavigationHandle NewNavHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddNavHandle, "BmGame.RNavigationManager.AddNavHandle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddNavHandle, "BmGame.RNavigationManager.AddNavHandle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewNavHandle, paramsPtr + 0);
@@ -519,28 +519,28 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RNavigationManager.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RNavigationManager.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsInNavMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInNavMesh;
     /// <summary>
     /// Function: IsInNavMesh
     /// </summary>
     public unsafe virtual bool IsInNavMesh(System.Numerics.Vector3 TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInNavMesh, "BmGame.RNavigationManager.IsInNavMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInNavMesh, "BmGame.RNavigationManager.IsInNavMesh", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPoint, paramsPtr + 0);
@@ -555,14 +555,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_NavMeshExists;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NavMeshExists;
     /// <summary>
     /// Function: NavMeshExists
     /// </summary>
     public unsafe virtual bool NavMeshExists()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NavMeshExists, "BmGame.RNavigationManager.NavMeshExists");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NavMeshExists, "BmGame.RNavigationManager.NavMeshExists", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -576,14 +576,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanDoPathShortening;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoPathShortening;
     /// <summary>
     /// Function: CanDoPathShortening
     /// </summary>
     public unsafe virtual bool CanDoPathShortening(BmSDK.BmGame.RNavigationHandle NavHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoPathShortening, "BmGame.RNavigationManager.CanDoPathShortening");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoPathShortening, "BmGame.RNavigationManager.CanDoPathShortening", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NavHandle, paramsPtr + 0);
@@ -598,14 +598,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_DisplayPylonList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayPylonList;
     /// <summary>
     /// Function: DisplayPylonList
     /// </summary>
     public unsafe virtual void DisplayPylonList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayPylonList, "BmGame.RNavigationManager.DisplayPylonList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayPylonList, "BmGame.RNavigationManager.DisplayPylonList", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -619,14 +619,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick_PostUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick_PostUpdate;
     /// <summary>
     /// Function: Tick_PostUpdate
     /// </summary>
     public unsafe virtual void Tick_PostUpdate(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick_PostUpdate, "BmGame.RNavigationManager.Tick_PostUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick_PostUpdate, "BmGame.RNavigationManager.Tick_PostUpdate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -641,14 +641,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick_DuringAsync;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick_DuringAsync;
     /// <summary>
     /// Function: Tick_DuringAsync
     /// </summary>
     public unsafe virtual void Tick_DuringAsync(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick_DuringAsync, "BmGame.RNavigationManager.Tick_DuringAsync");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick_DuringAsync, "BmGame.RNavigationManager.Tick_DuringAsync", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -663,14 +663,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Tick_PreAsync;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick_PreAsync;
     /// <summary>
     /// Function: Tick_PreAsync
     /// </summary>
     public unsafe virtual void Tick_PreAsync(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick_PreAsync, "BmGame.RNavigationManager.Tick_PreAsync");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick_PreAsync, "BmGame.RNavigationManager.Tick_PreAsync", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -685,14 +685,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TickQueuedkDOPRebuilds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickQueuedkDOPRebuilds;
     /// <summary>
     /// Function: TickQueuedkDOPRebuilds
     /// </summary>
     public unsafe virtual void TickQueuedkDOPRebuilds(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickQueuedkDOPRebuilds, "BmGame.RNavigationManager.TickQueuedkDOPRebuilds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickQueuedkDOPRebuilds, "BmGame.RNavigationManager.TickQueuedkDOPRebuilds", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -707,14 +707,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_QueuePylonForObstacleMeshkDOPRebuild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueuePylonForObstacleMeshkDOPRebuild;
     /// <summary>
     /// Function: QueuePylonForObstacleMeshkDOPRebuild
     /// </summary>
     public unsafe virtual void QueuePylonForObstacleMeshkDOPRebuild(BmSDK.Engine.Pylon RebuildPylon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueuePylonForObstacleMeshkDOPRebuild, "BmGame.RNavigationManager.QueuePylonForObstacleMeshkDOPRebuild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueuePylonForObstacleMeshkDOPRebuild, "BmGame.RNavigationManager.QueuePylonForObstacleMeshkDOPRebuild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RebuildPylon, paramsPtr + 0);
@@ -729,14 +729,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SyncOnNavMeshObstacleJob;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SyncOnNavMeshObstacleJob;
     /// <summary>
     /// Function: SyncOnNavMeshObstacleJob
     /// </summary>
     public unsafe virtual void SyncOnNavMeshObstacleJob()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SyncOnNavMeshObstacleJob, "BmGame.RNavigationManager.SyncOnNavMeshObstacleJob");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SyncOnNavMeshObstacleJob, "BmGame.RNavigationManager.SyncOnNavMeshObstacleJob", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -750,14 +750,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AnyNavMeshJobInProgress;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AnyNavMeshJobInProgress;
     /// <summary>
     /// Function: AnyNavMeshJobInProgress
     /// </summary>
     public unsafe virtual bool AnyNavMeshJobInProgress()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AnyNavMeshJobInProgress, "BmGame.RNavigationManager.AnyNavMeshJobInProgress");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AnyNavMeshJobInProgress, "BmGame.RNavigationManager.AnyNavMeshJobInProgress", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -771,14 +771,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShowHandleDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowHandleDebug;
     /// <summary>
     /// Function: ShowHandleDebug
     /// </summary>
     public unsafe virtual void ShowHandleDebug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowHandleDebug, "BmGame.RNavigationManager.ShowHandleDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowHandleDebug, "BmGame.RNavigationManager.ShowHandleDebug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -792,14 +792,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReturnNavMeshPathConstraintToPool;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReturnNavMeshPathConstraintToPool;
     /// <summary>
     /// Function: ReturnNavMeshPathConstraintToPool
     /// </summary>
     public unsafe virtual void ReturnNavMeshPathConstraintToPool(BmSDK.Engine.NavMeshPathConstraint PathConstraint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReturnNavMeshPathConstraintToPool, "BmGame.RNavigationManager.ReturnNavMeshPathConstraintToPool");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReturnNavMeshPathConstraintToPool, "BmGame.RNavigationManager.ReturnNavMeshPathConstraintToPool", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PathConstraint, paramsPtr + 0);
@@ -814,14 +814,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReturnNavMeshPathGoalToPool;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReturnNavMeshPathGoalToPool;
     /// <summary>
     /// Function: ReturnNavMeshPathGoalToPool
     /// </summary>
     public unsafe virtual void ReturnNavMeshPathGoalToPool(BmSDK.Engine.NavMeshPathGoalEvaluator PathGoal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReturnNavMeshPathGoalToPool, "BmGame.RNavigationManager.ReturnNavMeshPathGoalToPool");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReturnNavMeshPathGoalToPool, "BmGame.RNavigationManager.ReturnNavMeshPathGoalToPool", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PathGoal, paramsPtr + 0);
@@ -836,14 +836,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetNavMeshPathConstraintFromPool;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathConstraintFromPool;
     /// <summary>
     /// Function: GetNavMeshPathConstraintFromPool
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathConstraint GetNavMeshPathConstraintFromPool(BmSDK.Class ConstraintClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavMeshPathConstraintFromPool, "BmGame.RNavigationManager.GetNavMeshPathConstraintFromPool");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavMeshPathConstraintFromPool, "BmGame.RNavigationManager.GetNavMeshPathConstraintFromPool", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConstraintClass, paramsPtr + 0);
@@ -858,14 +858,14 @@ public partial class RNavigationManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.NavMeshPathConstraint>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetNavMeshPathGoalFromPool;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNavMeshPathGoalFromPool;
     /// <summary>
     /// Function: GetNavMeshPathGoalFromPool
     /// </summary>
     public unsafe virtual BmSDK.Engine.NavMeshPathGoalEvaluator GetNavMeshPathGoalFromPool(BmSDK.Class GoalClass)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNavMeshPathGoalFromPool, "BmGame.RNavigationManager.GetNavMeshPathGoalFromPool");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNavMeshPathGoalFromPool, "BmGame.RNavigationManager.GetNavMeshPathGoalFromPool", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GoalClass, paramsPtr + 0);

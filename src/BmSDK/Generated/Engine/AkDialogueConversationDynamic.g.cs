@@ -78,14 +78,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         where TComponent : class, Framework.IScriptComponent<AkDialogueConversationDynamic>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetVoiceListForBindingIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoiceListForBindingIndex;
     /// <summary>
     /// Function: GetVoiceListForBindingIndex
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.AkDialogueVoice> GetVoiceListForBindingIndex(int OrderIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVoiceListForBindingIndex, "Engine.AkDialogueConversationDynamic.GetVoiceListForBindingIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVoiceListForBindingIndex, "Engine.AkDialogueConversationDynamic.GetVoiceListForBindingIndex", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OrderIndex, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.AkDialogueVoice>>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_IsResolved;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsResolved;
     /// <summary>
     /// Function: IsResolved
     /// </summary>
     public unsafe virtual bool IsResolved()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsResolved, "Engine.AkDialogueConversationDynamic.IsResolved");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsResolved, "Engine.AkDialogueConversationDynamic.IsResolved", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -114,14 +114,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Unresolve;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Unresolve;
     /// <summary>
     /// Function: Unresolve
     /// </summary>
     public unsafe virtual void Unresolve()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Unresolve, "Engine.AkDialogueConversationDynamic.Unresolve");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Unresolve, "Engine.AkDialogueConversationDynamic.Unresolve", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -135,14 +135,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return;
     }
 
-    private static BmSDK.Function __fn_AutoResolve;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoResolve;
     /// <summary>
     /// Function: AutoResolve
     /// </summary>
     public unsafe virtual bool AutoResolve(bool forceMultiVoiceConv = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutoResolve, "Engine.AkDialogueConversationDynamic.AutoResolve");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AutoResolve, "Engine.AkDialogueConversationDynamic.AutoResolve", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(forceMultiVoiceConv, paramsPtr + 0);
@@ -157,14 +157,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ResolveFromIds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveFromIds;
     /// <summary>
     /// Function: ResolveFromIds
     /// </summary>
     public unsafe virtual bool ResolveFromIds(BmSDK.TArray<int> spkrVoiceIds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolveFromIds, "Engine.AkDialogueConversationDynamic.ResolveFromIds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResolveFromIds, "Engine.AkDialogueConversationDynamic.ResolveFromIds", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(spkrVoiceIds, paramsPtr + 0);
@@ -179,14 +179,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_Resolve;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Resolve;
     /// <summary>
     /// Function: Resolve
     /// </summary>
     public unsafe virtual bool Resolve(BmSDK.TArray<BmSDK.Engine.AkDialogueVoice> spkrVoices)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Resolve, "Engine.AkDialogueConversationDynamic.Resolve");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Resolve, "Engine.AkDialogueConversationDynamic.Resolve", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(spkrVoices, paramsPtr + 0);
@@ -201,14 +201,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ResolveAll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolveAll;
     /// <summary>
     /// Function: ResolveAll
     /// </summary>
     public unsafe virtual bool ResolveAll(BmSDK.TArray<BmSDK.Engine.AkDialogueVoice> spkrVoices)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolveAll, "Engine.AkDialogueConversationDynamic.ResolveAll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResolveAll, "Engine.AkDialogueConversationDynamic.ResolveAll", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(spkrVoices, paramsPtr + 0);
@@ -223,14 +223,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetTimeSinceLastPlayed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSinceLastPlayed;
     /// <summary>
     /// Function: GetTimeSinceLastPlayed
     /// </summary>
     public unsafe virtual float GetTimeSinceLastPlayed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeSinceLastPlayed, "Engine.AkDialogueConversationDynamic.GetTimeSinceLastPlayed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimeSinceLastPlayed, "Engine.AkDialogueConversationDynamic.GetTimeSinceLastPlayed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -244,14 +244,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTotalPlayCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalPlayCount;
     /// <summary>
     /// Function: GetTotalPlayCount
     /// </summary>
     public unsafe virtual float GetTotalPlayCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTotalPlayCount, "Engine.AkDialogueConversationDynamic.GetTotalPlayCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTotalPlayCount, "Engine.AkDialogueConversationDynamic.GetTotalPlayCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -265,14 +265,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetMaxPlayCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxPlayCount;
     /// <summary>
     /// Function: GetMaxPlayCount
     /// </summary>
     public unsafe virtual float GetMaxPlayCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxPlayCount, "Engine.AkDialogueConversationDynamic.GetMaxPlayCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMaxPlayCount, "Engine.AkDialogueConversationDynamic.GetMaxPlayCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -286,14 +286,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDynamicVoiceCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDynamicVoiceCount;
     /// <summary>
     /// Function: GetDynamicVoiceCount
     /// </summary>
     public unsafe virtual int GetDynamicVoiceCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDynamicVoiceCount, "Engine.AkDialogueConversationDynamic.GetDynamicVoiceCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDynamicVoiceCount, "Engine.AkDialogueConversationDynamic.GetDynamicVoiceCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -307,14 +307,14 @@ public partial class AkDialogueConversationDynamic : BmSDK.Engine.AkDialogueSpee
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetVoiceCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVoiceCount;
     /// <summary>
     /// Function: GetVoiceCount
     /// </summary>
     public unsafe override int GetVoiceCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVoiceCount, "Engine.AkDialogueConversationDynamic.GetVoiceCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVoiceCount, "Engine.AkDialogueConversationDynamic.GetVoiceCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

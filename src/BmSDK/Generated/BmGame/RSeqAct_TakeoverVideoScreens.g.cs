@@ -91,42 +91,42 @@ public partial class RSeqAct_TakeoverVideoScreens : BmSDK.Engine.SeqAct_Latent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopTakeover;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopTakeover;
     /// <summary>
     /// Function: StopTakeover
     /// </summary>
     public unsafe virtual void StopTakeover()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTakeover, "BmGame.RSeqAct_TakeoverVideoScreens.StopTakeover");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopTakeover, "BmGame.RSeqAct_TakeoverVideoScreens.StopTakeover", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartTakeover;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTakeover;
     /// <summary>
     /// Function: StartTakeover
     /// </summary>
     public unsafe virtual void StartTakeover()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTakeover, "BmGame.RSeqAct_TakeoverVideoScreens.StartTakeover");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTakeover, "BmGame.RSeqAct_TakeoverVideoScreens.StartTakeover", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTransitionValOnScreens;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTransitionValOnScreens;
     /// <summary>
     /// Function: SetTransitionValOnScreens
     /// </summary>
     public unsafe virtual void SetTransitionValOnScreens(float val)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTransitionValOnScreens, "BmGame.RSeqAct_TakeoverVideoScreens.SetTransitionValOnScreens");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTransitionValOnScreens, "BmGame.RSeqAct_TakeoverVideoScreens.SetTransitionValOnScreens", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(val, paramsPtr + 0);
@@ -134,14 +134,14 @@ public partial class RSeqAct_TakeoverVideoScreens : BmSDK.Engine.SeqAct_Latent, 
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTransition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTransition;
     /// <summary>
     /// Function: UpdateTransition
     /// </summary>
     public unsafe virtual void UpdateTransition(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTransition, "BmGame.RSeqAct_TakeoverVideoScreens.UpdateTransition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTransition, "BmGame.RSeqAct_TakeoverVideoScreens.UpdateTransition", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -149,28 +149,28 @@ public partial class RSeqAct_TakeoverVideoScreens : BmSDK.Engine.SeqAct_Latent, 
         return;
     }
 
-    private static BmSDK.Function __fn_CheckInputLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckInputLinks;
     /// <summary>
     /// Function: CheckInputLinks
     /// </summary>
     public unsafe virtual void CheckInputLinks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckInputLinks, "BmGame.RSeqAct_TakeoverVideoScreens.CheckInputLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckInputLinks, "BmGame.RSeqAct_TakeoverVideoScreens.CheckInputLinks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_TakeoverVideoScreens.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_TakeoverVideoScreens.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

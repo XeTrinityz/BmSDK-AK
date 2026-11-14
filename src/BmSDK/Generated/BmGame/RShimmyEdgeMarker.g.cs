@@ -78,14 +78,14 @@ public partial class RShimmyEdgeMarker : BmSDK.BmGame.RSnapToPositionActor, BmSD
         where TComponent : class, Framework.IScriptComponent<RShimmyEdgeMarker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetupFromActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupFromActor;
     /// <summary>
     /// Function: SetupFromActor
     /// </summary>
     public unsafe virtual void SetupFromActor(BmSDK.Engine.Actor inActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupFromActor, "BmGame.RShimmyEdgeMarker.SetupFromActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupFromActor, "BmGame.RShimmyEdgeMarker.SetupFromActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inActor, paramsPtr + 0);
@@ -93,28 +93,28 @@ public partial class RShimmyEdgeMarker : BmSDK.BmGame.RSnapToPositionActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RShimmyEdgeMarker.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RShimmyEdgeMarker.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterShimmyEdgeMarker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterShimmyEdgeMarker;
     /// <summary>
     /// Function: RegisterShimmyEdgeMarker
     /// </summary>
     public unsafe virtual void RegisterShimmyEdgeMarker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterShimmyEdgeMarker, "BmGame.RShimmyEdgeMarker.RegisterShimmyEdgeMarker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterShimmyEdgeMarker, "BmGame.RShimmyEdgeMarker.RegisterShimmyEdgeMarker", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -128,14 +128,14 @@ public partial class RShimmyEdgeMarker : BmSDK.BmGame.RSnapToPositionActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetupEndPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupEndPoints;
     /// <summary>
     /// Function: SetupEndPoints
     /// </summary>
     public unsafe virtual void SetupEndPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupEndPoints, "BmGame.RShimmyEdgeMarker.SetupEndPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupEndPoints, "BmGame.RShimmyEdgeMarker.SetupEndPoints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -13,7 +13,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: AttemptGetDownloadFileSize
     /// </summary>
-    public unsafe int AttemptGetDownloadFileSize(BmSDK.FString Filename, bool KeepHandle = default);
+    public unsafe int AttemptGetDownloadFileSize(BmSDK.FStringArg Filename, bool KeepHandle = default);
 
     /// <summary>
     /// Function: FindFolders
@@ -23,12 +23,12 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: FindFiles
     /// </summary>
-    public unsafe void FindFiles(out BmSDK.TArray<BmSDK.FString> Results, BmSDK.FString Subfolder);
+    public unsafe void FindFiles(out BmSDK.TArray<BmSDK.FString> Results, BmSDK.FStringArg Subfolder);
 
     /// <summary>
     /// Function: DeleteTitleFile
     /// </summary>
-    public unsafe bool DeleteTitleFile(BmSDK.FString Filename);
+    public unsafe bool DeleteTitleFile(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: DeleteTitleFiles
@@ -38,7 +38,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: ClearCachedFile
     /// </summary>
-    public unsafe bool ClearCachedFile(BmSDK.FString Filename);
+    public unsafe bool ClearCachedFile(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: ClearCachedFiles
@@ -48,22 +48,22 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: GetTitleFileLogicalName
     /// </summary>
-    public unsafe BmSDK.FString GetTitleFileLogicalName(BmSDK.FString Filename);
+    public unsafe BmSDK.FString GetTitleFileLogicalName(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: GetTitleFileHash
     /// </summary>
-    public unsafe BmSDK.FString GetTitleFileHash(BmSDK.FString Filename);
+    public unsafe BmSDK.FString GetTitleFileHash(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: GetTitleFileState
     /// </summary>
-    public unsafe BmSDK.Engine.OnlineSubsystem.EOnlineEnumerationReadState GetTitleFileState(BmSDK.FString Filename);
+    public unsafe BmSDK.Engine.OnlineSubsystem.EOnlineEnumerationReadState GetTitleFileState(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: GetTitleFileContents
     /// </summary>
-    public unsafe bool GetTitleFileContents(BmSDK.FString Filename, out BmSDK.TArray<byte> FileContents);
+    public unsafe bool GetTitleFileContents(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents);
 
     /// <summary>
     /// Function: AddDeleteTitleFileCompleteDelegate
@@ -78,7 +78,7 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnDeleteTitleFileComplete
     /// </summary>
-    public unsafe void OnDeleteTitleFileComplete(bool bWasSuccessful, BmSDK.FString Filename, float timeTaken);
+    public unsafe void OnDeleteTitleFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, float timeTaken);
 
     /// <summary>
     /// Function: ClearSaveTitleFileCompleteDelegate
@@ -93,12 +93,12 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnSaveTitleFileComplete
     /// </summary>
-    public unsafe void OnSaveTitleFileComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken);
+    public unsafe void OnSaveTitleFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken);
 
     /// <summary>
     /// Function: SaveTitleFile
     /// </summary>
-    public unsafe bool SaveTitleFile(BmSDK.FString Filename, BmSDK.FString LogicalName, BmSDK.TArray<byte> FileContents);
+    public unsafe bool SaveTitleFile(BmSDK.FStringArg Filename, BmSDK.FStringArg LogicalName, BmSDK.TArray<byte> FileContents);
 
     /// <summary>
     /// Function: ClearLoadTitleFileCompleteDelegate
@@ -113,10 +113,10 @@ public partial interface OnlineTitleFileCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnLoadTitleFileComplete
     /// </summary>
-    public unsafe void OnLoadTitleFileComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesTransferred, float timeTaken);
+    public unsafe void OnLoadTitleFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesTransferred, float timeTaken);
 
     /// <summary>
     /// Function: LoadTitleFile
     /// </summary>
-    public unsafe bool LoadTitleFile(BmSDK.FString Filename);
+    public unsafe bool LoadTitleFile(BmSDK.FStringArg Filename);
 }

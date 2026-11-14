@@ -78,14 +78,14 @@ public partial class MorphNodePose : BmSDK.Engine.MorphNodeBase, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<MorphNodePose>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetMorphTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMorphTarget;
     /// <summary>
     /// Function: SetMorphTarget
     /// </summary>
     public unsafe virtual void SetMorphTarget(BmSDK.FName MorphTargetName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMorphTarget, "Engine.MorphNodePose.SetMorphTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMorphTarget, "Engine.MorphNodePose.SetMorphTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MorphTargetName, paramsPtr + 0);

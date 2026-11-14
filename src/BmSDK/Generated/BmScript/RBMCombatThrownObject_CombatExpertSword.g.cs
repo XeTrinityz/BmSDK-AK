@@ -78,14 +78,14 @@ public partial class RBMCombatThrownObject_CombatExpertSword : BmSDK.BmGame.RBMC
         where TComponent : class, Framework.IScriptComponent<RBMCombatThrownObject_CombatExpertSword>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanBePickedUpBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBePickedUpBy;
     /// <summary>
     /// Function: CanBePickedUpBy
     /// </summary>
     public unsafe override bool CanBePickedUpBy(BmSDK.BmGame.RBMPawnAI NewUser, bool bInCombat, bool bTaunting)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBePickedUpBy, "BmScript.RBMCombatThrownObject_CombatExpertSword.CanBePickedUpBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBePickedUpBy, "BmScript.RBMCombatThrownObject_CombatExpertSword.CanBePickedUpBy", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewUser, paramsPtr + 0);

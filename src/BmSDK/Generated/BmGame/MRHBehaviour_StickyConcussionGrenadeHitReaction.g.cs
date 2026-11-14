@@ -78,42 +78,42 @@ public partial class MRHBehaviour_StickyConcussionGrenadeHitReaction : BmSDK.BmG
         where TComponent : class, Framework.IScriptComponent<MRHBehaviour_StickyConcussionGrenadeHitReaction>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ExitStickyConcussionGrenadeHitReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitStickyConcussionGrenadeHitReaction;
     /// <summary>
     /// Function: ExitStickyConcussionGrenadeHitReaction
     /// </summary>
     public unsafe virtual void ExitStickyConcussionGrenadeHitReaction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitStickyConcussionGrenadeHitReaction, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.ExitStickyConcussionGrenadeHitReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitStickyConcussionGrenadeHitReaction, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.ExitStickyConcussionGrenadeHitReaction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetStunDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetStunDuration;
     /// <summary>
     /// Function: ResetStunDuration
     /// </summary>
     public unsafe virtual void ResetStunDuration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetStunDuration, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.ResetStunDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetStunDuration, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.ResetStunDuration", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise(BmSDK.BmGame.RPawnCombat.FDamageInfo NewDmgInfo, bool bNewInterruptedHitReaction = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.Initialise", this);
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDmgInfo, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class MRHBehaviour_StickyConcussionGrenadeHitReaction : BmSDK.BmG
         return;
     }
 
-    private static BmSDK.Function __fn_AwareOfPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AwareOfPlayer;
     /// <summary>
     /// Function: AwareOfPlayer
     /// </summary>
     public unsafe override bool AwareOfPlayer(BmSDK.Engine.Actor Player, BmSDK.Class dmgType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AwareOfPlayer, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.AwareOfPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AwareOfPlayer, "BmGame.MRHBehaviour_StickyConcussionGrenadeHitReaction.AwareOfPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);

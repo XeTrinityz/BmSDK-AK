@@ -78,56 +78,56 @@ public partial class RBMWeaponRifle_BagCarrier : BmSDK.BmScript.RBMWeaponRiflePr
         where TComponent : class, Framework.IScriptComponent<RBMWeaponRifle_BagCarrier>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetPowerCellWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPowerCellWeaponConfig;
     /// <summary>
     /// Function: GetPowerCellWeaponConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig GetPowerCellWeaponConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPowerCellWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetPowerCellWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPowerCellWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetPowerCellWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[880];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetHardDriveWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHardDriveWeaponConfig;
     /// <summary>
     /// Function: GetHardDriveWeaponConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig GetHardDriveWeaponConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHardDriveWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetHardDriveWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHardDriveWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetHardDriveWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[880];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBankExtraWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBankExtraWeaponConfig;
     /// <summary>
     /// Function: GetBankExtraWeaponConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RWeaponConfig GetBankExtraWeaponConfig()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBankExtraWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetBankExtraWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBankExtraWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.GetBankExtraWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[3720];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CreateWeaponConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateWeaponConfig;
     /// <summary>
     /// Function: CreateWeaponConfig
     /// </summary>
     public unsafe override BmSDK.BmGame.RWeaponConfig CreateWeaponConfig(BmSDK.GameObject NewOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.CreateWeaponConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateWeaponConfig, "BmScript.RBMWeaponRifle_BagCarrier.CreateWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewOwner, paramsPtr + 0);

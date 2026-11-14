@@ -78,14 +78,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<OnlineAuthInterfaceImpl>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetServerAddr;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetServerAddr;
     /// <summary>
     /// Function: GetServerAddr
     /// </summary>
     public unsafe virtual bool GetServerAddr(out int OutServerIP, out int OutServerPort)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetServerAddr, "IpDrv.OnlineAuthInterfaceImpl.GetServerAddr");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetServerAddr, "IpDrv.OnlineAuthInterfaceImpl.GetServerAddr", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutServerIP);
@@ -98,14 +98,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetServerUniqueId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetServerUniqueId;
     /// <summary>
     /// Function: GetServerUniqueId
     /// </summary>
     public unsafe virtual bool GetServerUniqueId(out BmSDK.Engine.OnlineSubsystem.FUniqueNetId OutServerUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetServerUniqueId, "IpDrv.OnlineAuthInterfaceImpl.GetServerUniqueId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetServerUniqueId, "IpDrv.OnlineAuthInterfaceImpl.GetServerUniqueId", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutServerUID);
@@ -115,14 +115,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindLocalServerAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindLocalServerAuthSession;
     /// <summary>
     /// Function: FindLocalServerAuthSession
     /// </summary>
     public unsafe virtual bool FindLocalServerAuthSession(BmSDK.Engine.Player ClientConnection, out BmSDK.Engine.OnlineAuthInterface.FLocalAuthSession OutSessionInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindLocalServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindLocalServerAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindLocalServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindLocalServerAuthSession", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_FindServerAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindServerAuthSession;
     /// <summary>
     /// Function: FindServerAuthSession
     /// </summary>
     public unsafe virtual bool FindServerAuthSession(BmSDK.Engine.Player ServerConnection, out BmSDK.Engine.OnlineAuthInterface.FAuthSession OutSessionInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindServerAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindServerAuthSession", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerConnection, paramsPtr + 0);
@@ -161,14 +161,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_FindLocalClientAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindLocalClientAuthSession;
     /// <summary>
     /// Function: FindLocalClientAuthSession
     /// </summary>
     public unsafe virtual bool FindLocalClientAuthSession(BmSDK.Engine.Player ServerConnection, out BmSDK.Engine.OnlineAuthInterface.FLocalAuthSession OutSessionInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindLocalClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindLocalClientAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindLocalClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindLocalClientAuthSession", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerConnection, paramsPtr + 0);
@@ -184,14 +184,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_FindClientAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClientAuthSession;
     /// <summary>
     /// Function: FindClientAuthSession
     /// </summary>
     public unsafe virtual bool FindClientAuthSession(BmSDK.Engine.Player ClientConnection, out BmSDK.Engine.OnlineAuthInterface.FAuthSession OutSessionInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindClientAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.FindClientAuthSession", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -207,14 +207,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_EndAllRemoteServerAuthSessions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllRemoteServerAuthSessions;
     /// <summary>
     /// Function: EndAllRemoteServerAuthSessions
     /// </summary>
     public unsafe virtual void EndAllRemoteServerAuthSessions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndAllRemoteServerAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllRemoteServerAuthSessions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndAllRemoteServerAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllRemoteServerAuthSessions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -228,14 +228,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EndAllLocalServerAuthSessions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllLocalServerAuthSessions;
     /// <summary>
     /// Function: EndAllLocalServerAuthSessions
     /// </summary>
     public unsafe virtual void EndAllLocalServerAuthSessions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndAllLocalServerAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllLocalServerAuthSessions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndAllLocalServerAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllLocalServerAuthSessions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -249,14 +249,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EndRemoteServerAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndRemoteServerAuthSession;
     /// <summary>
     /// Function: EndRemoteServerAuthSession
     /// </summary>
     public unsafe virtual void EndRemoteServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndRemoteServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndRemoteServerAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndRemoteServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndRemoteServerAuthSession", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 0);
@@ -272,14 +272,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EndLocalServerAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndLocalServerAuthSession;
     /// <summary>
     /// Function: EndLocalServerAuthSession
     /// </summary>
     public unsafe virtual void EndLocalServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndLocalServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndLocalServerAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndLocalServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndLocalServerAuthSession", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientUID, paramsPtr + 0);
@@ -295,14 +295,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_VerifyServerAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyServerAuthSession;
     /// <summary>
     /// Function: VerifyServerAuthSession
     /// </summary>
     public unsafe virtual bool VerifyServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int AuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VerifyServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.VerifyServerAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VerifyServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.VerifyServerAuthSession", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 0);
@@ -312,14 +312,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_CreateServerAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateServerAuthSession;
     /// <summary>
     /// Function: CreateServerAuthSession
     /// </summary>
     public unsafe virtual bool CreateServerAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int ClientPort, out int OutAuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.CreateServerAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateServerAuthSession, "IpDrv.OnlineAuthInterfaceImpl.CreateServerAuthSession", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientUID, paramsPtr + 0);
@@ -332,14 +332,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_EndAllRemoteClientAuthSessions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllRemoteClientAuthSessions;
     /// <summary>
     /// Function: EndAllRemoteClientAuthSessions
     /// </summary>
     public unsafe virtual void EndAllRemoteClientAuthSessions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndAllRemoteClientAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllRemoteClientAuthSessions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndAllRemoteClientAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllRemoteClientAuthSessions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -353,14 +353,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EndAllLocalClientAuthSessions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndAllLocalClientAuthSessions;
     /// <summary>
     /// Function: EndAllLocalClientAuthSessions
     /// </summary>
     public unsafe virtual void EndAllLocalClientAuthSessions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndAllLocalClientAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllLocalClientAuthSessions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndAllLocalClientAuthSessions, "IpDrv.OnlineAuthInterfaceImpl.EndAllLocalClientAuthSessions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -374,14 +374,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EndRemoteClientAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndRemoteClientAuthSession;
     /// <summary>
     /// Function: EndRemoteClientAuthSession
     /// </summary>
     public unsafe virtual void EndRemoteClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndRemoteClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndRemoteClientAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndRemoteClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndRemoteClientAuthSession", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientUID, paramsPtr + 0);
@@ -397,14 +397,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_EndLocalClientAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndLocalClientAuthSession;
     /// <summary>
     /// Function: EndLocalClientAuthSession
     /// </summary>
     public unsafe virtual void EndLocalClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int ServerPort)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndLocalClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndLocalClientAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndLocalClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.EndLocalClientAuthSession", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 0);
@@ -421,14 +421,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_VerifyClientAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VerifyClientAuthSession;
     /// <summary>
     /// Function: VerifyClientAuthSession
     /// </summary>
     public unsafe virtual bool VerifyClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int ClientPort, int AuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VerifyClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.VerifyClientAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VerifyClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.VerifyClientAuthSession", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientUID, paramsPtr + 0);
@@ -439,14 +439,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_CreateClientAuthSession;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateClientAuthSession;
     /// <summary>
     /// Function: CreateClientAuthSession
     /// </summary>
     public unsafe virtual bool CreateClientAuthSession(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int ServerPort, bool bSecure, out int OutAuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.CreateClientAuthSession");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateClientAuthSession, "IpDrv.OnlineAuthInterfaceImpl.CreateClientAuthSession", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 0);
@@ -460,14 +460,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_SendServerAuthRetryRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendServerAuthRetryRequest;
     /// <summary>
     /// Function: SendServerAuthRetryRequest
     /// </summary>
     public unsafe virtual bool SendServerAuthRetryRequest()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendServerAuthRetryRequest, "IpDrv.OnlineAuthInterfaceImpl.SendServerAuthRetryRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendServerAuthRetryRequest, "IpDrv.OnlineAuthInterfaceImpl.SendServerAuthRetryRequest", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -481,14 +481,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SendClientAuthEndSessionRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendClientAuthEndSessionRequest;
     /// <summary>
     /// Function: SendClientAuthEndSessionRequest
     /// </summary>
     public unsafe virtual bool SendClientAuthEndSessionRequest(BmSDK.Engine.Player ClientConnection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendClientAuthEndSessionRequest, "IpDrv.OnlineAuthInterfaceImpl.SendClientAuthEndSessionRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendClientAuthEndSessionRequest, "IpDrv.OnlineAuthInterfaceImpl.SendClientAuthEndSessionRequest", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -503,14 +503,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SendServerAuthResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendServerAuthResponse;
     /// <summary>
     /// Function: SendServerAuthResponse
     /// </summary>
     public unsafe virtual bool SendServerAuthResponse(BmSDK.Engine.Player ClientConnection, int AuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendServerAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.SendServerAuthResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendServerAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.SendServerAuthResponse", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -526,14 +526,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SendClientAuthResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendClientAuthResponse;
     /// <summary>
     /// Function: SendClientAuthResponse
     /// </summary>
     public unsafe virtual bool SendClientAuthResponse(int AuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendClientAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.SendClientAuthResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendClientAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.SendClientAuthResponse", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AuthTicketUID, paramsPtr + 0);
@@ -548,14 +548,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SendServerAuthRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendServerAuthRequest;
     /// <summary>
     /// Function: SendServerAuthRequest
     /// </summary>
     public unsafe virtual bool SendServerAuthRequest(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendServerAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.SendServerAuthRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendServerAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.SendServerAuthRequest", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 0);
@@ -563,14 +563,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SendClientAuthRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendClientAuthRequest;
     /// <summary>
     /// Function: SendClientAuthRequest
     /// </summary>
     public unsafe virtual bool SendClientAuthRequest(BmSDK.Engine.Player ClientConnection, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendClientAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.SendClientAuthRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendClientAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.SendClientAuthRequest", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -579,14 +579,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ClearServerConnectionCloseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearServerConnectionCloseDelegate;
     /// <summary>
     /// Function: ClearServerConnectionCloseDelegate
     /// </summary>
     public unsafe virtual void ClearServerConnectionCloseDelegate(System.IntPtr ServerConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearServerConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerConnectionCloseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerConnectionCloseDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerConnectionCloseDelegate, paramsPtr + 0);
@@ -594,14 +594,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddServerConnectionCloseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddServerConnectionCloseDelegate;
     /// <summary>
     /// Function: AddServerConnectionCloseDelegate
     /// </summary>
     public unsafe virtual void AddServerConnectionCloseDelegate(System.IntPtr ServerConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddServerConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerConnectionCloseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerConnectionCloseDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerConnectionCloseDelegate, paramsPtr + 0);
@@ -609,14 +609,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnServerConnectionClose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnServerConnectionClose;
     /// <summary>
     /// Function: OnServerConnectionClose
     /// </summary>
     public unsafe virtual void OnServerConnectionClose(BmSDK.Engine.Player ServerConnection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnServerConnectionClose, "IpDrv.OnlineAuthInterfaceImpl.OnServerConnectionClose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnServerConnectionClose, "IpDrv.OnlineAuthInterfaceImpl.OnServerConnectionClose", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerConnection, paramsPtr + 0);
@@ -624,14 +624,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearClientConnectionCloseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearClientConnectionCloseDelegate;
     /// <summary>
     /// Function: ClearClientConnectionCloseDelegate
     /// </summary>
     public unsafe virtual void ClearClientConnectionCloseDelegate(System.IntPtr ClientConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearClientConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientConnectionCloseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientConnectionCloseDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnectionCloseDelegate, paramsPtr + 0);
@@ -639,14 +639,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddClientConnectionCloseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClientConnectionCloseDelegate;
     /// <summary>
     /// Function: AddClientConnectionCloseDelegate
     /// </summary>
     public unsafe virtual void AddClientConnectionCloseDelegate(System.IntPtr ClientConnectionCloseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClientConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientConnectionCloseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientConnectionCloseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientConnectionCloseDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnectionCloseDelegate, paramsPtr + 0);
@@ -654,14 +654,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnClientConnectionClose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnClientConnectionClose;
     /// <summary>
     /// Function: OnClientConnectionClose
     /// </summary>
     public unsafe virtual void OnClientConnectionClose(BmSDK.Engine.Player ClientConnection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClientConnectionClose, "IpDrv.OnlineAuthInterfaceImpl.OnClientConnectionClose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnClientConnectionClose, "IpDrv.OnlineAuthInterfaceImpl.OnClientConnectionClose", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -669,14 +669,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearServerAuthRetryRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearServerAuthRetryRequestDelegate;
     /// <summary>
     /// Function: ClearServerAuthRetryRequestDelegate
     /// </summary>
     public unsafe virtual void ClearServerAuthRetryRequestDelegate(System.IntPtr ServerAuthRetryRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearServerAuthRetryRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthRetryRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthRetryRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthRetryRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthRetryRequestDelegate, paramsPtr + 0);
@@ -684,14 +684,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddServerAuthRetryRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddServerAuthRetryRequestDelegate;
     /// <summary>
     /// Function: AddServerAuthRetryRequestDelegate
     /// </summary>
     public unsafe virtual void AddServerAuthRetryRequestDelegate(System.IntPtr ServerAuthRetryRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddServerAuthRetryRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthRetryRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthRetryRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthRetryRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthRetryRequestDelegate, paramsPtr + 0);
@@ -699,14 +699,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnServerAuthRetryRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnServerAuthRetryRequest;
     /// <summary>
     /// Function: OnServerAuthRetryRequest
     /// </summary>
     public unsafe virtual void OnServerAuthRetryRequest(BmSDK.Engine.Player ClientConnection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnServerAuthRetryRequest, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthRetryRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnServerAuthRetryRequest, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthRetryRequest", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -714,14 +714,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearClientAuthEndSessionRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearClientAuthEndSessionRequestDelegate;
     /// <summary>
     /// Function: ClearClientAuthEndSessionRequestDelegate
     /// </summary>
     public unsafe virtual void ClearClientAuthEndSessionRequestDelegate(System.IntPtr ClientAuthEndSessionRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearClientAuthEndSessionRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthEndSessionRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthEndSessionRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthEndSessionRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthEndSessionRequestDelegate, paramsPtr + 0);
@@ -729,14 +729,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddClientAuthEndSessionRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClientAuthEndSessionRequestDelegate;
     /// <summary>
     /// Function: AddClientAuthEndSessionRequestDelegate
     /// </summary>
     public unsafe virtual void AddClientAuthEndSessionRequestDelegate(System.IntPtr ClientAuthEndSessionRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClientAuthEndSessionRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthEndSessionRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthEndSessionRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthEndSessionRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthEndSessionRequestDelegate, paramsPtr + 0);
@@ -744,14 +744,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnClientAuthEndSessionRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnClientAuthEndSessionRequest;
     /// <summary>
     /// Function: OnClientAuthEndSessionRequest
     /// </summary>
     public unsafe virtual void OnClientAuthEndSessionRequest(BmSDK.Engine.Player ServerConnection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClientAuthEndSessionRequest, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthEndSessionRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnClientAuthEndSessionRequest, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthEndSessionRequest", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerConnection, paramsPtr + 0);
@@ -759,14 +759,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearServerAuthCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearServerAuthCompleteDelegate;
     /// <summary>
     /// Function: ClearServerAuthCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearServerAuthCompleteDelegate(System.IntPtr ServerAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearServerAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthCompleteDelegate, paramsPtr + 0);
@@ -774,14 +774,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddServerAuthCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddServerAuthCompleteDelegate;
     /// <summary>
     /// Function: AddServerAuthCompleteDelegate
     /// </summary>
     public unsafe virtual void AddServerAuthCompleteDelegate(System.IntPtr ServerAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddServerAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthCompleteDelegate, paramsPtr + 0);
@@ -789,32 +789,33 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnServerAuthComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnServerAuthComplete;
     /// <summary>
     /// Function: OnServerAuthComplete
     /// </summary>
-    public unsafe virtual void OnServerAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, BmSDK.Engine.Player ServerConnection, BmSDK.FString ExtraInfo)
+    public unsafe virtual void OnServerAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, BmSDK.Engine.Player ServerConnection, BmSDK.FStringArg ExtraInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnServerAuthComplete, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnServerAuthComplete, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthComplete", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuccess, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerConnection, paramsPtr + 12);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ExtraInfo, paramsPtr + 20);
+        ExtraInfo.WriteTo(paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearClientAuthCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearClientAuthCompleteDelegate;
     /// <summary>
     /// Function: ClearClientAuthCompleteDelegate
     /// </summary>
     public unsafe virtual void ClearClientAuthCompleteDelegate(System.IntPtr ClientAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearClientAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthCompleteDelegate, paramsPtr + 0);
@@ -822,14 +823,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddClientAuthCompleteDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClientAuthCompleteDelegate;
     /// <summary>
     /// Function: AddClientAuthCompleteDelegate
     /// </summary>
     public unsafe virtual void AddClientAuthCompleteDelegate(System.IntPtr ClientAuthCompleteDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClientAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthCompleteDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthCompleteDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthCompleteDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthCompleteDelegate, paramsPtr + 0);
@@ -837,32 +838,33 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnClientAuthComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnClientAuthComplete;
     /// <summary>
     /// Function: OnClientAuthComplete
     /// </summary>
-    public unsafe virtual void OnClientAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, BmSDK.Engine.Player ClientConnection, BmSDK.FString ExtraInfo)
+    public unsafe virtual void OnClientAuthComplete(bool bSuccess, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, BmSDK.Engine.Player ClientConnection, BmSDK.FStringArg ExtraInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClientAuthComplete, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnClientAuthComplete, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthComplete", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuccess, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientUID, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 12);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ExtraInfo, paramsPtr + 20);
+        ExtraInfo.WriteTo(paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearServerAuthResponseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearServerAuthResponseDelegate;
     /// <summary>
     /// Function: ClearServerAuthResponseDelegate
     /// </summary>
     public unsafe virtual void ClearServerAuthResponseDelegate(System.IntPtr ServerAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearServerAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthResponseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthResponseDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthResponseDelegate, paramsPtr + 0);
@@ -870,14 +872,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddServerAuthResponseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddServerAuthResponseDelegate;
     /// <summary>
     /// Function: AddServerAuthResponseDelegate
     /// </summary>
     public unsafe virtual void AddServerAuthResponseDelegate(System.IntPtr ServerAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddServerAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthResponseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthResponseDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthResponseDelegate, paramsPtr + 0);
@@ -885,14 +887,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnServerAuthResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnServerAuthResponse;
     /// <summary>
     /// Function: OnServerAuthResponse
     /// </summary>
     public unsafe virtual void OnServerAuthResponse(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int AuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnServerAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnServerAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthResponse", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 0);
@@ -902,14 +904,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearClientAuthResponseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearClientAuthResponseDelegate;
     /// <summary>
     /// Function: ClearClientAuthResponseDelegate
     /// </summary>
     public unsafe virtual void ClearClientAuthResponseDelegate(System.IntPtr ClientAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearClientAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthResponseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthResponseDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthResponseDelegate, paramsPtr + 0);
@@ -917,14 +919,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddClientAuthResponseDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClientAuthResponseDelegate;
     /// <summary>
     /// Function: AddClientAuthResponseDelegate
     /// </summary>
     public unsafe virtual void AddClientAuthResponseDelegate(System.IntPtr ClientAuthResponseDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClientAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthResponseDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthResponseDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthResponseDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthResponseDelegate, paramsPtr + 0);
@@ -932,14 +934,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnClientAuthResponse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnClientAuthResponse;
     /// <summary>
     /// Function: OnClientAuthResponse
     /// </summary>
     public unsafe virtual void OnClientAuthResponse(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int AuthTicketUID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClientAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthResponse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnClientAuthResponse, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthResponse", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientUID, paramsPtr + 0);
@@ -949,14 +951,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearServerAuthRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearServerAuthRequestDelegate;
     /// <summary>
     /// Function: ClearServerAuthRequestDelegate
     /// </summary>
     public unsafe virtual void ClearServerAuthRequestDelegate(System.IntPtr ServerAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearServerAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearServerAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearServerAuthRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthRequestDelegate, paramsPtr + 0);
@@ -964,14 +966,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddServerAuthRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddServerAuthRequestDelegate;
     /// <summary>
     /// Function: AddServerAuthRequestDelegate
     /// </summary>
     public unsafe virtual void AddServerAuthRequestDelegate(System.IntPtr ServerAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddServerAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddServerAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddServerAuthRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerAuthRequestDelegate, paramsPtr + 0);
@@ -979,14 +981,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnServerAuthRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnServerAuthRequest;
     /// <summary>
     /// Function: OnServerAuthRequest
     /// </summary>
     public unsafe virtual void OnServerAuthRequest(BmSDK.Engine.Player ClientConnection, BmSDK.Engine.OnlineSubsystem.FUniqueNetId ClientUID, int ClientIP, int ClientPort)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnServerAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnServerAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.OnServerAuthRequest", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientConnection, paramsPtr + 0);
@@ -997,14 +999,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearClientAuthRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearClientAuthRequestDelegate;
     /// <summary>
     /// Function: ClearClientAuthRequestDelegate
     /// </summary>
     public unsafe virtual void ClearClientAuthRequestDelegate(System.IntPtr ClientAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearClientAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearClientAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearClientAuthRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthRequestDelegate, paramsPtr + 0);
@@ -1012,14 +1014,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddClientAuthRequestDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClientAuthRequestDelegate;
     /// <summary>
     /// Function: AddClientAuthRequestDelegate
     /// </summary>
     public unsafe virtual void AddClientAuthRequestDelegate(System.IntPtr ClientAuthRequestDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClientAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthRequestDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClientAuthRequestDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddClientAuthRequestDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClientAuthRequestDelegate, paramsPtr + 0);
@@ -1027,14 +1029,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnClientAuthRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnClientAuthRequest;
     /// <summary>
     /// Function: OnClientAuthRequest
     /// </summary>
     public unsafe virtual void OnClientAuthRequest(BmSDK.Engine.OnlineSubsystem.FUniqueNetId ServerUID, int ServerIP, int ServerPort, bool bSecure)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnClientAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnClientAuthRequest, "IpDrv.OnlineAuthInterfaceImpl.OnClientAuthRequest", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ServerUID, paramsPtr + 0);
@@ -1045,14 +1047,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearAuthReadyDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAuthReadyDelegate;
     /// <summary>
     /// Function: ClearAuthReadyDelegate
     /// </summary>
     public unsafe virtual void ClearAuthReadyDelegate(System.IntPtr AuthReadyDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAuthReadyDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearAuthReadyDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAuthReadyDelegate, "IpDrv.OnlineAuthInterfaceImpl.ClearAuthReadyDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AuthReadyDelegate, paramsPtr + 0);
@@ -1060,14 +1062,14 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_AddAuthReadyDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAuthReadyDelegate;
     /// <summary>
     /// Function: AddAuthReadyDelegate
     /// </summary>
     public unsafe virtual void AddAuthReadyDelegate(System.IntPtr AuthReadyDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAuthReadyDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddAuthReadyDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAuthReadyDelegate, "IpDrv.OnlineAuthInterfaceImpl.AddAuthReadyDelegate", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AuthReadyDelegate, paramsPtr + 0);
@@ -1075,28 +1077,28 @@ public partial class OnlineAuthInterfaceImpl : BmSDK.GameObject, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnAuthReady;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAuthReady;
     /// <summary>
     /// Function: OnAuthReady
     /// </summary>
     public unsafe virtual void OnAuthReady()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAuthReady, "IpDrv.OnlineAuthInterfaceImpl.OnAuthReady");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAuthReady, "IpDrv.OnlineAuthInterfaceImpl.OnAuthReady", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsReady;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsReady;
     /// <summary>
     /// Function: IsReady
     /// </summary>
     public unsafe virtual bool IsReady()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsReady, "IpDrv.OnlineAuthInterfaceImpl.IsReady");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsReady, "IpDrv.OnlineAuthInterfaceImpl.IsReady", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

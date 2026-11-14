@@ -78,14 +78,14 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RPresurePad>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnTogglePressurePad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnTogglePressurePad;
     /// <summary>
     /// Function: OnTogglePressurePad
     /// </summary>
     public unsafe virtual void OnTogglePressurePad(BmSDK.BmScript.RSeqAct_TogglePressurePad ToggleAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnTogglePressurePad, "BmScript.RPresurePad.OnTogglePressurePad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnTogglePressurePad, "BmScript.RPresurePad.OnTogglePressurePad", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ToggleAction, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggleValidVoiceSynthesiserTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggleValidVoiceSynthesiserTarget;
     /// <summary>
     /// Function: OnToggleValidVoiceSynthesiserTarget
     /// </summary>
     public unsafe virtual void OnToggleValidVoiceSynthesiserTarget(BmSDK.BmGame.RSeqAct_ToggleValidVoiceSynthesiserTarget ToggleAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggleValidVoiceSynthesiserTarget, "BmScript.RPresurePad.OnToggleValidVoiceSynthesiserTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggleValidVoiceSynthesiserTarget, "BmScript.RPresurePad.OnToggleValidVoiceSynthesiserTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ToggleAction, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RPresurePad.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RPresurePad.Tick", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_Detach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Detach;
     /// <summary>
     /// Function: Detach
     /// </summary>
     public unsafe override void Detach(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Detach, "BmScript.RPresurePad.Detach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Detach, "BmScript.RPresurePad.Detach", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_Attach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Attach;
     /// <summary>
     /// Function: Attach
     /// </summary>
     public unsafe override void Attach(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Attach, "BmScript.RPresurePad.Attach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Attach, "BmScript.RPresurePad.Attach", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -153,14 +153,14 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ResetPressurePadToWaitingForInputState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetPressurePadToWaitingForInputState;
     /// <summary>
     /// Function: ResetPressurePadToWaitingForInputState
     /// </summary>
     public unsafe virtual void ResetPressurePadToWaitingForInputState(bool bSilent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetPressurePadToWaitingForInputState, "BmScript.RPresurePad.ResetPressurePadToWaitingForInputState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetPressurePadToWaitingForInputState, "BmScript.RPresurePad.ResetPressurePadToWaitingForInputState", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSilent, paramsPtr + 0);
@@ -168,28 +168,28 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetActivatedMat;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetActivatedMat;
     /// <summary>
     /// Function: SetActivatedMat
     /// </summary>
     public unsafe virtual void SetActivatedMat()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetActivatedMat, "BmScript.RPresurePad.SetActivatedMat");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetActivatedMat, "BmScript.RPresurePad.SetActivatedMat", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerPressurePad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPressurePad;
     /// <summary>
     /// Function: TriggerPressurePad
     /// </summary>
     public unsafe virtual void TriggerPressurePad(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPressurePad, "BmScript.RPresurePad.TriggerPressurePad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPressurePad, "BmScript.RPresurePad.TriggerPressurePad", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -197,14 +197,14 @@ public partial class RPresurePad : BmSDK.BmGame.RPresurePadBase, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPresurePad.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RPresurePad.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

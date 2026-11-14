@@ -73,14 +73,14 @@ public partial class RBMPathNode_SpecialMove : BmSDK.BmGame.RPathNode, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RBMPathNode_SpecialMove>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnlockSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlockSlot;
     /// <summary>
     /// Function: UnlockSlot
     /// </summary>
     public unsafe virtual void UnlockSlot(BmSDK.BmGame.RPawn User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlockSlot, "BmGame.RBMPathNode_SpecialMove.UnlockSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlockSlot, "BmGame.RBMPathNode_SpecialMove.UnlockSlot", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RBMPathNode_SpecialMove : BmSDK.BmGame.RPathNode, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_GetDynamicMoveSlotFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDynamicMoveSlotFor;
     /// <summary>
     /// Function: GetDynamicMoveSlotFor
     /// </summary>
     public unsafe virtual bool GetDynamicMoveSlotFor(BmSDK.BmGame.RPawn User, System.Numerics.Vector3 DestPoint, out System.Numerics.Vector3 SlotLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDynamicMoveSlotFor, "BmGame.RBMPathNode_SpecialMove.GetDynamicMoveSlotFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDynamicMoveSlotFor, "BmGame.RBMPathNode_SpecialMove.GetDynamicMoveSlotFor", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RBMPathNode_SpecialMove : BmSDK.BmGame.RPathNode, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_ReachedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReachedBy;
     /// <summary>
     /// Function: ReachedBy
     /// </summary>
     public unsafe virtual bool ReachedBy(BmSDK.BmGame.RPawn TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReachedBy, "BmGame.RBMPathNode_SpecialMove.ReachedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReachedBy, "BmGame.RBMPathNode_SpecialMove.ReachedBy", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -122,28 +122,28 @@ public partial class RBMPathNode_SpecialMove : BmSDK.BmGame.RPathNode, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetUsePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUsePosition;
     /// <summary>
     /// Function: GetUsePosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetUsePosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUsePosition, "BmGame.RBMPathNode_SpecialMove.GetUsePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUsePosition, "BmGame.RBMPathNode_SpecialMove.GetUsePosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanUseSpecialMoveNode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseSpecialMoveNode;
     /// <summary>
     /// Function: CanUseSpecialMoveNode
     /// </summary>
     public unsafe virtual bool CanUseSpecialMoveNode(BmSDK.BmGame.RBMAIController User)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseSpecialMoveNode, "BmGame.RBMPathNode_SpecialMove.CanUseSpecialMoveNode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUseSpecialMoveNode, "BmGame.RBMPathNode_SpecialMove.CanUseSpecialMoveNode", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);

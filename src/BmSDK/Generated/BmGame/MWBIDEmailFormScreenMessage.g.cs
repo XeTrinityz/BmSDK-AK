@@ -78,28 +78,28 @@ public partial class MWBIDEmailFormScreenMessage : BmSDK.BmGame.MWBIDDataMessage
         where TComponent : class, Framework.IScriptComponent<MWBIDEmailFormScreenMessage>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Flush;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Flush;
     /// <summary>
     /// Function: Flush
     /// </summary>
     public unsafe override void Flush()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Flush, "BmGame.MWBIDEmailFormScreenMessage.Flush");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Flush, "BmGame.MWBIDEmailFormScreenMessage.Flush", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.MWBIDEmailFormScreenMessage.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.MWBIDEmailFormScreenMessage.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

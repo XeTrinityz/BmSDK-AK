@@ -78,14 +78,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<SkeletalMeshComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AddRandomTorqueImpulseToBodies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRandomTorqueImpulseToBodies;
     /// <summary>
     /// Function: AddRandomTorqueImpulseToBodies
     /// </summary>
     public unsafe virtual void AddRandomTorqueImpulseToBodies(float TorqueMin, float TorqueMax)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRandomTorqueImpulseToBodies, "Engine.SkeletalMeshComponent.AddRandomTorqueImpulseToBodies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRandomTorqueImpulseToBodies, "Engine.SkeletalMeshComponent.AddRandomTorqueImpulseToBodies", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TorqueMin, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent>>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetContactModification;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetContactModification;
     /// <summary>
     /// Function: SetContactModification
     /// </summary>
     public unsafe override void SetContactModification(bool isEnableContactModificationCallback)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetContactModification, "Engine.SkeletalMeshComponent.SetContactModification");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetContactModification, "Engine.SkeletalMeshComponent.SetContactModification", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(isEnableContactModificationCallback, paramsPtr + 0);
@@ -167,14 +167,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ResetRagdollCalmingMeasures;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetRagdollCalmingMeasures;
     /// <summary>
     /// Function: ResetRagdollCalmingMeasures
     /// </summary>
     public unsafe virtual void ResetRagdollCalmingMeasures()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetRagdollCalmingMeasures, "Engine.SkeletalMeshComponent.ResetRagdollCalmingMeasures");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetRagdollCalmingMeasures, "Engine.SkeletalMeshComponent.ResetRagdollCalmingMeasures", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -188,14 +188,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetDisableRagdollCalmingMeasures;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableRagdollCalmingMeasures;
     /// <summary>
     /// Function: SetDisableRagdollCalmingMeasures
     /// </summary>
     public unsafe virtual void SetDisableRagdollCalmingMeasures(bool bEnabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisableRagdollCalmingMeasures, "Engine.SkeletalMeshComponent.SetDisableRagdollCalmingMeasures");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisableRagdollCalmingMeasures, "Engine.SkeletalMeshComponent.SetDisableRagdollCalmingMeasures", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnabled, paramsPtr + 0);
@@ -210,14 +210,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetAreRagdollCalmingMeasuresDisabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAreRagdollCalmingMeasuresDisabled;
     /// <summary>
     /// Function: GetAreRagdollCalmingMeasuresDisabled
     /// </summary>
     public unsafe virtual bool GetAreRagdollCalmingMeasuresDisabled()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAreRagdollCalmingMeasuresDisabled, "Engine.SkeletalMeshComponent.GetAreRagdollCalmingMeasuresDisabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAreRagdollCalmingMeasuresDisabled, "Engine.SkeletalMeshComponent.GetAreRagdollCalmingMeasuresDisabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -231,14 +231,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetUseSimpleLineCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleLineCollision;
     /// <summary>
     /// Function: GetUseSimpleLineCollision
     /// </summary>
     public unsafe override bool GetUseSimpleLineCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUseSimpleLineCollision, "Engine.SkeletalMeshComponent.GetUseSimpleLineCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUseSimpleLineCollision, "Engine.SkeletalMeshComponent.GetUseSimpleLineCollision", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -252,14 +252,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetUseSimpleBoxCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUseSimpleBoxCollision;
     /// <summary>
     /// Function: GetUseSimpleBoxCollision
     /// </summary>
     public unsafe override bool GetUseSimpleBoxCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUseSimpleBoxCollision, "Engine.SkeletalMeshComponent.GetUseSimpleBoxCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUseSimpleBoxCollision, "Engine.SkeletalMeshComponent.GetUseSimpleBoxCollision", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -273,14 +273,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetDisableColourWrites;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDisableColourWrites;
     /// <summary>
     /// Function: SetDisableColourWrites
     /// </summary>
     public unsafe virtual void SetDisableColourWrites(bool bNewDisableColourWrites)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDisableColourWrites, "Engine.SkeletalMeshComponent.SetDisableColourWrites");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDisableColourWrites, "Engine.SkeletalMeshComponent.SetDisableColourWrites", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewDisableColourWrites, paramsPtr + 0);
@@ -295,14 +295,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetDepthBias;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDepthBias;
     /// <summary>
     /// Function: SetDepthBias
     /// </summary>
     public unsafe virtual void SetDepthBias(BmSDK.Engine.SkeletalMeshComponent.FDepthBiasData NewDepthBiasData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDepthBias, "Engine.SkeletalMeshComponent.SetDepthBias");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDepthBias, "Engine.SkeletalMeshComponent.SetDepthBias", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDepthBiasData, paramsPtr + 0);
@@ -317,14 +317,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetDepthBiasData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDepthBiasData;
     /// <summary>
     /// Function: GetDepthBiasData
     /// </summary>
     public unsafe virtual void GetDepthBiasData(out BmSDK.Engine.SkeletalMeshComponent.FDepthBiasData OutDepthBiasData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDepthBiasData, "Engine.SkeletalMeshComponent.GetDepthBiasData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDepthBiasData, "Engine.SkeletalMeshComponent.GetDepthBiasData", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out OutDepthBiasData);
@@ -341,14 +341,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
     /// Function: SetMaterial
     /// </summary>
     public unsafe override void SetMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaterial, "Engine.SkeletalMeshComponent.SetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaterial, "Engine.SkeletalMeshComponent.SetMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -364,14 +364,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRotation;
     /// <summary>
     /// Function: GetRotation
     /// </summary>
     public unsafe override BmSDK.Rotator GetRotation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRotation, "Engine.SkeletalMeshComponent.GetRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRotation, "Engine.SkeletalMeshComponent.GetRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -385,14 +385,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPosition;
     /// <summary>
     /// Function: GetPosition
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPosition, "Engine.SkeletalMeshComponent.GetPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPosition, "Engine.SkeletalMeshComponent.GetPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -406,14 +406,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SkelMeshCompOnParticleSystemFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkelMeshCompOnParticleSystemFinished;
     /// <summary>
     /// Function: SkelMeshCompOnParticleSystemFinished
     /// </summary>
     public unsafe virtual void SkelMeshCompOnParticleSystemFinished(BmSDK.Engine.ParticleSystemComponent PSC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkelMeshCompOnParticleSystemFinished, "Engine.SkeletalMeshComponent.SkelMeshCompOnParticleSystemFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkelMeshCompOnParticleSystemFinished, "Engine.SkeletalMeshComponent.SkelMeshCompOnParticleSystemFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PSC, paramsPtr + 0);
@@ -421,14 +421,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_PlayParticleEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayParticleEffect;
     /// <summary>
     /// Function: PlayParticleEffect
     /// </summary>
     public unsafe virtual bool PlayParticleEffect(BmSDK.Engine.AnimNotify_PlayParticleEffect AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayParticleEffect, "Engine.SkeletalMeshComponent.PlayParticleEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayParticleEffect, "Engine.SkeletalMeshComponent.PlayParticleEffect", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -436,14 +436,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CreateForceField;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateForceField;
     /// <summary>
     /// Function: CreateForceField
     /// </summary>
     public unsafe virtual bool CreateForceField(BmSDK.Engine.AnimNotify_ForceField AnimNotifyData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateForceField, "Engine.SkeletalMeshComponent.CreateForceField");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateForceField, "Engine.SkeletalMeshComponent.CreateForceField", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -451,14 +451,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SpawnApexVortexFieldSampler;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnApexVortexFieldSampler;
     /// <summary>
     /// Function: SpawnApexVortexFieldSampler
     /// </summary>
     public unsafe virtual void SpawnApexVortexFieldSampler(BmSDK.Engine.AnimNotify_ForceField AnimNotifyData, BmSDK.Engine.NxForceFieldTornadoComponent TornadoForceFieldComponent, BmSDK.Engine.ApexFieldSamplerComponent.FSS_FieldSamplerScene FieldSamplerScene, float RotationalStrengthMultiplier, float RadialStrengthMultiplier, float LiftStrengthMultiplier, float DurationMultiplier)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnApexVortexFieldSampler, "Engine.SkeletalMeshComponent.SpawnApexVortexFieldSampler");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnApexVortexFieldSampler, "Engine.SkeletalMeshComponent.SpawnApexVortexFieldSampler", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimNotifyData, paramsPtr + 0);
@@ -472,28 +472,28 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_StopAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAnim;
     /// <summary>
     /// Function: StopAnim
     /// </summary>
     public unsafe virtual void StopAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAnim, "Engine.SkeletalMeshComponent.StopAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAnim, "Engine.SkeletalMeshComponent.StopAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAnim;
     /// <summary>
     /// Function: PlayAnim
     /// </summary>
     public unsafe virtual void PlayAnim(BmSDK.FName AnimName, float Duration = default, bool bLoop = default, bool bRestartIfAlreadyPlaying = default, float StartTime = default, bool bPlayBackwards = default, float PlayRate = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAnim, "Engine.SkeletalMeshComponent.PlayAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAnim, "Engine.SkeletalMeshComponent.PlayAnim", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -507,14 +507,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveApexClothCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveApexClothCollision;
     /// <summary>
     /// Function: RemoveApexClothCollision
     /// </summary>
     public unsafe virtual void RemoveApexClothCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveApexClothCollision, "Engine.SkeletalMeshComponent.RemoveApexClothCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveApexClothCollision, "Engine.SkeletalMeshComponent.RemoveApexClothCollision", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -528,14 +528,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
     /// Function: SetHidden
     /// </summary>
     public unsafe override void SetHidden(bool NewHidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidden, "Engine.SkeletalMeshComponent.SetHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidden, "Engine.SkeletalMeshComponent.SetHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewHidden, paramsPtr + 0);
@@ -550,14 +550,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_AddApexClothCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddApexClothCollision;
     /// <summary>
     /// Function: AddApexClothCollision
     /// </summary>
     public unsafe virtual void AddApexClothCollision(BmSDK.Engine.RApexClothBlockingVolume ClothBlockingVolume)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddApexClothCollision, "Engine.SkeletalMeshComponent.AddApexClothCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddApexClothCollision, "Engine.SkeletalMeshComponent.AddApexClothCollision", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothBlockingVolume, paramsPtr + 0);
@@ -572,14 +572,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_IsPermanentlyFixed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPermanentlyFixed;
     /// <summary>
     /// Function: IsPermanentlyFixed
     /// </summary>
     public unsafe virtual bool IsPermanentlyFixed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPermanentlyFixed, "Engine.SkeletalMeshComponent.IsPermanentlyFixed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPermanentlyFixed, "Engine.SkeletalMeshComponent.IsPermanentlyFixed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -593,14 +593,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShowMaterialSection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowMaterialSection;
     /// <summary>
     /// Function: ShowMaterialSection
     /// </summary>
     public unsafe virtual void ShowMaterialSection(int MaterialID, bool bShow, int LODIndex = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowMaterialSection, "Engine.SkeletalMeshComponent.ShowMaterialSection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowMaterialSection, "Engine.SkeletalMeshComponent.ShowMaterialSection", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaterialID, paramsPtr + 0);
@@ -617,14 +617,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetPhysicalMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPhysicalMaterial;
     /// <summary>
     /// Function: GetPhysicalMaterial
     /// </summary>
     public unsafe override BmSDK.Engine.PhysicalMaterial GetPhysicalMaterial(int BodyIndex = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPhysicalMaterial, "Engine.SkeletalMeshComponent.GetPhysicalMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPhysicalMaterial, "Engine.SkeletalMeshComponent.GetPhysicalMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BodyIndex, paramsPtr + 0);
@@ -639,14 +639,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.PhysicalMaterial>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateDampingRampUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDampingRampUp;
     /// <summary>
     /// Function: UpdateDampingRampUp
     /// </summary>
     public unsafe virtual void UpdateDampingRampUp(float DeltaTime, bool bAllowDampingRampup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDampingRampUp, "Engine.SkeletalMeshComponent.UpdateDampingRampUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDampingRampUp, "Engine.SkeletalMeshComponent.UpdateDampingRampUp", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -662,14 +662,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePermanentFixing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePermanentFixing;
     /// <summary>
     /// Function: UpdatePermanentFixing
     /// </summary>
     public unsafe virtual void UpdatePermanentFixing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePermanentFixing, "Engine.SkeletalMeshComponent.UpdatePermanentFixing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePermanentFixing, "Engine.SkeletalMeshComponent.UpdatePermanentFixing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -683,14 +683,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetHasFallenOutOfWorld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHasFallenOutOfWorld;
     /// <summary>
     /// Function: GetHasFallenOutOfWorld
     /// </summary>
     public unsafe override bool GetHasFallenOutOfWorld()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHasFallenOutOfWorld, "Engine.SkeletalMeshComponent.GetHasFallenOutOfWorld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHasFallenOutOfWorld, "Engine.SkeletalMeshComponent.GetHasFallenOutOfWorld", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -704,14 +704,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetForceJointProjection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceJointProjection;
     /// <summary>
     /// Function: SetForceJointProjection
     /// </summary>
     public unsafe virtual void SetForceJointProjection(bool bNewForceJointProjection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForceJointProjection, "Engine.SkeletalMeshComponent.SetForceJointProjection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetForceJointProjection, "Engine.SkeletalMeshComponent.SetForceJointProjection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewForceJointProjection, paramsPtr + 0);
@@ -726,14 +726,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateMeshForBrokenConstraints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMeshForBrokenConstraints;
     /// <summary>
     /// Function: UpdateMeshForBrokenConstraints
     /// </summary>
     public unsafe virtual void UpdateMeshForBrokenConstraints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMeshForBrokenConstraints, "Engine.SkeletalMeshComponent.UpdateMeshForBrokenConstraints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMeshForBrokenConstraints, "Engine.SkeletalMeshComponent.UpdateMeshForBrokenConstraints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -747,14 +747,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UnHideBoneByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnHideBoneByName;
     /// <summary>
     /// Function: UnHideBoneByName
     /// </summary>
     public unsafe virtual void UnHideBoneByName(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnHideBoneByName, "Engine.SkeletalMeshComponent.UnHideBoneByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnHideBoneByName, "Engine.SkeletalMeshComponent.UnHideBoneByName", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -769,14 +769,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_HideBoneByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBoneByName;
     /// <summary>
     /// Function: HideBoneByName
     /// </summary>
     public unsafe virtual void HideBoneByName(BmSDK.FName BoneName, BmSDK.Engine.SkeletalMeshComponent.EPhysBodyOp PhysBodyOption)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideBoneByName, "Engine.SkeletalMeshComponent.HideBoneByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideBoneByName, "Engine.SkeletalMeshComponent.HideBoneByName", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -792,14 +792,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_IsBoneHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBoneHidden;
     /// <summary>
     /// Function: IsBoneHidden
     /// </summary>
     public unsafe virtual bool IsBoneHidden(int BoneIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBoneHidden, "Engine.SkeletalMeshComponent.IsBoneHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBoneHidden, "Engine.SkeletalMeshComponent.IsBoneHidden", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneIndex, paramsPtr + 0);
@@ -814,14 +814,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UnHideBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnHideBone;
     /// <summary>
     /// Function: UnHideBone
     /// </summary>
     public unsafe virtual void UnHideBone(int BoneIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnHideBone, "Engine.SkeletalMeshComponent.UnHideBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnHideBone, "Engine.SkeletalMeshComponent.UnHideBone", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneIndex, paramsPtr + 0);
@@ -836,14 +836,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_HideBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideBone;
     /// <summary>
     /// Function: HideBone
     /// </summary>
     public unsafe virtual void HideBone(int BoneIndex, BmSDK.Engine.SkeletalMeshComponent.EPhysBodyOp PhysBodyOption)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideBone, "Engine.SkeletalMeshComponent.HideBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideBone, "Engine.SkeletalMeshComponent.HideBone", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneIndex, paramsPtr + 0);
@@ -859,14 +859,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ResetFaceFXRegistersByOwner;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetFaceFXRegistersByOwner;
     /// <summary>
     /// Function: ResetFaceFXRegistersByOwner
     /// </summary>
     public unsafe virtual void ResetFaceFXRegistersByOwner(BmSDK.Engine.RSkeletalMeshComponent_Export.EFaceFXRegisterOwner RegOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetFaceFXRegistersByOwner, "Engine.SkeletalMeshComponent.ResetFaceFXRegistersByOwner");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetFaceFXRegistersByOwner, "Engine.SkeletalMeshComponent.ResetFaceFXRegistersByOwner", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegOwner, paramsPtr + 0);
@@ -881,14 +881,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ResetAllFaceFXRegisters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAllFaceFXRegisters;
     /// <summary>
     /// Function: ResetAllFaceFXRegisters
     /// </summary>
     public unsafe virtual void ResetAllFaceFXRegisters()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetAllFaceFXRegisters, "Engine.SkeletalMeshComponent.ResetAllFaceFXRegisters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetAllFaceFXRegisters, "Engine.SkeletalMeshComponent.ResetAllFaceFXRegisters", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -902,17 +902,17 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetFaceFXRegisterByOwner;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFaceFXRegisterByOwner;
     /// <summary>
     /// Function: SetFaceFXRegisterByOwner
     /// </summary>
-    public unsafe virtual void SetFaceFXRegisterByOwner(BmSDK.FString RegName, float RegVal, BmSDK.Engine.RSkeletalMeshComponent_Export.EFaceFXRegisterOwner RegOwner, float InterpDuration = default)
+    public unsafe virtual void SetFaceFXRegisterByOwner(BmSDK.FStringArg RegName, float RegVal, BmSDK.Engine.RSkeletalMeshComponent_Export.EFaceFXRegisterOwner RegOwner, float InterpDuration = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFaceFXRegisterByOwner, "Engine.SkeletalMeshComponent.SetFaceFXRegisterByOwner");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFaceFXRegisterByOwner, "Engine.SkeletalMeshComponent.SetFaceFXRegisterByOwner", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RegName, paramsPtr + 0);
+        RegName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegVal, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegOwner, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpDuration, paramsPtr + 24);
@@ -924,20 +924,21 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetFaceFXRegister;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFaceFXRegister;
     /// <summary>
     /// Function: SetFaceFXRegister
     /// </summary>
-    public unsafe virtual void SetFaceFXRegister(BmSDK.FString RegName, float RegVal, BmSDK.Engine.SkeletalMeshComponent.EFaceFXRegOp RegOp, float InterpDuration = default)
+    public unsafe virtual void SetFaceFXRegister(BmSDK.FStringArg RegName, float RegVal, BmSDK.Engine.SkeletalMeshComponent.EFaceFXRegOp RegOp, float InterpDuration = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFaceFXRegister, "Engine.SkeletalMeshComponent.SetFaceFXRegister");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFaceFXRegister, "Engine.SkeletalMeshComponent.SetFaceFXRegister", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RegName, paramsPtr + 0);
+        RegName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegVal, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RegOp, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InterpDuration, paramsPtr + 24);
@@ -949,17 +950,18 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsPlayingFaceFXAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayingFaceFXAnim;
     /// <summary>
     /// Function: IsPlayingFaceFXAnim
     /// </summary>
     public unsafe virtual bool IsPlayingFaceFXAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayingFaceFXAnim, "Engine.SkeletalMeshComponent.IsPlayingFaceFXAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayingFaceFXAnim, "Engine.SkeletalMeshComponent.IsPlayingFaceFXAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -973,14 +975,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopFaceFXAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopFaceFXAnim;
     /// <summary>
     /// Function: StopFaceFXAnim
     /// </summary>
     public unsafe virtual void StopFaceFXAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopFaceFXAnim, "Engine.SkeletalMeshComponent.StopFaceFXAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopFaceFXAnim, "Engine.SkeletalMeshComponent.StopFaceFXAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -994,19 +996,19 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_PlayFaceFXAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFaceFXAnim;
     /// <summary>
     /// Function: PlayFaceFXAnim
     /// </summary>
-    public unsafe virtual bool PlayFaceFXAnim(BmSDK.Engine.FaceFXAnimSet FaceFXAnimSetRef, BmSDK.FString AnimName, BmSDK.FString GroupName, BmSDK.Engine.SoundCue SoundCueToPlay)
+    public unsafe virtual bool PlayFaceFXAnim(BmSDK.Engine.FaceFXAnimSet FaceFXAnimSetRef, BmSDK.FStringArg AnimName, BmSDK.FStringArg GroupName, BmSDK.Engine.SoundCue SoundCueToPlay)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFaceFXAnim, "Engine.SkeletalMeshComponent.PlayFaceFXAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayFaceFXAnim, "Engine.SkeletalMeshComponent.PlayFaceFXAnim", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FaceFXAnimSetRef, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(GroupName, paramsPtr + 24);
+        AnimName.WriteTo(paramsPtr + 8);
+        GroupName.WriteTo(paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SoundCueToPlay, paramsPtr + 40);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -1016,17 +1018,19 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_ToggleInstanceVertexWeights;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleInstanceVertexWeights;
     /// <summary>
     /// Function: ToggleInstanceVertexWeights
     /// </summary>
     public unsafe virtual void ToggleInstanceVertexWeights(bool bEnable, int LODIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleInstanceVertexWeights, "Engine.SkeletalMeshComponent.ToggleInstanceVertexWeights");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleInstanceVertexWeights, "Engine.SkeletalMeshComponent.ToggleInstanceVertexWeights", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnable, paramsPtr + 0);
@@ -1042,14 +1046,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateInstanceVertexWeightBones;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateInstanceVertexWeightBones;
     /// <summary>
     /// Function: UpdateInstanceVertexWeightBones
     /// </summary>
     public unsafe virtual void UpdateInstanceVertexWeightBones(BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent.FBonePair> BonePairs)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateInstanceVertexWeightBones, "Engine.SkeletalMeshComponent.UpdateInstanceVertexWeightBones");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateInstanceVertexWeightBones, "Engine.SkeletalMeshComponent.UpdateInstanceVertexWeightBones", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BonePairs, paramsPtr + 0);
@@ -1064,14 +1068,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FindInstanceVertexweightBonePair;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindInstanceVertexweightBonePair;
     /// <summary>
     /// Function: FindInstanceVertexweightBonePair
     /// </summary>
     public unsafe virtual int FindInstanceVertexweightBonePair(BmSDK.Engine.SkeletalMeshComponent.FBonePair Bones)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindInstanceVertexweightBonePair, "Engine.SkeletalMeshComponent.FindInstanceVertexweightBonePair");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindInstanceVertexweightBonePair, "Engine.SkeletalMeshComponent.FindInstanceVertexweightBonePair", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Bones, paramsPtr + 0);
@@ -1086,14 +1090,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_RemoveInstanceVertexWeightBoneParented;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveInstanceVertexWeightBoneParented;
     /// <summary>
     /// Function: RemoveInstanceVertexWeightBoneParented
     /// </summary>
     public unsafe virtual void RemoveInstanceVertexWeightBoneParented(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveInstanceVertexWeightBoneParented, "Engine.SkeletalMeshComponent.RemoveInstanceVertexWeightBoneParented");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveInstanceVertexWeightBoneParented, "Engine.SkeletalMeshComponent.RemoveInstanceVertexWeightBoneParented", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1108,14 +1112,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_AddInstanceVertexWeightBoneParented;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddInstanceVertexWeightBoneParented;
     /// <summary>
     /// Function: AddInstanceVertexWeightBoneParented
     /// </summary>
     public unsafe virtual void AddInstanceVertexWeightBoneParented(BmSDK.FName BoneName, bool bPairWithParent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddInstanceVertexWeightBoneParented, "Engine.SkeletalMeshComponent.AddInstanceVertexWeightBoneParented");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddInstanceVertexWeightBoneParented, "Engine.SkeletalMeshComponent.AddInstanceVertexWeightBoneParented", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1131,14 +1135,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetBonesWithinRadius;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBonesWithinRadius;
     /// <summary>
     /// Function: GetBonesWithinRadius
     /// </summary>
     public unsafe virtual bool GetBonesWithinRadius(System.Numerics.Vector3 Origin, float Radius, int TraceFlags, out BmSDK.TArray<BmSDK.FName> out_Bones)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBonesWithinRadius, "Engine.SkeletalMeshComponent.GetBonesWithinRadius");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBonesWithinRadius, "Engine.SkeletalMeshComponent.GetBonesWithinRadius", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Origin, paramsPtr + 0);
@@ -1156,14 +1160,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_UpdateAnimations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAnimations;
     /// <summary>
     /// Function: UpdateAnimations
     /// </summary>
     public unsafe virtual void UpdateAnimations()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAnimations, "Engine.SkeletalMeshComponent.UpdateAnimations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateAnimations, "Engine.SkeletalMeshComponent.UpdateAnimations", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1177,14 +1181,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ForceSkelUpdate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceSkelUpdate;
     /// <summary>
     /// Function: ForceSkelUpdate
     /// </summary>
     public unsafe virtual void ForceSkelUpdate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceSkelUpdate, "Engine.SkeletalMeshComponent.ForceSkelUpdate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceSkelUpdate, "Engine.SkeletalMeshComponent.ForceSkelUpdate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1198,14 +1202,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRBBonesFromSpaceBases;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRBBonesFromSpaceBases;
     /// <summary>
     /// Function: UpdateRBBonesFromSpaceBases
     /// </summary>
     public unsafe virtual void UpdateRBBonesFromSpaceBases(bool bMoveUnfixedBodies, bool bTeleport)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRBBonesFromSpaceBases, "Engine.SkeletalMeshComponent.UpdateRBBonesFromSpaceBases");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRBBonesFromSpaceBases, "Engine.SkeletalMeshComponent.UpdateRBBonesFromSpaceBases", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bMoveUnfixedBodies, paramsPtr + 0);
@@ -1221,14 +1225,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetAllowRFlapsAssetInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAllowRFlapsAssetInstance;
     /// <summary>
     /// Function: SetAllowRFlapsAssetInstance
     /// </summary>
     public unsafe virtual void SetAllowRFlapsAssetInstance(bool bHasInstance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAllowRFlapsAssetInstance, "Engine.SkeletalMeshComponent.SetAllowRFlapsAssetInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAllowRFlapsAssetInstance, "Engine.SkeletalMeshComponent.SetAllowRFlapsAssetInstance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHasInstance, paramsPtr + 0);
@@ -1243,14 +1247,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetHasPhysicsAssetInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHasPhysicsAssetInstance;
     /// <summary>
     /// Function: SetHasPhysicsAssetInstance
     /// </summary>
     public unsafe virtual void SetHasPhysicsAssetInstance(bool bHasInstance, bool bUseCurrentPosition = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHasPhysicsAssetInstance, "Engine.SkeletalMeshComponent.SetHasPhysicsAssetInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHasPhysicsAssetInstance, "Engine.SkeletalMeshComponent.SetHasPhysicsAssetInstance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHasInstance, paramsPtr + 0);
@@ -1266,14 +1270,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FindBodyInstanceNamed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindBodyInstanceNamed;
     /// <summary>
     /// Function: FindBodyInstanceNamed
     /// </summary>
     public unsafe virtual BmSDK.Engine.RB_BodyInstance FindBodyInstanceNamed(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindBodyInstanceNamed, "Engine.SkeletalMeshComponent.FindBodyInstanceNamed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindBodyInstanceNamed, "Engine.SkeletalMeshComponent.FindBodyInstanceNamed", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1288,14 +1292,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RB_BodyInstance>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindConstraintBoneName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindConstraintBoneName;
     /// <summary>
     /// Function: FindConstraintBoneName
     /// </summary>
     public unsafe virtual BmSDK.FName FindConstraintBoneName(int ConstraintIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindConstraintBoneName, "Engine.SkeletalMeshComponent.FindConstraintBoneName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindConstraintBoneName, "Engine.SkeletalMeshComponent.FindConstraintBoneName", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConstraintIndex, paramsPtr + 0);
@@ -1310,14 +1314,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_FindConstraintIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindConstraintIndex;
     /// <summary>
     /// Function: FindConstraintIndex
     /// </summary>
     public unsafe virtual int FindConstraintIndex(BmSDK.FName ConstraintName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindConstraintIndex, "Engine.SkeletalMeshComponent.FindConstraintIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindConstraintIndex, "Engine.SkeletalMeshComponent.FindConstraintIndex", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ConstraintName, paramsPtr + 0);
@@ -1332,14 +1336,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InitMorphTargets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMorphTargets;
     /// <summary>
     /// Function: InitMorphTargets
     /// </summary>
     public unsafe virtual void InitMorphTargets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitMorphTargets, "Engine.SkeletalMeshComponent.InitMorphTargets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitMorphTargets, "Engine.SkeletalMeshComponent.InitMorphTargets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1353,14 +1357,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_InitSkelControls;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitSkelControls;
     /// <summary>
     /// Function: InitSkelControls
     /// </summary>
     public unsafe virtual void InitSkelControls()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitSkelControls, "Engine.SkeletalMeshComponent.InitSkelControls");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitSkelControls, "Engine.SkeletalMeshComponent.InitSkelControls", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1374,14 +1378,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateParentBoneMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateParentBoneMap;
     /// <summary>
     /// Function: UpdateParentBoneMap
     /// </summary>
     public unsafe virtual void UpdateParentBoneMap()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateParentBoneMap, "Engine.SkeletalMeshComponent.UpdateParentBoneMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateParentBoneMap, "Engine.SkeletalMeshComponent.UpdateParentBoneMap", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1395,14 +1399,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetParentAnimComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetParentAnimComponent;
     /// <summary>
     /// Function: SetParentAnimComponent
     /// </summary>
     public unsafe virtual void SetParentAnimComponent(BmSDK.Engine.SkeletalMeshComponent NewParentAnimComp)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetParentAnimComponent, "Engine.SkeletalMeshComponent.SetParentAnimComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetParentAnimComponent, "Engine.SkeletalMeshComponent.SetParentAnimComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewParentAnimComp, paramsPtr + 0);
@@ -1417,14 +1421,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetAnimTreeTemplate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimTreeTemplate;
     /// <summary>
     /// Function: SetAnimTreeTemplate
     /// </summary>
     public unsafe virtual void SetAnimTreeTemplate(BmSDK.Engine.AnimTree NewTemplate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAnimTreeTemplate, "Engine.SkeletalMeshComponent.SetAnimTreeTemplate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAnimTreeTemplate, "Engine.SkeletalMeshComponent.SetAnimTreeTemplate", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTemplate, paramsPtr + 0);
@@ -1439,14 +1443,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetAnimations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAnimations;
     /// <summary>
     /// Function: SetAnimations
     /// </summary>
     public unsafe virtual void SetAnimations(BmSDK.Engine.AnimNode NewAnimations)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAnimations, "Engine.SkeletalMeshComponent.SetAnimations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAnimations, "Engine.SkeletalMeshComponent.SetAnimations", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewAnimations, paramsPtr + 0);
@@ -1461,14 +1465,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetClosestCollidingBoneLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestCollidingBoneLocation;
     /// <summary>
     /// Function: GetClosestCollidingBoneLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetClosestCollidingBoneLocation(System.Numerics.Vector3 TestLocation, bool bCheckZeroExtent, bool bCheckNonZeroExtent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestCollidingBoneLocation, "Engine.SkeletalMeshComponent.GetClosestCollidingBoneLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestCollidingBoneLocation, "Engine.SkeletalMeshComponent.GetClosestCollidingBoneLocation", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -1485,14 +1489,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_FindClosestBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestBone;
     /// <summary>
     /// Function: FindClosestBone
     /// </summary>
     public unsafe virtual BmSDK.FName FindClosestBone(System.Numerics.Vector3 TestLocation, out System.Numerics.Vector3 BoneLocation, float IgnoreScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindClosestBone, "Engine.SkeletalMeshComponent.FindClosestBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindClosestBone, "Engine.SkeletalMeshComponent.FindClosestBone", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -1511,14 +1515,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_TransformFromBoneSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformFromBoneSpace;
     /// <summary>
     /// Function: TransformFromBoneSpace
     /// </summary>
     public unsafe virtual void TransformFromBoneSpace(BmSDK.FName BoneName, System.Numerics.Vector3 InPosition, BmSDK.Rotator InRotation, out System.Numerics.Vector3 OutPosition, out BmSDK.Rotator OutRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformFromBoneSpace, "Engine.SkeletalMeshComponent.TransformFromBoneSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TransformFromBoneSpace, "Engine.SkeletalMeshComponent.TransformFromBoneSpace", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1541,14 +1545,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_TransformToBoneSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TransformToBoneSpace;
     /// <summary>
     /// Function: TransformToBoneSpace
     /// </summary>
     public unsafe virtual void TransformToBoneSpace(BmSDK.FName BoneName, System.Numerics.Vector3 InPosition, BmSDK.Rotator InRotation, out System.Numerics.Vector3 OutPosition, out BmSDK.Rotator OutRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TransformToBoneSpace, "Engine.SkeletalMeshComponent.TransformToBoneSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TransformToBoneSpace, "Engine.SkeletalMeshComponent.TransformToBoneSpace", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1571,14 +1575,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetBoneAxis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneAxis;
     /// <summary>
     /// Function: GetBoneAxis
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBoneAxis(BmSDK.FName BoneName, BmSDK.GameObject.EAxis Axis)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneAxis, "Engine.SkeletalMeshComponent.GetBoneAxis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoneAxis, "Engine.SkeletalMeshComponent.GetBoneAxis", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1594,14 +1598,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetRefPosePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRefPosePosition;
     /// <summary>
     /// Function: GetRefPosePosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRefPosePosition(int BoneIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRefPosePosition, "Engine.SkeletalMeshComponent.GetRefPosePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRefPosePosition, "Engine.SkeletalMeshComponent.GetRefPosePosition", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneIndex, paramsPtr + 0);
@@ -1616,14 +1620,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_BoneIsChildOf;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BoneIsChildOf;
     /// <summary>
     /// Function: BoneIsChildOf
     /// </summary>
     public unsafe virtual bool BoneIsChildOf(BmSDK.FName BoneName, BmSDK.FName ParentBoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BoneIsChildOf, "Engine.SkeletalMeshComponent.BoneIsChildOf");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BoneIsChildOf, "Engine.SkeletalMeshComponent.BoneIsChildOf", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1639,14 +1643,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetBoneNames;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneNames;
     /// <summary>
     /// Function: GetBoneNames
     /// </summary>
     public unsafe virtual void GetBoneNames(out BmSDK.TArray<BmSDK.FName> BoneNames)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneNames, "Engine.SkeletalMeshComponent.GetBoneNames");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoneNames, "Engine.SkeletalMeshComponent.GetBoneNames", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1661,14 +1665,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetParentBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetParentBone;
     /// <summary>
     /// Function: GetParentBone
     /// </summary>
     public unsafe virtual BmSDK.FName GetParentBone(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetParentBone, "Engine.SkeletalMeshComponent.GetParentBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetParentBone, "Engine.SkeletalMeshComponent.GetParentBone", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1683,14 +1687,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetBoneMatrix;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneMatrix;
     /// <summary>
     /// Function: GetBoneMatrix
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetBoneMatrix(int BoneIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneMatrix, "Engine.SkeletalMeshComponent.GetBoneMatrix");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoneMatrix, "Engine.SkeletalMeshComponent.GetBoneMatrix", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneIndex, paramsPtr + 0);
@@ -1705,14 +1709,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FMatrix>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetBoneName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneName;
     /// <summary>
     /// Function: GetBoneName
     /// </summary>
     public unsafe virtual BmSDK.FName GetBoneName(int BoneIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneName, "Engine.SkeletalMeshComponent.GetBoneName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoneName, "Engine.SkeletalMeshComponent.GetBoneName", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneIndex, paramsPtr + 0);
@@ -1727,14 +1731,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_MatchRefBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MatchRefBone;
     /// <summary>
     /// Function: MatchRefBone
     /// </summary>
     public unsafe virtual int MatchRefBone(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatchRefBone, "Engine.SkeletalMeshComponent.MatchRefBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MatchRefBone, "Engine.SkeletalMeshComponent.MatchRefBone", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1749,14 +1753,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetBoneLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneLocation;
     /// <summary>
     /// Function: GetBoneLocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBoneLocation(BmSDK.FName BoneName, int Space = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneLocation, "Engine.SkeletalMeshComponent.GetBoneLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoneLocation, "Engine.SkeletalMeshComponent.GetBoneLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1772,14 +1776,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetBoneQuaternion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBoneQuaternion;
     /// <summary>
     /// Function: GetBoneQuaternion
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FQuat GetBoneQuaternion(BmSDK.FName BoneName, int Space = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBoneQuaternion, "Engine.SkeletalMeshComponent.GetBoneQuaternion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBoneQuaternion, "Engine.SkeletalMeshComponent.GetBoneQuaternion", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -1795,14 +1799,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FQuat>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_FindMorphNode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMorphNode;
     /// <summary>
     /// Function: FindMorphNode
     /// </summary>
     public unsafe virtual BmSDK.Engine.MorphNodeBase FindMorphNode(BmSDK.FName InNodeName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindMorphNode, "Engine.SkeletalMeshComponent.FindMorphNode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindMorphNode, "Engine.SkeletalMeshComponent.FindMorphNode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InNodeName, paramsPtr + 0);
@@ -1817,14 +1821,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MorphNodeBase>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindSkelControls;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSkelControls;
     /// <summary>
     /// Function: FindSkelControls
     /// </summary>
     public unsafe virtual void FindSkelControls(BmSDK.FName InControlName, out BmSDK.TArray<BmSDK.Engine.SkelControlBase> SkelControls)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSkelControls, "Engine.SkeletalMeshComponent.FindSkelControls");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSkelControls, "Engine.SkeletalMeshComponent.FindSkelControls", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InControlName, paramsPtr + 0);
@@ -1840,14 +1844,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FindSkelControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSkelControl;
     /// <summary>
     /// Function: FindSkelControl
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkelControlBase FindSkelControl(BmSDK.FName InControlName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSkelControl, "Engine.SkeletalMeshComponent.FindSkelControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSkelControl, "Engine.SkeletalMeshComponent.FindSkelControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InControlName, paramsPtr + 0);
@@ -1862,14 +1866,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.SkelControlBase>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindAnimNode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimNode;
     /// <summary>
     /// Function: FindAnimNode
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNode FindAnimNode(BmSDK.FName InNodeName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindAnimNode, "Engine.SkeletalMeshComponent.FindAnimNode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindAnimNode, "Engine.SkeletalMeshComponent.FindAnimNode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InNodeName, paramsPtr + 0);
@@ -1884,14 +1888,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimNode>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FindMorphTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindMorphTarget;
     /// <summary>
     /// Function: FindMorphTarget
     /// </summary>
     public unsafe virtual BmSDK.Engine.MorphTarget FindMorphTarget(BmSDK.FName MorphTargetName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindMorphTarget, "Engine.SkeletalMeshComponent.FindMorphTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindMorphTarget, "Engine.SkeletalMeshComponent.FindMorphTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MorphTargetName, paramsPtr + 0);
@@ -1906,14 +1910,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MorphTarget>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetAnimLength;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimLength;
     /// <summary>
     /// Function: GetAnimLength
     /// </summary>
     public unsafe virtual float GetAnimLength(BmSDK.FName AnimSeqName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimLength, "Engine.SkeletalMeshComponent.GetAnimLength");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimLength, "Engine.SkeletalMeshComponent.GetAnimLength", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSeqName, paramsPtr + 0);
@@ -1921,14 +1925,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetAnimRateByDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAnimRateByDuration;
     /// <summary>
     /// Function: GetAnimRateByDuration
     /// </summary>
     public unsafe virtual float GetAnimRateByDuration(BmSDK.FName AnimSeqName, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAnimRateByDuration, "Engine.SkeletalMeshComponent.GetAnimRateByDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimRateByDuration, "Engine.SkeletalMeshComponent.GetAnimRateByDuration", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSeqName, paramsPtr + 0);
@@ -1937,14 +1941,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_RestoreSavedAnimSets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreSavedAnimSets;
     /// <summary>
     /// Function: RestoreSavedAnimSets
     /// </summary>
     public unsafe virtual void RestoreSavedAnimSets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreSavedAnimSets, "Engine.SkeletalMeshComponent.RestoreSavedAnimSets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreSavedAnimSets, "Engine.SkeletalMeshComponent.RestoreSavedAnimSets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1958,14 +1962,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SaveAnimSets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveAnimSets;
     /// <summary>
     /// Function: SaveAnimSets
     /// </summary>
     public unsafe virtual void SaveAnimSets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveAnimSets, "Engine.SkeletalMeshComponent.SaveAnimSets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveAnimSets, "Engine.SkeletalMeshComponent.SaveAnimSets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1979,14 +1983,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FindAnimSequence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindAnimSequence;
     /// <summary>
     /// Function: FindAnimSequence
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimSequence FindAnimSequence(BmSDK.FName AnimSeqName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindAnimSequence, "Engine.SkeletalMeshComponent.FindAnimSequence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindAnimSequence, "Engine.SkeletalMeshComponent.FindAnimSequence", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimSeqName, paramsPtr + 0);
@@ -2001,14 +2005,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSequence>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_WakeSoftBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WakeSoftBody;
     /// <summary>
     /// Function: WakeSoftBody
     /// </summary>
     public unsafe virtual void WakeSoftBody()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WakeSoftBody, "Engine.SkeletalMeshComponent.WakeSoftBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WakeSoftBody, "Engine.SkeletalMeshComponent.WakeSoftBody", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2022,14 +2026,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetSoftBodyFrozen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSoftBodyFrozen;
     /// <summary>
     /// Function: SetSoftBodyFrozen
     /// </summary>
     public unsafe virtual void SetSoftBodyFrozen(bool bNewFrozen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSoftBodyFrozen, "Engine.SkeletalMeshComponent.SetSoftBodyFrozen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSoftBodyFrozen, "Engine.SkeletalMeshComponent.SetSoftBodyFrozen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewFrozen, paramsPtr + 0);
@@ -2044,14 +2048,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSoftBodyParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSoftBodyParams;
     /// <summary>
     /// Function: UpdateSoftBodyParams
     /// </summary>
     public unsafe virtual void UpdateSoftBodyParams()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSoftBodyParams, "Engine.SkeletalMeshComponent.UpdateSoftBodyParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSoftBodyParams, "Engine.SkeletalMeshComponent.UpdateSoftBodyParams", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2065,14 +2069,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothValidBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothValidBounds;
     /// <summary>
     /// Function: SetClothValidBounds
     /// </summary>
     public unsafe virtual void SetClothValidBounds(System.Numerics.Vector3 ClothValidBoundsMin, System.Numerics.Vector3 ClothValidBoundsMax)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothValidBounds, "Engine.SkeletalMeshComponent.SetClothValidBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothValidBounds, "Engine.SkeletalMeshComponent.SetClothValidBounds", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothValidBoundsMin, paramsPtr + 0);
@@ -2088,14 +2092,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_EnableClothValidBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableClothValidBounds;
     /// <summary>
     /// Function: EnableClothValidBounds
     /// </summary>
     public unsafe virtual void EnableClothValidBounds(bool IfEnableClothValidBounds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableClothValidBounds, "Engine.SkeletalMeshComponent.EnableClothValidBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableClothValidBounds, "Engine.SkeletalMeshComponent.EnableClothValidBounds", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IfEnableClothValidBounds, paramsPtr + 0);
@@ -2110,14 +2114,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_AttachClothToCollidingShapes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachClothToCollidingShapes;
     /// <summary>
     /// Function: AttachClothToCollidingShapes
     /// </summary>
     public unsafe virtual void AttachClothToCollidingShapes(bool AttatchTwoWay, bool AttachTearable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachClothToCollidingShapes, "Engine.SkeletalMeshComponent.AttachClothToCollidingShapes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachClothToCollidingShapes, "Engine.SkeletalMeshComponent.AttachClothToCollidingShapes", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AttatchTwoWay, paramsPtr + 0);
@@ -2133,14 +2137,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothVelocity;
     /// <summary>
     /// Function: SetClothVelocity
     /// </summary>
     public unsafe virtual void SetClothVelocity(System.Numerics.Vector3 VelocityOffSet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothVelocity, "Engine.SkeletalMeshComponent.SetClothVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothVelocity, "Engine.SkeletalMeshComponent.SetClothVelocity", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VelocityOffSet, paramsPtr + 0);
@@ -2155,14 +2159,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothPosition;
     /// <summary>
     /// Function: SetClothPosition
     /// </summary>
     public unsafe virtual void SetClothPosition(System.Numerics.Vector3 ClothOffSet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothPosition, "Engine.SkeletalMeshComponent.SetClothPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothPosition, "Engine.SkeletalMeshComponent.SetClothPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothOffSet, paramsPtr + 0);
@@ -2177,14 +2181,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothSleep;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothSleep;
     /// <summary>
     /// Function: SetClothSleep
     /// </summary>
     public unsafe virtual void SetClothSleep(bool IfClothSleep)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothSleep, "Engine.SkeletalMeshComponent.SetClothSleep");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothSleep, "Engine.SkeletalMeshComponent.SetClothSleep", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IfClothSleep, paramsPtr + 0);
@@ -2199,14 +2203,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothThickness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothThickness;
     /// <summary>
     /// Function: SetClothThickness
     /// </summary>
     public unsafe virtual void SetClothThickness(float ClothThickness)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothThickness, "Engine.SkeletalMeshComponent.SetClothThickness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothThickness, "Engine.SkeletalMeshComponent.SetClothThickness", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothThickness, paramsPtr + 0);
@@ -2221,14 +2225,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothTearFactor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothTearFactor;
     /// <summary>
     /// Function: SetClothTearFactor
     /// </summary>
     public unsafe virtual void SetClothTearFactor(float ClothTearFactor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothTearFactor, "Engine.SkeletalMeshComponent.SetClothTearFactor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothTearFactor, "Engine.SkeletalMeshComponent.SetClothTearFactor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothTearFactor, paramsPtr + 0);
@@ -2243,14 +2247,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothStretchingStiffness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothStretchingStiffness;
     /// <summary>
     /// Function: SetClothStretchingStiffness
     /// </summary>
     public unsafe virtual void SetClothStretchingStiffness(float ClothStretchingStiffness)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothStretchingStiffness, "Engine.SkeletalMeshComponent.SetClothStretchingStiffness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothStretchingStiffness, "Engine.SkeletalMeshComponent.SetClothStretchingStiffness", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothStretchingStiffness, paramsPtr + 0);
@@ -2265,14 +2269,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothSolverIterations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothSolverIterations;
     /// <summary>
     /// Function: SetClothSolverIterations
     /// </summary>
     public unsafe virtual void SetClothSolverIterations(int ClothSolverIterations)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothSolverIterations, "Engine.SkeletalMeshComponent.SetClothSolverIterations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothSolverIterations, "Engine.SkeletalMeshComponent.SetClothSolverIterations", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothSolverIterations, paramsPtr + 0);
@@ -2287,14 +2291,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothSleepLinearVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothSleepLinearVelocity;
     /// <summary>
     /// Function: SetClothSleepLinearVelocity
     /// </summary>
     public unsafe virtual void SetClothSleepLinearVelocity(float ClothSleepLinearVelocity)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothSleepLinearVelocity, "Engine.SkeletalMeshComponent.SetClothSleepLinearVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothSleepLinearVelocity, "Engine.SkeletalMeshComponent.SetClothSleepLinearVelocity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothSleepLinearVelocity, paramsPtr + 0);
@@ -2309,14 +2313,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothPressure;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothPressure;
     /// <summary>
     /// Function: SetClothPressure
     /// </summary>
     public unsafe virtual void SetClothPressure(float ClothPressure)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothPressure, "Engine.SkeletalMeshComponent.SetClothPressure");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothPressure, "Engine.SkeletalMeshComponent.SetClothPressure", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothPressure, paramsPtr + 0);
@@ -2331,14 +2335,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothFriction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothFriction;
     /// <summary>
     /// Function: SetClothFriction
     /// </summary>
     public unsafe virtual void SetClothFriction(float ClothFriction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothFriction, "Engine.SkeletalMeshComponent.SetClothFriction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothFriction, "Engine.SkeletalMeshComponent.SetClothFriction", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothFriction, paramsPtr + 0);
@@ -2353,14 +2357,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothFlags;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothFlags;
     /// <summary>
     /// Function: SetClothFlags
     /// </summary>
     public unsafe virtual void SetClothFlags(int ClothFlags)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothFlags, "Engine.SkeletalMeshComponent.SetClothFlags");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothFlags, "Engine.SkeletalMeshComponent.SetClothFlags", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothFlags, paramsPtr + 0);
@@ -2375,14 +2379,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothDampingCoefficient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothDampingCoefficient;
     /// <summary>
     /// Function: SetClothDampingCoefficient
     /// </summary>
     public unsafe virtual void SetClothDampingCoefficient(float ClothDampingCoefficient)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothDampingCoefficient, "Engine.SkeletalMeshComponent.SetClothDampingCoefficient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothDampingCoefficient, "Engine.SkeletalMeshComponent.SetClothDampingCoefficient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothDampingCoefficient, paramsPtr + 0);
@@ -2397,14 +2401,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothCollisionResponseCoefficient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothCollisionResponseCoefficient;
     /// <summary>
     /// Function: SetClothCollisionResponseCoefficient
     /// </summary>
     public unsafe virtual void SetClothCollisionResponseCoefficient(float ClothCollisionResponseCoefficient)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothCollisionResponseCoefficient, "Engine.SkeletalMeshComponent.SetClothCollisionResponseCoefficient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothCollisionResponseCoefficient, "Engine.SkeletalMeshComponent.SetClothCollisionResponseCoefficient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothCollisionResponseCoefficient, paramsPtr + 0);
@@ -2419,14 +2423,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothBendingStiffness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothBendingStiffness;
     /// <summary>
     /// Function: SetClothBendingStiffness
     /// </summary>
     public unsafe virtual void SetClothBendingStiffness(float ClothBendingStiffness)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothBendingStiffness, "Engine.SkeletalMeshComponent.SetClothBendingStiffness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothBendingStiffness, "Engine.SkeletalMeshComponent.SetClothBendingStiffness", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothBendingStiffness, paramsPtr + 0);
@@ -2441,14 +2445,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothAttachmentTearFactor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothAttachmentTearFactor;
     /// <summary>
     /// Function: SetClothAttachmentTearFactor
     /// </summary>
     public unsafe virtual void SetClothAttachmentTearFactor(float ClothAttachTearFactor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothAttachmentTearFactor, "Engine.SkeletalMeshComponent.SetClothAttachmentTearFactor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothAttachmentTearFactor, "Engine.SkeletalMeshComponent.SetClothAttachmentTearFactor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothAttachTearFactor, paramsPtr + 0);
@@ -2463,14 +2467,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothAttachmentResponseCoefficient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothAttachmentResponseCoefficient;
     /// <summary>
     /// Function: SetClothAttachmentResponseCoefficient
     /// </summary>
     public unsafe virtual void SetClothAttachmentResponseCoefficient(float ClothAttachmentResponseCoefficient)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothAttachmentResponseCoefficient, "Engine.SkeletalMeshComponent.SetClothAttachmentResponseCoefficient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothAttachmentResponseCoefficient, "Engine.SkeletalMeshComponent.SetClothAttachmentResponseCoefficient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClothAttachmentResponseCoefficient, paramsPtr + 0);
@@ -2485,14 +2489,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetClothThickness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothThickness;
     /// <summary>
     /// Function: GetClothThickness
     /// </summary>
     public unsafe virtual float GetClothThickness()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothThickness, "Engine.SkeletalMeshComponent.GetClothThickness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothThickness, "Engine.SkeletalMeshComponent.GetClothThickness", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2506,14 +2510,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothTearFactor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothTearFactor;
     /// <summary>
     /// Function: GetClothTearFactor
     /// </summary>
     public unsafe virtual float GetClothTearFactor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothTearFactor, "Engine.SkeletalMeshComponent.GetClothTearFactor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothTearFactor, "Engine.SkeletalMeshComponent.GetClothTearFactor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2527,14 +2531,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothStretchingStiffness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothStretchingStiffness;
     /// <summary>
     /// Function: GetClothStretchingStiffness
     /// </summary>
     public unsafe virtual float GetClothStretchingStiffness()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothStretchingStiffness, "Engine.SkeletalMeshComponent.GetClothStretchingStiffness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothStretchingStiffness, "Engine.SkeletalMeshComponent.GetClothStretchingStiffness", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2548,14 +2552,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothSolverIterations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothSolverIterations;
     /// <summary>
     /// Function: GetClothSolverIterations
     /// </summary>
     public unsafe virtual int GetClothSolverIterations()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothSolverIterations, "Engine.SkeletalMeshComponent.GetClothSolverIterations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothSolverIterations, "Engine.SkeletalMeshComponent.GetClothSolverIterations", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2569,14 +2573,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothSleepLinearVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothSleepLinearVelocity;
     /// <summary>
     /// Function: GetClothSleepLinearVelocity
     /// </summary>
     public unsafe virtual float GetClothSleepLinearVelocity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothSleepLinearVelocity, "Engine.SkeletalMeshComponent.GetClothSleepLinearVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothSleepLinearVelocity, "Engine.SkeletalMeshComponent.GetClothSleepLinearVelocity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2590,14 +2594,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothPressure;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothPressure;
     /// <summary>
     /// Function: GetClothPressure
     /// </summary>
     public unsafe virtual float GetClothPressure()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothPressure, "Engine.SkeletalMeshComponent.GetClothPressure");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothPressure, "Engine.SkeletalMeshComponent.GetClothPressure", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2611,14 +2615,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothFriction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothFriction;
     /// <summary>
     /// Function: GetClothFriction
     /// </summary>
     public unsafe virtual float GetClothFriction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothFriction, "Engine.SkeletalMeshComponent.GetClothFriction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothFriction, "Engine.SkeletalMeshComponent.GetClothFriction", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2632,14 +2636,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothFlags;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothFlags;
     /// <summary>
     /// Function: GetClothFlags
     /// </summary>
     public unsafe virtual int GetClothFlags()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothFlags, "Engine.SkeletalMeshComponent.GetClothFlags");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothFlags, "Engine.SkeletalMeshComponent.GetClothFlags", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2653,14 +2657,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothDampingCoefficient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothDampingCoefficient;
     /// <summary>
     /// Function: GetClothDampingCoefficient
     /// </summary>
     public unsafe virtual float GetClothDampingCoefficient()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothDampingCoefficient, "Engine.SkeletalMeshComponent.GetClothDampingCoefficient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothDampingCoefficient, "Engine.SkeletalMeshComponent.GetClothDampingCoefficient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2674,14 +2678,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothCollisionResponseCoefficient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothCollisionResponseCoefficient;
     /// <summary>
     /// Function: GetClothCollisionResponseCoefficient
     /// </summary>
     public unsafe virtual float GetClothCollisionResponseCoefficient()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothCollisionResponseCoefficient, "Engine.SkeletalMeshComponent.GetClothCollisionResponseCoefficient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothCollisionResponseCoefficient, "Engine.SkeletalMeshComponent.GetClothCollisionResponseCoefficient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2695,14 +2699,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothBendingStiffness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothBendingStiffness;
     /// <summary>
     /// Function: GetClothBendingStiffness
     /// </summary>
     public unsafe virtual float GetClothBendingStiffness()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothBendingStiffness, "Engine.SkeletalMeshComponent.GetClothBendingStiffness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothBendingStiffness, "Engine.SkeletalMeshComponent.GetClothBendingStiffness", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2716,14 +2720,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothAttachmentTearFactor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothAttachmentTearFactor;
     /// <summary>
     /// Function: GetClothAttachmentTearFactor
     /// </summary>
     public unsafe virtual float GetClothAttachmentTearFactor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothAttachmentTearFactor, "Engine.SkeletalMeshComponent.GetClothAttachmentTearFactor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothAttachmentTearFactor, "Engine.SkeletalMeshComponent.GetClothAttachmentTearFactor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2737,14 +2741,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClothAttachmentResponseCoefficient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClothAttachmentResponseCoefficient;
     /// <summary>
     /// Function: GetClothAttachmentResponseCoefficient
     /// </summary>
     public unsafe virtual float GetClothAttachmentResponseCoefficient()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClothAttachmentResponseCoefficient, "Engine.SkeletalMeshComponent.GetClothAttachmentResponseCoefficient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClothAttachmentResponseCoefficient, "Engine.SkeletalMeshComponent.GetClothAttachmentResponseCoefficient", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2758,14 +2762,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EnableApexClothing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableApexClothing;
     /// <summary>
     /// Function: EnableApexClothing
     /// </summary>
     public unsafe virtual void EnableApexClothing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableApexClothing, "Engine.SkeletalMeshComponent.EnableApexClothing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableApexClothing, "Engine.SkeletalMeshComponent.EnableApexClothing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2779,14 +2783,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_DisableApexClothing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableApexClothing;
     /// <summary>
     /// Function: DisableApexClothing
     /// </summary>
     public unsafe virtual void DisableApexClothing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableApexClothing, "Engine.SkeletalMeshComponent.DisableApexClothing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableApexClothing, "Engine.SkeletalMeshComponent.DisableApexClothing", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2800,14 +2804,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ForceApexClothingTeleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceApexClothingTeleport;
     /// <summary>
     /// Function: ForceApexClothingTeleport
     /// </summary>
     public unsafe virtual void ForceApexClothingTeleport()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceApexClothingTeleport, "Engine.SkeletalMeshComponent.ForceApexClothingTeleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceApexClothingTeleport, "Engine.SkeletalMeshComponent.ForceApexClothingTeleport", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2821,14 +2825,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ForceApexClothingTeleportAndReset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceApexClothingTeleportAndReset;
     /// <summary>
     /// Function: ForceApexClothingTeleportAndReset
     /// </summary>
     public unsafe virtual void ForceApexClothingTeleportAndReset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceApexClothingTeleportAndReset, "Engine.SkeletalMeshComponent.ForceApexClothingTeleportAndReset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceApexClothingTeleportAndReset, "Engine.SkeletalMeshComponent.ForceApexClothingTeleportAndReset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2842,14 +2846,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ResetClothVertsToRefPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetClothVertsToRefPose;
     /// <summary>
     /// Function: ResetClothVertsToRefPose
     /// </summary>
     public unsafe virtual void ResetClothVertsToRefPose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetClothVertsToRefPose, "Engine.SkeletalMeshComponent.ResetClothVertsToRefPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetClothVertsToRefPose, "Engine.SkeletalMeshComponent.ResetClothVertsToRefPose", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2863,14 +2867,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetAttachClothVertsToBaseBody;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAttachClothVertsToBaseBody;
     /// <summary>
     /// Function: SetAttachClothVertsToBaseBody
     /// </summary>
     public unsafe virtual void SetAttachClothVertsToBaseBody(bool bAttachVerts)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAttachClothVertsToBaseBody, "Engine.SkeletalMeshComponent.SetAttachClothVertsToBaseBody");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAttachClothVertsToBaseBody, "Engine.SkeletalMeshComponent.SetAttachClothVertsToBaseBody", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAttachVerts, paramsPtr + 0);
@@ -2885,14 +2889,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothExternalForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothExternalForce;
     /// <summary>
     /// Function: SetClothExternalForce
     /// </summary>
     public unsafe virtual void SetClothExternalForce(System.Numerics.Vector3 InForce)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothExternalForce, "Engine.SkeletalMeshComponent.SetClothExternalForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothExternalForce, "Engine.SkeletalMeshComponent.SetClothExternalForce", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InForce, paramsPtr + 0);
@@ -2907,14 +2911,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateClothParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateClothParams;
     /// <summary>
     /// Function: UpdateClothParams
     /// </summary>
     public unsafe virtual void UpdateClothParams()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateClothParams, "Engine.SkeletalMeshComponent.UpdateClothParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateClothParams, "Engine.SkeletalMeshComponent.UpdateClothParams", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2928,14 +2932,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetEnableClothingSimulation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableClothingSimulation;
     /// <summary>
     /// Function: SetEnableClothingSimulation
     /// </summary>
     public unsafe virtual void SetEnableClothingSimulation(bool bInEnable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnableClothingSimulation, "Engine.SkeletalMeshComponent.SetEnableClothingSimulation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnableClothingSimulation, "Engine.SkeletalMeshComponent.SetEnableClothingSimulation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInEnable, paramsPtr + 0);
@@ -2950,14 +2954,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothFrozen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothFrozen;
     /// <summary>
     /// Function: SetClothFrozen
     /// </summary>
     public unsafe virtual void SetClothFrozen(bool bNewFrozen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothFrozen, "Engine.SkeletalMeshComponent.SetClothFrozen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothFrozen, "Engine.SkeletalMeshComponent.SetClothFrozen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewFrozen, paramsPtr + 0);
@@ -2972,14 +2976,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetEnableClothSimulation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnableClothSimulation;
     /// <summary>
     /// Function: SetEnableClothSimulation
     /// </summary>
     public unsafe virtual void SetEnableClothSimulation(bool bInEnable)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnableClothSimulation, "Engine.SkeletalMeshComponent.SetEnableClothSimulation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnableClothSimulation, "Engine.SkeletalMeshComponent.SetEnableClothSimulation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInEnable, paramsPtr + 0);
@@ -2994,14 +2998,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetClothRBCollidesWithChannel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetClothRBCollidesWithChannel;
     /// <summary>
     /// Function: SetClothRBCollidesWithChannel
     /// </summary>
     public unsafe virtual void SetClothRBCollidesWithChannel(BmSDK.Engine.PrimitiveComponent.ERBCollisionChannel Channel, bool bNewCollides)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetClothRBCollidesWithChannel, "Engine.SkeletalMeshComponent.SetClothRBCollidesWithChannel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetClothRBCollidesWithChannel, "Engine.SkeletalMeshComponent.SetClothRBCollidesWithChannel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Channel, paramsPtr + 0);
@@ -3017,14 +3021,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetForceRefPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForceRefPose;
     /// <summary>
     /// Function: SetForceRefPose
     /// </summary>
     public unsafe virtual void SetForceRefPose(bool bNewForceRefPose)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForceRefPose, "Engine.SkeletalMeshComponent.SetForceRefPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetForceRefPose, "Engine.SkeletalMeshComponent.SetForceRefPose", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewForceRefPose, paramsPtr + 0);
@@ -3039,14 +3043,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetPhysicsAsset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPhysicsAsset;
     /// <summary>
     /// Function: SetPhysicsAsset
     /// </summary>
     public unsafe virtual void SetPhysicsAsset(BmSDK.Engine.PhysicsAsset NewPhysicsAsset, bool bForceReInit = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPhysicsAsset, "Engine.SkeletalMeshComponent.SetPhysicsAsset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPhysicsAsset, "Engine.SkeletalMeshComponent.SetPhysicsAsset", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPhysicsAsset, paramsPtr + 0);
@@ -3062,14 +3066,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_SetSkeletalMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSkeletalMesh;
     /// <summary>
     /// Function: SetSkeletalMesh
     /// </summary>
     public unsafe virtual void SetSkeletalMesh(BmSDK.Engine.SkeletalMesh NewMesh, bool bKeepSpaceBases = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSkeletalMesh, "Engine.SkeletalMeshComponent.SetSkeletalMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSkeletalMesh, "Engine.SkeletalMeshComponent.SetSkeletalMesh", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMesh, paramsPtr + 0);
@@ -3085,14 +3089,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_GetTransformMatrix;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTransformMatrix;
     /// <summary>
     /// Function: GetTransformMatrix
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FMatrix GetTransformMatrix()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTransformMatrix, "Engine.SkeletalMeshComponent.GetTransformMatrix");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTransformMatrix, "Engine.SkeletalMeshComponent.GetTransformMatrix", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -3106,14 +3110,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FMatrix>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsComponentAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsComponentAttached;
     /// <summary>
     /// Function: IsComponentAttached
     /// </summary>
     public unsafe virtual bool IsComponentAttached(BmSDK.Engine.ActorComponent Component, BmSDK.FName BoneName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsComponentAttached, "Engine.SkeletalMeshComponent.IsComponentAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsComponentAttached, "Engine.SkeletalMeshComponent.IsComponentAttached", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Component, paramsPtr + 0);
@@ -3129,14 +3133,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_FindComponentAttachedToBone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindComponentAttachedToBone;
     /// <summary>
     /// Function: FindComponentAttachedToBone
     /// </summary>
     public unsafe virtual BmSDK.Engine.ActorComponent FindComponentAttachedToBone(BmSDK.FName InBoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindComponentAttachedToBone, "Engine.SkeletalMeshComponent.FindComponentAttachedToBone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindComponentAttachedToBone, "Engine.SkeletalMeshComponent.FindComponentAttachedToBone", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InBoneName, paramsPtr + 0);
@@ -3151,14 +3155,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.ActorComponent>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetSocketBoneName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketBoneName;
     /// <summary>
     /// Function: GetSocketBoneName
     /// </summary>
     public unsafe virtual BmSDK.FName GetSocketBoneName(BmSDK.FName InSocketName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSocketBoneName, "Engine.SkeletalMeshComponent.GetSocketBoneName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSocketBoneName, "Engine.SkeletalMeshComponent.GetSocketBoneName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSocketName, paramsPtr + 0);
@@ -3173,14 +3177,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetSocketByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketByName;
     /// <summary>
     /// Function: GetSocketByName
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMeshSocket GetSocketByName(BmSDK.FName InSocketName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSocketByName, "Engine.SkeletalMeshComponent.GetSocketByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSocketByName, "Engine.SkeletalMeshComponent.GetSocketByName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSocketName, paramsPtr + 0);
@@ -3195,14 +3199,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.SkeletalMeshSocket>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetSocketWorldLocationAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSocketWorldLocationAndRotation;
     /// <summary>
     /// Function: GetSocketWorldLocationAndRotation
     /// </summary>
     public unsafe virtual bool GetSocketWorldLocationAndRotation(BmSDK.FName InSocketName, out System.Numerics.Vector3 OutLocation, out BmSDK.Rotator OutRotation, int Space)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSocketWorldLocationAndRotation, "Engine.SkeletalMeshComponent.GetSocketWorldLocationAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSocketWorldLocationAndRotation, "Engine.SkeletalMeshComponent.GetSocketWorldLocationAndRotation", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSocketName, paramsPtr + 0);
@@ -3224,14 +3228,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_AttachComponentToSocket;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponentToSocket;
     /// <summary>
     /// Function: AttachComponentToSocket
     /// </summary>
     public unsafe virtual void AttachComponentToSocket(BmSDK.Engine.ActorComponent Component, BmSDK.FName SocketName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachComponentToSocket, "Engine.SkeletalMeshComponent.AttachComponentToSocket");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachComponentToSocket, "Engine.SkeletalMeshComponent.AttachComponentToSocket", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Component, paramsPtr + 0);
@@ -3247,14 +3251,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_OverrideApexClothingMaxDistanceScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideApexClothingMaxDistanceScale;
     /// <summary>
     /// Function: OverrideApexClothingMaxDistanceScale
     /// </summary>
     public unsafe virtual void OverrideApexClothingMaxDistanceScale(float StartScale, float EndScale, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideApexClothingMaxDistanceScale, "Engine.SkeletalMeshComponent.OverrideApexClothingMaxDistanceScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideApexClothingMaxDistanceScale, "Engine.SkeletalMeshComponent.OverrideApexClothingMaxDistanceScale", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartScale, paramsPtr + 0);
@@ -3271,14 +3275,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_DetachComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachComponent;
     /// <summary>
     /// Function: DetachComponent
     /// </summary>
     public unsafe virtual void DetachComponent(BmSDK.Engine.ActorComponent Component)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachComponent, "Engine.SkeletalMeshComponent.DetachComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachComponent, "Engine.SkeletalMeshComponent.DetachComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Component, paramsPtr + 0);
@@ -3293,14 +3297,14 @@ public partial class SkeletalMeshComponent : BmSDK.Engine.MeshComponent, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_AttachComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachComponent;
     /// <summary>
     /// Function: AttachComponent
     /// </summary>
     public unsafe virtual void AttachComponent(BmSDK.Engine.ActorComponent Component, BmSDK.FName BoneName, System.Numerics.Vector3 RelativeLocation = default, BmSDK.Rotator RelativeRotation = default, System.Numerics.Vector3 RelativeScale = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachComponent, "Engine.SkeletalMeshComponent.AttachComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachComponent, "Engine.SkeletalMeshComponent.AttachComponent", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Component, paramsPtr + 0);

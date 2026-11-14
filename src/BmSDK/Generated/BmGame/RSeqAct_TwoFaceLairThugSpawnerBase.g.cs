@@ -73,14 +73,14 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
         where TComponent : class, Framework.IScriptComponent<RSeqAct_TwoFaceLairThugSpawnerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetThugsOnHigherBalconies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetThugsOnHigherBalconies;
     /// <summary>
     /// Function: GetThugsOnHigherBalconies
     /// </summary>
     public unsafe virtual int GetThugsOnHigherBalconies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetThugsOnHigherBalconies, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.GetThugsOnHigherBalconies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetThugsOnHigherBalconies, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.GetThugsOnHigherBalconies", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateThugs;
     /// <summary>
     /// Function: UpdateThugs
     /// </summary>
     public unsafe virtual bool UpdateThugs(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateThugs, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.UpdateThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateThugs, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.UpdateThugs", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_LookingAtItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LookingAtItem;
     /// <summary>
     /// Function: LookingAtItem
     /// </summary>
     public unsafe virtual bool LookingAtItem(BmSDK.Engine.Actor TestItem)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LookingAtItem, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.LookingAtItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LookingAtItem, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.LookingAtItem", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestItem, paramsPtr + 0);
@@ -131,14 +131,14 @@ public partial class RSeqAct_TwoFaceLairThugSpawnerBase : BmSDK.BmGame.RSeqAct_C
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SpawnThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnThug;
     /// <summary>
     /// Function: SpawnThug
     /// </summary>
     public unsafe virtual void SpawnThug(BmSDK.Engine.Actor SpawnPoint, BmSDK.Engine.Actor GuardPoint, int SpawnIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnThug, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.SpawnThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnThug, "BmGame.RSeqAct_TwoFaceLairThugSpawnerBase.SpawnThug", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnPoint, paramsPtr + 0);

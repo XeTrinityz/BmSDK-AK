@@ -78,14 +78,14 @@ public partial class AkSDRelationshipOnce : BmSDK.AkAudio.AkSDRelationship, BmSD
         where TComponent : class, Framework.IScriptComponent<AkSDRelationshipOnce>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Evaluate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Evaluate;
     /// <summary>
     /// Function: Evaluate
     /// </summary>
     public unsafe override float Evaluate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Evaluate, "AkAudio.AkSDRelationshipOnce.Evaluate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Evaluate, "AkAudio.AkSDRelationshipOnce.Evaluate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

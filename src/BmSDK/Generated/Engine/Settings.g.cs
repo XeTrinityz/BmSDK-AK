@@ -73,14 +73,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Settings>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateFromURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFromURL;
     /// <summary>
     /// Function: UpdateFromURL
     /// </summary>
     public unsafe virtual void UpdateFromURL(out BmSDK.FString URL, BmSDK.Engine.GameInfo Game)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFromURL, "Engine.Settings.UpdateFromURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFromURL, "Engine.Settings.UpdateFromURL", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Game, paramsPtr + 16);
@@ -96,14 +96,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BuildURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildURL;
     /// <summary>
     /// Function: BuildURL
     /// </summary>
     public unsafe virtual void BuildURL(out BmSDK.FString URL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildURL, "Engine.Settings.BuildURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildURL, "Engine.Settings.BuildURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -118,14 +118,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AppendContextsToURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendContextsToURL;
     /// <summary>
     /// Function: AppendContextsToURL
     /// </summary>
     public unsafe virtual void AppendContextsToURL(out BmSDK.FString URL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendContextsToURL, "Engine.Settings.AppendContextsToURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AppendContextsToURL, "Engine.Settings.AppendContextsToURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -140,14 +140,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AppendPropertiesToURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendPropertiesToURL;
     /// <summary>
     /// Function: AppendPropertiesToURL
     /// </summary>
     public unsafe virtual void AppendPropertiesToURL(out BmSDK.FString URL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendPropertiesToURL, "Engine.Settings.AppendPropertiesToURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AppendPropertiesToURL, "Engine.Settings.AppendPropertiesToURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -162,14 +162,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AppendDataBindingsToURL;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendDataBindingsToURL;
     /// <summary>
     /// Function: AppendDataBindingsToURL
     /// </summary>
     public unsafe virtual void AppendDataBindingsToURL(out BmSDK.FString URL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendDataBindingsToURL, "Engine.Settings.AppendDataBindingsToURL");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AppendDataBindingsToURL, "Engine.Settings.AppendDataBindingsToURL", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -184,14 +184,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetQoSAdvertisedStringSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetQoSAdvertisedStringSettings;
     /// <summary>
     /// Function: GetQoSAdvertisedStringSettings
     /// </summary>
     public unsafe virtual void GetQoSAdvertisedStringSettings(out BmSDK.TArray<BmSDK.Engine.Settings.FLocalizedStringSetting> QoSSettings)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetQoSAdvertisedStringSettings, "Engine.Settings.GetQoSAdvertisedStringSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetQoSAdvertisedStringSettings, "Engine.Settings.GetQoSAdvertisedStringSettings", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -206,14 +206,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetQoSAdvertisedProperties;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetQoSAdvertisedProperties;
     /// <summary>
     /// Function: GetQoSAdvertisedProperties
     /// </summary>
     public unsafe virtual void GetQoSAdvertisedProperties(out BmSDK.TArray<BmSDK.Engine.Settings.FSettingsProperty> QoSProps)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetQoSAdvertisedProperties, "Engine.Settings.GetQoSAdvertisedProperties");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetQoSAdvertisedProperties, "Engine.Settings.GetQoSAdvertisedProperties", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -228,14 +228,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetRangedPropertyValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRangedPropertyValue;
     /// <summary>
     /// Function: GetRangedPropertyValue
     /// </summary>
     public unsafe virtual bool GetRangedPropertyValue(int PropertyId, out float OutValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRangedPropertyValue, "Engine.Settings.GetRangedPropertyValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRangedPropertyValue, "Engine.Settings.GetRangedPropertyValue", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -253,14 +253,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetRangedPropertyValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRangedPropertyValue;
     /// <summary>
     /// Function: SetRangedPropertyValue
     /// </summary>
     public unsafe virtual bool SetRangedPropertyValue(int PropertyId, float NewValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRangedPropertyValue, "Engine.Settings.SetRangedPropertyValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRangedPropertyValue, "Engine.Settings.SetRangedPropertyValue", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -276,14 +276,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPropertyRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyRange;
     /// <summary>
     /// Function: GetPropertyRange
     /// </summary>
     public unsafe virtual bool GetPropertyRange(int PropertyId, out float OutMinValue, out float OutMaxValue, out float RangeIncrement, out byte bFormatAsInt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyRange, "Engine.Settings.GetPropertyRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyRange, "Engine.Settings.GetPropertyRange", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -310,14 +310,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetPropertyMappingType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyMappingType;
     /// <summary>
     /// Function: GetPropertyMappingType
     /// </summary>
     public unsafe virtual bool GetPropertyMappingType(int PropertyId, out BmSDK.Engine.Settings.EPropertyValueMappingType OutType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyMappingType, "Engine.Settings.GetPropertyMappingType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyMappingType, "Engine.Settings.GetPropertyMappingType", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -335,14 +335,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_HasStringSetting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasStringSetting;
     /// <summary>
     /// Function: HasStringSetting
     /// </summary>
     public unsafe virtual bool HasStringSetting(int SettingId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasStringSetting, "Engine.Settings.HasStringSetting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasStringSetting, "Engine.Settings.HasStringSetting", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SettingId, paramsPtr + 0);
@@ -357,14 +357,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_HasProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasProperty;
     /// <summary>
     /// Function: HasProperty
     /// </summary>
     public unsafe virtual bool HasProperty(int PropertyId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasProperty, "Engine.Settings.HasProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasProperty, "Engine.Settings.HasProperty", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -379,14 +379,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateProperties;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateProperties;
     /// <summary>
     /// Function: UpdateProperties
     /// </summary>
     public unsafe virtual void UpdateProperties(out BmSDK.TArray<BmSDK.Engine.Settings.FSettingsProperty> Props, bool bShouldAddIfMissing = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateProperties, "Engine.Settings.UpdateProperties");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateProperties, "Engine.Settings.UpdateProperties", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldAddIfMissing, paramsPtr + 16);
@@ -402,14 +402,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateStringSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateStringSettings;
     /// <summary>
     /// Function: UpdateStringSettings
     /// </summary>
     public unsafe virtual void UpdateStringSettings(out BmSDK.TArray<BmSDK.Engine.Settings.FLocalizedStringSetting> Settings, bool bShouldAddIfMissing = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateStringSettings, "Engine.Settings.UpdateStringSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateStringSettings, "Engine.Settings.UpdateStringSettings", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldAddIfMissing, paramsPtr + 16);
@@ -425,14 +425,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetPropertyType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyType;
     /// <summary>
     /// Function: GetPropertyType
     /// </summary>
     public unsafe virtual BmSDK.Engine.Settings.ESettingsDataType GetPropertyType(int PropertyId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyType, "Engine.Settings.GetPropertyType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyType, "Engine.Settings.GetPropertyType", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -447,14 +447,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Settings.ESettingsDataType>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetPropertyValueId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyValueId;
     /// <summary>
     /// Function: GetPropertyValueId
     /// </summary>
     public unsafe virtual bool GetPropertyValueId(int PropertyId, out int ValueId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyValueId, "Engine.Settings.GetPropertyValueId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyValueId, "Engine.Settings.GetPropertyValueId", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -472,14 +472,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetPropertyValueId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPropertyValueId;
     /// <summary>
     /// Function: SetPropertyValueId
     /// </summary>
     public unsafe virtual bool SetPropertyValueId(int PropertyId, int ValueId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPropertyValueId, "Engine.Settings.SetPropertyValueId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPropertyValueId, "Engine.Settings.SetPropertyValueId", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -495,14 +495,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetStringProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringProperty;
     /// <summary>
     /// Function: GetStringProperty
     /// </summary>
     public unsafe virtual bool GetStringProperty(int PropertyId, out BmSDK.FString Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringProperty, "Engine.Settings.GetStringProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringProperty, "Engine.Settings.GetStringProperty", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -518,18 +518,18 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SetStringProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringProperty;
     /// <summary>
     /// Function: SetStringProperty
     /// </summary>
-    public unsafe virtual void SetStringProperty(int PropertyId, BmSDK.FString Value)
+    public unsafe virtual void SetStringProperty(int PropertyId, BmSDK.FStringArg Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStringProperty, "Engine.Settings.SetStringProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStringProperty, "Engine.Settings.SetStringProperty", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 4);
+        Value.WriteTo(paramsPtr + 4);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -538,17 +538,18 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_GetIntProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIntProperty;
     /// <summary>
     /// Function: GetIntProperty
     /// </summary>
     public unsafe virtual bool GetIntProperty(int PropertyId, out int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIntProperty, "Engine.Settings.GetIntProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIntProperty, "Engine.Settings.GetIntProperty", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -566,14 +567,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetIntProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIntProperty;
     /// <summary>
     /// Function: SetIntProperty
     /// </summary>
     public unsafe virtual void SetIntProperty(int PropertyId, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIntProperty, "Engine.Settings.SetIntProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetIntProperty, "Engine.Settings.SetIntProperty", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -589,14 +590,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetFloatProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFloatProperty;
     /// <summary>
     /// Function: GetFloatProperty
     /// </summary>
     public unsafe virtual bool GetFloatProperty(int PropertyId, out float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFloatProperty, "Engine.Settings.GetFloatProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFloatProperty, "Engine.Settings.GetFloatProperty", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -614,14 +615,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetFloatProperty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatProperty;
     /// <summary>
     /// Function: SetFloatProperty
     /// </summary>
     public unsafe virtual void SetFloatProperty(int PropertyId, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFloatProperty, "Engine.Settings.SetFloatProperty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFloatProperty, "Engine.Settings.SetFloatProperty", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -637,14 +638,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetPropertyFromStringByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPropertyFromStringByName;
     /// <summary>
     /// Function: SetPropertyFromStringByName
     /// </summary>
     public unsafe virtual bool SetPropertyFromStringByName(BmSDK.FName PropertyName, out BmSDK.FString NewValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPropertyFromStringByName, "Engine.Settings.SetPropertyFromStringByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPropertyFromStringByName, "Engine.Settings.SetPropertyFromStringByName", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyName, paramsPtr + 0);
@@ -660,14 +661,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_GetPropertyAsStringByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyAsStringByName;
     /// <summary>
     /// Function: GetPropertyAsStringByName
     /// </summary>
     public unsafe virtual BmSDK.FString GetPropertyAsStringByName(BmSDK.FName PropertyName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyAsStringByName, "Engine.Settings.GetPropertyAsStringByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyAsStringByName, "Engine.Settings.GetPropertyAsStringByName", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyName, paramsPtr + 0);
@@ -682,14 +683,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPropertyAsString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyAsString;
     /// <summary>
     /// Function: GetPropertyAsString
     /// </summary>
     public unsafe virtual BmSDK.FString GetPropertyAsString(int PropertyId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyAsString, "Engine.Settings.GetPropertyAsString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyAsString, "Engine.Settings.GetPropertyAsString", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -704,14 +705,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetPropertyColumnHeader;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyColumnHeader;
     /// <summary>
     /// Function: GetPropertyColumnHeader
     /// </summary>
     public unsafe virtual BmSDK.FString GetPropertyColumnHeader(int PropertyId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyColumnHeader, "Engine.Settings.GetPropertyColumnHeader");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyColumnHeader, "Engine.Settings.GetPropertyColumnHeader", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -726,14 +727,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetPropertyName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyName;
     /// <summary>
     /// Function: GetPropertyName
     /// </summary>
     public unsafe virtual BmSDK.FName GetPropertyName(int PropertyId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyName, "Engine.Settings.GetPropertyName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyName, "Engine.Settings.GetPropertyName", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyId, paramsPtr + 0);
@@ -748,14 +749,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetPropertyId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPropertyId;
     /// <summary>
     /// Function: GetPropertyId
     /// </summary>
     public unsafe virtual bool GetPropertyId(BmSDK.FName PropertyName, out int PropertyId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPropertyId, "Engine.Settings.GetPropertyId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPropertyId, "Engine.Settings.GetPropertyId", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyName, paramsPtr + 0);
@@ -773,14 +774,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetStringSettingValueFromStringByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringSettingValueFromStringByName;
     /// <summary>
     /// Function: SetStringSettingValueFromStringByName
     /// </summary>
     public unsafe virtual bool SetStringSettingValueFromStringByName(BmSDK.FName StringSettingName, out BmSDK.FString NewValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStringSettingValueFromStringByName, "Engine.Settings.SetStringSettingValueFromStringByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStringSettingValueFromStringByName, "Engine.Settings.SetStringSettingValueFromStringByName", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingName, paramsPtr + 0);
@@ -796,14 +797,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_GetStringSettingValueNameByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueNameByName;
     /// <summary>
     /// Function: GetStringSettingValueNameByName
     /// </summary>
     public unsafe virtual BmSDK.FName GetStringSettingValueNameByName(BmSDK.FName StringSettingName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingValueNameByName, "Engine.Settings.GetStringSettingValueNameByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingValueNameByName, "Engine.Settings.GetStringSettingValueNameByName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingName, paramsPtr + 0);
@@ -818,14 +819,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetStringSettingValueName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueName;
     /// <summary>
     /// Function: GetStringSettingValueName
     /// </summary>
     public unsafe virtual BmSDK.FName GetStringSettingValueName(int StringSettingId, int ValueIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingValueName, "Engine.Settings.GetStringSettingValueName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingValueName, "Engine.Settings.GetStringSettingValueName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);
@@ -841,14 +842,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsWildcardStringSetting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWildcardStringSetting;
     /// <summary>
     /// Function: IsWildcardStringSetting
     /// </summary>
     public unsafe virtual bool IsWildcardStringSetting(int StringSettingId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWildcardStringSetting, "Engine.Settings.IsWildcardStringSetting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWildcardStringSetting, "Engine.Settings.IsWildcardStringSetting", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);
@@ -863,14 +864,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetStringSettingColumnHeader;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingColumnHeader;
     /// <summary>
     /// Function: GetStringSettingColumnHeader
     /// </summary>
     public unsafe virtual BmSDK.FString GetStringSettingColumnHeader(int StringSettingId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingColumnHeader, "Engine.Settings.GetStringSettingColumnHeader");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingColumnHeader, "Engine.Settings.GetStringSettingColumnHeader", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);
@@ -885,14 +886,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetStringSettingName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingName;
     /// <summary>
     /// Function: GetStringSettingName
     /// </summary>
     public unsafe virtual BmSDK.FName GetStringSettingName(int StringSettingId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingName, "Engine.Settings.GetStringSettingName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingName, "Engine.Settings.GetStringSettingName", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);
@@ -907,14 +908,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetStringSettingId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingId;
     /// <summary>
     /// Function: GetStringSettingId
     /// </summary>
     public unsafe virtual bool GetStringSettingId(BmSDK.FName StringSettingName, out int StringSettingId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingId, "Engine.Settings.GetStringSettingId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingId, "Engine.Settings.GetStringSettingId", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingName, paramsPtr + 0);
@@ -932,14 +933,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetStringSettingValueByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueByName;
     /// <summary>
     /// Function: GetStringSettingValueByName
     /// </summary>
     public unsafe virtual bool GetStringSettingValueByName(BmSDK.FName StringSettingName, out int ValueIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingValueByName, "Engine.Settings.GetStringSettingValueByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingValueByName, "Engine.Settings.GetStringSettingValueByName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingName, paramsPtr + 0);
@@ -957,14 +958,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetStringSettingValueByName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringSettingValueByName;
     /// <summary>
     /// Function: SetStringSettingValueByName
     /// </summary>
     public unsafe virtual void SetStringSettingValueByName(BmSDK.FName StringSettingName, int ValueIndex, bool bShouldAutoAdd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStringSettingValueByName, "Engine.Settings.SetStringSettingValueByName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStringSettingValueByName, "Engine.Settings.SetStringSettingValueByName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingName, paramsPtr + 0);
@@ -981,14 +982,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetStringSettingValueNames;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValueNames;
     /// <summary>
     /// Function: GetStringSettingValueNames
     /// </summary>
     public unsafe virtual bool GetStringSettingValueNames(int StringSettingId, out BmSDK.TArray<BmSDK.Engine.Settings.FIdToStringMapping> Values)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingValueNames, "Engine.Settings.GetStringSettingValueNames");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingValueNames, "Engine.Settings.GetStringSettingValueNames", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);
@@ -1004,14 +1005,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_IncrementStringSettingValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncrementStringSettingValue;
     /// <summary>
     /// Function: IncrementStringSettingValue
     /// </summary>
     public unsafe virtual bool IncrementStringSettingValue(int StringSettingId, int Direction, bool bShouldWrap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncrementStringSettingValue, "Engine.Settings.IncrementStringSettingValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncrementStringSettingValue, "Engine.Settings.IncrementStringSettingValue", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);
@@ -1028,14 +1029,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetStringSettingValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStringSettingValue;
     /// <summary>
     /// Function: GetStringSettingValue
     /// </summary>
     public unsafe virtual bool GetStringSettingValue(int StringSettingId, out int ValueIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStringSettingValue, "Engine.Settings.GetStringSettingValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStringSettingValue, "Engine.Settings.GetStringSettingValue", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);
@@ -1053,14 +1054,14 @@ public partial class Settings : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetStringSettingValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStringSettingValue;
     /// <summary>
     /// Function: SetStringSettingValue
     /// </summary>
     public unsafe virtual void SetStringSettingValue(int StringSettingId, int ValueIndex, bool bShouldAutoAdd = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStringSettingValue, "Engine.Settings.SetStringSettingValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStringSettingValue, "Engine.Settings.SetStringSettingValue", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StringSettingId, paramsPtr + 0);

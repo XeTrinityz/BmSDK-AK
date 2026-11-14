@@ -78,14 +78,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         where TComponent : class, Framework.IScriptComponent<GameplayEventsUploadAnalytics>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RecordCoverLinkFireLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecordCoverLinkFireLinks;
     /// <summary>
     /// Function: RecordCoverLinkFireLinks
     /// </summary>
     public unsafe override int RecordCoverLinkFireLinks(BmSDK.Engine.CoverLink Link, BmSDK.Engine.Controller Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecordCoverLinkFireLinks, "Engine.GameplayEventsUploadAnalytics.RecordCoverLinkFireLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecordCoverLinkFireLinks, "Engine.GameplayEventsUploadAnalytics.RecordCoverLinkFireLinks", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Link, paramsPtr + 0);
@@ -94,45 +94,46 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_RecordAIPathFail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecordAIPathFail;
     /// <summary>
     /// Function: RecordAIPathFail
     /// </summary>
-    public unsafe override void RecordAIPathFail(BmSDK.Engine.Controller AI, BmSDK.FString Reason, System.Numerics.Vector3 Dest)
+    public unsafe override void RecordAIPathFail(BmSDK.Engine.Controller AI, BmSDK.FStringArg Reason, System.Numerics.Vector3 Dest)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecordAIPathFail, "Engine.GameplayEventsUploadAnalytics.RecordAIPathFail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecordAIPathFail, "Engine.GameplayEventsUploadAnalytics.RecordAIPathFail", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AI, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Reason, paramsPtr + 8);
+        Reason.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Dest, paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
-    private static BmSDK.Function __fn_GetGenericParamListEntry;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGenericParamListEntry;
     /// <summary>
     /// Function: GetGenericParamListEntry
     /// </summary>
     public unsafe virtual BmSDK.Engine.GenericParamListStatEntry GetGenericParamListEntry()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGenericParamListEntry, "Engine.GameplayEventsUploadAnalytics.GetGenericParamListEntry");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGenericParamListEntry, "Engine.GameplayEventsUploadAnalytics.GetGenericParamListEntry", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.GenericParamListStatEntry>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LogProjectileIntEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogProjectileIntEvent;
     /// <summary>
     /// Function: LogProjectileIntEvent
     /// </summary>
     public unsafe override void LogProjectileIntEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class Proj, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogProjectileIntEvent, "Engine.GameplayEventsUploadAnalytics.LogProjectileIntEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogProjectileIntEvent, "Engine.GameplayEventsUploadAnalytics.LogProjectileIntEvent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -150,14 +151,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogDamageEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogDamageEvent;
     /// <summary>
     /// Function: LogDamageEvent
     /// </summary>
     public unsafe override void LogDamageEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class dmgType, BmSDK.Engine.Controller Target, int Amount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogDamageEvent, "Engine.GameplayEventsUploadAnalytics.LogDamageEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogDamageEvent, "Engine.GameplayEventsUploadAnalytics.LogDamageEvent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -176,14 +177,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogWeaponIntEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogWeaponIntEvent;
     /// <summary>
     /// Function: LogWeaponIntEvent
     /// </summary>
     public unsafe override void LogWeaponIntEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class WeaponClass, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogWeaponIntEvent, "Engine.GameplayEventsUploadAnalytics.LogWeaponIntEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogWeaponIntEvent, "Engine.GameplayEventsUploadAnalytics.LogWeaponIntEvent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -201,14 +202,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlayerPlayerEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerPlayerEvent;
     /// <summary>
     /// Function: LogPlayerPlayerEvent
     /// </summary>
     public unsafe override void LogPlayerPlayerEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Engine.Controller Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerPlayerEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerPlayerEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlayerPlayerEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerPlayerEvent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -225,14 +226,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlayerKillDeath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerKillDeath;
     /// <summary>
     /// Function: LogPlayerKillDeath
     /// </summary>
     public unsafe override void LogPlayerKillDeath(int EventID, int KillType, BmSDK.Engine.Controller Killer, BmSDK.Class dmgType, BmSDK.Engine.Controller Dead)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerKillDeath, "Engine.GameplayEventsUploadAnalytics.LogPlayerKillDeath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlayerKillDeath, "Engine.GameplayEventsUploadAnalytics.LogPlayerKillDeath", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -251,14 +252,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogAllPlayerPositionsEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogAllPlayerPositionsEvent;
     /// <summary>
     /// Function: LogAllPlayerPositionsEvent
     /// </summary>
     public unsafe override void LogAllPlayerPositionsEvent(int EventID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogAllPlayerPositionsEvent, "Engine.GameplayEventsUploadAnalytics.LogAllPlayerPositionsEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogAllPlayerPositionsEvent, "Engine.GameplayEventsUploadAnalytics.LogAllPlayerPositionsEvent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -273,19 +274,19 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlayerLoginChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerLoginChange;
     /// <summary>
     /// Function: LogPlayerLoginChange
     /// </summary>
-    public unsafe override void LogPlayerLoginChange(int EventID, BmSDK.Engine.Controller Player, BmSDK.FString PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bSplitScreen)
+    public unsafe override void LogPlayerLoginChange(int EventID, BmSDK.Engine.Controller Player, BmSDK.FStringArg PlayerName, BmSDK.Engine.OnlineSubsystem.FUniqueNetId PlayerID, bool bSplitScreen)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerLoginChange, "Engine.GameplayEventsUploadAnalytics.LogPlayerLoginChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlayerLoginChange, "Engine.GameplayEventsUploadAnalytics.LogPlayerLoginChange", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerName, paramsPtr + 12);
+        PlayerName.WriteTo(paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerID, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSplitScreen, paramsPtr + 36);
         var oldFlags = funcManaged.FunctionFlags;
@@ -296,17 +297,18 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 12);
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlayerSpawnEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerSpawnEvent;
     /// <summary>
     /// Function: LogPlayerSpawnEvent
     /// </summary>
     public unsafe override void LogPlayerSpawnEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.Class PawnClass, int TeamID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerSpawnEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerSpawnEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlayerSpawnEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerSpawnEvent", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -324,19 +326,19 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlayerStringEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerStringEvent;
     /// <summary>
     /// Function: LogPlayerStringEvent
     /// </summary>
-    public unsafe override void LogPlayerStringEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.FString EventString)
+    public unsafe override void LogPlayerStringEvent(int EventID, BmSDK.Engine.Controller Player, BmSDK.FStringArg EventString)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerStringEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerStringEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlayerStringEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerStringEvent", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventString, paramsPtr + 12);
+        EventString.WriteTo(paramsPtr + 12);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -345,17 +347,18 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 12);
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlayerFloatEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerFloatEvent;
     /// <summary>
     /// Function: LogPlayerFloatEvent
     /// </summary>
     public unsafe override void LogPlayerFloatEvent(int EventID, BmSDK.Engine.Controller Player, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerFloatEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerFloatEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlayerFloatEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerFloatEvent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -372,14 +375,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogPlayerIntEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogPlayerIntEvent;
     /// <summary>
     /// Function: LogPlayerIntEvent
     /// </summary>
     public unsafe override void LogPlayerIntEvent(int EventID, BmSDK.Engine.Controller Player, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogPlayerIntEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerIntEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogPlayerIntEvent, "Engine.GameplayEventsUploadAnalytics.LogPlayerIntEvent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -396,19 +399,19 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogTeamStringEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogTeamStringEvent;
     /// <summary>
     /// Function: LogTeamStringEvent
     /// </summary>
-    public unsafe override void LogTeamStringEvent(int EventID, BmSDK.Engine.TeamInfo Team, BmSDK.FString Value)
+    public unsafe override void LogTeamStringEvent(int EventID, BmSDK.Engine.TeamInfo Team, BmSDK.FStringArg Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogTeamStringEvent, "Engine.GameplayEventsUploadAnalytics.LogTeamStringEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogTeamStringEvent, "Engine.GameplayEventsUploadAnalytics.LogTeamStringEvent", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Team, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 12);
+        Value.WriteTo(paramsPtr + 12);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -417,17 +420,18 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 12);
         return;
     }
 
-    private static BmSDK.Function __fn_LogTeamFloatEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogTeamFloatEvent;
     /// <summary>
     /// Function: LogTeamFloatEvent
     /// </summary>
     public unsafe override void LogTeamFloatEvent(int EventID, BmSDK.Engine.TeamInfo Team, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogTeamFloatEvent, "Engine.GameplayEventsUploadAnalytics.LogTeamFloatEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogTeamFloatEvent, "Engine.GameplayEventsUploadAnalytics.LogTeamFloatEvent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -444,14 +448,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogTeamIntEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogTeamIntEvent;
     /// <summary>
     /// Function: LogTeamIntEvent
     /// </summary>
     public unsafe override void LogTeamIntEvent(int EventID, BmSDK.Engine.TeamInfo Team, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogTeamIntEvent, "Engine.GameplayEventsUploadAnalytics.LogTeamIntEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogTeamIntEvent, "Engine.GameplayEventsUploadAnalytics.LogTeamIntEvent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -468,14 +472,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogGamePositionEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGamePositionEvent;
     /// <summary>
     /// Function: LogGamePositionEvent
     /// </summary>
     public unsafe override void LogGamePositionEvent(int EventID, out System.Numerics.Vector3 Position, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGamePositionEvent, "Engine.GameplayEventsUploadAnalytics.LogGamePositionEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogGamePositionEvent, "Engine.GameplayEventsUploadAnalytics.LogGamePositionEvent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -494,14 +498,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogGameFloatEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGameFloatEvent;
     /// <summary>
     /// Function: LogGameFloatEvent
     /// </summary>
     public unsafe override void LogGameFloatEvent(int EventID, float Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGameFloatEvent, "Engine.GameplayEventsUploadAnalytics.LogGameFloatEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogGameFloatEvent, "Engine.GameplayEventsUploadAnalytics.LogGameFloatEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -517,18 +521,18 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_LogGameStringEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGameStringEvent;
     /// <summary>
     /// Function: LogGameStringEvent
     /// </summary>
-    public unsafe override void LogGameStringEvent(int EventID, BmSDK.FString Value)
+    public unsafe override void LogGameStringEvent(int EventID, BmSDK.FStringArg Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGameStringEvent, "Engine.GameplayEventsUploadAnalytics.LogGameStringEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogGameStringEvent, "Engine.GameplayEventsUploadAnalytics.LogGameStringEvent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 4);
+        Value.WriteTo(paramsPtr + 4);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -537,17 +541,18 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_LogGameIntEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogGameIntEvent;
     /// <summary>
     /// Function: LogGameIntEvent
     /// </summary>
     public unsafe override void LogGameIntEvent(int EventID, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogGameIntEvent, "Engine.GameplayEventsUploadAnalytics.LogGameIntEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogGameIntEvent, "Engine.GameplayEventsUploadAnalytics.LogGameIntEvent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventID, paramsPtr + 0);
@@ -563,14 +568,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_EndLogging;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndLogging;
     /// <summary>
     /// Function: EndLogging
     /// </summary>
     public unsafe override void EndLogging()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndLogging, "Engine.GameplayEventsUploadAnalytics.EndLogging");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndLogging, "Engine.GameplayEventsUploadAnalytics.EndLogging", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -584,14 +589,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_ResetLogging;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetLogging;
     /// <summary>
     /// Function: ResetLogging
     /// </summary>
     public unsafe override void ResetLogging(float HeartbeatDelta = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetLogging, "Engine.GameplayEventsUploadAnalytics.ResetLogging");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetLogging, "Engine.GameplayEventsUploadAnalytics.ResetLogging", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HeartbeatDelta, paramsPtr + 0);
@@ -606,14 +611,14 @@ public partial class GameplayEventsUploadAnalytics : BmSDK.Engine.GameplayEvents
         return;
     }
 
-    private static BmSDK.Function __fn_StartLogging;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLogging;
     /// <summary>
     /// Function: StartLogging
     /// </summary>
     public unsafe override void StartLogging(float HeartbeatDelta = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLogging, "Engine.GameplayEventsUploadAnalytics.StartLogging");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartLogging, "Engine.GameplayEventsUploadAnalytics.StartLogging", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HeartbeatDelta, paramsPtr + 0);

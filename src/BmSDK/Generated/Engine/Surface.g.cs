@@ -73,14 +73,14 @@ public partial class Surface : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Surface>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetSurfaceHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSurfaceHeight;
     /// <summary>
     /// Function: GetSurfaceHeight
     /// </summary>
     public unsafe virtual float GetSurfaceHeight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSurfaceHeight, "Engine.Surface.GetSurfaceHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSurfaceHeight, "Engine.Surface.GetSurfaceHeight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -94,14 +94,14 @@ public partial class Surface : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSurfaceWidth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSurfaceWidth;
     /// <summary>
     /// Function: GetSurfaceWidth
     /// </summary>
     public unsafe virtual float GetSurfaceWidth()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSurfaceWidth, "Engine.Surface.GetSurfaceWidth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSurfaceWidth, "Engine.Surface.GetSurfaceWidth", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

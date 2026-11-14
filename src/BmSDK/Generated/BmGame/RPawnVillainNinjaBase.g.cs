@@ -73,42 +73,42 @@ public partial class RPawnVillainNinjaBase : BmSDK.BmGame.RPawnVillain, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RPawnVillainNinjaBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GroupAttackHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GroupAttackHit;
     /// <summary>
     /// Function: GroupAttackHit
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult GroupAttackHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GroupAttackHit, "BmGame.RPawnVillainNinjaBase.GroupAttackHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GroupAttackHit, "BmGame.RPawnVillainNinjaBase.GroupAttackHit", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDodgeMovementStance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDodgeMovementStance;
     /// <summary>
     /// Function: GetDodgeMovementStance
     /// </summary>
     public unsafe override BmSDK.FName GetDodgeMovementStance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDodgeMovementStance, "BmGame.RPawnVillainNinjaBase.GetDodgeMovementStance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDodgeMovementStance, "BmGame.RPawnVillainNinjaBase.GetDodgeMovementStance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OverrideHarpoonHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideHarpoonHit;
     /// <summary>
     /// Function: OverrideHarpoonHit
     /// </summary>
     public unsafe override bool OverrideHarpoonHit(BmSDK.BmGame.RPawnPlayer PlayerPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideHarpoonHit, "BmGame.RPawnVillainNinjaBase.OverrideHarpoonHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideHarpoonHit, "BmGame.RPawnVillainNinjaBase.OverrideHarpoonHit", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerPawn, paramsPtr + 0);
@@ -116,28 +116,28 @@ public partial class RPawnVillainNinjaBase : BmSDK.BmGame.RPawnVillain, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ShouldGetUpWhenHitFloor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldGetUpWhenHitFloor;
     /// <summary>
     /// Function: ShouldGetUpWhenHitFloor
     /// </summary>
     public unsafe override bool ShouldGetUpWhenHitFloor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldGetUpWhenHitFloor, "BmGame.RPawnVillainNinjaBase.ShouldGetUpWhenHitFloor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldGetUpWhenHitFloor, "BmGame.RPawnVillainNinjaBase.ShouldGetUpWhenHitFloor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Died;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Died;
     /// <summary>
     /// Function: Died
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "BmGame.RPawnVillainNinjaBase.Died");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Died, "BmGame.RPawnVillainNinjaBase.Died", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -147,28 +147,28 @@ public partial class RPawnVillainNinjaBase : BmSDK.BmGame.RPawnVillain, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_RemoveDodgeTrails;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveDodgeTrails;
     /// <summary>
     /// Function: RemoveDodgeTrails
     /// </summary>
     public unsafe virtual void RemoveDodgeTrails()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveDodgeTrails, "BmGame.RPawnVillainNinjaBase.RemoveDodgeTrails");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveDodgeTrails, "BmGame.RPawnVillainNinjaBase.RemoveDodgeTrails", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddDodgeTrail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDodgeTrail;
     /// <summary>
     /// Function: AddDodgeTrail
     /// </summary>
     public unsafe virtual void AddDodgeTrail(BmSDK.FName BoneName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDodgeTrail, "BmGame.RPawnVillainNinjaBase.AddDodgeTrail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDodgeTrail, "BmGame.RPawnVillainNinjaBase.AddDodgeTrail", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoneName, paramsPtr + 0);
@@ -176,14 +176,14 @@ public partial class RPawnVillainNinjaBase : BmSDK.BmGame.RPawnVillain, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_ClearDodgeTrails;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDodgeTrails;
     /// <summary>
     /// Function: ClearDodgeTrails
     /// </summary>
     public unsafe virtual void ClearDodgeTrails()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDodgeTrails, "BmGame.RPawnVillainNinjaBase.ClearDodgeTrails");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDodgeTrails, "BmGame.RPawnVillainNinjaBase.ClearDodgeTrails", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

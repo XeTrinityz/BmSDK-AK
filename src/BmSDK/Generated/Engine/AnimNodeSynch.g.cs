@@ -78,14 +78,14 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<AnimNodeSynch>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetGroupRateScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGroupRateScale;
     /// <summary>
     /// Function: SetGroupRateScale
     /// </summary>
     public unsafe virtual void SetGroupRateScale(BmSDK.FName GroupName, float NewRateScale)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGroupRateScale, "Engine.AnimNodeSynch.SetGroupRateScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGroupRateScale, "Engine.AnimNodeSynch.SetGroupRateScale", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GroupName, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetRelativePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRelativePosition;
     /// <summary>
     /// Function: GetRelativePosition
     /// </summary>
     public unsafe virtual float GetRelativePosition(BmSDK.FName GroupName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRelativePosition, "Engine.AnimNodeSynch.GetRelativePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRelativePosition, "Engine.AnimNodeSynch.GetRelativePosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GroupName, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ForceRelativePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceRelativePosition;
     /// <summary>
     /// Function: ForceRelativePosition
     /// </summary>
     public unsafe virtual void ForceRelativePosition(BmSDK.FName GroupName, float RelativePosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceRelativePosition, "Engine.AnimNodeSynch.ForceRelativePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceRelativePosition, "Engine.AnimNodeSynch.ForceRelativePosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GroupName, paramsPtr + 0);
@@ -146,14 +146,14 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_GetMasterNodeOfGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMasterNodeOfGroup;
     /// <summary>
     /// Function: GetMasterNodeOfGroup
     /// </summary>
     public unsafe virtual BmSDK.Engine.AnimNodeSequence GetMasterNodeOfGroup(BmSDK.FName GroupName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMasterNodeOfGroup, "Engine.AnimNodeSynch.GetMasterNodeOfGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMasterNodeOfGroup, "Engine.AnimNodeSynch.GetMasterNodeOfGroup", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GroupName, paramsPtr + 0);
@@ -168,14 +168,14 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimNodeSequence>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_RemoveNodeFromGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveNodeFromGroup;
     /// <summary>
     /// Function: RemoveNodeFromGroup
     /// </summary>
     public unsafe virtual void RemoveNodeFromGroup(BmSDK.Engine.AnimNodeSequence SeqNode, BmSDK.FName GroupName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveNodeFromGroup, "Engine.AnimNodeSynch.RemoveNodeFromGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveNodeFromGroup, "Engine.AnimNodeSynch.RemoveNodeFromGroup", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SeqNode, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class AnimNodeSynch : BmSDK.Engine.AnimNodeBlendBase, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_AddNodeToGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddNodeToGroup;
     /// <summary>
     /// Function: AddNodeToGroup
     /// </summary>
     public unsafe virtual void AddNodeToGroup(BmSDK.Engine.AnimNodeSequence SeqNode, BmSDK.FName GroupName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddNodeToGroup, "Engine.AnimNodeSynch.AddNodeToGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddNodeToGroup, "Engine.AnimNodeSynch.AddNodeToGroup", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SeqNode, paramsPtr + 0);

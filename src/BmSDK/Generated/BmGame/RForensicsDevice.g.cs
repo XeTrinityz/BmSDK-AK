@@ -78,42 +78,42 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RForensicsDevice>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ResetAudioStates;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAudioStates;
     /// <summary>
     /// Function: ResetAudioStates
     /// </summary>
     public unsafe virtual void ResetAudioStates()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetAudioStates, "BmGame.RForensicsDevice.ResetAudioStates");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetAudioStates, "BmGame.RForensicsDevice.ResetAudioStates", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RForensicsDevice.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RForensicsDevice.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ForensicsSetInBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForensicsSetInBatmobile;
     /// <summary>
     /// Function: ForensicsSetInBatmobile
     /// </summary>
     public unsafe virtual void ForensicsSetInBatmobile(bool in_batmobile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForensicsSetInBatmobile, "BmGame.RForensicsDevice.ForensicsSetInBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForensicsSetInBatmobile, "BmGame.RForensicsDevice.ForensicsSetInBatmobile", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(in_batmobile, paramsPtr + 0);
@@ -121,28 +121,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TryStartForensicSideStory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryStartForensicSideStory;
     /// <summary>
     /// Function: TryStartForensicSideStory
     /// </summary>
     public unsafe virtual bool TryStartForensicSideStory()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryStartForensicSideStory, "BmGame.RForensicsDevice.TryStartForensicSideStory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryStartForensicSideStory, "BmGame.RForensicsDevice.TryStartForensicSideStory", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TickSideStory;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickSideStory;
     /// <summary>
     /// Function: TickSideStory
     /// </summary>
     public unsafe virtual void TickSideStory(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickSideStory, "BmGame.RForensicsDevice.TickSideStory");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickSideStory, "BmGame.RForensicsDevice.TickSideStory", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCurrentBatmobileForensicsSideStorySeqAct;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentBatmobileForensicsSideStorySeqAct;
     /// <summary>
     /// Function: SetCurrentBatmobileForensicsSideStorySeqAct
     /// </summary>
     public unsafe virtual void SetCurrentBatmobileForensicsSideStorySeqAct(BmSDK.BmGame.RSeqAct_BatmobileForensicsSideStory the_sequence)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentBatmobileForensicsSideStorySeqAct, "BmGame.RForensicsDevice.SetCurrentBatmobileForensicsSideStorySeqAct");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCurrentBatmobileForensicsSideStorySeqAct, "BmGame.RForensicsDevice.SetCurrentBatmobileForensicsSideStorySeqAct", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(the_sequence, paramsPtr + 0);
@@ -165,14 +165,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TickSatNavArrows;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickSatNavArrows;
     /// <summary>
     /// Function: TickSatNavArrows
     /// </summary>
     public unsafe virtual void TickSatNavArrows(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickSatNavArrows, "BmGame.RForensicsDevice.TickSatNavArrows");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickSatNavArrows, "BmGame.RForensicsDevice.TickSatNavArrows", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -187,14 +187,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSatNavArrowsAsync;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSatNavArrowsAsync;
     /// <summary>
     /// Function: UpdateSatNavArrowsAsync
     /// </summary>
     public unsafe virtual void UpdateSatNavArrowsAsync(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSatNavArrowsAsync, "BmGame.RForensicsDevice.UpdateSatNavArrowsAsync");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSatNavArrowsAsync, "BmGame.RForensicsDevice.UpdateSatNavArrowsAsync", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSatNavArrowsInternal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSatNavArrowsInternal;
     /// <summary>
     /// Function: UpdateSatNavArrowsInternal
     /// </summary>
     public unsafe virtual bool UpdateSatNavArrowsInternal(bool GotNewRoute, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSatNavArrowsInternal, "BmGame.RForensicsDevice.UpdateSatNavArrowsInternal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSatNavArrowsInternal, "BmGame.RForensicsDevice.UpdateSatNavArrowsInternal", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GotNewRoute, paramsPtr + 0);
@@ -232,14 +232,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UpdateSatNavArrows;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSatNavArrows;
     /// <summary>
     /// Function: UpdateSatNavArrows
     /// </summary>
     public unsafe virtual void UpdateSatNavArrows(BmSDK.Engine.Actor Destination, float ObjectiveZ, bool OnlyMainRoads, bool SuppressEjectArrow, bool ToRoadAtSameHeight, bool ToRoadBelow, bool AllowArmouredRoads, float DeltaTime, BmSDK.TArray<BmSDK.BmGame.RRoadNetwork.FOneWayLink> OneWayLinks)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSatNavArrows, "BmGame.RForensicsDevice.UpdateSatNavArrows");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSatNavArrows, "BmGame.RForensicsDevice.UpdateSatNavArrows", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Destination, paramsPtr + 0);
@@ -262,56 +262,56 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopRadar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopRadar;
     /// <summary>
     /// Function: StopRadar
     /// </summary>
     public unsafe virtual void StopRadar()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopRadar, "BmGame.RForensicsDevice.StopRadar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopRadar, "BmGame.RForensicsDevice.StopRadar", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CreateRadarHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateRadarHUD;
     /// <summary>
     /// Function: CreateRadarHUD
     /// </summary>
     public unsafe virtual void CreateRadarHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateRadarHUD, "BmGame.RForensicsDevice.CreateRadarHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateRadarHUD, "BmGame.RForensicsDevice.CreateRadarHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartStopRadarAuto;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartStopRadarAuto;
     /// <summary>
     /// Function: StartStopRadarAuto
     /// </summary>
     public unsafe virtual void StartStopRadarAuto()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartStopRadarAuto, "BmGame.RForensicsDevice.StartStopRadarAuto");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartStopRadarAuto, "BmGame.RForensicsDevice.StartStopRadarAuto", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInRiddlerCave;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInRiddlerCave;
     /// <summary>
     /// Function: SetInRiddlerCave
     /// </summary>
     public unsafe virtual void SetInRiddlerCave(bool InRiddlerCave)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInRiddlerCave, "BmGame.RForensicsDevice.SetInRiddlerCave");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInRiddlerCave, "BmGame.RForensicsDevice.SetInRiddlerCave", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InRiddlerCave, paramsPtr + 0);
@@ -319,30 +319,31 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetRootNetworkString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRootNetworkString;
     /// <summary>
     /// Function: SetRootNetworkString
     /// </summary>
-    public unsafe virtual void SetRootNetworkString(BmSDK.FString the_string, bool PermanentlyOnscreen = default)
+    public unsafe virtual void SetRootNetworkString(BmSDK.FStringArg the_string, bool PermanentlyOnscreen = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRootNetworkString, "BmGame.RForensicsDevice.SetRootNetworkString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRootNetworkString, "BmGame.RForensicsDevice.SetRootNetworkString", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(the_string, paramsPtr + 0);
+        the_string.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PermanentlyOnscreen, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetHeavyTankTrackingActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHeavyTankTrackingActive;
     /// <summary>
     /// Function: SetHeavyTankTrackingActive
     /// </summary>
     public unsafe virtual void SetHeavyTankTrackingActive(bool is_active)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHeavyTankTrackingActive, "BmGame.RForensicsDevice.SetHeavyTankTrackingActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHeavyTankTrackingActive, "BmGame.RForensicsDevice.SetHeavyTankTrackingActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_active, paramsPtr + 0);
@@ -350,14 +351,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetVehicleTrackingActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVehicleTrackingActive;
     /// <summary>
     /// Function: SetVehicleTrackingActive
     /// </summary>
     public unsafe virtual void SetVehicleTrackingActive(bool is_active)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVehicleTrackingActive, "BmGame.RForensicsDevice.SetVehicleTrackingActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVehicleTrackingActive, "BmGame.RForensicsDevice.SetVehicleTrackingActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_active, paramsPtr + 0);
@@ -365,14 +366,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateLOSToCar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLOSToCar;
     /// <summary>
     /// Function: UpdateLOSToCar
     /// </summary>
     public unsafe virtual void UpdateLOSToCar()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLOSToCar, "BmGame.RForensicsDevice.UpdateLOSToCar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLOSToCar, "BmGame.RForensicsDevice.UpdateLOSToCar", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -386,14 +387,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetThroughWallViewMeshOutOfRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThroughWallViewMeshOutOfRange;
     /// <summary>
     /// Function: SetThroughWallViewMeshOutOfRange
     /// </summary>
     public unsafe virtual void SetThroughWallViewMeshOutOfRange(bool OutOfRange)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThroughWallViewMeshOutOfRange, "BmGame.RForensicsDevice.SetThroughWallViewMeshOutOfRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetThroughWallViewMeshOutOfRange, "BmGame.RForensicsDevice.SetThroughWallViewMeshOutOfRange", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutOfRange, paramsPtr + 0);
@@ -401,14 +402,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetThroughWallViewMeshVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThroughWallViewMeshVisible;
     /// <summary>
     /// Function: SetThroughWallViewMeshVisible
     /// </summary>
     public unsafe virtual void SetThroughWallViewMeshVisible(bool bVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThroughWallViewMeshVisible, "BmGame.RForensicsDevice.SetThroughWallViewMeshVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetThroughWallViewMeshVisible, "BmGame.RForensicsDevice.SetThroughWallViewMeshVisible", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bVisible, paramsPtr + 0);
@@ -416,14 +417,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsTrackingVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTrackingVehicle;
     /// <summary>
     /// Function: IsTrackingVehicle
     /// </summary>
     public unsafe virtual bool IsTrackingVehicle(BmSDK.BmGame.RVehicle TrackedVehicle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTrackingVehicle, "BmGame.RForensicsDevice.IsTrackingVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTrackingVehicle, "BmGame.RForensicsDevice.IsTrackingVehicle", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TrackedVehicle, paramsPtr + 0);
@@ -431,42 +432,42 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsTrackingAnyVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTrackingAnyVehicle;
     /// <summary>
     /// Function: IsTrackingAnyVehicle
     /// </summary>
     public unsafe virtual bool IsTrackingAnyVehicle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTrackingAnyVehicle, "BmGame.RForensicsDevice.IsTrackingAnyVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTrackingAnyVehicle, "BmGame.RForensicsDevice.IsTrackingAnyVehicle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TrackedVehicleLost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrackedVehicleLost;
     /// <summary>
     /// Function: TrackedVehicleLost
     /// </summary>
     public unsafe virtual void TrackedVehicleLost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrackedVehicleLost, "BmGame.RForensicsDevice.TrackedVehicleLost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrackedVehicleLost, "BmGame.RForensicsDevice.TrackedVehicleLost", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TrackVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrackVehicle;
     /// <summary>
     /// Function: TrackVehicle
     /// </summary>
-    public unsafe virtual void TrackVehicle(BmSDK.BmGame.RVehicle VehToTrack, bool CanLoseTarget = default, bool CanUntagTarget = default, float TrackingSplineDist = default, bool HighPriority = default, BmSDK.FString ObjectiveName = default, float OverrideSignalLossTime = default)
+    public unsafe virtual void TrackVehicle(BmSDK.BmGame.RVehicle VehToTrack, bool CanLoseTarget = default, bool CanUntagTarget = default, float TrackingSplineDist = default, bool HighPriority = default, BmSDK.FStringArg ObjectiveName = default, float OverrideSignalLossTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrackVehicle, "BmGame.RForensicsDevice.TrackVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrackVehicle, "BmGame.RForensicsDevice.TrackVehicle", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VehToTrack, paramsPtr + 0);
@@ -474,22 +475,23 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CanUntagTarget, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TrackingSplineDist, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HighPriority, paramsPtr + 20);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectiveName, paramsPtr + 24);
+        ObjectiveName.WriteTo(paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideSignalLossTime, paramsPtr + 40);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return;
     }
 
-    private static BmSDK.Function __fn_OnSideStorySelected;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSideStorySelected;
     /// <summary>
     /// Function: OnSideStorySelected
     /// </summary>
     public unsafe virtual void OnSideStorySelected(BmSDK.BmGame.RSideStoryManager.ActiveSideStoryEnum OldActiveSideStory, BmSDK.BmGame.RSideStoryManager.ActiveSideStoryEnum NewActiveSideStory)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSideStorySelected, "BmGame.RForensicsDevice.OnSideStorySelected");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSideStorySelected, "BmGame.RForensicsDevice.OnSideStorySelected", this);
         byte* paramsPtr = stackalloc byte[18];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldActiveSideStory, paramsPtr + 0);
@@ -498,14 +500,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_OnSideStoryVehicleDestroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSideStoryVehicleDestroyed;
     /// <summary>
     /// Function: OnSideStoryVehicleDestroyed
     /// </summary>
     public unsafe virtual void OnSideStoryVehicleDestroyed(BmSDK.BmGame.RVehicleNPC VehicleNPC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSideStoryVehicleDestroyed, "BmGame.RForensicsDevice.OnSideStoryVehicleDestroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSideStoryVehicleDestroyed, "BmGame.RForensicsDevice.OnSideStoryVehicleDestroyed", this);
         byte* paramsPtr = stackalloc byte[33];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VehicleNPC, paramsPtr + 0);
@@ -513,14 +515,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawRouteRadar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawRouteRadar;
     /// <summary>
     /// Function: DrawRouteRadar
     /// </summary>
     public unsafe virtual void DrawRouteRadar(BmSDK.Engine.Canvas HudCanvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawRouteRadar, "BmGame.RForensicsDevice.DrawRouteRadar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawRouteRadar, "BmGame.RForensicsDevice.DrawRouteRadar", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HudCanvas, paramsPtr + 0);
@@ -535,14 +537,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawVehicleTargetRoute;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawVehicleTargetRoute;
     /// <summary>
     /// Function: DrawVehicleTargetRoute
     /// </summary>
     public unsafe virtual void DrawVehicleTargetRoute()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawVehicleTargetRoute, "BmGame.RForensicsDevice.DrawVehicleTargetRoute");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawVehicleTargetRoute, "BmGame.RForensicsDevice.DrawVehicleTargetRoute", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -556,28 +558,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PreRender;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreRender;
     /// <summary>
     /// Function: PreRender
     /// </summary>
     public unsafe virtual void PreRender()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreRender, "BmGame.RForensicsDevice.PreRender");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreRender, "BmGame.RForensicsDevice.PreRender", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateVehicleTracker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVehicleTracker;
     /// <summary>
     /// Function: UpdateVehicleTracker
     /// </summary>
     public unsafe virtual void UpdateVehicleTracker(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVehicleTracker, "BmGame.RForensicsDevice.UpdateVehicleTracker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateVehicleTracker, "BmGame.RForensicsDevice.UpdateVehicleTracker", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -592,14 +594,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCameraPulseFxActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCameraPulseFxActive;
     /// <summary>
     /// Function: SetCameraPulseFxActive
     /// </summary>
     public unsafe virtual void SetCameraPulseFxActive(bool is_active)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCameraPulseFxActive, "BmGame.RForensicsDevice.SetCameraPulseFxActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCameraPulseFxActive, "BmGame.RForensicsDevice.SetCameraPulseFxActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_active, paramsPtr + 0);
@@ -607,98 +609,98 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyScanFx;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyScanFx;
     /// <summary>
     /// Function: DestroyScanFx
     /// </summary>
     public unsafe virtual void DestroyScanFx()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyScanFx, "BmGame.RForensicsDevice.DestroyScanFx");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyScanFx, "BmGame.RForensicsDevice.DestroyScanFx", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateScanFx;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateScanFx;
     /// <summary>
     /// Function: ActivateScanFx
     /// </summary>
     public unsafe virtual void ActivateScanFx()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateScanFx, "BmGame.RForensicsDevice.ActivateScanFx");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateScanFx, "BmGame.RForensicsDevice.ActivateScanFx", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Deactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Deactivate;
     /// <summary>
     /// Function: Deactivate
     /// </summary>
     public unsafe virtual void Deactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Deactivate, "BmGame.RForensicsDevice.Deactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Deactivate, "BmGame.RForensicsDevice.Deactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOnXray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOnXray;
     /// <summary>
     /// Function: TurnOnXray
     /// </summary>
     public unsafe virtual void TurnOnXray()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOnXray, "BmGame.RForensicsDevice.TurnOnXray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOnXray, "BmGame.RForensicsDevice.TurnOnXray", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsDetectiveMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDetectiveMode;
     /// <summary>
     /// Function: IsDetectiveMode
     /// </summary>
     public unsafe virtual bool IsDetectiveMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDetectiveMode, "BmGame.RForensicsDevice.IsDetectiveMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDetectiveMode, "BmGame.RForensicsDevice.IsDetectiveMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ExitScanMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitScanMode;
     /// <summary>
     /// Function: ExitScanMode
     /// </summary>
     public unsafe virtual void ExitScanMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitScanMode, "BmGame.RForensicsDevice.ExitScanMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitScanMode, "BmGame.RForensicsDevice.ExitScanMode", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleFilter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleFilter;
     /// <summary>
     /// Function: ToggleFilter
     /// </summary>
     public unsafe virtual void ToggleFilter(bool TurnOff = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleFilter, "BmGame.RForensicsDevice.ToggleFilter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleFilter, "BmGame.RForensicsDevice.ToggleFilter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TurnOff, paramsPtr + 0);
@@ -706,14 +708,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerActivateEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerActivateEvent;
     /// <summary>
     /// Function: TriggerActivateEvent
     /// </summary>
     public unsafe virtual void TriggerActivateEvent(int Output)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerActivateEvent, "BmGame.RForensicsDevice.TriggerActivateEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerActivateEvent, "BmGame.RForensicsDevice.TriggerActivateEvent", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Output, paramsPtr + 0);
@@ -721,14 +723,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsEvidenceInView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEvidenceInView;
     /// <summary>
     /// Function: IsEvidenceInView
     /// </summary>
     public unsafe virtual bool IsEvidenceInView(BmSDK.BmGame.RPhysicalEvidenceBase localEvidence)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEvidenceInView, "BmGame.RForensicsDevice.IsEvidenceInView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEvidenceInView, "BmGame.RForensicsDevice.IsEvidenceInView", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(localEvidence, paramsPtr + 0);
@@ -736,14 +738,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_ActivateSpecialDeepScanPostProcess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateSpecialDeepScanPostProcess;
     /// <summary>
     /// Function: ActivateSpecialDeepScanPostProcess
     /// </summary>
     public unsafe virtual void ActivateSpecialDeepScanPostProcess(bool bDoActivate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateSpecialDeepScanPostProcess, "BmGame.RForensicsDevice.ActivateSpecialDeepScanPostProcess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateSpecialDeepScanPostProcess, "BmGame.RForensicsDevice.ActivateSpecialDeepScanPostProcess", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDoActivate, paramsPtr + 0);
@@ -751,28 +753,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshEvidenceItems;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshEvidenceItems;
     /// <summary>
     /// Function: RefreshEvidenceItems
     /// </summary>
     public unsafe virtual void RefreshEvidenceItems()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshEvidenceItems, "BmGame.RForensicsDevice.RefreshEvidenceItems");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshEvidenceItems, "BmGame.RForensicsDevice.RefreshEvidenceItems", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RestoreMaterialsForXray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestoreMaterialsForXray;
     /// <summary>
     /// Function: RestoreMaterialsForXray
     /// </summary>
     public unsafe virtual void RestoreMaterialsForXray(bool force_swap = default, bool DoNotSwapPlayerPawn = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestoreMaterialsForXray, "BmGame.RForensicsDevice.RestoreMaterialsForXray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestoreMaterialsForXray, "BmGame.RForensicsDevice.RestoreMaterialsForXray", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(force_swap, paramsPtr + 0);
@@ -781,14 +783,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetAllLightEnvironments;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetAllLightEnvironments;
     /// <summary>
     /// Function: ResetAllLightEnvironments
     /// </summary>
     public unsafe virtual void ResetAllLightEnvironments()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetAllLightEnvironments, "BmGame.RForensicsDevice.ResetAllLightEnvironments");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetAllLightEnvironments, "BmGame.RForensicsDevice.ResetAllLightEnvironments", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -802,14 +804,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SwapMaterialsForXray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapMaterialsForXray;
     /// <summary>
     /// Function: SwapMaterialsForXray
     /// </summary>
     public unsafe virtual void SwapMaterialsForXray(bool force_swap = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapMaterialsForXray, "BmGame.RForensicsDevice.SwapMaterialsForXray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapMaterialsForXray, "BmGame.RForensicsDevice.SwapMaterialsForXray", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(force_swap, paramsPtr + 0);
@@ -817,28 +819,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetForensicsRenderType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForensicsRenderType;
     /// <summary>
     /// Function: GetForensicsRenderType
     /// </summary>
     public unsafe virtual bool GetForensicsRenderType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForensicsRenderType, "BmGame.RForensicsDevice.GetForensicsRenderType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetForensicsRenderType, "BmGame.RForensicsDevice.GetForensicsRenderType", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetForensicsRenderType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForensicsRenderType;
     /// <summary>
     /// Function: SetForensicsRenderType
     /// </summary>
     public unsafe virtual void SetForensicsRenderType(bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForensicsRenderType, "BmGame.RForensicsDevice.SetForensicsRenderType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetForensicsRenderType, "BmGame.RForensicsDevice.SetForensicsRenderType", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -846,14 +848,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SwapMaterialsForGlitchedXray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapMaterialsForGlitchedXray;
     /// <summary>
     /// Function: SwapMaterialsForGlitchedXray
     /// </summary>
     public unsafe virtual void SwapMaterialsForGlitchedXray(bool force_swap = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapMaterialsForGlitchedXray, "BmGame.RForensicsDevice.SwapMaterialsForGlitchedXray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapMaterialsForGlitchedXray, "BmGame.RForensicsDevice.SwapMaterialsForGlitchedXray", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(force_swap, paramsPtr + 0);
@@ -861,14 +863,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SwapMaterialsForJammedXray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapMaterialsForJammedXray;
     /// <summary>
     /// Function: SwapMaterialsForJammedXray
     /// </summary>
     public unsafe virtual void SwapMaterialsForJammedXray(bool force_swap = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapMaterialsForJammedXray, "BmGame.RForensicsDevice.SwapMaterialsForJammedXray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapMaterialsForJammedXray, "BmGame.RForensicsDevice.SwapMaterialsForJammedXray", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(force_swap, paramsPtr + 0);
@@ -876,14 +878,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsUsingFilterView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsUsingFilterView;
     /// <summary>
     /// Function: IsUsingFilterView
     /// </summary>
     public unsafe virtual bool IsUsingFilterView()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsUsingFilterView, "BmGame.RForensicsDevice.IsUsingFilterView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsUsingFilterView, "BmGame.RForensicsDevice.IsUsingFilterView", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -897,14 +899,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddItemToEvidenceArray;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddItemToEvidenceArray;
     /// <summary>
     /// Function: AddItemToEvidenceArray
     /// </summary>
     public unsafe virtual void AddItemToEvidenceArray(BmSDK.BmGame.RPhysicalEvidenceBase Item)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddItemToEvidenceArray, "BmGame.RForensicsDevice.AddItemToEvidenceArray");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddItemToEvidenceArray, "BmGame.RForensicsDevice.AddItemToEvidenceArray", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Item, paramsPtr + 0);
@@ -912,44 +914,45 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EvidenceItemIdentified;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EvidenceItemIdentified;
     /// <summary>
     /// Function: EvidenceItemIdentified
     /// </summary>
     public unsafe virtual void EvidenceItemIdentified()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EvidenceItemIdentified, "BmGame.RForensicsDevice.EvidenceItemIdentified");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EvidenceItemIdentified, "BmGame.RForensicsDevice.EvidenceItemIdentified", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddScannedItemToMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddScannedItemToMap;
     /// <summary>
     /// Function: AddScannedItemToMap
     /// </summary>
-    public unsafe virtual void AddScannedItemToMap(BmSDK.FString EvidenceTrailName, System.Numerics.Vector3 Loc)
+    public unsafe virtual void AddScannedItemToMap(BmSDK.FStringArg EvidenceTrailName, System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddScannedItemToMap, "BmGame.RForensicsDevice.AddScannedItemToMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddScannedItemToMap, "BmGame.RForensicsDevice.AddScannedItemToMap", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EvidenceTrailName, paramsPtr + 0);
+        EvidenceTrailName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetZeroToOnePitchScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetZeroToOnePitchScore;
     /// <summary>
     /// Function: GetZeroToOnePitchScore
     /// </summary>
     public unsafe virtual float GetZeroToOnePitchScore(System.Numerics.Vector3 TargetVector)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetZeroToOnePitchScore, "BmGame.RForensicsDevice.GetZeroToOnePitchScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetZeroToOnePitchScore, "BmGame.RForensicsDevice.GetZeroToOnePitchScore", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetVector, paramsPtr + 0);
@@ -957,14 +960,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SetSpecialTrackingModeDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpecialTrackingModeDistance;
     /// <summary>
     /// Function: SetSpecialTrackingModeDistance
     /// </summary>
     public unsafe virtual void SetSpecialTrackingModeDistance(float new_distance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpecialTrackingModeDistance, "BmGame.RForensicsDevice.SetSpecialTrackingModeDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSpecialTrackingModeDistance, "BmGame.RForensicsDevice.SetSpecialTrackingModeDistance", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_distance, paramsPtr + 0);
@@ -972,14 +975,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TrailAdvanced;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrailAdvanced;
     /// <summary>
     /// Function: TrailAdvanced
     /// </summary>
     public unsafe virtual void TrailAdvanced(BmSDK.BmGame.REvidence TheEvidence)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrailAdvanced, "BmGame.RForensicsDevice.TrailAdvanced");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrailAdvanced, "BmGame.RForensicsDevice.TrailAdvanced", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheEvidence, paramsPtr + 0);
@@ -987,28 +990,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AutoUpdateDetectiveDisplay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AutoUpdateDetectiveDisplay;
     /// <summary>
     /// Function: AutoUpdateDetectiveDisplay
     /// </summary>
     public unsafe virtual void AutoUpdateDetectiveDisplay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutoUpdateDetectiveDisplay, "BmGame.RForensicsDevice.AutoUpdateDetectiveDisplay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AutoUpdateDetectiveDisplay, "BmGame.RForensicsDevice.AutoUpdateDetectiveDisplay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetEvidenceDetailActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEvidenceDetailActor;
     /// <summary>
     /// Function: SetEvidenceDetailActor
     /// </summary>
     public unsafe virtual void SetEvidenceDetailActor(BmSDK.Engine.Actor TheActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEvidenceDetailActor, "BmGame.RForensicsDevice.SetEvidenceDetailActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEvidenceDetailActor, "BmGame.RForensicsDevice.SetEvidenceDetailActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheActor, paramsPtr + 0);
@@ -1016,14 +1019,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe virtual void DrawHUD(BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RForensicsDevice.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmGame.RForensicsDevice.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[144];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -1031,28 +1034,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckJamming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckJamming;
     /// <summary>
     /// Function: CheckJamming
     /// </summary>
     public unsafe virtual void CheckJamming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckJamming, "BmGame.RForensicsDevice.CheckJamming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckJamming, "BmGame.RForensicsDevice.CheckJamming", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SendJammerVillainToHud;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendJammerVillainToHud;
     /// <summary>
     /// Function: SendJammerVillainToHud
     /// </summary>
     public unsafe virtual void SendJammerVillainToHud(BmSDK.Engine.Canvas Canvas, BmSDK.BmGame.RPawnVillain JammerVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendJammerVillainToHud, "BmGame.RForensicsDevice.SendJammerVillainToHud");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendJammerVillainToHud, "BmGame.RForensicsDevice.SendJammerVillainToHud", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -1061,14 +1064,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAngularDistanceToTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAngularDistanceToTarget;
     /// <summary>
     /// Function: GetAngularDistanceToTarget
     /// </summary>
     public unsafe virtual float GetAngularDistanceToTarget(System.Numerics.Vector3 target_location)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAngularDistanceToTarget, "BmGame.RForensicsDevice.GetAngularDistanceToTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAngularDistanceToTarget, "BmGame.RForensicsDevice.GetAngularDistanceToTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(target_location, paramsPtr + 0);
@@ -1083,14 +1086,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetDistanceToTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceToTarget;
     /// <summary>
     /// Function: GetDistanceToTarget
     /// </summary>
     public unsafe virtual float GetDistanceToTarget(System.Numerics.Vector3 target_location)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDistanceToTarget, "BmGame.RForensicsDevice.GetDistanceToTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDistanceToTarget, "BmGame.RForensicsDevice.GetDistanceToTarget", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(target_location, paramsPtr + 0);
@@ -1105,70 +1108,70 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetCommsDisruptorMinigameStringForInitialDisruption;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCommsDisruptorMinigameStringForInitialDisruption;
     /// <summary>
     /// Function: GetCommsDisruptorMinigameStringForInitialDisruption
     /// </summary>
     public unsafe virtual BmSDK.FString GetCommsDisruptorMinigameStringForInitialDisruption()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCommsDisruptorMinigameStringForInitialDisruption, "BmGame.RForensicsDevice.GetCommsDisruptorMinigameStringForInitialDisruption");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCommsDisruptorMinigameStringForInitialDisruption, "BmGame.RForensicsDevice.GetCommsDisruptorMinigameStringForInitialDisruption", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCommsDisruptorMinigameString;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCommsDisruptorMinigameString;
     /// <summary>
     /// Function: GetCommsDisruptorMinigameString
     /// </summary>
     public unsafe virtual BmSDK.FString GetCommsDisruptorMinigameString()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCommsDisruptorMinigameString, "BmGame.RForensicsDevice.GetCommsDisruptorMinigameString");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCommsDisruptorMinigameString, "BmGame.RForensicsDevice.GetCommsDisruptorMinigameString", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindClosestActiveJammerSource;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestActiveJammerSource;
     /// <summary>
     /// Function: FindClosestActiveJammerSource
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 FindClosestActiveJammerSource()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindClosestActiveJammerSource, "BmGame.RForensicsDevice.FindClosestActiveJammerSource");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindClosestActiveJammerSource, "BmGame.RForensicsDevice.FindClosestActiveJammerSource", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateJammerActorIcons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateJammerActorIcons;
     /// <summary>
     /// Function: UpdateJammerActorIcons
     /// </summary>
     public unsafe virtual void UpdateJammerActorIcons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateJammerActorIcons, "BmGame.RForensicsDevice.UpdateJammerActorIcons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateJammerActorIcons, "BmGame.RForensicsDevice.UpdateJammerActorIcons", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveActorFromJammerList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveActorFromJammerList;
     /// <summary>
     /// Function: RemoveActorFromJammerList
     /// </summary>
     public unsafe virtual void RemoveActorFromJammerList(BmSDK.Engine.Actor the_actor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveActorFromJammerList, "BmGame.RForensicsDevice.RemoveActorFromJammerList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveActorFromJammerList, "BmGame.RForensicsDevice.RemoveActorFromJammerList", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(the_actor, paramsPtr + 0);
@@ -1176,14 +1179,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddActorToJammerList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddActorToJammerList;
     /// <summary>
     /// Function: AddActorToJammerList
     /// </summary>
     public unsafe virtual void AddActorToJammerList(BmSDK.Engine.Actor the_actor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddActorToJammerList, "BmGame.RForensicsDevice.AddActorToJammerList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddActorToJammerList, "BmGame.RForensicsDevice.AddActorToJammerList", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(the_actor, paramsPtr + 0);
@@ -1191,14 +1194,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldShowSatnavToTrackedVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldShowSatnavToTrackedVehicle;
     /// <summary>
     /// Function: ShouldShowSatnavToTrackedVehicle
     /// </summary>
     public unsafe virtual bool ShouldShowSatnavToTrackedVehicle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldShowSatnavToTrackedVehicle, "BmGame.RForensicsDevice.ShouldShowSatnavToTrackedVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldShowSatnavToTrackedVehicle, "BmGame.RForensicsDevice.ShouldShowSatnavToTrackedVehicle", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1212,14 +1215,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsActorValidJammer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActorValidJammer;
     /// <summary>
     /// Function: IsActorValidJammer
     /// </summary>
     public unsafe virtual bool IsActorValidJammer(BmSDK.Engine.Actor the_actor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActorValidJammer, "BmGame.RForensicsDevice.IsActorValidJammer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActorValidJammer, "BmGame.RForensicsDevice.IsActorValidJammer", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(the_actor, paramsPtr + 0);
@@ -1227,14 +1230,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetCompassAngleToLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCompassAngleToLocation;
     /// <summary>
     /// Function: GetCompassAngleToLocation
     /// </summary>
     public unsafe virtual float GetCompassAngleToLocation(System.Numerics.Vector3 TargetLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCompassAngleToLocation, "BmGame.RForensicsDevice.GetCompassAngleToLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCompassAngleToLocation, "BmGame.RForensicsDevice.GetCompassAngleToLocation", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetLocation, paramsPtr + 0);
@@ -1242,28 +1245,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetDistanceFromFreezeLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDistanceFromFreezeLocation;
     /// <summary>
     /// Function: GetDistanceFromFreezeLocation
     /// </summary>
     public unsafe virtual float GetDistanceFromFreezeLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDistanceFromFreezeLocation, "BmGame.RForensicsDevice.GetDistanceFromFreezeLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDistanceFromFreezeLocation, "BmGame.RForensicsDevice.GetDistanceFromFreezeLocation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SortScreenInfoItemList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SortScreenInfoItemList;
     /// <summary>
     /// Function: SortScreenInfoItemList
     /// </summary>
     public unsafe virtual void SortScreenInfoItemList(out BmSDK.TArray<BmSDK.BmGame.RForensicsDevice.FScreenInfoItem> Items)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SortScreenInfoItemList, "BmGame.RForensicsDevice.SortScreenInfoItemList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SortScreenInfoItemList, "BmGame.RForensicsDevice.SortScreenInfoItemList", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -1271,14 +1274,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PlayerTick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerTick;
     /// <summary>
     /// Function: PlayerTick
     /// </summary>
     public unsafe virtual void PlayerTick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerTick, "BmGame.RForensicsDevice.PlayerTick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerTick, "BmGame.RForensicsDevice.PlayerTick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1293,42 +1296,42 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetDetectiveModeGlitch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetDetectiveModeGlitch;
     /// <summary>
     /// Function: ResetDetectiveModeGlitch
     /// </summary>
     public unsafe virtual void ResetDetectiveModeGlitch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetDetectiveModeGlitch, "BmGame.RForensicsDevice.ResetDetectiveModeGlitch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetDetectiveModeGlitch, "BmGame.RForensicsDevice.ResetDetectiveModeGlitch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsFilterChangingOrQueued;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFilterChangingOrQueued;
     /// <summary>
     /// Function: IsFilterChangingOrQueued
     /// </summary>
     public unsafe virtual bool IsFilterChangingOrQueued()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFilterChangingOrQueued, "BmGame.RForensicsDevice.IsFilterChangingOrQueued");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFilterChangingOrQueued, "BmGame.RForensicsDevice.IsFilterChangingOrQueued", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ChangeFilter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeFilter;
     /// <summary>
     /// Function: ChangeFilter
     /// </summary>
     public unsafe virtual void ChangeFilter(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeFilter, "BmGame.RForensicsDevice.ChangeFilter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeFilter, "BmGame.RForensicsDevice.ChangeFilter", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -1336,42 +1339,42 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetInvestigateMovieInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInvestigateMovieInfo;
     /// <summary>
     /// Function: SetInvestigateMovieInfo
     /// </summary>
     public unsafe virtual void SetInvestigateMovieInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInvestigateMovieInfo, "BmGame.RForensicsDevice.SetInvestigateMovieInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInvestigateMovieInfo, "BmGame.RForensicsDevice.SetInvestigateMovieInfo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeFilterSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeFilterSettings;
     /// <summary>
     /// Function: ChangeFilterSettings
     /// </summary>
     public unsafe virtual void ChangeFilterSettings()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeFilterSettings, "BmGame.RForensicsDevice.ChangeFilterSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeFilterSettings, "BmGame.RForensicsDevice.ChangeFilterSettings", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetVisualHudModeInternal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVisualHudModeInternal;
     /// <summary>
     /// Function: SetVisualHudModeInternal
     /// </summary>
     public unsafe virtual void SetVisualHudModeInternal(BmSDK.BmGame.RForensicsDevice.VisualHudMode new_mode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVisualHudModeInternal, "BmGame.RForensicsDevice.SetVisualHudModeInternal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVisualHudModeInternal, "BmGame.RForensicsDevice.SetVisualHudModeInternal", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_mode, paramsPtr + 0);
@@ -1379,14 +1382,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeToTargetVisionMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeToTargetVisionMode;
     /// <summary>
     /// Function: ChangeToTargetVisionMode
     /// </summary>
     public unsafe virtual void ChangeToTargetVisionMode(bool ForceChange = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeToTargetVisionMode, "BmGame.RForensicsDevice.ChangeToTargetVisionMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeToTargetVisionMode, "BmGame.RForensicsDevice.ChangeToTargetVisionMode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForceChange, paramsPtr + 0);
@@ -1394,14 +1397,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostChangeToTargetVisionMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostChangeToTargetVisionMode;
     /// <summary>
     /// Function: PostChangeToTargetVisionMode
     /// </summary>
     public unsafe virtual void PostChangeToTargetVisionMode(bool WasInSpecialVisionMode, bool IsInSpecialVisionMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostChangeToTargetVisionMode, "BmGame.RForensicsDevice.PostChangeToTargetVisionMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostChangeToTargetVisionMode, "BmGame.RForensicsDevice.PostChangeToTargetVisionMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WasInSpecialVisionMode, paramsPtr + 0);
@@ -1410,28 +1413,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PreChangeToTargetVisionMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreChangeToTargetVisionMode;
     /// <summary>
     /// Function: PreChangeToTargetVisionMode
     /// </summary>
     public unsafe virtual void PreChangeToTargetVisionMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreChangeToTargetVisionMode, "BmGame.RForensicsDevice.PreChangeToTargetVisionMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreChangeToTargetVisionMode, "BmGame.RForensicsDevice.PreChangeToTargetVisionMode", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTargetVisionMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetVisionMode;
     /// <summary>
     /// Function: SetTargetVisionMode
     /// </summary>
     public unsafe virtual void SetTargetVisionMode(BmSDK.BmGame.RForensicsDevice.VisualHudMode new_mode, bool ForceChange = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTargetVisionMode, "BmGame.RForensicsDevice.SetTargetVisionMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTargetVisionMode, "BmGame.RForensicsDevice.SetTargetVisionMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_mode, paramsPtr + 0);
@@ -1440,14 +1443,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InstantlySetCurrentVisionMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstantlySetCurrentVisionMode;
     /// <summary>
     /// Function: InstantlySetCurrentVisionMode
     /// </summary>
     public unsafe virtual void InstantlySetCurrentVisionMode(BmSDK.BmGame.RForensicsDevice.VisualHudMode new_mode, bool ForceChange = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstantlySetCurrentVisionMode, "BmGame.RForensicsDevice.InstantlySetCurrentVisionMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstantlySetCurrentVisionMode, "BmGame.RForensicsDevice.InstantlySetCurrentVisionMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(new_mode, paramsPtr + 0);
@@ -1456,28 +1459,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ForceDetectiveModeReset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceDetectiveModeReset;
     /// <summary>
     /// Function: ForceDetectiveModeReset
     /// </summary>
     public unsafe virtual void ForceDetectiveModeReset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceDetectiveModeReset, "BmGame.RForensicsDevice.ForceDetectiveModeReset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceDetectiveModeReset, "BmGame.RForensicsDevice.ForceDetectiveModeReset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayZoomSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayZoomSound;
     /// <summary>
     /// Function: PlayZoomSound
     /// </summary>
     public unsafe virtual void PlayZoomSound(bool ZoomingIn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayZoomSound, "BmGame.RForensicsDevice.PlayZoomSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayZoomSound, "BmGame.RForensicsDevice.PlayZoomSound", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ZoomingIn, paramsPtr + 0);
@@ -1485,42 +1488,42 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsRunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRunning;
     /// <summary>
     /// Function: IsRunning
     /// </summary>
     public unsafe virtual bool IsRunning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRunning, "BmGame.RForensicsDevice.IsRunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRunning, "BmGame.RForensicsDevice.IsRunning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsReady;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsReady;
     /// <summary>
     /// Function: IsReady
     /// </summary>
     public unsafe virtual bool IsReady()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsReady, "BmGame.RForensicsDevice.IsReady");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsReady, "BmGame.RForensicsDevice.IsReady", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RForensicsDevice.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RForensicsDevice.Initialise", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -1528,14 +1531,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsEvidenceTrailActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEvidenceTrailActive;
     /// <summary>
     /// Function: IsEvidenceTrailActive
     /// </summary>
     public unsafe virtual bool IsEvidenceTrailActive(BmSDK.BmGame.REvidence EvidenceTrailInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEvidenceTrailActive, "BmGame.RForensicsDevice.IsEvidenceTrailActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEvidenceTrailActive, "BmGame.RForensicsDevice.IsEvidenceTrailActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EvidenceTrailInfo, paramsPtr + 0);
@@ -1543,14 +1546,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetEvidenceTrailInactive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEvidenceTrailInactive;
     /// <summary>
     /// Function: SetEvidenceTrailInactive
     /// </summary>
     public unsafe virtual void SetEvidenceTrailInactive(BmSDK.BmGame.REvidence EvidenceInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEvidenceTrailInactive, "BmGame.RForensicsDevice.SetEvidenceTrailInactive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEvidenceTrailInactive, "BmGame.RForensicsDevice.SetEvidenceTrailInactive", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EvidenceInfo, paramsPtr + 0);
@@ -1558,14 +1561,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetEvidenceTrailActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEvidenceTrailActive;
     /// <summary>
     /// Function: SetEvidenceTrailActive
     /// </summary>
     public unsafe virtual void SetEvidenceTrailActive(BmSDK.BmGame.REvidence EvidenceInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEvidenceTrailActive, "BmGame.RForensicsDevice.SetEvidenceTrailActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEvidenceTrailActive, "BmGame.RForensicsDevice.SetEvidenceTrailActive", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EvidenceInfo, paramsPtr + 0);
@@ -1573,14 +1576,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FireCrimeSceneCompletionEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireCrimeSceneCompletionEvent;
     /// <summary>
     /// Function: FireCrimeSceneCompletionEvent
     /// </summary>
     public unsafe virtual void FireCrimeSceneCompletionEvent(BmSDK.BmGame.RCrimeSceneBase TheCrimeScene)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireCrimeSceneCompletionEvent, "BmGame.RForensicsDevice.FireCrimeSceneCompletionEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireCrimeSceneCompletionEvent, "BmGame.RForensicsDevice.FireCrimeSceneCompletionEvent", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheCrimeScene, paramsPtr + 0);
@@ -1588,14 +1591,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FireCrimeSceneEvidenceEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireCrimeSceneEvidenceEvent;
     /// <summary>
     /// Function: FireCrimeSceneEvidenceEvent
     /// </summary>
     public unsafe virtual void FireCrimeSceneEvidenceEvent(BmSDK.BmGame.RPhysicalEvidenceCrimeScene CSE, int EvidenceEventIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireCrimeSceneEvidenceEvent, "BmGame.RForensicsDevice.FireCrimeSceneEvidenceEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireCrimeSceneEvidenceEvent, "BmGame.RForensicsDevice.FireCrimeSceneEvidenceEvent", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CSE, paramsPtr + 0);
@@ -1604,14 +1607,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsInRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInRange;
     /// <summary>
     /// Function: IsInRange
     /// </summary>
     public unsafe virtual bool IsInRange(BmSDK.BmGame.RPhysicalEvidenceBase evidence)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInRange, "BmGame.RForensicsDevice.IsInRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInRange, "BmGame.RForensicsDevice.IsInRange", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(evidence, paramsPtr + 0);
@@ -1619,14 +1622,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CheckEvidenceScanable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckEvidenceScanable;
     /// <summary>
     /// Function: CheckEvidenceScanable
     /// </summary>
     public unsafe virtual bool CheckEvidenceScanable(BmSDK.BmGame.RPhysicalEvidenceBase evidence, out float NotFullyVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckEvidenceScanable, "BmGame.RForensicsDevice.CheckEvidenceScanable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckEvidenceScanable, "BmGame.RForensicsDevice.CheckEvidenceScanable", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(evidence, paramsPtr + 0);
@@ -1637,28 +1640,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetMissingPersonsCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMissingPersonsCount;
     /// <summary>
     /// Function: GetMissingPersonsCount
     /// </summary>
     public unsafe virtual int GetMissingPersonsCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMissingPersonsCount, "BmGame.RForensicsDevice.GetMissingPersonsCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMissingPersonsCount, "BmGame.RForensicsDevice.GetMissingPersonsCount", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsEvidenceTrailType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEvidenceTrailType;
     /// <summary>
     /// Function: IsEvidenceTrailType
     /// </summary>
     public unsafe virtual bool IsEvidenceTrailType(BmSDK.BmGame.RForensicsDevice.SpecialTrackingMode test_type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEvidenceTrailType, "BmGame.RForensicsDevice.IsEvidenceTrailType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEvidenceTrailType, "BmGame.RForensicsDevice.IsEvidenceTrailType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(test_type, paramsPtr + 0);
@@ -1666,28 +1669,28 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RForensicsDevice.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RForensicsDevice.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetForwardRouteLinkAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForwardRouteLinkAt;
     /// <summary>
     /// Function: GetForwardRouteLinkAt
     /// </summary>
     public unsafe virtual int GetForwardRouteLinkAt(System.Numerics.Vector3 AtLoc, System.Numerics.Vector3 Dir, int MaxIndexInRoute, out int StartPt, out int IndexInRoute)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForwardRouteLinkAt, "BmGame.RForensicsDevice.GetForwardRouteLinkAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetForwardRouteLinkAt, "BmGame.RForensicsDevice.GetForwardRouteLinkAt", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AtLoc, paramsPtr + 0);
@@ -1703,14 +1706,14 @@ public partial class RForensicsDevice : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_GetForwardRouteDirectionAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetForwardRouteDirectionAt;
     /// <summary>
     /// Function: GetForwardRouteDirectionAt
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetForwardRouteDirectionAt(System.Numerics.Vector3 AtLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetForwardRouteDirectionAt, "BmGame.RForensicsDevice.GetForwardRouteDirectionAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetForwardRouteDirectionAt, "BmGame.RForensicsDevice.GetForwardRouteDirectionAt", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AtLoc, paramsPtr + 0);

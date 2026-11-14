@@ -78,14 +78,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RHeightMapCaptureVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_WindAtPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WindAtPosition;
     /// <summary>
     /// Function: WindAtPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 WindAtPosition(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WindAtPosition, "Engine.RHeightMapCaptureVolume.WindAtPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WindAtPosition, "Engine.RHeightMapCaptureVolume.WindAtPosition", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SkydomeOcclusion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkydomeOcclusion;
     /// <summary>
     /// Function: SkydomeOcclusion
     /// </summary>
     public unsafe virtual float SkydomeOcclusion(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkydomeOcclusion, "Engine.RHeightMapCaptureVolume.SkydomeOcclusion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkydomeOcclusion, "Engine.RHeightMapCaptureVolume.SkydomeOcclusion", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetHeightIntersectionFromPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeightIntersectionFromPos;
     /// <summary>
     /// Function: GetHeightIntersectionFromPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetHeightIntersectionFromPos(System.Numerics.Vector3 TestLocation, int OffsetX, int OffsetY)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeightIntersectionFromPos, "Engine.RHeightMapCaptureVolume.GetHeightIntersectionFromPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeightIntersectionFromPos, "Engine.RHeightMapCaptureVolume.GetHeightIntersectionFromPos", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -146,14 +146,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetVolumeWeatherType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVolumeWeatherType;
     /// <summary>
     /// Function: GetVolumeWeatherType
     /// </summary>
     public unsafe virtual int GetVolumeWeatherType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVolumeWeatherType, "Engine.RHeightMapCaptureVolume.GetVolumeWeatherType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVolumeWeatherType, "Engine.RHeightMapCaptureVolume.GetVolumeWeatherType", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -167,14 +167,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPollenDensity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPollenDensity;
     /// <summary>
     /// Function: GetPollenDensity
     /// </summary>
     public unsafe virtual float GetPollenDensity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPollenDensity, "Engine.RHeightMapCaptureVolume.GetPollenDensity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPollenDensity, "Engine.RHeightMapCaptureVolume.GetPollenDensity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -188,14 +188,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsInsidePollenVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsidePollenVolume;
     /// <summary>
     /// Function: IsInsidePollenVolume
     /// </summary>
     public unsafe virtual bool IsInsidePollenVolume(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInsidePollenVolume, "Engine.RHeightMapCaptureVolume.IsInsidePollenVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInsidePollenVolume, "Engine.RHeightMapCaptureVolume.IsInsidePollenVolume", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -210,14 +210,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetLocationPollenDepth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPollenDepth;
     /// <summary>
     /// Function: GetLocationPollenDepth
     /// </summary>
     public unsafe virtual float GetLocationPollenDepth(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationPollenDepth, "Engine.RHeightMapCaptureVolume.GetLocationPollenDepth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationPollenDepth, "Engine.RHeightMapCaptureVolume.GetLocationPollenDepth", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -232,14 +232,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SignedDistanceToPollenZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedDistanceToPollenZ;
     /// <summary>
     /// Function: SignedDistanceToPollenZ
     /// </summary>
     public unsafe virtual float SignedDistanceToPollenZ(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SignedDistanceToPollenZ, "Engine.RHeightMapCaptureVolume.SignedDistanceToPollenZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SignedDistanceToPollenZ, "Engine.RHeightMapCaptureVolume.SignedDistanceToPollenZ", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -254,14 +254,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsLocationPollen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationPollen;
     /// <summary>
     /// Function: IsLocationPollen
     /// </summary>
     public unsafe virtual bool IsLocationPollen(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationPollen, "Engine.RHeightMapCaptureVolume.IsLocationPollen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLocationPollen, "Engine.RHeightMapCaptureVolume.IsLocationPollen", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -276,14 +276,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetActiveFearGasDensity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetActiveFearGasDensity;
     /// <summary>
     /// Function: GetActiveFearGasDensity
     /// </summary>
     public unsafe virtual float GetActiveFearGasDensity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetActiveFearGasDensity, "Engine.RHeightMapCaptureVolume.GetActiveFearGasDensity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetActiveFearGasDensity, "Engine.RHeightMapCaptureVolume.GetActiveFearGasDensity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -297,14 +297,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFearGasDensity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFearGasDensity;
     /// <summary>
     /// Function: GetFearGasDensity
     /// </summary>
     public unsafe virtual float GetFearGasDensity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFearGasDensity, "Engine.RHeightMapCaptureVolume.GetFearGasDensity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFearGasDensity, "Engine.RHeightMapCaptureVolume.GetFearGasDensity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -318,14 +318,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsInsideFearGasVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInsideFearGasVolume;
     /// <summary>
     /// Function: IsInsideFearGasVolume
     /// </summary>
     public unsafe virtual bool IsInsideFearGasVolume(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInsideFearGasVolume, "Engine.RHeightMapCaptureVolume.IsInsideFearGasVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInsideFearGasVolume, "Engine.RHeightMapCaptureVolume.IsInsideFearGasVolume", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -340,14 +340,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetLocationDustDepth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationDustDepth;
     /// <summary>
     /// Function: GetLocationDustDepth
     /// </summary>
     public unsafe virtual float GetLocationDustDepth(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationDustDepth, "Engine.RHeightMapCaptureVolume.GetLocationDustDepth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationDustDepth, "Engine.RHeightMapCaptureVolume.GetLocationDustDepth", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -362,14 +362,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_FearGasTransitionAlpha;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FearGasTransitionAlpha;
     /// <summary>
     /// Function: FearGasTransitionAlpha
     /// </summary>
     public unsafe virtual float FearGasTransitionAlpha(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FearGasTransitionAlpha, "Engine.RHeightMapCaptureVolume.FearGasTransitionAlpha");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FearGasTransitionAlpha, "Engine.RHeightMapCaptureVolume.FearGasTransitionAlpha", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -384,14 +384,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetFearGasWorldHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFearGasWorldHeight;
     /// <summary>
     /// Function: GetFearGasWorldHeight
     /// </summary>
     public unsafe virtual float GetFearGasWorldHeight(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFearGasWorldHeight, "Engine.RHeightMapCaptureVolume.GetFearGasWorldHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFearGasWorldHeight, "Engine.RHeightMapCaptureVolume.GetFearGasWorldHeight", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -406,14 +406,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SignedDistanceToFearGasZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SignedDistanceToFearGasZ;
     /// <summary>
     /// Function: SignedDistanceToFearGasZ
     /// </summary>
     public unsafe virtual float SignedDistanceToFearGasZ(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SignedDistanceToFearGasZ, "Engine.RHeightMapCaptureVolume.SignedDistanceToFearGasZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SignedDistanceToFearGasZ, "Engine.RHeightMapCaptureVolume.SignedDistanceToFearGasZ", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -428,14 +428,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsLocationFearGas;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationFearGas;
     /// <summary>
     /// Function: IsLocationFearGas
     /// </summary>
     public unsafe virtual bool IsLocationFearGas(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationFearGas, "Engine.RHeightMapCaptureVolume.IsLocationFearGas");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLocationFearGas, "Engine.RHeightMapCaptureVolume.IsLocationFearGas", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -450,14 +450,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetRainDensity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRainDensity;
     /// <summary>
     /// Function: GetRainDensity
     /// </summary>
     public unsafe virtual float GetRainDensity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRainDensity, "Engine.RHeightMapCaptureVolume.GetRainDensity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRainDensity, "Engine.RHeightMapCaptureVolume.GetRainDensity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -471,14 +471,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LocationRainHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LocationRainHeight;
     /// <summary>
     /// Function: LocationRainHeight
     /// </summary>
     public unsafe virtual float LocationRainHeight(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocationRainHeight, "Engine.RHeightMapCaptureVolume.LocationRainHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LocationRainHeight, "Engine.RHeightMapCaptureVolume.LocationRainHeight", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -493,14 +493,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_DistanceToRainZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DistanceToRainZ;
     /// <summary>
     /// Function: DistanceToRainZ
     /// </summary>
     public unsafe virtual float DistanceToRainZ(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DistanceToRainZ, "Engine.RHeightMapCaptureVolume.DistanceToRainZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DistanceToRainZ, "Engine.RHeightMapCaptureVolume.DistanceToRainZ", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -515,14 +515,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetLocationPuddleDepth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPuddleDepth;
     /// <summary>
     /// Function: GetLocationPuddleDepth
     /// </summary>
     public unsafe virtual float GetLocationPuddleDepth(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationPuddleDepth, "Engine.RHeightMapCaptureVolume.GetLocationPuddleDepth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationPuddleDepth, "Engine.RHeightMapCaptureVolume.GetLocationPuddleDepth", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -537,14 +537,14 @@ public partial class RHeightMapCaptureVolume : BmSDK.Engine.Volume, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsLocationRaining;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationRaining;
     /// <summary>
     /// Function: IsLocationRaining
     /// </summary>
     public unsafe virtual bool IsLocationRaining(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationRaining, "Engine.RHeightMapCaptureVolume.IsLocationRaining");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLocationRaining, "Engine.RHeightMapCaptureVolume.IsLocationRaining", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);

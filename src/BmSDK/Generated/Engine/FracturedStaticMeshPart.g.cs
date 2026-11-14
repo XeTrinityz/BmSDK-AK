@@ -78,14 +78,14 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
         where TComponent : class, Framework.IScriptComponent<FracturedStaticMeshPart>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Explode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Explode;
     /// <summary>
     /// Function: Explode
     /// </summary>
     public unsafe override void Explode(BmSDK.Engine.Actor BreakInstigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Explode, "Engine.FracturedStaticMeshPart.Explode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Explode, "Engine.FracturedStaticMeshPart.Explode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BreakInstigator, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
         return;
     }
 
-    private static BmSDK.Function __fn_FellOutOfWorld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FellOutOfWorld;
     /// <summary>
     /// Function: FellOutOfWorld
     /// </summary>
     public unsafe override void FellOutOfWorld(BmSDK.Class dmgType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FellOutOfWorld, "Engine.FracturedStaticMeshPart.FellOutOfWorld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FellOutOfWorld, "Engine.FracturedStaticMeshPart.FellOutOfWorld", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 0);
@@ -108,28 +108,28 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
         return;
     }
 
-    private static BmSDK.Function __fn_TryToCleanUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryToCleanUp;
     /// <summary>
     /// Function: TryToCleanUp
     /// </summary>
     public unsafe virtual void TryToCleanUp()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToCleanUp, "Engine.FracturedStaticMeshPart.TryToCleanUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryToCleanUp, "Engine.FracturedStaticMeshPart.TryToCleanUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller EventInstigator, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "Engine.FracturedStaticMeshPart.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "Engine.FracturedStaticMeshPart.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Damage, paramsPtr + 0);
@@ -143,14 +143,14 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
         return;
     }
 
-    private static BmSDK.Function __fn_LocalBreakOffParts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LocalBreakOffParts;
     /// <summary>
     /// Function: LocalBreakOffParts
     /// </summary>
     public unsafe override void LocalBreakOffParts(BmSDK.Engine.FracturedStaticMeshActor.FBreakOffPartsData BreakData, BmSDK.Engine.Actor BreakInstigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocalBreakOffParts, "Engine.FracturedStaticMeshPart.LocalBreakOffParts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LocalBreakOffParts, "Engine.FracturedStaticMeshPart.LocalBreakOffParts", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BreakData, paramsPtr + 0);
@@ -159,14 +159,14 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
         return;
     }
 
-    private static BmSDK.Function __fn_RecyclePart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecyclePart;
     /// <summary>
     /// Function: RecyclePart
     /// </summary>
     public unsafe virtual void RecyclePart(bool bAddToFreePool)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecyclePart, "Engine.FracturedStaticMeshPart.RecyclePart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecyclePart, "Engine.FracturedStaticMeshPart.RecyclePart", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAddToFreePool, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class FracturedStaticMeshPart : BmSDK.Engine.FracturedStaticMeshA
         return;
     }
 
-    private static BmSDK.Function __fn_Initialize;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialize;
     /// <summary>
     /// Function: Initialize
     /// </summary>
     public unsafe virtual void Initialize()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialize, "Engine.FracturedStaticMeshPart.Initialize");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialize, "Engine.FracturedStaticMeshPart.Initialize", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

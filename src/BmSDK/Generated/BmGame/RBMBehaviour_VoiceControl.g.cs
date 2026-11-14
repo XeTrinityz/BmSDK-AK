@@ -78,140 +78,140 @@ public partial class RBMBehaviour_VoiceControl : BmSDK.BmGame.RBMBehaviour, BmSD
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_VoiceControl>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_VoiceControl.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_VoiceControl.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnBeginInterrupt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginInterrupt;
     /// <summary>
     /// Function: OnBeginInterrupt
     /// </summary>
     public unsafe override void OnBeginInterrupt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_VoiceControl.OnBeginInterrupt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginInterrupt, "BmGame.RBMBehaviour_VoiceControl.OnBeginInterrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KillVFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KillVFX;
     /// <summary>
     /// Function: KillVFX
     /// </summary>
     public unsafe virtual void KillVFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KillVFX, "BmGame.RBMBehaviour_VoiceControl.KillVFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KillVFX, "BmGame.RBMBehaviour_VoiceControl.KillVFX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateVFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVFX;
     /// <summary>
     /// Function: UpdateVFX
     /// </summary>
     public unsafe virtual void UpdateVFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVFX, "BmGame.RBMBehaviour_VoiceControl.UpdateVFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateVFX, "BmGame.RBMBehaviour_VoiceControl.UpdateVFX", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InvestigateGunCrate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InvestigateGunCrate;
     /// <summary>
     /// Function: InvestigateGunCrate
     /// </summary>
     public unsafe virtual void InvestigateGunCrate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InvestigateGunCrate, "BmGame.RBMBehaviour_VoiceControl.InvestigateGunCrate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InvestigateGunCrate, "BmGame.RBMBehaviour_VoiceControl.InvestigateGunCrate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SentryGunGoPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SentryGunGoPhysics;
     /// <summary>
     /// Function: SentryGunGoPhysics
     /// </summary>
     public unsafe virtual void SentryGunGoPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SentryGunGoPhysics, "BmGame.RBMBehaviour_VoiceControl.SentryGunGoPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SentryGunGoPhysics, "BmGame.RBMBehaviour_VoiceControl.SentryGunGoPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SentryGunTakenOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SentryGunTakenOut;
     /// <summary>
     /// Function: SentryGunTakenOut
     /// </summary>
     public unsafe virtual void SentryGunTakenOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SentryGunTakenOut, "BmGame.RBMBehaviour_VoiceControl.SentryGunTakenOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SentryGunTakenOut, "BmGame.RBMBehaviour_VoiceControl.SentryGunTakenOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Attach_Trophy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Attach_Trophy;
     /// <summary>
     /// Function: Attach_Trophy
     /// </summary>
     public unsafe virtual void Attach_Trophy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Attach_Trophy, "BmGame.RBMBehaviour_VoiceControl.Attach_Trophy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Attach_Trophy, "BmGame.RBMBehaviour_VoiceControl.Attach_Trophy", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AtPathGoal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AtPathGoal;
     /// <summary>
     /// Function: AtPathGoal
     /// </summary>
     public unsafe virtual bool AtPathGoal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AtPathGoal, "BmGame.RBMBehaviour_VoiceControl.AtPathGoal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AtPathGoal, "BmGame.RBMBehaviour_VoiceControl.AtPathGoal", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RBMBehaviour_VoiceControl.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RBMBehaviour_VoiceControl.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -219,28 +219,28 @@ public partial class RBMBehaviour_VoiceControl : BmSDK.BmGame.RBMBehaviour, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_GoToGoalState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoToGoalState;
     /// <summary>
     /// Function: GoToGoalState
     /// </summary>
     public unsafe virtual void GoToGoalState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoToGoalState, "BmGame.RBMBehaviour_VoiceControl.GoToGoalState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoToGoalState, "BmGame.RBMBehaviour_VoiceControl.GoToGoalState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateAcknowledgement;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAcknowledgement;
     /// <summary>
     /// Function: UpdateAcknowledgement
     /// </summary>
     public unsafe virtual void UpdateAcknowledgement(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAcknowledgement, "BmGame.RBMBehaviour_VoiceControl.UpdateAcknowledgement");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateAcknowledgement, "BmGame.RBMBehaviour_VoiceControl.UpdateAcknowledgement", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -248,14 +248,14 @@ public partial class RBMBehaviour_VoiceControl : BmSDK.BmGame.RBMBehaviour, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePlayerLOS;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePlayerLOS;
     /// <summary>
     /// Function: UpdatePlayerLOS
     /// </summary>
     public unsafe virtual void UpdatePlayerLOS(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePlayerLOS, "BmGame.RBMBehaviour_VoiceControl.UpdatePlayerLOS");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePlayerLOS, "BmGame.RBMBehaviour_VoiceControl.UpdatePlayerLOS", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -263,28 +263,28 @@ public partial class RBMBehaviour_VoiceControl : BmSDK.BmGame.RBMBehaviour, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_PathToPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PathToPoint;
     /// <summary>
     /// Function: PathToPoint
     /// </summary>
     public unsafe virtual void PathToPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PathToPoint, "BmGame.RBMBehaviour_VoiceControl.PathToPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PathToPoint, "BmGame.RBMBehaviour_VoiceControl.PathToPoint", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise(System.Numerics.Vector3 NewLocation, BmSDK.Engine.Actor NewActor, BmSDK.TArray<BmSDK.BmGame.RPawnVillain> NewThugList, bool bNewUseDestinationTargetMarkerVFX, System.Numerics.Vector3 vNewDestinationTargetMarkerLocation, BmSDK.Engine.ParticleSystem DestinationTargetMarkerTemplate, BmSDK.Engine.ParticleSystem BeamTemplate, BmSDK.Engine.ParticleSystem SelectedEnemyTemplate, System.Numerics.Vector3 vNewImpactedWallNormal, BmSDK.BmGame.RVoiceSynthesiser NewVoiceSynthesiser)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RBMBehaviour_VoiceControl.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RBMBehaviour_VoiceControl.Initialise", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLocation, paramsPtr + 0);

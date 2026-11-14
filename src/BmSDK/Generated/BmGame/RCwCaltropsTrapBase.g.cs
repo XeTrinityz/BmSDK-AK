@@ -78,28 +78,28 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<RCwCaltropsTrapBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RemoveCollisionCylinders;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveCollisionCylinders;
     /// <summary>
     /// Function: RemoveCollisionCylinders
     /// </summary>
     public unsafe virtual void RemoveCollisionCylinders()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveCollisionCylinders, "BmGame.RCwCaltropsTrapBase.RemoveCollisionCylinders");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveCollisionCylinders, "BmGame.RCwCaltropsTrapBase.RemoveCollisionCylinders", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ThugStartsSwiping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugStartsSwiping;
     /// <summary>
     /// Function: ThugStartsSwiping
     /// </summary>
     public unsafe virtual void ThugStartsSwiping(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugStartsSwiping, "BmGame.RCwCaltropsTrapBase.ThugStartsSwiping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugStartsSwiping, "BmGame.RCwCaltropsTrapBase.ThugStartsSwiping", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_AddCollisionCylinder;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddCollisionCylinder;
     /// <summary>
     /// Function: AddCollisionCylinder
     /// </summary>
     public unsafe virtual void AddCollisionCylinder(System.Numerics.Vector3 CylinderPos, float CylinderRadius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddCollisionCylinder, "BmGame.RCwCaltropsTrapBase.AddCollisionCylinder");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddCollisionCylinder, "BmGame.RCwCaltropsTrapBase.AddCollisionCylinder", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CylinderPos, paramsPtr + 0);
@@ -123,56 +123,56 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_ClearCylinderUpdateTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearCylinderUpdateTimer;
     /// <summary>
     /// Function: ClearCylinderUpdateTimer
     /// </summary>
     public unsafe virtual void ClearCylinderUpdateTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearCylinderUpdateTimer, "BmGame.RCwCaltropsTrapBase.ClearCylinderUpdateTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearCylinderUpdateTimer, "BmGame.RCwCaltropsTrapBase.ClearCylinderUpdateTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishedCylinderUpdates;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishedCylinderUpdates;
     /// <summary>
     /// Function: FinishedCylinderUpdates
     /// </summary>
     public unsafe virtual void FinishedCylinderUpdates()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishedCylinderUpdates, "BmGame.RCwCaltropsTrapBase.FinishedCylinderUpdates");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishedCylinderUpdates, "BmGame.RCwCaltropsTrapBase.FinishedCylinderUpdates", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RCwCaltropsTrapBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RCwCaltropsTrapBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InformEnemiesOfCaltrops;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InformEnemiesOfCaltrops;
     /// <summary>
     /// Function: InformEnemiesOfCaltrops
     /// </summary>
     public unsafe virtual void InformEnemiesOfCaltrops(bool bCheckCylinders = default, bool bDebugDraw = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InformEnemiesOfCaltrops, "BmGame.RCwCaltropsTrapBase.InformEnemiesOfCaltrops");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InformEnemiesOfCaltrops, "BmGame.RCwCaltropsTrapBase.InformEnemiesOfCaltrops", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCheckCylinders, paramsPtr + 0);
@@ -188,14 +188,14 @@ public partial class RCwCaltropsTrapBase : BmSDK.BmGame.RThugTrap, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCollisionCylinderComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCollisionCylinderComponents;
     /// <summary>
     /// Function: UpdateCollisionCylinderComponents
     /// </summary>
     public unsafe virtual void UpdateCollisionCylinderComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCollisionCylinderComponents, "BmGame.RCwCaltropsTrapBase.UpdateCollisionCylinderComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCollisionCylinderComponents, "BmGame.RCwCaltropsTrapBase.UpdateCollisionCylinderComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

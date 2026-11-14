@@ -78,42 +78,42 @@ public partial class RWaterGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RWaterGeneratorBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BmTriedToUseWhenInvalid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BmTriedToUseWhenInvalid;
     /// <summary>
     /// Function: BmTriedToUseWhenInvalid
     /// </summary>
     public unsafe virtual void BmTriedToUseWhenInvalid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BmTriedToUseWhenInvalid, "BmGame.RWaterGeneratorBase.BmTriedToUseWhenInvalid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BmTriedToUseWhenInvalid, "BmGame.RWaterGeneratorBase.BmTriedToUseWhenInvalid", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CantShoot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CantShoot;
     /// <summary>
     /// Function: CantShoot
     /// </summary>
     public unsafe virtual bool CantShoot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantShoot, "BmGame.RWaterGeneratorBase.CantShoot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CantShoot, "BmGame.RWaterGeneratorBase.CantShoot", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RWaterGeneratorBase.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RWaterGeneratorBase.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -121,28 +121,28 @@ public partial class RWaterGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsOverloaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOverloaded;
     /// <summary>
     /// Function: IsOverloaded
     /// </summary>
     public unsafe virtual bool IsOverloaded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOverloaded, "BmGame.RWaterGeneratorBase.IsOverloaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOverloaded, "BmGame.RWaterGeneratorBase.IsOverloaded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RWaterGeneratorBase.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RWaterGeneratorBase.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -150,42 +150,42 @@ public partial class RWaterGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CanTurnOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTurnOn;
     /// <summary>
     /// Function: CanTurnOn
     /// </summary>
     public unsafe virtual bool CanTurnOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTurnOn, "BmGame.RWaterGeneratorBase.CanTurnOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTurnOn, "BmGame.RWaterGeneratorBase.CanTurnOn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanTurnOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTurnOff;
     /// <summary>
     /// Function: CanTurnOff
     /// </summary>
     public unsafe virtual bool CanTurnOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTurnOff, "BmGame.RWaterGeneratorBase.CanTurnOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTurnOff, "BmGame.RWaterGeneratorBase.CanTurnOff", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DangerPreventsUse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DangerPreventsUse;
     /// <summary>
     /// Function: DangerPreventsUse
     /// </summary>
     public unsafe virtual bool DangerPreventsUse(BmSDK.Engine.Controller InstigatedBy, BmSDK.BmGame.RMagneticBlast.MBImpulseType ImpulseType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DangerPreventsUse, "BmGame.RWaterGeneratorBase.DangerPreventsUse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DangerPreventsUse, "BmGame.RWaterGeneratorBase.DangerPreventsUse", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 0);
@@ -194,42 +194,42 @@ public partial class RWaterGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetQuickFireType;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetQuickFireType;
     /// <summary>
     /// Function: GetQuickFireType
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RMagneticBlast.MBImpulseType GetQuickFireType()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetQuickFireType, "BmGame.RWaterGeneratorBase.GetQuickFireType");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetQuickFireType, "BmGame.RWaterGeneratorBase.GetQuickFireType", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RMagneticBlast.MBImpulseType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BmTriedToUseInWater;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BmTriedToUseInWater;
     /// <summary>
     /// Function: BmTriedToUseInWater
     /// </summary>
     public unsafe virtual void BmTriedToUseInWater()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BmTriedToUseInWater, "BmGame.RWaterGeneratorBase.BmTriedToUseInWater");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BmTriedToUseInWater, "BmGame.RWaterGeneratorBase.BmTriedToUseInWater", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HitByREC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitByREC;
     /// <summary>
     /// Function: HitByREC
     /// </summary>
     public unsafe virtual void HitByREC(System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.BmGame.RMagneticBlast.MBImpulseType HitType, BmSDK.Engine.Controller InstigatedBy)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByREC, "BmGame.RWaterGeneratorBase.HitByREC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitByREC, "BmGame.RWaterGeneratorBase.HitByREC", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitLocation, paramsPtr + 0);

@@ -30,6 +30,13 @@ public partial class GameObject
     public bool IsValid => Ptr != IntPtr.Zero;
 
     /// <summary>
+    /// Like <see cref="IsValid"/>, but also false for an object the game is in the middle of destroying,
+    /// which is still valid to read until the engine frees it but is no longer worth acting on.
+    /// For an <see cref="Engine.Actor"/> that is one that was destroyed or is waiting to be.
+    /// </summary>
+    public virtual bool IsAlive => IsValid;
+
+    /// <summary>
     /// Returns true if this object is the "Class Default Object", false if it is a usual instance.
     /// A CDO is the template instance of a class that holds the default attributes of new objects.
     /// Can be retrieved through GameObject.Class.DefaultObject.

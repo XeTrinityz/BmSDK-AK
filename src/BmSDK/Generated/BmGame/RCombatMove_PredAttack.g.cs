@@ -78,56 +78,56 @@ public partial class RCombatMove_PredAttack : BmSDK.BmGame.RCombatMove_VillainCl
         where TComponent : class, Framework.IScriptComponent<RCombatMove_PredAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayStrikeAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayStrikeAnim;
     /// <summary>
     /// Function: PlayStrikeAnim
     /// </summary>
     public unsafe override void PlayStrikeAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayStrikeAnim, "BmGame.RCombatMove_PredAttack.PlayStrikeAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayStrikeAnim, "BmGame.RCombatMove_PredAttack.PlayStrikeAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayAbortAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAbortAnim;
     /// <summary>
     /// Function: PlayAbortAnim
     /// </summary>
     public unsafe override void PlayAbortAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAbortAnim, "BmGame.RCombatMove_PredAttack.PlayAbortAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAbortAnim, "BmGame.RCombatMove_PredAttack.PlayAbortAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChooseAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseAttack;
     /// <summary>
     /// Function: ChooseAttack
     /// </summary>
     public unsafe override void ChooseAttack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseAttack, "BmGame.RCombatMove_PredAttack.ChooseAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseAttack, "BmGame.RCombatMove_PredAttack.ChooseAttack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetTransitionDurationScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTransitionDurationScale;
     /// <summary>
     /// Function: GetTransitionDurationScale
     /// </summary>
     public unsafe override float GetTransitionDurationScale()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTransitionDurationScale, "BmGame.RCombatMove_PredAttack.GetTransitionDurationScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTransitionDurationScale, "BmGame.RCombatMove_PredAttack.GetTransitionDurationScale", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,42 +78,42 @@ public partial class RSeqAct_StartVehicleNPCWeaponAttack : BmSDK.Engine.SeqAct_L
         where TComponent : class, Framework.IScriptComponent<RSeqAct_StartVehicleNPCWeaponAttack>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FiredOffScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FiredOffScreen;
     /// <summary>
     /// Function: FiredOffScreen
     /// </summary>
     public unsafe virtual void FiredOffScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FiredOffScreen, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.FiredOffScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FiredOffScreen, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.FiredOffScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LostLineOfSight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LostLineOfSight;
     /// <summary>
     /// Function: LostLineOfSight
     /// </summary>
     public unsafe virtual void LostLineOfSight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LostLineOfSight, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.LostLineOfSight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LostLineOfSight, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.LostLineOfSight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WeaponHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WeaponHit;
     /// <summary>
     /// Function: WeaponHit
     /// </summary>
     public unsafe virtual void WeaponHit(bool HitTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WeaponHit, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.WeaponHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WeaponHit, "BmGame.RSeqAct_StartVehicleNPCWeaponAttack.WeaponHit", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitTarget, paramsPtr + 0);

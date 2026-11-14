@@ -78,14 +78,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCapeStateController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetCapeToBoneDataReferencePose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeToBoneDataReferencePose;
     /// <summary>
     /// Function: SetCapeToBoneDataReferencePose
     /// </summary>
     public unsafe virtual void SetCapeToBoneDataReferencePose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCapeToBoneDataReferencePose, "BmGame.RCapeStateController.SetCapeToBoneDataReferencePose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCapeToBoneDataReferencePose, "BmGame.RCapeStateController.SetCapeToBoneDataReferencePose", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCapeToCurrentAnimPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeToCurrentAnimPose;
     /// <summary>
     /// Function: SetCapeToCurrentAnimPose
     /// </summary>
     public unsafe virtual void SetCapeToCurrentAnimPose(bool IsEvaluateAnim = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCapeToCurrentAnimPose, "BmGame.RCapeStateController.SetCapeToCurrentAnimPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCapeToCurrentAnimPose, "BmGame.RCapeStateController.SetCapeToCurrentAnimPose", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsEvaluateAnim, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResumeCape;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResumeCape;
     /// <summary>
     /// Function: ResumeCape
     /// </summary>
     public unsafe virtual void ResumeCape()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResumeCape, "BmGame.RCapeStateController.ResumeCape");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResumeCape, "BmGame.RCapeStateController.ResumeCape", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -142,14 +142,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PauseCape;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PauseCape;
     /// <summary>
     /// Function: PauseCape
     /// </summary>
     public unsafe virtual void PauseCape()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PauseCape, "BmGame.RCapeStateController.PauseCape");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PauseCape, "BmGame.RCapeStateController.PauseCape", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -163,14 +163,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetIsPausedOrPendingPaused;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsPausedOrPendingPaused;
     /// <summary>
     /// Function: GetIsPausedOrPendingPaused
     /// </summary>
     public unsafe virtual bool GetIsPausedOrPendingPaused()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsPausedOrPendingPaused, "BmGame.RCapeStateController.GetIsPausedOrPendingPaused");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIsPausedOrPendingPaused, "BmGame.RCapeStateController.GetIsPausedOrPendingPaused", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -184,14 +184,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BeginCinematicState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginCinematicState;
     /// <summary>
     /// Function: BeginCinematicState
     /// </summary>
     public unsafe virtual void BeginCinematicState(BmSDK.FName AnimName, BmSDK.BmGame.RCapeStateConfig TemplateStateConfig, float AnimStartTime, float AnimPlayRate = default, BmSDK.FName SyncAnimName = default, float SyncAnimOffset = default, bool bMirrored = default, bool bClearVelocityOnExit = default, bool bTeleportToInitialPose = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginCinematicState, "BmGame.RCapeStateController.BeginCinematicState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginCinematicState, "BmGame.RCapeStateController.BeginCinematicState", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AnimName, paramsPtr + 0);
@@ -214,14 +214,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCapeStateAndTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeStateAndTime;
     /// <summary>
     /// Function: SetCapeStateAndTime
     /// </summary>
     public unsafe virtual void SetCapeStateAndTime(BmSDK.FName NewCapeStateName, float NewCapeStateTime, float AnimPlayRate = default, bool bMirrored = default, BmSDK.FName AnimName = default, BmSDK.FName SyncAnimNameOverride = default, float SyncAnimOffsetOverride = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCapeStateAndTime, "BmGame.RCapeStateController.SetCapeStateAndTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCapeStateAndTime, "BmGame.RCapeStateController.SetCapeStateAndTime", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCapeStateName, paramsPtr + 0);
@@ -242,14 +242,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetCapeState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCapeState;
     /// <summary>
     /// Function: SetCapeState
     /// </summary>
     public unsafe virtual void SetCapeState(BmSDK.FName NewCapeStateName, BmSDK.FName NewCapeAnimName, float AnimStartTime = default, float AnimPlayRate = default, bool ForceRestart = default, bool ForceInitialPose = default, bool bMirrored = default, BmSDK.FName SyncAnimName = default, float SyncAnimOffset = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCapeState, "BmGame.RCapeStateController.SetCapeState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCapeState, "BmGame.RCapeStateController.SetCapeState", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCapeStateName, paramsPtr + 0);
@@ -272,14 +272,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe virtual void Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RCapeStateController.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RCapeStateController.Update", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -294,14 +294,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePauseState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePauseState;
     /// <summary>
     /// Function: UpdatePauseState
     /// </summary>
     public unsafe virtual void UpdatePauseState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePauseState, "BmGame.RCapeStateController.UpdatePauseState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePauseState, "BmGame.RCapeStateController.UpdatePauseState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -315,14 +315,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Finalise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Finalise;
     /// <summary>
     /// Function: Finalise
     /// </summary>
     public unsafe virtual void Finalise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Finalise, "BmGame.RCapeStateController.Finalise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Finalise, "BmGame.RCapeStateController.Finalise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -336,14 +336,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe virtual void Initialise(BmSDK.FName InitialCapeStateName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RCapeStateController.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCapeStateController.Initialise", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InitialCapeStateName, paramsPtr + 0);
@@ -358,14 +358,14 @@ public partial class RCapeStateController : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetIsInitialised;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetIsInitialised;
     /// <summary>
     /// Function: GetIsInitialised
     /// </summary>
     public unsafe virtual bool GetIsInitialised()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetIsInitialised, "BmGame.RCapeStateController.GetIsInitialised");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetIsInitialised, "BmGame.RCapeStateController.GetIsInitialised", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

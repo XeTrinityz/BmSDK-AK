@@ -78,14 +78,14 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_CombatPyg>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OverrideHitReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideHitReaction;
     /// <summary>
     /// Function: OverrideHitReaction
     /// </summary>
     public unsafe override bool OverrideHitReaction(out BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideHitReaction, "BmScript.RBMBehaviour_CombatPyg.OverrideHitReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideHitReaction, "BmScript.RBMBehaviour_CombatPyg.OverrideHitReaction", this);
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -93,28 +93,28 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 248);
     }
 
-    private static BmSDK.Function __fn_OnSpawnMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSpawnMove;
     /// <summary>
     /// Function: OnSpawnMove
     /// </summary>
     public unsafe override void OnSpawnMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSpawnMove, "BmScript.RBMBehaviour_CombatPyg.OnSpawnMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSpawnMove, "BmScript.RBMBehaviour_CombatPyg.OnSpawnMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetAttackPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAttackPriority;
     /// <summary>
     /// Function: GetAttackPriority
     /// </summary>
     public unsafe override int GetAttackPriority(bool bForceAttack)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAttackPriority, "BmScript.RBMBehaviour_CombatPyg.GetAttackPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAttackPriority, "BmScript.RBMBehaviour_CombatPyg.GetAttackPriority", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceAttack, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PlayStepInDirection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayStepInDirection;
     /// <summary>
     /// Function: PlayStepInDirection
     /// </summary>
     public unsafe override void PlayStepInDirection(System.Numerics.Vector3 MoveDir, System.Numerics.Vector3 FrontDir, float MoveSize, float ForceSize, float MoveAmnt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayStepInDirection, "BmScript.RBMBehaviour_CombatPyg.PlayStepInDirection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayStepInDirection, "BmScript.RBMBehaviour_CombatPyg.PlayStepInDirection", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveDir, paramsPtr + 0);
@@ -141,28 +141,28 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         return;
     }
 
-    private static BmSDK.Function __fn_GetSafeFromBatmanPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSafeFromBatmanPosition;
     /// <summary>
     /// Function: GetSafeFromBatmanPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetSafeFromBatmanPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSafeFromBatmanPosition, "BmScript.RBMBehaviour_CombatPyg.GetSafeFromBatmanPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSafeFromBatmanPosition, "BmScript.RBMBehaviour_CombatPyg.GetSafeFromBatmanPosition", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MoveToAnotherPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveToAnotherPoint;
     /// <summary>
     /// Function: MoveToAnotherPoint
     /// </summary>
     public unsafe virtual void MoveToAnotherPoint(BmSDK.BmScript.RBMCombatPoint_PygTable.EPygTableMoveState CurrMoveState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveToAnotherPoint, "BmScript.RBMBehaviour_CombatPyg.MoveToAnotherPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveToAnotherPoint, "BmScript.RBMBehaviour_CombatPyg.MoveToAnotherPoint", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrMoveState, paramsPtr + 0);
@@ -170,56 +170,56 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         return;
     }
 
-    private static BmSDK.Function __fn_CheckHidePointSafe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckHidePointSafe;
     /// <summary>
     /// Function: CheckHidePointSafe
     /// </summary>
     public unsafe virtual void CheckHidePointSafe()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckHidePointSafe, "BmScript.RBMBehaviour_CombatPyg.CheckHidePointSafe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckHidePointSafe, "BmScript.RBMBehaviour_CombatPyg.CheckHidePointSafe", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GotoMoveToCombatState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GotoMoveToCombatState;
     /// <summary>
     /// Function: GotoMoveToCombatState
     /// </summary>
     public unsafe override void GotoMoveToCombatState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GotoMoveToCombatState, "BmScript.RBMBehaviour_CombatPyg.GotoMoveToCombatState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotoMoveToCombatState, "BmScript.RBMBehaviour_CombatPyg.GotoMoveToCombatState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetTauntMoveStance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTauntMoveStance;
     /// <summary>
     /// Function: GetTauntMoveStance
     /// </summary>
     public unsafe override BmSDK.FName GetTauntMoveStance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTauntMoveStance, "BmScript.RBMBehaviour_CombatPyg.GetTauntMoveStance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTauntMoveStance, "BmScript.RBMBehaviour_CombatPyg.GetTauntMoveStance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPossibleMoves;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPossibleMoves;
     /// <summary>
     /// Function: GetPossibleMoves
     /// </summary>
     public unsafe override void GetPossibleMoves(out BmSDK.TArray<BmSDK.Class> PossibleMoves)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPossibleMoves, "BmScript.RBMBehaviour_CombatPyg.GetPossibleMoves");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPossibleMoves, "BmScript.RBMBehaviour_CombatPyg.GetPossibleMoves", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -227,28 +227,28 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         return;
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_CombatPyg.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_CombatPyg.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmScript.RBMBehaviour_CombatPyg.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmScript.RBMBehaviour_CombatPyg.OnActivate", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

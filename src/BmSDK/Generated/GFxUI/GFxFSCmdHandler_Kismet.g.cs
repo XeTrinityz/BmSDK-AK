@@ -78,20 +78,20 @@ public partial class GFxFSCmdHandler_Kismet : BmSDK.GFxUI.GFxFSCmdHandler, BmSDK
         where TComponent : class, Framework.IScriptComponent<GFxFSCmdHandler_Kismet>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FSCommand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FSCommand;
     /// <summary>
     /// Function: FSCommand
     /// </summary>
-    public unsafe override bool FSCommand(BmSDK.GFxUI.GFxMoviePlayer Movie, BmSDK.GFxUI.GFxEvent_FSCommand Event, BmSDK.FString Cmd, BmSDK.FString Arg)
+    public unsafe override bool FSCommand(BmSDK.GFxUI.GFxMoviePlayer Movie, BmSDK.GFxUI.GFxEvent_FSCommand Event, BmSDK.FStringArg Cmd, BmSDK.FStringArg Arg)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FSCommand, "GFxUI.GFxFSCmdHandler_Kismet.FSCommand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FSCommand, "GFxUI.GFxFSCmdHandler_Kismet.FSCommand", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Movie, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Event, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Cmd, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Arg, paramsPtr + 32);
+        Cmd.WriteTo(paramsPtr + 16);
+        Arg.WriteTo(paramsPtr + 32);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -100,6 +100,8 @@ public partial class GFxFSCmdHandler_Kismet : BmSDK.GFxUI.GFxFSCmdHandler, BmSDK
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 }

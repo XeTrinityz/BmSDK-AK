@@ -73,14 +73,14 @@ public partial class RBarkConvoPawnRef : BmSDK.BmGame.RBarkConvoNode, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RBarkConvoPawnRef>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnLockedSpeakerFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnLockedSpeakerFound;
     /// <summary>
     /// Function: OnLockedSpeakerFound
     /// </summary>
     public unsafe virtual void OnLockedSpeakerFound(BmSDK.BmGame.RBarkConvo Convo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnLockedSpeakerFound, "BmGame.RBarkConvoPawnRef.OnLockedSpeakerFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnLockedSpeakerFound, "BmGame.RBarkConvoPawnRef.OnLockedSpeakerFound", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Convo, paramsPtr + 0);

@@ -78,28 +78,28 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RHidePoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TriedToGrappleToUnusableHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriedToGrappleToUnusableHidePoint;
     /// <summary>
     /// Function: TriedToGrappleToUnusableHidePoint
     /// </summary>
     public unsafe virtual void TriedToGrappleToUnusableHidePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriedToGrappleToUnusableHidePoint, "BmGame.RHidePoint.TriedToGrappleToUnusableHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriedToGrappleToUnusableHidePoint, "BmGame.RHidePoint.TriedToGrappleToUnusableHidePoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MoveHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveHidePoint;
     /// <summary>
     /// Function: MoveHidePoint
     /// </summary>
     public unsafe virtual void MoveHidePoint(System.Numerics.Vector3 InputDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveHidePoint, "BmGame.RHidePoint.MoveHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveHidePoint, "BmGame.RHidePoint.MoveHidePoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InputDir, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsActorTiedTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActorTiedTo;
     /// <summary>
     /// Function: IsActorTiedTo
     /// </summary>
     public unsafe virtual bool IsActorTiedTo(BmSDK.Engine.Actor TestActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActorTiedTo, "BmGame.RHidePoint.IsActorTiedTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActorTiedTo, "BmGame.RHidePoint.IsActorTiedTo", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestActor, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddAttachedRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddAttachedRope;
     /// <summary>
     /// Function: AddAttachedRope
     /// </summary>
     public unsafe virtual void AddAttachedRope(BmSDK.BmGame.RRopeBase Rope)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddAttachedRope, "BmGame.RHidePoint.AddAttachedRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAttachedRope, "BmGame.RHidePoint.AddAttachedRope", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Rope, paramsPtr + 0);
@@ -137,56 +137,56 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveAttachedRopes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAttachedRopes;
     /// <summary>
     /// Function: RemoveAttachedRopes
     /// </summary>
     public unsafe virtual void RemoveAttachedRopes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAttachedRopes, "BmGame.RHidePoint.RemoveAttachedRopes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveAttachedRopes, "BmGame.RHidePoint.RemoveAttachedRopes", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsValidVantageMineTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidVantageMineTarget;
     /// <summary>
     /// Function: IsValidVantageMineTarget
     /// </summary>
     public unsafe virtual bool IsValidVantageMineTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidVantageMineTarget, "BmGame.RHidePoint.IsValidVantageMineTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidVantageMineTarget, "BmGame.RHidePoint.IsValidVantageMineTarget", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_WillSmashIfShot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WillSmashIfShot;
     /// <summary>
     /// Function: WillSmashIfShot
     /// </summary>
     public unsafe virtual bool WillSmashIfShot()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WillSmashIfShot, "BmGame.RHidePoint.WillSmashIfShot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WillSmashIfShot, "BmGame.RHidePoint.WillSmashIfShot", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UnlinkToActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnlinkToActor;
     /// <summary>
     /// Function: UnlinkToActor
     /// </summary>
     public unsafe override bool UnlinkToActor(BmSDK.Engine.Actor LinkTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnlinkToActor, "BmGame.RHidePoint.UnlinkToActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnlinkToActor, "BmGame.RHidePoint.UnlinkToActor", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LinkTarget, paramsPtr + 0);
@@ -194,14 +194,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TriggerScanFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerScanFX;
     /// <summary>
     /// Function: TriggerScanFX
     /// </summary>
     public unsafe virtual void TriggerScanFX(BmSDK.Engine.ParticleSystem ScanFX)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerScanFX, "BmGame.RHidePoint.TriggerScanFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerScanFX, "BmGame.RHidePoint.TriggerScanFX", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScanFX, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HasThermalCheckFloorPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasThermalCheckFloorPos;
     /// <summary>
     /// Function: HasThermalCheckFloorPos
     /// </summary>
     public unsafe virtual bool HasThermalCheckFloorPos(out System.Numerics.Vector3 FloorPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasThermalCheckFloorPos, "BmGame.RHidePoint.HasThermalCheckFloorPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasThermalCheckFloorPos, "BmGame.RHidePoint.HasThermalCheckFloorPos", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out FloorPos);
@@ -226,14 +226,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsHidePointLinked;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHidePointLinked;
     /// <summary>
     /// Function: IsHidePointLinked
     /// </summary>
     public unsafe virtual bool IsHidePointLinked(BmSDK.BmGame.RHidePoint TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHidePointLinked, "BmGame.RHidePoint.IsHidePointLinked");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHidePointLinked, "BmGame.RHidePoint.IsHidePointLinked", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPoint, paramsPtr + 0);
@@ -248,42 +248,42 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TriggerGrappledToEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerGrappledToEvents;
     /// <summary>
     /// Function: TriggerGrappledToEvents
     /// </summary>
     public unsafe virtual void TriggerGrappledToEvents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerGrappledToEvents, "BmGame.RHidePoint.TriggerGrappledToEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerGrappledToEvents, "BmGame.RHidePoint.TriggerGrappledToEvents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsSmashed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSmashed;
     /// <summary>
     /// Function: IsSmashed
     /// </summary>
     public unsafe virtual bool IsSmashed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSmashed, "BmGame.RHidePoint.IsSmashed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSmashed, "BmGame.RHidePoint.IsSmashed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TakeGunDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeGunDamage;
     /// <summary>
     /// Function: TakeGunDamage
     /// </summary>
     public unsafe virtual void TakeGunDamage(float DamageAmount, BmSDK.BmGame.RBMPawnAI AttackingPawn, BmSDK.Class dmgType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeGunDamage, "BmGame.RHidePoint.TakeGunDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeGunDamage, "BmGame.RHidePoint.TakeGunDamage", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageAmount, paramsPtr + 0);
@@ -293,28 +293,28 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UnhidePlayers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnhidePlayers;
     /// <summary>
     /// Function: UnhidePlayers
     /// </summary>
     public unsafe virtual void UnhidePlayers()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnhidePlayers, "BmGame.RHidePoint.UnhidePlayers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnhidePlayers, "BmGame.RHidePoint.UnhidePlayers", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayers;
     /// <summary>
     /// Function: GetPlayers
     /// </summary>
     public unsafe virtual bool GetPlayers(out BmSDK.TArray<BmSDK.BmGame.RPlayerController> PlayersOnVantagePoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayers, "BmGame.RHidePoint.GetPlayers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayers, "BmGame.RHidePoint.GetPlayers", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -322,14 +322,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetGrappleCameraRoot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrappleCameraRoot;
     /// <summary>
     /// Function: GetGrappleCameraRoot
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGrappleCameraRoot(BmSDK.BmGame.RPawnPlayer Pawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGrappleCameraRoot, "BmGame.RHidePoint.GetGrappleCameraRoot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGrappleCameraRoot, "BmGame.RHidePoint.GetGrappleCameraRoot", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn, paramsPtr + 0);
@@ -337,14 +337,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_MountGargoyle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MountGargoyle;
     /// <summary>
     /// Function: MountGargoyle
     /// </summary>
     public unsafe virtual void MountGargoyle(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MountGargoyle, "BmGame.RHidePoint.MountGargoyle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MountGargoyle, "BmGame.RHidePoint.MountGargoyle", this);
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -352,14 +352,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Bump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Bump;
     /// <summary>
     /// Function: Bump
     /// </summary>
     public unsafe override void Bump(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Bump, "BmGame.RHidePoint.Bump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Bump, "BmGame.RHidePoint.Bump", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -369,14 +369,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RHidePoint.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RHidePoint.Touch", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -387,28 +387,28 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetGrappleSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrappleSound;
     /// <summary>
     /// Function: GetGrappleSound
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkEvent GetGrappleSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGrappleSound, "BmGame.RHidePoint.GetGrappleSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGrappleSound, "BmGame.RHidePoint.GetGrappleSound", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkEvent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyRopeCut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyRopeCut;
     /// <summary>
     /// Function: NotifyRopeCut
     /// </summary>
     public unsafe virtual void NotifyRopeCut(BmSDK.BmGame.RBatarangProjectile Brang)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyRopeCut, "BmGame.RHidePoint.NotifyRopeCut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyRopeCut, "BmGame.RHidePoint.NotifyRopeCut", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Brang, paramsPtr + 0);
@@ -416,14 +416,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LoadDestroyedState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadDestroyedState;
     /// <summary>
     /// Function: LoadDestroyedState
     /// </summary>
     public unsafe virtual void LoadDestroyedState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadDestroyedState, "BmGame.RHidePoint.LoadDestroyedState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadDestroyedState, "BmGame.RHidePoint.LoadDestroyedState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -437,14 +437,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SaveDestroyedState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SaveDestroyedState;
     /// <summary>
     /// Function: SaveDestroyedState
     /// </summary>
     public unsafe virtual void SaveDestroyedState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SaveDestroyedState, "BmGame.RHidePoint.SaveDestroyedState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SaveDestroyedState, "BmGame.RHidePoint.SaveDestroyedState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -458,42 +458,42 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDestroyedHelpText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDestroyedHelpText;
     /// <summary>
     /// Function: SetDestroyedHelpText
     /// </summary>
     public unsafe virtual void SetDestroyedHelpText()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDestroyedHelpText, "BmGame.RHidePoint.SetDestroyedHelpText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDestroyedHelpText, "BmGame.RHidePoint.SetDestroyedHelpText", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DamagedByBomb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamagedByBomb;
     /// <summary>
     /// Function: DamagedByBomb
     /// </summary>
     public unsafe virtual void DamagedByBomb()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagedByBomb, "BmGame.RHidePoint.DamagedByBomb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamagedByBomb, "BmGame.RHidePoint.DamagedByBomb", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleCanJumpOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleCanJumpOff;
     /// <summary>
     /// Function: ToggleCanJumpOff
     /// </summary>
     public unsafe virtual void ToggleCanJumpOff(BmSDK.BmGame.RSeqAct_ToggleCanJumpOffVantagePoint Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleCanJumpOff, "BmGame.RHidePoint.ToggleCanJumpOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleCanJumpOff, "BmGame.RHidePoint.ToggleCanJumpOff", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -501,42 +501,42 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RHidePoint.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RHidePoint.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RHidePoint.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RHidePoint.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RHidePoint.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RHidePoint.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -544,42 +544,42 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ShutDown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShutDown;
     /// <summary>
     /// Function: ShutDown
     /// </summary>
     public unsafe override void ShutDown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShutDown, "BmGame.RHidePoint.ShutDown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShutDown, "BmGame.RHidePoint.ShutDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveMine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveMine;
     /// <summary>
     /// Function: RemoveMine
     /// </summary>
     public unsafe virtual void RemoveMine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMine, "BmGame.RHidePoint.RemoveMine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveMine, "BmGame.RHidePoint.RemoveMine", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RequestMineAttachPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RequestMineAttachPoint;
     /// <summary>
     /// Function: RequestMineAttachPoint
     /// </summary>
     public unsafe virtual bool RequestMineAttachPoint(System.Numerics.Vector3 TargetHintLoc, BmSDK.Rotator ThrowDir, out System.Numerics.Vector3 mineLoc, out BmSDK.Rotator MineRot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RequestMineAttachPoint, "BmGame.RHidePoint.RequestMineAttachPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RequestMineAttachPoint, "BmGame.RHidePoint.RequestMineAttachPoint", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetHintLoc, paramsPtr + 0);
@@ -594,14 +594,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_GetMineAttachSocketWorldLocationAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMineAttachSocketWorldLocationAndRotation;
     /// <summary>
     /// Function: GetMineAttachSocketWorldLocationAndRotation
     /// </summary>
     public unsafe virtual bool GetMineAttachSocketWorldLocationAndRotation(BmSDK.FName InSocketName, out System.Numerics.Vector3 OutLocation, out BmSDK.Rotator OutRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMineAttachSocketWorldLocationAndRotation, "BmGame.RHidePoint.GetMineAttachSocketWorldLocationAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMineAttachSocketWorldLocationAndRotation, "BmGame.RHidePoint.GetMineAttachSocketWorldLocationAndRotation", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSocketName, paramsPtr + 0);
@@ -615,14 +615,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_GetPlayerPerchPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerPerchPosition;
     /// <summary>
     /// Function: GetPlayerPerchPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPlayerPerchPosition(BmSDK.BmGame.RPawnPlayer Player)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerPerchPosition, "BmGame.RHidePoint.GetPlayerPerchPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerPerchPosition, "BmGame.RHidePoint.GetPlayerPerchPosition", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
@@ -637,14 +637,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetRedHoodPerchPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRedHoodPerchPosition;
     /// <summary>
     /// Function: GetRedHoodPerchPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetRedHoodPerchPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRedHoodPerchPosition, "BmGame.RHidePoint.GetRedHoodPerchPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRedHoodPerchPosition, "BmGame.RHidePoint.GetRedHoodPerchPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -658,14 +658,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCatwomanPerchPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCatwomanPerchPosition;
     /// <summary>
     /// Function: GetCatwomanPerchPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetCatwomanPerchPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCatwomanPerchPosition, "BmGame.RHidePoint.GetCatwomanPerchPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCatwomanPerchPosition, "BmGame.RHidePoint.GetCatwomanPerchPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -679,14 +679,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBatmanPerchPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatmanPerchPosition;
     /// <summary>
     /// Function: GetBatmanPerchPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetBatmanPerchPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatmanPerchPosition, "BmGame.RHidePoint.GetBatmanPerchPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatmanPerchPosition, "BmGame.RHidePoint.GetBatmanPerchPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -700,14 +700,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetGrapplePosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrapplePosition;
     /// <summary>
     /// Function: GetGrapplePosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGrapplePosition(System.Numerics.Vector3 CheckLocation, System.Numerics.Vector3 CheckDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGrapplePosition, "BmGame.RHidePoint.GetGrapplePosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGrapplePosition, "BmGame.RHidePoint.GetGrapplePosition", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckLocation, paramsPtr + 0);
@@ -723,14 +723,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_DeactivateForGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateForGrapple;
     /// <summary>
     /// Function: DeactivateForGrapple
     /// </summary>
     public unsafe virtual void DeactivateForGrapple()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateForGrapple, "BmGame.RHidePoint.DeactivateForGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateForGrapple, "BmGame.RHidePoint.DeactivateForGrapple", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -744,14 +744,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateForGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateForGrapple;
     /// <summary>
     /// Function: ActivateForGrapple
     /// </summary>
     public unsafe virtual void ActivateForGrapple()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateForGrapple, "BmGame.RHidePoint.ActivateForGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateForGrapple, "BmGame.RHidePoint.ActivateForGrapple", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -765,42 +765,42 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DisableHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableHidePoint;
     /// <summary>
     /// Function: DisableHidePoint
     /// </summary>
     public unsafe virtual void DisableHidePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableHidePoint, "BmGame.RHidePoint.DisableHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableHidePoint, "BmGame.RHidePoint.DisableHidePoint", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanUseInCinematicMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseInCinematicMode;
     /// <summary>
     /// Function: CanUseInCinematicMode
     /// </summary>
     public unsafe virtual bool CanUseInCinematicMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseInCinematicMode, "BmGame.RHidePoint.CanUseInCinematicMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUseInCinematicMode, "BmGame.RHidePoint.CanUseInCinematicMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindClosestPawnRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestPawnRotation;
     /// <summary>
     /// Function: FindClosestPawnRotation
     /// </summary>
     public unsafe virtual BmSDK.Rotator FindClosestPawnRotation(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindClosestPawnRotation, "BmGame.RHidePoint.FindClosestPawnRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindClosestPawnRotation, "BmGame.RHidePoint.FindClosestPawnRotation", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -808,14 +808,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InstantMovePawnTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstantMovePawnTo;
     /// <summary>
     /// Function: InstantMovePawnTo
     /// </summary>
     public unsafe virtual void InstantMovePawnTo(BmSDK.BmGame.RPlayerController lPC, BmSDK.BmGame.RPawnPlayer PlayerPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstantMovePawnTo, "BmGame.RHidePoint.InstantMovePawnTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstantMovePawnTo, "BmGame.RHidePoint.InstantMovePawnTo", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(lPC, paramsPtr + 0);
@@ -824,14 +824,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_MovePawnTo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovePawnTo;
     /// <summary>
     /// Function: MovePawnTo
     /// </summary>
     public unsafe virtual void MovePawnTo(BmSDK.Engine.Pawn PawnToMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePawnTo, "BmGame.RHidePoint.MovePawnTo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovePawnTo, "BmGame.RHidePoint.MovePawnTo", this);
         byte* paramsPtr = stackalloc byte[216];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToMove, paramsPtr + 0);
@@ -839,28 +839,28 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartedMountMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartedMountMove;
     /// <summary>
     /// Function: StartedMountMove
     /// </summary>
     public unsafe virtual void StartedMountMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartedMountMove, "BmGame.RHidePoint.StartedMountMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartedMountMove, "BmGame.RHidePoint.StartedMountMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetInvestigateHighlighted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInvestigateHighlighted;
     /// <summary>
     /// Function: SetInvestigateHighlighted
     /// </summary>
     public unsafe override void SetInvestigateHighlighted(BmSDK.Engine.MaterialInstanceConstant highMat, bool On)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInvestigateHighlighted, "BmGame.RHidePoint.SetInvestigateHighlighted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInvestigateHighlighted, "BmGame.RHidePoint.SetInvestigateHighlighted", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(highMat, paramsPtr + 0);
@@ -869,14 +869,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetLinkedHidePointsHighlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLinkedHidePointsHighlight;
     /// <summary>
     /// Function: SetLinkedHidePointsHighlight
     /// </summary>
     public unsafe virtual void SetLinkedHidePointsHighlight(bool bHighlight)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLinkedHidePointsHighlight, "BmGame.RHidePoint.SetLinkedHidePointsHighlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLinkedHidePointsHighlight, "BmGame.RHidePoint.SetLinkedHidePointsHighlight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bHighlight, paramsPtr + 0);
@@ -884,28 +884,28 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ReassessCanGrapple;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReassessCanGrapple;
     /// <summary>
     /// Function: ReassessCanGrapple
     /// </summary>
     public unsafe virtual void ReassessCanGrapple()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReassessCanGrapple, "BmGame.RHidePoint.ReassessCanGrapple");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReassessCanGrapple, "BmGame.RHidePoint.ReassessCanGrapple", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RedHoodLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RedHoodLeft;
     /// <summary>
     /// Function: RedHoodLeft
     /// </summary>
     public unsafe virtual void RedHoodLeft(BmSDK.BmGame.RSpecialMoveConfig NewBatmanSwingMove = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RedHoodLeft, "BmGame.RHidePoint.RedHoodLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RedHoodLeft, "BmGame.RHidePoint.RedHoodLeft", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBatmanSwingMove, paramsPtr + 0);
@@ -913,14 +913,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RedHoodEntered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RedHoodEntered;
     /// <summary>
     /// Function: RedHoodEntered
     /// </summary>
     public unsafe virtual void RedHoodEntered(BmSDK.BmGame.RPawnVillain Redhood, BmSDK.BmGame.RSpecialMoveConfig NewBatmanSwingMove = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RedHoodEntered, "BmGame.RHidePoint.RedHoodEntered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RedHoodEntered, "BmGame.RHidePoint.RedHoodEntered", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Redhood, paramsPtr + 0);
@@ -929,42 +929,42 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_KickVillainOffVantagePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KickVillainOffVantagePoint;
     /// <summary>
     /// Function: KickVillainOffVantagePoint
     /// </summary>
     public unsafe virtual void KickVillainOffVantagePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KickVillainOffVantagePoint, "BmGame.RHidePoint.KickVillainOffVantagePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KickVillainOffVantagePoint, "BmGame.RHidePoint.KickVillainOffVantagePoint", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanKickVillainOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanKickVillainOff;
     /// <summary>
     /// Function: CanKickVillainOff
     /// </summary>
     public unsafe virtual bool CanKickVillainOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanKickVillainOff, "BmGame.RHidePoint.CanKickVillainOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanKickVillainOff, "BmGame.RHidePoint.CanKickVillainOff", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetMine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMine;
     /// <summary>
     /// Function: SetMine
     /// </summary>
     public unsafe virtual void SetMine(BmSDK.BmGame.RVantageMineBase NewMine)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMine, "BmGame.RHidePoint.SetMine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMine, "BmGame.RHidePoint.SetMine", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMine, paramsPtr + 0);
@@ -972,84 +972,84 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetMine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMine;
     /// <summary>
     /// Function: GetMine
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RVantageMineBase GetMine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMine, "BmGame.RHidePoint.GetMine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMine, "BmGame.RHidePoint.GetMine", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RVantageMineBase>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BMLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BMLeft;
     /// <summary>
     /// Function: BMLeft
     /// </summary>
     public unsafe virtual void BMLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BMLeft, "BmGame.RHidePoint.BMLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BMLeft, "BmGame.RHidePoint.BMLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BMEntered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BMEntered;
     /// <summary>
     /// Function: BMEntered
     /// </summary>
     public unsafe virtual void BMEntered()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BMEntered, "BmGame.RHidePoint.BMEntered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BMEntered, "BmGame.RHidePoint.BMEntered", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsPlayerOnVantagePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlayerOnVantagePoint;
     /// <summary>
     /// Function: IsPlayerOnVantagePoint
     /// </summary>
     public unsafe virtual bool IsPlayerOnVantagePoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlayerOnVantagePoint, "BmGame.RHidePoint.IsPlayerOnVantagePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlayerOnVantagePoint, "BmGame.RHidePoint.IsPlayerOnVantagePoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPerfectConcealment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPerfectConcealment;
     /// <summary>
     /// Function: GetPerfectConcealment
     /// </summary>
     public unsafe virtual bool GetPerfectConcealment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPerfectConcealment, "BmGame.RHidePoint.GetPerfectConcealment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPerfectConcealment, "BmGame.RHidePoint.GetPerfectConcealment", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetPerfectConcealment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPerfectConcealment;
     /// <summary>
     /// Function: SetPerfectConcealment
     /// </summary>
     public unsafe virtual void SetPerfectConcealment(bool bNewPerfectConcealment)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPerfectConcealment, "BmGame.RHidePoint.SetPerfectConcealment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPerfectConcealment, "BmGame.RHidePoint.SetPerfectConcealment", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewPerfectConcealment, paramsPtr + 0);
@@ -1057,14 +1057,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetInThermalMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInThermalMode;
     /// <summary>
     /// Function: SetInThermalMode
     /// </summary>
     public unsafe virtual void SetInThermalMode(bool On, bool bForceOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInThermalMode, "BmGame.RHidePoint.SetInThermalMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInThermalMode, "BmGame.RHidePoint.SetInThermalMode", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(On, paramsPtr + 0);
@@ -1073,14 +1073,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAIPointOfInterestPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAIPointOfInterestPosition;
     /// <summary>
     /// Function: GetAIPointOfInterestPosition
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetAIPointOfInterestPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAIPointOfInterestPosition, "BmGame.RHidePoint.GetAIPointOfInterestPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAIPointOfInterestPosition, "BmGame.RHidePoint.GetAIPointOfInterestPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1094,28 +1094,28 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BMInverting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BMInverting;
     /// <summary>
     /// Function: BMInverting
     /// </summary>
     public unsafe virtual void BMInverting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BMInverting, "BmGame.RHidePoint.BMInverting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BMInverting, "BmGame.RHidePoint.BMInverting", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetFOVCheckLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVCheckLocation;
     /// <summary>
     /// Function: GetFOVCheckLocation
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetFOVCheckLocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVCheckLocation, "BmGame.RHidePoint.GetFOVCheckLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVCheckLocation, "BmGame.RHidePoint.GetFOVCheckLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -1129,14 +1129,14 @@ public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLinkedHidePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLinkedHidePoint;
     /// <summary>
     /// Function: GetLinkedHidePoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetLinkedHidePoint(int I)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLinkedHidePoint, "BmGame.RHidePoint.GetLinkedHidePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLinkedHidePoint, "BmGame.RHidePoint.GetLinkedHidePoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(I, paramsPtr + 0);

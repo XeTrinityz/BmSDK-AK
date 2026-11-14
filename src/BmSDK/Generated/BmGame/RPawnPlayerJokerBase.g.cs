@@ -73,14 +73,14 @@ public partial class RPawnPlayerJokerBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerJokerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayShotReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayShotReaction;
     /// <summary>
     /// Function: PlayShotReaction
     /// </summary>
     public unsafe virtual void PlayShotReaction(System.Numerics.Vector3 HitDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayShotReaction, "BmGame.RPawnPlayerJokerBase.PlayShotReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayShotReaction, "BmGame.RPawnPlayerJokerBase.PlayShotReaction", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitDir, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RPawnPlayerJokerBase : BmSDK.BmGame.RPawnPlayer, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_BeginBatmanSurprise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginBatmanSurprise;
     /// <summary>
     /// Function: BeginBatmanSurprise
     /// </summary>
     public unsafe virtual void BeginBatmanSurprise(BmSDK.Engine.Volume Vol)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginBatmanSurprise, "BmGame.RPawnPlayerJokerBase.BeginBatmanSurprise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginBatmanSurprise, "BmGame.RPawnPlayerJokerBase.BeginBatmanSurprise", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vol, paramsPtr + 0);

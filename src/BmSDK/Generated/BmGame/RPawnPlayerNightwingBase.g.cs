@@ -73,28 +73,28 @@ public partial class RPawnPlayerNightwingBase : BmSDK.BmGame.RPawnPlayer, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerNightwingBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HideWeaponsHack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideWeaponsHack;
     /// <summary>
     /// Function: HideWeaponsHack
     /// </summary>
     public unsafe virtual void HideWeaponsHack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideWeaponsHack, "BmGame.RPawnPlayerNightwingBase.HideWeaponsHack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideWeaponsHack, "BmGame.RPawnPlayerNightwingBase.HideWeaponsHack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RicochetRayTest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RicochetRayTest;
     /// <summary>
     /// Function: RicochetRayTest
     /// </summary>
     public unsafe virtual void RicochetRayTest(System.Numerics.Vector3 Start, System.Numerics.Vector3 Dir, float Length)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RicochetRayTest, "BmGame.RPawnPlayerNightwingBase.RicochetRayTest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RicochetRayTest, "BmGame.RPawnPlayerNightwingBase.RicochetRayTest", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -111,14 +111,14 @@ public partial class RPawnPlayerNightwingBase : BmSDK.BmGame.RPawnPlayer, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateGetRicochetTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateGetRicochetTarget;
     /// <summary>
     /// Function: UpdateGetRicochetTarget
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor UpdateGetRicochetTarget(int maxIterations, BmSDK.BmGame.RInventoryGadget Gadget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateGetRicochetTarget, "BmGame.RPawnPlayerNightwingBase.UpdateGetRicochetTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateGetRicochetTarget, "BmGame.RPawnPlayerNightwingBase.UpdateGetRicochetTarget", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(maxIterations, paramsPtr + 0);
@@ -134,14 +134,14 @@ public partial class RPawnPlayerNightwingBase : BmSDK.BmGame.RPawnPlayer, BmSDK.
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_StartGetRicochetTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartGetRicochetTarget;
     /// <summary>
     /// Function: StartGetRicochetTarget
     /// </summary>
     public unsafe virtual void StartGetRicochetTarget(System.Numerics.Vector3 CameraLoc, BmSDK.Rotator CameraRot, System.Numerics.Vector3 launchPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartGetRicochetTarget, "BmGame.RPawnPlayerNightwingBase.StartGetRicochetTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartGetRicochetTarget, "BmGame.RPawnPlayerNightwingBase.StartGetRicochetTarget", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CameraLoc, paramsPtr + 0);

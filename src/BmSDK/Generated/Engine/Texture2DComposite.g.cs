@@ -78,14 +78,14 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<Texture2DComposite>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ResetSourceRegions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetSourceRegions;
     /// <summary>
     /// Function: ResetSourceRegions
     /// </summary>
     public unsafe virtual void ResetSourceRegions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetSourceRegions, "Engine.Texture2DComposite.ResetSourceRegions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetSourceRegions, "Engine.Texture2DComposite.ResetSourceRegions", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateCompositeTexture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateCompositeTexture;
     /// <summary>
     /// Function: UpdateCompositeTexture
     /// </summary>
     public unsafe virtual void UpdateCompositeTexture(int NumMipsToGenerate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateCompositeTexture, "Engine.Texture2DComposite.UpdateCompositeTexture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateCompositeTexture, "Engine.Texture2DComposite.UpdateCompositeTexture", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NumMipsToGenerate, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class Texture2DComposite : BmSDK.Engine.Texture, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_SourceTexturesFullyStreamedIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SourceTexturesFullyStreamedIn;
     /// <summary>
     /// Function: SourceTexturesFullyStreamedIn
     /// </summary>
     public unsafe virtual bool SourceTexturesFullyStreamedIn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SourceTexturesFullyStreamedIn, "Engine.Texture2DComposite.SourceTexturesFullyStreamedIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SourceTexturesFullyStreamedIn, "Engine.Texture2DComposite.SourceTexturesFullyStreamedIn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

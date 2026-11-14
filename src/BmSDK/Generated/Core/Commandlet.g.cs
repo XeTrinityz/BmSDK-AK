@@ -73,18 +73,19 @@ public partial class Commandlet : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Commandlet>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Main;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Main;
     /// <summary>
     /// Function: Main
     /// </summary>
-    public unsafe virtual int Main(BmSDK.FString Params)
+    public unsafe virtual int Main(BmSDK.FStringArg Params)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Main, "Core.Commandlet.Main");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Main, "Core.Commandlet.Main", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Params, paramsPtr + 0);
+        Params.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 

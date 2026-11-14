@@ -78,14 +78,14 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
         where TComponent : class, Framework.IScriptComponent<RNightwingSticksBounceProjectile>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_VillainHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainHit;
     /// <summary>
     /// Function: VillainHit
     /// </summary>
     public unsafe override void VillainHit(BmSDK.BmGame.RPawnVillain Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainHit, "BmScript.RNightwingSticksBounceProjectile.VillainHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainHit, "BmScript.RNightwingSticksBounceProjectile.VillainHit", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnWallRicochetFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnWallRicochetFX;
     /// <summary>
     /// Function: SpawnWallRicochetFX
     /// </summary>
     public unsafe virtual void SpawnWallRicochetFX(BmSDK.Engine.Pawn HitPawn, System.Numerics.Vector3 NewLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnWallRicochetFX, "BmScript.RNightwingSticksBounceProjectile.SpawnWallRicochetFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnWallRicochetFX, "BmScript.RNightwingSticksBounceProjectile.SpawnWallRicochetFX", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitPawn, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_CollideRicochetStick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CollideRicochetStick;
     /// <summary>
     /// Function: CollideRicochetStick
     /// </summary>
     public unsafe virtual void CollideRicochetStick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CollideRicochetStick, "BmScript.RNightwingSticksBounceProjectile.CollideRicochetStick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CollideRicochetStick, "BmScript.RNightwingSticksBounceProjectile.CollideRicochetStick", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_OrientAlongVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OrientAlongVelocity;
     /// <summary>
     /// Function: OrientAlongVelocity
     /// </summary>
     public unsafe virtual void OrientAlongVelocity(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OrientAlongVelocity, "BmScript.RNightwingSticksBounceProjectile.OrientAlongVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OrientAlongVelocity, "BmScript.RNightwingSticksBounceProjectile.OrientAlongVelocity", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -140,14 +140,14 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_DoSticksRicochet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoSticksRicochet;
     /// <summary>
     /// Function: DoSticksRicochet
     /// </summary>
     public unsafe virtual void DoSticksRicochet(System.Numerics.Vector3 HitNormal, BmSDK.Engine.Actor HitActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoSticksRicochet, "BmScript.RNightwingSticksBounceProjectile.DoSticksRicochet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoSticksRicochet, "BmScript.RNightwingSticksBounceProjectile.DoSticksRicochet", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 0);
@@ -156,42 +156,42 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_DeactivateTrail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateTrail;
     /// <summary>
     /// Function: DeactivateTrail
     /// </summary>
     public unsafe virtual void DeactivateTrail()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateTrail, "BmScript.RNightwingSticksBounceProjectile.DeactivateTrail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateTrail, "BmScript.RNightwingSticksBounceProjectile.DeactivateTrail", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnablePhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnablePhysics;
     /// <summary>
     /// Function: EnablePhysics
     /// </summary>
     public unsafe virtual void EnablePhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnablePhysics, "BmScript.RNightwingSticksBounceProjectile.EnablePhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnablePhysics, "BmScript.RNightwingSticksBounceProjectile.EnablePhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RNightwingSticksBounceProjectile.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RNightwingSticksBounceProjectile.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

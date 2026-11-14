@@ -78,14 +78,14 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
         where TComponent : class, Framework.IScriptComponent<RPawnVillainThugJokerWarehouse>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OverrideDefaultAkAudible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDefaultAkAudible;
     /// <summary>
     /// Function: OverrideDefaultAkAudible
     /// </summary>
     public unsafe override BmSDK.Engine.RAkAudible OverrideDefaultAkAudible(bool allowCreate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDefaultAkAudible, "BmScript.RPawnVillainThugJokerWarehouse.OverrideDefaultAkAudible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDefaultAkAudible, "BmScript.RPawnVillainThugJokerWarehouse.OverrideDefaultAkAudible", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(allowCreate, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.RAkAudible>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_FindContactName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindContactName;
     /// <summary>
     /// Function: FindContactName
     /// </summary>
     public unsafe override BmSDK.Engine.AkEvent FindContactName(BmSDK.BmGame.RAnimNotify_Footstep.EFoot Foot, BmSDK.BmGame.RAnimNotify_Footstep.EContactType Contact)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindContactName, "BmScript.RPawnVillainThugJokerWarehouse.FindContactName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindContactName, "BmScript.RPawnVillainThugJokerWarehouse.FindContactName", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Foot, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkEvent>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PlayHitReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayHitReaction;
     /// <summary>
     /// Function: PlayHitReaction
     /// </summary>
     public unsafe override void PlayHitReaction(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayHitReaction, "BmScript.RPawnVillainThugJokerWarehouse.PlayHitReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayHitReaction, "BmScript.RPawnVillainThugJokerWarehouse.PlayHitReaction", this);
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgInfo, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
         return;
     }
 
-    private static BmSDK.Function __fn_PossibleCarCollisionWarning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PossibleCarCollisionWarning;
     /// <summary>
     /// Function: PossibleCarCollisionWarning
     /// </summary>
     public unsafe override void PossibleCarCollisionWarning(BmSDK.Engine.Actor V, float Speed, float DeltaTime, bool bForceDive = default, bool bZap = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PossibleCarCollisionWarning, "BmScript.RPawnVillainThugJokerWarehouse.PossibleCarCollisionWarning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PossibleCarCollisionWarning, "BmScript.RPawnVillainThugJokerWarehouse.PossibleCarCollisionWarning", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -143,14 +143,14 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
         return;
     }
 
-    private static BmSDK.Function __fn_DamagedBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DamagedBy;
     /// <summary>
     /// Function: DamagedBy
     /// </summary>
     public unsafe override BmSDK.BmGame.RPawnCombat.DamageResult DamagedBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DamagedBy, "BmScript.RPawnVillainThugJokerWarehouse.DamagedBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamagedBy, "BmScript.RPawnVillainThugJokerWarehouse.DamagedBy", this);
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgInfo, paramsPtr + 0);
@@ -158,14 +158,14 @@ public partial class RPawnVillainThugJokerWarehouse : BmSDK.BmGame.RPawnVillainT
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 248);
     }
 
-    private static BmSDK.Function __fn_ShouldGoRagdoll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldGoRagdoll;
     /// <summary>
     /// Function: ShouldGoRagdoll
     /// </summary>
     public unsafe override bool ShouldGoRagdoll(BmSDK.Class dmgType, float DamageAmount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldGoRagdoll, "BmScript.RPawnVillainThugJokerWarehouse.ShouldGoRagdoll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldGoRagdoll, "BmScript.RPawnVillainThugJokerWarehouse.ShouldGoRagdoll", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RCombatMove_BatmanBeatdownJokerCell : BmSDK.BmGame.RCombatM
         where TComponent : class, Framework.IScriptComponent<RCombatMove_BatmanBeatdownJokerCell>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlayStrike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayStrike;
     /// <summary>
     /// Function: PlayStrike
     /// </summary>
     public unsafe override void PlayStrike(bool bQueue, bool bSimulated)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayStrike, "BmScript.RCombatMove_BatmanBeatdownJokerCell.PlayStrike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayStrike, "BmScript.RCombatMove_BatmanBeatdownJokerCell.PlayStrike", this);
         byte* paramsPtr = stackalloc byte[328];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bQueue, paramsPtr + 0);

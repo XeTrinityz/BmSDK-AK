@@ -91,14 +91,14 @@ public partial class RSeqAct_SwitchPlayerCharacter : BmSDK.Engine.SeqAct_Latent,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RestartPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestartPlayer;
     /// <summary>
     /// Function: RestartPlayer
     /// </summary>
     public unsafe virtual void RestartPlayer(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestartPlayer, "BmGame.RSeqAct_SwitchPlayerCharacter.RestartPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestartPlayer, "BmGame.RSeqAct_SwitchPlayerCharacter.RestartPlayer", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);

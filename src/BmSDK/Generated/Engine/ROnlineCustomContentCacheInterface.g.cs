@@ -13,12 +13,12 @@ public partial interface ROnlineCustomContentCacheInterface : BmSDK.Interface
     /// <summary>
     /// Function: FlagObsoleteInRegistry
     /// </summary>
-    public unsafe bool FlagObsoleteInRegistry(BmSDK.FString Filename, BmSDK.FString Subfolder);
+    public unsafe bool FlagObsoleteInRegistry(BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder);
 
     /// <summary>
     /// Function: UpdateRegistry
     /// </summary>
-    public unsafe void UpdateRegistry(BmSDK.FString Filename, BmSDK.FString Subfolder, int Crc32, int Size, bool bObsolete);
+    public unsafe void UpdateRegistry(BmSDK.FStringArg Filename, BmSDK.FStringArg Subfolder, int Crc32, int Size, bool bObsolete);
 
     /// <summary>
     /// Function: AddToDeleteQueue

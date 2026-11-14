@@ -91,56 +91,56 @@ public partial class RSeqAct_StartGauntletMovie : BmSDK.BmGame.RSeqAct_StartGaun
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ResolvePortraitNames;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResolvePortraitNames;
     /// <summary>
     /// Function: ResolvePortraitNames
     /// </summary>
     public unsafe virtual BmSDK.FString ResolvePortraitNames()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResolvePortraitNames, "BmScript.RSeqAct_StartGauntletMovie.ResolvePortraitNames");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResolvePortraitNames, "BmScript.RSeqAct_StartGauntletMovie.ResolvePortraitNames", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_StartGauntletMovie.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_StartGauntletMovie.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndMovie;
     /// <summary>
     /// Function: EndMovie
     /// </summary>
     public unsafe virtual void EndMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndMovie, "BmScript.RSeqAct_StartGauntletMovie.EndMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndMovie, "BmScript.RSeqAct_StartGauntletMovie.EndMovie", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartMovie;
     /// <summary>
     /// Function: StartMovie
     /// </summary>
     public unsafe virtual void StartMovie(bool bAutoPause)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartMovie, "BmScript.RSeqAct_StartGauntletMovie.StartMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartMovie, "BmScript.RSeqAct_StartGauntletMovie.StartMovie", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAutoPause, paramsPtr + 0);

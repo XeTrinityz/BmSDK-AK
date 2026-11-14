@@ -78,14 +78,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RRiotBrain>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BecomeJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BecomeJoker;
     /// <summary>
     /// Function: BecomeJoker
     /// </summary>
     public unsafe virtual void BecomeJoker(BmSDK.BmGame.RBMPawnAI HostPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BecomeJoker, "BmGame.RRiotBrain.BecomeJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BecomeJoker, "BmGame.RRiotBrain.BecomeJoker", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HostPawn, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetUpJokerFlaps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUpJokerFlaps;
     /// <summary>
     /// Function: SetUpJokerFlaps
     /// </summary>
     public unsafe virtual void SetUpJokerFlaps(BmSDK.BmGame.RBMPawnAI HostPawn, BmSDK.Engine.SkeletalMeshComponent JokerMesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUpJokerFlaps, "BmGame.RRiotBrain.SetUpJokerFlaps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUpJokerFlaps, "BmGame.RRiotBrain.SetUpJokerFlaps", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HostPawn, paramsPtr + 0);
@@ -130,14 +130,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_BecomeNormal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BecomeNormal;
     /// <summary>
     /// Function: BecomeNormal
     /// </summary>
     public unsafe virtual void BecomeNormal(BmSDK.BmGame.RBMPawnAI HostPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BecomeNormal, "BmGame.RRiotBrain.BecomeNormal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BecomeNormal, "BmGame.RRiotBrain.BecomeNormal", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HostPawn, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsOffScreenAsJoker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOffScreenAsJoker;
     /// <summary>
     /// Function: IsOffScreenAsJoker
     /// </summary>
     public unsafe virtual bool IsOffScreenAsJoker(BmSDK.BmGame.RBMAIController OwnerController)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOffScreenAsJoker, "BmGame.RRiotBrain.IsOffScreenAsJoker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOffScreenAsJoker, "BmGame.RRiotBrain.IsOffScreenAsJoker", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OwnerController, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsOffScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOffScreen;
     /// <summary>
     /// Function: IsOffScreen
     /// </summary>
     public unsafe virtual bool IsOffScreen(BmSDK.BmGame.RBMAIController OwnerController)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOffScreen, "BmGame.RRiotBrain.IsOffScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOffScreen, "BmGame.RRiotBrain.IsOffScreen", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OwnerController, paramsPtr + 0);
@@ -175,14 +175,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UpdateRiotBrain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRiotBrain;
     /// <summary>
     /// Function: UpdateRiotBrain
     /// </summary>
     public unsafe virtual void UpdateRiotBrain(float DeltaTime, BmSDK.BmGame.RBMAIController OwnerController)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRiotBrain, "BmGame.RRiotBrain.UpdateRiotBrain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRiotBrain, "BmGame.RRiotBrain.UpdateRiotBrain", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -198,14 +198,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddNewRiotPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddNewRiotPoint;
     /// <summary>
     /// Function: AddNewRiotPoint
     /// </summary>
     public unsafe virtual void AddNewRiotPoint(BmSDK.BmGame.RGangInteractPointBase Point)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddNewRiotPoint, "BmGame.RRiotBrain.AddNewRiotPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddNewRiotPoint, "BmGame.RRiotBrain.AddNewRiotPoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Point, paramsPtr + 0);
@@ -213,14 +213,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterIssue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterIssue;
     /// <summary>
     /// Function: RegisterIssue
     /// </summary>
     public unsafe virtual void RegisterIssue(BmSDK.BmGame.RRiotBrain.RiotFailReason FailReason, BmSDK.BmGame.RGangInteractPointBase RiotPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterIssue, "BmGame.RRiotBrain.RegisterIssue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterIssue, "BmGame.RRiotBrain.RegisterIssue", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FailReason, paramsPtr + 0);
@@ -229,14 +229,14 @@ public partial class RRiotBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsRiotPointValidForRioter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRiotPointValidForRioter;
     /// <summary>
     /// Function: IsRiotPointValidForRioter
     /// </summary>
     public unsafe virtual bool IsRiotPointValidForRioter(BmSDK.BmGame.RGangInteractPointBase TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRiotPointValidForRioter, "BmGame.RRiotBrain.IsRiotPointValidForRioter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRiotPointValidForRioter, "BmGame.RRiotBrain.IsRiotPointValidForRioter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPoint, paramsPtr + 0);

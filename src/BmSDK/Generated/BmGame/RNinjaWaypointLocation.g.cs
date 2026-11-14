@@ -78,14 +78,14 @@ public partial class RNinjaWaypointLocation : BmSDK.BmGame.RDummyTarget, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RNinjaWaypointLocation>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_WaypointReached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WaypointReached;
     /// <summary>
     /// Function: WaypointReached
     /// </summary>
     public unsafe virtual void WaypointReached()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WaypointReached, "BmGame.RNinjaWaypointLocation.WaypointReached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WaypointReached, "BmGame.RNinjaWaypointLocation.WaypointReached", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

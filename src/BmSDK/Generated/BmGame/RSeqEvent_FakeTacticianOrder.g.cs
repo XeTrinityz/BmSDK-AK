@@ -78,14 +78,14 @@ public partial class RSeqEvent_FakeTacticianOrder : BmSDK.Engine.SequenceEvent, 
         where TComponent : class, Framework.IScriptComponent<RSeqEvent_FakeTacticianOrder>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetVariablesFromSynthesiser;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetVariablesFromSynthesiser;
     /// <summary>
     /// Function: SetVariablesFromSynthesiser
     /// </summary>
     public unsafe virtual void SetVariablesFromSynthesiser(BmSDK.BmGame.RVoiceSynthesiser Synthesiser)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetVariablesFromSynthesiser, "BmGame.RSeqEvent_FakeTacticianOrder.SetVariablesFromSynthesiser");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetVariablesFromSynthesiser, "BmGame.RSeqEvent_FakeTacticianOrder.SetVariablesFromSynthesiser", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Synthesiser, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RHazardousObject>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HitPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitPawn;
     /// <summary>
     /// Function: HitPawn
     /// </summary>
     public unsafe virtual void HitPawn(BmSDK.BmGame.RPawnCombat PawnToHit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitPawn, "BmGame.RHazardousObject.HitPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitPawn, "BmGame.RHazardousObject.HitPawn", this);
         byte* paramsPtr = stackalloc byte[284];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToHit, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RHazardousObject.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RHazardousObject.Touch", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -111,14 +111,14 @@ public partial class RHazardousObject : BmSDK.Engine.InterpActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_CanDamagePawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDamagePawns;
     /// <summary>
     /// Function: CanDamagePawns
     /// </summary>
     public unsafe virtual void CanDamagePawns()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDamagePawns, "BmGame.RHazardousObject.CanDamagePawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDamagePawns, "BmGame.RHazardousObject.CanDamagePawns", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

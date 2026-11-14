@@ -78,42 +78,42 @@ public partial class RBMBehaviour_HitReactionMultiWeaponREC : BmSDK.BmGame.RBMBe
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_HitReactionMultiWeaponREC>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BumpedIntoPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BumpedIntoPlayer;
     /// <summary>
     /// Function: BumpedIntoPlayer
     /// </summary>
     public unsafe virtual void BumpedIntoPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BumpedIntoPlayer, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.BumpedIntoPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BumpedIntoPlayer, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.BumpedIntoPlayer", this);
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateHitThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateHitThugs;
     /// <summary>
     /// Function: UpdateHitThugs
     /// </summary>
     public unsafe virtual void UpdateHitThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateHitThugs, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.UpdateHitThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateHitThugs, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.UpdateHitThugs", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Initialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
     /// <summary>
     /// Function: Initialise
     /// </summary>
     public unsafe override void Initialise(BmSDK.BmGame.RPawnCombat.FDamageInfo NewDmgInfo, bool bNewInterruptedHitReaction = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Initialise, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.Initialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.Initialise", this);
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDmgInfo, paramsPtr + 0);

@@ -73,14 +73,14 @@ public partial class ParticleModuleFieldSamplerBase : BmSDK.Engine.ParticleModul
         where TComponent : class, Framework.IScriptComponent<ParticleModuleFieldSamplerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetApexFieldSamplerInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetApexFieldSamplerInstance;
     /// <summary>
     /// Function: GetApexFieldSamplerInstance
     /// </summary>
     public unsafe virtual BmSDK.Engine.ApexFieldSamplerComponent GetApexFieldSamplerInstance(System.Numerics.Vector3 Location)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetApexFieldSamplerInstance, "Engine.ParticleModuleFieldSamplerBase.GetApexFieldSamplerInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetApexFieldSamplerInstance, "Engine.ParticleModuleFieldSamplerBase.GetApexFieldSamplerInstance", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Location, paramsPtr + 0);

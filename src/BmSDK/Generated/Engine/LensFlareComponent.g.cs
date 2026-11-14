@@ -78,14 +78,14 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         where TComponent : class, Framework.IScriptComponent<LensFlareComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CreateAndSetMaterialInstanceConstant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateAndSetMaterialInstanceConstant;
     /// <summary>
     /// Function: CreateAndSetMaterialInstanceConstant
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInstanceConstant CreateAndSetMaterialInstanceConstant(int ElementIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateAndSetMaterialInstanceConstant, "Engine.LensFlareComponent.CreateAndSetMaterialInstanceConstant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateAndSetMaterialInstanceConstant, "Engine.LensFlareComponent.CreateAndSetMaterialInstanceConstant", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInstanceConstant>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMaterial;
     /// <summary>
     /// Function: SetMaterial
     /// </summary>
     public unsafe virtual void SetMaterial(int ElementIndex, BmSDK.Engine.MaterialInterface Material)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMaterial, "Engine.LensFlareComponent.SetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMaterial, "Engine.LensFlareComponent.SetMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_GetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaterial;
     /// <summary>
     /// Function: GetMaterial
     /// </summary>
     public unsafe virtual BmSDK.Engine.MaterialInterface GetMaterial(int ElementIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaterial, "Engine.LensFlareComponent.GetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMaterial, "Engine.LensFlareComponent.GetMaterial", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ElementIndex, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MaterialInterface>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetIsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetIsActive;
     /// <summary>
     /// Function: SetIsActive
     /// </summary>
     public unsafe virtual void SetIsActive(bool bInIsActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetIsActive, "Engine.LensFlareComponent.SetIsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetIsActive, "Engine.LensFlareComponent.SetIsActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInIsActive, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetSourceColor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSourceColor;
     /// <summary>
     /// Function: SetSourceColor
     /// </summary>
     public unsafe virtual void SetSourceColor(BmSDK.GameObject.FLinearColor InSourceColor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSourceColor, "Engine.LensFlareComponent.SetSourceColor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSourceColor, "Engine.LensFlareComponent.SetSourceColor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSourceColor, paramsPtr + 0);
@@ -182,14 +182,14 @@ public partial class LensFlareComponent : BmSDK.Engine.PrimitiveComponent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_SetTemplate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTemplate;
     /// <summary>
     /// Function: SetTemplate
     /// </summary>
     public unsafe virtual void SetTemplate(BmSDK.Engine.LensFlare NewTemplate, bool bForceSet = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTemplate, "Engine.LensFlareComponent.SetTemplate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTemplate, "Engine.LensFlareComponent.SetTemplate", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTemplate, paramsPtr + 0);

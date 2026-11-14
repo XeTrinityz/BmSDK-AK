@@ -78,28 +78,28 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RainVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetRainSettings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRainSettings;
     /// <summary>
     /// Function: SetRainSettings
     /// </summary>
     public unsafe virtual void SetRainSettings()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRainSettings, "Engine.RainVolume.SetRainSettings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRainSettings, "Engine.RainVolume.SetRainSettings", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "Engine.RainVolume.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "Engine.RainVolume.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_GetRainDensity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRainDensity;
     /// <summary>
     /// Function: GetRainDensity
     /// </summary>
     public unsafe override float GetRainDensity()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRainDensity, "Engine.RainVolume.GetRainDensity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRainDensity, "Engine.RainVolume.GetRainDensity", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -128,14 +128,14 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LocationRainHeight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LocationRainHeight;
     /// <summary>
     /// Function: LocationRainHeight
     /// </summary>
     public unsafe override float LocationRainHeight(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LocationRainHeight, "Engine.RainVolume.LocationRainHeight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LocationRainHeight, "Engine.RainVolume.LocationRainHeight", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_DistanceToRainZ;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DistanceToRainZ;
     /// <summary>
     /// Function: DistanceToRainZ
     /// </summary>
     public unsafe override float DistanceToRainZ(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DistanceToRainZ, "Engine.RainVolume.DistanceToRainZ");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DistanceToRainZ, "Engine.RainVolume.DistanceToRainZ", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -172,14 +172,14 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetLocationPuddleDepth;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationPuddleDepth;
     /// <summary>
     /// Function: GetLocationPuddleDepth
     /// </summary>
     public unsafe override float GetLocationPuddleDepth(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationPuddleDepth, "Engine.RainVolume.GetLocationPuddleDepth");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationPuddleDepth, "Engine.RainVolume.GetLocationPuddleDepth", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);
@@ -194,14 +194,14 @@ public partial class RainVolume : BmSDK.Engine.RHeightMapCaptureVolume, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_IsLocationRaining;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLocationRaining;
     /// <summary>
     /// Function: IsLocationRaining
     /// </summary>
     public unsafe override bool IsLocationRaining(System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLocationRaining, "Engine.RainVolume.IsLocationRaining");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLocationRaining, "Engine.RainVolume.IsLocationRaining", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLocation, paramsPtr + 0);

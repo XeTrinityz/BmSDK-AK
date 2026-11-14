@@ -73,14 +73,14 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCrowsBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Startle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Startle;
     /// <summary>
     /// Function: Startle
     /// </summary>
     public unsafe virtual void Startle(System.Numerics.Vector3 StartleLoc, bool startledByKismet = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Startle, "BmGame.RCrowsBase.Startle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Startle, "BmGame.RCrowsBase.Startle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartleLoc, paramsPtr + 0);
@@ -89,14 +89,14 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateEditorComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateEditorComponents;
     /// <summary>
     /// Function: UpdateEditorComponents
     /// </summary>
     public unsafe virtual void UpdateEditorComponents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateEditorComponents, "BmGame.RCrowsBase.UpdateEditorComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateEditorComponents, "BmGame.RCrowsBase.UpdateEditorComponents", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -110,14 +110,14 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForThugsScaring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForThugsScaring;
     /// <summary>
     /// Function: CheckForThugsScaring
     /// </summary>
     public unsafe virtual void CheckForThugsScaring()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForThugsScaring, "BmGame.RCrowsBase.CheckForThugsScaring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForThugsScaring, "BmGame.RCrowsBase.CheckForThugsScaring", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -131,14 +131,14 @@ public partial class RCrowsBase : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_FindClosestVisibleSkelMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindClosestVisibleSkelMesh;
     /// <summary>
     /// Function: FindClosestVisibleSkelMesh
     /// </summary>
     public unsafe virtual bool FindClosestVisibleSkelMesh(System.Numerics.Vector3 TestLoc, float Range, out System.Numerics.Vector3 CrowLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindClosestVisibleSkelMesh, "BmGame.RCrowsBase.FindClosestVisibleSkelMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindClosestVisibleSkelMesh, "BmGame.RCrowsBase.FindClosestVisibleSkelMesh", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestLoc, paramsPtr + 0);

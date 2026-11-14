@@ -78,14 +78,14 @@ public partial class MultiFont : BmSDK.Engine.Font, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<MultiFont>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetResolutionTestTableIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetResolutionTestTableIndex;
     /// <summary>
     /// Function: GetResolutionTestTableIndex
     /// </summary>
     public unsafe virtual int GetResolutionTestTableIndex(float HeightTest)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetResolutionTestTableIndex, "Engine.MultiFont.GetResolutionTestTableIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetResolutionTestTableIndex, "Engine.MultiFont.GetResolutionTestTableIndex", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HeightTest, paramsPtr + 0);

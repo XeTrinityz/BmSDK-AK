@@ -78,14 +78,14 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkBank>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsBankStreamPreloaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBankStreamPreloaded;
     /// <summary>
     /// Function: IsBankStreamPreloaded
     /// </summary>
     public unsafe virtual bool IsBankStreamPreloaded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBankStreamPreloaded, "Engine.AkBank.IsBankStreamPreloaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBankStreamPreloaded, "Engine.AkBank.IsBankStreamPreloaded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreloadBankStreams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreloadBankStreams;
     /// <summary>
     /// Function: PreloadBankStreams
     /// </summary>
     public unsafe virtual bool PreloadBankStreams(bool preload, BmSDK.Engine.AkWwise.EAkIOStreamPriorities Priority = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreloadBankStreams, "Engine.AkBank.PreloadBankStreams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreloadBankStreams, "Engine.AkBank.PreloadBankStreams", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(preload, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsBankLoadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsBankLoadComplete;
     /// <summary>
     /// Function: IsBankLoadComplete
     /// </summary>
     public unsafe virtual bool IsBankLoadComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsBankLoadComplete, "Engine.AkBank.IsBankLoadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsBankLoadComplete, "Engine.AkBank.IsBankLoadComplete", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -143,14 +143,14 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ReloadBank;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ReloadBank;
     /// <summary>
     /// Function: ReloadBank
     /// </summary>
     public unsafe virtual void ReloadBank()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ReloadBank, "Engine.AkBank.ReloadBank");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReloadBank, "Engine.AkBank.ReloadBank", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -164,14 +164,14 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_UnloadBank;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnloadBank;
     /// <summary>
     /// Function: UnloadBank
     /// </summary>
     public unsafe virtual void UnloadBank(bool performDeferredUnload)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnloadBank, "Engine.AkBank.UnloadBank");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnloadBank, "Engine.AkBank.UnloadBank", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(performDeferredUnload, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class AkBank : BmSDK.Engine.AkBankExternalHook, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_LoadBank;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadBank;
     /// <summary>
     /// Function: LoadBank
     /// </summary>
     public unsafe virtual bool LoadBank(bool performDeferredLoad)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadBank, "Engine.AkBank.LoadBank");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadBank, "Engine.AkBank.LoadBank", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(performDeferredLoad, paramsPtr + 0);

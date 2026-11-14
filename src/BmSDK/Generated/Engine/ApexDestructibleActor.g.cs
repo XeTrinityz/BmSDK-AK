@@ -78,14 +78,14 @@ public partial class ApexDestructibleActor : BmSDK.Engine.RStaticClimbableActor,
         where TComponent : class, Framework.IScriptComponent<ApexDestructibleActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDestroy;
     /// <summary>
     /// Function: OnDestroy
     /// </summary>
     public unsafe override void OnDestroy(BmSDK.Engine.SeqAct_Destroy Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDestroy, "Engine.ApexDestructibleActor.OnDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDestroy, "Engine.ApexDestructibleActor.OnDestroy", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class ApexDestructibleActor : BmSDK.Engine.RStaticClimbableActor,
         return;
     }
 
-    private static BmSDK.Function __fn_OnSetMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnSetMaterial;
     /// <summary>
     /// Function: OnSetMaterial
     /// </summary>
     public unsafe virtual void OnSetMaterial(BmSDK.Engine.SeqAct_SetMaterial Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnSetMaterial, "Engine.ApexDestructibleActor.OnSetMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSetMaterial, "Engine.ApexDestructibleActor.OnSetMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class ApexDestructibleActor : BmSDK.Engine.RStaticClimbableActor,
         return;
     }
 
-    private static BmSDK.Function __fn_CacheFractureEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CacheFractureEffects;
     /// <summary>
     /// Function: CacheFractureEffects
     /// </summary>
     public unsafe virtual void CacheFractureEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CacheFractureEffects, "Engine.ApexDestructibleActor.CacheFractureEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CacheFractureEffects, "Engine.ApexDestructibleActor.CacheFractureEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

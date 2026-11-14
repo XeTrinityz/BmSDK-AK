@@ -123,7 +123,7 @@ public partial interface OnlineStatsInterface : BmSDK.Interface
     /// <summary>
     /// Function: DebugWriteLBForUser
     /// </summary>
-    public unsafe void DebugWriteLBForUser(BmSDK.FString User, int BoardID, int RankValue, BmSDK.TArray<int> StatsArray);
+    public unsafe void DebugWriteLBForUser(BmSDK.FStringArg User, int BoardID, int RankValue, BmSDK.TArray<int> StatsArray);
 
     /// <summary>
     /// Function: DropOnlineStatsRead

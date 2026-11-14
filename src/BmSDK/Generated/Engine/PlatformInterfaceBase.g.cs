@@ -78,14 +78,14 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<PlatformInterfaceBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ClearDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDelegate;
     /// <summary>
     /// Function: ClearDelegate
     /// </summary>
     public unsafe virtual void ClearDelegate(int DelegateType, System.IntPtr InDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDelegate, "Engine.PlatformInterfaceBase.ClearDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDelegate, "Engine.PlatformInterfaceBase.ClearDelegate", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DelegateType, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddDelegate;
     /// <summary>
     /// Function: AddDelegate
     /// </summary>
     public unsafe virtual void AddDelegate(int DelegateType, System.IntPtr InDelegate)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddDelegate, "Engine.PlatformInterfaceBase.AddDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddDelegate, "Engine.PlatformInterfaceBase.AddDelegate", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DelegateType, paramsPtr + 0);
@@ -290,14 +290,14 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.CloudStorageBase>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CallDelegates;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CallDelegates;
     /// <summary>
     /// Function: CallDelegates
     /// </summary>
     public unsafe virtual void CallDelegates(int DelegateType, out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceDelegateResult DelegateResult)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CallDelegates, "Engine.PlatformInterfaceBase.CallDelegates");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CallDelegates, "Engine.PlatformInterfaceBase.CallDelegates", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DelegateType, paramsPtr + 0);
@@ -313,14 +313,14 @@ public partial class PlatformInterfaceBase : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PlatformInterfaceDelegate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlatformInterfaceDelegate;
     /// <summary>
     /// Function: PlatformInterfaceDelegate
     /// </summary>
     public unsafe virtual void PlatformInterfaceDelegate(out BmSDK.Engine.PlatformInterfaceBase.FPlatformInterfaceDelegateResult Result)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlatformInterfaceDelegate, "Engine.PlatformInterfaceBase.PlatformInterfaceDelegate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlatformInterfaceDelegate, "Engine.PlatformInterfaceBase.PlatformInterfaceDelegate", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -91,84 +91,84 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerConnectedSpeechAction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerConnectedSpeechAction;
     /// <summary>
     /// Function: TriggerConnectedSpeechAction
     /// </summary>
     public unsafe virtual void TriggerConnectedSpeechAction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerConnectedSpeechAction, "BmScript.RSeqAct_NPCOneShotDialogueManager.TriggerConnectedSpeechAction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerConnectedSpeechAction, "BmScript.RSeqAct_NPCOneShotDialogueManager.TriggerConnectedSpeechAction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChooseNextLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseNextLine;
     /// <summary>
     /// Function: ChooseNextLine
     /// </summary>
     public unsafe virtual void ChooseNextLine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseNextLine, "BmScript.RSeqAct_NPCOneShotDialogueManager.ChooseNextLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseNextLine, "BmScript.RSeqAct_NPCOneShotDialogueManager.ChooseNextLine", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetUnplayedLines;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetUnplayedLines;
     /// <summary>
     /// Function: ResetUnplayedLines
     /// </summary>
     public unsafe virtual void ResetUnplayedLines()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetUnplayedLines, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetUnplayedLines");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetUnplayedLines, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetUnplayedLines", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetTimer;
     /// <summary>
     /// Function: ResetTimer
     /// </summary>
     public unsafe virtual void ResetTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetTimer, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetTimer, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandleInputLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInputLinks;
     /// <summary>
     /// Function: HandleInputLinks
     /// </summary>
     public unsafe virtual void HandleInputLinks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInputLinks, "BmScript.RSeqAct_NPCOneShotDialogueManager.HandleInputLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleInputLinks, "BmScript.RSeqAct_NPCOneShotDialogueManager.HandleInputLinks", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_NPCOneShotDialogueManager.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_NPCOneShotDialogueManager.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

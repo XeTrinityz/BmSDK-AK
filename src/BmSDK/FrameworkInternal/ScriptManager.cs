@@ -216,6 +216,9 @@ internal static class ScriptManager
 
         if (asm != null)
         {
+            // Whatever input the mod still keeps from the game goes back to it
+            InputManager.ReleaseOwner(asm);
+
             // Detach components and clear registrations for this mod's assembly
             ScriptComponentManager.UnregisterTypes(asm);
             RedirectManager.Global.UnregisterRedirectors(asm);

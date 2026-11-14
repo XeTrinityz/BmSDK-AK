@@ -95,14 +95,14 @@ public partial class RNavMeshPath_AvoidPlayers : BmSDK.Engine.NavMeshPathConstra
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SetPlayerLocations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetPlayerLocations;
     /// <summary>
     /// Function: SetPlayerLocations
     /// </summary>
     public unsafe virtual void SetPlayerLocations(BmSDK.BmGame.RNavigationHandle NavHandle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetPlayerLocations, "BmGame.RNavMeshPath_AvoidPlayers.SetPlayerLocations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetPlayerLocations, "BmGame.RNavMeshPath_AvoidPlayers.SetPlayerLocations", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NavHandle, paramsPtr + 0);

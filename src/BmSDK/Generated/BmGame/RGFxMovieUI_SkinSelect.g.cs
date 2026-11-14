@@ -78,61 +78,63 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_SkinSelect>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_XI_PreLoad;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_PreLoad;
     /// <summary>
     /// Function: XI_PreLoad
     /// </summary>
-    public unsafe virtual void XI_PreLoad(BmSDK.FString NewName)
+    public unsafe virtual void XI_PreLoad(BmSDK.FStringArg NewName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_PreLoad, "BmGame.RGFxMovieUI_SkinSelect.XI_PreLoad");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_PreLoad, "BmGame.RGFxMovieUI_SkinSelect.XI_PreLoad", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NewName, paramsPtr + 0);
+        NewName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_IsPreLoaded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_IsPreLoaded;
     /// <summary>
     /// Function: XI_IsPreLoaded
     /// </summary>
-    public unsafe virtual bool XI_IsPreLoaded(BmSDK.FString NewName)
+    public unsafe virtual bool XI_IsPreLoaded(BmSDK.FStringArg NewName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsPreLoaded, "BmGame.RGFxMovieUI_SkinSelect.XI_IsPreLoaded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_IsPreLoaded, "BmGame.RGFxMovieUI_SkinSelect.XI_IsPreLoaded", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NewName, paramsPtr + 0);
+        NewName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_XI_IsBusy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_IsBusy;
     /// <summary>
     /// Function: XI_IsBusy
     /// </summary>
     public unsafe virtual bool XI_IsBusy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_IsBusy, "BmGame.RGFxMovieUI_SkinSelect.XI_IsBusy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_IsBusy, "BmGame.RGFxMovieUI_SkinSelect.XI_IsBusy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LoadPackage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPackage;
     /// <summary>
     /// Function: LoadPackage
     /// </summary>
-    public unsafe virtual void LoadPackage(BmSDK.FString PkgName)
+    public unsafe virtual void LoadPackage(BmSDK.FStringArg PkgName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadPackage, "BmGame.RGFxMovieUI_SkinSelect.LoadPackage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadPackage, "BmGame.RGFxMovieUI_SkinSelect.LoadPackage", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PkgName, paramsPtr + 0);
+        PkgName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -141,17 +143,18 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LoadPackages_CB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadPackages_CB;
     /// <summary>
     /// Function: LoadPackages_CB
     /// </summary>
     public unsafe virtual void LoadPackages_CB(BmSDK.GameObject pkg)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadPackages_CB, "BmGame.RGFxMovieUI_SkinSelect.LoadPackages_CB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadPackages_CB, "BmGame.RGFxMovieUI_SkinSelect.LoadPackages_CB", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(pkg, paramsPtr + 0);
@@ -159,84 +162,84 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_XI_GetFocusDesc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetFocusDesc;
     /// <summary>
     /// Function: XI_GetFocusDesc
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetFocusDesc()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetFocusDesc, "BmGame.RGFxMovieUI_SkinSelect.XI_GetFocusDesc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetFocusDesc, "BmGame.RGFxMovieUI_SkinSelect.XI_GetFocusDesc", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_GetFocusTitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetFocusTitle;
     /// <summary>
     /// Function: XI_GetFocusTitle
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetFocusTitle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetFocusTitle, "BmGame.RGFxMovieUI_SkinSelect.XI_GetFocusTitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetFocusTitle, "BmGame.RGFxMovieUI_SkinSelect.XI_GetFocusTitle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_XI_GetFocusSkin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetFocusSkin;
     /// <summary>
     /// Function: XI_GetFocusSkin
     /// </summary>
     public unsafe virtual BmSDK.FString XI_GetFocusSkin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetFocusSkin, "BmGame.RGFxMovieUI_SkinSelect.XI_GetFocusSkin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetFocusSkin, "BmGame.RGFxMovieUI_SkinSelect.XI_GetFocusSkin", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnFadeCompleted_Callback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnFadeCompleted_Callback;
     /// <summary>
     /// Function: OnFadeCompleted_Callback
     /// </summary>
     public unsafe override void OnFadeCompleted_Callback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnFadeCompleted_Callback, "BmGame.RGFxMovieUI_SkinSelect.OnFadeCompleted_Callback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFadeCompleted_Callback, "BmGame.RGFxMovieUI_SkinSelect.OnFadeCompleted_Callback", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FadeTrigger;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FadeTrigger;
     /// <summary>
     /// Function: FadeTrigger
     /// </summary>
     public unsafe virtual void FadeTrigger()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FadeTrigger, "BmGame.RGFxMovieUI_SkinSelect.FadeTrigger");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FadeTrigger, "BmGame.RGFxMovieUI_SkinSelect.FadeTrigger", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnFocus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnFocus;
     /// <summary>
     /// Function: XI_OnFocus
     /// </summary>
     public unsafe override void XI_OnFocus(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnFocus, "BmGame.RGFxMovieUI_SkinSelect.XI_OnFocus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnFocus, "BmGame.RGFxMovieUI_SkinSelect.XI_OnFocus", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -244,14 +247,14 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnClicked;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnClicked;
     /// <summary>
     /// Function: XI_OnClicked
     /// </summary>
     public unsafe override void XI_OnClicked(int Id)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnClicked, "BmGame.RGFxMovieUI_SkinSelect.XI_OnClicked");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnClicked, "BmGame.RGFxMovieUI_SkinSelect.XI_OnClicked", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
@@ -259,106 +262,110 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_XI_OnBack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_OnBack;
     /// <summary>
     /// Function: XI_OnBack
     /// </summary>
     public unsafe override void XI_OnBack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_OnBack, "BmGame.RGFxMovieUI_SkinSelect.XI_OnBack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_OnBack, "BmGame.RGFxMovieUI_SkinSelect.XI_OnBack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Set;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Set;
     /// <summary>
     /// Function: XI_Set
     /// </summary>
-    public unsafe virtual void XI_Set(int Id, BmSDK.FString Type, int Value)
+    public unsafe virtual void XI_Set(int Id, BmSDK.FStringArg Type, int Value)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Set, "BmGame.RGFxMovieUI_SkinSelect.XI_Set");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Set, "BmGame.RGFxMovieUI_SkinSelect.XI_Set", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 4);
+        Type.WriteTo(paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 20);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_Get;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_Get;
     /// <summary>
     /// Function: XI_Get
     /// </summary>
-    public unsafe virtual int XI_Get(int Id, BmSDK.FString Type)
+    public unsafe virtual int XI_Get(int Id, BmSDK.FStringArg Type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_Get, "BmGame.RGFxMovieUI_SkinSelect.XI_Get");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_Get, "BmGame.RGFxMovieUI_SkinSelect.XI_Get", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 4);
+        Type.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_XI_GetDefault;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_GetDefault;
     /// <summary>
     /// Function: XI_GetDefault
     /// </summary>
-    public unsafe virtual int XI_GetDefault(int Id, BmSDK.FString Type)
+    public unsafe virtual int XI_GetDefault(int Id, BmSDK.FStringArg Type)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_GetDefault, "BmGame.RGFxMovieUI_SkinSelect.XI_GetDefault");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_GetDefault, "BmGame.RGFxMovieUI_SkinSelect.XI_GetDefault", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Type, paramsPtr + 4);
+        Type.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_BuildMenu;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildMenu;
     /// <summary>
     /// Function: BuildMenu
     /// </summary>
     public unsafe virtual void BuildMenu()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildMenu, "BmGame.RGFxMovieUI_SkinSelect.BuildMenu");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildMenu, "BmGame.RGFxMovieUI_SkinSelect.BuildMenu", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DumpItems;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DumpItems;
     /// <summary>
     /// Function: DumpItems
     /// </summary>
-    public unsafe virtual void DumpItems(BmSDK.FString msg)
+    public unsafe virtual void DumpItems(BmSDK.FStringArg msg)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DumpItems, "BmGame.RGFxMovieUI_SkinSelect.DumpItems");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DumpItems, "BmGame.RGFxMovieUI_SkinSelect.DumpItems", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(msg, paramsPtr + 0);
+        msg.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SortById;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SortById;
     /// <summary>
     /// Function: SortById
     /// </summary>
     public unsafe virtual int SortById(BmSDK.BmGame.RGFxMovieUI_SkinSelect.FSkinChar A, BmSDK.BmGame.RGFxMovieUI_SkinSelect.FSkinChar B)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SortById, "BmGame.RGFxMovieUI_SkinSelect.SortById");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SortById, "BmGame.RGFxMovieUI_SkinSelect.SortById", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);
@@ -367,14 +374,14 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_SortByBaseId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SortByBaseId;
     /// <summary>
     /// Function: SortByBaseId
     /// </summary>
     public unsafe virtual int SortByBaseId(BmSDK.BmGame.RGFxMovieUI_SkinSelect.FBaseChar A, BmSDK.BmGame.RGFxMovieUI_SkinSelect.FBaseChar B)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SortByBaseId, "BmGame.RGFxMovieUI_SkinSelect.SortByBaseId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SortByBaseId, "BmGame.RGFxMovieUI_SkinSelect.SortByBaseId", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(A, paramsPtr + 0);
@@ -383,14 +390,14 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 72);
     }
 
-    private static BmSDK.Function __fn_IsDuplicateBase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDuplicateBase;
     /// <summary>
     /// Function: IsDuplicateBase
     /// </summary>
     public unsafe virtual bool IsDuplicateBase(int BaseId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDuplicateBase, "BmGame.RGFxMovieUI_SkinSelect.IsDuplicateBase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDuplicateBase, "BmGame.RGFxMovieUI_SkinSelect.IsDuplicateBase", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BaseId, paramsPtr + 0);
@@ -398,56 +405,56 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_BuildCharacterList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildCharacterList;
     /// <summary>
     /// Function: BuildCharacterList
     /// </summary>
     public unsafe virtual void BuildCharacterList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildCharacterList, "BmGame.RGFxMovieUI_SkinSelect.BuildCharacterList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildCharacterList, "BmGame.RGFxMovieUI_SkinSelect.BuildCharacterList", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetToOptions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetToOptions;
     /// <summary>
     /// Function: SetToOptions
     /// </summary>
     public unsafe virtual void SetToOptions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetToOptions, "BmGame.RGFxMovieUI_SkinSelect.SetToOptions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetToOptions, "BmGame.RGFxMovieUI_SkinSelect.SetToOptions", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetFromOptions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFromOptions;
     /// <summary>
     /// Function: GetFromOptions
     /// </summary>
     public unsafe virtual void GetFromOptions()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFromOptions, "BmGame.RGFxMovieUI_SkinSelect.GetFromOptions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFromOptions, "BmGame.RGFxMovieUI_SkinSelect.GetFromOptions", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BuildSkinList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildSkinList;
     /// <summary>
     /// Function: BuildSkinList
     /// </summary>
     public unsafe virtual void BuildSkinList(bool bGot_WBID_Bonus)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildSkinList, "BmGame.RGFxMovieUI_SkinSelect.BuildSkinList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildSkinList, "BmGame.RGFxMovieUI_SkinSelect.BuildSkinList", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bGot_WBID_Bonus, paramsPtr + 0);
@@ -455,32 +462,34 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_AddSkin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSkin;
     /// <summary>
     /// Function: AddSkin
     /// </summary>
-    public unsafe virtual void AddSkin(int BaseId, int SkinId, BmSDK.FString FullName, BmSDK.FString LocName)
+    public unsafe virtual void AddSkin(int BaseId, int SkinId, BmSDK.FStringArg FullName, BmSDK.FStringArg LocName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSkin, "BmGame.RGFxMovieUI_SkinSelect.AddSkin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSkin, "BmGame.RGFxMovieUI_SkinSelect.AddSkin", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BaseId, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SkinId, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(FullName, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(LocName, paramsPtr + 24);
+        FullName.WriteTo(paramsPtr + 8);
+        LocName.WriteTo(paramsPtr + 24);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return;
     }
 
-    private static BmSDK.Function __fn_BuildBaseList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildBaseList;
     /// <summary>
     /// Function: BuildBaseList
     /// </summary>
     public unsafe virtual void BuildBaseList(bool bGot_WBID_Bonus)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildBaseList, "BmGame.RGFxMovieUI_SkinSelect.BuildBaseList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildBaseList, "BmGame.RGFxMovieUI_SkinSelect.BuildBaseList", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bGot_WBID_Bonus, paramsPtr + 0);
@@ -488,43 +497,44 @@ public partial class RGFxMovieUI_SkinSelect : BmSDK.BmGame.RGFxMovieUI, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_XI_SetupMenu;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_SetupMenu;
     /// <summary>
     /// Function: XI_SetupMenu
     /// </summary>
-    public unsafe override void XI_SetupMenu(BmSDK.FString TargetPath)
+    public unsafe override void XI_SetupMenu(BmSDK.FStringArg TargetPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_SetupMenu, "BmGame.RGFxMovieUI_SkinSelect.XI_SetupMenu");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_SetupMenu, "BmGame.RGFxMovieUI_SkinSelect.XI_SetupMenu", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPath, paramsPtr + 0);
+        TargetPath.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CloseScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseScreen;
     /// <summary>
     /// Function: CloseScreen
     /// </summary>
     public unsafe override void CloseScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseScreen, "BmGame.RGFxMovieUI_SkinSelect.CloseScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseScreen, "BmGame.RGFxMovieUI_SkinSelect.CloseScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieUI_SkinSelect.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxMovieUI_SkinSelect.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

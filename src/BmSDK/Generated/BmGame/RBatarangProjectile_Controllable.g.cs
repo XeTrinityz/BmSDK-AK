@@ -73,28 +73,28 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         where TComponent : class, Framework.IScriptComponent<RBatarangProjectile_Controllable>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TriggerFlip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerFlip;
     /// <summary>
     /// Function: TriggerFlip
     /// </summary>
     public unsafe virtual void TriggerFlip()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerFlip, "BmGame.RBatarangProjectile_Controllable.TriggerFlip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerFlip, "BmGame.RBatarangProjectile_Controllable.TriggerFlip", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TraceLaserSight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceLaserSight;
     /// <summary>
     /// Function: TraceLaserSight
     /// </summary>
     public unsafe virtual void TraceLaserSight(out System.Numerics.Vector3 ForwardCheckLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceLaserSight, "BmGame.RBatarangProjectile_Controllable.TraceLaserSight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceLaserSight, "BmGame.RBatarangProjectile_Controllable.TraceLaserSight", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ForwardCheckLocation);
@@ -111,14 +111,14 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_VeerAwayFrom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VeerAwayFrom;
     /// <summary>
     /// Function: VeerAwayFrom
     /// </summary>
     public unsafe virtual void VeerAwayFrom(System.Numerics.Vector3 TargetLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VeerAwayFrom, "BmGame.RBatarangProjectile_Controllable.VeerAwayFrom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VeerAwayFrom, "BmGame.RBatarangProjectile_Controllable.VeerAwayFrom", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetLocation, paramsPtr + 0);
@@ -126,70 +126,70 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForRedhood;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForRedhood;
     /// <summary>
     /// Function: CheckForRedhood
     /// </summary>
     public unsafe virtual void CheckForRedhood()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForRedhood, "BmGame.RBatarangProjectile_Controllable.CheckForRedhood");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForRedhood, "BmGame.RBatarangProjectile_Controllable.CheckForRedhood", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForCrows;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForCrows;
     /// <summary>
     /// Function: CheckForCrows
     /// </summary>
     public unsafe virtual void CheckForCrows()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForCrows, "BmGame.RBatarangProjectile_Controllable.CheckForCrows");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForCrows, "BmGame.RBatarangProjectile_Controllable.CheckForCrows", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForHostageTaker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForHostageTaker;
     /// <summary>
     /// Function: CheckForHostageTaker
     /// </summary>
     public unsafe virtual void CheckForHostageTaker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForHostageTaker, "BmGame.RBatarangProjectile_Controllable.CheckForHostageTaker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForHostageTaker, "BmGame.RBatarangProjectile_Controllable.CheckForHostageTaker", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForTargetsToAvoid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForTargetsToAvoid;
     /// <summary>
     /// Function: CheckForTargetsToAvoid
     /// </summary>
     public unsafe virtual void CheckForTargetsToAvoid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForTargetsToAvoid, "BmGame.RBatarangProjectile_Controllable.CheckForTargetsToAvoid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForTargetsToAvoid, "BmGame.RBatarangProjectile_Controllable.CheckForTargetsToAvoid", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe virtual void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RBatarangProjectile_Controllable.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RBatarangProjectile_Controllable.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -198,28 +198,28 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RBatarangProjectile_Controllable.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RBatarangProjectile_Controllable.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyFluidSurfaceImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyFluidSurfaceImpact;
     /// <summary>
     /// Function: ApplyFluidSurfaceImpact
     /// </summary>
     public unsafe override void ApplyFluidSurfaceImpact(BmSDK.Engine.FluidSurfaceActor Fluid, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyFluidSurfaceImpact, "BmGame.RBatarangProjectile_Controllable.ApplyFluidSurfaceImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyFluidSurfaceImpact, "BmGame.RBatarangProjectile_Controllable.ApplyFluidSurfaceImpact", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Fluid, paramsPtr + 0);
@@ -228,14 +228,14 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_VillainHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainHit;
     /// <summary>
     /// Function: VillainHit
     /// </summary>
     public unsafe override void VillainHit(BmSDK.BmGame.RPawnVillain Target)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainHit, "BmGame.RBatarangProjectile_Controllable.VillainHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainHit, "BmGame.RBatarangProjectile_Controllable.VillainHit", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Target, paramsPtr + 0);
@@ -243,28 +243,28 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_ExitGauntletPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitGauntletPose;
     /// <summary>
     /// Function: ExitGauntletPose
     /// </summary>
     public unsafe virtual void ExitGauntletPose()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExitGauntletPose, "BmGame.RBatarangProjectile_Controllable.ExitGauntletPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitGauntletPose, "BmGame.RBatarangProjectile_Controllable.ExitGauntletPose", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ExtendHomingTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExtendHomingTime;
     /// <summary>
     /// Function: ExtendHomingTime
     /// </summary>
     public unsafe virtual void ExtendHomingTime(float TimeExtension)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExtendHomingTime, "BmGame.RBatarangProjectile_Controllable.ExtendHomingTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExtendHomingTime, "BmGame.RBatarangProjectile_Controllable.ExtendHomingTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TimeExtension, paramsPtr + 0);
@@ -272,14 +272,14 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_HomingFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HomingFinished;
     /// <summary>
     /// Function: HomingFinished
     /// </summary>
     public unsafe virtual void HomingFinished(BmSDK.BmGame.RPawnVillain LookAtTarget = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HomingFinished, "BmGame.RBatarangProjectile_Controllable.HomingFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HomingFinished, "BmGame.RBatarangProjectile_Controllable.HomingFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LookAtTarget, paramsPtr + 0);
@@ -287,56 +287,56 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_NoBounceTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NoBounceTimer;
     /// <summary>
     /// Function: NoBounceTimer
     /// </summary>
     public unsafe virtual void NoBounceTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NoBounceTimer, "BmGame.RBatarangProjectile_Controllable.NoBounceTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NoBounceTimer, "BmGame.RBatarangProjectile_Controllable.NoBounceTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RecoverFromRebound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RecoverFromRebound;
     /// <summary>
     /// Function: RecoverFromRebound
     /// </summary>
     public unsafe virtual void RecoverFromRebound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RecoverFromRebound, "BmGame.RBatarangProjectile_Controllable.RecoverFromRebound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RecoverFromRebound, "BmGame.RBatarangProjectile_Controllable.RecoverFromRebound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetBatarangOutOfRangeFactor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatarangOutOfRangeFactor;
     /// <summary>
     /// Function: GetBatarangOutOfRangeFactor
     /// </summary>
     public unsafe virtual float GetBatarangOutOfRangeFactor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBatarangOutOfRangeFactor, "BmGame.RBatarangProjectile_Controllable.GetBatarangOutOfRangeFactor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatarangOutOfRangeFactor, "BmGame.RBatarangProjectile_Controllable.GetBatarangOutOfRangeFactor", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetLocationDistanceToRemoteControlBoundary;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationDistanceToRemoteControlBoundary;
     /// <summary>
     /// Function: GetLocationDistanceToRemoteControlBoundary
     /// </summary>
     public unsafe virtual float GetLocationDistanceToRemoteControlBoundary(System.Numerics.Vector3 Loc, float MinDistFromStreamingEdge, float ClearDistFromStreamingEdge)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationDistanceToRemoteControlBoundary, "BmGame.RBatarangProjectile_Controllable.GetLocationDistanceToRemoteControlBoundary");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationDistanceToRemoteControlBoundary, "BmGame.RBatarangProjectile_Controllable.GetLocationDistanceToRemoteControlBoundary", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -346,42 +346,42 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_DisableUserControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableUserControl;
     /// <summary>
     /// Function: DisableUserControl
     /// </summary>
     public unsafe virtual void DisableUserControl()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableUserControl, "BmGame.RBatarangProjectile_Controllable.DisableUserControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableUserControl, "BmGame.RBatarangProjectile_Controllable.DisableUserControl", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerDodges;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerDodges;
     /// <summary>
     /// Function: TriggerDodges
     /// </summary>
     public unsafe virtual void TriggerDodges()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerDodges, "BmGame.RBatarangProjectile_Controllable.TriggerDodges");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerDodges, "BmGame.RBatarangProjectile_Controllable.TriggerDodges", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitBatarang;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitBatarang;
     /// <summary>
     /// Function: InitBatarang
     /// </summary>
     public unsafe override void InitBatarang(System.Numerics.Vector3 ThrowDirection, BmSDK.BmGame.RBatarang Launcher, bool bFlightPathMirrored = default, BmSDK.FName BoneTarget = default, float SpeedMod = default, bool bStraightPath = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitBatarang, "BmGame.RBatarangProjectile_Controllable.InitBatarang");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitBatarang, "BmGame.RBatarangProjectile_Controllable.InitBatarang", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ThrowDirection, paramsPtr + 0);
@@ -394,112 +394,112 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RBatarangProjectile_Controllable.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RBatarangProjectile_Controllable.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopBrake;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopBrake;
     /// <summary>
     /// Function: StopBrake
     /// </summary>
     public unsafe virtual void StopBrake()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopBrake, "BmGame.RBatarangProjectile_Controllable.StopBrake");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopBrake, "BmGame.RBatarangProjectile_Controllable.StopBrake", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartBrake;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartBrake;
     /// <summary>
     /// Function: StartBrake
     /// </summary>
     public unsafe virtual void StartBrake()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartBrake, "BmGame.RBatarangProjectile_Controllable.StartBrake");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartBrake, "BmGame.RBatarangProjectile_Controllable.StartBrake", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopBoost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopBoost;
     /// <summary>
     /// Function: StopBoost
     /// </summary>
     public unsafe virtual void StopBoost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopBoost, "BmGame.RBatarangProjectile_Controllable.StopBoost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopBoost, "BmGame.RBatarangProjectile_Controllable.StopBoost", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartBoost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartBoost;
     /// <summary>
     /// Function: StartBoost
     /// </summary>
     public unsafe virtual void StartBoost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartBoost, "BmGame.RBatarangProjectile_Controllable.StartBoost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartBoost, "BmGame.RBatarangProjectile_Controllable.StartBoost", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpeedTimeoutBrake;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeedTimeoutBrake;
     /// <summary>
     /// Function: SpeedTimeoutBrake
     /// </summary>
     public unsafe virtual void SpeedTimeoutBrake()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeedTimeoutBrake, "BmGame.RBatarangProjectile_Controllable.SpeedTimeoutBrake");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeedTimeoutBrake, "BmGame.RBatarangProjectile_Controllable.SpeedTimeoutBrake", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpeedTimeoutBoost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeedTimeoutBoost;
     /// <summary>
     /// Function: SpeedTimeoutBoost
     /// </summary>
     public unsafe virtual void SpeedTimeoutBoost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeedTimeoutBoost, "BmGame.RBatarangProjectile_Controllable.SpeedTimeoutBoost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeedTimeoutBoost, "BmGame.RBatarangProjectile_Controllable.SpeedTimeoutBoost", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PawnIsInBombThugScanRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnIsInBombThugScanRange;
     /// <summary>
     /// Function: PawnIsInBombThugScanRange
     /// </summary>
     public unsafe virtual bool PawnIsInBombThugScanRange(BmSDK.BmGame.RPawnVillain TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnIsInBombThugScanRange, "BmGame.RBatarangProjectile_Controllable.PawnIsInBombThugScanRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PawnIsInBombThugScanRange, "BmGame.RBatarangProjectile_Controllable.PawnIsInBombThugScanRange", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -514,14 +514,14 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UpdateBombThugScan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBombThugScan;
     /// <summary>
     /// Function: UpdateBombThugScan
     /// </summary>
     public unsafe virtual void UpdateBombThugScan()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBombThugScan, "BmGame.RBatarangProjectile_Controllable.UpdateBombThugScan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateBombThugScan, "BmGame.RBatarangProjectile_Controllable.UpdateBombThugScan", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -535,14 +535,14 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_ExtraHitCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExtraHitCheck;
     /// <summary>
     /// Function: ExtraHitCheck
     /// </summary>
     public unsafe virtual void ExtraHitCheck()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ExtraHitCheck, "BmGame.RBatarangProjectile_Controllable.ExtraHitCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExtraHitCheck, "BmGame.RBatarangProjectile_Controllable.ExtraHitCheck", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -556,14 +556,14 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_PlayFlipAnimation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFlipAnimation;
     /// <summary>
     /// Function: PlayFlipAnimation
     /// </summary>
     public unsafe virtual void PlayFlipAnimation(float InPosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFlipAnimation, "BmGame.RBatarangProjectile_Controllable.PlayFlipAnimation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayFlipAnimation, "BmGame.RBatarangProjectile_Controllable.PlayFlipAnimation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InPosition, paramsPtr + 0);
@@ -578,14 +578,14 @@ public partial class RBatarangProjectile_Controllable : BmSDK.BmGame.RBatarangPr
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateFlightPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateFlightPath;
     /// <summary>
     /// Function: UpdateFlightPath
     /// </summary>
     public unsafe override void UpdateFlightPath(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateFlightPath, "BmGame.RBatarangProjectile_Controllable.UpdateFlightPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateFlightPath, "BmGame.RBatarangProjectile_Controllable.UpdateFlightPath", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

@@ -78,28 +78,28 @@ public partial class RExplosionLight : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RExplosionLight>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FastStartSlowEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FastStartSlowEnd;
     /// <summary>
     /// Function: FastStartSlowEnd
     /// </summary>
     public unsafe virtual void FastStartSlowEnd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FastStartSlowEnd, "BmScript.RExplosionLight.FastStartSlowEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FastStartSlowEnd, "BmScript.RExplosionLight.FastStartSlowEnd", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLight;
     /// <summary>
     /// Function: UpdateLight
     /// </summary>
     public unsafe virtual void UpdateLight(float DeltaTime, System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLight, "BmScript.RExplosionLight.UpdateLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLight, "BmScript.RExplosionLight.UpdateLight", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RExplosionLight : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StartLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLight;
     /// <summary>
     /// Function: StartLight
     /// </summary>
     public unsafe virtual void StartLight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLight, "BmScript.RExplosionLight.StartLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartLight, "BmScript.RExplosionLight.StartLight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

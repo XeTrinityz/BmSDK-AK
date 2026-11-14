@@ -1,3 +1,6 @@
+using System.Reflection;
+using System.Runtime.CompilerServices;
+
 namespace BmSDK.Framework;
 
 /// <summary>
@@ -18,8 +21,11 @@ namespace BmSDK.Framework;
 /// the viewport, after the window message, so scripts still see the key but the game's bindings,
 /// console and menus do not.
 /// <para/>
-/// Swallowed keys are global state shared by all mods and survive a hot reload: unswallow keys when
-/// your mod no longer needs them (e.g. in <see cref="Script.OnUnload"/>).
+/// Swallowing is kept per mod: a key stays swallowed until every mod that asked for it has let go, so one
+/// mod unswallowing a key no longer gives it back to the game while another mod still keeps it. Asking
+/// twice from the same mod counts once. Whatever a mod still holds is let go when it unloads or
+/// hot reloads, so a key can't stay stuck behind a script that failed to clean up. The mod is the
+/// assembly of the calling code.
 /// </remarks>
 public static class Keyboard
 {
@@ -29,16 +35,34 @@ public static class Keyboard
     /// </summary>
     public static bool IsDown(Keys key) => InputManager.IsDown(key);
 
+    /// <summary>
+    /// Whether the key went down since the previous engine tick, even when it was released again before
+    /// the tick that reports it. <see cref="IsDown"/> misses a tap that short.
+    /// </summary>
+    public static bool WasPressed(Keys key) => InputManager.WasPressed(key);
+
+    /// <summary>Whether the key came up since the previous engine tick.</summary>
+    public static bool WasReleased(Keys key) => InputManager.WasReleased(key);
+
+    /// <summary>
+    /// Whether the game's window is the one in front. Checked once per engine tick, and false at once
+    /// when the window loses focus.
+    /// </summary>
+    public static bool HasFocus => InputManager.HasFocus;
+
     /// <summary>Stops the engine seeing this key's presses and releases until <see cref="Unswallow(Keys)"/>.</summary>
-    public static void Swallow(Keys key) => InputManager.SetSwallowed(key, true);
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void Swallow(Keys key) => InputManager.SetSwallowed(key, true, Assembly.GetCallingAssembly());
 
-    /// <summary>Lets the engine see this key again.</summary>
-    public static void Unswallow(Keys key) => InputManager.SetSwallowed(key, false);
+    /// <summary>Stops this mod keeping the key. The engine sees it again once no mod does.</summary>
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void Unswallow(Keys key) => InputManager.SetSwallowed(key, false, Assembly.GetCallingAssembly());
 
-    /// <summary>Lets the engine see every key and named input again.</summary>
-    public static void UnswallowAll() => InputManager.UnswallowAll();
+    /// <summary>Stops this mod keeping any key or named input. Other mods' holds are left alone.</summary>
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void UnswallowAll() => InputManager.ReleaseOwner(Assembly.GetCallingAssembly());
 
-    /// <summary>Whether the engine is currently kept from seeing this key.</summary>
+    /// <summary>Whether the engine is currently kept from seeing this key, by any mod.</summary>
     public static bool IsSwallowed(Keys key) => InputManager.IsSwallowed(key);
 
     /// <summary>
@@ -46,10 +70,20 @@ public static class Keyboard
     /// Axes ("MouseX", "MouseY") and the wheel ("MouseScrollUp", "MouseScrollDown") can only be
     /// swallowed this way; keys and mouse buttons can be too ("SpaceBar", "LeftMouseButton").
     /// </summary>
-    public static void Swallow(string inputName) => InputRouting.SetSwallowed(new FName(inputName), true);
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void Swallow(string inputName) =>
+        InputRouting.SetSwallowed(new FName(inputName), true, Assembly.GetCallingAssembly());
 
-    /// <summary>Lets the game act on this named input again.</summary>
-    public static void Unswallow(string inputName) => InputRouting.SetSwallowed(new FName(inputName), false);
+    /// <summary>Stops this mod keeping the named input. The game acts on it again once no mod does.</summary>
+    [MethodImpl(MethodImplOptions.NoInlining)]
+    public static void Unswallow(string inputName) =>
+        InputRouting.SetSwallowed(new FName(inputName), false, Assembly.GetCallingAssembly());
+
+    /// <summary>
+    /// Whether named input is being intercepted right now. Swallowing by name only takes effect while
+    /// BmSDK is bound to the viewport's input delegates, which it does not do over a binding the game made.
+    /// </summary>
+    public static bool NameSwallowingActive => InputRouting.IsBound;
 
     /// <summary>Whether the game is currently kept from acting on this named input.</summary>
     public static bool IsSwallowed(string inputName) => InputRouting.IsSwallowed(new FName(inputName));

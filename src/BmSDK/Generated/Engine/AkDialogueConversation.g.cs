@@ -78,28 +78,28 @@ public partial class AkDialogueConversation : BmSDK.Engine.AkDialogueSpeech, BmS
         where TComponent : class, Framework.IScriptComponent<AkDialogueConversation>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDialogueLineCountScript;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDialogueLineCountScript;
     /// <summary>
     /// Function: GetDialogueLineCountScript
     /// </summary>
     public unsafe virtual int GetDialogueLineCountScript()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDialogueLineCountScript, "Engine.AkDialogueConversation.GetDialogueLineCountScript");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDialogueLineCountScript, "Engine.AkDialogueConversation.GetDialogueLineCountScript", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetTotalPlayCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTotalPlayCount;
     /// <summary>
     /// Function: GetTotalPlayCount
     /// </summary>
     public unsafe virtual float GetTotalPlayCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTotalPlayCount, "Engine.AkDialogueConversation.GetTotalPlayCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTotalPlayCount, "Engine.AkDialogueConversation.GetTotalPlayCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

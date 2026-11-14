@@ -73,14 +73,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<RLineLauncher>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DropFromWireWalkToZipLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DropFromWireWalkToZipLine;
     /// <summary>
     /// Function: DropFromWireWalkToZipLine
     /// </summary>
     public unsafe virtual bool DropFromWireWalkToZipLine(BmSDK.BmGame.RHidePoint_RopeBase WalkingRope, BmSDK.Rotator Direction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DropFromWireWalkToZipLine, "BmGame.RLineLauncher.DropFromWireWalkToZipLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DropFromWireWalkToZipLine, "BmGame.RLineLauncher.DropFromWireWalkToZipLine", this);
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WalkingRope, paramsPtr + 0);
@@ -89,42 +89,42 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_SwitchToWire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchToWire;
     /// <summary>
     /// Function: SwitchToWire
     /// </summary>
     public unsafe virtual void SwitchToWire()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchToWire, "BmGame.RLineLauncher.SwitchToWire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchToWire, "BmGame.RLineLauncher.SwitchToWire", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnLineLauncherWire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnLineLauncherWire;
     /// <summary>
     /// Function: SpawnLineLauncherWire
     /// </summary>
     public unsafe virtual void SpawnLineLauncherWire()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnLineLauncherWire, "BmGame.RLineLauncher.SpawnLineLauncherWire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnLineLauncherWire, "BmGame.RLineLauncher.SpawnLineLauncherWire", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AlignLineLauncherSwingToRoadNetwork;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlignLineLauncherSwingToRoadNetwork;
     /// <summary>
     /// Function: AlignLineLauncherSwingToRoadNetwork
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 AlignLineLauncherSwingToRoadNetwork(System.Numerics.Vector3 SwingLocation, System.Numerics.Vector3 SwingDirection)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlignLineLauncherSwingToRoadNetwork, "BmGame.RLineLauncher.AlignLineLauncherSwingToRoadNetwork");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlignLineLauncherSwingToRoadNetwork, "BmGame.RLineLauncher.AlignLineLauncherSwingToRoadNetwork", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SwingLocation, paramsPtr + 0);
@@ -140,56 +140,56 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_TryLineLauncherDiveSwing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryLineLauncherDiveSwing;
     /// <summary>
     /// Function: TryLineLauncherDiveSwing
     /// </summary>
     public unsafe virtual void TryLineLauncherDiveSwing()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryLineLauncherDiveSwing, "BmGame.RLineLauncher.TryLineLauncherDiveSwing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryLineLauncherDiveSwing, "BmGame.RLineLauncher.TryLineLauncherDiveSwing", this);
         byte* paramsPtr = stackalloc byte[248];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryLineLaunchStop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryLineLaunchStop;
     /// <summary>
     /// Function: TryLineLaunchStop
     /// </summary>
     public unsafe virtual void TryLineLaunchStop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryLineLaunchStop, "BmGame.RLineLauncher.TryLineLaunchStop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryLineLaunchStop, "BmGame.RLineLauncher.TryLineLaunchStop", this);
         byte* paramsPtr = stackalloc byte[232];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RLineLauncher.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RLineLauncher.Destroyed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VillainHitRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VillainHitRope;
     /// <summary>
     /// Function: VillainHitRope
     /// </summary>
     public unsafe virtual void VillainHitRope(BmSDK.BmGame.RPawnVillain HitVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VillainHitRope, "BmGame.RLineLauncher.VillainHitRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VillainHitRope, "BmGame.RLineLauncher.VillainHitRope", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitVillain, paramsPtr + 0);
@@ -197,14 +197,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_CheckToBreakRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckToBreakRope;
     /// <summary>
     /// Function: CheckToBreakRope
     /// </summary>
     public unsafe virtual bool CheckToBreakRope(System.Numerics.Vector3 StartPos, System.Numerics.Vector3 EndPos, bool OnlyCheckInterpActorsInFront, bool DoAccuratePawnsTest)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckToBreakRope, "BmGame.RLineLauncher.CheckToBreakRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckToBreakRope, "BmGame.RLineLauncher.CheckToBreakRope", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartPos, paramsPtr + 0);
@@ -222,28 +222,28 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_IsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActive;
     /// <summary>
     /// Function: IsActive
     /// </summary>
     public unsafe virtual bool IsActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmGame.RLineLauncher.IsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActive, "BmGame.RLineLauncher.IsActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayCameraAnimEx;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCameraAnimEx;
     /// <summary>
     /// Function: PlayCameraAnimEx
     /// </summary>
     public unsafe virtual void PlayCameraAnimEx(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator Loc, BmSDK.FName AnimName, BmSDK.Engine.AnimSet AnimSet, bool bCamMirrored, BmSDK.Engine.Actor CameraCollisionTarget, float FOV = default, System.Numerics.Vector3 CollisionTargetPos = default, bool bHardCut = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCameraAnimEx, "BmGame.RLineLauncher.PlayCameraAnimEx");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCameraAnimEx, "BmGame.RLineLauncher.PlayCameraAnimEx", this);
         byte* paramsPtr = stackalloc byte[212];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -258,28 +258,28 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_BackToPlayerCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BackToPlayerCamera;
     /// <summary>
     /// Function: BackToPlayerCamera
     /// </summary>
     public unsafe virtual void BackToPlayerCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BackToPlayerCamera, "BmGame.RLineLauncher.BackToPlayerCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BackToPlayerCamera, "BmGame.RLineLauncher.BackToPlayerCamera", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RLineLauncher.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RLineLauncher.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -288,28 +288,28 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_TriggerLineLauncherCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerLineLauncherCamera;
     /// <summary>
     /// Function: TriggerLineLauncherCamera
     /// </summary>
     public unsafe virtual void TriggerLineLauncherCamera()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerLineLauncherCamera, "BmGame.RLineLauncher.TriggerLineLauncherCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerLineLauncherCamera, "BmGame.RLineLauncher.TriggerLineLauncherCamera", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToHand;
     /// <summary>
     /// Function: AttachToHand
     /// </summary>
     public unsafe override void AttachToHand(BmSDK.FName CustomBone = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToHand, "BmGame.RLineLauncher.AttachToHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToHand, "BmGame.RLineLauncher.AttachToHand", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CustomBone, paramsPtr + 0);
@@ -317,14 +317,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RLineLauncher.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RLineLauncher.Tick", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -332,42 +332,42 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOffProjectiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOffProjectiles;
     /// <summary>
     /// Function: TurnOffProjectiles
     /// </summary>
     public unsafe override void TurnOffProjectiles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOffProjectiles, "BmGame.RLineLauncher.TurnOffProjectiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOffProjectiles, "BmGame.RLineLauncher.TurnOffProjectiles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FireDualProjectiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireDualProjectiles;
     /// <summary>
     /// Function: FireDualProjectiles
     /// </summary>
     public unsafe virtual void FireDualProjectiles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireDualProjectiles, "BmGame.RLineLauncher.FireDualProjectiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireDualProjectiles, "BmGame.RLineLauncher.FireDualProjectiles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsLineLaunchFearGasSafe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLineLaunchFearGasSafe;
     /// <summary>
     /// Function: IsLineLaunchFearGasSafe
     /// </summary>
     public unsafe virtual bool IsLineLaunchFearGasSafe(System.Numerics.Vector3 vStartPoint, System.Numerics.Vector3 vEndPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLineLaunchFearGasSafe, "BmGame.RLineLauncher.IsLineLaunchFearGasSafe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLineLaunchFearGasSafe, "BmGame.RLineLauncher.IsLineLaunchFearGasSafe", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vStartPoint, paramsPtr + 0);
@@ -383,14 +383,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_IsLineLaunchOceanSafe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLineLaunchOceanSafe;
     /// <summary>
     /// Function: IsLineLaunchOceanSafe
     /// </summary>
     public unsafe virtual bool IsLineLaunchOceanSafe(System.Numerics.Vector3 vStartPoint, System.Numerics.Vector3 vEndPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLineLaunchOceanSafe, "BmGame.RLineLauncher.IsLineLaunchOceanSafe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLineLaunchOceanSafe, "BmGame.RLineLauncher.IsLineLaunchOceanSafe", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vStartPoint, paramsPtr + 0);
@@ -406,14 +406,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_TraceForOutOfBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceForOutOfBounds;
     /// <summary>
     /// Function: TraceForOutOfBounds
     /// </summary>
     public unsafe virtual bool TraceForOutOfBounds(System.Numerics.Vector3 Start, System.Numerics.Vector3 End)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceForOutOfBounds, "BmGame.RLineLauncher.TraceForOutOfBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceForOutOfBounds, "BmGame.RLineLauncher.TraceForOutOfBounds", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -429,14 +429,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_TraceForHostageTakers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceForHostageTakers;
     /// <summary>
     /// Function: TraceForHostageTakers
     /// </summary>
     public unsafe virtual bool TraceForHostageTakers(System.Numerics.Vector3 Start, System.Numerics.Vector3 End)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceForHostageTakers, "BmGame.RLineLauncher.TraceForHostageTakers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceForHostageTakers, "BmGame.RLineLauncher.TraceForHostageTakers", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -452,14 +452,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_TraceGuidingVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceGuidingVolume;
     /// <summary>
     /// Function: TraceGuidingVolume
     /// </summary>
     public unsafe virtual bool TraceGuidingVolume(System.Numerics.Vector3 PlayerLocation, System.Numerics.Vector3 Start, System.Numerics.Vector3 End, out BmSDK.BmGame.RLineLauncherGuidingVolume GuidingVolume)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceGuidingVolume, "BmGame.RLineLauncher.TraceGuidingVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceGuidingVolume, "BmGame.RLineLauncher.TraceGuidingVolume", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerLocation, paramsPtr + 0);
@@ -479,14 +479,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 44);
     }
 
-    private static BmSDK.Function __fn_TraceRescueVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TraceRescueVolume;
     /// <summary>
     /// Function: TraceRescueVolume
     /// </summary>
     public unsafe virtual bool TraceRescueVolume(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, out BmSDK.BmGame.RLineLauncherRescueVolume HostagePickupVolume, out BmSDK.BmGame.RLineLauncherRescueVolume RescueSafeZoneVolume)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TraceRescueVolume, "BmGame.RLineLauncher.TraceRescueVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TraceRescueVolume, "BmGame.RLineLauncher.TraceRescueVolume", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -508,14 +508,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_GetLineLauncherTetherPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLineLauncherTetherPoints;
     /// <summary>
     /// Function: GetLineLauncherTetherPoints
     /// </summary>
     public unsafe virtual bool GetLineLauncherTetherPoints(out System.Numerics.Vector3 RearPoint, out System.Numerics.Vector3 FrontPoint, out System.Numerics.Vector3 ActorStartPoint, out System.Numerics.Vector3 ActorEndPoint, System.Numerics.Vector3 CurrentPosition, System.Numerics.Vector3 CameraLoc, System.Numerics.Vector3 CurrentFacing, System.Numerics.Vector3 TargetLoc = default, bool bDebugTrace = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLineLauncherTetherPoints, "BmGame.RLineLauncher.GetLineLauncherTetherPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLineLauncherTetherPoints, "BmGame.RLineLauncher.GetLineLauncherTetherPoints", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out RearPoint);
@@ -546,14 +546,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 100);
     }
 
-    private static BmSDK.Function __fn_IncremementZipSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IncremementZipSpeed;
     /// <summary>
     /// Function: IncremementZipSpeed
     /// </summary>
     public unsafe virtual void IncremementZipSpeed(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IncremementZipSpeed, "BmGame.RLineLauncher.IncremementZipSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IncremementZipSpeed, "BmGame.RLineLauncher.IncremementZipSpeed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -561,42 +561,42 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_TryFireLineLauncher;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryFireLineLauncher;
     /// <summary>
     /// Function: TryFireLineLauncher
     /// </summary>
     public unsafe virtual bool TryFireLineLauncher()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryFireLineLauncher, "BmGame.RLineLauncher.TryFireLineLauncher");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryFireLineLauncher, "BmGame.RLineLauncher.TryFireLineLauncher", this);
         byte* paramsPtr = stackalloc byte[200];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FailedFiringLineLauncher;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FailedFiringLineLauncher;
     /// <summary>
     /// Function: FailedFiringLineLauncher
     /// </summary>
     public unsafe virtual void FailedFiringLineLauncher()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FailedFiringLineLauncher, "BmGame.RLineLauncher.FailedFiringLineLauncher");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FailedFiringLineLauncher, "BmGame.RLineLauncher.FailedFiringLineLauncher", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetClosestPointOnLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClosestPointOnLine;
     /// <summary>
     /// Function: GetClosestPointOnLine
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetClosestPointOnLine(System.Numerics.Vector3 Start, System.Numerics.Vector3 End, System.Numerics.Vector3 TestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClosestPointOnLine, "BmGame.RLineLauncher.GetClosestPointOnLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClosestPointOnLine, "BmGame.RLineLauncher.GetClosestPointOnLine", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -606,14 +606,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_FireProjectiles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireProjectiles;
     /// <summary>
     /// Function: FireProjectiles
     /// </summary>
     public unsafe virtual void FireProjectiles(System.Numerics.Vector3 ProjectileTarget, System.Numerics.Vector3 ProjectileTarget2)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireProjectiles, "BmGame.RLineLauncher.FireProjectiles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireProjectiles, "BmGame.RLineLauncher.FireProjectiles", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ProjectileTarget, paramsPtr + 0);
@@ -622,84 +622,84 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_DrawAimingHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawAimingHUD;
     /// <summary>
     /// Function: DrawAimingHUD
     /// </summary>
     public unsafe virtual void DrawAimingHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawAimingHUD, "BmGame.RLineLauncher.DrawAimingHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawAimingHUD, "BmGame.RLineLauncher.DrawAimingHUD", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HideAimingHud;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideAimingHud;
     /// <summary>
     /// Function: HideAimingHud
     /// </summary>
     public unsafe virtual void HideAimingHud()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideAimingHud, "BmGame.RLineLauncher.HideAimingHud");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideAimingHud, "BmGame.RLineLauncher.HideAimingHud", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsSafeToFire;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSafeToFire;
     /// <summary>
     /// Function: IsSafeToFire
     /// </summary>
     public unsafe virtual bool IsSafeToFire()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSafeToFire, "BmGame.RLineLauncher.IsSafeToFire");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSafeToFire, "BmGame.RLineLauncher.IsSafeToFire", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GoodFireAngle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoodFireAngle;
     /// <summary>
     /// Function: GoodFireAngle
     /// </summary>
     public unsafe virtual bool GoodFireAngle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoodFireAngle, "BmGame.RLineLauncher.GoodFireAngle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoodFireAngle, "BmGame.RLineLauncher.GoodFireAngle", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryHostageAlignedTargeting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryHostageAlignedTargeting;
     /// <summary>
     /// Function: TryHostageAlignedTargeting
     /// </summary>
     public unsafe virtual bool TryHostageAlignedTargeting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryHostageAlignedTargeting, "BmGame.RLineLauncher.TryHostageAlignedTargeting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryHostageAlignedTargeting, "BmGame.RLineLauncher.TryHostageAlignedTargeting", this);
         byte* paramsPtr = stackalloc byte[180];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryAlignedTargeting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryAlignedTargeting;
     /// <summary>
     /// Function: TryAlignedTargeting
     /// </summary>
     public unsafe virtual bool TryAlignedTargeting(System.Numerics.Vector3 Start, System.Numerics.Vector3 End)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryAlignedTargeting, "BmGame.RLineLauncher.TryAlignedTargeting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryAlignedTargeting, "BmGame.RLineLauncher.TryAlignedTargeting", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Start, paramsPtr + 0);
@@ -708,56 +708,56 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_UpdateAiming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAiming;
     /// <summary>
     /// Function: UpdateAiming
     /// </summary>
     public unsafe virtual void UpdateAiming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAiming, "BmGame.RLineLauncher.UpdateAiming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateAiming, "BmGame.RLineLauncher.UpdateAiming", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanFire2ndLine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanFire2ndLine;
     /// <summary>
     /// Function: CanFire2ndLine
     /// </summary>
     public unsafe virtual bool CanFire2ndLine()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanFire2ndLine, "BmGame.RLineLauncher.CanFire2ndLine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanFire2ndLine, "BmGame.RLineLauncher.CanFire2ndLine", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopSloMoFromFlip;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSloMoFromFlip;
     /// <summary>
     /// Function: StopSloMoFromFlip
     /// </summary>
     public unsafe virtual void StopSloMoFromFlip()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSloMoFromFlip, "BmGame.RLineLauncher.StopSloMoFromFlip");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSloMoFromFlip, "BmGame.RLineLauncher.StopSloMoFromFlip", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPrimedPose;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrimedPose;
     /// <summary>
     /// Function: GetPrimedPose
     /// </summary>
     public unsafe override BmSDK.FName GetPrimedPose(out BmSDK.BmGame.RInventoryGadget.PlayerWantsToCrouch StanceIsCrouched, out BmSDK.BmGame.RAnimUtil.EMirrorChoice MirroredNess, bool InSoftCover, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType, out BmSDK.FName OutCapeState, out BmSDK.FName OutCapeTransitionState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrimedPose, "BmGame.RLineLauncher.GetPrimedPose");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrimedPose, "BmGame.RLineLauncher.GetPrimedPose", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out StanceIsCrouched);
@@ -778,14 +778,14 @@ public partial class RLineLauncher : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameO
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_GetGadgetCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetCamera;
     /// <summary>
     /// Function: GetGadgetCamera
     /// </summary>
     public unsafe override BmSDK.FName GetGadgetCamera(bool InSoftCover = default, BmSDK.BmGame.RInventoryGadget.CoverCornerType CornerType = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGadgetCamera, "BmGame.RLineLauncher.GetGadgetCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGadgetCamera, "BmGame.RLineLauncher.GetGadgetCamera", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSoftCover, paramsPtr + 0);

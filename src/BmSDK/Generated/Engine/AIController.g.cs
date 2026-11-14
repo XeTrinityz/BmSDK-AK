@@ -78,14 +78,14 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AIController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanFireWeapon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanFireWeapon;
     /// <summary>
     /// Function: CanFireWeapon
     /// </summary>
     public unsafe virtual bool CanFireWeapon(BmSDK.Engine.Weapon Wpn, byte FireModeNum)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanFireWeapon, "Engine.AIController.CanFireWeapon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanFireWeapon, "Engine.AIController.CanFireWeapon", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Wpn, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_NotifyWeaponFinishedFiring;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyWeaponFinishedFiring;
     /// <summary>
     /// Function: NotifyWeaponFinishedFiring
     /// </summary>
     public unsafe virtual void NotifyWeaponFinishedFiring(BmSDK.Engine.Weapon W, byte FireMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyWeaponFinishedFiring, "Engine.AIController.NotifyWeaponFinishedFiring");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyWeaponFinishedFiring, "Engine.AIController.NotifyWeaponFinishedFiring", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(W, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyWeaponFired;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyWeaponFired;
     /// <summary>
     /// Function: NotifyWeaponFired
     /// </summary>
     public unsafe virtual void NotifyWeaponFired(BmSDK.Engine.Weapon W, byte FireMode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyWeaponFired, "Engine.AIController.NotifyWeaponFired");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyWeaponFired, "Engine.AIController.NotifyWeaponFired", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(W, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetPlayerViewPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerViewPoint;
     /// <summary>
     /// Function: GetPlayerViewPoint
     /// </summary>
     public unsafe override void GetPlayerViewPoint(out System.Numerics.Vector3 out_Location, out BmSDK.Rotator out_Rotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerViewPoint, "Engine.AIController.GetPlayerViewPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerViewPoint, "Engine.AIController.GetPlayerViewPoint", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out out_Location);
@@ -146,14 +146,14 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetTeam;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTeam;
     /// <summary>
     /// Function: SetTeam
     /// </summary>
     public unsafe virtual void SetTeam(int inTeamIdx)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTeam, "Engine.AIController.SetTeam");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTeam, "Engine.AIController.SetTeam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inTeamIdx, paramsPtr + 0);
@@ -161,14 +161,14 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DisplayDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayDebug;
     /// <summary>
     /// Function: DisplayDebug
     /// </summary>
     public unsafe override void DisplayDebug(BmSDK.Engine.HUD HUD, out float out_YL, out float out_YPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.AIController.DisplayDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayDebug, "Engine.AIController.DisplayDebug", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -182,14 +182,14 @@ public partial class AIController : BmSDK.Engine.Controller, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Reset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Reset;
     /// <summary>
     /// Function: Reset
     /// </summary>
     public unsafe override void Reset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Reset, "Engine.AIController.Reset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reset, "Engine.AIController.Reset", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

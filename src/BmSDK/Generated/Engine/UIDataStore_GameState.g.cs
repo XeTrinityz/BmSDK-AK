@@ -73,14 +73,14 @@ public partial class UIDataStore_GameState : BmSDK.Engine.UIDataStore, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<UIDataStore_GameState>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyGameSessionEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyGameSessionEnded;
     /// <summary>
     /// Function: NotifyGameSessionEnded
     /// </summary>
     public unsafe override bool NotifyGameSessionEnded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGameSessionEnded, "Engine.UIDataStore_GameState.NotifyGameSessionEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyGameSessionEnded, "Engine.UIDataStore_GameState.NotifyGameSessionEnded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -96,14 +96,14 @@ public partial class UIDataStore_GameState : BmSDK.Engine.UIDataStore, BmSDK.IGa
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 148); }
     }
 
-    private static BmSDK.Function __fn_OnRefreshDataFieldValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRefreshDataFieldValue;
     /// <summary>
     /// Function: OnRefreshDataFieldValue
     /// </summary>
     public unsafe virtual void OnRefreshDataFieldValue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRefreshDataFieldValue, "Engine.UIDataStore_GameState.OnRefreshDataFieldValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRefreshDataFieldValue, "Engine.UIDataStore_GameState.OnRefreshDataFieldValue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

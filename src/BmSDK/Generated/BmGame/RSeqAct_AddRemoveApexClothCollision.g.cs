@@ -91,28 +91,28 @@ public partial class RSeqAct_AddRemoveApexClothCollision : BmSDK.Engine.Sequence
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_AddRemoveApexClothCollision.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_AddRemoveApexClothCollision.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveClothCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveClothCollision;
     /// <summary>
     /// Function: RemoveClothCollision
     /// </summary>
     public unsafe virtual void RemoveClothCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveClothCollision, "BmGame.RSeqAct_AddRemoveApexClothCollision.RemoveClothCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveClothCollision, "BmGame.RSeqAct_AddRemoveApexClothCollision.RemoveClothCollision", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -126,14 +126,14 @@ public partial class RSeqAct_AddRemoveApexClothCollision : BmSDK.Engine.Sequence
         return;
     }
 
-    private static BmSDK.Function __fn_AddClothCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddClothCollision;
     /// <summary>
     /// Function: AddClothCollision
     /// </summary>
     public unsafe virtual void AddClothCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddClothCollision, "BmGame.RSeqAct_AddRemoveApexClothCollision.AddClothCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddClothCollision, "BmGame.RSeqAct_AddRemoveApexClothCollision.AddClothCollision", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

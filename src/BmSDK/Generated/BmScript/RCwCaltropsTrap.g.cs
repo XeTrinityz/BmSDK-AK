@@ -78,14 +78,14 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         where TComponent : class, Framework.IScriptComponent<RCwCaltropsTrap>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_StartleNearbyThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartleNearbyThugs;
     /// <summary>
     /// Function: StartleNearbyThugs
     /// </summary>
     public unsafe virtual void StartleNearbyThugs(BmSDK.BmGame.RPawnVillain Victim)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleNearbyThugs, "BmScript.RCwCaltropsTrap.StartleNearbyThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartleNearbyThugs, "BmScript.RCwCaltropsTrap.StartleNearbyThugs", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Victim, paramsPtr + 0);
@@ -93,42 +93,42 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_DrawCollisionCylinders;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawCollisionCylinders;
     /// <summary>
     /// Function: DrawCollisionCylinders
     /// </summary>
     public unsafe virtual void DrawCollisionCylinders()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawCollisionCylinders, "BmScript.RCwCaltropsTrap.DrawCollisionCylinders");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawCollisionCylinders, "BmScript.RCwCaltropsTrap.DrawCollisionCylinders", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Swipe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Swipe;
     /// <summary>
     /// Function: Swipe
     /// </summary>
     public unsafe virtual void Swipe()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Swipe, "BmScript.RCwCaltropsTrap.Swipe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Swipe, "BmScript.RCwCaltropsTrap.Swipe", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ThugStartsSwiping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugStartsSwiping;
     /// <summary>
     /// Function: ThugStartsSwiping
     /// </summary>
     public unsafe override void ThugStartsSwiping(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugStartsSwiping, "BmScript.RCwCaltropsTrap.ThugStartsSwiping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugStartsSwiping, "BmScript.RCwCaltropsTrap.ThugStartsSwiping", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_IsThugAwareOfCaltrops;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsThugAwareOfCaltrops;
     /// <summary>
     /// Function: IsThugAwareOfCaltrops
     /// </summary>
     public unsafe virtual bool IsThugAwareOfCaltrops(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsThugAwareOfCaltrops, "BmScript.RCwCaltropsTrap.IsThugAwareOfCaltrops");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsThugAwareOfCaltrops, "BmScript.RCwCaltropsTrap.IsThugAwareOfCaltrops", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -151,14 +151,14 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SpreadCaltrops;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpreadCaltrops;
     /// <summary>
     /// Function: SpreadCaltrops
     /// </summary>
     public unsafe virtual void SpreadCaltrops(BmSDK.BmGame.RPawnVillain touchVillain, bool bSwiping = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpreadCaltrops, "BmScript.RCwCaltropsTrap.SpreadCaltrops");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpreadCaltrops, "BmScript.RCwCaltropsTrap.SpreadCaltrops", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(touchVillain, paramsPtr + 0);
@@ -167,14 +167,14 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateTouchingCaltrops;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateTouchingCaltrops;
     /// <summary>
     /// Function: ActivateTouchingCaltrops
     /// </summary>
     public unsafe virtual void ActivateTouchingCaltrops(BmSDK.BmGame.RPawnVillain touchVillain, bool bSwiping = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateTouchingCaltrops, "BmScript.RCwCaltropsTrap.ActivateTouchingCaltrops");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateTouchingCaltrops, "BmScript.RCwCaltropsTrap.ActivateTouchingCaltrops", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(touchVillain, paramsPtr + 0);
@@ -183,14 +183,14 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmScript.RCwCaltropsTrap.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmScript.RCwCaltropsTrap.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -198,70 +198,70 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmScript.RCwCaltropsTrap.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmScript.RCwCaltropsTrap.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DestroySelf;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroySelf;
     /// <summary>
     /// Function: DestroySelf
     /// </summary>
     public unsafe virtual void DestroySelf()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroySelf, "BmScript.RCwCaltropsTrap.DestroySelf");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroySelf, "BmScript.RCwCaltropsTrap.DestroySelf", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivated;
     /// <summary>
     /// Function: OnActivated
     /// </summary>
     public unsafe virtual void OnActivated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivated, "BmScript.RCwCaltropsTrap.OnActivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivated, "BmScript.RCwCaltropsTrap.OnActivated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartleNearbyThugsTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartleNearbyThugsTimer;
     /// <summary>
     /// Function: StartleNearbyThugsTimer
     /// </summary>
     public unsafe virtual void StartleNearbyThugsTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartleNearbyThugsTimer, "BmScript.RCwCaltropsTrap.StartleNearbyThugsTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartleNearbyThugsTimer, "BmScript.RCwCaltropsTrap.StartleNearbyThugsTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetStartleNearbyThugsDelayed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetStartleNearbyThugsDelayed;
     /// <summary>
     /// Function: SetStartleNearbyThugsDelayed
     /// </summary>
     public unsafe virtual void SetStartleNearbyThugsDelayed(BmSDK.BmGame.RPawnVillain Villain, float Delay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetStartleNearbyThugsDelayed, "BmScript.RCwCaltropsTrap.SetStartleNearbyThugsDelayed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetStartleNearbyThugsDelayed, "BmScript.RCwCaltropsTrap.SetStartleNearbyThugsDelayed", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -270,14 +270,14 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_OnTouchVillain;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnTouchVillain;
     /// <summary>
     /// Function: OnTouchVillain
     /// </summary>
     public unsafe virtual void OnTouchVillain(BmSDK.BmGame.RPawnVillain touchVillain, BmSDK.BmScript.RCwCaltropsProjectile caltropsInFlight, System.Numerics.Vector3 LaunchPosition = default, bool bLaunchedFromGarg = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnTouchVillain, "BmScript.RCwCaltropsTrap.OnTouchVillain");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnTouchVillain, "BmScript.RCwCaltropsTrap.OnTouchVillain", this);
         byte* paramsPtr = stackalloc byte[324];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(touchVillain, paramsPtr + 0);
@@ -288,28 +288,28 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_CheckPreviouslyIgnoredVillains;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPreviouslyIgnoredVillains;
     /// <summary>
     /// Function: CheckPreviouslyIgnoredVillains
     /// </summary>
     public unsafe virtual void CheckPreviouslyIgnoredVillains()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckPreviouslyIgnoredVillains, "BmScript.RCwCaltropsTrap.CheckPreviouslyIgnoredVillains");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckPreviouslyIgnoredVillains, "BmScript.RCwCaltropsTrap.CheckPreviouslyIgnoredVillains", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmScript.RCwCaltropsTrap.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmScript.RCwCaltropsTrap.Touch", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -320,28 +320,28 @@ public partial class RCwCaltropsTrap : BmSDK.BmGame.RCwCaltropsTrapBase, BmSDK.I
         return;
     }
 
-    private static BmSDK.Function __fn_FinishedCylinderUpdates;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishedCylinderUpdates;
     /// <summary>
     /// Function: FinishedCylinderUpdates
     /// </summary>
     public unsafe override void FinishedCylinderUpdates()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishedCylinderUpdates, "BmScript.RCwCaltropsTrap.FinishedCylinderUpdates");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishedCylinderUpdates, "BmScript.RCwCaltropsTrap.FinishedCylinderUpdates", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RCwCaltropsTrap.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RCwCaltropsTrap.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

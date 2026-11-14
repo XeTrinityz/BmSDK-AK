@@ -78,14 +78,14 @@ public partial class RB_RadialImpulseComponent : BmSDK.Engine.PrimitiveComponent
         where TComponent : class, Framework.IScriptComponent<RB_RadialImpulseComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FireImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireImpulse;
     /// <summary>
     /// Function: FireImpulse
     /// </summary>
     public unsafe virtual void FireImpulse(System.Numerics.Vector3 Origin)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireImpulse, "Engine.RB_RadialImpulseComponent.FireImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireImpulse, "Engine.RB_RadialImpulseComponent.FireImpulse", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Origin, paramsPtr + 0);

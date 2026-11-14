@@ -73,28 +73,28 @@ public partial class UIDataStore : BmSDK.Engine.UIDataProvider, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<UIDataStore>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetDataStoreClient;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDataStoreClient;
     /// <summary>
     /// Function: GetDataStoreClient
     /// </summary>
     public unsafe virtual BmSDK.Engine.DataStoreClient GetDataStoreClient()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDataStoreClient, "Engine.UIDataStore.GetDataStoreClient");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDataStoreClient, "Engine.UIDataStore.GetDataStoreClient", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.DataStoreClient>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RefreshSubscribers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshSubscribers;
     /// <summary>
     /// Function: RefreshSubscribers
     /// </summary>
     public unsafe virtual void RefreshSubscribers(BmSDK.FName PropertyTag = default, bool bInvalidateValues = default, BmSDK.Engine.UIDataProvider SourceProvider = default, int ArrayIndex = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshSubscribers, "Engine.UIDataStore.RefreshSubscribers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshSubscribers, "Engine.UIDataStore.RefreshSubscribers", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PropertyTag, paramsPtr + 0);
@@ -105,28 +105,28 @@ public partial class UIDataStore : BmSDK.Engine.UIDataProvider, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyGameSessionEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyGameSessionEnded;
     /// <summary>
     /// Function: NotifyGameSessionEnded
     /// </summary>
     public unsafe virtual bool NotifyGameSessionEnded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyGameSessionEnded, "Engine.UIDataStore.NotifyGameSessionEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyGameSessionEnded, "Engine.UIDataStore.NotifyGameSessionEnded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SubscriberDetached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SubscriberDetached;
     /// <summary>
     /// Function: SubscriberDetached
     /// </summary>
     public unsafe virtual void SubscriberDetached(BmSDK.Engine.UIDataStoreSubscriber Subscriber)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SubscriberDetached, "Engine.UIDataStore.SubscriberDetached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SubscriberDetached, "Engine.UIDataStore.SubscriberDetached", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Subscriber, paramsPtr + 0);
@@ -134,14 +134,14 @@ public partial class UIDataStore : BmSDK.Engine.UIDataProvider, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_SubscriberAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SubscriberAttached;
     /// <summary>
     /// Function: SubscriberAttached
     /// </summary>
     public unsafe virtual void SubscriberAttached(BmSDK.Engine.UIDataStoreSubscriber Subscriber)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SubscriberAttached, "Engine.UIDataStore.SubscriberAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SubscriberAttached, "Engine.UIDataStore.SubscriberAttached", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Subscriber, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class UIDataStore : BmSDK.Engine.UIDataProvider, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_Unregistered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Unregistered;
     /// <summary>
     /// Function: Unregistered
     /// </summary>
     public unsafe virtual void Unregistered(BmSDK.Engine.LocalPlayer PlayerOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Unregistered, "Engine.UIDataStore.Unregistered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Unregistered, "Engine.UIDataStore.Unregistered", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerOwner, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class UIDataStore : BmSDK.Engine.UIDataProvider, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_Registered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Registered;
     /// <summary>
     /// Function: Registered
     /// </summary>
     public unsafe virtual void Registered(BmSDK.Engine.LocalPlayer PlayerOwner)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Registered, "Engine.UIDataStore.Registered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Registered, "Engine.UIDataStore.Registered", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerOwner, paramsPtr + 0);
@@ -179,14 +179,14 @@ public partial class UIDataStore : BmSDK.Engine.UIDataProvider, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_OnDataStoreValueUpdated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDataStoreValueUpdated;
     /// <summary>
     /// Function: OnDataStoreValueUpdated
     /// </summary>
     public unsafe virtual void OnDataStoreValueUpdated(BmSDK.Engine.UIDataStore SourceDataStore, bool bValuesInvalidated, BmSDK.FName PropertyTag, BmSDK.Engine.UIDataProvider SourceProvider, int ArrayIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDataStoreValueUpdated, "Engine.UIDataStore.OnDataStoreValueUpdated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDataStoreValueUpdated, "Engine.UIDataStore.OnDataStoreValueUpdated", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SourceDataStore, paramsPtr + 0);

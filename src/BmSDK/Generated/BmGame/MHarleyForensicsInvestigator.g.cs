@@ -78,14 +78,14 @@ public partial class MHarleyForensicsInvestigator : BmSDK.BmGame.RForensicsInves
         where TComponent : class, Framework.IScriptComponent<MHarleyForensicsInvestigator>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetNPCInfoCursor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNPCInfoCursor;
     /// <summary>
     /// Function: SetNPCInfoCursor
     /// </summary>
     public unsafe override void SetNPCInfoCursor(BmSDK.BmGame.RPlayerController RPC, int HeartBeatType, int WeaponType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNPCInfoCursor, "BmGame.MHarleyForensicsInvestigator.SetNPCInfoCursor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNPCInfoCursor, "BmGame.MHarleyForensicsInvestigator.SetNPCInfoCursor", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);

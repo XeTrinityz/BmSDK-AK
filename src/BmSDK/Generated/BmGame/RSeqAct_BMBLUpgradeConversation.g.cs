@@ -91,14 +91,14 @@ public partial class RSeqAct_BMBLUpgradeConversation : BmSDK.BmGame.RSeqAct_Play
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpgradeChosen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradeChosen;
     /// <summary>
     /// Function: UpgradeChosen
     /// </summary>
     public unsafe virtual void UpgradeChosen(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpgradeChosen, "BmGame.RSeqAct_BMBLUpgradeConversation.UpgradeChosen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpgradeChosen, "BmGame.RSeqAct_BMBLUpgradeConversation.UpgradeChosen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -106,56 +106,56 @@ public partial class RSeqAct_BMBLUpgradeConversation : BmSDK.BmGame.RSeqAct_Play
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchToInteractivePhase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchToInteractivePhase;
     /// <summary>
     /// Function: SwitchToInteractivePhase
     /// </summary>
     public unsafe virtual void SwitchToInteractivePhase()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchToInteractivePhase, "BmGame.RSeqAct_BMBLUpgradeConversation.SwitchToInteractivePhase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchToInteractivePhase, "BmGame.RSeqAct_BMBLUpgradeConversation.SwitchToInteractivePhase", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpeechAndMovieEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpeechAndMovieEnded;
     /// <summary>
     /// Function: SpeechAndMovieEnded
     /// </summary>
     public unsafe override void SpeechAndMovieEnded()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpeechAndMovieEnded, "BmGame.RSeqAct_BMBLUpgradeConversation.SpeechAndMovieEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeechAndMovieEnded, "BmGame.RSeqAct_BMBLUpgradeConversation.SpeechAndMovieEnded", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DialogueOverCUEFromMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DialogueOverCUEFromMovie;
     /// <summary>
     /// Function: DialogueOverCUEFromMovie
     /// </summary>
     public unsafe override void DialogueOverCUEFromMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DialogueOverCUEFromMovie, "BmGame.RSeqAct_BMBLUpgradeConversation.DialogueOverCUEFromMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DialogueOverCUEFromMovie, "BmGame.RSeqAct_BMBLUpgradeConversation.DialogueOverCUEFromMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_BMBLUpgradeConversation.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_BMBLUpgradeConversation.Update", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -163,28 +163,28 @@ public partial class RSeqAct_BMBLUpgradeConversation : BmSDK.BmGame.RSeqAct_Play
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_BMBLUpgradeConversation.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_BMBLUpgradeConversation.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopSpeechNative;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeechNative;
     /// <summary>
     /// Function: StopSpeechNative
     /// </summary>
     public unsafe override void StopSpeechNative()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpeechNative, "BmGame.RSeqAct_BMBLUpgradeConversation.StopSpeechNative");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSpeechNative, "BmGame.RSeqAct_BMBLUpgradeConversation.StopSpeechNative", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -198,14 +198,14 @@ public partial class RSeqAct_BMBLUpgradeConversation : BmSDK.BmGame.RSeqAct_Play
         return;
     }
 
-    private static BmSDK.Function __fn_HandleInputLinks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInputLinks;
     /// <summary>
     /// Function: HandleInputLinks
     /// </summary>
     public unsafe override void HandleInputLinks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInputLinks, "BmGame.RSeqAct_BMBLUpgradeConversation.HandleInputLinks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleInputLinks, "BmGame.RSeqAct_BMBLUpgradeConversation.HandleInputLinks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

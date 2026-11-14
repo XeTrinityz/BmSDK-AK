@@ -91,14 +91,14 @@ public partial class RSeqEvent_CustomBackscreenRequested_Normal : BmSDK.BmGame.R
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAvailability;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAvailability;
     /// <summary>
     /// Function: GetAvailability
     /// </summary>
     public unsafe override BmSDK.BmGame.RSeqEvent_CustomBackscreenRequested.BackscreenAvailability GetAvailability()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAvailability, "BmScript.RSeqEvent_CustomBackscreenRequested_Normal.GetAvailability");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAvailability, "BmScript.RSeqEvent_CustomBackscreenRequested_Normal.GetAvailability", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

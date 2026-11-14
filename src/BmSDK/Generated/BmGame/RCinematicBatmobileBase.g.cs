@@ -73,14 +73,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         where TComponent : class, Framework.IScriptComponent<RCinematicBatmobileBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RefreshDamageLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDamageLevel;
     /// <summary>
     /// Function: RefreshDamageLevel
     /// </summary>
     public unsafe virtual void RefreshDamageLevel(BmSDK.FName PlayerBatmobileName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDamageLevel, "BmGame.RCinematicBatmobileBase.RefreshDamageLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshDamageLevel, "BmGame.RCinematicBatmobileBase.RefreshDamageLevel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerBatmobileName, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_SetBatmobileMeshData;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBatmobileMeshData;
     /// <summary>
     /// Function: SetBatmobileMeshData
     /// </summary>
     public unsafe virtual void SetBatmobileMeshData(BmSDK.BmGame.RAddContentBatmobile BatmobileData, BmSDK.BmGame.RAddContentBatmobileMesh MeshData)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBatmobileMeshData, "BmGame.RCinematicBatmobileBase.SetBatmobileMeshData");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBatmobileMeshData, "BmGame.RCinematicBatmobileBase.SetBatmobileMeshData", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BatmobileData, paramsPtr + 0);
@@ -118,14 +118,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_DetachPlayerMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DetachPlayerMesh;
     /// <summary>
     /// Function: DetachPlayerMesh
     /// </summary>
     public unsafe virtual void DetachPlayerMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DetachPlayerMesh, "BmGame.RCinematicBatmobileBase.DetachPlayerMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetachPlayerMesh, "BmGame.RCinematicBatmobileBase.DetachPlayerMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -139,14 +139,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_BlockOnPlayerMeshAttached;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BlockOnPlayerMeshAttached;
     /// <summary>
     /// Function: BlockOnPlayerMeshAttached
     /// </summary>
     public unsafe virtual void BlockOnPlayerMeshAttached()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BlockOnPlayerMeshAttached, "BmGame.RCinematicBatmobileBase.BlockOnPlayerMeshAttached");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BlockOnPlayerMeshAttached, "BmGame.RCinematicBatmobileBase.BlockOnPlayerMeshAttached", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -160,14 +160,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_CancelAttachPlayerMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelAttachPlayerMesh;
     /// <summary>
     /// Function: CancelAttachPlayerMesh
     /// </summary>
     public unsafe virtual void CancelAttachPlayerMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelAttachPlayerMesh, "BmGame.RCinematicBatmobileBase.CancelAttachPlayerMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelAttachPlayerMesh, "BmGame.RCinematicBatmobileBase.CancelAttachPlayerMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -181,14 +181,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_AttachPlayerMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachPlayerMesh;
     /// <summary>
     /// Function: AttachPlayerMesh
     /// </summary>
     public unsafe virtual void AttachPlayerMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachPlayerMesh, "BmGame.RCinematicBatmobileBase.AttachPlayerMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachPlayerMesh, "BmGame.RCinematicBatmobileBase.AttachPlayerMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -202,14 +202,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_GetSkinName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSkinName;
     /// <summary>
     /// Function: GetSkinName
     /// </summary>
     public unsafe virtual BmSDK.FString GetSkinName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSkinName, "BmGame.RCinematicBatmobileBase.GetSkinName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSkinName, "BmGame.RCinematicBatmobileBase.GetSkinName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -223,14 +223,14 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAllMeshComponents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllMeshComponents;
     /// <summary>
     /// Function: GetAllMeshComponents
     /// </summary>
     public unsafe virtual void GetAllMeshComponents(out BmSDK.TArray<BmSDK.Engine.SkeletalMeshComponent> Out)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllMeshComponents, "BmGame.RCinematicBatmobileBase.GetAllMeshComponents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllMeshComponents, "BmGame.RCinematicBatmobileBase.GetAllMeshComponents", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -245,28 +245,28 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_SetNoProxyActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNoProxyActor;
     /// <summary>
     /// Function: SetNoProxyActor
     /// </summary>
     public unsafe override void SetNoProxyActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNoProxyActor, "BmGame.RCinematicBatmobileBase.SetNoProxyActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNoProxyActor, "BmGame.RCinematicBatmobileBase.SetNoProxyActor", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BeginAnimControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginAnimControl;
     /// <summary>
     /// Function: BeginAnimControl
     /// </summary>
     public unsafe override void BeginAnimControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginAnimControl, "BmGame.RCinematicBatmobileBase.BeginAnimControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginAnimControl, "BmGame.RCinematicBatmobileBase.BeginAnimControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -275,56 +275,56 @@ public partial class RCinematicBatmobileBase : BmSDK.BmGame.RCinematicVehicle, B
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RCinematicBatmobileBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RCinematicBatmobileBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RCinematicBatmobileBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RCinematicBatmobileBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RCinematicBatmobileBase.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "BmGame.RCinematicBatmobileBase.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SkipMatineeWithBootVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SkipMatineeWithBootVisible;
     /// <summary>
     /// Function: SkipMatineeWithBootVisible
     /// </summary>
     public unsafe virtual void SkipMatineeWithBootVisible(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SkipMatineeWithBootVisible, "BmGame.RCinematicBatmobileBase.SkipMatineeWithBootVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SkipMatineeWithBootVisible, "BmGame.RCinematicBatmobileBase.SkipMatineeWithBootVisible", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);

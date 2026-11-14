@@ -73,14 +73,14 @@ public partial class ActorFactory : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<ActorFactory>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PostCreateActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostCreateActor;
     /// <summary>
     /// Function: PostCreateActor
     /// </summary>
     public unsafe virtual void PostCreateActor(BmSDK.Engine.Actor NewActor, BmSDK.Engine.SeqAct_ActorFactory ActorFactoryData = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostCreateActor, "Engine.ActorFactory.PostCreateActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostCreateActor, "Engine.ActorFactory.PostCreateActor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewActor, paramsPtr + 0);

@@ -78,70 +78,70 @@ public partial class RBMBehaviour_Ladder : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_Ladder>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanThugBeFrozen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanThugBeFrozen;
     /// <summary>
     /// Function: CanThugBeFrozen
     /// </summary>
     public unsafe override bool CanThugBeFrozen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanThugBeFrozen, "BmGame.RBMBehaviour_Ladder.CanThugBeFrozen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanThugBeFrozen, "BmGame.RBMBehaviour_Ladder.CanThugBeFrozen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayJumpDownLadderAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayJumpDownLadderAnim;
     /// <summary>
     /// Function: PlayJumpDownLadderAnim
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId PlayJumpDownLadderAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayJumpDownLadderAnim, "BmGame.RBMBehaviour_Ladder.PlayJumpDownLadderAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayJumpDownLadderAnim, "BmGame.RBMBehaviour_Ladder.PlayJumpDownLadderAnim", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PawnWantsToJump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PawnWantsToJump;
     /// <summary>
     /// Function: PawnWantsToJump
     /// </summary>
     public unsafe virtual bool PawnWantsToJump()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PawnWantsToJump, "BmGame.RBMBehaviour_Ladder.PawnWantsToJump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PawnWantsToJump, "BmGame.RBMBehaviour_Ladder.PawnWantsToJump", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayFullClimbLadderAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFullClimbLadderAnim;
     /// <summary>
     /// Function: PlayFullClimbLadderAnim
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId PlayFullClimbLadderAnim()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFullClimbLadderAnim, "BmGame.RBMBehaviour_Ladder.PlayFullClimbLadderAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayFullClimbLadderAnim, "BmGame.RBMBehaviour_Ladder.PlayFullClimbLadderAnim", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayedQueuedClimbAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayedQueuedClimbAnim;
     /// <summary>
     /// Function: PlayedQueuedClimbAnim
     /// </summary>
     public unsafe virtual void PlayedQueuedClimbAnim(BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId QueuedTransition, float TimeLeftOver)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayedQueuedClimbAnim, "BmGame.RBMBehaviour_Ladder.PlayedQueuedClimbAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayedQueuedClimbAnim, "BmGame.RBMBehaviour_Ladder.PlayedQueuedClimbAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(QueuedTransition, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RBMBehaviour_Ladder : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_PlayClimbLadderAnim;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayClimbLadderAnim;
     /// <summary>
     /// Function: PlayClimbLadderAnim
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId PlayClimbLadderAnim(BmSDK.FName LadderTransName, bool bQueue = default, bool bCompensateForLadderHeight = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayClimbLadderAnim, "BmGame.RBMBehaviour_Ladder.PlayClimbLadderAnim");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayClimbLadderAnim, "BmGame.RBMBehaviour_Ladder.PlayClimbLadderAnim", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LadderTransName, paramsPtr + 0);
@@ -167,98 +167,98 @@ public partial class RBMBehaviour_Ladder : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetClimbLadderAnimName_Out;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClimbLadderAnimName_Out;
     /// <summary>
     /// Function: GetClimbLadderAnimName_Out
     /// </summary>
     public unsafe virtual BmSDK.FName GetClimbLadderAnimName_Out()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClimbLadderAnimName_Out, "BmGame.RBMBehaviour_Ladder.GetClimbLadderAnimName_Out");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClimbLadderAnimName_Out, "BmGame.RBMBehaviour_Ladder.GetClimbLadderAnimName_Out", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClimbLadderAnimName_Middle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClimbLadderAnimName_Middle;
     /// <summary>
     /// Function: GetClimbLadderAnimName_Middle
     /// </summary>
     public unsafe virtual BmSDK.FName GetClimbLadderAnimName_Middle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClimbLadderAnimName_Middle, "BmGame.RBMBehaviour_Ladder.GetClimbLadderAnimName_Middle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClimbLadderAnimName_Middle, "BmGame.RBMBehaviour_Ladder.GetClimbLadderAnimName_Middle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetClimbLadderAnimName_In;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetClimbLadderAnimName_In;
     /// <summary>
     /// Function: GetClimbLadderAnimName_In
     /// </summary>
     public unsafe virtual BmSDK.FName GetClimbLadderAnimName_In()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetClimbLadderAnimName_In, "BmGame.RBMBehaviour_Ladder.GetClimbLadderAnimName_In");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetClimbLadderAnimName_In, "BmGame.RBMBehaviour_Ladder.GetClimbLadderAnimName_In", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AllowNextClimber;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowNextClimber;
     /// <summary>
     /// Function: AllowNextClimber
     /// </summary>
     public unsafe virtual void AllowNextClimber()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowNextClimber, "BmGame.RBMBehaviour_Ladder.AllowNextClimber");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowNextClimber, "BmGame.RBMBehaviour_Ladder.AllowNextClimber", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EnableRagdollOnHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableRagdollOnHit;
     /// <summary>
     /// Function: EnableRagdollOnHit
     /// </summary>
     public unsafe virtual void EnableRagdollOnHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableRagdollOnHit, "BmGame.RBMBehaviour_Ladder.EnableRagdollOnHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableRagdollOnHit, "BmGame.RBMBehaviour_Ladder.EnableRagdollOnHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DisableRagdollOnHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisableRagdollOnHit;
     /// <summary>
     /// Function: DisableRagdollOnHit
     /// </summary>
     public unsafe virtual void DisableRagdollOnHit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisableRagdollOnHit, "BmGame.RBMBehaviour_Ladder.DisableRagdollOnHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableRagdollOnHit, "BmGame.RBMBehaviour_Ladder.DisableRagdollOnHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyChase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyChase;
     /// <summary>
     /// Function: NotifyChase
     /// </summary>
     public unsafe virtual void NotifyChase(System.Numerics.Vector3 LadderForward)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyChase, "BmGame.RBMBehaviour_Ladder.NotifyChase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyChase, "BmGame.RBMBehaviour_Ladder.NotifyChase", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LadderForward, paramsPtr + 0);
@@ -266,28 +266,28 @@ public partial class RBMBehaviour_Ladder : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_CheckPawnsBelow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckPawnsBelow;
     /// <summary>
     /// Function: CheckPawnsBelow
     /// </summary>
     public unsafe virtual void CheckPawnsBelow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckPawnsBelow, "BmGame.RBMBehaviour_Ladder.CheckPawnsBelow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckPawnsBelow, "BmGame.RBMBehaviour_Ladder.CheckPawnsBelow", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KnockBackPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KnockBackPawn;
     /// <summary>
     /// Function: KnockBackPawn
     /// </summary>
     public unsafe virtual void KnockBackPawn(BmSDK.BmGame.RPawnCombat TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KnockBackPawn, "BmGame.RBMBehaviour_Ladder.KnockBackPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KnockBackPawn, "BmGame.RBMBehaviour_Ladder.KnockBackPawn", this);
         byte* paramsPtr = stackalloc byte[272];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -295,14 +295,14 @@ public partial class RBMBehaviour_Ladder : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_WillLandOnPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WillLandOnPawn;
     /// <summary>
     /// Function: WillLandOnPawn
     /// </summary>
     public unsafe virtual bool WillLandOnPawn(BmSDK.BmGame.RPawn TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WillLandOnPawn, "BmGame.RBMBehaviour_Ladder.WillLandOnPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WillLandOnPawn, "BmGame.RBMBehaviour_Ladder.WillLandOnPawn", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -310,42 +310,42 @@ public partial class RBMBehaviour_Ladder : BmSDK.BmGame.RBMBehaviour, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_OnDeactivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnDeactivate;
     /// <summary>
     /// Function: OnDeactivate
     /// </summary>
     public unsafe override void OnDeactivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_Ladder.OnDeactivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmGame.RBMBehaviour_Ladder.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMBehaviour_Ladder.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMBehaviour_Ladder.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartTraversal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTraversal;
     /// <summary>
     /// Function: StartTraversal
     /// </summary>
     public unsafe virtual void StartTraversal(BmSDK.BmGame.RLadder NewLadder, bool bClimbing)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTraversal, "BmGame.RBMBehaviour_Ladder.StartTraversal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTraversal, "BmGame.RBMBehaviour_Ladder.StartTraversal", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewLadder, paramsPtr + 0);

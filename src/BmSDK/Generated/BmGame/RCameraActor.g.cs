@@ -78,14 +78,14 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCameraActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFOV;
     /// <summary>
     /// Function: SetFOV
     /// </summary>
     public unsafe virtual void SetFOV(float DesiredValue, float TimeToChange)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFOV, "BmGame.RCameraActor.SetFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFOV, "BmGame.RCameraActor.SetFOV", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredValue, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetGameSpeed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetGameSpeed;
     /// <summary>
     /// Function: SetGameSpeed
     /// </summary>
     public unsafe virtual void SetGameSpeed(float DesiredValue, float TimeToChange)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetGameSpeed, "BmGame.RCameraActor.SetGameSpeed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetGameSpeed, "BmGame.RCameraActor.SetGameSpeed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredValue, paramsPtr + 0);
@@ -110,14 +110,14 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyCameraModifiers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCameraModifiers;
     /// <summary>
     /// Function: ApplyCameraModifiers
     /// </summary>
     public unsafe virtual void ApplyCameraModifiers(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyCameraModifiers, "BmGame.RCameraActor.ApplyCameraModifiers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyCameraModifiers, "BmGame.RCameraActor.ApplyCameraModifiers", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CorrectFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CorrectFOV;
     /// <summary>
     /// Function: CorrectFOV
     /// </summary>
     public unsafe virtual void CorrectFOV(out float CorrectedFOV, BmSDK.BmGame.R3rdPersonCamera OwnerCam)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CorrectFOV, "BmGame.RCameraActor.CorrectFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CorrectFOV, "BmGame.RCameraActor.CorrectFOV", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out CorrectedFOV);
@@ -146,14 +146,14 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetCameraView;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCameraView;
     /// <summary>
     /// Function: GetCameraView
     /// </summary>
     public unsafe override void GetCameraView(float DeltaTime, out BmSDK.GameObject.FTPOV OutPOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCameraView, "BmGame.RCameraActor.GetCameraView");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCameraView, "BmGame.RCameraActor.GetCameraView", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyCameraOverlays;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyCameraOverlays;
     /// <summary>
     /// Function: ApplyCameraOverlays
     /// </summary>
     public unsafe virtual void ApplyCameraOverlays(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyCameraOverlays, "BmGame.RCameraActor.ApplyCameraOverlays");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyCameraOverlays, "BmGame.RCameraActor.ApplyCameraOverlays", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class RCameraActor : BmSDK.Engine.CameraActor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CorrectedAspectRatioFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CorrectedAspectRatioFOV;
     /// <summary>
     /// Function: CorrectedAspectRatioFOV
     /// </summary>
     public unsafe virtual float CorrectedAspectRatioFOV(out float CorrectedFOV, BmSDK.BmGame.R3rdPersonCamera OwnerCam)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CorrectedAspectRatioFOV, "BmGame.RCameraActor.CorrectedAspectRatioFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CorrectedAspectRatioFOV, "BmGame.RCameraActor.CorrectedAspectRatioFOV", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out CorrectedFOV);

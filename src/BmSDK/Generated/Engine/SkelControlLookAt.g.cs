@@ -78,14 +78,14 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<SkelControlLookAt>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CanLookAtPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanLookAtPoint;
     /// <summary>
     /// Function: CanLookAtPoint
     /// </summary>
     public unsafe virtual bool CanLookAtPoint(System.Numerics.Vector3 PointLoc, bool bDrawDebugInfo = default, bool bDebugUsePersistentLines = default, bool bDebugFlushLinesFirst = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanLookAtPoint, "Engine.SkelControlLookAt.CanLookAtPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanLookAtPoint, "Engine.SkelControlLookAt.CanLookAtPoint", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PointLoc, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_SetLookAtAlpha;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLookAtAlpha;
     /// <summary>
     /// Function: SetLookAtAlpha
     /// </summary>
     public unsafe virtual void SetLookAtAlpha(float DesiredAlpha, float DesiredBlendTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLookAtAlpha, "Engine.SkelControlLookAt.SetLookAtAlpha");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLookAtAlpha, "Engine.SkelControlLookAt.SetLookAtAlpha", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DesiredAlpha, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_InterpolateTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InterpolateTargetLocation;
     /// <summary>
     /// Function: InterpolateTargetLocation
     /// </summary>
     public unsafe virtual void InterpolateTargetLocation(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InterpolateTargetLocation, "Engine.SkelControlLookAt.InterpolateTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InterpolateTargetLocation, "Engine.SkelControlLookAt.InterpolateTargetLocation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -148,14 +148,14 @@ public partial class SkelControlLookAt : BmSDK.Engine.SkelControlBase, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_SetTargetLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTargetLocation;
     /// <summary>
     /// Function: SetTargetLocation
     /// </summary>
     public unsafe virtual void SetTargetLocation(System.Numerics.Vector3 NewTargetLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTargetLocation, "Engine.SkelControlLookAt.SetTargetLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTargetLocation, "Engine.SkelControlLookAt.SetTargetLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTargetLocation, paramsPtr + 0);

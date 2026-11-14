@@ -78,14 +78,14 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<RNavigationQueryObject>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_HandleInvalidatedState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInvalidatedState;
     /// <summary>
     /// Function: HandleInvalidatedState
     /// </summary>
     public unsafe virtual void HandleInvalidatedState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleInvalidatedState, "Engine.RNavigationQueryObject.HandleInvalidatedState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleInvalidatedState, "Engine.RNavigationQueryObject.HandleInvalidatedState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_UnregisterWithNavMeshWorld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnregisterWithNavMeshWorld;
     /// <summary>
     /// Function: UnregisterWithNavMeshWorld
     /// </summary>
     public unsafe virtual void UnregisterWithNavMeshWorld()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnregisterWithNavMeshWorld, "Engine.RNavigationQueryObject.UnregisterWithNavMeshWorld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnregisterWithNavMeshWorld, "Engine.RNavigationQueryObject.UnregisterWithNavMeshWorld", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -120,14 +120,14 @@ public partial class RNavigationQueryObject : BmSDK.GameObject, BmSDK.IGameObjec
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterWithNavMeshWorld;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterWithNavMeshWorld;
     /// <summary>
     /// Function: RegisterWithNavMeshWorld
     /// </summary>
     public unsafe virtual void RegisterWithNavMeshWorld()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterWithNavMeshWorld, "Engine.RNavigationQueryObject.RegisterWithNavMeshWorld");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterWithNavMeshWorld, "Engine.RNavigationQueryObject.RegisterWithNavMeshWorld", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

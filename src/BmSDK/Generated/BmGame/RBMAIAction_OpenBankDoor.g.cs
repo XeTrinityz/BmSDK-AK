@@ -78,42 +78,42 @@ public partial class RBMAIAction_OpenBankDoor : BmSDK.BmGame.RBMAIAction, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RBMAIAction_OpenBankDoor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AttachExplosiveToPanel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachExplosiveToPanel;
     /// <summary>
     /// Function: AttachExplosiveToPanel
     /// </summary>
     public unsafe virtual void AttachExplosiveToPanel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachExplosiveToPanel, "BmGame.RBMAIAction_OpenBankDoor.AttachExplosiveToPanel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachExplosiveToPanel, "BmGame.RBMAIAction_OpenBankDoor.AttachExplosiveToPanel", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachExplosiveToHand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachExplosiveToHand;
     /// <summary>
     /// Function: AttachExplosiveToHand
     /// </summary>
     public unsafe virtual void AttachExplosiveToHand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachExplosiveToHand, "BmGame.RBMAIAction_OpenBankDoor.AttachExplosiveToHand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachExplosiveToHand, "BmGame.RBMAIAction_OpenBankDoor.AttachExplosiveToHand", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetDoor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDoor;
     /// <summary>
     /// Function: SetDoor
     /// </summary>
     public unsafe virtual void SetDoor(BmSDK.BmGame.RBankDoorBase Door)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDoor, "BmGame.RBMAIAction_OpenBankDoor.SetDoor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDoor, "BmGame.RBMAIAction_OpenBankDoor.SetDoor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Door, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RBMAIAction_OpenBankDoor : BmSDK.BmGame.RBMAIAction, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_OnActivate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnActivate;
     /// <summary>
     /// Function: OnActivate
     /// </summary>
     public unsafe override void OnActivate()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnActivate, "BmGame.RBMAIAction_OpenBankDoor.OnActivate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmGame.RBMAIAction_OpenBankDoor.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

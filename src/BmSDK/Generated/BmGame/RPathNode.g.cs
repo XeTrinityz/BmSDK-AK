@@ -78,14 +78,14 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RPathNode>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetTimeSinceLastSighting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTimeSinceLastSighting;
     /// <summary>
     /// Function: GetTimeSinceLastSighting
     /// </summary>
     public unsafe virtual float GetTimeSinceLastSighting(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTimeSinceLastSighting, "BmGame.RPathNode.GetTimeSinceLastSighting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTimeSinceLastSighting, "BmGame.RPathNode.GetTimeSinceLastSighting", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateLastSeenTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLastSeenTime;
     /// <summary>
     /// Function: UpdateLastSeenTime
     /// </summary>
     public unsafe virtual void UpdateLastSeenTime(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLastSeenTime, "BmGame.RPathNode.UpdateLastSeenTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLastSeenTime, "BmGame.RPathNode.UpdateLastSeenTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsSafe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSafe;
     /// <summary>
     /// Function: IsSafe
     /// </summary>
     public unsafe virtual bool IsSafe(BmSDK.Engine.Pawn TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSafe, "BmGame.RPathNode.IsSafe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSafe, "BmGame.RPathNode.IsSafe", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);

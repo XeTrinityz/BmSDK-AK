@@ -78,28 +78,28 @@ public partial class RResonatorTunerBm : BmSDK.BmGame.RResonatorTuner, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RResonatorTunerBm>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ConversationReTriggerTimeout;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConversationReTriggerTimeout;
     /// <summary>
     /// Function: ConversationReTriggerTimeout
     /// </summary>
     public unsafe virtual void ConversationReTriggerTimeout()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConversationReTriggerTimeout, "BmScript.RResonatorTunerBm.ConversationReTriggerTimeout");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConversationReTriggerTimeout, "BmScript.RResonatorTunerBm.ConversationReTriggerTimeout", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayCodesNeededDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCodesNeededDialogue;
     /// <summary>
     /// Function: PlayCodesNeededDialogue
     /// </summary>
     public unsafe override void PlayCodesNeededDialogue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCodesNeededDialogue, "BmScript.RResonatorTunerBm.PlayCodesNeededDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCodesNeededDialogue, "BmScript.RResonatorTunerBm.PlayCodesNeededDialogue", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

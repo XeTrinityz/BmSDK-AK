@@ -78,14 +78,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         where TComponent : class, Framework.IScriptComponent<RCheckpointBlockadeBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsStaticForFloorCorrection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStaticForFloorCorrection;
     /// <summary>
     /// Function: IsStaticForFloorCorrection
     /// </summary>
     public unsafe override bool IsStaticForFloorCorrection()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStaticForFloorCorrection, "BmGame.RCheckpointBlockadeBase.IsStaticForFloorCorrection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStaticForFloorCorrection, "BmGame.RCheckpointBlockadeBase.IsStaticForFloorCorrection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSound;
     /// <summary>
     /// Function: TriggerSound
     /// </summary>
     public unsafe virtual void TriggerSound(BmSDK.Engine.AkEvent UpDownEvent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSound, "BmGame.RCheckpointBlockadeBase.TriggerSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSound, "BmGame.RCheckpointBlockadeBase.TriggerSound", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UpDownEvent, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_CleanupSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanupSound;
     /// <summary>
     /// Function: CleanupSound
     /// </summary>
     public unsafe virtual void CleanupSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CleanupSound, "BmGame.RCheckpointBlockadeBase.CleanupSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CleanupSound, "BmGame.RCheckpointBlockadeBase.CleanupSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -142,14 +142,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_SetupSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupSound;
     /// <summary>
     /// Function: SetupSound
     /// </summary>
     public unsafe virtual void SetupSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupSound, "BmGame.RCheckpointBlockadeBase.SetupSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupSound, "BmGame.RCheckpointBlockadeBase.SetupSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -163,42 +163,42 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RCheckpointBlockadeBase.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RCheckpointBlockadeBase.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RCheckpointBlockadeBase.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RCheckpointBlockadeBase.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HitByBatmobile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitByBatmobile;
     /// <summary>
     /// Function: HitByBatmobile
     /// </summary>
     public unsafe virtual void HitByBatmobile(float Speed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HitByBatmobile, "BmGame.RCheckpointBlockadeBase.HitByBatmobile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitByBatmobile, "BmGame.RCheckpointBlockadeBase.HitByBatmobile", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speed, paramsPtr + 0);
@@ -206,14 +206,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_SetBarrierState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBarrierState;
     /// <summary>
     /// Function: SetBarrierState
     /// </summary>
     public unsafe virtual void SetBarrierState(bool bNewVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBarrierState, "BmGame.RCheckpointBlockadeBase.SetBarrierState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBarrierState, "BmGame.RCheckpointBlockadeBase.SetBarrierState", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewVal, paramsPtr + 0);
@@ -221,28 +221,28 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RCheckpointBlockadeBase.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RCheckpointBlockadeBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOn;
     /// <summary>
     /// Function: ForceObstaclePolysOn
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOn, "BmGame.RCheckpointBlockadeBase.ForceObstaclePolysOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOn, "BmGame.RCheckpointBlockadeBase.ForceObstaclePolysOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -256,14 +256,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_ForceObstaclePolysOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceObstaclePolysOff;
     /// <summary>
     /// Function: ForceObstaclePolysOff
     /// </summary>
     public unsafe virtual void ForceObstaclePolysOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceObstaclePolysOff, "BmGame.RCheckpointBlockadeBase.ForceObstaclePolysOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceObstaclePolysOff, "BmGame.RCheckpointBlockadeBase.ForceObstaclePolysOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -277,14 +277,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_ClearNavMeshEdgeCosts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavMeshEdgeCosts;
     /// <summary>
     /// Function: ClearNavMeshEdgeCosts
     /// </summary>
     public unsafe virtual void ClearNavMeshEdgeCosts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RCheckpointBlockadeBase.ClearNavMeshEdgeCosts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNavMeshEdgeCosts, "BmGame.RCheckpointBlockadeBase.ClearNavMeshEdgeCosts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -298,14 +298,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_SetNavMeshEdgeCosts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNavMeshEdgeCosts;
     /// <summary>
     /// Function: SetNavMeshEdgeCosts
     /// </summary>
     public unsafe virtual void SetNavMeshEdgeCosts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNavMeshEdgeCosts, "BmGame.RCheckpointBlockadeBase.SetNavMeshEdgeCosts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNavMeshEdgeCosts, "BmGame.RCheckpointBlockadeBase.SetNavMeshEdgeCosts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -319,14 +319,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_EnableObstaclePolysFromLoadedPylons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnableObstaclePolysFromLoadedPylons;
     /// <summary>
     /// Function: EnableObstaclePolysFromLoadedPylons
     /// </summary>
     public unsafe virtual void EnableObstaclePolysFromLoadedPylons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnableObstaclePolysFromLoadedPylons, "BmGame.RCheckpointBlockadeBase.EnableObstaclePolysFromLoadedPylons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableObstaclePolysFromLoadedPylons, "BmGame.RCheckpointBlockadeBase.EnableObstaclePolysFromLoadedPylons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -340,14 +340,14 @@ public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActo
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveObstaclePolysFromLoadedPylons;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveObstaclePolysFromLoadedPylons;
     /// <summary>
     /// Function: RemoveObstaclePolysFromLoadedPylons
     /// </summary>
     public unsafe virtual void RemoveObstaclePolysFromLoadedPylons()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveObstaclePolysFromLoadedPylons, "BmGame.RCheckpointBlockadeBase.RemoveObstaclePolysFromLoadedPylons");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveObstaclePolysFromLoadedPylons, "BmGame.RCheckpointBlockadeBase.RemoveObstaclePolysFromLoadedPylons", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

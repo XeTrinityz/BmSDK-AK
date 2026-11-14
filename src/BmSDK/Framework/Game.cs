@@ -187,7 +187,8 @@ public static partial class Game
         where T : GameObject, IGameObject => GameObject.FindObject(pathName, T.StaticClass()) as T;
 
     /// <summary>
-    /// Returns an enumerable containing all objects of the given type.
+    /// Returns an enumerable containing all objects of the given type. Actors the game has destroyed
+    /// or queued for destruction are left out (see <see cref="GameObject.IsAlive"/>).
     /// </summary>
     /// <remarks>
     /// Can be slow, in cases where many objects of the given type exist.

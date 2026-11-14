@@ -91,42 +91,42 @@ public partial class RSeqAct_Objective : BmSDK.Engine.SequenceAction, BmSDK.IGam
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_Objective.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_Objective.Activated", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateObjectiveMarker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateObjectiveMarker;
     /// <summary>
     /// Function: ActivateObjectiveMarker
     /// </summary>
     public unsafe virtual void ActivateObjectiveMarker()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateObjectiveMarker, "BmGame.RSeqAct_Objective.ActivateObjectiveMarker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateObjectiveMarker, "BmGame.RSeqAct_Objective.ActivateObjectiveMarker", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddSubObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddSubObjective;
     /// <summary>
     /// Function: AddSubObjective
     /// </summary>
     public unsafe virtual void AddSubObjective(bool bRealAdd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddSubObjective, "BmGame.RSeqAct_Objective.AddSubObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddSubObjective, "BmGame.RSeqAct_Objective.AddSubObjective", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bRealAdd, paramsPtr + 0);
@@ -134,14 +134,14 @@ public partial class RSeqAct_Objective : BmSDK.Engine.SequenceAction, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_AddMainObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddMainObjective;
     /// <summary>
     /// Function: AddMainObjective
     /// </summary>
     public unsafe virtual void AddMainObjective(bool bRealAdd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMainObjective, "BmGame.RSeqAct_Objective.AddMainObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddMainObjective, "BmGame.RSeqAct_Objective.AddMainObjective", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bRealAdd, paramsPtr + 0);
@@ -149,49 +149,51 @@ public partial class RSeqAct_Objective : BmSDK.Engine.SequenceAction, BmSDK.IGam
         return;
     }
 
-    private static BmSDK.Function __fn_GetSubObjectiveName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubObjectiveName;
     /// <summary>
     /// Function: GetSubObjectiveName
     /// </summary>
     public unsafe virtual BmSDK.FString GetSubObjectiveName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSubObjectiveName, "BmGame.RSeqAct_Objective.GetSubObjectiveName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSubObjectiveName, "BmGame.RSeqAct_Objective.GetSubObjectiveName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetObjectiveName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectiveName;
     /// <summary>
     /// Function: GetObjectiveName
     /// </summary>
     public unsafe virtual BmSDK.FString GetObjectiveName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectiveName, "BmGame.RSeqAct_Objective.GetObjectiveName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectiveName, "BmGame.RSeqAct_Objective.GetObjectiveName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddMessage;
     /// <summary>
     /// Function: AddMessage
     /// </summary>
-    public unsafe virtual void AddMessage(BmSDK.FString Title, BmSDK.FString Desc, bool bIsAdd, bool bIsComplete)
+    public unsafe virtual void AddMessage(BmSDK.FStringArg Title, BmSDK.FStringArg Desc, bool bIsAdd, bool bIsComplete)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMessage, "BmGame.RSeqAct_Objective.AddMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddMessage, "BmGame.RSeqAct_Objective.AddMessage", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Desc, paramsPtr + 16);
+        Title.WriteTo(paramsPtr + 0);
+        Desc.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsAdd, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsComplete, paramsPtr + 36);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 

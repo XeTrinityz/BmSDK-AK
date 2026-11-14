@@ -78,14 +78,14 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<SplineLoftActor>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateSplineParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSplineParams;
     /// <summary>
     /// Function: UpdateSplineParams
     /// </summary>
     public unsafe virtual void UpdateSplineParams()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSplineParams, "Engine.SplineLoftActor.UpdateSplineParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSplineParams, "Engine.SplineLoftActor.UpdateSplineParams", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class SplineLoftActor : BmSDK.Engine.SplineActor, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_ClearLoftMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearLoftMesh;
     /// <summary>
     /// Function: ClearLoftMesh
     /// </summary>
     public unsafe virtual void ClearLoftMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearLoftMesh, "Engine.SplineLoftActor.ClearLoftMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLoftMesh, "Engine.SplineLoftActor.ClearLoftMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

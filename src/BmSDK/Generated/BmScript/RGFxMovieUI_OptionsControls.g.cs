@@ -78,28 +78,28 @@ public partial class RGFxMovieUI_OptionsControls : BmSDK.BmGame.RGFxMovieUI, BmS
         where TComponent : class, Framework.IScriptComponent<RGFxMovieUI_OptionsControls>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CloseScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseScreen;
     /// <summary>
     /// Function: CloseScreen
     /// </summary>
     public unsafe override void CloseScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseScreen, "BmScript.RGFxMovieUI_OptionsControls.CloseScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseScreen, "BmScript.RGFxMovieUI_OptionsControls.CloseScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCurrentPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentPage;
     /// <summary>
     /// Function: SetCurrentPage
     /// </summary>
     public unsafe virtual void SetCurrentPage(int nPage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentPage, "BmScript.RGFxMovieUI_OptionsControls.SetCurrentPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCurrentPage, "BmScript.RGFxMovieUI_OptionsControls.SetCurrentPage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nPage, paramsPtr + 0);
@@ -107,49 +107,54 @@ public partial class RGFxMovieUI_OptionsControls : BmSDK.BmGame.RGFxMovieUI, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_AppendPage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AppendPage;
     /// <summary>
     /// Function: AppendPage
     /// </summary>
-    public unsafe virtual void AppendPage(BmSDK.FString sDevice, BmSDK.FString sScheme, BmSDK.FString sPackage, BmSDK.FString sConfig = default)
+    public unsafe virtual void AppendPage(BmSDK.FStringArg sDevice, BmSDK.FStringArg sScheme, BmSDK.FStringArg sPackage, BmSDK.FStringArg sConfig = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AppendPage, "BmScript.RGFxMovieUI_OptionsControls.AppendPage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AppendPage, "BmScript.RGFxMovieUI_OptionsControls.AppendPage", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sDevice, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sScheme, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sPackage, paramsPtr + 32);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sConfig, paramsPtr + 48);
+        sDevice.WriteTo(paramsPtr + 0);
+        sScheme.WriteTo(paramsPtr + 16);
+        sPackage.WriteTo(paramsPtr + 32);
+        sConfig.WriteTo(paramsPtr + 48);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 48);
         return;
     }
 
-    private static BmSDK.Function __fn_XI_RequestPages;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_XI_RequestPages;
     /// <summary>
     /// Function: XI_RequestPages
     /// </summary>
-    public unsafe virtual void XI_RequestPages(BmSDK.FString sPath)
+    public unsafe virtual void XI_RequestPages(BmSDK.FStringArg sPath)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_XI_RequestPages, "BmScript.RGFxMovieUI_OptionsControls.XI_RequestPages");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_XI_RequestPages, "BmScript.RGFxMovieUI_OptionsControls.XI_RequestPages", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sPath, paramsPtr + 0);
+        sPath.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmScript.RGFxMovieUI_OptionsControls.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmScript.RGFxMovieUI_OptionsControls.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);

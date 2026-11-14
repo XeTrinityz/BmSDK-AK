@@ -78,14 +78,14 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
         where TComponent : class, Framework.IScriptComponent<SceneCapture2DHitMaskComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetFadingStartTimeSinceHit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFadingStartTimeSinceHit;
     /// <summary>
     /// Function: SetFadingStartTimeSinceHit
     /// </summary>
     public unsafe virtual void SetFadingStartTimeSinceHit(float InFadingStartTimeSinceHit)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFadingStartTimeSinceHit, "Engine.SceneCapture2DHitMaskComponent.SetFadingStartTimeSinceHit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFadingStartTimeSinceHit, "Engine.SceneCapture2DHitMaskComponent.SetFadingStartTimeSinceHit", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InFadingStartTimeSinceHit, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
         return;
     }
 
-    private static BmSDK.Function __fn_SetCaptureParameters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureParameters;
     /// <summary>
     /// Function: SetCaptureParameters
     /// </summary>
     public unsafe virtual void SetCaptureParameters(System.Numerics.Vector3 InMaskPosition, float InMaskRadius, System.Numerics.Vector3 InStartupPosition, bool bOnlyWhenFacing, System.Numerics.Vector3 InChannelMask)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCaptureParameters, "Engine.SceneCapture2DHitMaskComponent.SetCaptureParameters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCaptureParameters, "Engine.SceneCapture2DHitMaskComponent.SetCaptureParameters", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InMaskPosition, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class SceneCapture2DHitMaskComponent : BmSDK.Engine.SceneCaptureC
         return;
     }
 
-    private static BmSDK.Function __fn_SetCaptureTargetTexture;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCaptureTargetTexture;
     /// <summary>
     /// Function: SetCaptureTargetTexture
     /// </summary>
     public unsafe virtual void SetCaptureTargetTexture(BmSDK.Engine.TextureRenderTarget2D InTextureTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCaptureTargetTexture, "Engine.SceneCapture2DHitMaskComponent.SetCaptureTargetTexture");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCaptureTargetTexture, "Engine.SceneCapture2DHitMaskComponent.SetCaptureTargetTexture", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InTextureTarget, paramsPtr + 0);

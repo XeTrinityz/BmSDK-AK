@@ -78,42 +78,42 @@ public partial class RBMWeaponBottle : BmSDK.BmScript.RBMWeaponKnifeBase, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RBMWeaponBottle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PlaySmashFX;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlaySmashFX;
     /// <summary>
     /// Function: PlaySmashFX
     /// </summary>
     public unsafe virtual void PlaySmashFX()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlaySmashFX, "BmScript.RBMWeaponBottle.PlaySmashFX");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySmashFX, "BmScript.RBMWeaponBottle.PlaySmashFX", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Smash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Smash;
     /// <summary>
     /// Function: Smash
     /// </summary>
     public unsafe virtual void Smash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Smash, "BmScript.RBMWeaponBottle.Smash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Smash, "BmScript.RBMWeaponBottle.Smash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Unsmash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Unsmash;
     /// <summary>
     /// Function: Unsmash
     /// </summary>
     public unsafe virtual void Unsmash()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Unsmash, "BmScript.RBMWeaponBottle.Unsmash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Unsmash, "BmScript.RBMWeaponBottle.Unsmash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

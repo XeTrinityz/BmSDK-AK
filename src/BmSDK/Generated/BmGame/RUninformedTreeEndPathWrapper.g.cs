@@ -78,84 +78,84 @@ public partial class RUninformedTreeEndPathWrapper : BmSDK.GameObject, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RUninformedTreeEndPathWrapper>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DrawPaths;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawPaths;
     /// <summary>
     /// Function: DrawPaths
     /// </summary>
     public unsafe virtual void DrawPaths()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawPaths, "BmGame.RUninformedTreeEndPathWrapper.DrawPaths");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawPaths, "BmGame.RUninformedTreeEndPathWrapper.DrawPaths", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsEmpty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEmpty;
     /// <summary>
     /// Function: IsEmpty
     /// </summary>
     public unsafe virtual bool IsEmpty()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEmpty, "BmGame.RUninformedTreeEndPathWrapper.IsEmpty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEmpty, "BmGame.RUninformedTreeEndPathWrapper.IsEmpty", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsSearching;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSearching;
     /// <summary>
     /// Function: IsSearching
     /// </summary>
     public unsafe virtual bool IsSearching()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSearching, "BmGame.RUninformedTreeEndPathWrapper.IsSearching");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSearching, "BmGame.RUninformedTreeEndPathWrapper.IsSearching", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FreeAllHandles;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FreeAllHandles;
     /// <summary>
     /// Function: FreeAllHandles
     /// </summary>
     public unsafe virtual void FreeAllHandles()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FreeAllHandles, "BmGame.RUninformedTreeEndPathWrapper.FreeAllHandles");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FreeAllHandles, "BmGame.RUninformedTreeEndPathWrapper.FreeAllHandles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNumPaths;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumPaths;
     /// <summary>
     /// Function: GetNumPaths
     /// </summary>
     public unsafe virtual int GetNumPaths()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumPaths, "BmGame.RUninformedTreeEndPathWrapper.GetNumPaths");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumPaths, "BmGame.RUninformedTreeEndPathWrapper.GetNumPaths", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetAllOpenEnds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllOpenEnds;
     /// <summary>
     /// Function: GetAllOpenEnds
     /// </summary>
     public unsafe virtual void GetAllOpenEnds(out BmSDK.TArray<BmSDK.BmGame.RChasePoint> UsableEnds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllOpenEnds, "BmGame.RUninformedTreeEndPathWrapper.GetAllOpenEnds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllOpenEnds, "BmGame.RUninformedTreeEndPathWrapper.GetAllOpenEnds", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -163,14 +163,14 @@ public partial class RUninformedTreeEndPathWrapper : BmSDK.GameObject, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_GetAllUsableTreeEnds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllUsableTreeEnds;
     /// <summary>
     /// Function: GetAllUsableTreeEnds
     /// </summary>
     public unsafe virtual void GetAllUsableTreeEnds(out BmSDK.TArray<BmSDK.BmGame.RChasePoint> UsableEnds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllUsableTreeEnds, "BmGame.RUninformedTreeEndPathWrapper.GetAllUsableTreeEnds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllUsableTreeEnds, "BmGame.RUninformedTreeEndPathWrapper.GetAllUsableTreeEnds", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -178,14 +178,14 @@ public partial class RUninformedTreeEndPathWrapper : BmSDK.GameObject, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_GetShortestPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetShortestPath;
     /// <summary>
     /// Function: GetShortestPath
     /// </summary>
     public unsafe virtual bool GetShortestPath(out float bestDist, out BmSDK.BmGame.RChasePoint BestTreeEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetShortestPath, "BmGame.RUninformedTreeEndPathWrapper.GetShortestPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetShortestPath, "BmGame.RUninformedTreeEndPathWrapper.GetShortestPath", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out bestDist);
@@ -198,14 +198,14 @@ public partial class RUninformedTreeEndPathWrapper : BmSDK.GameObject, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_AddRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddRequest;
     /// <summary>
     /// Function: AddRequest
     /// </summary>
     public unsafe virtual void AddRequest(BmSDK.BmGame.RChasePoint NewTreeEnd)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddRequest, "BmGame.RUninformedTreeEndPathWrapper.AddRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddRequest, "BmGame.RUninformedTreeEndPathWrapper.AddRequest", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTreeEnd, paramsPtr + 0);
@@ -213,14 +213,14 @@ public partial class RUninformedTreeEndPathWrapper : BmSDK.GameObject, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_SetDestPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDestPoint;
     /// <summary>
     /// Function: SetDestPoint
     /// </summary>
     public unsafe virtual void SetDestPoint(System.Numerics.Vector3 NewDestPoint, BmSDK.BmGame.RNavigationManager NewNavMan, BmSDK.FName NewClaimName = default, BmSDK.Engine.Pawn NewParamProxy = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDestPoint, "BmGame.RUninformedTreeEndPathWrapper.SetDestPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDestPoint, "BmGame.RUninformedTreeEndPathWrapper.SetDestPoint", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDestPoint, paramsPtr + 0);

@@ -78,98 +78,98 @@ public partial class RCrowdManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCrowdManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_AdvanceAgentGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceAgentGroup;
     /// <summary>
     /// Function: AdvanceAgentGroup
     /// </summary>
     public unsafe virtual void AdvanceAgentGroup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdvanceAgentGroup, "BmGame.RCrowdManager.AdvanceAgentGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdvanceAgentGroup, "BmGame.RCrowdManager.AdvanceAgentGroup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNextAgentGroup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextAgentGroup;
     /// <summary>
     /// Function: GetNextAgentGroup
     /// </summary>
     public unsafe virtual int GetNextAgentGroup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextAgentGroup, "BmGame.RCrowdManager.GetNextAgentGroup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNextAgentGroup, "BmGame.RCrowdManager.GetNextAgentGroup", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DestroyXPBats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyXPBats;
     /// <summary>
     /// Function: DestroyXPBats
     /// </summary>
     public unsafe virtual void DestroyXPBats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyXPBats, "BmGame.RCrowdManager.DestroyXPBats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyXPBats, "BmGame.RCrowdManager.DestroyXPBats", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetNumXPBats;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumXPBats;
     /// <summary>
     /// Function: GetNumXPBats
     /// </summary>
     public unsafe virtual int GetNumXPBats()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumXPBats, "BmGame.RCrowdManager.GetNumXPBats");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumXPBats, "BmGame.RCrowdManager.GetNumXPBats", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ActivateAttractors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateAttractors;
     /// <summary>
     /// Function: ActivateAttractors
     /// </summary>
     public unsafe virtual void ActivateAttractors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateAttractors, "BmGame.RCrowdManager.ActivateAttractors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateAttractors, "BmGame.RCrowdManager.ActivateAttractors", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DeactivateAttractors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateAttractors;
     /// <summary>
     /// Function: DeactivateAttractors
     /// </summary>
     public unsafe virtual void DeactivateAttractors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateAttractors, "BmGame.RCrowdManager.DeactivateAttractors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateAttractors, "BmGame.RCrowdManager.DeactivateAttractors", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveAttractor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAttractor;
     /// <summary>
     /// Function: RemoveAttractor
     /// </summary>
     public unsafe virtual void RemoveAttractor(BmSDK.BmGame.RCrowdAttractor RemoveCA)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAttractor, "BmGame.RCrowdManager.RemoveAttractor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveAttractor, "BmGame.RCrowdManager.RemoveAttractor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemoveCA, paramsPtr + 0);
@@ -177,14 +177,14 @@ public partial class RCrowdManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterAttractor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterAttractor;
     /// <summary>
     /// Function: RegisterAttractor
     /// </summary>
     public unsafe virtual void RegisterAttractor(BmSDK.BmGame.RCrowdAttractor NewCA)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterAttractor, "BmGame.RCrowdManager.RegisterAttractor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterAttractor, "BmGame.RCrowdManager.RegisterAttractor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCA, paramsPtr + 0);
@@ -192,14 +192,14 @@ public partial class RCrowdManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveAgent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAgent;
     /// <summary>
     /// Function: RemoveAgent
     /// </summary>
     public unsafe virtual void RemoveAgent(BmSDK.BmGame.RCrowdAgent OldAgent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAgent, "BmGame.RCrowdManager.RemoveAgent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveAgent, "BmGame.RCrowdManager.RemoveAgent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldAgent, paramsPtr + 0);
@@ -207,14 +207,14 @@ public partial class RCrowdManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterAgent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterAgent;
     /// <summary>
     /// Function: RegisterAgent
     /// </summary>
     public unsafe virtual void RegisterAgent(BmSDK.BmGame.RCrowdAgent NewAgent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterAgent, "BmGame.RCrowdManager.RegisterAgent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterAgent, "BmGame.RCrowdManager.RegisterAgent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewAgent, paramsPtr + 0);
@@ -222,28 +222,28 @@ public partial class RCrowdManager : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetNewFlockID;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNewFlockID;
     /// <summary>
     /// Function: GetNewFlockID
     /// </summary>
     public unsafe virtual int GetNewFlockID()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNewFlockID, "BmGame.RCrowdManager.GetNewFlockID");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNewFlockID, "BmGame.RCrowdManager.GetNewFlockID", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNumAgentsInFlock;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumAgentsInFlock;
     /// <summary>
     /// Function: GetNumAgentsInFlock
     /// </summary>
     public unsafe virtual int GetNumAgentsInFlock(int FlockID)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumAgentsInFlock, "BmGame.RCrowdManager.GetNumAgentsInFlock");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumAgentsInFlock, "BmGame.RCrowdManager.GetNumAgentsInFlock", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FlockID, paramsPtr + 0);

@@ -78,28 +78,28 @@ public partial class AkDialogueVoice : BmSDK.Engine.AkHash, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<AkDialogueVoice>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_VoiceId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VoiceId;
     /// <summary>
     /// Function: VoiceId
     /// </summary>
     public unsafe virtual int VoiceId()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VoiceId, "Engine.AkDialogueVoice.VoiceId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VoiceId, "Engine.AkDialogueVoice.VoiceId", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPortrait;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPortrait;
     /// <summary>
     /// Function: GetPortrait
     /// </summary>
     public unsafe virtual BmSDK.FString GetPortrait()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPortrait, "Engine.AkDialogueVoice.GetPortrait");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPortrait, "Engine.AkDialogueVoice.GetPortrait", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -113,17 +113,17 @@ public partial class AkDialogueVoice : BmSDK.Engine.AkHash, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSubtitle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubtitle;
     /// <summary>
     /// Function: GetSubtitle
     /// </summary>
-    public unsafe virtual BmSDK.FString GetSubtitle(BmSDK.FString langExt = default)
+    public unsafe virtual BmSDK.FString GetSubtitle(BmSDK.FStringArg langExt = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSubtitle, "Engine.AkDialogueVoice.GetSubtitle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSubtitle, "Engine.AkDialogueVoice.GetSubtitle", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(langExt, paramsPtr + 0);
+        langExt.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -132,17 +132,18 @@ public partial class AkDialogueVoice : BmSDK.Engine.AkHash, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_IsWildcardVoice;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsWildcardVoice;
     /// <summary>
     /// Function: IsWildcardVoice
     /// </summary>
     public unsafe virtual bool IsWildcardVoice()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsWildcardVoice, "Engine.AkDialogueVoice.IsWildcardVoice");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsWildcardVoice, "Engine.AkDialogueVoice.IsWildcardVoice", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

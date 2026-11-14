@@ -78,28 +78,28 @@ public partial class RGFxMovieVideoOverlay : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RGFxMovieVideoOverlay>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UC_ConfirmUpgrade;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_ConfirmUpgrade;
     /// <summary>
     /// Function: UC_ConfirmUpgrade
     /// </summary>
     public unsafe virtual void UC_ConfirmUpgrade()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_ConfirmUpgrade, "BmGame.RGFxMovieVideoOverlay.UC_ConfirmUpgrade");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_ConfirmUpgrade, "BmGame.RGFxMovieVideoOverlay.UC_ConfirmUpgrade", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_ShowUpgrade;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_ShowUpgrade;
     /// <summary>
     /// Function: UC_ShowUpgrade
     /// </summary>
     public unsafe virtual void UC_ShowUpgrade(bool bShow)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_ShowUpgrade, "BmGame.RGFxMovieVideoOverlay.UC_ShowUpgrade");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_ShowUpgrade, "BmGame.RGFxMovieVideoOverlay.UC_ShowUpgrade", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShow, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RGFxMovieVideoOverlay : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_UC_HighlightChoice;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_HighlightChoice;
     /// <summary>
     /// Function: UC_HighlightChoice
     /// </summary>
     public unsafe virtual void UC_HighlightChoice(int nUpgrade)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_HighlightChoice, "BmGame.RGFxMovieVideoOverlay.UC_HighlightChoice");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_HighlightChoice, "BmGame.RGFxMovieVideoOverlay.UC_HighlightChoice", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nUpgrade, paramsPtr + 0);
@@ -122,57 +122,58 @@ public partial class RGFxMovieVideoOverlay : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetGauntletConnectionLost;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetGauntletConnectionLost;
     /// <summary>
     /// Function: UC_SetGauntletConnectionLost
     /// </summary>
     public unsafe virtual void UC_SetGauntletConnectionLost()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetGauntletConnectionLost, "BmGame.RGFxMovieVideoOverlay.UC_SetGauntletConnectionLost");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetGauntletConnectionLost, "BmGame.RGFxMovieVideoOverlay.UC_SetGauntletConnectionLost", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetGauntletConnectionFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetGauntletConnectionFailed;
     /// <summary>
     /// Function: UC_SetGauntletConnectionFailed
     /// </summary>
     public unsafe virtual void UC_SetGauntletConnectionFailed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetGauntletConnectionFailed, "BmGame.RGFxMovieVideoOverlay.UC_SetGauntletConnectionFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetGauntletConnectionFailed, "BmGame.RGFxMovieVideoOverlay.UC_SetGauntletConnectionFailed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetHeaderText;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetHeaderText;
     /// <summary>
     /// Function: UC_SetHeaderText
     /// </summary>
-    public unsafe virtual void UC_SetHeaderText(BmSDK.FString HeaderText)
+    public unsafe virtual void UC_SetHeaderText(BmSDK.FStringArg HeaderText)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetHeaderText, "BmGame.RGFxMovieVideoOverlay.UC_SetHeaderText");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetHeaderText, "BmGame.RGFxMovieVideoOverlay.UC_SetHeaderText", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(HeaderText, paramsPtr + 0);
+        HeaderText.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetWaveformScale;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetWaveformScale;
     /// <summary>
     /// Function: UC_SetWaveformScale
     /// </summary>
     public unsafe virtual void UC_SetWaveformScale(float fAmplitude)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetWaveformScale, "BmGame.RGFxMovieVideoOverlay.UC_SetWaveformScale");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetWaveformScale, "BmGame.RGFxMovieVideoOverlay.UC_SetWaveformScale", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fAmplitude, paramsPtr + 0);
@@ -180,29 +181,30 @@ public partial class RGFxMovieVideoOverlay : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SetPortrait;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetPortrait;
     /// <summary>
     /// Function: UC_SetPortrait
     /// </summary>
-    public unsafe virtual void UC_SetPortrait(BmSDK.FString sPortrait)
+    public unsafe virtual void UC_SetPortrait(BmSDK.FStringArg sPortrait)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetPortrait, "BmGame.RGFxMovieVideoOverlay.UC_SetPortrait");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetPortrait, "BmGame.RGFxMovieVideoOverlay.UC_SetPortrait", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sPortrait, paramsPtr + 0);
+        sPortrait.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UC_ShowPortraitAndWaveform;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_ShowPortraitAndWaveform;
     /// <summary>
     /// Function: UC_ShowPortraitAndWaveform
     /// </summary>
     public unsafe virtual void UC_ShowPortraitAndWaveform(bool bVisible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_ShowPortraitAndWaveform, "BmGame.RGFxMovieVideoOverlay.UC_ShowPortraitAndWaveform");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_ShowPortraitAndWaveform, "BmGame.RGFxMovieVideoOverlay.UC_ShowPortraitAndWaveform", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bVisible, paramsPtr + 0);
@@ -210,28 +212,28 @@ public partial class RGFxMovieVideoOverlay : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_PollUpgradeChosen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PollUpgradeChosen;
     /// <summary>
     /// Function: PollUpgradeChosen
     /// </summary>
     public unsafe virtual int PollUpgradeChosen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PollUpgradeChosen, "BmGame.RGFxMovieVideoOverlay.PollUpgradeChosen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PollUpgradeChosen, "BmGame.RGFxMovieVideoOverlay.PollUpgradeChosen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UC_SetBatmobileUpgradeParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SetBatmobileUpgradeParams;
     /// <summary>
     /// Function: UC_SetBatmobileUpgradeParams
     /// </summary>
     public unsafe virtual void UC_SetBatmobileUpgradeParams(int GadgetState0, int GadgetState2, int GadgetState3, int GadgetState4)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SetBatmobileUpgradeParams, "BmGame.RGFxMovieVideoOverlay.UC_SetBatmobileUpgradeParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SetBatmobileUpgradeParams, "BmGame.RGFxMovieVideoOverlay.UC_SetBatmobileUpgradeParams", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GadgetState0, paramsPtr + 0);
@@ -242,14 +244,14 @@ public partial class RGFxMovieVideoOverlay : BmSDK.BmGame.RGFxMovie, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_UC_SkipIntro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UC_SkipIntro;
     /// <summary>
     /// Function: UC_SkipIntro
     /// </summary>
     public unsafe virtual void UC_SkipIntro()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UC_SkipIntro, "BmGame.RGFxMovieVideoOverlay.UC_SkipIntro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UC_SkipIntro, "BmGame.RGFxMovieVideoOverlay.UC_SkipIntro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

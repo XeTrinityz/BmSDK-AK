@@ -91,56 +91,56 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LogDump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LogDump;
     /// <summary>
     /// Function: LogDump
     /// </summary>
     public unsafe virtual void LogDump()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LogDump, "BmGame.RSeqAct_FireCrewController.LogDump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LogDump, "BmGame.RSeqAct_FireCrewController.LogDump", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateAvailability;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateAvailability;
     /// <summary>
     /// Function: UpdateAvailability
     /// </summary>
     public unsafe virtual void UpdateAvailability()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateAvailability, "BmGame.RSeqAct_FireCrewController.UpdateAvailability");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateAvailability, "BmGame.RSeqAct_FireCrewController.UpdateAvailability", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCurrentTier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentTier;
     /// <summary>
     /// Function: GetCurrentTier
     /// </summary>
     public unsafe virtual int GetCurrentTier()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentTier, "BmGame.RSeqAct_FireCrewController.GetCurrentTier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentTier, "BmGame.RSeqAct_FireCrewController.GetCurrentTier", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsTierComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTierComplete;
     /// <summary>
     /// Function: IsTierComplete
     /// </summary>
     public unsafe virtual bool IsTierComplete(int Tier)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTierComplete, "BmGame.RSeqAct_FireCrewController.IsTierComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTierComplete, "BmGame.RSeqAct_FireCrewController.IsTierComplete", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Tier, paramsPtr + 0);
@@ -148,42 +148,42 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetEncounterTier;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEncounterTier;
     /// <summary>
     /// Function: GetEncounterTier
     /// </summary>
     public unsafe virtual int GetEncounterTier()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEncounterTier, "BmGame.RSeqAct_FireCrewController.GetEncounterTier");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEncounterTier, "BmGame.RSeqAct_FireCrewController.GetEncounterTier", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetEncounterRescued;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEncounterRescued;
     /// <summary>
     /// Function: SetEncounterRescued
     /// </summary>
     public unsafe virtual void SetEncounterRescued()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEncounterRescued, "BmGame.RSeqAct_FireCrewController.SetEncounterRescued");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEncounterRescued, "BmGame.RSeqAct_FireCrewController.SetEncounterRescued", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateMostWanted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMostWanted;
     /// <summary>
     /// Function: UpdateMostWanted
     /// </summary>
     public unsafe virtual void UpdateMostWanted(int encounter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMostWanted, "BmGame.RSeqAct_FireCrewController.UpdateMostWanted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMostWanted, "BmGame.RSeqAct_FireCrewController.UpdateMostWanted", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(encounter, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         return;
     }
 
-    private static BmSDK.Function __fn_FireOutputs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireOutputs;
     /// <summary>
     /// Function: FireOutputs
     /// </summary>
     public unsafe virtual void FireOutputs(bool bOnlyNewEncounters = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireOutputs, "BmGame.RSeqAct_FireCrewController.FireOutputs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireOutputs, "BmGame.RSeqAct_FireCrewController.FireOutputs", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bOnlyNewEncounters, paramsPtr + 0);
@@ -206,70 +206,70 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         return;
     }
 
-    private static BmSDK.Function __fn_CountNumRescued;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CountNumRescued;
     /// <summary>
     /// Function: CountNumRescued
     /// </summary>
     public unsafe virtual int CountNumRescued()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CountNumRescued, "BmGame.RSeqAct_FireCrewController.CountNumRescued");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CountNumRescued, "BmGame.RSeqAct_FireCrewController.CountNumRescued", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckInputs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckInputs;
     /// <summary>
     /// Function: CheckInputs
     /// </summary>
     public unsafe virtual void CheckInputs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckInputs, "BmGame.RSeqAct_FireCrewController.CheckInputs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckInputs, "BmGame.RSeqAct_FireCrewController.CheckInputs", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetEncounterIndexOnLinkedSpawners;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEncounterIndexOnLinkedSpawners;
     /// <summary>
     /// Function: SetEncounterIndexOnLinkedSpawners
     /// </summary>
     public unsafe virtual void SetEncounterIndexOnLinkedSpawners()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEncounterIndexOnLinkedSpawners, "BmGame.RSeqAct_FireCrewController.SetEncounterIndexOnLinkedSpawners");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEncounterIndexOnLinkedSpawners, "BmGame.RSeqAct_FireCrewController.SetEncounterIndexOnLinkedSpawners", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_FireCrewController.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_FireCrewController.Activated", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetEncounterState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEncounterState;
     /// <summary>
     /// Function: GetEncounterState
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RSeqAct_FireCrewController.FireCrewEncounterState GetEncounterState(int inEncounterIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEncounterState, "BmGame.RSeqAct_FireCrewController.GetEncounterState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEncounterState, "BmGame.RSeqAct_FireCrewController.GetEncounterState", this);
         byte* paramsPtr = stackalloc byte[21];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inEncounterIndex, paramsPtr + 0);
@@ -277,14 +277,14 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSeqAct_FireCrewController.FireCrewEncounterState>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetEncounterFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEncounterFlag;
     /// <summary>
     /// Function: SetEncounterFlag
     /// </summary>
     public unsafe virtual bool SetEncounterFlag(int inEncounterIndex, BmSDK.BmGame.RSeqAct_FireCrewController.FireCrewEncounterState encounterState, bool val = default, bool bAutoPan = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEncounterFlag, "BmGame.RSeqAct_FireCrewController.SetEncounterFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEncounterFlag, "BmGame.RSeqAct_FireCrewController.SetEncounterFlag", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inEncounterIndex, paramsPtr + 0);
@@ -295,14 +295,14 @@ public partial class RSeqAct_FireCrewController : BmSDK.Engine.SequenceAction, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_IsEncounterFlagSet;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsEncounterFlagSet;
     /// <summary>
     /// Function: IsEncounterFlagSet
     /// </summary>
     public unsafe virtual bool IsEncounterFlagSet(int inEncounterIndex, BmSDK.BmGame.RSeqAct_FireCrewController.FireCrewEncounterState encounterState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsEncounterFlagSet, "BmGame.RSeqAct_FireCrewController.IsEncounterFlagSet");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsEncounterFlagSet, "BmGame.RSeqAct_FireCrewController.IsEncounterFlagSet", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inEncounterIndex, paramsPtr + 0);

@@ -78,14 +78,14 @@ public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePo
         where TComponent : class, Framework.IScriptComponent<RBMPathNode_FenceJump>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TestAndAddStandPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TestAndAddStandPoint;
     /// <summary>
     /// Function: TestAndAddStandPoint
     /// </summary>
     public unsafe virtual void TestAndAddStandPoint(System.Numerics.Vector3 TargetPoint, System.Numerics.Vector3 FencePoint, System.Numerics.Vector3 FenceNormal, out BmSDK.TArray<System.Numerics.Vector3> StandPointList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TestAndAddStandPoint, "BmGame.RBMPathNode_FenceJump.TestAndAddStandPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TestAndAddStandPoint, "BmGame.RBMPathNode_FenceJump.TestAndAddStandPoint", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPoint, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePo
         return;
     }
 
-    private static BmSDK.Function __fn_GetStandPointsThatCanSeeTargetPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetStandPointsThatCanSeeTargetPoint;
     /// <summary>
     /// Function: GetStandPointsThatCanSeeTargetPoint
     /// </summary>
     public unsafe virtual void GetStandPointsThatCanSeeTargetPoint(System.Numerics.Vector3 TargetPoint, out BmSDK.TArray<System.Numerics.Vector3> StandPointList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetStandPointsThatCanSeeTargetPoint, "BmGame.RBMPathNode_FenceJump.GetStandPointsThatCanSeeTargetPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStandPointsThatCanSeeTargetPoint, "BmGame.RBMPathNode_FenceJump.GetStandPointsThatCanSeeTargetPoint", this);
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPoint, paramsPtr + 0);
@@ -112,14 +112,14 @@ public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePo
         return;
     }
 
-    private static BmSDK.Function __fn_GetEyePosForFence;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEyePosForFence;
     /// <summary>
     /// Function: GetEyePosForFence
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetEyePosForFence(System.Numerics.Vector3 StandPoint, System.Numerics.Vector3 FenceTopPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEyePosForFence, "BmGame.RBMPathNode_FenceJump.GetEyePosForFence");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEyePosForFence, "BmGame.RBMPathNode_FenceJump.GetEyePosForFence", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StandPoint, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePo
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_UseFenceJump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UseFenceJump;
     /// <summary>
     /// Function: UseFenceJump
     /// </summary>
     public unsafe virtual void UseFenceJump(BmSDK.Engine.NavigationHandle Handle, BmSDK.BmGame.RBMPawnAI User, int EdgeType, System.Numerics.Vector3 JumpDirection, System.Numerics.Vector3 JumpLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseFenceJump, "BmGame.RBMPathNode_FenceJump.UseFenceJump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UseFenceJump, "BmGame.RBMPathNode_FenceJump.UseFenceJump", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Handle, paramsPtr + 0);
@@ -147,14 +147,14 @@ public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePo
         return;
     }
 
-    private static BmSDK.Function __fn_GetReferencePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferencePoint;
     /// <summary>
     /// Function: GetReferencePoint
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetReferencePoint(BmSDK.BmGame.RBMPawnAI Jumper)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePoint, "BmGame.RBMPathNode_FenceJump.GetReferencePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReferencePoint, "BmGame.RBMPathNode_FenceJump.GetReferencePoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Jumper, paramsPtr + 0);

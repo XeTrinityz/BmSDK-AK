@@ -78,14 +78,14 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Volume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OverrideDefaultAkAudibleSetup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverrideDefaultAkAudibleSetup;
     /// <summary>
     /// Function: OverrideDefaultAkAudibleSetup
     /// </summary>
     public unsafe override void OverrideDefaultAkAudibleSetup(BmSDK.Engine.RAkAudible akAud)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverrideDefaultAkAudibleSetup, "Engine.Volume.OverrideDefaultAkAudibleSetup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideDefaultAkAudibleSetup, "Engine.Volume.OverrideDefaultAkAudibleSetup", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(akAud, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ProcessActorSetVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ProcessActorSetVolume;
     /// <summary>
     /// Function: ProcessActorSetVolume
     /// </summary>
     public unsafe virtual void ProcessActorSetVolume(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ProcessActorSetVolume, "Engine.Volume.ProcessActorSetVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ProcessActorSetVolume, "Engine.Volume.ProcessActorSetVolume", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -108,28 +108,28 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CollisionChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CollisionChanged;
     /// <summary>
     /// Function: CollisionChanged
     /// </summary>
     public unsafe override void CollisionChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CollisionChanged, "Engine.Volume.CollisionChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CollisionChanged, "Engine.Volume.CollisionChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "Engine.Volume.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "Engine.Volume.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DisplayDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayDebug;
     /// <summary>
     /// Function: DisplayDebug
     /// </summary>
     public unsafe override void DisplayDebug(BmSDK.Engine.HUD HUD, out float out_YL, out float out_YPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.Volume.DisplayDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayDebug, "Engine.Volume.DisplayDebug", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -158,28 +158,28 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.Volume.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.Volume.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EncompassesAABB;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EncompassesAABB;
     /// <summary>
     /// Function: EncompassesAABB
     /// </summary>
     public unsafe virtual bool EncompassesAABB(System.Numerics.Vector3 Loc, System.Numerics.Vector3 Extent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EncompassesAABB, "Engine.Volume.EncompassesAABB");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EncompassesAABB, "Engine.Volume.EncompassesAABB", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -195,14 +195,14 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_EncompassesPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EncompassesPoint;
     /// <summary>
     /// Function: EncompassesPoint
     /// </summary>
     public unsafe virtual bool EncompassesPoint(System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EncompassesPoint, "Engine.Volume.EncompassesPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EncompassesPoint, "Engine.Volume.EncompassesPoint", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -217,14 +217,14 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_Encompasses;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Encompasses;
     /// <summary>
     /// Function: Encompasses
     /// </summary>
     public unsafe virtual bool Encompasses(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Encompasses, "Engine.Volume.Encompasses");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Encompasses, "Engine.Volume.Encompasses", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -239,14 +239,14 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UnPinGC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnPinGC;
     /// <summary>
     /// Function: UnPinGC
     /// </summary>
     public unsafe virtual void UnPinGC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnPinGC, "Engine.Volume.UnPinGC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnPinGC, "Engine.Volume.UnPinGC", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -260,14 +260,14 @@ public partial class Volume : BmSDK.Engine.Brush, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PinGC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PinGC;
     /// <summary>
     /// Function: PinGC
     /// </summary>
     public unsafe virtual void PinGC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PinGC, "Engine.Volume.PinGC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PinGC, "Engine.Volume.PinGC", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

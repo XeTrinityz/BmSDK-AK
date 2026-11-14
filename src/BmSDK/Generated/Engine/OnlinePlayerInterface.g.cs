@@ -93,7 +93,7 @@ public partial interface OnlinePlayerInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnFriendMessageReceived
     /// </summary>
-    public unsafe void OnFriendMessageReceived(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId SendingPlayer, BmSDK.FString SendingNick, BmSDK.FString Message);
+    public unsafe void OnFriendMessageReceived(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId SendingPlayer, BmSDK.FStringArg SendingNick, BmSDK.FStringArg Message);
 
     /// <summary>
     /// Function: GetFriendMessages
@@ -133,22 +133,22 @@ public partial interface OnlinePlayerInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnReceivedGameInvite
     /// </summary>
-    public unsafe void OnReceivedGameInvite(byte LocalUserNum, BmSDK.FString InviterName);
+    public unsafe void OnReceivedGameInvite(byte LocalUserNum, BmSDK.FStringArg InviterName);
 
     /// <summary>
     /// Function: SendGameInviteToFriends
     /// </summary>
-    public unsafe bool SendGameInviteToFriends(byte LocalUserNum, BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Friends, BmSDK.FString Text = default);
+    public unsafe bool SendGameInviteToFriends(byte LocalUserNum, BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId> Friends, BmSDK.FStringArg Text = default);
 
     /// <summary>
     /// Function: SendGameInviteToFriend
     /// </summary>
-    public unsafe bool SendGameInviteToFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Friend, BmSDK.FString Text = default);
+    public unsafe bool SendGameInviteToFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Friend, BmSDK.FStringArg Text = default);
 
     /// <summary>
     /// Function: SendMessageToFriend
     /// </summary>
-    public unsafe bool SendMessageToFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Friend, BmSDK.FString Message);
+    public unsafe bool SendMessageToFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId Friend, BmSDK.FStringArg Message);
 
     /// <summary>
     /// Function: ClearFriendInviteReceivedDelegate
@@ -163,7 +163,7 @@ public partial interface OnlinePlayerInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnFriendInviteReceived
     /// </summary>
-    public unsafe void OnFriendInviteReceived(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId RequestingPlayer, BmSDK.FString RequestingNick, BmSDK.FString Message);
+    public unsafe void OnFriendInviteReceived(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId RequestingPlayer, BmSDK.FStringArg RequestingNick, BmSDK.FStringArg Message);
 
     /// <summary>
     /// Function: RemoveFriend
@@ -198,12 +198,12 @@ public partial interface OnlinePlayerInterface : BmSDK.Interface
     /// <summary>
     /// Function: AddFriendByName
     /// </summary>
-    public unsafe bool AddFriendByName(byte LocalUserNum, BmSDK.FString FriendName, BmSDK.FString Message = default);
+    public unsafe bool AddFriendByName(byte LocalUserNum, BmSDK.FStringArg FriendName, BmSDK.FStringArg Message = default);
 
     /// <summary>
     /// Function: AddFriend
     /// </summary>
-    public unsafe bool AddFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId NewFriend, BmSDK.FString Message = default);
+    public unsafe bool AddFriend(byte LocalUserNum, BmSDK.Engine.OnlineSubsystem.FUniqueNetId NewFriend, BmSDK.FStringArg Message = default);
 
     /// <summary>
     /// Function: GetKeyboardInputResults
@@ -228,7 +228,7 @@ public partial interface OnlinePlayerInterface : BmSDK.Interface
     /// <summary>
     /// Function: ShowKeyboardUI
     /// </summary>
-    public unsafe bool ShowKeyboardUI(byte LocalUserNum, BmSDK.FString TitleText, BmSDK.FString DescriptionText, bool bIsPassword = default, bool bShouldValidate = default, BmSDK.FString DefaultText = default, int MaxResultLength = default);
+    public unsafe bool ShowKeyboardUI(byte LocalUserNum, BmSDK.FStringArg TitleText, BmSDK.FStringArg DescriptionText, bool bIsPassword = default, bool bShouldValidate = default, BmSDK.FStringArg DefaultText = default, int MaxResultLength = default);
 
     /// <summary>
     /// Function: SetOnlineStatus
@@ -553,7 +553,7 @@ public partial interface OnlinePlayerInterface : BmSDK.Interface
     /// <summary>
     /// Function: Login
     /// </summary>
-    public unsafe bool Login(byte LocalUserNum, BmSDK.FString LoginName, BmSDK.FString Password, bool bWantsLocalOnly = default);
+    public unsafe bool Login(byte LocalUserNum, BmSDK.FStringArg LoginName, BmSDK.FStringArg Password, bool bWantsLocalOnly = default);
 
     /// <summary>
     /// Function: ShowLoginUI

@@ -78,14 +78,14 @@ public partial class RBarkConvoAction_Cond_SpeakerValid : BmSDK.BmGame.RBarkConv
         where TComponent : class, Framework.IScriptComponent<RBarkConvoAction_Cond_SpeakerValid>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetOutputIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOutputIndex;
     /// <summary>
     /// Function: GetOutputIndex
     /// </summary>
     public unsafe override int GetOutputIndex()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOutputIndex, "BmGame.RBarkConvoAction_Cond_SpeakerValid.GetOutputIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOutputIndex, "BmGame.RBarkConvoAction_Cond_SpeakerValid.GetOutputIndex", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

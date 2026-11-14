@@ -78,14 +78,14 @@ public partial class RBMPathNode_WallClimb : BmSDK.BmGame.RBMPathNode_VariablePo
         where TComponent : class, Framework.IScriptComponent<RBMPathNode_WallClimb>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UseWallClimb;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UseWallClimb;
     /// <summary>
     /// Function: UseWallClimb
     /// </summary>
     public unsafe virtual void UseWallClimb(BmSDK.BmGame.RBMPawnAI User, int EdgeType, System.Numerics.Vector3 JumpDirection, System.Numerics.Vector3 JumpLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UseWallClimb, "BmGame.RBMPathNode_WallClimb.UseWallClimb");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UseWallClimb, "BmGame.RBMPathNode_WallClimb.UseWallClimb", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 0);
@@ -96,14 +96,14 @@ public partial class RBMPathNode_WallClimb : BmSDK.BmGame.RBMPathNode_VariablePo
         return;
     }
 
-    private static BmSDK.Function __fn_GetReferencePoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReferencePoint;
     /// <summary>
     /// Function: GetReferencePoint
     /// </summary>
     public unsafe override System.Numerics.Vector3 GetReferencePoint(BmSDK.BmGame.RBMPawnAI Jumper)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReferencePoint, "BmGame.RBMPathNode_WallClimb.GetReferencePoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReferencePoint, "BmGame.RBMPathNode_WallClimb.GetReferencePoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Jumper, paramsPtr + 0);

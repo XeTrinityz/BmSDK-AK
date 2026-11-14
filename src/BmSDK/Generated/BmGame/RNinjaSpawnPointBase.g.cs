@@ -73,14 +73,14 @@ public partial class RNinjaSpawnPointBase : BmSDK.Engine.Actor, BmSDK.IGameObjec
         where TComponent : class, Framework.IScriptComponent<RNinjaSpawnPointBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SpawnNinja;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnNinja;
     /// <summary>
     /// Function: SpawnNinja
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBMPawnAI SpawnNinja()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnNinja, "BmGame.RNinjaSpawnPointBase.SpawnNinja");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnNinja, "BmGame.RNinjaSpawnPointBase.SpawnNinja", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

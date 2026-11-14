@@ -78,14 +78,14 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RDOFManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe virtual bool Update(float DeltaTime, out BmSDK.Engine.PostProcessVolume.FPostProcessSettings PP)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RDOFManager.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RDOFManager.Update", this);
         byte* paramsPtr = stackalloc byte[576];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 528);
     }
 
-    private static BmSDK.Function __fn_UpdateBlur;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateBlur;
     /// <summary>
     /// Function: UpdateBlur
     /// </summary>
     public unsafe virtual bool UpdateBlur(float DeltaTime, out BmSDK.BmGame.RDOFManager.FBlurStruct Blur)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateBlur, "BmGame.RDOFManager.UpdateBlur");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateBlur, "BmGame.RDOFManager.UpdateBlur", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -112,28 +112,28 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_RevertToOldDof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RevertToOldDof;
     /// <summary>
     /// Function: RevertToOldDof
     /// </summary>
     public unsafe virtual void RevertToOldDof()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RevertToOldDof, "BmGame.RDOFManager.RevertToOldDof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RevertToOldDof, "BmGame.RDOFManager.RevertToOldDof", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChangeDof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChangeDof;
     /// <summary>
     /// Function: ChangeDof
     /// </summary>
     public unsafe virtual void ChangeDof(BmSDK.BmGame.RGameInfo.FDofStruct newDof)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChangeDof, "BmGame.RDOFManager.ChangeDof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeDof, "BmGame.RDOFManager.ChangeDof", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(newDof, paramsPtr + 0);
@@ -141,14 +141,14 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetDof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDof;
     /// <summary>
     /// Function: SetDof
     /// </summary>
     public unsafe virtual void SetDof(out BmSDK.Engine.PostProcessVolume.FPostProcessSettings PP)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDof, "BmGame.RDOFManager.SetDof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDof, "BmGame.RDOFManager.SetDof", this);
         byte* paramsPtr = stackalloc byte[540];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -163,14 +163,14 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddBlur;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddBlur;
     /// <summary>
     /// Function: AddBlur
     /// </summary>
     public unsafe virtual void AddBlur(float Time)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddBlur, "BmGame.RDOFManager.AddBlur");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddBlur, "BmGame.RDOFManager.AddBlur", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Time, paramsPtr + 0);
@@ -178,28 +178,28 @@ public partial class RDOFManager : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ResetBlurs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetBlurs;
     /// <summary>
     /// Function: ResetBlurs
     /// </summary>
     public unsafe virtual void ResetBlurs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetBlurs, "BmGame.RDOFManager.ResetBlurs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetBlurs, "BmGame.RDOFManager.ResetBlurs", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetDof;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetDof;
     /// <summary>
     /// Function: ResetDof
     /// </summary>
     public unsafe virtual void ResetDof()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetDof, "BmGame.RDOFManager.ResetDof");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetDof, "BmGame.RDOFManager.ResetDof", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

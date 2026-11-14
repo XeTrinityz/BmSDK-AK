@@ -73,18 +73,19 @@ public partial class RBMBehaviour_JokerRooftopBase : BmSDK.BmGame.RBMBehaviour, 
         where TComponent : class, Framework.IScriptComponent<RBMBehaviour_JokerRooftopBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DoesJokerTypeTrumpMine;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoesJokerTypeTrumpMine;
     /// <summary>
     /// Function: DoesJokerTypeTrumpMine
     /// </summary>
-    public unsafe virtual bool DoesJokerTypeTrumpMine(BmSDK.FString NewCaseIdentifier)
+    public unsafe virtual bool DoesJokerTypeTrumpMine(BmSDK.FStringArg NewCaseIdentifier)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoesJokerTypeTrumpMine, "BmGame.RBMBehaviour_JokerRooftopBase.DoesJokerTypeTrumpMine");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoesJokerTypeTrumpMine, "BmGame.RBMBehaviour_JokerRooftopBase.DoesJokerTypeTrumpMine", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCaseIdentifier, paramsPtr + 0);
+        NewCaseIdentifier.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 }

@@ -78,44 +78,45 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
         where TComponent : class, Framework.IScriptComponent<OnlineCustomContentRequestManifestCrcHydra>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_CrcDownloadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrcDownloadComplete;
     /// <summary>
     /// Function: CrcDownloadComplete
     /// </summary>
-    public unsafe virtual void CrcDownloadComplete(bool bWasSuccessful, BmSDK.FString sCustomId)
+    public unsafe virtual void CrcDownloadComplete(bool bWasSuccessful, BmSDK.FStringArg sCustomId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrcDownloadComplete, "Engine.OnlineCustomContentRequestManifestCrcHydra.CrcDownloadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrcDownloadComplete, "Engine.OnlineCustomContentRequestManifestCrcHydra.CrcDownloadComplete", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWasSuccessful, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomId, paramsPtr + 4);
+        sCustomId.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_CrcDownloadStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CrcDownloadStarted;
     /// <summary>
     /// Function: CrcDownloadStarted
     /// </summary>
     public unsafe virtual void CrcDownloadStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CrcDownloadStarted, "Engine.OnlineCustomContentRequestManifestCrcHydra.CrcDownloadStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrcDownloadStarted, "Engine.OnlineCustomContentRequestManifestCrcHydra.CrcDownloadStarted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnCrcDownloadComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCrcDownloadComplete;
     /// <summary>
     /// Function: OnCrcDownloadComplete
     /// </summary>
     public unsafe virtual void OnCrcDownloadComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCrcDownloadComplete, "Engine.OnlineCustomContentRequestManifestCrcHydra.OnCrcDownloadComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCrcDownloadComplete, "Engine.OnlineCustomContentRequestManifestCrcHydra.OnCrcDownloadComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -129,14 +130,14 @@ public partial class OnlineCustomContentRequestManifestCrcHydra : BmSDK.Engine.O
         return;
     }
 
-    private static BmSDK.Function __fn_CancelCustomContentRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelCustomContentRequest;
     /// <summary>
     /// Function: CancelCustomContentRequest
     /// </summary>
     public unsafe override void CancelCustomContentRequest()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelCustomContentRequest, "Engine.OnlineCustomContentRequestManifestCrcHydra.CancelCustomContentRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelCustomContentRequest, "Engine.OnlineCustomContentRequestManifestCrcHydra.CancelCustomContentRequest", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

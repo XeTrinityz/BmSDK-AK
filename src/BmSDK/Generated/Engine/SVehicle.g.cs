@@ -73,14 +73,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<SVehicle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetHidden;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetHidden;
     /// <summary>
     /// Function: SetHidden
     /// </summary>
     public unsafe override void SetHidden(bool bNewHidden)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetHidden, "Engine.SVehicle.SetHidden");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetHidden, "Engine.SVehicle.SetHidden", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewHidden, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TermVehiclePhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TermVehiclePhysics;
     /// <summary>
     /// Function: TermVehiclePhysics
     /// </summary>
     public unsafe virtual void TermVehiclePhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TermVehiclePhysics, "Engine.SVehicle.TermVehiclePhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TermVehiclePhysics, "Engine.SVehicle.TermVehiclePhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -116,14 +116,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetSVehicleDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSVehicleDebug;
     /// <summary>
     /// Function: GetSVehicleDebug
     /// </summary>
     public unsafe virtual void GetSVehicleDebug(out BmSDK.TArray<BmSDK.FString> DebugInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSVehicleDebug, "Engine.SVehicle.GetSVehicleDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSVehicleDebug, "Engine.SVehicle.GetSVehicleDebug", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -131,14 +131,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_HermiteEval;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HermiteEval;
     /// <summary>
     /// Function: HermiteEval
     /// </summary>
     public unsafe virtual float HermiteEval(float Slip)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HermiteEval, "Engine.SVehicle.HermiteEval");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HermiteEval, "Engine.SVehicle.HermiteEval", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Slip, paramsPtr + 0);
@@ -146,14 +146,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_DisplayWheelsDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayWheelsDebug;
     /// <summary>
     /// Function: DisplayWheelsDebug
     /// </summary>
     public unsafe virtual void DisplayWheelsDebug(BmSDK.Engine.HUD HUD, float YL)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayWheelsDebug, "Engine.SVehicle.DisplayWheelsDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayWheelsDebug, "Engine.SVehicle.DisplayWheelsDebug", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -162,14 +162,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DisplayDebug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayDebug;
     /// <summary>
     /// Function: DisplayDebug
     /// </summary>
     public unsafe override void DisplayDebug(BmSDK.Engine.HUD HUD, out float out_YL, out float out_YPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebug, "Engine.SVehicle.DisplayDebug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayDebug, "Engine.SVehicle.DisplayDebug", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -183,14 +183,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostTeleport;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostTeleport;
     /// <summary>
     /// Function: PostTeleport
     /// </summary>
     public unsafe override void PostTeleport(BmSDK.Engine.Teleporter OutTeleporter)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostTeleport, "Engine.SVehicle.PostTeleport");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostTeleport, "Engine.SVehicle.PostTeleport", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutTeleporter, paramsPtr + 0);
@@ -198,14 +198,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SuspensionHeavyShift;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SuspensionHeavyShift;
     /// <summary>
     /// Function: SuspensionHeavyShift
     /// </summary>
     public unsafe virtual void SuspensionHeavyShift(float Delta)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SuspensionHeavyShift, "Engine.SVehicle.SuspensionHeavyShift");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuspensionHeavyShift, "Engine.SVehicle.SuspensionHeavyShift", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Delta, paramsPtr + 0);
@@ -213,14 +213,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RigidBodyCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RigidBodyCollision;
     /// <summary>
     /// Function: RigidBodyCollision
     /// </summary>
     public unsafe override void RigidBodyCollision(BmSDK.Engine.PrimitiveComponent HitComponent, BmSDK.Engine.PrimitiveComponent OtherComponent, out BmSDK.Engine.Actor.FCollisionImpactData RigidCollisionData, int ContactIndex, float Speed, int Index0, int Index1)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RigidBodyCollision, "Engine.SVehicle.RigidBodyCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RigidBodyCollision, "Engine.SVehicle.RigidBodyCollision", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitComponent, paramsPtr + 0);
@@ -234,112 +234,112 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrivingStatusChanged;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrivingStatusChanged;
     /// <summary>
     /// Function: DrivingStatusChanged
     /// </summary>
     public unsafe override void DrivingStatusChanged()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrivingStatusChanged, "Engine.SVehicle.DrivingStatusChanged");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrivingStatusChanged, "Engine.SVehicle.DrivingStatusChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VehiclePlayExitSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VehiclePlayExitSound;
     /// <summary>
     /// Function: VehiclePlayExitSound
     /// </summary>
     public unsafe virtual void VehiclePlayExitSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VehiclePlayExitSound, "Engine.SVehicle.VehiclePlayExitSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VehiclePlayExitSound, "Engine.SVehicle.VehiclePlayExitSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_VehiclePlayEnterSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VehiclePlayEnterSound;
     /// <summary>
     /// Function: VehiclePlayEnterSound
     /// </summary>
     public unsafe virtual void VehiclePlayEnterSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VehiclePlayEnterSound, "Engine.SVehicle.VehiclePlayEnterSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VehiclePlayEnterSound, "Engine.SVehicle.VehiclePlayEnterSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopEngineSoundTimed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopEngineSoundTimed;
     /// <summary>
     /// Function: StopEngineSoundTimed
     /// </summary>
     public unsafe virtual void StopEngineSoundTimed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopEngineSoundTimed, "Engine.SVehicle.StopEngineSoundTimed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopEngineSoundTimed, "Engine.SVehicle.StopEngineSoundTimed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopEngineSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopEngineSound;
     /// <summary>
     /// Function: StopEngineSound
     /// </summary>
     public unsafe virtual void StopEngineSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopEngineSound, "Engine.SVehicle.StopEngineSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopEngineSound, "Engine.SVehicle.StopEngineSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartEngineSoundTimed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartEngineSoundTimed;
     /// <summary>
     /// Function: StartEngineSoundTimed
     /// </summary>
     public unsafe virtual void StartEngineSoundTimed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartEngineSoundTimed, "Engine.SVehicle.StartEngineSoundTimed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartEngineSoundTimed, "Engine.SVehicle.StartEngineSoundTimed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartEngineSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartEngineSound;
     /// <summary>
     /// Function: StartEngineSound
     /// </summary>
     public unsafe virtual void StartEngineSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartEngineSound, "Engine.SVehicle.StartEngineSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartEngineSound, "Engine.SVehicle.StartEngineSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HasWheelsOnGround;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasWheelsOnGround;
     /// <summary>
     /// Function: HasWheelsOnGround
     /// </summary>
     public unsafe virtual bool HasWheelsOnGround()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasWheelsOnGround, "Engine.SVehicle.HasWheelsOnGround");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasWheelsOnGround, "Engine.SVehicle.HasWheelsOnGround", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -353,14 +353,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryToDrive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryToDrive;
     /// <summary>
     /// Function: TryToDrive
     /// </summary>
     public unsafe override bool TryToDrive(BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryToDrive, "Engine.SVehicle.TryToDrive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryToDrive, "Engine.SVehicle.TryToDrive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -368,14 +368,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetDefaultCameraMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDefaultCameraMode;
     /// <summary>
     /// Function: GetDefaultCameraMode
     /// </summary>
     public unsafe override BmSDK.FName GetDefaultCameraMode(BmSDK.Engine.PlayerController RequestedBy)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDefaultCameraMode, "Engine.SVehicle.GetDefaultCameraMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDefaultCameraMode, "Engine.SVehicle.GetDefaultCameraMode", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RequestedBy, paramsPtr + 0);
@@ -383,14 +383,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CalcCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CalcCamera;
     /// <summary>
     /// Function: CalcCamera
     /// </summary>
     public unsafe override bool CalcCamera(float fDeltaTime, out System.Numerics.Vector3 out_CamLoc, out BmSDK.Rotator out_CamRot, out float out_FOV)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CalcCamera, "Engine.SVehicle.CalcCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalcCamera, "Engine.SVehicle.CalcCamera", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fDeltaTime, paramsPtr + 0);
@@ -407,14 +407,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_Died;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Died;
     /// <summary>
     /// Function: Died
     /// </summary>
     public unsafe override bool Died(BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Died, "Engine.SVehicle.Died");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Died, "Engine.SVehicle.Died", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -424,14 +424,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_AddVelocity;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddVelocity;
     /// <summary>
     /// Function: AddVelocity
     /// </summary>
     public unsafe override void AddVelocity(System.Numerics.Vector3 NewVelocity, System.Numerics.Vector3 HitLocation, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddVelocity, "Engine.SVehicle.AddVelocity");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddVelocity, "Engine.SVehicle.AddVelocity", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewVelocity, paramsPtr + 0);
@@ -449,14 +449,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InitVehicleRagdoll;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitVehicleRagdoll;
     /// <summary>
     /// Function: InitVehicleRagdoll
     /// </summary>
     public unsafe virtual void InitVehicleRagdoll(BmSDK.Engine.SkeletalMesh RagdollMesh, BmSDK.Engine.PhysicsAsset RagdollPhysAsset, System.Numerics.Vector3 ActorMove, bool bClearAnimTree)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitVehicleRagdoll, "Engine.SVehicle.InitVehicleRagdoll");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitVehicleRagdoll, "Engine.SVehicle.InitVehicleRagdoll", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RagdollMesh, paramsPtr + 0);
@@ -474,14 +474,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TakeRadiusDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeRadiusDamage;
     /// <summary>
     /// Function: TakeRadiusDamage
     /// </summary>
     public unsafe override void TakeRadiusDamage(BmSDK.Engine.Controller InstigatedBy, float BaseDamage, float DamageRadius, BmSDK.Class DamageType, float Momentum, System.Numerics.Vector3 HurtOrigin, bool bFullDamage, BmSDK.Engine.Actor DamageCauser, float DamageFalloffExponent = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeRadiusDamage, "Engine.SVehicle.TakeRadiusDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeRadiusDamage, "Engine.SVehicle.TakeRadiusDamage", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 0);
@@ -497,84 +497,84 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopVehicleSounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopVehicleSounds;
     /// <summary>
     /// Function: StopVehicleSounds
     /// </summary>
     public unsafe virtual void StopVehicleSounds()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopVehicleSounds, "Engine.SVehicle.StopVehicleSounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopVehicleSounds, "Engine.SVehicle.StopVehicleSounds", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOff;
     /// <summary>
     /// Function: TurnOff
     /// </summary>
     public unsafe override void TurnOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOff, "Engine.SVehicle.TurnOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOff, "Engine.SVehicle.TurnOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "Engine.SVehicle.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "Engine.SVehicle.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.SVehicle.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "Engine.SVehicle.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "Engine.SVehicle.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.SVehicle.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetWheelCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWheelCollision;
     /// <summary>
     /// Function: SetWheelCollision
     /// </summary>
     public unsafe virtual void SetWheelCollision(int WheelNum, bool bCollision)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWheelCollision, "Engine.SVehicle.SetWheelCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWheelCollision, "Engine.SVehicle.SetWheelCollision", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WheelNum, paramsPtr + 0);
@@ -590,14 +590,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DrawGraphsAndPrintTireSurfaceTypes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawGraphsAndPrintTireSurfaceTypes;
     /// <summary>
     /// Function: DrawGraphsAndPrintTireSurfaceTypes
     /// </summary>
     public unsafe virtual void DrawGraphsAndPrintTireSurfaceTypes(BmSDK.Engine.HUD HUD, float YL, float YPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawGraphsAndPrintTireSurfaceTypes, "Engine.SVehicle.DrawGraphsAndPrintTireSurfaceTypes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawGraphsAndPrintTireSurfaceTypes, "Engine.SVehicle.DrawGraphsAndPrintTireSurfaceTypes", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HUD, paramsPtr + 0);
@@ -614,14 +614,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_IsSleeping;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsSleeping;
     /// <summary>
     /// Function: IsSleeping
     /// </summary>
     public unsafe virtual bool IsSleeping()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsSleeping, "Engine.SVehicle.IsSleeping");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsSleeping, "Engine.SVehicle.IsSleeping", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -635,14 +635,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AddTorque;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTorque;
     /// <summary>
     /// Function: AddTorque
     /// </summary>
     public unsafe virtual void AddTorque(System.Numerics.Vector3 Torque)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddTorque, "Engine.SVehicle.AddTorque");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddTorque, "Engine.SVehicle.AddTorque", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Torque, paramsPtr + 0);
@@ -657,14 +657,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddImpulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddImpulse;
     /// <summary>
     /// Function: AddImpulse
     /// </summary>
     public unsafe virtual void AddImpulse(System.Numerics.Vector3 Impulse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddImpulse, "Engine.SVehicle.AddImpulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddImpulse, "Engine.SVehicle.AddImpulse", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Impulse, paramsPtr + 0);
@@ -679,14 +679,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AddForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddForce;
     /// <summary>
     /// Function: AddForce
     /// </summary>
     public unsafe virtual void AddForce(System.Numerics.Vector3 Force)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddForce, "Engine.SVehicle.AddForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddForce, "Engine.SVehicle.AddForce", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Force, paramsPtr + 0);
@@ -701,14 +701,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AudioDrifting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioDrifting;
     /// <summary>
     /// Function: AudioDrifting
     /// </summary>
     public unsafe virtual void AudioDrifting(bool isDrifting)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioDrifting, "Engine.SVehicle.AudioDrifting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioDrifting, "Engine.SVehicle.AudioDrifting", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(isDrifting, paramsPtr + 0);
@@ -723,14 +723,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AudioWheelSpinning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioWheelSpinning;
     /// <summary>
     /// Function: AudioWheelSpinning
     /// </summary>
     public unsafe virtual void AudioWheelSpinning(bool setWheelSpin)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioWheelSpinning, "Engine.SVehicle.AudioWheelSpinning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioWheelSpinning, "Engine.SVehicle.AudioWheelSpinning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(setWheelSpin, paramsPtr + 0);
@@ -745,14 +745,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AudioStopAllWheels;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStopAllWheels;
     /// <summary>
     /// Function: AudioStopAllWheels
     /// </summary>
     public unsafe virtual void AudioStopAllWheels()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioStopAllWheels, "Engine.SVehicle.AudioStopAllWheels");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioStopAllWheels, "Engine.SVehicle.AudioStopAllWheels", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -766,14 +766,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AudioStopWheelSqueal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioStopWheelSqueal;
     /// <summary>
     /// Function: AudioStopWheelSqueal
     /// </summary>
     public unsafe virtual void AudioStopWheelSqueal(BmSDK.FName WheelBone)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioStopWheelSqueal, "Engine.SVehicle.AudioStopWheelSqueal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioStopWheelSqueal, "Engine.SVehicle.AudioStopWheelSqueal", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WheelBone, paramsPtr + 0);
@@ -788,14 +788,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AudioUpdateWheelSqueal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioUpdateWheelSqueal;
     /// <summary>
     /// Function: AudioUpdateWheelSqueal
     /// </summary>
     public unsafe virtual void AudioUpdateWheelSqueal(BmSDK.FName WheelBone, float SquealValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioUpdateWheelSqueal, "Engine.SVehicle.AudioUpdateWheelSqueal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioUpdateWheelSqueal, "Engine.SVehicle.AudioUpdateWheelSqueal", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WheelBone, paramsPtr + 0);
@@ -852,14 +852,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HideSkidMarks;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideSkidMarks;
     /// <summary>
     /// Function: HideSkidMarks
     /// </summary>
     public unsafe virtual void HideSkidMarks()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideSkidMarks, "Engine.SVehicle.HideSkidMarks");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideSkidMarks, "Engine.SVehicle.HideSkidMarks", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -873,14 +873,14 @@ public partial class SVehicle : BmSDK.Engine.Vehicle, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_StopAllWheelEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAllWheelEffects;
     /// <summary>
     /// Function: StopAllWheelEffects
     /// </summary>
     public unsafe virtual void StopAllWheelEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAllWheelEffects, "Engine.SVehicle.StopAllWheelEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAllWheelEffects, "Engine.SVehicle.StopAllWheelEffects", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

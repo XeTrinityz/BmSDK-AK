@@ -78,47 +78,50 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RCharacterSelect>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetCharacters;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCharacters;
     /// <summary>
     /// Function: SetCharacters
     /// </summary>
-    public unsafe virtual void SetCharacters(BmSDK.FString LeftCharacterName, BmSDK.FString RightCharacterName, bool Player1Ready, bool Player2Ready)
+    public unsafe virtual void SetCharacters(BmSDK.FStringArg LeftCharacterName, BmSDK.FStringArg RightCharacterName, bool Player1Ready, bool Player2Ready)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCharacters, "BmGame.RCharacterSelect.SetCharacters");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCharacters, "BmGame.RCharacterSelect.SetCharacters", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(LeftCharacterName, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(RightCharacterName, paramsPtr + 16);
+        LeftCharacterName.WriteTo(paramsPtr + 0);
+        RightCharacterName.WriteTo(paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player1Ready, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player2Ready, paramsPtr + 36);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_GetCharacterConfigIndex;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCharacterConfigIndex;
     /// <summary>
     /// Function: GetCharacterConfigIndex
     /// </summary>
-    public unsafe virtual int GetCharacterConfigIndex(BmSDK.FString CharacterName)
+    public unsafe virtual int GetCharacterConfigIndex(BmSDK.FStringArg CharacterName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCharacterConfigIndex, "BmGame.RCharacterSelect.GetCharacterConfigIndex");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCharacterConfigIndex, "BmGame.RCharacterSelect.GetCharacterConfigIndex", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(CharacterName, paramsPtr + 0);
+        CharacterName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaSeconds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RCharacterSelect.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RCharacterSelect.Tick", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaSeconds, paramsPtr + 0);
@@ -126,14 +129,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TickPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickPlayer;
     /// <summary>
     /// Function: TickPlayer
     /// </summary>
     public unsafe virtual void TickPlayer(float DeltaSeconds, out BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer Player, BmSDK.Engine.Actor PositionDummy)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickPlayer, "BmGame.RCharacterSelect.TickPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickPlayer, "BmGame.RCharacterSelect.TickPlayer", this);
         byte* paramsPtr = stackalloc byte[128];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaSeconds, paramsPtr + 0);
@@ -143,56 +146,56 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RCharacterSelect.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RCharacterSelect.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RightPlayerBlendToIdle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RightPlayerBlendToIdle;
     /// <summary>
     /// Function: RightPlayerBlendToIdle
     /// </summary>
     public unsafe virtual void RightPlayerBlendToIdle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RightPlayerBlendToIdle, "BmGame.RCharacterSelect.RightPlayerBlendToIdle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RightPlayerBlendToIdle, "BmGame.RCharacterSelect.RightPlayerBlendToIdle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LeftPlayerBlendToIdle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LeftPlayerBlendToIdle;
     /// <summary>
     /// Function: LeftPlayerBlendToIdle
     /// </summary>
     public unsafe virtual void LeftPlayerBlendToIdle()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LeftPlayerBlendToIdle, "BmGame.RCharacterSelect.LeftPlayerBlendToIdle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LeftPlayerBlendToIdle, "BmGame.RCharacterSelect.LeftPlayerBlendToIdle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetReady;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetReady;
     /// <summary>
     /// Function: SetReady
     /// </summary>
     public unsafe virtual void SetReady(out BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer Player, bool bNewValue, BmSDK.FName BlendToIdleFunction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetReady, "BmGame.RCharacterSelect.SetReady");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetReady, "BmGame.RCharacterSelect.SetReady", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewValue, paramsPtr + 88);
@@ -202,14 +205,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetConfig;
     /// <summary>
     /// Function: GetConfig
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RAddContentCharacterSelect GetConfig(int Index)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetConfig, "BmGame.RCharacterSelect.GetConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetConfig, "BmGame.RCharacterSelect.GetConfig", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Index, paramsPtr + 0);
@@ -217,14 +220,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RAddContentCharacterSelect>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SyncMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SyncMesh;
     /// <summary>
     /// Function: SyncMesh
     /// </summary>
     public unsafe virtual void SyncMesh(out BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer Player, BmSDK.BmGame.RAddContentCharacterSelect Config, BmSDK.Engine.Actor PositionDummy)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SyncMesh, "BmGame.RCharacterSelect.SyncMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SyncMesh, "BmGame.RCharacterSelect.SyncMesh", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Config, paramsPtr + 88);
@@ -234,14 +237,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearMaterials;
     /// <summary>
     /// Function: ClearMaterials
     /// </summary>
     public unsafe virtual void ClearMaterials(BmSDK.Engine.SkeletalMeshComponent Mesh)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMaterials, "BmGame.RCharacterSelect.ClearMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearMaterials, "BmGame.RCharacterSelect.ClearMaterials", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Mesh, paramsPtr + 0);
@@ -249,14 +252,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SyncMeshPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SyncMeshPosition;
     /// <summary>
     /// Function: SyncMeshPosition
     /// </summary>
     public unsafe virtual void SyncMeshPosition(BmSDK.Engine.SkeletalMeshComponent Mesh, BmSDK.Engine.Actor PositionDummy, System.Numerics.Vector3 PositionOffset)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SyncMeshPosition, "BmGame.RCharacterSelect.SyncMeshPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SyncMeshPosition, "BmGame.RCharacterSelect.SyncMeshPosition", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Mesh, paramsPtr + 0);
@@ -266,14 +269,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ConstructCape;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstructCape;
     /// <summary>
     /// Function: ConstructCape
     /// </summary>
     public unsafe virtual void ConstructCape(out BmSDK.BmGame.RCharacterSelect.FCharacterSelectPlayer Player, BmSDK.Engine.Actor PositionDummy, BmSDK.Engine.SkeletalMeshComponent Parent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstructCape, "BmGame.RCharacterSelect.ConstructCape");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConstructCape, "BmGame.RCharacterSelect.ConstructCape", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PositionDummy, paramsPtr + 88);
@@ -283,28 +286,28 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ConstructAttachMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstructAttachMesh;
     /// <summary>
     /// Function: ConstructAttachMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMeshComponent ConstructAttachMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstructAttachMesh, "BmGame.RCharacterSelect.ConstructAttachMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConstructAttachMesh, "BmGame.RCharacterSelect.ConstructAttachMesh", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.SkeletalMeshComponent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ConstructExtraMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstructExtraMesh;
     /// <summary>
     /// Function: ConstructExtraMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMeshComponent ConstructExtraMesh(BmSDK.Engine.Actor PositionDummy, BmSDK.Engine.SkeletalMeshComponent Parent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstructExtraMesh, "BmGame.RCharacterSelect.ConstructExtraMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConstructExtraMesh, "BmGame.RCharacterSelect.ConstructExtraMesh", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PositionDummy, paramsPtr + 0);
@@ -313,14 +316,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.SkeletalMeshComponent>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_ConstructMainMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ConstructMainMesh;
     /// <summary>
     /// Function: ConstructMainMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.SkeletalMeshComponent ConstructMainMesh(BmSDK.Engine.Actor PositionDummy)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ConstructMainMesh, "BmGame.RCharacterSelect.ConstructMainMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ConstructMainMesh, "BmGame.RCharacterSelect.ConstructMainMesh", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PositionDummy, paramsPtr + 0);
@@ -328,28 +331,28 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.SkeletalMeshComponent>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_RemoveAllConfigs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveAllConfigs;
     /// <summary>
     /// Function: RemoveAllConfigs
     /// </summary>
     public unsafe virtual void RemoveAllConfigs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveAllConfigs, "BmGame.RCharacterSelect.RemoveAllConfigs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveAllConfigs, "BmGame.RCharacterSelect.RemoveAllConfigs", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddConfig;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddConfig;
     /// <summary>
     /// Function: AddConfig
     /// </summary>
     public unsafe virtual void AddConfig(BmSDK.BmGame.RAddContentCharacterSelect CharConfig)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddConfig, "BmGame.RCharacterSelect.AddConfig");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddConfig, "BmGame.RCharacterSelect.AddConfig", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CharConfig, paramsPtr + 0);
@@ -357,14 +360,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_TermCharacterSelectPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TermCharacterSelectPhysics;
     /// <summary>
     /// Function: TermCharacterSelectPhysics
     /// </summary>
     public unsafe virtual void TermCharacterSelectPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TermCharacterSelectPhysics, "BmGame.RCharacterSelect.TermCharacterSelectPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TermCharacterSelectPhysics, "BmGame.RCharacterSelect.TermCharacterSelectPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -378,14 +381,14 @@ public partial class RCharacterSelect : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InitCharacterSelectPhysics;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitCharacterSelectPhysics;
     /// <summary>
     /// Function: InitCharacterSelectPhysics
     /// </summary>
     public unsafe virtual void InitCharacterSelectPhysics()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitCharacterSelectPhysics, "BmGame.RCharacterSelect.InitCharacterSelectPhysics");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitCharacterSelectPhysics, "BmGame.RCharacterSelect.InitCharacterSelectPhysics", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

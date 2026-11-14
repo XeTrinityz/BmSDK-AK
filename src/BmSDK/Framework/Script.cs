@@ -43,9 +43,15 @@ public abstract class Script
     /// <summary>
     /// Called every time a key or mouse button is pressed, whether or not the key is swallowed
     /// (see <see cref="Keyboard"/>). Delivered from the engine tick, so it fires while the game is
-    /// paused or in a cutscene too.
+    /// paused or in a cutscene too. A press and release inside one frame still reports both.
     /// </summary>
     public virtual void OnKeyDown(Keys key) { }
+
+    /// <summary>
+    /// Called every time a key or mouse button is released. Delivered with <see cref="OnKeyDown"/>,
+    /// in the order the events happened, and when the window loses focus for every key that was held.
+    /// </summary>
+    public virtual void OnKeyUp(Keys key) { }
 
     /// <summary>
     /// Called once per rendered frame, after the game has drawn its own HUD, with the viewport's

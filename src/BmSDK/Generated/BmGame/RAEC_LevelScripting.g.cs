@@ -78,14 +78,14 @@ public partial class RAEC_LevelScripting : BmSDK.BmGame.RAlertEventCoordinatorBa
         where TComponent : class, Framework.IScriptComponent<RAEC_LevelScripting>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetLostPlayerAndDoOtherThingEventValFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLostPlayerAndDoOtherThingEventValFor;
     /// <summary>
     /// Function: GetLostPlayerAndDoOtherThingEventValFor
     /// </summary>
     public unsafe virtual BmSDK.FName GetLostPlayerAndDoOtherThingEventValFor(BmSDK.BmGame.RBMAIController TestCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLostPlayerAndDoOtherThingEventValFor, "BmGame.RAEC_LevelScripting.GetLostPlayerAndDoOtherThingEventValFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLostPlayerAndDoOtherThingEventValFor, "BmGame.RAEC_LevelScripting.GetLostPlayerAndDoOtherThingEventValFor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestCon, paramsPtr + 0);
@@ -93,70 +93,70 @@ public partial class RAEC_LevelScripting : BmSDK.BmGame.RAlertEventCoordinatorBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetFlagsForEndChase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFlagsForEndChase;
     /// <summary>
     /// Function: GetFlagsForEndChase
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RBarkFlagBase GetFlagsForEndChase()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFlagsForEndChase, "BmGame.RAEC_LevelScripting.GetFlagsForEndChase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFlagsForEndChase, "BmGame.RAEC_LevelScripting.GetFlagsForEndChase", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBarkFlagBase>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoPostAssignmentBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPostAssignmentBark;
     /// <summary>
     /// Function: DoPostAssignmentBark
     /// </summary>
     public unsafe virtual void DoPostAssignmentBark()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPostAssignmentBark, "BmGame.RAEC_LevelScripting.DoPostAssignmentBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPostAssignmentBark, "BmGame.RAEC_LevelScripting.DoPostAssignmentBark", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearDestSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearDestSearch;
     /// <summary>
     /// Function: ClearDestSearch
     /// </summary>
     public unsafe virtual void ClearDestSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearDestSearch, "BmGame.RAEC_LevelScripting.ClearDestSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearDestSearch, "BmGame.RAEC_LevelScripting.ClearDestSearch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitGoalDataInstance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitGoalDataInstance;
     /// <summary>
     /// Function: InitGoalDataInstance
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RMultiDestGoalData InitGoalDataInstance()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitGoalDataInstance, "BmGame.RAEC_LevelScripting.InitGoalDataInstance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitGoalDataInstance, "BmGame.RAEC_LevelScripting.InitGoalDataInstance", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RMultiDestGoalData>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAlreadyDoingJob;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAlreadyDoingJob;
     /// <summary>
     /// Function: IsAlreadyDoingJob
     /// </summary>
     public unsafe virtual bool IsAlreadyDoingJob(BmSDK.BmGame.RBMAIController TestCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAlreadyDoingJob, "BmGame.RAEC_LevelScripting.IsAlreadyDoingJob");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAlreadyDoingJob, "BmGame.RAEC_LevelScripting.IsAlreadyDoingJob", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestCon, paramsPtr + 0);
@@ -164,56 +164,56 @@ public partial class RAEC_LevelScripting : BmSDK.BmGame.RAlertEventCoordinatorBa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_InitMultiGoalSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMultiGoalSearch;
     /// <summary>
     /// Function: InitMultiGoalSearch
     /// </summary>
     public unsafe virtual void InitMultiGoalSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitMultiGoalSearch, "BmGame.RAEC_LevelScripting.InitMultiGoalSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitMultiGoalSearch, "BmGame.RAEC_LevelScripting.InitMultiGoalSearch", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BuildDestList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BuildDestList;
     /// <summary>
     /// Function: BuildDestList
     /// </summary>
     public unsafe virtual void BuildDestList()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BuildDestList, "BmGame.RAEC_LevelScripting.BuildDestList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildDestList, "BmGame.RAEC_LevelScripting.BuildDestList", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetSearch;
     /// <summary>
     /// Function: ResetSearch
     /// </summary>
     public unsafe virtual void ResetSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetSearch, "BmGame.RAEC_LevelScripting.ResetSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetSearch, "BmGame.RAEC_LevelScripting.ResetSearch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RAEC_LevelScripting.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RAEC_LevelScripting.Tick", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -221,14 +221,14 @@ public partial class RAEC_LevelScripting : BmSDK.BmGame.RAlertEventCoordinatorBa
         return;
     }
 
-    private static BmSDK.Function __fn_QueueEndChaseBark;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueueEndChaseBark;
     /// <summary>
     /// Function: QueueEndChaseBark
     /// </summary>
     public unsafe virtual void QueueEndChaseBark(BmSDK.BmGame.RPawnVillain NewEndChaseBarkPawn, bool bNewChasingFromSighting)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueueEndChaseBark, "BmGame.RAEC_LevelScripting.QueueEndChaseBark");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueueEndChaseBark, "BmGame.RAEC_LevelScripting.QueueEndChaseBark", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewEndChaseBarkPawn, paramsPtr + 0);
@@ -237,14 +237,14 @@ public partial class RAEC_LevelScripting : BmSDK.BmGame.RAlertEventCoordinatorBa
         return;
     }
 
-    private static BmSDK.Function __fn_InitChildAECFor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitChildAECFor;
     /// <summary>
     /// Function: InitChildAECFor
     /// </summary>
     public unsafe virtual void InitChildAECFor(BmSDK.BmGame.RSeqEvent_LevelScripting NewRoot)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitChildAECFor, "BmGame.RAEC_LevelScripting.InitChildAECFor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitChildAECFor, "BmGame.RAEC_LevelScripting.InitChildAECFor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRoot, paramsPtr + 0);

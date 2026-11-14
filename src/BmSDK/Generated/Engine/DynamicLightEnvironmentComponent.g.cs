@@ -78,14 +78,14 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
         where TComponent : class, Framework.IScriptComponent<DynamicLightEnvironmentComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetOwnerBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOwnerBounds;
     /// <summary>
     /// Function: GetOwnerBounds
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FBoxSphereBounds GetOwnerBounds()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOwnerBounds, "Engine.DynamicLightEnvironmentComponent.GetOwnerBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOwnerBounds, "Engine.DynamicLightEnvironmentComponent.GetOwnerBounds", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -99,14 +99,14 @@ public partial class DynamicLightEnvironmentComponent : BmSDK.Engine.LightEnviro
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FBoxSphereBounds>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ResetEnvironment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetEnvironment;
     /// <summary>
     /// Function: ResetEnvironment
     /// </summary>
     public unsafe virtual void ResetEnvironment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetEnvironment, "Engine.DynamicLightEnvironmentComponent.ResetEnvironment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetEnvironment, "Engine.DynamicLightEnvironmentComponent.ResetEnvironment", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

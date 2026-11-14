@@ -91,28 +91,28 @@ public partial class RSeqAct_DisableVoiceSynthesiserOnIdleConfigThug : BmSDK.Eng
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug;
     /// <summary>
     /// Function: VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug
     /// </summary>
     public unsafe virtual void VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug, "BmGame.RSeqAct_DisableVoiceSynthesiserOnIdleConfigThug.VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug, "BmGame.RSeqAct_DisableVoiceSynthesiserOnIdleConfigThug.VoiceSynthesiserSelectionFailedBecausePlayerTriedToSelectIdleConfigThug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_DisableVoiceSynthesiserOnIdleConfigThug.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_DisableVoiceSynthesiserOnIdleConfigThug.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

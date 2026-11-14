@@ -78,70 +78,70 @@ public partial class RJokerSwapMesh : BmSDK.BmGame.RJokerSwappableBase, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RJokerSwapMesh>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ApplyJokerOverrideMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyJokerOverrideMaterials;
     /// <summary>
     /// Function: ApplyJokerOverrideMaterials
     /// </summary>
     public unsafe virtual void ApplyJokerOverrideMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyJokerOverrideMaterials, "BmGame.RJokerSwapMesh.ApplyJokerOverrideMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyJokerOverrideMaterials, "BmGame.RJokerSwapMesh.ApplyJokerOverrideMaterials", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyOriginalMeshMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyOriginalMeshMaterials;
     /// <summary>
     /// Function: ApplyOriginalMeshMaterials
     /// </summary>
     public unsafe virtual void ApplyOriginalMeshMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyOriginalMeshMaterials, "BmGame.RJokerSwapMesh.ApplyOriginalMeshMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyOriginalMeshMaterials, "BmGame.RJokerSwapMesh.ApplyOriginalMeshMaterials", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StoreOriginalMeshMaterials;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StoreOriginalMeshMaterials;
     /// <summary>
     /// Function: StoreOriginalMeshMaterials
     /// </summary>
     public unsafe virtual void StoreOriginalMeshMaterials()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StoreOriginalMeshMaterials, "BmGame.RJokerSwapMesh.StoreOriginalMeshMaterials");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StoreOriginalMeshMaterials, "BmGame.RJokerSwapMesh.StoreOriginalMeshMaterials", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "BmGame.RJokerSwapMesh.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "BmGame.RJokerSwapMesh.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SwapToOriginalVersion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapToOriginalVersion;
     /// <summary>
     /// Function: SwapToOriginalVersion
     /// </summary>
     public unsafe override void SwapToOriginalVersion(bool bForce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapToOriginalVersion, "BmGame.RJokerSwapMesh.SwapToOriginalVersion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapToOriginalVersion, "BmGame.RJokerSwapMesh.SwapToOriginalVersion", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForce, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class RJokerSwapMesh : BmSDK.BmGame.RJokerSwappableBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SwapToJokerVersion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwapToJokerVersion;
     /// <summary>
     /// Function: SwapToJokerVersion
     /// </summary>
     public unsafe override void SwapToJokerVersion(bool bForce = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwapToJokerVersion, "BmGame.RJokerSwapMesh.SwapToJokerVersion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapToJokerVersion, "BmGame.RJokerSwapMesh.SwapToJokerVersion", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForce, paramsPtr + 0);

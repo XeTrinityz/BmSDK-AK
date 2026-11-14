@@ -77,12 +77,12 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     /// <summary>
     /// Function: LaunchURL
     /// </summary>
-    public unsafe static void LaunchURL(BmSDK.FString URL)
+    public unsafe static void LaunchURL(BmSDK.FStringArg URL)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LaunchURL, "Engine.Engine.LaunchURL");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(URL, paramsPtr + 0);
+        URL.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -91,6 +91,7 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -178,13 +179,13 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     /// <summary>
     /// Function: BasicLoadObject
     /// </summary>
-    public unsafe static bool BasicLoadObject(BmSDK.GameObject Obj, BmSDK.FString PathName, bool bIsSaveGame, int Version)
+    public unsafe static bool BasicLoadObject(BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BasicLoadObject, "Engine.Engine.BasicLoadObject");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PathName, paramsPtr + 8);
+        PathName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsSaveGame, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Version, paramsPtr + 28);
         var oldFlags = funcManaged.FunctionFlags;
@@ -195,6 +196,7 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
@@ -202,13 +204,13 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     /// <summary>
     /// Function: BasicSaveObject
     /// </summary>
-    public unsafe static bool BasicSaveObject(BmSDK.GameObject Obj, BmSDK.FString PathName, bool bIsSaveGame, int Version, bool bEncrypt = default)
+    public unsafe static bool BasicSaveObject(BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version, bool bEncrypt = default)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BasicSaveObject, "Engine.Engine.BasicSaveObject");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PathName, paramsPtr + 8);
+        PathName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsSaveGame, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Version, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEncrypt, paramsPtr + 32);
@@ -220,17 +222,18 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_AddTextureStreamingSlaveLoc;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddTextureStreamingSlaveLoc;
     /// <summary>
     /// Function: AddTextureStreamingSlaveLoc
     /// </summary>
     public unsafe virtual void AddTextureStreamingSlaveLoc(System.Numerics.Vector3 InLoc, float BoostFactor, bool bOverrideLocation, float OverrideDuration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddTextureStreamingSlaveLoc, "Engine.Engine.AddTextureStreamingSlaveLoc");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddTextureStreamingSlaveLoc, "Engine.Engine.AddTextureStreamingSlaveLoc", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InLoc, paramsPtr + 0);
@@ -352,13 +355,13 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     /// <summary>
     /// Function: AddOverlayWrapped
     /// </summary>
-    public unsafe static void AddOverlayWrapped(BmSDK.Engine.Font Font, BmSDK.FString Text, float X, float Y, float ScaleX, float ScaleY, float WrapWidth)
+    public unsafe static void AddOverlayWrapped(BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, float WrapWidth)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddOverlayWrapped, "Engine.Engine.AddOverlayWrapped");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Font, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 8);
+        Text.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Y, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScaleX, paramsPtr + 32);
@@ -372,6 +375,7 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
@@ -379,13 +383,13 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
     /// <summary>
     /// Function: AddOverlay
     /// </summary>
-    public unsafe static void AddOverlay(BmSDK.Engine.Font Font, BmSDK.FString Text, float X, float Y, float ScaleX, float ScaleY, bool bIsCentered)
+    public unsafe static void AddOverlay(BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, bool bIsCentered)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddOverlay, "Engine.Engine.AddOverlay");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Font, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 8);
+        Text.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Y, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScaleX, paramsPtr + 32);
@@ -399,6 +403,7 @@ public partial class _Engine : BmSDK.Subsystem, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
@@ -3666,13 +3671,13 @@ public static class _EngineStatics
     /// <summary>
     /// Function: LaunchURL, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void LaunchURL(this BmSDK.Engine._Engine self, BmSDK.FString URL)
+    public unsafe static void LaunchURL(this BmSDK.Engine._Engine self, BmSDK.FStringArg URL)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LaunchURL, "Engine.Engine.LaunchURL");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(URL, paramsPtr + 0);
+        URL.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -3681,6 +3686,7 @@ public static class _EngineStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -3772,14 +3778,14 @@ public static class _EngineStatics
     /// <summary>
     /// Function: BasicLoadObject, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static bool BasicLoadObject(this BmSDK.Engine._Engine self, BmSDK.GameObject Obj, BmSDK.FString PathName, bool bIsSaveGame, int Version)
+    public unsafe static bool BasicLoadObject(this BmSDK.Engine._Engine self, BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BasicLoadObject, "Engine.Engine.BasicLoadObject");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PathName, paramsPtr + 8);
+        PathName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsSaveGame, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Version, paramsPtr + 28);
         var oldFlags = funcManaged.FunctionFlags;
@@ -3790,6 +3796,7 @@ public static class _EngineStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
@@ -3797,14 +3804,14 @@ public static class _EngineStatics
     /// <summary>
     /// Function: BasicSaveObject, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static bool BasicSaveObject(this BmSDK.Engine._Engine self, BmSDK.GameObject Obj, BmSDK.FString PathName, bool bIsSaveGame, int Version, bool bEncrypt = default)
+    public unsafe static bool BasicSaveObject(this BmSDK.Engine._Engine self, BmSDK.GameObject Obj, BmSDK.FStringArg PathName, bool bIsSaveGame, int Version, bool bEncrypt = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BasicSaveObject, "Engine.Engine.BasicSaveObject");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Obj, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PathName, paramsPtr + 8);
+        PathName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsSaveGame, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Version, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEncrypt, paramsPtr + 32);
@@ -3816,6 +3823,7 @@ public static class _EngineStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
@@ -3928,14 +3936,14 @@ public static class _EngineStatics
     /// <summary>
     /// Function: AddOverlayWrapped, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void AddOverlayWrapped(this BmSDK.Engine._Engine self, BmSDK.Engine.Font Font, BmSDK.FString Text, float X, float Y, float ScaleX, float ScaleY, float WrapWidth)
+    public unsafe static void AddOverlayWrapped(this BmSDK.Engine._Engine self, BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, float WrapWidth)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddOverlayWrapped, "Engine.Engine.AddOverlayWrapped");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Font, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 8);
+        Text.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Y, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScaleX, paramsPtr + 32);
@@ -3949,6 +3957,7 @@ public static class _EngineStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
@@ -3956,14 +3965,14 @@ public static class _EngineStatics
     /// <summary>
     /// Function: AddOverlay, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void AddOverlay(this BmSDK.Engine._Engine self, BmSDK.Engine.Font Font, BmSDK.FString Text, float X, float Y, float ScaleX, float ScaleY, bool bIsCentered)
+    public unsafe static void AddOverlay(this BmSDK.Engine._Engine self, BmSDK.Engine.Font Font, BmSDK.FStringArg Text, float X, float Y, float ScaleX, float ScaleY, bool bIsCentered)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddOverlay, "Engine.Engine.AddOverlay");
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Font, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Text, paramsPtr + 8);
+        Text.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(X, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Y, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ScaleX, paramsPtr + 32);
@@ -3977,6 +3986,7 @@ public static class _EngineStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 

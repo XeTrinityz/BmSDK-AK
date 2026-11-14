@@ -91,28 +91,28 @@ public partial class RSeqAct_SideStory_Update : BmSDK.Engine.SequenceAction, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShowDiscoveryElementOnHudIfNew;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowDiscoveryElementOnHudIfNew;
     /// <summary>
     /// Function: ShowDiscoveryElementOnHudIfNew
     /// </summary>
     public unsafe virtual bool ShowDiscoveryElementOnHudIfNew()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowDiscoveryElementOnHudIfNew, "BmScript.RSeqAct_SideStory_Update.ShowDiscoveryElementOnHudIfNew");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowDiscoveryElementOnHudIfNew, "BmScript.RSeqAct_SideStory_Update.ShowDiscoveryElementOnHudIfNew", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmScript.RSeqAct_SideStory_Update.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_SideStory_Update.Activated", this);
         byte* paramsPtr = stackalloc byte[168];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

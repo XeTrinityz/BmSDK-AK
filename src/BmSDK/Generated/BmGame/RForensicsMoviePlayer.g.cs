@@ -78,28 +78,28 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
         where TComponent : class, Framework.IScriptComponent<RForensicsMoviePlayer>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_IsZooming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsZooming;
     /// <summary>
     /// Function: IsZooming
     /// </summary>
     public unsafe virtual bool IsZooming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsZooming, "BmGame.RForensicsMoviePlayer.IsZooming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsZooming, "BmGame.RForensicsMoviePlayer.IsZooming", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetZoomMultiplication;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetZoomMultiplication;
     /// <summary>
     /// Function: SetZoomMultiplication
     /// </summary>
     public unsafe virtual void SetZoomMultiplication(int _ZoomMultiplication)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetZoomMultiplication, "BmGame.RForensicsMoviePlayer.SetZoomMultiplication");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetZoomMultiplication, "BmGame.RForensicsMoviePlayer.SetZoomMultiplication", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_ZoomMultiplication, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ZoomToSection;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ZoomToSection;
     /// <summary>
     /// Function: ZoomToSection
     /// </summary>
     public unsafe virtual void ZoomToSection(int SectionId)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ZoomToSection, "BmGame.RForensicsMoviePlayer.ZoomToSection");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ZoomToSection, "BmGame.RForensicsMoviePlayer.ZoomToSection", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SectionId, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_PlayerMoveTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerMoveTime;
     /// <summary>
     /// Function: PlayerMoveTime
     /// </summary>
     public unsafe virtual void PlayerMoveTime(float AddTimeSeconds)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerMoveTime, "BmGame.RForensicsMoviePlayer.PlayerMoveTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerMoveTime, "BmGame.RForensicsMoviePlayer.PlayerMoveTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AddTimeSeconds, paramsPtr + 0);
@@ -144,14 +144,14 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_ClosePlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosePlayer;
     /// <summary>
     /// Function: ClosePlayer
     /// </summary>
     public unsafe virtual void ClosePlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosePlayer, "BmGame.RForensicsMoviePlayer.ClosePlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosePlayer, "BmGame.RForensicsMoviePlayer.ClosePlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -165,14 +165,14 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_InitPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitPlayer;
     /// <summary>
     /// Function: InitPlayer
     /// </summary>
     public unsafe virtual void InitPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitPlayer, "BmGame.RForensicsMoviePlayer.InitPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitPlayer, "BmGame.RForensicsMoviePlayer.InitPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -186,14 +186,14 @@ public partial class RForensicsMoviePlayer : BmSDK.Engine.ActorComponent, BmSDK.
         return;
     }
 
-    private static BmSDK.Function __fn_GetMovieDuration;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMovieDuration;
     /// <summary>
     /// Function: GetMovieDuration
     /// </summary>
     public unsafe virtual float GetMovieDuration()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMovieDuration, "BmGame.RForensicsMoviePlayer.GetMovieDuration");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMovieDuration, "BmGame.RForensicsMoviePlayer.GetMovieDuration", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,14 +78,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RRobinBotController>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetAssistTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAssistTarget;
     /// <summary>
     /// Function: GetAssistTarget
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnVillain GetAssistTarget(bool bAllowMinigunners = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAssistTarget, "BmGame.RRobinBotController.GetAssistTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAssistTarget, "BmGame.RRobinBotController.GetAssistTarget", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllowMinigunners, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnVillain>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetBestHidePointForRobin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestHidePointForRobin;
     /// <summary>
     /// Function: GetBestHidePointForRobin
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RHidePoint GetBestHidePointForRobin(bool IsInjured, bool bCheckCollision = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestHidePointForRobin, "BmGame.RRobinBotController.GetBestHidePointForRobin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBestHidePointForRobin, "BmGame.RRobinBotController.GetBestHidePointForRobin", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsInjured, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RHidePoint>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe virtual void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RRobinBotController.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RRobinBotController.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -131,42 +131,42 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_SwitchControlForTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SwitchControlForTakedown;
     /// <summary>
     /// Function: SwitchControlForTakedown
     /// </summary>
     public unsafe virtual void SwitchControlForTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SwitchControlForTakedown, "BmGame.RRobinBotController.SwitchControlForTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwitchControlForTakedown, "BmGame.RRobinBotController.SwitchControlForTakedown", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnSimultaneousPredatorTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnSimultaneousPredatorTakedown;
     /// <summary>
     /// Function: SpawnSimultaneousPredatorTakedown
     /// </summary>
     public unsafe virtual void SpawnSimultaneousPredatorTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnSimultaneousPredatorTakedown, "BmGame.RRobinBotController.SpawnSimultaneousPredatorTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnSimultaneousPredatorTakedown, "BmGame.RRobinBotController.SpawnSimultaneousPredatorTakedown", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetSimultaneousTakedownTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSimultaneousTakedownTarget;
     /// <summary>
     /// Function: SetSimultaneousTakedownTarget
     /// </summary>
     public unsafe virtual void SetSimultaneousTakedownTarget(BmSDK.BmGame.RPawnVillain NewTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSimultaneousTakedownTarget, "BmGame.RRobinBotController.SetSimultaneousTakedownTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSimultaneousTakedownTarget, "BmGame.RRobinBotController.SetSimultaneousTakedownTarget", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTarget, paramsPtr + 0);
@@ -174,56 +174,56 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_RobinTakedownFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RobinTakedownFinished;
     /// <summary>
     /// Function: RobinTakedownFinished
     /// </summary>
     public unsafe virtual void RobinTakedownFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RobinTakedownFinished, "BmGame.RRobinBotController.RobinTakedownFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RobinTakedownFinished, "BmGame.RRobinBotController.RobinTakedownFinished", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RobinPredatorCooldown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RobinPredatorCooldown;
     /// <summary>
     /// Function: RobinPredatorCooldown
     /// </summary>
     public unsafe virtual void RobinPredatorCooldown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RobinPredatorCooldown, "BmGame.RRobinBotController.RobinPredatorCooldown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RobinPredatorCooldown, "BmGame.RRobinBotController.RobinPredatorCooldown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsInVantage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInVantage;
     /// <summary>
     /// Function: IsInVantage
     /// </summary>
     public unsafe virtual bool IsInVantage()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInVantage, "BmGame.RRobinBotController.IsInVantage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInVantage, "BmGame.RRobinBotController.IsInVantage", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_NotifyShotBy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyShotBy;
     /// <summary>
     /// Function: NotifyShotBy
     /// </summary>
     public unsafe virtual void NotifyShotBy(BmSDK.BmGame.RPawnCombat.FDamageInfo DmgInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyShotBy, "BmGame.RRobinBotController.NotifyShotBy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyShotBy, "BmGame.RRobinBotController.NotifyShotBy", this);
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgInfo, paramsPtr + 0);
@@ -231,56 +231,56 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_DualPlayTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DualPlayTakedown;
     /// <summary>
     /// Function: DualPlayTakedown
     /// </summary>
     public unsafe virtual bool DualPlayTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DualPlayTakedown, "BmGame.RRobinBotController.DualPlayTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DualPlayTakedown, "BmGame.RRobinBotController.DualPlayTakedown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DualPlayDistract;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DualPlayDistract;
     /// <summary>
     /// Function: DualPlayDistract
     /// </summary>
     public unsafe virtual void DualPlayDistract()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DualPlayDistract, "BmGame.RRobinBotController.DualPlayDistract");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DualPlayDistract, "BmGame.RRobinBotController.DualPlayDistract", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostFallingPhysicsCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostFallingPhysicsCallback;
     /// <summary>
     /// Function: PostFallingPhysicsCallback
     /// </summary>
     public unsafe virtual void PostFallingPhysicsCallback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostFallingPhysicsCallback, "BmGame.RRobinBotController.PostFallingPhysicsCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostFallingPhysicsCallback, "BmGame.RRobinBotController.PostFallingPhysicsCallback", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChooseMoveToPlayerLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseMoveToPlayerLocation;
     /// <summary>
     /// Function: ChooseMoveToPlayerLocation
     /// </summary>
     public unsafe virtual bool ChooseMoveToPlayerLocation(out System.Numerics.Vector3 IdealLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseMoveToPlayerLocation, "BmGame.RRobinBotController.ChooseMoveToPlayerLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseMoveToPlayerLocation, "BmGame.RRobinBotController.ChooseMoveToPlayerLocation", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out IdealLocation);
@@ -290,14 +290,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_PointValid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PointValid;
     /// <summary>
     /// Function: PointValid
     /// </summary>
     public unsafe virtual bool PointValid(System.Numerics.Vector3 Loc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PointValid, "BmGame.RRobinBotController.PointValid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PointValid, "BmGame.RRobinBotController.PointValid", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
@@ -305,14 +305,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_StartNavMeshSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartNavMeshSearch;
     /// <summary>
     /// Function: StartNavMeshSearch
     /// </summary>
     public unsafe virtual void StartNavMeshSearch(System.Numerics.Vector3 Destination)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartNavMeshSearch, "BmGame.RRobinBotController.StartNavMeshSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartNavMeshSearch, "BmGame.RRobinBotController.StartNavMeshSearch", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Destination, paramsPtr + 0);
@@ -320,14 +320,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_JumpOffLedge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_JumpOffLedge;
     /// <summary>
     /// Function: JumpOffLedge
     /// </summary>
     public unsafe virtual void JumpOffLedge(float StepHeight, System.Numerics.Vector3 JumpDirection, System.Numerics.Vector3 JumpLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_JumpOffLedge, "BmGame.RRobinBotController.JumpOffLedge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JumpOffLedge, "BmGame.RRobinBotController.JumpOffLedge", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StepHeight, paramsPtr + 0);
@@ -337,28 +337,28 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_FollowPath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FollowPath;
     /// <summary>
     /// Function: FollowPath
     /// </summary>
     public unsafe virtual void FollowPath()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FollowPath, "BmGame.RRobinBotController.FollowPath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FollowPath, "BmGame.RRobinBotController.FollowPath", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MoveToGoal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MoveToGoal;
     /// <summary>
     /// Function: MoveToGoal
     /// </summary>
     public unsafe virtual void MoveToGoal(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveToGoal, "BmGame.RRobinBotController.MoveToGoal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MoveToGoal, "BmGame.RRobinBotController.MoveToGoal", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -366,84 +366,84 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RRobinBotController.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RRobinBotController.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.RRobinBotController.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RRobinBotController.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldPathToKismetPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPathToKismetPoint;
     /// <summary>
     /// Function: ShouldPathToKismetPoint
     /// </summary>
     public unsafe virtual bool ShouldPathToKismetPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPathToKismetPoint, "BmGame.RRobinBotController.ShouldPathToKismetPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPathToKismetPoint, "BmGame.RRobinBotController.ShouldPathToKismetPoint", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldPathToPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldPathToPlayer;
     /// <summary>
     /// Function: ShouldPathToPlayer
     /// </summary>
     public unsafe virtual bool ShouldPathToPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldPathToPlayer, "BmGame.RRobinBotController.ShouldPathToPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldPathToPlayer, "BmGame.RRobinBotController.ShouldPathToPlayer", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanUseDoors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseDoors;
     /// <summary>
     /// Function: CanUseDoors
     /// </summary>
     public unsafe virtual bool CanUseDoors()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseDoors, "BmGame.RRobinBotController.CanUseDoors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUseDoors, "BmGame.RRobinBotController.CanUseDoors", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TrySpawnEvade;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrySpawnEvade;
     /// <summary>
     /// Function: TrySpawnEvade
     /// </summary>
     public unsafe virtual bool TrySpawnEvade(System.Numerics.Vector3 EvadeDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnEvade, "BmGame.RRobinBotController.TrySpawnEvade");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrySpawnEvade, "BmGame.RRobinBotController.TrySpawnEvade", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EvadeDir, paramsPtr + 0);
@@ -451,56 +451,56 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_EnterKismetStand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnterKismetStand;
     /// <summary>
     /// Function: EnterKismetStand
     /// </summary>
     public unsafe virtual void EnterKismetStand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnterKismetStand, "BmGame.RRobinBotController.EnterKismetStand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnterKismetStand, "BmGame.RRobinBotController.EnterKismetStand", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveFromKismetStand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveFromKismetStand;
     /// <summary>
     /// Function: RemoveFromKismetStand
     /// </summary>
     public unsafe virtual bool RemoveFromKismetStand()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveFromKismetStand, "BmGame.RRobinBotController.RemoveFromKismetStand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveFromKismetStand, "BmGame.RRobinBotController.RemoveFromKismetStand", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PlayerIsCrouching;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerIsCrouching;
     /// <summary>
     /// Function: PlayerIsCrouching
     /// </summary>
     public unsafe virtual bool PlayerIsCrouching()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerIsCrouching, "BmGame.RRobinBotController.PlayerIsCrouching");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerIsCrouching, "BmGame.RRobinBotController.PlayerIsCrouching", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckForCrouching;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForCrouching;
     /// <summary>
     /// Function: CheckForCrouching
     /// </summary>
     public unsafe virtual void CheckForCrouching(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForCrouching, "BmGame.RRobinBotController.CheckForCrouching");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForCrouching, "BmGame.RRobinBotController.CheckForCrouching", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -508,56 +508,56 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_StopAllLookAtPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAllLookAtPlayer;
     /// <summary>
     /// Function: StopAllLookAtPlayer
     /// </summary>
     public unsafe virtual void StopAllLookAtPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAllLookAtPlayer, "BmGame.RRobinBotController.StopAllLookAtPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAllLookAtPlayer, "BmGame.RRobinBotController.StopAllLookAtPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearLookForward;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearLookForward;
     /// <summary>
     /// Function: ClearLookForward
     /// </summary>
     public unsafe virtual void ClearLookForward()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearLookForward, "BmGame.RRobinBotController.ClearLookForward");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLookForward, "BmGame.RRobinBotController.ClearLookForward", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearLookBack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearLookBack;
     /// <summary>
     /// Function: ClearLookBack
     /// </summary>
     public unsafe virtual void ClearLookBack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearLookBack, "BmGame.RRobinBotController.ClearLookBack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearLookBack, "BmGame.RRobinBotController.ClearLookBack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateLookAtPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateLookAtPlayer;
     /// <summary>
     /// Function: UpdateLookAtPlayer
     /// </summary>
     public unsafe virtual void UpdateLookAtPlayer(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateLookAtPlayer, "BmGame.RRobinBotController.UpdateLookAtPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateLookAtPlayer, "BmGame.RRobinBotController.UpdateLookAtPlayer", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -565,28 +565,28 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_ResetTimeLookAtPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetTimeLookAtPlayer;
     /// <summary>
     /// Function: ResetTimeLookAtPlayer
     /// </summary>
     public unsafe virtual void ResetTimeLookAtPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetTimeLookAtPlayer, "BmGame.RRobinBotController.ResetTimeLookAtPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetTimeLookAtPlayer, "BmGame.RRobinBotController.ResetTimeLookAtPlayer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateMovement;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateMovement;
     /// <summary>
     /// Function: UpdateMovement
     /// </summary>
     public unsafe virtual void UpdateMovement(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateMovement, "BmGame.RRobinBotController.UpdateMovement");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateMovement, "BmGame.RRobinBotController.UpdateMovement", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -594,42 +594,42 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_PlayerInWay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerInWay;
     /// <summary>
     /// Function: PlayerInWay
     /// </summary>
     public unsafe virtual bool PlayerInWay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerInWay, "BmGame.RRobinBotController.PlayerInWay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerInWay, "BmGame.RRobinBotController.PlayerInWay", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SpawnFinishedCombatMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnFinishedCombatMove;
     /// <summary>
     /// Function: SpawnFinishedCombatMove
     /// </summary>
     public unsafe virtual void SpawnFinishedCombatMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnFinishedCombatMove, "BmGame.RRobinBotController.SpawnFinishedCombatMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnFinishedCombatMove, "BmGame.RRobinBotController.SpawnFinishedCombatMove", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCarrying;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCarrying;
     /// <summary>
     /// Function: SetCarrying
     /// </summary>
     public unsafe virtual void SetCarrying(bool bCarry, BmSDK.BmGame.RSeqAct_BeginCarryJokerThugBase CarrySeq = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCarrying, "BmGame.RRobinBotController.SetCarrying");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCarrying, "BmGame.RRobinBotController.SetCarrying", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCarry, paramsPtr + 0);
@@ -638,28 +638,28 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_ForceCarryJokerTransitionOver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceCarryJokerTransitionOver;
     /// <summary>
     /// Function: ForceCarryJokerTransitionOver
     /// </summary>
     public unsafe virtual void ForceCarryJokerTransitionOver()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceCarryJokerTransitionOver, "BmGame.RRobinBotController.ForceCarryJokerTransitionOver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceCarryJokerTransitionOver, "BmGame.RRobinBotController.ForceCarryJokerTransitionOver", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Tick;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Tick;
     /// <summary>
     /// Function: Tick
     /// </summary>
     public unsafe override void Tick(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Tick, "BmGame.RRobinBotController.Tick");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Tick, "BmGame.RRobinBotController.Tick", this);
         byte* paramsPtr = stackalloc byte[156];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -667,28 +667,28 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_DoPreCombatMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPreCombatMove;
     /// <summary>
     /// Function: DoPreCombatMove
     /// </summary>
     public unsafe virtual void DoPreCombatMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPreCombatMove, "BmGame.RRobinBotController.DoPreCombatMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPreCombatMove, "BmGame.RRobinBotController.DoPreCombatMove", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnDualStrike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDualStrike;
     /// <summary>
     /// Function: SpawnDualStrike
     /// </summary>
     public unsafe virtual bool SpawnDualStrike(BmSDK.BmGame.RPawnVillain VillainTarget, BmSDK.BmGame.RPawnPlayerCombat.FDualStrikeInfo DStrikeInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDualStrike, "BmGame.RRobinBotController.SpawnDualStrike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnDualStrike, "BmGame.RRobinBotController.SpawnDualStrike", this);
         byte* paramsPtr = stackalloc byte[120];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(VillainTarget, paramsPtr + 0);
@@ -697,14 +697,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 44);
     }
 
-    private static BmSDK.Function __fn_IsDualStrikeInfoRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDualStrikeInfoRelevant;
     /// <summary>
     /// Function: IsDualStrikeInfoRelevant
     /// </summary>
     public unsafe virtual bool IsDualStrikeInfoRelevant(BmSDK.BmGame.RPawnPlayerCombat.FDualStrikeInfo TestInfo, BmSDK.BmGame.RPawnPlayerCombat InitiatorPawn, BmSDK.BmGame.RPawnPlayerCombat BuddyPawn, BmSDK.BmGame.RPawnVillain TargetPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDualStrikeInfoRelevant, "BmGame.RRobinBotController.IsDualStrikeInfoRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDualStrikeInfoRelevant, "BmGame.RRobinBotController.IsDualStrikeInfoRelevant", this);
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestInfo, paramsPtr + 0);
@@ -715,14 +715,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 60);
     }
 
-    private static BmSDK.Function __fn_IsVillainDualStrikeable;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsVillainDualStrikeable;
     /// <summary>
     /// Function: IsVillainDualStrikeable
     /// </summary>
     public unsafe virtual bool IsVillainDualStrikeable(BmSDK.BmGame.RPawnVillain TestVillain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsVillainDualStrikeable, "BmGame.RRobinBotController.IsVillainDualStrikeable");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsVillainDualStrikeable, "BmGame.RRobinBotController.IsVillainDualStrikeable", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestVillain, paramsPtr + 0);
@@ -730,14 +730,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TrySpawnMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrySpawnMove;
     /// <summary>
     /// Function: TrySpawnMove
     /// </summary>
     public unsafe virtual bool TrySpawnMove(BmSDK.BmGame.RRobinBotController.BotCombatMoveType MoveType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySpawnMove, "BmGame.RRobinBotController.TrySpawnMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrySpawnMove, "BmGame.RRobinBotController.TrySpawnMove", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveType, paramsPtr + 0);
@@ -745,42 +745,42 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ChooseCombatMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseCombatMove;
     /// <summary>
     /// Function: ChooseCombatMove
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRobinBotController.BotCombatMoveType ChooseCombatMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChooseCombatMove, "BmGame.RRobinBotController.ChooseCombatMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseCombatMove, "BmGame.RRobinBotController.ChooseCombatMove", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RRobinBotController.BotCombatMoveType>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TryCombatMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryCombatMove;
     /// <summary>
     /// Function: TryCombatMove
     /// </summary>
     public unsafe virtual void TryCombatMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryCombatMove, "BmGame.RRobinBotController.TryCombatMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryCombatMove, "BmGame.RRobinBotController.TryCombatMove", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CombatFaceAimAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CombatFaceAimAt;
     /// <summary>
     /// Function: CombatFaceAimAt
     /// </summary>
     public unsafe virtual void CombatFaceAimAt(BmSDK.BmGame.RPawnCombat PawnOfInterest)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CombatFaceAimAt, "BmGame.RRobinBotController.CombatFaceAimAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatFaceAimAt, "BmGame.RRobinBotController.CombatFaceAimAt", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnOfInterest, paramsPtr + 0);
@@ -788,14 +788,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_OnAllowNextStrike;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAllowNextStrike;
     /// <summary>
     /// Function: OnAllowNextStrike
     /// </summary>
     public unsafe virtual void OnAllowNextStrike(BmSDK.BmGame.RCombatMove CurrentMove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAllowNextStrike, "BmGame.RRobinBotController.OnAllowNextStrike");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAllowNextStrike, "BmGame.RRobinBotController.OnAllowNextStrike", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrentMove, paramsPtr + 0);
@@ -803,140 +803,140 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_IsFloorStrikeAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFloorStrikeAllowed;
     /// <summary>
     /// Function: IsFloorStrikeAllowed
     /// </summary>
     public unsafe virtual bool IsFloorStrikeAllowed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFloorStrikeAllowed, "BmGame.RRobinBotController.IsFloorStrikeAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFloorStrikeAllowed, "BmGame.RRobinBotController.IsFloorStrikeAllowed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsDualStrikeAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsDualStrikeAllowed;
     /// <summary>
     /// Function: IsDualStrikeAllowed
     /// </summary>
     public unsafe virtual bool IsDualStrikeAllowed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsDualStrikeAllowed, "BmGame.RRobinBotController.IsDualStrikeAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDualStrikeAllowed, "BmGame.RRobinBotController.IsDualStrikeAllowed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsRedirectAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRedirectAllowed;
     /// <summary>
     /// Function: IsRedirectAllowed
     /// </summary>
     public unsafe virtual bool IsRedirectAllowed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRedirectAllowed, "BmGame.RRobinBotController.IsRedirectAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRedirectAllowed, "BmGame.RRobinBotController.IsRedirectAllowed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsAutoSwapAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAutoSwapAllowed;
     /// <summary>
     /// Function: IsAutoSwapAllowed
     /// </summary>
     public unsafe virtual bool IsAutoSwapAllowed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsAutoSwapAllowed, "BmGame.RRobinBotController.IsAutoSwapAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAutoSwapAllowed, "BmGame.RRobinBotController.IsAutoSwapAllowed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPlayerPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPlayerPawn;
     /// <summary>
     /// Function: GetPlayerPawn
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawnPlayer GetPlayerPawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPlayerPawn, "BmGame.RRobinBotController.GetPlayerPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPlayerPawn, "BmGame.RRobinBotController.GetPlayerPawn", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnPlayer>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ClearNavigation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearNavigation;
     /// <summary>
     /// Function: ClearNavigation
     /// </summary>
     public unsafe virtual void ClearNavigation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearNavigation, "BmGame.RRobinBotController.ClearNavigation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearNavigation, "BmGame.RRobinBotController.ClearNavigation", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UnPossess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnPossess;
     /// <summary>
     /// Function: UnPossess
     /// </summary>
     public unsafe override void UnPossess()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnPossess, "BmGame.RRobinBotController.UnPossess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnPossess, "BmGame.RRobinBotController.UnPossess", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpendDualPlayPredAttack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpendDualPlayPredAttack;
     /// <summary>
     /// Function: SpendDualPlayPredAttack
     /// </summary>
     public unsafe virtual void SpendDualPlayPredAttack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpendDualPlayPredAttack, "BmGame.RRobinBotController.SpendDualPlayPredAttack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpendDualPlayPredAttack, "BmGame.RRobinBotController.SpendDualPlayPredAttack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitDualPlayPred;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitDualPlayPred;
     /// <summary>
     /// Function: InitDualPlayPred
     /// </summary>
     public unsafe virtual void InitDualPlayPred()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitDualPlayPred, "BmGame.RRobinBotController.InitDualPlayPred");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitDualPlayPred, "BmGame.RRobinBotController.InitDualPlayPred", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Possess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Possess;
     /// <summary>
     /// Function: Possess
     /// </summary>
     public unsafe override void Possess(BmSDK.Engine.Pawn inPawn, bool bVehicleTransition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Possess, "BmGame.RRobinBotController.Possess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Possess, "BmGame.RRobinBotController.Possess", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inPawn, paramsPtr + 0);
@@ -945,28 +945,28 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RRobinBotController.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RRobinBotController.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetBestMoveToPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestMoveToPoint;
     /// <summary>
     /// Function: GetBestMoveToPoint
     /// </summary>
     public unsafe virtual void GetBestMoveToPoint(out System.Numerics.Vector3 TestLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestMoveToPoint, "BmGame.RRobinBotController.GetBestMoveToPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBestMoveToPoint, "BmGame.RRobinBotController.GetBestMoveToPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out TestLocation);
@@ -983,14 +983,14 @@ public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Function __fn_CanPlayCombatTaunt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayCombatTaunt;
     /// <summary>
     /// Function: CanPlayCombatTaunt
     /// </summary>
     public unsafe virtual bool CanPlayCombatTaunt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPlayCombatTaunt, "BmGame.RRobinBotController.CanPlayCombatTaunt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPlayCombatTaunt, "BmGame.RRobinBotController.CanPlayCombatTaunt", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

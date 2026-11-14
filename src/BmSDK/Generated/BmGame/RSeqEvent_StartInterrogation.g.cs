@@ -91,28 +91,28 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanStartCameraConversation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanStartCameraConversation;
     /// <summary>
     /// Function: CanStartCameraConversation
     /// </summary>
     public unsafe virtual bool CanStartCameraConversation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanStartCameraConversation, "BmGame.RSeqEvent_StartInterrogation.CanStartCameraConversation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanStartCameraConversation, "BmGame.RSeqEvent_StartInterrogation.CanStartCameraConversation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EventAttachedToPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EventAttachedToPawn;
     /// <summary>
     /// Function: EventAttachedToPawn
     /// </summary>
     public unsafe virtual bool EventAttachedToPawn(BmSDK.BmGame.RPawnVillain Villain)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EventAttachedToPawn, "BmGame.RSeqEvent_StartInterrogation.EventAttachedToPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EventAttachedToPawn, "BmGame.RSeqEvent_StartInterrogation.EventAttachedToPawn", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
@@ -120,42 +120,42 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_RevealSecrets;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RevealSecrets;
     /// <summary>
     /// Function: RevealSecrets
     /// </summary>
     public unsafe virtual void RevealSecrets()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RevealSecrets, "BmGame.RSeqEvent_StartInterrogation.RevealSecrets");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RevealSecrets, "BmGame.RSeqEvent_StartInterrogation.RevealSecrets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetPMapName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPMapName;
     /// <summary>
     /// Function: GetPMapName
     /// </summary>
     public unsafe virtual BmSDK.FString GetPMapName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPMapName, "BmGame.RSeqEvent_StartInterrogation.GetPMapName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPMapName, "BmGame.RSeqEvent_StartInterrogation.GetPMapName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CancelInterrogationMovesLoading;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelInterrogationMovesLoading;
     /// <summary>
     /// Function: CancelInterrogationMovesLoading
     /// </summary>
     public unsafe virtual void CancelInterrogationMovesLoading()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CancelInterrogationMovesLoading, "BmGame.RSeqEvent_StartInterrogation.CancelInterrogationMovesLoading");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelInterrogationMovesLoading, "BmGame.RSeqEvent_StartInterrogation.CancelInterrogationMovesLoading", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -169,14 +169,14 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
         return;
     }
 
-    private static BmSDK.Function __fn_InitInterrogationMoves;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitInterrogationMoves;
     /// <summary>
     /// Function: InitInterrogationMoves
     /// </summary>
     public unsafe virtual bool InitInterrogationMoves()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitInterrogationMoves, "BmGame.RSeqEvent_StartInterrogation.InitInterrogationMoves");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitInterrogationMoves, "BmGame.RSeqEvent_StartInterrogation.InitInterrogationMoves", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -190,14 +190,14 @@ public partial class RSeqEvent_StartInterrogation : BmSDK.Engine.SequenceEvent, 
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_LoadInterrogationMoves;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LoadInterrogationMoves;
     /// <summary>
     /// Function: LoadInterrogationMoves
     /// </summary>
     public unsafe virtual bool LoadInterrogationMoves()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadInterrogationMoves, "BmGame.RSeqEvent_StartInterrogation.LoadInterrogationMoves");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadInterrogationMoves, "BmGame.RSeqEvent_StartInterrogation.LoadInterrogationMoves", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -23,7 +23,7 @@ public partial interface MHackableInterface : BmSDK.Interface
     /// <summary>
     /// Function: SetSubroutineNameAndDescriptionModifiedByKismet
     /// </summary>
-    public unsafe void SetSubroutineNameAndDescriptionModifiedByKismet(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType, BmSDK.FString NewSubroutineName, BmSDK.FString NewSubroutineDescription);
+    public unsafe void SetSubroutineNameAndDescriptionModifiedByKismet(BmSDK.BmGame.MHackableInterface.EHackSubroutineType SubroutineType, BmSDK.FStringArg NewSubroutineName, BmSDK.FStringArg NewSubroutineDescription);
 
     /// <summary>
     /// Function: CreateHackMaskMesh

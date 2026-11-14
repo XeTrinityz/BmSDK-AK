@@ -78,84 +78,84 @@ public partial class RHidePoint_GargoyleBase : BmSDK.BmGame.RHidePoint_Mesh, BmS
         where TComponent : class, Framework.IScriptComponent<RHidePoint_GargoyleBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ScanDone;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScanDone;
     /// <summary>
     /// Function: ScanDone
     /// </summary>
     public unsafe override void ScanDone()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScanDone, "BmGame.RHidePoint_GargoyleBase.ScanDone");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScanDone, "BmGame.RHidePoint_GargoyleBase.ScanDone", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BMLeft;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BMLeft;
     /// <summary>
     /// Function: BMLeft
     /// </summary>
     public unsafe override void BMLeft()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BMLeft, "BmGame.RHidePoint_GargoyleBase.BMLeft");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BMLeft, "BmGame.RHidePoint_GargoyleBase.BMLeft", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BMInverting;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BMInverting;
     /// <summary>
     /// Function: BMInverting
     /// </summary>
     public unsafe override void BMInverting()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BMInverting, "BmGame.RHidePoint_GargoyleBase.BMInverting");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BMInverting, "BmGame.RHidePoint_GargoyleBase.BMInverting", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartedMountMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartedMountMove;
     /// <summary>
     /// Function: StartedMountMove
     /// </summary>
     public unsafe override void StartedMountMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartedMountMove, "BmGame.RHidePoint_GargoyleBase.StartedMountMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartedMountMove, "BmGame.RHidePoint_GargoyleBase.StartedMountMove", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoJokerOverlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoJokerOverlay;
     /// <summary>
     /// Function: DoJokerOverlay
     /// </summary>
     public unsafe virtual void DoJokerOverlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoJokerOverlay, "BmGame.RHidePoint_GargoyleBase.DoJokerOverlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoJokerOverlay, "BmGame.RHidePoint_GargoyleBase.DoJokerOverlay", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PickJokerMountAnims;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickJokerMountAnims;
     /// <summary>
     /// Function: PickJokerMountAnims
     /// </summary>
     public unsafe virtual void PickJokerMountAnims(out BmSDK.FName TransIn, out BmSDK.FName Idle)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickJokerMountAnims, "BmGame.RHidePoint_GargoyleBase.PickJokerMountAnims");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickJokerMountAnims, "BmGame.RHidePoint_GargoyleBase.PickJokerMountAnims", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out TransIn);
@@ -168,28 +168,28 @@ public partial class RHidePoint_GargoyleBase : BmSDK.BmGame.RHidePoint_Mesh, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_ThugsAroundInPred;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugsAroundInPred;
     /// <summary>
     /// Function: ThugsAroundInPred
     /// </summary>
     public unsafe virtual bool ThugsAroundInPred()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugsAroundInPred, "BmGame.RHidePoint_GargoyleBase.ThugsAroundInPred");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugsAroundInPred, "BmGame.RHidePoint_GargoyleBase.ThugsAroundInPred", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoJokerHallucination;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoJokerHallucination;
     /// <summary>
     /// Function: DoJokerHallucination
     /// </summary>
     public unsafe virtual bool DoJokerHallucination()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoJokerHallucination, "BmGame.RHidePoint_GargoyleBase.DoJokerHallucination");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoJokerHallucination, "BmGame.RHidePoint_GargoyleBase.DoJokerHallucination", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,70 +78,70 @@ public partial class RAEC_SearchLite_Sub_Perim : BmSDK.BmGame.RAlertEventCoordin
         where TComponent : class, Framework.IScriptComponent<RAEC_SearchLite_Sub_Perim>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ForceWaitForPingPong;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceWaitForPingPong;
     /// <summary>
     /// Function: ForceWaitForPingPong
     /// </summary>
     public unsafe virtual bool ForceWaitForPingPong()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceWaitForPingPong, "BmGame.RAEC_SearchLite_Sub_Perim.ForceWaitForPingPong");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceWaitForPingPong, "BmGame.RAEC_SearchLite_Sub_Perim.ForceWaitForPingPong", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetNextPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextPoint;
     /// <summary>
     /// Function: GetNextPoint
     /// </summary>
     public unsafe virtual void GetNextPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextPoint, "BmGame.RAEC_SearchLite_Sub_Perim.GetNextPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNextPoint, "BmGame.RAEC_SearchLite_Sub_Perim.GetNextPoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartUninformedSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartUninformedSearch;
     /// <summary>
     /// Function: StartUninformedSearch
     /// </summary>
     public unsafe virtual void StartUninformedSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartUninformedSearch, "BmGame.RAEC_SearchLite_Sub_Perim.StartUninformedSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartUninformedSearch, "BmGame.RAEC_SearchLite_Sub_Perim.StartUninformedSearch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartPatrol;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPatrol;
     /// <summary>
     /// Function: StartPatrol
     /// </summary>
     public unsafe virtual void StartPatrol()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPatrol, "BmGame.RAEC_SearchLite_Sub_Perim.StartPatrol");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPatrol, "BmGame.RAEC_SearchLite_Sub_Perim.StartPatrol", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnStartChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStartChild;
     /// <summary>
     /// Function: OnStartChild
     /// </summary>
     public unsafe override void OnStartChild()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.RAEC_SearchLite_Sub_Perim.OnStartChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStartChild, "BmGame.RAEC_SearchLite_Sub_Perim.OnStartChild", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -73,70 +73,70 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         where TComponent : class, Framework.IScriptComponent<RGangInteractPointBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetSpecCanTakeOver;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSpecCanTakeOver;
     /// <summary>
     /// Function: SetSpecCanTakeOver
     /// </summary>
     public unsafe virtual void SetSpecCanTakeOver()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSpecCanTakeOver, "BmGame.RGangInteractPointBase.SetSpecCanTakeOver");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSpecCanTakeOver, "BmGame.RGangInteractPointBase.SetSpecCanTakeOver", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowSpectators;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowSpectators;
     /// <summary>
     /// Function: AllowSpectators
     /// </summary>
     public unsafe virtual bool AllowSpectators()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowSpectators, "BmGame.RGangInteractPointBase.AllowSpectators");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowSpectators, "BmGame.RGangInteractPointBase.AllowSpectators", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DisplayDebugInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DisplayDebugInfo;
     /// <summary>
     /// Function: DisplayDebugInfo
     /// </summary>
     public unsafe virtual void DisplayDebugInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DisplayDebugInfo, "BmGame.RGangInteractPointBase.DisplayDebugInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisplayDebugInfo, "BmGame.RGangInteractPointBase.DisplayDebugInfo", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DettachFromCar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DettachFromCar;
     /// <summary>
     /// Function: DettachFromCar
     /// </summary>
     public unsafe virtual void DettachFromCar()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DettachFromCar, "BmGame.RGangInteractPointBase.DettachFromCar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DettachFromCar, "BmGame.RGangInteractPointBase.DettachFromCar", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AttachToCar;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachToCar;
     /// <summary>
     /// Function: AttachToCar
     /// </summary>
     public unsafe virtual void AttachToCar(int Seat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttachToCar, "BmGame.RGangInteractPointBase.AttachToCar");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToCar, "BmGame.RGangInteractPointBase.AttachToCar", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Seat, paramsPtr + 0);
@@ -144,14 +144,14 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTimeOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTimeOut;
     /// <summary>
     /// Function: UpdateTimeOut
     /// </summary>
     public unsafe virtual bool UpdateTimeOut(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTimeOut, "BmGame.RGangInteractPointBase.UpdateTimeOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTimeOut, "BmGame.RGangInteractPointBase.UpdateTimeOut", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -159,28 +159,28 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNumPairedToCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumPairedToCheck;
     /// <summary>
     /// Function: GetNumPairedToCheck
     /// </summary>
     public unsafe virtual int GetNumPairedToCheck()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumPairedToCheck, "BmGame.RGangInteractPointBase.GetNumPairedToCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumPairedToCheck, "BmGame.RGangInteractPointBase.GetNumPairedToCheck", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AdvanceAnimation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AdvanceAnimation;
     /// <summary>
     /// Function: AdvanceAnimation
     /// </summary>
     public unsafe virtual void AdvanceAnimation(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AdvanceAnimation, "BmGame.RGangInteractPointBase.AdvanceAnimation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdvanceAnimation, "BmGame.RGangInteractPointBase.AdvanceAnimation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -188,56 +188,56 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateBuddies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateBuddies;
     /// <summary>
     /// Function: ActivateBuddies
     /// </summary>
     public unsafe virtual void ActivateBuddies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateBuddies, "BmGame.RGangInteractPointBase.ActivateBuddies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateBuddies, "BmGame.RGangInteractPointBase.ActivateBuddies", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DeactivateBuddies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateBuddies;
     /// <summary>
     /// Function: DeactivateBuddies
     /// </summary>
     public unsafe virtual void DeactivateBuddies()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateBuddies, "BmGame.RGangInteractPointBase.DeactivateBuddies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateBuddies, "BmGame.RGangInteractPointBase.DeactivateBuddies", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsLeader;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsLeader;
     /// <summary>
     /// Function: IsLeader
     /// </summary>
     public unsafe virtual bool IsLeader()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsLeader, "BmGame.RGangInteractPointBase.IsLeader");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsLeader, "BmGame.RGangInteractPointBase.IsLeader", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AllowForSpawning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowForSpawning;
     /// <summary>
     /// Function: AllowForSpawning
     /// </summary>
     public unsafe virtual bool AllowForSpawning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowForSpawning, "BmGame.RGangInteractPointBase.AllowForSpawning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowForSpawning, "BmGame.RGangInteractPointBase.AllowForSpawning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -251,14 +251,14 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFinished;
     /// <summary>
     /// Function: SetFinished
     /// </summary>
     public unsafe virtual void SetFinished(BmSDK.BmGame.RBMPawnAI P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFinished, "BmGame.RGangInteractPointBase.SetFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFinished, "BmGame.RGangInteractPointBase.SetFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(P, paramsPtr + 0);
@@ -266,14 +266,14 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return;
     }
 
-    private static BmSDK.Function __fn_SetInUse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetInUse;
     /// <summary>
     /// Function: SetInUse
     /// </summary>
     public unsafe virtual void SetInUse(BmSDK.BmGame.RBMPawnAI UsagePawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetInUse, "BmGame.RGangInteractPointBase.SetInUse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetInUse, "BmGame.RGangInteractPointBase.SetInUse", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(UsagePawn, paramsPtr + 0);
@@ -281,14 +281,14 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return;
     }
 
-    private static BmSDK.Function __fn_IsValidForPawnSpec;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidForPawnSpec;
     /// <summary>
     /// Function: IsValidForPawnSpec
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGangInteractPointBase IsValidForPawnSpec(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidForPawnSpec, "BmGame.RGangInteractPointBase.IsValidForPawnSpec");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidForPawnSpec, "BmGame.RGangInteractPointBase.IsValidForPawnSpec", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -298,14 +298,14 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGangInteractPointBase>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetEntryPointAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetEntryPointAndRotation;
     /// <summary>
     /// Function: GetEntryPointAndRotation
     /// </summary>
     public unsafe virtual void GetEntryPointAndRotation(BmSDK.BmGame.RPawnCharacter TestPawn, out System.Numerics.Vector3 Loc, out BmSDK.Rotator Rot, int Index, bool bSecondTry = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetEntryPointAndRotation, "BmGame.RGangInteractPointBase.GetEntryPointAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEntryPointAndRotation, "BmGame.RGangInteractPointBase.GetEntryPointAndRotation", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -328,14 +328,14 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return;
     }
 
-    private static BmSDK.Function __fn_IsValidForPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidForPawn;
     /// <summary>
     /// Function: IsValidForPawn
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGangInteractPointBase IsValidForPawn(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest = default, bool bSkipAngleCheck = default, bool bSkipVolCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidForPawn, "BmGame.RGangInteractPointBase.IsValidForPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidForPawn, "BmGame.RGangInteractPointBase.IsValidForPawn", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -353,14 +353,14 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGangInteractPointBase>(paramsPtr + 20);
     }
 
-    private static BmSDK.Function __fn_GetGid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGid;
     /// <summary>
     /// Function: GetGid
     /// </summary>
     public unsafe virtual BmSDK.GameObject.FGuid GetGid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGid, "BmGame.RGangInteractPointBase.GetGid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGid, "BmGame.RGangInteractPointBase.GetGid", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -374,42 +374,42 @@ public partial class RGangInteractPointBase : BmSDK.Engine.RGangInteractPointEng
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FGuid>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBehaviourClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBehaviourClass;
     /// <summary>
     /// Function: GetBehaviourClass
     /// </summary>
     public unsafe virtual BmSDK.Class GetBehaviourClass()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBehaviourClass, "BmGame.RGangInteractPointBase.GetBehaviourClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBehaviourClass, "BmGame.RGangInteractPointBase.GetBehaviourClass", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Class>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPOILocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPOILocation;
     /// <summary>
     /// Function: GetPOILocation
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPOILocation()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPOILocation, "BmGame.RGangInteractPointBase.GetPOILocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPOILocation, "BmGame.RGangInteractPointBase.GetPOILocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSelectionScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSelectionScore;
     /// <summary>
     /// Function: GetSelectionScore
     /// </summary>
     public unsafe virtual float GetSelectionScore()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSelectionScore, "BmGame.RGangInteractPointBase.GetSelectionScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSelectionScore, "BmGame.RGangInteractPointBase.GetSelectionScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

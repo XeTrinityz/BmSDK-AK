@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_BatmobileInterrogationBase : BmSDK.BmG
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_BatmobileInterrogationBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetRootPointFromBatmanAnimation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRootPointFromBatmanAnimation;
     /// <summary>
     /// Function: GetRootPointFromBatmanAnimation
     /// </summary>
     public unsafe virtual void GetRootPointFromBatmanAnimation(BmSDK.Engine.AnimSequence BatmanAnimation, float TimeInAnim, out System.Numerics.Vector3 RootLoc, out BmSDK.Rotator RootRot, int bUseRefPoint = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRootPointFromBatmanAnimation, "BmGame.RSpecialMoveInstance_BatmobileInterrogationBase.GetRootPointFromBatmanAnimation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRootPointFromBatmanAnimation, "BmGame.RSpecialMoveInstance_BatmobileInterrogationBase.GetRootPointFromBatmanAnimation", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BatmanAnimation, paramsPtr + 0);

@@ -78,42 +78,42 @@ public partial class RCapeSkeletalMeshComponent : BmSDK.Engine.SkeletalMeshCompo
         where TComponent : class, Framework.IScriptComponent<RCapeSkeletalMeshComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_InternalUpdateMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InternalUpdateMaterial;
     /// <summary>
     /// Function: InternalUpdateMaterial
     /// </summary>
     public unsafe virtual void InternalUpdateMaterial()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InternalUpdateMaterial, "BmGame.RCapeSkeletalMeshComponent.InternalUpdateMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InternalUpdateMaterial, "BmGame.RCapeSkeletalMeshComponent.InternalUpdateMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetupMaterialConstants;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupMaterialConstants;
     /// <summary>
     /// Function: SetupMaterialConstants
     /// </summary>
     public unsafe virtual void SetupMaterialConstants()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupMaterialConstants, "BmGame.RCapeSkeletalMeshComponent.SetupMaterialConstants");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupMaterialConstants, "BmGame.RCapeSkeletalMeshComponent.SetupMaterialConstants", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateOverrideMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateOverrideMaterial;
     /// <summary>
     /// Function: UpdateOverrideMaterial
     /// </summary>
     public unsafe virtual void UpdateOverrideMaterial(BmSDK.Engine.MaterialInterface NewMat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateOverrideMaterial, "BmGame.RCapeSkeletalMeshComponent.UpdateOverrideMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateOverrideMaterial, "BmGame.RCapeSkeletalMeshComponent.UpdateOverrideMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMat, paramsPtr + 0);
@@ -121,14 +121,14 @@ public partial class RCapeSkeletalMeshComponent : BmSDK.Engine.SkeletalMeshCompo
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateDefaultMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateDefaultMaterial;
     /// <summary>
     /// Function: UpdateDefaultMaterial
     /// </summary>
     public unsafe virtual void UpdateDefaultMaterial(BmSDK.Engine.MaterialInterface NewMat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateDefaultMaterial, "BmGame.RCapeSkeletalMeshComponent.UpdateDefaultMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateDefaultMaterial, "BmGame.RCapeSkeletalMeshComponent.UpdateDefaultMaterial", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMat, paramsPtr + 0);
@@ -136,14 +136,14 @@ public partial class RCapeSkeletalMeshComponent : BmSDK.Engine.SkeletalMeshCompo
         return;
     }
 
-    private static BmSDK.Function __fn_GetCapeComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCapeComponent;
     /// <summary>
     /// Function: GetCapeComponent
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RCapeComponent GetCapeComponent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCapeComponent, "BmGame.RCapeSkeletalMeshComponent.GetCapeComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCapeComponent, "BmGame.RCapeSkeletalMeshComponent.GetCapeComponent", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

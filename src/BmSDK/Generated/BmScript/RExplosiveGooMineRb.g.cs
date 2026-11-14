@@ -78,14 +78,14 @@ public partial class RExplosiveGooMineRb : BmSDK.BmScript.RExplosiveGooMineBm, B
         where TComponent : class, Framework.IScriptComponent<RExplosiveGooMineRb>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TickAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TickAudio;
     /// <summary>
     /// Function: TickAudio
     /// </summary>
     public unsafe override void TickAudio(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TickAudio, "BmScript.RExplosiveGooMineRb.TickAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickAudio, "BmScript.RExplosiveGooMineRb.TickAudio", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RExplosiveGooMineRb : BmSDK.BmScript.RExplosiveGooMineBm, B
         return;
     }
 
-    private static BmSDK.Function __fn_PlayExplosionSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayExplosionSound;
     /// <summary>
     /// Function: PlayExplosionSound
     /// </summary>
     public unsafe override void PlayExplosionSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayExplosionSound, "BmScript.RExplosiveGooMineRb.PlayExplosionSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayExplosionSound, "BmScript.RExplosiveGooMineRb.PlayExplosionSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,28 +78,28 @@ public partial class RPhysicalEvidenceTrail : BmSDK.BmGame.RPhysicalEvidenceBase
         where TComponent : class, Framework.IScriptComponent<RPhysicalEvidenceTrail>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DoShowNow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoShowNow;
     /// <summary>
     /// Function: DoShowNow
     /// </summary>
     public unsafe virtual void DoShowNow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoShowNow, "BmGame.RPhysicalEvidenceTrail.DoShowNow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoShowNow, "BmGame.RPhysicalEvidenceTrail.DoShowNow", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AutomaticallySetVisibility;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AutomaticallySetVisibility;
     /// <summary>
     /// Function: AutomaticallySetVisibility
     /// </summary>
     public unsafe override void AutomaticallySetVisibility()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AutomaticallySetVisibility, "BmGame.RPhysicalEvidenceTrail.AutomaticallySetVisibility");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AutomaticallySetVisibility, "BmGame.RPhysicalEvidenceTrail.AutomaticallySetVisibility", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,14 +78,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         where TComponent : class, Framework.IScriptComponent<RBatarangCamera>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetExtraDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetExtraDistance;
     /// <summary>
     /// Function: SetExtraDistance
     /// </summary>
     public unsafe virtual void SetExtraDistance(float Distance, float T = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetExtraDistance, "BmGame.RBatarangCamera.SetExtraDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetExtraDistance, "BmGame.RBatarangCamera.SetExtraDistance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Distance, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_SetOverrideFOV;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOverrideFOV;
     /// <summary>
     /// Function: SetOverrideFOV
     /// </summary>
     public unsafe virtual void SetOverrideFOV(float FOV, float T = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOverrideFOV, "BmGame.RBatarangCamera.SetOverrideFOV");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOverrideFOV, "BmGame.RBatarangCamera.SetOverrideFOV", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FOV, paramsPtr + 0);
@@ -110,42 +110,42 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_StopTrackingSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopTrackingSound;
     /// <summary>
     /// Function: StopTrackingSound
     /// </summary>
     public unsafe virtual void StopTrackingSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopTrackingSound, "BmGame.RBatarangCamera.StopTrackingSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopTrackingSound, "BmGame.RBatarangCamera.StopTrackingSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartTrackingSound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartTrackingSound;
     /// <summary>
     /// Function: StartTrackingSound
     /// </summary>
     public unsafe virtual void StartTrackingSound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartTrackingSound, "BmGame.RBatarangCamera.StartTrackingSound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTrackingSound, "BmGame.RBatarangCamera.StartTrackingSound", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetTrackingActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTrackingActor;
     /// <summary>
     /// Function: SetTrackingActor
     /// </summary>
     public unsafe virtual void SetTrackingActor(BmSDK.Engine.Actor ActorToTrackPostImpact)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTrackingActor, "BmGame.RBatarangCamera.SetTrackingActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTrackingActor, "BmGame.RBatarangCamera.SetTrackingActor", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ActorToTrackPostImpact, paramsPtr + 0);
@@ -153,14 +153,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_TrackPostImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrackPostImpact;
     /// <summary>
     /// Function: TrackPostImpact
     /// </summary>
     public unsafe virtual void TrackPostImpact(System.Numerics.Vector3 ActorLocation, float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrackPostImpact, "BmGame.RBatarangCamera.TrackPostImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrackPostImpact, "BmGame.RBatarangCamera.TrackPostImpact", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ActorLocation, paramsPtr + 0);
@@ -176,14 +176,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_InstantOutOfBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstantOutOfBounds;
     /// <summary>
     /// Function: InstantOutOfBounds
     /// </summary>
     public unsafe virtual void InstantOutOfBounds(BmSDK.Engine.Actor OutOfBoundsActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstantOutOfBounds, "BmGame.RBatarangCamera.InstantOutOfBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstantOutOfBounds, "BmGame.RBatarangCamera.InstantOutOfBounds", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutOfBoundsActor, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_OutOfBounds;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OutOfBounds;
     /// <summary>
     /// Function: OutOfBounds
     /// </summary>
     public unsafe virtual void OutOfBounds(BmSDK.Engine.Actor OutOfBoundsActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OutOfBounds, "BmGame.RBatarangCamera.OutOfBounds");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OutOfBounds, "BmGame.RBatarangCamera.OutOfBounds", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutOfBoundsActor, paramsPtr + 0);
@@ -206,28 +206,28 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_DestroySelf;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroySelf;
     /// <summary>
     /// Function: DestroySelf
     /// </summary>
     public unsafe virtual void DestroySelf()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroySelf, "BmGame.RBatarangCamera.DestroySelf");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroySelf, "BmGame.RBatarangCamera.DestroySelf", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FinishUp;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishUp;
     /// <summary>
     /// Function: FinishUp
     /// </summary>
     public unsafe virtual void FinishUp(bool ForceInstantReturn = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishUp, "BmGame.RBatarangCamera.FinishUp");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishUp, "BmGame.RBatarangCamera.FinishUp", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForceInstantReturn, paramsPtr + 0);
@@ -235,14 +235,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForIntersectingCollision;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForIntersectingCollision;
     /// <summary>
     /// Function: CheckForIntersectingCollision
     /// </summary>
     public unsafe virtual bool CheckForIntersectingCollision()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForIntersectingCollision, "BmGame.RBatarangCamera.CheckForIntersectingCollision");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForIntersectingCollision, "BmGame.RBatarangCamera.CheckForIntersectingCollision", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -256,42 +256,42 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateKillVolumeEffects;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateKillVolumeEffects;
     /// <summary>
     /// Function: UpdateKillVolumeEffects
     /// </summary>
     public unsafe virtual void UpdateKillVolumeEffects()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateKillVolumeEffects, "BmGame.RBatarangCamera.UpdateKillVolumeEffects");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateKillVolumeEffects, "BmGame.RBatarangCamera.UpdateKillVolumeEffects", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoneImpact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoneImpact;
     /// <summary>
     /// Function: DoneImpact
     /// </summary>
     public unsafe virtual void DoneImpact()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoneImpact, "BmGame.RBatarangCamera.DoneImpact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoneImpact, "BmGame.RBatarangCamera.DoneImpact", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init(BmSDK.Engine.Actor Projectile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RBatarangCamera.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RBatarangCamera.Init", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Projectile, paramsPtr + 0);
@@ -299,14 +299,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_GetTrackingPositionAndRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetTrackingPositionAndRotation;
     /// <summary>
     /// Function: GetTrackingPositionAndRotation
     /// </summary>
     public unsafe virtual void GetTrackingPositionAndRotation(out System.Numerics.Vector3 Out_Position, out BmSDK.Rotator out_Rotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetTrackingPositionAndRotation, "BmGame.RBatarangCamera.GetTrackingPositionAndRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTrackingPositionAndRotation, "BmGame.RBatarangCamera.GetTrackingPositionAndRotation", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Out_Position);
@@ -319,14 +319,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_LagBatarangCameraRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LagBatarangCameraRotation;
     /// <summary>
     /// Function: LagBatarangCameraRotation
     /// </summary>
     public unsafe virtual void LagBatarangCameraRotation(float LagTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LagBatarangCameraRotation, "BmGame.RBatarangCamera.LagBatarangCameraRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LagBatarangCameraRotation, "BmGame.RBatarangCamera.LagBatarangCameraRotation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LagTime, paramsPtr + 0);
@@ -334,14 +334,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_LagBatarangCamera;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LagBatarangCamera;
     /// <summary>
     /// Function: LagBatarangCamera
     /// </summary>
     public unsafe virtual void LagBatarangCamera(float LagTime = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LagBatarangCamera, "BmGame.RBatarangCamera.LagBatarangCamera");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LagBatarangCamera, "BmGame.RBatarangCamera.LagBatarangCamera", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LagTime, paramsPtr + 0);
@@ -349,14 +349,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_PlayFlipAnimation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayFlipAnimation;
     /// <summary>
     /// Function: PlayFlipAnimation
     /// </summary>
     public unsafe virtual void PlayFlipAnimation(float Position)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayFlipAnimation, "BmGame.RBatarangCamera.PlayFlipAnimation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayFlipAnimation, "BmGame.RBatarangCamera.PlayFlipAnimation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Position, paramsPtr + 0);
@@ -371,14 +371,14 @@ public partial class RBatarangCamera : BmSDK.BmGame.RCameraActor, BmSDK.IGameObj
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateTrackingPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTrackingPosition;
     /// <summary>
     /// Function: UpdateTrackingPosition
     /// </summary>
     public unsafe virtual void UpdateTrackingPosition(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTrackingPosition, "BmGame.RBatarangCamera.UpdateTrackingPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTrackingPosition, "BmGame.RBatarangCamera.UpdateTrackingPosition", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);

@@ -73,21 +73,23 @@ public partial class GFxFSCmdHandler : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<GFxFSCmdHandler>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FSCommand;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FSCommand;
     /// <summary>
     /// Function: FSCommand
     /// </summary>
-    public unsafe virtual bool FSCommand(BmSDK.GFxUI.GFxMoviePlayer Movie, BmSDK.GFxUI.GFxEvent_FSCommand Event, BmSDK.FString Cmd, BmSDK.FString Arg)
+    public unsafe virtual bool FSCommand(BmSDK.GFxUI.GFxMoviePlayer Movie, BmSDK.GFxUI.GFxEvent_FSCommand Event, BmSDK.FStringArg Cmd, BmSDK.FStringArg Arg)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FSCommand, "GFxUI.GFxFSCmdHandler.FSCommand");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FSCommand, "GFxUI.GFxFSCmdHandler.FSCommand", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Movie, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Event, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Cmd, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Arg, paramsPtr + 32);
+        Cmd.WriteTo(paramsPtr + 16);
+        Arg.WriteTo(paramsPtr + 32);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 }

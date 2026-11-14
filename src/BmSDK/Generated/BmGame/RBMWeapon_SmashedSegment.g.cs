@@ -78,14 +78,14 @@ public partial class RBMWeapon_SmashedSegment : BmSDK.Engine.KActorSpawnable, Bm
         where TComponent : class, Framework.IScriptComponent<RBMWeapon_SmashedSegment>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetSegmentMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSegmentMesh;
     /// <summary>
     /// Function: SetSegmentMesh
     /// </summary>
     public unsafe virtual void SetSegmentMesh(BmSDK.Engine.StaticMesh NewMesh, System.Numerics.Vector3 Vel, System.Numerics.Vector3 AngVel, System.Numerics.Vector3 NewLocation, BmSDK.Rotator NewRotation, System.Numerics.Vector3 AdditionalTranslation = default, BmSDK.Rotator AdditionRotation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSegmentMesh, "BmGame.RBMWeapon_SmashedSegment.SetSegmentMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSegmentMesh, "BmGame.RBMWeapon_SmashedSegment.SetSegmentMesh", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMesh, paramsPtr + 0);
@@ -99,14 +99,14 @@ public partial class RBMWeapon_SmashedSegment : BmSDK.Engine.KActorSpawnable, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_DestroyCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DestroyCheck;
     /// <summary>
     /// Function: DestroyCheck
     /// </summary>
     public unsafe virtual void DestroyCheck()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DestroyCheck, "BmGame.RBMWeapon_SmashedSegment.DestroyCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyCheck, "BmGame.RBMWeapon_SmashedSegment.DestroyCheck", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

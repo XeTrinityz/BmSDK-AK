@@ -78,14 +78,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         where TComponent : class, Framework.IScriptComponent<RHelicopterIntermediateBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UpdateTargetsRefreshList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateTargetsRefreshList;
     /// <summary>
     /// Function: UpdateTargetsRefreshList
     /// </summary>
     public unsafe virtual void UpdateTargetsRefreshList(out BmSDK.TArray<BmSDK.BmGame.RHelicopterIntermediateBase.FTargetData> TargetDatas, BmSDK.Rotator rSearchLightSourceDirection, float fSearchLightScanSpreadCurrent, System.Numerics.Vector3 vSearchLightSourcePosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateTargetsRefreshList, "BmGame.RHelicopterIntermediateBase.UpdateTargetsRefreshList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateTargetsRefreshList, "BmGame.RHelicopterIntermediateBase.UpdateTargetsRefreshList", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(rSearchLightSourceDirection, paramsPtr + 16);
@@ -103,14 +103,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSearchLightSourceLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSearchLightSourceLocation;
     /// <summary>
     /// Function: UpdateSearchLightSourceLocation
     /// </summary>
     public unsafe virtual void UpdateSearchLightSourceLocation(float fDeltaTime, out BmSDK.BmGame.RHelicopterIntermediateBase.FSearchLightSourceLocationInfo SourceInfo)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSearchLightSourceLocation, "BmGame.RHelicopterIntermediateBase.UpdateSearchLightSourceLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSearchLightSourceLocation, "BmGame.RHelicopterIntermediateBase.UpdateSearchLightSourceLocation", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fDeltaTime, paramsPtr + 0);
@@ -128,14 +128,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSearchLightVisuals;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSearchLightVisuals;
     /// <summary>
     /// Function: UpdateSearchLightVisuals
     /// </summary>
     public unsafe virtual void UpdateSearchLightVisuals(float fDeltaTime, out BmSDK.TArray<BmSDK.BmGame.RHelicopterIntermediateBase.FSearchLightData> SearchLights, System.Numerics.Vector3 vSearchLightSourcePosition, BmSDK.Rotator rSearchLightSourceRotation, float fSearchLightBlindDelay, float fSearchLightMoveInterpolationSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSearchLightVisuals, "BmGame.RHelicopterIntermediateBase.UpdateSearchLightVisuals");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSearchLightVisuals, "BmGame.RHelicopterIntermediateBase.UpdateSearchLightVisuals", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(fDeltaTime, paramsPtr + 0);
@@ -155,14 +155,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return;
     }
 
-    private static BmSDK.Function __fn_QueryIsActorWithinConeArea;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryIsActorWithinConeArea;
     /// <summary>
     /// Function: QueryIsActorWithinConeArea
     /// </summary>
     public unsafe virtual bool QueryIsActorWithinConeArea(BmSDK.Engine.Actor hActor, System.Numerics.Vector3 vConeSource, System.Numerics.Vector3 vConeDirection, float fConeLength, float fConeSpread)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueryIsActorWithinConeArea, "BmGame.RHelicopterIntermediateBase.QueryIsActorWithinConeArea");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueryIsActorWithinConeArea, "BmGame.RHelicopterIntermediateBase.QueryIsActorWithinConeArea", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(hActor, paramsPtr + 0);
@@ -181,14 +181,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_QueryHaveLineOfSite;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_QueryHaveLineOfSite;
     /// <summary>
     /// Function: QueryHaveLineOfSite
     /// </summary>
     public unsafe virtual bool QueryHaveLineOfSite(System.Numerics.Vector3 vOrigin, BmSDK.Engine.Actor hActor, out BmSDK.Engine.Actor hHitActor, out System.Numerics.Vector3 vHitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_QueryHaveLineOfSite, "BmGame.RHelicopterIntermediateBase.QueryHaveLineOfSite");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QueryHaveLineOfSite, "BmGame.RHelicopterIntermediateBase.QueryHaveLineOfSite", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(vOrigin, paramsPtr + 0);
@@ -210,14 +210,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn__QueryIsIgnored;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn__QueryIsIgnored;
     /// <summary>
     /// Function: _QueryIsIgnored
     /// </summary>
     public unsafe virtual bool _QueryIsIgnored(BmSDK.Engine.Actor hActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn__QueryIsIgnored, "BmGame.RHelicopterIntermediateBase._QueryIsIgnored");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn__QueryIsIgnored, "BmGame.RHelicopterIntermediateBase._QueryIsIgnored", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(hActor, paramsPtr + 0);
@@ -225,14 +225,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_UpdateSearchLight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSearchLight;
     /// <summary>
     /// Function: UpdateSearchLight
     /// </summary>
     public unsafe virtual void UpdateSearchLight(float DeltaTime, bool LookSweep = default, System.Numerics.Vector3 LookAtLocation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSearchLight, "BmGame.RHelicopterIntermediateBase.UpdateSearchLight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSearchLight, "BmGame.RHelicopterIntermediateBase.UpdateSearchLight", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -249,14 +249,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return;
     }
 
-    private static BmSDK.Function __fn_GetSearchLightOrigin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSearchLightOrigin;
     /// <summary>
     /// Function: GetSearchLightOrigin
     /// </summary>
     public unsafe virtual void GetSearchLightOrigin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSearchLightOrigin, "BmGame.RHelicopterIntermediateBase.GetSearchLightOrigin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSearchLightOrigin, "BmGame.RHelicopterIntermediateBase.GetSearchLightOrigin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -270,14 +270,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return;
     }
 
-    private static BmSDK.Function __fn_GetNextPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNextPoint;
     /// <summary>
     /// Function: GetNextPoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPatrolPoint GetNextPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNextPoint, "BmGame.RHelicopterIntermediateBase.GetNextPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNextPoint, "BmGame.RHelicopterIntermediateBase.GetNextPoint", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -291,14 +291,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPatrolPoint>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CheckOptimisedStasis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckOptimisedStasis;
     /// <summary>
     /// Function: CheckOptimisedStasis
     /// </summary>
     public unsafe override bool CheckOptimisedStasis()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckOptimisedStasis, "BmGame.RHelicopterIntermediateBase.CheckOptimisedStasis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckOptimisedStasis, "BmGame.RHelicopterIntermediateBase.CheckOptimisedStasis", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -312,14 +312,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoMoveToward;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMoveToward;
     /// <summary>
     /// Function: DoMoveToward
     /// </summary>
     public unsafe virtual bool DoMoveToward(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoMoveToward, "BmGame.RHelicopterIntermediateBase.DoMoveToward");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoMoveToward, "BmGame.RHelicopterIntermediateBase.DoMoveToward", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -334,14 +334,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetMoveTowardPathLocations;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMoveTowardPathLocations;
     /// <summary>
     /// Function: SetMoveTowardPathLocations
     /// </summary>
     public unsafe virtual bool SetMoveTowardPathLocations(System.Numerics.Vector3 _MoveTowardPathLocation1, System.Numerics.Vector3 _MoveTowardPathLocation2, float DeltaTime, float _MoveTowardSpeed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMoveTowardPathLocations, "BmGame.RHelicopterIntermediateBase.SetMoveTowardPathLocations");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMoveTowardPathLocations, "BmGame.RHelicopterIntermediateBase.SetMoveTowardPathLocations", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_MoveTowardPathLocation1, paramsPtr + 0);
@@ -359,14 +359,14 @@ public partial class RHelicopterIntermediateBase : BmSDK.BmGame.RHelicopterBase,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
-    private static BmSDK.Function __fn_SetMoveTowardLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMoveTowardLocation;
     /// <summary>
     /// Function: SetMoveTowardLocation
     /// </summary>
     public unsafe virtual bool SetMoveTowardLocation(System.Numerics.Vector3 _MoveTowardLocation, float DeltaTime, float _MoveTowardSpeed, bool _MoveTowardSlowdownOnApproach = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMoveTowardLocation, "BmGame.RHelicopterIntermediateBase.SetMoveTowardLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMoveTowardLocation, "BmGame.RHelicopterIntermediateBase.SetMoveTowardLocation", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_MoveTowardLocation, paramsPtr + 0);

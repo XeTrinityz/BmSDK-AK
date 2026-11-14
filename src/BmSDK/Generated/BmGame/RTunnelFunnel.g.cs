@@ -78,56 +78,56 @@ public partial class RTunnelFunnel : BmSDK.Engine.Actor, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RTunnelFunnel>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetMinigunnerTunnelGrenadeStandPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMinigunnerTunnelGrenadeStandPoint;
     /// <summary>
     /// Function: GetMinigunnerTunnelGrenadeStandPoint
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetMinigunnerTunnelGrenadeStandPoint()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMinigunnerTunnelGrenadeStandPoint, "BmGame.RTunnelFunnel.GetMinigunnerTunnelGrenadeStandPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMinigunnerTunnelGrenadeStandPoint, "BmGame.RTunnelFunnel.GetMinigunnerTunnelGrenadeStandPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetGrateRefPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGrateRefPosition;
     /// <summary>
     /// Function: GetGrateRefPosition
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetGrateRefPosition()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetGrateRefPosition, "BmGame.RTunnelFunnel.GetGrateRefPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGrateRefPosition, "BmGame.RTunnelFunnel.GetGrateRefPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPathTargetPos;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPathTargetPos;
     /// <summary>
     /// Function: GetPathTargetPos
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPathTargetPos()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPathTargetPos, "BmGame.RTunnelFunnel.GetPathTargetPos");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPathTargetPos, "BmGame.RTunnelFunnel.GetPathTargetPos", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateVoiceSynthesiserPermissions;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVoiceSynthesiserPermissions;
     /// <summary>
     /// Function: UpdateVoiceSynthesiserPermissions
     /// </summary>
     public unsafe virtual void UpdateVoiceSynthesiserPermissions(bool bVoiceSynthesiserAllowed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVoiceSynthesiserPermissions, "BmGame.RTunnelFunnel.UpdateVoiceSynthesiserPermissions");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateVoiceSynthesiserPermissions, "BmGame.RTunnelFunnel.UpdateVoiceSynthesiserPermissions", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bVoiceSynthesiserAllowed, paramsPtr + 0);
@@ -135,14 +135,14 @@ public partial class RTunnelFunnel : BmSDK.Engine.Actor, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RTunnelFunnel.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RTunnelFunnel.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -78,84 +78,84 @@ public partial class RPickup_MilitiaShield : BmSDK.BmGame.RPickup_MilitiaShieldB
         where TComponent : class, Framework.IScriptComponent<RPickup_MilitiaShield>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_BreakMe;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakMe;
     /// <summary>
     /// Function: BreakMe
     /// </summary>
     public unsafe virtual void BreakMe()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakMe, "BmScript.RPickup_MilitiaShield.BreakMe");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakMe, "BmScript.RPickup_MilitiaShield.BreakMe", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EarlyDestroy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EarlyDestroy;
     /// <summary>
     /// Function: EarlyDestroy
     /// </summary>
     public unsafe virtual bool EarlyDestroy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EarlyDestroy, "BmScript.RPickup_MilitiaShield.EarlyDestroy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EarlyDestroy, "BmScript.RPickup_MilitiaShield.EarlyDestroy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitialFlagCheckHack;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialFlagCheckHack;
     /// <summary>
     /// Function: InitialFlagCheckHack
     /// </summary>
     public unsafe virtual void InitialFlagCheckHack()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialFlagCheckHack, "BmScript.RPickup_MilitiaShield.InitialFlagCheckHack");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialFlagCheckHack, "BmScript.RPickup_MilitiaShield.InitialFlagCheckHack", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitialFlagCheck;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialFlagCheck;
     /// <summary>
     /// Function: InitialFlagCheck
     /// </summary>
     public unsafe virtual void InitialFlagCheck()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialFlagCheck, "BmScript.RPickup_MilitiaShield.InitialFlagCheck");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialFlagCheck, "BmScript.RPickup_MilitiaShield.InitialFlagCheck", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RPickup_MilitiaShield.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RPickup_MilitiaShield.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TakeDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TakeDamage;
     /// <summary>
     /// Function: TakeDamage
     /// </summary>
     public unsafe override void TakeDamage(int Damage, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor.FTraceHitInfo HitInfo = default, BmSDK.Engine.Actor DamageCauser = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TakeDamage, "BmScript.RPickup_MilitiaShield.TakeDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TakeDamage, "BmScript.RPickup_MilitiaShield.TakeDamage", this);
         byte* paramsPtr = stackalloc byte[108];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Damage, paramsPtr + 0);

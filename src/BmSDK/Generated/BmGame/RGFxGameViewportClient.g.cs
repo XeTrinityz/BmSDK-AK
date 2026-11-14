@@ -78,48 +78,50 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         where TComponent : class, Framework.IScriptComponent<RGFxGameViewportClient>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetProgressMessage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetProgressMessage;
     /// <summary>
     /// Function: SetProgressMessage
     /// </summary>
-    public unsafe override void SetProgressMessage(BmSDK.Engine.PlayerController.EProgressMessageType MessageType, BmSDK.FString Message, BmSDK.FString Title = default, bool bIgnoreFutureNetworkMessages = default)
+    public unsafe override void SetProgressMessage(BmSDK.Engine.PlayerController.EProgressMessageType MessageType, BmSDK.FStringArg Message, BmSDK.FStringArg Title = default, bool bIgnoreFutureNetworkMessages = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetProgressMessage, "BmGame.RGFxGameViewportClient.SetProgressMessage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetProgressMessage, "BmGame.RGFxGameViewportClient.SetProgressMessage", this);
         byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MessageType, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Message, paramsPtr + 4);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Title, paramsPtr + 20);
+        Message.WriteTo(paramsPtr + 4);
+        Title.WriteTo(paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIgnoreFutureNetworkMessages, paramsPtr + 36);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return;
     }
 
-    private static BmSDK.Function __fn_ClosePopups;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosePopups;
     /// <summary>
     /// Function: ClosePopups
     /// </summary>
     public unsafe virtual void ClosePopups()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosePopups, "BmGame.RGFxGameViewportClient.ClosePopups");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosePopups, "BmGame.RGFxGameViewportClient.ClosePopups", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveErrorPopup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveErrorPopup;
     /// <summary>
     /// Function: RemoveErrorPopup
     /// </summary>
     public unsafe virtual void RemoveErrorPopup(BmSDK.BmGame.RGFxMoviePopupRequester MovieRef)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveErrorPopup, "BmGame.RGFxGameViewportClient.RemoveErrorPopup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveErrorPopup, "BmGame.RGFxGameViewportClient.RemoveErrorPopup", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MovieRef, paramsPtr + 0);
@@ -127,36 +129,37 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         return;
     }
 
-    private static BmSDK.Function __fn_OpenPopUpError;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OpenPopUpError;
     /// <summary>
     /// Function: OpenPopUpError
     /// </summary>
-    public unsafe virtual BmSDK.BmGame.RGFxMoviePopupRequester OpenPopUpError(BmSDK.BmGame.RPlayerController RPC, BmSDK.BmGame.RGFxMoviePopupRequester.GPopup_Type TheType, BmSDK.BmGame.RGFxMovie RespondTo, BmSDK.FString Message, BmSDK.TArray<BmSDK.FString> Prompts, int DefaultSelected = default, bool bAllowBack = default, BmSDK.GFxUI.SwfMovie iMovie = default)
+    public unsafe virtual BmSDK.BmGame.RGFxMoviePopupRequester OpenPopUpError(BmSDK.BmGame.RPlayerController RPC, BmSDK.BmGame.RGFxMoviePopupRequester.GPopup_Type TheType, BmSDK.BmGame.RGFxMovie RespondTo, BmSDK.FStringArg Message, BmSDK.TArray<BmSDK.FString> Prompts, int DefaultSelected = default, bool bAllowBack = default, BmSDK.GFxUI.SwfMovie iMovie = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OpenPopUpError, "BmGame.RGFxGameViewportClient.OpenPopUpError");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OpenPopUpError, "BmGame.RGFxGameViewportClient.OpenPopUpError", this);
         byte* paramsPtr = stackalloc byte[100];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TheType, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RespondTo, paramsPtr + 12);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Message, paramsPtr + 20);
+        Message.WriteTo(paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Prompts, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DefaultSelected, paramsPtr + 52);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllowBack, paramsPtr + 56);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(iMovie, paramsPtr + 60);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGFxMoviePopupRequester>(paramsPtr + 68);
     }
 
-    private static BmSDK.Function __fn_DrawTransition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawTransition;
     /// <summary>
     /// Function: DrawTransition
     /// </summary>
     public unsafe override void DrawTransition(BmSDK.Engine.Canvas Canvas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawTransition, "BmGame.RGFxGameViewportClient.DrawTransition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawTransition, "BmGame.RGFxGameViewportClient.DrawTransition", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Canvas, paramsPtr + 0);
@@ -164,14 +167,14 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         return;
     }
 
-    private static BmSDK.Function __fn_ShowSessionInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowSessionInfo;
     /// <summary>
     /// Function: ShowSessionInfo
     /// </summary>
     public unsafe virtual void ShowSessionInfo(BmSDK.Engine.Canvas C)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowSessionInfo, "BmGame.RGFxGameViewportClient.ShowSessionInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowSessionInfo, "BmGame.RGFxGameViewportClient.ShowSessionInfo", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(C, paramsPtr + 0);
@@ -179,28 +182,28 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         return;
     }
 
-    private static BmSDK.Function __fn_ToggleSessionInfoDisplay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ToggleSessionInfoDisplay;
     /// <summary>
     /// Function: ToggleSessionInfoDisplay
     /// </summary>
     public unsafe virtual void ToggleSessionInfoDisplay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ToggleSessionInfoDisplay, "BmGame.RGFxGameViewportClient.ToggleSessionInfoDisplay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleSessionInfoDisplay, "BmGame.RGFxGameViewportClient.ToggleSessionInfoDisplay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override bool Init(out BmSDK.FString OutError)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxGameViewportClient.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxGameViewportClient.Init", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -208,14 +211,14 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_GetSubtitleMinY;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSubtitleMinY;
     /// <summary>
     /// Function: GetSubtitleMinY
     /// </summary>
     public unsafe virtual float GetSubtitleMinY()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSubtitleMinY, "BmGame.RGFxGameViewportClient.GetSubtitleMinY");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSubtitleMinY, "BmGame.RGFxGameViewportClient.GetSubtitleMinY", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -229,14 +232,14 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetDisplayGammaReferenceBrightness;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDisplayGammaReferenceBrightness;
     /// <summary>
     /// Function: GetDisplayGammaReferenceBrightness
     /// </summary>
     public unsafe virtual float GetDisplayGammaReferenceBrightness()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetDisplayGammaReferenceBrightness, "BmGame.RGFxGameViewportClient.GetDisplayGammaReferenceBrightness");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisplayGammaReferenceBrightness, "BmGame.RGFxGameViewportClient.GetDisplayGammaReferenceBrightness", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -250,14 +253,14 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InstallOurGFxHandlers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InstallOurGFxHandlers;
     /// <summary>
     /// Function: InstallOurGFxHandlers
     /// </summary>
     public unsafe virtual bool InstallOurGFxHandlers()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InstallOurGFxHandlers, "BmGame.RGFxGameViewportClient.InstallOurGFxHandlers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InstallOurGFxHandlers, "BmGame.RGFxGameViewportClient.InstallOurGFxHandlers", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -271,14 +274,14 @@ public partial class RGFxGameViewportClient : BmSDK.Engine.GameViewportClient, B
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetupGameFonts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupGameFonts;
     /// <summary>
     /// Function: SetupGameFonts
     /// </summary>
     public unsafe virtual void SetupGameFonts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupGameFonts, "BmGame.RGFxGameViewportClient.SetupGameFonts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupGameFonts, "BmGame.RGFxGameViewportClient.SetupGameFonts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

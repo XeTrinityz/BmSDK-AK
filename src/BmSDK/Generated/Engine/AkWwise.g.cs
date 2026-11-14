@@ -267,12 +267,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: ClearMultipointNetwork
     /// </summary>
-    public unsafe static void ClearMultipointNetwork(BmSDK.FString NetworkName)
+    public unsafe static void ClearMultipointNetwork(BmSDK.FStringArg NetworkName)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMultipointNetwork, "Engine.AkWwise.ClearMultipointNetwork");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -281,6 +281,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -288,12 +289,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: MoveMultipointNetworkNode
     /// </summary>
-    public unsafe static void MoveMultipointNetworkNode(BmSDK.FString NetworkName, int NodeID, System.Numerics.Vector3 NodePosition)
+    public unsafe static void MoveMultipointNetworkNode(BmSDK.FStringArg NetworkName, int NodeID, System.Numerics.Vector3 NodePosition)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveMultipointNetworkNode, "Engine.AkWwise.MoveMultipointNetworkNode");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodeID, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodePosition, paramsPtr + 20);
         var oldFlags = funcManaged.FunctionFlags;
@@ -304,6 +305,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -311,12 +313,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: RemoveMultipointNetworkPosition
     /// </summary>
-    public unsafe static void RemoveMultipointNetworkPosition(BmSDK.FString NetworkName, System.Numerics.Vector3 NodePosition)
+    public unsafe static void RemoveMultipointNetworkPosition(BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMultipointNetworkPosition, "Engine.AkWwise.RemoveMultipointNetworkPosition");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodePosition, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -326,6 +328,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -333,12 +336,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: RemoveMultipointNetworkNode
     /// </summary>
-    public unsafe static void RemoveMultipointNetworkNode(BmSDK.FString NetworkName, out int NodeID)
+    public unsafe static void RemoveMultipointNetworkNode(BmSDK.FStringArg NetworkName, out int NodeID)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMultipointNetworkNode, "Engine.AkWwise.RemoveMultipointNetworkNode");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out NodeID);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodeID, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
@@ -349,6 +352,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         NodeID = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
         return;
     }
@@ -357,12 +361,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: AddMultipointNetwork
     /// </summary>
-    public unsafe static int AddMultipointNetwork(BmSDK.FString NetworkName, System.Numerics.Vector3 NodePosition, bool Positional)
+    public unsafe static int AddMultipointNetwork(BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition, bool Positional)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMultipointNetwork, "Engine.AkWwise.AddMultipointNetwork");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodePosition, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Positional, paramsPtr + 28);
         var oldFlags = funcManaged.FunctionFlags;
@@ -373,6 +377,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 32);
     }
 
@@ -493,13 +498,13 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: SetCustomGlobalState
     /// </summary>
-    public unsafe static void SetCustomGlobalState(BmSDK.FString StateGroup, BmSDK.FString StateName)
+    public unsafe static void SetCustomGlobalState(BmSDK.FStringArg StateGroup, BmSDK.FStringArg StateName)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomGlobalState, "Engine.AkWwise.SetCustomGlobalState");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StateGroup, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StateName, paramsPtr + 16);
+        StateGroup.WriteTo(paramsPtr + 0);
+        StateName.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -508,6 +513,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
@@ -515,14 +522,14 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: SetCustomSourceSwitch
     /// </summary>
-    public unsafe static void SetCustomSourceSwitch(BmSDK.Engine.Actor Parent, BmSDK.FString SwitchGroup, BmSDK.FString SwitchName)
+    public unsafe static void SetCustomSourceSwitch(BmSDK.Engine.Actor Parent, BmSDK.FStringArg SwitchGroup, BmSDK.FStringArg SwitchName)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomSourceSwitch, "Engine.AkWwise.SetCustomSourceSwitch");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Parent, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SwitchGroup, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SwitchName, paramsPtr + 24);
+        SwitchGroup.WriteTo(paramsPtr + 8);
+        SwitchName.WriteTo(paramsPtr + 24);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -531,6 +538,8 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return;
     }
 
@@ -538,13 +547,13 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: SetCustomSourceParameter
     /// </summary>
-    public unsafe static void SetCustomSourceParameter(BmSDK.Engine.Actor Parent, BmSDK.FString ParamName, float ParamValue)
+    public unsafe static void SetCustomSourceParameter(BmSDK.Engine.Actor Parent, BmSDK.FStringArg ParamName, float ParamValue)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomSourceParameter, "Engine.AkWwise.SetCustomSourceParameter");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Parent, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamName, paramsPtr + 8);
+        ParamName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamValue, paramsPtr + 24);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -554,6 +563,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
@@ -561,12 +571,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: SetCustomGlobalParameter
     /// </summary>
-    public unsafe static void SetCustomGlobalParameter(BmSDK.FString ParamName, float ParamValue)
+    public unsafe static void SetCustomGlobalParameter(BmSDK.FStringArg ParamName, float ParamValue)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomGlobalParameter, "Engine.AkWwise.SetCustomGlobalParameter");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamName, paramsPtr + 0);
+        ParamName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamValue, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -576,6 +586,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -606,12 +617,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: StartCustomAudioEvent
     /// </summary>
-    public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartCustomAudioEvent(BmSDK.FString EventName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
+    public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartCustomAudioEvent(BmSDK.FStringArg EventName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomAudioEvent, "Engine.AkWwise.StartCustomAudioEvent");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
+        EventName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GlobalSource, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -621,6 +632,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkWwise.FAkSoundHandle>(paramsPtr + 20);
     }
 
@@ -628,12 +640,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: GetMeterParameterValue
     /// </summary>
-    public unsafe static float GetMeterParameterValue(BmSDK.FString MeterName, float DefaultMeterValue)
+    public unsafe static float GetMeterParameterValue(BmSDK.FStringArg MeterName, float DefaultMeterValue)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMeterParameterValue, "Engine.AkWwise.GetMeterParameterValue");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MeterName, paramsPtr + 0);
+        MeterName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DefaultMeterValue, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -643,6 +655,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
     }
 
@@ -650,12 +663,12 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
     /// <summary>
     /// Function: SetMixChapterState
     /// </summary>
-    public unsafe static void SetMixChapterState(BmSDK.FString ChapterName)
+    public unsafe static void SetMixChapterState(BmSDK.FStringArg ChapterName)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMixChapterState, "Engine.AkWwise.SetMixChapterState");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ChapterName, paramsPtr + 0);
+        ChapterName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -664,6 +677,7 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -1069,14 +1083,14 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AkDirectorCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AkDirectorCallback;
     /// <summary>
     /// Function: AkDirectorCallback
     /// </summary>
     public unsafe virtual void AkDirectorCallback(int CallbackFlags, int AudioHashFact, int AudioHashFactSet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AkDirectorCallback, "Engine.AkWwise.AkDirectorCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AkDirectorCallback, "Engine.AkWwise.AkDirectorCallback", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CallbackFlags, paramsPtr + 0);
@@ -1086,14 +1100,14 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_AkMusicCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AkMusicCallback;
     /// <summary>
     /// Function: AkMusicCallback
     /// </summary>
     public unsafe virtual void AkMusicCallback(int CallbackFlags, int MarkerID, int MarkerTypeID, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AkMusicCallback, "Engine.AkWwise.AkMusicCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AkMusicCallback, "Engine.AkWwise.AkMusicCallback", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CallbackFlags, paramsPtr + 0);
@@ -1131,14 +1145,14 @@ public partial class AkWwise : BmSDK.GameObject, BmSDK.IGameObject
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 116); }
     }
 
-    private static BmSDK.Function __fn_AkSoundCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AkSoundCallback;
     /// <summary>
     /// Function: AkSoundCallback
     /// </summary>
     public unsafe virtual void AkSoundCallback(int CallbackFlags, BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID, int MarkerTypeID, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AkSoundCallback, "Engine.AkWwise.AkSoundCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AkSoundCallback, "Engine.AkWwise.AkSoundCallback", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CallbackFlags, paramsPtr + 0);
@@ -2670,13 +2684,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: ClearMultipointNetwork, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void ClearMultipointNetwork(this BmSDK.Engine.AkWwise self, BmSDK.FString NetworkName)
+    public unsafe static void ClearMultipointNetwork(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearMultipointNetwork, "Engine.AkWwise.ClearMultipointNetwork");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -2685,6 +2699,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -2692,13 +2707,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: MoveMultipointNetworkNode, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void MoveMultipointNetworkNode(this BmSDK.Engine.AkWwise self, BmSDK.FString NetworkName, int NodeID, System.Numerics.Vector3 NodePosition)
+    public unsafe static void MoveMultipointNetworkNode(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, int NodeID, System.Numerics.Vector3 NodePosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MoveMultipointNetworkNode, "Engine.AkWwise.MoveMultipointNetworkNode");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodeID, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodePosition, paramsPtr + 20);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2709,6 +2724,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -2716,13 +2732,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: RemoveMultipointNetworkPosition, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void RemoveMultipointNetworkPosition(this BmSDK.Engine.AkWwise self, BmSDK.FString NetworkName, System.Numerics.Vector3 NodePosition)
+    public unsafe static void RemoveMultipointNetworkPosition(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMultipointNetworkPosition, "Engine.AkWwise.RemoveMultipointNetworkPosition");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodePosition, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -2732,6 +2748,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -2739,13 +2756,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: RemoveMultipointNetworkNode, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void RemoveMultipointNetworkNode(this BmSDK.Engine.AkWwise self, BmSDK.FString NetworkName, out int NodeID)
+    public unsafe static void RemoveMultipointNetworkNode(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, out int NodeID)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveMultipointNetworkNode, "Engine.AkWwise.RemoveMultipointNetworkNode");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out NodeID);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodeID, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2756,6 +2773,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         NodeID = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
         return;
     }
@@ -2764,13 +2782,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: AddMultipointNetwork, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static int AddMultipointNetwork(this BmSDK.Engine.AkWwise self, BmSDK.FString NetworkName, System.Numerics.Vector3 NodePosition, bool Positional)
+    public unsafe static int AddMultipointNetwork(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg NetworkName, System.Numerics.Vector3 NodePosition, bool Positional)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMultipointNetwork, "Engine.AkWwise.AddMultipointNetwork");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(NetworkName, paramsPtr + 0);
+        NetworkName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NodePosition, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Positional, paramsPtr + 28);
         var oldFlags = funcManaged.FunctionFlags;
@@ -2781,6 +2799,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 32);
     }
 
@@ -2906,14 +2925,14 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: SetCustomGlobalState, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void SetCustomGlobalState(this BmSDK.Engine.AkWwise self, BmSDK.FString StateGroup, BmSDK.FString StateName)
+    public unsafe static void SetCustomGlobalState(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg StateGroup, BmSDK.FStringArg StateName)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomGlobalState, "Engine.AkWwise.SetCustomGlobalState");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StateGroup, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StateName, paramsPtr + 16);
+        StateGroup.WriteTo(paramsPtr + 0);
+        StateName.WriteTo(paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -2922,6 +2941,8 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return;
     }
 
@@ -2929,15 +2950,15 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: SetCustomSourceSwitch, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void SetCustomSourceSwitch(this BmSDK.Engine.AkWwise self, BmSDK.Engine.Actor Parent, BmSDK.FString SwitchGroup, BmSDK.FString SwitchName)
+    public unsafe static void SetCustomSourceSwitch(this BmSDK.Engine.AkWwise self, BmSDK.Engine.Actor Parent, BmSDK.FStringArg SwitchGroup, BmSDK.FStringArg SwitchName)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomSourceSwitch, "Engine.AkWwise.SetCustomSourceSwitch");
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Parent, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SwitchGroup, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(SwitchName, paramsPtr + 24);
+        SwitchGroup.WriteTo(paramsPtr + 8);
+        SwitchName.WriteTo(paramsPtr + 24);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -2946,6 +2967,8 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return;
     }
 
@@ -2953,14 +2976,14 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: SetCustomSourceParameter, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void SetCustomSourceParameter(this BmSDK.Engine.AkWwise self, BmSDK.Engine.Actor Parent, BmSDK.FString ParamName, float ParamValue)
+    public unsafe static void SetCustomSourceParameter(this BmSDK.Engine.AkWwise self, BmSDK.Engine.Actor Parent, BmSDK.FStringArg ParamName, float ParamValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomSourceParameter, "Engine.AkWwise.SetCustomSourceParameter");
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Parent, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamName, paramsPtr + 8);
+        ParamName.WriteTo(paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamValue, paramsPtr + 24);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -2970,6 +2993,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
 
@@ -2977,13 +3001,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: SetCustomGlobalParameter, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void SetCustomGlobalParameter(this BmSDK.Engine.AkWwise self, BmSDK.FString ParamName, float ParamValue)
+    public unsafe static void SetCustomGlobalParameter(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg ParamName, float ParamValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCustomGlobalParameter, "Engine.AkWwise.SetCustomGlobalParameter");
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamName, paramsPtr + 0);
+        ParamName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamValue, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -2993,6 +3017,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
@@ -3024,13 +3049,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: StartCustomAudioEvent, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartCustomAudioEvent(this BmSDK.Engine.AkWwise self, BmSDK.FString EventName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
+    public unsafe static BmSDK.Engine.AkWwise.FAkSoundHandle StartCustomAudioEvent(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg EventName, BmSDK.Engine.AkWwise.EGlobalAudioSourceID GlobalSource)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartCustomAudioEvent, "Engine.AkWwise.StartCustomAudioEvent");
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
+        EventName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GlobalSource, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -3040,6 +3065,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkWwise.FAkSoundHandle>(paramsPtr + 20);
     }
 
@@ -3047,13 +3073,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: GetMeterParameterValue, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static float GetMeterParameterValue(this BmSDK.Engine.AkWwise self, BmSDK.FString MeterName, float DefaultMeterValue)
+    public unsafe static float GetMeterParameterValue(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg MeterName, float DefaultMeterValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMeterParameterValue, "Engine.AkWwise.GetMeterParameterValue");
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MeterName, paramsPtr + 0);
+        MeterName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DefaultMeterValue, paramsPtr + 16);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
@@ -3063,6 +3089,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 20);
     }
 
@@ -3070,13 +3097,13 @@ public static class AkWwiseStatics
     /// <summary>
     /// Function: SetMixChapterState, run on <paramref name="self"/> rather than the class default object
     /// </summary>
-    public unsafe static void SetMixChapterState(this BmSDK.Engine.AkWwise self, BmSDK.FString ChapterName)
+    public unsafe static void SetMixChapterState(this BmSDK.Engine.AkWwise self, BmSDK.FStringArg ChapterName)
     {
         BmSDK.Framework.Guard.NotDestroyed(self);
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMixChapterState, "Engine.AkWwise.SetMixChapterState");
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ChapterName, paramsPtr + 0);
+        ChapterName.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -3085,6 +3112,7 @@ public static class AkWwiseStatics
         BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 

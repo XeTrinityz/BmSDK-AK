@@ -91,14 +91,14 @@ public partial class RCheckpointWaveController : BmSDK.BmGame.RBMWaveController,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BreakPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakPawn;
     /// <summary>
     /// Function: BreakPawn
     /// </summary>
     public unsafe virtual void BreakPawn(BmSDK.BmGame.RPawnCombat TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakPawn, "BmGame.RCheckpointWaveController.BreakPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakPawn, "BmGame.RCheckpointWaveController.BreakPawn", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -106,14 +106,14 @@ public partial class RCheckpointWaveController : BmSDK.BmGame.RBMWaveController,
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForTankSpook;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForTankSpook;
     /// <summary>
     /// Function: CheckForTankSpook
     /// </summary>
     public unsafe virtual void CheckForTankSpook(BmSDK.BmGame.RPawnCombat TestPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForTankSpook, "BmGame.RCheckpointWaveController.CheckForTankSpook");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForTankSpook, "BmGame.RCheckpointWaveController.CheckForTankSpook", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);

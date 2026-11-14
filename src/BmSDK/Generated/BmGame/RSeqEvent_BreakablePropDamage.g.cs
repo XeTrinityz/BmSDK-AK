@@ -91,14 +91,14 @@ public partial class RSeqEvent_BreakablePropDamage : BmSDK.Engine.SequenceEvent,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HandleDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleDamage;
     /// <summary>
     /// Function: HandleDamage
     /// </summary>
     public unsafe virtual void HandleDamage(BmSDK.Engine.Actor InOriginator, BmSDK.Engine.Actor InInstigator, int dmgStage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleDamage, "BmGame.RSeqEvent_BreakablePropDamage.HandleDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleDamage, "BmGame.RSeqEvent_BreakablePropDamage.HandleDamage", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InOriginator, paramsPtr + 0);
@@ -108,14 +108,14 @@ public partial class RSeqEvent_BreakablePropDamage : BmSDK.Engine.SequenceEvent,
         return;
     }
 
-    private static BmSDK.Function __fn_IsValidDamageStage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsValidDamageStage;
     /// <summary>
     /// Function: IsValidDamageStage
     /// </summary>
     public unsafe virtual bool IsValidDamageStage(int dmgStage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsValidDamageStage, "BmGame.RSeqEvent_BreakablePropDamage.IsValidDamageStage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidDamageStage, "BmGame.RSeqEvent_BreakablePropDamage.IsValidDamageStage", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgStage, paramsPtr + 0);

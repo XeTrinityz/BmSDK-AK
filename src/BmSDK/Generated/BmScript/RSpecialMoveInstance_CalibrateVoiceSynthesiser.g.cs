@@ -78,14 +78,14 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CalibrateVoiceSynthesiser>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetRumble;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRumble;
     /// <summary>
     /// Function: SetRumble
     /// </summary>
     public unsafe virtual void SetRumble(float Rumble)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRumble, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.SetRumble");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRumble, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.SetRumble", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Rumble, paramsPtr + 0);
@@ -93,56 +93,56 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         return;
     }
 
-    private static BmSDK.Function __fn_FinishSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
     /// <summary>
     /// Function: FinishSpecialMove
     /// </summary>
     public unsafe override void FinishSpecialMove()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.FinishSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HackingMiniGameWon;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HackingMiniGameWon;
     /// <summary>
     /// Function: HackingMiniGameWon
     /// </summary>
     public unsafe virtual void HackingMiniGameWon()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HackingMiniGameWon, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.HackingMiniGameWon");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HackingMiniGameWon, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.HackingMiniGameWon", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayCalibrationComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayCalibrationComplete;
     /// <summary>
     /// Function: PlayCalibrationComplete
     /// </summary>
     public unsafe override void PlayCalibrationComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayCalibrationComplete, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayCalibrationComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCalibrationComplete, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayCalibrationComplete", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateSpecialMove;
     /// <summary>
     /// Function: UpdateSpecialMove
     /// </summary>
     public unsafe override bool UpdateSpecialMove(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.UpdateSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.UpdateSpecialMove", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -150,14 +150,14 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_PushControllerToFlash;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PushControllerToFlash;
     /// <summary>
     /// Function: PushControllerToFlash
     /// </summary>
     public unsafe virtual void PushControllerToFlash(float left_y, float right_y)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PushControllerToFlash, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PushControllerToFlash");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PushControllerToFlash, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PushControllerToFlash", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(left_y, paramsPtr + 0);
@@ -166,14 +166,14 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         return;
     }
 
-    private static BmSDK.Function __fn_AudioParams;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AudioParams;
     /// <summary>
     /// Function: AudioParams
     /// </summary>
     public unsafe override void AudioParams(float _PitchValue, float _FilterValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AudioParams, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.AudioParams");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AudioParams, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.AudioParams", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_PitchValue, paramsPtr + 0);
@@ -182,168 +182,168 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         return;
     }
 
-    private static BmSDK.Function __fn_PlayAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayAudio;
     /// <summary>
     /// Function: PlayAudio
     /// </summary>
     public unsafe override void PlayAudio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayAudio, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAudio, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayAudio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopVoicePlayback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopVoicePlayback;
     /// <summary>
     /// Function: StopVoicePlayback
     /// </summary>
     public unsafe override void StopVoicePlayback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StopVoicePlayback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StopVoicePlayback", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartVoicePlayback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartVoicePlayback;
     /// <summary>
     /// Function: StartVoicePlayback
     /// </summary>
     public unsafe override void StartVoicePlayback()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartVoicePlayback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartVoicePlayback", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PlayVoiceNormal;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayVoiceNormal;
     /// <summary>
     /// Function: PlayVoiceNormal
     /// </summary>
     public unsafe override void PlayVoiceNormal()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayVoiceNormal, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayVoiceNormal");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayVoiceNormal, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayVoiceNormal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClosingDialogueBoxAfterOutro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosingDialogueBoxAfterOutro;
     /// <summary>
     /// Function: ClosingDialogueBoxAfterOutro
     /// </summary>
     public unsafe override void ClosingDialogueBoxAfterOutro()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosingDialogueBoxAfterOutro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterOutro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosingDialogueBoxAfterOutro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterOutro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClosingDialogueBoxAfterScan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosingDialogueBoxAfterScan;
     /// <summary>
     /// Function: ClosingDialogueBoxAfterScan
     /// </summary>
     public unsafe override void ClosingDialogueBoxAfterScan()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosingDialogueBoxAfterScan, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterScan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosingDialogueBoxAfterScan, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterScan", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClosingDialogueBoxAfterIntro;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClosingDialogueBoxAfterIntro;
     /// <summary>
     /// Function: ClosingDialogueBoxAfterIntro
     /// </summary>
     public unsafe override void ClosingDialogueBoxAfterIntro()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClosingDialogueBoxAfterIntro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterIntro");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosingDialogueBoxAfterIntro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterIntro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WinClearPrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WinClearPrompts;
     /// <summary>
     /// Function: WinClearPrompts
     /// </summary>
     public unsafe override void WinClearPrompts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WinClearPrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.WinClearPrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinClearPrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.WinClearPrompts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePrompts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePrompts;
     /// <summary>
     /// Function: UpdatePrompts
     /// </summary>
     public unsafe virtual void UpdatePrompts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.UpdatePrompts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.UpdatePrompts", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartDOFChange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartDOFChange;
     /// <summary>
     /// Function: StartDOFChange
     /// </summary>
     public unsafe virtual void StartDOFChange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartDOFChange, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartDOFChange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartDOFChange, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartDOFChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitialSetupVoiceSynthMinigame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialSetupVoiceSynthMinigame;
     /// <summary>
     /// Function: InitialSetupVoiceSynthMinigame
     /// </summary>
     public unsafe virtual void InitialSetupVoiceSynthMinigame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialSetupVoiceSynthMinigame, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.InitialSetupVoiceSynthMinigame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialSetupVoiceSynthMinigame, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.InitialSetupVoiceSynthMinigame", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerSpecialMove;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
     /// <summary>
     /// Function: TriggerSpecialMove
     /// </summary>
     public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.TriggerSpecialMove");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.TriggerSpecialMove", this);
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);
@@ -351,14 +351,14 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         return;
     }
 
-    private static BmSDK.Function __fn_VoiceSampleCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_VoiceSampleCallback;
     /// <summary>
     /// Function: VoiceSampleCallback
     /// </summary>
     public unsafe virtual void VoiceSampleCallback(int CallbackFlags, BmSDK.Engine.AkWwise.FAkSoundHandle SoundHandle, int MarkerID, int MarkerTypeID, float Duration)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_VoiceSampleCallback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.VoiceSampleCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_VoiceSampleCallback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.VoiceSampleCallback", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CallbackFlags, paramsPtr + 0);

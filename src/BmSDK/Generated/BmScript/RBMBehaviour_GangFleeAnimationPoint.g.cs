@@ -91,14 +91,14 @@ public partial class RBMBehaviour_GangFleeAnimationPoint : BmSDK.BmScript.RBMBeh
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetRunVariants;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRunVariants;
     /// <summary>
     /// Function: SetRunVariants
     /// </summary>
     public unsafe override void SetRunVariants(BmSDK.BmGame.RBMAIAction_RiotRunBase MoveAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRunVariants, "BmScript.RBMBehaviour_GangFleeAnimationPoint.SetRunVariants");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRunVariants, "BmScript.RBMBehaviour_GangFleeAnimationPoint.SetRunVariants", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveAction, paramsPtr + 0);
@@ -106,14 +106,14 @@ public partial class RBMBehaviour_GangFleeAnimationPoint : BmSDK.BmScript.RBMBeh
         return;
     }
 
-    private static BmSDK.Function __fn_FleePointStillValid;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FleePointStillValid;
     /// <summary>
     /// Function: FleePointStillValid
     /// </summary>
     public unsafe virtual bool FleePointStillValid()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FleePointStillValid, "BmScript.RBMBehaviour_GangFleeAnimationPoint.FleePointStillValid");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FleePointStillValid, "BmScript.RBMBehaviour_GangFleeAnimationPoint.FleePointStillValid", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

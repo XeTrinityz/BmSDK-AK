@@ -78,14 +78,14 @@ public partial class RAIBrain_PredLite : BmSDK.BmGame.RAIBrain_Pred, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RAIBrain_PredLite>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetSearchlightCowerAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSearchlightCowerAEC;
     /// <summary>
     /// Function: SetSearchlightCowerAEC
     /// </summary>
     public unsafe virtual void SetSearchlightCowerAEC(BmSDK.BmGame.RAEC_SearchlightCower NewVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSearchlightCowerAEC, "BmGame.RAIBrain_PredLite.SetSearchlightCowerAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSearchlightCowerAEC, "BmGame.RAIBrain_PredLite.SetSearchlightCowerAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewVal, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAIBrain_PredLite : BmSDK.BmGame.RAIBrain_Pred, BmSDK.IGame
         return;
     }
 
-    private static BmSDK.Function __fn_HasMidPriorityEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasMidPriorityEvent;
     /// <summary>
     /// Function: HasMidPriorityEvent
     /// </summary>
     public unsafe override bool HasMidPriorityEvent(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasMidPriorityEvent, "BmGame.RAIBrain_PredLite.HasMidPriorityEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasMidPriorityEvent, "BmGame.RAIBrain_PredLite.HasMidPriorityEvent", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out NewName);
@@ -113,14 +113,14 @@ public partial class RAIBrain_PredLite : BmSDK.BmGame.RAIBrain_Pred, BmSDK.IGame
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_SetBasicState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBasicState;
     /// <summary>
     /// Function: SetBasicState
     /// </summary>
     public unsafe override void SetBasicState(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBasicState, "BmGame.RAIBrain_PredLite.SetBasicState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBasicState, "BmGame.RAIBrain_PredLite.SetBasicState", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out NewName);

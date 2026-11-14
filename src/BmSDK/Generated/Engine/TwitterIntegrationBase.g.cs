@@ -78,17 +78,17 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         where TComponent : class, Framework.IScriptComponent<TwitterIntegrationBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_TwitterRequest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TwitterRequest;
     /// <summary>
     /// Function: TwitterRequest
     /// </summary>
-    public unsafe virtual bool TwitterRequest(BmSDK.FString URL, BmSDK.TArray<BmSDK.FString> ParamKeysAndValues, BmSDK.Engine.TwitterIntegrationBase.ETwitterRequestMethod RequestMethod, int AccountIndex)
+    public unsafe virtual bool TwitterRequest(BmSDK.FStringArg URL, BmSDK.TArray<BmSDK.FString> ParamKeysAndValues, BmSDK.Engine.TwitterIntegrationBase.ETwitterRequestMethod RequestMethod, int AccountIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TwitterRequest, "Engine.TwitterIntegrationBase.TwitterRequest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TwitterRequest, "Engine.TwitterIntegrationBase.TwitterRequest", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(URL, paramsPtr + 0);
+        URL.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ParamKeysAndValues, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RequestMethod, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AccountIndex, paramsPtr + 36);
@@ -100,17 +100,18 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
-    private static BmSDK.Function __fn_GetAccountId;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAccountId;
     /// <summary>
     /// Function: GetAccountId
     /// </summary>
     public unsafe virtual BmSDK.FString GetAccountId(int AccountIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAccountId, "Engine.TwitterIntegrationBase.GetAccountId");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAccountId, "Engine.TwitterIntegrationBase.GetAccountId", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AccountIndex, paramsPtr + 0);
@@ -125,14 +126,14 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetAccountName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAccountName;
     /// <summary>
     /// Function: GetAccountName
     /// </summary>
     public unsafe virtual BmSDK.FString GetAccountName(int AccountIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAccountName, "Engine.TwitterIntegrationBase.GetAccountName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAccountName, "Engine.TwitterIntegrationBase.GetAccountName", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AccountIndex, paramsPtr + 0);
@@ -147,14 +148,14 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetNumAccounts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetNumAccounts;
     /// <summary>
     /// Function: GetNumAccounts
     /// </summary>
     public unsafe virtual int GetNumAccounts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetNumAccounts, "Engine.TwitterIntegrationBase.GetNumAccounts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetNumAccounts, "Engine.TwitterIntegrationBase.GetNumAccounts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -168,14 +169,14 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AuthorizeAccounts;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AuthorizeAccounts;
     /// <summary>
     /// Function: AuthorizeAccounts
     /// </summary>
     public unsafe virtual bool AuthorizeAccounts()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AuthorizeAccounts, "Engine.TwitterIntegrationBase.AuthorizeAccounts");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AuthorizeAccounts, "Engine.TwitterIntegrationBase.AuthorizeAccounts", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -189,19 +190,19 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShowTweetUI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowTweetUI;
     /// <summary>
     /// Function: ShowTweetUI
     /// </summary>
-    public unsafe virtual bool ShowTweetUI(BmSDK.FString InitialMessage = default, BmSDK.FString URL = default, BmSDK.FString Picture = default)
+    public unsafe virtual bool ShowTweetUI(BmSDK.FStringArg InitialMessage = default, BmSDK.FStringArg URL = default, BmSDK.FStringArg Picture = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowTweetUI, "Engine.TwitterIntegrationBase.ShowTweetUI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowTweetUI, "Engine.TwitterIntegrationBase.ShowTweetUI", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(InitialMessage, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(URL, paramsPtr + 16);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Picture, paramsPtr + 32);
+        InitialMessage.WriteTo(paramsPtr + 0);
+        URL.WriteTo(paramsPtr + 16);
+        Picture.WriteTo(paramsPtr + 32);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -210,17 +211,20 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 48);
     }
 
-    private static BmSDK.Function __fn_CanShowTweetUI;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanShowTweetUI;
     /// <summary>
     /// Function: CanShowTweetUI
     /// </summary>
     public unsafe virtual bool CanShowTweetUI()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanShowTweetUI, "Engine.TwitterIntegrationBase.CanShowTweetUI");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanShowTweetUI, "Engine.TwitterIntegrationBase.CanShowTweetUI", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -234,14 +238,14 @@ public partial class TwitterIntegrationBase : BmSDK.Engine.PlatformInterfaceBase
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe virtual void Init()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "Engine.TwitterIntegrationBase.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "Engine.TwitterIntegrationBase.Init", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

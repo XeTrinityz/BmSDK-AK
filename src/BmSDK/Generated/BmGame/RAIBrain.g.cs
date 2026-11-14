@@ -78,14 +78,14 @@ public partial class RAIBrain : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RAIBrain>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FireSpawnerBehaviourRoot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireSpawnerBehaviourRoot;
     /// <summary>
     /// Function: FireSpawnerBehaviourRoot
     /// </summary>
     public unsafe virtual void FireSpawnerBehaviourRoot(int BrainIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireSpawnerBehaviourRoot, "BmGame.RAIBrain.FireSpawnerBehaviourRoot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireSpawnerBehaviourRoot, "BmGame.RAIBrain.FireSpawnerBehaviourRoot", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BrainIndex, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAIBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_SetTopLevelAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTopLevelAEC;
     /// <summary>
     /// Function: SetTopLevelAEC
     /// </summary>
     public unsafe virtual void SetTopLevelAEC(BmSDK.BmGame.RAlertEventCoordinatorBase NewTopLevelAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTopLevelAEC, "BmGame.RAIBrain.SetTopLevelAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTopLevelAEC, "BmGame.RAIBrain.SetTopLevelAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTopLevelAEC, paramsPtr + 0);
@@ -108,42 +108,42 @@ public partial class RAIBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ClearAssignment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAssignment;
     /// <summary>
     /// Function: ClearAssignment
     /// </summary>
     public unsafe virtual void ClearAssignment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearAssignment, "BmGame.RAIBrain.ClearAssignment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAssignment, "BmGame.RAIBrain.ClearAssignment", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HandleNonAECState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleNonAECState;
     /// <summary>
     /// Function: HandleNonAECState
     /// </summary>
     public unsafe virtual void HandleNonAECState()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleNonAECState, "BmGame.RAIBrain.HandleNonAECState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleNonAECState, "BmGame.RAIBrain.HandleNonAECState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyBrainState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyBrainState;
     /// <summary>
     /// Function: ApplyBrainState
     /// </summary>
     public unsafe virtual void ApplyBrainState(BmSDK.FName NewBrainState, BmSDK.BmGame.RAlertEventCoordinatorBase PendingTLAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyBrainState, "BmGame.RAIBrain.ApplyBrainState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyBrainState, "BmGame.RAIBrain.ApplyBrainState", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBrainState, paramsPtr + 0);
@@ -152,14 +152,14 @@ public partial class RAIBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_EvaluateState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EvaluateState;
     /// <summary>
     /// Function: EvaluateState
     /// </summary>
     public unsafe virtual void EvaluateState(out BmSDK.FName NewName, out BmSDK.BmGame.RAlertEventCoordinatorBase NewAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EvaluateState, "BmGame.RAIBrain.EvaluateState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EvaluateState, "BmGame.RAIBrain.EvaluateState", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out NewName);
@@ -172,14 +172,14 @@ public partial class RAIBrain : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_DoAssignment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoAssignment;
     /// <summary>
     /// Function: DoAssignment
     /// </summary>
     public unsafe virtual void DoAssignment()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoAssignment, "BmGame.RAIBrain.DoAssignment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoAssignment, "BmGame.RAIBrain.DoAssignment", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

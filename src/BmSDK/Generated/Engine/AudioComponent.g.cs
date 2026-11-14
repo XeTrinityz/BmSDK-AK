@@ -78,14 +78,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         where TComponent : class, Framework.IScriptComponent<AudioComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnAudioFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnAudioFinished;
     /// <summary>
     /// Function: OnAudioFinished
     /// </summary>
     public unsafe virtual void OnAudioFinished(BmSDK.Engine.AudioComponent AC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnAudioFinished, "Engine.AudioComponent.OnAudioFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnAudioFinished, "Engine.AudioComponent.OnAudioFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AC, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_ResetToDefaults;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetToDefaults;
     /// <summary>
     /// Function: ResetToDefaults
     /// </summary>
     public unsafe virtual void ResetToDefaults()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetToDefaults, "Engine.AudioComponent.ResetToDefaults");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetToDefaults, "Engine.AudioComponent.ResetToDefaults", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -114,14 +114,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_SetWaveParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetWaveParameter;
     /// <summary>
     /// Function: SetWaveParameter
     /// </summary>
     public unsafe virtual void SetWaveParameter(BmSDK.FName InName, BmSDK.Engine.SoundNodeWave InWave)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetWaveParameter, "Engine.AudioComponent.SetWaveParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetWaveParameter, "Engine.AudioComponent.SetWaveParameter", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InName, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_SetFloatParameter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetFloatParameter;
     /// <summary>
     /// Function: SetFloatParameter
     /// </summary>
     public unsafe virtual void SetFloatParameter(BmSDK.FName InName, float InFloat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetFloatParameter, "Engine.AudioComponent.SetFloatParameter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetFloatParameter, "Engine.AudioComponent.SetFloatParameter", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InName, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_IsFadingOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFadingOut;
     /// <summary>
     /// Function: IsFadingOut
     /// </summary>
     public unsafe virtual bool IsFadingOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFadingOut, "Engine.AudioComponent.IsFadingOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFadingOut, "Engine.AudioComponent.IsFadingOut", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -181,14 +181,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsFadingIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsFadingIn;
     /// <summary>
     /// Function: IsFadingIn
     /// </summary>
     public unsafe virtual bool IsFadingIn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsFadingIn, "Engine.AudioComponent.IsFadingIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsFadingIn, "Engine.AudioComponent.IsFadingIn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -202,14 +202,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPlaying;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPlaying;
     /// <summary>
     /// Function: IsPlaying
     /// </summary>
     public unsafe virtual bool IsPlaying()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPlaying, "Engine.AudioComponent.IsPlaying");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPlaying, "Engine.AudioComponent.IsPlaying", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -223,14 +223,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Stop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Stop;
     /// <summary>
     /// Function: Stop
     /// </summary>
     public unsafe virtual void Stop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Stop, "Engine.AudioComponent.Stop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Stop, "Engine.AudioComponent.Stop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -244,14 +244,14 @@ public partial class AudioComponent : BmSDK.Engine.ActorComponent, BmSDK.IGameOb
         return;
     }
 
-    private static BmSDK.Function __fn_Play;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Play;
     /// <summary>
     /// Function: Play
     /// </summary>
     public unsafe virtual void Play()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Play, "Engine.AudioComponent.Play");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Play, "Engine.AudioComponent.Play", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

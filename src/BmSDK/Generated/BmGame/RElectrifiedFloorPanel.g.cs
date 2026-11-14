@@ -73,28 +73,28 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         where TComponent : class, Framework.IScriptComponent<RElectrifiedFloorPanel>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RemoveXrayHighlight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveXrayHighlight;
     /// <summary>
     /// Function: RemoveXrayHighlight
     /// </summary>
     public unsafe virtual void RemoveXrayHighlight()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveXrayHighlight, "BmGame.RElectrifiedFloorPanel.RemoveXrayHighlight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveXrayHighlight, "BmGame.RElectrifiedFloorPanel.RemoveXrayHighlight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndMatineeControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndMatineeControl;
     /// <summary>
     /// Function: EndMatineeControl
     /// </summary>
     public unsafe override void EndMatineeControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndMatineeControl, "BmGame.RElectrifiedFloorPanel.EndMatineeControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndMatineeControl, "BmGame.RElectrifiedFloorPanel.EndMatineeControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_BeginMatineeControl;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BeginMatineeControl;
     /// <summary>
     /// Function: BeginMatineeControl
     /// </summary>
     public unsafe override void BeginMatineeControl(BmSDK.Engine.InterpGroup InInterpGroup, BmSDK.Engine.InterpGroupInst InInterpGroupInst)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BeginMatineeControl, "BmGame.RElectrifiedFloorPanel.BeginMatineeControl");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BeginMatineeControl, "BmGame.RElectrifiedFloorPanel.BeginMatineeControl", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInterpGroup, paramsPtr + 0);
@@ -119,56 +119,56 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOff;
     /// <summary>
     /// Function: TurnOff
     /// </summary>
     public unsafe virtual void TurnOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOff, "BmGame.RElectrifiedFloorPanel.TurnOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOff, "BmGame.RElectrifiedFloorPanel.TurnOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TurnOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnOn;
     /// <summary>
     /// Function: TurnOn
     /// </summary>
     public unsafe virtual void TurnOn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TurnOn, "BmGame.RElectrifiedFloorPanel.TurnOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOn, "BmGame.RElectrifiedFloorPanel.TurnOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActive;
     /// <summary>
     /// Function: IsActive
     /// </summary>
     public unsafe virtual bool IsActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmGame.RElectrifiedFloorPanel.IsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActive, "BmGame.RElectrifiedFloorPanel.IsActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe virtual void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.RElectrifiedFloorPanel.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.RElectrifiedFloorPanel.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -176,14 +176,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_Attach;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Attach;
     /// <summary>
     /// Function: Attach
     /// </summary>
     public unsafe override void Attach(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Attach, "BmGame.RElectrifiedFloorPanel.Attach");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Attach, "BmGame.RElectrifiedFloorPanel.Attach", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -191,14 +191,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RElectrifiedFloorPanel.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RElectrifiedFloorPanel.Touch", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -209,14 +209,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_Bump;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Bump;
     /// <summary>
     /// Function: Bump
     /// </summary>
     public unsafe override void Bump(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Bump, "BmGame.RElectrifiedFloorPanel.Bump");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Bump, "BmGame.RElectrifiedFloorPanel.Bump", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -226,14 +226,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_CauseElectricDamageToPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CauseElectricDamageToPawn;
     /// <summary>
     /// Function: CauseElectricDamageToPawn
     /// </summary>
     public unsafe virtual void CauseElectricDamageToPawn(BmSDK.BmGame.RPawnCharacter CPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CauseElectricDamageToPawn, "BmGame.RElectrifiedFloorPanel.CauseElectricDamageToPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CauseElectricDamageToPawn, "BmGame.RElectrifiedFloorPanel.CauseElectricDamageToPawn", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CPawn, paramsPtr + 0);
@@ -241,14 +241,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_IsHitReactionBehav;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHitReactionBehav;
     /// <summary>
     /// Function: IsHitReactionBehav
     /// </summary>
     public unsafe virtual bool IsHitReactionBehav(BmSDK.BmGame.RBMBehaviour behav)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsHitReactionBehav, "BmGame.RElectrifiedFloorPanel.IsHitReactionBehav");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHitReactionBehav, "BmGame.RElectrifiedFloorPanel.IsHitReactionBehav", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(behav, paramsPtr + 0);
@@ -256,14 +256,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PlayerIsMovingAwayFromStumbleDir;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayerIsMovingAwayFromStumbleDir;
     /// <summary>
     /// Function: PlayerIsMovingAwayFromStumbleDir
     /// </summary>
     public unsafe virtual bool PlayerIsMovingAwayFromStumbleDir(BmSDK.BmGame.RPlayerControllerCombat RPC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayerIsMovingAwayFromStumbleDir, "BmGame.RElectrifiedFloorPanel.PlayerIsMovingAwayFromStumbleDir");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayerIsMovingAwayFromStumbleDir, "BmGame.RElectrifiedFloorPanel.PlayerIsMovingAwayFromStumbleDir", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RPC, paramsPtr + 0);
@@ -271,28 +271,28 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_TriggerPawnKOEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerPawnKOEvents;
     /// <summary>
     /// Function: TriggerPawnKOEvents
     /// </summary>
     public unsafe virtual void TriggerPawnKOEvents()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerPawnKOEvents, "BmGame.RElectrifiedFloorPanel.TriggerPawnKOEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerPawnKOEvents, "BmGame.RElectrifiedFloorPanel.TriggerPawnKOEvents", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CauseDamageToPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CauseDamageToPawn;
     /// <summary>
     /// Function: CauseDamageToPawn
     /// </summary>
     public unsafe virtual void CauseDamageToPawn(BmSDK.BmGame.RPawnCharacter CPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CauseDamageToPawn, "BmGame.RElectrifiedFloorPanel.CauseDamageToPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CauseDamageToPawn, "BmGame.RElectrifiedFloorPanel.CauseDamageToPawn", this);
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CPawn, paramsPtr + 0);
@@ -300,28 +300,28 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerProximityReaction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerProximityReaction;
     /// <summary>
     /// Function: TriggerProximityReaction
     /// </summary>
     public unsafe virtual void TriggerProximityReaction()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerProximityReaction, "BmGame.RElectrifiedFloorPanel.TriggerProximityReaction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerProximityReaction, "BmGame.RElectrifiedFloorPanel.TriggerProximityReaction", this);
         byte* paramsPtr = stackalloc byte[92];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerBatmanOnEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerBatmanOnEvent;
     /// <summary>
     /// Function: TriggerBatmanOnEvent
     /// </summary>
     public unsafe virtual void TriggerBatmanOnEvent(bool IsOff)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerBatmanOnEvent, "BmGame.RElectrifiedFloorPanel.TriggerBatmanOnEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerBatmanOnEvent, "BmGame.RElectrifiedFloorPanel.TriggerBatmanOnEvent", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsOff, paramsPtr + 0);
@@ -329,14 +329,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_UpdatePawnsOnTile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawnsOnTile;
     /// <summary>
     /// Function: UpdatePawnsOnTile
     /// </summary>
     public unsafe virtual void UpdatePawnsOnTile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePawnsOnTile, "BmGame.RElectrifiedFloorPanel.UpdatePawnsOnTile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePawnsOnTile, "BmGame.RElectrifiedFloorPanel.UpdatePawnsOnTile", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -350,14 +350,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForPawnsOnTile;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForPawnsOnTile;
     /// <summary>
     /// Function: CheckForPawnsOnTile
     /// </summary>
     public unsafe virtual void CheckForPawnsOnTile()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForPawnsOnTile, "BmGame.RElectrifiedFloorPanel.CheckForPawnsOnTile");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForPawnsOnTile, "BmGame.RElectrifiedFloorPanel.CheckForPawnsOnTile", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -371,14 +371,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateShockedCharactersEffect;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateShockedCharactersEffect;
     /// <summary>
     /// Function: UpdateShockedCharactersEffect
     /// </summary>
     public unsafe virtual void UpdateShockedCharactersEffect()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateShockedCharactersEffect, "BmGame.RElectrifiedFloorPanel.UpdateShockedCharactersEffect");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateShockedCharactersEffect, "BmGame.RElectrifiedFloorPanel.UpdateShockedCharactersEffect", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -392,56 +392,56 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEvent;
     /// <summary>
     /// Function: TriggerEvent
     /// </summary>
     public unsafe virtual void TriggerEvent()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEvent, "BmGame.RElectrifiedFloorPanel.TriggerEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEvent, "BmGame.RElectrifiedFloorPanel.TriggerEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CreateMaterial;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateMaterial;
     /// <summary>
     /// Function: CreateMaterial
     /// </summary>
     public unsafe virtual void CreateMaterial()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CreateMaterial, "BmGame.RElectrifiedFloorPanel.CreateMaterial");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateMaterial, "BmGame.RElectrifiedFloorPanel.CreateMaterial", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetMesh;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMesh;
     /// <summary>
     /// Function: GetMesh
     /// </summary>
     public unsafe virtual BmSDK.Engine.MeshComponent GetMesh()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMesh, "BmGame.RElectrifiedFloorPanel.GetMesh");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMesh, "BmGame.RElectrifiedFloorPanel.GetMesh", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MeshComponent>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Intialise;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Intialise;
     /// <summary>
     /// Function: Intialise
     /// </summary>
     public unsafe virtual void Intialise()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Intialise, "BmGame.RElectrifiedFloorPanel.Intialise");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Intialise, "BmGame.RElectrifiedFloorPanel.Intialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -455,14 +455,14 @@ public partial class RElectrifiedFloorPanel : BmSDK.Engine.StaticMeshActor, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetState;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetState;
     /// <summary>
     /// Function: SetState
     /// </summary>
     public unsafe virtual void SetState(BmSDK.BmGame.RElectrifiedFloorPanel.FloorPanelStates NewState)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetState, "BmGame.RElectrifiedFloorPanel.SetState");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetState, "BmGame.RElectrifiedFloorPanel.SetState", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewState, paramsPtr + 0);

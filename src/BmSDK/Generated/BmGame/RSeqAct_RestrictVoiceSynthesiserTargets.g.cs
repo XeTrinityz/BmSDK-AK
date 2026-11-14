@@ -91,28 +91,28 @@ public partial class RSeqAct_RestrictVoiceSynthesiserTargets : BmSDK.Engine.Sequ
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FiredAtWrongTarget;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FiredAtWrongTarget;
     /// <summary>
     /// Function: FiredAtWrongTarget
     /// </summary>
     public unsafe virtual void FiredAtWrongTarget()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FiredAtWrongTarget, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.FiredAtWrongTarget");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FiredAtWrongTarget, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.FiredAtWrongTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsCurrentTargetAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsCurrentTargetAllowed;
     /// <summary>
     /// Function: IsCurrentTargetAllowed
     /// </summary>
     public unsafe virtual bool IsCurrentTargetAllowed(BmSDK.Engine.Actor CheckTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsCurrentTargetAllowed, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.IsCurrentTargetAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsCurrentTargetAllowed, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.IsCurrentTargetAllowed", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckTarget, paramsPtr + 0);
@@ -120,14 +120,14 @@ public partial class RSeqAct_RestrictVoiceSynthesiserTargets : BmSDK.Engine.Sequ
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_RestrictVoiceSynthesiserTargets.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

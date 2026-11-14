@@ -78,14 +78,14 @@ public partial class RInteractionManager : BmSDK.Component, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RInteractionManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnRegisterActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnRegisterActor;
     /// <summary>
     /// Function: UnRegisterActor
     /// </summary>
     public unsafe virtual void UnRegisterActor(BmSDK.Engine.RInteractionComponent ActorToRemove)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnRegisterActor, "Engine.RInteractionManager.UnRegisterActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnRegisterActor, "Engine.RInteractionManager.UnRegisterActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ActorToRemove, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RInteractionManager : BmSDK.Component, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_RegisterNewActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterNewActor;
     /// <summary>
     /// Function: RegisterNewActor
     /// </summary>
     public unsafe virtual void RegisterNewActor(BmSDK.Engine.RInteractionComponent NewActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterNewActor, "Engine.RInteractionManager.RegisterNewActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterNewActor, "Engine.RInteractionManager.RegisterNewActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewActor, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RInteractionManager : BmSDK.Component, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetInteractionClass;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractionClass;
     /// <summary>
     /// Function: GetInteractionClass
     /// </summary>
     public unsafe virtual BmSDK.Engine.RInteractionClass GetInteractionClass(BmSDK.FName ClassName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractionClass, "Engine.RInteractionManager.GetInteractionClass");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractionClass, "Engine.RInteractionManager.GetInteractionClass", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ClassName, paramsPtr + 0);

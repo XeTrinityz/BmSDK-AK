@@ -78,28 +78,28 @@ public partial class RBMExitCondition_MatineeEnded : BmSDK.BmGame.RBMExitConditi
         where TComponent : class, Framework.IScriptComponent<RBMExitCondition_MatineeEnded>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_MatineeBlendOutStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeBlendOutStarted;
     /// <summary>
     /// Function: MatineeBlendOutStarted
     /// </summary>
     public unsafe virtual void MatineeBlendOutStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatineeBlendOutStarted, "BmGame.RBMExitCondition_MatineeEnded.MatineeBlendOutStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MatineeBlendOutStarted, "BmGame.RBMExitCondition_MatineeEnded.MatineeBlendOutStarted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MatineeControlFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MatineeControlFinished;
     /// <summary>
     /// Function: MatineeControlFinished
     /// </summary>
     public unsafe virtual void MatineeControlFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MatineeControlFinished, "BmGame.RBMExitCondition_MatineeEnded.MatineeControlFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MatineeControlFinished, "BmGame.RBMExitCondition_MatineeEnded.MatineeControlFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

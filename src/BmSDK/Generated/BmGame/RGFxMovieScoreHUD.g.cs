@@ -78,14 +78,14 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         where TComponent : class, Framework.IScriptComponent<RGFxMovieScoreHUD>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetNumStars;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetNumStars;
     /// <summary>
     /// Function: SetNumStars
     /// </summary>
     public unsafe virtual void SetNumStars(int num_stars, bool Snap)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetNumStars, "BmGame.RGFxMovieScoreHUD.SetNumStars");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetNumStars, "BmGame.RGFxMovieScoreHUD.SetNumStars", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(num_stars, paramsPtr + 0);
@@ -94,14 +94,14 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetTime;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTime;
     /// <summary>
     /// Function: SetTime
     /// </summary>
     public unsafe virtual void SetTime(float inTimeSecs)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTime, "BmGame.RGFxMovieScoreHUD.SetTime");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTime, "BmGame.RGFxMovieScoreHUD.SetTime", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inTimeSecs, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetOpponentScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetOpponentScore;
     /// <summary>
     /// Function: SetOpponentScore
     /// </summary>
     public unsafe virtual void SetOpponentScore(int Score)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetOpponentScore, "BmGame.RGFxMovieScoreHUD.SetOpponentScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetOpponentScore, "BmGame.RGFxMovieScoreHUD.SetOpponentScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Score, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetScore;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetScore;
     /// <summary>
     /// Function: SetScore
     /// </summary>
     public unsafe virtual void SetScore(int Score)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetScore, "BmGame.RGFxMovieScoreHUD.SetScore");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetScore, "BmGame.RGFxMovieScoreHUD.SetScore", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Score, paramsPtr + 0);
@@ -139,100 +139,102 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_OnCloseHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnCloseHUD;
     /// <summary>
     /// Function: OnCloseHUD
     /// </summary>
     public unsafe virtual void OnCloseHUD()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnCloseHUD, "BmGame.RGFxMovieScoreHUD.OnCloseHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnCloseHUD, "BmGame.RGFxMovieScoreHUD.OnCloseHUD", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CloseScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CloseScreen;
     /// <summary>
     /// Function: CloseScreen
     /// </summary>
     public unsafe virtual void CloseScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CloseScreen, "BmGame.RGFxMovieScoreHUD.CloseScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseScreen, "BmGame.RGFxMovieScoreHUD.CloseScreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Hide;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Hide;
     /// <summary>
     /// Function: Hide
     /// </summary>
     public unsafe virtual void Hide()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Hide, "BmGame.RGFxMovieScoreHUD.Hide");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Hide, "BmGame.RGFxMovieScoreHUD.Hide", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_show;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_show;
     /// <summary>
     /// Function: show
     /// </summary>
     public unsafe virtual void show()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_show, "BmGame.RGFxMovieScoreHUD.show");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_show, "BmGame.RGFxMovieScoreHUD.show", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HideItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideItem;
     /// <summary>
     /// Function: HideItem
     /// </summary>
-    public unsafe virtual void HideItem(BmSDK.FString ItemName)
+    public unsafe virtual void HideItem(BmSDK.FStringArg ItemName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HideItem, "BmGame.RGFxMovieScoreHUD.HideItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideItem, "BmGame.RGFxMovieScoreHUD.HideItem", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ItemName, paramsPtr + 0);
+        ItemName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShowItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShowItem;
     /// <summary>
     /// Function: ShowItem
     /// </summary>
-    public unsafe virtual void ShowItem(BmSDK.FString ItemName)
+    public unsafe virtual void ShowItem(BmSDK.FStringArg ItemName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShowItem, "BmGame.RGFxMovieScoreHUD.ShowItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowItem, "BmGame.RGFxMovieScoreHUD.ShowItem", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(ItemName, paramsPtr + 0);
+        ItemName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KismetControlsInOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KismetControlsInOut;
     /// <summary>
     /// Function: KismetControlsInOut
     /// </summary>
     public unsafe virtual void KismetControlsInOut(bool bTrue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KismetControlsInOut, "BmGame.RGFxMovieScoreHUD.KismetControlsInOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KismetControlsInOut, "BmGame.RGFxMovieScoreHUD.KismetControlsInOut", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTrue, paramsPtr + 0);
@@ -240,14 +242,14 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_Init;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Init;
     /// <summary>
     /// Function: Init
     /// </summary>
     public unsafe override void Init(BmSDK.Engine.LocalPlayer LocPlay = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Init, "BmGame.RGFxMovieScoreHUD.Init");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Init, "BmGame.RGFxMovieScoreHUD.Init", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LocPlay, paramsPtr + 0);
@@ -255,14 +257,14 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SetMedalScores;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetMedalScores;
     /// <summary>
     /// Function: SetMedalScores
     /// </summary>
     public unsafe virtual void SetMedalScores(int NewBronzeScore, int NewSilverScore, int NewGoldScore)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetMedalScores, "BmGame.RGFxMovieScoreHUD.SetMedalScores");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetMedalScores, "BmGame.RGFxMovieScoreHUD.SetMedalScores", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBronzeScore, paramsPtr + 0);
@@ -272,14 +274,14 @@ public partial class RGFxMovieScoreHUD : BmSDK.BmGame.RGFxMovie, BmSDK.IGameObje
         return;
     }
 
-    private static BmSDK.Function __fn_SendMedalScores;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SendMedalScores;
     /// <summary>
     /// Function: SendMedalScores
     /// </summary>
     public unsafe virtual void SendMedalScores(int NewBronzeScore, int NewSilverScore, int NewGoldScore)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SendMedalScores, "BmGame.RGFxMovieScoreHUD.SendMedalScores");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendMedalScores, "BmGame.RGFxMovieScoreHUD.SendMedalScores", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBronzeScore, paramsPtr + 0);

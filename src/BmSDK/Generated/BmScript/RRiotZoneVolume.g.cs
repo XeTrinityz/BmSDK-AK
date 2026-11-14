@@ -78,14 +78,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         where TComponent : class, Framework.IScriptComponent<RRiotZoneVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnTouch;
     /// <summary>
     /// Function: UnTouch
     /// </summary>
     public unsafe override void UnTouch(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnTouch, "BmScript.RRiotZoneVolume.UnTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnTouch, "BmScript.RRiotZoneVolume.UnTouch", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmScript.RRiotZoneVolume.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmScript.RRiotZoneVolume.Touch", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -111,14 +111,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnDebugRunAwayThugAtLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDebugRunAwayThugAtLocation;
     /// <summary>
     /// Function: SpawnDebugRunAwayThugAtLocation
     /// </summary>
     public unsafe override void SpawnDebugRunAwayThugAtLocation(System.Numerics.Vector3 SpawnLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDebugRunAwayThugAtLocation, "BmScript.RRiotZoneVolume.SpawnDebugRunAwayThugAtLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnDebugRunAwayThugAtLocation, "BmScript.RRiotZoneVolume.SpawnDebugRunAwayThugAtLocation", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnLocation, paramsPtr + 0);
@@ -126,28 +126,28 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_GetFleePressPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFleePressPoints;
     /// <summary>
     /// Function: GetFleePressPoints
     /// </summary>
     public unsafe override BmSDK.TArray<BmSDK.BmGame.RGangFleePressPointBase> GetFleePressPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFleePressPoints, "BmScript.RRiotZoneVolume.GetFleePressPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFleePressPoints, "BmScript.RRiotZoneVolume.GetFleePressPoints", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RGangFleePressPointBase>>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetThugStasis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetThugStasis;
     /// <summary>
     /// Function: SetThugStasis
     /// </summary>
     public unsafe virtual void SetThugStasis(bool bNewValue)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetThugStasis, "BmScript.RRiotZoneVolume.SetThugStasis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetThugStasis, "BmScript.RRiotZoneVolume.SetThugStasis", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewValue, paramsPtr + 0);
@@ -155,14 +155,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_ForceRioterToSpook;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceRioterToSpook;
     /// <summary>
     /// Function: ForceRioterToSpook
     /// </summary>
     public unsafe virtual void ForceRioterToSpook(BmSDK.BmGame.RBMPawnAI CurrPawn, BmSDK.Engine.Actor Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceRioterToSpook, "BmScript.RRiotZoneVolume.ForceRioterToSpook");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceRioterToSpook, "BmScript.RRiotZoneVolume.ForceRioterToSpook", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrPawn, paramsPtr + 0);
@@ -171,14 +171,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_ThugInRiotDamagedByBatman;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugInRiotDamagedByBatman;
     /// <summary>
     /// Function: ThugInRiotDamagedByBatman
     /// </summary>
     public unsafe override void ThugInRiotDamagedByBatman(BmSDK.Engine.Actor Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugInRiotDamagedByBatman, "BmScript.RRiotZoneVolume.ThugInRiotDamagedByBatman");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugInRiotDamagedByBatman, "BmScript.RRiotZoneVolume.ThugInRiotDamagedByBatman", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attacker, paramsPtr + 0);
@@ -186,14 +186,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnLinkBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnLinkBehaviour;
     /// <summary>
     /// Function: SpawnLinkBehaviour
     /// </summary>
     public unsafe override void SpawnLinkBehaviour(BmSDK.BmGame.RPawn TestPawn, BmSDK.BmGame.RGangInteractPointBase DestinationActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnLinkBehaviour, "BmScript.RRiotZoneVolume.SpawnLinkBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnLinkBehaviour, "BmScript.RRiotZoneVolume.SpawnLinkBehaviour", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -202,14 +202,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_RioterFleeing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RioterFleeing;
     /// <summary>
     /// Function: RioterFleeing
     /// </summary>
     public unsafe override void RioterFleeing(BmSDK.BmGame.RBMPawnAI FleePawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RioterFleeing, "BmScript.RRiotZoneVolume.RioterFleeing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RioterFleeing, "BmScript.RRiotZoneVolume.RioterFleeing", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FleePawn, paramsPtr + 0);
@@ -217,14 +217,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_DeactivatePopulation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivatePopulation;
     /// <summary>
     /// Function: DeactivatePopulation
     /// </summary>
     public unsafe override void DeactivatePopulation(bool bDueToStreamingOut = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivatePopulation, "BmScript.RRiotZoneVolume.DeactivatePopulation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivatePopulation, "BmScript.RRiotZoneVolume.DeactivatePopulation", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDueToStreamingOut, paramsPtr + 0);
@@ -232,14 +232,14 @@ public partial class RRiotZoneVolume : BmSDK.BmGame.ROverworldPopulationVolume, 
         return;
     }
 
-    private static BmSDK.Function __fn_ActivatePopulation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivatePopulation;
     /// <summary>
     /// Function: ActivatePopulation
     /// </summary>
     public unsafe override void ActivatePopulation(int MaxPawnsAllowed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivatePopulation, "BmScript.RRiotZoneVolume.ActivatePopulation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivatePopulation, "BmScript.RRiotZoneVolume.ActivatePopulation", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxPawnsAllowed, paramsPtr + 0);

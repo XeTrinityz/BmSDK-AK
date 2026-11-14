@@ -78,28 +78,28 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         where TComponent : class, Framework.IScriptComponent<RProjectile_Grenade_Incendiary>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmScript.RProjectile_Grenade_Incendiary.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmScript.RProjectile_Grenade_Incendiary.Destroyed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CheckLocationForCharge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckLocationForCharge;
     /// <summary>
     /// Function: CheckLocationForCharge
     /// </summary>
     public unsafe virtual bool CheckLocationForCharge(System.Numerics.Vector3 CheckLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckLocationForCharge, "BmScript.RProjectile_Grenade_Incendiary.CheckLocationForCharge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLocationForCharge, "BmScript.RProjectile_Grenade_Incendiary.CheckLocationForCharge", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckLoc, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_DeployCharge_OpenSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeployCharge_OpenSpace;
     /// <summary>
     /// Function: DeployCharge_OpenSpace
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RIncendiaryGrenadeCharge DeployCharge_OpenSpace(System.Numerics.Vector3 prevLoc, System.Numerics.Vector3 currentLoc, int Depth, System.Numerics.Vector3 toNeighbourOffsets)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeployCharge_OpenSpace, "BmScript.RProjectile_Grenade_Incendiary.DeployCharge_OpenSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeployCharge_OpenSpace, "BmScript.RProjectile_Grenade_Incendiary.DeployCharge_OpenSpace", this);
         byte* paramsPtr = stackalloc byte[160];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(prevLoc, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmScript.RIncendiaryGrenadeCharge>(paramsPtr + 76);
     }
 
-    private static BmSDK.Function __fn_DeployCharge_Grate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeployCharge_Grate;
     /// <summary>
     /// Function: DeployCharge_Grate
     /// </summary>
     public unsafe virtual BmSDK.BmScript.RIncendiaryGrenadeCharge DeployCharge_Grate(BmSDK.BmGame.RTunnelGrateBase currentGrate, int Depth)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeployCharge_Grate, "BmScript.RProjectile_Grenade_Incendiary.DeployCharge_Grate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeployCharge_Grate, "BmScript.RProjectile_Grenade_Incendiary.DeployCharge_Grate", this);
         byte* paramsPtr = stackalloc byte[188];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(currentGrate, paramsPtr + 0);
@@ -141,28 +141,28 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmScript.RIncendiaryGrenadeCharge>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_SpawnCharges;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnCharges;
     /// <summary>
     /// Function: SpawnCharges
     /// </summary>
     public unsafe virtual void SpawnCharges()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnCharges, "BmScript.RProjectile_Grenade_Incendiary.SpawnCharges");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnCharges, "BmScript.RProjectile_Grenade_Incendiary.SpawnCharges", this);
         byte* paramsPtr = stackalloc byte[112];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddToList_OpenSpace;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToList_OpenSpace;
     /// <summary>
     /// Function: AddToList_OpenSpace
     /// </summary>
     public unsafe virtual void AddToList_OpenSpace(System.Numerics.Vector3 prevLoc, System.Numerics.Vector3 currentLoc, int Depth, System.Numerics.Vector3 toNeighbourOffsets)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToList_OpenSpace, "BmScript.RProjectile_Grenade_Incendiary.AddToList_OpenSpace");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToList_OpenSpace, "BmScript.RProjectile_Grenade_Incendiary.AddToList_OpenSpace", this);
         byte* paramsPtr = stackalloc byte[188];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(prevLoc, paramsPtr + 0);
@@ -173,14 +173,14 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         return;
     }
 
-    private static BmSDK.Function __fn_AddToList_Grate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddToList_Grate;
     /// <summary>
     /// Function: AddToList_Grate
     /// </summary>
     public unsafe virtual void AddToList_Grate(BmSDK.BmGame.RTunnelGrateBase Grate, int Depth)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddToList_Grate, "BmScript.RProjectile_Grenade_Incendiary.AddToList_Grate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddToList_Grate, "BmScript.RProjectile_Grenade_Incendiary.AddToList_Grate", this);
         byte* paramsPtr = stackalloc byte[124];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Grate, paramsPtr + 0);
@@ -189,14 +189,14 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         return;
     }
 
-    private static BmSDK.Function __fn_GetOffsetsFromNorthRot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOffsetsFromNorthRot;
     /// <summary>
     /// Function: GetOffsetsFromNorthRot
     /// </summary>
     public unsafe virtual void GetOffsetsFromNorthRot(BmSDK.Rotator NorthRot, out System.Numerics.Vector3 toNeighbourOffsets)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOffsetsFromNorthRot, "BmScript.RProjectile_Grenade_Incendiary.GetOffsetsFromNorthRot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOffsetsFromNorthRot, "BmScript.RProjectile_Grenade_Incendiary.GetOffsetsFromNorthRot", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NorthRot, paramsPtr + 0);
@@ -207,42 +207,42 @@ public partial class RProjectile_Grenade_Incendiary : BmSDK.BmScript.RProjectile
         return;
     }
 
-    private static BmSDK.Function __fn_StopAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAudio;
     /// <summary>
     /// Function: StopAudio
     /// </summary>
     public unsafe virtual void StopAudio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAudio, "BmScript.RProjectile_Grenade_Incendiary.StopAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAudio, "BmScript.RProjectile_Grenade_Incendiary.StopAudio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoBlast;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoBlast;
     /// <summary>
     /// Function: DoBlast
     /// </summary>
     public unsafe override void DoBlast()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoBlast, "BmScript.RProjectile_Grenade_Incendiary.DoBlast");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoBlast, "BmScript.RProjectile_Grenade_Incendiary.DoBlast", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RProjectile_Grenade_Incendiary.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RProjectile_Grenade_Incendiary.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

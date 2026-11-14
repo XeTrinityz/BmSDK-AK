@@ -13,12 +13,12 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: WriteFileToScatch
     /// </summary>
-    public unsafe bool WriteFileToScatch(byte LocalUserNum, BmSDK.FString Filename, out BmSDK.TArray<byte> FileContents);
+    public unsafe bool WriteFileToScatch(byte LocalUserNum, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents);
 
     /// <summary>
     /// Function: ReadFileFromScatch
     /// </summary>
-    public unsafe bool ReadFileFromScatch(byte LocalUserNum, BmSDK.FString Filename, out BmSDK.TArray<byte> OutFileContents);
+    public unsafe bool ReadFileFromScatch(byte LocalUserNum, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> OutFileContents);
 
     /// <summary>
     /// Function: ClearAllDelegates
@@ -43,12 +43,12 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnDeleteDownloadFileComplete
     /// </summary>
-    public unsafe void OnDeleteDownloadFileComplete(bool bWasSuccessful, BmSDK.FString Filename);
+    public unsafe void OnDeleteDownloadFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: DeleteDownloadFile
     /// </summary>
-    public unsafe bool DeleteDownloadFile(BmSDK.FString Filename);
+    public unsafe bool DeleteDownloadFile(BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: ClearWriteDownloadFileCompleteDelegate
@@ -63,12 +63,12 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnWriteDownloadFileComplete
     /// </summary>
-    public unsafe void OnWriteDownloadFileComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesProcessed);
+    public unsafe void OnWriteDownloadFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesProcessed);
 
     /// <summary>
     /// Function: WriteDownloadFile
     /// </summary>
-    public unsafe bool WriteDownloadFile(BmSDK.FString Filename, out BmSDK.TArray<byte> FileContents, out BmSDK.FString FileCRC);
+    public unsafe bool WriteDownloadFile(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents, out BmSDK.FString FileCRC);
 
     /// <summary>
     /// Function: ClearReadDownloadFileCompleteDelegate
@@ -83,22 +83,22 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnReadDownloadFileComplete
     /// </summary>
-    public unsafe void OnReadDownloadFileComplete(bool bWasSuccessful, BmSDK.FString Filename, int bytesProcessed);
+    public unsafe void OnReadDownloadFileComplete(bool bWasSuccessful, BmSDK.FStringArg Filename, int bytesProcessed);
 
     /// <summary>
     /// Function: ReadDownloadFile
     /// </summary>
-    public unsafe bool ReadDownloadFile(BmSDK.FString Filename, out BmSDK.TArray<byte> OutFileContents, out BmSDK.FString OutFileCRC);
+    public unsafe bool ReadDownloadFile(BmSDK.FStringArg Filename, out BmSDK.TArray<byte> OutFileContents, out BmSDK.FString OutFileCRC);
 
     /// <summary>
     /// Function: GetDownloadFileSize
     /// </summary>
-    public unsafe int GetDownloadFileSize(BmSDK.FString Filename, bool KeepHandle = default);
+    public unsafe int GetDownloadFileSize(BmSDK.FStringArg Filename, bool KeepHandle = default);
 
     /// <summary>
     /// Function: EnumerateDownloadFiles
     /// </summary>
-    public unsafe void EnumerateDownloadFiles(out BmSDK.TArray<BmSDK.FString> OutFiles, BmSDK.FString Subfolder);
+    public unsafe void EnumerateDownloadFiles(out BmSDK.TArray<BmSDK.FString> OutFiles, BmSDK.FStringArg Subfolder);
 
     /// <summary>
     /// Function: EnumerateDownloadFolders
@@ -118,12 +118,12 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: DeleteUserFile
     /// </summary>
-    public unsafe bool DeleteUserFile(BmSDK.FString UserId, BmSDK.FString Filename, bool bShouldCloudDelete, bool bShouldLocallyDelete);
+    public unsafe bool DeleteUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, bool bShouldCloudDelete, bool bShouldLocallyDelete);
 
     /// <summary>
     /// Function: OnDeleteUserFileComplete
     /// </summary>
-    public unsafe void OnDeleteUserFileComplete(bool bWasSuccessful, BmSDK.FString UserId, BmSDK.FString Filename);
+    public unsafe void OnDeleteUserFileComplete(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: ClearWriteUserFileCompleteDelegate
@@ -138,12 +138,12 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: WriteUserFile
     /// </summary>
-    public unsafe bool WriteUserFile(BmSDK.FString UserId, BmSDK.FString Filename, out BmSDK.TArray<byte> FileContents);
+    public unsafe bool WriteUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents);
 
     /// <summary>
     /// Function: OnWriteUserFileComplete
     /// </summary>
-    public unsafe void OnWriteUserFileComplete(bool bWasSuccessful, BmSDK.FString UserId, BmSDK.FString Filename);
+    public unsafe void OnWriteUserFileComplete(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: ClearReadUserFileCompleteDelegate
@@ -158,17 +158,17 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: ReadUserFile
     /// </summary>
-    public unsafe bool ReadUserFile(BmSDK.FString UserId, BmSDK.FString Filename);
+    public unsafe bool ReadUserFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: OnReadUserFileComplete
     /// </summary>
-    public unsafe void OnReadUserFileComplete(bool bWasSuccessful, BmSDK.FString UserId, BmSDK.FString Filename);
+    public unsafe void OnReadUserFileComplete(bool bWasSuccessful, BmSDK.FStringArg UserId, BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: GetUserFileList
     /// </summary>
-    public unsafe void GetUserFileList(BmSDK.FString UserId, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FEmsFile> UserFiles);
+    public unsafe void GetUserFileList(BmSDK.FStringArg UserId, out BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FEmsFile> UserFiles);
 
     /// <summary>
     /// Function: ClearEnumerateUserFileCompleteDelegate
@@ -183,25 +183,25 @@ public partial interface UserCloudFileInterface : BmSDK.Interface
     /// <summary>
     /// Function: EnumerateUserFiles
     /// </summary>
-    public unsafe void EnumerateUserFiles(BmSDK.FString UserId);
+    public unsafe void EnumerateUserFiles(BmSDK.FStringArg UserId);
 
     /// <summary>
     /// Function: OnEnumerateUserFilesComplete
     /// </summary>
-    public unsafe void OnEnumerateUserFilesComplete(bool bWasSuccessful, BmSDK.FString UserId);
+    public unsafe void OnEnumerateUserFilesComplete(bool bWasSuccessful, BmSDK.FStringArg UserId);
 
     /// <summary>
     /// Function: ClearFile
     /// </summary>
-    public unsafe bool ClearFile(BmSDK.FString UserId, BmSDK.FString Filename);
+    public unsafe bool ClearFile(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: ClearFiles
     /// </summary>
-    public unsafe bool ClearFiles(BmSDK.FString UserId);
+    public unsafe bool ClearFiles(BmSDK.FStringArg UserId);
 
     /// <summary>
     /// Function: GetFileContents
     /// </summary>
-    public unsafe bool GetFileContents(BmSDK.FString UserId, BmSDK.FString Filename, out BmSDK.TArray<byte> FileContents);
+    public unsafe bool GetFileContents(BmSDK.FStringArg UserId, BmSDK.FStringArg Filename, out BmSDK.TArray<byte> FileContents);
 }

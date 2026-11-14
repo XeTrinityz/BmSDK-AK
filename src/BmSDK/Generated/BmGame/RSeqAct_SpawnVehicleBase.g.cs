@@ -73,14 +73,14 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
         where TComponent : class, Framework.IScriptComponent<RSeqAct_SpawnVehicleBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SpawnedActorBatmanSeen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnedActorBatmanSeen;
     /// <summary>
     /// Function: SpawnedActorBatmanSeen
     /// </summary>
     public unsafe virtual void SpawnedActorBatmanSeen(BmSDK.Engine.Actor ExActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnedActorBatmanSeen, "BmGame.RSeqAct_SpawnVehicleBase.SpawnedActorBatmanSeen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnedActorBatmanSeen, "BmGame.RSeqAct_SpawnVehicleBase.SpawnedActorBatmanSeen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExActor, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnedActorDied;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnedActorDied;
     /// <summary>
     /// Function: SpawnedActorDied
     /// </summary>
     public unsafe virtual void SpawnedActorDied(BmSDK.Engine.Actor ExActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnedActorDied, "BmGame.RSeqAct_SpawnVehicleBase.SpawnedActorDied");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnedActorDied, "BmGame.RSeqAct_SpawnVehicleBase.SpawnedActorDied", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExActor, paramsPtr + 0);
@@ -103,14 +103,14 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_IsNewGamePlus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsNewGamePlus;
     /// <summary>
     /// Function: IsNewGamePlus
     /// </summary>
     public unsafe virtual bool IsNewGamePlus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsNewGamePlus, "BmGame.RSeqAct_SpawnVehicleBase.IsNewGamePlus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsNewGamePlus, "BmGame.RSeqAct_SpawnVehicleBase.IsNewGamePlus", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -124,14 +124,14 @@ public partial class RSeqAct_SpawnVehicleBase : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateNewGamePlus;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateNewGamePlus;
     /// <summary>
     /// Function: UpdateNewGamePlus
     /// </summary>
     public unsafe virtual void UpdateNewGamePlus()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateNewGamePlus, "BmGame.RSeqAct_SpawnVehicleBase.UpdateNewGamePlus");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateNewGamePlus, "BmGame.RSeqAct_SpawnVehicleBase.UpdateNewGamePlus", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

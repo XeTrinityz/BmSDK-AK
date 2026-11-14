@@ -78,14 +78,14 @@ public partial class TextureRenderTarget2D : BmSDK.Engine.TextureRenderTarget, B
         where TComponent : class, Framework.IScriptComponent<TextureRenderTarget2D>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Clear;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Clear;
     /// <summary>
     /// Function: Clear
     /// </summary>
     public unsafe virtual void Clear()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Clear, "Engine.TextureRenderTarget2D.Clear");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Clear, "Engine.TextureRenderTarget2D.Clear", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

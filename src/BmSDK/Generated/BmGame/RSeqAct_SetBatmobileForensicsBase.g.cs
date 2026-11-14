@@ -73,14 +73,14 @@ public partial class RSeqAct_SetBatmobileForensicsBase : BmSDK.Engine.SeqAct_Lat
         where TComponent : class, Framework.IScriptComponent<RSeqAct_SetBatmobileForensicsBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_DrawHUD;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DrawHUD;
     /// <summary>
     /// Function: DrawHUD
     /// </summary>
     public unsafe virtual void DrawHUD(BmSDK.Engine.HUD H)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DrawHUD, "BmGame.RSeqAct_SetBatmobileForensicsBase.DrawHUD");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DrawHUD, "BmGame.RSeqAct_SetBatmobileForensicsBase.DrawHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RSeqAct_SetBatmobileForensicsBase : BmSDK.Engine.SeqAct_Lat
         return;
     }
 
-    private static BmSDK.Function __fn_DoPulse;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoPulse;
     /// <summary>
     /// Function: DoPulse
     /// </summary>
     public unsafe virtual bool DoPulse(bool bFirstPulse)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoPulse, "BmGame.RSeqAct_SetBatmobileForensicsBase.DoPulse");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoPulse, "BmGame.RSeqAct_SetBatmobileForensicsBase.DoPulse", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFirstPulse, paramsPtr + 0);
@@ -116,14 +116,14 @@ public partial class RSeqAct_SetBatmobileForensicsBase : BmSDK.Engine.SeqAct_Lat
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetForensicParametersOnActors;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetForensicParametersOnActors;
     /// <summary>
     /// Function: SetForensicParametersOnActors
     /// </summary>
     public unsafe virtual void SetForensicParametersOnActors(BmSDK.GameObject.FLinearColor lightParams, BmSDK.GameObject.FLinearColor lightWorldPos, BmSDK.GameObject.FLinearColor LightDir)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetForensicParametersOnActors, "BmGame.RSeqAct_SetBatmobileForensicsBase.SetForensicParametersOnActors");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetForensicParametersOnActors, "BmGame.RSeqAct_SetBatmobileForensicsBase.SetForensicParametersOnActors", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(lightParams, paramsPtr + 0);
@@ -133,14 +133,14 @@ public partial class RSeqAct_SetBatmobileForensicsBase : BmSDK.Engine.SeqAct_Lat
         return;
     }
 
-    private static BmSDK.Function __fn_SetTrailVisible;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTrailVisible;
     /// <summary>
     /// Function: SetTrailVisible
     /// </summary>
     public unsafe virtual void SetTrailVisible(bool is_visible)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTrailVisible, "BmGame.RSeqAct_SetBatmobileForensicsBase.SetTrailVisible");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTrailVisible, "BmGame.RSeqAct_SetBatmobileForensicsBase.SetTrailVisible", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(is_visible, paramsPtr + 0);

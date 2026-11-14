@@ -78,28 +78,28 @@ public partial class MAEC_ShootStickyConcussionGrenade_Solo : BmSDK.BmGame.RAler
         where TComponent : class, Framework.IScriptComponent<MAEC_ShootStickyConcussionGrenade_Solo>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnStartChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnStartChild;
     /// <summary>
     /// Function: OnStartChild
     /// </summary>
     public unsafe override void OnStartChild()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnStartChild, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.OnStartChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStartChild, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.OnStartChild", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFailed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFailed;
     /// <summary>
     /// Function: NotifyFailed
     /// </summary>
     public unsafe override void NotifyFailed(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFailed, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.NotifyFailed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFailed, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.NotifyFailed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class MAEC_ShootStickyConcussionGrenade_Solo : BmSDK.BmGame.RAler
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyFinished;
     /// <summary>
     /// Function: NotifyFinished
     /// </summary>
     public unsafe override void NotifyFinished(BmSDK.BmGame.RBMAIAction FinishedAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyFinished, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.NotifyFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyFinished, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.NotifyFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class MAEC_ShootStickyConcussionGrenade_Solo : BmSDK.BmGame.RAler
         return;
     }
 
-    private static BmSDK.Function __fn_SetupShoot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupShoot;
     /// <summary>
     /// Function: SetupShoot
     /// </summary>
     public unsafe virtual void SetupShoot(BmSDK.BmGame.MStickyConcussionGrenadeProjectile NewProjectile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupShoot, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.SetupShoot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupShoot, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.SetupShoot", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewProjectile, paramsPtr + 0);
@@ -137,14 +137,14 @@ public partial class MAEC_ShootStickyConcussionGrenade_Solo : BmSDK.BmGame.RAler
         return;
     }
 
-    private static BmSDK.Function __fn_SetupMoveAndShoot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetupMoveAndShoot;
     /// <summary>
     /// Function: SetupMoveAndShoot
     /// </summary>
     public unsafe virtual void SetupMoveAndShoot(System.Numerics.Vector3 SpotToShootFrom, BmSDK.BmGame.MStickyConcussionGrenadeProjectile NewProjectile)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetupMoveAndShoot, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.SetupMoveAndShoot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetupMoveAndShoot, "BmGame.MAEC_ShootStickyConcussionGrenade_Solo.SetupMoveAndShoot", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpotToShootFrom, paramsPtr + 0);

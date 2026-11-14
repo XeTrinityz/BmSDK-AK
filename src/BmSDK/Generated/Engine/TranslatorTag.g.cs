@@ -78,17 +78,17 @@ public partial class TranslatorTag : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<TranslatorTag>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Translate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Translate;
     /// <summary>
     /// Function: Translate
     /// </summary>
-    public unsafe virtual BmSDK.FString Translate(BmSDK.FString InArgument)
+    public unsafe virtual BmSDK.FString Translate(BmSDK.FStringArg InArgument)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Translate, "Engine.TranslatorTag.Translate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Translate, "Engine.TranslatorTag.Translate", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(InArgument, paramsPtr + 0);
+        InArgument.WriteTo(paramsPtr + 0);
         var oldFlags = funcManaged.FunctionFlags;
         var oldNative = funcManaged.iNative;
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
@@ -97,6 +97,7 @@ public partial class TranslatorTag : BmSDK.GameObject, BmSDK.IGameObject
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 

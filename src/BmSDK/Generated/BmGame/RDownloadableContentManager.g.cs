@@ -78,56 +78,56 @@ public partial class RDownloadableContentManager : BmSDK.Engine.DownloadableCont
         where TComponent : class, Framework.IScriptComponent<RDownloadableContentManager>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_UnloadDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnloadDLC;
     /// <summary>
     /// Function: UnloadDLC
     /// </summary>
     public unsafe virtual void UnloadDLC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnloadDLC, "BmGame.RDownloadableContentManager.UnloadDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnloadDLC, "BmGame.RDownloadableContentManager.UnloadDLC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshDLCEnumComplete;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDLCEnumComplete;
     /// <summary>
     /// Function: RefreshDLCEnumComplete
     /// </summary>
     public unsafe override void RefreshDLCEnumComplete()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLCEnumComplete, "BmGame.RDownloadableContentManager.RefreshDLCEnumComplete");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshDLCEnumComplete, "BmGame.RDownloadableContentManager.RefreshDLCEnumComplete", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RefreshDLC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefreshDLC;
     /// <summary>
     /// Function: RefreshDLC
     /// </summary>
     public unsafe override void RefreshDLC()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefreshDLC, "BmGame.RDownloadableContentManager.RefreshDLC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefreshDLC, "BmGame.RDownloadableContentManager.RefreshDLC", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsScanInProgress;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsScanInProgress;
     /// <summary>
     /// Function: IsScanInProgress
     /// </summary>
     public unsafe virtual bool IsScanInProgress()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsScanInProgress, "BmGame.RDownloadableContentManager.IsScanInProgress");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsScanInProgress, "BmGame.RDownloadableContentManager.IsScanInProgress", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

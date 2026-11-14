@@ -78,28 +78,28 @@ public partial class REmitter : BmSDK.Engine.Emitter, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<REmitter>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GoIntoStasis;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GoIntoStasis;
     /// <summary>
     /// Function: GoIntoStasis
     /// </summary>
     public unsafe virtual void GoIntoStasis()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GoIntoStasis, "Engine.REmitter.GoIntoStasis");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GoIntoStasis, "Engine.REmitter.GoIntoStasis", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnParticleSystemFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnParticleSystemFinished;
     /// <summary>
     /// Function: OnParticleSystemFinished
     /// </summary>
     public unsafe override void OnParticleSystemFinished(BmSDK.Engine.ParticleSystemComponent FinishedComponent)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnParticleSystemFinished, "Engine.REmitter.OnParticleSystemFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnParticleSystemFinished, "Engine.REmitter.OnParticleSystemFinished", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedComponent, paramsPtr + 0);

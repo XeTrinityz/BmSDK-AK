@@ -78,14 +78,14 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
         where TComponent : class, Framework.IScriptComponent<FluidSurfaceComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetSimulationPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetSimulationPosition;
     /// <summary>
     /// Function: SetSimulationPosition
     /// </summary>
     public unsafe virtual void SetSimulationPosition(System.Numerics.Vector3 WorldPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetSimulationPosition, "Engine.FluidSurfaceComponent.SetSimulationPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetSimulationPosition, "Engine.FluidSurfaceComponent.SetSimulationPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WorldPos, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_SetDetailPosition;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetDetailPosition;
     /// <summary>
     /// Function: SetDetailPosition
     /// </summary>
     public unsafe virtual void SetDetailPosition(System.Numerics.Vector3 WorldPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetDetailPosition, "Engine.FluidSurfaceComponent.SetDetailPosition");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetDetailPosition, "Engine.FluidSurfaceComponent.SetDetailPosition", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WorldPos, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class FluidSurfaceComponent : BmSDK.Engine.PrimitiveComponent, Bm
         return;
     }
 
-    private static BmSDK.Function __fn_ApplyForce;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ApplyForce;
     /// <summary>
     /// Function: ApplyForce
     /// </summary>
     public unsafe virtual void ApplyForce(System.Numerics.Vector3 WorldPos, float Strength, float Radius, bool bImpulse = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ApplyForce, "Engine.FluidSurfaceComponent.ApplyForce");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyForce, "Engine.FluidSurfaceComponent.ApplyForce", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WorldPos, paramsPtr + 0);

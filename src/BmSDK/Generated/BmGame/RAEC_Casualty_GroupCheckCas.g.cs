@@ -78,126 +78,126 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         where TComponent : class, Framework.IScriptComponent<RAEC_Casualty_GroupCheckCas>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Casualty_GroupCheckCas.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Casualty_GroupCheckCas.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsTimeForChatter;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsTimeForChatter;
     /// <summary>
     /// Function: IsTimeForChatter
     /// </summary>
     public unsafe virtual bool IsTimeForChatter()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsTimeForChatter, "BmGame.RAEC_Casualty_GroupCheckCas.IsTimeForChatter");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsTimeForChatter, "BmGame.RAEC_Casualty_GroupCheckCas.IsTimeForChatter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsInjurySourceObvious;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsInjurySourceObvious;
     /// <summary>
     /// Function: IsInjurySourceObvious
     /// </summary>
     public unsafe virtual bool IsInjurySourceObvious()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsInjurySourceObvious, "BmGame.RAEC_Casualty_GroupCheckCas.IsInjurySourceObvious");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInjurySourceObvious, "BmGame.RAEC_Casualty_GroupCheckCas.IsInjurySourceObvious", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_HasMultipleManDownsNearby;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasMultipleManDownsNearby;
     /// <summary>
     /// Function: HasMultipleManDownsNearby
     /// </summary>
     public unsafe virtual bool HasMultipleManDownsNearby()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasMultipleManDownsNearby, "BmGame.RAEC_Casualty_GroupCheckCas.HasMultipleManDownsNearby");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasMultipleManDownsNearby, "BmGame.RAEC_Casualty_GroupCheckCas.HasMultipleManDownsNearby", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoMiniManDownStartConvo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoMiniManDownStartConvo;
     /// <summary>
     /// Function: DoMiniManDownStartConvo
     /// </summary>
     public unsafe virtual void DoMiniManDownStartConvo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoMiniManDownStartConvo, "BmGame.RAEC_Casualty_GroupCheckCas.DoMiniManDownStartConvo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoMiniManDownStartConvo, "BmGame.RAEC_Casualty_GroupCheckCas.DoMiniManDownStartConvo", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_IsPerimeterThugNearCentre;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPerimeterThugNearCentre;
     /// <summary>
     /// Function: IsPerimeterThugNearCentre
     /// </summary>
     public unsafe virtual bool IsPerimeterThugNearCentre()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPerimeterThugNearCentre, "BmGame.RAEC_Casualty_GroupCheckCas.IsPerimeterThugNearCentre");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPerimeterThugNearCentre, "BmGame.RAEC_Casualty_GroupCheckCas.IsPerimeterThugNearCentre", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPerimeterMax;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPerimeterMax;
     /// <summary>
     /// Function: GetPerimeterMax
     /// </summary>
     public unsafe virtual int GetPerimeterMax()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPerimeterMax, "BmGame.RAEC_Casualty_GroupCheckCas.GetPerimeterMax");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPerimeterMax, "BmGame.RAEC_Casualty_GroupCheckCas.GetPerimeterMax", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CleanupGroupCheckCas;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CleanupGroupCheckCas;
     /// <summary>
     /// Function: CleanupGroupCheckCas
     /// </summary>
     public unsafe virtual void CleanupGroupCheckCas()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CleanupGroupCheckCas, "BmGame.RAEC_Casualty_GroupCheckCas.CleanupGroupCheckCas");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CleanupGroupCheckCas, "BmGame.RAEC_Casualty_GroupCheckCas.CleanupGroupCheckCas", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_DoCasualtyPostRecoverAssignment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoCasualtyPostRecoverAssignment;
     /// <summary>
     /// Function: DoCasualtyPostRecoverAssignment
     /// </summary>
     public unsafe virtual void DoCasualtyPostRecoverAssignment(BmSDK.BmGame.RBMAIController ExCasCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoCasualtyPostRecoverAssignment, "BmGame.RAEC_Casualty_GroupCheckCas.DoCasualtyPostRecoverAssignment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoCasualtyPostRecoverAssignment, "BmGame.RAEC_Casualty_GroupCheckCas.DoCasualtyPostRecoverAssignment", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExCasCon, paramsPtr + 0);
@@ -205,14 +205,14 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_PostCutNotify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostCutNotify;
     /// <summary>
     /// Function: PostCutNotify
     /// </summary>
     public unsafe virtual void PostCutNotify(System.Numerics.Vector3 ImpactLoc)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostCutNotify, "BmGame.RAEC_Casualty_GroupCheckCas.PostCutNotify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostCutNotify, "BmGame.RAEC_Casualty_GroupCheckCas.PostCutNotify", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ImpactLoc, paramsPtr + 0);
@@ -220,14 +220,14 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyRopeCut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyRopeCut;
     /// <summary>
     /// Function: NotifyRopeCut
     /// </summary>
     public unsafe virtual void NotifyRopeCut(BmSDK.BmGame.RBatarangProjectile Brang)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyRopeCut, "BmGame.RAEC_Casualty_GroupCheckCas.NotifyRopeCut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyRopeCut, "BmGame.RAEC_Casualty_GroupCheckCas.NotifyRopeCut", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Brang, paramsPtr + 0);
@@ -235,42 +235,42 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_DiscoverThugPushedOutOfWay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DiscoverThugPushedOutOfWay;
     /// <summary>
     /// Function: DiscoverThugPushedOutOfWay
     /// </summary>
     public unsafe virtual void DiscoverThugPushedOutOfWay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DiscoverThugPushedOutOfWay, "BmGame.RAEC_Casualty_GroupCheckCas.DiscoverThugPushedOutOfWay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DiscoverThugPushedOutOfWay, "BmGame.RAEC_Casualty_GroupCheckCas.DiscoverThugPushedOutOfWay", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TryReassign;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TryReassign;
     /// <summary>
     /// Function: TryReassign
     /// </summary>
     public unsafe virtual bool TryReassign()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TryReassign, "BmGame.RAEC_Casualty_GroupCheckCas.TryReassign");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TryReassign, "BmGame.RAEC_Casualty_GroupCheckCas.TryReassign", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetOpenSlot;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetOpenSlot;
     /// <summary>
     /// Function: GetOpenSlot
     /// </summary>
     public unsafe virtual bool GetOpenSlot(out int SlotFound)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetOpenSlot, "BmGame.RAEC_Casualty_GroupCheckCas.GetOpenSlot");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOpenSlot, "BmGame.RAEC_Casualty_GroupCheckCas.GetOpenSlot", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SlotFound);
@@ -280,14 +280,14 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_AssignAfterDiscover;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignAfterDiscover;
     /// <summary>
     /// Function: AssignAfterDiscover
     /// </summary>
     public unsafe virtual void AssignAfterDiscover(BmSDK.BmGame.RBMAIController FinishedDiscoverCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignAfterDiscover, "BmGame.RAEC_Casualty_GroupCheckCas.AssignAfterDiscover");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AssignAfterDiscover, "BmGame.RAEC_Casualty_GroupCheckCas.AssignAfterDiscover", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedDiscoverCon, paramsPtr + 0);
@@ -295,28 +295,28 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForPreviousTakedownsThatNeedPreMining;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForPreviousTakedownsThatNeedPreMining;
     /// <summary>
     /// Function: CheckForPreviousTakedownsThatNeedPreMining
     /// </summary>
     public unsafe virtual bool CheckForPreviousTakedownsThatNeedPreMining()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForPreviousTakedownsThatNeedPreMining, "BmGame.RAEC_Casualty_GroupCheckCas.CheckForPreviousTakedownsThatNeedPreMining");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForPreviousTakedownsThatNeedPreMining, "BmGame.RAEC_Casualty_GroupCheckCas.CheckForPreviousTakedownsThatNeedPreMining", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetCentreThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCentreThug;
     /// <summary>
     /// Function: SetCentreThug
     /// </summary>
     public unsafe virtual void SetCentreThug(BmSDK.BmGame.RBMAIController DiscoverCon, BmSDK.BmGame.RBMAIController StealingCon = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCentreThug, "BmGame.RAEC_Casualty_GroupCheckCas.SetCentreThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCentreThug, "BmGame.RAEC_Casualty_GroupCheckCas.SetCentreThug", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DiscoverCon, paramsPtr + 0);
@@ -325,28 +325,28 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_StartPerimeterPosSearch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartPerimeterPosSearch;
     /// <summary>
     /// Function: StartPerimeterPosSearch
     /// </summary>
     public unsafe virtual void StartPerimeterPosSearch()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartPerimeterPosSearch, "BmGame.RAEC_Casualty_GroupCheckCas.StartPerimeterPosSearch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartPerimeterPosSearch, "BmGame.RAEC_Casualty_GroupCheckCas.StartPerimeterPosSearch", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetCasualty;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCasualty;
     /// <summary>
     /// Function: SetCasualty
     /// </summary>
     public unsafe virtual void SetCasualty(BmSDK.BmGame.RPawnVillain NewCas)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCasualty, "BmGame.RAEC_Casualty_GroupCheckCas.SetCasualty");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCasualty, "BmGame.RAEC_Casualty_GroupCheckCas.SetCasualty", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCas, paramsPtr + 0);
@@ -354,14 +354,14 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_SetTerrorSpecialCase;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetTerrorSpecialCase;
     /// <summary>
     /// Function: SetTerrorSpecialCase
     /// </summary>
     public unsafe virtual void SetTerrorSpecialCase(bool bNewVal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetTerrorSpecialCase, "BmGame.RAEC_Casualty_GroupCheckCas.SetTerrorSpecialCase");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetTerrorSpecialCase, "BmGame.RAEC_Casualty_GroupCheckCas.SetTerrorSpecialCase", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewVal, paramsPtr + 0);
@@ -369,14 +369,14 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Casualty_GroupCheckCas.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Casualty_GroupCheckCas.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -384,14 +384,14 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveGroupChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveGroupChild;
     /// <summary>
     /// Function: OnRemoveGroupChild
     /// </summary>
     public unsafe override void OnRemoveGroupChild(BmSDK.BmGame.RAlertEventCoordinatorBase RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_Casualty_GroupCheckCas.OnRemoveGroupChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveGroupChild, "BmGame.RAEC_Casualty_GroupCheckCas.OnRemoveGroupChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);
@@ -399,14 +399,14 @@ public partial class RAEC_Casualty_GroupCheckCas : BmSDK.BmGame.RAlertEventCoord
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.RAEC_Casualty_GroupCheckCas.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RAEC_Casualty_GroupCheckCas.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

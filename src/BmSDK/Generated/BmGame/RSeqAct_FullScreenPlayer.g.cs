@@ -91,28 +91,28 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsStreamingInstallStillRunning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsStreamingInstallStillRunning;
     /// <summary>
     /// Function: IsStreamingInstallStillRunning
     /// </summary>
     public unsafe virtual bool IsStreamingInstallStillRunning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsStreamingInstallStillRunning, "BmGame.RSeqAct_FullScreenPlayer.IsStreamingInstallStillRunning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsStreamingInstallStillRunning, "BmGame.RSeqAct_FullScreenPlayer.IsStreamingInstallStillRunning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MovieEnded;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovieEnded;
     /// <summary>
     /// Function: MovieEnded
     /// </summary>
     public unsafe virtual void MovieEnded(bool bCheckMovieFinishedForPause)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovieEnded, "BmGame.RSeqAct_FullScreenPlayer.MovieEnded");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovieEnded, "BmGame.RSeqAct_FullScreenPlayer.MovieEnded", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bCheckMovieFinishedForPause, paramsPtr + 0);
@@ -120,98 +120,98 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_MovieAboutToFinish;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovieAboutToFinish;
     /// <summary>
     /// Function: MovieAboutToFinish
     /// </summary>
     public unsafe virtual void MovieAboutToFinish()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovieAboutToFinish, "BmGame.RSeqAct_FullScreenPlayer.MovieAboutToFinish");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovieAboutToFinish, "BmGame.RSeqAct_FullScreenPlayer.MovieAboutToFinish", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_EndCinematicMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EndCinematicMode;
     /// <summary>
     /// Function: EndCinematicMode
     /// </summary>
     public unsafe virtual void EndCinematicMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EndCinematicMode, "BmGame.RSeqAct_FullScreenPlayer.EndCinematicMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndCinematicMode, "BmGame.RSeqAct_FullScreenPlayer.EndCinematicMode", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_PreStartMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStartMovie;
     /// <summary>
     /// Function: PreStartMovie
     /// </summary>
     public unsafe virtual void PreStartMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStartMovie, "BmGame.RSeqAct_FullScreenPlayer.PreStartMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStartMovie, "BmGame.RSeqAct_FullScreenPlayer.PreStartMovie", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MovieFinished;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovieFinished;
     /// <summary>
     /// Function: MovieFinished
     /// </summary>
     public unsafe virtual void MovieFinished()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovieFinished, "BmGame.RSeqAct_FullScreenPlayer.MovieFinished");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovieFinished, "BmGame.RSeqAct_FullScreenPlayer.MovieFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InputStop;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InputStop;
     /// <summary>
     /// Function: InputStop
     /// </summary>
     public unsafe virtual void InputStop()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InputStop, "BmGame.RSeqAct_FullScreenPlayer.InputStop");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InputStop, "BmGame.RSeqAct_FullScreenPlayer.InputStop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InputPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InputPlay;
     /// <summary>
     /// Function: InputPlay
     /// </summary>
     public unsafe virtual void InputPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InputPlay, "BmGame.RSeqAct_FullScreenPlayer.InputPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InputPlay, "BmGame.RSeqAct_FullScreenPlayer.InputPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StopAudio;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopAudio;
     /// <summary>
     /// Function: StopAudio
     /// </summary>
     public unsafe virtual void StopAudio()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopAudio, "BmGame.RSeqAct_FullScreenPlayer.StopAudio");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAudio, "BmGame.RSeqAct_FullScreenPlayer.StopAudio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -225,14 +225,14 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_CheckForFinish;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForFinish;
     /// <summary>
     /// Function: CheckForFinish
     /// </summary>
     public unsafe virtual bool CheckForFinish()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckForFinish, "BmGame.RSeqAct_FullScreenPlayer.CheckForFinish");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForFinish, "BmGame.RSeqAct_FullScreenPlayer.CheckForFinish", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -246,14 +246,14 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPaused;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPaused;
     /// <summary>
     /// Function: IsPaused
     /// </summary>
     public unsafe virtual bool IsPaused()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPaused, "BmGame.RSeqAct_FullScreenPlayer.IsPaused");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPaused, "BmGame.RSeqAct_FullScreenPlayer.IsPaused", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -267,14 +267,14 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_WasSkipped;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WasSkipped;
     /// <summary>
     /// Function: WasSkipped
     /// </summary>
     public unsafe virtual bool WasSkipped()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WasSkipped, "BmGame.RSeqAct_FullScreenPlayer.WasSkipped");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WasSkipped, "BmGame.RSeqAct_FullScreenPlayer.WasSkipped", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -288,14 +288,14 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_StopMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopMovie;
     /// <summary>
     /// Function: StopMovie
     /// </summary>
     public unsafe virtual void StopMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopMovie, "BmGame.RSeqAct_FullScreenPlayer.StopMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopMovie, "BmGame.RSeqAct_FullScreenPlayer.StopMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -309,14 +309,14 @@ public partial class RSeqAct_FullScreenPlayer : BmSDK.Engine.SeqAct_Latent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_PlayMovie;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PlayMovie;
     /// <summary>
     /// Function: PlayMovie
     /// </summary>
     public unsafe virtual void PlayMovie()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PlayMovie, "BmGame.RSeqAct_FullScreenPlayer.PlayMovie");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayMovie, "BmGame.RSeqAct_FullScreenPlayer.PlayMovie", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

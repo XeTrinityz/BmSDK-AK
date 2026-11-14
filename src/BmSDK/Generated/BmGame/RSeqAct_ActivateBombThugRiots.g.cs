@@ -91,14 +91,14 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmGame.RSeqAct_ActivateBombThugRiots.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RSeqAct_ActivateBombThugRiots.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -106,42 +106,42 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetUpRiotZones;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetUpRiotZones;
     /// <summary>
     /// Function: SetUpRiotZones
     /// </summary>
     public unsafe virtual void SetUpRiotZones()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetUpRiotZones, "BmGame.RSeqAct_ActivateBombThugRiots.SetUpRiotZones");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetUpRiotZones, "BmGame.RSeqAct_ActivateBombThugRiots.SetUpRiotZones", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ResetRiotZones;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetRiotZones;
     /// <summary>
     /// Function: ResetRiotZones
     /// </summary>
     public unsafe virtual void ResetRiotZones()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetRiotZones, "BmGame.RSeqAct_ActivateBombThugRiots.ResetRiotZones");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetRiotZones, "BmGame.RSeqAct_ActivateBombThugRiots.ResetRiotZones", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RemoveRiotThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RemoveRiotThug;
     /// <summary>
     /// Function: RemoveRiotThug
     /// </summary>
     public unsafe virtual void RemoveRiotThug(BmSDK.BmGame.RPawnVillain OldThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RemoveRiotThug, "BmGame.RSeqAct_ActivateBombThugRiots.RemoveRiotThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RemoveRiotThug, "BmGame.RSeqAct_ActivateBombThugRiots.RemoveRiotThug", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OldThug, paramsPtr + 0);
@@ -149,56 +149,56 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return;
     }
 
-    private static BmSDK.Function __fn_BombThugRanAway;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BombThugRanAway;
     /// <summary>
     /// Function: BombThugRanAway
     /// </summary>
     public unsafe virtual void BombThugRanAway()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugRanAway, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugRanAway");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BombThugRanAway, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugRanAway", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BombThugKOd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BombThugKOd;
     /// <summary>
     /// Function: BombThugKOd
     /// </summary>
     public unsafe virtual void BombThugKOd()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugKOd, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugKOd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BombThugKOd, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugKOd", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BombThugDefused;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BombThugDefused;
     /// <summary>
     /// Function: BombThugDefused
     /// </summary>
     public unsafe virtual void BombThugDefused()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugDefused, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugDefused");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BombThugDefused, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugDefused", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BombThugScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BombThugScanned;
     /// <summary>
     /// Function: BombThugScanned
     /// </summary>
     public unsafe virtual void BombThugScanned(BmSDK.BmGame.RPawnVillain NewBombThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugScanned, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BombThugScanned, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanned", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewBombThug, paramsPtr + 0);
@@ -206,56 +206,56 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return;
     }
 
-    private static BmSDK.Function __fn_HasBombThugBeenFound;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasBombThugBeenFound;
     /// <summary>
     /// Function: HasBombThugBeenFound
     /// </summary>
     public unsafe virtual bool HasBombThugBeenFound()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasBombThugBeenFound, "BmGame.RSeqAct_ActivateBombThugRiots.HasBombThugBeenFound");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasBombThugBeenFound, "BmGame.RSeqAct_ActivateBombThugRiots.HasBombThugBeenFound", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_BombThugScanningStopped;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BombThugScanningStopped;
     /// <summary>
     /// Function: BombThugScanningStopped
     /// </summary>
     public unsafe virtual void BombThugScanningStopped()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugScanningStopped, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanningStopped");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BombThugScanningStopped, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanningStopped", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_BombThugScanningStarted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BombThugScanningStarted;
     /// <summary>
     /// Function: BombThugScanningStarted
     /// </summary>
     public unsafe virtual void BombThugScanningStarted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BombThugScanningStarted, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanningStarted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BombThugScanningStarted, "BmGame.RSeqAct_ActivateBombThugRiots.BombThugScanningStarted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_HaveIBeenScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HaveIBeenScanned;
     /// <summary>
     /// Function: HaveIBeenScanned
     /// </summary>
     public unsafe virtual bool HaveIBeenScanned(BmSDK.BmGame.RPawnVillain TestThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HaveIBeenScanned, "BmGame.RSeqAct_ActivateBombThugRiots.HaveIBeenScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HaveIBeenScanned, "BmGame.RSeqAct_ActivateBombThugRiots.HaveIBeenScanned", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestThug, paramsPtr + 0);
@@ -263,14 +263,14 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AmIBombThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AmIBombThug;
     /// <summary>
     /// Function: AmIBombThug
     /// </summary>
     public unsafe virtual bool AmIBombThug(BmSDK.BmGame.RPawnVillain TestThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AmIBombThug, "BmGame.RSeqAct_ActivateBombThugRiots.AmIBombThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AmIBombThug, "BmGame.RSeqAct_ActivateBombThugRiots.AmIBombThug", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestThug, paramsPtr + 0);
@@ -278,14 +278,14 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PotentialBombThugScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PotentialBombThugScanned;
     /// <summary>
     /// Function: PotentialBombThugScanned
     /// </summary>
     public unsafe virtual bool PotentialBombThugScanned(BmSDK.BmGame.RPawnVillain NewThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PotentialBombThugScanned, "BmGame.RSeqAct_ActivateBombThugRiots.PotentialBombThugScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PotentialBombThugScanned, "BmGame.RSeqAct_ActivateBombThugRiots.PotentialBombThugScanned", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewThug, paramsPtr + 0);
@@ -293,14 +293,14 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddThug;
     /// <summary>
     /// Function: AddThug
     /// </summary>
     public unsafe virtual void AddThug(BmSDK.BmGame.RPawnVillain NewThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddThug, "BmGame.RSeqAct_ActivateBombThugRiots.AddThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddThug, "BmGame.RSeqAct_ActivateBombThugRiots.AddThug", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewThug, paramsPtr + 0);
@@ -308,14 +308,14 @@ public partial class RSeqAct_ActivateBombThugRiots : BmSDK.Engine.SeqAct_Latent,
         return;
     }
 
-    private static BmSDK.Function __fn_Activated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
     /// <summary>
     /// Function: Activated
     /// </summary>
     public unsafe override void Activated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Activated, "BmGame.RSeqAct_ActivateBombThugRiots.Activated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_ActivateBombThugRiots.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

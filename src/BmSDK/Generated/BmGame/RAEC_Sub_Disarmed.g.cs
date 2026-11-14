@@ -78,28 +78,28 @@ public partial class RAEC_Sub_Disarmed : BmSDK.BmGame.RAlertEventCoordinatorSolo
         where TComponent : class, Framework.IScriptComponent<RAEC_Sub_Disarmed>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_OnBeginShutdown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBeginShutdown;
     /// <summary>
     /// Function: OnBeginShutdown
     /// </summary>
     public unsafe override void OnBeginShutdown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBeginShutdown, "BmGame.RAEC_Sub_Disarmed.OnBeginShutdown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBeginShutdown, "BmGame.RAEC_Sub_Disarmed.OnBeginShutdown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AssignGunLocker;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignGunLocker;
     /// <summary>
     /// Function: AssignGunLocker
     /// </summary>
     public unsafe virtual void AssignGunLocker(BmSDK.BmGame.RPredatorGunLockerBase TargetGunLocker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignGunLocker, "BmGame.RAEC_Sub_Disarmed.AssignGunLocker");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AssignGunLocker, "BmGame.RAEC_Sub_Disarmed.AssignGunLocker", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetGunLocker, paramsPtr + 0);
@@ -107,14 +107,14 @@ public partial class RAEC_Sub_Disarmed : BmSDK.BmGame.RAlertEventCoordinatorSolo
         return;
     }
 
-    private static BmSDK.Function __fn_AssignGunPickup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AssignGunPickup;
     /// <summary>
     /// Function: AssignGunPickup
     /// </summary>
     public unsafe virtual void AssignGunPickup(BmSDK.BmGame.RBMCombatThrownObject_Predator TargetGunPickup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssignGunPickup, "BmGame.RAEC_Sub_Disarmed.AssignGunPickup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AssignGunPickup, "BmGame.RAEC_Sub_Disarmed.AssignGunPickup", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetGunPickup, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RAEC_Sub_Disarmed : BmSDK.BmGame.RAlertEventCoordinatorSolo
         return;
     }
 
-    private static BmSDK.Function __fn_InitWaitToFindGun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitWaitToFindGun;
     /// <summary>
     /// Function: InitWaitToFindGun
     /// </summary>
     public unsafe virtual void InitWaitToFindGun(bool bWatchPlayer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitWaitToFindGun, "BmGame.RAEC_Sub_Disarmed.InitWaitToFindGun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitWaitToFindGun, "BmGame.RAEC_Sub_Disarmed.InitWaitToFindGun", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bWatchPlayer, paramsPtr + 0);
@@ -137,42 +137,42 @@ public partial class RAEC_Sub_Disarmed : BmSDK.BmGame.RAlertEventCoordinatorSolo
         return;
     }
 
-    private static BmSDK.Function __fn_InitDisarmed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitDisarmed;
     /// <summary>
     /// Function: InitDisarmed
     /// </summary>
     public unsafe virtual void InitDisarmed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitDisarmed, "BmGame.RAEC_Sub_Disarmed.InitDisarmed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitDisarmed, "BmGame.RAEC_Sub_Disarmed.InitDisarmed", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearWeaponPickup;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearWeaponPickup;
     /// <summary>
     /// Function: ClearWeaponPickup
     /// </summary>
     public unsafe virtual void ClearWeaponPickup()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearWeaponPickup, "BmGame.RAEC_Sub_Disarmed.ClearWeaponPickup");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearWeaponPickup, "BmGame.RAEC_Sub_Disarmed.ClearWeaponPickup", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnVillainStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnVillainStolen;
     /// <summary>
     /// Function: OnVillainStolen
     /// </summary>
     public unsafe override void OnVillainStolen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnVillainStolen, "BmGame.RAEC_Sub_Disarmed.OnVillainStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnVillainStolen, "BmGame.RAEC_Sub_Disarmed.OnVillainStolen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

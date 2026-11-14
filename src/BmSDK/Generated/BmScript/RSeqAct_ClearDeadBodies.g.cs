@@ -91,14 +91,14 @@ public partial class RSeqAct_ClearDeadBodies : BmSDK.Engine.SeqAct_Latent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Update;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
     /// <summary>
     /// Function: Update
     /// </summary>
     public unsafe override bool Update(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Update, "BmScript.RSeqAct_ClearDeadBodies.Update");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_ClearDeadBodies.Update", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -106,14 +106,14 @@ public partial class RSeqAct_ClearDeadBodies : BmSDK.Engine.SeqAct_Latent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ClearBodies;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearBodies;
     /// <summary>
     /// Function: ClearBodies
     /// </summary>
     public unsafe virtual void ClearBodies(int numDead, int numClear)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearBodies, "BmScript.RSeqAct_ClearDeadBodies.ClearBodies");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearBodies, "BmScript.RSeqAct_ClearDeadBodies.ClearBodies", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(numDead, paramsPtr + 0);
@@ -122,14 +122,14 @@ public partial class RSeqAct_ClearDeadBodies : BmSDK.Engine.SeqAct_Latent, BmSDK
         return;
     }
 
-    private static BmSDK.Function __fn_IsOffScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOffScreen;
     /// <summary>
     /// Function: IsOffScreen
     /// </summary>
     public unsafe virtual bool IsOffScreen(BmSDK.Engine.Actor Pawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOffScreen, "BmScript.RSeqAct_ClearDeadBodies.IsOffScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOffScreen, "BmScript.RSeqAct_ClearDeadBodies.IsOffScreen", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn, paramsPtr + 0);

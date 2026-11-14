@@ -73,14 +73,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<Mutator>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NetDamage;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NetDamage;
     /// <summary>
     /// Function: NetDamage
     /// </summary>
     public unsafe virtual void NetDamage(int OriginalDamage, out int Damage, BmSDK.Engine.Pawn injured, BmSDK.Engine.Controller InstigatedBy, System.Numerics.Vector3 HitLocation, out System.Numerics.Vector3 Momentum, BmSDK.Class DamageType, BmSDK.Engine.Actor DamageCauser)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NetDamage, "Engine.Mutator.NetDamage");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NetDamage, "Engine.Mutator.NetDamage", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OriginalDamage, paramsPtr + 0);
@@ -99,14 +99,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ScoreKill;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScoreKill;
     /// <summary>
     /// Function: ScoreKill
     /// </summary>
     public unsafe virtual void ScoreKill(BmSDK.Engine.Controller Killer, BmSDK.Engine.Controller Killed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScoreKill, "Engine.Mutator.ScoreKill");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScoreKill, "Engine.Mutator.ScoreKill", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
@@ -115,14 +115,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ScoreObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ScoreObjective;
     /// <summary>
     /// Function: ScoreObjective
     /// </summary>
     public unsafe virtual void ScoreObjective(BmSDK.Engine.PlayerReplicationInfo Scorer, int Score)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ScoreObjective, "Engine.Mutator.ScoreObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScoreObjective, "Engine.Mutator.ScoreObjective", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Scorer, paramsPtr + 0);
@@ -131,14 +131,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_PreventDeath;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreventDeath;
     /// <summary>
     /// Function: PreventDeath
     /// </summary>
     public unsafe virtual bool PreventDeath(BmSDK.Engine.Pawn Killed, BmSDK.Engine.Controller Killer, BmSDK.Class DamageType, System.Numerics.Vector3 HitLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreventDeath, "Engine.Mutator.PreventDeath");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreventDeath, "Engine.Mutator.PreventDeath", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killed, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 36);
     }
 
-    private static BmSDK.Function __fn_OverridePickupQuery;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridePickupQuery;
     /// <summary>
     /// Function: OverridePickupQuery
     /// </summary>
     public unsafe virtual bool OverridePickupQuery(BmSDK.Engine.Pawn Other, BmSDK.Class ItemClass, BmSDK.Engine.Actor Pickup, out byte bAllowPickup)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePickupQuery, "Engine.Mutator.OverridePickupQuery");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridePickupQuery, "Engine.Mutator.OverridePickupQuery", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -169,63 +169,65 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_CheckEndGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckEndGame;
     /// <summary>
     /// Function: CheckEndGame
     /// </summary>
-    public unsafe virtual bool CheckEndGame(BmSDK.Engine.PlayerReplicationInfo Winner, BmSDK.FString Reason)
+    public unsafe virtual bool CheckEndGame(BmSDK.Engine.PlayerReplicationInfo Winner, BmSDK.FStringArg Reason)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckEndGame, "Engine.Mutator.CheckEndGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckEndGame, "Engine.Mutator.CheckEndGame", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Winner, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Reason, paramsPtr + 8);
+        Reason.WriteTo(paramsPtr + 8);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_HandleRestartGame;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleRestartGame;
     /// <summary>
     /// Function: HandleRestartGame
     /// </summary>
     public unsafe virtual bool HandleRestartGame()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HandleRestartGame, "Engine.Mutator.HandleRestartGame");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleRestartGame, "Engine.Mutator.HandleRestartGame", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindPlayerStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindPlayerStart;
     /// <summary>
     /// Function: FindPlayerStart
     /// </summary>
-    public unsafe virtual BmSDK.Engine.NavigationPoint FindPlayerStart(BmSDK.Engine.Controller Player, byte InTeam = default, BmSDK.FString IncomingName = default)
+    public unsafe virtual BmSDK.Engine.NavigationPoint FindPlayerStart(BmSDK.Engine.Controller Player, byte InTeam = default, BmSDK.FStringArg IncomingName = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindPlayerStart, "Engine.Mutator.FindPlayerStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindPlayerStart, "Engine.Mutator.FindPlayerStart", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InTeam, paramsPtr + 8);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(IncomingName, paramsPtr + 12);
+        IncomingName.WriteTo(paramsPtr + 12);
         var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 12);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.NavigationPoint>(paramsPtr + 28);
     }
 
-    private static BmSDK.Function __fn_GetSeamlessTravelActorList;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSeamlessTravelActorList;
     /// <summary>
     /// Function: GetSeamlessTravelActorList
     /// </summary>
     public unsafe virtual void GetSeamlessTravelActorList(bool bToEntry, out BmSDK.TArray<BmSDK.Engine.Actor> ActorList)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSeamlessTravelActorList, "Engine.Mutator.GetSeamlessTravelActorList");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSeamlessTravelActorList, "Engine.Mutator.GetSeamlessTravelActorList", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bToEntry, paramsPtr + 0);
@@ -234,30 +236,31 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_InitMutator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitMutator;
     /// <summary>
     /// Function: InitMutator
     /// </summary>
-    public unsafe virtual void InitMutator(BmSDK.FString Options, out BmSDK.FString ErrorMessage)
+    public unsafe virtual void InitMutator(BmSDK.FStringArg Options, out BmSDK.FString ErrorMessage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitMutator, "Engine.Mutator.InitMutator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitMutator, "Engine.Mutator.InitMutator", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Options, paramsPtr + 0);
+        Options.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         ErrorMessage = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
         return;
     }
 
-    private static BmSDK.Function __fn_DriverLeftVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DriverLeftVehicle;
     /// <summary>
     /// Function: DriverLeftVehicle
     /// </summary>
     public unsafe virtual void DriverLeftVehicle(BmSDK.Engine.Vehicle V, BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DriverLeftVehicle, "Engine.Mutator.DriverLeftVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DriverLeftVehicle, "Engine.Mutator.DriverLeftVehicle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -266,14 +269,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CanLeaveVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanLeaveVehicle;
     /// <summary>
     /// Function: CanLeaveVehicle
     /// </summary>
     public unsafe virtual bool CanLeaveVehicle(BmSDK.Engine.Vehicle V, BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanLeaveVehicle, "Engine.Mutator.CanLeaveVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanLeaveVehicle, "Engine.Mutator.CanLeaveVehicle", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -282,14 +285,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_DriverEnteredVehicle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DriverEnteredVehicle;
     /// <summary>
     /// Function: DriverEnteredVehicle
     /// </summary>
     public unsafe virtual void DriverEnteredVehicle(BmSDK.Engine.Vehicle V, BmSDK.Engine.Pawn P)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DriverEnteredVehicle, "Engine.Mutator.DriverEnteredVehicle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DriverEnteredVehicle, "Engine.Mutator.DriverEnteredVehicle", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
@@ -298,14 +301,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyLogin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyLogin;
     /// <summary>
     /// Function: NotifyLogin
     /// </summary>
     public unsafe virtual void NotifyLogin(BmSDK.Engine.Controller NewPlayer)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyLogin, "Engine.Mutator.NotifyLogin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyLogin, "Engine.Mutator.NotifyLogin", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPlayer, paramsPtr + 0);
@@ -313,14 +316,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyLogout;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyLogout;
     /// <summary>
     /// Function: NotifyLogout
     /// </summary>
     public unsafe virtual void NotifyLogout(BmSDK.Engine.Controller Exiting)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyLogout, "Engine.Mutator.NotifyLogout");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyLogout, "Engine.Mutator.NotifyLogout", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Exiting, paramsPtr + 0);
@@ -328,14 +331,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_CheckReplacement;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckReplacement;
     /// <summary>
     /// Function: CheckReplacement
     /// </summary>
     public unsafe virtual bool CheckReplacement(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckReplacement, "Engine.Mutator.CheckReplacement");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckReplacement, "Engine.Mutator.CheckReplacement", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -343,14 +346,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CheckRelevance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckRelevance;
     /// <summary>
     /// Function: CheckRelevance
     /// </summary>
     public unsafe virtual bool CheckRelevance(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckRelevance, "Engine.Mutator.CheckRelevance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckRelevance, "Engine.Mutator.CheckRelevance", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -358,14 +361,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsRelevant;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsRelevant;
     /// <summary>
     /// Function: IsRelevant
     /// </summary>
     public unsafe virtual bool IsRelevant(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsRelevant, "Engine.Mutator.IsRelevant");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsRelevant, "Engine.Mutator.IsRelevant", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -373,14 +376,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AlwaysKeep;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlwaysKeep;
     /// <summary>
     /// Function: AlwaysKeep
     /// </summary>
     public unsafe virtual bool AlwaysKeep(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlwaysKeep, "Engine.Mutator.AlwaysKeep");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlwaysKeep, "Engine.Mutator.AlwaysKeep", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -388,14 +391,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_AddMutator;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddMutator;
     /// <summary>
     /// Function: AddMutator
     /// </summary>
     public unsafe virtual void AddMutator(BmSDK.Engine.Mutator M)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddMutator, "Engine.Mutator.AddMutator");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddMutator, "Engine.Mutator.AddMutator", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(M, paramsPtr + 0);
@@ -403,14 +406,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ModifyPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyPlayer;
     /// <summary>
     /// Function: ModifyPlayer
     /// </summary>
     public unsafe virtual void ModifyPlayer(BmSDK.Engine.Pawn Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyPlayer, "Engine.Mutator.ModifyPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyPlayer, "Engine.Mutator.ModifyPlayer", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -418,14 +421,14 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_ModifyLogin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ModifyLogin;
     /// <summary>
     /// Function: ModifyLogin
     /// </summary>
     public unsafe virtual void ModifyLogin(out BmSDK.FString Portal, out BmSDK.FString Options)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ModifyLogin, "Engine.Mutator.ModifyLogin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ModifyLogin, "Engine.Mutator.ModifyLogin", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -434,58 +437,59 @@ public partial class Mutator : BmSDK.Engine.Info, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_Mutate;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Mutate;
     /// <summary>
     /// Function: Mutate
     /// </summary>
-    public unsafe virtual void Mutate(BmSDK.FString MutateString, BmSDK.Engine.PlayerController Sender)
+    public unsafe virtual void Mutate(BmSDK.FStringArg MutateString, BmSDK.Engine.PlayerController Sender)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Mutate, "Engine.Mutator.Mutate");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Mutate, "Engine.Mutator.Mutate", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(MutateString, paramsPtr + 0);
+        MutateString.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Sender, paramsPtr + 16);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "Engine.Mutator.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "Engine.Mutator.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MutatorIsAllowed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MutatorIsAllowed;
     /// <summary>
     /// Function: MutatorIsAllowed
     /// </summary>
     public unsafe virtual bool MutatorIsAllowed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MutatorIsAllowed, "Engine.Mutator.MutatorIsAllowed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MutatorIsAllowed, "Engine.Mutator.MutatorIsAllowed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PreBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreBeginPlay;
     /// <summary>
     /// Function: PreBeginPlay
     /// </summary>
     public unsafe override void PreBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreBeginPlay, "Engine.Mutator.PreBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "Engine.Mutator.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

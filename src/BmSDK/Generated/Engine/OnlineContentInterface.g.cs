@@ -18,7 +18,7 @@ public partial interface OnlineContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: DeleteSaveGame
     /// </summary>
-    public unsafe bool DeleteSaveGame(byte LocalUserNum, int DeviceID, BmSDK.FString FriendlyName, BmSDK.FString Filename);
+    public unsafe bool DeleteSaveGame(byte LocalUserNum, int DeviceID, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename);
 
     /// <summary>
     /// Function: ClearWriteSaveGameDataComplete
@@ -33,12 +33,12 @@ public partial interface OnlineContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnWriteSaveGameDataComplete
     /// </summary>
-    public unsafe void OnWriteSaveGameDataComplete(bool bWasSuccessful, byte LocalUserNum, int DeviceID, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName);
+    public unsafe void OnWriteSaveGameDataComplete(bool bWasSuccessful, byte LocalUserNum, int DeviceID, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName);
 
     /// <summary>
     /// Function: WriteSaveGameData
     /// </summary>
-    public unsafe bool WriteSaveGameData(byte LocalUserNum, int DeviceID, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName, out BmSDK.TArray<byte> SaveGameData);
+    public unsafe bool WriteSaveGameData(byte LocalUserNum, int DeviceID, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName, out BmSDK.TArray<byte> SaveGameData);
 
     /// <summary>
     /// Function: ClearReadSaveGameDataComplete
@@ -53,17 +53,17 @@ public partial interface OnlineContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnReadSaveGameDataComplete
     /// </summary>
-    public unsafe void OnReadSaveGameDataComplete(bool bWasSuccessful, byte LocalUserNum, int DeviceID, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName);
+    public unsafe void OnReadSaveGameDataComplete(bool bWasSuccessful, byte LocalUserNum, int DeviceID, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName);
 
     /// <summary>
     /// Function: GetSaveGameData
     /// </summary>
-    public unsafe bool GetSaveGameData(byte LocalUserNum, int DeviceID, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName, out byte bIsValid, out BmSDK.TArray<byte> SaveGameData);
+    public unsafe bool GetSaveGameData(byte LocalUserNum, int DeviceID, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName, out byte bIsValid, out BmSDK.TArray<byte> SaveGameData);
 
     /// <summary>
     /// Function: ReadSaveGameData
     /// </summary>
-    public unsafe bool ReadSaveGameData(byte LocalUserNum, int DeviceID, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName);
+    public unsafe bool ReadSaveGameData(byte LocalUserNum, int DeviceID, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName);
 
     /// <summary>
     /// Function: GetAvailableDownloadCounts
@@ -108,17 +108,17 @@ public partial interface OnlineContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: OnReadCrossTitleSaveGameDataComplete
     /// </summary>
-    public unsafe void OnReadCrossTitleSaveGameDataComplete(bool bWasSuccessful, byte LocalUserNum, int DeviceID, int TitleId, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName);
+    public unsafe void OnReadCrossTitleSaveGameDataComplete(bool bWasSuccessful, byte LocalUserNum, int DeviceID, int TitleId, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName);
 
     /// <summary>
     /// Function: GetCrossTitleSaveGameData
     /// </summary>
-    public unsafe bool GetCrossTitleSaveGameData(byte LocalUserNum, int DeviceID, int TitleId, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName, out byte bIsValid, out BmSDK.TArray<byte> SaveGameData);
+    public unsafe bool GetCrossTitleSaveGameData(byte LocalUserNum, int DeviceID, int TitleId, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName, out byte bIsValid, out BmSDK.TArray<byte> SaveGameData);
 
     /// <summary>
     /// Function: ReadCrossTitleSaveGameData
     /// </summary>
-    public unsafe bool ReadCrossTitleSaveGameData(byte LocalUserNum, int DeviceID, int TitleId, BmSDK.FString FriendlyName, BmSDK.FString Filename, BmSDK.FString SaveFileName);
+    public unsafe bool ReadCrossTitleSaveGameData(byte LocalUserNum, int DeviceID, int TitleId, BmSDK.FStringArg FriendlyName, BmSDK.FStringArg Filename, BmSDK.FStringArg SaveFileName);
 
     /// <summary>
     /// Function: ClearReadCrossTitleContentCompleteDelegate
@@ -173,12 +173,12 @@ public partial interface OnlineContentInterface : BmSDK.Interface
     /// <summary>
     /// Function: BrowseInGameStoreItem
     /// </summary>
-    public unsafe void BrowseInGameStoreItem(byte LocalUserNum, BmSDK.FString ItemId);
+    public unsafe void BrowseInGameStoreItem(byte LocalUserNum, BmSDK.FStringArg ItemId);
 
     /// <summary>
     /// Function: PurchaseInGameStoreItem
     /// </summary>
-    public unsafe void PurchaseInGameStoreItem(byte LocalUserNum, BmSDK.FString ItemId);
+    public unsafe void PurchaseInGameStoreItem(byte LocalUserNum, BmSDK.FStringArg ItemId);
 
     /// <summary>
     /// Function: ClearPurchaseInGameStoreContentComplete

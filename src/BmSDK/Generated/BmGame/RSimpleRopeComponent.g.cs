@@ -78,14 +78,14 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
         where TComponent : class, Framework.IScriptComponent<RSimpleRopeComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetPointAtDistanceAlongSplineRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPointAtDistanceAlongSplineRope;
     /// <summary>
     /// Function: GetPointAtDistanceAlongSplineRope
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetPointAtDistanceAlongSplineRope(float DistanceAlongRope)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPointAtDistanceAlongSplineRope, "BmGame.RSimpleRopeComponent.GetPointAtDistanceAlongSplineRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPointAtDistanceAlongSplineRope, "BmGame.RSimpleRopeComponent.GetPointAtDistanceAlongSplineRope", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DistanceAlongRope, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_FinaliseRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinaliseRope;
     /// <summary>
     /// Function: FinaliseRope
     /// </summary>
     public unsafe override void FinaliseRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinaliseRope, "BmGame.RSimpleRopeComponent.FinaliseRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinaliseRope, "BmGame.RSimpleRopeComponent.FinaliseRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -121,14 +121,14 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_InitialiseRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitialiseRope;
     /// <summary>
     /// Function: InitialiseRope
     /// </summary>
     public unsafe override void InitialiseRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitialiseRope, "BmGame.RSimpleRopeComponent.InitialiseRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseRope, "BmGame.RSimpleRopeComponent.InitialiseRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -142,14 +142,14 @@ public partial class RSimpleRopeComponent : BmSDK.BmGame.RRopeComponentBase, BmS
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRope;
     /// <summary>
     /// Function: UpdateRope
     /// </summary>
     public unsafe override void UpdateRope()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRope, "BmGame.RSimpleRopeComponent.UpdateRope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRope, "BmGame.RSimpleRopeComponent.UpdateRope", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

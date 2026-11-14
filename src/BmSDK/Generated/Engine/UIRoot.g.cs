@@ -77,13 +77,14 @@ public partial class UIRoot : BmSDK.StateObject, BmSDK.IGameObject
     /// <summary>
     /// Function: SafeCaps
     /// </summary>
-    public unsafe static BmSDK.FString SafeCaps(BmSDK.FString StringToCap)
+    public unsafe static BmSDK.FString SafeCaps(BmSDK.FStringArg StringToCap)
     {
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SafeCaps, "Engine.UIRoot.SafeCaps");
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(StringToCap, paramsPtr + 0);
+        StringToCap.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
     }
 

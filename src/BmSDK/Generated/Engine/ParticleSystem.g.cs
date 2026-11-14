@@ -78,14 +78,14 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<ParticleSystem>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetMaxLifespan;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetMaxLifespan;
     /// <summary>
     /// Function: GetMaxLifespan
     /// </summary>
     public unsafe virtual float GetMaxLifespan(float InComponentDelay)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetMaxLifespan, "Engine.ParticleSystem.GetMaxLifespan");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMaxLifespan, "Engine.ParticleSystem.GetMaxLifespan", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InComponentDelay, paramsPtr + 0);
@@ -100,14 +100,14 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_SetLODDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLODDistance;
     /// <summary>
     /// Function: SetLODDistance
     /// </summary>
     public unsafe virtual bool SetLODDistance(int LODLevelIndex, float InDistance)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLODDistance, "Engine.ParticleSystem.SetLODDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLODDistance, "Engine.ParticleSystem.SetLODDistance", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LODLevelIndex, paramsPtr + 0);
@@ -123,14 +123,14 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_SetCurrentLODMethod;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCurrentLODMethod;
     /// <summary>
     /// Function: SetCurrentLODMethod
     /// </summary>
     public unsafe virtual void SetCurrentLODMethod(BmSDK.Engine.ParticleSystem.ParticleSystemLODMethod InMethod)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetCurrentLODMethod, "Engine.ParticleSystem.SetCurrentLODMethod");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCurrentLODMethod, "Engine.ParticleSystem.SetCurrentLODMethod", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InMethod, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetLODDistance;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLODDistance;
     /// <summary>
     /// Function: GetLODDistance
     /// </summary>
     public unsafe virtual float GetLODDistance(int LODLevelIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLODDistance, "Engine.ParticleSystem.GetLODDistance");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLODDistance, "Engine.ParticleSystem.GetLODDistance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LODLevelIndex, paramsPtr + 0);
@@ -167,14 +167,14 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetLODLevelCount;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLODLevelCount;
     /// <summary>
     /// Function: GetLODLevelCount
     /// </summary>
     public unsafe virtual int GetLODLevelCount()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLODLevelCount, "Engine.ParticleSystem.GetLODLevelCount");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLODLevelCount, "Engine.ParticleSystem.GetLODLevelCount", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -188,14 +188,14 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetCurrentLODMethod;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetCurrentLODMethod;
     /// <summary>
     /// Function: GetCurrentLODMethod
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem.ParticleSystemLODMethod GetCurrentLODMethod()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetCurrentLODMethod, "Engine.ParticleSystem.GetCurrentLODMethod");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentLODMethod, "Engine.ParticleSystem.GetCurrentLODMethod", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -209,14 +209,14 @@ public partial class ParticleSystem : BmSDK.GameObject, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.ParticleSystem.ParticleSystemLODMethod>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_EffectiveParticleSystemAfterPhysXOverride;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EffectiveParticleSystemAfterPhysXOverride;
     /// <summary>
     /// Function: EffectiveParticleSystemAfterPhysXOverride
     /// </summary>
     public unsafe virtual BmSDK.Engine.ParticleSystem EffectiveParticleSystemAfterPhysXOverride()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EffectiveParticleSystemAfterPhysXOverride, "Engine.ParticleSystem.EffectiveParticleSystemAfterPhysXOverride");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EffectiveParticleSystemAfterPhysXOverride, "Engine.ParticleSystem.EffectiveParticleSystemAfterPhysXOverride", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

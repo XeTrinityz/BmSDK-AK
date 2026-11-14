@@ -78,28 +78,28 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
         where TComponent : class, Framework.IScriptComponent<REnvironmentCheckTicker>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ClearEnvironmentFeatures;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearEnvironmentFeatures;
     /// <summary>
     /// Function: ClearEnvironmentFeatures
     /// </summary>
     public unsafe virtual void ClearEnvironmentFeatures()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearEnvironmentFeatures, "BmGame.REnvironmentCheckTicker.ClearEnvironmentFeatures");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearEnvironmentFeatures, "BmGame.REnvironmentCheckTicker.ClearEnvironmentFeatures", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FrontBarrierIsEdge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FrontBarrierIsEdge;
     /// <summary>
     /// Function: FrontBarrierIsEdge
     /// </summary>
     public unsafe virtual bool FrontBarrierIsEdge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FrontBarrierIsEdge, "BmGame.REnvironmentCheckTicker.FrontBarrierIsEdge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FrontBarrierIsEdge, "BmGame.REnvironmentCheckTicker.FrontBarrierIsEdge", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -113,14 +113,14 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_UpdateShimmyEnv;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateShimmyEnv;
     /// <summary>
     /// Function: UpdateShimmyEnv
     /// </summary>
     public unsafe virtual void UpdateShimmyEnv(float CollisionHeight, float CollisionRadius, float DeltaTime, bool bForClimbingDown = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateShimmyEnv, "BmGame.REnvironmentCheckTicker.UpdateShimmyEnv");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateShimmyEnv, "BmGame.REnvironmentCheckTicker.UpdateShimmyEnv", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CollisionHeight, paramsPtr + 0);
@@ -138,14 +138,14 @@ public partial class REnvironmentCheckTicker : BmSDK.Engine.ActorComponent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_CheckSurroundingEnvironment;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckSurroundingEnvironment;
     /// <summary>
     /// Function: CheckSurroundingEnvironment
     /// </summary>
     public unsafe virtual void CheckSurroundingEnvironment(float CollisionHeight, float CollisionRadius, float DeltaTime, BmSDK.Engine.PrimitiveComponent HintPrimitive = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CheckSurroundingEnvironment, "BmGame.REnvironmentCheckTicker.CheckSurroundingEnvironment");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckSurroundingEnvironment, "BmGame.REnvironmentCheckTicker.CheckSurroundingEnvironment", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CollisionHeight, paramsPtr + 0);

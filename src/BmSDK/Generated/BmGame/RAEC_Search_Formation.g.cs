@@ -73,14 +73,14 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
         where TComponent : class, Framework.IScriptComponent<RAEC_Search_Formation>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_RegisterSplit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RegisterSplit;
     /// <summary>
     /// Function: RegisterSplit
     /// </summary>
     public unsafe virtual void RegisterSplit(BmSDK.BmGame.RBMAIController SplitCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RegisterSplit, "BmGame.RAEC_Search_Formation.RegisterSplit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterSplit, "BmGame.RAEC_Search_Formation.RegisterSplit", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SplitCon, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyChildStolen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyChildStolen;
     /// <summary>
     /// Function: NotifyChildStolen
     /// </summary>
     public unsafe override void NotifyChildStolen(BmSDK.BmGame.RAlertEventCoordinatorSolo StoleFromAEC, BmSDK.BmGame.RAlertEventCoordinatorSolo StealingAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyChildStolen, "BmGame.RAEC_Search_Formation.NotifyChildStolen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyChildStolen, "BmGame.RAEC_Search_Formation.NotifyChildStolen", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StoleFromAEC, paramsPtr + 0);
@@ -104,28 +104,28 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
         return;
     }
 
-    private static BmSDK.Function __fn_FollowerWantsLeaderToSlow;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FollowerWantsLeaderToSlow;
     /// <summary>
     /// Function: FollowerWantsLeaderToSlow
     /// </summary>
     public unsafe virtual bool FollowerWantsLeaderToSlow()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FollowerWantsLeaderToSlow, "BmGame.RAEC_Search_Formation.FollowerWantsLeaderToSlow");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FollowerWantsLeaderToSlow, "BmGame.RAEC_Search_Formation.FollowerWantsLeaderToSlow", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetBestFollowersForBranchOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBestFollowersForBranchOff;
     /// <summary>
     /// Function: GetBestFollowersForBranchOff
     /// </summary>
     public unsafe virtual void GetBestFollowersForBranchOff(out BmSDK.BmGame.RBMAIController SplitGroupLeader, out BmSDK.TArray<BmSDK.BmGame.RBMAIController> SplitFollowers)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBestFollowersForBranchOff, "BmGame.RAEC_Search_Formation.GetBestFollowersForBranchOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBestFollowersForBranchOff, "BmGame.RAEC_Search_Formation.GetBestFollowersForBranchOff", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SplitGroupLeader);
@@ -136,84 +136,84 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
         return;
     }
 
-    private static BmSDK.Function __fn_GroupShouldSplit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GroupShouldSplit;
     /// <summary>
     /// Function: GroupShouldSplit
     /// </summary>
     public unsafe virtual bool GroupShouldSplit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GroupShouldSplit, "BmGame.RAEC_Search_Formation.GroupShouldSplit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GroupShouldSplit, "BmGame.RAEC_Search_Formation.GroupShouldSplit", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetSplitCap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSplitCap;
     /// <summary>
     /// Function: GetSplitCap
     /// </summary>
     public unsafe virtual int GetSplitCap()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetSplitCap, "BmGame.RAEC_Search_Formation.GetSplitCap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSplitCap, "BmGame.RAEC_Search_Formation.GetSplitCap", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RefuseBuddy;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RefuseBuddy;
     /// <summary>
     /// Function: RefuseBuddy
     /// </summary>
     public unsafe virtual bool RefuseBuddy()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RefuseBuddy, "BmGame.RAEC_Search_Formation.RefuseBuddy");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RefuseBuddy, "BmGame.RAEC_Search_Formation.RefuseBuddy", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_InitSplitThugs;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitSplitThugs;
     /// <summary>
     /// Function: InitSplitThugs
     /// </summary>
     public unsafe virtual void InitSplitThugs()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitSplitThugs, "BmGame.RAEC_Search_Formation.InitSplitThugs");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitSplitThugs, "BmGame.RAEC_Search_Formation.InitSplitThugs", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AssessPotentialSplit;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AssessPotentialSplit;
     /// <summary>
     /// Function: AssessPotentialSplit
     /// </summary>
     public unsafe virtual void AssessPotentialSplit()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AssessPotentialSplit, "BmGame.RAEC_Search_Formation.AssessPotentialSplit");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AssessPotentialSplit, "BmGame.RAEC_Search_Formation.AssessPotentialSplit", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AddFollower;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddFollower;
     /// <summary>
     /// Function: AddFollower
     /// </summary>
     public unsafe virtual void AddFollower(BmSDK.BmGame.RBMAIController FollowCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddFollower, "BmGame.RAEC_Search_Formation.AddFollower");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddFollower, "BmGame.RAEC_Search_Formation.AddFollower", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FollowCon, paramsPtr + 0);
@@ -221,14 +221,14 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
         return;
     }
 
-    private static BmSDK.Function __fn_SetLeader;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetLeader;
     /// <summary>
     /// Function: SetLeader
     /// </summary>
     public unsafe virtual void SetLeader(BmSDK.BmGame.RBMAIController LeaderCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetLeader, "BmGame.RAEC_Search_Formation.SetLeader");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetLeader, "BmGame.RAEC_Search_Formation.SetLeader", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LeaderCon, paramsPtr + 0);
@@ -236,14 +236,14 @@ public partial class RAEC_Search_Formation : BmSDK.BmGame.RAlertEventCoordinator
         return;
     }
 
-    private static BmSDK.Function __fn_OnRemoveSoloChild;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnRemoveSoloChild;
     /// <summary>
     /// Function: OnRemoveSoloChild
     /// </summary>
     public unsafe override void OnRemoveSoloChild(BmSDK.BmGame.RAlertEventCoordinatorSolo RemAEC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Search_Formation.OnRemoveSoloChild");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnRemoveSoloChild, "BmGame.RAEC_Search_Formation.OnRemoveSoloChild", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RemAEC, paramsPtr + 0);

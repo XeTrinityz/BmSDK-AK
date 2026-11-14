@@ -78,14 +78,14 @@ public partial class RBatarangRb_Controllable : BmSDK.BmScript.RBatarang_Control
         where TComponent : class, Framework.IScriptComponent<RBatarangRb_Controllable>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetReversePromptName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetReversePromptName;
     /// <summary>
     /// Function: GetReversePromptName
     /// </summary>
     public unsafe override BmSDK.FString GetReversePromptName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetReversePromptName, "BmScript.RBatarangRb_Controllable.GetReversePromptName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReversePromptName, "BmScript.RBatarangRb_Controllable.GetReversePromptName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

@@ -91,42 +91,42 @@ public partial class RSeqEvent_RiddleScanned : BmSDK.Engine.SequenceEvent, BmSDK
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ShouldActivateForAnyPickupScanned;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldActivateForAnyPickupScanned;
     /// <summary>
     /// Function: ShouldActivateForAnyPickupScanned
     /// </summary>
     public unsafe virtual bool ShouldActivateForAnyPickupScanned()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldActivateForAnyPickupScanned, "BmGame.RSeqEvent_RiddleScanned.ShouldActivateForAnyPickupScanned");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldActivateForAnyPickupScanned, "BmGame.RSeqEvent_RiddleScanned.ShouldActivateForAnyPickupScanned", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PickupActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PickupActor;
     /// <summary>
     /// Function: PickupActor
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPickupBase PickupActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PickupActor, "BmGame.RSeqEvent_RiddleScanned.PickupActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PickupActor, "BmGame.RSeqEvent_RiddleScanned.PickupActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPickupBase>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RiddleActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RiddleActor;
     /// <summary>
     /// Function: RiddleActor
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RRiddleBase RiddleActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RiddleActor, "BmGame.RSeqEvent_RiddleScanned.RiddleActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiddleActor, "BmGame.RSeqEvent_RiddleScanned.RiddleActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

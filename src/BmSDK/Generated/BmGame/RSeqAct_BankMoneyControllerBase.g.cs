@@ -73,14 +73,14 @@ public partial class RSeqAct_BankMoneyControllerBase : BmSDK.Engine.SeqAct_Laten
         where TComponent : class, Framework.IScriptComponent<RSeqAct_BankMoneyControllerBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyCashPlacedInBag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyCashPlacedInBag;
     /// <summary>
     /// Function: NotifyCashPlacedInBag
     /// </summary>
     public unsafe virtual void NotifyCashPlacedInBag(int Amount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCashPlacedInBag, "BmGame.RSeqAct_BankMoneyControllerBase.NotifyCashPlacedInBag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyCashPlacedInBag, "BmGame.RSeqAct_BankMoneyControllerBase.NotifyCashPlacedInBag", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Amount, paramsPtr + 0);
@@ -88,14 +88,14 @@ public partial class RSeqAct_BankMoneyControllerBase : BmSDK.Engine.SeqAct_Laten
         return;
     }
 
-    private static BmSDK.Function __fn_NotifyCashRemovedFromBank;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyCashRemovedFromBank;
     /// <summary>
     /// Function: NotifyCashRemovedFromBank
     /// </summary>
     public unsafe virtual void NotifyCashRemovedFromBank(int Amount)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyCashRemovedFromBank, "BmGame.RSeqAct_BankMoneyControllerBase.NotifyCashRemovedFromBank");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyCashRemovedFromBank, "BmGame.RSeqAct_BankMoneyControllerBase.NotifyCashRemovedFromBank", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Amount, paramsPtr + 0);

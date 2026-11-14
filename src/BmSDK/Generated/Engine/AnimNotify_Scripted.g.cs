@@ -73,14 +73,14 @@ public partial class AnimNotify_Scripted : BmSDK.Engine.AnimNotify, BmSDK.IGameO
         where TComponent : class, Framework.IScriptComponent<AnimNotify_Scripted>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_NotifyEnd;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_NotifyEnd;
     /// <summary>
     /// Function: NotifyEnd
     /// </summary>
     public unsafe virtual void NotifyEnd(BmSDK.Engine.Actor Owner, BmSDK.Engine.AnimNodeSequence AnimSeqInstigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_NotifyEnd, "Engine.AnimNotify_Scripted.NotifyEnd");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyEnd, "Engine.AnimNotify_Scripted.NotifyEnd", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Owner, paramsPtr + 0);
@@ -89,14 +89,14 @@ public partial class AnimNotify_Scripted : BmSDK.Engine.AnimNotify, BmSDK.IGameO
         return;
     }
 
-    private static BmSDK.Function __fn_Notify;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Notify;
     /// <summary>
     /// Function: Notify
     /// </summary>
     public unsafe virtual void Notify(BmSDK.Engine.Actor Owner, BmSDK.Engine.SkeletalMeshComponent AnimSeqInstigator)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Notify, "Engine.AnimNotify_Scripted.Notify");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Notify, "Engine.AnimNotify_Scripted.Notify", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Owner, paramsPtr + 0);

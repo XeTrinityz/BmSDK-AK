@@ -78,70 +78,70 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         where TComponent : class, Framework.IScriptComponent<RChallengeModeStartPoint>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_Music_RemoveCustom;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Music_RemoveCustom;
     /// <summary>
     /// Function: Music_RemoveCustom
     /// </summary>
     public unsafe virtual void Music_RemoveCustom()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_RemoveCustom, "BmScript.RChallengeModeStartPoint.Music_RemoveCustom");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Music_RemoveCustom, "BmScript.RChallengeModeStartPoint.Music_RemoveCustom", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Music_ChallengeFail;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Music_ChallengeFail;
     /// <summary>
     /// Function: Music_ChallengeFail
     /// </summary>
     public unsafe virtual void Music_ChallengeFail()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_ChallengeFail, "BmScript.RChallengeModeStartPoint.Music_ChallengeFail");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Music_ChallengeFail, "BmScript.RChallengeModeStartPoint.Music_ChallengeFail", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Music_ChallengeSuccess;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Music_ChallengeSuccess;
     /// <summary>
     /// Function: Music_ChallengeSuccess
     /// </summary>
     public unsafe virtual void Music_ChallengeSuccess()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_ChallengeSuccess, "BmScript.RChallengeModeStartPoint.Music_ChallengeSuccess");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Music_ChallengeSuccess, "BmScript.RChallengeModeStartPoint.Music_ChallengeSuccess", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Music_ResetForChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Music_ResetForChallenge;
     /// <summary>
     /// Function: Music_ResetForChallenge
     /// </summary>
     public unsafe virtual void Music_ResetForChallenge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Music_ResetForChallenge, "BmScript.RChallengeModeStartPoint.Music_ResetForChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Music_ResetForChallenge, "BmScript.RChallengeModeStartPoint.Music_ResetForChallenge", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AllowLongRangeInteraction;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowLongRangeInteraction;
     /// <summary>
     /// Function: AllowLongRangeInteraction
     /// </summary>
     public unsafe virtual bool AllowLongRangeInteraction(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AllowLongRangeInteraction, "BmScript.RChallengeModeStartPoint.AllowLongRangeInteraction");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowLongRangeInteraction, "BmScript.RChallengeModeStartPoint.AllowLongRangeInteraction", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -149,42 +149,42 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmScript.RChallengeModeStartPoint.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RChallengeModeStartPoint.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateChallengeInRGameInfo;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateChallengeInRGameInfo;
     /// <summary>
     /// Function: UpdateChallengeInRGameInfo
     /// </summary>
     public unsafe virtual void UpdateChallengeInRGameInfo()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateChallengeInRGameInfo, "BmScript.RChallengeModeStartPoint.UpdateChallengeInRGameInfo");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateChallengeInRGameInfo, "BmScript.RChallengeModeStartPoint.UpdateChallengeInRGameInfo", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmScript.RChallengeModeStartPoint.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmScript.RChallengeModeStartPoint.OnToggle", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -192,86 +192,87 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return;
     }
 
-    private static BmSDK.Function __fn_OnBackscreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnBackscreen;
     /// <summary>
     /// Function: OnBackscreen
     /// </summary>
     public unsafe virtual void OnBackscreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnBackscreen, "BmScript.RChallengeModeStartPoint.OnBackscreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnBackscreen, "BmScript.RChallengeModeStartPoint.OnBackscreen", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_OnChallengeCompletion;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnChallengeCompletion;
     /// <summary>
     /// Function: OnChallengeCompletion
     /// </summary>
-    public unsafe virtual void OnChallengeCompletion(bool bFailed, BmSDK.FString sCustomMessage)
+    public unsafe virtual void OnChallengeCompletion(bool bFailed, BmSDK.FStringArg sCustomMessage)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnChallengeCompletion, "BmScript.RChallengeModeStartPoint.OnChallengeCompletion");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnChallengeCompletion, "BmScript.RChallengeModeStartPoint.OnChallengeCompletion", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bFailed, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sCustomMessage, paramsPtr + 4);
+        sCustomMessage.WriteTo(paramsPtr + 4);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerChallengeCompletionDelay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerChallengeCompletionDelay;
     /// <summary>
     /// Function: TimerChallengeCompletionDelay
     /// </summary>
     public unsafe virtual void TimerChallengeCompletionDelay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerChallengeCompletionDelay, "BmScript.RChallengeModeStartPoint.TimerChallengeCompletionDelay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerChallengeCompletionDelay, "BmScript.RChallengeModeStartPoint.TimerChallengeCompletionDelay", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerEndingChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerEndingChallenge;
     /// <summary>
     /// Function: TimerEndingChallenge
     /// </summary>
     public unsafe virtual void TimerEndingChallenge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerEndingChallenge, "BmScript.RChallengeModeStartPoint.TimerEndingChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerEndingChallenge, "BmScript.RChallengeModeStartPoint.TimerEndingChallenge", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FadeBackIn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FadeBackIn;
     /// <summary>
     /// Function: FadeBackIn
     /// </summary>
     public unsafe override void FadeBackIn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FadeBackIn, "BmScript.RChallengeModeStartPoint.FadeBackIn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FadeBackIn, "BmScript.RChallengeModeStartPoint.FadeBackIn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AbortChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AbortChallenge;
     /// <summary>
     /// Function: AbortChallenge
     /// </summary>
     public unsafe override void AbortChallenge(int nTriggerEvent, bool bPlayAbortedDialog)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AbortChallenge, "BmScript.RChallengeModeStartPoint.AbortChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AbortChallenge, "BmScript.RChallengeModeStartPoint.AbortChallenge", this);
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nTriggerEvent, paramsPtr + 0);
@@ -280,14 +281,14 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return;
     }
 
-    private static BmSDK.Function __fn_StopSpeechCallback;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopSpeechCallback;
     /// <summary>
     /// Function: StopSpeechCallback
     /// </summary>
     public unsafe virtual BmSDK.Engine.AkDialogue.AkDialogueCallbackResult StopSpeechCallback(int speechId, bool interrupted)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopSpeechCallback, "BmScript.RChallengeModeStartPoint.StopSpeechCallback");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopSpeechCallback, "BmScript.RChallengeModeStartPoint.StopSpeechCallback", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(speechId, paramsPtr + 0);
@@ -296,126 +297,126 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogue.AkDialogueCallbackResult>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_FlushLoading;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FlushLoading;
     /// <summary>
     /// Function: FlushLoading
     /// </summary>
     public unsafe virtual void FlushLoading()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FlushLoading, "BmScript.RChallengeModeStartPoint.FlushLoading");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlushLoading, "BmScript.RChallengeModeStartPoint.FlushLoading", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_AfterFinishedDialogue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AfterFinishedDialogue;
     /// <summary>
     /// Function: AfterFinishedDialogue
     /// </summary>
     public unsafe virtual void AfterFinishedDialogue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AfterFinishedDialogue, "BmScript.RChallengeModeStartPoint.AfterFinishedDialogue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AfterFinishedDialogue, "BmScript.RChallengeModeStartPoint.AfterFinishedDialogue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerAfterAbortFadeOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerAfterAbortFadeOut;
     /// <summary>
     /// Function: TimerAfterAbortFadeOut
     /// </summary>
     public unsafe virtual void TimerAfterAbortFadeOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterAbortFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterAbortFadeOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerAfterAbortFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterAbortFadeOut", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerAfterAbortFadeOutAfterSwitchToGameMaps;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerAfterAbortFadeOutAfterSwitchToGameMaps;
     /// <summary>
     /// Function: TimerAfterAbortFadeOutAfterSwitchToGameMaps
     /// </summary>
     public unsafe virtual void TimerAfterAbortFadeOutAfterSwitchToGameMaps()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterAbortFadeOutAfterSwitchToGameMaps, "BmScript.RChallengeModeStartPoint.TimerAfterAbortFadeOutAfterSwitchToGameMaps");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerAfterAbortFadeOutAfterSwitchToGameMaps, "BmScript.RChallengeModeStartPoint.TimerAfterAbortFadeOutAfterSwitchToGameMaps", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RestartChallenge;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RestartChallenge;
     /// <summary>
     /// Function: RestartChallenge
     /// </summary>
     public unsafe override void RestartChallenge()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RestartChallenge, "BmScript.RChallengeModeStartPoint.RestartChallenge");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RestartChallenge, "BmScript.RChallengeModeStartPoint.RestartChallenge", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerAfterRestartFadeOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerAfterRestartFadeOut;
     /// <summary>
     /// Function: TimerAfterRestartFadeOut
     /// </summary>
     public unsafe virtual void TimerAfterRestartFadeOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterRestartFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterRestartFadeOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerAfterRestartFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterRestartFadeOut", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TimerAfterRestartFadeOutAfterRespawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerAfterRestartFadeOutAfterRespawn;
     /// <summary>
     /// Function: TimerAfterRestartFadeOutAfterRespawn
     /// </summary>
     public unsafe virtual void TimerAfterRestartFadeOutAfterRespawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterRestartFadeOutAfterRespawn, "BmScript.RChallengeModeStartPoint.TimerAfterRestartFadeOutAfterRespawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerAfterRestartFadeOutAfterRespawn, "BmScript.RChallengeModeStartPoint.TimerAfterRestartFadeOutAfterRespawn", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RespawnPlayer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RespawnPlayer;
     /// <summary>
     /// Function: RespawnPlayer
     /// </summary>
     public unsafe virtual void RespawnPlayer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RespawnPlayer, "BmScript.RChallengeModeStartPoint.RespawnPlayer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RespawnPlayer, "BmScript.RChallengeModeStartPoint.RespawnPlayer", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_InitiateScreenMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_InitiateScreenMode;
     /// <summary>
     /// Function: InitiateScreenMode
     /// </summary>
     public unsafe override void InitiateScreenMode(BmSDK.BmGame.RChallengeManager.ChallengeScreenModes eMode, bool bAccepted, bool bInGameStart)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_InitiateScreenMode, "BmScript.RChallengeModeStartPoint.InitiateScreenMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitiateScreenMode, "BmScript.RChallengeModeStartPoint.InitiateScreenMode", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(eMode, paramsPtr + 0);
@@ -425,42 +426,42 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return;
     }
 
-    private static BmSDK.Function __fn_TimerAfterStartFadeOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerAfterStartFadeOut;
     /// <summary>
     /// Function: TimerAfterStartFadeOut
     /// </summary>
     public unsafe virtual void TimerAfterStartFadeOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerAfterStartFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterStartFadeOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerAfterStartFadeOut, "BmScript.RChallengeModeStartPoint.TimerAfterStartFadeOut", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_MovePlayerHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MovePlayerHere;
     /// <summary>
     /// Function: MovePlayerHere
     /// </summary>
     public unsafe override void MovePlayerHere()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MovePlayerHere, "BmScript.RChallengeModeStartPoint.MovePlayerHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovePlayerHere, "BmScript.RChallengeModeStartPoint.MovePlayerHere", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerEvent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEvent;
     /// <summary>
     /// Function: TriggerEvent
     /// </summary>
     public unsafe override void TriggerEvent(int OutputIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEvent, "BmScript.RChallengeModeStartPoint.TriggerEvent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEvent, "BmScript.RChallengeModeStartPoint.TriggerEvent", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OutputIndex, paramsPtr + 0);
@@ -468,70 +469,70 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return;
     }
 
-    private static BmSDK.Function __fn_ClearChallengeMiniScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearChallengeMiniScreen;
     /// <summary>
     /// Function: ClearChallengeMiniScreen
     /// </summary>
     public unsafe override void ClearChallengeMiniScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearChallengeMiniScreen, "BmScript.RChallengeModeStartPoint.ClearChallengeMiniScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearChallengeMiniScreen, "BmScript.RChallengeModeStartPoint.ClearChallengeMiniScreen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetChallengeMiniScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeMiniScreen;
     /// <summary>
     /// Function: SetChallengeMiniScreen
     /// </summary>
     public unsafe override void SetChallengeMiniScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetChallengeMiniScreen, "BmScript.RChallengeModeStartPoint.SetChallengeMiniScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetChallengeMiniScreen, "BmScript.RChallengeModeStartPoint.SetChallengeMiniScreen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerChallengeAwardPointNotification;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerChallengeAwardPointNotification;
     /// <summary>
     /// Function: TriggerChallengeAwardPointNotification
     /// </summary>
     public unsafe virtual void TriggerChallengeAwardPointNotification()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerChallengeAwardPointNotification, "BmScript.RChallengeModeStartPoint.TriggerChallengeAwardPointNotification");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerChallengeAwardPointNotification, "BmScript.RChallengeModeStartPoint.TriggerChallengeAwardPointNotification", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ClearChallengeScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearChallengeScreen;
     /// <summary>
     /// Function: ClearChallengeScreen
     /// </summary>
     public unsafe override void ClearChallengeScreen()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearChallengeScreen, "BmScript.RChallengeModeStartPoint.ClearChallengeScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearChallengeScreen, "BmScript.RChallengeModeStartPoint.ClearChallengeScreen", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetChallengeScreen;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetChallengeScreen;
     /// <summary>
     /// Function: SetChallengeScreen
     /// </summary>
     public unsafe override void SetChallengeScreen(BmSDK.BmGame.RChallengeManager.ChallengeScreenModes selected_mode)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetChallengeScreen, "BmScript.RChallengeModeStartPoint.SetChallengeScreen");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetChallengeScreen, "BmScript.RChallengeModeStartPoint.SetChallengeScreen", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(selected_mode, paramsPtr + 0);
@@ -539,28 +540,28 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return;
     }
 
-    private static BmSDK.Function __fn_OverridePreviousLines;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridePreviousLines;
     /// <summary>
     /// Function: OverridePreviousLines
     /// </summary>
     public unsafe virtual bool OverridePreviousLines()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridePreviousLines, "BmScript.RChallengeModeStartPoint.OverridePreviousLines");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridePreviousLines, "BmScript.RChallengeModeStartPoint.OverridePreviousLines", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetInteractButton;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetInteractButton;
     /// <summary>
     /// Function: GetInteractButton
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton GetInteractButton(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetInteractButton, "BmScript.RChallengeModeStartPoint.GetInteractButton");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetInteractButton, "BmScript.RChallengeModeStartPoint.GetInteractButton", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -568,28 +569,28 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RInteractInterface.EInteractableItemFaceButton>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetUpperPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetUpperPrompt;
     /// <summary>
     /// Function: GetUpperPrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetUpperPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetUpperPrompt, "BmScript.RChallengeModeStartPoint.GetUpperPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUpperPrompt, "BmScript.RChallengeModeStartPoint.GetUpperPrompt", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OverridesRun;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OverridesRun;
     /// <summary>
     /// Function: OverridesRun
     /// </summary>
     public unsafe virtual float OverridesRun(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OverridesRun, "BmScript.RChallengeModeStartPoint.OverridesRun");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridesRun, "BmScript.RChallengeModeStartPoint.OverridesRun", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -597,14 +598,14 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CanReachItem;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanReachItem;
     /// <summary>
     /// Function: CanReachItem
     /// </summary>
     public unsafe virtual bool CanReachItem(BmSDK.Engine.Pawn CheckingPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanReachItem, "BmScript.RChallengeModeStartPoint.CanReachItem");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanReachItem, "BmScript.RChallengeModeStartPoint.CanReachItem", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CheckingPawn, paramsPtr + 0);
@@ -612,42 +613,42 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetLocationOffset;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetLocationOffset;
     /// <summary>
     /// Function: GetLocationOffset
     /// </summary>
     public unsafe virtual System.Numerics.Vector3 GetLocationOffset()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetLocationOffset, "BmScript.RChallengeModeStartPoint.GetLocationOffset");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetLocationOffset, "BmScript.RChallengeModeStartPoint.GetLocationOffset", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanUseInCinematicMode;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanUseInCinematicMode;
     /// <summary>
     /// Function: CanUseInCinematicMode
     /// </summary>
     public unsafe virtual bool CanUseInCinematicMode()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanUseInCinematicMode, "BmScript.RChallengeModeStartPoint.CanUseInCinematicMode");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanUseInCinematicMode, "BmScript.RChallengeModeStartPoint.CanUseInCinematicMode", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_MustBeCrouched;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_MustBeCrouched;
     /// <summary>
     /// Function: MustBeCrouched
     /// </summary>
     public unsafe virtual bool MustBeCrouched(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_MustBeCrouched, "BmScript.RChallengeModeStartPoint.MustBeCrouched");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MustBeCrouched, "BmScript.RChallengeModeStartPoint.MustBeCrouched", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -655,42 +656,42 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_IsButtonPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsButtonPrompt;
     /// <summary>
     /// Function: IsButtonPrompt
     /// </summary>
     public unsafe virtual bool IsButtonPrompt()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsButtonPrompt, "BmScript.RChallengeModeStartPoint.IsButtonPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsButtonPrompt, "BmScript.RChallengeModeStartPoint.IsButtonPrompt", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetPriority;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPriority;
     /// <summary>
     /// Function: GetPriority
     /// </summary>
     public unsafe virtual float GetPriority()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPriority, "BmScript.RChallengeModeStartPoint.GetPriority");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPriority, "BmScript.RChallengeModeStartPoint.GetPriority", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetFOVDegrees;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFOVDegrees;
     /// <summary>
     /// Function: GetFOVDegrees
     /// </summary>
     public unsafe virtual float GetFOVDegrees(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFOVDegrees, "BmScript.RChallengeModeStartPoint.GetFOVDegrees");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFOVDegrees, "BmScript.RChallengeModeStartPoint.GetFOVDegrees", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -698,42 +699,42 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetHeightRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHeightRange;
     /// <summary>
     /// Function: GetHeightRange
     /// </summary>
     public unsafe virtual float GetHeightRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHeightRange, "BmScript.RChallengeModeStartPoint.GetHeightRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHeightRange, "BmScript.RChallengeModeStartPoint.GetHeightRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GetRange;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRange;
     /// <summary>
     /// Function: GetRange
     /// </summary>
     public unsafe virtual float GetRange()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRange, "BmScript.RChallengeModeStartPoint.GetRange");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRange, "BmScript.RChallengeModeStartPoint.GetRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_Interact;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Interact;
     /// <summary>
     /// Function: Interact
     /// </summary>
     public unsafe virtual void Interact(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Interact, "BmScript.RChallengeModeStartPoint.Interact");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Interact, "BmScript.RChallengeModeStartPoint.Interact", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -741,14 +742,14 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return;
     }
 
-    private static BmSDK.Function __fn_IsActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsActive;
     /// <summary>
     /// Function: IsActive
     /// </summary>
     public unsafe virtual bool IsActive(BmSDK.BmGame.RPlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsActive, "BmScript.RChallengeModeStartPoint.IsActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsActive, "BmScript.RChallengeModeStartPoint.IsActive", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -756,14 +757,14 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_GetPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetPrompt;
     /// <summary>
     /// Function: GetPrompt
     /// </summary>
     public unsafe virtual BmSDK.FString GetPrompt(BmSDK.Engine.PlayerController PC)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetPrompt, "BmScript.RChallengeModeStartPoint.GetPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPrompt, "BmScript.RChallengeModeStartPoint.GetPrompt", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -771,14 +772,14 @@ public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStart
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_CompleteRestartOrAbort;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CompleteRestartOrAbort;
     /// <summary>
     /// Function: CompleteRestartOrAbort
     /// </summary>
     public unsafe virtual void CompleteRestartOrAbort()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CompleteRestartOrAbort, "BmScript.RChallengeModeStartPoint.CompleteRestartOrAbort");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CompleteRestartOrAbort, "BmScript.RChallengeModeStartPoint.CompleteRestartOrAbort", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

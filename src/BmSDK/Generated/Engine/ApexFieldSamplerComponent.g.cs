@@ -73,14 +73,14 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
         where TComponent : class, Framework.IScriptComponent<ApexFieldSamplerComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetEnabled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetEnabled;
     /// <summary>
     /// Function: SetEnabled
     /// </summary>
     public unsafe virtual void SetEnabled(bool Enabled)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetEnabled, "Engine.ApexFieldSamplerComponent.SetEnabled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetEnabled, "Engine.ApexFieldSamplerComponent.SetEnabled", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Enabled, paramsPtr + 0);
@@ -95,14 +95,14 @@ public partial class ApexFieldSamplerComponent : BmSDK.Engine.PrimitiveComponent
         return;
     }
 
-    private static BmSDK.Function __fn_DoInitRBPhys;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoInitRBPhys;
     /// <summary>
     /// Function: DoInitRBPhys
     /// </summary>
     public unsafe virtual void DoInitRBPhys()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoInitRBPhys, "Engine.ApexFieldSamplerComponent.DoInitRBPhys");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoInitRBPhys, "Engine.ApexFieldSamplerComponent.DoInitRBPhys", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

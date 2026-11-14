@@ -78,14 +78,14 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
         where TComponent : class, Framework.IScriptComponent<RAEC_BankFearStartle>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FinishTopLevelAEC;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishTopLevelAEC;
     /// <summary>
     /// Function: FinishTopLevelAEC
     /// </summary>
     public unsafe override void FinishTopLevelAEC(BmSDK.BmGame.RBMAIController StolenCon)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_BankFearStartle.FinishTopLevelAEC");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishTopLevelAEC, "BmGame.RAEC_BankFearStartle.FinishTopLevelAEC", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StolenCon, paramsPtr + 0);
@@ -93,14 +93,14 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_FearTakedownStartle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FearTakedownStartle;
     /// <summary>
     /// Function: FearTakedownStartle
     /// </summary>
     public unsafe virtual void FearTakedownStartle(BmSDK.BmGame.RPawnVillain Screamer, BmSDK.Engine.Actor ForceMissActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FearTakedownStartle, "BmGame.RAEC_BankFearStartle.FearTakedownStartle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FearTakedownStartle, "BmGame.RAEC_BankFearStartle.FearTakedownStartle", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Screamer, paramsPtr + 0);
@@ -109,14 +109,14 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_AddGunStartled;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AddGunStartled;
     /// <summary>
     /// Function: AddGunStartled
     /// </summary>
     public unsafe virtual void AddGunStartled(BmSDK.BmGame.RBMAIController NewCon, System.Numerics.Vector3 StartleLoc, BmSDK.Engine.Actor ForceMissActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AddGunStartled, "BmGame.RAEC_BankFearStartle.AddGunStartled");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddGunStartled, "BmGame.RAEC_BankFearStartle.AddGunStartled", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCon, paramsPtr + 0);
@@ -126,14 +126,14 @@ public partial class RAEC_BankFearStartle : BmSDK.BmGame.RAlertEventCoordinatorB
         return;
     }
 
-    private static BmSDK.Function __fn_WantsToGlanceAt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WantsToGlanceAt;
     /// <summary>
     /// Function: WantsToGlanceAt
     /// </summary>
     public unsafe override bool WantsToGlanceAt(BmSDK.Engine.Actor TestTarget)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WantsToGlanceAt, "BmGame.RAEC_BankFearStartle.WantsToGlanceAt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WantsToGlanceAt, "BmGame.RAEC_BankFearStartle.WantsToGlanceAt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestTarget, paramsPtr + 0);

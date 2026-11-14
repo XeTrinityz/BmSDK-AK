@@ -501,13 +501,26 @@ void Printer::PrintProperty(const PropertyInfo& prop, ostream& out)
 }
     }
 
+// A string passed to a function by value.
+static bool IsStringArg(const PropertyInfo& param)
+{
+    return !param.IsOutParam && param.TypeName == "BmSDK.FString";
+}
+
 void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostream& out, const ClassInfo* instanceOf)
     {
+    // An instance call runs the function the object's own class declares under this name, the way
+    // UnrealScript dispatches, so a subclass without a managed binding still runs its override. Static
+    // and private functions can't be overridden, and keep the exact lookup.
+    auto dispatches = !func.IsStatic && !func.IsPrivate && !instanceOf;
+
     // Print the field caching this function's UFunction lookup
     if (!isInInterface)
     {
-        Printer::Indent(out) << "private static BmSDK.Function __fn_" << func.ManagedName << ";"
-            << endl;
+        Printer::Indent(out) << (dispatches
+            ? "private static BmSDK.Framework.FunctionCache.CallSite __fn_"
+            : "private static BmSDK.Function __fn_")
+            << func.ManagedName << ";" << endl;
     }
 
     // Print func comment
@@ -561,8 +574,9 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
             out << "out ";
         }
 
-        // Print param declaration
-        out << prop.TypeName << " " << prop.ManagedName;
+        // Print param declaration. A string passed by value is an FStringArg: the call builds the
+        // game's copy and frees it afterwards (see FStringArg).
+        out << (IsStringArg(prop) ? "BmSDK.FStringArg" : prop.TypeName) << " " << prop.ManagedName;
         if (prop.IsOptionalParam && !func.ShouldSuppressOptional)
         {
             out << " = default";
@@ -600,9 +614,18 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
             Printer::Indent(out) << "BmSDK.Framework.Guard.NotDestroyed(this);" << endl;
         }
 
-        Printer::Indent(out) << "var funcManaged = "
-            "BmSDK.Framework.FunctionCache.Get(ref __fn_" << func.ManagedName << ", \""
-            << func.PathName << "\");" << endl;
+        if (dispatches)
+        {
+            Printer::Indent(out) << "var funcManaged = "
+                "BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_" << func.ManagedName << ", \""
+                << func.PathName << "\", this);" << endl;
+        }
+        else
+        {
+            Printer::Indent(out) << "var funcManaged = "
+                "BmSDK.Framework.FunctionCache.Get(ref __fn_" << func.ManagedName << ", \""
+                << func.PathName << "\");" << endl;
+        }
 
         // The engine 16-aligns its own parameter frames, and natives rely on it (an FQuat or
         // FMatrix return is stored with movdqa). A constant-size stackalloc is only 8-aligned,
@@ -631,6 +654,13 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
             }
 
             // Print
+            if (IsStringArg(param))
+            {
+                Printer::Indent(out) << param.ManagedName << ".WriteTo(paramsPtr + " << param.Offset
+                    << ");" << endl;
+                continue;
+            }
+
             Printer::Indent(out) << "BmSDK.Framework.MarshalUtil.ToUnmanaged("
                 << param.ManagedName << ", paramsPtr + " << param.Offset
                 << ");" << endl;
@@ -676,6 +706,17 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
         {
             Printer::Indent(out)
                 << "BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);" << endl;
+        }
+
+        // The slot of a string passed by value holds the buffer to free, which is the one the function
+        // left there if it assigned to the parameter.
+        for (auto& param : func.Params)
+        {
+            if (IsStringArg(param))
+            {
+                Printer::Indent(out) << "BmSDK.FStringArg.FreeSlot(paramsPtr + " << param.Offset
+                    << ");" << endl;
+            }
         }
 
         // Marshal/assign out params

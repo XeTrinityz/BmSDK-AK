@@ -73,28 +73,28 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<ROverworldPopulationVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_ResetBombThug;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetBombThug;
     /// <summary>
     /// Function: ResetBombThug
     /// </summary>
     public unsafe virtual void ResetBombThug()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ResetBombThug, "BmGame.ROverworldPopulationVolume.ResetBombThug");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetBombThug, "BmGame.ROverworldPopulationVolume.ResetBombThug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SetBombThugController;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetBombThugController;
     /// <summary>
     /// Function: SetBombThugController
     /// </summary>
     public unsafe virtual void SetBombThugController(BmSDK.BmGame.RSeqAct_ActivateBombThugRiots ControllerAction)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetBombThugController, "BmGame.ROverworldPopulationVolume.SetBombThugController");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetBombThugController, "BmGame.ROverworldPopulationVolume.SetBombThugController", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ControllerAction, paramsPtr + 0);
@@ -102,42 +102,42 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_CanDoFlare;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanDoFlare;
     /// <summary>
     /// Function: CanDoFlare
     /// </summary>
     public unsafe virtual bool CanDoFlare()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanDoFlare, "BmGame.ROverworldPopulationVolume.CanDoFlare");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoFlare, "BmGame.ROverworldPopulationVolume.CanDoFlare", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_DoFlare;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DoFlare;
     /// <summary>
     /// Function: DoFlare
     /// </summary>
     public unsafe virtual void DoFlare()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DoFlare, "BmGame.ROverworldPopulationVolume.DoFlare");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DoFlare, "BmGame.ROverworldPopulationVolume.DoFlare", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnDebugRunAwayThugAtLocation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnDebugRunAwayThugAtLocation;
     /// <summary>
     /// Function: SpawnDebugRunAwayThugAtLocation
     /// </summary>
     public unsafe virtual void SpawnDebugRunAwayThugAtLocation(System.Numerics.Vector3 SpawnPos)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnDebugRunAwayThugAtLocation, "BmGame.ROverworldPopulationVolume.SpawnDebugRunAwayThugAtLocation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnDebugRunAwayThugAtLocation, "BmGame.ROverworldPopulationVolume.SpawnDebugRunAwayThugAtLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnPos, paramsPtr + 0);
@@ -145,14 +145,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnJokers;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnJokers;
     /// <summary>
     /// Function: SpawnJokers
     /// </summary>
     public unsafe virtual bool SpawnJokers(int NumToSpawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnJokers, "BmGame.ROverworldPopulationVolume.SpawnJokers");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnJokers, "BmGame.ROverworldPopulationVolume.SpawnJokers", this);
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NumToSpawn, paramsPtr + 0);
@@ -160,14 +160,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_HasVisiblePawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HasVisiblePawn;
     /// <summary>
     /// Function: HasVisiblePawn
     /// </summary>
     public unsafe virtual bool HasVisiblePawn()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_HasVisiblePawn, "BmGame.ROverworldPopulationVolume.HasVisiblePawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasVisiblePawn, "BmGame.ROverworldPopulationVolume.HasVisiblePawn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -181,14 +181,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_IsPopulationActive;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsPopulationActive;
     /// <summary>
     /// Function: IsPopulationActive
     /// </summary>
     public unsafe virtual bool IsPopulationActive()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsPopulationActive, "BmGame.ROverworldPopulationVolume.IsPopulationActive");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsPopulationActive, "BmGame.ROverworldPopulationVolume.IsPopulationActive", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -202,14 +202,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_RioterWantsToFight;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RioterWantsToFight;
     /// <summary>
     /// Function: RioterWantsToFight
     /// </summary>
     public unsafe virtual bool RioterWantsToFight(BmSDK.BmGame.RPawnVillain Thug, BmSDK.Engine.Actor Threat)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RioterWantsToFight, "BmGame.ROverworldPopulationVolume.RioterWantsToFight");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RioterWantsToFight, "BmGame.ROverworldPopulationVolume.RioterWantsToFight", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Thug, paramsPtr + 0);
@@ -225,14 +225,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_DeactivatePopulation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivatePopulation;
     /// <summary>
     /// Function: DeactivatePopulation
     /// </summary>
     public unsafe virtual void DeactivatePopulation(bool bDueToStreamingOut = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivatePopulation, "BmGame.ROverworldPopulationVolume.DeactivatePopulation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivatePopulation, "BmGame.ROverworldPopulationVolume.DeactivatePopulation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDueToStreamingOut, paramsPtr + 0);
@@ -240,14 +240,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_ActivatePopulation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivatePopulation;
     /// <summary>
     /// Function: ActivatePopulation
     /// </summary>
     public unsafe virtual void ActivatePopulation(int MaxPawnsAllowed)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivatePopulation, "BmGame.ROverworldPopulationVolume.ActivatePopulation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivatePopulation, "BmGame.ROverworldPopulationVolume.ActivatePopulation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MaxPawnsAllowed, paramsPtr + 0);
@@ -255,42 +255,42 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_KismetRevertToDynamic;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KismetRevertToDynamic;
     /// <summary>
     /// Function: KismetRevertToDynamic
     /// </summary>
     public unsafe virtual void KismetRevertToDynamic()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KismetRevertToDynamic, "BmGame.ROverworldPopulationVolume.KismetRevertToDynamic");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KismetRevertToDynamic, "BmGame.ROverworldPopulationVolume.KismetRevertToDynamic", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KismetForceOff;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KismetForceOff;
     /// <summary>
     /// Function: KismetForceOff
     /// </summary>
     public unsafe virtual void KismetForceOff()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KismetForceOff, "BmGame.ROverworldPopulationVolume.KismetForceOff");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KismetForceOff, "BmGame.ROverworldPopulationVolume.KismetForceOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_KismetForceOn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_KismetForceOn;
     /// <summary>
     /// Function: KismetForceOn
     /// </summary>
     public unsafe virtual void KismetForceOn(bool bEvenIfAlreadyActive)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_KismetForceOn, "BmGame.ROverworldPopulationVolume.KismetForceOn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_KismetForceOn, "BmGame.ROverworldPopulationVolume.KismetForceOn", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEvenIfAlreadyActive, paramsPtr + 0);
@@ -298,42 +298,42 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_CanRunAwayIfExhausted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanRunAwayIfExhausted;
     /// <summary>
     /// Function: CanRunAwayIfExhausted
     /// </summary>
     public unsafe virtual bool CanRunAwayIfExhausted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanRunAwayIfExhausted, "BmGame.ROverworldPopulationVolume.CanRunAwayIfExhausted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanRunAwayIfExhausted, "BmGame.ROverworldPopulationVolume.CanRunAwayIfExhausted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetExhausted;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetExhausted;
     /// <summary>
     /// Function: SetExhausted
     /// </summary>
     public unsafe virtual void SetExhausted()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetExhausted, "BmGame.ROverworldPopulationVolume.SetExhausted");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetExhausted, "BmGame.ROverworldPopulationVolume.SetExhausted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_FireLackOfPawnsWarning;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FireLackOfPawnsWarning;
     /// <summary>
     /// Function: FireLackOfPawnsWarning
     /// </summary>
     public unsafe virtual bool FireLackOfPawnsWarning()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FireLackOfPawnsWarning, "BmGame.ROverworldPopulationVolume.FireLackOfPawnsWarning");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireLackOfPawnsWarning, "BmGame.ROverworldPopulationVolume.FireLackOfPawnsWarning", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -347,14 +347,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanBeAutoDeactivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeAutoDeactivated;
     /// <summary>
     /// Function: CanBeAutoDeactivated
     /// </summary>
     public unsafe virtual bool CanBeAutoDeactivated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeAutoDeactivated, "BmGame.ROverworldPopulationVolume.CanBeAutoDeactivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeAutoDeactivated, "BmGame.ROverworldPopulationVolume.CanBeAutoDeactivated", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -368,14 +368,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanBeAutoActivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanBeAutoActivated;
     /// <summary>
     /// Function: CanBeAutoActivated
     /// </summary>
     public unsafe virtual bool CanBeAutoActivated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanBeAutoActivated, "BmGame.ROverworldPopulationVolume.CanBeAutoActivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeAutoActivated, "BmGame.ROverworldPopulationVolume.CanBeAutoActivated", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -389,14 +389,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_OnToggle;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_OnToggle;
     /// <summary>
     /// Function: OnToggle
     /// </summary>
     public unsafe override void OnToggle(BmSDK.Engine.SeqAct_Toggle Action)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_OnToggle, "BmGame.ROverworldPopulationVolume.OnToggle");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnToggle, "BmGame.ROverworldPopulationVolume.OnToggle", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
@@ -404,42 +404,42 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_PreStreamOut;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
     /// <summary>
     /// Function: PreStreamOut
     /// </summary>
     public unsafe override void PreStreamOut()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PreStreamOut, "BmGame.ROverworldPopulationVolume.PreStreamOut");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.ROverworldPopulationVolume.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Destroyed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
     /// <summary>
     /// Function: Destroyed
     /// </summary>
     public unsafe override void Destroyed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Destroyed, "BmGame.ROverworldPopulationVolume.Destroyed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.ROverworldPopulationVolume.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ForceRioterToFlee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceRioterToFlee;
     /// <summary>
     /// Function: ForceRioterToFlee
     /// </summary>
     public unsafe virtual void ForceRioterToFlee(BmSDK.BmGame.RBMPawnAI CurrPawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceRioterToFlee, "BmGame.ROverworldPopulationVolume.ForceRioterToFlee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceRioterToFlee, "BmGame.ROverworldPopulationVolume.ForceRioterToFlee", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrPawn, paramsPtr + 0);
@@ -447,28 +447,28 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_ForceAllToFlee;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceAllToFlee;
     /// <summary>
     /// Function: ForceAllToFlee
     /// </summary>
     public unsafe virtual void ForceAllToFlee()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceAllToFlee, "BmGame.ROverworldPopulationVolume.ForceAllToFlee");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceAllToFlee, "BmGame.ROverworldPopulationVolume.ForceAllToFlee", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ThugInRiotDamagedByBatman;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThugInRiotDamagedByBatman;
     /// <summary>
     /// Function: ThugInRiotDamagedByBatman
     /// </summary>
     public unsafe virtual void ThugInRiotDamagedByBatman(BmSDK.Engine.Actor Attacker)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ThugInRiotDamagedByBatman, "BmGame.ROverworldPopulationVolume.ThugInRiotDamagedByBatman");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugInRiotDamagedByBatman, "BmGame.ROverworldPopulationVolume.ThugInRiotDamagedByBatman", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attacker, paramsPtr + 0);
@@ -476,42 +476,42 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateActivationBasedOnObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateActivationBasedOnObjective;
     /// <summary>
     /// Function: UpdateActivationBasedOnObjective
     /// </summary>
     public unsafe virtual void UpdateActivationBasedOnObjective()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateActivationBasedOnObjective, "BmGame.ROverworldPopulationVolume.UpdateActivationBasedOnObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateActivationBasedOnObjective, "BmGame.ROverworldPopulationVolume.UpdateActivationBasedOnObjective", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WarnAboutNoPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WarnAboutNoPoints;
     /// <summary>
     /// Function: WarnAboutNoPoints
     /// </summary>
     public unsafe virtual void WarnAboutNoPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WarnAboutNoPoints, "BmGame.ROverworldPopulationVolume.WarnAboutNoPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WarnAboutNoPoints, "BmGame.ROverworldPopulationVolume.WarnAboutNoPoints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ShouldBeForcedOnByObjective;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldBeForcedOnByObjective;
     /// <summary>
     /// Function: ShouldBeForcedOnByObjective
     /// </summary>
     public unsafe virtual bool ShouldBeForcedOnByObjective()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldBeForcedOnByObjective, "BmGame.ROverworldPopulationVolume.ShouldBeForcedOnByObjective");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldBeForcedOnByObjective, "BmGame.ROverworldPopulationVolume.ShouldBeForcedOnByObjective", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -525,42 +525,42 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.ROverworldPopulationVolume.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.ROverworldPopulationVolume.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_WarnRiotZoneAboutBreakLevel;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_WarnRiotZoneAboutBreakLevel;
     /// <summary>
     /// Function: WarnRiotZoneAboutBreakLevel
     /// </summary>
     public unsafe virtual void WarnRiotZoneAboutBreakLevel()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_WarnRiotZoneAboutBreakLevel, "BmGame.ROverworldPopulationVolume.WarnRiotZoneAboutBreakLevel");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WarnRiotZoneAboutBreakLevel, "BmGame.ROverworldPopulationVolume.WarnRiotZoneAboutBreakLevel", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_RioterFleeing;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_RioterFleeing;
     /// <summary>
     /// Function: RioterFleeing
     /// </summary>
     public unsafe virtual void RioterFleeing(BmSDK.BmGame.RBMPawnAI FleePawn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_RioterFleeing, "BmGame.ROverworldPopulationVolume.RioterFleeing");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RioterFleeing, "BmGame.ROverworldPopulationVolume.RioterFleeing", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FleePawn, paramsPtr + 0);
@@ -568,14 +568,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnBehaviour;
     /// <summary>
     /// Function: SpawnBehaviour
     /// </summary>
     public unsafe virtual void SpawnBehaviour(BmSDK.BmGame.RBMAIController AICont, BmSDK.Class behav)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnBehaviour, "BmGame.ROverworldPopulationVolume.SpawnBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnBehaviour, "BmGame.ROverworldPopulationVolume.SpawnBehaviour", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AICont, paramsPtr + 0);
@@ -584,14 +584,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_SpawnLonePawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnLonePawn;
     /// <summary>
     /// Function: SpawnLonePawn
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnLonePawn(BmSDK.BmGame.RGangInteractPointBase SuggestedSpawnPoint, bool bWeaponThug)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnLonePawn, "BmGame.ROverworldPopulationVolume.SpawnLonePawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnLonePawn, "BmGame.ROverworldPopulationVolume.SpawnLonePawn", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SuggestedSpawnPoint, paramsPtr + 0);
@@ -607,14 +607,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawn>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_GetRiotZoneThreatActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetRiotZoneThreatActor;
     /// <summary>
     /// Function: GetRiotZoneThreatActor
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor GetRiotZoneThreatActor()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetRiotZoneThreatActor, "BmGame.ROverworldPopulationVolume.GetRiotZoneThreatActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetRiotZoneThreatActor, "BmGame.ROverworldPopulationVolume.GetRiotZoneThreatActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -628,14 +628,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_ForceRiotZoneThreatActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ForceRiotZoneThreatActor;
     /// <summary>
     /// Function: ForceRiotZoneThreatActor
     /// </summary>
     public unsafe virtual void ForceRiotZoneThreatActor(BmSDK.Engine.Actor NewThreatActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ForceRiotZoneThreatActor, "BmGame.ROverworldPopulationVolume.ForceRiotZoneThreatActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceRiotZoneThreatActor, "BmGame.ROverworldPopulationVolume.ForceRiotZoneThreatActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewThreatActor, paramsPtr + 0);
@@ -650,14 +650,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_UpdateRiotZoneThreatActor;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateRiotZoneThreatActor;
     /// <summary>
     /// Function: UpdateRiotZoneThreatActor
     /// </summary>
     public unsafe virtual void UpdateRiotZoneThreatActor(BmSDK.Engine.Actor ForcedThreatActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateRiotZoneThreatActor, "BmGame.ROverworldPopulationVolume.UpdateRiotZoneThreatActor");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateRiotZoneThreatActor, "BmGame.ROverworldPopulationVolume.UpdateRiotZoneThreatActor", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForcedThreatActor, paramsPtr + 0);
@@ -672,14 +672,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_PassivePointsNeedPartners;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PassivePointsNeedPartners;
     /// <summary>
     /// Function: PassivePointsNeedPartners
     /// </summary>
     public unsafe virtual bool PassivePointsNeedPartners(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PassivePointsNeedPartners, "BmGame.ROverworldPopulationVolume.PassivePointsNeedPartners");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PassivePointsNeedPartners, "BmGame.ROverworldPopulationVolume.PassivePointsNeedPartners", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -694,14 +694,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdatePawns;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdatePawns;
     /// <summary>
     /// Function: UpdatePawns
     /// </summary>
     public unsafe virtual bool UpdatePawns(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdatePawns, "BmGame.ROverworldPopulationVolume.UpdatePawns");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePawns, "BmGame.ROverworldPopulationVolume.UpdatePawns", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -716,14 +716,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ShouldSpawnAnotherPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldSpawnAnotherPawn;
     /// <summary>
     /// Function: ShouldSpawnAnotherPawn
     /// </summary>
     public unsafe virtual bool ShouldSpawnAnotherPawn(out int bPassivePointsNeedPartners)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ShouldSpawnAnotherPawn, "BmGame.ROverworldPopulationVolume.ShouldSpawnAnotherPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldSpawnAnotherPawn, "BmGame.ROverworldPopulationVolume.ShouldSpawnAnotherPawn", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out bPassivePointsNeedPartners);
@@ -740,14 +740,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_UpdateVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpdateVolume;
     /// <summary>
     /// Function: UpdateVolume
     /// </summary>
     public unsafe virtual bool UpdateVolume(float DeltaTime)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UpdateVolume, "BmGame.ROverworldPopulationVolume.UpdateVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateVolume, "BmGame.ROverworldPopulationVolume.UpdateVolume", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
@@ -762,28 +762,28 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_GetFleePressPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetFleePressPoints;
     /// <summary>
     /// Function: GetFleePressPoints
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.BmGame.RGangFleePressPointBase> GetFleePressPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetFleePressPoints, "BmGame.ROverworldPopulationVolume.GetFleePressPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFleePressPoints, "BmGame.ROverworldPopulationVolume.GetFleePressPoints", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RGangFleePressPointBase>>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_GenerateFleePressPoints;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GenerateFleePressPoints;
     /// <summary>
     /// Function: GenerateFleePressPoints
     /// </summary>
     public unsafe virtual void GenerateFleePressPoints()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GenerateFleePressPoints, "BmGame.ROverworldPopulationVolume.GenerateFleePressPoints");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GenerateFleePressPoints, "BmGame.ROverworldPopulationVolume.GenerateFleePressPoints", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -797,14 +797,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_FindObjectEndPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindObjectEndPoint;
     /// <summary>
     /// Function: FindObjectEndPoint
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RGangInteractPointBase FindObjectEndPoint(BmSDK.BmGame.RGangInteractPointBase.ObjectPickupTypes ObjectPickupType)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindObjectEndPoint, "BmGame.ROverworldPopulationVolume.FindObjectEndPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindObjectEndPoint, "BmGame.ROverworldPopulationVolume.FindObjectEndPoint", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ObjectPickupType, paramsPtr + 0);
@@ -819,14 +819,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGangInteractPointBase>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_TestSpawnPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TestSpawnPoint;
     /// <summary>
     /// Function: TestSpawnPoint
     /// </summary>
     public unsafe virtual bool TestSpawnPoint(BmSDK.BmGame.RGangInteractPointBase _TestSpawnPoint, out System.Numerics.Vector3 SpawnLoc, System.Numerics.Vector3 CameraLocation, System.Numerics.Vector3 CameraDirection, out int WasExpensiveTest, bool bIgnoreProximityTest, BmSDK.FName WeaponName, bool bSkipInUseCheck = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TestSpawnPoint, "BmGame.ROverworldPopulationVolume.TestSpawnPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TestSpawnPoint, "BmGame.ROverworldPopulationVolume.TestSpawnPoint", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_TestSpawnPoint, paramsPtr + 0);
@@ -852,14 +852,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 64);
     }
 
-    private static BmSDK.Function __fn_FindSingleSpawnPoint;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindSingleSpawnPoint;
     /// <summary>
     /// Function: FindSingleSpawnPoint
     /// </summary>
     public unsafe virtual BmSDK.Engine.Actor FindSingleSpawnPoint(out System.Numerics.Vector3 SpawnLoc, bool bPassiveOnly, BmSDK.FName WeaponName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindSingleSpawnPoint, "BmGame.ROverworldPopulationVolume.FindSingleSpawnPoint");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindSingleSpawnPoint, "BmGame.ROverworldPopulationVolume.FindSingleSpawnPoint", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out SpawnLoc);
@@ -878,14 +878,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_SpawnLinkBehaviour;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnLinkBehaviour;
     /// <summary>
     /// Function: SpawnLinkBehaviour
     /// </summary>
     public unsafe virtual void SpawnLinkBehaviour(BmSDK.BmGame.RPawn TestPawn, BmSDK.BmGame.RGangInteractPointBase DestinationActor)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnLinkBehaviour, "BmGame.ROverworldPopulationVolume.SpawnLinkBehaviour");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnLinkBehaviour, "BmGame.ROverworldPopulationVolume.SpawnLinkBehaviour", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -894,14 +894,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_FindNewPointOfInterest;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindNewPointOfInterest;
     /// <summary>
     /// Function: FindNewPointOfInterest
     /// </summary>
     public unsafe virtual bool FindNewPointOfInterest(BmSDK.BmGame.RBMPawnAI TestPawn, bool bSkipSpeedTest, bool bSkipAngleCheck, BmSDK.BmGame.RGangInteractPointBase SuggestPoint)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindNewPointOfInterest, "BmGame.ROverworldPopulationVolume.FindNewPointOfInterest");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindNewPointOfInterest, "BmGame.ROverworldPopulationVolume.FindNewPointOfInterest", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
@@ -919,14 +919,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
-    private static BmSDK.Function __fn_SpawnPawn;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnPawn;
     /// <summary>
     /// Function: SpawnPawn
     /// </summary>
     public unsafe virtual BmSDK.BmGame.RPawn SpawnPawn(BmSDK.Class NewPawnClass, BmSDK.BmGame.RCharacterDefine CharacterDefine, BmSDK.Class CharacterType, BmSDK.Class NewWeaponClass, BmSDK.Engine.Actor SpawnActor, System.Numerics.Vector3 NewSpawnPoint, BmSDK.Rotator NewSpawnRotation = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SpawnPawn, "BmGame.ROverworldPopulationVolume.SpawnPawn");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnPawn, "BmGame.ROverworldPopulationVolume.SpawnPawn", this);
         byte* paramsPtr = stackalloc byte[88];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPawnClass, paramsPtr + 0);
@@ -947,14 +947,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawn>(paramsPtr + 64);
     }
 
-    private static BmSDK.Function __fn_StopWalla;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StopWalla;
     /// <summary>
     /// Function: StopWalla
     /// </summary>
     public unsafe virtual void StopWalla()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StopWalla, "BmGame.ROverworldPopulationVolume.StopWalla");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopWalla, "BmGame.ROverworldPopulationVolume.StopWalla", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -968,14 +968,14 @@ public partial class ROverworldPopulationVolume : BmSDK.Engine.Volume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_StartWalla;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartWalla;
     /// <summary>
     /// Function: StartWalla
     /// </summary>
     public unsafe virtual void StartWalla()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartWalla, "BmGame.ROverworldPopulationVolume.StartWalla");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartWalla, "BmGame.ROverworldPopulationVolume.StartWalla", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

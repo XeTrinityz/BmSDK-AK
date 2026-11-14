@@ -78,14 +78,14 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<ProcBuilding>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_FindEdgeForTopLevelScope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindEdgeForTopLevelScope;
     /// <summary>
     /// Function: FindEdgeForTopLevelScope
     /// </summary>
     public unsafe virtual int FindEdgeForTopLevelScope(int TopLevelScopeIndex, BmSDK.Engine.ProcBuilding.EScopeEdge Edge)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindEdgeForTopLevelScope, "Engine.ProcBuilding.FindEdgeForTopLevelScope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindEdgeForTopLevelScope, "Engine.ProcBuilding.FindEdgeForTopLevelScope", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TopLevelScopeIndex, paramsPtr + 0);
@@ -101,14 +101,14 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
     }
 
-    private static BmSDK.Function __fn_BreakFractureComponent;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_BreakFractureComponent;
     /// <summary>
     /// Function: BreakFractureComponent
     /// </summary>
     public unsafe virtual void BreakFractureComponent(BmSDK.Engine.FracturedStaticMeshComponent Comp, System.Numerics.Vector3 BoxMin, System.Numerics.Vector3 BoxMax)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_BreakFractureComponent, "Engine.ProcBuilding.BreakFractureComponent");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakFractureComponent, "Engine.ProcBuilding.BreakFractureComponent", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Comp, paramsPtr + 0);
@@ -125,14 +125,14 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetAllGroupedProcBuildings;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetAllGroupedProcBuildings;
     /// <summary>
     /// Function: GetAllGroupedProcBuildings
     /// </summary>
     public unsafe virtual void GetAllGroupedProcBuildings(out BmSDK.TArray<BmSDK.Engine.ProcBuilding> OutSet)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetAllGroupedProcBuildings, "Engine.ProcBuilding.GetAllGroupedProcBuildings");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAllGroupedProcBuildings, "Engine.ProcBuilding.GetAllGroupedProcBuildings", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -147,14 +147,14 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         return;
     }
 
-    private static BmSDK.Function __fn_GetBaseMostBuilding;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBaseMostBuilding;
     /// <summary>
     /// Function: GetBaseMostBuilding
     /// </summary>
     public unsafe virtual BmSDK.Engine.ProcBuilding GetBaseMostBuilding()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetBaseMostBuilding, "Engine.ProcBuilding.GetBaseMostBuilding");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBaseMostBuilding, "Engine.ProcBuilding.GetBaseMostBuilding", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -168,14 +168,14 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.ProcBuilding>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_FindComponentsForTopLevelScope;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FindComponentsForTopLevelScope;
     /// <summary>
     /// Function: FindComponentsForTopLevelScope
     /// </summary>
     public unsafe virtual BmSDK.TArray<BmSDK.Engine.StaticMeshComponent> FindComponentsForTopLevelScope(int TopLevelScopeIndex)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_FindComponentsForTopLevelScope, "Engine.ProcBuilding.FindComponentsForTopLevelScope");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FindComponentsForTopLevelScope, "Engine.ProcBuilding.FindComponentsForTopLevelScope", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TopLevelScopeIndex, paramsPtr + 0);
@@ -190,14 +190,14 @@ public partial class ProcBuilding : BmSDK.Engine.Volume, BmSDK.IGameObject
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.StaticMeshComponent>>(paramsPtr + 4);
     }
 
-    private static BmSDK.Function __fn_ClearBuildingMeshes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearBuildingMeshes;
     /// <summary>
     /// Function: ClearBuildingMeshes
     /// </summary>
     public unsafe virtual void ClearBuildingMeshes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ClearBuildingMeshes, "Engine.ProcBuilding.ClearBuildingMeshes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearBuildingMeshes, "Engine.ProcBuilding.ClearBuildingMeshes", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

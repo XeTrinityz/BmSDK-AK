@@ -78,28 +78,28 @@ public partial class RSeqVar_NamedPawn : BmSDK.Engine.SeqVar_Object, BmSDK.IGame
         where TComponent : class, Framework.IScriptComponent<RSeqVar_NamedPawn>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetObjectValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObjectValue;
     /// <summary>
     /// Function: GetObjectValue
     /// </summary>
     public unsafe override BmSDK.GameObject GetObjectValue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjectValue, "BmGame.RSeqVar_NamedPawn.GetObjectValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObjectValue, "BmGame.RSeqVar_NamedPawn.GetObjectValue", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_SetObjValue;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetObjValue;
     /// <summary>
     /// Function: SetObjValue
     /// </summary>
     public unsafe virtual void SetObjValue()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetObjValue, "BmGame.RSeqVar_NamedPawn.SetObjValue");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetObjValue, "BmGame.RSeqVar_NamedPawn.SetObjValue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

@@ -78,14 +78,14 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
         where TComponent : class, Framework.IScriptComponent<SpotLightComponent>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_SetAngleAndRadius;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAngleAndRadius;
     /// <summary>
     /// Function: SetAngleAndRadius
     /// </summary>
     public unsafe virtual void SetAngleAndRadius(float NewInnerConeAngle, float NewOuterConeAngle, float NewRadius)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAngleAndRadius, "Engine.SpotLightComponent.SetAngleAndRadius");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAngleAndRadius, "Engine.SpotLightComponent.SetAngleAndRadius", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewInnerConeAngle, paramsPtr + 0);
@@ -102,14 +102,14 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetAbsoluteRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetAbsoluteRotation;
     /// <summary>
     /// Function: SetAbsoluteRotation
     /// </summary>
     public unsafe virtual void SetAbsoluteRotation(bool bNewAbsoluteRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetAbsoluteRotation, "Engine.SpotLightComponent.SetAbsoluteRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetAbsoluteRotation, "Engine.SpotLightComponent.SetAbsoluteRotation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewAbsoluteRotation, paramsPtr + 0);
@@ -124,14 +124,14 @@ public partial class SpotLightComponent : BmSDK.Engine.PointLightComponent, BmSD
         return;
     }
 
-    private static BmSDK.Function __fn_SetRotation;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetRotation;
     /// <summary>
     /// Function: SetRotation
     /// </summary>
     public unsafe virtual void SetRotation(BmSDK.Rotator NewRotation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SetRotation, "Engine.SpotLightComponent.SetRotation");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetRotation, "Engine.SpotLightComponent.SetRotation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRotation, paramsPtr + 0);

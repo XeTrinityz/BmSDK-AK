@@ -1,11 +1,15 @@
+using Windows.Win32;
+
 namespace BmSDK.Framework;
 
 internal static class InputManager
 {
     private static readonly bool[] s_keyStates = new bool[256];
-    private static readonly bool[] s_keyStatesPrev = new bool[256];
 
-    /// <summary>Keys the engine must not see (see <see cref="Keyboard"/>).</summary>
+    /// <summary>Keys the engine must not see (see <see cref="Keyboard"/>), held per mod.</summary>
+    private static readonly HoldSet<Keys> s_holds = new();
+
+    /// <summary>Whether any mod holds the key: a plain array, because the window message path reads it.</summary>
     private static readonly bool[] s_swallowed = new bool[256];
 
     /// <summary>Keys whose last press was dropped, so their release is dropped too.</summary>
@@ -18,46 +22,115 @@ internal static class InputManager
     /// </summary>
     private static bool s_lastPressSwallowed;
 
+    // Every press and release since the last engine tick, in order (key, with EdgeDown set for a press).
+    // A tap that starts and ends inside one frame is two entries here, though the key state never
+    // showed it down at a tick.
+    private const int EdgeDown = 0x100;
+    private static List<int> s_edges = [];
+    private static List<int> s_dispatching = [];
+    private static readonly bool[] s_pressedThisTick = new bool[256];
+    private static readonly bool[] s_releasedThisTick = new bool[256];
+
+    private static bool s_hasFocus = true;
+    private static bool s_focusKnown;
+
     public static bool IsDown(Keys key) => IsValidKey(key) && s_keyStates[(byte)key];
+
+    /// <summary>Whether the key went down since the previous engine tick, even if it is up again.</summary>
+    public static bool WasPressed(Keys key) => IsValidKey(key) && s_pressedThisTick[(byte)key];
+
+    /// <summary>Whether the key came up since the previous engine tick.</summary>
+    public static bool WasReleased(Keys key) => IsValidKey(key) && s_releasedThisTick[(byte)key];
 
     public static bool IsSwallowed(Keys key) => IsValidKey(key) && s_swallowed[(byte)key];
 
-    public static void SetSwallowed(Keys key, bool swallow)
+    /// <summary>Whether the game's window is the one in front. Checked once per engine tick.</summary>
+    public static bool HasFocus
     {
-        if (IsValidKey(key))
+        get
+        {
+            if (!s_focusKnown)
+            {
+                RefreshFocus();
+            }
+
+            return s_hasFocus;
+        }
+    }
+
+    private static unsafe void RefreshFocus()
+    {
+        s_focusKnown = true;
+        var window = PInvoke.GetForegroundWindow();
+        uint processId = 0;
+        _ = PInvoke.GetWindowThreadProcessId(window, &processId);
+        s_hasFocus = processId == Environment.ProcessId;
+    }
+
+    public static void SetSwallowed(Keys key, bool swallow, object owner)
+    {
+        if (!IsValidKey(key))
+        {
+            return;
+        }
+
+        if (swallow ? s_holds.Hold(owner, key) : s_holds.Release(owner, key))
         {
             s_swallowed[(byte)key] = swallow;
         }
     }
 
-    public static void UnswallowAll()
+    /// <summary>Lets go of everything one mod keeps from the game, keys and named inputs.</summary>
+    public static void ReleaseOwner(object owner)
     {
-        Array.Clear(s_swallowed);
-        InputRouting.UnswallowAll();
+        foreach (var key in s_holds.ReleaseOwner(owner))
+        {
+            s_swallowed[(byte)key] = false;
+        }
+
+        InputRouting.ReleaseOwner(owner);
     }
 
     /// <summary>
-    /// Delivers new presses to scripts. Runs from the engine tick, so presses arrive while the game is
-    /// paused or in a cutscene too; <paramref name="dispatch"/> is false until scripts have started.
+    /// Delivers the presses and releases since the last tick to scripts, in the order they happened.
+    /// Runs from the engine tick, so they arrive while the game is paused or in a cutscene too;
+    /// <paramref name="dispatch"/> is false until scripts have started.
     /// </summary>
     public static void Tick(bool dispatch)
     {
-        // Check for any new key presses.
-        for (var i = 0; i < 255; i++)
+        RefreshFocus();
+
+        (s_edges, s_dispatching) = (s_dispatching, s_edges);
+        s_edges.Clear();
+
+        Array.Clear(s_pressedThisTick);
+        Array.Clear(s_releasedThisTick);
+        foreach (var edge in s_dispatching)
         {
-            if (s_keyStates[i] && !s_keyStatesPrev[i] && dispatch)
+            ((edge & EdgeDown) != 0 ? s_pressedThisTick : s_releasedThisTick)[edge & 0xFF] = true;
+        }
+
+        if (!dispatch)
+        {
+            return;
+        }
+
+        foreach (var edge in s_dispatching)
+        {
+            var key = (Keys)(edge & 0xFF);
+            var down = (edge & EdgeDown) != 0;
+            foreach (var script in ScriptManager.Scripts)
             {
-                // Let scripts know about the key press.
-                foreach (var script in ScriptManager.Scripts)
+                if (down)
                 {
-                    var key = (Keys)i;
                     ModGuard.Run(script, script.Name, "OnKeyDown", () => script.OnKeyDown(key));
+                }
+                else
+                {
+                    ModGuard.Run(script, script.Name, "OnKeyUp", () => script.OnKeyUp(key));
                 }
             }
         }
-
-        // Update previous key states.
-        s_keyStates.CopyTo(s_keyStatesPrev, 0);
     }
 
     /// <summary>Records a press. Returns true if the engine must not see it.</summary>
@@ -69,6 +142,11 @@ internal static class InputManager
         }
 
         var k = (byte)key;
+        if (!s_keyStates[k])
+        {
+            s_edges.Add(k | EdgeDown);
+        }
+
         s_keyStates[k] = true;
 
         // Once the engine has seen a press (swallowing switched off while the key repeats), it must
@@ -87,6 +165,11 @@ internal static class InputManager
         }
 
         var k = (byte)key;
+        if (s_keyStates[k])
+        {
+            s_edges.Add(k);
+        }
+
         s_keyStates[k] = false;
 
         var swallow = s_pressSwallowed[k];
@@ -103,9 +186,19 @@ internal static class InputManager
     /// </summary>
     internal static void OnFocusLost()
     {
+        for (var k = 0; k < s_keyStates.Length; k++)
+        {
+            if (s_keyStates[k])
+            {
+                s_edges.Add(k);
+            }
+        }
+
         Array.Clear(s_keyStates);
         Array.Clear(s_pressSwallowed);
         s_lastPressSwallowed = false;
+        s_hasFocus = false;
+        s_focusKnown = true;
         InputRouting.OnFocusLost();
     }
 

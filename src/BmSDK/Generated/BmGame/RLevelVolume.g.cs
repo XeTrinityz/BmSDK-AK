@@ -78,70 +78,70 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         where TComponent : class, Framework.IScriptComponent<RLevelVolume>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_PostBeginPlay;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_PostBeginPlay;
     /// <summary>
     /// Function: PostBeginPlay
     /// </summary>
     public unsafe override void PostBeginPlay()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_PostBeginPlay, "BmGame.RLevelVolume.PostBeginPlay");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RLevelVolume.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartChapterSpecificLevels;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartChapterSpecificLevels;
     /// <summary>
     /// Function: StartChapterSpecificLevels
     /// </summary>
     public unsafe virtual void StartChapterSpecificLevels()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartChapterSpecificLevels, "BmGame.RLevelVolume.StartChapterSpecificLevels");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartChapterSpecificLevels, "BmGame.RLevelVolume.StartChapterSpecificLevels", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_StartLevelInPIE;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StartLevelInPIE;
     /// <summary>
     /// Function: StartLevelInPIE
     /// </summary>
     public unsafe virtual void StartLevelInPIE()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StartLevelInPIE, "BmGame.RLevelVolume.StartLevelInPIE");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartLevelInPIE, "BmGame.RLevelVolume.StartLevelInPIE", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TrySwitchingLevelVolumes;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TrySwitchingLevelVolumes;
     /// <summary>
     /// Function: TrySwitchingLevelVolumes
     /// </summary>
     public unsafe virtual void TrySwitchingLevelVolumes()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TrySwitchingLevelVolumes, "BmGame.RLevelVolume.TrySwitchingLevelVolumes");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrySwitchingLevelVolumes, "BmGame.RLevelVolume.TrySwitchingLevelVolumes", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanChangeVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanChangeVolume;
     /// <summary>
     /// Function: CanChangeVolume
     /// </summary>
     public unsafe virtual bool CanChangeVolume(System.Numerics.Vector3 PlayerLocation)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanChangeVolume, "BmGame.RLevelVolume.CanChangeVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanChangeVolume, "BmGame.RLevelVolume.CanChangeVolume", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerLocation, paramsPtr + 0);
@@ -149,14 +149,14 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
-    private static BmSDK.Function __fn_UnTouch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UnTouch;
     /// <summary>
     /// Function: UnTouch
     /// </summary>
     public unsafe override void UnTouch(BmSDK.Engine.Actor Other)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_UnTouch, "BmGame.RLevelVolume.UnTouch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnTouch, "BmGame.RLevelVolume.UnTouch", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -164,14 +164,14 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_Touch;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Touch;
     /// <summary>
     /// Function: Touch
     /// </summary>
     public unsafe override void Touch(BmSDK.Engine.Actor Other, BmSDK.Engine.PrimitiveComponent OtherComp, System.Numerics.Vector3 HitLocation, System.Numerics.Vector3 HitNormal)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Touch, "BmGame.RLevelVolume.Touch");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Touch, "BmGame.RLevelVolume.Touch", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
@@ -182,57 +182,58 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_EnteredLevelVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_EnteredLevelVolume;
     /// <summary>
     /// Function: EnteredLevelVolume
     /// </summary>
     public unsafe virtual void EnteredLevelVolume()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_EnteredLevelVolume, "BmGame.RLevelVolume.EnteredLevelVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnteredLevelVolume, "BmGame.RLevelVolume.EnteredLevelVolume", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_LevelVolumeDeactivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LevelVolumeDeactivated;
     /// <summary>
     /// Function: LevelVolumeDeactivated
     /// </summary>
     public unsafe virtual void LevelVolumeDeactivated()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LevelVolumeDeactivated, "BmGame.RLevelVolume.LevelVolumeDeactivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LevelVolumeDeactivated, "BmGame.RLevelVolume.LevelVolumeDeactivated", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanIgnoreOverrideVolume;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanIgnoreOverrideVolume;
     /// <summary>
     /// Function: CanIgnoreOverrideVolume
     /// </summary>
-    public unsafe virtual bool CanIgnoreOverrideVolume(BmSDK.FString OverrideVolumeName)
+    public unsafe virtual bool CanIgnoreOverrideVolume(BmSDK.FStringArg OverrideVolumeName)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanIgnoreOverrideVolume, "BmGame.RLevelVolume.CanIgnoreOverrideVolume");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanIgnoreOverrideVolume, "BmGame.RLevelVolume.CanIgnoreOverrideVolume", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(OverrideVolumeName, paramsPtr + 0);
+        OverrideVolumeName.WriteTo(paramsPtr + 0);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
-    private static BmSDK.Function __fn_LevelVolumeActivated;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LevelVolumeActivated;
     /// <summary>
     /// Function: LevelVolumeActivated
     /// </summary>
     public unsafe virtual void LevelVolumeActivated(bool LevelStart)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LevelVolumeActivated, "BmGame.RLevelVolume.LevelVolumeActivated");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LevelVolumeActivated, "BmGame.RLevelVolume.LevelVolumeActivated", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LevelStart, paramsPtr + 0);
@@ -240,14 +241,14 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_LevelEntered;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LevelEntered;
     /// <summary>
     /// Function: LevelEntered
     /// </summary>
     public unsafe virtual void LevelEntered(bool LevelStart = default)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LevelEntered, "BmGame.RLevelVolume.LevelEntered");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LevelEntered, "BmGame.RLevelVolume.LevelEntered", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LevelStart, paramsPtr + 0);
@@ -255,42 +256,42 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_AttemptToShowRoomName;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttemptToShowRoomName;
     /// <summary>
     /// Function: AttemptToShowRoomName
     /// </summary>
     public unsafe virtual void AttemptToShowRoomName()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AttemptToShowRoomName, "BmGame.RLevelVolume.AttemptToShowRoomName");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttemptToShowRoomName, "BmGame.RLevelVolume.AttemptToShowRoomName", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_GetVisibleFlag;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetVisibleFlag;
     /// <summary>
     /// Function: GetVisibleFlag
     /// </summary>
     public unsafe virtual BmSDK.FString GetVisibleFlag()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetVisibleFlag, "BmGame.RLevelVolume.GetVisibleFlag");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVisibleFlag, "BmGame.RLevelVolume.GetVisibleFlag", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerEvents;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEvents;
     /// <summary>
     /// Function: TriggerEvents
     /// </summary>
     public unsafe virtual void TriggerEvents(BmSDK.BmGame.RPlayerController PC, bool Entered)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEvents, "BmGame.RLevelVolume.TriggerEvents");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEvents, "BmGame.RLevelVolume.TriggerEvents", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
@@ -299,14 +300,14 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_DeactivateStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_DeactivateStreaming;
     /// <summary>
     /// Function: DeactivateStreaming
     /// </summary>
     public unsafe virtual void DeactivateStreaming()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_DeactivateStreaming, "BmGame.RLevelVolume.DeactivateStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DeactivateStreaming, "BmGame.RLevelVolume.DeactivateStreaming", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;
@@ -320,14 +321,14 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_ActivateStreaming;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ActivateStreaming;
     /// <summary>
     /// Function: ActivateStreaming
     /// </summary>
     public unsafe virtual void ActivateStreaming(bool LevelStart)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ActivateStreaming, "BmGame.RLevelVolume.ActivateStreaming");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ActivateStreaming, "BmGame.RLevelVolume.ActivateStreaming", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LevelStart, paramsPtr + 0);
@@ -342,14 +343,14 @@ public partial class RLevelVolume : BmSDK.Engine.UmbraStreamingVolume, BmSDK.IGa
         return;
     }
 
-    private static BmSDK.Function __fn_IsOnPersistentMap;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOnPersistentMap;
     /// <summary>
     /// Function: IsOnPersistentMap
     /// </summary>
     public unsafe virtual bool IsOnPersistentMap()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_IsOnPersistentMap, "BmGame.RLevelVolume.IsOnPersistentMap");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOnPersistentMap, "BmGame.RLevelVolume.IsOnPersistentMap", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         var oldFlags = funcManaged.FunctionFlags;

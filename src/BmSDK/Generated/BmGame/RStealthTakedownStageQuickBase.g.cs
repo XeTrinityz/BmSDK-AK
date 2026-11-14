@@ -78,14 +78,14 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         where TComponent : class, Framework.IScriptComponent<RStealthTakedownStageQuickBase>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Function __fn_GetHelpPrompt;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
     /// <summary>
     /// Function: GetHelpPrompt
     /// </summary>
     public unsafe override void GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetHelpPrompt, "BmGame.RStealthTakedownStageQuickBase.GetHelpPrompt");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmGame.RStealthTakedownStageQuickBase.GetHelpPrompt", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
@@ -94,196 +94,196 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         return;
     }
 
-    private static BmSDK.Function __fn_StrikePressed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_StrikePressed;
     /// <summary>
     /// Function: StrikePressed
     /// </summary>
     public unsafe override void StrikePressed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_StrikePressed, "BmGame.RStealthTakedownStageQuickBase.StrikePressed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StrikePressed, "BmGame.RStealthTakedownStageQuickBase.StrikePressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_SlowMoForFearTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SlowMoForFearTakedown;
     /// <summary>
     /// Function: SlowMoForFearTakedown
     /// </summary>
     public unsafe virtual bool SlowMoForFearTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_SlowMoForFearTakedown, "BmGame.RStealthTakedownStageQuickBase.SlowMoForFearTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SlowMoForFearTakedown, "BmGame.RStealthTakedownStageQuickBase.SlowMoForFearTakedown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TriggerEscapeTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEscapeTakedown;
     /// <summary>
     /// Function: TriggerEscapeTakedown
     /// </summary>
     public unsafe override void TriggerEscapeTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEscapeTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEscapeTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEscapeTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEscapeTakedown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_TriggerEnvironmentTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerEnvironmentTakedown;
     /// <summary>
     /// Function: TriggerEnvironmentTakedown
     /// </summary>
     public unsafe virtual bool TriggerEnvironmentTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TriggerEnvironmentTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEnvironmentTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEnvironmentTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEnvironmentTakedown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CantCancelTakedown;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CantCancelTakedown;
     /// <summary>
     /// Function: CantCancelTakedown
     /// </summary>
     public unsafe virtual void CantCancelTakedown()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CantCancelTakedown, "BmGame.RStealthTakedownStageQuickBase.CantCancelTakedown");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CantCancelTakedown, "BmGame.RStealthTakedownStageQuickBase.CantCancelTakedown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CriticalPointEndTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CriticalPointEndTimer;
     /// <summary>
     /// Function: CriticalPointEndTimer
     /// </summary>
     public unsafe virtual void CriticalPointEndTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CriticalPointEndTimer, "BmGame.RStealthTakedownStageQuickBase.CriticalPointEndTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CriticalPointEndTimer, "BmGame.RStealthTakedownStageQuickBase.CriticalPointEndTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanPlayQuickFinishFromHere;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayQuickFinishFromHere;
     /// <summary>
     /// Function: CanPlayQuickFinishFromHere
     /// </summary>
     public unsafe virtual void CanPlayQuickFinishFromHere()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPlayQuickFinishFromHere, "BmGame.RStealthTakedownStageQuickBase.CanPlayQuickFinishFromHere");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPlayQuickFinishFromHere, "BmGame.RStealthTakedownStageQuickBase.CanPlayQuickFinishFromHere", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CriticalPointStart;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CriticalPointStart;
     /// <summary>
     /// Function: CriticalPointStart
     /// </summary>
     public unsafe virtual void CriticalPointStart()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CriticalPointStart, "BmGame.RStealthTakedownStageQuickBase.CriticalPointStart");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CriticalPointStart, "BmGame.RStealthTakedownStageQuickBase.CriticalPointStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_ChanceToSucceed;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChanceToSucceed;
     /// <summary>
     /// Function: ChanceToSucceed
     /// </summary>
     public unsafe virtual void ChanceToSucceed()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_ChanceToSucceed, "BmGame.RStealthTakedownStageQuickBase.ChanceToSucceed");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChanceToSucceed, "BmGame.RStealthTakedownStageQuickBase.ChanceToSucceed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_CanTriggerQuickFinish;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanTriggerQuickFinish;
     /// <summary>
     /// Function: CanTriggerQuickFinish
     /// </summary>
     public unsafe virtual bool CanTriggerQuickFinish()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanTriggerQuickFinish, "BmGame.RStealthTakedownStageQuickBase.CanTriggerQuickFinish");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTriggerQuickFinish, "BmGame.RStealthTakedownStageQuickBase.CanTriggerQuickFinish", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_CanPressStrangleButton;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPressStrangleButton;
     /// <summary>
     /// Function: CanPressStrangleButton
     /// </summary>
     public unsafe virtual bool CanPressStrangleButton()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_CanPressStrangleButton, "BmGame.RStealthTakedownStageQuickBase.CanPressStrangleButton");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPressStrangleButton, "BmGame.RStealthTakedownStageQuickBase.CanPressStrangleButton", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_TimerCritical;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TimerCritical;
     /// <summary>
     /// Function: TimerCritical
     /// </summary>
     public unsafe virtual bool TimerCritical()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_TimerCritical, "BmGame.RStealthTakedownStageQuickBase.TimerCritical");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerCritical, "BmGame.RStealthTakedownStageQuickBase.TimerCritical", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
-    private static BmSDK.Function __fn_AlwaysAllowFearTakedownTimer;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AlwaysAllowFearTakedownTimer;
     /// <summary>
     /// Function: AlwaysAllowFearTakedownTimer
     /// </summary>
     public unsafe virtual void AlwaysAllowFearTakedownTimer()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_AlwaysAllowFearTakedownTimer, "BmGame.RStealthTakedownStageQuickBase.AlwaysAllowFearTakedownTimer");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlwaysAllowFearTakedownTimer, "BmGame.RStealthTakedownStageQuickBase.AlwaysAllowFearTakedownTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
-    private static BmSDK.Function __fn_Begin;
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Begin;
     /// <summary>
     /// Function: Begin
     /// </summary>
     public unsafe override void Begin()
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_Begin, "BmGame.RStealthTakedownStageQuickBase.Begin");
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Begin, "BmGame.RStealthTakedownStageQuickBase.Begin", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
