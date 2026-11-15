@@ -186,9 +186,11 @@ internal static class RedirectManager
 
         call.Stack = (IntPtr)stackPtr;
         call.Result = Result;
+        var started = FrameStats.Now;
         try
         {
             redir.Run(selfObj, funcObj, stackPtr, Result);
+            FrameStats.Add("redirect", funcObj.CachedPath ?? "?", started);
         }
         catch (Exception ex)
         {

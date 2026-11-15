@@ -84,6 +84,8 @@ internal static class Loader
 
     private static IntPtr EngineTickDetour(IntPtr self)
     {
+        FrameStats.BeginFrame();
+
         // Run the scheduled callbacks
         EngineSynchronizationContext.Instance.ExecutePending();
 
@@ -99,7 +101,9 @@ internal static class Loader
             Abort(ex);
         }
 
-        return _EngineTickDetourBase!.Invoke(self);
+        var result = _EngineTickDetourBase!.Invoke(self);
+        FrameStats.EndFrame();
+        return result;
     }
 
     private static bool s_hasGameStarted = false;

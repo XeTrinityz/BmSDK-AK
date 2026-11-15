@@ -30,6 +30,7 @@ internal static class FunctionCache
 
     public static void ClassDestroyed()
     {
+        FrameStats.ClassDestroyed();
         s_generation++;
         lock (s_declared)
         {
@@ -63,7 +64,9 @@ internal static class FunctionCache
         var site = slot;
         if (site is null || site.Declared.Ptr == IntPtr.Zero)
         {
+            var looking = FrameStats.Now;
             site = slot = new CallSite(GameObject.StaticFindObjectChecked<Function>(Function.StaticClass(), null, path, true));
+            FrameStats.AddNewSite(looking);
         }
 
         var cls = *(IntPtr*)(self.Ptr + GameDefine.MemberOffsets.Object__Class).ToPointer();
@@ -87,7 +90,9 @@ internal static class FunctionCache
             return known;
         }
 
+        var resolving = FrameStats.Now;
         var resolved = Resolve(site.Declared, self);
+        FrameStats.AddResolve(resolving);
         (site.ByClass ??= [])[cls] = resolved;
         site.LastClass = cls;
         site.LastResolved = resolved;
@@ -110,6 +115,11 @@ internal static class FunctionCache
     {
         var name = *(long*)(declared.Ptr + GameDefine.MemberOffsets.Object__Name).ToPointer();
         var owner = *(IntPtr*)(declared.Ptr + GameDefine.MemberOffsets.Object__Outer).ToPointer();
+
+        if (s_functionClass == IntPtr.Zero)
+        {
+            s_functionClass = Function.StaticClass().Ptr;
+        }
 
         var cls = *(IntPtr*)(self.Ptr + GameDefine.MemberOffsets.Object__Class).ToPointer();
         for (; cls != IntPtr.Zero && cls != owner; cls = *(IntPtr*)(cls + GameDefine.MemberOffsets.Struct__SuperStruct).ToPointer())
@@ -135,11 +145,6 @@ internal static class FunctionCache
         if (s_declared.TryGetValue(cls, out var table))
         {
             return table;
-        }
-
-        if (s_functionClass == IntPtr.Zero)
-        {
-            s_functionClass = Function.StaticClass().Ptr;
         }
 
         table = [];

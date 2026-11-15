@@ -32,6 +32,7 @@ internal static class ModGuard
         }
 
         Debug.PushSender(sender);
+        var started = FrameStats.Now;
         try
         {
             action();
@@ -48,6 +49,7 @@ internal static class ModGuard
         }
         finally
         {
+            FrameStats.Add(sender, what, started);
             Debug.PopSender();
         }
     }
