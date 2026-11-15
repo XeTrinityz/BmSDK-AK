@@ -88,7 +88,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetEntryExitAnimSet, "BmGame.RPredatorVolume.GetEntryExitAnimSet", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
@@ -102,7 +102,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetVaultExplosivesAnimSet, "BmGame.RPredatorVolume.GetVaultExplosivesAnimSet", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
@@ -117,7 +117,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(newNoisyPred, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -137,7 +137,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return;
@@ -153,7 +153,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPylons, "BmGame.RPredatorVolume.GetPylons", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.Pylon>>(paramsPtr + 0);
     }
 
@@ -172,7 +172,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Pylon>(paramsPtr + 0);
@@ -189,7 +189,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -207,7 +207,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OtherComp, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitLocation, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 28);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -221,7 +221,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInChallengeLayer, "BmGame.RPredatorVolume.IsInChallengeLayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -235,7 +235,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmGame.RPredatorVolume.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -249,7 +249,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmGame.RPredatorVolume.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -263,7 +263,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RPredatorVolume.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -277,7 +277,7 @@ public partial class RPredatorVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreBeginPlay, "BmGame.RPredatorVolume.PreBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

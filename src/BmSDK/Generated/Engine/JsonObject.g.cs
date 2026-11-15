@@ -93,7 +93,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
@@ -115,7 +115,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);
@@ -133,7 +133,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
@@ -150,7 +150,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
@@ -167,7 +167,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
@@ -189,7 +189,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
@@ -214,7 +214,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
@@ -232,7 +232,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector4>(paramsPtr + 16);
     }
@@ -248,7 +248,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 16);
     }
@@ -264,7 +264,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
@@ -280,7 +280,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 16);
     }
@@ -296,7 +296,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
     }
@@ -313,7 +313,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         Key.WriteTo(paramsPtr + 0);
         Fallback.WriteTo(paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 32);
@@ -335,7 +335,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
@@ -358,7 +358,7 @@ public partial class JsonObject : BmSDK.GameObject, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
@@ -417,7 +417,7 @@ public static class JsonObjectStatics
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
@@ -440,7 +440,7 @@ public static class JsonObjectStatics
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(self.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 8);

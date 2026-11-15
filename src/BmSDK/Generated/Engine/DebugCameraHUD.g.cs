@@ -88,7 +88,7 @@ public partial class DebugCameraHUD : BmSDK.Engine.HUD, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostRender, "Engine.DebugCameraHUD.PostRender", this);
         byte* paramsPtr = stackalloc byte[176];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -107,7 +107,7 @@ public partial class DebugCameraHUD : BmSDK.Engine.HUD, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Y, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DY, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MeshComp, paramsPtr + 12);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         Y = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
@@ -122,7 +122,7 @@ public partial class DebugCameraHUD : BmSDK.Engine.HUD, BmSDK.IGameObject
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "Engine.DebugCameraHUD.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

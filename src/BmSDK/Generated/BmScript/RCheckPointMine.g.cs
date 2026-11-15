@@ -89,7 +89,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuppress, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -103,7 +103,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnregisterDMThroughWallsSuppressable, "BmScript.RCheckPointMine.UnregisterDMThroughWallsSuppressable", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -117,7 +117,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterDMThroughWallsSuppressable, "BmScript.RCheckPointMine.RegisterDMThroughWallsSuppressable", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -131,7 +131,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldBeInNeutralState, "BmScript.RCheckPointMine.ShouldBeInNeutralState", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -145,7 +145,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldBeInPoweredDownState, "BmScript.RCheckPointMine.ShouldBeInPoweredDownState", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -159,7 +159,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHostileRange, "BmScript.RCheckPointMine.GetHostileRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
@@ -173,7 +173,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetFriendlyRange, "BmScript.RCheckPointMine.GetFriendlyRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
@@ -187,7 +187,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDisruptorTargetMesh, "BmScript.RCheckPointMine.GetDisruptorTargetMesh", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.MeshComponent>(paramsPtr + 0);
     }
 
@@ -202,7 +202,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bEnabled, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -216,7 +216,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDamagedFlagName, "BmScript.RCheckPointMine.GetDamagedFlagName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
@@ -230,7 +230,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDamagedFlagSet, "BmScript.RCheckPointMine.IsDamagedFlagSet", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -247,7 +247,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInCar, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInDetectiveMode, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNeutralMode, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -261,7 +261,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsReloading, "BmScript.RCheckPointMine.IsReloading", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -275,7 +275,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerReload, "BmScript.RCheckPointMine.TriggerReload", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -290,7 +290,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -305,7 +305,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vehicle, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -320,7 +320,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Bmbl, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -336,7 +336,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bDamagedState, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSilent, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -357,7 +357,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageType, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitInfo, paramsPtr + 44);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageCauser, paramsPtr + 84);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -371,7 +371,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmScript.RCheckPointMine.Destroyed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -385,7 +385,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmScript.RCheckPointMine.PreStreamOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -399,7 +399,7 @@ public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RCheckPointMine.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

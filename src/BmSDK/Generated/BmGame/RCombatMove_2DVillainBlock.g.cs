@@ -88,7 +88,7 @@ public partial class RCombatMove_2DVillainBlock : BmSDK.BmGame.RCombatMove_Batma
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.RCombatMove_2DVillainBlock.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RCombatMove_2DVillainBlock : BmSDK.BmGame.RCombatMove_Batma
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayBlockAnim, "BmGame.RCombatMove_2DVillainBlock.PlayBlockAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RCombatMove_2DVillainBlock : BmSDK.BmGame.RCombatMove_Batma
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCombatMove_2DVillainBlock.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

@@ -88,7 +88,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnAwareOfPlayer, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.UnAwareOfPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -116,7 +116,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AwareOfPlayer, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.AwareOfPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -131,7 +131,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         byte* paramsPtr = stackalloc byte[265];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgInfo, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 248);
     }
 
@@ -146,7 +146,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bMirrored, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -160,7 +160,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldMirror, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.ShouldMirror", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -174,7 +174,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatAnimHitStop, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.CombatAnimHitStop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -188,7 +188,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatAnimHitStart, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.CombatAnimHitStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -205,7 +205,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn1, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn2, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageDir, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -220,7 +220,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageReceiver, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.DamageResult>(paramsPtr + 8);
     }
 
@@ -235,7 +235,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -249,7 +249,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GunStop, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.GunStop", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -263,7 +263,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GunStart, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.GunStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -277,7 +277,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTerrifiedAnimWithRangedWeapon, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.StartTerrifiedAnimWithRangedWeapon", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -291,7 +291,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartDazedAnimWithoutWeapon, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.StartDazedAnimWithoutWeapon", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -305,7 +305,7 @@ public partial class MCombatMove_VillainStickyConcussionGrenadeReaction : BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.MCombatMove_VillainStickyConcussionGrenadeReaction.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

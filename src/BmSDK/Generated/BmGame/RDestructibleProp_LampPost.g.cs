@@ -95,7 +95,7 @@ public partial class RDestructibleProp_LampPost : BmSDK.BmGame.RDestructibleProp
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Momentum);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Momentum, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageType, paramsPtr + 12);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BaseDamage = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
         DamageRadius = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 4);
         Momentum = BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 8);
@@ -118,7 +118,7 @@ public partial class RDestructibleProp_LampPost : BmSDK.BmGame.RDestructibleProp
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return;

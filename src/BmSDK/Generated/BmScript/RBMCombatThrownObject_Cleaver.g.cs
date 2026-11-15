@@ -88,7 +88,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanHitPlayerInCounterMove, "BmScript.RBMCombatThrownObject_Cleaver.CanHitPlayerInCounterMove", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -102,7 +102,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCounterRange, "BmScript.RBMCombatThrownObject_Cleaver.GetCounterRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 
@@ -117,7 +117,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -131,7 +131,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitPawnValueChanged, "BmScript.RBMCombatThrownObject_Cleaver.HitPawnValueChanged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -146,7 +146,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSuccessfulCounter, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -160,7 +160,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartAttackingFX, "BmScript.RBMCombatThrownObject_Cleaver.StartAttackingFX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -174,7 +174,7 @@ public partial class RBMCombatThrownObject_Cleaver : BmSDK.BmGame.RBMCombatThrow
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RBMCombatThrownObject_Cleaver.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

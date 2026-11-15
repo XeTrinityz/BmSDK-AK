@@ -89,7 +89,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Rumble, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -103,7 +103,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -117,7 +117,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HackingMiniGameWon, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.HackingMiniGameWon", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -131,7 +131,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayCalibrationComplete, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayCalibrationComplete", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -146,7 +146,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
@@ -162,7 +162,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(left_y, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(right_y, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -178,7 +178,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_PitchValue, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_FilterValue, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -192,7 +192,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAudio, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayAudio", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -206,7 +206,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StopVoicePlayback", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -220,7 +220,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartVoicePlayback, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartVoicePlayback", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -234,7 +234,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayVoiceNormal, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.PlayVoiceNormal", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -248,7 +248,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosingDialogueBoxAfterOutro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterOutro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -262,7 +262,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosingDialogueBoxAfterScan, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterScan", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -276,7 +276,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClosingDialogueBoxAfterIntro, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.ClosingDialogueBoxAfterIntro", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -290,7 +290,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WinClearPrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.WinClearPrompts", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -304,7 +304,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdatePrompts, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.UpdatePrompts", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -318,7 +318,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartDOFChange, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.StartDOFChange", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -332,7 +332,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialSetupVoiceSynthMinigame, "BmScript.RSpecialMoveInstance_CalibrateVoiceSynthesiser.InitialSetupVoiceSynthMinigame", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -347,7 +347,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -366,7 +366,7 @@ public partial class RSpecialMoveInstance_CalibrateVoiceSynthesiser : BmSDK.BmGa
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MarkerID, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MarkerTypeID, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Duration, paramsPtr + 28);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

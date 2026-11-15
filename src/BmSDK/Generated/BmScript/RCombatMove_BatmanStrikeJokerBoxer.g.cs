@@ -88,7 +88,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -104,7 +104,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSpecialMove, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bStrike, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 
@@ -118,7 +118,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -132,7 +132,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnHitParticles, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.SpawnHitParticles", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -146,7 +146,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopTrail, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.StopTrail", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -160,7 +160,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartTrail, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.StartTrail", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -174,7 +174,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowMovementExit, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.AllowMovementExit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -188,7 +188,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowNextStrike, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.AllowNextStrike", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -202,7 +202,7 @@ public partial class RCombatMove_BatmanStrikeJokerBoxer : BmSDK.BmGame.RCombatMo
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JBHit, "BmScript.RCombatMove_BatmanStrikeJokerBoxer.JBHit", this);
         byte* paramsPtr = stackalloc byte[284];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

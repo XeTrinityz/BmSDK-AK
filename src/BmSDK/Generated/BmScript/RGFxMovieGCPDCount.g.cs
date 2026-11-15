@@ -91,7 +91,7 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
         Cell.WriteTo(paramsPtr + 0);
         Sec.WriteTo(paramsPtr + 16);
         Perc.WriteTo(paramsPtr + 32);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 16);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 32);
@@ -112,7 +112,7 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PopCellMax, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PopSec, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PopSecMax, paramsPtr + 12);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -127,7 +127,7 @@ public partial class RGFxMovieGCPDCount : BmSDK.BmScript.RGFxMovieKismetNoInput,
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PC, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
     }
 }

@@ -90,7 +90,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageReceiver, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DmgAmount, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.FDamageInfo>(paramsPtr + 12);
     }
 
@@ -104,7 +104,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStrikeAnimSet, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnimSet", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
     }
 
@@ -118,7 +118,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStrikeAnim, "BmScript.RCombatMove_BatmanBeatdownMiss.GetStrikeAnim", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
@@ -132,7 +132,7 @@ public partial class RCombatMove_BatmanBeatdownMiss : BmSDK.BmGame.RCombatMove_B
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldStartFinalBlowCam, "BmScript.RCombatMove_BatmanBeatdownMiss.ShouldStartFinalBlowCam", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 }

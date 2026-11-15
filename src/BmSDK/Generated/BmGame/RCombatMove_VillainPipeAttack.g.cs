@@ -88,7 +88,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.RCombatMove_VillainPipeAttack.ExitMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EarlyExit, "BmGame.RCombatMove_VillainPipeAttack.EarlyExit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBlock, "BmGame.RCombatMove_VillainPipeAttack.CanBlock", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -130,7 +130,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlaySwingSound, "BmGame.RCombatMove_VillainPipeAttack.PlaySwingSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHitPSLocation, "BmGame.RCombatMove_VillainPipeAttack.GetHitPSLocation", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
@@ -161,7 +161,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn1, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn2, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageDir, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -175,7 +175,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageCollisionDeactivated, "BmGame.RCombatMove_VillainPipeAttack.DamageCollisionDeactivated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -189,7 +189,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ForceHitTarget, "BmGame.RCombatMove_VillainPipeAttack.ForceHitTarget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -203,7 +203,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatAnimHit, "BmGame.RCombatMove_VillainPipeAttack.CombatAnimHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -217,7 +217,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCombatMove_VillainPipeAttack.Initialise", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -233,7 +233,7 @@ public partial class RCombatMove_VillainPipeAttack : BmSDK.BmGame.RCombatMove_Vi
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CombatManager, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(User, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTarget, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 

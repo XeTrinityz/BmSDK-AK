@@ -87,7 +87,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjClassVersion, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.GetObjClassVersion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -101,7 +101,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanLookAtPlayer, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.CanLookAtPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -115,7 +115,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCutscene, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.StartCutscene", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -129,7 +129,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateWeaponConfig, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.CreateWeaponConfig", this);
         byte* paramsPtr = stackalloc byte[460];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 0);
     }
 
@@ -144,7 +144,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
@@ -158,7 +158,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSafeEndingPoint, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.GetSafeEndingPoint", this);
         byte* paramsPtr = stackalloc byte[68];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
@@ -172,7 +172,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Repath, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.Repath", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -186,7 +186,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetLocation, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.GetTargetLocation", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
@@ -200,7 +200,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CloseToTargetOrBatmanMoved, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.CloseToTargetOrBatmanMoved", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -214,7 +214,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBatmanGrab, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.CanBatmanGrab", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBMAIController.BatmanGrabType>(paramsPtr + 0);
     }
 
@@ -230,7 +230,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
@@ -244,7 +244,7 @@ public partial class RBMBehaviour_ScarecrowWalkAroundBats : BmSDK.BmGame.RBMBeha
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmScript.RBMBehaviour_ScarecrowWalkAroundBats.OnActivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

@@ -88,7 +88,7 @@ public partial class SeqAct_ControlMovieTexture : BmSDK.Engine.SequenceAction, B
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "Engine.SeqAct_ControlMovieTexture.Activated", this);
         byte* paramsPtr = stackalloc byte[25];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

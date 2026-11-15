@@ -89,7 +89,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -103,7 +103,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanDoFinalBlow, "BmScript.RPawnVillainDollotronTutorial.CanDoFinalBlow", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -117,7 +117,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopRiseCamera, "BmScript.RPawnVillainDollotronTutorial.StopRiseCamera", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -131,7 +131,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnFinishGettingUpFromRagdoll, "BmScript.RPawnVillainDollotronTutorial.OnFinishGettingUpFromRagdoll", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -146,7 +146,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -160,7 +160,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartZoomOut, "BmScript.RPawnVillainDollotronTutorial.StartZoomOut", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -174,7 +174,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartBMLine, "BmScript.RPawnVillainDollotronTutorial.StartBMLine", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -188,7 +188,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayRiseCamera, "BmScript.RPawnVillainDollotronTutorial.PlayRiseCamera", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -202,7 +202,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiseMyPretty, "BmScript.RPawnVillainDollotronTutorial.RiseMyPretty", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -216,7 +216,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickLOS, "BmScript.RPawnVillainDollotronTutorial.TickLOS", this);
         byte* paramsPtr = stackalloc byte[60];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -230,7 +230,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TickDialogue, "BmScript.RPawnVillainDollotronTutorial.TickDialogue", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -244,7 +244,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckDialogueStart, "BmScript.RPawnVillainDollotronTutorial.CheckDialogueStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -258,7 +258,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckLOSStart, "BmScript.RPawnVillainDollotronTutorial.CheckLOSStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -272,7 +272,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TutorialDone, "BmScript.RPawnVillainDollotronTutorial.TutorialDone", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -289,7 +289,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Killer, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageType, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitLocation, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
 
@@ -303,7 +303,7 @@ public partial class RPawnVillainDollotronTutorial : BmSDK.BmScript.RPawnVillain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostInitCharacter, "BmScript.RPawnVillainDollotronTutorial.PostInitCharacter", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

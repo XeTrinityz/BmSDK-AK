@@ -91,7 +91,7 @@ public partial class RNavMeshPath_AvoidPathObjects : BmSDK.Engine.NavMeshPathCon
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AvoidObject1, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AvoidObject2, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AvoidObject3, paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 
@@ -106,7 +106,7 @@ public partial class RNavMeshPath_AvoidPathObjects : BmSDK.Engine.NavMeshPathCon
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewNavHandle, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AvoidObjectList, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
@@ -121,7 +121,7 @@ public partial class RNavMeshPath_AvoidPathObjects : BmSDK.Engine.NavMeshPathCon
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewNavHandle, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AvoidObject1, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 

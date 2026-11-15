@@ -88,7 +88,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UnhideBatmanForJokerBoss, "BmGame.RCombatMove_BatmanEnvironmentAttack.UnhideBatmanForJokerBoss", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTargetEndStance, "BmGame.RCombatMove_BatmanEnvironmentAttack.GetTargetEndStance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
@@ -116,7 +116,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldKill, "BmGame.RCombatMove_BatmanEnvironmentAttack.ShouldKill", this);
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -130,7 +130,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetAnimName, "BmGame.RCombatMove_BatmanEnvironmentAttack.GetAnimName", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
@@ -144,7 +144,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmGame.RCombatMove_BatmanEnvironmentAttack.ExitMove", this);
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -159,7 +159,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExitPawn, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -175,7 +175,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OverridenPawn, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewMove, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -189,7 +189,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowNextStrike, "BmGame.RCombatMove_BatmanEnvironmentAttack.AllowNextStrike", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -206,7 +206,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageType, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewPlayer, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 24);
     }
 
@@ -222,7 +222,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewAttacker, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 16);
     }
 
@@ -236,7 +236,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanNewAttackBeStarted, "BmGame.RCombatMove_BatmanEnvironmentAttack.CanNewAttackBeStarted", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -250,7 +250,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanBeShotDead, "BmGame.RCombatMove_BatmanEnvironmentAttack.CanBeShotDead", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -264,7 +264,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmGame.RCombatMove_BatmanEnvironmentAttack.Initialise", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -278,7 +278,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireDestroyedEvent, "BmGame.RCombatMove_BatmanEnvironmentAttack.FireDestroyedEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -292,7 +292,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CameraFinishEarly, "BmGame.RCombatMove_BatmanEnvironmentAttack.CameraFinishEarly", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -306,7 +306,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpeedUp, "BmGame.RCombatMove_BatmanEnvironmentAttack.SpeedUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -320,7 +320,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SlowDown, "BmGame.RCombatMove_BatmanEnvironmentAttack.SlowDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -334,7 +334,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SwapMesh, "BmGame.RCombatMove_BatmanEnvironmentAttack.SwapMesh", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -348,7 +348,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FxEvent, "BmGame.RCombatMove_BatmanEnvironmentAttack.FxEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -362,7 +362,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DropObject, "BmGame.RCombatMove_BatmanEnvironmentAttack.DropObject", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -376,7 +376,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GrabObject, "BmGame.RCombatMove_BatmanEnvironmentAttack.GrabObject", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -391,7 +391,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         byte* paramsPtr = stackalloc byte[272];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -405,7 +405,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnvKONoRagdoll, "BmGame.RCombatMove_BatmanEnvironmentAttack.EnvKONoRagdoll", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -419,7 +419,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnvKORagdoll, "BmGame.RCombatMove_BatmanEnvironmentAttack.EnvKORagdoll", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -433,7 +433,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageHitNoReaction, "BmGame.RCombatMove_BatmanEnvironmentAttack.DamageHitNoReaction", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -447,7 +447,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageHitManualExitmove, "BmGame.RCombatMove_BatmanEnvironmentAttack.DamageHitManualExitmove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -461,7 +461,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DamageHit, "BmGame.RCombatMove_BatmanEnvironmentAttack.DamageHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -475,7 +475,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitThug, "BmGame.RCombatMove_BatmanEnvironmentAttack.HitThug", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -489,7 +489,7 @@ public partial class RCombatMove_BatmanEnvironmentAttack : BmSDK.BmGame.RCombatM
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThugRumble, "BmGame.RCombatMove_BatmanEnvironmentAttack.ThugRumble", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

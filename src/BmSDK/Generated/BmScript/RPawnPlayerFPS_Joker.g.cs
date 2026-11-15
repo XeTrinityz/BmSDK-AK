@@ -90,7 +90,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Attachment, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -104,7 +104,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideHead, "BmScript.RPawnPlayerFPS_Joker.HideHead", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -118,7 +118,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowHead, "BmScript.RPawnPlayerFPS_Joker.ShowHead", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -132,7 +132,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RPawnPlayerFPS_Joker.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -146,7 +146,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CauseMuzzleFlash, "BmScript.RPawnPlayerFPS_Joker.CauseMuzzleFlash", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -165,7 +165,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OriginalShotOrig, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OriginalShotDir, paramsPtr + 44);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -182,7 +182,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartTrace, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndTrace, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitTarget, paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.FImpactInfo>(paramsPtr + 32);
     }
 
@@ -201,7 +201,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitActor, paramsPtr + 108);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GunMuzzle, paramsPtr + 116);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 128);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 140);
     }
 
@@ -222,7 +222,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageType, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitInfo, paramsPtr + 44);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DamageCauser, paramsPtr + 84);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -236,7 +236,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckRDPForLowBounds, "BmScript.RPawnPlayerFPS_Joker.CheckRDPForLowBounds", this);
         byte* paramsPtr = stackalloc byte[140];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -253,7 +253,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Other, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(OtherComp, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitNormal, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -268,7 +268,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bGunAnimOnly, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
@@ -282,7 +282,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Reload, "BmScript.RPawnPlayerFPS_Joker.Reload", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -296,7 +296,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PutGunInRightHand, "BmScript.RPawnPlayerFPS_Joker.PutGunInRightHand", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -310,7 +310,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PutGunInLeftHand, "BmScript.RPawnPlayerFPS_Joker.PutGunInLeftHand", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -324,7 +324,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnOnLight, "BmScript.RPawnPlayerFPS_Joker.TurnOnLight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -338,7 +338,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalculateBulletTrajectory, "BmScript.RPawnPlayerFPS_Joker.CalculateBulletTrajectory", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -352,7 +352,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AdditiveArmAvoidance, "BmScript.RPawnPlayerFPS_Joker.AdditiveArmAvoidance", this);
         byte* paramsPtr = stackalloc byte[96];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -367,7 +367,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HudCanvas, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -381,7 +381,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShowCrossHair, "BmScript.RPawnPlayerFPS_Joker.ShowCrossHair", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -396,7 +396,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bZoom, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -410,7 +410,7 @@ public partial class RPawnPlayerFPS_Joker : BmSDK.BmGame.RPawnPlayerFPS, BmSDK.I
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleZoom, "BmScript.RPawnPlayerFPS_Joker.ToggleZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

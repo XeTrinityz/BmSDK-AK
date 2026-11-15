@@ -88,7 +88,7 @@ public partial class RAEC_Sub_LevelScriptingRoot : BmSDK.BmGame.RAlertEventCoord
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyGunEmpty, "BmGame.RAEC_Sub_LevelScriptingRoot.NotifyGunEmpty", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -103,7 +103,7 @@ public partial class RAEC_Sub_LevelScriptingRoot : BmSDK.BmGame.RAlertEventCoord
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -117,7 +117,7 @@ public partial class RAEC_Sub_LevelScriptingRoot : BmSDK.BmGame.RAlertEventCoord
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_NotifyBehaviourOfLevelScripting, "BmGame.RAEC_Sub_LevelScriptingRoot.NotifyBehaviourOfLevelScripting", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -131,7 +131,7 @@ public partial class RAEC_Sub_LevelScriptingRoot : BmSDK.BmGame.RAlertEventCoord
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BehaviourActivatedByHostCon, "BmGame.RAEC_Sub_LevelScriptingRoot.BehaviourActivatedByHostCon", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -145,7 +145,7 @@ public partial class RAEC_Sub_LevelScriptingRoot : BmSDK.BmGame.RAlertEventCoord
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnStartChild, "BmGame.RAEC_Sub_LevelScriptingRoot.OnStartChild", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

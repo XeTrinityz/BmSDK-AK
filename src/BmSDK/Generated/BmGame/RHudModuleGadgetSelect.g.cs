@@ -89,7 +89,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         gadget_name.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
@@ -105,7 +105,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(gadget_index, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -119,7 +119,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostSetupGadgets, "BmGame.RHudModuleGadgetSelect.PostSetupGadgets", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -138,7 +138,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         BmSDK.Framework.MarshalUtil.ToUnmanaged(max_ammo, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(current_ammo, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(recharge_level, paramsPtr + 28);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 4);
         return;
     }
@@ -154,7 +154,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -171,7 +171,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Id, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Recharge, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Quantity, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -186,7 +186,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         _GadgetIconName.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
@@ -204,7 +204,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsOnscreen, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IsDeployed, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Gadget_OutOfSixteen, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -220,7 +220,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(RequiredGadget_OutOfSixteen, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_bHighlightOn, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -235,7 +235,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FailedGadget_OutOfSixteen, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -249,7 +249,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DetonateExplosiveGel, "BmGame.RHudModuleGadgetSelect.DetonateExplosiveGel", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -265,7 +265,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NumVictims, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WillKnockdown, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -279,7 +279,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SendGadgets, "BmGame.RHudModuleGadgetSelect.SendGadgets", this);
         byte* paramsPtr = stackalloc byte[76];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -294,7 +294,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(value_out_of_twelve, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
@@ -309,7 +309,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(gadgetIndex, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -323,7 +323,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitialiseFlash, "BmGame.RHudModuleGadgetSelect.InitialiseFlash", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -337,7 +337,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Close, "BmGame.RHudModuleGadgetSelect.Close", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -354,7 +354,7 @@ public partial class RHudModuleGadgetSelect : BmSDK.BmGame.RHudModule, BmSDK.IGa
         BmSDK.Framework.MarshalUtil.ToUnmanaged(_RPC, paramsPtr + 0);
         _ExtensionName.WriteTo(paramsPtr + 8);
         _ExtensionPath.WriteTo(paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);

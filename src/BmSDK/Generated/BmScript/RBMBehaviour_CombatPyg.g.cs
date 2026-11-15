@@ -88,7 +88,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverrideHitReaction, "BmScript.RBMBehaviour_CombatPyg.OverrideHitReaction", this);
         byte* paramsPtr = stackalloc byte[268];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         DmgInfo = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnCombat.FDamageInfo>(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 248);
     }
@@ -103,7 +103,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSpawnMove, "BmScript.RBMBehaviour_CombatPyg.OnSpawnMove", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -118,7 +118,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForceAttack, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 4);
     }
 
@@ -137,7 +137,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveSize, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForceSize, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveAmnt, paramsPtr + 32);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -151,7 +151,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSafeFromBatmanPosition, "BmScript.RBMBehaviour_CombatPyg.GetSafeFromBatmanPosition", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
     }
 
@@ -166,7 +166,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CurrMoveState, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -180,7 +180,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckHidePointSafe, "BmScript.RBMBehaviour_CombatPyg.CheckHidePointSafe", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -194,7 +194,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GotoMoveToCombatState, "BmScript.RBMBehaviour_CombatPyg.GotoMoveToCombatState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -208,7 +208,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetTauntMoveStance, "BmScript.RBMBehaviour_CombatPyg.GetTauntMoveStance", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 
@@ -222,7 +222,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetPossibleMoves, "BmScript.RBMBehaviour_CombatPyg.GetPossibleMoves", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         PossibleMoves = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Class>>(paramsPtr + 0);
         return;
     }
@@ -237,7 +237,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_CombatPyg.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -251,7 +251,7 @@ public partial class RBMBehaviour_CombatPyg : BmSDK.BmGame.RBMBehaviour_CombatPy
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmScript.RBMBehaviour_CombatPyg.OnActivate", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

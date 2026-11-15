@@ -88,7 +88,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostEditChangeScript, "BmScript.RDisruptableControlBox.PostEditChangeScript", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDifficultyLevel, "BmScript.RDisruptableControlBox.GetDifficultyLevel", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -116,7 +116,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableDisruptedControlBox, "BmScript.RDisruptableControlBox.EnableDisruptedControlBox", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -130,7 +130,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EnableControlBox, "BmScript.RDisruptableControlBox.EnableControlBox", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableControlBox, "BmScript.RDisruptableControlBox.DisableControlBox", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -158,7 +158,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmScript.RDisruptableControlBox.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -173,7 +173,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Action, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -187,7 +187,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FailedToDisrupt, "BmScript.RDisruptableControlBox.FailedToDisrupt", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -201,7 +201,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerKismetRestoreEvent, "BmScript.RDisruptableControlBox.TriggerKismetRestoreEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -215,7 +215,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerKismetEvent, "BmScript.RDisruptableControlBox.TriggerKismetEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -230,7 +230,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -244,7 +244,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChangeState, "BmScript.RDisruptableControlBox.ChangeState", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -258,7 +258,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReStartLight2, "BmScript.RDisruptableControlBox.ReStartLight2", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -272,7 +272,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ReStartLight, "BmScript.RDisruptableControlBox.ReStartLight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -286,7 +286,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerCombatEvents, "BmScript.RDisruptableControlBox.TriggerCombatEvents", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -300,7 +300,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FlashScreen, "BmScript.RDisruptableControlBox.FlashScreen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -314,7 +314,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScreenOff, "BmScript.RDisruptableControlBox.ScreenOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -328,7 +328,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SuccessfullyDisrupted, "BmScript.RDisruptableControlBox.SuccessfullyDisrupted", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -342,7 +342,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StopAlarmSound, "BmScript.RDisruptableControlBox.StopAlarmSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -356,7 +356,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayAlarmSound, "BmScript.RDisruptableControlBox.PlayAlarmSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -370,7 +370,7 @@ public partial class RDisruptableControlBox : BmSDK.BmGame.RDisruptableObjectBas
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAlarmed, "BmScript.RDisruptableControlBox.IsAlarmed", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 

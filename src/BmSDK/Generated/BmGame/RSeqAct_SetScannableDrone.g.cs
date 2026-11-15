@@ -88,7 +88,7 @@ public partial class RSeqAct_SetScannableDrone : BmSDK.Engine.SequenceAction, Bm
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TargetKilled, "BmGame.RSeqAct_SetScannableDrone.TargetKilled", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RSeqAct_SetScannableDrone : BmSDK.Engine.SequenceAction, Bm
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TargetScanned, "BmGame.RSeqAct_SetScannableDrone.TargetScanned", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RSeqAct_SetScannableDrone : BmSDK.Engine.SequenceAction, Bm
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmGame.RSeqAct_SetScannableDrone.Activated", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

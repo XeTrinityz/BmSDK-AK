@@ -88,7 +88,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CantSwitchPlayer, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.CantSwitchPlayer", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -102,7 +102,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayGrateOutAnim, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.PlayGrateOutAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayGrateInAnim, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.PlayGrateInAnim", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -130,7 +130,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GrappleStopSound, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.GrappleStopSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GrappleStartSound, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.GrappleStartSound", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -158,7 +158,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishGrapple, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.FinishGrapple", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -172,7 +172,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireGrapple, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.FireGrapple", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -187,7 +187,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NextSpecialMove, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -201,7 +201,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_CrawlSpaceToChute.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -216,7 +216,7 @@ public partial class RSpecialMoveInstance_CrawlSpaceToChute : BmSDK.BmGame.RSpec
         byte* paramsPtr = stackalloc byte[188];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

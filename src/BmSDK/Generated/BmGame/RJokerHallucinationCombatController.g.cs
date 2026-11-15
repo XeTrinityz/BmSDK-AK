@@ -88,7 +88,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCombatQuality, "BmGame.RJokerHallucinationCombatController.GetCombatQuality", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RPawnJokerHallucination.CombatQualityType>(paramsPtr + 0);
     }
 
@@ -103,7 +103,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         byte* paramsPtr = stackalloc byte[116];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(QualityType, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 4);
     }
 
@@ -117,7 +117,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnIncidentalJoker, "BmGame.RJokerHallucinationCombatController.SpawnIncidentalJoker", this);
         byte* paramsPtr = stackalloc byte[48];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -131,7 +131,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GenerateCombatPoints, "BmGame.RJokerHallucinationCombatController.GenerateCombatPoints", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -145,7 +145,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TrySpawnJokerCombatOverTaunt, "BmGame.RJokerHallucinationCombatController.TrySpawnJokerCombatOverTaunt", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -159,7 +159,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InCombat, "BmGame.RJokerHallucinationCombatController.InCombat", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -174,7 +174,7 @@ public partial class RJokerHallucinationCombatController : BmSDK.GameObject, BmS
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

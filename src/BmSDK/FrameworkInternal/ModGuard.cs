@@ -54,6 +54,42 @@ internal static class ModGuard
         }
     }
 
+    /// <summary>
+    /// <see cref="Run(object, string, string, Action)"/> with the callback's state passed in, so a static
+    /// lambda can be used and nothing is allocated per call. The tick, draw and key callbacks run this
+    /// once per script every frame.
+    /// </summary>
+    public static bool Run<TState>(object owner, string sender, string what, Action<TState> action, TState state)
+    {
+        var key = (owner, what);
+        if (s_disabled.Contains(key))
+        {
+            return false;
+        }
+
+        Debug.PushSender(sender);
+        var started = FrameStats.Now;
+        try
+        {
+            action(state);
+            if (s_failures.Count > 0)
+            {
+                s_failures.Remove(key);
+            }
+            return true;
+        }
+        catch (Exception ex)
+        {
+            Report(key, ex, what);
+            return false;
+        }
+        finally
+        {
+            FrameStats.Add(sender, what, started);
+            Debug.PopSender();
+        }
+    }
+
     /// <summary>Whether <paramref name="what"/> of <paramref name="owner"/> has been switched off.</summary>
     public static bool IsDisabled(object owner, string what) => s_disabled.Contains((owner, what));
 

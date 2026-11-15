@@ -92,7 +92,7 @@ public partial class RFractureManager : BmSDK.Engine.FractureManager, BmSDK.IGam
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChunkBox, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ChunkDir, paramsPtr + 36);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Scale, paramsPtr + 48);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

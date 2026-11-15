@@ -87,7 +87,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjClassVersion, "BmScript.RSeqAct_NPCOneShotDialogueManager.GetObjClassVersion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -101,7 +101,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerConnectedSpeechAction, "BmScript.RSeqAct_NPCOneShotDialogueManager.TriggerConnectedSpeechAction", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -115,7 +115,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseNextLine, "BmScript.RSeqAct_NPCOneShotDialogueManager.ChooseNextLine", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -129,7 +129,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetUnplayedLines, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetUnplayedLines", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -143,7 +143,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetTimer, "BmScript.RSeqAct_NPCOneShotDialogueManager.ResetTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -157,7 +157,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleInputLinks, "BmScript.RSeqAct_NPCOneShotDialogueManager.HandleInputLinks", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -172,7 +172,7 @@ public partial class RSeqAct_NPCOneShotDialogueManager : BmSDK.Engine.SeqAct_Lat
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 

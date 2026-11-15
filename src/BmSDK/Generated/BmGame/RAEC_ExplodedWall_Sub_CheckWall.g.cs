@@ -88,7 +88,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsInPosition, "BmGame.RAEC_ExplodedWall_Sub_CheckWall.IsInPosition", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -105,7 +105,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StandPoint, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BoomLoc, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIsHorizontal, paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -121,7 +121,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventAction, paramsPtr + 0);
         EventType.WriteTo(paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
@@ -137,7 +137,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -152,7 +152,7 @@ public partial class RAEC_ExplodedWall_Sub_CheckWall : BmSDK.BmGame.RAlertEventC
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

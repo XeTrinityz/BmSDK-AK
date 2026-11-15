@@ -88,7 +88,7 @@ public partial class RStealthTakedownStage_RailingTakedown : BmSDK.BmGame.RSteal
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ScreenShake, "BmGame.RStealthTakedownStage_RailingTakedown.ScreenShake", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -106,7 +106,7 @@ public partial class RStealthTakedownStage_RailingTakedown : BmSDK.BmGame.RSteal
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ReferencePosition, paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ReferenceRotation);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ReferenceRotation, paramsPtr + 12);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         ReferencePosition = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
         ReferenceRotation = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 12);
         return;
@@ -122,7 +122,7 @@ public partial class RStealthTakedownStage_RailingTakedown : BmSDK.BmGame.RSteal
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Begin, "BmGame.RStealthTakedownStage_RailingTakedown.Begin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

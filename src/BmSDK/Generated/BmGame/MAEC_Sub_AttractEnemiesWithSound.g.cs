@@ -89,7 +89,7 @@ public partial class MAEC_Sub_AttractEnemiesWithSound : BmSDK.BmGame.RAlertEvent
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -104,7 +104,7 @@ public partial class MAEC_Sub_AttractEnemiesWithSound : BmSDK.BmGame.RAlertEvent
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FinishedAction, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -122,7 +122,7 @@ public partial class MAEC_Sub_AttractEnemiesWithSound : BmSDK.BmGame.RAlertEvent
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewTrap, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(stageAt, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(WasInIdleBehaviour, paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

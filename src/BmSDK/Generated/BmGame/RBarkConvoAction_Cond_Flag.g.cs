@@ -88,7 +88,7 @@ public partial class RBarkConvoAction_Cond_Flag : BmSDK.BmGame.RBarkConvoActionC
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOutputIndex, "BmGame.RBarkConvoAction_Cond_Flag.GetOutputIndex", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 

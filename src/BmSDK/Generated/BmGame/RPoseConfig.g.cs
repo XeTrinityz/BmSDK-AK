@@ -93,7 +93,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
@@ -113,7 +113,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MovementStanceB, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FullBodyAnim, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TransitionName, paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -130,7 +130,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MovementStance, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IdleFullBodyAnim, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AimingConfig, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -149,7 +149,7 @@ public partial class RPoseConfig : BmSDK.BmGame.RConfig, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(IdleFullBodyAnim, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AimingConfig, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AllowTurningToAim, paramsPtr + 32);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

@@ -88,7 +88,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_LoadingFinished, "BmGame.RPlayerControllerBase.LoadingFinished");
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LoadingNearlyFinished, "BmGame.RPlayerControllerBase.LoadingNearlyFinished", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatDown, "BmGame.RPlayerControllerBase.CheatDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -130,7 +130,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatUp, "BmGame.RPlayerControllerBase.CheatUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatRight, "BmGame.RPlayerControllerBase.CheatRight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -158,7 +158,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheatLeft, "BmGame.RPlayerControllerBase.CheatLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -172,7 +172,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PostBeginPlay, "BmGame.RPlayerControllerBase.PostBeginPlay", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -187,7 +187,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(inAction, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -202,7 +202,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(H, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -217,7 +217,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -231,7 +231,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisableCinematicMode, "BmGame.RPlayerControllerBase.DisableCinematicMode", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -245,7 +245,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnSkippedCutscene, "BmGame.RPlayerControllerBase.OnSkippedCutscene", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -260,7 +260,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bForce, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -279,7 +279,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
@@ -296,7 +296,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventName, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -310,7 +310,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleLookInvertControls, "BmGame.RPlayerControllerBase.ToggleLookInvertControls", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -324,7 +324,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCamNormalSpeed, "BmGame.RPlayerControllerBase.DebugCamNormalSpeed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -338,7 +338,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCamMoreSpeed, "BmGame.RPlayerControllerBase.DebugCamMoreSpeed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -352,7 +352,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugCamSingleFrameStep, "BmGame.RPlayerControllerBase.DebugCamSingleFrameStep", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -367,7 +367,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Value, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -381,7 +381,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_QuickLoad, "BmGame.RPlayerControllerBase.QuickLoad", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -401,7 +401,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return;
@@ -422,7 +422,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return;
@@ -443,7 +443,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return;
@@ -464,7 +464,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return;
@@ -480,7 +480,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetPlayerMovementInput, "BmGame.RPlayerControllerBase.ResetPlayerMovementInput", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -495,7 +495,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         LevelName.WriteTo(paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         return;
     }
@@ -511,7 +511,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Num, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -525,7 +525,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuStepDown, "BmGame.RPlayerControllerBase.DebugMenuStepDown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -539,7 +539,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuStepUp, "BmGame.RPlayerControllerBase.DebugMenuStepUp", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -553,7 +553,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuDownReleased, "BmGame.RPlayerControllerBase.DebugMenuDownReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -567,7 +567,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuDownPressed, "BmGame.RPlayerControllerBase.DebugMenuDownPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -581,7 +581,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuUpReleased, "BmGame.RPlayerControllerBase.DebugMenuUpReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -595,7 +595,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuUpPressed, "BmGame.RPlayerControllerBase.DebugMenuUpPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -609,7 +609,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuRightReleased, "BmGame.RPlayerControllerBase.DebugMenuRightReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -623,7 +623,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuRightPressed, "BmGame.RPlayerControllerBase.DebugMenuRightPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -637,7 +637,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuLeftReleased, "BmGame.RPlayerControllerBase.DebugMenuLeftReleased", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -651,7 +651,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuLeftPressed, "BmGame.RPlayerControllerBase.DebugMenuLeftPressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -665,7 +665,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectY, "BmGame.RPlayerControllerBase.DebugMenuSelectY", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -679,7 +679,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectX, "BmGame.RPlayerControllerBase.DebugMenuSelectX", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -693,7 +693,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectB, "BmGame.RPlayerControllerBase.DebugMenuSelectB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -707,7 +707,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuSelectA, "BmGame.RPlayerControllerBase.DebugMenuSelectA", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -721,7 +721,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuNextPage, "BmGame.RPlayerControllerBase.DebugMenuNextPage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -735,7 +735,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuPrevPage, "BmGame.RPlayerControllerBase.DebugMenuPrevPage", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -749,7 +749,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ToggleDebugMenu, "BmGame.RPlayerControllerBase.ToggleDebugMenu", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -763,7 +763,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuOff, "BmGame.RPlayerControllerBase.DebugMenuOff", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -777,7 +777,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuOn, "BmGame.RPlayerControllerBase.DebugMenuOn", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -791,7 +791,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOffB, "BmGame.RPlayerControllerBase.DebugMenuQualifyOffB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -805,7 +805,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOnB, "BmGame.RPlayerControllerBase.DebugMenuQualifyOnB", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -819,7 +819,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOffT, "BmGame.RPlayerControllerBase.DebugMenuQualifyOffT", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -833,7 +833,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DebugMenuQualifyOnT, "BmGame.RPlayerControllerBase.DebugMenuQualifyOnT", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -847,7 +847,7 @@ public partial class RPlayerControllerBase : BmSDK.Engine.PlayerController, BmSD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsDebugQualifier, "BmGame.RPlayerControllerBase.IsDebugQualifier", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 

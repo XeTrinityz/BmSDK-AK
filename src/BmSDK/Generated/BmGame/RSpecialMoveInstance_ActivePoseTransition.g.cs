@@ -93,7 +93,7 @@ public partial class RSpecialMoveInstance_ActivePoseTransition : BmSDK.BmGame.RS
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndPosition, paramsPtr + 132);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out EndYaw);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndYaw, paramsPtr + 144);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         EndPosition = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 132);
         EndYaw = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 144);
         return;
@@ -110,7 +110,7 @@ public partial class RSpecialMoveInstance_ActivePoseTransition : BmSDK.BmGame.RS
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
     }
 
@@ -125,7 +125,7 @@ public partial class RSpecialMoveInstance_ActivePoseTransition : BmSDK.BmGame.RS
         byte* paramsPtr = stackalloc byte[172];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

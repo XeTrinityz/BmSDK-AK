@@ -88,7 +88,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSeeBatman, "BmScript.RBMBehaviour_JokerBossPenguin.CanSeeBatman", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -102,7 +102,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShotByJokerGun, "BmScript.RBMBehaviour_JokerBossPenguin.ShotByJokerGun", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisAllowWaveDeath, "BmScript.RBMBehaviour_JokerBossPenguin.DisAllowWaveDeath", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -130,7 +130,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DisAllowPleadDeath, "BmScript.RBMBehaviour_JokerBossPenguin.DisAllowPleadDeath", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowPleadDeath, "BmScript.RBMBehaviour_JokerBossPenguin.AllowPleadDeath", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -158,7 +158,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JokerGunFired, "BmScript.RBMBehaviour_JokerBossPenguin.JokerGunFired", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -172,7 +172,7 @@ public partial class RBMBehaviour_JokerBossPenguin : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetReadyToShootBatman, "BmScript.RBMBehaviour_JokerBossPenguin.GetReadyToShootBatman", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

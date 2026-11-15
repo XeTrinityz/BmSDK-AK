@@ -156,7 +156,7 @@ internal sealed record RedirectCall(
         }
 
         // Call the actual target function and not an override
-        GameFunctions.ProcessEvent(
+        GameFunctions.CallProcessEvent(
             TargetObj.Ptr,
             TargetFunc.Ptr,
             (IntPtr)argsPtr,

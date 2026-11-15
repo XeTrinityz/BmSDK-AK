@@ -693,7 +693,7 @@ void Printer::PrintFunction(const FunctionInfo& func, bool isInInterface, ostrea
             Printer::Indent(out) << "funcManaged.iNative = 0;" << endl;
         }
 
-        Printer::Indent(out) << "BmSDK.Framework.GameFunctions.ProcessEvent(" << ptrText
+        Printer::Indent(out) << "BmSDK.Framework.GameFunctions.CallProcessEvent(" << ptrText
             << ", funcManaged.Ptr, (nint)paramsPtr, 0);" << endl;
 
         if (func.IsNative)

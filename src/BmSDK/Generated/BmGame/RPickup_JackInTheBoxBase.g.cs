@@ -93,7 +93,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         funcManaged.FunctionFlags &= ~BmSDK.Function.EFunctionFlags.FUNC_Native;
         funcManaged.FunctionFlags |= BmSDK.Function.EFunctionFlags.FUNC_Defined;
         funcManaged.iNative = 0;
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         funcManaged.iNative = oldNative;
         funcManaged.FunctionFlags = oldFlags;
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
@@ -109,7 +109,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetOverworldHintRange, "BmGame.RPickup_JackInTheBoxBase.GetOverworldHintRange", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -123,7 +123,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSatnavToRoadAtSameHeight, "BmGame.RPickup_JackInTheBoxBase.GetSatnavToRoadAtSameHeight", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -137,7 +137,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSatnavToRoadBelow, "BmGame.RPickup_JackInTheBoxBase.GetSatnavToRoadBelow", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -151,7 +151,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCustomFlag, "BmGame.RPickup_JackInTheBoxBase.GetCustomFlag", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
@@ -165,7 +165,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetUnlockedChapter, "BmGame.RPickup_JackInTheBoxBase.GetUnlockedChapter", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -179,7 +179,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetMapIconFloatUpAdjustment, "BmGame.RPickup_JackInTheBoxBase.GetMapIconFloatUpAdjustment", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -193,7 +193,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UseSecretLocation, "BmGame.RPickup_JackInTheBoxBase.UseSecretLocation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -207,7 +207,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSecretLocationZ, "BmGame.RPickup_JackInTheBoxBase.GetSecretLocationZ", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -221,7 +221,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSecretLocationY, "BmGame.RPickup_JackInTheBoxBase.GetSecretLocationY", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -235,7 +235,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSecretLocationX, "BmGame.RPickup_JackInTheBoxBase.GetSecretLocationX", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -249,7 +249,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSecretZone, "BmGame.RPickup_JackInTheBoxBase.GetSecretZone", this);
         byte* paramsPtr = stackalloc byte[17];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 0);
     }
 
@@ -263,7 +263,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSecretPickupIndex, "BmGame.RPickup_JackInTheBoxBase.GetSecretPickupIndex", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -277,7 +277,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSecretSubType, "BmGame.RPickup_JackInTheBoxBase.GetSecretSubType", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
@@ -291,7 +291,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSecretName, "BmGame.RPickup_JackInTheBoxBase.GetSecretName", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
     }
 
@@ -305,7 +305,7 @@ public partial class RPickup_JackInTheBoxBase : BmSDK.Engine.Actor, BmSDK.IGameO
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsValidSecret, "BmGame.RPickup_JackInTheBoxBase.IsValidSecret", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 

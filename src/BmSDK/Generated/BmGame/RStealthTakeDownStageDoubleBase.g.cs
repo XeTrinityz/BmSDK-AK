@@ -87,7 +87,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ReferencePosition, paramsPtr + 0);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out ReferenceRotation);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ReferenceRotation, paramsPtr + 12);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         ReferencePosition = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 0);
         ReferenceRotation = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Rotator>(paramsPtr + 12);
         return;
@@ -103,7 +103,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerVictim2Frozen, "BmGame.RStealthTakeDownStageDoubleBase.TriggerVictim2Frozen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -117,7 +117,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerVictim2NotFrozen, "BmGame.RStealthTakeDownStageDoubleBase.TriggerVictim2NotFrozen", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -131,7 +131,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerVictim2, "BmGame.RStealthTakeDownStageDoubleBase.TriggerVictim2", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -145,7 +145,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Begin, "BmGame.RStealthTakeDownStageDoubleBase.Begin", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -159,7 +159,7 @@ public partial class RStealthTakeDownStageDoubleBase : BmSDK.BmGame.RStealthTake
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStageAnim, "BmGame.RStealthTakeDownStageDoubleBase.GetStageAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 }

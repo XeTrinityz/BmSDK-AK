@@ -90,7 +90,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventAction, paramsPtr + 0);
         EventType.WriteTo(paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 8);
         return;
     }
@@ -105,7 +105,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsReadyToDisperse, "BmGame.RAEC_Casualty_Sub_Centre.IsReadyToDisperse", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -119,7 +119,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartDisperse, "BmGame.RAEC_Casualty_Sub_Centre.StartDisperse", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -133,7 +133,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasLongWayLeftToRun, "BmGame.RAEC_Casualty_Sub_Centre.HasLongWayLeftToRun", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -147,7 +147,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasDoneConsole, "BmGame.RAEC_Casualty_Sub_Centre.HasDoneConsole", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -161,7 +161,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAtCasualty, "BmGame.RAEC_Casualty_Sub_Centre.IsAtCasualty", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -175,7 +175,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HasDoneDiscoverGesture, "BmGame.RAEC_Casualty_Sub_Centre.HasDoneDiscoverGesture", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -190,7 +190,7 @@ public partial class RAEC_Casualty_Sub_Centre : BmSDK.BmGame.RAlertEventCoordina
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCas, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

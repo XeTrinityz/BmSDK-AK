@@ -88,7 +88,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_EndCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.EndCameraZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowShootInZoom, "BmScript.RBMBehaviour_JokerBossTwoface.AllowShootInZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartCameraZoom, "BmScript.RBMBehaviour_JokerBossTwoface.StartCameraZoom", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -130,7 +130,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShotJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotJoker", this);
         byte* paramsPtr = stackalloc byte[212];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShotByJoker, "BmScript.RBMBehaviour_JokerBossTwoface.ShotByJoker", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -158,7 +158,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_JokerGunFired, "BmScript.RBMBehaviour_JokerBossTwoface.JokerGunFired", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -172,7 +172,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanSeeJoker, "BmScript.RBMBehaviour_JokerBossTwoface.CanSeeJoker", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -186,7 +186,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TwoFaceTalkingOver, "BmScript.RBMBehaviour_JokerBossTwoface.TwoFaceTalkingOver", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -200,7 +200,7 @@ public partial class RBMBehaviour_JokerBossTwoface : BmSDK.BmGame.RBMBehaviour, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJokerDist, "BmScript.RBMBehaviour_JokerBossTwoface.GetJokerDist", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<float>(paramsPtr + 0);
     }
 

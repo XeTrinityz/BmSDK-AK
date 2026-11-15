@@ -84,7 +84,7 @@ public partial class RHidePoint_Walkable : BmSDK.BmGame.RHidePoint, BmSDK.IGameO
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Player, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -105,7 +105,7 @@ public partial class RHidePoint_Walkable : BmSDK.BmGame.RHidePoint, BmSDK.IGameO
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bVillainHasSeen, paramsPtr + 24);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out bAllowPlayerToHide);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAllowPlayerToHide, paramsPtr + 28);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         bVillainHasSeen = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 24);
         bAllowPlayerToHide = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 28);
         return;

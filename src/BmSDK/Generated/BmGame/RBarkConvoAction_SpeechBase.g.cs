@@ -88,7 +88,7 @@ public partial class RBarkConvoAction_SpeechBase : BmSDK.BmGame.RBarkConvoAction
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetCurrentDialogueType, "BmGame.RBarkConvoAction_SpeechBase.GetCurrentDialogueType", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogueType>(paramsPtr + 0);
     }
 
@@ -104,7 +104,7 @@ public partial class RBarkConvoAction_SpeechBase : BmSDK.BmGame.RBarkConvoAction
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(speechId, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(interrupted, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogue.AkDialogueCallbackResult>(paramsPtr + 8);
     }
 
@@ -122,7 +122,7 @@ public partial class RBarkConvoAction_SpeechBase : BmSDK.BmGame.RBarkConvoAction
         BmSDK.Framework.MarshalUtil.ToUnmanaged(dlgEvent, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Speaker, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bBarkSquelch, paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogue.AkDialogueCallbackResult>(paramsPtr + 28);
     }
 
@@ -136,7 +136,7 @@ public partial class RBarkConvoAction_SpeechBase : BmSDK.BmGame.RBarkConvoAction
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCoreSpeechOptions, "BmGame.RBarkConvoAction_SpeechBase.SetCoreSpeechOptions", this);
         byte* paramsPtr = stackalloc byte[132];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         Opt = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AkDialogue.FAkSpeechOptions>(paramsPtr + 0);
         return;
     }

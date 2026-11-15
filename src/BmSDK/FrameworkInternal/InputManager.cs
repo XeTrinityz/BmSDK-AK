@@ -123,11 +123,11 @@ internal static class InputManager
             {
                 if (down)
                 {
-                    ModGuard.Run(script, script.Name, "OnKeyDown", () => script.OnKeyDown(key));
+                    ModGuard.Run(script, script.Name, "OnKeyDown", static s => s.Script.OnKeyDown(s.Key), (Script: script, Key: key));
                 }
                 else
                 {
-                    ModGuard.Run(script, script.Name, "OnKeyUp", () => script.OnKeyUp(key));
+                    ModGuard.Run(script, script.Name, "OnKeyUp", static s => s.Script.OnKeyUp(s.Key), (Script: script, Key: key));
                 }
             }
         }

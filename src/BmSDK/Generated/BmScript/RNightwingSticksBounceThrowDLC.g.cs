@@ -91,7 +91,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SpawnProjectileClass, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LaunchLoc, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Managed, paramsPtr + 20);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RBatarangProjectile>(paramsPtr + 24);
     }
 
@@ -105,7 +105,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddAutoTargetsToBouncePoints, "BmScript.RNightwingSticksBounceThrowDLC.AddAutoTargetsToBouncePoints", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -119,7 +119,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AddInFrontBouncePoint, "BmScript.RNightwingSticksBounceThrowDLC.AddInFrontBouncePoint", this);
         byte* paramsPtr = stackalloc byte[84];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -133,7 +133,7 @@ public partial class RNightwingSticksBounceThrowDLC : BmSDK.BmScript.RNightwingS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetGadgetClassNameForHUD, "BmScript.RNightwingSticksBounceThrowDLC.GetGadgetClassNameForHUD", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FName>(paramsPtr + 0);
     }
 

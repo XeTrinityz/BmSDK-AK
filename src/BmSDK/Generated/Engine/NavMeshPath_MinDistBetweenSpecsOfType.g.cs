@@ -88,7 +88,7 @@ public partial class NavMeshPath_MinDistBetweenSpecsOfType : BmSDK.Engine.NavMes
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Recycle, "Engine.NavMeshPath_MinDistBetweenSpecsOfType.Recycle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -106,7 +106,7 @@ public partial class NavMeshPath_MinDistBetweenSpecsOfType : BmSDK.Engine.NavMes
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InEdgeType, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LastLocation, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InPenalty, paramsPtr + 28);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 

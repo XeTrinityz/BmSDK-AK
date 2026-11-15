@@ -95,7 +95,7 @@ public partial class RBMWeapon_SmashedSegment : BmSDK.Engine.KActorSpawnable, Bm
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRotation, paramsPtr + 44);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AdditionalTranslation, paramsPtr + 56);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(AdditionRotation, paramsPtr + 68);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -109,7 +109,7 @@ public partial class RBMWeapon_SmashedSegment : BmSDK.Engine.KActorSpawnable, Bm
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DestroyCheck, "BmGame.RBMWeapon_SmashedSegment.DestroyCheck", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

@@ -88,7 +88,7 @@ public partial class SeqAct_SetVector : BmSDK.Engine.SeqAct_SetSequenceVariable,
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "Engine.SeqAct_SetVector.Activated", this);
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

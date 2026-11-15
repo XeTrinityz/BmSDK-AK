@@ -88,7 +88,7 @@ public partial class RSpecialMoveInstance_ChuteToCrawlSpaceDLC : BmSDK.BmGame.RS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmGame.RSpecialMoveInstance_ChuteToCrawlSpaceDLC.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RSpecialMoveInstance_ChuteToCrawlSpaceDLC : BmSDK.BmGame.RS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OverridePlayerCollisionWhenInChute, "BmGame.RSpecialMoveInstance_ChuteToCrawlSpaceDLC.OverridePlayerCollisionWhenInChute", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

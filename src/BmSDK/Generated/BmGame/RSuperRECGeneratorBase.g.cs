@@ -92,7 +92,7 @@ public partial class RSuperRECGeneratorBase : BmSDK.Engine.Actor, BmSDK.IGameObj
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Momentum, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HitType, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InstigatedBy, paramsPtr + 28);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

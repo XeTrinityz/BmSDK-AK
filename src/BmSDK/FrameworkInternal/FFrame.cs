@@ -57,14 +57,16 @@ internal unsafe record struct FFrame
     }
 
     /// <summary>
-    /// Marshals this frame's parameters to managed values of the given types, in declaration order.
-    /// A by-reference type (a redirect's ref/out parameter) is read as its element type.
+    /// Marshals this frame's parameters to managed values of the given types, in declaration order,
+    /// starting at <paramref name="first"/> in the array returned (the slots before it are left for the
+    /// caller, such as a redirect's self). A by-reference type (a redirect's ref/out parameter) is read
+    /// as its element type.
     /// </summary>
-    public readonly object?[] ParamsToManaged(Type[] managedTypes)
+    public readonly object?[] ParamsToManaged(Type[] managedTypes, int first)
     {
         var layout = GetFunction().GetParamLayout();
 
-        var values = new object?[layout.Length];
+        var values = new object?[layout.Length + first];
         for (var i = 0; i < layout.Length; i++)
         {
             var type = managedTypes[i];
@@ -73,7 +75,7 @@ internal unsafe record struct FFrame
                 type = type.GetElementType()!;
             }
 
-            values[i] = MarshalUtil.ToManaged(ParamAddress(layout[i]), type);
+            values[first + i] = MarshalUtil.ToManaged(ParamAddress(layout[i]), type);
         }
 
         return values;

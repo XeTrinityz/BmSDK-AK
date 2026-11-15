@@ -90,7 +90,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bKismetHelpOn, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -104,7 +104,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StrikePressed, "BmGame.RStealthTakedownStageQuickBase.StrikePressed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -118,7 +118,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SlowMoForFearTakedown, "BmGame.RStealthTakedownStageQuickBase.SlowMoForFearTakedown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -132,7 +132,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEscapeTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEscapeTakedown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -146,7 +146,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerEnvironmentTakedown, "BmGame.RStealthTakedownStageQuickBase.TriggerEnvironmentTakedown", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -160,7 +160,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CantCancelTakedown, "BmGame.RStealthTakedownStageQuickBase.CantCancelTakedown", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -174,7 +174,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CriticalPointEndTimer, "BmGame.RStealthTakedownStageQuickBase.CriticalPointEndTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -188,7 +188,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPlayQuickFinishFromHere, "BmGame.RStealthTakedownStageQuickBase.CanPlayQuickFinishFromHere", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -202,7 +202,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CriticalPointStart, "BmGame.RStealthTakedownStageQuickBase.CriticalPointStart", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -216,7 +216,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChanceToSucceed, "BmGame.RStealthTakedownStageQuickBase.ChanceToSucceed", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -230,7 +230,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanTriggerQuickFinish, "BmGame.RStealthTakedownStageQuickBase.CanTriggerQuickFinish", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -244,7 +244,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPressStrangleButton, "BmGame.RStealthTakedownStageQuickBase.CanPressStrangleButton", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -258,7 +258,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TimerCritical, "BmGame.RStealthTakedownStageQuickBase.TimerCritical", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -272,7 +272,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AlwaysAllowFearTakedownTimer, "BmGame.RStealthTakedownStageQuickBase.AlwaysAllowFearTakedownTimer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -286,7 +286,7 @@ public partial class RStealthTakedownStageQuickBase : BmSDK.BmGame.RStealthTakeD
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Begin, "BmGame.RStealthTakedownStageQuickBase.Begin", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

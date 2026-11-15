@@ -92,7 +92,7 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ImpactSound, paramsPtr + 140);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlaySound, paramsPtr + 148);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Wetness, paramsPtr + 152);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -111,7 +111,7 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ImpactSound, paramsPtr + 100);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlaySound, paramsPtr + 108);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Wetness, paramsPtr + 112);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -129,7 +129,7 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         BmSDK.Framework.MarshalUtil.ToUnmanaged(SoundImpact, paramsPtr + 100);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bPlaySound, paramsPtr + 108);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Wetness, paramsPtr + 112);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RPhysicalMaterialProperty : BmSDK.Engine.PhysicalMaterialPr
         byte* paramsPtr = stackalloc byte[40];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(PSC, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

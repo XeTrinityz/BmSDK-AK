@@ -87,7 +87,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjClassVersion, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.GetObjClassVersion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -101,7 +101,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_MovingCarOver, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.MovingCarOver", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -115,7 +115,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_WarnMovingCar, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.WarnMovingCar", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -129,7 +129,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_StartSiren, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.StartSiren", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -143,7 +143,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackObjectRightHand, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackObjectRightHand", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -157,7 +157,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackObject, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackObject", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -171,7 +171,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExplodeMolotov, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.ExplodeMolotov", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -185,7 +185,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashDriversPassengerWindow, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SmashDriversPassengerWindow", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -199,7 +199,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashDriversWindow, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SmashDriversWindow", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -213,7 +213,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CrackWindscreen, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CrackWindscreen", this);
         byte* paramsPtr = stackalloc byte[52];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -227,7 +227,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarOnRoof, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarOnRoof", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -241,7 +241,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarOnSide, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarOnSide", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -255,7 +255,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarToLoopAnim, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToLoopAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -269,7 +269,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarToAnim, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -283,7 +283,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CarToPhysics, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CarToPhysics", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -297,7 +297,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Cheer, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.Cheer", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -311,7 +311,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpectatorCheer, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.SpectatorCheer", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -325,7 +325,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_DettachFromCar, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.DettachFromCar", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -339,7 +339,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachToCarSeat1, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.AttachToCarSeat1", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -353,7 +353,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerOutputEvent, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.TriggerOutputEvent", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -367,7 +367,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanPlayWaitingAnimation, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.CanPlayWaitingAnimation", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -381,7 +381,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FastExitBuddies, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.FastExitBuddies", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -395,7 +395,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RiotExitBehaviour, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.RiotExitBehaviour", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -411,7 +411,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Threat, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bAlertNeighbours, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
     }
 
@@ -428,7 +428,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         BmSDK.Framework.MarshalUtil.ToUnmanaged(V, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(CarSpeed, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bZap, paramsPtr + 12);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RGameInfo.EEvadeVehicleType>(paramsPtr + 16);
     }
 
@@ -442,7 +442,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnDeactivate, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.OnDeactivate", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -456,7 +456,7 @@ public partial class RBMBehaviour_AbandonedVehicleAnimationPoint : BmSDK.BmScrip
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_OnActivate, "BmScript.RBMBehaviour_AbandonedVehicleAnimationPoint.OnActivate", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

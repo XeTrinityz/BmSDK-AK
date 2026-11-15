@@ -90,7 +90,7 @@ public partial class RAEC_PauseAndLook : BmSDK.BmGame.RAlertEventCoordinatorSolo
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bSetLookPoint, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LookPoint, paramsPtr + 4);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

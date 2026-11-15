@@ -88,7 +88,7 @@ public partial class Path_MinDistBetweenSpecsOfType : BmSDK.Engine.PathConstrain
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Recycle, "Engine.Path_MinDistBetweenSpecsOfType.Recycle", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -105,7 +105,7 @@ public partial class Path_MinDistBetweenSpecsOfType : BmSDK.Engine.PathConstrain
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InMinDist, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InSpecClass, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(LastLocation, paramsPtr + 20);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
     }
 

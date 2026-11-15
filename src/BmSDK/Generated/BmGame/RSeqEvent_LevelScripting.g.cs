@@ -90,7 +90,7 @@ public partial class RSeqEvent_LevelScripting : BmSDK.BmGame.RBMSeqEvent_Behavio
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out Col);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Col, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         Col = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.GameObject.FColor>(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 4);
     }
@@ -105,7 +105,7 @@ public partial class RSeqEvent_LevelScripting : BmSDK.BmGame.RBMSeqEvent_Behavio
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BehaviourIsRunning, "BmGame.RSeqEvent_LevelScripting.BehaviourIsRunning", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -119,7 +119,7 @@ public partial class RSeqEvent_LevelScripting : BmSDK.BmGame.RBMSeqEvent_Behavio
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetJoiningLocations, "BmGame.RSeqEvent_LevelScripting.GetJoiningLocations", this);
         byte* paramsPtr = stackalloc byte[64];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         outLocations = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<System.Numerics.Vector3>>(paramsPtr + 0);
         outObjects = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.GameObject>>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 32);
@@ -135,7 +135,7 @@ public partial class RSeqEvent_LevelScripting : BmSDK.BmGame.RBMSeqEvent_Behavio
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_RegisterEvent, "BmGame.RSeqEvent_LevelScripting.RegisterEvent", this);
         byte* paramsPtr = stackalloc byte[44];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

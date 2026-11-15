@@ -88,7 +88,7 @@ public partial class RSpecialMoveInstance_CwPounceOnThugDLC : BmSDK.BmScript.RSp
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CwPounceOnThugDLC.FinishSpecialMove", this);
         byte* paramsPtr = stackalloc byte[336];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

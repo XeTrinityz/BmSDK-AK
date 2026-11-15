@@ -84,7 +84,7 @@ public partial class RSeqAct_QuickGadgetAction : BmSDK.Engine.SeqAct_Latent, BmS
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -98,7 +98,7 @@ public partial class RSeqAct_QuickGadgetAction : BmSDK.Engine.SeqAct_Latent, BmS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GadgetFireNotify, "BmGame.RSeqAct_QuickGadgetAction.GadgetFireNotify", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -112,7 +112,7 @@ public partial class RSeqAct_QuickGadgetAction : BmSDK.Engine.SeqAct_Latent, BmS
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FireQuickGadget, "BmGame.RSeqAct_QuickGadgetAction.FireQuickGadget", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

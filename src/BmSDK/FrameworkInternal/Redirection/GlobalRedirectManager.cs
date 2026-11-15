@@ -139,18 +139,12 @@ internal sealed class GlobalRedirectManager(BindingFlags genericRedirSearchFlags
     {
         var redirMethod = redirInfo.RedirectMethod;
 
-        // Marshal args, add self as first arg if needed.
-        var values = stackPtr->ParamsToManaged(redirInfo.GetParamTypes(funcObj));
-        object?[] args;
-        if (funcObj.IsStatic)
+        // Marshal args, with self as the first one when the function isn't static.
+        var first = funcObj.IsStatic ? 0 : 1;
+        var args = stackPtr->ParamsToManaged(redirInfo.GetParamTypes(funcObj), first);
+        if (first == 1)
         {
-            args = values;
-        }
-        else
-        {
-            args = new object?[values.Length + 1];
             args[0] = selfObj;
-            Array.Copy(values, 0, args, 1, values.Length);
         }
 
         // Execute detour

@@ -88,7 +88,7 @@ public partial class RBarkGroupContext_Pred : BmSDK.BmGame.RBarkGroupContext, Bm
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDlgComponentsOfGroup, "BmGame.RBarkGroupContext_Pred.GetDlgComponentsOfGroup", this);
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.AkDialogueComponent>>(paramsPtr + 0);
     }
 

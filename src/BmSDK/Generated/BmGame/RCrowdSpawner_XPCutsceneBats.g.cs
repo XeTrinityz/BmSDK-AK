@@ -88,7 +88,7 @@ public partial class RCrowdSpawner_XPCutsceneBats : BmSDK.BmGame.RCrowdSpawner, 
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnAgent, "BmGame.RCrowdSpawner_XPCutsceneBats.SpawnAgent", this);
         byte* paramsPtr = stackalloc byte[32];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RCrowdAgent>(paramsPtr + 0);
     }
 
@@ -105,7 +105,7 @@ public partial class RCrowdSpawner_XPCutsceneBats : BmSDK.BmGame.RCrowdSpawner, 
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NumToSpawn, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewFlockID, paramsPtr + 4);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewCrowdSequence, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

@@ -88,7 +88,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LieutenantHit, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.LieutenantHit", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakTorso, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.BreakTorso", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakRight, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.BreakRight", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -130,7 +130,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BreakLeft, "BmScript.RBMBehaviour_FreezeBlastHitLieutenant.BreakLeft", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -149,7 +149,7 @@ public partial class RBMBehaviour_FreezeBlastHitLieutenant : BmSDK.BmGame.RBMBeh
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bInstantFreeze, paramsPtr + 20);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Proj, paramsPtr + 24);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bShouldAlwaysRagdoll, paramsPtr + 32);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

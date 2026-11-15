@@ -88,7 +88,7 @@ public partial class RStealthTakeDownStage_GrabFromHang : BmSDK.BmGame.RStealthT
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetStageAnim, "BmGame.RStealthTakeDownStage_GrabFromHang.GetStageAnim", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -110,7 +110,7 @@ public partial class RStealthTakeDownStage_GrabFromHang : BmSDK.BmGame.RStealthT
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BlendTime, paramsPtr + 28);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bBlendCameraBackToPlayerCameraWhenFinished, paramsPtr + 32);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bUseBatmanAsCameraCollisionTargetInsteadOfVictim, paramsPtr + 36);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }
 
@@ -124,7 +124,7 @@ public partial class RStealthTakeDownStage_GrabFromHang : BmSDK.BmGame.RStealthT
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IgnoreHitReaction, "BmGame.RStealthTakeDownStage_GrabFromHang.IgnoreHitReaction", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -138,7 +138,7 @@ public partial class RStealthTakeDownStage_GrabFromHang : BmSDK.BmGame.RStealthT
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttackerDamaged, "BmGame.RStealthTakeDownStage_GrabFromHang.AttackerDamaged", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -152,7 +152,7 @@ public partial class RStealthTakeDownStage_GrabFromHang : BmSDK.BmGame.RStealthT
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Begin, "BmGame.RStealthTakeDownStage_GrabFromHang.Begin", this);
         byte* paramsPtr = stackalloc byte[104];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -166,7 +166,7 @@ public partial class RStealthTakeDownStage_GrabFromHang : BmSDK.BmGame.RStealthT
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CalcRopeLength, "BmGame.RStealthTakeDownStage_GrabFromHang.CalcRopeLength", this);
         byte* paramsPtr = stackalloc byte[28];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

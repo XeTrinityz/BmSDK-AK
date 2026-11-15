@@ -88,7 +88,7 @@ public partial class MAEC_LaughingGas_Outsider : BmSDK.BmGame.RAEC_Smoke_Outside
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PlayEndBark, "BmGame.MAEC_LaughingGas_Outsider.PlayEndBark", this);
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

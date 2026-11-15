@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.Loader;
+using System.Security.Cryptography;
 using System.Text;
 using BmSDK.Framework.Redirection;
 using Microsoft.CodeAnalysis;
@@ -82,7 +83,13 @@ internal static class ScriptManager
 
     private const int DebounceMillis = 500;
 
-    public static IEnumerable<Script> Scripts => s_loadedMods.Values.SelectMany(m => m.Scripts);
+    // Every loaded script, rebuilt when a mod loads or unloads. The tick, draw and key callbacks walk
+    // it every frame, and an array is walked without allocating.
+    private static Script[] s_scripts = [];
+
+    public static Script[] Scripts => s_scripts;
+
+    private static void RebuildScripts() => s_scripts = [.. s_loadedMods.Values.SelectMany(m => m.Scripts)];
 
     public static IEnumerable<Mod> Mods => s_loadedMods.Values.Select(m => m.Mod);
 
@@ -117,43 +124,61 @@ internal static class ScriptManager
     {
         var modsDir = FileUtils.GetModsPath();
         var scriptsDir = FileUtils.GetScriptsPath();
+        var jobs = new List<(Mod Mod, string ScriptsDir, string What)>();
 
-        // Load implicit "Scripts" mod from BmGame/Scripts/
+        // Implicit "Scripts" mod from BmGame/Scripts/
         if (Directory.Exists(scriptsDir))
         {
-            try
-            {
-                var defaultMod = Mod.CreateDefault(scriptsDir);
-                LoadMod(defaultMod, scriptsDir);
-            }
-            catch (Exception e)
-            {
-                Debug.LogError($"Failed to load loose scripts: {e.Message}");
-            }
+            jobs.Add((Mod.CreateDefault(scriptsDir), scriptsDir, "loose scripts"));
         }
 
-        // Load explicit mods from BmGame/Mods/*/
+        // Explicit mods from BmGame/Mods/*/
         if (Directory.Exists(modsDir))
         {
             foreach (var modDir in Directory.EnumerateDirectories(modsDir))
             {
-                var tomlPath = Path.Combine(modDir, "mod.toml");
-                if (!File.Exists(tomlPath))
+                if (!File.Exists(Path.Combine(modDir, "mod.toml")))
                 {
                     continue;
                 }
 
                 try
                 {
-                    var mod = Mod.FromDirectory(modDir);
-                    var modScriptsDir = Path.Combine(modDir, "scripts");
-                    LoadMod(mod, modScriptsDir);
+                    jobs.Add((Mod.FromDirectory(modDir), Path.Combine(modDir, "scripts"), $"mod at {Path.GetFileName(modDir)}"));
                 }
                 catch (Exception e)
                 {
-                    Debug.LogError(
-                        $"Failed to load mod at {Path.GetFileName(modDir)}: {e.Message}"
-                    );
+                    Debug.LogError($"Failed to load mod at {Path.GetFileName(modDir)}: {e.Message}");
+                }
+            }
+        }
+
+        // Compiling is the slow part of starting up and each mod's is its own, so they run side by side.
+        // The mods are still loaded one by one, in the same order as before.
+        var compiled = new (MemoryStream? Pe, MemoryStream? Pdb)[jobs.Count];
+        Parallel.For(0, jobs.Count, i =>
+        {
+            try
+            {
+                compiled[i] = CompileMod(jobs[i].Mod, jobs[i].ScriptsDir);
+            }
+            catch (Exception e)
+            {
+                Debug.LogError($"Failed to load {jobs[i].What}: {e.Message}");
+            }
+        });
+
+        for (var i = 0; i < jobs.Count; i++)
+        {
+            if (compiled[i] is { Pe: { } pe, Pdb: { } pdb })
+            {
+                try
+                {
+                    LoadCompiled(jobs[i].Mod, pe, pdb);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"Failed to load {jobs[i].What}: {e.Message}");
                 }
             }
         }
@@ -165,11 +190,20 @@ internal static class ScriptManager
     private static bool LoadMod(Mod mod, string scriptsDir)
     {
         var (peStream, pdbStream) = CompileMod(mod, scriptsDir);
-        if (peStream == null)
+        if (peStream == null || pdbStream == null)
         {
             return false;
         }
 
+        LoadCompiled(mod, peStream, pdbStream);
+        return true;
+    }
+
+    /// <summary>
+    /// Loads a mod's compiled assembly and starts its scripts on the engine thread.
+    /// </summary>
+    private static void LoadCompiled(Mod mod, MemoryStream peStream, MemoryStream pdbStream)
+    {
         var targetName = $"{mod.Name}.dll";
         var modAlc = new ScriptLoadContext(targetName);
         var asm = modAlc.LoadFromStream(peStream, pdbStream);
@@ -186,6 +220,7 @@ internal static class ScriptManager
                 var scripts = CreateScriptInstances(asm, mod);
                 var loaded = new LoadedMod(mod, modAlc, scripts);
                 s_loadedMods[mod.DirectoryPath] = loaded;
+                RebuildScripts();
 
                 RedirectManager.Global.RegisterRedirectors(asm);
                 ScriptComponentManager.RegisterTypes(asm);
@@ -200,8 +235,6 @@ internal static class ScriptManager
             },
             state: null
         );
-
-        return true;
     }
 
     /// <summary>
@@ -228,6 +261,7 @@ internal static class ScriptManager
         // Unload the assembly context
         loaded.Alc.Unload();
         s_loadedMods.Remove(loaded.Mod.DirectoryPath);
+        RebuildScripts();
         GC.Collect();
         GC.WaitForPendingFinalizers();
     }
@@ -306,14 +340,25 @@ internal static class ScriptManager
             return (null, null);
         }
 
-        var syntaxTrees = sourceFilePaths
-            .Select(filePath =>
+        // Each file is read once, for the cache key and for the compiler.
+        var sources = sourceFilePaths.Select(filePath => (Path: filePath, Bytes: File.ReadAllBytes(filePath))).ToList();
+        var cacheKey = CacheKey(mod, scriptsDir, sources);
+        if (TryLoadCached(mod, cacheKey, out var cachedPe, out var cachedPdb))
+        {
+            Debug.Log(
+                $"[{mod.Name}] {sourceFilePaths.Count} {CommonUtils.FormatPlural(sourceFilePaths.Count, "script")} unchanged, loaded the last build"
+            );
+            return (cachedPe, cachedPdb);
+        }
+
+        var syntaxTrees = sources
+            .Select(source =>
             {
-                using var stream = File.OpenRead(filePath);
+                using var stream = new MemoryStream(source.Bytes, writable: false);
                 return CSharpSyntaxTree.ParseText(
                     SourceText.From(stream, Encoding.UTF8),
                     ParseOptions,
-                    filePath
+                    source.Path
                 );
             })
             .ToList();
@@ -349,9 +394,104 @@ internal static class ScriptManager
             $"[{mod.Name}] Success! {sourceFilePaths.Count} {CommonUtils.FormatPlural(sourceFilePaths.Count, "script")} compiled in {watch.Elapsed.FormatDuration()}"
         );
 
+        SaveCached(mod, cacheKey, peStream, pdbStream);
+
         peStream.Position = 0;
         pdbStream.Position = 0;
         return (peStream, pdbStream);
+    }
+
+    // --- Build cache ---
+
+    // A mod whose sources haven't changed since its last build loads that build from here, so starting
+    // the game skips the compiler (and loading it) for every unchanged mod. A key covers each source
+    // file, the mod's name and the compiler setup, and this BmSDK build, so anything else that would
+    // change the output makes a new key. A cache that can't be read or written is only skipped.
+    private const int CacheFormat = 1;
+
+    private static string CacheDir => Path.Combine(FileUtils.GetBinariesPath(), "BmSDKCache");
+
+    private static string CachePrefix(Mod mod)
+    {
+        var name = Path.GetFileName(mod.DirectoryPath.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar));
+        foreach (var bad in Path.GetInvalidFileNameChars())
+        {
+            name = name.Replace(bad, '_');
+        }
+
+        return name + "-";
+    }
+
+    private static string CacheKey(Mod mod, string scriptsDir, List<(string Path, byte[] Bytes)> sources)
+    {
+        using var hash = IncrementalHash.CreateHash(HashAlgorithmName.SHA256);
+        void Add(string text) => hash.AppendData(Encoding.UTF8.GetBytes(text + "\n"));
+
+        Add($"format {CacheFormat}");
+        Add(typeof(GameObject).Assembly.ManifestModule.ModuleVersionId.ToString());
+        Add(typeof(CSharpCompilation).Assembly.GetName().Version?.ToString() ?? "");
+        Add(LangVer.ToString());
+        Add(GlobalUsings);
+        Add(mod.Name);
+        foreach (var (filePath, bytes) in sources.OrderBy(s => s.Path, StringComparer.OrdinalIgnoreCase))
+        {
+            Add(Path.GetRelativePath(scriptsDir, filePath));
+            Add(bytes.Length.ToString());
+            hash.AppendData(bytes);
+        }
+
+        return Convert.ToHexString(hash.GetHashAndReset(), 0, 16);
+    }
+
+    private static bool TryLoadCached(Mod mod, string key, out MemoryStream? pe, out MemoryStream? pdb)
+    {
+        pe = pdb = null;
+        try
+        {
+            var stem = Path.Combine(CacheDir, CachePrefix(mod) + key);
+            if (!File.Exists(stem + ".dll") || !File.Exists(stem + ".pdb"))
+            {
+                return false;
+            }
+
+            pe = new MemoryStream(File.ReadAllBytes(stem + ".dll"));
+            pdb = new MemoryStream(File.ReadAllBytes(stem + ".pdb"));
+            return true;
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning($"[{mod.Name}] The last build couldn't be read, compiling instead: {e.Message}");
+            pe = pdb = null;
+            return false;
+        }
+    }
+
+    private static void SaveCached(Mod mod, string key, MemoryStream pe, MemoryStream pdb)
+    {
+        try
+        {
+            Directory.CreateDirectory(CacheDir);
+            var prefix = CachePrefix(mod);
+            foreach (var old in Directory.EnumerateFiles(CacheDir, prefix + "*"))
+            {
+                File.Delete(old);
+            }
+
+            var stem = Path.Combine(CacheDir, prefix + key);
+            WriteAtomically(stem + ".pdb", pdb);
+            WriteAtomically(stem + ".dll", pe);
+        }
+        catch (Exception e)
+        {
+            Debug.LogWarning($"[{mod.Name}] The build couldn't be kept for the next start: {e.Message}");
+        }
+    }
+
+    private static void WriteAtomically(string path, MemoryStream data)
+    {
+        var temp = path + ".tmp";
+        File.WriteAllBytes(temp, data.ToArray());
+        File.Move(temp, path, overwrite: true);
     }
 
     private static void PrintErrors(EmitResult emitResult, string scriptsDir, string modName)
@@ -496,7 +636,21 @@ internal static class ScriptManager
             return;
         }
 
+        // Only a mod's scripts folder is compiled, so a .cs file anywhere else in the mod (a project
+        // for the IDE, a build's obj folder, notes) doesn't reload it.
+        var scriptsDir = Path.Combine(modDir, "scripts");
+        if (!IsUnder(e.FullPath, scriptsDir) && !(e is RenamedEventArgs renamed && IsUnder(renamed.OldFullPath, scriptsDir)))
+        {
+            return;
+        }
+
         ScheduleReload(modDir);
+    }
+
+    private static bool IsUnder(string filePath, string dir)
+    {
+        var relative = Path.GetRelativePath(dir, filePath);
+        return relative != "." && !relative.StartsWith("..", StringComparison.Ordinal) && !Path.IsPathRooted(relative);
     }
 
     private static void OnScriptsFileChanged(object sender, FileSystemEventArgs e)

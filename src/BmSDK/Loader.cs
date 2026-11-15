@@ -8,7 +8,7 @@ using MoreLinq;
 
 namespace BmSDK.Framework;
 
-internal static class Loader
+internal static unsafe class Loader
 {
     private const string InitFuncName = "Engine.GameInfo:InitGame";
     private const string EnterMenuFuncName = "BmScript.RSeqAct_GFxStartFrontend:Activated";
@@ -16,13 +16,15 @@ internal static class Loader
     private const string PostBeginPlayFuncName = ":PostBeginPlay";
     private const string TickFuncName = "BmGame.RGameInfo:Tick";
 
-    private static GameFunctions.EngineTickDelegate? _EngineTickDetourBase = null;
-    private static GameFunctions.ProcessInternalDelegate? _ProcessInternalDetourBase = null;
-    private static GameFunctions.ProcessDeferredMessageDelegate? _ProcessDeferredMessageDetourBase =
-        null;
-    private static GameFunctions.AddObjectDelegate? _AddObjectDelegateDetourBase = null;
-    private static GameFunctions.ConditionalPostLoadDelegate? _ConditionalPostLoadDetourBase = null;
-    private static GameFunctions.ConditionalDestroyDelegate? _ConditionalDestroyDetourBase = null;
+    // The game's own functions behind each detour. The detours are [UnmanagedCallersOnly] and the
+    // originals plain function pointers: ProcessInternal runs for every UnrealScript call in the game,
+    // and a delegate detour paid a marshalling stub both ways on each one.
+    private static delegate* unmanaged<IntPtr, IntPtr> s_engineTickBase;
+    private static delegate* unmanaged<IntPtr, IntPtr, IntPtr, void> s_processInternalBase;
+    private static delegate* unmanaged<IntPtr, FDeferredMessage*, void> s_processDeferredMessageBase;
+    private static delegate* unmanaged<IntPtr, int, void> s_addObjectBase;
+    private static delegate* unmanaged<IntPtr, void> s_conditionalPostLoadBase;
+    private static delegate* unmanaged<IntPtr, void> s_conditionalDestroyBase;
 
     /// <summary>
     /// Main .NET entry point, called from BmSDK.Host.
@@ -48,40 +50,38 @@ internal static class Loader
         RedirectManager.Global.RegisterRedirectors(typeof(Loader).Assembly);
 
         // Create function detours
-        _EngineTickDetourBase = DetourUtil.NewDetour<GameFunctions.EngineTickDelegate>(
+        s_engineTickBase = (delegate* unmanaged<IntPtr, IntPtr>)DetourUtil.NewDetour(
             GameDefine.Current.EngineTick,
-            EngineTickDetour
+            (IntPtr)(delegate* unmanaged<IntPtr, IntPtr>)&EngineTickDetour
         );
 
-        _ProcessInternalDetourBase = DetourUtil.NewDetour<GameFunctions.ProcessInternalDelegate>(
+        s_processInternalBase = (delegate* unmanaged<IntPtr, IntPtr, IntPtr, void>)DetourUtil.NewDetour(
             GameDefine.Current.ProcessInternal,
-            ProcessInternalDetour
+            (IntPtr)(delegate* unmanaged<IntPtr, IntPtr, IntPtr, void>)&ProcessInternalDetour
         );
 
-        _ProcessDeferredMessageDetourBase =
-            DetourUtil.NewDetour<GameFunctions.ProcessDeferredMessageDelegate>(
-                GameDefine.Current.ProcessDeferredMessage,
-                ProcessDeferredMessageDetour
-            );
+        s_processDeferredMessageBase = (delegate* unmanaged<IntPtr, FDeferredMessage*, void>)DetourUtil.NewDetour(
+            GameDefine.Current.ProcessDeferredMessage,
+            (IntPtr)(delegate* unmanaged<IntPtr, FDeferredMessage*, void>)&ProcessDeferredMessageDetour
+        );
 
-        _AddObjectDelegateDetourBase = DetourUtil.NewDetour<GameFunctions.AddObjectDelegate>(
+        s_addObjectBase = (delegate* unmanaged<IntPtr, int, void>)DetourUtil.NewDetour(
             GameDefine.Current.AddObject,
-            AddObjectDetour
+            (IntPtr)(delegate* unmanaged<IntPtr, int, void>)&AddObjectDetour
         );
 
-        _ConditionalPostLoadDetourBase =
-            DetourUtil.NewDetour<GameFunctions.ConditionalPostLoadDelegate>(
-                GameDefine.Current.ConditionalPostLoad,
-                ConditionalPostLoadDetour
-            );
+        s_conditionalPostLoadBase = (delegate* unmanaged<IntPtr, void>)DetourUtil.NewDetour(
+            GameDefine.Current.ConditionalPostLoad,
+            (IntPtr)(delegate* unmanaged<IntPtr, void>)&ConditionalPostLoadDetour
+        );
 
-        _ConditionalDestroyDetourBase =
-            DetourUtil.NewDetour<GameFunctions.ConditionalDestroyDelegate>(
-                GameDefine.Current.ConditionalDestroy,
-                ConditionalDestroyDetour
-            );
+        s_conditionalDestroyBase = (delegate* unmanaged<IntPtr, void>)DetourUtil.NewDetour(
+            GameDefine.Current.ConditionalDestroy,
+            (IntPtr)(delegate* unmanaged<IntPtr, void>)&ConditionalDestroyDetour
+        );
     }
 
+    [UnmanagedCallersOnly]
     private static IntPtr EngineTickDetour(IntPtr self)
     {
         FrameStats.BeginFrame();
@@ -101,8 +101,16 @@ internal static class Loader
             Abort(ex);
         }
 
-        var result = _EngineTickDetourBase!.Invoke(self);
-        FrameStats.EndFrame();
+        var result = s_engineTickBase(self);
+        try
+        {
+            FrameStats.EndFrame();
+        }
+        catch (Exception ex)
+        {
+            Abort(ex);
+        }
+
         return result;
     }
 
@@ -113,17 +121,16 @@ internal static class Loader
     // not allocate: a function's path and lifecycle role are worked out once per UFunction (see
     // Classify), whether any redirect targets it is cached until the set of redirects changes, and
     // the guard is a plain try/catch rather than a captured lambda.
-    private static unsafe void ProcessInternalDetour(IntPtr self, IntPtr Stack, IntPtr Result)
+    [UnmanagedCallersOnly]
+    private static void ProcessInternalDetour(IntPtr self, IntPtr Stack, IntPtr Result)
     {
         // Kept outside the try so a native fault inside the game's own function body can be named below.
         string? funcName = null;
         GameObject? selfObj = null;
         try
         {
-            IntPtr selfPtr = self;
             FFrame* stackPtr = (FFrame*)Stack.ToPointer();
-            selfObj = MarshalUtil.ToManaged<GameObject>(&selfPtr);
-            var funcObj = MarshalUtil.ToManaged<Function>(&stackPtr->Node);
+            var funcObj = FunctionWrapper(stackPtr->Node);
             funcName = funcObj.CachedPath ?? Classify(funcObj);
 
             switch (funcObj.LifecycleKind)
@@ -137,56 +144,61 @@ internal static class Loader
                     // Preload packages and root keep-alive objects before any world loads
                     PreloadManager.Run();
 
-                    ScriptManager.Scripts.ForEach(script =>
-                        ModGuard.Run(script, script.Name, "Main", script.Main)
-                    );
+                    foreach (var script in ScriptManager.Scripts)
+                    {
+                        ModGuard.Run(script, script.Name, "Main", static s => s.Main(), script);
+                    }
                     s_hasGameInited = true;
                     break;
 
                 // Notify scripts of game start
                 case Function.Lifecycle.EnterMenu when !s_hasGameStarted:
-                    ScriptManager.Scripts.ForEach(script =>
-                        ModGuard.Run(script, script.Name, "OnEnterMenu", script.OnEnterMenu)
-                    );
+                    foreach (var script in ScriptManager.Scripts)
+                    {
+                        ModGuard.Run(script, script.Name, "OnEnterMenu", static s => s.OnEnterMenu(), script);
+                    }
                     s_hasGameStarted = true;
                     break;
 
                 // Notify scripts of game begin play
                 case Function.Lifecycle.EnterGame:
-                    ScriptManager.Scripts.ForEach(script =>
-                        ModGuard.Run(script, script.Name, "OnEnterGame", script.OnEnterGame)
-                    );
+                    foreach (var script in ScriptManager.Scripts)
+                    {
+                        ModGuard.Run(script, script.Name, "OnEnterGame", static s => s.OnEnterGame(), script);
+                    }
                     break;
 
                 // Notify scripts of game tick
                 case Function.Lifecycle.Tick:
                     // Call OnTick() for scripts
-                    ScriptManager.Scripts.ForEach(script =>
-                        ModGuard.Run(script, script.Name, "OnTick", script.OnTick)
-                    );
+                    foreach (var script in ScriptManager.Scripts)
+                    {
+                        ModGuard.Run(script, script.Name, "OnTick", static s => s.OnTick(), script);
+                    }
 
                     // Call OnTick() for script components
                     if (GameObject.AllScriptComponents.Count > 0)
                     {
                         foreach (var scriptComponent in GameObject.AllScriptComponents.ToArray())
                         {
-                            ModGuard.Run(scriptComponent, scriptComponent.GetType().Name, "OnTick", scriptComponent.OnTick);
+                            ModGuard.Run(scriptComponent, scriptComponent.GetType().Name, "OnTick", static c => c.OnTick(), scriptComponent);
                         }
                     }
                     break;
             }
 
             // Run redirect and skip base implementation if applicable to this function
-            if (
-                RedirectManager.MayRedirect(funcObj, funcName)
-                && RedirectManager.ExecuteRedirector(selfObj, funcObj, funcName, stackPtr, Result)
-            )
+            if (RedirectManager.MayRedirect(funcObj, funcName))
             {
-                return;
+                selfObj = MarshalUtil.GetOrCreateWrapper(self);
+                if (RedirectManager.ExecuteRedirector(selfObj, funcObj, funcName, stackPtr, Result))
+                {
+                    return;
+                }
             }
 
             // Call base impl. Redirected implementations are expected to reach this by calling "themselves" a second time.
-            _ProcessInternalDetourBase!.Invoke(self, Stack, Result);
+            s_processInternalBase(self, Stack, Result);
         }
         catch (Exception ex)
         {
@@ -195,7 +207,8 @@ internal static class Loader
             string where = "?";
             try
             {
-                where = (funcName ?? "?") + " on " + (selfObj != null ? selfObj.GetPathName() : "?");
+                selfObj ??= MarshalUtil.GetOrCreateWrapper(self);
+                where = (funcName ?? "?") + " on " + selfObj.GetPathName();
             }
             catch
             {
@@ -205,6 +218,28 @@ internal static class Loader
             Debug.LogError("ProcessInternal failed while the game ran " + where);
             Abort(ex);
         }
+    }
+
+    // Function wrappers by UFunction address, for the game thread only. The wrapper table takes a lock
+    // the loading threads also take, and every UnrealScript call in the game comes through here. A
+    // wrapper dies with its function, so a stale entry has a zero Ptr and is looked up again.
+    private static readonly Dictionary<IntPtr, Function> s_functions = [];
+
+    private static Function FunctionWrapper(IntPtr funcPtr)
+    {
+        if (Environment.CurrentManagedThreadId != EngineSynchronizationContext.Instance.MainThreadId)
+        {
+            return (Function)MarshalUtil.GetOrCreateWrapper(funcPtr);
+        }
+
+        if (s_functions.TryGetValue(funcPtr, out var func) && func.Ptr == funcPtr)
+        {
+            return func;
+        }
+
+        func = (Function)MarshalUtil.GetOrCreateWrapper(funcPtr);
+        s_functions[funcPtr] = func;
+        return func;
     }
 
     /// <summary>Works out a function's path and lifecycle role, once per UFunction wrapper.</summary>
@@ -225,8 +260,11 @@ internal static class Loader
 
     // Detour for FWindowsViewport::ProcessDeferredMessage(). Key and mouse-button messages are
     // recorded for scripts, and dropped before the engine sees them when a mod swallowed the key.
-    private static void ProcessDeferredMessageDetour(IntPtr self, ref FDeferredMessage message)
+    [UnmanagedCallersOnly]
+    private static void ProcessDeferredMessageDetour(IntPtr self, FDeferredMessage* messagePtr)
     {
+        ref var message = ref *messagePtr;
+
         // WM_KILLFOCUS, or WM_ACTIVATE with WA_INACTIVE: every key counts as released.
         if (message.Message == 0x08 || (message.Message == 0x06 && (message.WParam & 0xFFFF) == 0))
         {
@@ -262,7 +300,7 @@ internal static class Loader
         }
 
         // Call base impl
-        _ProcessDeferredMessageDetourBase!.Invoke(self, ref message);
+        s_processDeferredMessageBase(self, messagePtr);
     }
 
     private static Keys XButton(nuint wParam) =>
@@ -273,15 +311,16 @@ internal static class Loader
     {
         foreach (var script in ScriptManager.Scripts)
         {
-            ModGuard.Run(script, script.Name, "OnDraw", () => script.OnDraw(canvas));
+            ModGuard.Run(script, script.Name, "OnDraw", static state => state.Script.OnDraw(state.Canvas), (Script: script, Canvas: canvas));
         }
     }
 
     // Detour for UObject::AddObject()
+    [UnmanagedCallersOnly]
     private static void AddObjectDetour(IntPtr self, int InIndex)
     {
         // Call base impl to instantiate UObject
-        _AddObjectDelegateDetourBase!.Invoke(self, InIndex);
+        s_addObjectBase(self, InIndex);
 
         // Runs for every object the game creates: no captured lambda here.
         try
@@ -301,10 +340,11 @@ internal static class Loader
     }
 
     // Detour for UObject::ConditionalPostLoad()
+    [UnmanagedCallersOnly]
     private static void ConditionalPostLoadDetour(IntPtr self)
     {
         // Call base impl to set default func flags first
-        _ConditionalPostLoadDetourBase!.Invoke(self);
+        s_conditionalPostLoadBase(self);
 
         // BM4: This is sometimes called from non-main threads
         if (Environment.CurrentManagedThreadId != EngineSynchronizationContext.Instance.MainThreadId)
@@ -334,6 +374,7 @@ internal static class Loader
     }
 
     // Detour for UObject::ConditionalDestroy()
+    [UnmanagedCallersOnly]
     private static void ConditionalDestroyDetour(IntPtr self)
     {
         // Destroy this object's managed instance
@@ -347,7 +388,7 @@ internal static class Loader
         }
 
         // Call base impl
-        _ConditionalDestroyDetourBase!.Invoke(self);
+        s_conditionalDestroyBase(self);
     }
 
     private static void RunGuarded(Action action)

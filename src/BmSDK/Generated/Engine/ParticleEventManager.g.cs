@@ -92,7 +92,7 @@ public partial class ParticleEventManager : BmSDK.Engine.Actor, BmSDK.IGameObjec
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InHitNormal, paramsPtr + 32);
         System.Runtime.CompilerServices.Unsafe.SkipInit(out InBoneName);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InBoneName, paramsPtr + 44);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         InCollideDirection = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 8);
         InHitLocation = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 20);
         InHitNormal = BmSDK.Framework.MarshalUtil.ToManagedParam<System.Numerics.Vector3>(paramsPtr + 32);

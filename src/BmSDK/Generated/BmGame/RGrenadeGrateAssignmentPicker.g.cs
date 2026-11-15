@@ -88,7 +88,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_InitGoalDataInstance, "BmGame.RGrenadeGrateAssignmentPicker.InitGoalDataInstance", this);
         byte* paramsPtr = stackalloc byte[36];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RMultiDestGoalData>(paramsPtr + 0);
     }
 
@@ -102,7 +102,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BuildThugSearch, "BmGame.RGrenadeGrateAssignmentPicker.BuildThugSearch", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -116,7 +116,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmGame.RGrenadeGrateAssignmentPicker.Update", this);
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
     }
 
@@ -130,7 +130,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAllSearch, "BmGame.RGrenadeGrateAssignmentPicker.ClearAllSearch", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -144,7 +144,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Abort, "BmGame.RGrenadeGrateAssignmentPicker.Abort", this);
         byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -161,7 +161,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewRoomState, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGrenadeGrateAssignmentFound, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewGrenadeGrateAssignmentFailed, paramsPtr + 24);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -176,7 +176,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         byte* paramsPtr = stackalloc byte[24];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GMAP, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -193,7 +193,7 @@ public partial class RGrenadeGrateAssignmentPicker : BmSDK.BmGame.RGroupAssignme
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GMAP, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Grate, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(GrenadePawn, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 

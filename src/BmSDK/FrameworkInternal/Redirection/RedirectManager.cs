@@ -30,6 +30,9 @@ internal static class RedirectManager
     /// <summary>The redirect call running right now, or null outside one.</summary>
     public static RedirectCall? Current => s_redirectCalls.TryPeek(out var call) ? call : null;
 
+    /// <summary>Whether a redirect is running right now, without looking at which.</summary>
+    public static bool IsRedirecting => s_redirectCalls.Count > 0;
+
     /// <summary>
     /// Bumped whenever a redirect is registered or unregistered. A <see cref="Function"/> remembers
     /// the generation at which it last checked for redirects, so the ProcessInternal detour only
@@ -119,7 +122,7 @@ internal static class RedirectManager
         {
             // Atp we know this func is called by a redirect
             // Therefore, it's okay and necessary to check for function overrides
-            if (lastCall.TargetObj == selfObj && funcObj.EnumerateSupersAndSelf().Contains(lastCall.TargetFunc))
+            if (lastCall.TargetObj == selfObj && IsSelfOrOverrideOf(funcObj, lastCall.TargetFunc))
             {
                 // Call redirect if exists
                 var redir = lastCall.NextRedirect();
@@ -143,13 +146,13 @@ internal static class RedirectManager
 
         // Get redirects applicable to current function
         var redirs = AcquireRedirects(selfObj, funcPath);
-        if (redirs.Count == 0)
+        if (redirs.Length == 0)
         {
             return false;
         }
 
         // Push this func to mark it as being actively redirected during this invocation
-        var newCall = new RedirectCall(selfObj, funcObj, redirs.ToArray());
+        var newCall = new RedirectCall(selfObj, funcObj, redirs);
         s_redirectCalls.Push(newCall);
 
         try
@@ -206,15 +209,52 @@ internal static class RedirectManager
 
     private const string RedirectWhat = "redirect";
 
-    /// <summary>
-    /// Creates a collection of all redirects that apply to a specific object and method.
-    /// </summary>
-    private static List<IGenericRedirect> AcquireRedirects(GameObject selfObj, string funcPath)
+    // Whether a function is the target or overrides it: the target is in its super chain. Read from
+    // the functions' memory, since this runs for every call made inside a redirect.
+    private static unsafe bool IsSelfOrOverrideOf(Function func, Function target)
     {
-        var list = new List<IGenericRedirect>();
-        list.AddRange(Local.GetRedirectors(selfObj, funcPath));
-        list.AddRange(Global.GetRedirectors(selfObj, funcPath));
-        return list;
+        for (var ptr = func.Ptr; ptr != IntPtr.Zero; ptr = *(IntPtr*)(ptr + GameDefine.MemberOffsets.Struct__SuperStruct).ToPointer())
+        {
+            if (ptr == target.Ptr)
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    // The global redirects that apply to a function on objects of one managed type, worked out once
+    // until the set of redirects changes. Local ones belong to single objects and are looked up each time.
+    private static readonly Dictionary<(string Path, Type Type), IGenericRedirect[]> s_globalByType = [];
+    private static int s_globalByTypeGeneration = -1;
+
+    /// <summary>
+    /// All redirects that apply to a specific object and method, its own (local) ones first. The array
+    /// may be shared between calls, so it is never written to.
+    /// </summary>
+    private static IGenericRedirect[] AcquireRedirects(GameObject selfObj, string funcPath)
+    {
+        if (s_globalByTypeGeneration != Generation)
+        {
+            s_globalByType.Clear();
+            s_globalByTypeGeneration = Generation;
+        }
+
+        var key = (funcPath, selfObj.GetType());
+        if (!s_globalByType.TryGetValue(key, out var global))
+        {
+            global = [.. Global.GetRedirectors(selfObj, funcPath)];
+            s_globalByType[key] = global;
+        }
+
+        var local = Local.GetRedirectors(selfObj, funcPath);
+        if (local.TryGetNonEnumeratedCount(out var count) && count == 0)
+        {
+            return global;
+        }
+
+        return [.. local, .. global];
     }
 
     /// <summary>

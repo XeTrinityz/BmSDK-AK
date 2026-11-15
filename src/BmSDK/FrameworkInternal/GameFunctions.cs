@@ -1,41 +1,14 @@
 namespace BmSDK.Framework;
 
-internal static class GameFunctions
+/// <summary>
+/// The game's own functions BmSDK calls. Each is called through a plain function pointer, resolved
+/// once: a delegate made with GetDelegateForFunctionPointer runs a marshalling stub on every call,
+/// and ProcessEvent alone runs for every generated function call.
+/// </summary>
+internal static unsafe class GameFunctions
 {
-    // UObject::StaticConstructObject()
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate IntPtr StaticConstructObjectDelegate(
-        IntPtr InClass,
-        IntPtr InOuter,
-        FName InName,
-        GameObject.EObjectFlags InFlags,
-        IntPtr InTemplate,
-        IntPtr Error,
-        IntPtr SubobjectRoot,
-        IntPtr InInstanceGraph
-    );
-
-    // UObject::StaticFindObject()
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate IntPtr StaticFindObjectDelegate(
-        IntPtr Class,
-        IntPtr InOuter,
-        IntPtr OrigInName,
-        int ExactClass
-    );
-
-    // UObject::LoadPackage()
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate IntPtr LoadPackageDelegate(IntPtr InOuter, IntPtr Filename, int LoadFlags);
-
-    // UObject::CollectGarbage()
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate void CollectGarbageDelegate(
-        GameObject.EObjectFlags KeepFlags,
-        int bPerformFullPurge
-    );
-
-    // UObject::ProcessEvent()
+    // UObject::ProcessEvent(). The delegate stays for code that finds it by reflection; BmSDK itself
+    // calls CallProcessEvent.
     public delegate void ProcessEventDelegate(
         IntPtr self,
         IntPtr Function,
@@ -50,15 +23,6 @@ internal static class GameFunctions
     [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
     public delegate void ProcessDeferredMessageDelegate(IntPtr self, ref FDeferredMessage Message);
 
-    // UObject::CallFunction()
-    [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
-    public delegate void CallFunctionDelegate(
-        IntPtr self,
-        IntPtr Stack,
-        IntPtr Result,
-        IntPtr Function
-    );
-
     // UObject::AddObject()
     [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
     public delegate void AddObjectDelegate(IntPtr self, int InIndex);
@@ -67,17 +31,114 @@ internal static class GameFunctions
     [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
     public delegate void ConditionalDestroyDelegate(IntPtr self);
 
-    // UObject::FindFunction()
-    [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
-    public delegate IntPtr FindFunctionDelegate(IntPtr self, FName InName, int Global);
+    // FEngineLoop::Tick()
+    public delegate IntPtr EngineTickDelegate(IntPtr self);
+
+    // UObject::ConditionalPostLoad()
+    public delegate void ConditionalPostLoadDelegate(IntPtr self);
+
+    private static ProcessEventDelegate? _ProcessEvent;
+
+    /// <summary>The game's ProcessEvent as a delegate. Slower than <see cref="CallProcessEvent"/>.</summary>
+    public static ProcessEventDelegate ProcessEvent =>
+        _ProcessEvent ??= Marshal.GetDelegateForFunctionPointer<ProcessEventDelegate>(
+            MemUtil.GetIntPointer(GameDefine.Current.ProcessEvent)
+        );
+
+    private static IntPtr Address(IntPtr offset) => MemUtil.GetIntPointer(offset);
+
+    private static delegate* unmanaged<IntPtr, IntPtr, FName, GameObject.EObjectFlags, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr> s_staticConstructObject;
+    private static delegate* unmanaged<IntPtr, IntPtr, IntPtr, int, IntPtr> s_staticFindObject;
+    private static delegate* unmanaged<IntPtr, IntPtr, int, IntPtr> s_loadPackage;
+    private static delegate* unmanaged<GameObject.EObjectFlags, int, void> s_collectGarbage;
+    private static delegate* unmanaged<IntPtr, IntPtr, IntPtr, IntPtr, void> s_processEvent;
+    private static delegate* unmanaged<IntPtr, int, IntPtr> s_getDefaultObject;
+    private static delegate* unmanaged<IntPtr, IntPtr, FName, IntPtr, IntPtr, IntPtr, int, int, IntPtr, IntPtr, int, IntPtr, IntPtr> s_spawnActor;
+    private static delegate* unmanaged<IntPtr, IntPtr, int, int, int, void> s_nameInit;
+    private static delegate* unmanaged<IntPtr, IntPtr, IntPtr> s_stringCtor;
+    private static delegate* unmanaged<IntPtr, int, int, IntPtr> s_appRealloc;
+    private static delegate* unmanaged<IntPtr, void> s_appFree;
+    private static delegate* unmanaged<IntPtr, IntPtr> s_addToRoot;
+    private static delegate* unmanaged<IntPtr, IntPtr> s_removeFromRoot;
+
+    // UObject::StaticConstructObject()
+    public static IntPtr StaticConstructObject(
+        IntPtr InClass,
+        IntPtr InOuter,
+        FName InName,
+        GameObject.EObjectFlags InFlags,
+        IntPtr InTemplate,
+        IntPtr Error,
+        IntPtr SubobjectRoot,
+        IntPtr InInstanceGraph
+    )
+    {
+        if (s_staticConstructObject == null)
+        {
+            s_staticConstructObject = (delegate* unmanaged<IntPtr, IntPtr, FName, GameObject.EObjectFlags, IntPtr, IntPtr, IntPtr, IntPtr, IntPtr>)
+                Address(GameDefine.Current.StaticConstructObject);
+        }
+
+        return s_staticConstructObject(InClass, InOuter, InName, InFlags, InTemplate, Error, SubobjectRoot, InInstanceGraph);
+    }
+
+    // UObject::StaticFindObject()
+    public static IntPtr StaticFindObject(IntPtr Class, IntPtr InOuter, IntPtr OrigInName, int ExactClass)
+    {
+        if (s_staticFindObject == null)
+        {
+            s_staticFindObject = (delegate* unmanaged<IntPtr, IntPtr, IntPtr, int, IntPtr>)Address(GameDefine.Current.StaticFindObject);
+        }
+
+        return s_staticFindObject(Class, InOuter, OrigInName, ExactClass);
+    }
+
+    // UObject::LoadPackage()
+    public static IntPtr LoadPackage(IntPtr InOuter, IntPtr Filename, int LoadFlags)
+    {
+        if (s_loadPackage == null)
+        {
+            s_loadPackage = (delegate* unmanaged<IntPtr, IntPtr, int, IntPtr>)Address(GameDefine.Current.LoadPackage);
+        }
+
+        return s_loadPackage(InOuter, Filename, LoadFlags);
+    }
+
+    // UObject::CollectGarbage()
+    public static void CollectGarbage(GameObject.EObjectFlags KeepFlags, int bPerformFullPurge)
+    {
+        if (s_collectGarbage == null)
+        {
+            s_collectGarbage = (delegate* unmanaged<GameObject.EObjectFlags, int, void>)Address(GameDefine.Current.CollectGarbage);
+        }
+
+        s_collectGarbage(KeepFlags, bPerformFullPurge);
+    }
+
+    /// <summary>UObject::ProcessEvent(), which every generated function call goes through.</summary>
+    public static void CallProcessEvent(IntPtr self, IntPtr Function, IntPtr Parms, IntPtr UnusedResult)
+    {
+        if (s_processEvent == null)
+        {
+            s_processEvent = (delegate* unmanaged<IntPtr, IntPtr, IntPtr, IntPtr, void>)Address(GameDefine.Current.ProcessEvent);
+        }
+
+        s_processEvent(self, Function, Parms, UnusedResult);
+    }
 
     // UClass::GetDefaultObject()
-    [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
-    public delegate IntPtr GetDefaultObjectDelegate(IntPtr self, int bForce);
+    public static IntPtr GetDefaultObject(IntPtr self, int bForce)
+    {
+        if (s_getDefaultObject == null)
+        {
+            s_getDefaultObject = (delegate* unmanaged<IntPtr, int, IntPtr>)Address(GameDefine.Current.GetDefaultObject);
+        }
+
+        return s_getDefaultObject(self, bForce);
+    }
 
     // UWorld::SpawnActor()
-    [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
-    public delegate IntPtr SpawnActorDelegate(
+    public static IntPtr SpawnActor(
         IntPtr self,
         IntPtr Class,
         FName InName,
@@ -90,156 +151,80 @@ internal static class GameFunctions
         IntPtr Instigator,
         int bNoFail,
         IntPtr OverrideLevel
-    );
+    )
+    {
+        if (s_spawnActor == null)
+        {
+            s_spawnActor = (delegate* unmanaged<IntPtr, IntPtr, FName, IntPtr, IntPtr, IntPtr, int, int, IntPtr, IntPtr, int, IntPtr, IntPtr>)
+                Address(GameDefine.Current.SpawnActor);
+        }
+
+        return s_spawnActor(self, Class, InName, Location, Rotation, Template, bNoCollisionFail, bRemoteOwned, Owner, Instigator, bNoFail, OverrideLevel);
+    }
 
     // FName::Init()
-    [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
-    public delegate void NameInitDelegate(
-        IntPtr self,
-        IntPtr InName,
-        int InNumber,
-        int FindType,
-        int bSplitName
-    );
+    public static void NameInit(IntPtr self, IntPtr InName, int InNumber, int FindType, int bSplitName)
+    {
+        if (s_nameInit == null)
+        {
+            s_nameInit = (delegate* unmanaged<IntPtr, IntPtr, int, int, int, void>)Address(GameDefine.Current.NameInit);
+        }
+
+        s_nameInit(self, InName, InNumber, FindType, bSplitName);
+    }
 
     // FString::FString()
-    public delegate IntPtr StringCtorDelegate(IntPtr self, IntPtr In);
+    public static IntPtr StringCtor(IntPtr self, IntPtr In)
+    {
+        if (s_stringCtor == null)
+        {
+            s_stringCtor = (delegate* unmanaged<IntPtr, IntPtr, IntPtr>)Address(GameDefine.Current.StringCtor);
+        }
+
+        return s_stringCtor(self, In);
+    }
 
     // appRealloc()
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate IntPtr AppReallocDelegate(IntPtr Original, int Count, int Alignment);
+    public static IntPtr AppRealloc(IntPtr Original, int Count, int Alignment)
+    {
+        if (s_appRealloc == null)
+        {
+            s_appRealloc = (delegate* unmanaged<IntPtr, int, int, IntPtr>)Address(GameDefine.Current.AppRealloc);
+        }
+
+        return s_appRealloc(Original, Count, Alignment);
+    }
 
     // appFree()
-    [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
-    public delegate void AppFreeDelegate(IntPtr Original);
+    public static void AppFree(IntPtr Original)
+    {
+        if (s_appFree == null)
+        {
+            s_appFree = (delegate* unmanaged<IntPtr, void>)Address(GameDefine.Current.AppFree);
+        }
 
-    // FEngineLoop::Tick()
-    public delegate IntPtr EngineTickDelegate(IntPtr self);
-
-    // UObject::ConditionalPostLoad()
-    public delegate void ConditionalPostLoadDelegate(IntPtr self);
+        s_appFree(Original);
+    }
 
     // UObject::AddToRoot()
-    [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
-    public delegate IntPtr AddToRootDelegate(IntPtr self);
+    public static IntPtr AddToRoot(IntPtr self)
+    {
+        if (s_addToRoot == null)
+        {
+            s_addToRoot = (delegate* unmanaged<IntPtr, IntPtr>)Address(GameDefine.Current.AddToRoot);
+        }
+
+        return s_addToRoot(self);
+    }
 
     // UObject::RemoveFromRoot()
-    [UnmanagedFunctionPointer(CallingConvention.ThisCall)]
-    public delegate IntPtr RemoveFromRootDelegate(IntPtr self);
+    public static IntPtr RemoveFromRoot(IntPtr self)
+    {
+        if (s_removeFromRoot == null)
+        {
+            s_removeFromRoot = (delegate* unmanaged<IntPtr, IntPtr>)Address(GameDefine.Current.RemoveFromRoot);
+        }
 
-    private static StaticConstructObjectDelegate? _StaticConstructObject = null;
-    private static StaticFindObjectDelegate? _StaticFindObject = null;
-    private static LoadPackageDelegate? _LoadPackage = null;
-    private static CollectGarbageDelegate? _CollectGarbage = null;
-    private static ProcessEventDelegate? _ProcessEvent = null;
-    private static ProcessInternalDelegate? _ProcessInternal = null;
-    private static CallFunctionDelegate? _CallFunction = null;
-    private static AddObjectDelegate? _AddObject = null;
-    private static ConditionalDestroyDelegate? _ConditionalDestroy = null;
-    private static FindFunctionDelegate? _FindFunction = null;
-    private static GetDefaultObjectDelegate? _GetDefaultObject = null;
-    private static SpawnActorDelegate? _SpawnActor = null;
-    private static NameInitDelegate? _NameInit = null;
-    private static StringCtorDelegate? _StringCtor = null;
-    private static AppReallocDelegate? _AppRealloc = null;
-    private static AppFreeDelegate? _AppFree = null;
-    private static EngineTickDelegate? _EngineTick = null;
-    private static AddToRootDelegate? _AddToRoot = null;
-    private static RemoveFromRootDelegate? _RemoveFromRoot = null;
-
-    public static StaticConstructObjectDelegate StaticConstructObject =>
-        _StaticConstructObject ??=
-            Marshal.GetDelegateForFunctionPointer<StaticConstructObjectDelegate>(
-                MemUtil.GetIntPointer(GameDefine.Current.StaticConstructObject)
-            );
-
-    public static StaticFindObjectDelegate StaticFindObject =>
-        _StaticFindObject ??= Marshal.GetDelegateForFunctionPointer<StaticFindObjectDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.StaticFindObject)
-        );
-
-    public static LoadPackageDelegate LoadPackage =>
-        _LoadPackage ??= Marshal.GetDelegateForFunctionPointer<LoadPackageDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.LoadPackage)
-        );
-
-    public static CollectGarbageDelegate CollectGarbage =>
-        _CollectGarbage ??= Marshal.GetDelegateForFunctionPointer<CollectGarbageDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.CollectGarbage)
-        );
-
-    public static ProcessEventDelegate ProcessEvent =>
-        _ProcessEvent ??= Marshal.GetDelegateForFunctionPointer<ProcessEventDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.ProcessEvent)
-        );
-
-    public static ProcessInternalDelegate ProcessInternal =>
-        _ProcessInternal ??= Marshal.GetDelegateForFunctionPointer<ProcessInternalDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.ProcessInternal)
-        );
-
-    public static CallFunctionDelegate CallFunction =>
-        _CallFunction ??= Marshal.GetDelegateForFunctionPointer<CallFunctionDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.CallFunction)
-        );
-
-    public static AddObjectDelegate AddObject =>
-        _AddObject ??= Marshal.GetDelegateForFunctionPointer<AddObjectDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.AddObject)
-        );
-
-    public static ConditionalDestroyDelegate ConditionalDestroy =>
-        _ConditionalDestroy ??= Marshal.GetDelegateForFunctionPointer<ConditionalDestroyDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.ConditionalDestroy)
-        );
-
-    public static FindFunctionDelegate FindFunction =>
-        _FindFunction ??= Marshal.GetDelegateForFunctionPointer<FindFunctionDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.FindFunction)
-        );
-
-    public static GetDefaultObjectDelegate GetDefaultObject =>
-        _GetDefaultObject ??= Marshal.GetDelegateForFunctionPointer<GetDefaultObjectDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.GetDefaultObject)
-        );
-
-    public static SpawnActorDelegate SpawnActor =>
-        _SpawnActor ??= Marshal.GetDelegateForFunctionPointer<SpawnActorDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.SpawnActor)
-        );
-
-    public static NameInitDelegate NameInit =>
-        _NameInit ??= Marshal.GetDelegateForFunctionPointer<NameInitDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.NameInit)
-        );
-
-    public static StringCtorDelegate StringCtor =>
-        _StringCtor ??= Marshal.GetDelegateForFunctionPointer<StringCtorDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.StringCtor)
-        );
-
-    public static AppReallocDelegate AppRealloc =>
-        _AppRealloc ??= Marshal.GetDelegateForFunctionPointer<AppReallocDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.AppRealloc)
-        );
-
-    public static AppFreeDelegate AppFree =>
-        _AppFree ??= Marshal.GetDelegateForFunctionPointer<AppFreeDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.AppFree)
-        );
-
-    public static EngineTickDelegate EngineTick =>
-        _EngineTick ??= Marshal.GetDelegateForFunctionPointer<EngineTickDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.EngineTick)
-        );
-
-    public static AddToRootDelegate AddToRoot =>
-        _AddToRoot ??= Marshal.GetDelegateForFunctionPointer<AddToRootDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.AddToRoot)
-        );
-
-    public static RemoveFromRootDelegate RemoveFromRoot =>
-        _RemoveFromRoot ??= Marshal.GetDelegateForFunctionPointer<RemoveFromRootDelegate>(
-            MemUtil.GetIntPointer(GameDefine.Current.RemoveFromRoot)
-        );
+        return s_removeFromRoot(self);
+    }
 }

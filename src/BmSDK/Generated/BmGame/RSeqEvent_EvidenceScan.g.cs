@@ -87,7 +87,7 @@ public partial class RSeqEvent_EvidenceScan : BmSDK.Engine.SequenceEvent, BmSDK.
         var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjClassVersion, "BmGame.RSeqEvent_EvidenceScan.GetObjClassVersion");
         byte* paramsPtr = stackalloc byte[20];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
     }
 
@@ -104,7 +104,7 @@ public partial class RSeqEvent_EvidenceScan : BmSDK.Engine.SequenceEvent, BmSDK.
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInstigator, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InOriginator, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(typeNo, paramsPtr + 16);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
 }

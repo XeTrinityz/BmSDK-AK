@@ -88,7 +88,7 @@ public partial class RBMBehaviour_HitReactionMultiWeaponREC : BmSDK.BmGame.RBMBe
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_BumpedIntoPlayer, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.BumpedIntoPlayer", this);
         byte* paramsPtr = stackalloc byte[264];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -102,7 +102,7 @@ public partial class RBMBehaviour_HitReactionMultiWeaponREC : BmSDK.BmGame.RBMBe
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpdateHitThugs, "BmGame.RBMBehaviour_HitReactionMultiWeaponREC.UpdateHitThugs", this);
         byte* paramsPtr = stackalloc byte[276];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 
@@ -118,7 +118,7 @@ public partial class RBMBehaviour_HitReactionMultiWeaponREC : BmSDK.BmGame.RBMBe
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(NewDmgInfo, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bNewInterruptedHitReaction, paramsPtr + 248);
-        BmSDK.Framework.GameFunctions.ProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;
     }
 }

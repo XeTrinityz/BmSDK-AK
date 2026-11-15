@@ -1,3 +1,5 @@
+using System.Buffers;
+
 namespace BmSDK.Framework;
 
 /// <summary>
@@ -33,22 +35,19 @@ internal static class FindObjectsCache
             buckets = BucketsFor(typeof(T));
         }
 
-        // Loading threads add and remove entries while this runs, so each read takes the lock. The
-        // lock isn't held across the yield, so the caller's own code never runs inside it.
+        // Loading threads add and remove entries while this runs. Each bucket is copied under one lock,
+        // rather than locked for every entry: a query over a common type used to take the lock thousands
+        // of times a call, against loading threads that take it for every object they create. The lock
+        // isn't held across the yield, so the caller's own code never runs inside it.
         foreach (var bucket in buckets)
         {
-            for (var i = 0; ; i++)
+            GameObject[] snapshot;
+            var count = 0;
+            lock (MarshalUtil.WrapperLock)
             {
-                GameObject obj;
-                lock (MarshalUtil.WrapperLock)
+                snapshot = ArrayPool<GameObject>.Shared.Rent(Math.Max(bucket.Count, 1));
+                foreach (var obj in bucket)
                 {
-                    if (i >= bucket.Count)
-                    {
-                        break;
-                    }
-
-                    obj = bucket[i];
-
                     // An actor the game has destroyed or queued for destruction lingers in the index
                     // until the engine frees it, and is nothing a script wants to act on. Read under
                     // the lock: a wrapper still in the index can't have had its object freed yet.
@@ -56,9 +55,26 @@ internal static class FindObjectsCache
                     {
                         continue;
                     }
-                }
 
-                yield return (T)obj;
+                    snapshot[count++] = obj;
+                }
+            }
+
+            try
+            {
+                for (var i = 0; i < count; i++)
+                {
+                    // Destroyed since the copy was taken.
+                    if (snapshot[i].Ptr != IntPtr.Zero)
+                    {
+                        yield return (T)snapshot[i];
+                    }
+                }
+            }
+            finally
+            {
+                Array.Clear(snapshot, 0, count);
+                ArrayPool<GameObject>.Shared.Return(snapshot);
             }
         }
     }

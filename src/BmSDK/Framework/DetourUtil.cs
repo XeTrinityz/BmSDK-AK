@@ -27,4 +27,22 @@ public static class DetourUtil
 
         return Marshal.GetDelegateForFunctionPointer<T>((IntPtr)origFuncPtr);
     }
+
+    /// <summary>
+    /// Creates a detour to an [UnmanagedCallersOnly] function and returns the original function. Calls
+    /// through it skip the marshalling a delegate detour costs on every call.
+    /// </summary>
+    public static unsafe IntPtr NewDetour(IntPtr funcOffset, IntPtr detourFunc)
+    {
+        void* origFuncPtr = MemUtil.GetPointer(funcOffset);
+
+        PInvokeDetours.DetourRestoreAfterWith();
+
+        Guard.Require(PInvokeDetours.DetourTransactionBegin() == 0);
+        Guard.Require(PInvokeDetours.DetourUpdateThread(PInvoke.GetCurrentThread()) == 0);
+        Guard.Require(PInvokeDetours.DetourAttach(&origFuncPtr, detourFunc.ToPointer()) == 0);
+        Guard.Require(PInvokeDetours.DetourTransactionCommit() == 0);
+
+        return (IntPtr)origFuncPtr;
+    }
 }
