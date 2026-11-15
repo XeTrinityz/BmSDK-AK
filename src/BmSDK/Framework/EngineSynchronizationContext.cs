@@ -47,7 +47,20 @@ public sealed class EngineSynchronizationContext : SynchronizationContext
     {
         while (_queue.TryDequeue(out var work))
         {
-            work.callback(work.state);
+            // Posted work is a mod's async continuation or a hot reload. One that throws is logged,
+            // and the rest of the queue and the game carry on.
+            try
+            {
+                work.callback(work.state);
+            }
+            catch (Exception ex)
+            {
+                Debug.LogError($"Work posted to the engine thread threw {ex.GetType().Name}: {ex.Message}");
+                if (ex.StackTrace is { } trace)
+                {
+                    Debug.Log(trace, skipSender: true);
+                }
+            }
         }
     }
 
