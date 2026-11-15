@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1132)
 /// (flags = 144704146)
 /// </summary>
-public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, BmSDK.IGameObject
+public partial class RFractureWallBase : BmSDK.Engine.FracturedStaticMeshActor, BmSDK.BmGame.RSpotableInterface, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

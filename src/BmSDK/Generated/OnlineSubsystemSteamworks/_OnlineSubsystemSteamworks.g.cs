@@ -8,7 +8,7 @@ namespace BmSDK.OnlineSubsystemSteamworks;
 /// (size = 3088)
 /// (flags = 134217910)
 /// </summary>
-public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCommonImpl, BmSDK.IGameObject
+public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCommonImpl, BmSDK.Engine.OnlineSystemInterface, BmSDK.Engine.OnlinePlayerInterface, BmSDK.Engine.OnlinePlayerInterfaceEx, BmSDK.Engine.OnlineAccountInterface, BmSDK.Engine.OnlineStatsInterface, BmSDK.Engine.OnlineContentInterface, BmSDK.Engine.OnlineTitleFileInterface, BmSDK.Engine.OnlineVoiceInterface, BmSDK.Engine.OnlineWebInterface, BmSDK.Engine.UserCloudFileInterface, BmSDK.Engine.SharedCloudFileInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

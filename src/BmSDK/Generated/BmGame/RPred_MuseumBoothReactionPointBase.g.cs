@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 732)
 /// (flags = 10486290)
 /// </summary>
-public partial class RPred_MuseumBoothReactionPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RPred_MuseumBoothReactionPointBase : BmSDK.Engine.Actor, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

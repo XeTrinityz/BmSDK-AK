@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1404)
 /// (flags = 144703635)
 /// </summary>
-public partial class RBatDistractProjectile : BmSDK.BmGame.RBatarangProjectile, BmSDK.IGameObject
+public partial class RBatDistractProjectile : BmSDK.BmGame.RBatarangProjectile, BmSDK.BmGame.RSpotableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

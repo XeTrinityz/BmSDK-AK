@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1024)
 /// (flags = 144703634)
 /// </summary>
-public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RMagneticSurfaceSMBase : BmSDK.Engine.Actor, BmSDK.BmGame.RMatineeController, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 2908)
 /// (flags = 144703667)
 /// </summary>
-public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.IGameObject
+public partial class RGooSpray : BmSDK.BmGame.RProjectileGadgetBase, BmSDK.BmGame.RDetonateGadgetInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

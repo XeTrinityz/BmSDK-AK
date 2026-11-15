@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 732)
 /// (flags = 144704146)
 /// </summary>
-public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RRopeBase : BmSDK.Engine.Actor, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

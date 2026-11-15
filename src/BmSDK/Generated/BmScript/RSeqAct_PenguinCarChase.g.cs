@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 584)
 /// (flags = 8396818)
 /// </summary>
-public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObject
+public partial class RSeqAct_PenguinCarChase : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame.RHUDInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

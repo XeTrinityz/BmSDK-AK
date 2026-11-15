@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1192)
 /// (flags = 144703635)
 /// </summary>
-public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.IGameObject
+public partial class RCommandBeaconBase : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.BmGame.RHUDInterface, BmSDK.BmGame.RElectricWinchableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

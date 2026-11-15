@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 868)
 /// (flags = 144704147)
 /// </summary>
-public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.IGameObject
+public partial class RLadder : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

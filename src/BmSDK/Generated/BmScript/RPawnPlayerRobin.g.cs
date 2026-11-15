@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 10360)
 /// (flags = 10486326)
 /// </summary>
-public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.IGameObject
+public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

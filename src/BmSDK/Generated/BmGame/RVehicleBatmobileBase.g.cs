@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 8352)
 /// (flags = 144704183)
 /// </summary>
-public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.IGameObject
+public partial class RVehicleBatmobileBase : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RSpotableInterface, BmSDK.BmGame.RDetonatableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

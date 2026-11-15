@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1044)
 /// (flags = 10485778)
 /// </summary>
-public partial class RSpecialMoveInstance_JumpToPerchLedge : BmSDK.BmGame.RSpecialMoveInstance_RelativeAnimMove, BmSDK.IGameObject
+public partial class RSpecialMoveInstance_JumpToPerchLedge : BmSDK.BmGame.RSpecialMoveInstance_RelativeAnimMove, BmSDK.BmGame.RSpecialMoveInstance_VantageSwingInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

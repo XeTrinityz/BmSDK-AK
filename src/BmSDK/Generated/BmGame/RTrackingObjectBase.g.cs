@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 844)
 /// (flags = 144704147)
 /// </summary>
-public partial class RTrackingObjectBase : BmSDK.Engine.DynamicSMActor, BmSDK.IGameObject
+public partial class RTrackingObjectBase : BmSDK.Engine.DynamicSMActor, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

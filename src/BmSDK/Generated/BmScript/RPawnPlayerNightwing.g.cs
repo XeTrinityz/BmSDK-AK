@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 10152)
 /// (flags = 10486326)
 /// </summary>
-public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBase, BmSDK.IGameObject
+public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBase, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

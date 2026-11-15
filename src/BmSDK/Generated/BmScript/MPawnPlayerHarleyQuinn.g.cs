@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 11020)
 /// (flags = 10485814)
 /// </summary>
-public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuinnBase, BmSDK.IGameObject
+public partial class MPawnPlayerHarleyQuinn : BmSDK.BmGame.MPawnPlayerHarleyQuinnBase, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

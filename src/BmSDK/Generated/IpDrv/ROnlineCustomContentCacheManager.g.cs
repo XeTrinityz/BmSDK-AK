@@ -8,7 +8,7 @@ namespace BmSDK.IpDrv;
 /// (size = 252)
 /// (flags = 134217874)
 /// </summary>
-public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.IGameObject
+public partial class ROnlineCustomContentCacheManager : BmSDK.GameObject, BmSDK.Engine.ROnlineCustomContentCacheInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

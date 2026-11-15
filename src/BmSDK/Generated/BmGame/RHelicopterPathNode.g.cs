@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 952)
 /// (flags = 144704146)
 /// </summary>
-public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.IGameObject
+public partial class RHelicopterPathNode : BmSDK.Engine.PathNode, BmSDK.Engine.EditorLinkSelectionInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

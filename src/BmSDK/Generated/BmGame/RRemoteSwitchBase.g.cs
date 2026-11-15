@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1120)
 /// (flags = 10486290)
 /// </summary>
-public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.IGameObject
+public partial class RRemoteSwitchBase : BmSDK.BmGame.RInteractableItem, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

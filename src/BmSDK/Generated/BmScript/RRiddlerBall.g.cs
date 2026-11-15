@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 836)
 /// (flags = 10486290)
 /// </summary>
-public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.IGameObject
+public partial class RRiddlerBall : BmSDK.BmGame.RRiddlerBallBase, BmSDK.BmGame.RInteractInterface, BmSDK.BmGame.RMagneticBlastInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

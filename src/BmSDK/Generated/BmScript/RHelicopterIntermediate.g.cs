@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 3148)
 /// (flags = 10486326)
 /// </summary>
-public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermediateBase, BmSDK.IGameObject
+public partial class RHelicopterIntermediate : BmSDK.BmGame.RHelicopterIntermediateBase, BmSDK.BmGame.RBatarangableInterface, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

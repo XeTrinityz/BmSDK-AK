@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 820)
 /// (flags = 144704147)
 /// </summary>
-public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.IGameObject
+public partial class RBankDoorBase : BmSDK.Engine.NavMeshObstacle, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

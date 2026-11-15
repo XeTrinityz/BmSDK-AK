@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 2172)
 /// (flags = 144703667)
 /// </summary>
-public partial class MJackInBoxBase : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
+public partial class MJackInBoxBase : BmSDK.BmGame.RInventoryGadget, BmSDK.BmGame.RDetonateGadgetInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 800)
 /// (flags = 10486290)
 /// </summary>
-public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBase, BmSDK.IGameObject
+public partial class RPickup_JackInTheBox : BmSDK.BmGame.RPickup_JackInTheBoxBase, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

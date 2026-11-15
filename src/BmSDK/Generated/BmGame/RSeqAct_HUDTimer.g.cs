@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 456)
 /// (flags = 134226066)
 /// </summary>
-public partial class RSeqAct_HUDTimer : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObject
+public partial class RSeqAct_HUDTimer : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame.RHUDInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

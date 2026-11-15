@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1000)
 /// (flags = 10486290)
 /// </summary>
-public partial class RElectrifiedFloorPanelLaserTarget : BmSDK.BmGame.RElectrifiedFloorPanel, BmSDK.IGameObject
+public partial class RElectrifiedFloorPanelLaserTarget : BmSDK.BmGame.RElectrifiedFloorPanel, BmSDK.BmScript.RRiddlerLaserInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

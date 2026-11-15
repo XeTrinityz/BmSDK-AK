@@ -8,7 +8,7 @@ namespace BmSDK.IpDrv;
 /// (size = 632)
 /// (flags = 134217879)
 /// </summary>
-public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, BmSDK.IGameObject
+public partial class OnlineSubsystemCommonImpl : BmSDK.Engine.OnlineSubsystem, BmSDK.Engine.OnlineCustomContentInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

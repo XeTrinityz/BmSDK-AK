@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 772)
 /// (flags = 144703634)
 /// </summary>
-public partial class RMagneticDynamicObjectSkeletalBase : BmSDK.Engine.SkeletalMeshActor, BmSDK.IGameObject
+public partial class RMagneticDynamicObjectSkeletalBase : BmSDK.Engine.SkeletalMeshActor, BmSDK.BmGame.RMagneticBlastInterface, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

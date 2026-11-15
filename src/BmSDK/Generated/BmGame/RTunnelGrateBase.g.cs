@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1088)
 /// (flags = 144703634)
 /// </summary>
-public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.IGameObject
+public partial class RTunnelGrateBase : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

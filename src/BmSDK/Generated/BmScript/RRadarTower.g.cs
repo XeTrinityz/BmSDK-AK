@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 784)
 /// (flags = 10486290)
 /// </summary>
-public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.IGameObject
+public partial class RRadarTower : BmSDK.BmGame.RRadarTowerBase, BmSDK.BmGame.RExplosiveGelableInterface, BmSDK.BmGame.RDMThroughWallsSuppressableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

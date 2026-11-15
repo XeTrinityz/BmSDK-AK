@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 800)
 /// (flags = 144703634)
 /// </summary>
-public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActor, BmSDK.IGameObject
+public partial class RCheckpointBlockadeBase : BmSDK.Engine.RStaticClimbableActor, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

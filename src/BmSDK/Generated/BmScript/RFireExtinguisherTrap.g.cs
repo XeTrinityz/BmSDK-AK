@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 724)
 /// (flags = 10486290)
 /// </summary>
-public partial class RFireExtinguisherTrap : BmSDK.BmGame.RFireExtinguisherTrapBase, BmSDK.IGameObject
+public partial class RFireExtinguisherTrap : BmSDK.BmGame.RFireExtinguisherTrapBase, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 816)
 /// (flags = 144703634)
 /// </summary>
-public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RDisruptableObjectBase : BmSDK.Engine.Actor, BmSDK.BmGame.RSecretInterface, BmSDK.BmGame.RRemoteControlHighSecurityInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

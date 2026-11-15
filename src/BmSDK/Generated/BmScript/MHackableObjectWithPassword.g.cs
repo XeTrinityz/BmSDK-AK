@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1236)
 /// (flags = 10486290)
 /// </summary>
-public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObjectBase, BmSDK.IGameObject
+public partial class MHackableObjectWithPassword : BmSDK.BmGame.RDisruptableObjectBase, BmSDK.BmGame.MHackableInterface, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

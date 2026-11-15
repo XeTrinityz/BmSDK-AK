@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 864)
 /// (flags = 144704146)
 /// </summary>
-public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.IGameObject
+public partial class RStartlePoint : BmSDK.BmGame.RDummyTarget, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

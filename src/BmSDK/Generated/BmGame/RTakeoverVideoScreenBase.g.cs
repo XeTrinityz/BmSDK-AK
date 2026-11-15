@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 740)
 /// (flags = 144704147)
 /// </summary>
-public partial class RTakeoverVideoScreenBase : BmSDK.Engine.StaticMeshActor, BmSDK.IGameObject
+public partial class RTakeoverVideoScreenBase : BmSDK.Engine.StaticMeshActor, BmSDK.BmGame.RRemoteTakeoverVideoScreenInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

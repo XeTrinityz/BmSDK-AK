@@ -8,7 +8,7 @@ namespace BmSDK.Engine;
 /// (size = 92)
 /// (flags = 134217874)
 /// </summary>
-public partial class RSkeletalMeshPhysSceneInterface : BmSDK.GameObject, BmSDK.IGameObject
+public partial class RSkeletalMeshPhysSceneInterface : BmSDK.GameObject, BmSDK.Engine.RAsyncPhysXSceneInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 832)
 /// (flags = 211812499)
 /// </summary>
-public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RThugMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

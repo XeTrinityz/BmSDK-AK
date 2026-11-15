@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 761)
 /// (flags = 144704146)
 /// </summary>
-public partial class RRiddleSolution : BmSDK.BmGame.RRiddleSolutionBase, BmSDK.IGameObject
+public partial class RRiddleSolution : BmSDK.BmGame.RRiddleSolutionBase, BmSDK.BmGame.RSecretInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

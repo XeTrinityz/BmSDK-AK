@@ -10,10 +10,19 @@ namespace BmSDK.Engine;
 /// </summary>
 public partial interface Interface_NavMeshPathObstacle : BmSDK.Interface
 {
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetObstacleActor;
     /// <summary>
     /// Function: GetObstacleActor
     /// </summary>
-    public unsafe BmSDK.Engine.Actor GetObstacleActor();
+    public unsafe virtual BmSDK.Engine.Actor GetObstacleActor()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(((BmSDK.GameObject)this));
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetObstacleActor, "Engine.Interface_NavMeshPathObstacle.GetObstacleActor", ((BmSDK.GameObject)this));
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(((BmSDK.GameObject)this).Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor>(paramsPtr + 0);
+    }
 
     /// <summary>
     /// Enum: EEdgeHandlingStatus

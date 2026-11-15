@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1276)
 /// (flags = 144704146)
 /// </summary>
-public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.IGameObject
+public partial class RMagneticMatineeObject : BmSDK.Engine.InterpActor, BmSDK.BmGame.RMatineeController, BmSDK.BmGame.RMagneticBlastInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

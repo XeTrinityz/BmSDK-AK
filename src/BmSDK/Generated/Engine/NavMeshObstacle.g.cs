@@ -8,7 +8,7 @@ namespace BmSDK.Engine;
 /// (size = 692)
 /// (flags = 144704146)
 /// </summary>
-public partial class NavMeshObstacle : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class NavMeshObstacle : BmSDK.Engine.Actor, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 872)
 /// (flags = 144703635)
 /// </summary>
-public partial class RLootPointBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RLootPointBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

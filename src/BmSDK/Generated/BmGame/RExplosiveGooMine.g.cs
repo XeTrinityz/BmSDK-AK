@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1096)
 /// (flags = 144704146)
 /// </summary>
-public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.IGameObject
+public partial class RExplosiveGooMine : BmSDK.BmGame.RThugTrap, BmSDK.BmGame.RSpotableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

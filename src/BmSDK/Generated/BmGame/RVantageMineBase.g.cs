@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 856)
 /// (flags = 144703634)
 /// </summary>
-public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.IGameObject
+public partial class RVantageMineBase : BmSDK.BmGame.RMineBase, BmSDK.BmGame.RDisruptableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

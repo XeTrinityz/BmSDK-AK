@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 796)
 /// (flags = 144703635)
 /// </summary>
-public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RSmokeScreen : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableInterface, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1064)
 /// (flags = 144703634)
 /// </summary>
-public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSpecialMoveInstance, BmSDK.IGameObject
+public partial class RSpecialMoveInstance_SwingToVantagePoint : BmSDK.BmGame.RSpecialMoveInstance, BmSDK.BmGame.RSpecialMoveInstance_VantageSwingInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

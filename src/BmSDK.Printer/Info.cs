@@ -447,6 +447,18 @@ sealed class InfoBuilder(Dump dump)
             IsIntrinsic = (cls.Flags & Flags.CLASS_Intrinsic) != 0,
         };
 
+        // The engine lists inherited interfaces on every class. Only the ones this class adds are
+        // printed, the rest come with the base class.
+        var inherited = (dump.Find(cls.SuperPath) as ClassNode)?.Interfaces ?? [];
+        foreach (var iface in cls.Interfaces)
+        {
+            if (!inherited.Contains(iface) && dump.Find(iface) is ClassNode ifaceClass &&
+                (ifaceClass.Flags & Flags.CLASS_Interface) != 0)
+            {
+                info.Interfaces.Add(FieldPathNameManaged(ifaceClass));
+            }
+        }
+
         for (var super = dump.Find(cls.SuperPath) as ClassNode; super is not null; super = dump.Find(super.SuperPath) as ClassNode)
         {
             if (super.Path == "Engine.Actor")

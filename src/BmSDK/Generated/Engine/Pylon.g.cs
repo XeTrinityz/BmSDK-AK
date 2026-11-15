@@ -8,7 +8,7 @@ namespace BmSDK.Engine;
 /// (size = 1316)
 /// (flags = 144704146)
 /// </summary>
-public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.IGameObject
+public partial class Pylon : BmSDK.Engine.NavigationPoint, BmSDK.Engine.EditorLinkSelectionInterface, BmSDK.Engine.Interface_NavigationHandle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

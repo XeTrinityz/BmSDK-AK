@@ -8,7 +8,7 @@ namespace BmSDK.IpDrv;
 /// (size = 168)
 /// (flags = 134217878)
 /// </summary>
-public partial class OnlineEventsInterfaceMcp : BmSDK.IpDrv.MCPBase, BmSDK.IGameObject
+public partial class OnlineEventsInterfaceMcp : BmSDK.IpDrv.MCPBase, BmSDK.Engine.OnlineEventsInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1796)
 /// (flags = 10485810)
 /// </summary>
-public partial class RBMWeaponHeavyObjectExplosive : BmSDK.BmScript.RBMWeaponHeavyObject, BmSDK.IGameObject
+public partial class RBMWeaponHeavyObjectExplosive : BmSDK.BmScript.RBMWeaponHeavyObject, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

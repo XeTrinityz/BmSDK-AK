@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 3688)
 /// (flags = 10486326)
 /// </summary>
-public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate, BmSDK.IGameObject
+public partial class RPredatorDroneMini : BmSDK.BmScript.RHelicopterIntermediate, BmSDK.BmGame.RThermalInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

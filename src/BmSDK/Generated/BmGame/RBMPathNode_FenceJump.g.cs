@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1072)
 /// (flags = 144704146)
 /// </summary>
-public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePositionTraverse, BmSDK.IGameObject
+public partial class RBMPathNode_FenceJump : BmSDK.BmGame.RBMPathNode_VariablePositionTraverse, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

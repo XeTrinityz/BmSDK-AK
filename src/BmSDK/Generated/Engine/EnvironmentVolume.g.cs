@@ -8,7 +8,7 @@ namespace BmSDK.Engine;
 /// (size = 760)
 /// (flags = 144704146)
 /// </summary>
-public partial class EnvironmentVolume : BmSDK.Engine.Volume, BmSDK.IGameObject
+public partial class EnvironmentVolume : BmSDK.Engine.Volume, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

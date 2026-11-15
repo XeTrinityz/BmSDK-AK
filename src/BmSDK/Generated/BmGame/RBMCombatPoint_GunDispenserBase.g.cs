@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 772)
 /// (flags = 144704147)
 /// </summary>
-public partial class RBMCombatPoint_GunDispenserBase : BmSDK.BmGame.RBMCombatPoint, BmSDK.IGameObject
+public partial class RBMCombatPoint_GunDispenserBase : BmSDK.BmGame.RBMCombatPoint, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.BmGame.RDisruptableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 672)
 /// (flags = 10486290)
 /// </summary>
-public partial class RFakeLockedDoor : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RFakeLockedDoor : BmSDK.Engine.Actor, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

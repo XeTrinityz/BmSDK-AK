@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 824)
 /// (flags = 10486290)
 /// </summary>
-public partial class MBatgirlBalloons : BmSDK.BmGame.RPickupBase, BmSDK.IGameObject
+public partial class MBatgirlBalloons : BmSDK.BmGame.RPickupBase, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1056)
 /// (flags = 144703634)
 /// </summary>
-public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmSDK.IGameObject
+public partial class RExplosiveGelBomb : BmSDK.BmGame.RGadgetProjectileBase, BmSDK.BmGame.RDetonatableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

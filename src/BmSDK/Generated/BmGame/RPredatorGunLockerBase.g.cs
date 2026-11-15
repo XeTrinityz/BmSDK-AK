@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 964)
 /// (flags = 144704147)
 /// </summary>
-public partial class RPredatorGunLockerBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RPredatorGunLockerBase : BmSDK.Engine.Actor, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.BmGame.RDisruptableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

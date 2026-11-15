@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 10504)
 /// (flags = 10486326)
 /// </summary>
-public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, BmSDK.IGameObject
+public partial class MPawnPlayerBatgirl : BmSDK.BmGame.MPawnPlayerBatgirlBase, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

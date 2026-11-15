@@ -8,7 +8,7 @@ namespace BmSDK.Engine;
 /// (size = 704)
 /// (flags = 144704146)
 /// </summary>
-public partial class Route : BmSDK.Engine.Info, BmSDK.IGameObject
+public partial class Route : BmSDK.Engine.Info, BmSDK.Engine.EditorLinkSelectionInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

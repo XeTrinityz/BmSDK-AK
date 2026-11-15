@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1456)
 /// (flags = 2292187794)
 /// </summary>
-public partial class RHidePoint_Movable : BmSDK.BmGame.RHidePoint_Mesh, BmSDK.IGameObject
+public partial class RHidePoint_Movable : BmSDK.BmGame.RHidePoint_Mesh, BmSDK.BmGame.RMatineeController, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

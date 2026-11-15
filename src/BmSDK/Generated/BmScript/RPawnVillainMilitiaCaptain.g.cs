@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 6748)
 /// (flags = 10485814)
 /// </summary>
-public partial class RPawnVillainMilitiaCaptain : BmSDK.BmGame.RPawnVillainThug, BmSDK.IGameObject
+public partial class RPawnVillainMilitiaCaptain : BmSDK.BmGame.RPawnVillainThug, BmSDK.BmGame.RDMThroughWallsSuppressableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

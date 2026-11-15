@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 432)
 /// (flags = 8210)
 /// </summary>
-public partial class RSeqAct_MostWantedUpdate : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObject
+public partial class RSeqAct_MostWantedUpdate : BmSDK.Engine.SeqAct_Latent, BmSDK.BmGame.RHUDInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

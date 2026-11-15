@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 2344)
 /// (flags = 10486290)
 /// </summary>
-public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmSDK.IGameObject
+public partial class RRedHoodExcavator : BmSDK.BmGame.RRedHoodExcavatorBase, BmSDK.BmScript.RCarListenerInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

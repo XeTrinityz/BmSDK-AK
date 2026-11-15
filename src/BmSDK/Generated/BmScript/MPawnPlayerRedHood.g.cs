@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 10288)
 /// (flags = 10485814)
 /// </summary>
-public partial class MPawnPlayerRedHood : BmSDK.BmGame.MPawnPlayerRedHoodBase, BmSDK.IGameObject
+public partial class MPawnPlayerRedHood : BmSDK.BmGame.MPawnPlayerRedHoodBase, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 964)
 /// (flags = 144704146)
 /// </summary>
-public partial class RXrayInterpActor : BmSDK.Engine.InterpActor, BmSDK.IGameObject
+public partial class RXrayInterpActor : BmSDK.Engine.InterpActor, BmSDK.BmGame.RXrayInterface, BmSDK.BmGame.RThermalInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

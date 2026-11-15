@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 692)
 /// (flags = 144703634)
 /// </summary>
-public partial class RChallengeWallBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RChallengeWallBase : BmSDK.Engine.Actor, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

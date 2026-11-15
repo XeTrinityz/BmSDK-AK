@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 728)
 /// (flags = 144703634)
 /// </summary>
-public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RPickup_MiniDroneBase : BmSDK.Engine.Actor, BmSDK.BmGame.RSecretInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

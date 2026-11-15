@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1252)
 /// (flags = 10486290)
 /// </summary>
-public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmSDK.IGameObject
+public partial class MControllableHackableObject : BmSDK.Engine.InterpActor, BmSDK.BmGame.RMatineeController, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

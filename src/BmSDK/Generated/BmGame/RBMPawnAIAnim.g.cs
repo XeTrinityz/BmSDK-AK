@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 3340)
 /// (flags = 144703671)
 /// </summary>
-public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.IGameObject
+public partial class RBMPawnAIAnim : BmSDK.BmGame.RPawnCombat, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

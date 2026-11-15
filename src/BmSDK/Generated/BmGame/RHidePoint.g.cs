@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1288)
 /// (flags = 2292187794)
 /// </summary>
-public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RHidePoint : BmSDK.Engine.Actor, BmSDK.BmGame.RThermalInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

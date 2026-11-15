@@ -8,7 +8,7 @@ namespace BmSDK.IpDrv;
 /// (size = 236)
 /// (flags = 134217878)
 /// </summary>
-public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.IGameObject
+public partial class TitleFileDownloadCache : BmSDK.IpDrv.MCPBase, BmSDK.Engine.OnlineTitleFileCacheInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

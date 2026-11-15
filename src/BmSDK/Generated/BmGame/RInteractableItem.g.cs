@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 904)
 /// (flags = 144704146)
 /// </summary>
-public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.IGameObject
+public partial class RInteractableItem : BmSDK.Engine.StaticMeshActor, BmSDK.BmGame.RInteractInterface, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

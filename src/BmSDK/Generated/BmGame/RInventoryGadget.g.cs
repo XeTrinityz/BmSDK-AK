@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 2068)
 /// (flags = 144703667)
 /// </summary>
-public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.IGameObject
+public partial class RInventoryGadget : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInterface, BmSDK.Engine.Interface_AudioImpact, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

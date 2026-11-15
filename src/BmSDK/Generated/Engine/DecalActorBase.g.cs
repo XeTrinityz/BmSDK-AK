@@ -8,7 +8,7 @@ namespace BmSDK.Engine;
 /// (size = 684)
 /// (flags = 144703635)
 /// </summary>
-public partial class DecalActorBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class DecalActorBase : BmSDK.Engine.Actor, BmSDK.Engine.EditorLinkSelectionInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

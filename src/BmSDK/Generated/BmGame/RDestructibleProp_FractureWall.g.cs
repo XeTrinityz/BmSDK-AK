@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1916)
 /// (flags = 144704146)
 /// </summary>
-public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructibleProp, BmSDK.IGameObject
+public partial class RDestructibleProp_FractureWall : BmSDK.BmGame.RDestructibleProp, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

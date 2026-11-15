@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 2348)
 /// (flags = 144704183)
 /// </summary>
-public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.IGameObject
+public partial class RHelicopterBase : BmSDK.Engine.Pawn, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

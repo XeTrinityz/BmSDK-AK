@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1100)
 /// (flags = 10486290)
 /// </summary>
-public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.IGameObject
+public partial class RTunnelGrateShared : BmSDK.BmGame.RTunnelGrateBase, BmSDK.BmGame.RThermalInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

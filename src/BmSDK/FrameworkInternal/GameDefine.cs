@@ -59,6 +59,8 @@ public abstract class GameDefine
         public const IntPtr Object__Class = 68;
         public const IntPtr Struct__SuperStruct = 92;
         public const IntPtr Class__ClassFlags = 244;
+        public const IntPtr Class__Interfaces = 528;
+        public const IntPtr Property__Offset = 106;
     }
 
     // Identifies the build from the PE header's TimeDateStamp

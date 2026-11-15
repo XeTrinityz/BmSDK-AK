@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1356)
 /// (flags = 2292187794)
 /// </summary>
-public partial class RHidePoint_LampPostTop : BmSDK.BmGame.RHidePoint_Walkable, BmSDK.IGameObject
+public partial class RHidePoint_LampPostTop : BmSDK.BmGame.RHidePoint_Walkable, BmSDK.BmGame.RMatineeController, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

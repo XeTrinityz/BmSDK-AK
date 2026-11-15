@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 996)
 /// (flags = 10485779)
 /// </summary>
-public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTransition, BmSDK.IGameObject
+public partial class RLevelTransitionLadderAndHatchBase : BmSDK.BmGame.RLevelTransition, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 820)
 /// (flags = 144703635)
 /// </summary>
-public partial class RThugEatingPlantBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RThugEatingPlantBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDetonatableInterface, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

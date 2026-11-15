@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 4740)
 /// (flags = 144703670)
 /// </summary>
-public partial class RPawnFriendly : BmSDK.BmGame.RPawnSpeech, BmSDK.IGameObject
+public partial class RPawnFriendly : BmSDK.BmGame.RPawnSpeech, BmSDK.BmGame.RInteractInterface, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

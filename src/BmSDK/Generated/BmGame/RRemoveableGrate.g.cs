@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1064)
 /// (flags = 144703634)
 /// </summary>
-public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.IGameObject
+public partial class RRemoveableGrate : BmSDK.BmGame.RSpecialMoveEnvironmentObject, BmSDK.BmGame.RRemovableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

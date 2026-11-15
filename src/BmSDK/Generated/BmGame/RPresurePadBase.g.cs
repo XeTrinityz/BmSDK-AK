@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 736)
 /// (flags = 144703635)
 /// </summary>
-public partial class RPresurePadBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RPresurePadBase : BmSDK.Engine.Actor, BmSDK.BmGame.RSecretInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

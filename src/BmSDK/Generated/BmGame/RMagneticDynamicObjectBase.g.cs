@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1292)
 /// (flags = 144703634)
 /// </summary>
-public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysicsBase, BmSDK.IGameObject
+public partial class RMagneticDynamicObjectBase : BmSDK.BmGame.RHarpoonDragPhysicsBase, BmSDK.BmGame.RMagneticBlastInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

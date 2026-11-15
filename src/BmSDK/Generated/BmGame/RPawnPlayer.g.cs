@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 10032)
 /// (flags = 144703671)
 /// </summary>
-public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.IGameObject
+public partial class RPawnPlayer : BmSDK.BmGame.RPawnPlayerSpeech, BmSDK.BmGame.RBatarangableInterface, BmSDK.BmGame.RSpotableInterface, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

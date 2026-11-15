@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 752)
 /// (flags = 144703634)
 /// </summary>
-public partial class RPickup_InsectCrateBase : BmSDK.BmGame.RHarpoonTriggerBase, BmSDK.IGameObject
+public partial class RPickup_InsectCrateBase : BmSDK.BmGame.RHarpoonTriggerBase, BmSDK.BmGame.RSecretInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

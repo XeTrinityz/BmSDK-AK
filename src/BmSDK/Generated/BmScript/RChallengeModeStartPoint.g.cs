@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1556)
 /// (flags = 10486290)
 /// </summary>
-public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStartPointBase, BmSDK.IGameObject
+public partial class RChallengeModeStartPoint : BmSDK.BmGame.RChallengeModeStartPointBase, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

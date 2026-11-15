@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1228)
 /// (flags = 10486290)
 /// </summary>
-public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.BmScript.RBMCombatThrownObject_HeavyObject, BmSDK.IGameObject
+public partial class RBMCombatThrownObject_HeavyObjectFireExtinguisher : BmSDK.BmScript.RBMCombatThrownObject_HeavyObject, BmSDK.BmGame.RBatarangableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1184)
 /// (flags = 144703634)
 /// </summary>
-public partial class RHarpoonDragPhysicsBase : BmSDK.BmGame.RSmashableProp, BmSDK.IGameObject
+public partial class RHarpoonDragPhysicsBase : BmSDK.BmGame.RSmashableProp, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

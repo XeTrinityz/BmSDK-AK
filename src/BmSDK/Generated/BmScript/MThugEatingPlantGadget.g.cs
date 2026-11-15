@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 2112)
 /// (flags = 10485810)
 /// </summary>
-public partial class MThugEatingPlantGadget : BmSDK.BmGame.RInventoryGadget, BmSDK.IGameObject
+public partial class MThugEatingPlantGadget : BmSDK.BmGame.RInventoryGadget, BmSDK.BmGame.RDetonateGadgetInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

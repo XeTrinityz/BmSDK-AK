@@ -8,7 +8,7 @@ namespace BmSDK.Engine;
 /// (size = 676)
 /// (flags = 144704146)
 /// </summary>
-public partial class PylonSeed : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class PylonSeed : BmSDK.Engine.Actor, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

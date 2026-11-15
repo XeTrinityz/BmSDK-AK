@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1152)
 /// (flags = 10486290)
 /// </summary>
-public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.IGameObject
+public partial class RControllableCrane : BmSDK.Engine.SkeletalMeshActor, BmSDK.BmGame.RMatineeController, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

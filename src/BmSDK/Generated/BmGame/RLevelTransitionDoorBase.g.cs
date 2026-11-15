@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1009)
 /// (flags = 144703634)
 /// </summary>
-public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, BmSDK.IGameObject
+public partial class RLevelTransitionDoorBase : BmSDK.BmGame.RLevelTransitionP, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

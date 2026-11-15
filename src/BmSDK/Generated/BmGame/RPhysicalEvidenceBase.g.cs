@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 812)
 /// (flags = 144704146)
 /// </summary>
-public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RPhysicalEvidenceBase : BmSDK.Engine.Actor, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

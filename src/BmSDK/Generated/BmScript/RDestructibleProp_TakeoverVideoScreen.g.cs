@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1748)
 /// (flags = 10486290)
 /// </summary>
-public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestructibleProp, BmSDK.IGameObject
+public partial class RDestructibleProp_TakeoverVideoScreen : BmSDK.BmGame.RDestructibleProp, BmSDK.BmGame.RRemoteTakeoverVideoScreenInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

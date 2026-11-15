@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 884)
 /// (flags = 10486290)
 /// </summary>
-public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase, BmSDK.IGameObject
+public partial class RPickup_InsectCrate : BmSDK.BmGame.RPickup_InsectCrateBase, BmSDK.BmGame.RRemovableInterface, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

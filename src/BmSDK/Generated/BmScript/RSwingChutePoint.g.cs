@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1352)
 /// (flags = 2157969938)
 /// </summary>
-public partial class RSwingChutePoint : BmSDK.BmGame.RSwingChutePointBase, BmSDK.IGameObject
+public partial class RSwingChutePoint : BmSDK.BmGame.RSwingChutePointBase, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1564)
 /// (flags = 10486290)
 /// </summary>
-public partial class RSentryGun : BmSDK.BmGame.RSentryGunBase, BmSDK.IGameObject
+public partial class RSentryGun : BmSDK.BmGame.RSentryGunBase, BmSDK.BmGame.RInteractInterface, BmSDK.BmGame.RDMThroughWallsSuppressableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

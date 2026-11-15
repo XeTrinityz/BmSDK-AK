@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1748)
 /// (flags = 144703667)
 /// </summary>
-public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
+public partial class RBMWeapon : BmSDK.Engine.Inventory, BmSDK.BmGame.RXrayInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

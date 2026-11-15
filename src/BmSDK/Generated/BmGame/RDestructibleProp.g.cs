@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1724)
 /// (flags = 144704146)
 /// </summary>
-public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmSDK.IGameObject
+public partial class RDestructibleProp : BmSDK.Engine.ApexDestructibleActor, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

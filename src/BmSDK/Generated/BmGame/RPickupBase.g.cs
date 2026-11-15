@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 800)
 /// (flags = 144704147)
 /// </summary>
-public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.IGameObject
+public partial class RPickupBase : BmSDK.BmGame.RPickupBaseBase, BmSDK.BmGame.RSecretInterface, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

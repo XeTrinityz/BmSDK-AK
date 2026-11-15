@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1020)
 /// (flags = 144704147)
 /// </summary>
-public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectBase, BmSDK.IGameObject
+public partial class RTrackingSecurityCameraBase : BmSDK.BmGame.RTrackingObjectBase, BmSDK.BmGame.RSecretInterface, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

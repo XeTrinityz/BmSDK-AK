@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1212)
 /// (flags = 10486290)
 /// </summary>
-public partial class RCommandBeacon : BmSDK.BmGame.RCommandBeaconBase, BmSDK.IGameObject
+public partial class RCommandBeacon : BmSDK.BmGame.RCommandBeaconBase, BmSDK.BmGame.RDMThroughWallsSuppressableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

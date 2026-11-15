@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1696)
 /// (flags = 10486290)
 /// </summary>
-public partial class RTurret_Watchtower : BmSDK.BmGame.RTurret_WatchtowerBase, BmSDK.IGameObject
+public partial class RTurret_Watchtower : BmSDK.BmGame.RTurret_WatchtowerBase, BmSDK.BmGame.RDMThroughWallsSuppressableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

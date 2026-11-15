@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1560)
 /// (flags = 2292187794)
 /// </summary>
-public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.IGameObject
+public partial class RHidePoint_GrateBase : BmSDK.BmGame.RHidePoint, BmSDK.BmGame.RInteractInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

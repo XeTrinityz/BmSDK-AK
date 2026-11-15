@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 7620)
 /// (flags = 144704183)
 /// </summary>
-public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.IGameObject
+public partial class RVehicleNPC : BmSDK.BmGame.RVehicle, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.Engine.Interface_AudioImpact, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

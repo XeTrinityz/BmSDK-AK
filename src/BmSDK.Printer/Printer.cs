@@ -377,12 +377,13 @@ sealed class Printer
         // override. Static and private functions can't be overridden, and keep the exact lookup.
         var dispatches = !func.IsStatic && !func.IsPrivate && instanceOf is null;
 
-        if (!isInInterface)
-        {
-            Line((dispatches
-                ? "private static BmSDK.Framework.FunctionCache.CallSite __fn_"
-                : "private static BmSDK.Function __fn_") + func.ManagedName + ";");
-        }
+        // An interface function has a body that makes the same call, so a class needn't bind it
+        // itself. A class whose own binding has the same signature replaces it.
+        var self = isInInterface ? "((BmSDK.GameObject)this)" : "this";
+
+        Line((dispatches
+            ? "private static BmSDK.Framework.FunctionCache.CallSite __fn_"
+            : "private static BmSDK.Function __fn_") + func.ManagedName + ";");
 
         Line("/// <summary>");
         Indent().Append($"/// Function: {func.Name}");
@@ -399,7 +400,11 @@ sealed class Printer
         {
             _out.Append("static ");
         }
-        else if (!func.IsPrivate && !isInInterface)
+        else if (isInInterface)
+        {
+            _out.Append("virtual ");
+        }
+        else if (!func.IsPrivate)
         {
             if (func.IsOverride)
             {
@@ -447,18 +452,12 @@ sealed class Printer
             }
         }
         _out.Append(')');
-
-        if (isInInterface)
-        {
-            _out.Append(";\n");
-            return;
-        }
         Endl();
 
         Line("{");
         _indent++;
 
-        var ptrText = instanceOf is not null ? "self.Ptr" : func.IsStatic ? "StaticClass().DefaultObject.Ptr" : "Ptr";
+        var ptrText = instanceOf is not null ? "self.Ptr" : func.IsStatic ? "StaticClass().DefaultObject.Ptr" : isInInterface ? self + ".Ptr" : "Ptr";
 
         // A destroyed object's wrapper has a null Ptr. The engine would fault on it, so fail in C#.
         if (instanceOf is not null)
@@ -467,11 +466,11 @@ sealed class Printer
         }
         else if (!func.IsStatic)
         {
-            Line("BmSDK.Framework.Guard.NotDestroyed(this);");
+            Line($"BmSDK.Framework.Guard.NotDestroyed({self});");
         }
 
         Line(dispatches
-            ? $"var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_{func.ManagedName}, \"{func.PathName}\", this);"
+            ? $"var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_{func.ManagedName}, \"{func.PathName}\", {self});"
             : $"var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_{func.ManagedName}, \"{func.PathName}\");");
 
         // The engine 16-aligns its own parameter frames, and natives rely on it (an FQuat or FMatrix

@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 704)
 /// (flags = 144703634)
 /// </summary>
-public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RMissingWallGrateAIMarker : BmSDK.Engine.Actor, BmSDK.BmGame.RSpotableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

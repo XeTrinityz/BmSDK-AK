@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 708)
 /// (flags = 144703635)
 /// </summary>
-public partial class RCheckPointMineBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RCheckPointMineBase : BmSDK.Engine.Actor, BmSDK.BmGame.RDisruptableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

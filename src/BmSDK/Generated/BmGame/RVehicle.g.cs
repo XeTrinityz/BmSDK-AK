@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 4560)
 /// (flags = 144704183)
 /// </summary>
-public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
+public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.Engine.Interface_NavMeshPathObstacle, BmSDK.Engine.Interface_NavMeshPathObject, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

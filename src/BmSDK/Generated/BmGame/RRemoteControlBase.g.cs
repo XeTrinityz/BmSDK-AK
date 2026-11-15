@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 744)
 /// (flags = 144703634)
 /// </summary>
-public partial class RRemoteControlBase : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RRemoteControlBase : BmSDK.Engine.Actor, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

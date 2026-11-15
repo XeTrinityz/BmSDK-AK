@@ -191,6 +191,14 @@ public static unsafe class MarshalUtil
             ToUnmanaged(((GameObject)(object)value!).Ptr, data);
             return;
         }
+        else if (typeof(TManaged).IsInterface && typeof(TManaged).IsAssignableTo(typeof(Interface)))
+        {
+            var obj = (GameObject?)(object?)value;
+            var native = (FScriptInterface*)data;
+            native->ObjectPointer = obj?.Ptr ?? IntPtr.Zero;
+            native->InterfacePointer = obj is null ? IntPtr.Zero : InterfaceAddress(obj.Ptr, typeof(TManaged));
+            return;
+        }
 
         throw new NotImplementedException(
             $"Marshaling not (fully) implemented for type {typeof(TManaged).Name}"
@@ -404,6 +412,67 @@ public static unsafe class MarshalUtil
             Debug.LogWarning($"Couldn't find managed type for class '{classPath}'");
         }
         return typeof(GameObject);
+    }
+
+    private static readonly Dictionary<Type, IntPtr> s_interfaceClasses = [];
+
+    // What the engine's GetInterfaceAddress gives for an object: the object itself for a script
+    // interface, and for a native one the place in the object that holds the interface's vtable.
+    private static IntPtr InterfaceAddress(IntPtr objPtr, Type interfaceType)
+    {
+        if (interfaceType == typeof(Interface))
+        {
+            return objPtr;
+        }
+
+        IntPtr ifaceClass;
+        lock (s_interfaceClasses)
+        {
+            if (!s_interfaceClasses.TryGetValue(interfaceType, out ifaceClass))
+            {
+                ifaceClass = s_interfaceClasses[interfaceType] = Class.FindByManagedType(interfaceType).Ptr;
+            }
+        }
+
+        var flags = *(Class.EClassFlags*)(ifaceClass + GameDefine.MemberOffsets.Class__ClassFlags).ToPointer();
+        if (!flags.HasFlag(Class.EClassFlags.CLASS_Native))
+        {
+            return objPtr;
+        }
+
+        // Each class lists the interfaces it implements as {Class, the property holding the vtable}
+        for (var cls = *(IntPtr*)(objPtr + GameDefine.MemberOffsets.Object__Class).ToPointer(); cls != IntPtr.Zero; cls = GetSuperStruct(cls))
+        {
+            var entries = *(IntPtr*)(cls + GameDefine.MemberOffsets.Class__Interfaces).ToPointer();
+            var count = *(int*)(cls + GameDefine.MemberOffsets.Class__Interfaces + 8).ToPointer();
+            for (var i = 0; i < count; i++)
+            {
+                var entry = entries + i * 16;
+                if (!IsChildOf(*(IntPtr*)entry.ToPointer(), ifaceClass))
+                {
+                    continue;
+                }
+
+                var vtableProp = *(IntPtr*)(entry + 8).ToPointer();
+                return vtableProp == IntPtr.Zero
+                    ? objPtr
+                    : objPtr + *(ushort*)(vtableProp + GameDefine.MemberOffsets.Property__Offset).ToPointer();
+            }
+        }
+
+        return IntPtr.Zero;
+    }
+
+    private static bool IsChildOf(IntPtr cls, IntPtr parent)
+    {
+        for (; cls != IntPtr.Zero; cls = GetSuperStruct(cls))
+        {
+            if (cls == parent)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private static IntPtr GetSuperStruct(IntPtr structPtr) =>

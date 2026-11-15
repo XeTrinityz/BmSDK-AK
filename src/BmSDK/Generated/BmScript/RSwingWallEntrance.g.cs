@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1372)
 /// (flags = 2157969938)
 /// </summary>
-public partial class RSwingWallEntrance : BmSDK.BmGame.RSwingChutePointBase, BmSDK.IGameObject
+public partial class RSwingWallEntrance : BmSDK.BmGame.RSwingChutePointBase, BmSDK.BmGame.RSpecialMoveListenerInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

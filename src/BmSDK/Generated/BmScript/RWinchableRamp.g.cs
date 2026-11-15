@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 960)
 /// (flags = 10486290)
 /// </summary>
-public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.IGameObject
+public partial class RWinchableRamp : BmSDK.BmGame.RWinchableWallBase, BmSDK.BmGame.RMatineeController, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

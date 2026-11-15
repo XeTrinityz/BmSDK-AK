@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 900)
 /// (flags = 10486290)
 /// </summary>
-public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.IGameObject
+public partial class RCheckPointMine : BmSDK.BmGame.RCheckPointMineBase, BmSDK.BmGame.RDMThroughWallsSuppressableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

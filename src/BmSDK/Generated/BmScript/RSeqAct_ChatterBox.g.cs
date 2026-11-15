@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 628)
 /// (flags = 8214)
 /// </summary>
-public partial class RSeqAct_ChatterBox : BmSDK.BmGame.RSeqAct_ChatterBoxBase, BmSDK.IGameObject
+public partial class RSeqAct_ChatterBox : BmSDK.BmGame.RSeqAct_ChatterBoxBase, BmSDK.BmGame.RHUDInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

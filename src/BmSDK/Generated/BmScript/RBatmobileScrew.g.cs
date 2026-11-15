@@ -8,7 +8,7 @@ namespace BmSDK.BmScript;
 /// (size = 1156)
 /// (flags = 10486290)
 /// </summary>
-public partial class RBatmobileScrew : BmSDK.BmGame.RBatmobileScrewBase, BmSDK.IGameObject
+public partial class RBatmobileScrew : BmSDK.BmGame.RBatmobileScrewBase, BmSDK.BmGame.RMatineeController, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

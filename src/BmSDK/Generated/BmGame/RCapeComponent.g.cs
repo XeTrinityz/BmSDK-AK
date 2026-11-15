@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 956)
 /// (flags = 2292187350)
 /// </summary>
-public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.IGameObject
+public partial class RCapeComponent : BmSDK.Engine.MeshComponent, BmSDK.Engine.RAsyncPhysXSceneInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

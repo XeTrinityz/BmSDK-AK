@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 713)
 /// (flags = 144703634)
 /// </summary>
-public partial class RNavigationActor : BmSDK.Engine.Actor, BmSDK.IGameObject
+public partial class RNavigationActor : BmSDK.Engine.Actor, BmSDK.Engine.Interface_NavigationHandle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

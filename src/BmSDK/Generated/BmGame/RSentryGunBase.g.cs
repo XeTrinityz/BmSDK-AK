@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1548)
 /// (flags = 144704147)
 /// </summary>
-public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK.IGameObject
+public partial class RSentryGunBase : BmSDK.BmGame.RNavMeshObstacle_Queue, BmSDK.BmGame.RRemoteControlLowSecurityInterface, BmSDK.BmGame.RSpotableInterface, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()

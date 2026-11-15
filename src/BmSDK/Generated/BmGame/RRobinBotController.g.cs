@@ -8,7 +8,7 @@ namespace BmSDK.BmGame;
 /// (size = 1476)
 /// (flags = 144703634)
 /// </summary>
-public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.IGameObject
+public partial class RRobinBotController : BmSDK.BmGame.RBotController, BmSDK.Engine.Interface_NavigationHandle, BmSDK.IGameObject
 {
     static BmSDK.Class s_staticClass = null;
     public static BmSDK.Class StaticClass()
