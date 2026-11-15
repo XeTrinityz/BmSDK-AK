@@ -120,6 +120,24 @@ void Runtime::LoadClassesIntoMemory() {
         GameFunctions::LoadPackage(0, L"WayneTower_B1", 0);
         GameFunctions::LoadPackage(0, L"JokerBoss", 0);
         GameFunctions::LoadPackage(0, L"JokerBoss_C1", 0);
+
+        // Season of Infamy cooks its villains' script classes into these maps.
+        GameFunctions::LoadPackage(0, L"VPKillerCroc", 0);
+        GameFunctions::LoadPackage(0, L"VPKillerCroc_B1", 0);
+        GameFunctions::LoadPackage(0, L"VPKillerCroc_B2", 0);
+        GameFunctions::LoadPackage(0, L"VPKillerCroc_C1", 0);
+        GameFunctions::LoadPackage(0, L"Lockup_B1", 0);
+        GameFunctions::LoadPackage(0, L"Lockup_B1_Ch_K123", 0);
+        GameFunctions::LoadPackage(0, L"VPFreeze", 0);
+        GameFunctions::LoadPackage(0, L"VPFreeze_01", 0);
+        GameFunctions::LoadPackage(0, L"VPMadHatter", 0);
+        GameFunctions::LoadPackage(0, L"VPMadHatter_A1", 0);
+        GameFunctions::LoadPackage(0, L"VPRasAlGhul", 0);
+        GameFunctions::LoadPackage(0, L"VPRasAlGhul_B1", 0);
+        GameFunctions::LoadPackage(0, L"VPRasAlGhul_C1", 0);
+        GameFunctions::LoadPackage(0, L"LazarusPit", 0);
+        GameFunctions::LoadPackage(0, L"LazarusPit_A1", 0);
+        GameFunctions::LoadPackage(0, L"LazarusPit_C1", 0);
     }
     GameFunctions::EndLoad();
 
@@ -187,7 +205,7 @@ void Runtime::GenerateSDK()
     // TODO: Un-hardcode this
     fs::path outDir = "..\\..\\..\\src\\BmSDK\\Generated\\";
     fs::remove_all(outDir);
-    fs::create_directory(outDir);
+    fs::create_directories(outDir);
 
     // Print some classes
     for (auto i = 0u; i < Classes.size(); i++)
