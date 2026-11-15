@@ -4253,7 +4253,7 @@ public partial class _OnlineSubsystemSteamworks : BmSDK.IpDrv.OnlineSubsystemCom
         BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 20);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 36);
-        BmSDK.FStringArg.FreeSlot(paramsPtr + 36);
+        BmSDK.FStringArg.FreeSlot(paramsPtr + 52);
         Recipients = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.OnlineSubsystem.FUniqueNetId>>(paramsPtr + 4);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 68);
     }

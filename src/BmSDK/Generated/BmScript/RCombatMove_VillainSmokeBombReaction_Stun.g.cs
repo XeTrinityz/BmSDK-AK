@@ -1,0 +1,123 @@
+#pragma warning disable CS0108
+#pragma warning disable CS1591
+
+namespace BmSDK.BmScript;
+
+/// <summary>
+/// Class: RCombatMove_VillainSmokeBombReaction_Stun<br/>
+/// (size = 1132)
+/// (flags = 10485778)
+/// </summary>
+public partial class RCombatMove_VillainSmokeBombReaction_Stun : BmSDK.BmGame.RCombatMove_VillainSmokeBombReaction, BmSDK.IGameObject
+{
+    static BmSDK.Class s_staticClass = null;
+    public static BmSDK.Class StaticClass()
+    {
+        if (s_staticClass is null)
+        {
+            s_staticClass = StaticFindObjectChecked<Class>(null, null, "BmScript.RCombatMove_VillainSmokeBombReaction_Stun", false);
+            s_staticClass.AddToRoot();
+        }
+        return s_staticClass;
+    }
+
+    /// <summary>
+    /// Gets the class default object as RCombatMove_VillainSmokeBombReaction_Stun.
+    /// </summary>
+    public static RCombatMove_VillainSmokeBombReaction_Stun DefaultObject => (RCombatMove_VillainSmokeBombReaction_Stun)StaticClass().DefaultObject;
+
+    internal RCombatMove_VillainSmokeBombReaction_Stun() { }
+
+    /// <summary>
+    /// Constructs a new RCombatMove_VillainSmokeBombReaction_Stun
+    /// </summary>
+    public RCombatMove_VillainSmokeBombReaction_Stun(System.Numerics.Vector3 Location = default, BmSDK.Rotator Rotation = default, BmSDK.Engine.Actor Template = null, BmSDK.GameObject Owner = null, BmSDK.GameObject Instigator = null, BmSDK.Engine.Level Level = null) : base(BmSDK.Framework.Game.SpawnActorInternal(StaticClass(), default, Location, Rotation, Template, Owner, Instigator, Level)) { }
+
+    /// <summary>
+    /// Constructs a new wrapper instance from the given object pointer.
+    /// </summary>
+    protected RCombatMove_VillainSmokeBombReaction_Stun(nint ptr) : base(ptr) { }
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
+    public void AttachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>
+        => ((GameObject)this).AttachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Type)"/>
+    public TComponent AttachScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>, new()
+        => (TComponent)((GameObject)this).AttachScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Framework.IScriptComponent)"/>
+    public bool HasScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>
+        => ((GameObject)this).HasScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Type)"/>
+    public bool HasScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>
+        => ((GameObject)this).HasScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponent(Type)"/>
+    public TComponent GetScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>
+        => (TComponent)((GameObject)this).GetScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponents(Type)"/>
+    public System.Collections.Generic.IReadOnlyList<TComponent> GetScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>
+        => ((GameObject)this).GetScriptComponents(typeof(TComponent)).Cast<TComponent>().ToList();
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponent(Framework.IScriptComponent)"/>
+    public void DetachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>
+        => ((GameObject)this).DetachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponents(Type)"/>
+    public void DetachScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RCombatMove_VillainSmokeBombReaction_Stun>
+        => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SetCounterInfo;
+    /// <summary>
+    /// Function: SetCounterInfo
+    /// </summary>
+    public unsafe override void SetCounterInfo(bool bMirrored)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SetCounterInfo, "BmScript.RCombatMove_VillainSmokeBombReaction_Stun.SetCounterInfo", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bMirrored, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CombatAnimHitStart;
+    /// <summary>
+    /// Function: CombatAnimHitStart
+    /// </summary>
+    public unsafe override void CombatAnimHitStart()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CombatAnimHitStart, "BmScript.RCombatMove_VillainSmokeBombReaction_Stun.CombatAnimHitStart", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ShouldMirror;
+    /// <summary>
+    /// Function: ShouldMirror
+    /// </summary>
+    public unsafe override bool ShouldMirror()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ShouldMirror, "BmScript.RCombatMove_VillainSmokeBombReaction_Stun.ShouldMirror", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
+    }
+}

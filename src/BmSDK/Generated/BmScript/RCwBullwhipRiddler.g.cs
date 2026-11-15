@@ -78,6 +78,64 @@ public partial class RCwBullwhipRiddler : BmSDK.BmScript.RCwBullwhip, BmSDK.IGam
         where TComponent : class, Framework.IScriptComponent<RCwBullwhipRiddler>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AimedThugDisarmWhiplash;
+    /// <summary>
+    /// Function: AimedThugDisarmWhiplash
+    /// </summary>
+    public unsafe override void AimedThugDisarmWhiplash(bool bQuickStrike = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AimedThugDisarmWhiplash, "BmScript.RCwBullwhipRiddler.AimedThugDisarmWhiplash", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bQuickStrike, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AimedThugTripWhiplash;
+    /// <summary>
+    /// Function: AimedThugTripWhiplash
+    /// </summary>
+    public unsafe override void AimedThugTripWhiplash(bool bQuickStrike = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AimedThugTripWhiplash, "BmScript.RCwBullwhipRiddler.AimedThugTripWhiplash", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bQuickStrike, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_SmashGlass;
+    /// <summary>
+    /// Function: SmashGlass
+    /// </summary>
+    public unsafe virtual void SmashGlass()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SmashGlass, "BmScript.RCwBullwhipRiddler.SmashGlass", this);
+        byte* paramsPtr = stackalloc byte[56];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_LeaveCover;
+    /// <summary>
+    /// Function: LeaveCover
+    /// </summary>
+    public unsafe override void LeaveCover()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_LeaveCover, "BmScript.RCwBullwhipRiddler.LeaveCover", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetClassNameForHUD;
     /// <summary>
     /// Function: GetGadgetClassNameForHUD

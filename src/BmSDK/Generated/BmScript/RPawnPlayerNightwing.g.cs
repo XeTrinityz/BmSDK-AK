@@ -78,26 +78,6 @@ public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBas
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerNightwing>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSentryGunAniminfo;
-    /// <summary>
-    /// Function: GetSentryGunAniminfo
-    /// </summary>
-    public unsafe override void GetSentryGunAniminfo(out BmSDK.Engine.AnimSet sentryGunAnimSet, out BmSDK.BmGame.RSpecialMoveConfig PlayerMove)
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSentryGunAniminfo, "BmScript.RPawnPlayerNightwing.GetSentryGunAniminfo", this);
-        byte* paramsPtr = stackalloc byte[32];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        System.Runtime.CompilerServices.Unsafe.SkipInit(out sentryGunAnimSet);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sentryGunAnimSet, paramsPtr + 0);
-        System.Runtime.CompilerServices.Unsafe.SkipInit(out PlayerMove);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerMove, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        sentryGunAnimSet = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
-        PlayerMove = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSpecialMoveConfig>(paramsPtr + 8);
-        return;
-    }
-
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSuperStunAnimSet;
     /// <summary>
     /// Function: GetSuperStunAnimSet
@@ -357,22 +337,6 @@ public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBas
         return;
     }
 
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnSuperBatclawSlam;
-    /// <summary>
-    /// Function: SpawnSuperBatclawSlam
-    /// </summary>
-    public unsafe override void SpawnSuperBatclawSlam(BmSDK.BmGame.RPawnCombat TargetPawn, BmSDK.Class dmgType)
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_SpawnSuperBatclawSlam, "BmScript.RPawnPlayerNightwing.SpawnSuperBatclawSlam", this);
-        byte* paramsPtr = stackalloc byte[40];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(TargetPawn, paramsPtr + 0);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(dmgType, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        return;
-    }
-
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnBatclawSlam;
     /// <summary>
     /// Function: SpawnBatclawSlam
@@ -593,20 +557,6 @@ public partial class RPawnPlayerNightwing : BmSDK.BmGame.RPawnPlayerNightwingBas
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
-    }
-
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_HideWeaponsHack;
-    /// <summary>
-    /// Function: HideWeaponsHack
-    /// </summary>
-    public unsafe override void HideWeaponsHack()
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HideWeaponsHack, "BmScript.RPawnPlayerNightwing.HideWeaponsHack", this);
-        byte* paramsPtr = stackalloc byte[16];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        return;
     }
 
     private static BmSDK.Framework.FunctionCache.CallSite __fn_HideWeapons;

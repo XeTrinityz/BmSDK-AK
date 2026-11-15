@@ -1365,7 +1365,9 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[56];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(nId, paramsPtr + 16);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         sError = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 0);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 20);
     }
@@ -2068,7 +2070,9 @@ public partial class RGameInfo : BmSDK.BmGame.RGameInfoBase, BmSDK.IGameObject
         byte* paramsPtr = stackalloc byte[80];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         sAction.WriteTo(paramsPtr + 0);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         BmSDK.FStringArg.FreeSlot(paramsPtr + 0);
         sName = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 16);
         sData = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.FString>(paramsPtr + 32);

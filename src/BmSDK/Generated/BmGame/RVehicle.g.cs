@@ -1137,7 +1137,9 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(FirstPoint, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(MainRoadsOnly, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExcludeFromVolumes, paramsPtr + 32);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         FirstPoint = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 8);
         BehaviourVolumes = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.Volume>>(paramsPtr + 16);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 36);
@@ -1165,7 +1167,9 @@ public partial class RVehicle : BmSDK.Engine.AkVehicle, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ForSatNav, paramsPtr + 56);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ExcludeFromVolumes, paramsPtr + 76);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Vehicle, paramsPtr + 80);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         RouteOut = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<int>>(paramsPtr + 0);
         FirstPointOut = BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 16);
         IsLoopOut = BmSDK.Framework.MarshalUtil.ToManagedParam<byte>(paramsPtr + 20);

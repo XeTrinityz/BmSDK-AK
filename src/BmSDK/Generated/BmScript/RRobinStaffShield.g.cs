@@ -249,6 +249,20 @@ public partial class RRobinStaffShield : BmSDK.BmScript.RRobinStaff, BmSDK.IGame
         return;
     }
 
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CanThrowGadget;
+    /// <summary>
+    /// Function: CanThrowGadget
+    /// </summary>
+    public unsafe override bool CanThrowGadget()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CanThrowGadget, "BmScript.RRobinStaffShield.CanThrowGadget", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
+    }
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_CanPlayerMove;
     /// <summary>
     /// Function: CanPlayerMove

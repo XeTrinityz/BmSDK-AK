@@ -324,7 +324,9 @@ public partial class Weapon : BmSDK.Engine.Inventory, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(StartTrace, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EndTrace, paramsPtr + 12);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Extent, paramsPtr + 40);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         ImpactList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.Actor.FImpactInfo>>(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.Actor.FImpactInfo>(paramsPtr + 52);
     }

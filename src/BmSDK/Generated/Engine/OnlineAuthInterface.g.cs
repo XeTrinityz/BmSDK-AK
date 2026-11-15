@@ -307,6 +307,33 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     public partial record struct FAuthSession
     {
         /// <summary>
+        /// IntProperty: EndPointIP
+        /// </summary>
+        public unsafe int EndPointIP
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 0); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 0); }; }
+        }
+
+        /// <summary>
+        /// IntProperty: EndPointPort
+        /// </summary>
+        public unsafe int EndPointPort
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 4); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 4); }; }
+        }
+
+        /// <summary>
+        /// StructProperty: EndPointUID
+        /// </summary>
+        public unsafe BmSDK.Engine.OnlineSubsystem.FUniqueNetId EndPointUID
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.Engine.OnlineSubsystem.FUniqueNetId>(Ptr + 8); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 8); }; }
+        }
+
+        /// <summary>
         /// ByteProperty: AuthStatus
         /// </summary>
         public unsafe BmSDK.Engine.OnlineAuthInterface.EAuthStatus AuthStatus
@@ -331,6 +358,33 @@ public partial interface OnlineAuthInterface : BmSDK.Interface
     [StructLayout(LayoutKind.Explicit, Size = 20)]
     public partial record struct FLocalAuthSession
     {
+        /// <summary>
+        /// IntProperty: EndPointIP
+        /// </summary>
+        public unsafe int EndPointIP
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 0); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 0); }; }
+        }
+
+        /// <summary>
+        /// IntProperty: EndPointPort
+        /// </summary>
+        public unsafe int EndPointPort
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 4); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 4); }; }
+        }
+
+        /// <summary>
+        /// StructProperty: EndPointUID
+        /// </summary>
+        public unsafe BmSDK.Engine.OnlineSubsystem.FUniqueNetId EndPointUID
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.Engine.OnlineSubsystem.FUniqueNetId>(Ptr + 8); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 8); }; }
+        }
+
         /// <summary>
         /// IntProperty: SessionUID
         /// </summary>

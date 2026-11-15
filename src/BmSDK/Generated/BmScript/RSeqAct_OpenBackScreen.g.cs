@@ -1,0 +1,236 @@
+#pragma warning disable CS0108
+#pragma warning disable CS1591
+
+namespace BmSDK.BmScript;
+
+/// <summary>
+/// Class: RSeqAct_OpenBackScreen<br/>
+/// (size = 396)
+/// (flags = 8210)
+/// </summary>
+public partial class RSeqAct_OpenBackScreen : BmSDK.Engine.SequenceAction, BmSDK.IGameObject
+{
+    static BmSDK.Class s_staticClass = null;
+    public static BmSDK.Class StaticClass()
+    {
+        if (s_staticClass is null)
+        {
+            s_staticClass = StaticFindObjectChecked<Class>(null, null, "BmScript.RSeqAct_OpenBackScreen", false);
+            s_staticClass.AddToRoot();
+        }
+        return s_staticClass;
+    }
+
+    /// <summary>
+    /// Gets the class default object as RSeqAct_OpenBackScreen.
+    /// </summary>
+    public static RSeqAct_OpenBackScreen DefaultObject => (RSeqAct_OpenBackScreen)StaticClass().DefaultObject;
+
+    internal RSeqAct_OpenBackScreen() { }
+
+    /// <summary>
+    /// Constructs a new RSeqAct_OpenBackScreen
+    /// </summary>
+    public RSeqAct_OpenBackScreen(BmSDK.GameObject Outer, string Name = null, BmSDK.GameObject.EObjectFlags SetFlags = 0, RSeqAct_OpenBackScreen Template = null) : base(ConstructObjectInternal(StaticClass(), Outer, Name, SetFlags, Template)) { }
+
+    /// <summary>
+    /// Constructs a new wrapper instance from the given object pointer.
+    /// </summary>
+    protected RSeqAct_OpenBackScreen(nint ptr) : base(ptr) { }
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
+    public void AttachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>
+        => ((GameObject)this).AttachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Type)"/>
+    public TComponent AttachScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>, new()
+        => (TComponent)((GameObject)this).AttachScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Framework.IScriptComponent)"/>
+    public bool HasScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>
+        => ((GameObject)this).HasScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Type)"/>
+    public bool HasScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>
+        => ((GameObject)this).HasScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponent(Type)"/>
+    public TComponent GetScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>
+        => (TComponent)((GameObject)this).GetScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponents(Type)"/>
+    public System.Collections.Generic.IReadOnlyList<TComponent> GetScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>
+        => ((GameObject)this).GetScriptComponents(typeof(TComponent)).Cast<TComponent>().ToList();
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponent(Framework.IScriptComponent)"/>
+    public void DetachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>
+        => ((GameObject)this).DetachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponents(Type)"/>
+    public void DetachScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_OpenBackScreen>
+        => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
+
+    private static BmSDK.Function __fn_GetObjClassVersion;
+    /// <summary>
+    /// Function: GetObjClassVersion
+    /// </summary>
+    public unsafe static int GetObjClassVersion()
+    {
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjClassVersion, "BmScript.RSeqAct_OpenBackScreen.GetObjClassVersion");
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Activated;
+    /// <summary>
+    /// Function: Activated
+    /// </summary>
+    public unsafe override void Activated()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Activated, "BmScript.RSeqAct_OpenBackScreen.Activated", this);
+        byte* paramsPtr = stackalloc byte[72];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    /// <summary>
+    /// ByteProperty: _TheScreen
+    /// </summary>
+    public unsafe BmSDK.BmScript.RSeqAct_OpenBackScreen.BackScreenType _TheScreen
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmScript.RSeqAct_OpenBackScreen.BackScreenType>(Ptr + 352); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 352); }
+    }
+
+    /// <summary>
+    /// ByteProperty: Map_ParamType
+    /// </summary>
+    public unsafe BmSDK.BmScript.RSeqAct_OpenBackScreen.EMapParamType Map_ParamType
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmScript.RSeqAct_OpenBackScreen.EMapParamType>(Ptr + 353); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 353); }
+    }
+
+    /// <summary>
+    /// ByteProperty: Bio_Character
+    /// </summary>
+    public unsafe BmSDK.BmGame.RGameInfo.EBioCharacter Bio_Character
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmGame.RGameInfo.EBioCharacter>(Ptr + 354); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 354); }
+    }
+
+    /// <summary>
+    /// ByteProperty: Bio_PageId
+    /// </summary>
+    public unsafe BmSDK.BmScript.RSeqAct_OpenBackScreen.EBioPageType Bio_PageId
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmScript.RSeqAct_OpenBackScreen.EBioPageType>(Ptr + 355); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 355); }
+    }
+
+    /// <summary>
+    /// BoolProperty: bClearFlag_Map_Disabled
+    /// </summary>
+    public unsafe bool bClearFlag_Map_Disabled
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 356) & 1) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 356); var newMask = value ? (currentMask | 1) : (currentMask & ~1); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 356); }
+    }
+
+    /// <summary>
+    /// BoolProperty: bClearAutoPanList
+    /// </summary>
+    public unsafe bool bClearAutoPanList
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 356) & 2) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 356); var newMask = value ? (currentMask | 2) : (currentMask & ~2); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 356); }
+    }
+
+    /// <summary>
+    /// BoolProperty: Bio_AutoPlayTape
+    /// </summary>
+    public unsafe bool Bio_AutoPlayTape
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 356) & 4) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 356); var newMask = value ? (currentMask | 4) : (currentMask & ~4); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 356); }
+    }
+
+    /// <summary>
+    /// StrProperty: Map_Script
+    /// </summary>
+    public unsafe BmSDK.FString Map_Script
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FString>(Ptr + 360); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 360); }
+    }
+
+    /// <summary>
+    /// StrProperty: Map_Objective
+    /// </summary>
+    public unsafe BmSDK.FString Map_Objective
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FString>(Ptr + 376); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 376); }
+    }
+
+    /// <summary>
+    /// IntProperty: Bio_TapeId
+    /// </summary>
+    public unsafe int Bio_TapeId
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 392); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 392); }
+    }
+
+    /// <summary>
+    /// Enum: EBioPageType
+    /// </summary>
+    public enum EBioPageType : byte
+    {
+        BioPage_Info = 0,
+        BioPage_Bio = 1,
+        BioPage_Attributes = 2,
+        BioPage_Tapes = 3,
+        BioPage_MAX = 4,
+    }
+
+    /// <summary>
+    /// Enum: EMapParamType
+    /// </summary>
+    public enum EMapParamType : byte
+    {
+        EMPT_None = 0,
+        EMPT_TabScript = 1,
+        EMPT_Script = 2,
+        EMPT_Objective = 3,
+        EMPT_MAX = 4,
+    }
+
+    /// <summary>
+    /// Enum: BackScreenType
+    /// </summary>
+    public enum BackScreenType : byte
+    {
+        BST_Upgrade = 0,
+        BST_Map = 1,
+        BST_Riddler = 2,
+        BST_Enygma = 3,
+        BST_Bios = 4,
+        BST_CityStories = 5,
+        BST_Challenge = 6,
+        BST_MAX = 7,
+    }
+}

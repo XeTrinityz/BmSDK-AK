@@ -1,0 +1,142 @@
+#pragma warning disable CS0108
+#pragma warning disable CS1591
+
+namespace BmSDK.BmScript;
+
+/// <summary>
+/// Class: RDisruptableLaserGridInvisibleHurt<br/>
+/// (size = 900)
+/// (flags = 10486290)
+/// </summary>
+public partial class RDisruptableLaserGridInvisibleHurt : BmSDK.BmScript.RDisruptableLaserGridInvisible, BmSDK.IGameObject
+{
+    static BmSDK.Class s_staticClass = null;
+    public static BmSDK.Class StaticClass()
+    {
+        if (s_staticClass is null)
+        {
+            s_staticClass = StaticFindObjectChecked<Class>(null, null, "BmScript.RDisruptableLaserGridInvisibleHurt", false);
+            s_staticClass.AddToRoot();
+        }
+        return s_staticClass;
+    }
+
+    /// <summary>
+    /// Gets the class default object as RDisruptableLaserGridInvisibleHurt.
+    /// </summary>
+    public static RDisruptableLaserGridInvisibleHurt DefaultObject => (RDisruptableLaserGridInvisibleHurt)StaticClass().DefaultObject;
+
+    internal RDisruptableLaserGridInvisibleHurt() { }
+
+    /// <summary>
+    /// Constructs a new RDisruptableLaserGridInvisibleHurt
+    /// </summary>
+    public RDisruptableLaserGridInvisibleHurt(System.Numerics.Vector3 Location = default, BmSDK.Rotator Rotation = default, BmSDK.Engine.Actor Template = null, BmSDK.GameObject Owner = null, BmSDK.GameObject Instigator = null, BmSDK.Engine.Level Level = null) : base(BmSDK.Framework.Game.SpawnActorInternal(StaticClass(), default, Location, Rotation, Template, Owner, Instigator, Level)) { }
+
+    /// <summary>
+    /// Constructs a new wrapper instance from the given object pointer.
+    /// </summary>
+    protected RDisruptableLaserGridInvisibleHurt(nint ptr) : base(ptr) { }
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
+    public void AttachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>
+        => ((GameObject)this).AttachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Type)"/>
+    public TComponent AttachScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>, new()
+        => (TComponent)((GameObject)this).AttachScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Framework.IScriptComponent)"/>
+    public bool HasScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>
+        => ((GameObject)this).HasScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Type)"/>
+    public bool HasScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>
+        => ((GameObject)this).HasScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponent(Type)"/>
+    public TComponent GetScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>
+        => (TComponent)((GameObject)this).GetScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponents(Type)"/>
+    public System.Collections.Generic.IReadOnlyList<TComponent> GetScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>
+        => ((GameObject)this).GetScriptComponents(typeof(TComponent)).Cast<TComponent>().ToList();
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponent(Framework.IScriptComponent)"/>
+    public void DetachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>
+        => ((GameObject)this).DetachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponents(Type)"/>
+    public void DetachScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RDisruptableLaserGridInvisibleHurt>
+        => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TurnBackOn;
+    /// <summary>
+    /// Function: TurnBackOn
+    /// </summary>
+    public unsafe virtual void TurnBackOn()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TurnBackOn, "BmScript.RDisruptableLaserGridInvisibleHurt.TurnBackOn", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetDamageType;
+    /// <summary>
+    /// Function: GetDamageType
+    /// </summary>
+    public unsafe override BmSDK.Class GetDamageType()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetDamageType, "BmScript.RDisruptableLaserGridInvisibleHurt.GetDamageType", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Class>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HitPawn;
+    /// <summary>
+    /// Function: HitPawn
+    /// </summary>
+    public unsafe override void HitPawn(BmSDK.BmGame.RPawnCombat PawnToHit, bool bUseDamagedBy = default)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HitPawn, "BmScript.RDisruptableLaserGridInvisibleHurt.HitPawn", this);
+        byte* paramsPtr = stackalloc byte[288];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(PawnToHit, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bUseDamagedBy, paramsPtr + 8);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    /// <summary>
+    /// FloatProperty: DisableWhenHitTime
+    /// </summary>
+    public unsafe float DisableWhenHitTime
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 892); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 892); }
+    }
+
+    /// <summary>
+    /// FloatProperty: DamageToPlayerValue
+    /// </summary>
+    public unsafe float DamageToPlayerValue
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 896); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 896); }
+    }
+}

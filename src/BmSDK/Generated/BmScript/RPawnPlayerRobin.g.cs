@@ -78,26 +78,6 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.IG
         where TComponent : class, Framework.IScriptComponent<RPawnPlayerRobin>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetSentryGunAniminfo;
-    /// <summary>
-    /// Function: GetSentryGunAniminfo
-    /// </summary>
-    public unsafe override void GetSentryGunAniminfo(out BmSDK.Engine.AnimSet sentryGunAnimSet, out BmSDK.BmGame.RSpecialMoveConfig PlayerMove)
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetSentryGunAniminfo, "BmScript.RPawnPlayerRobin.GetSentryGunAniminfo", this);
-        byte* paramsPtr = stackalloc byte[32];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        System.Runtime.CompilerServices.Unsafe.SkipInit(out sentryGunAnimSet);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(sentryGunAnimSet, paramsPtr + 0);
-        System.Runtime.CompilerServices.Unsafe.SkipInit(out PlayerMove);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(PlayerMove, paramsPtr + 8);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        sentryGunAnimSet = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.Engine.AnimSet>(paramsPtr + 0);
-        PlayerMove = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RSpecialMoveConfig>(paramsPtr + 8);
-        return;
-    }
-
     private static BmSDK.Framework.FunctionCache.CallSite __fn_DelayedHideWeaponsInCinematicMode;
     /// <summary>
     /// Function: DelayedHideWeaponsInCinematicMode
@@ -944,20 +924,6 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.IG
         return;
     }
 
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearAllEffects;
-    /// <summary>
-    /// Function: ClearAllEffects
-    /// </summary>
-    public unsafe virtual void ClearAllEffects()
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearAllEffects, "BmScript.RPawnPlayerRobin.ClearAllEffects", this);
-        byte* paramsPtr = stackalloc byte[20];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        return;
-    }
-
     private static BmSDK.Framework.FunctionCache.CallSite __fn_SpawnEffectsOnThing;
     /// <summary>
     /// Function: SpawnEffectsOnThing
@@ -1200,34 +1166,6 @@ public partial class RPawnPlayerRobin : BmSDK.BmGame.RPawnPlayerBmBase, BmSDK.IG
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ApplyScratchedByBell, "BmScript.RPawnPlayerRobin.ApplyScratchedByBell", this);
         byte* paramsPtr = stackalloc byte[20];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        return;
-    }
-
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_Destroyed;
-    /// <summary>
-    /// Function: Destroyed
-    /// </summary>
-    public unsafe override void Destroyed()
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Destroyed, "BmScript.RPawnPlayerRobin.Destroyed", this);
-        byte* paramsPtr = stackalloc byte[16];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        return;
-    }
-
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_PreStreamOut;
-    /// <summary>
-    /// Function: PreStreamOut
-    /// </summary>
-    public unsafe override void PreStreamOut()
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_PreStreamOut, "BmScript.RPawnPlayerRobin.PreStreamOut", this);
-        byte* paramsPtr = stackalloc byte[16];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
         return;

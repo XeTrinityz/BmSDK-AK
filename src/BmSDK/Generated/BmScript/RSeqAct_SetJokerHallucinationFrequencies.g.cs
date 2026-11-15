@@ -144,7 +144,7 @@ public partial class RSeqAct_SetJokerHallucinationFrequencies : BmSDK.Engine.Seq
     /// <summary>
     /// Struct: FCustomFreq
     /// </summary>
-    [StructLayout(LayoutKind.Explicit, Size = 5)]
+    [StructLayout(LayoutKind.Explicit, Size = 8)]
     public partial record struct FCustomFreq
     {
         /// <summary>

@@ -1,0 +1,302 @@
+#pragma warning disable CS0108
+#pragma warning disable CS1591
+
+namespace BmSDK.BmScript;
+
+/// <summary>
+/// Class: RSeqAct_NPCOneShotWithFlagsDialogueManager<br/>
+/// (size = 440)
+/// (flags = 8210)
+/// </summary>
+public partial class RSeqAct_NPCOneShotWithFlagsDialogueManager : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObject
+{
+    static BmSDK.Class s_staticClass = null;
+    public static BmSDK.Class StaticClass()
+    {
+        if (s_staticClass is null)
+        {
+            s_staticClass = StaticFindObjectChecked<Class>(null, null, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager", false);
+            s_staticClass.AddToRoot();
+        }
+        return s_staticClass;
+    }
+
+    /// <summary>
+    /// Gets the class default object as RSeqAct_NPCOneShotWithFlagsDialogueManager.
+    /// </summary>
+    public static RSeqAct_NPCOneShotWithFlagsDialogueManager DefaultObject => (RSeqAct_NPCOneShotWithFlagsDialogueManager)StaticClass().DefaultObject;
+
+    internal RSeqAct_NPCOneShotWithFlagsDialogueManager() { }
+
+    /// <summary>
+    /// Constructs a new RSeqAct_NPCOneShotWithFlagsDialogueManager
+    /// </summary>
+    public RSeqAct_NPCOneShotWithFlagsDialogueManager(BmSDK.GameObject Outer, string Name = null, BmSDK.GameObject.EObjectFlags SetFlags = 0, RSeqAct_NPCOneShotWithFlagsDialogueManager Template = null) : base(ConstructObjectInternal(StaticClass(), Outer, Name, SetFlags, Template)) { }
+
+    /// <summary>
+    /// Constructs a new wrapper instance from the given object pointer.
+    /// </summary>
+    protected RSeqAct_NPCOneShotWithFlagsDialogueManager(nint ptr) : base(ptr) { }
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
+    public void AttachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>
+        => ((GameObject)this).AttachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Type)"/>
+    public TComponent AttachScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>, new()
+        => (TComponent)((GameObject)this).AttachScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Framework.IScriptComponent)"/>
+    public bool HasScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>
+        => ((GameObject)this).HasScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Type)"/>
+    public bool HasScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>
+        => ((GameObject)this).HasScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponent(Type)"/>
+    public TComponent GetScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>
+        => (TComponent)((GameObject)this).GetScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponents(Type)"/>
+    public System.Collections.Generic.IReadOnlyList<TComponent> GetScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>
+        => ((GameObject)this).GetScriptComponents(typeof(TComponent)).Cast<TComponent>().ToList();
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponent(Framework.IScriptComponent)"/>
+    public void DetachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>
+        => ((GameObject)this).DetachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponents(Type)"/>
+    public void DetachScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_NPCOneShotWithFlagsDialogueManager>
+        => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
+
+    private static BmSDK.Function __fn_GetObjClassVersion;
+    /// <summary>
+    /// Function: GetObjClassVersion
+    /// </summary>
+    public unsafe static int GetObjClassVersion()
+    {
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjClassVersion, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.GetObjClassVersion");
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerConnectedSpeechAction;
+    /// <summary>
+    /// Function: TriggerConnectedSpeechAction
+    /// </summary>
+    public unsafe virtual void TriggerConnectedSpeechAction()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerConnectedSpeechAction, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.TriggerConnectedSpeechAction", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ChooseNextLine;
+    /// <summary>
+    /// Function: ChooseNextLine
+    /// </summary>
+    public unsafe virtual bool ChooseNextLine()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ChooseNextLine, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.ChooseNextLine", this);
+        byte* paramsPtr = stackalloc byte[44];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetUnplayedLines;
+    /// <summary>
+    /// Function: ResetUnplayedLines
+    /// </summary>
+    public unsafe virtual void ResetUnplayedLines()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetUnplayedLines, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.ResetUnplayedLines", this);
+        byte* paramsPtr = stackalloc byte[28];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ResetTimer;
+    /// <summary>
+    /// Function: ResetTimer
+    /// </summary>
+    public unsafe virtual void ResetTimer()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ResetTimer, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.ResetTimer", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_HandleInputLinks;
+    /// <summary>
+    /// Function: HandleInputLinks
+    /// </summary>
+    public unsafe virtual void HandleInputLinks()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_HandleInputLinks, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.HandleInputLinks", this);
+        byte* paramsPtr = stackalloc byte[28];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
+    /// <summary>
+    /// Function: Update
+    /// </summary>
+    public unsafe override bool Update(float DeltaTime)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.Update", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
+    }
+
+    /// <summary>
+    /// FloatProperty: timeBetweenDialogueMin
+    /// </summary>
+    public unsafe float timeBetweenDialogueMin
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 376); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 376); }
+    }
+
+    /// <summary>
+    /// FloatProperty: timeBetweenDialogueMax
+    /// </summary>
+    public unsafe float timeBetweenDialogueMax
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 380); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 380); }
+    }
+
+    /// <summary>
+    /// ArrayProperty: Lines
+    /// </summary>
+    public unsafe BmSDK.TArray<BmSDK.BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.FLineAndFlag> Lines
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.FLineAndFlag>>(Ptr + 384); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 384); }
+    }
+
+    /// <summary>
+    /// BoolProperty: BRandom
+    /// </summary>
+    public unsafe bool BRandom
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400) & 1) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400); var newMask = value ? (currentMask | 1) : (currentMask & ~1); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 400); }
+    }
+
+    /// <summary>
+    /// BoolProperty: bLoop
+    /// </summary>
+    public unsafe bool bLoop
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400) & 2) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400); var newMask = value ? (currentMask | 2) : (currentMask & ~2); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 400); }
+    }
+
+    /// <summary>
+    /// BoolProperty: bStopping
+    /// </summary>
+    public unsafe bool bStopping
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400) & 4) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400); var newMask = value ? (currentMask | 4) : (currentMask & ~4); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 400); }
+    }
+
+    /// <summary>
+    /// BoolProperty: bLineInProgress
+    /// </summary>
+    public unsafe bool bLineInProgress
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400) & 8) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400); var newMask = value ? (currentMask | 8) : (currentMask & ~8); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 400); }
+    }
+
+    /// <summary>
+    /// FloatProperty: timeTillNextLine
+    /// </summary>
+    public unsafe float timeTillNextLine
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 404); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 404); }
+    }
+
+    /// <summary>
+    /// ObjectProperty: lastLinePlayed
+    /// </summary>
+    public unsafe BmSDK.Engine.AkDialogueLine lastLinePlayed
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.Engine.AkDialogueLine>(Ptr + 408); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 408); }
+    }
+
+    /// <summary>
+    /// ObjectProperty: SpeechAction
+    /// </summary>
+    public unsafe BmSDK.BmGame.RSeqAct_PlayNPCDialogue SpeechAction
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmGame.RSeqAct_PlayNPCDialogue>(Ptr + 416); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 416); }
+    }
+
+    /// <summary>
+    /// ArrayProperty: unplayedLines
+    /// </summary>
+    public unsafe BmSDK.TArray<BmSDK.BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.FLineAndFlag> unplayedLines
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.TArray<BmSDK.BmScript.RSeqAct_NPCOneShotWithFlagsDialogueManager.FLineAndFlag>>(Ptr + 424); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 424); }
+    }
+
+    /// <summary>
+    /// Struct: FLineAndFlag
+    /// </summary>
+    [StructLayout(LayoutKind.Explicit, Size = 24)]
+    public partial record struct FLineAndFlag
+    {
+        /// <summary>
+        /// ObjectProperty: Line
+        /// </summary>
+        public unsafe BmSDK.Engine.AkDialogueLine Line
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.Engine.AkDialogueLine>(Ptr + 0); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 0); }; }
+        }
+
+        /// <summary>
+        /// StrProperty: FlagName
+        /// </summary>
+        public unsafe BmSDK.FString FlagName
+        {
+            get { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.FString>(Ptr + 8); }; }
+            set { fixed (void* thisPtr = &this) { IntPtr Ptr = (IntPtr)thisPtr; BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 8); }; }
+        }
+    }
+}

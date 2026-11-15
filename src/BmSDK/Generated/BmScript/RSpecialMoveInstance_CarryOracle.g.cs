@@ -1,0 +1,190 @@
+#pragma warning disable CS0108
+#pragma warning disable CS1591
+
+namespace BmSDK.BmScript;
+
+/// <summary>
+/// Class: RSpecialMoveInstance_CarryOracle<br/>
+/// (size = 892)
+/// (flags = 10485778)
+/// </summary>
+public partial class RSpecialMoveInstance_CarryOracle : BmSDK.BmGame.RSpecialMoveInstance, BmSDK.IGameObject
+{
+    static BmSDK.Class s_staticClass = null;
+    public static BmSDK.Class StaticClass()
+    {
+        if (s_staticClass is null)
+        {
+            s_staticClass = StaticFindObjectChecked<Class>(null, null, "BmScript.RSpecialMoveInstance_CarryOracle", false);
+            s_staticClass.AddToRoot();
+        }
+        return s_staticClass;
+    }
+
+    /// <summary>
+    /// Gets the class default object as RSpecialMoveInstance_CarryOracle.
+    /// </summary>
+    public static RSpecialMoveInstance_CarryOracle DefaultObject => (RSpecialMoveInstance_CarryOracle)StaticClass().DefaultObject;
+
+    internal RSpecialMoveInstance_CarryOracle() { }
+
+    /// <summary>
+    /// Constructs a new RSpecialMoveInstance_CarryOracle
+    /// </summary>
+    public RSpecialMoveInstance_CarryOracle(System.Numerics.Vector3 Location = default, BmSDK.Rotator Rotation = default, BmSDK.Engine.Actor Template = null, BmSDK.GameObject Owner = null, BmSDK.GameObject Instigator = null, BmSDK.Engine.Level Level = null) : base(BmSDK.Framework.Game.SpawnActorInternal(StaticClass(), default, Location, Rotation, Template, Owner, Instigator, Level)) { }
+
+    /// <summary>
+    /// Constructs a new wrapper instance from the given object pointer.
+    /// </summary>
+    protected RSpecialMoveInstance_CarryOracle(nint ptr) : base(ptr) { }
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
+    public void AttachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>
+        => ((GameObject)this).AttachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Type)"/>
+    public TComponent AttachScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>, new()
+        => (TComponent)((GameObject)this).AttachScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Framework.IScriptComponent)"/>
+    public bool HasScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>
+        => ((GameObject)this).HasScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Type)"/>
+    public bool HasScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>
+        => ((GameObject)this).HasScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponent(Type)"/>
+    public TComponent GetScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>
+        => (TComponent)((GameObject)this).GetScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponents(Type)"/>
+    public System.Collections.Generic.IReadOnlyList<TComponent> GetScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>
+        => ((GameObject)this).GetScriptComponents(typeof(TComponent)).Cast<TComponent>().ToList();
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponent(Framework.IScriptComponent)"/>
+    public void DetachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>
+        => ((GameObject)this).DetachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponents(Type)"/>
+    public void DetachScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_CarryOracle>
+        => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AllowMoveTo;
+    /// <summary>
+    /// Function: AllowMoveTo
+    /// </summary>
+    public unsafe override bool AllowMoveTo()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AllowMoveTo, "BmScript.RSpecialMoveInstance_CarryOracle.AllowMoveTo", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CancelSpecialMove;
+    /// <summary>
+    /// Function: CancelSpecialMove
+    /// </summary>
+    public unsafe override void CancelSpecialMove(BmSDK.BmGame.RSpecialMoveConfig NextSpecialMove)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CancelSpecialMove, "BmScript.RSpecialMoveInstance_CarryOracle.CancelSpecialMove", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(NextSpecialMove, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_FinishSpecialMove;
+    /// <summary>
+    /// Function: FinishSpecialMove
+    /// </summary>
+    public unsafe override void FinishSpecialMove()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_FinishSpecialMove, "BmScript.RSpecialMoveInstance_CarryOracle.FinishSpecialMove", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_AttachOracleToBatmobile;
+    /// <summary>
+    /// Function: AttachOracleToBatmobile
+    /// </summary>
+    public unsafe virtual void AttachOracleToBatmobile()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_AttachOracleToBatmobile, "BmScript.RSpecialMoveInstance_CarryOracle.AttachOracleToBatmobile", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CreateSpecialWalkWeaponConfig;
+    /// <summary>
+    /// Function: CreateSpecialWalkWeaponConfig
+    /// </summary>
+    public unsafe virtual BmSDK.BmGame.RWeaponConfig CreateSpecialWalkWeaponConfig()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CreateSpecialWalkWeaponConfig, "BmScript.RSpecialMoveInstance_CarryOracle.CreateSpecialWalkWeaponConfig", this);
+        byte* paramsPtr = stackalloc byte[468];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.BmGame.RWeaponConfig>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerSpecialMove;
+    /// <summary>
+    /// Function: TriggerSpecialMove
+    /// </summary>
+    public unsafe override void TriggerSpecialMove(BmSDK.BmGame.REnvironmentCheckTicker.FEnvironmentSpecialMoveLocator MoveLocation)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_CarryOracle.TriggerSpecialMove", this);
+        byte* paramsPtr = stackalloc byte[148];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(MoveLocation, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    /// <summary>
+    /// ObjectProperty: Oracle
+    /// </summary>
+    public unsafe BmSDK.BmGame.RPawnCharacter Oracle
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmGame.RPawnCharacter>(Ptr + 876); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 876); }
+    }
+
+    /// <summary>
+    /// StructProperty: transID
+    /// </summary>
+    public unsafe ref BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId transID
+        => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 884);
+
+    /// <summary>
+    /// BoolProperty: bIsInRangeOfBatmobile
+    /// </summary>
+    public unsafe bool bIsInRangeOfBatmobile
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 888) & 1) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 888); var newMask = value ? (currentMask | 1) : (currentMask & ~1); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 888); }
+    }
+}

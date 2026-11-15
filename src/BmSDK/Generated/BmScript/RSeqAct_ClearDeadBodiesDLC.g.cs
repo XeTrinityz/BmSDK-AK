@@ -1,0 +1,208 @@
+#pragma warning disable CS0108
+#pragma warning disable CS1591
+
+namespace BmSDK.BmScript;
+
+/// <summary>
+/// Class: RSeqAct_ClearDeadBodiesDLC<br/>
+/// (size = 404)
+/// (flags = 8210)
+/// </summary>
+public partial class RSeqAct_ClearDeadBodiesDLC : BmSDK.Engine.SeqAct_Latent, BmSDK.IGameObject
+{
+    static BmSDK.Class s_staticClass = null;
+    public static BmSDK.Class StaticClass()
+    {
+        if (s_staticClass is null)
+        {
+            s_staticClass = StaticFindObjectChecked<Class>(null, null, "BmScript.RSeqAct_ClearDeadBodiesDLC", false);
+            s_staticClass.AddToRoot();
+        }
+        return s_staticClass;
+    }
+
+    /// <summary>
+    /// Gets the class default object as RSeqAct_ClearDeadBodiesDLC.
+    /// </summary>
+    public static RSeqAct_ClearDeadBodiesDLC DefaultObject => (RSeqAct_ClearDeadBodiesDLC)StaticClass().DefaultObject;
+
+    internal RSeqAct_ClearDeadBodiesDLC() { }
+
+    /// <summary>
+    /// Constructs a new RSeqAct_ClearDeadBodiesDLC
+    /// </summary>
+    public RSeqAct_ClearDeadBodiesDLC(BmSDK.GameObject Outer, string Name = null, BmSDK.GameObject.EObjectFlags SetFlags = 0, RSeqAct_ClearDeadBodiesDLC Template = null) : base(ConstructObjectInternal(StaticClass(), Outer, Name, SetFlags, Template)) { }
+
+    /// <summary>
+    /// Constructs a new wrapper instance from the given object pointer.
+    /// </summary>
+    protected RSeqAct_ClearDeadBodiesDLC(nint ptr) : base(ptr) { }
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
+    public void AttachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>
+        => ((GameObject)this).AttachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Type)"/>
+    public TComponent AttachScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>, new()
+        => (TComponent)((GameObject)this).AttachScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Framework.IScriptComponent)"/>
+    public bool HasScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>
+        => ((GameObject)this).HasScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Type)"/>
+    public bool HasScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>
+        => ((GameObject)this).HasScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponent(Type)"/>
+    public TComponent GetScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>
+        => (TComponent)((GameObject)this).GetScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponents(Type)"/>
+    public System.Collections.Generic.IReadOnlyList<TComponent> GetScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>
+        => ((GameObject)this).GetScriptComponents(typeof(TComponent)).Cast<TComponent>().ToList();
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponent(Framework.IScriptComponent)"/>
+    public void DetachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>
+        => ((GameObject)this).DetachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponents(Type)"/>
+    public void DetachScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<RSeqAct_ClearDeadBodiesDLC>
+        => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
+
+    private static BmSDK.Function __fn_GetObjClassVersion;
+    /// <summary>
+    /// Function: GetObjClassVersion
+    /// </summary>
+    public unsafe static int GetObjClassVersion()
+    {
+        var funcManaged = BmSDK.Framework.FunctionCache.Get(ref __fn_GetObjClassVersion, "BmScript.RSeqAct_ClearDeadBodiesDLC.GetObjClassVersion");
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Update;
+    /// <summary>
+    /// Function: Update
+    /// </summary>
+    public unsafe override bool Update(float DeltaTime)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Update, "BmScript.RSeqAct_ClearDeadBodiesDLC.Update", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 4);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ClearBodies;
+    /// <summary>
+    /// Function: ClearBodies
+    /// </summary>
+    public unsafe virtual void ClearBodies(int numDead, int numClear)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ClearBodies, "BmScript.RSeqAct_ClearDeadBodiesDLC.ClearBodies", this);
+        byte* paramsPtr = stackalloc byte[84];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(numDead, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(numClear, paramsPtr + 4);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_CheckForAttachedRope;
+    /// <summary>
+    /// Function: CheckForAttachedRope
+    /// </summary>
+    public unsafe virtual void CheckForAttachedRope(BmSDK.BmGame.RPawnVillain TestPawn)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CheckForAttachedRope, "BmScript.RSeqAct_ClearDeadBodiesDLC.CheckForAttachedRope", this);
+        byte* paramsPtr = stackalloc byte[32];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(TestPawn, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsOffScreen;
+    /// <summary>
+    /// Function: IsOffScreen
+    /// </summary>
+    public unsafe virtual bool IsOffScreen(BmSDK.Engine.Actor Pawn)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsOffScreen, "BmScript.RSeqAct_ClearDeadBodiesDLC.IsOffScreen", this);
+        byte* paramsPtr = stackalloc byte[28];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(Pawn, paramsPtr + 0);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 8);
+    }
+
+    /// <summary>
+    /// FloatProperty: MinNumBeforeClear
+    /// </summary>
+    public unsafe float MinNumBeforeClear
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 376); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 376); }
+    }
+
+    /// <summary>
+    /// FloatProperty: NumToClear
+    /// </summary>
+    public unsafe float NumToClear
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 380); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 380); }
+    }
+
+    /// <summary>
+    /// FloatProperty: PercBeforeOOSCheck
+    /// </summary>
+    public unsafe float PercBeforeOOSCheck
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 384); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 384); }
+    }
+
+    /// <summary>
+    /// FloatProperty: TimeTillNextClear
+    /// </summary>
+    public unsafe float TimeTillNextClear
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<float>(Ptr + 388); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 388); }
+    }
+
+    /// <summary>
+    /// ObjectProperty: OptionalClearVolume
+    /// </summary>
+    public unsafe BmSDK.Engine.Volume OptionalClearVolume
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.Engine.Volume>(Ptr + 392); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 392); }
+    }
+
+    /// <summary>
+    /// BoolProperty: bIncludeDeadBodies
+    /// </summary>
+    public unsafe bool bIncludeDeadBodies
+    {
+        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400) & 1) != 0; }
+        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 400); var newMask = value ? (currentMask | 1) : (currentMask & ~1); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 400); }
+    }
+}

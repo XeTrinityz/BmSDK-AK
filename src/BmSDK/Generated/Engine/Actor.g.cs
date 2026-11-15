@@ -2714,7 +2714,9 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(EventClass, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bIncludeDisabled, paramsPtr + 24);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         out_EventList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.SequenceEvent>>(paramsPtr + 8);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 28);
     }
@@ -2732,7 +2734,9 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InClass, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInstigator, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTest, paramsPtr + 48);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         EventList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.SequenceEvent>>(paramsPtr + 16);
         ActivateIndices = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<int>>(paramsPtr + 32);
         ActivatedEvents = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.SequenceEvent>>(paramsPtr + 52);
@@ -2785,7 +2789,9 @@ public partial class Actor : BmSDK.StateObject, BmSDK.IGameObject
         BmSDK.Framework.MarshalUtil.ToUnmanaged(InInstigator, paramsPtr + 8);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(ActivateIndex, paramsPtr + 16);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(bTest, paramsPtr + 20);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         ActivatedEvents = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.Engine.SequenceEvent>>(paramsPtr + 24);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 40);
     }

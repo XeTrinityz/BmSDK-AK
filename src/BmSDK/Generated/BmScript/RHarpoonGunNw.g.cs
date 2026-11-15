@@ -78,6 +78,20 @@ public partial class RHarpoonGunNw : BmSDK.BmGame.RHarpoonGun, BmSDK.IGameObject
         where TComponent : class, Framework.IScriptComponent<RHarpoonGunNw>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_UpgradeToSuperComboGadget;
+    /// <summary>
+    /// Function: UpgradeToSuperComboGadget
+    /// </summary>
+    public unsafe override bool UpgradeToSuperComboGadget()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_UpgradeToSuperComboGadget, "BmScript.RHarpoonGunNw.UpgradeToSuperComboGadget", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
+    }
+
     private static BmSDK.Framework.FunctionCache.CallSite __fn_GetGadgetClassNameForHUD;
     /// <summary>
     /// Function: GetGadgetClassNameForHUD

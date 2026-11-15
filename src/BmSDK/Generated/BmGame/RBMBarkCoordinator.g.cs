@@ -120,7 +120,9 @@ public partial class RBMBarkCoordinator : BmSDK.Engine.Actor, BmSDK.IGameObject
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(TestSet, paramsPtr + 0);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(BaseQuery, paramsPtr + 16);
+        var __optional = BmSDK.Framework.OptionalParms.Suspend(funcManaged);
         BmSDK.Framework.GameFunctions.CallProcessEvent(StaticClass().DefaultObject.Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        BmSDK.Framework.OptionalParms.Resume(funcManaged, __optional);
         FailCases = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RBarkFlagBase>>(paramsPtr + 24);
         MustDefineList = BmSDK.Framework.MarshalUtil.ToManagedParam<BmSDK.TArray<BmSDK.BmGame.RBarkValDef.FlagTypeEnum>>(paramsPtr + 40);
         return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 56);

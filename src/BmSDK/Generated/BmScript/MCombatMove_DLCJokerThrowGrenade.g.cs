@@ -1,0 +1,264 @@
+#pragma warning disable CS0108
+#pragma warning disable CS1591
+
+namespace BmSDK.BmScript;
+
+/// <summary>
+/// Class: MCombatMove_DLCJokerThrowGrenade<br/>
+/// (size = 812)
+/// (flags = 10485778)
+/// </summary>
+public partial class MCombatMove_DLCJokerThrowGrenade : BmSDK.BmGame.RCombatMove, BmSDK.IGameObject
+{
+    static BmSDK.Class s_staticClass = null;
+    public static BmSDK.Class StaticClass()
+    {
+        if (s_staticClass is null)
+        {
+            s_staticClass = StaticFindObjectChecked<Class>(null, null, "BmScript.MCombatMove_DLCJokerThrowGrenade", false);
+            s_staticClass.AddToRoot();
+        }
+        return s_staticClass;
+    }
+
+    /// <summary>
+    /// Gets the class default object as MCombatMove_DLCJokerThrowGrenade.
+    /// </summary>
+    public static MCombatMove_DLCJokerThrowGrenade DefaultObject => (MCombatMove_DLCJokerThrowGrenade)StaticClass().DefaultObject;
+
+    internal MCombatMove_DLCJokerThrowGrenade() { }
+
+    /// <summary>
+    /// Constructs a new MCombatMove_DLCJokerThrowGrenade
+    /// </summary>
+    public MCombatMove_DLCJokerThrowGrenade(System.Numerics.Vector3 Location = default, BmSDK.Rotator Rotation = default, BmSDK.Engine.Actor Template = null, BmSDK.GameObject Owner = null, BmSDK.GameObject Instigator = null, BmSDK.Engine.Level Level = null) : base(BmSDK.Framework.Game.SpawnActorInternal(StaticClass(), default, Location, Rotation, Template, Owner, Instigator, Level)) { }
+
+    /// <summary>
+    /// Constructs a new wrapper instance from the given object pointer.
+    /// </summary>
+    protected MCombatMove_DLCJokerThrowGrenade(nint ptr) : base(ptr) { }
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Framework.IScriptComponent)"/>
+    public void AttachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>
+        => ((GameObject)this).AttachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.AttachScriptComponent(Type)"/>
+    public TComponent AttachScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>, new()
+        => (TComponent)((GameObject)this).AttachScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Framework.IScriptComponent)"/>
+    public bool HasScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>
+        => ((GameObject)this).HasScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.HasScriptComponent(Type)"/>
+    public bool HasScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>
+        => ((GameObject)this).HasScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponent(Type)"/>
+    public TComponent GetScriptComponent<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>
+        => (TComponent)((GameObject)this).GetScriptComponent(typeof(TComponent));
+
+    /// <inheritdoc cref="GameObject.GetScriptComponents(Type)"/>
+    public System.Collections.Generic.IReadOnlyList<TComponent> GetScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>
+        => ((GameObject)this).GetScriptComponents(typeof(TComponent)).Cast<TComponent>().ToList();
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponent(Framework.IScriptComponent)"/>
+    public void DetachScriptComponent<TComponent>(TComponent component)
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>
+        => ((GameObject)this).DetachScriptComponent((Framework.IScriptComponent)component);
+
+    /// <inheritdoc cref="GameObject.DetachScriptComponents(Type)"/>
+    public void DetachScriptComponents<TComponent>()
+        where TComponent : class, Framework.IScriptComponent<MCombatMove_DLCJokerThrowGrenade>
+        => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ExitMove;
+    /// <summary>
+    /// Function: ExitMove
+    /// </summary>
+    public unsafe override void ExitMove()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ExitMove, "BmScript.MCombatMove_DLCJokerThrowGrenade.ExitMove", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsHarleyUnableToTransition;
+    /// <summary>
+    /// Function: IsHarleyUnableToTransition
+    /// </summary>
+    public unsafe virtual bool IsHarleyUnableToTransition()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsHarleyUnableToTransition, "BmScript.MCombatMove_DLCJokerThrowGrenade.IsHarleyUnableToTransition", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetHelpPrompt;
+    /// <summary>
+    /// Function: GetHelpPrompt
+    /// </summary>
+    public unsafe override bool GetHelpPrompt(BmSDK.BmGame.RHUDPrompt HelpPrompt, bool bKismetHelpOn)
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetHelpPrompt, "BmScript.MCombatMove_DLCJokerThrowGrenade.GetHelpPrompt", this);
+        byte* paramsPtr = stackalloc byte[32];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(HelpPrompt, paramsPtr + 0);
+        BmSDK.Framework.MarshalUtil.ToUnmanaged(bKismetHelpOn, paramsPtr + 8);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 12);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_IsAttacking;
+    /// <summary>
+    /// Function: IsAttacking
+    /// </summary>
+    public unsafe override bool IsAttacking()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_IsAttacking, "BmScript.MCombatMove_DLCJokerThrowGrenade.IsAttacking", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<bool>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_ThrowGrenade;
+    /// <summary>
+    /// Function: ThrowGrenade
+    /// </summary>
+    public unsafe virtual void ThrowGrenade()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_ThrowGrenade, "BmScript.MCombatMove_DLCJokerThrowGrenade.ThrowGrenade", this);
+        byte* paramsPtr = stackalloc byte[24];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GrabGrenade;
+    /// <summary>
+    /// Function: GrabGrenade
+    /// </summary>
+    public unsafe virtual void GrabGrenade()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GrabGrenade, "BmScript.MCombatMove_DLCJokerThrowGrenade.GrabGrenade", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GrenadeSlowMoOut;
+    /// <summary>
+    /// Function: GrenadeSlowMoOut
+    /// </summary>
+    public unsafe virtual void GrenadeSlowMoOut()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GrenadeSlowMoOut, "BmScript.MCombatMove_DLCJokerThrowGrenade.GrenadeSlowMoOut", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GrenadeSlowMoIn;
+    /// <summary>
+    /// Function: GrenadeSlowMoIn
+    /// </summary>
+    public unsafe virtual void GrenadeSlowMoIn()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GrenadeSlowMoIn, "BmScript.MCombatMove_DLCJokerThrowGrenade.GrenadeSlowMoIn", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_GetBatarangPriority;
+    /// <summary>
+    /// Function: GetBatarangPriority
+    /// </summary>
+    public unsafe override int GetBatarangPriority()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_GetBatarangPriority, "BmScript.MCombatMove_DLCJokerThrowGrenade.GetBatarangPriority", this);
+        byte* paramsPtr = stackalloc byte[20];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return BmSDK.Framework.MarshalUtil.ToManagedParam<int>(paramsPtr + 0);
+    }
+
+    private static BmSDK.Framework.FunctionCache.CallSite __fn_Initialise;
+    /// <summary>
+    /// Function: Initialise
+    /// </summary>
+    public unsafe override void Initialise()
+    {
+        BmSDK.Framework.Guard.NotDestroyed(this);
+        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_Initialise, "BmScript.MCombatMove_DLCJokerThrowGrenade.Initialise", this);
+        byte* paramsPtr = stackalloc byte[16];
+        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
+        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
+        return;
+    }
+
+    /// <summary>
+    /// ObjectProperty: Villain
+    /// </summary>
+    public unsafe BmSDK.BmGame.RPawnVillain Villain
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmGame.RPawnVillain>(Ptr + 776); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 776); }
+    }
+
+    /// <summary>
+    /// ObjectProperty: TargetPawn
+    /// </summary>
+    public unsafe BmSDK.BmGame.RPawnCombat TargetPawn
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmGame.RPawnCombat>(Ptr + 784); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 784); }
+    }
+
+    /// <summary>
+    /// ObjectProperty: Harley
+    /// </summary>
+    public unsafe BmSDK.BmScript.MPawnVillainDLCHarley Harley
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmScript.MPawnVillainDLCHarley>(Ptr + 792); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 792); }
+    }
+
+    /// <summary>
+    /// ObjectProperty: ThrownObject
+    /// </summary>
+    public unsafe BmSDK.BmScript.MProjectile_DLCJoker ThrownObject
+    {
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmScript.MProjectile_DLCJoker>(Ptr + 800); }
+        set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 800); }
+    }
+
+    /// <summary>
+    /// StructProperty: ThrowID
+    /// </summary>
+    public unsafe ref BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId ThrowID
+        => ref BmSDK.Framework.MarshalUtil.AsRef<BmSDK.BmGame.RAnimUtil_PosePlayer.FTransitionId>(Ptr + 808);
+}

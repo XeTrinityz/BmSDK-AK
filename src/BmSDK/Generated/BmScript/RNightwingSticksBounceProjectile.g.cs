@@ -118,7 +118,7 @@ public partial class RNightwingSticksBounceProjectile : BmSDK.BmGame.RBatarangPr
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_CollideRicochetStick, "BmScript.RNightwingSticksBounceProjectile.CollideRicochetStick", this);
-        byte* paramsPtr = stackalloc byte[64];
+        byte* paramsPtr = stackalloc byte[72];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(DeltaTime, paramsPtr + 0);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);

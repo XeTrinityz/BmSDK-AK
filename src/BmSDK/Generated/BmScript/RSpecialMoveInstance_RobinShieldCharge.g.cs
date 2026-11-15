@@ -78,21 +78,6 @@ public partial class RSpecialMoveInstance_RobinShieldCharge : BmSDK.BmGame.RSpec
         where TComponent : class, Framework.IScriptComponent<RSpecialMoveInstance_RobinShieldCharge>
         => ((GameObject)this).DetachScriptComponents(typeof(TComponent));
 
-    private static BmSDK.Framework.FunctionCache.CallSite __fn_TriggerShieldBashHitSomeoneEvent;
-    /// <summary>
-    /// Function: TriggerShieldBashHitSomeoneEvent
-    /// </summary>
-    public unsafe virtual void TriggerShieldBashHitSomeoneEvent(BmSDK.BmGame.RPawnVillain Villain)
-    {
-        BmSDK.Framework.Guard.NotDestroyed(this);
-        var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerShieldBashHitSomeoneEvent, "BmScript.RSpecialMoveInstance_RobinShieldCharge.TriggerShieldBashHitSomeoneEvent", this);
-        byte* paramsPtr = stackalloc byte[56];
-        paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
-        BmSDK.Framework.MarshalUtil.ToUnmanaged(Villain, paramsPtr + 0);
-        BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
-        return;
-    }
-
     private static BmSDK.Framework.FunctionCache.CallSite __fn_KnockDownVillain;
     /// <summary>
     /// Function: KnockDownVillain
@@ -158,7 +143,7 @@ public partial class RSpecialMoveInstance_RobinShieldCharge : BmSDK.BmGame.RSpec
     {
         BmSDK.Framework.Guard.NotDestroyed(this);
         var funcManaged = BmSDK.Framework.FunctionCache.GetVirtual(ref __fn_TriggerSpecialMove, "BmScript.RSpecialMoveInstance_RobinShieldCharge.TriggerSpecialMove", this);
-        byte* paramsPtr = stackalloc byte[164];
+        byte* paramsPtr = stackalloc byte[148];
         paramsPtr = (byte*)(((nint)paramsPtr + 15) & ~(nint)15);
         BmSDK.Framework.MarshalUtil.ToUnmanaged(Loc, paramsPtr + 0);
         BmSDK.Framework.GameFunctions.CallProcessEvent(Ptr, funcManaged.Ptr, (nint)paramsPtr, 0);
@@ -196,14 +181,5 @@ public partial class RSpecialMoveInstance_RobinShieldCharge : BmSDK.BmGame.RSpec
     {
         get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 1008) & 1) != 0; }
         set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 1008); var newMask = value ? (currentMask | 1) : (currentMask & ~1); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 1008); }
-    }
-
-    /// <summary>
-    /// BoolProperty: bDodged
-    /// </summary>
-    public unsafe bool bDodged
-    {
-        get { return (BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 1008) & 2) != 0; }
-        set { var currentMask = BmSDK.Framework.MarshalUtil.ToManaged<int>(Ptr + 1008); var newMask = value ? (currentMask | 2) : (currentMask & ~2); BmSDK.Framework.MarshalUtil.ToUnmanaged<int>(newMask, Ptr + 1008); }
     }
 }

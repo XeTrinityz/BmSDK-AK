@@ -109,9 +109,9 @@ public partial class RSeqAct_ReviveTutorialDollotron : BmSDK.Engine.SeqAct_Laten
     /// <summary>
     /// ObjectProperty: DollotronPawn
     /// </summary>
-    public unsafe BmSDK.GameObject DollotronPawn
+    public unsafe BmSDK.BmScript.RPawnVillainDollotronTutorial DollotronPawn
     {
-        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.GameObject>(Ptr + 376); }
+        get { return BmSDK.Framework.MarshalUtil.ToManaged<BmSDK.BmScript.RPawnVillainDollotronTutorial>(Ptr + 376); }
         set { BmSDK.Framework.MarshalUtil.ToUnmanaged(value, Ptr + 376); }
     }
 }
