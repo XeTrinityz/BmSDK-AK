@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main-bm4
+  workflow_dispatch:
 
 permissions:
   contents: write
