@@ -7,6 +7,7 @@ public partial class Class
     [Flags]
     public enum EClassFlags
     {
+        CLASS_Native = 0x80,
         CLASS_Interface = 0x4000,
     }
 
@@ -17,8 +18,8 @@ public partial class Class
     /// </summary>
     public unsafe EClassFlags ClassFlags
     {
-        get => MarshalUtil.ToManaged<EClassFlags>(Ptr + 180);
-        set => MarshalUtil.ToUnmanaged(value, (Ptr + 180).ToPointer());
+        get => MarshalUtil.ToManaged<EClassFlags>(Ptr + GameDefine.MemberOffsets.Class__ClassFlags);
+        set => MarshalUtil.ToUnmanaged(value, (Ptr + GameDefine.MemberOffsets.Class__ClassFlags).ToPointer());
     }
 
     /// <summary>
